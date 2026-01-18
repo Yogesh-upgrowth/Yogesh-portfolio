@@ -48,7 +48,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Founder Notes", 
     date: "2025-01-15", 
     readTime: "15 min read", 
-    image: leadershipHero,
+    image: "/attached_assets/image_1768738376698.png",
     author: "Yogesh Yadav",
     isFeatured: true,
     isMostPopular: true
