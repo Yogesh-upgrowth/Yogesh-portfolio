@@ -17,7 +17,7 @@ export default function Hero() {
         />
       </div>
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 pt-[50px] pb-[50px]">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16 pt-[20px] pb-[20px] mt-[20px] mb-[20px]">
           
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
