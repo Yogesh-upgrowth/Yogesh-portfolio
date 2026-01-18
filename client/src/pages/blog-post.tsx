@@ -53,7 +53,7 @@ export default function BlogPost() {
           </header>
 
           {/* Article Content */}
-          <div className="prose prose-lg prose-slate max-w-none prose-headings:font-serif prose-headings:font-bold prose-a:text-primary prose-img:rounded-xl">
+          <div className="article-content prose prose-lg prose-slate max-w-none prose-a:text-primary prose-img:rounded-xl">
             {content ? (
               <div dangerouslySetInnerHTML={{ __html: content }} />
             ) : (

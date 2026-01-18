@@ -156,6 +156,56 @@
   animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
+/* Article content typography */
+.article-content h2 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  color: hsl(var(--foreground));
+  border-bottom: 2px solid hsl(var(--primary));
+  padding-bottom: 0.5rem;
+}
+
+.article-content h3 {
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: hsl(var(--foreground));
+}
+
+.article-content p {
+  font-size: 1.125rem;
+  line-height: 1.85;
+  margin-bottom: 1.5rem;
+  color: hsl(var(--foreground));
+}
+
+.article-content ul, .article-content ol {
+  margin-bottom: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.article-content li {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+.article-content strong {
+  color: hsl(var(--foreground));
+  font-weight: 600;
+}
+
+.article-content .lead {
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: hsl(var(--foreground));
+}
+
 /* Hide scrollbar for horizontal scroll sections */
 .scrollbar-hide {
   -ms-overflow-style: none;
