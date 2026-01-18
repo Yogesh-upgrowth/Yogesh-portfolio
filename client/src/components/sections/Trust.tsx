@@ -22,13 +22,15 @@ export default function Trust() {
           ))}
         </div>
         
-        <div className="mt-12 pt-8 border-t border-border/40 flex flex-wrap justify-center gap-x-12 gap-y-8 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-          {/* Text-based Logos for minimal clean look */}
-          <span className="text-xl font-bold font-serif text-foreground/80">Fintech</span>
-          <span className="text-xl font-bold font-serif text-foreground/80">Mobility</span>
-          <span className="text-xl font-bold font-serif text-foreground/80">SaaS</span>
-          <span className="text-xl font-bold font-serif text-foreground/80">Marketplaces</span>
-          <span className="text-xl font-bold font-serif text-foreground/80">E-commerce</span>
+        <div className="mt-12 pt-8 border-t border-border/40">
+          <p className="text-center text-sm font-medium text-muted-foreground uppercase tracking-widest mb-6">Industries I've Worked In</p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <span className="px-5 py-2 bg-primary/10 text-primary font-semibold rounded-full text-sm border border-primary/20">Fintech</span>
+            <span className="px-5 py-2 bg-primary/10 text-primary font-semibold rounded-full text-sm border border-primary/20">Mobility</span>
+            <span className="px-5 py-2 bg-primary/10 text-primary font-semibold rounded-full text-sm border border-primary/20">SaaS</span>
+            <span className="px-5 py-2 bg-primary/10 text-primary font-semibold rounded-full text-sm border border-primary/20">Marketplaces</span>
+            <span className="px-5 py-2 bg-primary/10 text-primary font-semibold rounded-full text-sm border border-primary/20">E-commerce</span>
+          </div>
         </div>
       </div>
     </section>
