@@ -1,7 +1,7 @@
 import { useRoute, Link } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { getPostBySlug } from "@/lib/blog-data";
+import { getPostBySlug, formatDate } from "@/lib/blog-data";
 import { getPostContent } from "@/lib/blog-content";
 import { ArrowLeft, Clock, Calendar, Share2, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -34,7 +34,7 @@ export default function BlogPost() {
               <span className="bg-primary/10 text-primary px-3 py-1 rounded-full font-medium text-xs">
                 {post.category}
               </span>
-              <span className="flex items-center"><Calendar className="mr-2 h-4 w-4" /> {post.date}</span>
+              <time dateTime={post.date} className="flex items-center"><Calendar className="mr-2 h-4 w-4" /> {formatDate(post.date)}</time>
               <span className="flex items-center"><Clock className="mr-2 h-4 w-4" /> {post.readTime}</span>
             </div>
             

@@ -1,8 +1,8 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Link } from "wouter";
-import { ArrowRight, Clock, Calendar } from "lucide-react";
-import { BLOG_CATEGORIES, BLOG_POSTS, type BlogPost } from "@/lib/blog-data";
+import { ArrowRight, Clock, Calendar, User } from "lucide-react";
+import { BLOG_CATEGORIES, BLOG_POSTS, getFeaturedPost, getMostPopularPosts, formatDate, type BlogPost } from "@/lib/blog-data";
 import { Button } from "@/components/ui/button";
 import { useState, useMemo } from "react";
 
@@ -20,27 +20,44 @@ function BlogCard({ post }: { post: BlogPost }) {
       </div>
       
       <div className="flex-1 flex flex-col">
-        <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
-          <span className="flex items-center gap-1">
-            <Calendar className="h-3 w-3" /> {post.date}
-          </span>
+        <span className="text-xs font-medium text-primary mb-2">{post.category}</span>
+        <h3 className="text-lg font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+          {post.title}
+        </h3>
+        <p className="text-muted-foreground text-sm line-clamp-2 mb-3 flex-1">
+          {post.description}
+        </p>
+        <div className="flex items-center gap-3 text-xs text-muted-foreground">
           <span className="flex items-center gap-1">
             <Clock className="h-3 w-3" /> {post.readTime}
           </span>
         </div>
-        
-        <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
-          {post.title}
-        </h3>
-        
-        <p className="text-muted-foreground text-sm line-clamp-3 mb-4 flex-1">
-          {post.description}
-        </p>
-        
-        <span className="text-primary text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all mt-auto">
-          Read Article <ArrowRight className="h-4 w-4" />
-        </span>
       </div>
+    </Link>
+  );
+}
+
+function PopularCard({ post }: { post: BlogPost }) {
+  return (
+    <Link 
+      href={`/blog/${post.slug}`} 
+      className="group block shrink-0 w-[280px] md:w-[320px] snap-start" 
+      data-testid={`popular-card-${post.id}`}
+    >
+      <div className="aspect-[16/10] overflow-hidden rounded-xl mb-3 bg-muted border border-border/50">
+        <img 
+          src={post.image} 
+          alt={post.title}
+          loading="lazy"
+          decoding="async"
+          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+        />
+      </div>
+      <span className="text-xs font-medium text-primary">{post.category}</span>
+      <h4 className="text-base font-bold mt-1 group-hover:text-primary transition-colors line-clamp-2">
+        {post.title}
+      </h4>
+      <span className="text-xs text-muted-foreground mt-2 block">{post.readTime}</span>
     </Link>
   );
 }
@@ -49,48 +66,86 @@ export default function Blog() {
   const [activeCategory, setActiveCategory] = useState<string>("All");
   const [showAll, setShowAll] = useState(false);
 
-  const postsToShow = useMemo(() => {
+  const featuredPost = getFeaturedPost();
+  const popularPosts = getMostPopularPosts(6);
+
+  const filteredPosts = useMemo(() => {
+    const posts = BLOG_POSTS.filter(p => !p.isFeatured);
     if (activeCategory === "All") {
-      const featured = BLOG_POSTS.slice(0, showAll ? 12 : 6);
-      return featured;
+      return showAll ? posts : posts.slice(0, 9);
     }
-    const categoryPosts = BLOG_POSTS.filter(post => post.category === activeCategory);
-    return showAll ? categoryPosts : categoryPosts.slice(0, 6);
+    const categoryPosts = posts.filter(post => post.category === activeCategory);
+    return showAll ? categoryPosts : categoryPosts.slice(0, 9);
   }, [activeCategory, showAll]);
 
   const hasMore = useMemo(() => {
+    const posts = BLOG_POSTS.filter(p => !p.isFeatured);
     if (activeCategory === "All") {
-      return !showAll && BLOG_POSTS.length > 6;
+      return !showAll && posts.length > 9;
     }
-    const categoryPosts = BLOG_POSTS.filter(post => post.category === activeCategory);
-    return !showAll && categoryPosts.length > 6;
+    const categoryPosts = posts.filter(post => post.category === activeCategory);
+    return !showAll && categoryPosts.length > 9;
   }, [activeCategory, showAll]);
 
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
       <Navbar />
-      <main className="flex-grow pt-32 pb-24">
+      <main className="flex-grow pt-28 pb-24">
         
-        {/* Blog Hero */}
-        <section className="container px-4 md:px-6 mx-auto mb-16">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
-              Product thinking, <br/>
-              <span className="text-primary">unfiltered.</span>
-            </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
-              Practical insights on product strategy, growth, and leadership. No fluff, just lessons from the trenches.
-            </p>
-            
-            {/* Category Filter */}
-            <div className="flex flex-wrap gap-2">
+        {/* Featured Hero Blog */}
+        {featuredPost && (
+          <article className="container px-4 md:px-6 mx-auto mb-16">
+            <Link href={`/blog/${featuredPost.slug}`} className="group block">
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div className="aspect-[16/10] overflow-hidden rounded-2xl bg-muted border border-border/50">
+                  <img 
+                    src={featuredPost.image} 
+                    alt={featuredPost.title}
+                    loading="eager"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <header className="space-y-4">
+                  <span className="inline-block text-xs font-bold uppercase tracking-widest text-primary bg-primary/10 px-3 py-1 rounded-full">
+                    Featured
+                  </span>
+                  <h1 className="text-3xl md:text-4xl font-serif font-bold leading-tight group-hover:text-primary transition-colors">
+                    {featuredPost.title}
+                  </h1>
+                  <p className="text-lg text-muted-foreground leading-relaxed line-clamp-3">
+                    {featuredPost.description}
+                  </p>
+                  <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground pt-2">
+                    <span className="flex items-center gap-1">
+                      <User className="h-4 w-4" /> {featuredPost.author || "Yogesh Yadav"}
+                    </span>
+                    <time dateTime={featuredPost.date} className="flex items-center gap-1">
+                      <Calendar className="h-4 w-4" /> {formatDate(featuredPost.date)}
+                    </time>
+                    <span className="flex items-center gap-1">
+                      <Clock className="h-4 w-4" /> {featuredPost.readTime}
+                    </span>
+                  </div>
+                  <span className="inline-flex items-center text-primary font-medium gap-1 group-hover:gap-2 transition-all pt-2">
+                    Read Article <ArrowRight className="h-4 w-4" />
+                  </span>
+                </header>
+              </div>
+            </Link>
+          </article>
+        )}
+
+        {/* Category Filter Strip */}
+        <section className="border-y border-border/50 bg-muted/30 sticky top-16 z-30 mb-12">
+          <div className="container px-4 md:px-6 mx-auto">
+            <div className="flex gap-1 overflow-x-auto py-3 scrollbar-hide">
               <button
                 onClick={() => { setActiveCategory("All"); setShowAll(false); }}
                 data-testid="filter-all"
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap ${
                   activeCategory === "All" 
                     ? "bg-primary text-primary-foreground" 
-                    : "bg-muted/50 text-muted-foreground hover:bg-muted"
+                    : "bg-background text-muted-foreground hover:bg-muted border border-border/50"
                 }`}
               >
                 All
@@ -100,10 +155,10 @@ export default function Blog() {
                   key={cat}
                   onClick={() => { setActiveCategory(cat); setShowAll(false); }}
                   data-testid={`filter-${cat.toLowerCase().replace(/\s+/g, '-')}`}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all whitespace-nowrap ${
                     activeCategory === cat 
                       ? "bg-primary text-primary-foreground" 
-                      : "bg-muted/50 text-muted-foreground hover:bg-muted"
+                      : "bg-background text-muted-foreground hover:bg-muted border border-border/50"
                   }`}
                 >
                   {cat}
@@ -113,16 +168,35 @@ export default function Blog() {
           </div>
         </section>
 
-        {/* Blog Posts Grid */}
-        <section className="container px-4 md:px-6 mx-auto">
-          {activeCategory !== "All" && (
-            <div className="flex items-center justify-between mb-8 border-b border-border/50 pb-4">
-              <h2 className="text-2xl font-serif font-bold">{activeCategory}</h2>
+        {/* Most Popular Section */}
+        <section className="mb-16">
+          <div className="container px-4 md:px-6 mx-auto">
+            <h2 className="text-2xl font-serif font-bold mb-6">Most Popular</h2>
+          </div>
+          <div className="overflow-hidden">
+            <div className="flex gap-5 overflow-x-auto pb-4 px-4 md:px-6 snap-x snap-mandatory scrollbar-hide">
+              <div className="shrink-0 w-[calc((100vw-2rem)/2-10px)] md:w-0" />
+              {popularPosts.map((post) => (
+                <PopularCard key={post.id} post={post} />
+              ))}
+              <div className="shrink-0 w-4" />
             </div>
-          )}
+          </div>
+        </section>
+
+        {/* All Blog Posts Grid */}
+        <section className="container px-4 md:px-6 mx-auto">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-2xl font-serif font-bold">
+              {activeCategory === "All" ? "All Articles" : activeCategory}
+            </h2>
+            <span className="text-sm text-muted-foreground">
+              {filteredPosts.length} article{filteredPosts.length !== 1 ? 's' : ''}
+            </span>
+          </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {postsToShow.map((post) => (
+            {filteredPosts.map((post) => (
               <BlogCard key={post.id} post={post} />
             ))}
           </div>
@@ -141,14 +215,14 @@ export default function Blog() {
           )}
         </section>
 
-        {/* Global CTA */}
-        <section className="container px-4 md:px-6 mx-auto mt-32">
-          <div className="bg-primary/5 rounded-3xl p-12 text-center border border-primary/10">
-            <h2 className="text-3xl font-serif font-bold mb-4">Need help implementing these strategies?</h2>
-            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+        {/* CTA Section */}
+        <section className="container px-4 md:px-6 mx-auto mt-24">
+          <div className="bg-primary/5 rounded-3xl p-10 md:p-12 text-center border border-primary/10">
+            <h2 className="text-2xl md:text-3xl font-serif font-bold mb-4">Need help implementing these strategies?</h2>
+            <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
               I work with founders and product teams to turn these insights into execution.
             </p>
-            <Button size="lg" className="h-14 px-8 text-lg rounded-full" asChild>
+            <Button size="lg" className="h-12 px-8 text-base rounded-full" asChild>
               <Link href="/contact">
                 Work with me <ArrowRight className="ml-2 h-5 w-5" />
               </Link>

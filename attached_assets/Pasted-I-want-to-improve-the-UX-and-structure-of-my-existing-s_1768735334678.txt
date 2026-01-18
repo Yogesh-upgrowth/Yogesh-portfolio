@@ -1,0 +1,98 @@
+I want to improve the UX and structure of my existing static blog page without changing the current tech stack or design system.
+
+IMPORTANT CONSTRAINTS:
+- This is a STATIC WEBSITE
+- Do NOT introduce React, Next.js, Vue, or any new framework
+- Use the existing HTML, CSS, and JS approach already in place
+- Reuse current fonts, colors, spacing, and styling conventions
+- No redesign of the site header or footer
+
+-----------------------------------
+1. HERO BLOG SECTION (FEATURED POST)
+-----------------------------------
+- Add a featured hero blog section at the top of the blog page
+- This will highlight ONE blog only (About Me / How I Did Things)
+- Structure:
+  - Large blog title (H1, SEO-optimized)
+  - Short description (meta-style, max 160 characters)
+  - Author name
+  - Publish date (ISO format)
+  - Read time
+- Layout should align with existing design patterns (no new visual language)
+- Must be semantic HTML (article, header, time, etc.)
+
+-----------------------------------
+2. BLOG CATEGORY STRIP (FILTER BAR)
+-----------------------------------
+- Add a horizontal category strip BELOW the hero blog
+- This is NOT the site navigation
+- Categories:
+  All | AI & Product | PM Career | Experiments | Growth & SEO | Comparisons | Founder Notes
+- Clicking a category filters blogs using vanilla JavaScript
+- Active category should be visually highlighted using existing styles
+- No page reload
+
+-----------------------------------
+3. MOST POPULAR SECTION (HORIZONTAL SCROLL)
+-----------------------------------
+- Section title: "Most Popular"
+- Display EXACTLY 6 blogs
+- Layout:
+  - Horizontal scroll (left → right)
+  - Use CSS scroll-snap if already compatible with current CSS style
+  - Hide scrollbar visually but keep it usable
+- Each blog card should include:
+  - Thumbnail image
+  - Blog title
+  - Category
+  - Read time
+- Mobile-first and responsive
+
+-----------------------------------
+4. SAMPLE BLOG DATA STRUCTURE (BEST SEO PRACTICES)
+-----------------------------------
+Use a blog schema optimized for SEO, discoverability, and scalability:
+
+{
+  "id": "how-i-use-ai-as-a-pm",
+  "title": "How I Use AI as a Product Manager (Real Workflows)",
+  "description": "A practical breakdown of how I use AI daily as a PM to think faster, write better, and build smarter products.",
+  "slug": "how-i-use-ai-as-a-product-manager",
+  "category": "AI & Product",
+  "tags": ["AI", "Product Management", "Workflows"],
+  "author": {
+    "name": "Yogesh",
+    "profileUrl": "/about"
+  },
+  "publishedDate": "2025-01-10",
+  "modifiedDate": "2025-01-10",
+  "readTime": "6 min read",
+  "thumbnail": "/images/blog/ai-pm-workflows.webp",
+  "isFeatured": false,
+  "isMostPopular": true,
+  "engagementScore": 87,
+  "seo": {
+    "metaTitle": "How I Use AI as a Product Manager | Real Workflows",
+    "metaDescription": "Learn how a product manager uses AI in real-world workflows to improve thinking, writing, and execution.",
+    "canonicalUrl": "https://example.com/blog/how-i-use-ai-as-a-product-manager"
+  }
+}
+
+-----------------------------------
+5. DESIGN GUIDELINES (USE CURRENT SYSTEM)
+-----------------------------------
+- Keep existing typography, spacing, and color palette
+- No gradients, illustrations, or new UI components
+- Follow current card styles, borders, and shadows
+- Maintain consistent padding and font hierarchy
+- Ensure all headings follow proper H1 → H2 → H3 order
+
+-----------------------------------
+6. DELIVERABLE
+-----------------------------------
+- Updated HTML structure
+- Minimal vanilla JS for:
+  - Category filtering
+  - Horizontal scrolling behavior
+- Reusable CSS using existing class patterns
+- No external libraries
