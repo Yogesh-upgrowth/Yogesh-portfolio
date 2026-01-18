@@ -35,7 +35,7 @@ export default function Navbar() {
       <div className="container px-4 md:px-6 mx-auto flex items-center justify-between">
         <Link href="/">
           <a className="text-2xl font-serif font-bold tracking-tight">
-            Yogesh<span className="text-primary">.</span>
+            Yogesh Yadav<span className="text-primary">.</span>
           </a>
         </Link>
 
