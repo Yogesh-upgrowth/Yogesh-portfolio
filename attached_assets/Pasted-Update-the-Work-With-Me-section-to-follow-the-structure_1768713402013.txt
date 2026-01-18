@@ -1,0 +1,122 @@
+Update the “Work With Me” section to follow the structure, clarity, and calm confidence of:
+https://www.news.aakashg.com/about
+
+IMPORTANT:
+- Do NOT copy wording
+- Rewrite everything in Yogesh Yadav’s voice
+- Keep it personal, honest, and experience-led
+- No marketing fluff, no exaggerated claims
+
+SECTION PURPOSE:
+Explain clearly:
+- Who Yogesh Yadav works with
+- What kind of work he does
+- What he does NOT do
+- What clients can expect when working with him
+
+------------------------------------
+WORK WITH ME – SECTION STRUCTURE
+------------------------------------
+
+1. SECTION INTRO (PERSONAL & GROUNDED)
+Tone: Calm, confident, human
+
+Content guidance:
+- First-person writing
+- Explain Yogesh’s philosophy toward work
+- Emphasise real ownership, outcomes, and long-term thinking
+
+Example tone (DO NOT COPY):
+“I work with teams that care about building real products, not just shipping features.”
+
+------------------------------------
+2. WHO THIS IS FOR
+------------------------------------
+Create a clear list with short explanations:
+
+- Founders building or scaling products
+- Growth-stage startups struggling with monetisation or retention
+- Consumer apps with scale but poor conversion
+- B2B SaaS teams needing clarity on product direction
+- Leadership teams needing a strong product operator, not just advice
+
+Keep language simple and direct.
+
+------------------------------------
+3. HOW I WORK
+------------------------------------
+Write this like a narrative, not bullets-heavy consulting jargon.
+
+Cover:
+- Hands-on involvement
+- Deep understanding of metrics and business context
+- Focus on leverage, not busywork
+- Comfort with ambiguity and trade-offs
+- Clear communication with founders and teams
+
+Make it feel like:
+“You’re hiring a thinking partner, not a slide deck.”
+
+------------------------------------
+4. WHAT I CAN HELP WITH (CLEAR SCOPE)
+------------------------------------
+Concise, honest list:
+
+- Product strategy & roadmap clarity
+- Growth funnel diagnosis and fixes
+- Monetisation & pricing decisions
+- Scaling workflows and internal platforms
+- Aligning product, business, and execution teams
+
+Avoid buzzwords. Keep outcomes visible.
+
+------------------------------------
+5. WHAT I DON’T DO (VERY IMPORTANT)
+------------------------------------
+Add a short section that builds trust.
+
+Examples:
+- I don’t do surface-level audits with no follow-through
+- I don’t optimise vanity metrics
+- I don’t take on work where outcomes don’t matter
+- I don’t replace your team — I work with them
+
+This section should feel mature and confident.
+
+------------------------------------
+6. ENGAGEMENT STYLE
+------------------------------------
+Explain simply:
+- Short-term advisory
+- Hands-on execution
+- Ongoing product partnership
+
+Clarify that scope depends on problem, not rigid packages.
+
+------------------------------------
+7. CTA (SOFT, CONVERSATIONAL)
+------------------------------------
+End with a low-pressure CTA.
+
+Tone example (DO NOT COPY):
+“If this sounds like the kind of help you’re looking for, we can start with a conversation.”
+
+Button text:
+“Start a conversation”
+
+------------------------------------
+DESIGN NOTES
+------------------------------------
+- Single-column layout
+- Comfortable reading width
+- Generous line-height
+- Minimal visuals
+- Looks like a thoughtful essay, not a sales page
+- Mobile-first readability is critical
+
+------------------------------------
+FINAL RULE
+------------------------------------
+This section should feel like:
+A thoughtful product leader explaining how they work,
+not a consultant trying to sell services.

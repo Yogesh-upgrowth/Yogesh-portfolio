@@ -8,6 +8,7 @@ import Home from "@/pages/home";
 import Blog from "@/pages/blog";
 import Linkedin from "@/pages/linkedin";
 import ContactPage from "@/pages/contact";
+import Work from "@/pages/work";
 
 function Router() {
   return (
@@ -16,6 +17,7 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/linkedin" component={Linkedin} />
       <Route path="/contact" component={ContactPage} />
+      <Route path="/work" component={Work} />
       <Route component={NotFound} />
     </Switch>
   );
