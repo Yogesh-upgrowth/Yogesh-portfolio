@@ -66,7 +66,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-            >
+              className="mt-[30px] mb-[30px]">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary mb-3">
                 <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
                 Available for new projects
