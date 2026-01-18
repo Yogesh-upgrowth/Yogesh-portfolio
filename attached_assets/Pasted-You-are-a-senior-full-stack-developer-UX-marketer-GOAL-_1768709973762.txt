@@ -1,0 +1,134 @@
+You are a senior full-stack developer + UX marketer.
+
+GOAL:
+Build a personal freelancing website for Yogesh Yadav to attract high-quality product, growth, and monetisation consulting/freelance work.
+
+REFERENCE STYLE (INSPIRATION ONLY, NOT COPYING):
+- neilpatel.com
+- Clean, confident, marketer-style personal brand
+- Strong hero section
+- Clear value proposition
+- Proof-driven content
+- Conversion-focused CTAs
+
+IMPORTANT CONSTRAINTS:
+1. Mobile-first approach (design for mobile screens first, then scale to desktop).
+2. Use ONLY Yogesh’s real professional content (summarised & rewritten clearly).
+3. No generic lorem ipsum.
+4. Performance-focused (fast load, clean HTML/CSS).
+5. Modern but minimal — confident, not flashy.
+6. SEO-friendly structure.
+
+TECH STACK:
+- HTML
+- CSS (prefer modern CSS, flexbox/grid)
+- Minimal JS (only if needed)
+- No heavy frameworks
+- Responsive, mobile-first CSS
+
+SITE STRUCTURE (ONE-PAGE SCROLL):
+
+1. HERO SECTION (Above the fold)
+   - Headline (clear, outcome-driven):
+     Example tone: 
+     “I help consumer & B2B products grow revenue, retention, and scale.”
+   - Subheadline:
+     Product Leader with 9+ years across Fintech, Mobility, Marketplaces, SaaS & E-commerce
+   - Primary CTA:
+     “Work with me”
+   - Secondary CTA:
+     “See my work”
+
+2. TRUST / AUTHORITY STRIP
+   - Years of experience: 9+
+   - Domains: Fintech, Mobility, SaaS, Marketplaces
+   - Metrics highlights:
+     • Scaled platforms to 1.2M+ DAU
+     • Built monetisation engines generating 1000s of daily transactions
+     • Led 50+ member cross-functional teams
+
+3. ABOUT ME (Short, sharp, marketer-style)
+   - Rewrite Yogesh’s professional summary into a confident first-person narrative
+   - Focus on:
+     • End-to-end ownership
+     • Growth + monetisation
+     • Analytics-driven decisions
+     • Founder & leadership partnership
+   - Avoid resume-style bullets here; make it readable and persuasive
+
+4. WHAT I DO (SERVICES)
+   Create 4 service cards:
+   - Product Strategy & Roadmapping
+   - Growth & Funnel Optimization
+   - Monetisation & Pricing Strategy
+   - Platform Scaling & Ops Enablement
+
+   Each card should include:
+   - What problem I solve
+   - How I approach it
+   - What outcome clients can expect
+
+5. PROOF / IMPACT SECTION (VERY IMPORTANT)
+   Convert resume achievements into impact stories:
+   - CarInfo: 650K → 1.2M+ DAU
+   - Insurance monetisation scaling (10/day → 6800+/day)
+   - CAC reduction by 25–30%
+   - Revenue surfaces unlocked
+   - Portfolio-level leadership at UpGrowth
+
+   Use numbers, not buzzwords.
+
+6. WHO SHOULD WORK WITH ME
+   - Startups (Seed to Series C)
+   - Founders
+   - Growth-stage consumer apps
+   - B2B SaaS teams
+   - Marketplaces & Fintech platforms
+
+7. PROCESS (HOW I WORK)
+   Simple 4-step flow:
+   - Understand the business & metrics
+   - Diagnose friction & leverage points
+   - Design solutions (product, pricing, GTM)
+   - Execute & measure outcomes
+
+8. TESTIMONIAL PLACEHOLDER
+   - Create space/layout for future testimonials
+   - Do NOT invent fake quotes
+
+9. CTA SECTION (STRONG CLOSE)
+   - Headline:
+     “Let’s build products that actually move the needle.”
+   - CTA Button:
+     “Get in touch”
+
+10. CONTACT SECTION
+   - Email: yogesh.productmanager@gmail.com
+   - Simple contact form (name, email, message)
+   - Optional WhatsApp mention (India-friendly)
+
+DESIGN GUIDELINES:
+- Use neutral colors (white, dark text, subtle accent color)
+- Big typography for headlines
+- Plenty of whitespace
+- Buttons clearly visible on mobile
+- Sticky header on scroll (optional)
+- Smooth scrolling between sections
+
+SEO:
+- Use semantic HTML (section, header, footer)
+- Proper H1, H2 hierarchy
+- Meta title & description
+
+OUTPUT:
+- Generate complete, production-ready HTML + CSS
+- Include comments explaining structure
+- Ensure mobile responsiveness by default
+- Keep code clean and readable
+
+DO NOT:
+- Copy Neil Patel content
+- Add fake companies or testimonials
+- Overuse animations
+
+DELIVER EVERYTHING IN ONE GO.
