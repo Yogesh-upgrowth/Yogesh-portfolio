@@ -1,5 +1,251 @@
 // Separate file for heavy content to avoid bloating the main blog listing
 export const BLOG_CONTENT: Record<string, string> = {
+  "how-i-think-about-product-framework": `
+      <p class="lead text-xl text-foreground font-medium mb-8">
+        Most product advice sounds good. Very little of it survives contact with reality.
+      </p>
+
+      <p>
+        For years, I believed that if I deeply understood users and built great features, outcomes would naturally follow. That belief carried me through my early product roles—but it also quietly limited my growth.
+      </p>
+
+      <p>
+        After 9+ years of building and scaling consumer and B2B platforms across fintech, mobility, SaaS, marketplaces, and e-commerce, I've learned something uncomfortable but freeing:
+      </p>
+
+      <blockquote class="border-l-4 border-primary pl-6 my-8 italic text-xl">
+        Product success is not driven by ideas. It's driven by decision quality.
+      </blockquote>
+
+      <p>
+        This article is not a list of tools or templates. It's how I actually think when making product decisions—especially when:
+      </p>
+      <ul>
+        <li>Data is incomplete</li>
+        <li>Stakeholders disagree</li>
+        <li>Trade-offs are irreversible</li>
+        <li>And outcomes have real business consequences</li>
+      </ul>
+
+      <p>
+        If you've ever wondered how senior product managers think when no one is watching, this is that mental model.
+      </p>
+
+      <hr class="my-12 border-border/50" />
+
+      <h2>What Product Thinking Really Means (And Why Most PM Advice Fails)</h2>
+
+      <p>
+        Product thinking is often reduced to empathy, discovery, and experimentation. Those are important—but they are incomplete.
+      </p>
+
+      <p>
+        <strong>Real product thinking</strong> is the ability to make irreversible trade-offs under uncertainty while staying accountable for business outcomes.
+      </p>
+
+      <p>
+        Most frameworks stop at "what should we build?" Senior product thinking starts at: <strong>"What are we willing to give up?"</strong>
+      </p>
+
+      <p>
+        Because every product decision implicitly answers:
+      </p>
+      <ul>
+        <li>Who pays for this?</li>
+        <li>Who bears the cost?</li>
+        <li>What breaks if this scales?</li>
+        <li>What are we choosing <em>not</em> to do?</li>
+      </ul>
+
+      <p>
+        If you can't answer these questions, you're not leading product—you're coordinating execution.
+      </p>
+
+      <hr class="my-12 border-border/50" />
+
+      <h2>The 5-Layer Product Thinking Framework</h2>
+
+      <p>
+        This framework is not a process. It's a mental stack. I don't move through these layers sequentially. I hold them simultaneously.
+      </p>
+
+      <h3>Layer 1 – Business Reality</h3>
+
+      <p>
+        Early in my career, I subconsciously treated business constraints as "context." Today, I treat them as <strong>inputs</strong>.
+      </p>
+
+      <p>
+        Business reality includes:
+      </p>
+      <ul>
+        <li>Revenue mechanics</li>
+        <li>Cost structures</li>
+        <li>Margins</li>
+        <li>Partner economics</li>
+        <li>Operational scalability</li>
+        <li>Cash flow timelines</li>
+      </ul>
+
+      <div class="bg-muted/30 p-6 rounded-xl border border-border/50 my-8">
+        <h4 class="text-lg font-bold mb-2 mt-0">Key Insight</h4>
+        <p class="mb-0 text-muted-foreground">
+          Ignoring business constraints doesn't make you user-first. It makes you fragile. Every feature either strengthens or weakens the business model. There is no neutral ground.
+        </p>
+      </div>
+
+      <h3>Layer 2 – User Intent (Not Personas)</h3>
+
+      <p>
+        Personas are useful storytelling tools. But they often become a crutch that replaces real understanding.
+      </p>
+
+      <p>
+        I've moved from "What would Sarah (our persona) want?" to <strong>"What is the user trying to accomplish in this moment, and what's blocking them?"</strong>
+      </p>
+
+      <p>
+        User intent is dynamic. The same user has different intents in different contexts. Understanding the <em>job to be done</em> in each micro-moment is far more actionable than a static persona document.
+      </p>
+
+      <h3>Layer 3 – System Thinking</h3>
+
+      <p>
+        Most features are designed in isolation. "Let's add a referral program!" But what happens when that referral program interacts with your pricing tiers? Your support load? Your fraud rates?
+      </p>
+
+      <p>
+        Every product is a <strong>system</strong>. Adding a feature creates ripples. Senior PMs trace those ripples before they build, not after.
+      </p>
+
+      <div class="bg-primary/5 p-6 rounded-xl border border-primary/10 my-8">
+        <h4 class="text-lg font-bold mb-2 mt-0">Questions I Ask</h4>
+        <ul class="mb-0 text-muted-foreground space-y-2">
+          <li>What other parts of the product does this touch?</li>
+          <li>What unintended behaviors could this encourage?</li>
+          <li>If this scales 10x, what breaks first?</li>
+        </ul>
+      </div>
+
+      <h3>Layer 4 – Execution Reality</h3>
+
+      <p>
+        A brilliant strategy is worthless if you can't execute it. And execution isn't just about engineering bandwidth.
+      </p>
+
+      <p>
+        Execution reality includes:
+      </p>
+      <ul>
+        <li>Team skill gaps</li>
+        <li>Technical debt</li>
+        <li>Organizational politics</li>
+        <li>Go-to-market readiness</li>
+        <li>Timing and market conditions</li>
+      </ul>
+
+      <p>
+        The best product leaders I know spend as much time understanding their constraints as they do dreaming about possibilities.
+      </p>
+
+      <h3>Layer 5 – Risk & Reversibility</h3>
+
+      <p>
+        Not all decisions are created equal. Some are easily reversible ("Let's test a new onboarding flow"). Some are nearly permanent ("Let's pivot our pricing model").
+      </p>
+
+      <p>
+        I categorize decisions into:
+      </p>
+      <ul>
+        <li><strong>Type 1:</strong> Irreversible, high-stakes → Slow down, gather data, consult widely</li>
+        <li><strong>Type 2:</strong> Reversible, low-stakes → Move fast, learn from outcomes</li>
+      </ul>
+
+      <p>
+        Most teams treat every decision like Type 1, which kills speed. Or they treat Type 1 decisions like Type 2, which kills the company.
+      </p>
+
+      <hr class="my-12 border-border/50" />
+
+      <h2>Applying This Framework: A Real Example</h2>
+
+      <p>
+        Let me walk through how I used this framework to make a decision at a fintech company I advised.
+      </p>
+
+      <p>
+        <strong>The question:</strong> Should we launch a "Pay Later" option for our checkout flow?
+      </p>
+
+      <p>
+        <strong>Layer 1 (Business Reality):</strong> Pay Later requires credit risk assessment. Our margins were thin. Taking on credit risk could destroy unit economics if default rates exceeded 3%.
+      </p>
+
+      <p>
+        <strong>Layer 2 (User Intent):</strong> Users weren't asking for "Pay Later." They were asking for <em>flexibility</em>. The real intent was reducing the friction of a large upfront payment.
+      </p>
+
+      <p>
+        <strong>Layer 3 (System Thinking):</strong> Adding credit meant regulatory implications, new compliance workflows, and integration with credit bureaus. The ripple effects were massive.
+      </p>
+
+      <p>
+        <strong>Layer 4 (Execution Reality):</strong> We had zero credit expertise in-house. Building this would take 6+ months and distract from core product improvements.
+      </p>
+
+      <p>
+        <strong>Layer 5 (Risk & Reversibility):</strong> This was a Type 1 decision. If we launched and it failed, we'd have regulatory entanglements, unhappy customers with outstanding balances, and brand damage.
+      </p>
+
+      <p>
+        <strong>The decision:</strong> We partnered with a BNPL provider instead of building in-house. We addressed user intent (flexibility) without taking on the business and execution risk.
+      </p>
+
+      <hr class="my-12 border-border/50" />
+
+      <h2>The Meta-Skill: Holding Contradictions</h2>
+
+      <p>
+        The hardest part of product thinking isn't learning frameworks. It's learning to hold contradictory truths simultaneously:
+      </p>
+      <ul>
+        <li>Users want simplicity AND power features</li>
+        <li>You need to move fast AND not break things</li>
+        <li>You should be data-driven AND trust your intuition</li>
+        <li>You need to say no AND keep stakeholders happy</li>
+      </ul>
+
+      <p>
+        There's no formula for this. It's a muscle you develop over time through repetition and reflection.
+      </p>
+
+      <hr class="my-12 border-border/50" />
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        Product management is not about having the best ideas. It's about making the best decisions with incomplete information.
+      </p>
+
+      <p>
+        The 5-Layer Framework isn't a checklist. It's a lens. The more you practice seeing through it, the faster you'll navigate complexity—and the fewer mistakes you'll make along the way.
+      </p>
+
+      <p>
+        I hope this gives you a window into how I think. If you're building something ambitious and want a thought partner, I'd love to hear from you.
+      </p>
+
+      <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 text-center mt-12">
+        <h3 class="text-2xl font-serif font-bold mb-4">Building something ambitious?</h3>
+        <p class="text-lg text-muted-foreground mb-6">
+          I work with founders and product teams to turn strategic thinking into execution.
+        </p>
+        <a href="/contact" class="inline-flex items-center justify-center h-12 px-8 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors">
+          Work with me
+        </a>
+      </div>
+    `,
   "how-ai-is-changing-product-decisions": `
       <p class="lead text-xl text-foreground font-medium mb-8">
         We are witnessing the biggest shift in product management since the move from Waterfall to Agile. But it’s not what you think.

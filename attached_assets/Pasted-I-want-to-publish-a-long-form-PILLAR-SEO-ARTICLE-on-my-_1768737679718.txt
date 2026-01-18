@@ -1,0 +1,118 @@
+I want to publish a long-form PILLAR SEO ARTICLE on my static blog.
+Do NOT change my tech stack (HTML, CSS, JS only).
+Do NOT redesign the site.
+Only improve content structure, readability, SEO, and UX inside the article.
+
+------------------------------------------------
+ARTICLE TITLE (H1)
+------------------------------------------------
+
+How I Think About Product: A Product Thinking Framework Built Over 9 Years
+
+------------------------------------------------
+SEO META (GENERATE AND ATTACH)
+------------------------------------------------
+
+Meta Title:
+How I Think About Product | Product Thinking Framework (9 Years)
+
+Meta Description:
+A senior product leader shares a practical product thinking framework built over 9 years of scaling real products across growth, monetisation, and operations.
+
+Slug:
+how-i-think-about-product-framework
+
+------------------------------------------------
+ARTICLE CONTENT (PUBLISH AS HTML-READY TEXT)
+------------------------------------------------
+
+INTRODUCTION (Hook + Authority)
+
+Most product advice sounds good.
+Very little of it survives contact with reality.
+
+For years, I believed that if I deeply understood users and built great features, outcomes would naturally follow. That belief carried me through my early product roles—but it also quietly limited my growth.
+
+After 9+ years of building and scaling consumer and B2B platforms across fintech, mobility, SaaS, marketplaces, and e-commerce, I’ve learned something uncomfortable but freeing:
+
+Product success is not driven by ideas.
+It’s driven by decision quality.
+
+This article is not a list of tools or templates.
+It’s how I actually think when making product decisions—especially when:
+- data is incomplete
+- stakeholders disagree
+- trade-offs are irreversible
+- and outcomes have real business consequences
+
+If you’ve ever wondered how senior product managers think when no one is watching, this is that mental model.
+
+[UX NOTE]
+Add a short divider or subtle horizontal rule after this section to signal depth.
+
+------------------------------------------------
+H2: What Product Thinking Really Means (And Why Most PM Advice Fails)
+------------------------------------------------
+
+Product thinking is often reduced to empathy, discovery, and experimentation.
+Those are important—but they are incomplete.
+
+Real product thinking is the ability to:
+- make irreversible trade-offs
+- under uncertainty
+- while staying accountable for business outcomes
+
+Most frameworks stop at “what should we build?”
+Senior product thinking starts at:
+“What are we willing to give up?”
+
+Because every product decision implicitly answers:
+- Who pays for this?
+- Who bears the cost?
+- What breaks if this scales?
+- What are we choosing not to do?
+
+If you can’t answer these questions, you’re not leading product—you’re coordinating execution.
+
+------------------------------------------------
+H2: The 5-Layer Product Thinking Framework
+------------------------------------------------
+
+This framework is not a process.
+It’s a mental stack.
+
+I don’t move through these layers sequentially.
+I hold them simultaneously.
+
+------------------------------------------------
+H3: Layer 1 – Business Reality
+------------------------------------------------
+
+Early in my career, I subconsciously treated business constraints as “context.”
+Today, I treat them as inputs.
+
+Business reality includes:
+- revenue mechanics
+- cost structures
+- margins
+- partner economics
+- operational scalability
+- cash flow timelines
+
+Ignoring these doesn’t make you user-first.
+It makes you fragile.
+
+Every feature either strengthens or weakens the business model.
+There is no neutral ground.
+
+[IMAGE SUGGESTION]
+Insert a simple diagram:
+“Feature → Cost → Revenue → Scale Impact”
+Use a clean, monochrome SVG or PNG.
+
+------------------------------------------------
+H3: Layer 2 – User Intent (Not Personas)
+------------------------------------------------
+
+Personas are useful storytelling tools.
+They are t

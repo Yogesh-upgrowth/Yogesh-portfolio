@@ -39,15 +39,15 @@ export const BLOG_CATEGORIES = [
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
-  // Featured Post (About Me / How I Work)
+  // Featured Post (Pillar SEO Article)
   { 
     id: "featured-1", 
-    slug: "how-i-think-about-product", 
-    title: "How I Think About Product: My Framework After 9 Years", 
-    description: "A deep dive into my mental models, decision frameworks, and lessons learned building products at scale.", 
+    slug: "how-i-think-about-product-framework", 
+    title: "How I Think About Product: A Product Thinking Framework Built Over 9 Years", 
+    description: "A senior product leader shares a practical product thinking framework built over 9 years of scaling real products across growth, monetisation, and operations.", 
     category: "Founder Notes", 
     date: "2025-01-15", 
-    readTime: "12 min read", 
+    readTime: "15 min read", 
     image: leadershipHero,
     author: "Yogesh Yadav",
     isFeatured: true,
