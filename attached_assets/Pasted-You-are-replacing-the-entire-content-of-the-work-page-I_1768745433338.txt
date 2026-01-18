@@ -1,0 +1,242 @@
+You are replacing the entire content of the /work page.
+
+IMPORTANT:
+- Do NOT change the tech stack
+- Do NOT add frameworks
+- Do NOT redesign the site
+- Only replace content
+- Keep spacing clean and readable
+- Tone: senior, calm, direct, experience-backed
+- This page should make founders, leaders, and hiring managers feel:
+  “This person understands problems before they show up”
+
+================================================
+WORK WITH ME
+================================================
+
+Let’s Build Products That Don’t Break at Scale
+
+I work with founders and leadership teams who are past the honeymoon phase of building.
+
+You have users.  
+You have momentum.  
+But the product is starting to show cracks — in decision-making, in execution, in monetisation, or in how teams prioritise what actually matters.
+
+I don’t help you ship more features.
+I help you **make fewer, better decisions** — the kind that compound instead of creating invisible debt.
+
+Start a conversation  
+Response guaranteed within 24 hours.
+
+------------------------------------------------
+How I Think About Product (Context Before Capability)
+------------------------------------------------
+
+Most product problems are not feature problems.
+
+They are:
+- decision problems
+- incentive problems
+- sequencing problems
+- and systems problems that only show up after some success
+
+By the time teams feel “stuck,” the root cause is usually months old.
+
+My job, when I work with you, is to surface those hidden constraints early — before they become expensive, political, or irreversible.
+
+I don’t operate as an external consultant.
+I operate as a **thinking partner who carries outcome accountability**.
+
+------------------------------------------------
+Who This Page Is Actually For
+------------------------------------------------
+
+This page is for you if:
+
+You’re a founder who feels the product is getting heavier instead of sharper as you scale.
+
+You’re a growth-stage startup where traffic exists, but revenue, retention, or trust isn’t scaling proportionally.
+
+You’re running a consumer product where intent exists, but conversion feels fragile and overly sensitive to small changes.
+
+You’re a B2B SaaS team trying to move upmarket, but product decisions feel reactive to sales pressure instead of strategic.
+
+You’re a leadership team that needs someone who understands how strategy collapses when it hits engineering reality.
+
+------------------------------------------------
+How I Work (What This Actually Looks Like)
+------------------------------------------------
+
+I don’t arrive with a playbook.
+
+I start by understanding:
+- how decisions are currently made
+- where data is trusted vs ignored
+- where teams compensate for system weaknesses manually
+- where “temporary hacks” have quietly become permanent
+
+I ask uncomfortable questions early, because late questions are expensive.
+
+Once the real constraints are visible, we focus on leverage — not activity. That means fewer initiatives, clearer sequencing, and execution that actually moves business metrics.
+
+I stay close to execution, because strategy that can’t survive contact with reality is just theatre.
+
+------------------------------------------------
+Work That Shaped How I See Problems (Deep Dives)
+------------------------------------------------
+
+Loanwiser — Fintech for Bharat (Associate Product Manager)
+
+Loanwiser wasn’t a lending marketplace problem.  
+It was a **decision confidence problem**.
+
+Banks didn’t lack leads.
+They lacked trust in lead quality, eligibility, and intent — which forced heavy manual verification and slowed disbursements.
+
+What we built was not “just integrations.”
+
+We created a decision layer between borrower and lender by:
+- deeply analysing bank statements to understand income stability, not just balance
+- combining credit score with behavioural signals
+- generating lender-specific eligibility and risk reports
+- routing users only to lenders where disbursement probability was genuinely high
+
+The non-obvious insight:
+Banks don’t want more leads — they want **fewer, better decisions**.
+
+Impact:
+- Disbursement probability increased by ~90%
+- Manual intervention from banks reduced significantly
+- Trust improved on both sides of the marketplace
+
+This experience taught me how products fail quietly when they push decision-making downstream instead of owning it.
+
+Read the Loanwiser deep dive →
+
+------------------------------------------------
+
+CarInfo / AppFlix — Monetising Without Breaking Trust (Senior Product Manager)
+
+CarInfo already had scale.
+What it lacked was **structured intent capture**.
+
+Insurance was present, but the system treated all users the same — browsing users, curious users, and high-intent users were forced through identical flows.
+
+The real problem wasn’t conversion.
+It was **misaligned friction**.
+
+What we changed:
+- Rebuilt journeys based on real intent signals, not demographics
+- Fixed quote → redirect → purchase drop-offs by rethinking sequencing, not copy
+- Introduced context-aware nudges instead of aggressive CTAs
+- Treated partner selection as a product problem, not a business one
+
+Results:
+- Bike insurance scaled from ~10/day to 6,800+ per day
+- Car insurance scaled from ~5/day to 2,300+ per day
+- CAC reduced by 25–30%
+- Core engagement remained intact
+
+The non-obvious insight:
+Monetisation breaks when product teams chase revenue before understanding *why users are ready to pay*.
+
+See the monetisation breakdown →
+
+------------------------------------------------
+
+KNIPEX Tools — Learning Scale Outside Software (Product Marketing)
+
+At KNIPEX, product thinking wasn’t abstract.
+It was physical, delayed, and unforgiving.
+
+We dealt with:
+- inventory flowing from Germany
+- warehousing across India
+- regional vendor demand mismatches
+- real costs for late or wrong decisions
+
+We built warehousing and distribution systems that improved:
+- stock visibility
+- delivery predictability
+- vendor trust
+- operational reliability
+
+The non-obvious insight:
+In physical systems, you can’t “ship and iterate.”
+You are forced to think about constraints *before* acting.
+
+That discipline fundamentally shaped how I design software systems today.
+
+How physical systems changed my product thinking →
+
+------------------------------------------------
+
+UpGrowth — Product Leadership When Output Stops Mattering (Product Head)
+
+At UpGrowth, the challenge isn’t feature delivery.
+It’s **decision coherence at scale**.
+
+I lead multiple platforms, manage 50+ engineers, designers, and PMs, and own outcomes across growth, monetisation, and operations.
+
+My focus here is:
+- eliminating fragmented metrics
+- aligning teams around decision quality, not velocity
+- fixing system-level weaknesses that distort downstream execution
+- ensuring product bets map directly to revenue and scalability
+
+The non-obvious insight:
+At scale, product leadership is less about ideas and more about **what you choose not to build**.
+
+How I approach product leadership →
+
+------------------------------------------------
+What I Can Actually Help You With
+------------------------------------------------
+
+Clarifying product direction when everything feels important  
+Fixing growth funnels where intent exists but value leaks  
+Designing monetisation that doesn’t erode trust  
+Scaling platforms without increasing human dependency  
+Aligning product, business, and engineering decisions  
+
+If it doesn’t move a real metric, we don’t do it.
+
+------------------------------------------------
+What I Explicitly Don’t Do
+------------------------------------------------
+
+I don’t deliver surface-level audits with no ownership.
+
+I don’t optimise vanity metrics that look good in reviews but don’t change outcomes.
+
+I don’t take work where success is undefined.
+
+I don’t replace teams — I help them think and move better.
+
+------------------------------------------------
+Engagement Style
+------------------------------------------------
+
+Sometimes the work is advisory.
+Sometimes it’s hands-on execution.
+Sometimes it’s an ongoing partnership through a growth phase.
+
+We always start by defining the real problem.
+The engagement model follows the solution — not the other way around.
+
+------------------------------------------------
+Final CTA
+------------------------------------------------
+
+Ready to move the needle?
+
+If this page resonated, let’s talk.
+No pitch. No pressure.
+Just an honest conversation about whether I can help.
+
+Start a conversation  
+Or email me directly at yogesh.productmanager@gmail.com
+
+================================================
+END
+================================================
