@@ -55,7 +55,7 @@ export default function Hero() {
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start animate-fade-in-up mt-[0px] mb-[0px]" style={{ animationDelay: '0.2s' }}>
               <Button size="lg" className="text-base px-6 py-5 rounded-full" asChild>
                 <Link href="/contact">Work with me <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
