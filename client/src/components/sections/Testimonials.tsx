@@ -33,11 +33,11 @@ export default function Testimonials() {
            <h3 className="text-3xl font-serif font-bold">Trusted by founders & leaders</h3>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide -mx-4 px-4">
           {testimonials.map((item, index) => (
             <div
               key={index}
-              className="p-8 bg-background rounded-2xl border border-border/60 shadow-sm hover:shadow-md transition-shadow relative flex flex-col"
+              className="p-8 bg-background rounded-2xl border border-border/60 shadow-sm hover:shadow-md transition-shadow relative flex flex-col min-w-[320px] md:min-w-[380px] snap-center shrink-0"
             >
               <Quote className="h-8 w-8 text-primary/20 absolute top-6 left-6" />
               
