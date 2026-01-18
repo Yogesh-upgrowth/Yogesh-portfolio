@@ -2,25 +2,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Link } from "wouter";
 import { ArrowRight, Clock, Calendar } from "lucide-react";
-import { BLOG_CATEGORIES, BLOG_POSTS, BlogPost } from "@/lib/blog-data";
+import { BLOG_CATEGORIES, BLOG_POSTS } from "@/lib/blog-data";
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
 import { useState } from "react";
-
-// Import generated images
-import aiImage from "@assets/generated_images/minimalist_abstract_line_art_representing_ai_and_data_flow.png";
-import resourcesImage from "@assets/generated_images/abstract_composition_of_geometric_shapes_representing_product_frameworks.png";
-import researchImage from "@assets/generated_images/stylized_magnifying_glass_and_data_points_for_market_research.png";
-import knowledgeImage from "@assets/generated_images/abstract_growth_chart_and_upward_trends_for_product_knowledge.png";
-import leadershipImage from "@assets/generated_images/abstract_concept_of_leadership_and_connection.png";
-
-const categoryImages: Record<string, string> = {
-  "AI Update": aiImage,
-  "Product Resources": resourcesImage,
-  "Market Research": researchImage,
-  "Product Knowledge": knowledgeImage,
-  "Leadership": leadershipImage
-};
 
 export default function Blog() {
   const [activeCategory, setActiveCategory] = useState<string>("All");
@@ -36,7 +20,7 @@ export default function Blog() {
         
         {/* Blog Hero */}
         <section className="container px-4 md:px-6 mx-auto mb-20">
-          <div className="max-w-3xl">
+          <div className="max-w-3xl animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
               Product thinking, <br/>
               <span className="text-primary">unfiltered.</span>
@@ -49,6 +33,7 @@ export default function Blog() {
             <div className="flex flex-wrap gap-2">
               <button
                 onClick={() => setActiveCategory("All")}
+                data-testid="filter-all"
                 className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                   activeCategory === "All" 
                     ? "bg-primary text-primary-foreground" 
@@ -61,6 +46,7 @@ export default function Blog() {
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
+                  data-testid={`filter-${cat.toLowerCase().replace(/\s+/g, '-')}`}
                   className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
                     activeCategory === cat 
                       ? "bg-primary text-primary-foreground" 
@@ -91,50 +77,43 @@ export default function Blog() {
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  {categoryPosts.slice(0, 6).map((post, i) => ( // Show first 6 for clean layout
-                    <motion.div
-                      key={post.id}
-                      initial={{ opacity: 0, y: 20 }}
-                      whileInView={{ opacity: 1, y: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: i * 0.05 }}
-                    >
-                      <Link href={`/blog/${post.slug}`}>
-                        <a className="group block h-full flex flex-col">
-                          <div className="aspect-[16/9] overflow-hidden rounded-xl mb-4 bg-muted border border-border/50">
-                            <img 
-                              src={post.image} 
-                              alt={post.title}
-                              loading="lazy"
-                              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                            />
-                          </div>
-                          
-                          <div className="flex-1 flex flex-col">
-                            <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
-                              <span className="flex items-center gap-1">
-                                <Calendar className="h-3 w-3" /> {post.date}
-                              </span>
-                              <span className="flex items-center gap-1">
-                                <Clock className="h-3 w-3" /> {post.readTime}
-                              </span>
-                            </div>
-                            
-                            <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
-                              {post.title}
-                            </h3>
-                            
-                            <p className="text-muted-foreground text-sm line-clamp-3 mb-4 flex-1">
-                              {post.description}
-                            </p>
-                            
-                            <span className="text-primary text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all mt-auto">
-                              Read Article <ArrowRight className="h-4 w-4" />
+                  {categoryPosts.slice(0, 6).map((post) => (
+                    <Link key={post.id} href={`/blog/${post.slug}`}>
+                      <a className="group block h-full flex flex-col" data-testid={`blog-card-${post.id}`}>
+                        <div className="aspect-[16/9] overflow-hidden rounded-xl mb-4 bg-muted border border-border/50">
+                          <img 
+                            src={post.image} 
+                            alt={post.title}
+                            loading="lazy"
+                            decoding="async"
+                            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          />
+                        </div>
+                        
+                        <div className="flex-1 flex flex-col">
+                          <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
+                            <span className="flex items-center gap-1">
+                              <Calendar className="h-3 w-3" /> {post.date}
+                            </span>
+                            <span className="flex items-center gap-1">
+                              <Clock className="h-3 w-3" /> {post.readTime}
                             </span>
                           </div>
-                        </a>
-                      </Link>
-                    </motion.div>
+                          
+                          <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                            {post.title}
+                          </h3>
+                          
+                          <p className="text-muted-foreground text-sm line-clamp-3 mb-4 flex-1">
+                            {post.description}
+                          </p>
+                          
+                          <span className="text-primary text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all mt-auto">
+                            Read Article <ArrowRight className="h-4 w-4" />
+                          </span>
+                        </div>
+                      </a>
+                    </Link>
                   ))}
                 </div>
               </section>

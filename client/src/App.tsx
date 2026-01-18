@@ -1,11 +1,7 @@
 import { Switch, Route } from "wouter";
-import { queryClient } from "./lib/queryClient";
-import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
-import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import { Suspense, lazy } from "react";
-import { Loader2 } from "lucide-react";
 
 // Lazy load pages for performance
 const Home = lazy(() => import("@/pages/home"));
@@ -15,11 +11,11 @@ const ContactPage = lazy(() => import("@/pages/contact"));
 const Work = lazy(() => import("@/pages/work"));
 const BlogPost = lazy(() => import("@/pages/blog-post"));
 
-// Loading fallback
+// Minimal loading fallback
 function PageLoader() {
   return (
     <div className="flex items-center justify-center min-h-screen">
-      <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      <div className="h-8 w-8 border-4 border-primary border-t-transparent rounded-full animate-spin" />
     </div>
   );
 }
@@ -40,12 +36,10 @@ function Router() {
 
 function App() {
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Router />
-      </TooltipProvider>
-    </QueryClientProvider>
+    <>
+      <Toaster />
+      <Router />
+    </>
   );
 }
 
