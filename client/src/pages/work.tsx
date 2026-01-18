@@ -3,6 +3,7 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, XCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Work() {
   return (
@@ -13,26 +14,48 @@ export default function Work() {
           
           {/* Section 1: Intro */}
           <header className="mb-16">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold leading-tight mb-8">
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-4xl md:text-5xl font-serif font-bold leading-tight mb-8"
+            >
               Work With Me
-            </h1>
-            <div className="prose prose-lg prose-slate max-w-none text-muted-foreground leading-relaxed">
+            </motion.h1>
+            
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="prose prose-lg prose-slate max-w-none text-muted-foreground leading-relaxed"
+            >
               <p className="text-xl text-foreground font-medium mb-6">
                 I believe that great products aren't built in a vacuum. They are the result of rigorous execution, clear thinking, and the courage to make hard trade-offs.
               </p>
-              <p>
+              <p className="mb-8">
                 I work with teams that care about building real products, not just shipping features to hit a quarterly OKR. My goal isn't to be a consultant who leaves you with a slide deck and an invoice; it's to be a partner who helps you build an engine for sustainable, long-term growth.
               </p>
-            </div>
+              
+              <Button size="lg" className="h-12 px-8 rounded-full" asChild>
+                <Link href="/contact">
+                  Start a conversation <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+            </motion.div>
           </header>
 
           <div className="space-y-20">
             
             {/* Section 2: Who This Is For */}
             <section>
-              <h2 className="text-2xl font-serif font-bold mb-6 flex items-center gap-3">
+              <motion.h2 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className="text-2xl font-serif font-bold mb-6 flex items-center gap-3"
+              >
                 Who This Is For
-              </h2>
+              </motion.h2>
               <div className="grid gap-6">
                 {[
                   { title: "Founders building or scaling products", desc: "You have traction, but the 'messy middle' of scaling operations and product is slowing you down." },
@@ -41,19 +64,31 @@ export default function Work() {
                   { title: "B2B SaaS teams", desc: "You need clarity on your product direction to move upmarket or close larger enterprise deals." },
                   { title: "Leadership teams", desc: "You need a strong product operator who can bridge the gap between high-level strategy and day-to-day engineering execution." }
                 ].map((item, i) => (
-                  <div key={i} className="flex gap-4 items-start">
+                  <motion.div 
+                    key={i} 
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    className="flex gap-4 items-start p-4 rounded-xl hover:bg-muted/30 transition-colors"
+                  >
                     <div className="mt-1.5 h-2 w-2 rounded-full bg-primary shrink-0" />
                     <div>
                       <h3 className="font-bold text-foreground">{item.title}</h3>
                       <p className="text-muted-foreground">{item.desc}</p>
                     </div>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </section>
 
             {/* Section 3: How I Work */}
-            <section className="prose prose-lg prose-slate max-w-none text-muted-foreground">
+            <motion.section 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="prose prose-lg prose-slate max-w-none text-muted-foreground"
+            >
               <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">How I Work</h2>
               <p>
                 I don't believe in one-size-fits-all frameworks or rigid playbooks. Every business has unique constraints, and copy-pasting a strategy from a blog post rarely works.
@@ -64,11 +99,18 @@ export default function Work() {
               <p>
                 I work alongside your team, helping them see around corners, prioritizing leverage over busywork, and navigating the ambiguity of growth. Think of me not as an external advisor, but as a thinking partner who gets their hands dirty.
               </p>
-            </section>
+            </motion.section>
 
             {/* Section 4: What I Can Help With */}
             <section>
-              <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">What I Can Help With</h2>
+              <motion.h2 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className="text-2xl font-serif font-bold mb-6 text-foreground"
+              >
+                What I Can Help With
+              </motion.h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {[
                   "Product strategy & roadmap clarity",
@@ -77,16 +119,29 @@ export default function Work() {
                   "Scaling workflows and platforms",
                   "Aligning product, business, & execution"
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3 p-4 rounded-lg bg-muted/30 border border-border/50">
+                  <motion.div 
+                    key={i} 
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.1 }}
+                    whileHover={{ scale: 1.02 }}
+                    className="flex items-center gap-3 p-4 rounded-lg bg-muted/30 border border-border/50 hover:bg-muted/50 hover:border-primary/20 transition-all cursor-default"
+                  >
                     <CheckCircle2 className="h-5 w-5 text-primary" />
                     <span className="font-medium">{item}</span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </section>
 
             {/* Section 5: What I Don't Do */}
-            <section className="bg-muted/20 -mx-4 md:-mx-8 p-8 md:p-10 rounded-2xl border border-border/50">
+            <motion.section 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-muted/20 -mx-4 md:-mx-8 p-8 md:p-10 rounded-2xl border border-border/50"
+            >
               <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">What I Don't Do</h2>
               <div className="space-y-4">
                 {[
@@ -101,10 +156,15 @@ export default function Work() {
                   </div>
                 ))}
               </div>
-            </section>
+            </motion.section>
 
             {/* Section 6: Engagement Style */}
-            <section className="prose prose-lg prose-slate max-w-none text-muted-foreground">
+            <motion.section 
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              viewport={{ once: true }}
+              className="prose prose-lg prose-slate max-w-none text-muted-foreground"
+            >
               <h2 className="text-2xl font-serif font-bold mb-6 text-foreground">Engagement Style</h2>
               <p>
                 My engagement model is flexible because the problems I solve vary in shape and size. It might be a <strong>short-term advisory</strong> role to unblock a specific strategic challenge, <strong>hands-on execution</strong> to launch a critical initiative, or an <strong>ongoing product partnership</strong> to steer the ship through a growth phase.
@@ -112,10 +172,15 @@ export default function Work() {
               <p>
                 We define the problem first, then we structure the work around the solution.
               </p>
-            </section>
+            </motion.section>
 
             {/* Section 7: CTA */}
-            <section className="pt-8 border-t border-border">
+            <motion.section 
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="pt-8 border-t border-border"
+            >
               <h2 className="text-3xl font-serif font-bold mb-4 text-foreground">Ready to move the needle?</h2>
               <p className="text-xl text-muted-foreground mb-8">
                 If this sounds like the kind of help you’re looking for, we can start with a conversation. No sales pitch, just a chat to see if we're a fit.
@@ -125,7 +190,7 @@ export default function Work() {
                   Start a conversation <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-            </section>
+            </motion.section>
 
           </div>
         </article>
