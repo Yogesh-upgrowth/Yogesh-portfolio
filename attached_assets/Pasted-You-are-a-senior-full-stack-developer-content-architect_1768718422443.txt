@@ -1,0 +1,202 @@
+You are a senior full-stack developer + content architect.
+
+GOAL:
+Build a complete Blog section for Yogesh Yadav’s personal website.
+This blog should establish authority, drive SEO, and support consulting/freelance work.
+
+STYLE REFERENCES (STRUCTURE ONLY, DO NOT COPY CONTENT):
+- Blog listing UI inspiration: news.aakashg.com (card-based, clean, readable)
+- Article structure inspiration: neilpatel.com/blog/ai-marketing-funnel/
+
+IMPORTANT RULES:
+- Write everything in Yogesh Yadav’s voice
+- No copied content
+- No placeholders like “Lorem Ipsum”
+- Mobile-first design
+- SEO-friendly HTML
+- Clean, professional, high-signal tone
+
+--------------------------------------------------
+BLOG OVERALL STRUCTURE
+--------------------------------------------------
+
+Create a dedicated Blog section with:
+- Blog Home (Categories + articles)
+- Individual Article Pages
+- Shared header & footer
+
+--------------------------------------------------
+BLOG CATEGORIES (5 TOTAL)
+--------------------------------------------------
+
+Create exactly these 5 categories:
+
+1. AI Update
+2. Product Resources
+3. Market Research
+4. Product Knowledge
+5. Leadership
+
+Each category should have its own section on the Blog page.
+
+--------------------------------------------------
+BLOG LISTING PAGE (VERY IMPORTANT)
+--------------------------------------------------
+
+Layout style:
+- Similar to the attached screenshot
+- Horizontal card layout
+- Clean spacing
+- Strong typography
+- Minimal visual noise
+- Mobile-first responsive grid
+
+For EACH CATEGORY:
+- Show category title at the top
+- Under it, show 10 article cards
+- Include a “View All” link (non-functional placeholder is fine)
+
+--------------------------------------------------
+EACH ARTICLE CARD SHOULD SHOW:
+--------------------------------------------------
+- Article cover image (simple abstract/illustration style)
+- Article title
+- Short description (1–2 lines)
+- Publish date
+- Reading time (e.g., “7 min read”)
+
+--------------------------------------------------
+ARTICLE HEADINGS (CREATE ALL)
+--------------------------------------------------
+
+Create EXACTLY 10 articles under EACH category.
+
+### 1️⃣ AI Update (10 articles)
+- How AI Is Actually Changing Product Decision-Making
+- What PMs Get Wrong About AI Adoption
+- AI vs Automation: Where the Real Value Lies
+- Using AI for Product Discovery (Without Losing Judgment)
+- AI Metrics That Matter (And Ones That Don’t)
+- How Founders Should Think About AI Roadmaps
+- The Cost of Blind AI Implementation
+- AI as a PM Copilot, Not a Replacement
+- What AI Won’t Fix in Your Product
+- The Next 12 Months of AI for Product Teams
+
+### 2️⃣ Product Resources (10 articles)
+- Product Frameworks I Actually Use at Scale
+- A Practical Guide to Product Metrics
+- My Go-To Product Templates (And Why They Work)
+- How to Structure PRDs That Engineers Respect
+- Prioritisation Without Politics
+- Product Review Docs That Drive Decisions
+- How to Run Product Discovery Sessions
+- Writing Product Docs That Get Read
+- Roadmapping Without False Commitments
+- Tools Every Product Team Overuses
+
+### 3️⃣ Market Research (10 articles)
+- Market Research Beyond Surveys
+- How to Identify Real User Pain
+- Why Most Market Research Fails
+- Qualitative vs Quantitative: When to Use What
+- Research Signals That Predict Growth
+- Talking to Users at Scale
+- Making Sense of Noisy Feedback
+- Research Mistakes Early-Stage Teams Make
+- Turning Research into Roadmap Decisions
+- Market Research for Monetisation
+
+### 4️⃣ Product Knowledge (10 articles)
+- What Makes a Product Scalable
+- PMF Is Not the Finish Line
+- Metrics That Actually Reflect Product Health
+- Product Trade-offs No One Talks About
+- Designing for Retention First
+- Growth Without Breaking the Product
+- Monetisation Without Killing UX
+- When to Kill a Feature
+- Product Decisions at 1M+ Users
+- Building for Long-Term Leverage
+
+### 5️⃣ Leadership (10 articles)
+- Product Leadership Is Not Feature Ownership
+- How to Influence Without Authority
+- Leading Cross-Functional Teams at Scale
+- Making Hard Product Calls
+- Working With Founders as a PM
+- Saying No Without Burning Trust
+- Mentoring PMs Effectively
+- Handling Stakeholder Pressure
+- Decision-Making Under Uncertainty
+- Leadership Lessons from Scaling Products
+
+--------------------------------------------------
+INDIVIDUAL ARTICLE PAGE STRUCTURE
+--------------------------------------------------
+
+Each article page MUST follow this structure inspired by Neil Patel:
+
+1. Article Hero
+   - Large title
+   - Author: Yogesh Yadav
+   - Publish date
+   - Reading time
+
+2. Introduction
+   - Strong hook
+   - Clear problem statement
+   - What the reader will learn
+
+3. Table of Contents (auto-generated or static)
+
+4. Core Sections (H2/H3 based)
+   - Clear sub-sections
+   - Short paragraphs
+   - Bullet points where useful
+   - Practical examples
+   - Opinionated insights
+
+5. Visual Breaks
+   - Simple dividers or highlight blocks
+   - Callout boxes for key insights
+
+6. Summary / Key Takeaways
+   - 4–6 concise points
+
+7. CTA Section (Very important)
+   - Text:
+     “If you’re building or scaling a product and need hands-on help, let’s talk.”
+   - Button:
+     “Work with me”
+
+--------------------------------------------------
+DESIGN & TECH REQUIREMENTS
+--------------------------------------------------
+
+- Mobile-first CSS
+- Clean, readable font sizes
+- Max-width content for articles
+- Semantic HTML (section, article, header)
+- SEO-ready headings
+- Fast loading
+- Minimal JS
+
+--------------------------------------------------
+OUTPUT REQUIREMENTS
+--------------------------------------------------
+
+- Generate complete HTML + CSS
+- Blog listing page
+- Category sections
+- Individual article template
+- Sample article content for at least 1 article per category
+- Clean, commented code
+- Everything delivered in ONE GO
+
+DO NOT:
+- Copy content from reference sites
+- Use fake data
+- Over-design animations
+
+BUILD THIS AS A REAL, DEPLOYABLE BLOG SYSTEM FOR YOGESH YADAV.

@@ -13,6 +13,7 @@ const Blog = lazy(() => import("@/pages/blog"));
 const Linkedin = lazy(() => import("@/pages/linkedin"));
 const ContactPage = lazy(() => import("@/pages/contact"));
 const Work = lazy(() => import("@/pages/work"));
+const BlogPost = lazy(() => import("@/pages/blog-post"));
 
 // Loading fallback
 function PageLoader() {
@@ -28,6 +29,7 @@ function Router() {
     <Switch>
       <Route path="/" component={() => <Suspense fallback={<PageLoader />}><Home /></Suspense>} />
       <Route path="/blog" component={() => <Suspense fallback={<PageLoader />}><Blog /></Suspense>} />
+      <Route path="/blog/:slug" component={() => <Suspense fallback={<PageLoader />}><BlogPost /></Suspense>} />
       <Route path="/linkedin" component={() => <Suspense fallback={<PageLoader />}><Linkedin /></Suspense>} />
       <Route path="/contact" component={() => <Suspense fallback={<PageLoader />}><ContactPage /></Suspense>} />
       <Route path="/work" component={() => <Suspense fallback={<PageLoader />}><Work /></Suspense>} />

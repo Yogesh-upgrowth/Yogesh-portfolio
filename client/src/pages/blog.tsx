@@ -1,81 +1,162 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { Button } from "@/components/ui/button";
-import { ArrowLeft, Clock, Calendar } from "lucide-react";
 import { Link } from "wouter";
+import { ArrowRight, Clock, Calendar } from "lucide-react";
+import { BLOG_CATEGORIES, BLOG_POSTS, BlogPost } from "@/lib/blog-data";
+import { Button } from "@/components/ui/button";
+import { motion } from "framer-motion";
+import { useState } from "react";
+
+// Import generated images
+import aiImage from "@assets/generated_images/minimalist_abstract_line_art_representing_ai_and_data_flow.png";
+import resourcesImage from "@assets/generated_images/abstract_composition_of_geometric_shapes_representing_product_frameworks.png";
+import researchImage from "@assets/generated_images/stylized_magnifying_glass_and_data_points_for_market_research.png";
+import knowledgeImage from "@assets/generated_images/abstract_growth_chart_and_upward_trends_for_product_knowledge.png";
+import leadershipImage from "@assets/generated_images/abstract_concept_of_leadership_and_connection.png";
+
+const categoryImages: Record<string, string> = {
+  "AI Update": aiImage,
+  "Product Resources": resourcesImage,
+  "Market Research": researchImage,
+  "Product Knowledge": knowledgeImage,
+  "Leadership": leadershipImage
+};
 
 export default function Blog() {
+  const [activeCategory, setActiveCategory] = useState<string>("All");
+
+  const filteredCategories = activeCategory === "All" 
+    ? BLOG_CATEGORIES 
+    : [activeCategory];
+
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
       <Navbar />
       <main className="flex-grow pt-32 pb-24">
-        <article className="container px-4 md:px-6 mx-auto max-w-3xl">
-          <Link href="/">
-            <a className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-8 transition-colors">
-              <ArrowLeft className="mr-2 h-4 w-4" /> Back to Home
-            </a>
-          </Link>
-
-          <header className="mb-12">
-            <div className="flex items-center gap-4 text-sm text-muted-foreground mb-6">
-              <span className="flex items-center"><Calendar className="mr-2 h-4 w-4" /> March 2025</span>
-              <span className="flex items-center"><Clock className="mr-2 h-4 w-4" /> 5 min read</span>
-            </div>
-            <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight mb-6">
-              The 2025 Product Strategy Playbook: Moving Beyond "Big Vision"
+        
+        {/* Blog Hero */}
+        <section className="container px-4 md:px-6 mx-auto mb-20">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">
+              Product thinking, <br/>
+              <span className="text-primary">unfiltered.</span>
             </h1>
-            <p className="text-xl text-muted-foreground leading-relaxed">
-              Why 5-year roadmaps are dead, and how execution-focused product teams are winning by thinking in cycles, not straight lines.
+            <p className="text-xl text-muted-foreground leading-relaxed mb-8">
+              Practical insights on product strategy, growth, and leadership. No fluff, just lessons from the trenches.
             </p>
-          </header>
-
-          <div className="prose prose-lg prose-slate max-w-none">
-            <p>
-              In my 9+ years leading product at companies like CarInfo and various fintech startups, I’ve seen the same pattern repeat itself. Founders and PMs get locked into "Big S Strategy"—the 5-year vision, the massive pivot, the "Uber for X."
-            </p>
-            <p>
-              But in 2025, that approach is a trap. The market moves too fast. The real winners aren't the ones with the best 100-page slide deck; they are the ones who master "little s strategy"—the tactical, data-informed pivots that happen every quarter, every sprint.
-            </p>
-
-            <h3>The Death of the Static Roadmap</h3>
-            <p>
-              I used to build strict 12-month roadmaps. They made stakeholders feel safe. But by month 3, they were obsolete. Today, I advocate for a <strong>Strategy of Continuous Iteration</strong>.
-            </p>
-            <p>
-              Instead of asking "What are we building in Q4?", we should ask:
-              <br/>
-              <em>"What data signal did we get last week, and how does that change our focus for next week?"</em>
-            </p>
-
-            <h3>Data Over Gut, But Context Over Data</h3>
-            <p>
-              We drown in dashboards. At CarInfo, we scaled to 45M+ MAU not just by staring at Mixpanel, but by understanding the <em>context</em> behind the click. Data tells you <em>what</em> happened. User empathy tells you <em>why</em>.
-            </p>
-            <p>
-              The 2025 playbook isn't about AI tools or fancy frameworks. It's about shorter feedback loops. Build. Measure. Learn. But do it faster than your competition.
-            </p>
-
-            <h3>Execution is the Strategy</h3>
-            <p>
-              You can have the best pricing strategy on paper (I've designed plenty). But if your checkout flow is broken, or your value prop isn't clear on the landing page, you lose.
-            </p>
-            <p>
-              My approach with clients is simple: Stop over-planning. Start shipping. Test that pricing model. A/B test that funnel. The market will tell you if your strategy is right, not your slide deck.
-            </p>
-
-            <hr className="my-12 border-border" />
-
-            <div className="bg-muted/30 p-8 rounded-2xl border border-border/50 text-center">
-              <h3 className="text-2xl font-serif font-bold mb-4">Resonate with this approach?</h3>
-              <p className="text-muted-foreground mb-8 max-w-lg mx-auto">
-                I help founders and product teams implement this exact kind of execution-focused strategy. Let's turn your vision into revenue.
-              </p>
-              <Button size="lg" className="rounded-full px-8" asChild>
-                <Link href="/contact">Let's work together</Link>
-              </Button>
+            
+            {/* Category Filter */}
+            <div className="flex flex-wrap gap-2">
+              <button
+                onClick={() => setActiveCategory("All")}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                  activeCategory === "All" 
+                    ? "bg-primary text-primary-foreground" 
+                    : "bg-muted/50 text-muted-foreground hover:bg-muted"
+                }`}
+              >
+                All
+              </button>
+              {BLOG_CATEGORIES.map(cat => (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
+                    activeCategory === cat 
+                      ? "bg-primary text-primary-foreground" 
+                      : "bg-muted/50 text-muted-foreground hover:bg-muted"
+                  }`}
+                >
+                  {cat}
+                </button>
+              ))}
             </div>
           </div>
-        </article>
+        </section>
+
+        {/* Categories Sections */}
+        <div className="space-y-24 container px-4 md:px-6 mx-auto">
+          {filteredCategories.map((category) => {
+            const categoryPosts = BLOG_POSTS.filter(post => post.category === category);
+            
+            return (
+              <section key={category}>
+                <div className="flex items-center justify-between mb-8 border-b border-border/50 pb-4">
+                  <h2 className="text-2xl font-serif font-bold">{category}</h2>
+                  <Link href="#">
+                    <a className="text-sm font-medium text-muted-foreground hover:text-primary flex items-center gap-1 transition-colors">
+                      View all <ArrowRight className="h-3 w-3" />
+                    </a>
+                  </Link>
+                </div>
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  {categoryPosts.slice(0, 6).map((post, i) => ( // Show first 6 for clean layout
+                    <motion.div
+                      key={post.id}
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: i * 0.05 }}
+                    >
+                      <Link href={`/blog/${post.slug}`}>
+                        <a className="group block h-full flex flex-col">
+                          <div className="aspect-[16/9] overflow-hidden rounded-xl mb-4 bg-muted border border-border/50">
+                            <img 
+                              src={categoryImages[category] || aiImage} 
+                              alt={post.title}
+                              loading="lazy"
+                              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                            />
+                          </div>
+                          
+                          <div className="flex-1 flex flex-col">
+                            <div className="flex items-center gap-3 text-xs text-muted-foreground mb-3">
+                              <span className="flex items-center gap-1">
+                                <Calendar className="h-3 w-3" /> {post.date}
+                              </span>
+                              <span className="flex items-center gap-1">
+                                <Clock className="h-3 w-3" /> {post.readTime}
+                              </span>
+                            </div>
+                            
+                            <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors line-clamp-2">
+                              {post.title}
+                            </h3>
+                            
+                            <p className="text-muted-foreground text-sm line-clamp-3 mb-4 flex-1">
+                              {post.description}
+                            </p>
+                            
+                            <span className="text-primary text-sm font-medium flex items-center gap-1 group-hover:gap-2 transition-all mt-auto">
+                              Read Article <ArrowRight className="h-4 w-4" />
+                            </span>
+                          </div>
+                        </a>
+                      </Link>
+                    </motion.div>
+                  ))}
+                </div>
+              </section>
+            );
+          })}
+        </div>
+
+        {/* Global CTA */}
+        <section className="container px-4 md:px-6 mx-auto mt-32">
+          <div className="bg-primary/5 rounded-3xl p-12 text-center border border-primary/10">
+            <h2 className="text-3xl font-serif font-bold mb-4">Need help implementing these strategies?</h2>
+            <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
+              I work with founders and product teams to turn these insights into execution.
+            </p>
+            <Button size="lg" className="h-14 px-8 text-lg rounded-full" asChild>
+              <Link href="/contact">
+                Work with me <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
+          </div>
+        </section>
+
       </main>
       <Footer />
     </div>
