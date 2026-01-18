@@ -33,22 +33,22 @@ export default function Navbar() {
       )}
     >
       <div className="container px-4 md:px-6 mx-auto flex items-center justify-between">
-        <Link href="/">
-          <a className="text-2xl font-serif font-bold tracking-tight">
-            Yogesh Yadav<span className="text-primary">.</span>
-          </a>
+        <Link href="/" className="text-2xl font-serif font-bold tracking-tight">
+          Yogesh Yadav<span className="text-primary">.</span>
         </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <Link key={link.name} href={link.href}>
-              <a className={cn(
+            <Link 
+              key={link.name} 
+              href={link.href}
+              className={cn(
                 "text-sm font-medium transition-colors hover:text-primary",
                 location === link.href ? "text-primary font-bold" : "text-foreground/80"
-              )}>
-                {link.name}
-              </a>
+              )}
+            >
+              {link.name}
             </Link>
           ))}
           <Button asChild>
@@ -60,6 +60,7 @@ export default function Navbar() {
         <button
           className="md:hidden p-2"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          aria-label="Toggle menu"
         >
           {mobileMenuOpen ? <X /> : <Menu />}
         </button>
@@ -70,13 +71,13 @@ export default function Navbar() {
         <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border p-4 shadow-lg animate-in slide-in-from-top-5">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
-              <Link key={link.name} href={link.href}>
-                <a
-                  className="text-lg font-medium p-2 hover:bg-muted rounded-md"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
+              <Link 
+                key={link.name} 
+                href={link.href}
+                className="text-lg font-medium p-2 hover:bg-muted rounded-md"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                {link.name}
               </Link>
             ))}
             <Button className="w-full" asChild>

@@ -69,17 +69,14 @@ export default function Blog() {
               <section key={category}>
                 <div className="flex items-center justify-between mb-8 border-b border-border/50 pb-4">
                   <h2 className="text-2xl font-serif font-bold">{category}</h2>
-                  <Link href="#">
-                    <a className="text-sm font-medium text-muted-foreground hover:text-primary flex items-center gap-1 transition-colors">
-                      View all <ArrowRight className="h-3 w-3" />
-                    </a>
-                  </Link>
+                  <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary flex items-center gap-1 transition-colors">
+                  View all <ArrowRight className="h-3 w-3" />
+                </Link>
                 </div>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                   {categoryPosts.slice(0, 6).map((post) => (
-                    <Link key={post.id} href={`/blog/${post.slug}`}>
-                      <a className="group block h-full flex flex-col" data-testid={`blog-card-${post.id}`}>
+                    <Link key={post.id} href={`/blog/${post.slug}`} className="group block h-full flex flex-col" data-testid={`blog-card-${post.id}`}>
                         <div className="aspect-[16/9] overflow-hidden rounded-xl mb-4 bg-muted border border-border/50">
                           <img 
                             src={post.image} 
@@ -112,7 +109,6 @@ export default function Blog() {
                             Read Article <ArrowRight className="h-4 w-4" />
                           </span>
                         </div>
-                      </a>
                     </Link>
                   ))}
                 </div>

@@ -1,5 +1,3 @@
-import { motion } from "framer-motion";
-
 const impacts = [
   {
     company: "CarInfo",
@@ -43,12 +41,8 @@ export default function Impact() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {impacts.map((item, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative p-6 rounded-2xl bg-white/5 border border-white/10 hover:bg-white/10 transition-colors"
             >
               <div className="text-sm font-medium text-white/50 mb-4 tracking-wider uppercase">{item.company}</div>
@@ -57,7 +51,7 @@ export default function Impact() {
               <p className="text-white/60 text-sm leading-relaxed">
                 {item.desc}
               </p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

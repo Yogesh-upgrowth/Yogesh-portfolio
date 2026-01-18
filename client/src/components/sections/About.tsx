@@ -1,15 +1,8 @@
-import { motion } from "framer-motion";
-
 export default function About() {
   return (
     <section id="about" className="py-24 bg-background">
       <div className="container px-4 md:px-6 mx-auto max-w-4xl">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="animate-fade-in-up">
           <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-6">About Me</h2>
           <h3 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-8 leading-tight">
             I don't just ship features. <br className="hidden md:block"/>
@@ -27,7 +20,7 @@ export default function About() {
               Whether it's optimizing a funnel to reduce CAC by 30% or building a monetization strategy from scratch to process thousands of daily transactions, I take end-to-end ownership. I'm not just a consultant; I'm a strategic partner who cares as much about your P&L as you do.
             </p>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

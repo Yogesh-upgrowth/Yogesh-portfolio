@@ -1,5 +1,4 @@
 import { Quote } from "lucide-react";
-import { motion } from "framer-motion";
 import testimonial1 from "@assets/stock_images/professional_busines_c657916d.jpg";
 import testimonial2 from "@assets/stock_images/professional_busines_d09c7189.jpg";
 import testimonial3 from "@assets/stock_images/professional_startup_f5ba071b.jpg";
@@ -36,12 +35,8 @@ export default function Testimonials() {
         
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((item, index) => (
-            <motion.div
+            <div
               key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
               className="p-8 bg-background rounded-2xl border border-border/60 shadow-sm hover:shadow-md transition-shadow relative flex flex-col"
             >
               <Quote className="h-8 w-8 text-primary/20 absolute top-6 left-6" />
@@ -58,6 +53,7 @@ export default function Testimonials() {
                     src={item.image} 
                     alt={item.name} 
                     loading="lazy"
+                    decoding="async"
                     className="h-full w-full object-cover"
                   />
                 </div>
@@ -66,7 +62,7 @@ export default function Testimonials() {
                   <div className="text-xs font-medium text-primary uppercase tracking-wide">{item.role}</div>
                 </div>
               </div>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

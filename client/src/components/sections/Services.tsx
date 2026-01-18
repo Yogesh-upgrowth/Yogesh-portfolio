@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Compass, TrendingUp, DollarSign, Layers } from "lucide-react";
-import { motion } from "framer-motion";
 
 const services = [
   {
@@ -46,35 +45,27 @@ export default function Services() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-            >
-              <Card className="h-full border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg bg-card/50 backdrop-blur-sm group">
-                <CardHeader>
-                  <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-                    <service.icon className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
-                  </div>
-                  <CardTitle className="text-2xl font-serif mb-2">{service.title}</CardTitle>
-                  <CardDescription className="text-base text-foreground/80 font-medium">
-                    {service.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4 text-muted-foreground">
-                  <div>
-                    <strong className="block text-sm text-foreground mb-1">Approach:</strong>
-                    {service.approach}
-                  </div>
-                  <div>
-                    <strong className="block text-sm text-foreground mb-1">Outcome:</strong>
-                    <span className="text-primary/90 font-medium">{service.outcome}</span>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
+            <Card key={index} className="h-full border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-lg bg-card/50 backdrop-blur-sm group">
+              <CardHeader>
+                <div className="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
+                  <service.icon className="h-6 w-6 text-primary group-hover:text-primary-foreground" />
+                </div>
+                <CardTitle className="text-2xl font-serif mb-2">{service.title}</CardTitle>
+                <CardDescription className="text-base text-foreground/80 font-medium">
+                  {service.description}
+                </CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4 text-muted-foreground">
+                <div>
+                  <strong className="block text-sm text-foreground mb-1">Approach:</strong>
+                  {service.approach}
+                </div>
+                <div>
+                  <strong className="block text-sm text-foreground mb-1">Outcome:</strong>
+                  <span className="text-primary/90 font-medium">{service.outcome}</span>
+                </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>
