@@ -16,7 +16,6 @@ export default function Hero() {
           loading="eager"
         />
       </div>
-
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           
@@ -42,7 +41,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="flex-1 space-y-5 text-center md:text-left">
+          <div className="flex-1 space-y-5 text-center md:text-left mt-[20px] mb-[20px]">
             <div className="animate-fade-in-up">
               <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary mb-3">
                 <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
