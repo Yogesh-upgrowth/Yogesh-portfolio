@@ -47,7 +47,7 @@ export default function Hero() {
                 Available for new projects
               </div>
               <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight text-foreground leading-[1.1]">
-                I help consumer & <span className="text-primary">B2B products</span> grow revenue, retention, and scale.
+                I help <span className="text-primary">consumer</span> & <span className="text-primary">B2B products</span> grow revenue, retention, and scale.
               </h1>
               <p className="mt-6 text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 leading-relaxed">
                 <strong className="text-foreground">Yogesh Yadav</strong> — Product Leader with 9+ years across Fintech, Mobility, SaaS & Marketplaces.
