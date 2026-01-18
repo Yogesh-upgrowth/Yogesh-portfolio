@@ -7,7 +7,7 @@ import { Link } from "wouter";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background md:pt-28 md:pb-16 pt-[80px] pb-[80px]">
+    <section className="relative overflow-hidden bg-background md:pt-28 md:pb-16 pt-[50px] pb-[50px]">
       {/* Abstract Background Elements */}
       <div className="absolute top-0 right-0 -z-10 w-full h-full opacity-10 md:opacity-20 pointer-events-none">
         <img 
