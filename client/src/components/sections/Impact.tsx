@@ -3,27 +3,27 @@ import { motion } from "framer-motion";
 const impacts = [
   {
     company: "CarInfo",
-    metric: "650K → 1.2M+",
-    label: "Daily Active Users",
-    desc: "Scaled platform usage through aggressive product optimization and organic growth loops."
+    metric: "45M+ Users",
+    label: "Monthly Active Users",
+    desc: "Scaled platform usage to massive heights through aggressive product optimization and organic growth loops."
   },
   {
-    company: "Insurance Tech",
-    metric: "680x Growth",
-    label: "Daily Transactions",
-    desc: "Scaled monetization from 10/day to 6800+/day by redesigning the purchase flow."
+    company: "Insurance Funnel",
+    metric: "1200% Growth",
+    label: "In 1 Year",
+    desc: "Scaled monetization by redesigning the entire purchase flow and optimizing conversion levers."
+  },
+  {
+    company: "CRM Platform",
+    metric: "180K+ Txns",
+    label: "Monthly Transactions",
+    desc: "Built a robust CRM handling massive challan transaction volume with high reliability."
   },
   {
     company: "User Acquisition",
     metric: "-30%",
     label: "CAC Reduction",
     desc: "Optimized marketing funnels and landing pages to drastically lower acquisition costs."
-  },
-  {
-    company: "UpGrowth",
-    metric: "Portfolio Lead",
-    label: "Leadership",
-    desc: "Led strategy and execution for multiple portfolio companies, driving collective growth."
   }
 ];
 

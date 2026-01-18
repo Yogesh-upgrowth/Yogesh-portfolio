@@ -1,0 +1,198 @@
+You are a senior full-stack developer + UX marketer.
+
+GOAL:
+Build a high-conversion personal freelancing website for Yogesh Yadav to attract product, growth, and monetisation consulting & freelance work.
+
+STYLE INSPIRATION (DO NOT COPY):
+- neilpatel.com (marketer-style positioning & clarity)
+- aakashg.com (product credibility & structured thinking)
+- news.aakashg.com (clean, readable blog layout)
+
+VERY IMPORTANT BLOG RULE:
+- For blog inspiration, refer ONLY to the LATEST blog post on https://www.news.aakashg.com/
+- Use it ONLY as a reference for:
+  • Topic direction
+  • Structure
+  • Depth
+- Rewrite the content completely in Yogesh’s own voice and experience
+- Do NOT copy text
+- Do NOT pull multiple blogs
+- Do NOT mirror wording
+
+CORE CONSTRAINTS:
+1. Mobile-first design (design for mobile first).
+2. Rewrite all content in Yogesh’s own voice using real experience.
+3. No lorem ipsum, no fake testimonials, no copied content.
+4. SEO-friendly, fast-loading, minimal JS.
+5. Clean, confident, founder-facing tone.
+
+TECH STACK:
+- HTML
+- CSS (mobile-first using Flexbox/Grid)
+- Minimal JavaScript only where required
+- No heavy frameworks
+
+--------------------------------------------------
+GLOBAL LAYOUT (ALL PAGES)
+--------------------------------------------------
+- Sticky header with navigation:
+  Home | Work With Me | Blog | LinkedIn | Contact
+- Shared footer with:
+  Email, LinkedIn link, copyright
+
+--------------------------------------------------
+PAGE 1: HOME (PRIMARY FREELANCE LANDING PAGE)
+--------------------------------------------------
+Purpose: Conversion + credibility
+
+Sections:
+
+1. HERO
+   Headline:
+   “I help consumer & B2B products grow revenue, retention, and scale.”
+
+   Subheadline:
+   Product leader with 9+ years across Fintech, Mobility, SaaS & Marketplaces.
+
+   CTAs:
+   - Primary: “Work with me”
+   - Secondary: “Read my thinking”
+
+2. AUTHORITY STRIP
+   - 9+ years of product leadership
+   - Scaled products to tens of millions of users
+   - Built high-scale growth & monetisation engines
+   - Led large cross-functional teams
+
+3. ABOUT ME
+   First-person, confident narrative focusing on:
+   - End-to-end product ownership
+   - Turning growth into revenue
+   - Data-driven decision-making
+   - Founder & leadership alignment
+   - Scaling platforms, not shipping features
+
+4. SERVICES
+   - Product Strategy & Roadmapping
+   - Growth & Funnel Optimisation
+   - Monetisation & Pricing Strategy
+   - Platform Scaling & Operational Enablement
+
+5. PROOF / IMPACT
+   - CarInfo: Scaled MAU to 45M+ users
+   - Insurance funnel: 1200% growth in 1 year
+   - Built CRM handling 180K+ challan transactions/month
+   - Reduced CAC by ~25–30%
+   - Unlocked multiple revenue surfaces
+   - Portfolio-level leadership at UpGrowth
+
+6. WHO I WORK WITH
+   - Founders & startup leadership
+   - Growth-stage consumer apps
+   - B2B SaaS & marketplaces
+   - Fintech & mobility platforms
+
+7. HOW I WORK
+   - Understand business goals & metrics
+   - Diagnose leverage points
+   - Design product, pricing & GTM solutions
+   - Execute, measure, iterate
+
+8. CTA
+   “Let’s build products that actually move the needle.”
+   Button: “Start a conversation”
+
+--------------------------------------------------
+PAGE 2: BLOG
+(URL: /blog)
+--------------------------------------------------
+Purpose: Authority + SEO + inbound
+
+BLOG IMPLEMENTATION RULES:
+- Create ONE featured blog post on launch
+- Base it ONLY on the LATEST post from https://www.news.aakashg.com/
+- Rewrite it completely using:
+  • Yogesh’s experience
+  • His scale, monetisation, and growth lens
+- Tone: Practical, opinionated, execution-first
+
+BLOG LAYOUT:
+- Clean, distraction-free layout
+- Large readable typography
+- Max-width content
+- Clear H1/H2 hierarchy
+- Reading time indicator
+- CTA at the end:
+  “If this thinking resonates, let’s work together”
+
+--------------------------------------------------
+PAGE 3: LINKEDIN
+(URL: /linkedin)
+--------------------------------------------------
+Purpose: Trust & social proof
+
+Content:
+- Short intro:
+  “I share practical product, growth, and monetisation insights on LinkedIn.”
+
+- Prominent CTA button linking to:
+  https://www.linkedin.com/in/yogesh-productmanager/
+
+- Highlight themes:
+  - Real product breakdowns
+  - Growth & monetisation lessons
+  - Leadership & execution insights
+
+CTA:
+“Follow me on LinkedIn”
+
+--------------------------------------------------
+PAGE 4: CONTACT
+(URL: /contact)
+--------------------------------------------------
+- Simple contact form:
+  Name
+  Email
+  Message
+
+- Email displayed clearly:
+  yogesh.productmanager@gmail.com
+
+- Copy tone:
+  “Tell me what you’re building. Let’s see if I can help.”
+
+--------------------------------------------------
+DESIGN SYSTEM
+--------------------------------------------------
+- Neutral palette (white, dark text, subtle accent)
+- Strong typography hierarchy
+- Clear CTAs
+- Plenty of whitespace
+- Smooth scrolling
+- Mobile-first spacing
+
+--------------------------------------------------
+SEO & PERFORMANCE
+--------------------------------------------------
+- Semantic HTML5
+- Clean URLs
+- Meta titles & descriptions
+- Fast load time
+- Minimal JavaScript
+
+--------------------------------------------------
+OUTPUT REQUIREMENTS
+--------------------------------------------------
+- Complete HTML + CSS for all pages
+- Shared header/footer
+- Mobile-first responsive design
+- Well-commented code
+- Delivered in ONE GO
+
+DO NOT:
+- Copy reference sites
+- Copy blog text verbatim
+- Add fake testimonials
+- Over-engineer animations
+
+BUILD THIS AS A REAL, DEPLOYABLE WEBSITE.
