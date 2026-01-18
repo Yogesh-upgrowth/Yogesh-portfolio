@@ -69,52 +69,18 @@ export default function BlogPost() {
 
           {/* Article Content */}
           <div className="prose prose-lg prose-slate max-w-none prose-headings:font-serif prose-headings:font-bold prose-a:text-primary prose-img:rounded-xl">
-            <p className="lead text-xl text-foreground font-medium mb-8">
-              {post.description}
-            </p>
-
-            <p>
-              In my 9+ years leading product at companies like CarInfo and various fintech startups, I’ve seen the same pattern repeat itself. Founders and PMs get locked into strategies that look good on paper but fail in execution.
-            </p>
-
-            <h2>The Core Problem</h2>
-            <p>
-              Most product teams are optimized for output, not outcomes. We measure velocity, tickets shipped, and features launched. But we rarely measure the actual impact on the user's life or the business's bottom line until it's too late.
-            </p>
-
-            <blockquote>
-              "Real product strategy is about saying no to good ideas so you can focus on the great ones."
-            </blockquote>
-
-            <h3>The Shift We Need</h3>
-            <p>
-              To fix this, we need to move from a "build-first" mentality to a "learn-first" mentality. This doesn't mean analysis paralysis. It means:
-            </p>
-            <ul>
-              <li>Validating assumptions before writing code.</li>
-              <li>Talking to users weekly, not just quarterly.</li>
-              <li>Defining success metrics before the kickoff meeting.</li>
-            </ul>
-
-            <h3>Practical Steps for {post.category}</h3>
-            <p>
-              When tackling challenges in <strong>{post.category}</strong>, start with the fundamentals. Don't overcomplicate the process with heavy frameworks. Instead, focus on the feedback loop.
-            </p>
-            <p>
-              For example, if you're struggling with decision making, try the "One-Way vs. Two-Way Door" mental model. If a decision is reversible (Two-Way Door), make it fast. If it's irreversible (One-Way Door), slow down and gather more data.
-            </p>
-
-            <div className="bg-muted/30 p-6 rounded-xl border border-border/50 my-8">
-              <h4 className="text-lg font-bold mb-2 mt-0">Key Takeaway</h4>
-              <p className="mb-0 text-muted-foreground">
-                Stop treating your roadmap as a promise. Treat it as a hypothesis log. Your job is to validate the highest-risk hypotheses first.
-              </p>
-            </div>
-
-            <h2>Conclusion</h2>
-            <p>
-              Building great products is messy. There is no perfect playbook. But by focusing on rapid learning cycles and maintaining deep empathy for your users, you can navigate the chaos and build something that truly scales.
-            </p>
+            {post.content ? (
+              <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            ) : (
+              <>
+                <p className="lead text-xl text-foreground font-medium mb-8">
+                  {post.description}
+                </p>
+                <div className="p-8 bg-muted/30 rounded-xl border border-border/50 text-center">
+                  <p className="text-muted-foreground">Full article content coming soon.</p>
+                </div>
+              </>
+            )}
           </div>
 
           {/* Social Share */}

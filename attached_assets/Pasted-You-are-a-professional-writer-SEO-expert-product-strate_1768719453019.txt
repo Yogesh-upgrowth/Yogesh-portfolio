@@ -1,0 +1,104 @@
+You are a professional writer, SEO expert, product strategist, and front-end developer.  
+Your task is to generate a **complete, high-engagement blog system** for Yogesh Yadav’s website.
+
+GOALS:
+1. Generate **50 unique blog articles** (10 in each of 5 categories).
+2. Each article must be **min 2000 words**.
+3. Each article must be **engaging, well-structured**, and written in **Yogesh Yadav’s professional voice** (thoughtful, practical, experience-driven).
+4. Each article must use a **unique relevant featured image** (not the same image).
+5. The output must include **full HTML structure + content** for each article.
+6. The UI/formatting should follow the **Neil Patel blog style** (use clear sections, hooks, TOC, subheads, callouts, practical examples, lists, and strong CTAs).
+7. Add SEO elements: meta title, meta description, appropriate tags, heading hierarchy (H1, H2, H3).
+
+CONTENT RULES:
+- Do NOT reuse or repeat images or content.
+- Do NOT use placeholders like “Image here”.
+- Each article must feel like a **signature piece** written to educate, engage, and persuade readers, with insights, examples, and actionable takeaways.
+- Do not make up data without explanation — use logical reasoning, hypothetical or general context relevant to product/growth.
+- Write each article as if the reader wants *practical value, not fluff*.
+
+CATEGORIES (create exactly these 5):
+
+1. AI Update  
+2. Product Resources  
+3. Market Research  
+4. Product Knowledge  
+5. Leadership
+
+Each category must have **10 differentiated article topics** (define titles, descriptions, images, tags).
+
+For each article:
+
+SECTION 1 — META & OPENING
+- Meta title (unique and SEO-focused)
+- Meta description (optimised for clicks)
+- Open with a strong **hook** (story, question, surprising insight)
+- State what the article covers
+- Reading time estimate
+
+SECTION 2 — TABLE OF CONTENTS (autoinserted with anchor links)
+
+SECTION 3 — ARTICLE BODY
+Use this structure:
+
+**Intro**
+- Engaging narrative
+- Human example, scenario, or problem
+
+**Core Sections**
+Write logically flowing sections with:
+- Subheadings (H2, H3)
+- Short paragraphs
+- Bullet lists
+- Numbered lists
+- Examples
+- Callout boxes (e.g., “Pro Tip”, “Common Mistakes”, “Data Insight”)
+
+**Data & Authority**
+- Include sourced logic, broad industry context (but do not copy from other sites)
+
+**Visual Breaks**
+- Suggest places where graphs, icons, or annotated visuals would go (named appropriately)
+
+**Conclusion / Key Takeaways**
+- 5–7 summarised points
+- Practical checklist if relevant
+
+**Strong CTA**
+End with an engaging CTA oriented toward product leaders and founders:
+“If this resonated, here’s how to work with me… / Contact Yogesh Yadav.”
+
+IMAGES
+- Generate a clear description for each featured image (1500x900) relevant to the topic.
+- Provide ALT text describing the image.
+
+UI REQUIREMENTS (HTML)
+- Responsive HTML
+- Semantic tags (article, section, header, footer)
+- Human-readable, not minified
+- Comments where necessary
+- Follow Neil Patel’s blog styling cues (clear spacing, readable fonts, visual breaks)
+- Include at least one internal link to other related blog posts where natural
+- Include tags (SEO & UX)
+
+OUTPUT STRUCTURE:
+- Blog home page with categories and article cards
+- Individual article pages (full content)
+- Each article page must contain:
+   • Unique featured image
+   • Meta tags
+   • Table of Contents
+   • Well-structured body
+   • Conclusion + key takeaways
+   • Engaging CTA
+
+DO NOT:
+- Use the **same image** for every article
+- Produce shallow or repetitive content
+- Generate generic filler text
+- Multiply exact sentences or headlines
+- Use placeholders like “tbd”
+
+Write everything in a **single output**, well-commented, clean, and ready to deploy as HTML + CSS.
+
+BEGIN.
