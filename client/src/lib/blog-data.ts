@@ -3,6 +3,7 @@ import resourceHero from "@assets/generated_images/product_framework_blueprint_s
 import researchHero from "@assets/generated_images/market_research_data_analysis_abstract.png";
 import knowledgeHero from "@assets/generated_images/scalable_product_architecture_abstract.png";
 import leadershipHero from "@assets/generated_images/leadership_steering_wheel_compass.png";
+import productFrameworkDiagram from "@assets/image_1768738376698.png";
 
 import teamStock from "@assets/stock_images/product_management_t_88b107ee.jpg";
 import dataStock from "@assets/stock_images/data_analytics_dashb_3073aad5.jpg";
@@ -48,7 +49,7 @@ export const BLOG_POSTS: BlogPost[] = [
     category: "Founder Notes", 
     date: "2025-01-15", 
     readTime: "15 min read", 
-    image: "/attached_assets/image_1768738376698.png",
+    image: productFrameworkDiagram,
     author: "Yogesh Yadav",
     isFeatured: true,
     isMostPopular: true
