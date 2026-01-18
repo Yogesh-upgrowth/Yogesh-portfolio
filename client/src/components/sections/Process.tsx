@@ -14,8 +14,11 @@ export default function Process() {
           <h3 className="text-3xl font-serif font-bold">Simple, effective process</h3>
         </div>
 
-        <div className="relative max-w-3xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+        <div className="relative">
+          {/* Connector Line (Desktop) */}
+          <div className="hidden md:block absolute top-12 left-0 right-0 h-0.5 bg-border/60 -z-10" />
+          
+          <div className="grid md:grid-cols-4 gap-8">
             {steps.map((step, i) => (
               <div key={i} className="relative pt-4 md:pt-0 group">
                 <div className="flex flex-col items-center text-center">
