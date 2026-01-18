@@ -2,6 +2,7 @@ import { useRoute, Link } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { getPostBySlug } from "@/lib/blog-data";
+import { getPostContent } from "@/lib/blog-content";
 import { ArrowLeft, Clock, Calendar, Share2, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NotFound from "@/pages/not-found";
@@ -28,6 +29,7 @@ export default function BlogPost() {
   if (!match) return <NotFound />;
 
   const post = getPostBySlug(params.slug);
+  const content = post ? getPostContent(post.slug) : undefined;
 
   if (!post) return <NotFound />;
 
@@ -69,8 +71,8 @@ export default function BlogPost() {
 
           {/* Article Content */}
           <div className="prose prose-lg prose-slate max-w-none prose-headings:font-serif prose-headings:font-bold prose-a:text-primary prose-img:rounded-xl">
-            {post.content ? (
-              <div dangerouslySetInnerHTML={{ __html: post.content }} />
+            {content ? (
+              <div dangerouslySetInnerHTML={{ __html: content }} />
             ) : (
               <>
                 <p className="lead text-xl text-foreground font-medium mb-8">
