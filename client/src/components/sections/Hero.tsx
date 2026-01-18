@@ -7,7 +7,7 @@ import { Link } from "wouter";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background pt-24 pb-12 md:pt-28 md:pb-16">
+    <section className="relative overflow-hidden bg-background md:pt-28 md:pb-16 pt-[80px] pb-[80px]">
       {/* Abstract Background Elements */}
       <div className="absolute top-0 right-0 -z-10 w-full h-full opacity-10 md:opacity-20 pointer-events-none">
         <img 
@@ -16,7 +16,6 @@ export default function Hero() {
           className="w-full h-full object-cover object-right-top"
         />
       </div>
-
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           
