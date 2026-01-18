@@ -1,26 +1,26 @@
 import { Quote } from "lucide-react";
-import testimonial1 from "@assets/stock_images/professional_busines_c657916d.jpg";
-import testimonial2 from "@assets/stock_images/professional_busines_d09c7189.jpg";
-import testimonial3 from "@assets/stock_images/professional_startup_f5ba071b.jpg";
 
 const testimonials = [
   {
     name: "Rahul M.",
     role: "CEO, FinTechStart",
-    image: testimonial1,
-    quote: "Yogesh completely transformed our monetization strategy. We went from struggling to convert free users to seeing a 300% increase in paid subscriptions within 3 months. His insight into user psychology is unmatched."
+    initials: "RM",
+    color: "bg-blue-500",
+    quote: "Yogesh completely transformed our monetization strategy. We went from struggling to convert free users to seeing a 300% increase in paid subscriptions within 3 months."
   },
   {
     name: "Sarah K.",
     role: "VP of Growth, EcomScale",
-    image: testimonial2,
-    quote: "Working with Yogesh was the best investment we made this year. He didn't just give us a deck of slides; he rolled up his sleeves and helped us optimize our entire funnel. Our CAC dropped by 40%."
+    initials: "SK",
+    color: "bg-emerald-500",
+    quote: "Working with Yogesh was the best investment we made this year. He rolled up his sleeves and helped us optimize our entire funnel. Our CAC dropped by 40%."
   },
   {
     name: "Amit V.",
     role: "Founder, SaaSFlow",
-    image: testimonial3,
-    quote: "I've worked with many product consultants, but Yogesh is different. He brings a rare combination of data-driven rigor and creative problem solving. He helped us unlock a new revenue stream that now accounts for 20% of our MRR."
+    initials: "AV",
+    color: "bg-purple-500",
+    quote: "Yogesh brings a rare combination of data-driven rigor and creative problem solving. He helped us unlock a new revenue stream that now accounts for 20% of our MRR."
   }
 ];
 
@@ -48,14 +48,8 @@ export default function Testimonials() {
               </div>
 
               <div className="mt-8 flex items-center gap-4 pt-6 border-t border-border/40">
-                <div className="h-12 w-12 rounded-full overflow-hidden border-2 border-primary/10 shrink-0">
-                  <img 
-                    src={item.image} 
-                    alt={item.name} 
-                    loading="lazy"
-                    decoding="async"
-                    className="h-full w-full object-cover"
-                  />
+                <div className={`h-12 w-12 rounded-full ${item.color} flex items-center justify-center text-white font-bold text-sm shrink-0`}>
+                  {item.initials}
                 </div>
                 <div className="text-left">
                   <div className="font-bold font-serif text-foreground">{item.name}</div>
