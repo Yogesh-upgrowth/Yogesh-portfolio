@@ -7,7 +7,7 @@ import { Link } from "wouter";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-background pt-28 pb-16 md:pt-40 md:pb-24">
+    <section className="relative overflow-hidden bg-background pt-24 pb-12 md:pt-28 md:pb-16">
       {/* Abstract Background Elements */}
       <div className="absolute top-0 right-0 -z-10 w-full h-full opacity-10 md:opacity-20 pointer-events-none">
         <img 
@@ -18,38 +18,38 @@ export default function Hero() {
       </div>
 
       <div className="container px-4 md:px-6 mx-auto">
-        <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           
           <motion.div 
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="w-48 h-48 md:w-64 md:h-64 shrink-0 rounded-full overflow-hidden border-4 border-white shadow-2xl relative z-10"
+            className="w-40 h-40 md:w-56 md:h-56 shrink-0 rounded-full overflow-hidden border-4 border-white shadow-2xl relative z-10"
           >
             <img 
               src={profileImage} 
               alt="Yogesh Yadav" 
-              width="256"
-              height="256"
+              width="224"
+              height="224"
               className="w-full h-full object-cover"
               fetchPriority="high"
             />
           </motion.div>
 
-          <div className="flex-1 space-y-8 text-center md:text-left">
+          <div className="flex-1 space-y-5 text-center md:text-left">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary mb-6">
+              <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary mb-3">
                 <span className="flex h-2 w-2 rounded-full bg-primary mr-2"></span>
                 Available for new projects
               </div>
-              <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight text-foreground leading-[1.1]">
+              <h1 className="text-3xl md:text-5xl font-serif font-bold tracking-tight text-foreground leading-[1.1]">
                 I help <span className="text-primary">consumer</span> & <span className="text-primary">B2B products</span> grow revenue, retention, and scale.
               </h1>
-              <p className="mt-6 text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 leading-relaxed">
+              <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 leading-relaxed">
                 <strong className="text-foreground">Yogesh Yadav</strong> — Product Leader with 9+ years across Fintech, Mobility, SaaS & Marketplaces.
               </p>
             </motion.div>
@@ -58,12 +58,12 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+              className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start"
             >
-              <Button size="lg" className="text-lg px-8 py-6 rounded-full" asChild>
+              <Button size="lg" className="text-base px-6 py-5 rounded-full" asChild>
                 <Link href="/contact">Work with me <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
-              <Button variant="outline" size="lg" className="text-lg px-8 py-6 rounded-full" asChild>
+              <Button variant="outline" size="lg" className="text-base px-6 py-5 rounded-full" asChild>
                 <Link href="/blog">Read my thinking</Link>
               </Button>
             </motion.div>
@@ -72,7 +72,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="pt-4 flex items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground"
+              className="pt-2 flex items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground"
             >
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
