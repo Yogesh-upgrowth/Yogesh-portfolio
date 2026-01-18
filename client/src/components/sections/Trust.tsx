@@ -1,7 +1,7 @@
 export default function Trust() {
   const metrics = [
     { label: "Years Experience", value: "9+" },
-    { label: "Daily Transactions", value: "1000s" },
+    { label: "Daily Transactions", value: "10s" },
     { label: "DAU Scaled To", value: "1.2M+" },
     { label: "Team Size Led", value: "50+" },
   ];
