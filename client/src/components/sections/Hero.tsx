@@ -29,7 +29,10 @@ export default function Hero() {
             <img 
               src={profileImage} 
               alt="Yogesh Yadav" 
+              width="256"
+              height="256"
               className="w-full h-full object-cover"
+              fetchPriority="high"
             />
           </motion.div>
 
