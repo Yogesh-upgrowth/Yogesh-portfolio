@@ -60,7 +60,7 @@ export default function BlogPost() {
 
             <div className="aspect-[2/1] w-full rounded-2xl overflow-hidden mb-12 border border-border/50 bg-muted">
               <img 
-                src={categoryImages[post.category]} 
+                src={post.image} 
                 alt={post.title} 
                 className="w-full h-full object-cover"
               />

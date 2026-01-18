@@ -103,7 +103,7 @@ export default function Blog() {
                         <a className="group block h-full flex flex-col">
                           <div className="aspect-[16/9] overflow-hidden rounded-xl mb-4 bg-muted border border-border/50">
                             <img 
-                              src={categoryImages[category] || aiImage} 
+                              src={post.image} 
                               alt={post.title}
                               loading="lazy"
                               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
