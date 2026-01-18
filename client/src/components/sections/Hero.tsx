@@ -23,16 +23,42 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5 }}
-            className="w-40 h-40 md:w-56 md:h-56 shrink-0 rounded-full overflow-hidden border-4 border-white shadow-2xl relative z-10"
+            className="relative shrink-0"
           >
-            <img 
-              src={profileImage} 
-              alt="Yogesh Yadav" 
-              width="224"
-              height="224"
-              className="w-full h-full object-cover"
-              fetchPriority="high"
+            {/* Animated gradient ring */}
+            <div className="absolute -inset-3 rounded-full bg-gradient-to-r from-primary via-blue-400 to-primary opacity-75 blur-md animate-pulse" />
+            <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-primary to-blue-500 opacity-50 animate-spin-slow" style={{ animationDuration: '8s' }} />
+            
+            {/* Decorative dots */}
+            <motion.div 
+              animate={{ y: [-5, 5, -5] }}
+              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -top-2 -right-2 w-4 h-4 bg-primary rounded-full shadow-lg z-20"
             />
+            <motion.div 
+              animate={{ y: [5, -5, 5] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute -bottom-1 -left-3 w-3 h-3 bg-blue-400 rounded-full shadow-lg z-20"
+            />
+            <motion.div 
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute top-1/2 -right-4 w-2 h-2 bg-primary/60 rounded-full z-20"
+            />
+
+            {/* Main image container */}
+            <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl z-10 bg-gradient-to-br from-primary/20 to-blue-500/20">
+              <img 
+                src={profileImage} 
+                alt="Yogesh Yadav" 
+                width="224"
+                height="224"
+                className="w-full h-full object-cover"
+                fetchPriority="high"
+              />
+              {/* Subtle shine overlay */}
+              <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/10 to-white/20 pointer-events-none" />
+            </div>
           </motion.div>
 
           <div className="flex-1 space-y-5 text-center md:text-left">
