@@ -1,0 +1,118 @@
+Context:
+You are working on the homepage of my portfolio website (pmyogesh.com).
+I want to update only the “About Me” section of the homepage.
+Do not change any other section, page, styling, font family, font size, color scheme, spacing system, or global CSS.
+
+Objective:
+Convert the existing long “About Me” text into an interactive dropdown-style section that reveals content progressively and creates curiosity to explore the rest of the website.
+
+UI & Style Constraints (Very Important):
+
+Use exactly the same fonts, font sizes, colors, and typography scale already used in the current About Me section
+
+Do not introduce new colors, fonts, animations, icons, or visual styles
+
+Do not change layout width, margins, or alignment
+
+Do not impact site performance or load time
+
+Do not add external libraries or frameworks
+
+The interaction should be lightweight (simple expand/collapse)
+
+Interaction Pattern:
+
+Replace the long paragraph text with four clickable dropdown rows
+
+Each row should show a short, curiosity-driven headline by default
+
+On click, the row expands inline to reveal its full content
+
+Clicking again collapses it
+
+Only affect the About Me section on the homepage
+
+Content to Use (Exact Copy):
+
+Dropdown 1 (Headline):
+
+I’ve scaled products by finding leverage where most teams don’t look.
+
+Expanded content:
+Most growth stories talk about traffic spikes and viral loops.
+Mine usually start with a quieter question:
+
+“Where is user intent leaking — and why?”
+
+In one case, a product looked healthy on the surface — DAUs were climbing, funnels looked “okay.”
+But once we stopped obsessing over acquisition and traced user behaviour backwards, the real growth constraints became obvious.
+
+That single shift — from chasing volume to engineering intent — changed the trajectory of the platform entirely.
+
+Dropdown 2 (Headline):
+
+I don’t add monetisation. I design it into behaviour.
+
+Expanded content:
+Most products don’t fail at monetisation because users won’t pay.
+They fail because paying feels disconnected from why the user came in the first place.
+
+I’ve seen revenue surfaces that looked “optimised” — multiple CTAs, partners, pricing experiments — yet barely moved the needle.
+Not because pricing was wrong, but because the moment was wrong.
+
+Once monetisation was treated as a continuation of user intent (not an interruption), outcomes changed dramatically.
+
+What surprised most stakeholders wasn’t the revenue jump —
+it was how little the product felt monetised afterwards.
+
+Dropdown 3 (Headline):
+
+Dashboards don’t create clarity. Decisions do.
+
+Expanded content:
+I’ve worked with leadership teams who had more dashboards than decisions —
+and teams with very little data who moved faster and cleaner.
+
+The difference wasn’t tooling.
+It was what questions the data was designed to answer.
+
+In one portfolio, we paused roadmap debates entirely and rebuilt how success was measured — across growth, retention, and revenue — before touching another feature.
+
+What followed wasn’t just alignment.
+It was speed. And fewer reversals.
+
+Dropdown 4 (Headline):
+
+I think in outcomes because someone has to.
+
+Expanded content:
+Features are easy to ship.
+Ownership is harder.
+
+Whether it’s CAC pressure, partner economics, infra constraints, or monetisation trade-offs — I tend to get involved where problems stop being neatly “product-shaped.”
+
+Sometimes that means saying no to good ideas.
+Sometimes it means re-framing the problem entirely.
+Almost always, it means thinking in terms of second-order effects.
+
+I don’t work in silos because real-world outcomes don’t either.
+
+Closing line (below the dropdowns, same text style as body copy):
+If you’re looking for execution help, there are many PMs.
+If you’re looking for someone who thinks like an owner, explore further.
+
+Final Checks Before Completion:
+
+Homepage only
+
+About Me section only
+
+No style regressions
+
+No layout shifts
+
+No font or color changes
+
+Dropdown interaction works on desktop and mobile
+
+Implement this cleanly and stop once done.
