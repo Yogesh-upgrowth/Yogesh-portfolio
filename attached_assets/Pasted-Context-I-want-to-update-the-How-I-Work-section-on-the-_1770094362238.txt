@@ -1,0 +1,92 @@
+Context:
+I want to update the “How I Work” section on the homepage of my portfolio website (pmyogesh.com).
+This change must apply only to this section on the homepage.
+
+Strict Constraints (Do NOT violate):
+
+Do not change font family, font size scale, color scheme, spacing, alignment, or layout width
+
+Do not change any other section or page
+
+Do not introduce new colors, icons, illustrations, animations, or external libraries
+
+Keep performance unchanged (no heavy JS, no reflow, no layout shift)
+
+Objective:
+Upgrade both the UI interaction and content of the “How I Work” section so it feels more premium, outcome-driven, and differentiated — without altering the existing visual identity.
+
+UI Changes Required:
+
+Keep the existing 4-step layout (01–04) intact
+
+All four steps should remain visible at all times
+
+Add a lightweight interaction (hover on desktop, tap on mobile):
+
+The active step becomes visually emphasized (using existing styles only)
+
+Non-active steps reduce opacity slightly
+
+Additional content appears inline within the active step (no popups, no page jump)
+
+Interaction should feel calm, intentional, and minimal
+
+Content to Use (Exact, Do Not Rewrite):
+
+STEP 01 — Clarity
+
+Headline:
+Turn ambiguity into a shared problem statement.
+
+Body:
+I align founders, leadership, and teams on one clear definition of the problem — grounded in revenue, cost, and user behaviour.
+
+What changes:
+Fewer debates. Faster decisions. No re-litigation every sprint.
+
+STEP 02 — Focus
+
+Headline:
+Identify what not to build.
+
+Body:
+I isolate the 1–2 levers that actually move outcomes — and explicitly deprioritise everything else.
+
+What changes:
+Roadmaps get shorter. Teams stop thrashing. Progress becomes visible.
+
+STEP 03 — Leverage
+
+Headline:
+Design solutions that compound, not patch.
+
+Body:
+I shape product and monetisation decisions so they scale with usage, volume, and time — without increasing operational load.
+
+What changes:
+Growth stops creating chaos. Margins and reliability improve together.
+
+STEP 04 — Results
+
+Headline:
+Ship with accountability to numbers.
+
+Body:
+I stay close through launch and iteration, tying execution back to the metrics that matter — adoption, revenue, retention, or cost.
+
+What changes:
+Initiatives don’t just ship. They pay off.
+
+Final Validation Checklist (Mandatory):
+
+Homepage only
+
+“How I Work” section only
+
+No change in fonts, colors, spacing, or layout
+
+UI feels more premium and intentional than before
+
+Content clearly communicates business outcomes, not personal philosophy
+
+Implement this cleanly and stop once complete.
