@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const steps = [
   {
@@ -34,6 +35,10 @@ const steps = [
 export default function Process() {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+  const toggleStep = (index: number) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
   return (
     <section className="py-24 bg-background">
       <div className="container px-4 mx-auto">
@@ -42,52 +47,70 @@ export default function Process() {
           <h3 className="text-3xl font-serif font-bold">Outcome-driven, every step</h3>
         </div>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-6">
-            {steps.map((step, i) => (
-              <div
-                key={i}
-                className={`relative p-6 rounded-2xl border border-border cursor-pointer transition-all duration-200 ${
-                  activeIndex === i 
-                    ? "bg-muted/50 border-primary/30 shadow-sm" 
-                    : activeIndex !== null 
-                      ? "opacity-60" 
-                      : "hover:bg-muted/30 hover:border-primary/20"
-                }`}
-                onMouseEnter={() => setActiveIndex(i)}
-                onMouseLeave={() => setActiveIndex(null)}
-                onClick={() => setActiveIndex(activeIndex === i ? null : i)}
-                data-testid={`process-step-${i}`}
-              >
-                <div className="flex items-start gap-4">
-                  <div className={`shrink-0 h-12 w-12 rounded-full border-2 flex items-center justify-center transition-colors ${
-                    activeIndex === i ? "border-primary bg-primary/10" : "border-muted"
-                  }`}>
-                    <span className={`text-lg font-serif font-bold transition-colors ${
-                      activeIndex === i ? "text-primary" : "text-muted-foreground"
-                    }`}>{step.number}</span>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <h4 className="text-lg font-bold mb-1">{step.title}</h4>
-                    <p className={`text-sm font-medium transition-colors ${
-                      activeIndex === i ? "text-foreground" : "text-muted-foreground"
-                    }`}>{step.headline}</p>
+        <div className="max-w-3xl mx-auto">
+          {/* Roadmap Timeline */}
+          <div className="relative">
+            {/* Vertical connector line */}
+            <div className="absolute left-6 top-6 bottom-6 w-0.5 bg-border hidden md:block" />
+            
+            <div className="space-y-4">
+              {steps.map((step, i) => (
+                <div key={i} className="relative">
+                  {/* Horizontal connector to circle (desktop) */}
+                  {i < steps.length - 1 && (
+                    <div className="absolute left-6 top-full w-0.5 h-4 bg-border hidden md:block" />
+                  )}
+                  
+                  <div
+                    className={`relative flex gap-4 md:gap-6 p-5 rounded-2xl border cursor-pointer transition-all duration-200 ${
+                      activeIndex === i 
+                        ? "bg-primary/5 border-primary/30 shadow-sm" 
+                        : "border-border hover:bg-muted/30 hover:border-primary/20"
+                    }`}
+                    onClick={() => toggleStep(i)}
+                    data-testid={`process-step-${i}`}
+                  >
+                    {/* Step number circle */}
+                    <div className={`shrink-0 h-12 w-12 rounded-full border-2 flex items-center justify-center z-10 bg-background transition-all ${
+                      activeIndex === i ? "border-primary bg-primary text-white" : "border-muted"
+                    }`}>
+                      <span className={`text-lg font-serif font-bold ${
+                        activeIndex === i ? "text-white" : "text-muted-foreground"
+                      }`}>{step.number}</span>
+                    </div>
                     
-                    {activeIndex === i && (
-                      <div className="mt-4 space-y-3">
-                        <p className="text-sm text-muted-foreground leading-relaxed">
-                          {step.body}
-                        </p>
-                        <div className="pt-3 border-t border-border">
-                          <p className="text-xs uppercase tracking-widest text-primary font-semibold mb-1">What changes:</p>
-                          <p className="text-sm text-foreground font-medium">{step.outcome}</p>
+                    {/* Content */}
+                    <div className="flex-1 min-w-0">
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="flex-1">
+                          <h4 className="text-lg font-bold mb-1">{step.title}</h4>
+                          <p className={`text-sm transition-colors ${
+                            activeIndex === i ? "text-foreground font-medium" : "text-muted-foreground"
+                          }`}>{step.headline}</p>
                         </div>
+                        <ChevronDown 
+                          className={`h-5 w-5 text-muted-foreground shrink-0 mt-1 transition-transform duration-200 ${
+                            activeIndex === i ? "rotate-180 text-primary" : ""
+                          }`} 
+                        />
                       </div>
-                    )}
+                      
+                      {activeIndex === i && (
+                        <div className="mt-4 space-y-3">
+                          <p className="text-sm text-muted-foreground leading-relaxed">
+                            {step.body}
+                          </p>
+                          <div className="pt-3 border-t border-border">
+                            <p className="text-xs uppercase tracking-widest text-primary font-semibold mb-1">What changes:</p>
+                            <p className="text-sm text-foreground font-medium">{step.outcome}</p>
+                          </div>
+                        </div>
+                      )}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div>
