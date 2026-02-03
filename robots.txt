@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pmyogesh.com/sitemap.xml

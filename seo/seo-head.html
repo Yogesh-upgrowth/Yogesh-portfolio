@@ -1,0 +1,38 @@
+<!-- GLOBAL SEO HEAD : AUTO APPLIED -->
+<title>{{PAGE_TITLE | default:"Yogesh | PM Consultant for Founders"}}</title>
+<meta name="description" content="{{PAGE_DESCRIPTION | default:"Yogesh – Product Manager & PM Consultant helping founders build, scale & monetise products."}}">
+<link rel="canonical" href="https://pmyogesh.com{{PAGE_PATH}}">
+<meta name="robots" content="index, follow">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yogesh",
+  "url": "https://pmyogesh.com",
+  "jobTitle": "Product Management Consultant",
+  "description": "PM consultant helping founders with product strategy, growth and monetisation",
+  "sameAs": [
+    "https://www.linkedin.com"
+  ]
+}
+</script>
+EOF && cat << 'EOF' > sitemap-generator.sh
+#!/bin/bash
+echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+
+find . -name "*.html" ! -path "./node_modules/*" | while read page; do
+  path=$(echo $page | sed 's|^\./||')
+  echo "<url><loc>https://pmyogesh.com/${path}</loc></url>" >> sitemap.xml
+done
+
+echo '</urlset>' >> sitemap.xml
+EOF && chmod +x sitemap-generator.sh && cat << 'EOF' > robots.txt
+User-agent: *
+Allow: /
+Sitemap: https://pmyogesh.com/sitemap.xml
+EOF && cat << 'EOF' > hooks/pre-deploy.sh
+#!/bin/bash
+bash sitemap-generator.sh
+EOF && chmod +x hooks/pre-deploy.sh && echo "Done!"
