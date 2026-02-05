@@ -1,0 +1,203 @@
+You are editing my existing portfolio website.
+
+GOAL:
+Merge the current three homepage sections:
+1) About Me
+2) What I Do
+3) How I Work
+
+into ONE unified responsive section that visually matches the provided design reference
+AND is fully optimized for mobile web (mWeb).
+
+CRITICAL SAFETY RULES:
+- Do NOT change fonts, font sizes, colors, shadows, spacing scale, or container width.
+- Do NOT modify header, footer, navigation, hero, or any other homepage section.
+- Do NOT touch any other page of the website.
+- Reuse existing CSS variables, typography classes, and spacing utilities.
+- If a style already exists, reuse it instead of creating a new one.
+- Do NOT introduce new UI libraries, animation libraries, or heavy JS.
+
+STRUCTURAL CHANGE REQUIRED:
+Create a new single homepage section:
+
+<section id="trust-stack">
+
+This section must contain THREE logical blocks:
+LEFT = BELIEF
+CENTER = CAPABILITY
+RIGHT = EXECUTION
+
+All three must live inside ONE section and replace the previous three sections.
+
+--------------------------------------------------
+DESKTOP LAYOUT
+--------------------------------------------------
+
+- 3-column grid inside the same max-width homepage container.
+- Perfect vertical alignment between the three columns.
+- Column gap must match the grid gap already used elsewhere.
+- Heights should feel visually balanced without forcing equal height hacks.
+
+--------------------------------------------------
+TABLET LAYOUT (≈768px–1024px)
+--------------------------------------------------
+
+- Switch to 2-column layout:
+  Row 1 → BELIEF full width
+  Row 2 → CAPABILITY (left) + EXECUTION (right)
+
+- Maintain consistent spacing rhythm from desktop.
+- No cramped stacking or reduced padding.
+
+--------------------------------------------------
+MOBILE WEB LAYOUT (CRITICAL — DO THIS CAREFULLY)
+--------------------------------------------------
+
+Mobile must feel **intentionally designed**, not just stacked.
+
+Viewport target: 360px–430px width.
+
+ORDER (top → bottom):
+1) BELIEF
+2) CAPABILITY
+3) EXECUTION
+
+MOBILE DESIGN RULES:
+
+• Use comfortable vertical spacing identical to other premium sections.
+• Text line length must remain readable (no edge-to-edge paragraphs).
+• Maintain existing font scale — do NOT shrink typography.
+• Tap targets must be ≥44px height.
+• Accordion/step toggles must be thumb-friendly.
+• Avoid hover-only interactions — everything must work on tap.
+• No horizontal overflow at any breakpoint.
+• No layout shift when expanding accordions.
+• Maintain smooth scrolling performance (no heavy observers or large JS).
+• Section must render cleanly within first paint on mid-range mobile devices.
+
+--------------------------------------------------
+CONTENT STRUCTURE
+--------------------------------------------------
+
+LEFT — BELIEF
+
+Eyebrow label:
+"BELIEF" (reuse existing small blue label style)
+
+Headline:
+Reuse the exact About Me headline:
+"I don’t just ship features.
+I build engines for growth."
+
+Below add TWO expandable insight rows:
+- Title always visible
+- Tap expands short paragraph below
+- Reuse existing accordion styles if available
+- Smooth but subtle expand animation only
+
+Bottom muted closing text:
+"If you want execution help, there are many PMs.
+If you want someone who thinks like an owner, keep exploring."
+
+--------------------------------------------------
+
+CENTER — CAPABILITY
+
+Eyebrow:
+"CAPABILITY"
+
+Title:
+"Strategic outcomes across the product lifecycle"
+
+Layout:
+Asymmetric card grid matching reference:
+
+• Large featured card (top-left)
+• Two smaller stacked cards (right)
+• One full-width card at bottom
+
+Each card contains:
+- Existing icon style
+- Title
+- ONE-LINE business outcome only
+
+Cards MUST reuse:
+- Existing radius
+- Existing shadow
+- Existing hover elevation
+
+On mobile:
+- Convert to single-column stacked cards
+- Preserve visual breathing space
+- Maintain identical card styling
+
+--------------------------------------------------
+
+RIGHT — EXECUTION
+
+Eyebrow:
+"EXECUTION"
+
+Title:
+"Outcome-driven process"
+
+Layout:
+Vertical 4-step timeline:
+
+01 Clarity
+02 Focus
+03 Leverage
+04 Results
+
+Behavior:
+- Step 01 expanded by default
+- Tap switches active step
+- Previous collapses smoothly
+- Reuse existing accordion/toggle system if present
+
+Expanded step content:
+
+• Step title
+• One sentence description
+• Divider
+• "WHAT CHANGES:" label
+• Outcome sentence in existing blue accent
+
+Mobile rules:
+- Steps must be easy to tap
+- No tiny chevrons or cramped spacing
+- Expansion must not push content off-screen abruptly
+
+--------------------------------------------------
+REMOVAL STEP
+--------------------------------------------------
+
+After building <section id="trust-stack">:
+
+Remove ONLY the old containers for:
+- About Me section
+- What I Do section
+- How I Work section
+
+Do NOT delete shared CSS used elsewhere.
+
+--------------------------------------------------
+FINAL VALIDATION (MANDATORY)
+--------------------------------------------------
+
+Before finishing, confirm:
+
+✔ Desktop layout matches reference  
+✔ Tablet layout balanced and readable  
+✔ Mobile layout feels intentionally designed  
+✔ No horizontal scroll on mobile  
+✔ Tap interactions work everywhere  
+✔ Fonts/colors/spacing unchanged  
+✔ No console errors  
+✔ Other homepage sections unchanged  
+✔ Other pages untouched  
+
+If any rule fails → fix before completing.
+
+Return only the final updated HTML/CSS/JS diff.
+Do not include explanations.

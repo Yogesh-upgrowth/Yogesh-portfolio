@@ -5,11 +5,9 @@ import Hero from "@/components/sections/Hero";
 
 // Lazy load below-the-fold sections
 const Trust = lazy(() => import("@/components/sections/Trust"));
-const About = lazy(() => import("@/components/sections/About"));
-const Services = lazy(() => import("@/components/sections/Services"));
+const TrustStack = lazy(() => import("@/components/sections/TrustStack"));
 const Impact = lazy(() => import("@/components/sections/Impact"));
 const Clients = lazy(() => import("@/components/sections/Clients"));
-const Process = lazy(() => import("@/components/sections/Process"));
 const Testimonials = lazy(() => import("@/components/sections/Testimonials"));
 const Contact = lazy(() => import("@/components/sections/Contact"));
 
@@ -28,19 +26,13 @@ export default function Home() {
           <Trust />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
-          <About />
-        </Suspense>
-        <Suspense fallback={<SectionLoader />}>
-          <Services />
+          <TrustStack />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <Impact />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <Clients />
-        </Suspense>
-        <Suspense fallback={<SectionLoader />}>
-          <Process />
         </Suspense>
         <Suspense fallback={<SectionLoader />}>
           <Testimonials />
