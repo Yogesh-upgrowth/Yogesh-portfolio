@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, Compass, TrendingUp, DollarSign, Layers, ArrowRight } from "lucide-react";
+import { ChevronDown, Compass, TrendingUp, DollarSign, Layers } from "lucide-react";
 
 const beliefInsights = [
   {
@@ -43,7 +43,10 @@ const executionSteps = [
   }
 ];
 
+type ActiveSection = 'belief' | 'capability' | 'execution';
+
 export default function TrustStack() {
+  const [activeSection, setActiveSection] = useState<ActiveSection>('belief');
   const [beliefOpen, setBeliefOpen] = useState<number | null>(null);
   const [activeStep, setActiveStep] = useState<number>(0);
 
@@ -55,70 +58,122 @@ export default function TrustStack() {
         <div className="text-center mb-12">
           <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-3">How I Create Impact</h2>
           <h3 className="text-3xl md:text-4xl font-serif font-bold text-foreground">
-            Belief → Capability → Execution
+            A connected system for growth
           </h3>
-          <p className="text-muted-foreground mt-4 max-w-2xl mx-auto">
-            A connected system for building products that scale
-          </p>
         </div>
 
-        {/* Connected Card Container */}
-        <div className="relative">
-          {/* Horizontal connector line (desktop only) */}
-          <div className="hidden lg:block absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-primary/20 to-transparent -translate-y-1/2 z-0" />
+        {/* Horizontal Tab Navigation */}
+        <div className="relative mb-8">
+          {/* Progress line */}
+          <div className="absolute top-6 left-0 right-0 h-0.5 bg-border hidden md:block" />
+          <div 
+            className="absolute top-6 left-0 h-0.5 bg-primary hidden md:block transition-all duration-300"
+            style={{ 
+              width: activeSection === 'belief' ? '16.67%' : activeSection === 'capability' ? '50%' : '83.33%'
+            }}
+          />
           
-          {/* Flow arrows between sections (desktop) */}
-          <div className="hidden lg:flex absolute top-1/2 left-0 right-0 -translate-y-1/2 z-10 justify-around pointer-events-none">
-            <div className="w-1/3" />
-            <div className="flex items-center justify-center">
-              <div className="bg-background rounded-full p-2 border border-primary/20">
-                <ArrowRight className="h-4 w-4 text-primary" />
+          <div className="grid grid-cols-3 gap-4 relative">
+            {/* Belief Tab */}
+            <button
+              onClick={() => setActiveSection('belief')}
+              className={`flex flex-col items-center text-center p-4 rounded-xl transition-all ${
+                activeSection === 'belief' 
+                  ? 'bg-background shadow-md border border-primary/30' 
+                  : 'hover:bg-background/50'
+              }`}
+              data-testid="tab-belief"
+            >
+              <div className={`h-12 w-12 rounded-full flex items-center justify-center mb-3 transition-all ${
+                activeSection === 'belief' 
+                  ? 'bg-primary text-white' 
+                  : 'bg-muted text-muted-foreground'
+              }`}>
+                <span className="text-lg font-bold">1</span>
               </div>
-            </div>
-            <div className="flex items-center justify-center">
-              <div className="bg-background rounded-full p-2 border border-primary/20">
-                <ArrowRight className="h-4 w-4 text-primary" />
-              </div>
-            </div>
-            <div className="w-1/6" />
-          </div>
+              <h4 className={`font-bold transition-colors ${
+                activeSection === 'belief' ? 'text-primary' : 'text-foreground'
+              }`}>Belief</h4>
+              <p className="text-xs text-muted-foreground mt-1 hidden sm:block">Why I build differently</p>
+            </button>
 
-          {/* Main 3-column grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-4 relative z-20">
-            
-            {/* LEFT — BELIEF */}
-            <div className="bg-background rounded-2xl border border-border p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow">
-              {/* Step indicator */}
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                  <span className="text-sm font-bold text-white">1</span>
-                </div>
-                <p className="text-sm font-bold tracking-widest text-primary uppercase">Belief</p>
+            {/* Capability Tab */}
+            <button
+              onClick={() => setActiveSection('capability')}
+              className={`flex flex-col items-center text-center p-4 rounded-xl transition-all ${
+                activeSection === 'capability' 
+                  ? 'bg-background shadow-md border border-primary/30' 
+                  : 'hover:bg-background/50'
+              }`}
+              data-testid="tab-capability"
+            >
+              <div className={`h-12 w-12 rounded-full flex items-center justify-center mb-3 transition-all ${
+                activeSection === 'capability' 
+                  ? 'bg-primary text-white' 
+                  : 'bg-muted text-muted-foreground'
+              }`}>
+                <span className="text-lg font-bold">2</span>
               </div>
-              
-              <h3 className="text-xl md:text-2xl font-serif font-bold text-foreground mb-5 leading-tight">
+              <h4 className={`font-bold transition-colors ${
+                activeSection === 'capability' ? 'text-primary' : 'text-foreground'
+              }`}>Capability</h4>
+              <p className="text-xs text-muted-foreground mt-1 hidden sm:block">What I bring to the table</p>
+            </button>
+
+            {/* Execution Tab */}
+            <button
+              onClick={() => setActiveSection('execution')}
+              className={`flex flex-col items-center text-center p-4 rounded-xl transition-all ${
+                activeSection === 'execution' 
+                  ? 'bg-background shadow-md border border-primary/30' 
+                  : 'hover:bg-background/50'
+              }`}
+              data-testid="tab-execution"
+            >
+              <div className={`h-12 w-12 rounded-full flex items-center justify-center mb-3 transition-all ${
+                activeSection === 'execution' 
+                  ? 'bg-primary text-white' 
+                  : 'bg-muted text-muted-foreground'
+              }`}>
+                <span className="text-lg font-bold">3</span>
+              </div>
+              <h4 className={`font-bold transition-colors ${
+                activeSection === 'execution' ? 'text-primary' : 'text-foreground'
+              }`}>Execution</h4>
+              <p className="text-xs text-muted-foreground mt-1 hidden sm:block">How I deliver outcomes</p>
+            </button>
+          </div>
+        </div>
+
+        {/* Content Panel */}
+        <div className="bg-background rounded-2xl border border-border p-6 md:p-10 shadow-sm min-h-[400px]">
+          
+          {/* BELIEF Content */}
+          {activeSection === 'belief' && (
+            <div className="animate-fade-in-up max-w-3xl mx-auto">
+              <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-6 leading-tight">
                 I don't just ship features.<br />
                 I build <span className="text-primary">engines for growth</span>.
               </h3>
               
-              <div className="space-y-3 mb-5">
+              <div className="space-y-4 mb-8">
                 {beliefInsights.map((item, index) => (
                   <div key={index} className="border border-border rounded-xl overflow-hidden">
                     <button
                       onClick={() => setBeliefOpen(beliefOpen === index ? null : index)}
-                      className="w-full flex items-center justify-between p-4 text-left hover:bg-muted/30 transition-colors min-h-[52px]"
+                      className="w-full flex items-center justify-between p-5 text-left hover:bg-muted/30 transition-colors min-h-[60px]"
                       data-testid={`belief-dropdown-${index}`}
                     >
-                      <span className="text-sm font-medium text-foreground pr-3 leading-snug">{item.headline}</span>
+                      <span className="text-base font-medium text-foreground pr-4">{item.headline}</span>
                       <ChevronDown 
-                        className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200 ${
+                        className={`h-5 w-5 text-muted-foreground shrink-0 transition-transform duration-200 ${
                           beliefOpen === index ? "rotate-180" : ""
                         }`} 
                       />
                     </button>
                     {beliefOpen === index && (
-                      <div className="px-4 pb-4">
-                        <p className="text-sm text-muted-foreground leading-relaxed">
+                      <div className="px-5 pb-5">
+                        <p className="text-muted-foreground leading-relaxed">
                           {item.content}
                         </p>
                       </div>
@@ -127,155 +182,112 @@ export default function TrustStack() {
                 ))}
               </div>
 
-              <p className="text-xs text-muted-foreground leading-relaxed border-t border-border pt-4">
+              <p className="text-muted-foreground leading-relaxed border-t border-border pt-6">
                 If you want execution help, there are many PMs.<br />
                 If you want someone who thinks like an owner, keep exploring.
               </p>
             </div>
+          )}
 
-            {/* Mobile flow arrow */}
-            <div className="flex lg:hidden justify-center -my-2">
-              <div className="bg-background rounded-full p-2 border border-primary/20 rotate-90">
-                <ArrowRight className="h-4 w-4 text-primary" />
-              </div>
-            </div>
-
-            {/* CENTER — CAPABILITY */}
-            <div className="bg-background rounded-2xl border border-border p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow">
-              {/* Step indicator */}
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                  <span className="text-sm font-bold text-white">2</span>
-                </div>
-                <p className="text-sm font-bold tracking-widest text-primary uppercase">Capability</p>
+          {/* CAPABILITY Content */}
+          {activeSection === 'capability' && (
+            <div className="animate-fade-in-up">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-2">
+                  Strategic outcomes across the product lifecycle
+                </h3>
+                <p className="text-muted-foreground">From strategy to scale — end-to-end ownership</p>
               </div>
               
-              <h3 className="text-lg font-serif font-bold text-foreground mb-5">
-                Strategic outcomes across the product lifecycle
-              </h3>
-              
-              {/* Asymmetric card grid */}
-              <div className="grid grid-cols-2 gap-3">
-                {/* Featured large card */}
-                <div className="col-span-2 sm:col-span-1 sm:row-span-2 p-4 rounded-xl border border-border bg-primary/5 hover:border-primary/30 transition-all group">
-                  <div className="h-9 w-9 rounded-lg bg-primary/10 flex items-center justify-center mb-3 group-hover:bg-primary transition-colors">
-                    <Compass className="h-4 w-4 text-primary group-hover:text-white" />
+              {/* Capability cards grid */}
+              <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+                <div className="p-6 rounded-xl border border-border bg-primary/5 hover:border-primary/30 hover:shadow-md transition-all group">
+                  <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
+                    <Compass className="h-6 w-6 text-primary group-hover:text-white" />
                   </div>
-                  <h4 className="font-bold text-sm text-foreground mb-1">Product Strategy</h4>
-                  <p className="text-xs text-muted-foreground">Clear roadmaps aligned with business goals</p>
+                  <h4 className="font-bold text-lg text-foreground mb-2">Product Strategy</h4>
+                  <p className="text-sm text-muted-foreground">Clear roadmaps aligned with business goals</p>
                 </div>
                 
-                {/* Two stacked smaller cards */}
-                <div className="p-3 rounded-xl border border-border hover:border-primary/30 transition-all group">
-                  <div className="h-7 w-7 rounded-lg bg-primary/10 flex items-center justify-center mb-2 group-hover:bg-primary transition-colors">
-                    <TrendingUp className="h-3.5 w-3.5 text-primary group-hover:text-white" />
+                <div className="p-6 rounded-xl border border-border hover:border-primary/30 hover:shadow-md transition-all group">
+                  <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
+                    <TrendingUp className="h-6 w-6 text-primary group-hover:text-white" />
                   </div>
-                  <h4 className="font-bold text-xs text-foreground mb-0.5">Growth</h4>
-                  <p className="text-[10px] text-muted-foreground">Higher conversions, lower CAC</p>
+                  <h4 className="font-bold text-lg text-foreground mb-2">Growth</h4>
+                  <p className="text-sm text-muted-foreground">Higher conversions, lower CAC</p>
                 </div>
                 
-                <div className="p-3 rounded-xl border border-border hover:border-primary/30 transition-all group">
-                  <div className="h-7 w-7 rounded-lg bg-primary/10 flex items-center justify-center mb-2 group-hover:bg-primary transition-colors">
-                    <DollarSign className="h-3.5 w-3.5 text-primary group-hover:text-white" />
+                <div className="p-6 rounded-xl border border-border hover:border-primary/30 hover:shadow-md transition-all group">
+                  <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
+                    <DollarSign className="h-6 w-6 text-primary group-hover:text-white" />
                   </div>
-                  <h4 className="font-bold text-xs text-foreground mb-0.5">Monetisation</h4>
-                  <p className="text-[10px] text-muted-foreground">Sustainable revenue streams</p>
+                  <h4 className="font-bold text-lg text-foreground mb-2">Monetisation</h4>
+                  <p className="text-sm text-muted-foreground">Sustainable revenue streams</p>
                 </div>
                 
-                {/* Full width bottom card */}
-                <div className="col-span-2 p-3 rounded-xl border border-border hover:border-primary/30 transition-all group">
-                  <div className="flex items-center gap-3">
-                    <div className="h-7 w-7 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary transition-colors">
-                      <Layers className="h-3.5 w-3.5 text-primary group-hover:text-white" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-xs text-foreground">Platform Scaling</h4>
-                      <p className="text-[10px] text-muted-foreground">Scale 10x without breaking</p>
-                    </div>
+                <div className="p-6 rounded-xl border border-border hover:border-primary/30 hover:shadow-md transition-all group">
+                  <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
+                    <Layers className="h-6 w-6 text-primary group-hover:text-white" />
                   </div>
+                  <h4 className="font-bold text-lg text-foreground mb-2">Platform Scaling</h4>
+                  <p className="text-sm text-muted-foreground">Scale 10x without breaking</p>
                 </div>
               </div>
             </div>
+          )}
 
-            {/* Mobile flow arrow */}
-            <div className="flex lg:hidden justify-center -my-2">
-              <div className="bg-background rounded-full p-2 border border-primary/20 rotate-90">
-                <ArrowRight className="h-4 w-4 text-primary" />
-              </div>
-            </div>
-
-            {/* RIGHT — EXECUTION */}
-            <div className="bg-background rounded-2xl border border-border p-6 lg:p-8 shadow-sm hover:shadow-md transition-shadow">
-              {/* Step indicator */}
-              <div className="flex items-center gap-3 mb-6">
-                <div className="h-8 w-8 rounded-full bg-primary flex items-center justify-center">
-                  <span className="text-sm font-bold text-white">3</span>
-                </div>
-                <p className="text-sm font-bold tracking-widest text-primary uppercase">Execution</p>
+          {/* EXECUTION Content */}
+          {activeSection === 'execution' && (
+            <div className="animate-fade-in-up">
+              <div className="text-center mb-8">
+                <h3 className="text-2xl md:text-3xl font-serif font-bold text-foreground mb-2">
+                  Outcome-driven process
+                </h3>
+                <p className="text-muted-foreground">Click each step to see the details</p>
               </div>
               
-              <h3 className="text-lg font-serif font-bold text-foreground mb-5">
-                Outcome-driven process
-              </h3>
-              
-              {/* Timeline steps */}
-              <div className="relative">
-                <div className="absolute left-[14px] top-5 bottom-5 w-0.5 bg-border" />
-                
-                <div className="space-y-2">
-                  {executionSteps.map((step, i) => (
-                    <div
-                      key={i}
-                      onClick={() => setActiveStep(i)}
-                      className={`relative flex gap-3 p-3 rounded-xl border cursor-pointer transition-all duration-200 ${
-                        activeStep === i 
-                          ? "bg-primary/5 border-primary/30" 
-                          : "border-transparent hover:bg-muted/30"
-                      }`}
-                      data-testid={`execution-step-${i}`}
-                    >
-                      <div className={`shrink-0 h-7 w-7 rounded-full border-2 flex items-center justify-center z-10 bg-background transition-all ${
-                        activeStep === i ? "border-primary bg-primary" : "border-muted"
-                      }`}>
-                        <span className={`text-xs font-bold ${
-                          activeStep === i ? "text-white" : "text-muted-foreground"
-                        }`}>{step.number}</span>
-                      </div>
-                      
-                      <div className="flex-1 min-w-0">
-                        <div className="flex items-start justify-between gap-2">
-                          <div className="flex-1">
-                            <h4 className="font-bold text-sm mb-0.5">{step.title}</h4>
-                            {activeStep !== i && (
-                              <p className="text-xs text-muted-foreground truncate">{step.headline}</p>
-                            )}
-                          </div>
-                          <ChevronDown 
-                            className={`h-4 w-4 text-muted-foreground shrink-0 transition-transform duration-200 ${
-                              activeStep === i ? "rotate-180 text-primary" : ""
-                            }`} 
-                          />
-                        </div>
-                        
-                        {activeStep === i && (
-                          <div className="mt-2 space-y-2">
-                            <p className="text-xs text-muted-foreground leading-relaxed">
-                              {step.body}
-                            </p>
-                            <div className="pt-2 border-t border-border">
-                              <p className="text-[10px] uppercase tracking-widest text-primary font-semibold mb-0.5">What changes:</p>
-                              <p className="text-xs text-foreground font-medium">{step.outcome}</p>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  ))}
+              {/* Horizontal step selector */}
+              <div className="flex justify-center gap-2 md:gap-4 mb-8 flex-wrap">
+                {executionSteps.map((step, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActiveStep(i)}
+                    className={`flex items-center gap-2 px-4 py-3 rounded-full border transition-all ${
+                      activeStep === i 
+                        ? 'bg-primary text-white border-primary shadow-md' 
+                        : 'border-border hover:border-primary/30 hover:bg-muted/30'
+                    }`}
+                    data-testid={`execution-step-${i}`}
+                  >
+                    <span className={`text-sm font-bold ${activeStep === i ? 'text-white' : 'text-muted-foreground'}`}>
+                      {step.number}
+                    </span>
+                    <span className={`font-medium text-sm ${activeStep === i ? 'text-white' : 'text-foreground'}`}>
+                      {step.title}
+                    </span>
+                  </button>
+                ))}
+              </div>
+
+              {/* Active step content */}
+              <div className="max-w-2xl mx-auto bg-muted/30 rounded-2xl p-6 md:p-8 border border-border">
+                <h4 className="text-xl font-bold text-foreground mb-2">
+                  {executionSteps[activeStep].title}
+                </h4>
+                <p className="text-primary font-medium mb-4">
+                  {executionSteps[activeStep].headline}
+                </p>
+                <p className="text-muted-foreground leading-relaxed mb-6">
+                  {executionSteps[activeStep].body}
+                </p>
+                <div className="pt-4 border-t border-border">
+                  <p className="text-xs uppercase tracking-widest text-primary font-semibold mb-2">What changes:</p>
+                  <p className="text-foreground font-medium">{executionSteps[activeStep].outcome}</p>
                 </div>
               </div>
             </div>
+          )}
 
-          </div>
         </div>
       </div>
     </section>
