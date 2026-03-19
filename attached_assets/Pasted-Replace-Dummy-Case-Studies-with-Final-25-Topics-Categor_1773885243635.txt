@@ -1,0 +1,260 @@
+Replace Dummy Case Studies with Final 25 Topics (Category-Wise)
+🎯 Objective
+
+Update the Case Studies listing system by:
+
+❌ Removing all current dummy case studies
+
+✅ Keeping the existing live case study intact
+
+“How We Used ML to Predict Insurance Buyers (50,000+ Data Points)”
+
+✅ Adding 25 new premium case studies
+
+✅ Mapping each case study correctly to categories:
+
+Growth
+
+Product
+
+Machine Learning
+
+Design
+
+SEO
+
+✅ Ensuring filters (All, Growth, Product, Machine Learning, Design, SEO) work properly
+
+🧠 Important Rules
+
+DO NOT delete or modify the existing ML Insurance case study
+
+Replace ONLY the dummy/mock case studies
+
+All new case studies should:
+
+Have slug
+
+Have category tags (multiple allowed)
+
+Have image (use placeholder high-quality Unsplash/Pexels)
+
+Have short description
+
+Detail page should show:
+👉 “🚧 Detailed case study coming soon.”
+
+🧩 Data Structure (IMPORTANT)
+
+Use this format:
+
+{
+  title: "",
+  slug: "",
+  image: "",
+  description: "",
+  categories: []
+}
+🧠 Add These 25 Case Studies
+🧠 Machine Learning + Growth
+{
+  title: "How We Predicted High-LTV Users Using Behavioral ML (100K+ Sessions)",
+  slug: "predict-high-ltv-users-ml",
+  image: "https://source.unsplash.com/random/?ai,data",
+  description: "Using behavioral ML to identify high-value users and optimize monetization.",
+  categories: ["Machine Learning", "Growth"]
+}
+{
+  title: "Building a Real-Time Intent Scoring Engine for Lead Conversion",
+  slug: "real-time-intent-scoring-engine",
+  image: "https://source.unsplash.com/random/?analytics,ai",
+  description: "Designing a system to score user intent and improve conversions.",
+  categories: ["Machine Learning", "Growth", "Product"]
+}
+{
+  title: "Using ML to Reduce CAC by 38% via Smart Audience Segmentation",
+  slug: "ml-reduce-cac-segmentation",
+  image: "https://source.unsplash.com/random/?marketing,data",
+  description: "Reducing acquisition cost using intelligent segmentation.",
+  categories: ["Machine Learning", "Growth"]
+}
+{
+  title: "Predicting User Drop-Off Before It Happens (Churn Prevention Model)",
+  slug: "predict-user-dropoff-churn-model",
+  image: "https://source.unsplash.com/random/?dashboard,analytics",
+  description: "Using ML to predict churn and proactively retain users.",
+  categories: ["Machine Learning", "Product"]
+}
+{
+  title: "Personalizing Insurance Offers Using ML-Driven User Clustering",
+  slug: "ml-user-clustering-insurance",
+  image: "https://source.unsplash.com/random/?insurance,ai",
+  description: "Clustering users to personalize offers and boost conversions.",
+  categories: ["Machine Learning", "Growth"]
+}
+📈 Growth + Product
+{
+  title: "From 1K to 10K Monthly Users: Scaling MoneyRateFinder with SEO + Product Loops",
+  slug: "scaling-moneyratefinder-growth",
+  image: "https://source.unsplash.com/random/?startup,growth",
+  description: "Scaling traffic and retention using compounding growth loops.",
+  categories: ["Growth", "Product", "SEO"]
+}
+{
+  title: "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
+  slug: "insurance-cta-2x-growth",
+  image: "https://source.unsplash.com/random/?conversion,ux",
+  description: "Improving CTR using behavioral triggers and timing.",
+  categories: ["Growth", "Product"]
+}
+{
+  title: "Designing a Growth Loop That Brought 30% Repeat Users in 14 Days",
+  slug: "growth-loop-repeat-users",
+  image: "https://source.unsplash.com/random/?growth,loop",
+  description: "Creating a viral loop that drives retention.",
+  categories: ["Growth", "Product"]
+}
+{
+  title: "Optimizing Funnel Drop-Off Using Micro UX Interventions",
+  slug: "funnel-dropoff-ux-optimization",
+  image: "https://source.unsplash.com/random/?ux,flow",
+  description: "Reducing drop-offs with small UX improvements.",
+  categories: ["Growth", "Design"]
+}
+{
+  title: "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+  slug: "zero-cost-growth-engine",
+  image: "https://source.unsplash.com/random/?startup,organic",
+  description: "Scaling growth without paid acquisition.",
+  categories: ["Growth", "Product"]
+}
+🧩 Product Deep Dives
+{
+  title: "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+  slug: "cab-fare-comparison-engine",
+  image: "https://source.unsplash.com/random/?transport,app",
+  description: "Aggregating real-time fares across ride-hailing platforms.",
+  categories: ["Product", "Growth"]
+}
+{
+  title: "Designing a Comparison Platform Like Monito for the Indian Market",
+  slug: "comparison-platform-india",
+  image: "https://source.unsplash.com/random/?fintech,ui",
+  description: "Building a fintech comparison platform tailored for India.",
+  categories: ["Product", "SEO"]
+}
+{
+  title: "Creating a Scalable Notification System for 1M+ Users (Trigger-Based)",
+  slug: "scalable-notification-system",
+  image: "https://source.unsplash.com/random/?notification,system",
+  description: "Designing a trigger-based notification engine.",
+  categories: ["Product", "Growth"]
+}
+{
+  title: "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+  slug: "finance-calculator-app-retention",
+  image: "https://source.unsplash.com/random/?finance,app",
+  description: "Building a utility product with high retention.",
+  categories: ["Product", "Growth", "SEO"]
+}
+{
+  title: "From Idea to MVP in 7 Days: Building a High-Intent Utility Product",
+  slug: "mvp-in-7-days",
+  image: "https://source.unsplash.com/random/?mvp,startup",
+  description: "Rapid product development and validation.",
+  categories: ["Product"]
+}
+🎨 Design + Conversion
+{
+  title: "UX Redesign That Improved Conversion by 28% (Before vs After Breakdown)",
+  slug: "ux-redesign-conversion-28",
+  image: "https://source.unsplash.com/random/?ui,design",
+  description: "Improving conversions with a design overhaul.",
+  categories: ["Design", "Growth"]
+}
+{
+  title: "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+  slug: "fintech-trust-ui-patterns",
+  image: "https://source.unsplash.com/random/?fintech,design",
+  description: "Building trust through design systems.",
+  categories: ["Design", "Product"]
+}
+{
+  title: "How Microcopy Increased Click-Through Rate by 35% (UX Writing Case Study)",
+  slug: "microcopy-ctr-increase",
+  image: "https://source.unsplash.com/random/?writing,ux",
+  description: "Improving CTR with better UX writing.",
+  categories: ["Design", "Growth"]
+}
+{
+  title: "Reducing Cognitive Load to Improve Funnel Completion (UX Case Study)",
+  slug: "reduce-cognitive-load",
+  image: "https://source.unsplash.com/random/?ux,brain",
+  description: "Simplifying UX to improve completion rates.",
+  categories: ["Design", "Growth"]
+}
+🔍 SEO + Growth
+{
+  title: "Scaling SEO from 0 to 100K Traffic Using Programmatic Pages",
+  slug: "seo-0-to-100k",
+  image: "https://source.unsplash.com/random/?seo,traffic",
+  description: "Driving massive traffic using programmatic SEO.",
+  categories: ["SEO", "Growth"]
+}
+{
+  title: "Building an SEO Moat in the Remittance Space (MoneyRateFinder Case Study)",
+  slug: "seo-moat-remittance",
+  image: "https://source.unsplash.com/random/?finance,seo",
+  description: "Creating defensible SEO advantage.",
+  categories: ["SEO", "Product"]
+}
+{
+  title: "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
+  slug: "rank-1-fintech-keywords",
+  image: "https://source.unsplash.com/random/?search,ranking",
+  description: "Winning top rankings in competitive niches.",
+  categories: ["SEO"]
+}
+{
+  title: "Programmatic SEO for Calculators: Driving 10X Organic Traffic",
+  slug: "programmatic-seo-calculators",
+  image: "https://source.unsplash.com/random/?calculator,seo",
+  description: "Scaling SEO using calculator-based pages.",
+  categories: ["SEO", "Product"]
+}
+🔥 Hybrid (Most Powerful)
+{
+  title: "How We Built an AI-Powered Recommendation Engine for Financial Products",
+  slug: "ai-recommendation-engine",
+  image: "https://source.unsplash.com/random/?ai,finance",
+  description: "Recommending financial products using AI.",
+  categories: ["Machine Learning", "Product"]
+}
+{
+  title: "Combining ML + UX + Growth to Increase Conversion by 3X (Full Stack Case Study)",
+  slug: "ml-ux-growth-3x-conversion",
+  image: "https://source.unsplash.com/random/?growth,ai,ux",
+  description: "End-to-end optimization using ML and UX.",
+  categories: ["Machine Learning", "Growth", "Design"]
+}
+⚡ Final Checks
+
+✅ Filters should work correctly
+
+✅ “All” shows all case studies
+
+✅ Category pills reflect counts dynamically
+
+✅ Clicking opens detail page (Coming Soon state)
+
+✅ Existing ML Insurance case study remains unchanged
+
+💥 Expected Output
+
+Clean, premium case study grid
+
+Realistic portfolio-ready topics
+
+Proper category distribution
+
+No dummy/random items
