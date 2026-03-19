@@ -8,6 +8,11 @@ import { useInView } from "@/hooks/useInView";
 
 const allCategories = ["All", "Growth", "Product", "Machine Learning", "Design", "SEO"];
 
+// Pre-computed once at module load — never recalculated on render
+const categoryCounts = Object.fromEntries(
+  allCategories.slice(1).map((cat) => [cat, caseStudies.filter((s) => s.category === cat).length])
+);
+
 function CaseStudyCard({ study, index }: { study: typeof caseStudies[0]; index: number }) {
   return (
     <Link href={`/case-study/${study.slug}`}>
@@ -128,7 +133,7 @@ export default function CaseStudies() {
                 {cat}
                 {cat !== "All" && (
                   <span className="ml-1.5 text-xs opacity-60">
-                    ({caseStudies.filter((s) => s.category === cat).length})
+                    ({categoryCounts[cat] ?? 0})
                   </span>
                 )}
               </button>

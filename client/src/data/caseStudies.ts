@@ -19,7 +19,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["ML", "Fintech", "Conversion"],
     readTime: "12 min read",
     date: "Jan 2024",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=65&auto=format"
   },
 
   /* ── MACHINE LEARNING + GROWTH ── */
@@ -31,7 +31,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["ML", "Growth", "LTV"],
     readTime: "10 min read",
     date: "Feb 2024",
-    image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1509228468518-180dd4864904?w=400&q=65&auto=format"
   },
   {
     slug: "real-time-intent-scoring-engine",
@@ -41,7 +41,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["ML", "Growth", "Product"],
     readTime: "9 min read",
     date: "Mar 2024",
-    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=65&auto=format"
   },
   {
     slug: "ml-reduce-cac-segmentation",
@@ -51,7 +51,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["ML", "Growth", "CAC"],
     readTime: "8 min read",
     date: "Apr 2024",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=65&auto=format"
   },
   {
     slug: "predict-user-dropoff-churn-model",
@@ -61,7 +61,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["ML", "Product", "Retention"],
     readTime: "10 min read",
     date: "May 2024",
-    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&q=65&auto=format"
   },
   {
     slug: "ml-user-clustering-insurance",
@@ -71,7 +71,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["ML", "Growth", "Personalisation"],
     readTime: "8 min read",
     date: "Jun 2024",
-    image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=400&q=65&auto=format"
   },
 
   /* ── GROWTH + PRODUCT ── */
@@ -83,7 +83,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Growth", "Product", "SEO"],
     readTime: "9 min read",
     date: "Jul 2024",
-    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&q=65&auto=format"
   },
   {
     slug: "insurance-cta-2x-growth",
@@ -93,7 +93,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Growth", "Product", "CRO"],
     readTime: "6 min read",
     date: "Aug 2024",
-    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&q=65&auto=format"
   },
   {
     slug: "growth-loop-repeat-users",
@@ -103,7 +103,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Growth", "Product", "Retention"],
     readTime: "7 min read",
     date: "Sep 2024",
-    image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1559526324-4b87b5e36e44?w=400&q=65&auto=format"
   },
   {
     slug: "funnel-dropoff-ux-optimization",
@@ -113,7 +113,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Growth", "Design", "Funnel"],
     readTime: "7 min read",
     date: "Oct 2024",
-    image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=400&q=65&auto=format"
   },
   {
     slug: "zero-cost-growth-engine",
@@ -123,7 +123,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Growth", "Product", "Organic"],
     readTime: "8 min read",
     date: "Nov 2024",
-    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&q=65&auto=format"
   },
 
   /* ── PRODUCT DEEP DIVES ── */
@@ -135,7 +135,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Product", "Growth", "Mobility"],
     readTime: "11 min read",
     date: "Dec 2024",
-    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&q=65&auto=format"
   },
   {
     slug: "comparison-platform-india",
@@ -145,7 +145,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Product", "SEO", "Fintech"],
     readTime: "10 min read",
     date: "Jan 2025",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&q=65&auto=format"
   },
   {
     slug: "scalable-notification-system",
@@ -155,7 +155,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Product", "Growth", "Engagement"],
     readTime: "9 min read",
     date: "Feb 2025",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&q=65&auto=format"
   },
   {
     slug: "finance-calculator-app-retention",
@@ -165,7 +165,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Product", "Growth", "SEO"],
     readTime: "8 min read",
     date: "Mar 2025",
-    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=400&q=65&auto=format"
   },
   {
     slug: "mvp-in-7-days",
@@ -175,7 +175,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Product", "Launch", "GTM"],
     readTime: "7 min read",
     date: "Apr 2025",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&q=65&auto=format"
   },
 
   /* ── DESIGN + CONVERSION ── */
@@ -187,7 +187,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Design", "Growth", "CRO"],
     readTime: "9 min read",
     date: "May 2025",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&q=65&auto=format"
   },
   {
     slug: "fintech-trust-ui-patterns",
@@ -197,7 +197,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Design", "Product", "Fintech"],
     readTime: "7 min read",
     date: "Jun 2025",
-    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=400&q=65&auto=format"
   },
   {
     slug: "microcopy-ctr-increase",
@@ -207,7 +207,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Design", "Growth", "Copy"],
     readTime: "6 min read",
     date: "Jul 2025",
-    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=400&q=65&auto=format"
   },
   {
     slug: "reduce-cognitive-load",
@@ -217,7 +217,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["Design", "Growth", "UX"],
     readTime: "8 min read",
     date: "Aug 2025",
-    image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?w=400&q=65&auto=format"
   },
 
   /* ── SEO + GROWTH ── */
@@ -229,7 +229,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["SEO", "Growth", "Content"],
     readTime: "10 min read",
     date: "Sep 2025",
-    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&q=65&auto=format"
   },
   {
     slug: "seo-moat-remittance",
@@ -239,7 +239,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["SEO", "Product", "Fintech"],
     readTime: "9 min read",
     date: "Oct 2025",
-    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=400&q=65&auto=format"
   },
   {
     slug: "rank-1-fintech-keywords",
@@ -249,7 +249,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["SEO", "Fintech", "Content"],
     readTime: "8 min read",
     date: "Nov 2025",
-    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&q=65&auto=format"
   },
   {
     slug: "programmatic-seo-calculators",
@@ -259,7 +259,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["SEO", "Product", "Scale"],
     readTime: "8 min read",
     date: "Dec 2025",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=65&auto=format"
   },
 
   /* ── HYBRID ── */
@@ -271,7 +271,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["ML", "Product", "AI"],
     readTime: "12 min read",
     date: "Jan 2026",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&q=65&auto=format"
   },
   {
     slug: "ml-ux-growth-3x-conversion",
@@ -281,7 +281,7 @@ export const caseStudies: CaseStudy[] = [
     tags: ["ML", "Growth", "Design"],
     readTime: "14 min read",
     date: "Feb 2026",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=65&auto=format"
   },
 ];
 
