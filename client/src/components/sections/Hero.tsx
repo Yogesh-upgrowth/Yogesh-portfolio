@@ -15,16 +15,11 @@ export default function Hero() {
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
           
-          {/* Profile image with CSS-only effects */}
-          <div className="relative shrink-0">
-            {/* Gradient ring - CSS only */}
+          {/* Profile image — scale-in on load */}
+          <div className="relative shrink-0 hero-image">
             <div className="absolute -inset-3 rounded-full bg-gradient-to-r from-primary via-blue-400 to-primary opacity-60 blur-md animate-pulse" />
-            
-            {/* Decorative dots - CSS only */}
             <div className="absolute -top-2 -right-2 w-4 h-4 bg-primary rounded-full shadow-lg z-20" />
             <div className="absolute -bottom-1 -left-3 w-3 h-3 bg-blue-400 rounded-full shadow-lg z-20" />
-
-            {/* Main image container */}
             <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl z-10 bg-muted">
               <img 
                 src={profileImage} 
@@ -39,29 +34,34 @@ export default function Hero() {
           </div>
 
           <div className="flex-1 space-y-5 text-center md:text-left mt-5 mb-5">
-            <div>
-              <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary mb-3">
-                <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
-                Available for new projects
-              </div>
-              <h1 className="text-3xl md:text-5xl font-serif font-bold tracking-tight text-foreground leading-[1.1]">
-                I help <span className="text-primary">consumer</span> & <span className="text-primary">B2B products</span> grow revenue, retention, and scale.
-              </h1>
-              <p className="mt-4 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 leading-relaxed">
-                <strong className="text-foreground">Yogesh Yadav</strong> — Product Leader with 9+ years across Fintech, Mobility, SaaS & Marketplaces.
-              </p>
+            {/* Badge */}
+            <div className="hero-badge inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary">
+              <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
+              Available for new projects
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start pt-2 pb-2">
-              <Button size="lg" className="text-base px-6 py-5 rounded-full" asChild>
+            {/* Headline */}
+            <h1 className="hero-title text-3xl md:text-5xl font-serif font-bold tracking-tight text-foreground leading-[1.1]">
+              I help <span className="text-primary">consumer</span> & <span className="text-primary">B2B products</span> grow revenue, retention, and scale.
+            </h1>
+
+            {/* Subtext */}
+            <p className="hero-sub text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 leading-relaxed">
+              <strong className="text-foreground">Yogesh Yadav</strong> — Product Leader with 9+ years across Fintech, Mobility, SaaS & Marketplaces.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="hero-cta flex flex-col sm:flex-row gap-3 justify-center md:justify-start pt-2 pb-2">
+              <Button size="lg" className="text-base px-6 py-5 rounded-full hover-press" asChild>
                 <Link href="/contact">Work with me <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
-              <Button variant="outline" size="lg" className="text-base px-6 py-5 rounded-full" asChild>
+              <Button variant="outline" size="lg" className="text-base px-6 py-5 rounded-full hover-press" asChild>
                 <Link href="/blog">Read my thinking</Link>
               </Button>
             </div>
 
-            <div className="pt-2 flex items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground">
+            {/* Trust tags */}
+            <div className="hero-tags pt-2 flex items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-primary" />
                 <span>Strategy</span>
