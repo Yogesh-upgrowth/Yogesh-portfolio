@@ -6,29 +6,35 @@ import { Link } from "wouter";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-background pt-24 pb-12 md:pt-28 md:pb-16">
-      {/* CSS-only abstract background - no images */}
-      <div className="absolute inset-0 -z-10 pointer-events-none">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-        <div className="absolute bottom-0 left-1/4 w-64 h-64 bg-blue-400/5 rounded-full blur-3xl" />
-      </div>
+      {/* CSS-only background — zero GPU cost, pure CSS gradient */}
+      <div
+        className="absolute inset-0 -z-10 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 60% 50% at 90% 0%, hsl(221 83% 53% / 0.06) 0%, transparent 70%), " +
+            "radial-gradient(ellipse 40% 35% at 20% 100%, hsl(217 91% 60% / 0.04) 0%, transparent 65%)",
+        }}
+      />
 
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
-          
-          {/* Profile image — scale-in on load */}
+
+          {/* Profile image */}
           <div className="relative shrink-0 hero-image">
-            <div className="absolute -inset-3 rounded-full bg-gradient-to-r from-primary via-blue-400 to-primary opacity-60 blur-md animate-pulse" />
+            {/* Static ring — no blur, no pulse, pure CSS border */}
+            <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-primary via-blue-400 to-primary opacity-50" />
             <div className="absolute -top-2 -right-2 w-4 h-4 bg-primary rounded-full shadow-lg z-20" />
             <div className="absolute -bottom-1 -left-3 w-3 h-3 bg-blue-400 rounded-full shadow-lg z-20" />
             <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl z-10 bg-muted">
-              <img 
-                src={profileImage} 
-                alt="Yogesh Yadav" 
+              <img
+                src={profileImage}
+                alt="Yogesh Yadav"
                 width="224"
                 height="224"
                 className="w-full h-full object-cover"
                 loading="eager"
                 decoding="async"
+                fetchPriority="high"
               />
             </div>
           </div>
@@ -36,13 +42,14 @@ export default function Hero() {
           <div className="flex-1 space-y-5 text-center md:text-left mt-5 mb-5">
             {/* Badge */}
             <div className="hero-badge inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary">
-              <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse"></span>
+              <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse" />
               Available for new projects
             </div>
 
             {/* Headline */}
             <h1 className="hero-title text-3xl md:text-5xl font-serif font-bold tracking-tight text-foreground leading-[1.1]">
-              I help <span className="text-primary">consumer</span> & <span className="text-primary">B2B products</span> grow revenue, retention, and scale.
+              I help <span className="text-primary">consumer</span> &{" "}
+              <span className="text-primary">B2B products</span> grow revenue, retention, and scale.
             </h1>
 
             {/* Subtext */}

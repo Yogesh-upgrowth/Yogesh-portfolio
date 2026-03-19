@@ -1,12 +1,13 @@
 import { Check } from "lucide-react";
 import { useInView } from "@/hooks/useInView";
 
+// Static — never recreated on render
 const clientTypes = [
   "Startups (Seed to Series C) needing structure & scale",
   "Founders looking for a product partner",
   "Growth-stage consumer apps hitting a plateau",
   "B2B SaaS teams needing better conversion",
-  "Marketplaces & Fintech platforms optimizing transactions"
+  "Marketplaces & Fintech platforms optimizing transactions",
 ];
 
 export default function Clients() {
@@ -14,7 +15,7 @@ export default function Clients() {
   const { ref: listRef, inView: listVisible } = useInView<HTMLDivElement>();
 
   return (
-    <section className="py-20 bg-background border-b border-border">
+    <section className="py-20 bg-background border-b border-border" style={{ contentVisibility: "auto", containIntrinsicSize: "0 380px" }}>
       <div className="container px-4 mx-auto max-w-4xl text-center">
         <h2
           ref={headRef}
@@ -22,7 +23,7 @@ export default function Clients() {
         >
           Who I work best with
         </h2>
-        
+
         <div
           ref={listRef}
           className={`grid md:grid-cols-2 gap-6 text-left reveal-stagger ${listVisible ? "in-view" : ""}`}

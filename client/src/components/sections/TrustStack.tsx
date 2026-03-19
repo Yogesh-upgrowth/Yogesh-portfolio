@@ -51,7 +51,7 @@ export default function TrustStack() {
   const [activeStep, setActiveStep] = useState<number>(0);
 
   return (
-    <section id="trust-stack" className="py-24 bg-muted/20">
+    <section id="trust-stack" className="py-24 bg-muted/20" style={{ contentVisibility: "auto", containIntrinsicSize: "0 520px" }}>
       <div className="container px-4 md:px-6 mx-auto">
         
         {/* Section Header */}

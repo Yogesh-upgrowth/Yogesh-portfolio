@@ -32,7 +32,7 @@ export default function Impact() {
   const { ref: cardsRef, inView: cardsVisible } = useInView<HTMLDivElement>();
 
   return (
-    <section id="impact" className="py-24 bg-foreground text-background">
+    <section id="impact" className="py-24 bg-foreground text-background" style={{ contentVisibility: "auto", containIntrinsicSize: "0 460px" }}>
       <div className="container px-4 md:px-6 mx-auto">
         <div
           ref={headRef}

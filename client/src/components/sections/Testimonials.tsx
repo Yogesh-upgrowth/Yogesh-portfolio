@@ -2,28 +2,32 @@ import { Quote } from "lucide-react";
 import { useState, useEffect, useCallback } from "react";
 import { useInView } from "@/hooks/useInView";
 
+// Static — never recreated on render
 const testimonials = [
   {
     name: "Rahul M.",
     role: "CEO, FinTechStart",
     initials: "RM",
     color: "bg-blue-500",
-    quote: "Yogesh completely transformed our monetization strategy. We went from struggling to convert free users to seeing a 300% increase in paid subscriptions within 3 months."
+    quote:
+      "Yogesh completely transformed our monetization strategy. We went from struggling to convert free users to seeing a 300% increase in paid subscriptions within 3 months.",
   },
   {
     name: "Sarah K.",
     role: "VP of Growth, EcomScale",
     initials: "SK",
     color: "bg-emerald-500",
-    quote: "Working with Yogesh was the best investment we made this year. He rolled up his sleeves and helped us optimize our entire funnel. Our CAC dropped by 40%."
+    quote:
+      "Working with Yogesh was the best investment we made this year. He rolled up his sleeves and helped us optimize our entire funnel. Our CAC dropped by 40%.",
   },
   {
     name: "Amit V.",
     role: "Founder, SaaSFlow",
     initials: "AV",
     color: "bg-purple-500",
-    quote: "Yogesh brings a rare combination of data-driven rigor and creative problem solving. He helped us unlock a new revenue stream that now accounts for 20% of our MRR."
-  }
+    quote:
+      "Yogesh brings a rare combination of data-driven rigor and creative problem solving. He helped us unlock a new revenue stream that now accounts for 20% of our MRR.",
+  },
 ];
 
 export default function Testimonials() {
@@ -31,22 +35,18 @@ export default function Testimonials() {
   const [isPaused, setIsPaused] = useState(false);
   const { ref: sectionRef, inView: sectionVisible } = useInView<HTMLDivElement>();
 
-  const goToSlide = useCallback((index: number) => {
-    setActiveIndex(index);
-  }, []);
-
   const nextSlide = useCallback(() => {
     setActiveIndex((prev) => (prev + 1) % testimonials.length);
   }, []);
 
   useEffect(() => {
     if (isPaused) return;
-    const interval = setInterval(() => { nextSlide(); }, 4500);
+    const interval = setInterval(nextSlide, 4500);
     return () => clearInterval(interval);
   }, [isPaused, nextSlide]);
 
   return (
-    <section className="py-24 bg-muted/20 border-y border-border/50">
+    <section className="py-24 bg-muted/20 border-y border-border/50" style={{ contentVisibility: "auto", containIntrinsicSize: "0 420px" }}>
       <div className="container px-4 mx-auto max-w-4xl">
         <div
           ref={sectionRef}
@@ -55,13 +55,13 @@ export default function Testimonials() {
           <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-3">What People Say</h2>
           <h3 className="text-3xl font-serif font-bold">Trusted by founders & leaders</h3>
         </div>
-        
-        <div 
+
+        <div
           className="relative overflow-hidden"
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
         >
-          <div 
+          <div
             className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(-${activeIndex * 100}%)` }}
           >
@@ -93,10 +93,10 @@ export default function Testimonials() {
           {testimonials.map((_, index) => (
             <button
               key={index}
-              onClick={() => goToSlide(index)}
+              onClick={() => setActiveIndex(index)}
               data-testid={`testimonial-dot-${index}`}
-              className={`h-3 w-3 rounded-full transition-all duration-300 ${
-                index === activeIndex ? "bg-primary w-8" : "bg-border hover:bg-primary/50"
+              className={`h-3 rounded-full transition-all duration-300 ${
+                index === activeIndex ? "bg-primary w-8" : "w-3 bg-border hover:bg-primary/50"
               }`}
               aria-label={`Go to testimonial ${index + 1}`}
             />

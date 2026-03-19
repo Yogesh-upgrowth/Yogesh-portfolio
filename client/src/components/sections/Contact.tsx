@@ -26,17 +26,16 @@ export default function Contact() {
     defaultValues: { name: "", email: "", message: "" },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  function onSubmit(_values: z.infer<typeof formSchema>) {
     toast({
       title: "Message Sent!",
       description: "Thanks for reaching out. I'll get back to you soon.",
     });
-    console.log(values);
     form.reset();
   }
 
   return (
-    <section id="contact" className="py-24 bg-muted/30">
+    <section id="contact" className="py-24 bg-muted/30" style={{ contentVisibility: "auto", containIntrinsicSize: "0 580px" }}>
       <div className="container px-4 md:px-6 mx-auto max-w-5xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left column — slides in from left */}
