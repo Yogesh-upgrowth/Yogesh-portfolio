@@ -1,0 +1,247 @@
+Build First Case Study Detail Page (Premium + SEO Optimized)
+🎯 Objective
+
+Create a fully designed, premium, long-form Case Study Detail Page for:
+
+👉 “How We Used ML to Predict Insurance Buyers (50,000+ Data Points)”
+
+This page should:
+
+Match the existing website design system
+
+Feel like a top-tier product case study (Stripe / Notion style)
+
+Be highly readable for long-form (8K–10K words)
+
+Be SEO optimized
+
+Be visually engaging (not just plain text)
+
+🧠 Context
+
+This is the first flagship case study
+
+It should act as a portfolio centerpiece
+
+Content is already provided (DO NOT rewrite content — only structure + design)
+
+🎨 Design Guidelines
+1. Typography (VERY IMPORTANT)
+
+Maintain existing font family
+
+Improve readability:
+
+Max width: 700–800px
+
+Line height: 1.7–1.9
+
+Font size:
+
+Body: 16–18px
+
+H1: large & bold
+
+H2: strong section separators
+
+Add proper spacing between sections
+
+2. Layout Structure
+🧱 Page Sections
+🔹 1. Hero Section
+
+Include:
+
+Title (H1)
+
+Subtitle
+
+Author (Yogesh Yadav)
+
+Read time (e.g. “12 min read”)
+
+Tags:
+
+Machine Learning
+
+Growth
+
+Product
+
+Add:
+
+Large hero image (tech/AI/business theme)
+
+Subtle gradient background
+
+🔹 2. Sticky Table of Contents (Premium UX)
+
+Left side (desktop only):
+
+Clickable sections:
+
+Problem
+
+Context
+
+Data Strategy
+
+ML Model
+
+Results
+
+Learnings
+
+Highlight active section on scroll
+
+🔹 3. Content Rendering (IMPORTANT)
+
+Break content into beautiful sections:
+
+For each section:
+
+Use:
+
+Headings (H2, H3)
+
+Bullet points
+
+Callout boxes
+
+Quotes
+
+💡 Add Special UI Components
+🧠 Insight Box
+
+Highlight key ideas:
+
+“We didn’t have a traffic problem. We had an intent problem.”
+
+📊 Metrics Box
+
+Show results in cards:
+
+CTR ↑ 2–3X
+
+Conversion ↑
+
+Drop-offs ↓
+
+⚠️ Problem Box
+
+Use subtle red background for issues
+
+🚀 Takeaway Box
+
+Highlight final conclusion
+
+🔹 4. Visual Enhancements
+
+Add:
+
+Section dividers
+
+Icons for sections
+
+Graph placeholders (optional)
+
+Clean whitespace
+
+🔹 5. End Section (CTA)
+
+Add:
+
+“Explore More Case Studies”
+
+“Work With Me”
+
+“Connect on LinkedIn”
+
+🧩 Content (IMPORTANT)
+
+👉 Use the FULL content provided below
+👉 Structure it properly (DO NOT dump raw text)
+
+(Insert the entire case study content exactly as provided)
+
+⚡ Interactions
+
+Smooth scroll
+
+TOC click scroll
+
+Section highlight on scroll
+
+Subtle fade-in animations
+
+🔍 SEO Requirements
+
+URL:
+/case-study/ml-insurance-prediction
+
+Add:
+
+<title>:
+ML Case Study | Predict Insurance Buyers | Yogesh Yadav
+
+Meta description:
+How we used machine learning on 50,000+ data points to predict insurance buyers and increase conversions.
+
+Proper heading hierarchy:
+
+One H1
+
+Multiple H2s
+
+Nested H3s
+
+🛠 Tech Requirements
+
+Use existing framework (React / Next.js)
+
+Create reusable components:
+
+CaseStudyHero
+
+TableOfContents
+
+ContentSection
+
+InsightBox
+
+MetricsCard
+
+❌ Constraints
+
+DO NOT change global styles
+
+DO NOT use random fonts/colors
+
+DO NOT make it look like a blog — it should feel like a premium product case study
+
+✅ Output Expectation
+
+Fully structured long-form page
+
+Clean, readable layout
+
+Premium UI
+
+SEO-ready
+
+Portfolio-worthy
+
+💥 Bonus (If possible)
+
+Add reading progress bar (top)
+
+Add “Back to Case Studies” button
+
+Add share buttons
+
+🧠 Tone Reminder
+
+This page should feel like:
+
+👉 A top product builder explaining a real system
+👉 Not a content writer writing an article
