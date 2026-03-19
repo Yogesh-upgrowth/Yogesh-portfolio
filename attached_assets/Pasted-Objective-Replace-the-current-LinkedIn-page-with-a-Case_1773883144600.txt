@@ -1,0 +1,239 @@
+Objective:
+Replace the current “LinkedIn” page with a Case Studies section that matches the existing website design system (fonts, colors, spacing, UI patterns), while making it more interactive, premium, and SEO-optimized.
+
+🧠 Context
+
+Current page: “Connect on LinkedIn”
+
+Replace it entirely with: Case Studies Page
+
+Website already has a defined:
+
+Typography system
+
+Color palette
+
+Button styles
+
+Layout grid
+
+👉 Important: Do NOT change global styles. Reuse existing tokens/components.
+
+🎨 Design Requirements
+1. Visual Consistency
+
+Use same font family, sizes, and weights
+
+Use existing color palette (primary blue, neutrals, background tones)
+
+Maintain same spacing system (padding, margins, container width)
+
+Buttons should follow existing:
+
+Rounded edges
+
+Hover effects
+
+Primary/secondary styles
+
+2. Premium UI Enhancements
+
+Make the UI feel modern + premium + interactive:
+
+Add card-based layout for case studies
+
+Use:
+
+Soft shadows
+
+Subtle hover lift (transform + shadow)
+
+Smooth transitions (200–300ms ease)
+
+Add image overlay on hover
+
+Add “Read Case Study →” CTA animation
+
+Add tag pills (e.g., Growth, ML, SEO, Product)
+
+3. Page Structure
+🔹 Hero Section
+
+Title:
+“Case Studies”
+
+Subtitle:
+“Deep dives into product, growth, and monetisation strategies”
+
+Optional CTA:
+
+“Explore Case Studies”
+
+🔹 Case Study Listing Section
+
+Grid layout:
+
+Desktop: 3 columns
+
+Tablet: 2 columns
+
+Mobile: 1 column
+
+Each card should include:
+
+Thumbnail image
+
+Title
+
+Short 1-line description
+
+Tags (chips)
+
+CTA: “Read Case Study →”
+
+🔹 Case Study Detail Page
+
+When clicked:
+
+Open dynamic route: /case-study/[slug]
+
+Layout:
+
+Large hero image
+
+Title
+
+Metadata:
+
+Category
+
+Read time
+
+Date
+
+Content area
+
+👉 For now:
+Show placeholder:
+
+“🚧 Detailed case study coming soon.”
+
+🧩 Dummy Data (Add 20 Case Studies)
+
+Create static/mock data with:
+
+Example Structure:
+{
+  "title": "How We Used ML to Predict Insurance Buyers (50K+ Data Points)",
+  "slug": "ml-insurance-prediction",
+  "image": "random high-quality tech/business image",
+  "category": "Machine Learning",
+  "description": "Using predictive modeling to increase insurance conversions by 32%"
+}
+🧾 20 Dummy Titles
+
+How We Used ML to Predict Insurance Buyers (50K+ Data Points)
+
+Increasing Conversion by 42% with Smart Funnel Optimization
+
+Building a Real-Time Fare Comparison Engine (Uber vs Ola)
+
+How We Reduced CAC by 35% Using Intent-Based Targeting
+
+Scaling SEO from 1K to 100K Monthly Traffic
+
+Designing a High-Converting Insurance Landing Page
+
+AI-Based Personalization for Financial Products
+
+Improving Retention with Trigger-Based Notifications
+
+Building a Comparison Engine Like Monito (India Use Case)
+
+How We Increased ROAS Using ML Ad Optimization
+
+Creating a Viral Growth Loop for a Fintech App
+
+UX Redesign That Improved Conversion by 28%
+
+Predicting User Drop-offs Using Behavioral Data
+
+Building a Scalable Product Recommendation Engine
+
+From 0 to 10K Users in 30 Days (Growth Playbook)
+
+Designing a Clean and Trustworthy Fintech UI
+
+Automating Ad Campaigns Across Platforms
+
+Increasing Clicks on Insurance CTAs by 2X
+
+Building an AI-Powered Astrology App
+
+Creating a High-Performance Comparison Website
+
+⚡ Interactions to Add
+
+Hover effects on cards
+
+Smooth page transitions
+
+Lazy loading images
+
+Subtle scroll animations (fade-in)
+
+🔍 SEO Requirements
+
+Each case study page should have:
+
+Unique <title>
+
+Meta description
+
+Clean URL slug
+
+Add:
+
+Structured headings (H1, H2, H3)
+
+Use keyword focus:
+
+“Case Study”
+
+“Growth Case Study”
+
+“Product Case Study”
+
+🛠 Tech Requirements
+
+Use existing stack (React / Next.js if migrated)
+
+Create reusable components:
+
+CaseStudyCard
+
+CaseStudyGrid
+
+CaseStudyDetail
+
+Use dynamic routing for detail pages
+
+❌ Constraints
+
+Do NOT break existing UI
+
+Do NOT introduce new design system
+
+Avoid heavy libraries (keep performance fast)
+
+✅ Output Expectation
+
+Fully functional Case Study listing page
+
+20 dummy case studies rendered
+
+Click → opens detail page
+
+Clean, premium, interactive UI
+
+SEO-friendly structure
