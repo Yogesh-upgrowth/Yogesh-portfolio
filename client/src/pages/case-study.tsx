@@ -3,12 +3,43 @@ import { Link, useParams } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Clock, Calendar, User, TrendingUp } from "lucide-react";
+import { ArrowLeft, Clock, Calendar, User } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import NotFound from "@/pages/not-found";
 
-// Lazy-load the large ML content — only fetched when this specific slug is visited
+// Lazy-load each full write-up — only fetched when that specific slug is visited
 const MLInsuranceCaseStudy = lazy(() => import("@/pages/ml-insurance-content"));
+const MoneyRateFinderCaseStudy = lazy(() => import("@/pages/moneyratefinder-content"));
+
+// Slugs that have a full write-up
+const FULL_WRITEUP_SLUGS = new Set(["ml-insurance-prediction", "scaling-moneyratefinder-growth"]);
+
+// Per-slug ToC definitions
+const tocMap: Record<string, { id: string; label: string }[]> = {
+  "ml-insurance-prediction": [
+    { id: "hook", label: "The Problem" },
+    { id: "context", label: "Context" },
+    { id: "problem-statement", label: "Problem Statement" },
+    { id: "key-insight", label: "Key Insight" },
+    { id: "data-strategy", label: "Data Strategy" },
+    { id: "ml-model", label: "ML Model" },
+    { id: "product-integration", label: "Product Integration" },
+    { id: "results", label: "Results" },
+    { id: "learnings", label: "Learnings" },
+    { id: "future", label: "Future Scope" },
+  ],
+  "scaling-moneyratefinder-growth": [
+    { id: "hook", label: "The Vanity Metric" },
+    { id: "reframe", label: "Strategic Shift" },
+    { id: "intent-mapping", label: "Intent Mapping" },
+    { id: "seo-engine", label: "SEO Engine" },
+    { id: "scaling", label: "Scaling Phases" },
+    { id: "results", label: "Results" },
+    { id: "learnings", label: "What Worked" },
+    { id: "challenges", label: "Challenges" },
+    { id: "future", label: "Future Scope" },
+  ],
+};
 
 /* ─── Reading Progress Bar ─── */
 function ReadingProgress() {
@@ -29,25 +60,14 @@ function ReadingProgress() {
   );
 }
 
-/* ─── Sticky Table of Contents ─── */
-const tocItems = [
-  { id: "hook", label: "The Problem" },
-  { id: "context", label: "Context" },
-  { id: "problem-statement", label: "Problem Statement" },
-  { id: "key-insight", label: "Key Insight" },
-  { id: "data-strategy", label: "Data Strategy" },
-  { id: "ml-model", label: "ML Model" },
-  { id: "product-integration", label: "Product Integration" },
-  { id: "results", label: "Results" },
-  { id: "learnings", label: "Learnings" },
-  { id: "future", label: "Future Scope" },
-];
+/* ─── Sticky Table of Contents (per-slug) ─── */
+function TableOfContents({ slug }: { slug: string }) {
+  const items = tocMap[slug] ?? [];
+  const [active, setActive] = useState(items[0]?.id ?? "");
 
-function TableOfContents() {
-  const [active, setActive] = useState("hook");
   useEffect(() => {
     const observers: IntersectionObserver[] = [];
-    tocItems.forEach(({ id }) => {
+    items.forEach(({ id }) => {
       const el = document.getElementById(id);
       if (!el) return;
       const obs = new IntersectionObserver(
@@ -58,13 +78,15 @@ function TableOfContents() {
       observers.push(obs);
     });
     return () => observers.forEach((o) => o.disconnect());
-  }, []);
+  }, [slug]);
+
+  if (!items.length) return null;
 
   return (
     <nav className="hidden xl:block sticky top-28 self-start w-56 shrink-0">
       <p className="text-xs font-bold tracking-widest text-muted-foreground uppercase mb-4">On this page</p>
       <ul className="space-y-1">
-        {tocItems.map(({ id, label }) => (
+        {items.map(({ id, label }) => (
           <li key={id}>
             <button
               onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })}
@@ -81,6 +103,33 @@ function TableOfContents() {
       </ul>
     </nav>
   );
+}
+
+/* ─── Lazy content resolver ─── */
+function FullWriteup({ slug }: { slug: string }) {
+  const Skeleton = (
+    <div className="animate-pulse space-y-4">
+      {[...Array(8)].map((_, i) => (
+        <div key={i} className="h-5 bg-muted rounded" style={{ width: `${75 + (i % 3) * 10}%` }} />
+      ))}
+    </div>
+  );
+
+  if (slug === "ml-insurance-prediction") {
+    return (
+      <Suspense fallback={Skeleton}>
+        <MLInsuranceCaseStudy />
+      </Suspense>
+    );
+  }
+  if (slug === "scaling-moneyratefinder-growth") {
+    return (
+      <Suspense fallback={Skeleton}>
+        <MoneyRateFinderCaseStudy />
+      </Suspense>
+    );
+  }
+  return null;
 }
 
 /* ─── Coming Soon placeholder ─── */
@@ -135,11 +184,11 @@ export default function CaseStudyDetail() {
   const study = caseStudies.find((s) => s.slug === slug);
   if (!study) return <NotFound />;
 
-  const isFlagship = slug === "ml-insurance-prediction";
+  const isFullWriteup = FULL_WRITEUP_SLUGS.has(slug);
 
   return (
     <>
-      {isFlagship && <ReadingProgress />}
+      {isFullWriteup && <ReadingProgress />}
       <div className="min-h-screen bg-background font-sans text-foreground">
         <Navbar />
 
@@ -185,12 +234,10 @@ export default function CaseStudyDetail() {
           </Link>
 
           <div className="flex gap-12 items-start">
-            {isFlagship && <TableOfContents />}
+            {isFullWriteup && <TableOfContents slug={slug} />}
             <main className="flex-1 min-w-0" style={{ fontSize: "17px", lineHeight: "1.85" }}>
-              {isFlagship ? (
-                <Suspense fallback={<div className="animate-pulse space-y-4">{[...Array(6)].map((_, i) => <div key={i} className="h-6 bg-muted rounded" />)}</div>}>
-                  <MLInsuranceCaseStudy />
-                </Suspense>
+              {isFullWriteup ? (
+                <FullWriteup slug={slug} />
               ) : (
                 <ComingSoonContent study={study} />
               )}
