@@ -77,7 +77,7 @@ export const caseStudies: CaseStudy[] = [
   /* ── GROWTH + PRODUCT ── */
   {
     slug: "scaling-moneyratefinder-growth",
-    title: "From 1K to 10K Monthly Users: Scaling MoneyRateFinder with SEO + Product Loops",
+    title: "From 1K to 100K Monthly Users: Scaling MoneyRateFinder with SEO + Product Loops",
     description: "Scaling traffic and retention using compounding growth loops and organic SEO.",
     category: "Growth",
     tags: ["Growth", "Product", "SEO"],
