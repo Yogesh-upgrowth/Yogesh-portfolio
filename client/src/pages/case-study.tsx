@@ -7,19 +7,82 @@ import { ArrowLeft, Clock, Calendar, User } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import NotFound from "@/pages/not-found";
 
-// Lazy-load each full write-up — only fetched when that specific slug is visited
+// ── Original 3 full write-ups ─────────────────────────────────────────────────
 const MLInsuranceCaseStudy = lazy(() => import("@/pages/ml-insurance-content"));
 const MoneyRateFinderCaseStudy = lazy(() => import("@/pages/moneyratefinder-content"));
 const SeoMoatCaseStudy = lazy(() => import("@/pages/seo-moat-content"));
 
-// Slugs that have a full write-up
+// ── 23 new full write-ups ─────────────────────────────────────────────────────
+const PredictHighLtvContent = lazy(() => import("@/pages/cs-predict-high-ltv-content"));
+const RealTimeIntentContent = lazy(() => import("@/pages/cs-real-time-intent-content"));
+const MlReduceCacContent = lazy(() => import("@/pages/cs-ml-reduce-cac-content"));
+const ChurnModelContent = lazy(() => import("@/pages/cs-churn-model-content"));
+const MlClusteringInsuranceContent = lazy(() => import("@/pages/cs-ml-clustering-insurance-content"));
+const InsuranceCtaContent = lazy(() => import("@/pages/cs-insurance-cta-content"));
+const GrowthLoopContent = lazy(() => import("@/pages/cs-growth-loop-content"));
+const FunnelDropoffContent = lazy(() => import("@/pages/cs-funnel-dropoff-content"));
+const ZeroCostGrowthContent = lazy(() => import("@/pages/cs-zero-cost-growth-content"));
+const CabFareContent = lazy(() => import("@/pages/cs-cab-fare-content"));
+const ComparisonPlatformContent = lazy(() => import("@/pages/cs-comparison-platform-content"));
+const NotificationSystemContent = lazy(() => import("@/pages/cs-notification-system-content"));
+const FinanceCalculatorContent = lazy(() => import("@/pages/cs-finance-calculator-content"));
+const Mvp7DaysContent = lazy(() => import("@/pages/cs-mvp-7-days-content"));
+const UxRedesignContent = lazy(() => import("@/pages/cs-ux-redesign-content"));
+const FintechTrustContent = lazy(() => import("@/pages/cs-fintech-trust-content"));
+const MicrocopyContent = lazy(() => import("@/pages/cs-microcopy-content"));
+const CognitiveLoadContent = lazy(() => import("@/pages/cs-cognitive-load-content"));
+const Seo0To100kContent = lazy(() => import("@/pages/cs-seo-0-to-100k-content"));
+const Rank1FintechContent = lazy(() => import("@/pages/cs-rank-1-fintech-content"));
+const ProgrammaticSeoContent = lazy(() => import("@/pages/cs-programmatic-seo-content"));
+const AiRecommendationContent = lazy(() => import("@/pages/cs-ai-recommendation-content"));
+const MlUxGrowthContent = lazy(() => import("@/pages/cs-ml-ux-growth-content"));
+
+// ── Slugs that have a full write-up ──────────────────────────────────────────
 const FULL_WRITEUP_SLUGS = new Set([
   "ml-insurance-prediction",
   "scaling-moneyratefinder-growth",
   "seo-moat-remittance",
+  "predict-high-ltv-users-ml",
+  "real-time-intent-scoring-engine",
+  "ml-reduce-cac-segmentation",
+  "predict-user-dropoff-churn-model",
+  "ml-user-clustering-insurance",
+  "insurance-cta-2x-growth",
+  "growth-loop-repeat-users",
+  "funnel-dropoff-ux-optimization",
+  "zero-cost-growth-engine",
+  "cab-fare-comparison-engine",
+  "comparison-platform-india",
+  "scalable-notification-system",
+  "finance-calculator-app-retention",
+  "mvp-in-7-days",
+  "ux-redesign-conversion-28",
+  "fintech-trust-ui-patterns",
+  "microcopy-ctr-increase",
+  "reduce-cognitive-load",
+  "seo-0-to-100k",
+  "rank-1-fintech-keywords",
+  "programmatic-seo-calculators",
+  "ai-recommendation-engine",
+  "ml-ux-growth-3x-conversion",
 ]);
 
-// Per-slug ToC definitions
+// ── Shared ToC for the 23 new case studies (all use same section IDs) ─────────
+const STANDARD_TOC = [
+  { id: "hook", label: "The Hook" },
+  { id: "early-data", label: "Early Data" },
+  { id: "segmentation", label: "Segmentation" },
+  { id: "reframe", label: "Strategic Reframe" },
+  { id: "framework", label: "Framework" },
+  { id: "system-design", label: "System Design" },
+  { id: "execution", label: "Execution" },
+  { id: "results", label: "Results" },
+  { id: "insights", label: "Deep Insights" },
+  { id: "failures", label: "Failure Points" },
+  { id: "future", label: "Future Evolution" },
+];
+
+// ── Per-slug ToC definitions ──────────────────────────────────────────────────
 const tocMap: Record<string, { id: string; label: string }[]> = {
   "ml-insurance-prediction": [
     { id: "hook", label: "The Problem" },
@@ -56,6 +119,29 @@ const tocMap: Record<string, { id: string; label: string }[]> = {
     { id: "takeaways", label: "Key Takeaways" },
     { id: "future", label: "What's Next" },
   ],
+  "predict-high-ltv-users-ml": STANDARD_TOC,
+  "real-time-intent-scoring-engine": STANDARD_TOC,
+  "ml-reduce-cac-segmentation": STANDARD_TOC,
+  "predict-user-dropoff-churn-model": STANDARD_TOC,
+  "ml-user-clustering-insurance": STANDARD_TOC,
+  "insurance-cta-2x-growth": STANDARD_TOC,
+  "growth-loop-repeat-users": STANDARD_TOC,
+  "funnel-dropoff-ux-optimization": STANDARD_TOC,
+  "zero-cost-growth-engine": STANDARD_TOC,
+  "cab-fare-comparison-engine": STANDARD_TOC,
+  "comparison-platform-india": STANDARD_TOC,
+  "scalable-notification-system": STANDARD_TOC,
+  "finance-calculator-app-retention": STANDARD_TOC,
+  "mvp-in-7-days": STANDARD_TOC,
+  "ux-redesign-conversion-28": STANDARD_TOC,
+  "fintech-trust-ui-patterns": STANDARD_TOC,
+  "microcopy-ctr-increase": STANDARD_TOC,
+  "reduce-cognitive-load": STANDARD_TOC,
+  "seo-0-to-100k": STANDARD_TOC,
+  "rank-1-fintech-keywords": STANDARD_TOC,
+  "programmatic-seo-calculators": STANDARD_TOC,
+  "ai-recommendation-engine": STANDARD_TOC,
+  "ml-ux-growth-3x-conversion": STANDARD_TOC,
 };
 
 /* ─── Reading Progress Bar ─── */
@@ -132,28 +218,43 @@ function FullWriteup({ slug }: { slug: string }) {
     </div>
   );
 
-  if (slug === "ml-insurance-prediction") {
-    return (
-      <Suspense fallback={Skeleton}>
-        <MLInsuranceCaseStudy />
-      </Suspense>
-    );
-  }
-  if (slug === "scaling-moneyratefinder-growth") {
-    return (
-      <Suspense fallback={Skeleton}>
-        <MoneyRateFinderCaseStudy />
-      </Suspense>
-    );
-  }
-  if (slug === "seo-moat-remittance") {
-    return (
-      <Suspense fallback={Skeleton}>
-        <SeoMoatCaseStudy />
-      </Suspense>
-    );
-  }
-  return null;
+  const componentMap: Record<string, React.LazyExoticComponent<() => JSX.Element>> = {
+    "ml-insurance-prediction": MLInsuranceCaseStudy,
+    "scaling-moneyratefinder-growth": MoneyRateFinderCaseStudy,
+    "seo-moat-remittance": SeoMoatCaseStudy,
+    "predict-high-ltv-users-ml": PredictHighLtvContent,
+    "real-time-intent-scoring-engine": RealTimeIntentContent,
+    "ml-reduce-cac-segmentation": MlReduceCacContent,
+    "predict-user-dropoff-churn-model": ChurnModelContent,
+    "ml-user-clustering-insurance": MlClusteringInsuranceContent,
+    "insurance-cta-2x-growth": InsuranceCtaContent,
+    "growth-loop-repeat-users": GrowthLoopContent,
+    "funnel-dropoff-ux-optimization": FunnelDropoffContent,
+    "zero-cost-growth-engine": ZeroCostGrowthContent,
+    "cab-fare-comparison-engine": CabFareContent,
+    "comparison-platform-india": ComparisonPlatformContent,
+    "scalable-notification-system": NotificationSystemContent,
+    "finance-calculator-app-retention": FinanceCalculatorContent,
+    "mvp-in-7-days": Mvp7DaysContent,
+    "ux-redesign-conversion-28": UxRedesignContent,
+    "fintech-trust-ui-patterns": FintechTrustContent,
+    "microcopy-ctr-increase": MicrocopyContent,
+    "reduce-cognitive-load": CognitiveLoadContent,
+    "seo-0-to-100k": Seo0To100kContent,
+    "rank-1-fintech-keywords": Rank1FintechContent,
+    "programmatic-seo-calculators": ProgrammaticSeoContent,
+    "ai-recommendation-engine": AiRecommendationContent,
+    "ml-ux-growth-3x-conversion": MlUxGrowthContent,
+  };
+
+  const Component = componentMap[slug];
+  if (!Component) return null;
+
+  return (
+    <Suspense fallback={Skeleton}>
+      <Component />
+    </Suspense>
+  );
 }
 
 /* ─── Coming Soon placeholder ─── */
