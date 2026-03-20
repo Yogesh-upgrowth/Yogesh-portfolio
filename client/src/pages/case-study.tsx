@@ -10,9 +10,14 @@ import NotFound from "@/pages/not-found";
 // Lazy-load each full write-up — only fetched when that specific slug is visited
 const MLInsuranceCaseStudy = lazy(() => import("@/pages/ml-insurance-content"));
 const MoneyRateFinderCaseStudy = lazy(() => import("@/pages/moneyratefinder-content"));
+const SeoMoatCaseStudy = lazy(() => import("@/pages/seo-moat-content"));
 
 // Slugs that have a full write-up
-const FULL_WRITEUP_SLUGS = new Set(["ml-insurance-prediction", "scaling-moneyratefinder-growth"]);
+const FULL_WRITEUP_SLUGS = new Set([
+  "ml-insurance-prediction",
+  "scaling-moneyratefinder-growth",
+  "seo-moat-remittance",
+]);
 
 // Per-slug ToC definitions
 const tocMap: Record<string, { id: string; label: string }[]> = {
@@ -38,6 +43,18 @@ const tocMap: Record<string, { id: string; label: string }[]> = {
     { id: "learnings", label: "What Worked" },
     { id: "challenges", label: "Challenges" },
     { id: "future", label: "Future Scope" },
+  ],
+  "seo-moat-remittance": [
+    { id: "hook", label: "SEO Was Broken" },
+    { id: "root-cause", label: "Root Cause" },
+    { id: "reframe", label: "The Strategic Shift" },
+    { id: "competitor-analysis", label: "Competitor Deconstruction" },
+    { id: "seo-engine", label: "Our SEO Engine" },
+    { id: "execution", label: "Execution" },
+    { id: "failures", label: "What Didn't Work" },
+    { id: "results", label: "Results" },
+    { id: "takeaways", label: "Key Takeaways" },
+    { id: "future", label: "What's Next" },
   ],
 };
 
@@ -126,6 +143,13 @@ function FullWriteup({ slug }: { slug: string }) {
     return (
       <Suspense fallback={Skeleton}>
         <MoneyRateFinderCaseStudy />
+      </Suspense>
+    );
+  }
+  if (slug === "seo-moat-remittance") {
+    return (
+      <Suspense fallback={Skeleton}>
+        <SeoMoatCaseStudy />
       </Suspense>
     );
   }

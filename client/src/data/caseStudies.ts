@@ -233,7 +233,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "seo-moat-remittance",
-    title: "Building an SEO Moat in the Remittance Space (MoneyRateFinder Case Study)",
+    title: "How We Reverse-Engineered Competitors to Win SEO Rankings (MoneyRateFinder)",
     description: "Creating defensible, compounding SEO advantage in a competitive fintech niche.",
     category: "SEO",
     tags: ["SEO", "Product", "Fintech"],

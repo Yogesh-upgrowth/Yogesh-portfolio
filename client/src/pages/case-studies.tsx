@@ -40,7 +40,7 @@ function CaseStudyCard({ study, index }: { study: typeof caseStudies[0]; index: 
             <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${categoryColors[study.category] ?? "bg-muted text-muted-foreground"}`}>
               {study.category}
             </span>
-            {(study.slug === "ml-insurance-prediction" || study.slug === "scaling-moneyratefinder-growth") && (
+            {(study.slug === "ml-insurance-prediction" || study.slug === "scaling-moneyratefinder-growth" || study.slug === "seo-moat-remittance") && (
               <span className="text-xs font-bold px-3 py-1 rounded-full border bg-green-600 text-white border-green-700">
                 ✦ Full Write-up
               </span>
