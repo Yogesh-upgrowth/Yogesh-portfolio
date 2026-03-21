@@ -3,7 +3,7 @@ import { Link, useParams } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Clock, Calendar, User } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock, Calendar, User } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import NotFound from "@/pages/not-found";
 
@@ -274,30 +274,126 @@ function ComingSoonContent({ study }: { study: typeof caseStudies[0] }) {
   );
 }
 
-/* ─── End CTA ─── */
-function EndCTA() {
+/* ─── Related + Prev/Next Case Studies ─── */
+function RelatedCaseStudies({ currentSlug }: { currentSlug: string }) {
+  const current = caseStudies.find((s) => s.slug === currentSlug);
+  if (!current) return null;
+
+  const currentIndex = caseStudies.findIndex((s) => s.slug === currentSlug);
+  const prevStudy = currentIndex > 0 ? caseStudies[currentIndex - 1] : null;
+  const nextStudy = currentIndex < caseStudies.length - 1 ? caseStudies[currentIndex + 1] : null;
+
+  const related = caseStudies
+    .filter((s) => s.slug !== currentSlug)
+    .map((s) => {
+      let score = 0;
+      if (s.category === current.category) score += 3;
+      current.tags.forEach((t) => { if (s.tags.includes(t)) score += 1; });
+      return { study: s, score };
+    })
+    .filter(({ score }) => score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+    .map(({ study }) => study);
+
   return (
-    <div className="mt-16 pt-10 border-t border-border">
-      <h2 className="text-2xl font-serif font-bold text-foreground mb-6">What's next?</h2>
-      <div className="grid sm:grid-cols-3 gap-4">
-        <Link href="/case-studies">
-          <div className="p-5 rounded-xl border border-border hover-lift hover-glow cursor-pointer text-center group">
-            <p className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">Explore More Case Studies</p>
-            <p className="text-sm text-muted-foreground">See all 26 breakdowns</p>
+    <div className="mt-16 space-y-10">
+      {/* Prev / Next navigation */}
+      {(prevStudy || nextStudy) && (
+        <div className="grid grid-cols-2 gap-4 pt-10 border-t border-border">
+          {prevStudy ? (
+            <Link href={`/case-study/${prevStudy.slug}`}>
+              <div className="group p-5 rounded-xl border border-border hover:border-primary/40 hover-lift cursor-pointer transition-all">
+                <p className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+                  <ArrowLeft className="h-3.5 w-3.5" /> Previous
+                </p>
+                <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug">
+                  {prevStudy.title}
+                </p>
+                <span className={`text-xs font-medium px-2 py-0.5 rounded-full border mt-2 inline-block ${categoryColors[prevStudy.category] ?? "bg-muted text-muted-foreground"}`}>
+                  {prevStudy.category}
+                </span>
+              </div>
+            </Link>
+          ) : <div />}
+
+          {nextStudy ? (
+            <Link href={`/case-study/${nextStudy.slug}`}>
+              <div className="group p-5 rounded-xl border border-border hover:border-primary/40 hover-lift cursor-pointer transition-all text-right">
+                <p className="flex items-center justify-end gap-1.5 text-xs font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+                  Next <ArrowRight className="h-3.5 w-3.5" />
+                </p>
+                <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors line-clamp-2 leading-snug">
+                  {nextStudy.title}
+                </p>
+                <div className="flex justify-end mt-2">
+                  <span className={`text-xs font-medium px-2 py-0.5 rounded-full border inline-block ${categoryColors[nextStudy.category] ?? "bg-muted text-muted-foreground"}`}>
+                    {nextStudy.category}
+                  </span>
+                </div>
+              </div>
+            </Link>
+          ) : <div />}
+        </div>
+      )}
+
+      {/* Related studies */}
+      {related.length > 0 && (
+        <div>
+          <h2 className="text-xl font-serif font-bold text-foreground mb-5">You might also like</h2>
+          <div className="grid sm:grid-cols-3 gap-4">
+            {related.map((s) => (
+              <Link key={s.slug} href={`/case-study/${s.slug}`}>
+                <div className="group rounded-xl border border-border overflow-hidden hover:border-primary/40 hover-lift cursor-pointer transition-all h-full flex flex-col">
+                  <div className="relative h-36 overflow-hidden bg-muted">
+                    <img
+                      src={s.image}
+                      alt={s.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
+                    <span className={`absolute bottom-3 left-3 text-xs font-semibold px-2 py-0.5 rounded-full border ${categoryColors[s.category] ?? "bg-muted text-muted-foreground"}`}>
+                      {s.category}
+                    </span>
+                  </div>
+                  <div className="p-4 flex-1 flex flex-col">
+                    <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors leading-snug line-clamp-3 flex-1">
+                      {s.title}
+                    </p>
+                    <p className="text-xs text-muted-foreground mt-2 flex items-center gap-1">
+                      <Clock className="h-3 w-3" /> {s.readTime}
+                    </p>
+                  </div>
+                </div>
+              </Link>
+            ))}
           </div>
-        </Link>
-        <Link href="/contact">
-          <div className="p-5 rounded-xl border border-primary/20 bg-primary/5 hover-lift cursor-pointer text-center">
-            <p className="font-bold text-primary mb-1">Work With Me</p>
-            <p className="text-sm text-muted-foreground">Let's build something together</p>
-          </div>
-        </Link>
-        <a href="https://linkedin.com/in/yogeshyadav" target="_blank" rel="noopener noreferrer">
-          <div className="p-5 rounded-xl border border-border hover-lift cursor-pointer text-center group">
-            <p className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">Connect on LinkedIn</p>
-            <p className="text-sm text-muted-foreground">Follow for more insights</p>
-          </div>
-        </a>
+        </div>
+      )}
+
+      {/* Bottom CTA */}
+      <div className="pt-8 border-t border-border">
+        <div className="grid sm:grid-cols-3 gap-4">
+          <Link href="/case-studies">
+            <div className="p-5 rounded-xl border border-border hover-lift hover-glow cursor-pointer text-center group">
+              <p className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">All Case Studies</p>
+              <p className="text-sm text-muted-foreground">Browse all 26 breakdowns</p>
+            </div>
+          </Link>
+          <Link href="/contact">
+            <div className="p-5 rounded-xl border border-primary/20 bg-primary/5 hover-lift cursor-pointer text-center">
+              <p className="font-bold text-primary mb-1">Work With Me</p>
+              <p className="text-sm text-muted-foreground">Let's build something together</p>
+            </div>
+          </Link>
+          <a href="https://linkedin.com/in/yogeshyadav" target="_blank" rel="noopener noreferrer">
+            <div className="p-5 rounded-xl border border-border hover-lift cursor-pointer text-center group">
+              <p className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">Connect on LinkedIn</p>
+              <p className="text-sm text-muted-foreground">Follow for more insights</p>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
   );
@@ -366,7 +462,7 @@ export default function CaseStudyDetail() {
               ) : (
                 <ComingSoonContent study={study} />
               )}
-              <EndCTA />
+              <RelatedCaseStudies currentSlug={slug} />
             </main>
           </div>
         </div>
