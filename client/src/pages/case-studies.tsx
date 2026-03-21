@@ -97,47 +97,80 @@ export default function CaseStudies() {
       <Navbar />
 
       {/* Hero */}
-      <section className="pt-28 pb-16 bg-muted/20 border-b border-border">
+      <section className="relative pt-32 pb-20 overflow-hidden">
+        {/* Background gradient + grid */}
+        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-muted/30 to-background pointer-events-none" />
+        <div
+          className="absolute inset-0 pointer-events-none opacity-[0.035]"
+          style={{
+            backgroundImage: "linear-gradient(#2563EB 1px, transparent 1px), linear-gradient(90deg, #2563EB 1px, transparent 1px)",
+            backgroundSize: "48px 48px",
+          }}
+        />
+
         <div
           ref={heroRef}
-          className={`container px-4 md:px-6 mx-auto text-center reveal ${heroVisible ? "in-view" : ""}`}
+          className={`relative container px-4 md:px-6 mx-auto text-center reveal ${heroVisible ? "in-view" : ""}`}
         >
-          <div className="inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary mb-4">
+          {/* Badge */}
+          <div className="inline-flex items-center rounded-full border border-primary/25 bg-white/80 shadow-sm px-4 py-1.5 text-sm font-semibold text-primary mb-6 backdrop-blur-sm">
             <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse" />
             Case Studies
           </div>
-          <h1 className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-4 leading-tight">
-            Deep dives into product,<br className="hidden md:block" /> growth, and monetisation
+
+          <h1 className="text-4xl md:text-6xl font-serif font-bold text-foreground mb-6 leading-[1.1] tracking-tight">
+            Deep dives into<br />
+            <span className="text-primary">product, growth,</span><br />
+            and monetisation
           </h1>
-          <p className="text-lg text-muted-foreground max-w-xl mx-auto">
+
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">
             Real strategies. Real outcomes. Behind-the-scenes breakdowns of how products grow and monetise at scale.
           </p>
+
+          {/* Stats strip */}
+          <div className="inline-flex items-center gap-6 md:gap-10 bg-white/90 backdrop-blur-sm border border-border rounded-2xl px-6 md:px-10 py-4 shadow-sm mx-auto">
+            {[
+              { value: "26", label: "Case Studies" },
+              { value: "9+", label: "Years Experience" },
+              { value: "5", label: "Industries" },
+            ].map(({ value, label }) => (
+              <div key={label} className="text-center">
+                <p className="text-2xl font-serif font-bold text-primary leading-none">{value}</p>
+                <p className="text-xs text-muted-foreground mt-1 font-medium">{label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Filter tabs */}
-      <section className="py-8 border-b border-border bg-background sticky top-16 z-30 backdrop-blur-md bg-background/90">
+      <section className="border-y border-border bg-background/95 sticky top-16 z-30 backdrop-blur-md">
         <div className="container px-4 md:px-6 mx-auto">
-          <div className="flex flex-wrap gap-2 justify-center">
-            {allCategories.map((cat) => (
-              <button
-                key={cat}
-                onClick={() => setActiveCategory(cat)}
-                data-testid={`filter-${cat}`}
-                className={`px-4 py-2 rounded-full text-sm font-medium border transition-all ${
-                  activeCategory === cat
-                    ? "bg-primary text-white border-primary shadow-sm"
-                    : "border-border text-muted-foreground hover:border-primary/30 hover:text-foreground hover:bg-muted/30"
-                }`}
-              >
-                {cat}
-                {cat !== "All" && (
-                  <span className="ml-1.5 text-xs opacity-60">
-                    ({categoryCounts[cat] ?? 0})
+          <div className="flex items-center gap-2 overflow-x-auto py-4 scrollbar-hide">
+            {allCategories.map((cat) => {
+              const count = cat !== "All" ? (categoryCounts[cat] ?? 0) : caseStudies.length;
+              const isActive = activeCategory === cat;
+              return (
+                <button
+                  key={cat}
+                  onClick={() => setActiveCategory(cat)}
+                  data-testid={`filter-${cat}`}
+                  className={`flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-semibold border transition-all ${
+                    isActive
+                      ? "bg-primary text-white border-primary shadow-md"
+                      : "bg-background border-border text-muted-foreground hover:border-primary/40 hover:text-foreground hover:bg-primary/5"
+                  }`}
+                >
+                  {cat}
+                  <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${
+                    isActive ? "bg-white/25 text-white" : "bg-muted text-muted-foreground"
+                  }`}>
+                    {count}
                   </span>
-                )}
-              </button>
-            ))}
+                </button>
+              );
+            })}
           </div>
         </div>
       </section>
