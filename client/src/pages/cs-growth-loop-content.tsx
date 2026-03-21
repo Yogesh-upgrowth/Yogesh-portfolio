@@ -1,4 +1,4 @@
-import { TrendingUp, Zap, RefreshCw, Target, Brain, BarChart3, Users, ArrowRight } from "lucide-react";
+import { RefreshCw, Target, Brain, BarChart3, Users, Zap } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
@@ -9,183 +9,185 @@ export default function GrowthLoopContent() {
     <div className="space-y-2">
 
       <section id="hook" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">When Acquisition Is the Addiction, Not the Strategy</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Every month we hit the same cycle: pour money into acquisition, hit a traffic peak, watch it decay, pour in more money. The retention cohort graphs looked like steep ski slopes — everyone leaving within 30 days.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">D1 retention was 42% — not terrible. D7 retention: 18%. D14: 8%. D30: 4%. We were spending ₹180 to acquire users who had a 96% probability of never returning by day 30.</p>
-        <ProblemBox>We had an acquisition business, not a product business. The growth machine was a leaky bucket running at full speed — and we were optimizing the faucet instead of fixing the holes.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">The decision was either to keep spending to compensate for churn — or to architect a system where users came back because the product gave them a reason to, not because we paid to remind them.</p>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">We Spent More on Retargeting and Retention Got Worse</h2>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">It took us an embarrassingly long time to notice the pattern. Every month: acquisition spend increased, retargeting budget increased, D30 retention stayed at 4%. The numbers moved in lockstep — and in the wrong direction for what we were trying to achieve.</p>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Month 8 of this cycle, I finally pulled a scatter plot that nobody had thought to run: retargeting spend vs D30 retention, plotted by month. Correlation: essentially zero. We'd been spending more to get less.</p>
+        <ProblemBox>The leaky bucket insight is cliché by now, but we were living it in full fidelity: pour in users, watch them leave. Respond by pouring in more. The problem wasn't the faucet. It was that we'd never asked what the bucket was actually doing to hold water.</ProblemBox>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">The decision wasn't "spend more on retention." It was "design retention into the product" — because notifications and ads can remind someone to return, but they can't give them a reason.</p>
       </section>
 
-      <SectionDivider label="Ground Reality" />
+      <SectionDivider label="The Retention Reality" />
 
       <section id="early-data" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Retention Cohort Reality</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What the Cohort Curves Showed</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">We pulled 12 months of retention cohorts. The curves were consistent to the point of being depressing — same shape, same slope, regardless of acquisition source, acquisition month, or how many times we'd run re-engagement campaigns.</p>
         <DataTable
-          headers={["Cohort Day", "Retention Rate", "Sessions/User (avg)", "Revenue/User"]}
+          headers={["Retention Day", "Rate", "Sessions/User", "Revenue/User"]}
           rows={[
-            ["D1", "42%", "1.0", "₹0 (onboarding day)"],
+            ["D1", "42%", "1.0", "₹0 (onboarding)"],
             ["D7", "18%", "1.4", "₹28"],
             ["D14", "8%", "1.2", "₹41"],
             ["D30", "4%", "1.1", "₹58"],
             ["D60", "2.1%", "0.9", "₹72"],
           ]}
         />
-        <InsightBox>D7 users had only 1.4 sessions in 7 days. They weren't engaged — they were drifting. A product that doesn't pull users back within 7 days doesn't pull them back at all.</InsightBox>
-        <div className="grid sm:grid-cols-2 gap-5 mt-5">
-          <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
-            <p className="font-bold text-destructive mb-2 text-sm">What Growth Was Doing</p>
-            <ul className="space-y-1 text-sm text-foreground/70"><li>→ More retargeting ads</li><li>→ Push notification blasts (3× per week)</li><li>→ Discount offers at D7 to salvage retention</li></ul>
-          </div>
-          <div className="p-5 rounded-xl border border-primary/20 bg-primary/5">
-            <p className="font-bold text-primary mb-2 text-sm">What Was Needed</p>
-            <ul className="space-y-1 text-sm text-foreground/80"><li>→ Product-native return triggers</li><li>→ Value events that created habit</li><li>→ Loops that made returning the natural next action</li></ul>
-          </div>
-        </div>
+        <InsightBox>D7 users had 1.4 sessions in 7 days. Not engaged — drifting. And critically: the D7 users who were still around at D30 showed the same 1.1 session average. Even the retained users weren't really retained — they were just slower to leave.</InsightBox>
+        <p className="text-foreground/80 leading-[1.85] mt-5">The re-engagement campaign metrics: 3.8% click rate on weekly push notifications, 2.1% on email blasts. We were interrupting people at a cost and achieving almost nothing from it. The users who came back via notifications left again within 2 days. Reminding someone to return isn't the same as giving them a reason to.</p>
       </section>
 
-      <SectionDivider label="Behavioral Segmentation" />
+      <SectionDivider label="The Exception in the Data" />
 
       <section id="segmentation" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Returning 4% vs the Departing 96%</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The 4% Who Stayed — and What Was Different About Their D1</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">Instead of studying why 96% left, we studied why 4% stayed. We pulled their D1 behavior and compared it to the users who churned within 30 days. The difference was striking and specific.</p>
         <DataTable
-          headers={["Behavior (D1–7)", "D30 Retention", "Pattern"]}
+          headers={["D1 Action", "D30 Retention Rate", "Context"]}
           rows={[
-            ["Set price alert on D1", "41%", "Created a reason to return (alert trigger)"],
-            ["Saved comparison on D1", "34%", "Product now holds their work — return to use it"],
-            ["3+ features used on D1", "28%", "Depth of initial engagement predicts return"],
-            ["Invited a friend on D1–3", "38%", "Social commitment mechanism"],
-            ["Read a guide or article", "8%", "Information consumption, no product hook"],
-            ["No core action on D1", "3%", "Never found value — no reason to return"],
+            ["Set a price alert", "41%", "Created a product-native reason to return (alert fires = return visit)"],
+            ["Saved a comparison", "34%", "Product now holds their work; return to use it"],
+            ["Invited a friend (D1–3)", "38%", "Social commitment; can't leave without explaining to friend"],
+            ["Used 3+ features on D1", "28%", "Depth of initial engagement predicts return"],
+            ["Read an article/guide", "8%", "Information consumption — no product hook attached"],
+            ["No core action on D1", "3%", "Never found the value; no reason to come back"],
           ]}
         />
-        <TakeawayBox>Users who set a price alert on Day 1 had 41% D30 retention — 10× better than the base rate. The alert wasn't a notification feature. It was a retention mechanism disguised as a product feature.</TakeawayBox>
+        <TakeawayBox>Users who set a price alert on D1 had 41% D30 retention — 10× better than the baseline. The alert wasn't a notification feature. It was an engineering of a future return trigger. The user had effectively made an appointment with the product — and the product was going to call them when it was time.</TakeawayBox>
       </section>
 
-      <SectionDivider label="Strategic Shift" />
+      <SectionDivider label="The Insight" />
 
       <section id="reframe" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Reframe</h2>
-        <div className="grid sm:grid-cols-2 gap-5 my-6">
-          <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
-            <p className="font-bold text-destructive mb-2 text-sm uppercase tracking-wider">Old Thinking</p>
-            <p className="font-medium text-foreground">Remind users to come back via notifications and retargeting</p>
-          </div>
-          <div className="p-5 rounded-xl border border-green-200 bg-green-50">
-            <p className="font-bold text-green-700 mb-2 text-sm uppercase tracking-wider">New Thinking</p>
-            <p className="font-medium text-foreground">Design product moments that make returning the natural, self-motivated next action</p>
-          </div>
-        </div>
-        <BlockQuote>Retention is not a notification problem. It's a product design problem. Build something that creates reasons to return — not reminders to return.</BlockQuote>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Retention Is Designed on Day 1</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">The data told us something counterintuitive: D30 retention wasn't determined by what we did at D14 or D21. It was determined by what happened on D1. By the time you hit Day 14 trying to win users back, the window had been closed since Day 7.</p>
+        <BlockQuote>Notifications tell users to return. Price alerts create an event that pulls them back. One is a push; one is a pull. In the physics of user retention, pull always wins.</BlockQuote>
+        <p className="text-foreground/80 leading-[1.85] mt-5">The redesign question became: how do we make every D1 onboarding create at least one product-native pull trigger? Not ask users to opt into notifications — give them something the product will do that requires them to return.</p>
       </section>
 
-      <SectionDivider label="Core Framework" />
+      <SectionDivider label="The Three Loops" />
 
       <section id="framework" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Retention Orbit Loop Framework</h2>
-        <p className="text-foreground/80 leading-[1.85] mb-6">The Retention Orbit Loop creates a gravitational pull back to the product by chaining <strong className="text-foreground">value moments to natural triggers</strong> — so users return because something changed, not because we reminded them.</p>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Engineering Pull-Based Return Reasons</h2>
         <div className="grid sm:grid-cols-3 gap-4 mb-6">
-          <FrameworkDimension icon={<RefreshCw className="h-5 w-5 text-primary" />} title="Loop 1: Price Alert Loop" body="User sets alert → Price changes → Alert fires → User returns to compare → Completes action → Sets next alert. Self-reinforcing loop with product-native trigger." color="bg-primary/5 border-primary/20" />
-          <FrameworkDimension icon={<Target className="h-5 w-5 text-green-600" />} title="Loop 2: Savings Report Loop" body="Weekly email: 'Your saved comparison moved — here's what changed.' Personal, specific, tied to user's own data. Not a notification — a useful update." color="bg-green-50 border-green-200" />
-          <FrameworkDimension icon={<Users className="h-5 w-5 text-purple-600" />} title="Loop 3: Referral Return Loop" body="User invites friend → Friend joins → User gets status update: 'Your friend just saved ₹X.' Social proof + progress → User returns to share outcome." color="bg-purple-50 border-purple-200" />
+          <FrameworkDimension
+            icon={<RefreshCw className="h-5 w-5 text-primary" />}
+            title="The Price Alert Loop"
+            body="User sets alert → price changes → specific notification fires ('Your rate for Hero Splendor has dropped ₹340') → user returns to compare and decide → sets next alert. Self-reinforcing. Each loop creates the next one."
+            color="bg-primary/5 border-primary/20"
+          />
+          <FrameworkDimension
+            icon={<Target className="h-5 w-5 text-green-600" />}
+            title="The Weekly Savings Report"
+            body="Every Friday: 'Your saved comparison moved — here's the current best option.' Not a newsletter. Not a blast. A specific update on their specific data. Something changed that's relevant to them. That's what earns the open."
+            color="bg-green-50 border-green-200"
+          />
+          <FrameworkDimension
+            icon={<Users className="h-5 w-5 text-purple-600" />}
+            title="The Referral Return Loop"
+            body="User invites friend → friend joins → user gets update: 'Ravi just saved ₹2,100 using your link.' Social progress report. Gives the referrer a reason to check in — and to share again. Referral becomes a retention mechanism, not just acquisition."
+            color="bg-purple-50 border-purple-200"
+          />
         </div>
         <DataTable
-          headers={["Loop", "Return Trigger", "D14 Retention (Loop Users)", "D30 Retention"]}
+          headers={["Loop", "Return Trigger Type", "D14 Retention", "D30 Retention"]}
           rows={[
-            ["Price Alert Loop", "Price change event (product)", "52%", "38%"],
-            ["Savings Report Loop", "Weekly data update (product)", "41%", "29%"],
-            ["Referral Return Loop", "Friend's activity (social)", "48%", "34%"],
+            ["Price Alert", "Product event (price changed)", "52%", "38%"],
+            ["Weekly Report", "Data update (comparison moved)", "41%", "29%"],
+            ["Referral Activity", "Social event (friend action)", "48%", "34%"],
             ["No Loop (control)", "Push notification / retargeting", "12%", "4%"],
           ]}
         />
       </section>
 
-      <SectionDivider label="System Design" />
+      <SectionDivider label="What Changed in the Product" />
 
       <section id="system-design" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">System Design</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The D1 Onboarding Redesign</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">The onboarding flow needed to do one thing above all else: get the user to create at least one loop trigger before they left. Previously, the hero D1 action was "browse plans" — passive, informational, creating no future pull.</p>
         <div className="space-y-4">
           {[
-            { layer: "Layer 1", title: "Data Intelligence", points: ["User's D1 actions classified into loop eligibility buckets", "Price alert data fetched from partner APIs every 4 hours", "Savings calculation model: actual vs benchmark market rate"] },
-            { layer: "Layer 2", title: "Loop Activation System", points: ["D1 onboarding optimized to drive price alert + comparison save as primary actions", "'Setup your alert' made the hero action — not 'browse plans'", "Referral flow simplified: 1-tap invite from within comparison result"] },
-            { layer: "Layer 3", title: "Notification Quality Control", points: ["Notifications only fired by product events — never calendar-based blast", "Price alert notification: specific plan name, exact change amount", "Weekly savings report: personalized, shows their actual saved comparison vs current market"] },
-            { layer: "Layer 4", title: "Loop Compounding", points: ["Loop 1 users 4× more likely to do Loop 2 (habit formation)", "Referral users have 2.8× D30 retention of direct acquirees — social commitment", "Loop users show in top 20% revenue cohort — high LTV proxy"] },
+            { title: "Primary CTA Redesign", points: ["Old hero action: 'Browse Plans' (passive, no hook)", "New hero action: 'Set Your Alert' — price alert setup as primary D1 objective", "'Save this comparison' made default upon comparison completion", "Referral nudge moved to within first comparison result view (not buried in settings)"] },
+            { title: "Notification Quality Overhaul", points: ["All calendar-based notifications disabled", "Only event-triggered notifications allowed: specific plan name, exact change amount", "Weekly report: uses user's actual saved comparison data — not generic market averages", "Price alert threshold: initially any change >0.1% → changed to >2% change (reduced fatigue)"] },
+            { title: "Retargeting Cut", points: ["Retargeting spend reduced 40% — freed budget reinvested into loop infrastructure engineering", "Remaining retargeting: only for users who set an alert but haven't converted (high intent)", "General re-engagement campaigns eliminated entirely"] },
           ].map((l) => (
-            <div key={l.layer} className="p-6 rounded-xl border border-border bg-muted/20">
-              <p className="font-bold text-foreground mb-3"><span className="text-primary font-mono text-sm">{l.layer} · </span>{l.title}</p>
-              <ul className="space-y-2">{l.points.map((p, i) => (<li key={i} className="flex gap-2 text-sm text-foreground/70"><span className="text-primary mt-0.5 shrink-0">→</span>{p}</li>))}</ul>
+            <div key={l.title} className="p-6 rounded-xl border border-border bg-muted/20">
+              <p className="font-bold text-foreground mb-3 text-primary">{l.title}</p>
+              <ul className="space-y-2">
+                {l.points.map((p, i) => (
+                  <li key={i} className="flex gap-2 text-sm text-foreground/70"><span className="text-primary mt-0.5 shrink-0">→</span>{p}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
       </section>
 
-      <SectionDivider label="Execution" />
+      <SectionDivider label="Rollout" />
 
       <section id="execution" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Execution Journey</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The 10-Week Journey</h2>
         <div className="space-y-4">
-          <Phase num="Phase 1" period="0–3 Weeks" title="Retention Diagnosis" actions={["Mapped 12-month retention cohorts by D1 action type", "Identified: alert-setters had 10× better D30 vs non-alert-setters", "Defined 3 loops based on highest-retention behavior patterns"]} result="Loop hypothesis validated from historical data" color="border-blue-200 bg-blue-50" resultColor="text-blue-700" />
-          <Phase num="Phase 2" period="3–6 Weeks" title="Onboarding Redesign" actions={["D1 flow redesigned: price alert setup as primary CTA", "Comparison save made default — 'Your comparison is saved' message", "Referral nudge added to day 2 email"]} result="D1 loop activation rate: 18% → 47%" color="border-green-200 bg-green-50" resultColor="text-green-700" />
-          <Phase num="Phase 3" period="6–10 Weeks" title="Loop Infrastructure" actions={["Price change notification system built — 4-hour refresh cadence", "Weekly savings report email system launched", "Referral activity feed added to dashboard"]} result="D14 retention rising: 8% → 19%" color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
-          <Phase num="Phase 4" period="10+ Weeks" title="Compounding Effects" actions={["Loop 1 users upgrading to Loop 2 at 41%", "Retargeting ad spend cut 40% — organic return increased", "New D30 retention: 18% (from 4%)"]} result="D30 retention 4% → 18%. Retention 4.5× improved." color="border-orange-200 bg-orange-50" resultColor="text-orange-700" />
+          <Phase num="Weeks 1–3" period="Diagnosis" title="Mapping D1 Action to D30 Retention" actions={["Pulled 12-month cohort data; tagged D1 action for every user", "Identified: alert-setters 10× better D30 than non-alert-setters", "Defined 3 loops; mapped to existing product capabilities"]} result="Loop hypothesis validated. Engineering brief written." color="border-blue-200 bg-blue-50" resultColor="text-blue-700" />
+          <Phase num="Weeks 4–6" period="Onboarding Redesign" title="Making Loop Activation the D1 Goal" actions={["D1 flow redesigned: 'Set Your Alert' as primary CTA", "Comparison save made default on completion", "Referral visible within comparison result (not in settings)"]} result="D1 loop activation: 18% → 47% of new users" color="border-green-200 bg-green-50" resultColor="text-green-700" />
+          <Phase num="Weeks 7–10" period="Infrastructure" title="Loops Running" actions={["Price change notification system: 4-hour refresh cadence", "Weekly savings report email: personalized per user's actual data", "Referral activity feed in dashboard"]} result="D14 retention rising: 8% → 19%. D30 moving." color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
+          <Phase num="Week 10+" period="Compounding" title="The Curves Start Changing" actions={["Loop 1 users upgrading to Loop 2 at 41%", "Retargeting spend cut 40% — organic return rate increased", "New D30 retention: 18% across full user base"]} result="D30 retention: 4% → 18%. Retargeting spend down 40%. Revenue per retained user up 119%." color="border-orange-200 bg-orange-50" resultColor="text-orange-700" />
         </div>
       </section>
 
       <SectionDivider label="Results" />
 
       <section id="results" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Results</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What Changed in 10 Weeks</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
           <MetricCard value="4.5×" label="D30 Retention" sub="4% → 18%" color="text-green-600" />
-          <MetricCard value="47%" label="D1 Loop Activation" sub="from 18% baseline" color="text-primary" />
-          <MetricCard value="40%" label="Retargeting Spend Cut" sub="replaced by organic return" color="text-green-600" />
-          <MetricCard value="2.8×" label="Referral User Retention" sub="vs direct acquisition" color="text-primary" />
+          <MetricCard value="47%" label="D1 Loop Activation" sub="up from 18%" color="text-primary" />
+          <MetricCard value="−40%" label="Retargeting Spend" sub="replaced by product-native pull" color="text-green-600" />
+          <MetricCard value="+119%" label="Revenue per Retained User" sub="at D30" color="text-primary" />
         </div>
         <DataTable
           headers={["Metric", "Before", "After"]}
           rows={[
-            ["D30 Retention", "4%", "18% (+350%)"],
-            ["D14 Retention", "8%", "19% (+138%)"],
-            ["Revenue per User (D30)", "₹58", "₹127 (+119%)"],
-            ["Retargeting Spend", "₹2.1L/month", "₹1.3L/month (−40%)"],
+            ["D30 Retention", "4%", "18%"],
+            ["D14 Retention", "8%", "19%"],
+            ["Revenue per User at D30", "₹58", "₹127"],
+            ["Retargeting Spend", "₹2.1L/month", "₹1.3L/month"],
             ["Organic Return Rate", "18%", "43%"],
           ]}
         />
       </section>
 
-      <SectionDivider label="Deep Insights" />
+      <SectionDivider label="Insights" />
 
       <section id="insights" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Deep Insights</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What I Know Now That I Wish I'd Known Earlier</h2>
         <div className="space-y-6">
-          <Insight num="01" title="Retention is designed on Day 1, not Day 14" body="D1 action type predicted D30 retention with 0.74 correlation. By the time users hit Day 14 without a loop, they were effectively gone. The retention battle is won or lost in the first session." />
-          <Insight num="02" title="Notifications only work when tied to user value, not product schedule" body="Calendar-based notifications (3× per week) produced 3.8% click-through. Product-event notifications (price alert fired) produced 61% open rate, 38% return visit. The difference: one is noise, one is signal." />
-          <Insight num="03" title="Social loops are the most durable retention mechanism" body="Users with a referral relationship had 2.8× retention of non-referrers. Social commitment creates accountability that no notification can replicate. Referral isn't an acquisition tool — it's a retention tool." />
-          <Insight num="04" title="The best feature for retention is data that changes" body="The price alert worked because prices actually change. The weekly report worked because market data moved. Give users a reason to check back by building features that update — not static information." />
-          <Insight num="05" title="Cutting retargeting spend improved retention — not the reverse" body="When we cut 40% of retargeting spend and redirected engineering toward loops, retention improved. More budget on push doesn't fix pull. Fix pull instead." />
+          <Insight num="01" title="D30 retention is designed on D1, not D14" body="D1 action type predicted D30 retention with a 0.74 correlation in our data. By Day 7 without a loop trigger, users were effectively gone — the decision had already been made. Every retention investment at D14+ was catching users who'd already moved on." />
+          <Insight num="02" title="Event-triggered notifications have 15× the impact of calendar-based" body="Calendar-based notifications (3/week): 3.8% click rate. Price alert fired (specific, event-driven): 61% open rate, 38% return visit. One is spam. One is a service. The production cost is the same." />
+          <Insight num="03" title="Social loops create retention obligations, not just incentives" body="Users who referred a friend had 2.8× D30 retention. The social dimension isn't just about acquisition — it's about accountability. When someone you know joined because of you, leaving feels like letting them down." />
+          <Insight num="04" title="Cutting retargeting spend improved retention metrics" body="We cut 40% of retargeting spend and redirected the budget to product engineering for loops. Retention improved. More retargeting spend doesn't fix a pull problem — only pull fixes a pull problem." />
         </div>
       </section>
 
-      <SectionDivider label="Failures" />
+      <SectionDivider label="What Hurt Us First" />
 
       <section id="failures" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Failure Points</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Mistakes We Made Before Getting It Right</h2>
         <div className="space-y-4">
-          <FailurePoint title="Price alert notification frequency was too high" why="Initially notified on any price change > 0.1%. Users received 3–4 notifications per day. Notification fatigue → unsubscribe rate 34%." fix="Set threshold to >2% change AND a personalized relevance filter. Notifications dropped from 4/day to 1.4/week. Unsubscribe rate fell to 3%." />
-          <FailurePoint title="Savings report email used generic market benchmark" why="'You could save ₹1,200 vs market average' felt abstract. Users didn't trust the comparison." fix="Switched to: 'Your saved plan [Name] has changed ₹X since you compared. Here's the current best option.' Specific to their plan. Click rate 4× improved." />
-          <FailurePoint title="D1 loop activation CTA overshadowed product's core value" why="Making price alert setup the hero action confused users who came to browse first, not commit." fix="Added browse path first — then surfaced alert setup after first comparison viewed. 'Save this comparison' CTA at natural completion point. Less friction, same loop activation rate." />
+          <FailurePoint title="Price alert notifications fired too often" why="Initial threshold: any price change >0.1%. Users received 3–5 notifications per day during volatile market periods. Unsubscribe rate hit 34% in week 2. We'd built a spam machine, not a useful alert." fix="Threshold raised to >2% change AND a relevance filter (user's specific comparison category). Notifications dropped from 4/day to 1.4/week. Unsubscribe rate fell to 3%. Alert open rate improved 4×." />
+          <FailurePoint title="Savings report email used market averages, not user data" why="'You could save ₹1,200 vs market average' felt abstract and untrustworthy. Users didn't know what 'market average' meant for their situation." fix="Changed to: 'Your saved plan for Hero Splendor has changed ₹340 since you compared. Here's the current best option.' Specific to their plan. Click rate improved 4× vs generic version." />
+          <FailurePoint title="Pushing price alert setup too early killed initial browsing intent" why="Making price alert setup the hero CTA immediately confused users who came to browse first. 'What am I setting an alert for if I haven't seen the plans yet?' Exit rate increased during first test." fix="Browse-first flow: user sees plans, does initial comparison, then 'Save this comparison' CTA appears at natural completion. Alert setup as second action, not first. Same loop activation, less friction." />
         </div>
       </section>
 
       <SectionDivider label="Future" />
 
       <section id="future" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Future Evolution</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where the Loops Go Next</h2>
         <div className="grid sm:grid-cols-3 gap-4">
-          <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Predictive Alert Triggers" body="Instead of waiting for price changes, predict when prices are likely to change (seasonal patterns, provider cycles) and alert users proactively before the change." />
-          <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Cross-Product Loops" body="Extend retention loops across product lines — insurance alert user also gets car loan rate alert. Cross-sell path becomes a retention mechanism." />
-          <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Loop Health Dashboard" body="Real-time dashboard showing loop activation rates, loop return rates, and which loops are degrading. Enables product team to intervene before retention metrics decline." />
+          <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Predictive Price Alerts" body="Instead of waiting for prices to change, predict when they will. Seasonal patterns, provider renewal cycles, regulatory changes. Alert users proactively before the change — not reactively after." />
+          <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Cross-Product Loops" body="Extend loop logic across categories. An insurance alert user showing car loan comparison behavior should get car loan alerts automatically. Cross-sell path as a retention mechanism." />
+          <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Loop Health Monitoring" body="Real-time view of loop activation rates, loop return rates, and which loops are degrading over time. Enable the product team to intervene before retention metrics start moving — not after." />
         </div>
-        <BlockQuote>We didn't solve retention by spending more on notifications. We solved it by building a product that gave users a genuine reason to come back — one built into the core experience.</BlockQuote>
+        <BlockQuote>We didn't fix retention by spending more on notifications. We fixed it by building a product that gave users a genuine, specific, product-native reason to return — one that existed whether or not we sent them a reminder.</BlockQuote>
       </section>
     </div>
   );

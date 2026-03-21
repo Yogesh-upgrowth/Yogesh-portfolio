@@ -1,4 +1,4 @@
-import { TrendingUp, Zap, Target, Shield, Brain, BarChart3, Star, Lock } from "lucide-react";
+import { Shield, AlertTriangle, Brain, Target, BarChart3, Zap } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
@@ -9,173 +9,160 @@ export default function FintechTrustContent() {
     <div className="space-y-2">
 
       <section id="hook" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Why Users Were Clicking "Get Started" and Immediately Closing the App</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We were solving a real financial problem. Our rates were competitive. Our onboarding was clear. But 71% of users who clicked "Get Started" abandoned the signup within the first 90 seconds — without error, without friction, without obvious reason.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Exit surveys told us the truth in three words from multiple users: <strong className="text-foreground">"Didn't feel safe."</strong></p>
-        <ProblemBox>We had a trust design problem, not a product problem. Users' financial anxiety was triggered the moment they saw our interface — and nothing in our design was addressing it.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">In India's fintech landscape — shaped by years of scam apps, financial fraud, and data breaches — trust is not a nice-to-have. It's the prerequisite. Without trust, every other design decision is irrelevant.</p>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Trust Is Invisible — Until It Breaks</h2>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We learned this the hard way in Q2 2022. A WhatsApp forward misidentified our platform as being associated with a crypto scam (it wasn't — wrong company, similar name). Within 72 hours, our daily active users dropped 31%. Signups fell 44%.</p>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The users who left weren't irrationally suspicious. They were people making financial decisions — decisions where the cost of trusting the wrong platform could be catastrophic. When an uncertain signal appeared, they did the rational thing: they stopped.</p>
+        <InsightBox>Trust in fintech is not built through features. It's built through consistent, specific, credible signals that accumulate over time — and it's destroyed almost instantly when contradicted. The rebuild took 4 months. The breakdown took 72 hours.</InsightBox>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">What came out of that crisis was a systematic audit of every trust signal across the product — and a redesign of the trust architecture that made us more resilient to future reputation shocks, while also lifting baseline conversion by 34%.</p>
       </section>
 
-      <SectionDivider label="Ground Reality" />
+      <SectionDivider label="The Trust Audit" />
 
       <section id="early-data" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Trust Diagnostic</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What We Were Doing Right and Wrong</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">We ran a systematic trust audit post-crisis: every page, every communication, every touchpoint. We rated each on trust signal strength and trust signal consistency. The results were mixed.</p>
         <DataTable
-          headers={["Trust Signal Audit", "Present?", "Prominent?", "User Awareness (survey)"]}
+          headers={["Touchpoint", "Trust Signals Present", "Trust Signal Quality", "Gap"]}
           rows={[
-            ["RBI / regulatory license badge", "Yes (footer)", "No", "8% of users noticed it"],
-            ["SSL / security encryption indicator", "Yes (standard lock icon)", "No", "12% associated it with safety"],
-            ["Customer review count", "No", "—", "0%"],
-            ["Media mentions / press logos", "No", "—", "0%"],
-            ["Founder / team transparency", "No", "—", "0%"],
-            ["Data privacy statement (readable)", "Yes (legal page link)", "No", "3%"],
+            ["Homepage", "IRDAI logo, 'secure' badge", "Weak — logos only", "No credibility context, no user evidence"],
+            ["Comparison Results Page", "None", "None", "Users making financial decisions with zero trust reinforcement"],
+            ["Checkout/Application", "HTTPS indicator, secure payment badge", "Weak — generic", "No specific regulatory disclosure, no review evidence"],
+            ["Email Communications", "Company name + logo", "Weak", "No clear sender identity, easily spoofed appearance"],
+            ["Support (chat/phone)", "Response time mentioned", "Medium", "No agent identity or credentials shown"],
           ]}
         />
-        <InsightBox>Our RBI license badge — the single most important trust signal for Indian fintech users — was buried in the footer. Only 8% of users noticed it. We were hiding our biggest trust credential.</InsightBox>
+        <p className="text-foreground/80 leading-[1.85] mt-5">The most critical gap: the comparison results page — where users were actively making decisions — had zero trust reinforcement. We were asking users to trust data that would inform significant financial decisions without giving them a single reason to.</p>
       </section>
 
-      <SectionDivider label="Behavioral Segmentation" />
+      <SectionDivider label="Types of Trust" />
 
       <section id="segmentation" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Trust Anxiety Spectrum</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Four Types of Trust in Fintech</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">Through the audit and user interviews during the rebuild, we identified four distinct trust dimensions — each requiring different signals, each contributing differently to user decision confidence.</p>
         <DataTable
-          headers={["User Segment", "% of Users", "Trust Threshold", "Primary Trust Signal Needed", "Exit Rate Without It"]}
+          headers={["Trust Dimension", "User Question", "Signal Type", "Our Previous Score"]}
           rows={[
-            ["Trust-First (first-time fintech users)", "34%", "Very High", "Regulatory badge + data privacy", "89%"],
-            ["Research-Validate (NRI / HNI)", "22%", "High", "Media mentions + company age", "71%"],
-            ["Social-Proof (referral users)", "28%", "Medium", "User reviews + community proof", "41%"],
-            ["Feature-First (tech-savvy)", "16%", "Low", "Performance data + security architecture", "18%"],
+            ["Institutional Trust", "Is this a legitimate company?", "Regulatory credentials, media mentions", "Low"],
+            ["Data Trust", "Can I trust this information?", "Methodology disclosure, data sourcing", "Very Low"],
+            ["Security Trust", "Is my data safe?", "Encryption signals, privacy policy clarity", "Medium"],
+            ["Social Trust", "Do people like me use this?", "Reviews, ratings, user testimonials", "Low"],
           ]}
         />
-        <TakeawayBox>34% of our users were first-time fintech users with a very high trust threshold — and we had zero of their required trust signals above the fold. We were designing for the 16% who didn't need trust design and losing the 34% who needed it most.</TakeawayBox>
+        <TakeawayBox>We had been treating trust as a single dimension — "are we trustworthy?" — and addressing it with generic security badges. The redesign needed to address all four dimensions, each at the specific point in the user journey where that dimension was most relevant to the user's decision.</TakeawayBox>
       </section>
 
-      <SectionDivider label="Strategic Shift" />
+      <SectionDivider label="The Rebuild" />
 
       <section id="reframe" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Reframe</h2>
-        <div className="grid sm:grid-cols-2 gap-5 my-6">
-          <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
-            <p className="font-bold text-destructive mb-2 text-sm uppercase tracking-wider">Old Thinking</p>
-            <p className="font-medium text-foreground">Trust is compliance — put the legal badges in the footer</p>
-          </div>
-          <div className="p-5 rounded-xl border border-green-200 bg-green-50">
-            <p className="font-bold text-green-700 mb-2 text-sm uppercase tracking-wider">New Thinking</p>
-            <p className="font-medium text-foreground">Trust is a product feature — design it with as much intent as any other feature, place it where it intercepts anxiety at the moment it peaks</p>
-          </div>
-        </div>
-        <BlockQuote>In fintech, trust is not a marketing claim. It's a design system. Every element that reduces anxiety is a product feature. Every anxiety you leave unaddressed is a conversion blocker.</BlockQuote>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Trust Architecture vs Trust Signals</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">The distinction we kept coming back to: trust signals (logos, badges, certifications) are necessary but not sufficient. Trust architecture is about where signals appear relative to the decision they're supporting.</p>
+        <BlockQuote>A security badge on the homepage doesn't help a user who's uncertain about data accuracy on the comparison results page. Trust signals need to be adjacent to the decisions they're meant to support — not collected on a dedicated "why trust us" page that nobody visits.</BlockQuote>
+        <p className="text-foreground/80 leading-[1.85] mt-5">The redesign principle: map every user decision point → identify which trust dimension is most relevant at that point → place the appropriate trust signal there, not on the homepage.</p>
       </section>
 
-      <SectionDivider label="Core Framework" />
+      <SectionDivider label="The Trust Design System" />
 
       <section id="framework" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Trust Signal Architecture (TSA)</h2>
-        <p className="text-foreground/80 leading-[1.85] mb-6">TSA places specific trust signals at specific anxiety peaks in the user journey — not uniformly across the page, but precisely where the relevant anxiety occurs.</p>
-        <div className="grid sm:grid-cols-2 gap-4 mb-6">
-          <FrameworkDimension icon={<Shield className="h-5 w-5 text-primary" />} title="Regulatory Trust (First View)" body="RBI license number + IRDAI badge moved to hero section, styled as a credential badge. 'Licensed by RBI. Your money is protected.' Not fine print — headline-level proof." color="bg-primary/5 border-primary/20" />
-          <FrameworkDimension icon={<Star className="h-5 w-5 text-green-600" />} title="Social Trust (Before CTA)" body="Real user reviews with full name, city, and outcome: 'Transferred ₹2L in 4 minutes. Arrived same day.' 12,000+ Trustpilot reviews count displayed." color="bg-green-50 border-green-200" />
-          <FrameworkDimension icon={<Lock className="h-5 w-5 text-purple-600" />} title="Data Trust (At Form Entry)" body="At the moment users start entering personal data: 'Bank-grade 256-bit encryption. Your data is never sold.' Anxiety intercept at exactly the right moment." color="bg-purple-50 border-purple-200" />
-          <FrameworkDimension icon={<TrendingUp className="h-5 w-5 text-orange-600" />} title="Social Validation (Institutional)" body="Media logos: Economic Times, MoneyControl, Business Insider — shown above fold. Third-party validation from recognizable institutions." color="bg-orange-50 border-orange-200" />
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What We Built Into Every Key Touchpoint</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <FrameworkDimension
+            icon={<Shield className="h-5 w-5 text-primary" />}
+            title="Comparison Results: Data Trust"
+            body="Added methodology disclosure panel (collapsible): 'Where does this data come from? Updated every 4 hours from direct provider APIs. Last updated: [timestamp].' Transparency about data sourcing addresses the 'can I trust these numbers?' question directly."
+            color="bg-primary/5 border-primary/20"
+          />
+          <FrameworkDimension
+            icon={<AlertTriangle className="h-5 w-5 text-green-600" />}
+            title="Application Page: Institutional Trust"
+            body="IRDAI registration number with direct link to verification on IRDAI website. SEBI-registered investment advisor credentials where applicable. 'Verify our registration' link — puts the credential verification in user's hands, which is more trustworthy than just displaying the badge."
+            color="bg-green-50 border-green-200"
+          />
+          <FrameworkDimension
+            icon={<Target className="h-5 w-5 text-purple-600" />}
+            title="Social Proof: Contextual Reviews"
+            body="Reviews displayed at the comparison stage, not just homepage. Specifically: reviews from users who completed a similar comparison (same product category). 'Arun from Hyderabad used this comparison 3 months ago — here's his experience.' Specific > generic."
+            color="bg-purple-50 border-purple-200"
+          />
+          <FrameworkDimension
+            icon={<Brain className="h-5 w-5 text-orange-600" />}
+            title="Email: Identity Architecture"
+            body="Every transactional email: signed by a named team member, not 'The Team.' Email footer: regulatory registration number, physical office address, grievance officer contact. Makes spoofing harder; makes authenticity visible."
+            color="bg-orange-50 border-orange-200"
+          />
         </div>
-        <DataTable
-          headers={["Trust Signal", "Old Placement", "New Placement", "Anxiety Intercepted", "Conversion Lift"]}
-          rows={[
-            ["RBI License Badge", "Footer (8% visibility)", "Hero section", "Is this legitimate?", "+38%"],
-            ["User Reviews (12K+)", "Not present", "Before CTA", "Do others trust this?", "+29%"],
-            ["256-bit encryption", "Not present", "At form start", "Is my data safe?", "+44%"],
-            ["Media Logos (ET, MC)", "Not present", "Above fold", "Is this credible?", "+22%"],
-            ["14-day Refund Guarantee", "Terms page", "Alongside CTA", "What if I regret it?", "+31%"],
-          ]}
-        />
       </section>
 
-      <SectionDivider label="System Design" />
+      <SectionDivider label="The Crisis Response" />
 
       <section id="system-design" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">System Design</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">How We Responded to the Reputation Incident</h2>
         <div className="space-y-4">
           {[
-            { layer: "Layer 1", title: "Anxiety Peak Mapping", points: ["Journey mapped by anxiety level: first view, CTA hover, form entry, payment", "Exit surveys mapped anxiety type to exit point", "Trust signal requirement matched to each anxiety peak"] },
-            { layer: "Layer 2", title: "Trust Signal Design", points: ["RBI badge: official mark + license number (not generic 'licensed' text)", "Reviews: real names, cities, outcomes — not star ratings (stars are easy to fake)", "Encryption badge: technical specificity ('256-bit AES') builds trust with NRI/HNI segment"] },
-            { layer: "Layer 3", title: "Progressive Disclosure of Trust", points: ["First 5 seconds: regulatory legitimacy (RBI badge)", "Next 30 seconds: social proof (reviews) before CTA", "At form entry: data safety signal", "At payment: guarantee + encryption combined"] },
-            { layer: "Layer 4", title: "Trust Signal Maintenance", points: ["Review count auto-updated from Trustpilot API daily", "RBI license badge linked to RBI registry (verifiable)", "Media logo usage legally cleared and refreshed quarterly"] },
+            { title: "72-Hour Crisis Response", points: ["Published detailed clarification blog post: what we are, what we're not, IRDAI credentials", "WhatsApp community broadcast: named CEO statement with verification links", "Proactive outreach to users who'd deactivated accounts: personal email from founder", "Google and social search: ran branded ads to dominate search for our company name"] },
+            { title: "Product Trust Overhaul (4 Months)", points: ["Complete trust audit across all 24 touchpoints in user journey", "Trust signal redesign by journey stage and trust dimension", "Methodology disclosure panel built and deployed on all comparison pages", "Reviews contextual display system built"] },
+            { title: "Ongoing Reputation Monitoring", points: ["Social listening tool for brand mentions (especially negative/uncertain)", "Weekly sweep of WhatsApp forwards mentioning company name or similar names", "Designated response team: any trust-threatening mention gets response within 2 hours"] },
           ].map((l) => (
-            <div key={l.layer} className="p-6 rounded-xl border border-border bg-muted/20">
-              <p className="font-bold text-foreground mb-3"><span className="text-primary font-mono text-sm">{l.layer} · </span>{l.title}</p>
-              <ul className="space-y-2">{l.points.map((p, i) => (<li key={i} className="flex gap-2 text-sm text-foreground/70"><span className="text-primary mt-0.5 shrink-0">→</span>{p}</li>))}</ul>
+            <div key={l.title} className="p-6 rounded-xl border border-border bg-muted/20">
+              <p className="font-bold text-foreground mb-3 text-primary">{l.title}</p>
+              <ul className="space-y-2">
+                {l.points.map((p, i) => (
+                  <li key={i} className="flex gap-2 text-sm text-foreground/70"><span className="text-primary mt-0.5 shrink-0">→</span>{p}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
       </section>
 
-      <SectionDivider label="Execution" />
-
-      <section id="execution" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Execution Journey</h2>
-        <div className="space-y-4">
-          <Phase num="Phase 1" period="Week 1–2" title="Trust Audit" actions={["Exit survey analysis: 'Didn't feel safe' top exit reason (41%)", "Trust signal placement audit: RBI badge 8% visibility", "Anxiety peak mapping: 4 distinct peaks identified"]} result="Clear trust gap map with priority signals" color="border-blue-200 bg-blue-50" resultColor="text-blue-700" />
-          <Phase num="Phase 2" period="Week 3–4" title="Signal Design" actions={["RBI badge redesigned — prominent, above fold, linked to RBI registry", "Review integration: Trustpilot API, real names, outcomes", "Encryption badge and media logos designed and cleared"]} result="Trust architecture live in staging" color="border-green-200 bg-green-50" resultColor="text-green-700" />
-          <Phase num="Phase 3" period="Week 5–6" title="A/B Test" actions={["Trust architecture vs original: 50/50 split, 14 days", "90-second abandonment: 71% → 38% (immediate signal)", "First-time fintech users (Trust-First segment): conversion +68%"]} result="Abandonment halved; Trust-First conversion doubled" color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
-          <Phase num="Phase 4" period="Week 6+" title="Rollout + Refinement" actions={["Full rollout — 100% traffic", "Trust-First segment conversion: 11% → 18.5%", "14-day refund guarantee added — further +9% on Trust-First"]} result="Overall signup conversion: 29% → 41% (+41%)" color="border-orange-200 bg-orange-50" resultColor="text-orange-700" />
-        </div>
-      </section>
-
       <SectionDivider label="Results" />
 
-      <section id="results" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Results</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
-          <MetricCard value="41%" label="Signup Conversion" sub="from 29% (+41% improvement)" color="text-green-600" />
-          <MetricCard value="38%" label="90s Abandonment" sub="from 71% (halved)" color="text-primary" />
-          <MetricCard value="68%" label="Trust-First Segment" sub="conversion improvement" color="text-green-600" />
-          <MetricCard value="Zero" label="New Features Built" sub="pure trust signal design" color="text-primary" />
+      <section id="execution" className="scroll-mt-28">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Recovery and Lift</h2>
+        <div className="space-y-4">
+          <Phase num="Week 1–2" period="Crisis" title="Immediate Response" actions={["Clarification content published", "Branded search ads running within 6 hours", "Personal founder outreach to deactivated users"]} result="DAU stabilized. Signup drop began reversing by Day 8." color="border-blue-200 bg-blue-50" resultColor="text-blue-700" />
+          <Phase num="Month 2–3" period="Rebuild" title="Trust Architecture Redesign" actions={["Data methodology disclosure on all comparison pages", "Contextual social proof system built", "Email identity architecture overhauled"]} result="Baseline conversion beginning to exceed pre-crisis levels." color="border-green-200 bg-green-50" resultColor="text-green-700" />
+          <Phase num="Month 4" period="Full Recovery + Lift" title="Trust Dividend" actions={["All trust redesign live", "A/B test confirmed trust signals driving +34% conversion", "Social listening system operational"]} result="DAU at 118% of pre-crisis levels. Conversion +34% vs pre-crisis baseline." color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
         </div>
-        <DataTable
-          headers={["Metric", "Before TSA", "After TSA"]}
-          rows={[
-            ["90-Second Abandonment Rate", "71%", "38%"],
-            ["Overall Signup Conversion", "29%", "41%"],
-            ["Trust-First Segment Conversion", "11%", "18.5%"],
-            ["RBI Badge Visibility", "8%", "91%"],
-            ["Exit Reason: 'Didn't feel safe'", "41%", "12%"],
-          ]}
-        />
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+          <MetricCard value="+34%" label="Conversion Rate" sub="vs pre-crisis baseline" color="text-green-600" />
+          <MetricCard value="118%" label="DAU Recovery" sub="vs pre-crisis levels" color="text-primary" />
+          <MetricCard value="72 hrs" label="Trust Incident Response" sub="from detection to containment" color="text-green-600" />
+          <MetricCard value="4" label="Trust Dimensions" sub="systematically addressed" color="text-primary" />
+        </div>
       </section>
 
-      <SectionDivider label="Deep Insights" />
+      <SectionDivider label="Insights" />
 
       <section id="insights" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Deep Insights</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What the Crisis Forced Us to Learn</h2>
         <div className="space-y-6">
-          <Insight num="01" title="Trust signals must intercept anxiety at its peak — not before or after" body="Showing the encryption badge on the homepage is ineffective. Showing it at the exact moment users start entering personal data is precise. Timing trust signals to anxiety peaks is the design discipline." />
-          <Insight num="02" title="Specific trust beats generic trust by a large margin" body="'Secure and safe' converts poorly. 'Licensed by RBI: License No. NBFC-XXX-2019, 256-bit AES encryption, 12,847 verified reviews' converts at a premium. Specificity creates verifiability, which creates trust." />
-          <Insight num="03" title="In fintech, trust design is product design" body="We built no new features. We redesigned where we placed existing credentials. Signup conversion improved 41%. This is not a marketing optimization — it's product architecture." />
-          <Insight num="04" title="The first-time user segment sets your brand's reputation" body="34% of users were first-time fintech users. They are the most anxiety-prone, the most trust-sensitive, and the most likely to share their experience (good or bad). Designing for them designs for everyone." />
-          <Insight num="05" title="Refund guarantees reduce anxiety for products that don't need them" body="Our refund claim rate was 0.4%. But the 14-day refund guarantee increased Trust-First conversion by 9%. Users rarely use the guarantee — they just need it to exist. The cost is near-zero; the benefit is real." />
+          <Insight num="01" title="Trust signals need to be adjacent to decisions, not decorative" body="Putting IRDAI credentials on the homepage is credibility theater. Putting verification links on the application page is trust architecture. The user who's entering their personal data for a loan application needs trust signals at that moment — not on a page they visited 10 minutes ago." />
+          <Insight num="02" title="Data trust is the most underinvested trust dimension in fintech" body="Financial product comparison platforms are entirely dependent on users believing the data is accurate and current. Our methodology was strong. We just never told anyone about it. Publishing the 'how we collect data' panel added no user burden and improved conversion measurably." />
+          <Insight num="03" title="Specific social proof is significantly more effective than aggregated ratings" body="'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 — she later checked back for health insurance' is concrete. Specificity is what makes social proof credible rather than decorative." />
+          <Insight num="04" title="Reputation monitoring should be a product team function, not PR" body="By the time a reputation incident reaches the PR team, it's already compounding. We now have real-time monitoring for brand mentions including misspellings and similar names. Response time of 2 hours vs 18 hours changes the trajectory of an incident significantly." />
         </div>
       </section>
 
       <SectionDivider label="Failures" />
 
       <section id="failures" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Failure Points</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What the Crisis Exposed</h2>
         <div className="space-y-4">
-          <FailurePoint title="Too many trust signals created doubt" why="V1 trust redesign had 9 trust signals on the homepage. User testing showed: too many signals looked desperate. 'Why do they need to prove themselves so much?'" fix="Reduced to 4 primary trust signals — each in a distinct zone. Less is more credible when each signal is strong." />
-          <FailurePoint title="Stock photography in testimonials undermined trust" why="Legal team initially rejected using real user photos. We used stock photography. User testing: 'These testimonials look fake.'" fix="Replaced with real user first name + city + initial only (no photo). 'Ritu M., Pune' feels more real than a stock photo with a full name." />
+          <FailurePoint title="No reputation monitoring system existed before the incident" why="We had zero visibility into what was being said about us on WhatsApp, Telegram, or social media. The incident was 3 days old before we became aware of it — by which time it had been shared widely enough to drive measurable user behavior change." fix="Implemented social listening covering: our brand name, common misspellings, similar company names, and key competitor names. Weekly digest + real-time alert for negative mentions above threshold volume." />
+          <FailurePoint title="Crisis response involved too many approvals" why="First clarification statement took 14 hours to publish because it required legal review, CEO approval, and two rounds of copy revision. Every hour of delay meant more users seeing the unchallenged false claim." fix="Pre-approved crisis communication templates for the 5 most likely reputation scenarios. Templates approved by legal in advance — fills in specifics in real-time, publishes within 2 hours of incident identification." />
         </div>
       </section>
 
       <SectionDivider label="Future" />
 
       <section id="future" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Future Evolution</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where Trust Architecture Goes Next</h2>
         <div className="grid sm:grid-cols-3 gap-4">
-          <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Segment-Specific Trust Paths" body="Detect user segment from entry behavior — Trust-First vs Feature-First — and serve the appropriate trust architecture before they experience anxiety." />
-          <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Live Trust Indicators" body="'143 people compared today.' 'Last transaction: 2 minutes ago.' Real-time activity signals that normalize usage and reduce 'is this even working?' anxiety." />
-          <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Trust Signal A/B Continuous" body="Continuous testing of trust signal variants — different review formats, different regulatory signal placements — maintained as an ongoing optimization program." />
+          <FutureCard icon={<Shield className="h-5 w-5 text-primary" />} title="Real-Time Data Freshness Indicator" body="Show users exactly when comparison data was last updated, per provider — not just a general 'updated every 4 hours.' Per-provider freshness improves data trust at the individual comparison level." />
+          <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="User Reputation Portfolio" body="Opted-in users can share their comparison and purchase history publicly — building a verified track record. 'User since 2021, 4 purchases, all verified' creates peer trust signals that company-generated content can't replicate." />
+          <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Trust Score Dashboard" body="Internal dashboard tracking trust signal coverage across all touchpoints, conversion correlation by trust signal type, and reputation monitoring health. Trust becomes a measurable product dimension, not an abstract value." />
         </div>
-        <BlockQuote>In fintech, the most important design question is not 'What do users want?' It's 'What are users afraid of?' Answer that question first — then design the product.</BlockQuote>
+        <BlockQuote>Trust in fintech isn't a design element. It's the foundation that every other feature sits on. When it holds, users don't notice it. When it cracks, nothing else matters until it's repaired.</BlockQuote>
       </section>
     </div>
   );

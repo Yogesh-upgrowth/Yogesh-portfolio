@@ -1,4 +1,4 @@
-import { Brain, Target, Layers, TrendingUp, Zap, BarChart3, Users, Lightbulb } from "lucide-react";
+import { Users, Brain, Layers, Target, BarChart3, Zap } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
@@ -9,176 +9,168 @@ export default function MlClusteringInsuranceContent() {
     <div className="space-y-2">
 
       <section id="hook" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">One Product. Eleven Customer Realities.</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We had a single insurance comparison product serving customers as different as a 24-year-old first-time motorcycle buyer and a 52-year-old fleet manager renewing 40 commercial vehicles. Same platform. Same flow. Same messaging. Predictably — and catastrophically — wrong for nearly everyone.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Conversion was stuck at 4.1%. Support tickets were up 34%. NPS had flatlined at 28. The product team kept adding features, the growth team kept optimizing ads, and nothing moved.</p>
-        <ProblemBox>We had built one product for an imaginary average user that didn't exist — and were optimizing it for a persona that represented no actual customer in our database.</ProblemBox>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Insurance Industry's Comfortable Lie</h2>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Insurance companies have historically sold one product to "the Indian customer" — a monolithic persona built from aggregated surveys and actuarial tables. Young, salaried, urban, safety-conscious. Send them the same email, the same features, the same pricing tiers.</p>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">When we ran our first clustering analysis on 180,000 insurance platform users, we found not one customer but <strong className="text-foreground">seven distinct behavioral archetypes</strong> — each with different purchase triggers, different price sensitivities, and different preferred features. The industry's comfort with the "average customer" had been leaving significant money on the table.</p>
+        <InsightBox>The most surprising finding: our highest-converting segment wasn't the young urban salaried buyer the industry optimizes for. It was a 35–50 age segment we hadn't built a single feature for. They were converting despite the product, not because of it.</InsightBox>
       </section>
 
-      <SectionDivider label="Ground Reality" />
+      <SectionDivider label="What Triggered the Analysis" />
 
       <section id="early-data" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What the Data Showed Before Clustering</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Conversion Rate Anomaly</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">We'd noticed an anomaly in our conversion data: a small group of users was converting at 4× the platform average, but their demographics looked ordinary. Same age range, similar cities, similar income proxies. What was different wasn't who they were — it was how they behaved.</p>
         <DataTable
-          headers={["Metric", "Value", "What It Hid"]}
+          headers={["Metric", "Platform Average", "High-Converting Anomaly Group", "Difference"]}
           rows={[
-            ["Overall Conversion Rate", "4.1%", "Ranged from 1.2% to 19.4% across user types"],
-            ["Avg Session Duration", "4m 22s", "Some users done in 90s, others spent 18 min comparing"],
-            ["Top Support Complaint", "'Too many options'", "Only true for 2 of 6 real user types"],
-            ["Feature Usage (breadth)", "2.3 features/session avg", "Power users used 9+, most used 1"],
-            ["NPS", "28", "Hidden: Promoter NPS = 71, Detractor NPS = −41"],
+            ["Conversion Rate", "6.8%", "28.4%", "+318%"],
+            ["Session Count Before Purchase", "3.2", "6.8", "+113%"],
+            ["Features Explored", "2.1", "7.4", "+252%"],
+            ["Time to Purchase", "4.2 days", "11.3 days", "+169%"],
+            ["Return Visit Rate", "31%", "74%", "+139%"],
           ]}
         />
-        <InsightBox>Blended metrics are management sedatives. They look calm while the underlying reality is chaotic. Clustering was the diagnosis our aggregated dashboard refused to give us.</InsightBox>
+        <p className="text-foreground/80 leading-[1.85] mt-5">The anomaly group took longer, visited more often, explored more features — and converted at 4× the rate. They weren't impulsive. They were <em>thorough</em>. And we were treating them identically to casual browsers.</p>
       </section>
 
-      <SectionDivider label="Behavioral Segmentation" />
+      <SectionDivider label="The Seven Archetypes" />
 
       <section id="segmentation" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The 6 Real Customer Clusters</h2>
-        <p className="text-foreground/80 leading-[1.85] mb-4">K-Means clustering on 31 behavioral and transactional features revealed 6 distinct segments — each with unique needs, journeys, and conversion levers.</p>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What K-Means Actually Found</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">We ran K-means clustering with k=3 through k=12, measuring silhouette scores and business interpretability. k=7 gave us the best combination of statistical separation and explainable behavioral profiles. Here's what we found:</p>
         <DataTable
-          headers={["Cluster", "Label", "Size", "Conversion", "Primary Need", "Key Insight"]}
+          headers={["Archetype", "% of Users", "Purchase Trigger", "Avg Premium", "Conversion Rate"]}
           rows={[
-            ["C1", "Price-First Shoppers", "29%", "6.8%", "Cheapest valid option", "Convert instantly when sorted by price. Adding trust content slows them down."],
-            ["C2", "Research-Driven", "18%", "11.4%", "Understanding coverage", "Read everything. Convert 2 days later. Nurture email works 3× better."],
-            ["C3", "Time-Pressured", "14%", "14.2%", "Fast, correct selection", "Session < 90s. Need instant recommendation, not browsing."],
-            ["C4", "Feature Maximizers", "9%", "19.4%", "Best coverage, not cheapest", "Highest LTV. Want detailed comparison. Never convert on mobile."],
-            ["C5", "Trust Seekers", "16%", "2.8%", "Safety and legitimacy signals", "Never convert without review count visible. Exit if trust signals absent."],
-            ["C6", "Lost / Confused", "14%", "0.9%", "Don't know what they need", "Wrong entry point. Redirect or educate first."],
+            ["The Researcher", "18%", "Feature completeness + comparison depth", "₹18,400", "28.4%"],
+            ["The Price Hunter", "22%", "Lowest premium, highest deductible OK", "₹7,200", "19.1%"],
+            ["The Loyalty Seeker", "14%", "Known brand, even at premium", "₹22,100", "21.3%"],
+            ["The Life-Event Buyer", "11%", "Marriage, child, new vehicle trigger", "₹15,800", "31.2%"],
+            ["The Lapsed Renewer", "16%", "Reminder-driven, low-friction renewal", "₹11,400", "44.8%"],
+            ["The Feature Maximizer", "9%", "Specific add-ons (zero dep, NCB protect)", "₹24,600", "16.2%"],
+            ["The Passive Browser", "10%", "No clear trigger; rarely converts", "—", "2.1%"],
           ]}
         />
-        <TakeawayBox>C6 was 14% of traffic with 0.9% conversion. We were burning acquisition budget on users who had no idea what to buy. Routing them to an education flow first improved their conversion 4.2×.</TakeawayBox>
+        <TakeawayBox>The Lapsed Renewer converted at 44.8% — highest of any archetype — but had almost no product features built for them. Renewal reminders were generic. The renewal flow had 7 steps. They were converting through friction, not because of it.</TakeawayBox>
       </section>
 
-      <SectionDivider label="Strategic Shift" />
+      <SectionDivider label="What It Meant" />
 
       <section id="reframe" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Reframe</h2>
-        <div className="grid sm:grid-cols-2 gap-5 my-6">
-          <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
-            <p className="font-bold text-destructive mb-2 text-sm uppercase tracking-wider">Old Thinking</p>
-            <p className="font-medium text-foreground">Build the best single insurance comparison experience</p>
-          </div>
-          <div className="p-5 rounded-xl border border-green-200 bg-green-50">
-            <p className="font-bold text-green-700 mb-2 text-sm uppercase tracking-wider">New Thinking</p>
-            <p className="font-medium text-foreground">Build 6 micro-experiences dynamically served to the right cluster</p>
-          </div>
-        </div>
-        <BlockQuote>There is no best experience. There is only the right experience for who is in front of you right now.</BlockQuote>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">One Product, Seven Different Purchase Journeys</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">The insight wasn't just that these segments existed — it was that the product had been designed around one of them (the Researcher, roughly) and three others (Price Hunter, Life-Event Buyer, Lapsed Renewer) were converting significantly while being actively underserved.</p>
+        <BlockQuote>We'd built one checkout flow. We'd written one set of email sequences. We'd designed one pricing page. And seven different types of buyers were trying to navigate all of it — some succeeding despite us, most giving up.</BlockQuote>
+        <p className="text-foreground/80 leading-[1.85] mt-5">The highest-leverage play wasn't building new features. It was routing each archetype to an experience designed for their specific purchase trigger — using existing infrastructure, different sequencing.</p>
       </section>
 
-      <SectionDivider label="Core Framework" />
+      <SectionDivider label="The Framework" />
 
       <section id="framework" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Behavioral Cluster Monetisation Engine (BCME)</h2>
-        <p className="text-foreground/80 leading-[1.85] mb-6">BCME assigns a cluster in real-time — within the first 90 seconds of a session — and dynamically adjusts the experience across 4 dimensions.</p>
-        <div className="grid sm:grid-cols-2 gap-4 mb-6">
-          <FrameworkDimension icon={<Target className="h-5 w-5 text-primary" />} title="Sort Order" body="C1: Price ascending by default. C4: Coverage score descending. C2: Balanced view. C3: AI recommended option pinned first." color="bg-primary/5 border-primary/20" />
-          <FrameworkDimension icon={<Lightbulb className="h-5 w-5 text-green-600" />} title="Trust Layer" body="C5: Review count, trust badges, media mentions shown prominently. C1: Hidden to reduce friction. C4: Expert score visible." color="bg-green-50 border-green-200" />
-          <FrameworkDimension icon={<Layers className="h-5 w-5 text-purple-600" />} title="Content Depth" body="C2: Detailed coverage explainers, comparison table expanded. C3: Collapsed, recommendation only. C6: Education modal before comparison." color="bg-purple-50 border-purple-200" />
-          <FrameworkDimension icon={<TrendingUp className="h-5 w-5 text-orange-600" />} title="Follow-up Path" body="C2: 48-hour email nurture. C1: Immediate push with limited-time price lock. C4: Detailed PDF sent. C5: Social proof follow-up." color="bg-orange-50 border-orange-200" />
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Archetype Routing System</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-6">We built a real-time classifier that assigns users to archetypes within their first 3 sessions, then routes them to differentiated experiences. The classifier doesn't ask users to self-identify — it infers from behavior.</p>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <FrameworkDimension
+            icon={<Brain className="h-5 w-5 text-primary" />}
+            title="Behavioral Classifier"
+            body="Random forest model: session depth, feature usage sequence, time on comparison pages, price filter behavior, brand filter usage. Classifies into one of 7 archetypes at session 3 or after 8+ pageviews — whichever comes first."
+            color="bg-primary/5 border-primary/20"
+          />
+          <FrameworkDimension
+            icon={<Layers className="h-5 w-5 text-green-600" />}
+            title="Experience Routing"
+            body="Each archetype gets different: landing page emphasis, email sequence, comparison UI defaults, pricing display order, and support trigger timing. Same underlying product; different journey emphasis based on purchase trigger."
+            color="bg-green-50 border-green-200"
+          />
+          <FrameworkDimension
+            icon={<Target className="h-5 w-5 text-purple-600" />}
+            title="Lapsed Renewer Fast-Track"
+            body="Highest-value quick win: Renewal flow reduced from 7 to 3 steps. Pre-filled from previous policy. Single-click renewal for users whose policy expired within 30 days. Conversion rate went from 44.8% to 68.2%."
+            color="bg-purple-50 border-purple-200"
+          />
+          <FrameworkDimension
+            icon={<Users className="h-5 w-5 text-orange-600" />}
+            title="Life-Event Detection"
+            body="Triggered by UTM (wedding searches, baby searches, car searches in preceding days via platform partner signals). Life-Event Buyers shown curated bundles rather than full comparison. Decision simplified."
+            color="bg-orange-50 border-orange-200"
+          />
         </div>
-        <DataTable
-          headers={["Cluster Identification Signal", "Weight", "Timing"]}
-          rows={[
-            ["First sort action (price vs coverage)", "0.32", "Within 30 seconds"],
-            ["Time on first result before action", "0.24", "45–90 seconds"],
-            ["Scroll depth on comparison table", "0.18", "First 60 seconds"],
-            ["Device type (mobile vs desktop)", "0.14", "Session start"],
-            ["Entry page (price vs guide vs ad)", "0.12", "Pre-session"],
-          ]}
-        />
       </section>
 
-      <SectionDivider label="System Design" />
+      <SectionDivider label="Build" />
 
       <section id="system-design" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">System Design</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Technical Implementation</h2>
         <div className="space-y-4">
           {[
-            { layer: "Layer 1", title: "Real-Time Cluster Scoring", points: ["Behavioral signals captured per event (click, scroll, hover, sort)", "Cluster probability scores updated every 30 seconds", "Cluster assignment locked at 90 seconds — experience adapts"] },
-            { layer: "Layer 2", title: "Dynamic Experience Engine", points: ["UI components swappable per cluster — same URL, different layout", "Sort order, trust badges, content depth all cluster-driven", "A/B framework layered: cluster assignment vs static control"] },
-            { layer: "Layer 3", title: "Post-Session Routing", points: ["Non-converters routed to cluster-appropriate nurture sequences", "C2 Research: 3-email educational sequence", "C5 Trust: social proof + guarantee email series"] },
-            { layer: "Layer 4", title: "Cluster Drift Monitoring", points: ["Weekly cluster distribution tracked — if C6 (confused) grows, acquisition quality issue", "Cluster model retrained quarterly on new behavior data", "Cluster-conversion funnel dashboarded for product team weekly"] },
+            { title: "Clustering Pipeline", points: ["K-means run on 22-feature behavioral vectors (session-level)", "Cluster stability validated with silhouette scores over 3 months of data", "Archetype labels assigned by business interpretability + statistical separation criteria"] },
+            { title: "Real-Time Classifier", points: ["Random forest classifier trained on labeled archetype data (ground truth: eventual cluster assignment)", "Classification triggered at session 3 or 8+ pageviews, stored in user profile", "Confidence threshold: > 70% probability to assign. Below threshold: default to Researcher journey"] },
+            { title: "Experience Layer", points: ["Feature flags control which UI variant each archetype sees", "Email system: archetype tag drives sequence selection", "Pricing page: default sort changes by archetype (Price Hunter: price ascending; Loyalty Seeker: brand prominence)"] },
           ].map((l) => (
-            <div key={l.layer} className="p-6 rounded-xl border border-border bg-muted/20">
-              <p className="font-bold text-foreground mb-3"><span className="text-primary font-mono text-sm">{l.layer} · </span>{l.title}</p>
-              <ul className="space-y-2">{l.points.map((p, i) => (<li key={i} className="flex gap-2 text-sm text-foreground/70"><span className="text-primary mt-0.5 shrink-0">→</span>{p}</li>))}</ul>
+            <div key={l.title} className="p-6 rounded-xl border border-border bg-muted/20">
+              <p className="font-bold text-foreground mb-3 text-primary">{l.title}</p>
+              <ul className="space-y-2">
+                {l.points.map((p, i) => (
+                  <li key={i} className="flex gap-2 text-sm text-foreground/70"><span className="text-primary mt-0.5 shrink-0">→</span>{p}</li>
+                ))}
+              </ul>
             </div>
           ))}
         </div>
       </section>
 
-      <SectionDivider label="Execution" />
+      <SectionDivider label="Rollout" />
 
       <section id="execution" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Execution Journey</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where We Started and How It Grew</h2>
         <div className="space-y-4">
-          <Phase num="Phase 1" period="0–5 Weeks" title="Clustering Research" actions={["K-Means run on 14-month, 28K session dataset", "6 clusters validated with silhouette score 0.68", "Cluster profiles named and conversion rates benchmarked"]} result="6 segments identified and validated" color="border-blue-200 bg-blue-50" resultColor="text-blue-700" />
-          <Phase num="Phase 2" period="5–9 Weeks" title="Experience Design" actions={["6 cluster-specific UX variants designed", "Sort order, trust, content depth — 3 dimensions per cluster", "Engineering built dynamic component swap system"]} result="BCME in staging, ready to test" color="border-green-200 bg-green-50" resultColor="text-green-700" />
-          <Phase num="Phase 3" period="9–14 Weeks" title="Rollout & A/B" actions={["50% of traffic cluster-personalized, 50% static control", "C3 (Time-Pressured) conversion: 14.2% → 23.8%", "C5 (Trust Seekers): 2.8% → 8.1% with trust layer"]} result="Overall conversion 4.1% → 7.8%" color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
-          <Phase num="Phase 4" period="14+ Weeks" title="Optimization" actions={["C6 education modal reduced confused-user bounce by 41%", "C4 desktop-optimized experience drove highest LTV cohort ever", "Nurture sequences for C2 added — 31% conversion uplift"]} result="Conversion 9.2%, NPS 28 → 51" color="border-orange-200 bg-orange-50" resultColor="text-orange-700" />
+          <Phase num="Month 1" period="Clustering Analysis" title="Finding the Seven" actions={["K-means clustering on 180K users across 22 behavioral features", "k=3 to k=12 tested; k=7 selected (silhouette + interpretability)", "Archetypes named, validated with business team"]} result="Seven archetypes confirmed. Lapsed Renewer and Life-Event Buyer identified as highest-leverage quick wins." color="border-blue-200 bg-blue-50" resultColor="text-blue-700" />
+          <Phase num="Month 2" period="Quick Wins" title="Lapsed Renewer + Life-Event Flows" actions={["Renewal flow simplified: 7 steps → 3", "Pre-fill from previous policy activated", "Life-Event bundle page built for wedding/baby/car contexts"]} result="Lapsed Renewer CVR: 44.8% → 68.2%. Life-Event CVR: 31.2% → 47.6%." color="border-green-200 bg-green-50" resultColor="text-green-700" />
+          <Phase num="Month 3" period="Classifier + Routing" title="Full Archetype System Live" actions={["Real-time classifier built and validated", "All 7 archetype journeys differentiated", "A/B test: archetype routing vs standard journey for Researchers and Price Hunters"]} result="Blended platform CVR: 6.8% → 11.2%" color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
         </div>
       </section>
 
       <SectionDivider label="Results" />
 
       <section id="results" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Results</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Across the Platform</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
-          <MetricCard value="9.2%" label="Overall Conversion" sub="from 4.1% (+124%)" color="text-green-600" />
-          <MetricCard value="51" label="NPS Score" sub="from 28 (near-doubled)" color="text-primary" />
-          <MetricCard value="23.8%" label="C3 Conversion" sub="Time-Pressured cluster" color="text-green-600" />
-          <MetricCard value="41%" label="C6 Bounce Drop" sub="after education modal" color="text-primary" />
+          <MetricCard value="+65%" label="Blended CVR" sub="6.8% → 11.2%" color="text-green-600" />
+          <MetricCard value="68.2%" label="Lapsed Renewer CVR" sub="from 44.8% baseline" color="text-primary" />
+          <MetricCard value="7" label="Distinct Archetypes" sub="each with tailored journey" color="text-green-600" />
+          <MetricCard value="3 steps" label="Renewal Flow" sub="reduced from 7" color="text-primary" />
         </div>
-        <DataTable
-          headers={["Cluster", "Before Conversion", "After Conversion", "Uplift"]}
-          rows={[
-            ["C1 Price-First", "6.8%", "9.4%", "+38%"],
-            ["C2 Research-Driven", "11.4%", "14.9%", "+31%"],
-            ["C3 Time-Pressured", "14.2%", "23.8%", "+68%"],
-            ["C4 Feature Maximizers", "19.4%", "26.1%", "+34%"],
-            ["C5 Trust Seekers", "2.8%", "8.1%", "+189%"],
-            ["C6 Lost / Confused", "0.9%", "3.8%", "+322% (education first)"],
-          ]}
-        />
       </section>
 
-      <SectionDivider label="Deep Insights" />
+      <SectionDivider label="Insights" />
 
       <section id="insights" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Deep Insights</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What Surprised Us</h2>
         <div className="space-y-6">
-          <Insight num="01" title="The 'best experience' is a category error" body="There is no single best insurance comparison experience. The best experience for a price-first shopper actively hurts a trust seeker. Designing for an average user is designing for no user." />
-          <Insight num="02" title="Cluster size ≠ cluster importance" body="C4 (Feature Maximizers) was 9% of traffic but 31% of revenue — because of LTV. C1 was 29% of traffic but only 22% of revenue. Optimize for revenue share, not traffic share." />
-          <Insight num="03" title="Trust signals slow down some users while saving others" body="Adding social proof for C1 users reduced their conversion by 8% — too much friction. The same trust layer increased C5 conversion by 189%. Every element you add helps someone and hurts someone else." />
-          <Insight num="04" title="Confused users are a diagnostic signal" body="When C6 grew to 16% of traffic, it signaled a channel quality problem — we were buying traffic that wasn't in-market. Cluster distribution is an acquisition quality dashboard." />
-          <Insight num="05" title="90 seconds is enough to classify a user" body="We were skeptical that behavioral signals in 90 seconds could reliably assign clusters. Silhouette score 0.68 proved otherwise. Short sessions have enough signal — you just need to know what to measure." />
+          <Insight num="01" title="The highest-converting segment was the most underserved" body="The Lapsed Renewer converted at 44.8% despite a 7-step renewal flow — the worst UX on the platform. They were succeeding through sheer intent. Optimizing for their specific need moved the needle faster than any other single change." />
+          <Insight num="02" title="K-means found segments business intuition missed entirely" body="We'd never explicitly thought about a 'Life-Event Buyer' archetype. Business intuition categorized these users as 'first-time buyers.' The clustering revealed their distinct behavior pattern, and the tailored experience showed their purchase trigger was entirely different." />
+          <Insight num="03" title="Confidence thresholds matter as much as model accuracy" body="A mis-classified user shown the wrong journey had lower conversion than an unclassified user shown the default journey. Setting a confidence threshold (we used 70%) for routing decisions improved outcomes — it's better to not classify than to classify wrongly." />
         </div>
       </section>
 
       <SectionDivider label="Failures" />
 
       <section id="failures" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Failure Points</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where We Stumbled</h2>
         <div className="space-y-4">
-          <FailurePoint title="Initial clustering used 8 clusters (too many)" why="Silhouette score peaked at 6 clusters but PM team insisted on 8 for granularity. Engineering spent 3 weeks building 8 experience variants. 2 had < 4% traffic share — not enough data to validate." fix="Merged smallest clusters. 6 clusters had enough statistical power in each to make confident decisions. Saved 6 weeks of engineering." />
-          <FailurePoint title="Cluster assignment locked too early (45 seconds)" why="Users misclassified in first 45 seconds due to landing page behavior bleeding into cluster signal. C3 and C1 looked identical at 45s." fix="Moved lock to 90 seconds. Misclassification rate dropped from 22% to 9%. Acceptable trade-off for slightly slower personalization." />
-          <FailurePoint title="C2 nurture emails were too generic" why="Research-Driven users received generic 'Here are your quotes' email. Open rate 12%, click-through 3%." fix="Personalized email with exact policy they viewed + coverage comparison they hadn't seen. Open rate 44%, click-through 18%." />
+          <FailurePoint title="Initial clusters were statistically clean but business-meaningless" why="First k=5 clustering produced clean statistical separation but the segments had no interpretable purchase trigger differences. 'Cluster 3' wasn't actionable." fix="Added business interpretability as a first-class criteria alongside silhouette score. Ran qualitative interviews with users from each candidate cluster to validate behavioral interpretation before acting." />
+          <FailurePoint title="Feature Maximizer journey over-complicated the comparison UI" why="Assumed Feature Maximizers would convert better with more filter options. Added 12 new filter dimensions. Conversion dropped — too much choice, decision paralysis." fix="Narrowed to 5 most-purchased add-on combinations for that archetype. Showed 'most popular for similar buyers' as default. CVR recovered and exceeded baseline." />
         </div>
       </section>
 
       <SectionDivider label="Future" />
 
       <section id="future" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Future Evolution</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where This Goes</h2>
         <div className="grid sm:grid-cols-3 gap-4">
-          <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Cross-Visit Cluster Memory" body="Remember cluster assignment across sessions. A C2 user who returns tomorrow should get the research-first experience without re-classification." />
-          <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Cluster-Specific Pricing" body="Dynamic pricing display — C1 sees lowest price prominently, C4 sees value-adjusted pricing with premium coverage highlighted. Same price, different frame." />
-          <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Predictive Cluster Migration" body="Model that predicts when a user is shifting clusters (C5 trust seeker becoming C1 price shopper after research) and adapts experience in real-time." />
+          <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Dynamic Archetype Migration" body="Users can move between archetypes over time — a Price Hunter who becomes a Loyalty Seeker. Tracking archetype migration and re-routing in real-time rather than static assignment." />
+          <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Predictive Archetype at Acquisition" body="Use pre-acquisition signals (search query, referral source, landing page) to predict archetype before first session. Start the journey correctly from the first pageview." />
+          <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Cross-Product Archetype Consistency" body="Extend archetypes across product categories. A Price Hunter in insurance is likely a Price Hunter in health or motor. Cross-category archetype consistency for unified personalization." />
         </div>
-        <BlockQuote>We stopped building for the average user and started building for every user. The compound effect of six well-served experiences outperformed one 'optimized' experience by a factor of two.</BlockQuote>
+        <BlockQuote>There is no such thing as "the Indian insurance customer." There are at least seven — each with a different purchase trigger, a different journey, and a different definition of value. Build for all of them.</BlockQuote>
       </section>
     </div>
   );

@@ -1,7 +1,7 @@
-import { TrendingUp, Zap, Target, Clock, Brain, BarChart3, CheckCircle2, Layers } from "lucide-react";
+import { Clock, Zap, Target, Brain, CheckCircle, BarChart3 } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
-  DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
+  DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard,
 } from "@/components/case-study/shared";
 
 export default function Mvp7DaysContent() {
@@ -9,166 +9,169 @@ export default function Mvp7DaysContent() {
     <div className="space-y-2">
 
       <section id="hook" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">7 Days. Real Users. Real Revenue. No Shortcuts.</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The idea came from a user interview on a Thursday. By the following Thursday, we had a working product, 40 paying beta users, and the first ₹14,400 in revenue. No design sprints. No product roadmaps. No committee approvals.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">This wasn't reckless speed — it was the application of a framework we'd developed over 8 years of building fintech products. The 7-day MVP methodology isn't about shortcuts. It's about <strong className="text-foreground">brutal prioritization of what must be true before everything else is irrelevant</strong>.</p>
-        <InsightBox>Most products fail not because they were built too fast — but because they spent 6 months building the wrong thing at the right quality. Speed forces the question: what is actually essential?</InsightBox>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Seven Days to Know If the Idea Was Worth Building</h2>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The context: we had three potential product directions in Q3. One needed 4 months to build properly before we could test market response. One needed 2 months. One — if we cut it aggressively — could be live in 7 days in a form that would tell us whether the demand hypothesis was real.</p>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We chose the 7-day option. Not because 7 days was comfortable (it wasn't — it was anxious and slightly chaotic), but because the alternative was spending 4 months building something that might fail, when we could spend 7 days learning whether we should build it at all.</p>
+        <ProblemBox>The most expensive thing in product development isn't engineering time. It's building the wrong thing slowly. A 7-day MVP that proves a hypothesis wrong is worth more than a 4-month build that discovers the same failure.</ProblemBox>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">This is what those 7 days looked like — honestly, including the parts that didn't go according to plan.</p>
       </section>
 
-      <SectionDivider label="Ground Reality" />
+      <SectionDivider label="The Hypothesis" />
 
       <section id="early-data" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Starting Conditions</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What We Were Testing</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">The hypothesis: urban Indian professionals in the 28–40 age bracket with home loans want a tool that helps them optimize the intersection of EMI planning, tax benefits, and investment decisions — and they'd pay for it if it were good enough.</p>
         <DataTable
-          headers={["Constraint", "Value", "Impact on Approach"]}
+          headers={["Hypothesis Component", "How We'd Test It", "Pass Threshold"]}
           rows={[
-            ["Time Budget", "7 days", "Forces single core flow — no feature sprawl"],
-            ["Engineering", "1 full-stack developer", "No complexity — ship the simplest version that works"],
-            ["Design", "1 designer (part-time)", "Use UI kit — no custom design system"],
-            ["Market Validation Signal", "3 user interviews showing clear pain", "Build for known pain, not hypothetical one"],
-            ["Revenue Hypothesis", "₹299/month or ₹1,499/year", "Must test willingness to pay, not just usage"],
+            ["Demand: people search for this", "Keyword volume + Reddit/forum research", "> 50K monthly searches related problem"],
+            ["Value: they'd use a tool", "Landing page + email capture", "> 8% email capture from landing page visitors"],
+            ["Stickiness: they'd return", "3-day return from early users", "> 20% D3 return rate"],
+            ["Willingness to pay", "Pricing page with fake payment wall", "> 3% click-to-pay (not actual payment)"],
           ]}
         />
-        <div className="grid sm:grid-cols-2 gap-5 mt-5">
-          <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
-            <p className="font-bold text-destructive mb-2 text-sm">What Most Teams Do</p>
-            <ul className="space-y-1 text-sm text-foreground/70"><li>→ Build all features simultaneously</li><li>→ Perfect the UI before shipping</li><li>→ Wait for full QA before user testing</li><li>→ Ship at 80% quality, 20% of speed</li></ul>
-          </div>
-          <div className="p-5 rounded-xl border border-primary/20 bg-primary/5">
-            <p className="font-bold text-primary mb-2 text-sm">The 7-Day Framework</p>
-            <ul className="space-y-1 text-sm text-foreground/80"><li>→ One core flow only — nothing else exists</li><li>→ 'Good enough' UI: no custom components</li><li>→ Ship to 10 real users on Day 5</li><li>→ Revenue test before feature iteration</li></ul>
-          </div>
-        </div>
+        <InsightBox>The "fake payment wall" is worth calling out explicitly: we put a pricing page with a payment button that, when clicked, showed "Thanks! We're preparing your access — we'll email you." No actual payment processing. The click rate told us intent without requiring us to build billing infrastructure in 7 days.</InsightBox>
       </section>
 
-      <SectionDivider label="Behavioral Segmentation" />
+      <SectionDivider label="Day by Day" />
 
       <section id="segmentation" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The 3 Questions That Define a 7-Day MVP</h2>
-        <div className="space-y-4">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Actual Seven Days</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-4">What follows is the honest version — what happened each day, including the things that went sideways.</p>
+        <div className="space-y-3">
           {[
-            { num: "Q1", q: "What is the one action this product must enable?", a: "If you can't answer this in one sentence, you're not ready to build. The one action for this MVP: 'Allow a freelance accountant to auto-generate a GST-compliant invoice from a voice description in under 60 seconds.'" },
-            { num: "Q2", q: "Who is the first user profile, and where are they?", a: "Not 'our target market' — a specific person with a specific pain, reachable in 24 hours. For this MVP: 'CA firms with 5–15 freelancers in Tier 2 cities, reachable via chartered accountant WhatsApp groups.'" },
-            { num: "Q3", q: "What is the monetization test?", a: "Not 'we'll figure out pricing later.' The pricing must be tested in the MVP. We showed the ₹299/month pricing page before the product was built — 6 of 10 test users said yes. Product started with revenue commitment." },
-          ].map((item) => (
-            <div key={item.num} className="p-5 rounded-xl border border-border bg-muted/20">
-              <p className="font-bold text-primary mb-1 text-sm font-mono">{item.num}</p>
-              <p className="font-bold text-foreground mb-2">{item.q}</p>
-              <p className="text-sm text-foreground/70 leading-relaxed">{item.a}</p>
+            { day: "Day 1 (Monday)", what: "Scoping and cutting", detail: "Wrote the full feature list. Cut 70% of it. Cut another 20%. What remained: one calculator (prepay vs invest), one landing page, one email capture, one pricing page. That's the MVP. Nothing else." },
+            { day: "Day 2 (Tuesday)", what: "Design and copy", detail: "One designer, 8 hours. Landing page wireframe, calculator UI, pricing page. Copy written by me — not ideal, but faster than briefing a copywriter. First draft looked fine on desktop. On mobile it was broken in ways we didn't notice until Day 3." },
+            { day: "Day 3 (Wednesday)", what: "Build — and the first crisis", detail: "Engineer started building at 9am. By 2pm: the calculator logic had an edge case with balloon payments that would have given users wrong results. We almost shipped it. Caught it in late-afternoon review. Fixed it. Lost 3 hours." },
+            { day: "Day 4 (Thursday)", what: "Mobile fix + tracking", detail: "The Day 2 mobile issue was real — 3 elements were overlapping on screens below 375px width. Fixed. Analytics implementation: GA4, Hotjar session recordings, email capture connected to Mailchimp." },
+            { day: "Day 5 (Friday)", what: "Soft launch to warm audience", detail: "Shared with our existing WhatsApp community (1,200 members) and a personal LinkedIn post. Goal: 200 visitors as initial signal set. Got 840. Email capture rate: 11.4%. Way above the 8% threshold." },
+            { day: "Day 6 (Saturday)", what: "Data review and first user calls", detail: "Three user calls with people who'd signed up. Two insights from the calls that changed the pricing page framing before the full launch. One insight I genuinely didn't expect: users wanted to save and share results — the shareable URL feature jumped to the top of the post-MVP backlog." },
+            { day: "Day 7 (Sunday)", what: "Full launch + pricing page test", detail: "Posted to r/IndiaFinance, r/personalfinanceindia, shared in two private finance communities. By evening: 2,400 total visitors. Pricing page CTR: 6.2% (threshold was 3%). D3 return rate from Day 5 users: 29% (threshold was 20%). All four hypotheses passed." },
+          ].map((d, i) => (
+            <div key={i} className="flex gap-4 p-5 rounded-xl border border-border bg-muted/20">
+              <div className="flex-shrink-0 w-32">
+                <p className="text-xs font-bold text-primary uppercase tracking-wider">{d.day}</p>
+                <p className="text-sm font-semibold text-foreground mt-0.5">{d.what}</p>
+              </div>
+              <p className="text-sm text-foreground/70 leading-relaxed">{d.detail}</p>
             </div>
           ))}
         </div>
-        <TakeawayBox>The 7 days begins only after all 3 questions are answered. If you start building without answers, you're not running a 7-day sprint — you're running a 7-day guess.</TakeawayBox>
       </section>
 
-      <SectionDivider label="Strategic Shift" />
+      <SectionDivider label="What Worked" />
 
       <section id="reframe" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Reframe</h2>
-        <div className="grid sm:grid-cols-2 gap-5 my-6">
-          <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
-            <p className="font-bold text-destructive mb-2 text-sm uppercase tracking-wider">Old Thinking</p>
-            <p className="font-medium text-foreground">Build the right product → then get users → then get revenue</p>
-          </div>
-          <div className="p-5 rounded-xl border border-green-200 bg-green-50">
-            <p className="font-bold text-green-700 mb-2 text-sm uppercase tracking-wider">New Thinking</p>
-            <p className="font-medium text-foreground">Get revenue commitment → build the minimum that delivers it → expand from evidence, not assumption</p>
-          </div>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Principles That Made 7 Days Possible</h2>
+        <BlockQuote>The constraint isn't 7 days. The constraint is: what is the minimum that tells you whether you should build the full thing? Find that minimum. Build only that. Ship it. Everything else is premature.</BlockQuote>
+        <p className="text-foreground/80 leading-[1.85] mb-5 mt-5">Three decisions that made the timeline work:</p>
+        <div className="space-y-4">
+          {[
+            { title: "No backend on Day 1–7", detail: "Calculator logic in vanilla JavaScript, client-side only. No database, no user accounts, no server. Email capture via a third-party form. Pricing 'payment' was a mailto link dressed as a button. Zero infrastructure to build." },
+            { title: "One feature, built properly", detail: "The temptation was to build three features to 60% quality. We built one feature to 95% quality — the calculator, with correct math and good mobile UX. The one thing we shipped was actually useful. That's what drove the email captures and the Reddit engagement." },
+            { title: "User calls before full launch", detail: "Two user calls on Day 6, before the big launch on Day 7, changed the pricing page copy and added a line about shareable results. Those two calls were worth more than any A/B test we could have run. You learn different things from watching humans use something than from watching metrics describe how humans use something." },
+          ].map((p, i) => (
+            <div key={i} className="p-5 rounded-xl border border-primary/15 bg-primary/3">
+              <p className="font-bold text-foreground mb-2">{p.title}</p>
+              <p className="text-sm text-foreground/75 leading-relaxed">{p.detail}</p>
+            </div>
+          ))}
         </div>
-        <BlockQuote>Revenue is not the reward for a good product. Revenue is the validation signal. Ship fast enough to learn whether your hypothesis is true before you've invested everything in it being true.</BlockQuote>
       </section>
 
-      <SectionDivider label="Core Framework" />
+      <SectionDivider label="Framework" />
 
       <section id="framework" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Rapid Intent-Fit Validation Framework (RIFV)</h2>
-        <p className="text-foreground/80 leading-[1.85] mb-6">RIFV is a 7-phase, 7-day process — one phase per day — each with a clear deliverable and a binary go/no-go gate.</p>
-        <div className="grid sm:grid-cols-2 gap-4 mb-6">
-          <FrameworkDimension icon={<Target className="h-5 w-5 text-primary" />} title="Day 1: Problem Sharpening" body="Interview 5 users. Identify the exact sentence that describes their pain. Write the one-sentence product description. Get verbal commitment from 2 users to test it." color="bg-primary/5 border-primary/20" />
-          <FrameworkDimension icon={<Clock className="h-5 w-5 text-green-600" />} title="Day 2: Flow Architecture" body="Map the single core flow. 5 screens maximum. No edge cases — main path only. Engineering lead signs off: 'I can build this in 3 days.'" color="bg-green-50 border-green-200" />
-          <FrameworkDimension icon={<Layers className="h-5 w-5 text-purple-600" />} title="Days 3–4: Build Core Flow" body="No extras. Auth, core action, output. Use existing UI kit. No custom illustrations. Ship to staging by end of Day 4." color="bg-purple-50 border-purple-200" />
-          <FrameworkDimension icon={<CheckCircle2 className="h-5 w-5 text-orange-600" />} title="Day 5: Real User Session" body="Put 10 real users on the product. Watch them use it (zoom or in-person). Write down every confusion. Fix top 3 issues on Day 6." color="bg-orange-50 border-orange-200" />
-        </div>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The 7-Day MVP Checklist</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">Not a framework that scales to every product — a specific checklist that worked for this type of validation problem. Steal what's useful.</p>
         <DataTable
-          headers={["Day", "Phase", "Deliverable", "Go/No-Go Gate"]}
+          headers={["Phase", "Action", "Time Budget"]}
           rows={[
-            ["1", "Problem Sharpening", "One-sentence problem statement + 2 user commitments", "2 users committed to test = go"],
-            ["2", "Flow Architecture", "5-screen wireframe, engineering estimate", "Build feasibility confirmed = go"],
-            ["3–4", "Core Build", "Working product in staging", "Core flow completes without bugs = go"],
-            ["5", "User Testing", "10-user session recordings, top 3 issues list", "Users complete flow without assistance = go"],
-            ["6", "Fixes + Pricing", "Fixed product + pricing page live", "1 user pays = go to Day 7"],
-            ["7", "Launch", "40 beta users, first revenue", "Revenue > 0 = validated"],
+            ["Define", "Write hypotheses. Define pass/fail thresholds BEFORE building anything.", "Day 1 morning: 3 hours max"],
+            ["Cut", "Write full feature list. Cut 70%. Cut another 20%. Scope remaining ruthlessly.", "Day 1 afternoon: 2 hours"],
+            ["Build", "One thing, properly. No backend. No accounts. No infrastructure.", "Day 2–4: focus"],
+            ["Soft launch", "Warm audience only. Target: 200 visitors. Measure against thresholds.", "Day 5"],
+            ["User calls", "3 calls. Watch, don't guide. Ask: what did you expect that you didn't find?", "Day 6"],
+            ["Full launch", "Real channels. Measure. Decision by end of day.", "Day 7"],
           ]}
         />
       </section>
 
-      <SectionDivider label="Execution" />
+      <SectionDivider label="Technical Choices" />
 
-      <section id="execution" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Actual 7-Day Execution Log</h2>
+      <section id="system-design" className="scroll-mt-28">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Technical Stack for 7 Days</h2>
         <div className="space-y-4">
-          <Phase num="Day 1" period="Thursday" title="Problem + Commitment" actions={["5 user interviews: 45 min each, remote", "Pain statement finalized: 'GST invoice generation takes 40 min manually — voice-to-invoice in 60 sec'", "2 accountants committed to be Day 5 testers"]} result="Clear scope; committed testers" color="border-blue-200 bg-blue-50" resultColor="text-blue-700" />
-          <Phase num="Days 2–4" period="Friday–Sunday" title="Build" actions={["UI kit: Shadcn + Tailwind — no custom design", "Flow: voice input → GPT parse → GST invoice template → download PDF", "Auth: phone OTP (Supabase), no email setup"]} result="Working product in staging by Sunday 9 PM" color="border-green-200 bg-green-50" resultColor="text-green-700" />
-          <Phase num="Day 5" period="Monday" title="User Testing" actions={["10 users on Zoom — watched, no help given", "3 issues identified: voice clarity on mobile, template selection confusion, PDF download failure on iOS Safari", "All 3 fixed in 4 hours"]} result="All 10 users completed flow unaided" color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
-          <Phase num="Days 6–7" period="Tuesday–Wednesday" title="Launch" actions={["Pricing page live: ₹299/month, ₹1,499/year", "WhatsApp outreach to 4 CA groups (200 members total)", "40 signups, 28 paid within 24 hours"]} result="₹14,400 revenue in 48 hours of launch" color="border-orange-200 bg-orange-50" resultColor="text-orange-700" />
+          {[
+            { title: "What We Used", points: ["Calculator logic: pure JavaScript — no framework", "Landing page: HTML + Tailwind CSS, deployed to Vercel in 30 minutes", "Email capture: Tally form embedded with 2 lines of HTML", "Analytics: GA4 + Hotjar (both free tiers)", "Pricing 'payment': Tally form disguised as a pricing CTA"] },
+            { title: "What We Intentionally Didn't Build", points: ["User accounts (not needed to test demand)", "Database (no data to store — emails go to Mailchimp directly)", "Payment processing (fake wall tells us intent without billing infrastructure)", "Backend API (calculator is client-side; nothing to serve)"] },
+          ].map((l) => (
+            <div key={l.title} className="p-6 rounded-xl border border-border bg-muted/20">
+              <p className="font-bold text-foreground mb-3 text-primary">{l.title}</p>
+              <ul className="space-y-2">
+                {l.points.map((p, i) => (
+                  <li key={i} className="flex gap-2 text-sm text-foreground/70"><span className="text-primary mt-0.5 shrink-0">→</span>{p}</li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
 
       <SectionDivider label="Results" />
 
-      <section id="results" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Results at Day 7</h2>
+      <section id="execution" className="scroll-mt-28">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Day 7 Results vs Hypothesis Thresholds</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
-          <MetricCard value="7" label="Days to Revenue" sub="from idea to first payment" color="text-green-600" />
-          <MetricCard value="₹14.4K" label="First Week Revenue" sub="40 beta users, 28 paid" color="text-primary" />
-          <MetricCard value="70%" label="Trial-to-Paid Rate" sub="28 of 40 beta users paid" color="text-green-600" />
-          <MetricCard value="5" label="Screens" title="Total" sub="entire MVP — nothing else" color="text-primary" />
+          <MetricCard value="11.4%" label="Email Capture Rate" sub="threshold was 8%" color="text-green-600" />
+          <MetricCard value="6.2%" label="Pricing Page CTR" sub="threshold was 3%" color="text-primary" />
+          <MetricCard value="29%" label="D3 Return Rate" sub="threshold was 20%" color="text-green-600" />
+          <MetricCard value="2,400" label="Total Visitors" sub="7 days, no paid traffic" color="text-primary" />
         </div>
         <DataTable
-          headers={["Metric", "Day 7 Value", "What It Validated"]}
+          headers={["Hypothesis", "Threshold", "Actual", "Result"]}
           rows={[
-            ["Beta Users", "40", "Reachability of target user"],
-            ["Paid Users", "28 (70%)", "Willingness to pay — strong signal"],
-            ["Week 1 Revenue", "₹14,400", "Real monetization, not just vanity usage"],
-            ["Time to First User", "5 days", "Speed of hypothesis test"],
-            ["Features Built", "5 screens, 1 flow", "Minimum scope discipline held"],
+            ["Demand exists", ">50K monthly searches", "Confirmed via keyword research before Day 1", "✓ Pass"],
+            ["Email capture rate", ">8%", "11.4%", "✓ Pass"],
+            ["D3 return rate", ">20%", "29%", "✓ Pass"],
+            ["Pricing page CTR", ">3%", "6.2%", "✓ Pass"],
           ]}
         />
+        <TakeawayBox>All four hypotheses passed. The decision was easy: build the full product. The 7-day investment gave us certainty that a 4-month build would have given us — just 3.5 months earlier. That's 3.5 months we could spend building the right things instead of guessing.</TakeawayBox>
       </section>
 
-      <SectionDivider label="Deep Insights" />
+      <SectionDivider label="Insights" />
 
       <section id="insights" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Deep Insights</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What 7-Day MVPs Teach You That Longer Builds Don't</h2>
         <div className="space-y-6">
-          <Insight num="01" title="Revenue is the only real validation signal" body="Users saying 'I love it' is noise. Users paying for it is signal. The 70% trial-to-paid rate on Day 7 told us more than 6 months of design research would have." />
-          <Insight num="02" title="Scope discipline is the hardest engineering skill" body="Every engineer on this project had ideas for features they wanted to add. None were added until Day 14. Feature restraint is a technical skill, not a business skill — and it's the one that determines MVP success most often." />
-          <Insight num="03" title="Real users break things design reviews miss" body="3 issues found in a 1-hour real-user session would have survived 3 rounds of design review. Real usage surfaces real friction. Ship earlier, test earlier." />
-          <Insight num="04" title="Distribution before product" body="WhatsApp CA groups were identified on Day 1 — before a line of code was written. The distribution channel was known before the product existed. Build for where your users are." />
-          <Insight num="05" title="7 days is a mindset, not just a method" body="The 7-day constraint forces every meeting to end with a decision, every design to be shipped, every 'let's think about it' to become 'let's build it and see.' The constraint is the strategy." />
+          <Insight num="01" title="Thresholds before build, not after" body="Setting pass/fail thresholds before you build prevents post-hoc rationalization. It's easy to look at 6.2% pricing CTR after launch and say 'that's good' or 'that's bad' depending on how attached you are to the idea. Decide what good means before you know the number." />
+          <Insight num="02" title="The fake payment wall is ethical when disclosed correctly" body="We told users on the 'payment successful' page that we were in early access and hadn't enabled payment yet. Nobody complained. The data it generated was genuinely valuable: 6.2% would have been willing to take out their card. That's a real signal." />
+          <Insight num="03" title="User calls on Day 6 are worth more than a week of analytics" body="Three 30-minute calls before the big launch changed the product. The shareable URL feature — which became our highest-leverage retention mechanism — came entirely from one of those calls. You can't extract 'I want to share this with my husband' from a click heatmap." />
+          <Insight num="04" title="One well-built feature beats three half-built ones" body="The reason the landing page performed well on Reddit and in communities was that the calculator actually worked well — correct math, good mobile UX, fast. A rushed, buggy calculator would have generated negative reviews instead of sharing. Quality on the one thing you ship matters more than breadth." />
         </div>
       </section>
 
-      <SectionDivider label="Failures" />
+      <SectionDivider label="What Hurt" />
 
       <section id="failures" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Failure Points</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Days That Were Harder Than Expected</h2>
         <div className="space-y-4">
-          <FailurePoint title="Voice input failed on Android devices with accents" why="GPT voice parsing worked well for English but broke for Hinglish (mixed Hindi-English) which 60% of our target CA users used naturally." fix="Added text input as fallback on Day 6. Voice became optional, not required. Adoption of text input: 44% of sessions. Both modes retained." />
-          <FailurePoint title="Pricing page live before refund policy was written" why="First 3 users who paid asked for refunds when the product didn't work on their specific device. No refund policy existed. Manual handling was chaotic." fix="Day 6 addition: 14-day full refund, no questions asked. Wrote it in 20 minutes. Processed all 3 refunds immediately. Net trust improved." />
+          <FailurePoint title="The balloon payment edge case almost shipped broken" why="Calculator logic was correct for standard home loans but gave wrong results when users had partial prepayments already made. We caught it at 5pm on Day 3 during internal testing. If it had shipped, users would have gotten wrong financial guidance." fix="Added 3 mandatory test cases to pre-launch checklist: standard loan, loan with partial prepayment, loan nearing end of tenure. Each must produce validated output before any launch." />
+          <FailurePoint title="Day 6 user calls were booked too late" why="We scheduled user calls for Day 6 — one day before the big launch. The insights from those calls (shareable URL, pricing page copy) needed more time to implement properly. We rushed the changes." fix="For future MVPs: user calls on Day 5, soft launch on Day 6, full launch on Day 7. One extra day of buffer between insights and launch." />
         </div>
       </section>
 
-      <SectionDivider label="Future" />
+      <SectionDivider label="After Day 7" />
 
       <section id="future" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Future Evolution</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What the MVP Became</h2>
         <div className="grid sm:grid-cols-3 gap-4">
-          <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Multi-Language Voice" body="Expand voice parsing to Hindi, Tamil, Telugu — covering 80% of India's CA population. Same 60-second flow in the user's native language." />
-          <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="GST Filing Integration" body="From invoice generation to GST portal filing — one flow. 'Generate → File → Done.' Eliminates the second 40-minute manual step after the first is solved." />
-          <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Repeat This Framework" body="Document RIFV as an internal playbook. Every new product hypothesis goes through a 7-day validation sprint before any scale investment. Fail fast, fail cheap, learn fast." />
+          <FutureCard icon={<CheckCircle className="h-5 w-5 text-primary" />} title="Full Product Build" body="Decision to build full product made Day 8, based on clean hypothesis validation. 8-week full build began immediately. The MVP's learnings (shareable URLs, decision framing, mobile UX priority) all incorporated from Day 1 of full build." />
+          <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="12 Decision Calculators" body="The MVP calculator became the first of 12. Suite expansion prioritized by user requests from the MVP email list. 134K monthly users 6 months after full launch." />
+          <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="7-Day MVP Framework" body="The process documented as a repeatable framework for the product team. Used for 3 subsequent feature validations. Two passed; one failed and was cancelled, saving an estimated 6 weeks of build time." />
         </div>
-        <BlockQuote>7 days didn't give us the perfect product. It gave us the evidence that the product was worth perfecting — and that's worth infinitely more than 6 months of uncertainty.</BlockQuote>
+        <BlockQuote>Seven days of focused building that validates a hypothesis is not a shortcut. It's the responsible approach. The alternative — building for months before knowing if the hypothesis is real — is what actually wastes time.</BlockQuote>
       </section>
     </div>
   );

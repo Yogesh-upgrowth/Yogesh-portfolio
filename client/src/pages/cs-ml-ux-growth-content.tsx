@@ -1,4 +1,4 @@
-import { TrendingUp, Zap, Target, Layers, Brain, BarChart3, Cpu, Users } from "lucide-react";
+import { Cpu, Users, Layers, Brain, BarChart3, Zap } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
@@ -9,183 +9,161 @@ export default function MlUxGrowthContent() {
     <div className="space-y-2">
 
       <section id="hook" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">When Combining Three Disciplines Does What None Could Alone</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Conversion was 3.8%. We'd tried pure growth hacking — A/B tests, landing page changes, ad creative variations. Conversion hit 4.1% in 6 months. A 0.3% improvement on ₹8L monthly ad spend. The growth team was grinding.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We brought together three disciplines that typically work in silos: <strong className="text-foreground">Machine Learning</strong> (for user prediction and personalization), <strong className="text-foreground">UX Design</strong> (for cognitive experience optimization), and <strong className="text-foreground">Growth Engineering</strong> (for distribution, funnel, and loop design). Separately, each had hit its ceiling. Together, they produced conversion of 11.4% — a 3× improvement in 4 months.</p>
-        <InsightBox>The ceiling of any single discipline is where the combination of disciplines begins. ML predicts the right user. UX serves the right experience. Growth puts both in front of more people and keeps them coming back.</InsightBox>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What Happens When You Give a Designer Access to the Model's Predictions</h2>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The experiment started as a minor workflow change: we gave our lead product designer, Aditi, a daily dashboard showing the ML model's user intent predictions — which users were classified as High Intent, which as Research Mode, which as Likely to Churn — and asked her to redesign the comparison interface with that information in mind.</p>
+        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">What followed was the most productive design sprint we'd ever run. Not because Aditi built better UX alone, or because the ML model was better than expected, but because the combination produced something neither discipline would have arrived at independently.</p>
+        <InsightBox>ML models know things that designers can't infer from session recordings. UX designers know things that ML models can't infer from behavioral logs. The intersection — using model predictions to inform design decisions in real-time — turned out to be a genuinely new capability that neither function had on its own.</InsightBox>
       </section>
 
-      <SectionDivider label="Ground Reality" />
+      <SectionDivider label="What the ML Model Saw" />
 
       <section id="early-data" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Three Ceilings</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Gap Between Model Knowledge and Design Knowledge</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">Before the collaboration, each discipline was working with incomplete information. The designer was making UI decisions based on session recordings and user interviews — rich qualitative data, but no predictive signal. The ML team was producing predictions that lived in a database but had no interface consequence.</p>
         <DataTable
-          headers={["Team / Discipline", "Conversion Before Collaboration", "What They'd Optimized", "What Was Left on Table"]}
+          headers={["What the ML Model Knew", "What Design Knew", "What Neither Knew Without Collaboration"]}
           rows={[
-            ["Growth Team (Ads + Funnels)", "4.1% (from 3.8%)", "Landing pages, CTA copy, ad creative", "Sending wrong users into funnel"],
-            ["UX Team (Design + Copy)", "4.3% on redesigned pages", "Page narrative, trust signals, form flow", "Not accounting for user segment differences"],
-            ["ML Team (Data + Models)", "LTV model built, unused", "Predicted who high-LTV users were", "Model outputs not connected to any product experience"],
+            ["User's predicted intent (High/Research/Churn)", "User's expressed confusion (recordings)", "Which design element to show to which intent class"],
+            ["Probability of conversion in this session", "Where users clicked and hesitated", "Whether a hesitation was confusion or deliberation"],
+            ["Likely churn risk for specific users", "General churn pattern from cohort analysis", "Which users on the page right now are at risk"],
+            ["Predicted LTV for this user", "Average LTV from analytics", "Whether to invest in high-touch experience for this user"],
           ]}
         />
-        <ProblemBox>ML team knew who would convert. UX team had designed a better experience. Growth team had optimized the distribution. None of them were connected to each other — and each was optimizing into a vacuum.</ProblemBox>
+        <TakeawayBox>The ML model was predicting things in real-time that design was inferring in aggregate, post-hoc. Making model predictions available to the design layer meant the interface could respond to individual user context — not average user behavior. That's the shift.</TakeawayBox>
       </section>
 
-      <SectionDivider label="Behavioral Segmentation" />
+      <SectionDivider label="The Collaboration Design" />
 
       <section id="segmentation" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Combined User Picture</h2>
-        <DataTable
-          headers={["User Segment", "ML Score (LTV Prediction)", "UX Profile (Cluster)", "Growth Path", "Combined Conversion"]}
-          rows={[
-            ["High-LTV + Trust-First", "Score ≥75", "C5 cluster (needs trust)", "Fast-track: trust UI + dedicated onboarding", "34.2%"],
-            ["High-LTV + Research-Driven", "Score ≥75", "C2 cluster (needs depth)", "Nurture path: detailed comparison + follow-up", "28.4%"],
-            ["Mid-LTV + Price-First", "Score 45–74", "C1 cluster (needs speed)", "Direct path: lowest price prominently, fast CTA", "18.8%"],
-            ["Low-LTV + Casual", "Score < 45", "C6 cluster (confused)", "Education path: guide first, comparison second", "4.1%"],
-            ["Average (before collaboration)", "—", "—", "One path for all", "3.8%"],
-          ]}
-        />
-        <TakeawayBox>High-LTV + Trust-First users converting at 34.2% vs 3.8% average. These were users the ML team could identify, the UX team could serve, and the growth team could acquire more of — but only when all three worked together.</TakeawayBox>
-      </section>
-
-      <SectionDivider label="Strategic Shift" />
-
-      <section id="reframe" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Reframe</h2>
-        <div className="grid sm:grid-cols-2 gap-5 my-6">
-          <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
-            <p className="font-bold text-destructive mb-2 text-sm uppercase tracking-wider">Siloed Thinking</p>
-            <p className="font-medium text-foreground">Growth acquires → UX serves → ML predicts (separately, in sequence, disconnected)</p>
-          </div>
-          <div className="p-5 rounded-xl border border-green-200 bg-green-50">
-            <p className="font-bold text-green-700 mb-2 text-sm uppercase tracking-wider">Unified Thinking</p>
-            <p className="font-medium text-foreground">ML predicts user profile → UX serves profile-appropriate experience → Growth acquires more of proven profiles</p>
-          </div>
-        </div>
-        <BlockQuote>The best product decisions happen at the intersection of disciplines, not in their isolated optimizations. The users ML predicts are the users UX should serve and growth should acquire. Make these conversations happen.</BlockQuote>
-      </section>
-
-      <SectionDivider label="Core Framework" />
-
-      <section id="framework" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Full-Stack Conversion Amplification System (FCAS)</h2>
-        <p className="text-foreground/80 leading-[1.85] mb-6">FCAS is the integration architecture that connects ML output to UX delivery to growth distribution — creating a unified loop where each discipline amplifies the others.</p>
-        <div className="grid sm:grid-cols-3 gap-4 mb-6">
-          <FrameworkDimension icon={<Cpu className="h-5 w-5 text-primary" />} title="ML Layer: Predict" body="Real-time user scoring: LTV probability + UX cluster assignment within 60 seconds of session start. Score and cluster stored as session metadata available to all systems." color="bg-primary/5 border-primary/20" />
-          <FrameworkDimension icon={<Layers className="h-5 w-5 text-green-600" />} title="UX Layer: Serve" body="Experience rendered from session metadata: trust architecture for Trust-First, depth content for Research-Driven, price-first UI for Price-First. Dynamic component rendering." color="bg-green-50 border-green-200" />
-          <FrameworkDimension icon={<TrendingUp className="h-5 w-5 text-purple-600" />} title="Growth Layer: Amplify" body="High-LTV profiles converted: those profiles become lookalike seeds. Acquisition optimized toward high-LTV cluster characteristics. Growth compounds the ML+UX gains." color="bg-purple-50 border-purple-200" />
-        </div>
-        <div className="p-5 rounded-xl border border-primary/20 bg-primary/5 mb-4">
-          <p className="font-bold text-foreground mb-3">The FCAS Flywheel</p>
-          <div className="flex flex-wrap gap-2 items-center text-sm font-medium text-foreground/80">
-            <span className="px-3 py-1.5 rounded-full bg-primary/10 text-primary">ML predicts high-LTV</span>
-            <span className="text-primary">→</span>
-            <span className="px-3 py-1.5 rounded-full bg-green-100 text-green-700">UX converts them at 34%</span>
-            <span className="text-green-700">→</span>
-            <span className="px-3 py-1.5 rounded-full bg-purple-100 text-purple-700">Growth builds lookalike from converted</span>
-            <span className="text-purple-700">→</span>
-            <span className="px-3 py-1.5 rounded-full bg-orange-100 text-orange-700">More high-LTV users acquired</span>
-            <span className="text-orange-700">→</span>
-            <span className="px-3 py-1.5 rounded-full bg-primary/10 text-primary">ML has better training data</span>
-            <span className="text-primary">→ ♻</span>
-          </div>
-        </div>
-        <DataTable
-          headers={["System", "Input", "Output", "Feeds Into"]}
-          rows={[
-            ["ML Layer", "User session behavior (60s)", "LTV score + UX cluster", "UX Layer (serving)"],
-            ["UX Layer", "ML cluster assignment", "Profile-specific experience", "Conversion → Growth Layer"],
-            ["Growth Layer", "Converted user profiles", "Lookalike audience + CAC targets", "ML Layer (better data)"],
-          ]}
-        />
-      </section>
-
-      <SectionDivider label="System Design" />
-
-      <section id="system-design" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">System Design</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">How We Set Up the ML-Design Partnership</h2>
+        <p className="text-foreground/80 leading-[1.85] mb-5">The setup was intentionally low-tech to start. We didn't build complex personalization infrastructure first. We did something simpler: gave Aditi read access to the model's live predictions for the current session of every active user, and asked her to sit with it for a week before designing anything.</p>
         <div className="space-y-4">
           {[
-            { layer: "Layer 1", title: "Real-Time Scoring API", points: ["Combined LTV + UX cluster scoring: single API call returns both", "P99 latency: < 200ms — fast enough for first-page load personalization", "Score cached per session: not re-computed per page (performance + consistency)"] },
-            { layer: "Layer 2", title: "Experience Rendering Engine", points: ["React context: session score exposed to all component trees", "Component variants: 5 versions per key UI element (one per profile)", "A/B framework embedded: 10% holdout group always gets default experience for baseline comparison"] },
-            { layer: "Layer 3", title: "Growth Data Pipeline", points: ["Converted user profiles exported weekly to ad platforms as custom audiences", "High-LTV segment (score ≥75) becomes lookalike seed — refreshed monthly", "CAC ceiling per segment: High-LTV ≤₹1,200, Mid-LTV ≤₹400, Low-LTV ≤₹180"] },
-            { layer: "Layer 4", title: "Cross-Team Intelligence Layer", points: ["Weekly unified dashboard: ML score distribution, UX conversion by cluster, Growth CAC by segment", "One meeting, three teams: 45 min weekly to review and adjust all three systems together", "Shared OKR: 'Conversion rate of High-LTV acquired users' — owned by all three teams"] },
-          ].map((l) => (
-            <div key={l.layer} className="p-6 rounded-xl border border-border bg-muted/20">
-              <p className="font-bold text-foreground mb-3"><span className="text-primary font-mono text-sm">{l.layer} · </span>{l.title}</p>
-              <ul className="space-y-2">{l.points.map((p, i) => (<li key={i} className="flex gap-2 text-sm text-foreground/70"><span className="text-primary mt-0.5 shrink-0">→</span>{p}</li>))}</ul>
+            { title: "Week 1: Observation Only", detail: "Aditi spent a week watching model predictions alongside session recordings simultaneously. For the same user, at the same moment: what was the model classifying their intent as, and what were they actually doing in the UI? The mismatches were instructive — cases where the model predicted High Intent but the user was clearly struggling, or Research Mode but the user had a shortlist ready." },
+            { title: "Week 2: Hypothesis Formation", detail: "Based on observations, Aditi proposed 3 design hypotheses — not about average users, but about specific intent classes. 'High Intent users see too many options and need a decision accelerator. Research Mode users need more information but we're showing them the same CTA as High Intent users. Likely Churn users are showing frustration signals that the current design has no response to.'" },
+            { title: "Week 3–6: Prototype and Test", detail: "Three interface variants built, each targeting a specific intent class. A/B tested against each other and against the standard interface. Intent class detected by model → relevant variant shown. Measured conversion by intent class × design variant." },
+          ].map((p, i) => (
+            <div key={i} className="flex gap-4 p-5 rounded-xl border border-border bg-muted/20">
+              <div className="flex-shrink-0 font-bold text-primary text-sm">{p.title.split(":")[0]}</div>
+              <div>
+                <p className="font-semibold text-foreground text-sm mb-1">{p.title.includes(":") ? p.title.split(": ")[1] : ""}</p>
+                <p className="text-sm text-foreground/70 leading-relaxed">{p.detail}</p>
+              </div>
             </div>
           ))}
         </div>
       </section>
 
-      <SectionDivider label="Execution" />
+      <SectionDivider label="The Three Design Variants" />
 
-      <section id="execution" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Execution Journey</h2>
-        <div className="space-y-4">
-          <Phase num="Phase 1" period="Month 1" title="Integration Architecture" actions={["Three teams aligned on shared OKR: conversion rate of high-LTV users", "API design: single scoring endpoint outputting both LTV score and UX cluster", "Shared data model: what does each team need from each other?"]} result="Integration blueprint signed off by all three teams" color="border-blue-200 bg-blue-50" resultColor="text-blue-700" />
-          <Phase num="Phase 2" period="Month 2" title="Build + Connect" actions={["Scoring API built: ML model deployed, P99 < 200ms confirmed", "UX component variants built for 5 profiles", "Growth lookalike seed export pipeline built"]} result="FCAS integrated in staging — all 3 systems connected" color="border-green-200 bg-green-50" resultColor="text-green-700" />
-          <Phase num="Phase 3" period="Month 3" title="A/B Test" actions={["FCAS vs unified default for 50% traffic split", "High-LTV + Trust-First segment: 34.2% conversion (vs 3.8%)", "Growth CAC for High-LTV lookalike: ₹890 (vs ₹340 blended)"]} result="A/B conclusive: FCAS 3× overall conversion" color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
-          <Phase num="Phase 4" period="Month 4" title="Full Rollout" actions={["FCAS live 100% traffic", "Weekly unified review established — all three teams", "Overall conversion: 3.8% → 11.4%"]} result="3× conversion, self-reinforcing flywheel active" color="border-orange-200 bg-orange-50" resultColor="text-orange-700" />
+      <section id="reframe" className="scroll-mt-28">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What Aditi Designed for Each Intent Class</h2>
+        <BlockQuote>The insight from the observation week: we'd been showing the same interface to three fundamentally different people — someone ready to buy, someone trying to understand, and someone about to leave. That's like speaking in one tone to a crowd of people who need entirely different things from you.</BlockQuote>
+        <p className="text-foreground/80 leading-[1.85] mb-5 mt-5">Three design responses to three intent states:</p>
+        <div className="space-y-5">
+          <div className="p-6 rounded-xl border border-primary/20 bg-primary/5">
+            <p className="font-bold text-primary mb-2">High Intent (P(convert) ≥ 0.65)</p>
+            <p className="text-sm text-foreground/80 leading-relaxed">Decision Accelerator view: shortlisted plans featured prominently, comparison reduced to 3 key differentiators (not 14), CTA changed from 'Get Quote' to 'Start My Cover', trust signals (claim ratio, reviews) shown inline. Goal: reduce decision friction for someone who's essentially already decided.</p>
+            <p className="text-xs text-foreground/60 mt-2 font-semibold">Result: +31% conversion vs standard interface for this intent class</p>
+          </div>
+          <div className="p-6 rounded-xl border border-green-200 bg-green-50">
+            <p className="font-bold text-green-700 mb-2">Research Mode (P(convert) = 0.20–0.65)</p>
+            <p className="text-sm text-foreground/80 leading-relaxed">Information-Rich view: full 14-point comparison, methodology disclosure shown, calculator embedded in comparison, additional provider details accessible, CTA changed to 'Save This Comparison'. Goal: serve the decision process rather than trying to rush past it.</p>
+            <p className="text-xs text-foreground/60 mt-2 font-semibold">Result: +18% return rate (D3 return), +22% eventual conversion vs standard</p>
+          </div>
+          <div className="p-6 rounded-xl border border-orange-200 bg-orange-50">
+            <p className="font-bold text-orange-700 mb-2">At-Risk / Likely Churn (Churn P ≥ 0.60)</p>
+            <p className="text-sm text-foreground/80 leading-relaxed">Intervention view: chat prompt appears after 4 minutes ('Looks like you might have questions — I can help'), comparison simplified to most popular option for their profile, social proof (how many similar users bought this) shown prominently. Goal: break the friction loop before exit.</p>
+            <p className="text-xs text-foreground/60 mt-2 font-semibold">Result: −34% exit rate for users in this class; +19% conversion of recovered users</p>
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider label="Technical Implementation" />
+
+      <section id="framework" className="scroll-mt-28">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">How Intent-Driven UI Actually Works</h2>
+        <div className="grid sm:grid-cols-2 gap-4">
+          <FrameworkDimension
+            icon={<Cpu className="h-5 w-5 text-primary" />}
+            title="Real-Time Intent Classification"
+            body="Gradient boosting model classifying users into 3 intent states, recalculated every 3 minutes during active sessions. Features: session depth, filter usage, time per plan, return visit history, comparison actions. Score streamed to frontend via WebSocket."
+            color="bg-primary/5 border-primary/20"
+          />
+          <FrameworkDimension
+            icon={<Layers className="h-5 w-5 text-green-600" />}
+            title="UI Variant Switching"
+            body="Frontend feature flag system: intent class received → variant selected → component swap without full page reload. Transition: 400ms cross-fade to prevent jarring switch if intent changes mid-session. Smooth, not disorienting."
+            color="bg-green-50 border-green-200"
+          />
+          <FrameworkDimension
+            icon={<Users className="h-5 w-5 text-purple-600" />}
+            title="Churn Intervention System"
+            body="At-Risk classification triggers: chat prompt at 4 minutes of session (not on first detection — only after sustained at-risk signal). Chat connects to CS queue; response SLA 2 minutes during business hours. After hours: pre-written support options."
+            color="bg-purple-50 border-purple-200"
+          />
+          <FrameworkDimension
+            icon={<Brain className="h-5 w-5 text-orange-600" />}
+            title="Attribution and Learning"
+            body="Every conversion tagged with intent class at time of CTA click. Monthly model refresh uses conversion outcomes by intent class. High Intent model performance tracked separately from Research Mode — different precision/recall targets for each class."
+            color="bg-orange-50 border-orange-200"
+          />
         </div>
       </section>
 
       <SectionDivider label="Results" />
 
-      <section id="results" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Results</h2>
+      <section id="system-design" className="scroll-mt-28">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Across All Three Variants vs Standard Interface</h2>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
-          <MetricCard value="3×" label="Conversion Rate" sub="3.8% → 11.4%" color="text-green-600" />
-          <MetricCard value="34.2%" label="High-LTV Segment" sub="conversion rate" color="text-primary" />
-          <MetricCard value="2.8×" label="Revenue per User" sub="of acquired cohort" color="text-green-600" />
-          <MetricCard value="1" label="Shared OKR" sub="three teams, one metric" color="text-primary" />
+          <MetricCard value="+28%" label="Blended Conversion Rate" sub="all intent classes combined" color="text-green-600" />
+          <MetricCard value="+31%" label="High Intent CVR" sub="Decision Accelerator vs standard" color="text-primary" />
+          <MetricCard value="−34%" label="At-Risk Exit Rate" sub="Intervention view" color="text-green-600" />
+          <MetricCard value="+22%" label="Research Mode CVR" sub="eventual conversion, D7 cohort" color="text-primary" />
         </div>
         <DataTable
-          headers={["Metric", "Before FCAS", "After FCAS"]}
+          headers={["Intent Class", "Standard CVR", "Variant CVR", "Lift"]}
           rows={[
-            ["Overall Conversion Rate", "3.8%", "11.4% (3×)"],
-            ["High-LTV User Conversion", "3.8% (generic)", "34.2% (personalized)"],
-            ["Revenue per Acquired User", "₹210", "₹588 (+2.8×)"],
-            ["High-LTV Acquisition Share", "N/A", "31% of new users"],
-            ["Blended CAC", "₹340", "₹225 (−34%)"],
+            ["High Intent", "18.4%", "24.1%", "+31%"],
+            ["Research Mode", "6.2%", "7.6%", "+22%"],
+            ["At-Risk", "3.1%", "3.7% (+ reduced exit)", "+19% of recovered users"],
+            ["Blended (all classes)", "9.8%", "12.5%", "+28%"],
           ]}
         />
       </section>
 
-      <SectionDivider label="Deep Insights" />
+      <SectionDivider label="Insights" />
 
-      <section id="insights" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Deep Insights</h2>
+      <section id="execution" className="scroll-mt-28">
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What the Collaboration Taught Both Teams</h2>
         <div className="space-y-6">
-          <Insight num="01" title="Organizational silos are the biggest product constraint" body="The ML model existed. The UX redesign existed. The growth lookalike capability existed. None were connected. The problem wasn't capability — it was architecture. Connecting three existing systems produced 3× conversion." />
-          <Insight num="02" title="Shared OKRs create collaboration that aligned incentives cannot" body="Three teams with one shared metric stopped optimizing their individual KPIs and started optimizing the system. The weekly unified meeting was the most valuable 45 minutes of the week." />
-          <Insight num="03" title="Personalization at score assignment moment is more valuable than personalization at page level" body="Assigning ML score + UX cluster in the first 60 seconds allowed every subsequent experience to be personalized — not just the landing page. The earlier you segment, the more the personalization compounds." />
-          <Insight num="04" title="The flywheel is the compounding mechanism" body="Each high-LTV conversion improves the lookalike seed → better acquisition → more high-LTV users → more model training data → better scores. This is not linear improvement — it's compound improvement." />
-          <Insight num="05" title="Discipline integration produces non-linear outcomes" body="ML alone moved conversion 0.3%. UX redesign alone moved it 1.2%. Growth optimization alone moved it 0.3%. All three together: 7.6 percentage points. 1+1+1=10 when the systems are connected and reinforcing." />
+          <Insight num="01" title="ML predictions are most valuable when they're visible to the design layer" body="The model had been running for 4 months, producing intent predictions that went into a database and drove email sequences. Making those predictions visible to the designer — in real-time, with session recordings — unlocked a new category of design decision: designing for predicted behavior, not average behavior." />
+          <Insight num="02" title="Observation before design is undervalued in both disciplines" body="The most valuable phase of the project was Aditi's week of observation-only. No design, no implementation — just watching model predictions alongside user behavior. The design hypotheses that emerged from that week were more specific and more testable than any brief we could have written for her." />
+          <Insight num="03" title="One interface for all users is a category error" body="We'd been building one comparison interface for three fundamentally different psychological states. The design effort wasn't larger to address all three — it was targeted differently. The same engineering investment, directed at three focused variants, outperformed one generalized design significantly." />
+          <Insight num="04" title="Churn intervention is most effective at 4 minutes, not immediately" body="First churn intervention attempt triggered chat at 2 minutes of at-risk session. Users found it intrusive — they'd only been on the page 2 minutes. 4 minutes was the threshold after which the chat offer felt like help rather than surveillance. Timing matters as much as the intervention content." />
         </div>
       </section>
 
       <SectionDivider label="Failures" />
 
       <section id="failures" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Failure Points</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What We Got Wrong</h2>
         <div className="space-y-4">
-          <FailurePoint title="Initial API latency was 800ms — too slow for first-page load" why="Combined ML scoring model was too complex for real-time inference. 800ms delay before page personalized — users saw unrendered state first." fix="Model simplified: top 8 features only (from 34). Latency dropped to 140ms. Feature reduction also improved stability. Won on both speed and accuracy." />
-          <FailurePoint title="Three-team coordination became 3 separate meetings at first" why="Each team wanted its own briefing. 3 weekly meetings = 3× overhead. Teams reverted to siloed updates within 2 weeks." fix="Enforced single unified meeting: 45 min, all three teams, single shared dashboard. No per-team briefings. Monthly async report for leaders." />
-          <FailurePoint title="High-LTV lookalike seed included power users who weren't profitable" why="Power users (high usage, high engagement) were included in High-LTV seed but some had negotiated pricing that made them LTV-negative. Lookalike performed poorly." fix="Seed criteria changed: revenue-verified high-LTV only. Users with < 90-day actual revenue data excluded from seed. Lookalike quality improved immediately." />
+          <FailurePoint title="UI variant switch was jarring at first" why="Early version: instant switch when intent class changed mid-session. Users in session recordings visibly startled by elements moving. Some thought the page had loaded incorrectly." fix="400ms cross-fade transition added. Components that don't change across variants (header, footer, navigation) anchored as stable. Only the dynamic comparison section fades. No more visible startling in session recordings post-fix." />
+          <FailurePoint title="Research Mode CTA 'Save This Comparison' was too passive" why="Users in Research Mode were engaging deeply with the information but few were saving. Exit rate was still high. 'Save This Comparison' didn't communicate enough value — what does saving do for me?" fix="CTA changed to 'Save & Track Rate Changes.' Added instant sub-message: 'We'll alert you when rates change for your saved comparison.' Value explicit. Save rate improved 2.8×." />
         </div>
       </section>
 
       <SectionDivider label="Future" />
 
       <section id="future" className="scroll-mt-28">
-        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Future Evolution</h2>
+        <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Next Phase of ML-Driven UX</h2>
         <div className="grid sm:grid-cols-3 gap-4">
-          <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Continuous Score Updates" body="Move from session-level scoring to continuous scoring — updated every 5 minutes based on in-session behavior. Experience adapts as the user reveals more signal." />
-          <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Post-Conversion Personalization" body="Extend FCAS beyond conversion: onboarding, retention, upsell — all personalized by ML profile. High-LTV users get priority support, tailored features, executive check-ins." />
-          <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Full Lifecycle Revenue Attribution" body="Attribute every conversion and lifetime revenue event back to: ML score accuracy, UX experience served, and growth source. Full-stack attribution enables full-stack optimization." />
+          <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Continuous Intent Classification" body="Moving from 3-minute recalculation to per-event recalculation. Intent classification updates every user action — a filter applied, a plan opened, a comparison made. UI adapts in near-real-time rather than in 3-minute intervals." />
+          <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Embedded Design Principles in the Model" body="Currently: model classifies → design responds. Next: design principles encoded as model objectives. The model trained not just to predict intent but to predict which UI variant maximizes intent satisfaction. Design and model optimizing together." />
+          <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Long-Term LTV Attribution" body="Current measurement: conversion rate. Next: track whether intent-class-matched design decisions predict higher LTV at 90 days. High Intent users may convert faster but have different LTV than Research Mode users who took longer. Design decisions should optimize for LTV, not just CVR." />
         </div>
-        <BlockQuote>We didn't 3× conversion by working harder within our disciplines. We 3× it by eliminating the white space between them — and making three separate systems into one unified amplification engine.</BlockQuote>
+        <BlockQuote>The best interfaces aren't designed for the average user. They're designed for the actual user — who is in a specific psychological state, at a specific point in their decision, with a specific thing they need. ML-driven UX is the infrastructure for that specificity.</BlockQuote>
       </section>
     </div>
   );
