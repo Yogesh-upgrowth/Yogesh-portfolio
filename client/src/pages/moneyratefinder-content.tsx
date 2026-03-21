@@ -1,92 +1,14 @@
-import { AlertTriangle, Lightbulb, CheckCircle2, TrendingUp, Zap, Link2, Database, Search } from "lucide-react";
-
-function InsightBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-8 p-5 rounded-xl bg-primary/5 border border-primary/20 flex gap-4">
-      <Lightbulb className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-      <p className="text-foreground font-medium leading-relaxed">{children}</p>
-    </div>
-  );
-}
-
-function ProblemBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-8 p-5 rounded-xl bg-destructive/5 border border-destructive/20 flex gap-4">
-      <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
-      <p className="text-foreground font-medium leading-relaxed">{children}</p>
-    </div>
-  );
-}
-
-function TakeawayBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-8 p-6 rounded-xl bg-foreground text-background flex gap-4">
-      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-      <p className="font-semibold leading-relaxed text-lg">{children}</p>
-    </div>
-  );
-}
-
-function BlockQuote({ children }: { children: React.ReactNode }) {
-  return (
-    <blockquote className="my-8 pl-5 border-l-4 border-primary">
-      <p className="text-xl font-serif font-bold text-foreground leading-relaxed italic">{children}</p>
-    </blockquote>
-  );
-}
+import { TrendingUp, Zap, Link2, Database, Search } from "lucide-react";
+import {
+  InsightBox, TakeawayBox, BlockQuote, SectionDivider,
+  DataTable, MetricCard,
+} from "@/components/case-study/shared";
 
 function CodeBlock({ children }: { children: React.ReactNode }) {
   return (
     <pre className="my-6 p-5 rounded-xl bg-foreground/5 border border-border overflow-x-auto text-sm font-mono text-foreground/80 leading-relaxed">
       {children}
     </pre>
-  );
-}
-
-function SectionDivider({ label }: { label: string }) {
-  return (
-    <div className="flex items-center gap-4 my-10">
-      <div className="flex-1 h-px bg-border" />
-      <span className="text-xs font-bold tracking-widest uppercase text-muted-foreground">{label}</span>
-      <div className="flex-1 h-px bg-border" />
-    </div>
-  );
-}
-
-function DataTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
-  return (
-    <div className="my-6 overflow-x-auto rounded-xl border border-border">
-      <table className="w-full text-sm">
-        <thead>
-          <tr className="bg-muted/60 border-b border-border">
-            {headers.map((h) => (
-              <th key={h} className="px-4 py-3 text-left font-bold text-foreground text-xs uppercase tracking-wider">
-                {h}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((row, i) => (
-            <tr key={i} className={`border-b border-border last:border-0 ${i % 2 === 0 ? "bg-background" : "bg-muted/20"}`}>
-              {row.map((cell, j) => (
-                <td key={j} className="px-4 py-3 text-foreground/80">{cell}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-function MetricCard({ value, label, sub, color }: { value: string; label: string; sub: string; color: string }) {
-  return (
-    <div className="p-5 rounded-xl border border-border bg-background hover-lift">
-      <p className={`text-2xl font-serif font-bold mb-1 ${color}`}>{value}</p>
-      <p className="font-semibold text-foreground text-sm mb-0.5">{label}</p>
-      <p className="text-xs text-muted-foreground">{sub}</p>
-    </div>
   );
 }
 
@@ -223,14 +145,13 @@ Each page answers a specific, real user question:
         <CodeBlock>{`Intent Mapping → Keyword Clustering → Page Generation → Data Injection → Internal Linking → Indexing → Ranking`}</CodeBlock>
 
         <div className="space-y-6 mt-6">
-          {/* Layer 1 */}
           <div className="p-6 rounded-xl border border-border bg-muted/20">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-9 w-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                 <Search className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <p className="font-bold text-foreground">Layer 1: Keyword Intelligence System</p>
+                <p className="font-bold text-foreground">Keyword Intelligence System</p>
                 <p className="text-sm text-muted-foreground">Intent scoring to filter 45,000+ keywords down to only the ones worth building for</p>
               </div>
             </div>
@@ -255,14 +176,13 @@ Rule: Only prioritize keywords with Intent Score > 70`}</CodeBlock>
             </div>
           </div>
 
-          {/* Layer 2 */}
           <div className="p-6 rounded-xl border border-border bg-muted/20">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-9 w-9 rounded-lg bg-green-500/10 flex items-center justify-center shrink-0">
                 <Zap className="h-5 w-5 text-green-600" />
               </div>
               <div>
-                <p className="font-bold text-foreground">Layer 2: Page Template System</p>
+                <p className="font-bold text-foreground">Page Template System</p>
                 <p className="text-sm text-muted-foreground">Modular components that feel like tools, not articles</p>
               </div>
             </div>
@@ -282,14 +202,13 @@ Rule: Only prioritize keywords with Intent Score > 70`}</CodeBlock>
             <InsightBox>Pages should feel like tools, not articles. Users don't want 1,500-word blogs — they want the best rate right now.</InsightBox>
           </div>
 
-          {/* Layer 3 */}
           <div className="p-6 rounded-xl border border-border bg-muted/20">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-9 w-9 rounded-lg bg-orange-500/10 flex items-center justify-center shrink-0">
                 <Database className="h-5 w-5 text-orange-600" />
               </div>
               <div>
-                <p className="font-bold text-foreground">Layer 3: Data Infrastructure</p>
+                <p className="font-bold text-foreground">Data Infrastructure</p>
                 <p className="text-sm text-muted-foreground">Real-time data that makes every page genuinely different and valuable</p>
               </div>
             </div>
@@ -307,14 +226,13 @@ Rule: Only prioritize keywords with Intent Score > 70`}</CodeBlock>
             <p className="text-sm text-muted-foreground mt-2">Result: Fast load times, fresh data, and an SEO-friendly architecture that search engines could crawl efficiently.</p>
           </div>
 
-          {/* Layer 4 */}
           <div className="p-6 rounded-xl border border-border bg-muted/20">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-9 w-9 rounded-lg bg-purple-500/10 flex items-center justify-center shrink-0">
                 <Link2 className="h-5 w-5 text-purple-600" />
               </div>
               <div>
-                <p className="font-bold text-foreground">Layer 4: Internal Linking Graph</p>
+                <p className="font-bold text-foreground">Internal Linking Graph</p>
                 <p className="text-sm text-muted-foreground">Turning 5,000 pages into a network Google understands as authoritative</p>
               </div>
             </div>

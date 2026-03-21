@@ -1,86 +1,8 @@
-import { AlertTriangle, Lightbulb, CheckCircle2, TrendingUp, Link2, Layers, Target, Zap } from "lucide-react";
-
-function InsightBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-8 p-5 rounded-xl bg-primary/5 border border-primary/20 flex gap-4">
-      <Lightbulb className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-      <p className="text-foreground font-medium leading-relaxed">{children}</p>
-    </div>
-  );
-}
-
-function ProblemBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-8 p-5 rounded-xl bg-destructive/5 border border-destructive/20 flex gap-4">
-      <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
-      <p className="text-foreground font-medium leading-relaxed">{children}</p>
-    </div>
-  );
-}
-
-function TakeawayBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-8 p-6 rounded-xl bg-foreground text-background flex gap-4">
-      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-      <p className="font-semibold leading-relaxed text-lg">{children}</p>
-    </div>
-  );
-}
-
-function BlockQuote({ children }: { children: React.ReactNode }) {
-  return (
-    <blockquote className="my-8 pl-5 border-l-4 border-primary">
-      <p className="text-xl font-serif font-bold text-foreground leading-relaxed italic">{children}</p>
-    </blockquote>
-  );
-}
-
-function SectionDivider({ label }: { label: string }) {
-  return (
-    <div className="flex items-center gap-4 my-10">
-      <div className="flex-1 h-px bg-border" />
-      <span className="text-xs font-bold tracking-widest uppercase text-muted-foreground">{label}</span>
-      <div className="flex-1 h-px bg-border" />
-    </div>
-  );
-}
-
-function DataTable({ headers, rows }: { headers: string[]; rows: string[][] }) {
-  return (
-    <div className="my-6 overflow-x-auto rounded-xl border border-border">
-      <table className="w-full text-sm">
-        <thead>
-          <tr className="bg-muted/60 border-b border-border">
-            {headers.map((h) => (
-              <th key={h} className="px-4 py-3 text-left font-bold text-foreground text-xs uppercase tracking-wider">
-                {h}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {rows.map((row, i) => (
-            <tr key={i} className={`border-b border-border last:border-0 ${i % 2 === 0 ? "bg-background" : "bg-muted/20"}`}>
-              {row.map((cell, j) => (
-                <td key={j} className="px-4 py-3 text-foreground/80">{cell}</td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-function MetricCard({ value, label, sub, color }: { value: string; label: string; sub: string; color: string }) {
-  return (
-    <div className="p-5 rounded-xl border border-border bg-background hover-lift">
-      <p className={`text-2xl font-serif font-bold mb-1 ${color}`}>{value}</p>
-      <p className="font-semibold text-foreground text-sm mb-0.5">{label}</p>
-      <p className="text-xs text-muted-foreground">{sub}</p>
-    </div>
-  );
-}
+import { AlertTriangle, Lightbulb, TrendingUp, Link2, Layers, Target, Zap } from "lucide-react";
+import {
+  InsightBox, TakeawayBox, BlockQuote, SectionDivider,
+  DataTable, MetricCard,
+} from "@/components/case-study/shared";
 
 export default function SeoMoatCaseStudy() {
   return (
@@ -221,19 +143,18 @@ export default function SeoMoatCaseStudy() {
         </p>
 
         <div className="space-y-6">
-          {/* Layer 1 */}
           <div className="p-6 rounded-xl border border-border bg-muted/20">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-9 w-9 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                 <Target className="h-5 w-5 text-primary" />
               </div>
               <div>
-                <p className="font-bold text-foreground">Layer 1: Keyword Architecture</p>
+                <p className="font-bold text-foreground">Keyword Architecture</p>
                 <p className="text-sm text-muted-foreground">They owned the entire funnel — not just the bottom</p>
               </div>
             </div>
             <DataTable
-              headers={["Layer", "Example Keyword", "Intent"]}
+              headers={["Funnel Stage", "Example Keyword", "Intent"]}
               rows={[
                 ["Top Funnel", '"How to send money abroad"', "Awareness"],
                 ["Mid Funnel", '"Best money transfer services India to UK"', "Consideration"],
@@ -243,14 +164,13 @@ export default function SeoMoatCaseStudy() {
             <InsightBox>Competitors structured their entire keyword portfolio as a funnel — capturing users at every stage of the decision journey, not just at the moment of purchase intent.</InsightBox>
           </div>
 
-          {/* Layer 2 */}
           <div className="p-6 rounded-xl border border-border bg-muted/20">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-9 w-9 rounded-lg bg-green-500/10 flex items-center justify-center shrink-0">
                 <Layers className="h-5 w-5 text-green-600" />
               </div>
               <div>
-                <p className="font-bold text-foreground">Layer 2: Page Type System</p>
+                <p className="font-bold text-foreground">Page Type System</p>
                 <p className="text-sm text-muted-foreground">5 core page types, each designed to push toward comparison</p>
               </div>
             </div>
@@ -273,14 +193,13 @@ export default function SeoMoatCaseStudy() {
             </p>
           </div>
 
-          {/* Layer 3 */}
           <div className="p-6 rounded-xl border border-border bg-muted/20">
             <div className="flex items-center gap-3 mb-4">
               <div className="h-9 w-9 rounded-lg bg-purple-500/10 flex items-center justify-center shrink-0">
                 <Link2 className="h-5 w-5 text-purple-600" />
               </div>
               <div>
-                <p className="font-bold text-foreground">Layer 3: Internal Linking Graph</p>
+                <p className="font-bold text-foreground">Internal Linking Graph</p>
                 <p className="text-sm text-muted-foreground">The hidden weapon — a tightly connected SEO mesh</p>
               </div>
             </div>
@@ -308,10 +227,9 @@ export default function SeoMoatCaseStudy() {
         </p>
 
         <div className="space-y-6">
-          {/* System 1 */}
           <div className="p-6 rounded-xl border border-border bg-muted/20">
             <p className="font-bold text-foreground text-lg mb-2 flex items-center gap-2">
-              <span className="text-primary font-mono">1.</span> Demand Mapping Engine
+              <span className="text-primary font-mono">→</span> Demand Mapping Engine
             </p>
             <p className="text-foreground/70 text-sm leading-relaxed mb-4">Instead of keywords, we mapped complete user journeys — from the first question in someone's head to the final comparison click.</p>
             <div className="p-4 rounded-xl bg-primary/5 border border-primary/20">
@@ -340,10 +258,9 @@ export default function SeoMoatCaseStudy() {
             <p className="mt-4 text-sm font-semibold text-primary">Output: Keyword Clusters — 1 cluster = 1 ecosystem, not 1 page per keyword.</p>
           </div>
 
-          {/* System 2 */}
           <div className="p-6 rounded-xl border border-border bg-muted/20">
             <p className="font-bold text-foreground text-lg mb-2 flex items-center gap-2">
-              <span className="text-primary font-mono">2.</span> Programmatic SEO Layer
+              <span className="text-primary font-mono">→</span> Programmatic SEO
             </p>
             <p className="text-foreground/70 text-sm leading-relaxed mb-4">Scale was the moat. We built a dynamic page generation system that made 200+ high-intent landing pages the work of one afternoon, not six months.</p>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -366,10 +283,9 @@ export default function SeoMoatCaseStudy() {
             </div>
           </div>
 
-          {/* System 3 */}
           <div className="p-6 rounded-xl border border-border bg-muted/20">
             <p className="font-bold text-foreground text-lg mb-2 flex items-center gap-2">
-              <span className="text-primary font-mono">3.</span> Comparison-First UX System
+              <span className="text-primary font-mono">→</span> Comparison-First UX
             </p>
             <p className="text-foreground/70 text-sm leading-relaxed mb-4">Our biggest differentiator. We flipped the standard page structure entirely.</p>
             <div className="grid sm:grid-cols-2 gap-4">
@@ -393,10 +309,9 @@ export default function SeoMoatCaseStudy() {
             <InsightBox>Users don't search to read. They search to decide. "What's the best option for me right now?" — that question needs an instant answer, not a blog post.</InsightBox>
           </div>
 
-          {/* System 4 */}
           <div className="p-6 rounded-xl border border-border bg-muted/20">
             <p className="font-bold text-foreground text-lg mb-2 flex items-center gap-2">
-              <span className="text-primary font-mono">4.</span> Internal Linking as a Growth Engine
+              <span className="text-primary font-mono">→</span> Internal Linking as a Growth Engine
             </p>
             <p className="text-foreground/70 text-sm leading-relaxed mb-4">We designed every internal link intentionally — building a graph that distributed authority, improved crawlability, and increased session depth simultaneously.</p>
             <div className="p-4 rounded-xl bg-muted/40 border border-border font-mono text-sm text-foreground/80 space-y-1">
@@ -525,7 +440,7 @@ export default function SeoMoatCaseStudy() {
           <MetricCard value="10×" label="Traffic Growth" sub="1K → 10K in 90 days" color="text-green-600" />
           <MetricCard value="100+" label="Top-10 Keywords" sub="high-intent rankings" color="text-primary" />
           <MetricCard value="3×" label="Comparison Clicks" sub="North Star metric" color="text-green-600" />
-          <MetricCard value="↓" label="Bounce Rate" sub="+ higher session duration" color="text-primary" />
+          <MetricCard value="↓ 40%" label="Bounce Rate" sub="+ higher session duration" color="text-primary" />
         </div>
 
         <DataTable

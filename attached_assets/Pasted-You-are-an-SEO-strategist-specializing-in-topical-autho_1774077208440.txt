@@ -1,0 +1,159 @@
+You are an SEO strategist specializing in topical authority, internal linking, and semantic content clustering.
+
+Your task is to intelligently interlink 26 long-form case studies WITHOUT rewriting or significantly modifying the content.
+
+IMPORTANT GOAL:
+- Add subtle, natural, contextual internal links
+- Improve SEO topical authority
+- Improve crawlability
+- Increase time on site
+- Maintain storytelling flow
+- Avoid forced linking
+
+DO NOT:
+- Rewrite paragraphs
+- Change tone
+- Remove content
+- Add large new sections
+- Break narrative flow
+
+You may ONLY:
+- Add subtle sentences
+- Add short inline references
+- Add "If you want to go deeper..." type notes
+- Add "Related:" callouts
+- Add contextual linking phrases
+
+---
+
+INPUT:
+All the case studies currently on our website
+
+---
+
+OUTPUT:
+update each case study with subtle internal linking inserted.
+
+---
+
+LINKING RULES:
+
+1. MAX LINKS PER CASE STUDY
+Add only 4–8 internal links per case study
+
+This keeps linking natural.
+
+---
+
+2. LINK PLACEMENT (IMPORTANT)
+
+Insert links ONLY in these places:
+- After insight statements
+- After framework explanations
+- After growth results
+- In "Deep Insights" section
+- In "Challenges" section
+- In "Future Scope" section
+
+Avoid linking inside the intro story.
+
+---
+
+3. LINKING STYLE (USE VARIATIONS)
+
+Use subtle variations like:
+
+- "We explored a similar product loop in [Case Study Title]"
+- "This mirrors what we observed in [Case Study Title]"
+- "For a deeper breakdown of this framework, see [Case Study Title]"
+- "We expanded this concept further in [Case Study Title]"
+- "This strategy compounds when combined with the approach discussed in [Case Study Title]"
+- "A similar indexing challenge was solved differently in [Case Study Title]"
+- "This becomes more powerful when layered with the system explained in [Case Study Title]"
+
+---
+
+4. CONTEXTUAL MATCHING (CRITICAL)
+
+Link ONLY when:
+- SEO case → link to SEO case
+- Product loop case → link to product loop case
+- Marketplace case → link to marketplace case
+- Conversion case → link to CRO case
+- Data infra case → link to infra case
+
+Links must be semantically relevant.
+
+---
+
+5. DISTRIBUTION STRATEGY
+
+Ensure:
+- Every case study links to at least 3 others
+- No orphan pages
+- Links form a network, not a chain
+- High-authority cornerstone case studies receive more links
+
+---
+
+6. OPTIONAL MICRO CALLOUT STYLE
+
+You may occasionally add subtle callouts like:
+
+Example:
+
+Note: This intent-mapping approach becomes even more powerful when combined with the internal linking graph discussed in “Scaling Programmatic SEO Systems”.
+
+Keep these minimal.
+
+---
+
+7. DO NOT USE:
+
+- "Click here"
+- aggressive CTAs
+- promotional tone
+- sales language
+- too many links in one paragraph
+
+---
+
+8. SEO GOAL
+
+Create a strong topical authority cluster around:
+- SEO systems
+- growth loops
+- product-led growth
+- marketplace scaling
+- conversion optimization
+- data-driven product decisions
+
+---
+
+9. PRESERVE CONTENT
+
+Content must remain 95% identical.
+Only micro additions allowed.
+
+---
+
+10. OUTPUT FORMAT
+
+Return:
+
+Case Study Title:
+Updated Content (with subtle links inserted)
+
+---
+
+EXAMPLE OF GOOD INSERTION:
+
+Original:
+Speed improvements increased indexing efficiency dramatically.
+
+Improved:
+Speed improvements increased indexing efficiency dramatically. We saw a similar compounding effect when optimizing crawl depth in "Scaling Programmatic SEO with Internal Linking Graphs".
+
+---
+
+Now interlink all 26 case studies following these rules.
