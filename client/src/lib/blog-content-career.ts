@@ -2,369 +2,282 @@ export const CAREER_CONTENT: Record<string, string> = {
 
 "become-product-manager-india": `
   <p class="lead text-xl text-foreground font-medium mb-8">
-    Product management in India has evolved enormously in the past decade. When I started my career, "PM" was a role most Indian companies were still figuring out. Today, it's one of the most sought-after roles in the tech ecosystem — at startups, at MNCs, at FAANG, and at everything in between.
+    The PM job market in India has changed dramatically in the last five years. What used to be a role that required an MBA from a top institution is now accessible through multiple paths — if you know what's actually being evaluated and what hiring managers are really looking for.
   </p>
 
-  <p>The paths into PM have multiplied alongside the role's growth. There's no single route that works for everyone. What I can give you is an honest map of the terrain — the paths that exist, what each one requires, and what the realistic timelines look like.</p>
+  <p>I was not a traditional PM candidate. My background was in engineering, then consulting, with no formal product management training and no MBA. When I decided I wanted to move into product, every piece of advice I read told me to either get an MBA or work at a big tech company first. I did neither.</p>
+
+  <p>What I did instead was learn what PMs actually do — not the LinkedIn version, the real version — and build evidence that I could do it. It took longer than I wanted. It required more rejection than I expected. And the path worked, in ways that a traditional path might not have.</p>
+
+  <p>Here's what I've learned about the PM landscape in India and the multiple ways to break in.</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>The Reality of PM Hiring in India</h2>
+  <h2>The Indian PM Market in 2026</h2>
 
-  <p>Before mapping the paths, let's be honest about the competitive landscape. PM roles in India are significantly more competitive than they appear from the outside. Top companies receive hundreds of applications for each opening. The screening criteria have become more sophisticated — it's no longer enough to be smart and motivated; you need to demonstrate relevant skills, domain knowledge, and structured thinking.</p>
+  <p>India has become one of the most significant PM job markets in the world, driven by three factors: the growth of homegrown product companies (Zepto, Meesho, PhonePe, Razorpay, CRED, and dozens of others), the expansion of global tech companies' India product teams (Microsoft, Google, Amazon, Flipkart/Walmart all have significant product organizations in India), and the rise of SaaS companies building global products from India (Freshworks, Chargebee, Postman, BrowserStack).</p>
 
-  <p>The PM roles that are easiest to get: early-stage startups that need someone to "do product" without requiring deep expertise. The value exchange here is real — you get experience and ownership; they get a motivated person willing to figure things out. These roles are often the best starting point for people breaking into PM from non-traditional backgrounds.</p>
+  <p>These different employer types look for different things. Understanding the distinctions is important for targeting your job search effectively.</p>
 
-  <p>The PM roles that are hardest to get: FAANG, unicorns, and well-funded Series B-C companies with established hiring bars. These companies can afford to be selective, and they are. The resume and interview bar is genuinely high.</p>
+  <h3>Global product companies (FAANG+)</h3>
+  <p>Rigorous, structured interview processes. Heavy emphasis on product sense, analytical skills, and leadership principles. The interview prep ecosystem for these companies is extensive — books, courses, and mock interview platforms are optimized for this. The bar is high and consistent. MBA from IIM or equivalent is helpful but not required for strong candidates who can demonstrate the core competencies through other evidence.</p>
 
-  <hr class="my-12 border-border/50" />
+  <h3>Indian unicorns and growth companies</h3>
+  <p>More variable interview processes, often more case-based and context-specific to the company's product. Strong emphasis on execution ability, ownership mindset, and comfort with ambiguity. Background matters less than evidence of getting things done. Many of India's best unicorn PMs came from non-traditional backgrounds — engineers who moved into product, marketers who developed product skills, operations leaders who transitioned.</p>
 
-  <h2>Path 1: The Engineering Background</h2>
-
-  <p>The most common path into PM in India is from software engineering. This makes sense: the Indian tech talent pool skews heavily toward engineering, and engineering background provides genuine advantages in PM — technical credibility, vocabulary that works in engineering discussions, and an instinctive sense of what's hard vs. easy to build.</p>
-
-  <h3>What to do if you're an engineer wanting to become a PM</h3>
-
-  <p><strong>Build product thinking while still in engineering.</strong> The easiest transition is from a position where you've already been doing product thinking — volunteering to write specs, participating in user research, tracking product metrics. The engineer who just writes code and wants to suddenly become a PM has a larger credibility gap to cross than the one who has been doing product work in engineering.</p>
-
-  <p><strong>Target APM programs or founding PM roles.</strong> Associate Product Manager programs at companies like Google, Microsoft, Uber, and Swiggy are specifically designed for engineers making this transition. Founding PM at an early-stage startup is another path — founders often prefer engineers as their first PM because of the technical context they bring.</p>
-
-  <p><strong>Do a side project with a product lens.</strong> Build something — an app, a tool, a community — and document your product thinking. The ability to show "I identified this problem, validated it with users, built this solution, and learned X" is compelling evidence of product capability.</p>
-
-  <h3>Realistic timeline</h3>
-  <p>Engineering to PM transition with an APM program or early startup: 6-18 months from starting the active job search. Engineering to PM at a mid-to-large company directly: 1-2 years, depending on the strength of your product portfolio and your interview preparation.</p>
+  <h3>India SaaS companies</h3>
+  <p>Often looking for PMs who understand global markets (usually the US SMB or enterprise market) and can work closely with customers. Strong emphasis on customer empathy, clear communication, and metrics orientation. Typically leaner teams where the PM does a broader scope of work. Strong growth opportunities for early-career PMs who want to develop fast.</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>Path 2: The MBA Route</h2>
+  <h2>The Multiple Entry Paths</h2>
 
-  <p>An MBA from a top-tier institute (IIM, ISB, and similar) is still a common path into PM in India, particularly into consumer internet and enterprise SaaS. The MBA provides: business fundamentals, a valuable alumni network, recruiting pipelines at top companies, and signal to employers that can substitute for direct PM experience.</p>
+  <h3>Engineering → PM (the most common technical path)</h3>
+  <p>Engineers have a significant built-in advantage: deep credibility with the engineering teams they'll work with. The transition requires developing the skills that technical backgrounds don't provide: user empathy, business strategy, stakeholder management, and communication for non-technical audiences. Internal transition from engineering to PM at the same company is often the easiest path — you have credibility, context, and a track record.</p>
 
-  <h3>The honest trade-offs</h3>
-  <p>The MBA route is expensive — in money, in time, and in opportunity cost. The return on investment depends heavily on the pre-MBA experience you bring to the program and how you use the program's resources. An MBA without strong pre-MBA work experience rarely produces a compelling PM profile by itself.</p>
+  <h3>MBA → PM (the structured route)</h3>
+  <p>An MBA from IIM, ISB, or a top global program opens doors at large companies, particularly in the more formal hiring processes. The MBA provides business literacy, a structured way of thinking about markets and strategy, and a network that helps in the job search. The disadvantage: PM interviewers often expect MBA candidates to already understand product thinking from Day 1, so the learning still has to happen — just on a shorter runway before interviews.</p>
 
-  <p>The MBA is most valuable for: people from non-engineering backgrounds who want to get into PM, people targeting senior PM or leadership roles who need the business credibility, and people whose network is weak and who need the MBA's recruiting pipeline.</p>
+  <h3>Adjacent function → PM (the underrated path)</h3>
+  <p>Business analysts, growth marketers, customer success managers, and operations leads who develop product thinking skills often have a strong narrative for the PM transition. They bring business context, customer relationship experience, and functional expertise that complements technical product skills. The key: explicitly connecting prior experience to PM competencies in the interview process, rather than hoping interviewers will draw the connections themselves.</p>
 
-  <h3>The companies that prefer MBA PMs</h3>
-  <p>Consulting firms that have built product teams, enterprise software companies, and companies with strong "PM as a business leader" culture (e.g., Flipkart historically) tend to value MBA backgrounds. FAANG companies are more mixed — they hire both engineers and MBAs, and the bar is similar.</p>
-
-  <hr class="my-12 border-border/50" />
-
-  <h2>Path 3: From Adjacent Roles</h2>
-
-  <p>The path from adjacent roles — business analyst, consultant, UX researcher, marketing, customer success — is underappreciated and often faster than people expect.</p>
-
-  <p><strong>Business analysts</strong> at consulting firms or large tech companies often have product exposure already. The transition involves building more technical depth and ownership accountability, but the analytical and stakeholder management skills transfer well.</p>
-
-  <p><strong>UX researchers and designers</strong> bring user understanding that is genuinely differentiating in PM. The gap to close is typically business and analytical skills — and the easiest way to close it is by taking on product responsibilities in your current role.</p>
-
-  <p><strong>Customer success and sales roles</strong> at SaaS companies give you deep customer knowledge and often product feedback ownership. The transition into PM is most natural at the same company where your customer knowledge is most valuable.</p>
+  <h3>APM programs → PM (the structured entry)</h3>
+  <p>Associate PM programs at companies like Google, Microsoft, Flipkart, Razorpay, and others offer structured 12-24 month rotational programs designed for recent graduates who want to enter product. Competitive, but offer the mentorship and structured learning that makes the early PM years dramatically more productive than unstructured entry roles.</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>Building a Competitive PM Profile</h2>
+  <h2>What Indian PM Interviewers Are Actually Evaluating</h2>
 
-  <p>Regardless of which path you're on, the most important investments are:</p>
+  <p>Beyond the surface-level PM interview questions (how would you improve X product, what metrics would you track for Y feature, estimate Z market), Indian PM interviewers in 2026 are paying close attention to:</p>
 
-  <p><strong>Product intuition, demonstrated through work.</strong> Not just claimed ("I'm passionate about product") but demonstrated ("here's a product I've analyzed/built/improved and here's what I learned"). Side projects, case studies of existing products, volunteer work with NGOs on their product challenges — all of these build a portfolio.</p>
+  <p><strong>Evidence of ownership mindset.</strong> Did you initiate something? Did you take responsibility for an outcome that wasn't strictly your job? Did you drive something to completion when it would have been easier to hand it off? Indian product cultures — especially at growth companies — prize people who treat problems like their own regardless of the formal org chart.</p>
 
-  <p><strong>Structured thinking, practiced until it's natural.</strong> PM interviews heavily test structured thinking. Frameworks like MECE decomposition, decision matrices, and product sense frameworks should be familiar enough that you can apply them fluidly, not just recite them.</p>
+  <p><strong>Comfort with ambiguity and resourcefulness.</strong> How do you make decisions when you don't have all the information? What do you do when the answer isn't clear? The candidate who asks for more information or defaults to "it depends" without showing how to navigate the dependency is signaling that they'll be stuck in ambiguous real-world situations.</p>
 
-  <p><strong>Domain depth in at least one area.</strong> Fintech, ed-tech, healthtech, SaaS — pick an area where you have or can develop genuine expertise. Domain depth is a differentiation that's increasingly valued as PM roles become more specialized.</p>
+  <p><strong>Structured thinking, not just smart answers.</strong> The most common PM interview weakness: smart people who can't structure their thinking when they talk. They know the right answer but can't present it in a way that demonstrates clear, organized reasoning. Practice structuring responses — identify the key components, address them in order, synthesize at the end. This structure signals that you'll bring the same discipline to product work.</p>
 
-  <p><strong>Network in the PM community.</strong> LinkedIn connections are a start. What matters more is relationships — PMs who know you, have seen your work, and would refer you or hire you. Get to know PMs at companies you want to work at. Write about product thinking publicly. Participate in product communities.</p>
+  <hr class="my-12 border-border/50" />
 
-  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 text-center mt-12">
-    <h3 class="text-2xl font-serif font-bold mb-4">Trying to break into product management?</h3>
-    <p class="text-lg text-muted-foreground mb-6">I help aspiring PMs understand their specific gaps and build a realistic plan to close them. The path is different for everyone — let's figure out yours.</p>
-    <a href="/contact" class="inline-flex items-center justify-center h-12 px-8 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors">Let's map your path</a>
+  <h2>Building Experience Before You Have a PM Title</h2>
+
+  <p>The experience-before-title problem is real: companies want PMs with experience, but you can't get experience without a PM title. Here's how to break the cycle:</p>
+
+  <p>Work on a product side project that you can talk about specifically. Build something, launch it, measure it, iterate. The output isn't the product — it's the learning and the story about the decisions you made. Interviewers who hear "I built X, and here's what I learned about user behavior from watching people use it, and here's how that changed the way I thought about the product" are hearing real PM thinking regardless of whether the product was a success.</p>
+
+  <p>Find product adjacency in your current role. What problems does your current team face that are product-like? Data analysis, user research, requirement gathering, stakeholder management — these skills are transferable. Build them deliberately and document what you're doing with them.</p>
+
+  <p>Contribute to open-source or community products. Several PM communities have open products that anyone can contribute to. The experience is real, the portfolio artifact is real, and the skills developed are the same ones you'd develop in a formal PM role.</p>
+
+  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 mt-12">
+    <h3 class="text-xl font-bold mb-3">Breaking into PM in India?</h3>
+    <p class="text-muted-foreground mb-4">The Indian PM market is genuinely exciting and accessible if you understand what's being evaluated. I've mentored PMs at various stages of the transition and understand what works in the Indian market specifically. If you're trying to break in, let's talk about your specific situation.</p>
+    <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">Work with Yogesh →</a>
   </div>
 `,
 
-"product-manager-interview-questions": `
+"cracking-pm-interviews": `
   <p class="lead text-xl text-foreground font-medium mb-8">
-    PM interviews are one of the more challenging interview processes in tech — not because the questions are impossible, but because the process tests several very different skills simultaneously: structured thinking, user empathy, business acumen, data interpretation, and personal communication. Most interview prep resources cover only some of these.
+    PM interviews test a specific set of skills in a specific format. Understanding what's actually being evaluated — not what it looks like is being evaluated — is the difference between preparation that works and preparation that wastes your time.
   </p>
 
-  <p>What I want to give you is not a list of sample questions with canned answers. It's an understanding of what each question type is actually testing — and how to answer in a way that demonstrates the skills the interviewer is looking for.</p>
+  <p>I've been on both sides of hundreds of PM interviews. I've interviewed candidates at multiple growth-stage companies and been interviewed myself for roles ranging from early-stage startup PMs to senior roles at large tech companies. The patterns on both sides are clear — and different from what most interview prep resources suggest.</p>
+
+  <p>Here's what I've learned about what good PM interview performance actually requires.</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>The Product Sense Question</h2>
+  <h2>The Four Domains Every PM Interview Tests</h2>
 
-  <p>"Design a product for X." "How would you improve Y?" "What's your favorite product and why?"</p>
+  <h3>1. Product sense</h3>
+  <p>Can you think about a product problem with genuine creativity, user empathy, and business context? This is tested through questions like "how would you improve Uber Eats?" or "design a product for elderly users who are trying to stay connected with family." The interviewer is not looking for the "right" answer — they're looking for how you think.</p>
 
-  <p>These questions are testing whether you think about products the way good PMs do — from the user's perspective, with explicit attention to the problem being solved, the tradeoffs involved, and the metrics that would define success.</p>
+  <p>The common mistake: jumping straight to feature ideas. The right approach: start with users. Who are they? What are they trying to accomplish? What's working and what's not? What does success look like? Then generate solutions. Then prioritize them with explicit reasoning. This structure signals product thinking, not product listing.</p>
 
-  <h3>The structure that works</h3>
-  <p>1. Clarify the goal. What are we optimizing for? 2. Define the user. Who specifically are we designing for? 3. Define the problem. What does this user actually need? 4. Generate multiple solution options — don't jump to one. 5. Choose the best option with clear reasoning. 6. Define success metrics. How would we know if this worked?</p>
+  <h3>2. Analytical thinking</h3>
+  <p>Can you work with data, metrics, and quantitative reasoning? This is tested through estimation questions ("how many pizza deliveries happen in Mumbai on a Saturday?"), metric design questions ("what metrics would you track for this feature?"), and data interpretation questions ("this metric dropped 20% — what's your diagnostic process?").</p>
 
-  <h3>What interviewers actually want to see</h3>
-  <p>Not the "right" answer — there often isn't one. What they want: a demonstration that you can think through a problem systematically, consider user needs explicitly, make trade-offs consciously, and define what success looks like. The candidate who produces a clever idea without going through this process is less impressive than the one who produces a more obvious idea but demonstrates excellent thinking.</p>
+  <p>The common mistake: either refusing to engage with numbers ("I'm not a numbers person") or diving into calculations without structuring the approach. The right approach: structure the problem first, make your assumptions explicit, do the calculation, and sense-check the result. Interviewers care more about your approach than your specific answer.</p>
 
-  <hr class="my-12 border-border/50" />
+  <h3>3. Execution and leadership</h3>
+  <p>Have you actually gotten things done? Can you navigate cross-functional challenges, make decisions under uncertainty, and drive outcomes without authority? This is tested through behavioral questions ("tell me about a time you had to prioritize competing requests," "describe a situation where you disagreed with engineering about a product direction").</p>
 
-  <h2>The Analytical / Metrics Question</h2>
+  <p>The STAR format (Situation, Task, Action, Result) is table stakes. What distinguishes strong answers is specificity and reflection. Specific details about the situation, specific actions you took (not "we decided" — what did you specifically do?), specific results, and genuine reflection on what you'd do differently. The reflection part is what most candidates skip and what most interviewers find most revealing.</p>
 
-  <p>"How would you measure the success of [feature]?" "Our DAU dropped 20%. How do you investigate?"</p>
+  <h3>4. Strategic thinking</h3>
+  <p>Can you think beyond the feature to the business context, competitive position, and long-term direction? This is tested through questions like "where do you see Stripe in five years?" or "if you were the CEO of X company, what would your product strategy be?"</p>
 
-  <p>These test data intuition: can you identify the right metrics, diagnose problems systematically, and distinguish signal from noise?</p>
-
-  <h3>For the diagnosis question</h3>
-  <p>Never jump to a conclusion. Walk through the hypothesis space systematically: Is the data accurate (before assuming the product changed)? Is the drop external (platform outage, competitor announcement, seasonality) or internal? Is it segment-specific (one platform, one geo, one user type)?</p>
-
-  <p>Show your work. "I'd first check whether the data is correct — are there any instrumentation changes or data pipeline issues that could explain this artificially?" signals analytical maturity.</p>
-
-  <h3>For the metrics question</h3>
-  <p>Connect metrics to outcomes, not just activity. "I'd measure [metric] because it's a proxy for [outcome], and here's how I'd verify that the metric is actually connected to the outcome." This is the answer that signals PM maturity — most candidates list metrics without explaining why those metrics matter.</p>
+  <p>The common mistake: thinking out loud without structure. The right approach: structure your thinking explicitly. "I'd think about this in terms of their current market position, the macro trends affecting the space, and their unique capabilities. Let me go through each." Structure is what separates strategic thinking from smart rambling.</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>The Behavioral Question</h2>
+  <h2>The Preparation That Actually Works</h2>
 
-  <p>"Tell me about a time you disagreed with a stakeholder." "Describe a product decision you made with incomplete data." "Tell me about a product that failed and what you learned."</p>
+  <h3>Practice out loud, not in your head</h3>
+  <p>PM interviews require real-time structured thinking under social pressure. The gap between how you think through a problem in your head and how you articulate it under interview conditions is usually significant. The only way to close this gap is to practice out loud, ideally with another person who can give feedback, but even just talking to yourself. The verbal practice is what makes the difference.</p>
 
-  <p>These test your judgment, your self-awareness, and your ability to learn from experience.</p>
+  <h3>Build a bank of real stories</h3>
+  <p>For behavioral questions, you need a bank of specific, well-prepared stories that you can adapt to different question framings. Write out 8-10 situations from your career where you demonstrated key PM competencies: ownership, prioritization, stakeholder management, conflict resolution, data-driven decision-making, shipping under constraints. Practice telling each one in 2 minutes. Know them cold.</p>
 
-  <h3>The STAR structure (and how to use it well)</h3>
-  <p>Situation, Task, Action, Result — this is a useful structure, but the most common mistake is spending too much time on Situation and Task (the context) and not enough on Action and Result (the actual content). What the interviewer wants is your specific contribution and what it produced.</p>
-
-  <p>The other common mistake: choosing stories that make you look uniformly heroic. Stories where you were wrong, changed your mind, or learned something difficult are more credible and often more impressive than stories where you were clearly right all along.</p>
-
-  <hr class="my-12 border-border/50" />
-
-  <h2>The Estimation Question</h2>
-
-  <p>"How many grocery stores are in India?" "What's the market size for ride-hailing in Mumbai?"</p>
-
-  <p>These test your ability to reason quantitatively under uncertainty. The answer doesn't need to be accurate — it needs to be defensible. Show your reasoning step by step, acknowledge uncertainty, and arrive at a ballpark that makes sense.</p>
-
-  <p>The structure: define what you're estimating → break it into components you can estimate → estimate each component with explicit assumptions → aggregate → sanity check against real-world knowledge.</p>
+  <h3>Use the products you're interviewing about</h3>
+  <p>Before a PM interview, use the company's product genuinely — as a user, not as an interviewer doing research. The insights you develop from real usage are always more specific and more credible than the insights you develop from reading about the product. And specificity is what makes interview answers good.</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>The Questions You Should Ask</h2>
+  <h2>The Most Common Failure Modes</h2>
 
-  <p>The questions you ask at the end of an interview reveal as much about you as your answers. Questions that signal PM maturity:</p>
+  <p><strong>Generic answers:</strong> "I would talk to users and look at the data" is a generic answer. What users? What data? What specific things would you look for? The more specific you are, the more credible you are. Generality signals that you haven't thought deeply about the problem.</p>
 
-  <ul>
-    <li>"What does success look like for this role in the first 90 days?"</li>
-    <li>"What's the biggest product challenge the team is working through right now?"</li>
-    <li>"How does the PM team collaborate with engineering and design?"</li>
-    <li>"What's one thing you'd change about how this team works?"</li>
-  </ul>
+  <p><strong>Not asking clarifying questions:</strong> The best PM interview answers often start with a clarifying question. Not "can you give me a hint?" but "I want to make sure I understand the context — is this a mobile or web product, and who are the primary users?" This signals the PM instinct to understand the situation before jumping to solutions.</p>
 
-  <p>Questions that signal you haven't thought deeply about the role: "What does your company do?" (Google it) or "What are the growth opportunities here?" (too generic).</p>
+  <p><strong>Ignoring constraints:</strong> Real product problems have constraints — technical, financial, time-based, regulatory. PM candidates who produce solutions with no constraints are signaling that they're not thinking like PMs. Acknowledge constraints. Make trade-offs. Show that you understand the real world.</p>
 
-  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 text-center mt-12">
-    <h3 class="text-2xl font-serif font-bold mb-4">Preparing for PM interviews?</h3>
-    <p class="text-lg text-muted-foreground mb-6">I do targeted PM interview coaching — not mock interview practice sessions, but targeted work on the specific skills each interview type demands. Happy to chat about where you are and what would help most.</p>
-    <a href="/contact" class="inline-flex items-center justify-center h-12 px-8 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors">Let's prepare together</a>
+  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 mt-12">
+    <h3 class="text-xl font-bold mb-3">Preparing for PM interviews?</h3>
+    <p class="text-muted-foreground mb-4">PM interview prep is highly specific to the company type and level you're targeting. I've been through multiple PM interview processes and have interviewed dozens of candidates. If you want targeted preparation help, let's talk about your specific target roles.</p>
+    <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">Work with Yogesh →</a>
   </div>
 `,
 
-"engineer-to-product-manager": `
+"pm-career-progression": `
   <p class="lead text-xl text-foreground font-medium mb-8">
-    I've advised dozens of engineers considering the transition to product management. The conversation almost always starts the same way: "I want to have more impact. I want to work on the bigger picture. I want to influence what gets built, not just how it gets built."
+    The PM career ladder is not a single path. There are multiple trajectories from associate PM to CPO or founder — and the right path depends on what you're optimizing for. Here's how to think clearly about where you want to go and how to get there.
   </p>
 
-  <p>These are legitimate motivations. But the transition from engineering to PM is more disorienting than most engineers expect — not because it's technically hard, but because the skills that made you excellent as an engineer are necessary but nowhere near sufficient as a PM.</p>
+  <p>The most common career planning mistake PMs make: trying to advance on someone else's trajectory. They read profiles of successful CPOs or read about the "typical PM career path" and try to replicate it. This fails because career progression is contextual — the right moves depend on your starting point, your strengths, the specific opportunities in front of you, and what you actually want from your working life.</p>
+
+  <p>Let me share a framework for thinking about PM career progression that's served me well — and several stories about how I've watched it play out differently for different people.</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>What Engineers Bring That Gives Them an Advantage</h2>
+  <h2>The Three PM Career Trajectories</h2>
 
-  <h3>Technical credibility</h3>
-  <p>The engineering-to-PM transition produces PMs who can have genuinely credible conversations with their engineering teams. They understand why something is technically complex. They can read code well enough to spot gaps between the spec and the implementation. They're not easily misled about timelines or technical constraints. This credibility, once established, is very hard to replicate through other paths.</p>
+  <h3>The generalist leadership path</h3>
+  <p>APM → PM → Senior PM → Group PM/Principal PM → Director of Product → VP of Product → CPO. This is the classic individual contributor to management ladder, with increasing scope at each level. At each step, you're responsible for more products, more PMs, more organizational impact.</p>
 
-  <h3>Systems thinking</h3>
-  <p>Software engineers are trained to think in systems — to understand how components interact, how changes in one place ripple through a larger system, how edge cases can break happy paths. This mindset transfers directly to product thinking, where the "system" includes users, business models, and competitive dynamics rather than just code.</p>
+  <p>This path requires developing two distinct skillsets: the IC PM skills (product sense, analytics, execution) and the leadership skills (hiring, team development, organizational design, executive communication). The transition from Senior PM to Group PM is often the hardest — it's where the job fundamentally changes from doing to enabling, and many strong ICs struggle with that shift.</p>
 
-  <h3>A natural relationship with data</h3>
-  <p>Engineers are generally comfortable with data in ways that make quantitative product decisions more natural. Reading a dashboard, spotting an anomaly, thinking about statistical validity — these are familiar cognitive activities for engineers that many non-technical PMs have to learn from scratch.</p>
+  <h3>The deep specialist path</h3>
+  <p>Some PMs go very deep in a specific domain — fintech, healthtech, growth, platform products, developer tools. These domain specialists develop expertise that's genuinely differentiating and can command premium compensation and senior titles without following the management track. They're often sought out specifically for their domain knowledge and can build significant influence and scope without managing large teams.</p>
 
-  <hr class="my-12 border-border/50" />
+  <p>This path is underrated. The generalist leadership path creates competition with every ambitious PM. The specialist path creates a smaller but much more exclusive pool of competition.</p>
 
-  <h2>What Engineers Have to Learn (The Hard Parts)</h2>
-
-  <h3>Influencing without building</h3>
-  <p>The engineer's tool is code. The PM's tool is influence. As an engineer, you can create outcomes directly — you write the code, the feature works. As a PM, you create outcomes indirectly — through decisions, communication, and relationships. This shift feels diminishing to many engineers, at least initially, because the feedback loop is longer and the ownership is less direct.</p>
-
-  <p>The engineers who make the best PMs are the ones who find genuine satisfaction in creating outcomes through other people — who experience team success as a form of personal success.</p>
-
-  <h3>Tolerating ambiguity</h3>
-  <p>Engineering problems, even hard ones, usually have correct and incorrect answers. "Does this code work?" is a testable question. "Is this the right product to build?" is not — at least not in the same way. Product management involves making consequential decisions with genuinely uncertain inputs, and living with the consequences in a way that engineers who implemented the wrong spec don't have to.</p>
-
-  <p>Engineers who need to know the "right answer" before proceeding struggle as PMs. Engineers who are comfortable with "best available hypothesis" and "designed to learn" adapt much faster.</p>
-
-  <h3>User empathy that produces insight, not just sympathy</h3>
-  <p>Engineers often have sympathy for users — they want to build good products. The PM skill that's harder to develop: empathy that produces actionable insight. Not just "users seem frustrated" but "these specific users, in this specific context, have this specific unmet need, and addressing it in this specific way would improve their experience in this measurable way."</p>
-
-  <p>This depth of user insight comes from practice — from conducting and analyzing user research, from sitting with real users watching them use the product, from developing the habit of asking "why?" one more time after every apparent answer.</p>
-
-  <h3>Stakeholder management</h3>
-  <p>The most technically skilled engineers can often work in relative isolation. The PM has to build and maintain relationships across the organization — with engineering, design, sales, marketing, leadership, and sometimes customers — simultaneously. This is a different skill set from technical collaboration, and one that many engineers find uncomfortable initially.</p>
+  <h3>The founder path</h3>
+  <p>Many PMs use their product experience as a launchpad for founding a company. This is particularly common in India, where the startup ecosystem has made the founder journey increasingly accessible. PMs who go this route typically spend 5-8 years developing strong product, commercial, and organizational skills before founding — enough to understand what it takes to build a business without being so far along the corporate track that the opportunity cost of leaving is too high.</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>How to Make the Transition Successfully</h2>
+  <h2>What Actually Drives Career Advancement</h2>
 
-  <p><strong>Start doing PM work in your current role.</strong> Volunteer to write specs, participate in user research, track product metrics, represent the team in cross-functional meetings. The engineer who has demonstrable product experience is much more hirable as a PM than the engineer who just wants to make the switch.</p>
+  <p>The single biggest driver of PM career advancement is not getting promoted — it's building a portfolio of impact that makes the next opportunity obvious. PMs who advance fastest are the ones who can point to specific product outcomes they drove: the retention improvement, the growth initiative that worked, the product pivot that was right, the team they built and developed.</p>
 
-  <p><strong>Build specific PM knowledge intentionally.</strong> Read the core books (Inspired by Marty Cagan, Continuous Discovery Habits by Teresa Torres, Hooked by Nir Eyal). Study product strategy. Practice product thinking on products you use every day.</p>
+  <p>This means being strategic about what you work on, not just how you work. The PM working on a low-visibility internal tool at a prestigious company may be building skills, but they're not building the portfolio of impact that drives external advancement. The PM working on a high-visibility consumer product at a less-prestigious company may have more opportunities to build impactful stories.</p>
 
-  <p><strong>Be honest about which PM archetype you're targeting.</strong> Product management at a deep-tech company (AI, ML, developer tools) plays to engineering strengths very differently than PM at a consumer app. The former rewards technical depth. The latter rewards user empathy and growth thinking. Know which environment you're entering.</p>
+  <p>Visibility matters too — but internally, not externally. The PM who does excellent work that nobody notices doesn't advance at the same rate as the PM who does equivalent work and ensures it's visible to the right people. This isn't self-promotion for its own sake — it's the responsibility of ensuring that the value you create is connected to your name in the minds of the people who make career decisions.</p>
 
-  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 text-center mt-12">
-    <h3 class="text-2xl font-serif font-bold mb-4">Considering the engineer-to-PM transition?</h3>
-    <p class="text-lg text-muted-foreground mb-6">I've made this transition myself and have helped others navigate it. The path looks different for different people — let's talk about what yours would look like.</p>
-    <a href="/contact" class="inline-flex items-center justify-center h-12 px-8 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors">Let's map out the transition</a>
+  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 mt-12">
+    <h3 class="text-xl font-bold mb-3">Thinking about your PM career path?</h3>
+    <p class="text-muted-foreground mb-4">Career decisions in product management are high-stakes and often irreversible in the short term. I've made several significant career moves and helped others think through theirs. If you're at a decision point, let's talk about your specific situation.</p>
+    <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">Work with Yogesh →</a>
   </div>
 `,
 
-"product-manager-resume-guide": `
+"pm-skills-gap-analysis": `
   <p class="lead text-xl text-foreground font-medium mb-8">
-    The PM resume is a document that has exactly one job: to get you an interview. Not to summarize your career. Not to communicate your full range of skills. Not to demonstrate your writing ability. It exists to make a hiring manager or recruiter spend 60 more seconds with your profile than they'd otherwise spend — enough to conclude that you're worth screening.
+    Every PM has gaps. The ones who advance quickly are the ones who know specifically which gaps matter most for their next opportunity — and who close them deliberately rather than hoping they'll fill in through experience.
   </p>
 
-  <p>Most PM resumes fail this test because they describe what the person did, not what they accomplished. Responsibilities vs. outcomes. Activities vs. impact. These are fundamentally different things, and the gap between them is where most PM resumes lose.</p>
+  <p>I spent two years at a company before realizing that I'd been improving the skills I was already good at and ignoring the ones I was weak at. I was getting better at product strategy and writing. I was not getting better at data analysis, which was the skill that my manager and the leadership team consistently identified as my growth area. I was comfortable with the skills I had and uncomfortable with developing the ones I didn't.</p>
+
+  <p>This is the most common PM development failure. Not lack of effort — lack of deliberate direction. Growing faster requires knowing specifically what to grow.</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>The Fundamental Rule: Impact Over Activity</h2>
+  <h2>The PM Skills Inventory</h2>
 
-  <p>Compare these two resume bullets:</p>
+  <p>Start with an honest inventory. For each of the following competencies, rate yourself from 1 (significant gap) to 5 (genuine strength):</p>
 
-  <p>Bad: "Led product development for the onboarding flow, working with engineering and design teams to deliver improvements."</p>
+  <p><strong>Product sense:</strong> Can you identify good product opportunities? Do you develop good hypotheses about what users need? Is your product taste calibrated to your target market?</p>
 
-  <p>Good: "Redesigned the onboarding flow, reducing time-to-activation from 8 minutes to 3 minutes and improving D7 retention from 42% to 58% for new cohorts."</p>
+  <p><strong>Analytical skills:</strong> Can you work with data to generate insights? Do you understand experimentation? Can you identify meaningful patterns in metrics without falling into the common analytical traps?</p>
 
-  <p>The first bullet describes what the person did. The second describes what changed because of what they did. The difference is not just more impressive — it tells the hiring manager something the first version doesn't: this person tracks outcomes, thinks in metrics, and is accountable for business results.</p>
+  <p><strong>Technical understanding:</strong> Do you understand enough about how your product is built to have credible conversations with engineering about trade-offs and constraints?</p>
 
-  <p>The rule: every significant bullet point on a PM resume should have a measurable outcome attached to it. Not "led," "owned," or "managed" — but "resulted in," "increased," "reduced," "shipped," or "achieved."</p>
+  <p><strong>User research skills:</strong> Can you conduct and synthesize user research? Do you have the interviewing skills to elicit genuine insight rather than confirmation of existing beliefs?</p>
 
-  <hr class="my-12 border-border/50" />
+  <p><strong>Written communication:</strong> Can you write clearly and concisely? Do your documents create genuine shared understanding, or do they leave room for multiple interpretations?</p>
 
-  <h2>The PM Resume Structure That Works</h2>
+  <p><strong>Stakeholder management:</strong> Can you navigate organizational dynamics, align competing interests, and build the relationships that enable effective cross-functional work?</p>
 
-  <h3>Headline and summary</h3>
-  <p>The headline should tell the reader immediately who you are as a PM: your seniority level, your domain specialization (if you have one), and your most relevant credential. "Senior Product Manager | Fintech & Payments | 7 years" is clear. "Product Manager who is passionate about building user-centered experiences" is forgettable.</p>
-
-  <p>The summary, if you use one, should be 2-3 sentences that articulate your most distinctive value. Not generic PM qualities — specific things about your background that make you different. "I spent 4 years building payment products at Razorpay before moving to the PM side — I bring the technical context and customer insight that comes from that combination" is more compelling than "experienced PM with a track record of delivering results."</p>
-
-  <h3>Experience bullets: the 3-part structure</h3>
-  <p>Each experience bullet should follow a structure: action → what you did → the measurable outcome. Action verbs that signal PM ownership (led, shipped, defined, redesigned, drove, launched) combined with specific scope and specific outcomes.</p>
-
-  <p>The best PM resume bullets contain: a clear ownership verb, the specific thing that was done, and a quantified outcome. "Launched the self-serve upgrade flow, increasing paid conversion from 4.2% to 6.8% over 90 days."</p>
-
-  <h3>Numbers everywhere</h3>
-  <p>PM resumes should be dense with numbers. Percentages, absolute values, time periods — numbers do two things that words can't: they demonstrate that you track metrics (a PM fundamental) and they give the hiring manager a concrete sense of the scale you've operated at.</p>
-
-  <p>If you don't have metrics for something — because you didn't track them, or because the company didn't share them with you — this is itself a signal worth examining. The PM who doesn't know whether the things they shipped moved any metrics is a red flag in a hiring process.</p>
+  <p><strong>Strategic thinking:</strong> Can you connect daily product decisions to longer-term business context? Do you think about competitive positioning, market dynamics, and the system-level implications of product choices?</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>Common PM Resume Mistakes</h2>
+  <h2>Prioritizing What to Develop</h2>
 
-  <h3>Team accomplishments without personal contribution</h3>
-  <p>"The team shipped X" or "We launched Y" don't communicate what you specifically did. A resume is about your contribution, not the team's. Even if you were one of many contributors, the resume should make clear what specifically you owned.</p>
+  <p>Not all skill gaps are equally important. The gaps worth prioritizing are the ones that are visible to the people who make career decisions about you, that are bottlenecks in your current role, or that are required for the next role you want.</p>
 
-  <h3>Feature lists instead of outcome lists</h3>
-  <p>"Shipped features including search, filters, and recommendation engine" tells the reader what was built. "Built recommendation engine that increased average session depth from 2.3 to 4.1 pages" tells the reader what changed. Always the latter.</p>
+  <p>If your manager consistently mentions analytical skills in feedback, that gap is visible and likely affecting perception of your senior readiness. If you want to move into a senior role that requires strong stakeholder management but you've avoided difficult stakeholder situations in your current role, that gap will surface in the interview process.</p>
 
-  <h3>Soft skill claims without evidence</h3>
-  <p>"Strong communicator" and "excellent cross-functional collaborator" are claims that anyone can make. They carry no weight without evidence. Replace them with examples: "Aligned 5 cross-functional teams on a 6-month platform migration that came in 2 weeks ahead of schedule."</p>
+  <p>The gaps that don't need prioritizing: skills that are below the threshold for your role but above a minimum bar (you don't need to be a data scientist if your data skills are good enough to do standard product analytics), and skills in areas where your team has excellent coverage (if you have a world-class designer partner, your design skills matter less than they would on a less well-resourced team).</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>Tailoring for Specific Roles</h2>
+  <h2>Closing Gaps Deliberately</h2>
 
-  <p>The generic PM resume is less effective than a tailored one. Before sending your resume to a specific role, read the job description carefully and identify the 3-5 things they're most clearly looking for. Then ensure your resume prominently features those things — both in the summary/headline and in the most prominent bullets.</p>
+  <p>The most effective skill development for PMs comes from deliberate practice in real contexts, not from courses or books alone. If you're trying to improve analytical skills, find a real product question that requires analysis and do the analysis — even if you could ask a data analyst to do it. If you're trying to improve stakeholder management, volunteer to lead a difficult cross-functional initiative rather than a comfortable one.</p>
 
-  <p>This doesn't mean fabricating experience you don't have. It means surfacing the relevant experience you do have in the places where the hiring manager will look first. The same career history can be framed differently for a B2B SaaS PM role vs. a consumer mobile PM role — the experience is the same, but what you emphasize and what language you use should reflect the context of the role.</p>
+  <p>Books and courses provide frameworks. Deliberate practice in real situations provides competence. The combination is what produces genuinely skilled PMs fastest.</p>
 
-  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 text-center mt-12">
-    <h3 class="text-2xl font-serif font-bold mb-4">Want a PM resume that gets interviews?</h3>
-    <p class="text-lg text-muted-foreground mb-6">I review PM resumes and give direct, actionable feedback on what's working and what isn't. No generic advice — specific guidance on your specific profile.</p>
-    <a href="/contact" class="inline-flex items-center justify-center h-12 px-8 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors">Get your resume reviewed</a>
+  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 mt-12">
+    <h3 class="text-xl font-bold mb-3">Working on your PM development?</h3>
+    <p class="text-muted-foreground mb-4">Deliberate skill development is the fastest path to career advancement. I work with PMs to identify their highest-leverage growth areas and create development plans that actually close the gaps. If you're looking to accelerate your development, let's connect.</p>
+    <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">Work with Yogesh →</a>
   </div>
 `,
 
-"pm-career-path-complete-guide": `
+"building-pm-portfolio": `
   <p class="lead text-xl text-foreground font-medium mb-8">
-    The PM career path looks straightforward on paper: Associate PM → PM → Senior PM → Staff PM → Director of Product → VP of Product → CPO. In practice, it's less a ladder than a terrain — with multiple valid routes, some dead ends, and the occasional opportunity to leapfrog a level if you're in the right place at the right time.
+    A PM portfolio is not a collection of screenshots. It's a curated set of evidence that you can think like a PM, execute like a PM, and impact product outcomes. Here's how to build one that actually works — even if you don't have a PM title yet.
   </p>
 
-  <p>Let me share what each level actually expects, what typically accelerates progress through each stage, and the honest trade-offs at each transition.</p>
+  <p>The PM portfolio problem: unlike design, where the output is a visible artifact, or engineering, where code is the artifact, the PM's output is decisions, clarity, and team direction — none of which is naturally packaged into a portfolio. This makes PM portfolio development harder, but not impossible. It just requires more intentionality.</p>
+
+  <p>I've reviewed hundreds of PM portfolios — from interview processes, from people seeking mentorship, and from candidates applying to work with me. The strongest ones are not the most polished. They're the ones where I can see how the person thinks. Concrete situations, clear reasoning, honest reflection on what worked and what didn't.</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>Associate Product Manager (APM)</h2>
+  <h2>What a PM Portfolio Contains</h2>
 
-  <p><strong>What this level is:</strong> An entry-level role, typically structured as a 2-year program, designed to develop PM fundamentals. APMs are not expected to lead independently — they work closely with senior PMs who own the product area.</p>
+  <h3>Case studies of product decisions</h3>
+  <p>Not case studies of products you've used — case studies of decisions you've made. The situation: what was the context? The problem: what did you need to figure out? Your process: how did you approach it? The decision: what did you decide and why? The outcome: what happened as a result? And the learning: what would you do differently?</p>
 
-  <p><strong>What you learn here:</strong> The mechanics of PM work — how to write a PRD, how to work with engineering and design, how to analyze product data, how to run user research. The operational vocabulary and habits of good product management.</p>
+  <p>This structure — SPDOL, let's say — works for any product decision, whether you were a PM, an engineer making a product call, a marketer with a product instinct, or a founder building something on the side. The title doesn't matter. The thinking does.</p>
 
-  <p><strong>What typically accelerates to PM:</strong> Demonstrating ownership mentality beyond your scope. APMs who make decisions confidently within their assigned area, who proactively identify problems before they escalate, and who can lead a small feature or project end-to-end progress faster than those who wait for direction.</p>
+  <h3>Product teardowns</h3>
+  <p>A product teardown demonstrates product sense: your ability to see a product clearly, understand what's working and what's not, and generate well-reasoned hypotheses about improvements. The key to a good teardown is specificity and originality. "The onboarding could be better" is not a teardown. "The onboarding assumes users already understand the core concept, but research suggests most users come in without that mental model — here's how I'd test a different approach" is a teardown.</p>
 
-  <p><strong>Typical timeline:</strong> 2-3 years before promotion to PM.</p>
+  <h3>User research artifacts</h3>
+  <p>If you've conducted user interviews — even informal ones, even as a side project — the synthesis of those interviews is strong portfolio material. The ability to listen, synthesize, and extract actionable insights is a core PM skill. Evidence that you can do it, from any context, is valuable.</p>
 
-  <hr class="my-12 border-border/50" />
-
-  <h2>Product Manager</h2>
-
-  <p><strong>What this level is:</strong> Independent ownership of a product area or feature set. You're accountable for outcomes, not just activities. The PM role is where you develop the core PM capabilities that define the rest of your career.</p>
-
-  <p><strong>What you're expected to do:</strong> Lead discovery, define solutions, manage stakeholders, drive delivery, and measure impact — for your product area, with limited senior oversight. Make most decisions independently and escalate only what requires it.</p>
-
-  <p><strong>What typically accelerates to Senior PM:</strong> Track record of moving metrics. Not just shipping features — demonstrably improving the metrics you're accountable for. The Senior PM promotion almost always requires evidence of business impact, not just good process.</p>
-
-  <p><strong>Typical timeline:</strong> 2-4 years before promotion to Senior PM.</p>
+  <h3>Side projects with real users</h3>
+  <p>A product you've built, launched, iterated on, and talked to real users about is the single strongest portfolio artifact for a PM candidate without a PM title. It doesn't need to be commercially successful. It needs to demonstrate that you've thought about users, built something, learned from the response, and adjusted.</p>
 
   <hr class="my-12 border-border/50" />
 
-  <h2>Senior Product Manager</h2>
+  <h2>Building Portfolio Content When You Don't Have a PM Title</h2>
 
-  <p><strong>What this level is:</strong> Independent ownership of a significant product area, with increasing ambiguity and broader scope. Senior PMs are expected to be thought leaders within their area — not just executing well, but influencing strategy and organizational thinking.</p>
+  <p>The most common objection: "I haven't done PM work, so I don't have anything to put in a portfolio." This is almost always wrong. PM work happens in every role:</p>
 
-  <p><strong>What differentiates strong Senior PMs:</strong> Strategic thinking — the ability to look beyond their immediate product area and understand how it fits into the broader product strategy. Multiplier behavior — making the team around them more effective, not just being a high individual contributor.</p>
+  <p>The engineer who identified a user pain point, proposed a solution, got alignment from the team, shipped it, and measured the impact did PM work. The marketing manager who analyzed user behavior to find the segment with the highest conversion potential and redesigned the funnel around that segment did PM work. The customer success manager who synthesized patterns from support tickets into a product feedback report that led to a feature change did PM work.</p>
 
-  <p><strong>The fork in the road:</strong> Senior PM is the level where careers diverge. Some Senior PMs become Staff/Principal PMs — individual contributors with broad influence. Others move into people management as PM leads or Group PMs. And some eventually make the leap to Director. Each path has different requirements and different rewards.</p>
+  <p>Find the PM work you've already done. Articulate it in PM language. That's the portfolio.</p>
 
-  <p><strong>Typical timeline:</strong> 3-6 years before promotion to Staff/Principal or Director level.</p>
-
-  <hr class="my-12 border-border/50" />
-
-  <h2>Director of Product and Above</h2>
-
-  <p><strong>Director of Product:</strong> Manages a team of PMs and owns multiple product areas. Accountable for a significant portion of the product's business outcomes. Spends significant time on organizational design, talent development, and cross-functional leadership. The individual product contribution diminishes; the organizational impact grows.</p>
-
-  <p><strong>VP of Product:</strong> Owns the overall product strategy for a significant product surface or business unit. Represents product in leadership discussions. Shapes organizational direction. The VP who can run product for a major product line while managing a team of directors and senior PMs is a rare talent.</p>
-
-  <p><strong>CPO:</strong> The product executive accountable for the entire product organization. Works at the intersection of product strategy, people leadership, and business partnership with the CEO and board. Most CPOs have 15-20 years of product experience with a track record of building and leading significant product teams.</p>
-
-  <hr class="my-12 border-border/50" />
-
-  <h2>The Accelerators That Work Across All Levels</h2>
-
-  <p><strong>Being in the right environment.</strong> A PM at a slow-moving enterprise with limited ownership and low stakes will progress slowly. A PM at a fast-moving startup with real ownership and high stakes will compress their learning dramatically. The company and team you're in matters as much as your individual effort.</p>
-
-  <p><strong>Working on things that fail.</strong> The PMs who develop the fastest are the ones who have experienced failure — features that didn't work, strategies that didn't pan out — and engaged with those failures honestly. Failure, processed well, is the most efficient teacher in product management.</p>
-
-  <p><strong>Getting feedback from people who don't have incentives to be nice.</strong> Your manager, your peers, and your skip-level are natural sources of feedback. They're not always honest feedback — relationships create incentives to soften criticism. Seek out honest feedback from people who care about your growth more than your feelings.</p>
-
-  <p><strong>Building the reputation that creates opportunities.</strong> In PM, opportunities often come through reputation — someone who's seen your work, heard about your impact, or knows you from a network connection. Investing in the reputation work — writing, speaking, doing excellent work that gets noticed — creates opportunities that the best resume can't manufacture.</p>
-
-  <blockquote class="border-l-4 border-primary pl-6 my-8 italic text-xl">
-    The best PM careers are built on a track record of making things better — not on credentials, not on titles, and not on time in role. Make things better, demonstrably, repeatedly, and the career tends to take care of itself.
-  </blockquote>
-
-  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 text-center mt-12">
-    <h3 class="text-2xl font-serif font-bold mb-4">Thinking about your PM career trajectory?</h3>
-    <p class="text-lg text-muted-foreground mb-6">Career planning in product management is highly personal — what accelerates one person's career slows another's. I'm happy to think through your specific situation with you.</p>
-    <a href="/contact" class="inline-flex items-center justify-center h-12 px-8 rounded-full bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors">Let's talk career strategy</a>
+  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 mt-12">
+    <h3 class="text-xl font-bold mb-3">Building your PM portfolio?</h3>
+    <p class="text-muted-foreground mb-4">Portfolio development is one of the things I actively help people with. If you're trying to break into PM or level up your profile for a more senior role, I can give you specific feedback on what you have and what you need. Let's connect.</p>
+    <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">Work with Yogesh →</a>
   </div>
-`,
+`
 
 };
 
