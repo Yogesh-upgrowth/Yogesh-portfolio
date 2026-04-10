@@ -31,6 +31,7 @@ export interface BlogPostContent {
 }
 
 export const BLOG_CATEGORIES = [
+  "All",
   "AI & Product",
   "PM Career",
   "Experiments",
@@ -40,62 +41,91 @@ export const BLOG_CATEGORIES = [
 ];
 
 export const BLOG_POSTS: BlogPost[] = [
-  // Featured Post (Pillar SEO Article)
-  { 
-    id: "featured-1", 
-    slug: "how-i-think-about-product-framework", 
-    title: "How I Think About Product: A Product Thinking Framework Built Over 9 Years", 
-    description: "A senior product leader shares a practical product thinking framework built over 9 years of scaling real products across growth, monetisation, and operations.", 
-    category: "Founder Notes", 
-    date: "2025-01-15", 
-    readTime: "15 min read", 
+  // ── FEATURED POST (keep as-is) ───────────────────────────────────────────────
+  {
+    id: "featured-1",
+    slug: "how-i-think-about-product-framework",
+    title: "How I Think About Product: A Product Thinking Framework Built Over 9 Years",
+    description: "A senior product leader shares a practical product thinking framework built over 9 years of scaling real products across growth, monetisation, and operations.",
+    category: "Founder Notes",
+    date: "2025-01-15",
+    readTime: "15 min read",
     image: productFrameworkDiagram,
     author: "Yogesh Yadav",
     isFeatured: true,
     isMostPopular: true
   },
 
-  // AI & Product
+  // ── EXISTING POSTS WITH CONTENT (keep) ───────────────────────────────────────
   { id: "ai-1", slug: "how-ai-is-changing-product-decisions", title: "How AI Is Actually Changing Product Decision-Making", description: "It's not about replacing PMs. It's about shifting from intuition-based bets to data-validated hypotheses at scale.", category: "AI & Product", date: "2025-03-15", readTime: "8 min read", image: aiHero, author: "Yogesh Yadav", isMostPopular: true },
-  { id: "ai-2", slug: "what-pms-get-wrong-about-ai", title: "What PMs Get Wrong About AI Adoption", description: "AI isn't a feature; it's an enabler. Stop shipping 'AI wrappers' and start solving core user problems.", category: "AI & Product", date: "2025-03-10", readTime: "5 min read", image: dataStock, author: "Yogesh Yadav" },
-  { id: "ai-3", slug: "ai-vs-automation-value", title: "AI vs Automation: Where the Real Value Lies", description: "Automation saves time. AI creates new possibilities. Knowing the difference is key to your roadmap.", category: "AI & Product", date: "2025-03-05", readTime: "7 min read", image: codingStock, author: "Yogesh Yadav", isMostPopular: true },
-  { id: "ai-4", slug: "ai-product-discovery", title: "Using AI for Product Discovery", description: "How to use LLMs to simulate user interviews and analyze feedback without losing the human touch.", category: "AI & Product", date: "2025-02-28", readTime: "6 min read", image: teamStock, author: "Yogesh Yadav" },
-  { id: "ai-5", slug: "ai-metrics-that-matter", title: "AI Metrics That Matter", description: "Vanity metrics in AI products are dangerous. Here's what you should actually be tracking.", category: "AI & Product", date: "2025-02-22", readTime: "8 min read", image: officeStock, author: "Yogesh Yadav" },
-  { id: "ai-6", slug: "founders-ai-roadmaps", title: "How Founders Should Think About AI Roadmaps", description: "Move beyond the hype cycle. Build defensible AI moats, not just features.", category: "AI & Product", date: "2025-02-18", readTime: "5 min read", image: meetingStock, author: "Yogesh Yadav" },
-  { id: "ai-7", slug: "cost-blind-ai-implementation", title: "The Cost of Blind AI Implementation", description: "Implementing AI without a clear use case is the fastest way to burn runway.", category: "AI & Product", date: "2025-02-12", readTime: "6 min read", image: aiHero, author: "Yogesh Yadav" },
-  { id: "ai-8", slug: "ai-pm-copilot", title: "AI as a PM Copilot, Not a Replacement", description: "Why the best PMs are using AI to amplify their strategic thinking, not outsource it.", category: "AI & Product", date: "2025-02-08", readTime: "4 min read", image: codingStock, author: "Yogesh Yadav" },
-
-  // PM Career
   { id: "pm-1", slug: "product-frameworks-at-scale", title: "Product Frameworks I Actually Use at Scale", description: "Forget the textbook theory. These are the frameworks that survive the chaos of hypergrowth.", category: "PM Career", date: "2025-03-14", readTime: "8 min read", image: resourceHero, author: "Yogesh Yadav", isMostPopular: true },
-  { id: "pm-2", slug: "guide-product-metrics", title: "A Practical Guide to Product Metrics", description: "How to define North Star metrics that actually align teams and drive outcomes.", category: "PM Career", date: "2025-03-08", readTime: "6 min read", image: meetingStock, author: "Yogesh Yadav", isMostPopular: true },
-  { id: "pm-3", slug: "influence-without-authority", title: "How to Influence Without Authority", description: "The core skill of every great PM. Getting engineering and design on board.", category: "PM Career", date: "2025-03-06", readTime: "7 min read", image: meetingStock, author: "Yogesh Yadav", isMostPopular: true },
-  { id: "pm-4", slug: "prds-engineers-respect", title: "How to Structure PRDs That Engineers Respect", description: "Stop writing novels. Start writing clear, actionable specs that engineers love building.", category: "PM Career", date: "2025-02-25", readTime: "7 min read", image: teamStock, author: "Yogesh Yadav" },
-  { id: "pm-5", slug: "prioritisation-without-politics", title: "Prioritisation Without Politics", description: "How to use frameworks like RICE and MoSCoW to make objective decisions.", category: "PM Career", date: "2025-02-20", readTime: "6 min read", image: dataStock, author: "Yogesh Yadav" },
-  { id: "pm-6", slug: "mentoring-pms", title: "Mentoring PMs Effectively", description: "How to grow the next generation of product leaders.", category: "PM Career", date: "2025-02-09", readTime: "7 min read", image: codingStock, author: "Yogesh Yadav" },
-
-  // Experiments
   { id: "exp-1", slug: "research-beyond-surveys", title: "Market Research Beyond Surveys", description: "Surveys are biased. Here are 5 better ways to understand your market.", category: "Experiments", date: "2025-03-12", readTime: "7 min read", image: researchHero, author: "Yogesh Yadav" },
-  { id: "exp-2", slug: "run-discovery-sessions", title: "How to Run Product Discovery Sessions", description: "A step-by-step guide to facilitating workshops that uncover real user needs.", category: "Experiments", date: "2025-02-10", readTime: "8 min read", image: codingStock, author: "Yogesh Yadav" },
-  { id: "exp-3", slug: "qualitative-vs-quantitative", title: "Qualitative vs Quantitative: When to Use What", description: "A framework for balancing data analytics with user interviews.", category: "Experiments", date: "2025-02-26", readTime: "6 min read", image: researchHero, author: "Yogesh Yadav" },
-  { id: "exp-4", slug: "sense-noisy-feedback", title: "Making Sense of Noisy Feedback", description: "How to filter signal from noise when everyone has an opinion.", category: "Experiments", date: "2025-02-11", readTime: "6 min read", image: codingStock, author: "Yogesh Yadav" },
-
-  // Growth & SEO
   { id: "growth-1", slug: "what-makes-product-scalable", title: "What Makes a Product Scalable", description: "Scalability isn't just about backend code. It's about operational and design leverage.", category: "Growth & SEO", date: "2025-03-13", readTime: "7 min read", image: knowledgeHero, author: "Yogesh Yadav", isMostPopular: true },
-  { id: "growth-2", slug: "designing-for-retention", title: "Designing for Retention First", description: "Acquisition is expensive. Retention is where the profit is. Build for it.", category: "Growth & SEO", date: "2025-02-23", readTime: "6 min read", image: teamStock, author: "Yogesh Yadav" },
-  { id: "growth-3", slug: "growth-without-breaking", title: "Growth Without Breaking the Product", description: "How to scale user base without degrading the core experience.", category: "Growth & SEO", date: "2025-02-17", readTime: "7 min read", image: knowledgeHero, author: "Yogesh Yadav" },
-  { id: "growth-4", slug: "monetisation-without-killing-ux", title: "Monetisation Without Killing UX", description: "Balancing revenue goals with user satisfaction.", category: "Growth & SEO", date: "2025-02-13", readTime: "6 min read", image: codingStock, author: "Yogesh Yadav" },
-
-  // Comparisons
-  { id: "comp-1", slug: "pmf-not-finish-line", title: "PMF Is Not the Finish Line", description: "Product-market fit is a moving target. Here's how to keep hitting it.", category: "Comparisons", date: "2025-03-09", readTime: "5 min read", image: dataStock, author: "Yogesh Yadav" },
-  { id: "comp-2", slug: "product-tradeoffs", title: "Product Trade-offs No One Talks About", description: "Speed vs. Quality. Features vs. Platform. How to make the hard calls.", category: "Comparisons", date: "2025-02-27", readTime: "8 min read", image: meetingStock, author: "Yogesh Yadav" },
-  { id: "comp-3", slug: "when-to-kill-feature", title: "When to Kill a Feature", description: "Sunsetting features is painful but necessary. Here's the playbook.", category: "Comparisons", date: "2025-02-07", readTime: "5 min read", image: dataStock, author: "Yogesh Yadav" },
-
-  // Founder Notes
   { id: "fn-1", slug: "leadership-not-feature-ownership", title: "Product Leadership Is Not Feature Ownership", description: "Moving from managing tickets to managing outcomes and teams.", category: "Founder Notes", date: "2025-03-11", readTime: "6 min read", image: leadershipHero, author: "Yogesh Yadav" },
-  { id: "fn-2", slug: "working-with-founders", title: "Working With Founders as a PM", description: "How to earn trust and become a strategic partner to the founding team.", category: "Founder Notes", date: "2025-02-19", readTime: "6 min read", image: dataStock, author: "Yogesh Yadav" },
-  { id: "fn-3", slug: "saying-no-without-burning-trust", title: "Saying No Without Burning Trust", description: "Protecting the roadmap while maintaining healthy stakeholder relationships.", category: "Founder Notes", date: "2025-02-14", readTime: "5 min read", image: leadershipHero, author: "Yogesh Yadav" },
-  { id: "fn-4", slug: "decision-making-uncertainty", title: "Decision-Making Under Uncertainty", description: "How to move forward when you don't have all the data.", category: "Founder Notes", date: "2025-01-31", readTime: "6 min read", image: teamStock, author: "Yogesh Yadav" },
-  { id: "fn-5", slug: "lessons-scaling-products", title: "Leadership Lessons from Scaling Products", description: "What I learned growing products from zero to millions of users.", category: "Founder Notes", date: "2025-01-26", readTime: "7 min read", image: meetingStock, author: "Yogesh Yadav" }
+
+  // ── PM FUNDAMENTALS (8 new blogs) ────────────────────────────────────────────
+  { id: "pmf-1", slug: "what-does-a-pm-actually-do", title: "What Does a Product Manager Actually Do in 2026?", description: "The job title is everywhere. The actual job is still wildly misunderstood. A ground-level look at what PMs really spend their days on.", category: "PM Career", date: "2025-04-10", readTime: "18 min read", image: teamStock, author: "Yogesh Yadav", isMostPopular: true },
+  { id: "pmf-2", slug: "evolution-of-product-management", title: "The Evolution of Product Management: From Feature Owner to Business Owner", description: "How the PM role has been quietly redefined over the past decade — and what it means for your career.", category: "PM Career", date: "2025-04-09", readTime: "16 min read", image: meetingStock, author: "Yogesh Yadav" },
+  { id: "pmf-3", slug: "core-skills-every-product-manager", title: "Core Skills Every Product Manager Must Master", description: "Beyond frameworks and templates — the actual skills that separate good PMs from great ones.", category: "PM Career", date: "2025-04-08", readTime: "17 min read", image: officeStock, author: "Yogesh Yadav", isMostPopular: true },
+  { id: "pmf-4", slug: "pm-vs-product-owner-vs-project-manager", title: "Product Manager vs Product Owner vs Project Manager: The Real Differences", description: "These three roles get confused constantly. Here's a clear, opinionated breakdown of how they actually differ.", category: "Comparisons", date: "2025-04-07", readTime: "15 min read", image: dataStock, author: "Yogesh Yadav" },
+  { id: "pmf-5", slug: "product-lifecycle-explained", title: "The Product Lifecycle Explained for Modern PMs", description: "Introduction, growth, maturity, decline — and how smart PMs navigate each phase differently.", category: "PM Career", date: "2025-04-06", readTime: "16 min read", image: codingStock, author: "Yogesh Yadav" },
+  { id: "pmf-6", slug: "user-centric-product-thinking", title: "Understanding User-Centric Product Thinking", description: "What it actually means to build for users — not what users ask for, but what they actually need.", category: "PM Career", date: "2025-04-05", readTime: "17 min read", image: teamStock, author: "Yogesh Yadav" },
+  { id: "pmf-7", slug: "how-pms-balance-business-tech-ux", title: "How Product Managers Balance Business, Tech, and UX", description: "The impossible triangle of product management. How experienced PMs actually navigate competing pressures.", category: "PM Career", date: "2025-04-04", readTime: "16 min read", image: meetingStock, author: "Yogesh Yadav" },
+  { id: "pmf-8", slug: "product-management-misconceptions", title: "Common Misconceptions About Product Management", description: "What people outside the role get wrong. And honestly, what people inside the role get wrong too.", category: "PM Career", date: "2025-04-03", readTime: "15 min read", image: officeStock, author: "Yogesh Yadav" },
+
+  // ── PM STRATEGY & LEADERSHIP (8 new blogs) ────────────────────────────────────
+  { id: "pms-1", slug: "outcome-driven-roadmaps", title: "Outcome-Driven Roadmaps: Why Features Don't Matter", description: "A feature roadmap is a commitment to build things. An outcome roadmap is a commitment to change things. One of them works.", category: "Founder Notes", date: "2025-04-10", readTime: "17 min read", image: leadershipHero, author: "Yogesh Yadav", isMostPopular: true },
+  { id: "pms-2", slug: "how-to-build-winning-product-strategy", title: "How to Build a Winning Product Strategy", description: "Strategy is not a vision statement. It's a set of choices that exclude other choices. Here's how to make the right ones.", category: "Founder Notes", date: "2025-04-09", readTime: "18 min read", image: resourceHero, author: "Yogesh Yadav" },
+  { id: "pms-3", slug: "prioritization-frameworks-every-pm", title: "Prioritization Frameworks Every PM Should Know", description: "RICE, ICE, MoSCoW, Kano — and when to throw all of them out and just use judgment.", category: "PM Career", date: "2025-04-08", readTime: "16 min read", image: dataStock, author: "Yogesh Yadav" },
+  { id: "pms-4", slug: "setting-strong-product-vision", title: "Setting a Strong Product Vision That Teams Follow", description: "Most product visions are forgotten within 3 months. Here's what makes one actually stick.", category: "Founder Notes", date: "2025-04-07", readTime: "16 min read", image: leadershipHero, author: "Yogesh Yadav" },
+  { id: "pms-5", slug: "product-leadership-vs-management", title: "Product Leadership vs Product Management: What Changes at the Top", description: "When you stop managing features and start managing direction. The shift is more disorienting than people tell you.", category: "Comparisons", date: "2025-04-06", readTime: "15 min read", image: meetingStock, author: "Yogesh Yadav" },
+  { id: "pms-6", slug: "strategic-thinking-senior-pm", title: "Strategic Thinking for Senior Product Managers", description: "What strategic thinking actually looks like in practice — not in MBA frameworks, but in daily product decisions.", category: "Founder Notes", date: "2025-04-05", readTime: "17 min read", image: knowledgeHero, author: "Yogesh Yadav" },
+  { id: "pms-7", slug: "long-term-vs-short-term-product-strategy", title: "Building Long-Term vs Short-Term Product Strategy", description: "The tension between quarterly goals and three-year vision. How to hold both without losing either.", category: "Founder Notes", date: "2025-04-04", readTime: "16 min read", image: leadershipHero, author: "Yogesh Yadav" },
+  { id: "pms-8", slug: "decision-making-frameworks-product-leaders", title: "Decision-Making Frameworks for Product Leaders", description: "When data is incomplete, stakeholders disagree, and the clock is ticking — how senior PMs actually decide.", category: "Founder Notes", date: "2025-04-03", readTime: "17 min read", image: resourceHero, author: "Yogesh Yadav" },
+
+  // ── DATA-DRIVEN PM (7 new blogs) ─────────────────────────────────────────────
+  { id: "dd-1", slug: "data-driven-product-management", title: "Why Data-Driven Product Management Matters (And Where It Breaks Down)", description: "Data is not a substitute for judgment. But judgment without data is guessing. Here's how to use both.", category: "Experiments", date: "2025-04-10", readTime: "17 min read", image: dataStock, author: "Yogesh Yadav" },
+  { id: "dd-2", slug: "metrics-that-matter-product-managers", title: "Metrics That Actually Matter for Product Managers", description: "Not all metrics are created equal. Most dashboards measure activity, not impact. Here's how to tell the difference.", category: "Experiments", date: "2025-04-09", readTime: "16 min read", image: dataStock, author: "Yogesh Yadav", isMostPopular: true },
+  { id: "dd-3", slug: "north-star-metrics-how-to", title: "North Star Metrics: How to Define and Use Them", description: "A North Star metric should focus your entire team. Most don't. Here's why — and how to fix it.", category: "Experiments", date: "2025-04-08", readTime: "16 min read", image: knowledgeHero, author: "Yogesh Yadav" },
+  { id: "dd-4", slug: "funnel-analysis-product-managers", title: "Funnel Analysis for Product Managers", description: "Every user interaction is a funnel. Most PMs only look at the top and the bottom. Here's what you're missing.", category: "Experiments", date: "2025-04-07", readTime: "15 min read", image: dataStock, author: "Yogesh Yadav" },
+  { id: "dd-5", slug: "ab-testing-product-decisions", title: "A/B Testing Framework for Product Decisions", description: "A/B testing is easy to run wrong. Here's how to design tests that actually give you reliable answers.", category: "Experiments", date: "2025-04-06", readTime: "16 min read", image: codingStock, author: "Yogesh Yadav" },
+  { id: "dd-6", slug: "product-analytics-improve-retention", title: "Using Product Analytics to Improve Retention", description: "Acquisition gets the headlines. Retention is where the business lives or dies. Here's how to use data to protect it.", category: "Experiments", date: "2025-04-05", readTime: "17 min read", image: dataStock, author: "Yogesh Yadav" },
+  { id: "dd-7", slug: "data-driven-product-culture", title: "How to Build a Data-Driven Product Culture", description: "Culture, not tools, is what makes an organization actually data-driven. Here's how to build it from inside.", category: "Experiments", date: "2025-04-04", readTime: "16 min read", image: officeStock, author: "Yogesh Yadav" },
+
+  // ── AI IN PM (10 new blogs) ───────────────────────────────────────────────────
+  { id: "ai-new-1", slug: "ai-changing-product-management", title: "How AI is Changing Product Management", description: "AI is reshaping what PMs do, how they research, how they write, and how they make decisions. A ground-level assessment.", category: "AI & Product", date: "2025-04-10", readTime: "18 min read", image: aiHero, author: "Yogesh Yadav", isMostPopular: true },
+  { id: "ai-new-2", slug: "ai-tools-product-managers", title: "AI Tools Every Product Manager Should Use", description: "Not a list of hype. A practical breakdown of AI tools that actually change how PMs work — and which ones to skip.", category: "AI & Product", date: "2025-04-09", readTime: "17 min read", image: codingStock, author: "Yogesh Yadav" },
+  { id: "ai-new-3", slug: "ai-product-discovery-techniques", title: "Using AI for Product Discovery", description: "AI can simulate user interviews, analyze feedback at scale, and find patterns no human analyst would catch. Here's how.", category: "AI & Product", date: "2025-04-08", readTime: "16 min read", image: aiHero, author: "Yogesh Yadav" },
+  { id: "ai-new-4", slug: "ai-roadmap-planning", title: "AI for Roadmap Planning: Reality vs Hype", description: "Can AI help you build better roadmaps? Sort of. The truth is more nuanced than the demos suggest.", category: "AI & Product", date: "2025-04-07", readTime: "16 min read", image: dataStock, author: "Yogesh Yadav" },
+  { id: "ai-new-5", slug: "ai-improve-product-analytics", title: "How AI Can Improve Product Analytics", description: "Traditional analytics tells you what happened. AI analytics starts to tell you why — and what to do about it.", category: "AI & Product", date: "2025-04-06", readTime: "17 min read", image: dataStock, author: "Yogesh Yadav" },
+  { id: "ai-new-6", slug: "generative-ai-writing-prds", title: "Generative AI for Writing PRDs", description: "I've been using AI to draft PRDs for six months. Here's what it's good at, where it falls flat, and what I've kept.", category: "AI & Product", date: "2025-04-05", readTime: "15 min read", image: codingStock, author: "Yogesh Yadav" },
+  { id: "ai-new-7", slug: "ai-user-research", title: "AI in User Research: Opportunities and Risks", description: "AI can speed up research dramatically. It can also introduce bias at scale. Here's how to get the upside without the downside.", category: "AI & Product", date: "2025-04-04", readTime: "17 min read", image: teamStock, author: "Yogesh Yadav" },
+  { id: "ai-new-8", slug: "ai-copilots-for-pms", title: "AI Copilots for Product Managers", description: "The framing of AI as a 'copilot' is either the most useful metaphor in tech or the most dangerous. Here's my honest take.", category: "AI & Product", date: "2025-04-03", readTime: "16 min read", image: aiHero, author: "Yogesh Yadav" },
+  { id: "ai-new-9", slug: "building-ai-first-products", title: "Building AI-First Products: A PM's Perspective", description: "What's actually different about building a product where AI is the core capability, not a feature bolted on.", category: "AI & Product", date: "2025-04-02", readTime: "18 min read", image: codingStock, author: "Yogesh Yadav" },
+  { id: "ai-new-10", slug: "future-role-pms-ai-world", title: "The Future Role of Product Managers in an AI World", description: "In 5 years, some of what PMs do today will be automated. What remains — and what expands — is worth planning for now.", category: "AI & Product", date: "2025-04-01", readTime: "17 min read", image: aiHero, author: "Yogesh Yadav" },
+
+  // ── GROWTH & MONETIZATION (7 new blogs) ──────────────────────────────────────
+  { id: "gr-1", slug: "growth-loops-product-management", title: "Growth Loops Every Product Manager Should Know", description: "Funnels leak. Loops compound. Here's a practical guide to the growth mechanics that actually scale.", category: "Growth & SEO", date: "2025-04-10", readTime: "17 min read", image: knowledgeHero, author: "Yogesh Yadav", isMostPopular: true },
+  { id: "gr-2", slug: "activation-metrics-product-growth", title: "Activation Metrics That Drive Product Growth", description: "Users who don't activate don't stay. The window between signup and activation is where most products lose the game.", category: "Growth & SEO", date: "2025-04-09", readTime: "16 min read", image: dataStock, author: "Yogesh Yadav" },
+  { id: "gr-3", slug: "retention-strategies-consumer-apps", title: "Retention Strategies for Consumer Apps", description: "The top apps in the world obsess over one metric above all others. Here's what their retention playbooks actually look like.", category: "Growth & SEO", date: "2025-04-08", readTime: "17 min read", image: teamStock, author: "Yogesh Yadav" },
+  { id: "gr-4", slug: "monetization-models-digital-products", title: "Monetization Models for Digital Products", description: "Freemium, subscription, usage-based, marketplace — each model has a context where it wins and contexts where it fails.", category: "Growth & SEO", date: "2025-04-07", readTime: "16 min read", image: knowledgeHero, author: "Yogesh Yadav" },
+  { id: "gr-5", slug: "pricing-strategy-framework", title: "Pricing Strategy Framework for Product Managers", description: "Pricing is a product decision, not a finance decision. Here's how PMs should think about it.", category: "Growth & SEO", date: "2025-04-06", readTime: "17 min read", image: dataStock, author: "Yogesh Yadav" },
+  { id: "gr-6", slug: "product-led-growth-guide", title: "Product-Led Growth: A PM's Guide", description: "PLG is not a sales strategy. It's an entire way of thinking about how your product acquires, activates, and retains users.", category: "Growth & SEO", date: "2025-04-05", readTime: "18 min read", image: knowledgeHero, author: "Yogesh Yadav" },
+  { id: "gr-7", slug: "balancing-growth-monetization", title: "Balancing Growth and Monetization", description: "Grow too fast and you burn cash. Monetize too early and you kill growth. How to find the right moment for each.", category: "Growth & SEO", date: "2025-04-04", readTime: "16 min read", image: codingStock, author: "Yogesh Yadav" },
+
+  // ── EXECUTION & DELIVERY (5 new blogs) ───────────────────────────────────────
+  { id: "ex-1", slug: "writing-effective-prds-guide", title: "How to Write Effective Product Requirement Documents (PRDs)", description: "A PRD that engineers don't read is not a PRD. It's a liability. Here's how to write ones that actually get built correctly.", category: "PM Career", date: "2025-04-10", readTime: "17 min read", image: codingStock, author: "Yogesh Yadav" },
+  { id: "ex-2", slug: "agile-vs-scrum-vs-kanban", title: "Agile vs Scrum vs Kanban for Product Managers", description: "The difference between frameworks — and why choosing the right one for your team context matters more than most PMs realize.", category: "Comparisons", date: "2025-04-09", readTime: "15 min read", image: officeStock, author: "Yogesh Yadav" },
+  { id: "ex-3", slug: "sprint-planning-best-practices", title: "Sprint Planning Best Practices for PMs", description: "Bad sprint planning wastes weeks. Good sprint planning sets up your team to actually finish what they start.", category: "PM Career", date: "2025-04-08", readTime: "16 min read", image: meetingStock, author: "Yogesh Yadav" },
+  { id: "ex-4", slug: "managing-cross-functional-teams", title: "Managing Cross-Functional Product Teams", description: "You have accountability but no authority. Here's how to make cross-functional teams work despite that impossible dynamic.", category: "PM Career", date: "2025-04-07", readTime: "17 min read", image: teamStock, author: "Yogesh Yadav" },
+  { id: "ex-5", slug: "roadmap-planning-practical-guide", title: "Roadmap Planning: A Practical Guide for PMs", description: "A roadmap is not a schedule. It's a communication tool. Here's how to use it to align teams without locking yourself in.", category: "PM Career", date: "2025-04-06", readTime: "17 min read", image: meetingStock, author: "Yogesh Yadav" },
+
+  // ── PM CAREER & INTERVIEWS (5 new blogs) ─────────────────────────────────────
+  { id: "cr-1", slug: "become-product-manager-india", title: "How to Become a Product Manager in India", description: "From CS grad to startup PM to FAANG — the realistic paths into product management in the Indian ecosystem.", category: "PM Career", date: "2025-04-10", readTime: "18 min read", image: officeStock, author: "Yogesh Yadav", isMostPopular: true },
+  { id: "cr-2", slug: "product-manager-interview-questions", title: "Product Manager Interview Questions and Answers", description: "Real questions from real PM interviews at top companies — with the frameworks and thinking behind strong answers.", category: "PM Career", date: "2025-04-09", readTime: "20 min read", image: meetingStock, author: "Yogesh Yadav", isMostPopular: true },
+  { id: "cr-3", slug: "engineer-to-product-manager", title: "Transitioning from Engineer to Product Manager", description: "The technical background is an advantage. What trips most engineers up is everything else. Here's how to make the switch.", category: "PM Career", date: "2025-04-08", readTime: "17 min read", image: codingStock, author: "Yogesh Yadav" },
+  { id: "cr-4", slug: "product-manager-resume-guide", title: "How to Build a Strong Product Manager Resume", description: "Most PM resumes list responsibilities. Strong ones demonstrate impact. Here's the exact difference — with examples.", category: "PM Career", date: "2025-04-07", readTime: "16 min read", image: resourceHero, author: "Yogesh Yadav" },
+  { id: "cr-5", slug: "pm-career-path-complete-guide", title: "Career Path for Product Managers: A Complete Guide", description: "APM to CPO — what each level actually expects, how long each stage takes, and what accelerates the climb.", category: "PM Career", date: "2025-04-06", readTime: "18 min read", image: leadershipHero, author: "Yogesh Yadav" },
 ];
 
 export function getPostBySlug(slug: string) {
@@ -112,9 +142,9 @@ export function getMostPopularPosts(limit = 6) {
 
 export function formatDate(dateString: string): string {
   const date = new Date(dateString);
-  return date.toLocaleDateString('en-US', { 
-    year: 'numeric', 
-    month: 'long', 
-    day: 'numeric' 
+  return date.toLocaleDateString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
   });
 }

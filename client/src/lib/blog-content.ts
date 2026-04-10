@@ -1,4 +1,12 @@
 // Separate file for heavy content to avoid bloating the main blog listing
+import { getPmFundamentalsContent } from './blog-content-pm-fundamentals';
+import { getPmStrategyContent } from './blog-content-pm-strategy';
+import { getDataDrivenContent } from './blog-content-data-driven';
+import { getAiPmContent } from './blog-content-ai-pm';
+import { getGrowthContent } from './blog-content-growth';
+import { getExecutionContent } from './blog-content-execution';
+import { getCareerContent } from './blog-content-career';
+
 export const BLOG_CONTENT: Record<string, string> = {
   "how-i-think-about-product-framework": `
       <p class="lead text-xl text-foreground font-medium mb-8">
@@ -593,5 +601,14 @@ export const BLOG_CONTENT: Record<string, string> = {
 };
 
 export function getPostContent(slug: string): string | undefined {
-  return BLOG_CONTENT[slug];
+  return (
+    BLOG_CONTENT[slug] ??
+    getPmFundamentalsContent(slug) ??
+    getPmStrategyContent(slug) ??
+    getDataDrivenContent(slug) ??
+    getAiPmContent(slug) ??
+    getGrowthContent(slug) ??
+    getExecutionContent(slug) ??
+    getCareerContent(slug)
+  );
 }

@@ -1,0 +1,57 @@
+1. Product Management Fundamentals (8 Blogs)
+What Does a Product Manager Actually Do in 2026?
+The Evolution of Product Management: From Feature Owner to Business Owner
+Core Skills Every Product Manager Must Master
+Product Manager vs Product Owner vs Project Manager
+The Product Lifecycle Explained for Modern PMs
+Understanding User-Centric Product Thinking
+How Product Managers Balance Business, Tech, and UX
+Common Misconceptions About Product Management
+2. Product Strategy & Leadership (8 Blogs)
+Outcome-Driven Roadmaps: Why Features Don’t Matter
+How to Build a Winning Product Strategy
+Prioritization Frameworks Every PM Should Know
+Setting a Strong Product Vision That Teams Follow
+Product Leadership vs Product Management
+Strategic Thinking for Senior Product Managers
+Building Long-Term vs Short-Term Product Strategy
+Decision-Making Frameworks for Product Leaders
+3. Data-Driven Product Management (7 Blogs)
+Why Data-Driven Product Management Matters
+Metrics That Actually Matter for Product Managers
+North Star Metrics: How to Define and Use Them
+Funnel Analysis for Product Managers
+A/B Testing Framework for Product Decisions
+Using Product Analytics to Improve Retention
+How to Build a Data-Driven Product Culture
+4. AI in Product Management (10 Blogs)
+How AI is Changing Product Management
+AI Tools Every Product Manager Should Use
+Using AI for Product Discovery
+AI for Roadmap Planning: Reality vs Hype
+How AI Can Improve Product Analytics
+Generative AI for Writing PRDs
+AI in User Research: Opportunities and Risks
+AI Copilots for Product Managers
+Building AI-First Products: PM Perspective
+The Future Role of Product Managers in an AI World
+5. Product Growth & Monetization (7 Blogs)
+Growth Loops Every Product Manager Should Know
+Activation Metrics That Drive Product Growth
+Retention Strategies for Consumer Apps
+Monetization Models for Digital Products
+Pricing Strategy Framework for Product Managers
+Product-Led Growth: A PM’s Guide
+Balancing Growth and Monetization
+6. Product Execution & Delivery (5 Blogs)
+How to Write Effective Product Requirement Documents (PRDs)
+Agile vs Scrum vs Kanban for Product Managers
+Sprint Planning Best Practices for PMs
+Managing Cross-Functional Product Teams
+Roadmap Planning: Practical Guide for PMs
+7. PM Career & Interviews (5 Blogs)
+How to Become a Product Manager in India
+Product Manager Interview Questions and Answers
+Transitioning from Engineer to Product Manager
+How to Build a Strong Product Manager Resume
+Career Path for Product Managers: A Complete Guide
