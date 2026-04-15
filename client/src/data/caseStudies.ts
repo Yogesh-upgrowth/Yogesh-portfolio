@@ -10,6 +10,48 @@ export interface CaseStudy {
 }
 
 export const caseStudies: CaseStudy[] = [
+  /* ── PROOF / IMPACT CASE STUDIES ── */
+  {
+    slug: "carinfo-45m-mau",
+    title: "From 3.8M to 45M+ Monthly Active Users: The CarInfo Growth Architecture",
+    description: "Building a programmatic SEO engine, engagement loops, and referral flywheel that scaled CarInfo to 45M+ MAU.",
+    category: "Growth",
+    tags: ["Growth", "SEO", "Product", "Mobility"],
+    readTime: "14 min read",
+    date: "Mar 2026",
+    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=400&q=65&auto=format"
+  },
+  {
+    slug: "insurance-funnel-1200-growth",
+    title: "1200% Insurance Revenue Growth in 12 Months: The Full Funnel Story",
+    description: "Rebuilding a broken insurance purchase funnel — from ₹14 lakh to ₹1.82 crore per month through 6 parallel interventions.",
+    category: "Growth",
+    tags: ["Growth", "Fintech", "Monetisation", "Funnel"],
+    readTime: "13 min read",
+    date: "Mar 2026",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=65&auto=format"
+  },
+  {
+    slug: "crm-180k-transactions",
+    title: "Building a CRM That Handles 180K+ Monthly Transactions at 99.6% Uptime",
+    description: "A complete architectural rebuild of a vehicle enforcement CRM that crashed at 22K transactions — rebuilt to handle 10× the load.",
+    category: "Product",
+    tags: ["Product", "Scale", "Fintech", "Architecture"],
+    readTime: "12 min read",
+    date: "Mar 2026",
+    image: "https://images.unsplash.com/photo-1518186285589-2f7649de83e0?w=400&q=65&auto=format"
+  },
+  {
+    slug: "user-acquisition-cac-30",
+    title: "How We Cut User Acquisition Cost by 30% Without Cutting Volume",
+    description: "Building channel-level attribution from scratch and reallocating spend from cheap-but-low-quality to expensive-but-high-LTV acquisition.",
+    category: "Growth",
+    tags: ["Growth", "CAC", "Product", "Acquisition"],
+    readTime: "11 min read",
+    date: "Mar 2026",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&q=65&auto=format"
+  },
+
   /* ── LIVE FLAGSHIP ── */
   {
     slug: "ml-insurance-prediction",

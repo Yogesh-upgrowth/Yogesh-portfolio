@@ -7,6 +7,12 @@ import { ArrowLeft, ArrowRight, Clock, Calendar, User } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import NotFound from "@/pages/not-found";
 
+// ── Proof / Impact case studies ───────────────────────────────────────────────
+const CarInfo45mContent = lazy(() => import("@/pages/cs-carinfo-45m-content"));
+const InsuranceFunnel1200Content = lazy(() => import("@/pages/cs-insurance-funnel-1200-content"));
+const Crm180kContent = lazy(() => import("@/pages/cs-crm-180k-content"));
+const CacReductionContent = lazy(() => import("@/pages/cs-cac-reduction-content"));
+
 // ── Original 3 full write-ups ─────────────────────────────────────────────────
 const MLInsuranceCaseStudy = lazy(() => import("@/pages/ml-insurance-content"));
 const MoneyRateFinderCaseStudy = lazy(() => import("@/pages/moneyratefinder-content"));
@@ -39,6 +45,10 @@ const MlUxGrowthContent = lazy(() => import("@/pages/cs-ml-ux-growth-content"));
 
 // ── Slugs that have a full write-up ──────────────────────────────────────────
 const FULL_WRITEUP_SLUGS = new Set([
+  "carinfo-45m-mau",
+  "insurance-funnel-1200-growth",
+  "crm-180k-transactions",
+  "user-acquisition-cac-30",
   "ml-insurance-prediction",
   "scaling-moneyratefinder-growth",
   "seo-moat-remittance",
@@ -84,6 +94,10 @@ const STANDARD_TOC = [
 
 // ── Per-slug ToC definitions ──────────────────────────────────────────────────
 const tocMap: Record<string, { id: string; label: string }[]> = {
+  "carinfo-45m-mau": STANDARD_TOC,
+  "insurance-funnel-1200-growth": STANDARD_TOC,
+  "crm-180k-transactions": STANDARD_TOC,
+  "user-acquisition-cac-30": STANDARD_TOC,
   "ml-insurance-prediction": [
     { id: "hook", label: "The Problem" },
     { id: "context", label: "Context" },
@@ -219,6 +233,10 @@ function FullWriteup({ slug }: { slug: string }) {
   );
 
   const componentMap: Record<string, React.LazyExoticComponent<() => JSX.Element>> = {
+    "carinfo-45m-mau": CarInfo45mContent,
+    "insurance-funnel-1200-growth": InsuranceFunnel1200Content,
+    "crm-180k-transactions": Crm180kContent,
+    "user-acquisition-cac-30": CacReductionContent,
     "ml-insurance-prediction": MLInsuranceCaseStudy,
     "scaling-moneyratefinder-growth": MoneyRateFinderCaseStudy,
     "seo-moat-remittance": SeoMoatCaseStudy,

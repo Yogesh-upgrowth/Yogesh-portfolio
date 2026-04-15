@@ -1,4 +1,6 @@
 import { useInView } from "@/hooks/useInView";
+import { Link } from "wouter";
+import { ArrowRight } from "lucide-react";
 
 const impacts = [
   {
@@ -8,6 +10,7 @@ const impacts = [
     label: "Monthly Active Users",
     desc: "Scaled platform usage through aggressive product optimisation and organic growth loops.",
     delay: "0s",
+    slug: "carinfo-45m-mau",
   },
   {
     index: "02",
@@ -16,6 +19,7 @@ const impacts = [
     label: "Revenue Growth · 1 Year",
     desc: "Redesigned the entire purchase flow and monetisation levers for exponential revenue scale.",
     delay: "0.1s",
+    slug: "insurance-funnel-1200-growth",
   },
   {
     index: "03",
@@ -24,6 +28,7 @@ const impacts = [
     label: "Monthly Transactions",
     desc: "Built a high-reliability CRM handling massive challan transaction volume end-to-end.",
     delay: "0.2s",
+    slug: "crm-180k-transactions",
   },
   {
     index: "04",
@@ -32,6 +37,7 @@ const impacts = [
     label: "CAC Reduction",
     desc: "Optimised marketing funnels and landing pages to drastically cut acquisition costs.",
     delay: "0.3s",
+    slug: "user-acquisition-cac-30",
   },
 ];
 
@@ -126,59 +132,65 @@ export default function Impact() {
           className={rowsVisible ? "impact-rows-visible" : ""}
         >
           {impacts.map((item, i) => (
-            <div
-              key={i}
-              className="impact-row group"
-              style={{ animationDelay: item.delay }}
-            >
-              {/* Row layout */}
-              <div className="relative grid grid-cols-[32px_1fr] md:grid-cols-[48px_180px_1fr_320px] gap-x-6 md:gap-x-10 items-center py-8 hover:bg-white/[0.025] transition-colors duration-200 px-2 -mx-2 rounded-lg">
+            <Link key={i} href={`/case-study/${item.slug}`}>
+              <div
+                className="impact-row group cursor-pointer"
+                style={{ animationDelay: item.delay }}
+              >
+                {/* Row layout */}
+                <div className="relative grid grid-cols-[32px_1fr] md:grid-cols-[48px_180px_1fr_280px_44px] gap-x-6 md:gap-x-10 items-center py-8 hover:bg-white/[0.025] transition-colors duration-200 px-2 -mx-2 rounded-lg">
 
-                {/* Index */}
-                <span className="text-xs font-mono text-white/20 group-hover:text-primary/40 transition-colors self-start mt-1 md:mt-0 md:self-center">
-                  {item.index}
-                </span>
-
-                {/* Company — hidden on mobile row 1 */}
-                <div className="hidden md:flex flex-col justify-center">
-                  <span className="text-[11px] font-bold tracking-widest uppercase text-white/35 group-hover:text-white/55 transition-colors">
-                    {item.company}
-                  </span>
-                </div>
-
-                {/* Metric — the visual hero */}
-                <div className="col-span-1 md:col-span-1 flex flex-col gap-0.5">
-                  {/* Company label on mobile */}
-                  <span className="text-[10px] font-bold tracking-widest uppercase text-white/30 md:hidden mb-1">
-                    {item.company}
+                  {/* Index */}
+                  <span className="text-xs font-mono text-white/20 group-hover:text-primary/40 transition-colors self-start mt-1 md:mt-0 md:self-center">
+                    {item.index}
                   </span>
 
-                  <span
-                    className="impact-num font-serif font-bold text-primary leading-none"
-                    style={{
-                      fontSize: "clamp(3rem, 6vw, 5rem)",
-                      textShadow: "0 0 60px rgba(37,99,235,0.5), 0 0 120px rgba(37,99,235,0.2)",
-                      animationDelay: item.delay,
-                    }}
-                  >
-                    {item.metric}
-                  </span>
+                  {/* Company — hidden on mobile */}
+                  <div className="hidden md:flex flex-col justify-center">
+                    <span className="text-[11px] font-bold tracking-widest uppercase text-white/35 group-hover:text-white/55 transition-colors">
+                      {item.company}
+                    </span>
+                  </div>
+
+                  {/* Metric — the visual hero */}
+                  <div className="col-span-1 md:col-span-1 flex flex-col gap-0.5">
+                    {/* Company label on mobile */}
+                    <span className="text-[10px] font-bold tracking-widest uppercase text-white/30 md:hidden mb-1">
+                      {item.company}
+                    </span>
+
+                    <span
+                      className="impact-num font-serif font-bold text-primary leading-none"
+                      style={{
+                        fontSize: "clamp(3rem, 6vw, 5rem)",
+                        textShadow: "0 0 60px rgba(37,99,235,0.5), 0 0 120px rgba(37,99,235,0.2)",
+                        animationDelay: item.delay,
+                      }}
+                    >
+                      {item.metric}
+                    </span>
+                  </div>
+
+                  {/* Label + desc */}
+                  <div className="col-start-2 col-end-3 md:col-auto mt-2 md:mt-0 flex flex-col justify-center">
+                    <p className="text-white/80 font-semibold text-sm md:text-base leading-snug mb-1.5 group-hover:text-white transition-colors">
+                      {item.label}
+                    </p>
+                    <p className="text-white/35 text-xs md:text-sm leading-relaxed line-clamp-2">
+                      {item.desc}
+                    </p>
+                  </div>
+
+                  {/* Arrow — desktop only */}
+                  <div className="hidden md:flex items-center justify-center">
+                    <ArrowRight className="h-4 w-4 text-white/15 group-hover:text-primary group-hover:translate-x-1 transition-all duration-200" />
+                  </div>
                 </div>
 
-                {/* Label + desc */}
-                <div className="col-start-2 col-end-3 md:col-auto mt-2 md:mt-0 flex flex-col justify-center">
-                  <p className="text-white/80 font-semibold text-sm md:text-base leading-snug mb-1.5">
-                    {item.label}
-                  </p>
-                  <p className="text-white/35 text-xs md:text-sm leading-relaxed line-clamp-2">
-                    {item.desc}
-                  </p>
-                </div>
+                {/* Divider */}
+                <div className="h-px bg-white/[0.07] group-hover:bg-white/[0.12] transition-colors" />
               </div>
-
-              {/* Divider */}
-              <div className="h-px bg-white/[0.07] group-hover:bg-white/[0.12] transition-colors" />
-            </div>
+            </Link>
           ))}
         </div>
 
