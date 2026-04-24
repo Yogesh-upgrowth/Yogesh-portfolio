@@ -11,6 +11,7 @@ const CaseStudyDetail = lazy(() => import("@/pages/case-study"));
 const ContactPage = lazy(() => import("@/pages/contact"));
 const Work = lazy(() => import("@/pages/work"));
 const BlogPost = lazy(() => import("@/pages/blog-post"));
+const CompanyStory = lazy(() => import("@/pages/company-story"));
 
 // Minimal loading fallback
 function PageLoader() {
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/case-study/:slug" component={() => <Suspense fallback={<PageLoader />}><CaseStudyDetail /></Suspense>} />
       <Route path="/contact" component={() => <Suspense fallback={<PageLoader />}><ContactPage /></Suspense>} />
       <Route path="/work" component={() => <Suspense fallback={<PageLoader />}><Work /></Suspense>} />
+      <Route path="/work/:slug" component={() => <Suspense fallback={<PageLoader />}><CompanyStory /></Suspense>} />
       <Route component={NotFound} />
     </Switch>
   );
