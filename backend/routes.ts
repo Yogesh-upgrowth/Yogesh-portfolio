@@ -12,5 +12,19 @@ export async function registerRoutes(
   // use storage to perform CRUD operations on the storage interface
   // e.g. storage.insertUser(user) or storage.getUserByUsername(username)
 
+
+  // Test route
+  app.get("/api/test", (req, res) => {
+    res.json({ message: "API working 🚀" });
+  });
+
+  // Example users route
+  app.get("/api/users", (req, res) => {
+    res.json([
+      { id: 1, name: "Yogesh" },
+      { id: 2, name: "Test User" }
+    ]);
+  });
+
   return httpServer;
 }
