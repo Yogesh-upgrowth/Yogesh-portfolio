@@ -1,0 +1,90 @@
+import { Button } from "@/components/ui/button";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
+import profileImage from "@assets/yogesh-profile.png";
+import { Link } from "wouter";
+
+export default function Hero() {
+  return (
+    <section className="relative overflow-hidden bg-background pt-24 pb-12 md:pt-28 md:pb-16">
+      {/* CSS-only background — zero GPU cost, pure CSS gradient */}
+      <div
+        className="absolute inset-0 -z-10 pointer-events-none"
+        style={{
+          background:
+            "radial-gradient(ellipse 60% 50% at 90% 0%, hsl(221 83% 53% / 0.06) 0%, transparent 70%), " +
+            "radial-gradient(ellipse 40% 35% at 20% 100%, hsl(217 91% 60% / 0.04) 0%, transparent 65%)",
+        }}
+      />
+
+      <div className="container px-4 md:px-6 mx-auto">
+        <div className="flex flex-col md:flex-row items-center gap-8 md:gap-16">
+
+          {/* Profile image */}
+          <div className="relative shrink-0 hero-image">
+            {/* Static ring — no blur, no pulse, pure CSS border */}
+            <div className="absolute -inset-2 rounded-full bg-gradient-to-br from-primary via-blue-400 to-primary opacity-50" />
+            <div className="absolute -top-2 -right-2 w-4 h-4 bg-primary rounded-full shadow-lg z-20" />
+            <div className="absolute -bottom-1 -left-3 w-3 h-3 bg-blue-400 rounded-full shadow-lg z-20" />
+            <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl z-10 bg-muted">
+              <img
+                src={profileImage}
+                alt="Yogesh Yadav"
+                width="224"
+                height="224"
+                className="w-full h-full object-cover"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
+              />
+            </div>
+          </div>
+
+          <div className="flex-1 space-y-5 text-center md:text-left mt-5 mb-5">
+            {/* Badge */}
+            <div className="hero-badge inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary">
+              <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse" />
+              Available for new projects
+            </div>
+
+            {/* Headline */}
+            <h1 className="hero-title text-3xl md:text-5xl font-serif font-bold tracking-tight text-foreground leading-[1.1]">
+              I help <span className="text-primary">consumer</span> &{" "}
+              <span className="text-primary">B2B products</span> grow revenue, retention, and scale.
+            </h1>
+
+            {/* Subtext */}
+            <p className="hero-sub text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto md:mx-0 leading-relaxed">
+              <strong className="text-foreground">Yogesh Yadav</strong> — Product Leader with 9+ years across Fintech, Mobility, SaaS & Marketplaces.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="hero-cta flex flex-col sm:flex-row gap-3 justify-center md:justify-start pt-2 pb-2">
+              <Button size="lg" className="text-base px-6 py-5 rounded-full hover-press" asChild>
+                <Link href="/contact">Work with me <ArrowRight className="ml-2 h-5 w-5" /></Link>
+              </Button>
+              <Button variant="outline" size="lg" className="text-base px-6 py-5 rounded-full hover-press" asChild>
+                <Link href="/blog">Read my thinking</Link>
+              </Button>
+            </div>
+
+            {/* Trust tags */}
+            <div className="hero-tags pt-2 flex items-center justify-center md:justify-start gap-6 text-sm text-muted-foreground">
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-primary" />
+                <span>Strategy</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-primary" />
+                <span>Growth</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle2 className="h-4 w-4 text-primary" />
+                <span>Monetisation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
