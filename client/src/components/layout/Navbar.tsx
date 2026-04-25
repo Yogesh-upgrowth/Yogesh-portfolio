@@ -39,7 +39,7 @@ export default function Navbar() {
     >
       <div className="container px-4 md:px-6 mx-auto flex items-center justify-between">
         <Link href="/" className="text-2xl font-serif font-bold tracking-tight">
-          Yogesh Yadav<span className="text-primary">.</span>
+          Yogesh Y<span className="text-primary">.</span>
         </Link>
 
         {/* Desktop Nav */}
