@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, ArrowUpRight, CheckCircle2, XCircle, Target, TrendingUp, Users, Zap, Brain, BarChart3 } from "lucide-react";
+import { Seo, breadcrumbSchema } from "@/lib/seo";
 
 /* ── Utility hook ─────────────────────────────────────────── */
 function useInView(threshold = 0.12) {
@@ -164,6 +165,16 @@ function RevealRows({ children, className = "" }: { children: React.ReactNode; c
 export default function Work() {
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
+      <Seo
+        title="Work With Me | Product Growth & Monetisation Consulting | Yogesh Yadav"
+        description="Hire Yogesh Yadav — Product Growth & Monetisation Consultant. 9+ years scaling Fintech, Mobility and Consumer Internet products. Advisory, hands-on execution and ongoing partnerships for founders past the honeymoon phase."
+        path="/work"
+        keywords="hire product manager, product growth consultant, fintech consultant, monetisation expert, growth advisor India"
+        schema={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Work With Me", path: "/work" },
+        ])}
+      />
       <style>{ANIM_CSS}</style>
       <Navbar />
       <main id="main-content" className="flex-grow">
@@ -186,9 +197,9 @@ export default function Work() {
                 </div>
 
                 <h1 className="wv d1 text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.1] text-foreground mb-6">
-                  Let's Build Products<br />
-                  That Don't Break<br />
-                  <span className="text-primary">at Scale.</span>
+                  Product Growth &amp; Monetisation<br />
+                  Consulting for <span className="text-primary">Fintech,<br />
+                  SaaS &amp; Consumer Internet</span>
                 </h1>
 
                 <p className="wv d2 text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
