@@ -10,6 +10,14 @@ The website features a modern, conversion-focused design with a hero section, se
 
 Preferred communication style: Simple, everyday language.
 
+### Active Source Folders (IMPORTANT)
+- **`frontend/`** → active frontend (source of truth). All frontend work goes here.
+- **`backend/`** → active backend (source of truth). All backend work goes here.
+- **`client/`** → DEPRECATED legacy. Do NOT modify unless explicitly requested.
+- **`server/`** → DEPRECATED legacy. Do NOT modify unless explicitly requested.
+
+For all future code changes (refactors, fixes, SEO, UI, dependency updates, features): verify the file path belongs to `frontend/` or `backend/` before editing. If logic only exists in `client/` or `server/`, migrate it into the equivalent `frontend/` or `backend/` file rather than editing the legacy folders.
+
 ## System Architecture
 
 ### Frontend Architecture
