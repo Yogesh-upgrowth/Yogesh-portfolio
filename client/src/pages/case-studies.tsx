@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import { ArrowRight } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import { useInView } from "@/hooks/useInView";
+import { Seo, breadcrumbSchema } from "@/lib/seo";
 
 const allCategories = ["All", "Growth", "Product", "Machine Learning", "Design", "SEO"];
 
@@ -94,7 +95,18 @@ export default function CaseStudies() {
 
   return (
     <div className="min-h-screen bg-background font-sans text-foreground">
+      <Seo
+        title="Case Studies | 30+ Real Product Growth, Fintech & SEO Stories | Yogesh Yadav"
+        description="30+ in-depth case studies on product growth, fintech, monetisation, ML, SEO and consumer internet. Real numbers, real frameworks, real failures. By Yogesh Yadav."
+        path="/case-studies"
+        keywords="product case studies, fintech growth case studies, SEO case studies, growth marketing examples, ML product case studies"
+        schema={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Case Studies", path: "/case-studies" },
+        ])}
+      />
       <Navbar />
+      <main id="main-content">
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 overflow-hidden">
@@ -119,9 +131,9 @@ export default function CaseStudies() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-serif font-bold text-foreground mb-6 leading-[1.1] tracking-tight">
-            Deep dives into<br />
-            <span className="text-primary">product, growth,</span><br />
-            and monetisation
+            Product, Growth &amp; Monetisation<br />
+            <span className="text-primary">Case Studies</span> from<br />
+            Fintech, SaaS &amp; Consumer Tech
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">
@@ -193,6 +205,7 @@ export default function CaseStudies() {
           </div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>

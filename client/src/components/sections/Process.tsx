@@ -83,7 +83,7 @@ export default function Process() {
                     <div className="flex-1 min-w-0">
                       <div className="flex items-start justify-between gap-3">
                         <div className="flex-1">
-                          <h4 className="text-lg font-bold mb-1">{step.title}</h4>
+                          <h3 className="text-lg font-bold mb-1">{step.title}</h3>
                           <p className={`text-sm transition-colors ${
                             activeIndex === i ? "text-foreground font-medium" : "text-muted-foreground"
                           }`}>{step.headline}</p>

@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Clock, Calendar, User } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import NotFound from "@/pages/not-found";
+import { Seo, articleSchema, breadcrumbSchema, toIsoDate } from "@/lib/seo";
 
 // ── Proof / Impact case studies ───────────────────────────────────────────────
 const CarInfo45mContent = lazy(() => import("@/pages/cs-carinfo-45m-content"));
@@ -232,7 +233,7 @@ function FullWriteup({ slug }: { slug: string }) {
     </div>
   );
 
-  const componentMap: Record<string, React.LazyExoticComponent<() => JSX.Element>> = {
+  const componentMap: Record<string, React.LazyExoticComponent<React.ComponentType<any>>> = {
     "carinfo-45m-mau": CarInfo45mContent,
     "insurance-funnel-1200-growth": InsuranceFunnel1200Content,
     "crm-180k-transactions": Crm180kContent,
@@ -427,6 +428,29 @@ export default function CaseStudyDetail() {
 
   return (
     <>
+      <Seo
+        title={`${study.title} | Case Study by Yogesh Yadav`}
+        description={study.description}
+        path={`/case-study/${study.slug}`}
+        type="article"
+        publishedAt={toIsoDate(study.date)}
+        keywords={`${study.category}, ${study.tags.join(", ")}, product case study`}
+        schema={[
+          articleSchema({
+            title: study.title,
+            description: study.description,
+            path: `/case-study/${study.slug}`,
+            publishedAt: toIsoDate(study.date),
+            author: "Yogesh Yadav",
+            section: study.category,
+          }),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Case Studies", path: "/case-studies" },
+            { name: study.title, path: `/case-study/${study.slug}` },
+          ]),
+        ]}
+      />
       {isFullWriteup && <ReadingProgress />}
       <div className="min-h-screen bg-background font-sans text-foreground">
         <Navbar />
@@ -474,7 +498,7 @@ export default function CaseStudyDetail() {
 
           <div className="flex gap-12 items-start">
             {isFullWriteup && <TableOfContents slug={slug} />}
-            <main className="flex-1 min-w-0" style={{ fontSize: "17px", lineHeight: "1.85" }}>
+            <main id="main-content" className="flex-1 min-w-0" style={{ fontSize: "17px", lineHeight: "1.85" }}>
               {isFullWriteup ? (
                 <FullWriteup slug={slug} />
               ) : (

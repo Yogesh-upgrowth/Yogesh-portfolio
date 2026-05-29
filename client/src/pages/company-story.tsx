@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Clock, User } from "lucide-react";
 import NotFound from "@/pages/not-found";
+import { Seo, articleSchema, breadcrumbSchema } from "@/lib/seo";
 
 const LoanwiserStory  = lazy(() => import("@/pages/story-loanwiser"));
 const CarInfoStory    = lazy(() => import("@/pages/story-carinfo"));
@@ -15,7 +16,7 @@ const stories: Record<string, {
   title: string; company: string; role: string; category: string;
   metric: string; metricLabel: string; readTime: string;
   image: string; tagline: string;
-  component: React.LazyExoticComponent<() => JSX.Element>;
+  component: React.LazyExoticComponent<React.ComponentType<any>>;
   toc: { id: string; label: string }[];
 }> = {
   loanwiser: {
@@ -211,6 +212,29 @@ export default function CompanyStoryPage() {
 
   return (
     <>
+      <Seo
+        title={`${story.title} | ${story.company} | Yogesh Yadav`}
+        description={story.tagline}
+        path={`/work/${slug}`}
+        type="article"
+        publishedAt="2025-01-01"
+        keywords={`${story.company}, ${story.category}, product case study, ${story.role}`}
+        schema={[
+          articleSchema({
+            title: story.title,
+            description: story.tagline,
+            path: `/work/${slug}`,
+            publishedAt: "2025-01-01",
+            author: "Yogesh Yadav",
+            section: story.category,
+          }),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Work With Me", path: "/work" },
+            { name: story.company, path: `/work/${slug}` },
+          ]),
+        ]}
+      />
       <ReadingProgress />
       <div className="min-h-screen bg-background font-sans text-foreground">
         <Navbar />
@@ -258,7 +282,7 @@ export default function CompanyStoryPage() {
 
           <div className="flex gap-12 items-start">
             <TableOfContents items={toc} />
-            <main className="flex-1 min-w-0" style={{ fontSize: "17px", lineHeight: "1.9" }}>
+            <main id="main-content" className="flex-1 min-w-0" style={{ fontSize: "17px", lineHeight: "1.9" }}>
               <Suspense fallback={
                 <div className="animate-pulse space-y-4">
                   {[...Array(10)].map((_, i) => (

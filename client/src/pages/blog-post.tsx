@@ -6,6 +6,7 @@ import { getPostContent } from "@/lib/blog-content";
 import { ArrowLeft, Clock, Calendar, Share2, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NotFound from "@/pages/not-found";
+import { Seo, articleSchema, breadcrumbSchema } from "@/lib/seo";
 
 export default function BlogPost() {
   const [match, params] = useRoute("/blog/:slug");
@@ -19,8 +20,31 @@ export default function BlogPost() {
 
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
+      <Seo
+        title={`${post.title} | Yogesh Yadav`}
+        description={post.description}
+        path={`/blog/${post.slug}`}
+        type="article"
+        publishedAt={post.date}
+        keywords={`${post.category}, product management, ${post.title.toLowerCase()}`}
+        schema={[
+          articleSchema({
+            title: post.title,
+            description: post.description,
+            path: `/blog/${post.slug}`,
+            publishedAt: post.date,
+            author: post.author || "Yogesh Yadav",
+            section: post.category,
+          }),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Blog", path: "/blog" },
+            { name: post.title, path: `/blog/${post.slug}` },
+          ]),
+        ]}
+      />
       <Navbar />
-      <main className="flex-grow pt-32 pb-24">
+      <main id="main-content" className="flex-grow pt-32 pb-24">
         <article className="container px-4 md:px-6 mx-auto max-w-3xl">
           
           {/* Back Link */}
@@ -45,9 +69,13 @@ export default function BlogPost() {
             <div className="aspect-[2/1] w-full rounded-2xl overflow-hidden mb-12 border border-border/50 bg-muted">
               <img 
                 src={post.image} 
-                alt={post.title} 
+                alt={`${post.title} — ${post.category} article by Yogesh Yadav`}
                 className="w-full h-full object-cover"
                 loading="eager"
+                decoding="async"
+                fetchPriority="high"
+                width={1200}
+                height={600}
               />
             </div>
           </header>

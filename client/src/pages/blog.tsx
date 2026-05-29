@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Link } from "wouter";
 import { ArrowRight, Clock, BookOpen, Pen } from "lucide-react";
+import { Seo, breadcrumbSchema } from "@/lib/seo";
 import {
   BLOG_CATEGORIES,
   BLOG_POSTS,
@@ -201,8 +202,18 @@ export default function Blog() {
 
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
+      <Seo
+        title="Blog | Product Management, Growth, AI & SEO Essays | Yogesh Yadav"
+        description="Long-form essays on product management, growth, AI in product, monetisation, SEO strategy and building consumer tech in India. By Yogesh Yadav — Product Growth & Monetisation Consultant."
+        path="/blog"
+        keywords="product management blog, fintech growth, AI product management, SEO strategy, growth marketing, India product"
+        schema={breadcrumbSchema([
+          { name: "Home", path: "/" },
+          { name: "Blog", path: "/blog" },
+        ])}
+      />
       <Navbar />
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow">
 
         {/* ── Hero: asymmetric 2-col ─────────────────────────────── */}
         <section className="relative pt-28 pb-0 overflow-hidden">
@@ -222,8 +233,9 @@ export default function Blog() {
                 </div>
 
                 <h1 className="font-serif font-bold text-4xl md:text-5xl xl:text-[3.5rem] leading-[1.08] tracking-tight text-foreground mb-5">
-                  Product thinking,<br />
-                  <span className="text-primary">made practical.</span>
+                  Product Management, Growth<br />
+                  &amp; Monetisation <span className="text-primary">Essays<br />
+                  by Yogesh Yadav</span>
                 </h1>
 
                 <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-lg">

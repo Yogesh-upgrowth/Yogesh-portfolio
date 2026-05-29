@@ -56,9 +56,9 @@ function PopularCard({ post }: { post: BlogPost }) {
         />
       </div>
       <span className="text-xs font-medium text-primary">{post.category}</span>
-      <h4 className="text-base font-bold mt-1 group-hover:text-primary transition-colors line-clamp-2">
+      <h3 className="text-base font-bold mt-1 group-hover:text-primary transition-colors line-clamp-2">
         {post.title}
-      </h4>
+      </h3>
       <span className="text-xs text-muted-foreground mt-2 block">{post.readTime}</span>
     </Link>
   );

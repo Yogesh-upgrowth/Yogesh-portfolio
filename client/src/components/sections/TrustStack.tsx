@@ -91,9 +91,9 @@ export default function TrustStack() {
               }`}>
                 <span className="text-lg font-bold">1</span>
               </div>
-              <h4 className={`font-bold transition-colors ${
+              <h3 className={`font-bold transition-colors ${
                 activeSection === 'belief' ? 'text-primary' : 'text-foreground'
-              }`}>Belief</h4>
+              }`}>Belief</h3>
               <p className="text-xs text-muted-foreground mt-1 hidden sm:block">Why I build differently</p>
             </button>
 
@@ -114,9 +114,9 @@ export default function TrustStack() {
               }`}>
                 <span className="text-lg font-bold">2</span>
               </div>
-              <h4 className={`font-bold transition-colors ${
+              <h3 className={`font-bold transition-colors ${
                 activeSection === 'capability' ? 'text-primary' : 'text-foreground'
-              }`}>Capability</h4>
+              }`}>Capability</h3>
               <p className="text-xs text-muted-foreground mt-1 hidden sm:block">What I bring to the table</p>
             </button>
 
@@ -137,9 +137,9 @@ export default function TrustStack() {
               }`}>
                 <span className="text-lg font-bold">3</span>
               </div>
-              <h4 className={`font-bold transition-colors ${
+              <h3 className={`font-bold transition-colors ${
                 activeSection === 'execution' ? 'text-primary' : 'text-foreground'
-              }`}>Execution</h4>
+              }`}>Execution</h3>
               <p className="text-xs text-muted-foreground mt-1 hidden sm:block">How I deliver outcomes</p>
             </button>
           </div>
@@ -205,7 +205,7 @@ export default function TrustStack() {
                   <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
                     <Compass className="h-6 w-6 text-primary group-hover:text-white" />
                   </div>
-                  <h4 className="font-bold text-lg text-foreground mb-2">Product Strategy</h4>
+                  <h3 className="font-bold text-lg text-foreground mb-2">Product Strategy</h3>
                   <p className="text-sm text-muted-foreground">Clear roadmaps aligned with business goals</p>
                 </div>
                 
@@ -213,7 +213,7 @@ export default function TrustStack() {
                   <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
                     <TrendingUp className="h-6 w-6 text-primary group-hover:text-white" />
                   </div>
-                  <h4 className="font-bold text-lg text-foreground mb-2">Growth</h4>
+                  <h3 className="font-bold text-lg text-foreground mb-2">Growth</h3>
                   <p className="text-sm text-muted-foreground">Higher conversions, lower CAC</p>
                 </div>
                 
@@ -221,7 +221,7 @@ export default function TrustStack() {
                   <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
                     <DollarSign className="h-6 w-6 text-primary group-hover:text-white" />
                   </div>
-                  <h4 className="font-bold text-lg text-foreground mb-2">Monetisation</h4>
+                  <h3 className="font-bold text-lg text-foreground mb-2">Monetisation</h3>
                   <p className="text-sm text-muted-foreground">Sustainable revenue streams</p>
                 </div>
                 
@@ -229,7 +229,7 @@ export default function TrustStack() {
                   <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
                     <Layers className="h-6 w-6 text-primary group-hover:text-white" />
                   </div>
-                  <h4 className="font-bold text-lg text-foreground mb-2">Platform Scaling</h4>
+                  <h3 className="font-bold text-lg text-foreground mb-2">Platform Scaling</h3>
                   <p className="text-sm text-muted-foreground">Scale 10x without breaking</p>
                 </div>
               </div>
@@ -271,9 +271,9 @@ export default function TrustStack() {
 
               {/* Active step content */}
               <div className="max-w-2xl mx-auto bg-muted/30 rounded-2xl p-6 md:p-8 border border-border">
-                <h4 className="text-xl font-bold text-foreground mb-2">
+                <h3 className="text-xl font-bold text-foreground mb-2">
                   {executionSteps[activeStep].title}
-                </h4>
+                </h3>
                 <p className="text-primary font-medium mb-4">
                   {executionSteps[activeStep].headline}
                 </p>

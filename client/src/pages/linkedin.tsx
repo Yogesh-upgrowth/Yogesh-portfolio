@@ -2,19 +2,32 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Linkedin as LinkedinIcon, ArrowRight } from "lucide-react";
+import { Seo, breadcrumbSchema } from "@/lib/seo";
 
 export default function Linkedin() {
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
+      <Seo
+        title="Connect on LinkedIn — Yogesh Yadav, Product Growth & Monetisation Consultant"
+        description="Follow Yogesh Yadav on LinkedIn for practical product, growth, and monetisation breakdowns from 9+ years in Fintech, Mobility, Marketplaces, and SaaS."
+        path="/linkedin"
+        keywords="Yogesh Yadav LinkedIn, product manager LinkedIn, growth consultant LinkedIn, product breakdowns"
+        schema={[
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "LinkedIn", path: "/linkedin" },
+          ]),
+        ]}
+      />
       <Navbar />
-      <main className="flex-grow flex items-center justify-center py-24 px-4">
+      <main id="main-content" className="flex-grow flex items-center justify-center py-24 px-4">
         <div className="max-w-2xl w-full text-center space-y-8">
           <div className="h-20 w-20 bg-[#0077b5]/10 text-[#0077b5] rounded-full flex items-center justify-center mx-auto mb-8">
             <LinkedinIcon className="h-10 w-10" />
           </div>
           
           <h1 className="text-4xl md:text-6xl font-serif font-bold tracking-tight">
-            Connect on LinkedIn
+            Yogesh Yadav on LinkedIn — Product, Growth &amp; Monetisation Insights
           </h1>
           
           <p className="text-xl text-muted-foreground leading-relaxed max-w-xl mx-auto">

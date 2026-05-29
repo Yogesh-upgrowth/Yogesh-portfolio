@@ -1,0 +1,309 @@
+You are now acting as a Senior SEO Engineer + Senior Frontend Performance Engineer + Technical SEO Architect.
+
+I already have an existing website hosted on Replit:
+https://pmyogesh.com
+
+Your job is to FULLY optimize the website for:
+
+1. Google SEO
+2. AI Search Optimization
+3. Mobile SEO
+4. Technical SEO
+5. Core Web Vitals
+6. Page Speed
+7. Structured Data
+8. Indexing
+9. Personal Branding SEO
+10. Organic Traffic Growth
+
+IMPORTANT:
+
+* Do NOT break the existing design.
+* Do NOT redesign the website unless absolutely necessary.
+* Preserve current branding and aesthetics.
+* Only improve structure, metadata, speed, SEO, accessibility, and performance.
+* Execute ALL fixes automatically in one go.
+* After every change, verify the website still works.
+
+========================================
+PHASE 1 — FULL SEO AUDIT
+========================
+
+First scan the entire website and identify:
+
+* Missing title tags
+* Duplicate title tags
+* Missing meta descriptions
+* Missing H1 tags
+* Incorrect heading hierarchy
+* Missing alt text
+* Broken links
+* Missing canonical tags
+* Missing Open Graph tags
+* Missing Twitter cards
+* Missing schema markup
+* Slow loading assets
+* Large images
+* Unused CSS/JS
+* Accessibility issues
+* Mobile responsiveness problems
+* Core Web Vitals issues
+* Crawlability issues
+* Indexing issues
+
+Generate a detailed internal report and automatically fix all issues.
+
+========================================
+PHASE 2 — TECHNICAL SEO OPTIMIZATION
+====================================
+
+Implement ALL of the following:
+
+1. Dynamic SEO Metadata
+
+* Add optimized title tags
+* Add meta descriptions
+* Add canonical URLs
+* Add robots meta tags
+
+2. Open Graph + Social Sharing
+   Add:
+
+* og:title
+* og:description
+* og:image
+* og:url
+* twitter:card
+* twitter:title
+* twitter:description
+* twitter:image
+
+3. Sitemap + Robots
+   Generate:
+
+* sitemap.xml
+* robots.txt
+
+Ensure proper indexing rules.
+
+4. Structured Data (VERY IMPORTANT)
+   Implement JSON-LD schema:
+
+* Person Schema
+* Organization Schema
+* Website Schema
+* Breadcrumb Schema
+* Article Schema (for blogs)
+* FAQ Schema where relevant
+
+Use my identity as:
+Name: Yogesh
+Website: https://pmyogesh.com
+
+Position me as:
+
+* Product Manager
+* Growth Builder
+* Fintech Expert
+* SEO Strategist
+* Consumer Internet Builder
+
+5. Improve URL Structure
+   Make URLs SEO friendly.
+
+Example:
+Instead of:
+/page?id=123
+
+Use:
+/fintech-growth-strategy
+
+========================================
+PHASE 3 — CORE WEB VITALS OPTIMIZATION
+======================================
+
+Improve:
+
+* LCP
+* CLS
+* INP
+
+Target:
+
+* LCP under 2.5s
+* CLS under 0.1
+* INP under 200ms
+
+Implement:
+
+* Lazy loading
+* Image compression
+* Modern image formats (WebP/AVIF)
+* Code splitting
+* Asset minification
+* Deferred JS loading
+* Font optimization
+* Remove unused CSS
+* Reduce render blocking resources
+* CDN optimization if possible
+* Preload important assets
+* Browser caching
+
+========================================
+PHASE 4 — MOBILE SEO OPTIMIZATION
+=================================
+
+Ensure:
+
+* Perfect mobile responsiveness
+* Proper touch spacing
+* Fast mobile load speed
+* Responsive typography
+* Responsive images
+* Mobile-first optimization
+
+Fix ALL mobile usability issues.
+
+========================================
+PHASE 5 — CONTENT SEO OPTIMIZATION
+==================================
+
+Optimize homepage copy for ranking.
+
+Target keywords naturally:
+
+* Product Manager India
+* Fintech Product Expert
+* SEO Strategist
+* Consumer Tech Builder
+* Growth Marketing
+* Fintech SEO
+* Product Growth
+* Comparison Platform Expert
+
+Do NOT keyword stuff.
+
+Add:
+
+* Strong H1
+* Proper H2 hierarchy
+* Semantic content structure
+
+========================================
+PHASE 6 — INTERNAL LINKING
+==========================
+
+Improve internal linking across the site.
+
+Create strong topical clusters around:
+
+* Fintech
+* Product Management
+* SEO
+* Consumer Apps
+* Growth
+* Aggregator Platforms
+
+========================================
+PHASE 7 — BLOG SYSTEM
+=====================
+
+If a blog system does not exist:
+
+* Create a lightweight SEO-friendly blog system.
+
+Create starter blog pages:
+
+1. Building Consumer Tech Products in India
+2. SEO Lessons from Scaling Platforms
+3. Product Growth Strategies
+4. Fintech UX and Conversion Optimization
+5. How Comparison Platforms Scale
+
+Each blog must include:
+
+* SEO metadata
+* Schema
+* Featured image support
+* Internal linking
+* Social sharing optimization
+
+========================================
+PHASE 8 — AI SEARCH OPTIMIZATION
+================================
+
+Optimize for:
+
+* ChatGPT discoverability
+* Gemini discoverability
+* Perplexity discoverability
+* AI snippets
+
+Implement:
+
+* Clear semantic structure
+* Entity-based SEO
+* FAQ sections
+* Structured data
+* Clean HTML hierarchy
+* Descriptive headings
+
+========================================
+PHASE 9 — ACCESSIBILITY
+=======================
+
+Improve accessibility:
+
+* ARIA labels
+* Keyboard navigation
+* Contrast issues
+* Alt tags
+* Semantic HTML
+
+Target Lighthouse accessibility score above 90.
+
+========================================
+PHASE 10 — ANALYTICS + SEARCH CONSOLE
+=====================================
+
+Prepare integrations for:
+
+* Google Analytics
+* Google Search Console
+* Microsoft Clarity
+
+If placeholders are needed, create environment variable support.
+
+========================================
+PHASE 11 — FINAL VALIDATION
+===========================
+
+After everything:
+
+1. Run Lighthouse optimization checks
+2. Run SEO validation
+3. Ensure no broken pages
+4. Ensure build succeeds
+5. Ensure mobile responsiveness works
+6. Ensure metadata is rendering correctly
+
+========================================
+FINAL OUTPUT REQUIRED
+=====================
+
+After completing all tasks:
+
+1. Give a summary of all fixes completed
+2. Show before vs after improvements
+3. Show estimated SEO score improvement
+4. Show performance improvement
+5. List all files changed
+6. Explain how to maintain SEO going forward
+
+VERY IMPORTANT:
+
+* Execute everything automatically.
+* Do NOT ask me coding questions unless absolutely necessary.
+* Use best modern SEO practices.
+* Keep the website fast, clean, and premium.
+* Prioritize SEO + speed + discoverability above everything.
