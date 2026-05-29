@@ -193,7 +193,7 @@ export default function Work() {
                     <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-60" style={{ animation: "wPulse 2s ease-in-out infinite" }} />
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
                   </span>
-                  Available for new projects
+                  Available for new Projects
                 </div>
 
                 <h1 className="wv d1 text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.1] text-foreground mb-6">
