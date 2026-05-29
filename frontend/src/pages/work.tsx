@@ -166,7 +166,7 @@ export default function Work() {
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
       <style>{ANIM_CSS}</style>
       <Navbar />
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow">
 
         {/* ── HERO ────────────────────────────────────────────── */}
         <section className="pt-28 pb-20 relative overflow-hidden bg-background">

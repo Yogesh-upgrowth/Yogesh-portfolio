@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <div className="min-h-screen font-sans text-foreground bg-background">
       <Navbar />
-      <main>
+      <main id="main-content">
         <Hero />
         <Suspense fallback={<SectionLoader />}>
           <Trust />

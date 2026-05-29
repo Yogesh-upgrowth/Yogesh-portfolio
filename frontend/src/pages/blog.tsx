@@ -202,7 +202,7 @@ export default function Blog() {
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
       <Navbar />
-      <main className="flex-grow">
+      <main id="main-content" className="flex-grow">
 
         {/* ── Hero: asymmetric 2-col ─────────────────────────────── */}
         <section className="relative pt-28 pb-0 overflow-hidden">

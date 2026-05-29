@@ -258,7 +258,7 @@ export default function CompanyStoryPage() {
 
           <div className="flex gap-12 items-start">
             <TableOfContents items={toc} />
-            <main className="flex-1 min-w-0" style={{ fontSize: "17px", lineHeight: "1.9" }}>
+            <main id="main-content" className="flex-1 min-w-0" style={{ fontSize: "17px", lineHeight: "1.9" }}>
               <Suspense fallback={
                 <div className="animate-pulse space-y-4">
                   {[...Array(10)].map((_, i) => (

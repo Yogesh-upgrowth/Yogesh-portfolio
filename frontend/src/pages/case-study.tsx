@@ -474,7 +474,7 @@ export default function CaseStudyDetail() {
 
           <div className="flex gap-12 items-start">
             {isFullWriteup && <TableOfContents slug={slug} />}
-            <main className="flex-1 min-w-0" style={{ fontSize: "17px", lineHeight: "1.85" }}>
+            <main id="main-content" className="flex-1 min-w-0" style={{ fontSize: "17px", lineHeight: "1.85" }}>
               {isFullWriteup ? (
                 <FullWriteup slug={slug} />
               ) : (

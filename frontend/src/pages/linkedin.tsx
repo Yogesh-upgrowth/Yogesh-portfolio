@@ -7,7 +7,7 @@ export default function Linkedin() {
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
       <Navbar />
-      <main className="flex-grow flex items-center justify-center py-24 px-4">
+      <main id="main-content" className="flex-grow flex items-center justify-center py-24 px-4">
         <div className="max-w-2xl w-full text-center space-y-8">
           <div className="h-20 w-20 bg-[#0077b5]/10 text-[#0077b5] rounded-full flex items-center justify-center mx-auto mb-8">
             <LinkedinIcon className="h-10 w-10" />

@@ -20,7 +20,7 @@ export default function BlogPost() {
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
       <Navbar />
-      <main className="flex-grow pt-32 pb-24">
+      <main id="main-content" className="flex-grow pt-32 pb-24">
         <article className="container px-4 md:px-6 mx-auto max-w-3xl">
           
           {/* Back Link */}
