@@ -1,0 +1,6 @@
+# robots.txt for https://pmyogesh.com
+# Allow all crawlers full access.
+User-agent: *
+Allow: /
+
+Sitemap: https://pmyogesh.com/sitemap.xml
