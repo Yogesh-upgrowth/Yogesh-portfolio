@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, Clock, User } from "lucide-react";
 import NotFound from "@/pages/not-found";
 import { Seo, articleSchema, breadcrumbSchema } from "@/lib/seo";
+import { getPageSeo } from "@shared/seo-meta";
 
 const LoanwiserStory  = lazy(() => import("@/pages/story-loanwiser"));
 const CarInfoStory    = lazy(() => import("@/pages/story-carinfo"));
@@ -209,12 +210,13 @@ export default function CompanyStoryPage() {
   if (!story) return <NotFound />;
 
   const { component: StoryContent, toc } = story;
+  const meta = getPageSeo(`/work/${slug}`);
 
   return (
     <>
       <Seo
-        title={`${story.title} | ${story.company} | Yogesh Yadav`}
-        description={story.tagline}
+        title={meta?.title ?? `${story.title} | ${story.company} | Yogesh Yadav`}
+        description={meta?.description ?? story.tagline}
         path={`/work/${slug}`}
         type="article"
         publishedAt="2025-01-01"

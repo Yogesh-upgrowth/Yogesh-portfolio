@@ -6,6 +6,9 @@ import { ArrowRight } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import { useInView } from "@/hooks/useInView";
 import { Seo, breadcrumbSchema } from "@/lib/seo";
+import { getPageSeo } from "@shared/seo-meta";
+
+const meta = getPageSeo("/case-studies")!;
 
 const allCategories = ["All", "Growth", "Product", "Machine Learning", "Design", "SEO"];
 
@@ -96,8 +99,8 @@ export default function CaseStudies() {
   return (
     <div className="min-h-screen bg-background font-sans text-foreground">
       <Seo
-        title="Case Studies | 30+ Real Product Growth, Fintech & SEO Stories | Yogesh Yadav"
-        description="30+ in-depth case studies on product growth, fintech, monetisation, ML, SEO and consumer internet. Real numbers, real frameworks, real failures. By Yogesh Yadav."
+        title={meta.title}
+        description={meta.description!}
         path="/case-studies"
         keywords="product case studies, fintech growth case studies, SEO case studies, growth marketing examples, ML product case studies"
         schema={breadcrumbSchema([

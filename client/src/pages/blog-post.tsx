@@ -7,6 +7,7 @@ import { ArrowLeft, Clock, Calendar, Share2, Linkedin, Twitter } from "lucide-re
 import { Button } from "@/components/ui/button";
 import NotFound from "@/pages/not-found";
 import { Seo, articleSchema, breadcrumbSchema } from "@/lib/seo";
+import { getPageSeo } from "@shared/seo-meta";
 
 export default function BlogPost() {
   const [match, params] = useRoute("/blog/:slug");
@@ -18,11 +19,13 @@ export default function BlogPost() {
 
   if (!post) return <NotFound />;
 
+  const meta = getPageSeo(`/blog/${post.slug}`);
+
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
       <Seo
-        title={`${post.title} | Yogesh Yadav`}
-        description={post.description}
+        title={meta?.title ?? `${post.title} | Yogesh Yadav`}
+        description={meta?.description ?? post.description}
         path={`/blog/${post.slug}`}
         type="article"
         publishedAt={post.date}

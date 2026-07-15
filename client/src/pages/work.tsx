@@ -5,6 +5,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, ArrowUpRight, CheckCircle2, XCircle, Target, TrendingUp, Users, Zap, Brain, BarChart3 } from "lucide-react";
 import { Seo, breadcrumbSchema } from "@/lib/seo";
+import { getPageSeo } from "@shared/seo-meta";
+
+const meta = getPageSeo("/work")!;
 
 /* ── Utility hook ─────────────────────────────────────────── */
 function useInView(threshold = 0.12) {
@@ -166,8 +169,8 @@ export default function Work() {
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
       <Seo
-        title="Work With Me | Product Growth & Monetisation Consulting | Yogesh Yadav"
-        description="Hire Yogesh Yadav — Product Growth & Monetisation Consultant. 9+ years scaling Fintech, Mobility and Consumer Internet products. Advisory, hands-on execution and ongoing partnerships for founders past the honeymoon phase."
+        title={meta.title}
+        description={meta.description!}
         path="/work"
         keywords="hire product manager, product growth consultant, fintech consultant, monetisation expert, growth advisor India"
         schema={breadcrumbSchema([

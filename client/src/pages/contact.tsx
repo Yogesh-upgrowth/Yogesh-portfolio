@@ -2,13 +2,16 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ContactSection from "@/components/sections/Contact";
 import { Seo, breadcrumbSchema } from "@/lib/seo";
+import { getPageSeo } from "@shared/seo-meta";
+
+const meta = getPageSeo("/contact")!;
 
 export default function ContactPage() {
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
       <Seo
-        title="Contact | Hire Yogesh Yadav for Product Growth & Monetisation"
-        description="Get in touch with Yogesh Yadav for product growth, monetisation, SEO strategy and fintech advisory engagements. Response within 24 hours."
+        title={meta.title}
+        description={meta.description!}
         path="/contact"
         schema={breadcrumbSchema([
           { name: "Home", path: "/" },

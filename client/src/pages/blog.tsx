@@ -3,6 +3,9 @@ import Footer from "@/components/layout/Footer";
 import { Link } from "wouter";
 import { ArrowRight, Clock, BookOpen, Pen } from "lucide-react";
 import { Seo, breadcrumbSchema } from "@/lib/seo";
+import { getPageSeo } from "@shared/seo-meta";
+
+const meta = getPageSeo("/blog")!;
 import {
   BLOG_CATEGORIES,
   BLOG_POSTS,
@@ -203,8 +206,8 @@ export default function Blog() {
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
       <Seo
-        title="Blog | Product Management, Growth, AI & SEO Essays | Yogesh Yadav"
-        description="Long-form essays on product management, growth, AI in product, monetisation, SEO strategy and building consumer tech in India. By Yogesh Yadav — Product Growth & Monetisation Consultant."
+        title={meta.title}
+        description={meta.description!}
         path="/blog"
         keywords="product management blog, fintech growth, AI product management, SEO strategy, growth marketing, India product"
         schema={breadcrumbSchema([

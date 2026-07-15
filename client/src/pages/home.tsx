@@ -3,6 +3,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import { Seo, professionalServiceSchema } from "@/lib/seo";
+import { getPageSeo } from "@shared/seo-meta";
+
+const meta = getPageSeo("/")!;
 
 // Lazy load below-the-fold sections
 const Trust = lazy(() => import("@/components/sections/Trust"));
@@ -21,8 +24,8 @@ export default function Home() {
   return (
     <div className="min-h-screen font-sans text-foreground bg-background">
       <Seo
-        title="Yogesh Yadav | Product Growth & Monetisation Consultant"
-        description="Product Manager, Growth Builder and SEO Strategist with 9+ years scaling Fintech, Mobility, Marketplaces and Consumer Internet products. I help founders fix funnels, build monetisation, and grow without breaking trust."
+        title={meta.title}
+        description={meta.description!}
         path="/"
         type="profile"
         keywords="Product Manager India, Fintech Product Expert, Product Growth Consultant, SEO Strategist, Consumer Internet Builder, Monetisation Expert"

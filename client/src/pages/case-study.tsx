@@ -7,6 +7,7 @@ import { ArrowLeft, ArrowRight, Clock, Calendar, User } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import NotFound from "@/pages/not-found";
 import { Seo, articleSchema, breadcrumbSchema, toIsoDate } from "@/lib/seo";
+import { getPageSeo } from "@shared/seo-meta";
 
 // ── Proof / Impact case studies ───────────────────────────────────────────────
 const CarInfo45mContent = lazy(() => import("@/pages/cs-carinfo-45m-content"));
@@ -425,12 +426,13 @@ export default function CaseStudyDetail() {
   if (!study) return <NotFound />;
 
   const isFullWriteup = FULL_WRITEUP_SLUGS.has(slug);
+  const meta = getPageSeo(`/case-study/${study.slug}`);
 
   return (
     <>
       <Seo
-        title={`${study.title} | Case Study by Yogesh Yadav`}
-        description={study.description}
+        title={meta?.title ?? `${study.title} | Case Study by Yogesh Yadav`}
+        description={meta?.description ?? study.description}
         path={`/case-study/${study.slug}`}
         type="article"
         publishedAt={toIsoDate(study.date)}
