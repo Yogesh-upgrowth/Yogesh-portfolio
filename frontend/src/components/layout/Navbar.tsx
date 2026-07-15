@@ -57,7 +57,10 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <Button asChild>
+          <Button
+            asChild
+            className="rounded-full px-7 py-5 text-sm font-semibold shadow-md shadow-primary/20 transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 hover:-translate-y-0.5"
+          >
             <Link href="/contact">Hire Me</Link>
           </Button>
         </div>
@@ -86,7 +89,10 @@ export default function Navbar() {
                 {link.name}
               </Link>
             ))}
-            <Button className="w-full" asChild>
+            <Button
+              className="w-full rounded-full px-7 py-5 text-sm font-semibold shadow-md shadow-primary/20"
+              asChild
+            >
               <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
                 Hire Me
               </Link>

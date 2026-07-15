@@ -43,7 +43,7 @@ export default function Hero() {
             {/* Badge */}
             <div className="hero-badge inline-flex items-center rounded-full border border-primary/20 bg-primary/5 px-3 py-1 text-sm font-medium text-primary">
               <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse" />
-              Available for new projects
+              Available for new Projects
             </div>
 
             {/* Headline */}
