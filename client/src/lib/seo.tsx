@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { SITE_URL, DEFAULT_OG_IMAGE } from "@shared/seo-data";
+import { SITE_URL, DEFAULT_OG_IMAGE, OG_IMAGE_ALT } from "@shared/seo-data";
 
 interface SeoProps {
   title: string;
@@ -76,13 +76,16 @@ export function Seo({
       <meta property="og:site_name" content="Yogesh Yadav" />
       <meta property="og:locale" content="en_US" />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content={OG_IMAGE_ALT} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@replit" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
+      <meta name="twitter:image:alt" content={OG_IMAGE_ALT} />
 
       {publishedAt && (
         <meta property="article:published_time" content={publishedAt} />

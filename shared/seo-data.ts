@@ -4,7 +4,9 @@
 export const SITE_URL = "https://pmyogesh.com";
 export const SITE_NAME = "Yogesh Yadav";
 export const SITE_TAGLINE = "Product Growth & Monetisation Consultant";
-export const DEFAULT_OG_IMAGE = "https://replit.com/public/images/opengraph.png";
+export const DEFAULT_OG_IMAGE = "https://pmyogesh.com/og-image.png";
+export const OG_IMAGE_ALT =
+  "Yogesh Yadav — Product Growth & Monetisation Consultant";
 
 export const STATIC_ROUTES: { path: string; priority: number; changefreq: string }[] = [
   { path: "/",            priority: 1.0, changefreq: "weekly" },
