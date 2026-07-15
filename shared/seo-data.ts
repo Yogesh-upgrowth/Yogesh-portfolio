@@ -107,3 +107,20 @@ export const CASE_STUDY_SLUGS = [
   "ai-recommendation-engine",
   "ml-ux-growth-3x-conversion",
 ];
+
+/**
+ * The complete, de-duplicated list of route paths that should be prerendered
+ * and listed in the sitemap. Derived from the slug registries above, so adding
+ * a page there automatically flows through to prerendering, the sitemap and
+ * internal-link validation. Canonical form: no trailing slash (except "/").
+ */
+export function getAllRoutePaths(): string[] {
+  const paths = [
+    ...STATIC_ROUTES.map((r) => r.path),
+    ...WORK_STORY_SLUGS.map((s) => `/work/${s}`),
+    ...CASE_STUDY_SLUGS.map((s) => `/case-study/${s}`),
+    ...BLOG_SLUGS.map((s) => `/blog/${s}`),
+  ];
+  return Array.from(new Set(paths));
+}
+
