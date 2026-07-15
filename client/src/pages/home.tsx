@@ -27,7 +27,7 @@ export default function Home() {
         title={meta.title}
         description={meta.description!}
         path="/"
-        type="profile"
+        type="website"
         schema={homeSchema()}
       />
       <Navbar />

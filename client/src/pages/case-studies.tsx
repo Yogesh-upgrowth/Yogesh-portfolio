@@ -104,7 +104,6 @@ export default function CaseStudies() {
         title={meta.title}
         description={meta.description!}
         path="/case-studies"
-        keywords="product case studies, fintech growth case studies, SEO case studies, growth marketing examples, ML product case studies"
         schema={breadcrumbSchema([
           { name: "Home", path: "/" },
           { name: "Case Studies", path: "/case-studies" },
@@ -148,7 +147,7 @@ export default function CaseStudies() {
           {/* Stats strip */}
           <div className="inline-flex items-center gap-6 md:gap-10 bg-white/90 backdrop-blur-sm border border-border rounded-2xl px-6 md:px-10 py-4 shadow-sm mx-auto">
             {[
-              { value: "26", label: "Case Studies" },
+              { value: "30", label: "Case Studies" },
               { value: "9+", label: "Years Experience" },
               { value: "5", label: "Industries" },
             ].map(({ value, label }) => (

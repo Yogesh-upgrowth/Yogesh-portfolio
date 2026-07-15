@@ -27,7 +27,6 @@ interface SeoProps {
   publishedAt?: string;
   modifiedAt?: string;
   noindex?: boolean;
-  keywords?: string;
   schema?: object | object[];
 }
 
@@ -57,7 +56,6 @@ export function Seo({
   publishedAt,
   modifiedAt,
   noindex = false,
-  keywords,
   schema,
 }: SeoProps) {
   const url = `${SITE_URL}${normalizeCanonicalPath(path)}`;
@@ -74,7 +72,6 @@ export function Seo({
     <Helmet prioritizeSeoTags>
       <title>{title}</title>
       <meta name="description" content={description} />
-      {keywords && <meta name="keywords" content={keywords} />}
       <link rel="canonical" href={url} />
       <meta
         name="robots"

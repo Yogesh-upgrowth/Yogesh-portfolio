@@ -464,7 +464,6 @@ export default function CaseStudyDetail() {
         type="article"
         publishedAt={toIsoDate(study.date)}
         modifiedAt={modifiedAt}
-        keywords={`${study.category}, ${study.tags.join(", ")}, product case study`}
         schema={[
           articleSchema({
             title: study.title,
@@ -509,7 +508,10 @@ export default function CaseStudyDetail() {
               <div className="flex flex-wrap gap-4 text-white/70 text-sm">
                 <span className="flex items-center gap-1.5"><User className="h-4 w-4" />Yogesh Yadav</span>
                 <span className="flex items-center gap-1.5"><Clock className="h-4 w-4" />{study.readTime}</span>
-                <span className="flex items-center gap-1.5"><Calendar className="h-4 w-4" />{study.date}</span>
+                <time dateTime={toIsoDate(study.date)} className="flex items-center gap-1.5"><Calendar className="h-4 w-4" />Published {study.date}</time>
+                {modifiedAt && (
+                  <time dateTime={modifiedAt} className="flex items-center gap-1.5">Updated {modifiedAt}</time>
+                )}
                 {study.tags.map((tag) => (
                   <span key={tag} className="px-2 py-0.5 rounded-full bg-white/20 text-white text-xs font-medium">{tag}</span>
                 ))}

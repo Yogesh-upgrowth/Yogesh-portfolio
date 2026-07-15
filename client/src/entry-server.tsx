@@ -1,5 +1,5 @@
 import { prerenderToNodeStream } from "react-dom/static";
-import { HelmetProvider } from "react-helmet-async";
+import { HelmetProvider, type HelmetServerState } from "react-helmet-async";
 import { Router } from "wouter";
 import type { Readable } from "node:stream";
 import App from "./App";
@@ -23,15 +23,6 @@ export function getDataSlugs(): { blog: string[]; caseStudy: string[] } {
 // context object instead of trying to write them to document.head.
 (HelmetProvider as unknown as { canUseDOM: boolean }).canUseDOM = false;
 
-export interface HelmetState {
-  title?: { toString(): string };
-  meta?: { toString(): string };
-  link?: { toString(): string };
-  script?: { toString(): string };
-  htmlAttributes?: { toString(): string };
-  bodyAttributes?: { toString(): string };
-}
-
 export interface RenderResult {
   html: string;
   head: string;
@@ -54,7 +45,7 @@ function streamToString(stream: Readable): Promise<string> {
  * are fully resolved because prerenderToNodeStream waits for `allReady`.
  */
 export async function render(url: string): Promise<RenderResult> {
-  const helmetContext: { helmet?: HelmetState } = {};
+  const helmetContext: { helmet?: HelmetServerState } = {};
 
   const { prelude } = await prerenderToNodeStream(
     <HelmetProvider context={helmetContext}>

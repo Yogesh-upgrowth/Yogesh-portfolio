@@ -172,7 +172,6 @@ export default function Work() {
         title={meta.title}
         description={meta.description!}
         path="/work"
-        keywords="hire product manager, product growth consultant, fintech consultant, monetisation expert, growth advisor India"
         schema={breadcrumbSchema([
           { name: "Home", path: "/" },
           { name: "Work With Me", path: "/work" },

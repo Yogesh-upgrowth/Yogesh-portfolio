@@ -11,7 +11,6 @@ export default function Linkedin() {
         title="Connect on LinkedIn — Yogesh Yadav, Product Growth & Monetisation Consultant"
         description="Follow Yogesh Yadav on LinkedIn for practical product, growth, and monetisation breakdowns from 9+ years in Fintech, Mobility, Marketplaces, and SaaS."
         path="/linkedin"
-        keywords="Yogesh Yadav LinkedIn, product manager LinkedIn, growth consultant LinkedIn, product breakdowns"
         schema={[
           breadcrumbSchema([
             { name: "Home", path: "/" },

@@ -223,7 +223,6 @@ export default function CompanyStoryPage() {
         type="article"
         publishedAt="2025-01-01"
         modifiedAt={modifiedAt}
-        keywords={`${story.company}, ${story.category}, product case study, ${story.role}`}
         schema={[
           articleSchema({
             title: story.title,

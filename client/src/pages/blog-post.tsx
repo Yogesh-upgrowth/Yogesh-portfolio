@@ -65,7 +65,6 @@ export default function BlogPost() {
         type="article"
         publishedAt={post.date}
         modifiedAt={modifiedAt}
-        keywords={`${post.category}, product management, ${post.title.toLowerCase()}`}
         schema={[
           articleSchema({
             title: post.title,
@@ -106,7 +105,10 @@ export default function BlogPost() {
               <span className="bg-primary/10 text-primary px-3 py-1 rounded-full font-medium text-xs">
                 {post.category}
               </span>
-              <time dateTime={post.date} className="flex items-center"><Calendar className="mr-2 h-4 w-4" /> {formatDate(post.date)}</time>
+              <time dateTime={post.date} className="flex items-center"><Calendar className="mr-2 h-4 w-4" /> Published {formatDate(post.date)}</time>
+              {modifiedAt && (
+                <time dateTime={modifiedAt} className="flex items-center">Updated {formatDate(modifiedAt)}</time>
+              )}
               <span className="flex items-center"><Clock className="mr-2 h-4 w-4" /> {post.readTime}</span>
             </div>
             

@@ -214,7 +214,6 @@ export default function Blog() {
         title={meta.title}
         description={meta.description!}
         path="/blog"
-        keywords="product management blog, fintech growth, AI product management, SEO strategy, growth marketing, India product"
         schema={breadcrumbSchema([
           { name: "Home", path: "/" },
           { name: "Blog", path: "/blog" },
