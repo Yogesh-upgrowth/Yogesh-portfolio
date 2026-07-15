@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Clock, User } from "lucide-react";
 import NotFound from "@/pages/not-found";
-import { Seo, articleSchema, breadcrumbSchema } from "@/lib/seo";
+import { Seo, articleSchema, breadcrumbSchema, getModifiedDate } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
 
 const LoanwiserStory  = lazy(() => import("@/pages/story-loanwiser"));
@@ -211,6 +211,7 @@ export default function CompanyStoryPage() {
 
   const { component: StoryContent, toc } = story;
   const meta = getPageSeo(`/work/${slug}`);
+  const modifiedAt = getModifiedDate(`/work/${slug}`);
 
   return (
     <>
@@ -220,6 +221,7 @@ export default function CompanyStoryPage() {
         path={`/work/${slug}`}
         type="article"
         publishedAt="2025-01-01"
+        modifiedAt={modifiedAt}
         keywords={`${story.company}, ${story.category}, product case study, ${story.role}`}
         schema={[
           articleSchema({
@@ -227,6 +229,7 @@ export default function CompanyStoryPage() {
             description: story.tagline,
             path: `/work/${slug}`,
             publishedAt: "2025-01-01",
+            modifiedAt,
             author: "Yogesh Yadav",
             section: story.category,
           }),

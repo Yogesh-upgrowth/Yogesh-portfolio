@@ -2,7 +2,7 @@ import { lazy, Suspense } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
-import { Seo, professionalServiceSchema } from "@/lib/seo";
+import { Seo, homeSchema } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
 
 const meta = getPageSeo("/")!;
@@ -28,8 +28,7 @@ export default function Home() {
         description={meta.description!}
         path="/"
         type="profile"
-        keywords="Product Manager India, Fintech Product Expert, Product Growth Consultant, SEO Strategist, Consumer Internet Builder, Monetisation Expert"
-        schema={professionalServiceSchema()}
+        schema={homeSchema()}
       />
       <Navbar />
       <main id="main-content">

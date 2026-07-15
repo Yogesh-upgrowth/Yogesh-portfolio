@@ -1,5 +1,22 @@
 import { Helmet } from "react-helmet-async";
 import { SITE_URL, DEFAULT_OG_IMAGE, OG_IMAGE_ALT } from "@shared/seo-data";
+import gitDates from "@shared/git-dates.json";
+
+/** Stable @id for the single Person node, referenced as author across the site. */
+export const PERSON_ID = `${SITE_URL}/#person`;
+
+// TODO(before launch): confirm/replace these profile URLs. LinkedIn is carried
+// over from the existing site; the X/Twitter URL is a placeholder to fill in.
+export const SAME_AS = [
+  "https://www.linkedin.com/in/yogeshyadavpm/",
+  "https://x.com/TODO-your-x-handle",
+];
+
+/** The git commit date (YYYY-MM-DD) of a route's source file, if known. */
+export function getModifiedDate(path: string): string | undefined {
+  const iso = (gitDates as Record<string, string>)[path];
+  return iso ? iso.slice(0, 10) : undefined;
+}
 
 interface SeoProps {
   title: string;
@@ -107,6 +124,60 @@ export function Seo({
 
 /* ── Schema builders ─────────────────────────────────────── */
 
+/** Person node — the site's central identity, referenced by author/founder. */
+export function personSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "@id": PERSON_ID,
+    name: "Yogesh Yadav",
+    url: `${SITE_URL}/`,
+    image: DEFAULT_OG_IMAGE,
+    jobTitle: "Product Growth & Monetisation Consultant",
+    description:
+      "Product Growth & Monetisation Consultant with 9+ years scaling Fintech, Mobility, Marketplaces and consumer internet products.",
+    knowsAbout: [
+      "Product Management",
+      "Monetisation",
+      "Growth",
+      "Fintech",
+      "SEO Strategy",
+      "Marketplaces",
+    ],
+    sameAs: SAME_AS,
+  };
+}
+
+export function websiteSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
+    url: `${SITE_URL}/`,
+    name: "Yogesh Yadav",
+    publisher: { "@id": PERSON_ID },
+    inLanguage: "en-US",
+  };
+}
+
+export function organizationSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": `${SITE_URL}/#organization`,
+    name: "Yogesh Yadav Consulting",
+    url: `${SITE_URL}/`,
+    logo: DEFAULT_OG_IMAGE,
+    founder: { "@id": PERSON_ID },
+    sameAs: SAME_AS,
+  };
+}
+
+/** Site-wide graph for the homepage: Person + WebSite + Organization. */
+export function homeSchema() {
+  return [personSchema(), websiteSchema(), organizationSchema()];
+}
+
 export function breadcrumbSchema(
   items: { name: string; path: string }[]
 ) {
@@ -155,8 +226,9 @@ export function articleSchema(opts: {
     articleSection: opts.section,
     author: {
       "@type": "Person",
+      "@id": PERSON_ID,
       name: opts.author || "Yogesh Yadav",
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
     },
     publisher: {
       "@type": "Person",
@@ -193,8 +265,9 @@ export function professionalServiceSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
+    "@id": `${SITE_URL}/#service`,
     name: "Yogesh Yadav — Product Growth & Monetisation Consulting",
-    url: SITE_URL,
+    url: `${SITE_URL}/contact`,
     serviceType: [
       "Product Strategy Consulting",
       "Growth Consulting",
@@ -202,11 +275,12 @@ export function professionalServiceSchema() {
       "SEO Strategy",
       "Fintech Product Advisory",
     ],
-    areaServed: "Worldwide",
+    areaServed: "India",
     provider: {
       "@type": "Person",
+      "@id": PERSON_ID,
       name: "Yogesh Yadav",
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
     },
   };
 }

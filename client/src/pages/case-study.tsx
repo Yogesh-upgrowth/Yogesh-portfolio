@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Clock, Calendar, User } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import NotFound from "@/pages/not-found";
-import { Seo, articleSchema, breadcrumbSchema, toIsoDate } from "@/lib/seo";
+import { Seo, articleSchema, breadcrumbSchema, toIsoDate, getModifiedDate } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
 
 // ── Proof / Impact case studies ───────────────────────────────────────────────
@@ -427,6 +427,7 @@ export default function CaseStudyDetail() {
 
   const isFullWriteup = FULL_WRITEUP_SLUGS.has(slug);
   const meta = getPageSeo(`/case-study/${study.slug}`);
+  const modifiedAt = getModifiedDate(`/case-study/${study.slug}`);
 
   return (
     <>
@@ -436,6 +437,7 @@ export default function CaseStudyDetail() {
         path={`/case-study/${study.slug}`}
         type="article"
         publishedAt={toIsoDate(study.date)}
+        modifiedAt={modifiedAt}
         keywords={`${study.category}, ${study.tags.join(", ")}, product case study`}
         schema={[
           articleSchema({
@@ -443,6 +445,7 @@ export default function CaseStudyDetail() {
             description: study.description,
             path: `/case-study/${study.slug}`,
             publishedAt: toIsoDate(study.date),
+            modifiedAt,
             author: "Yogesh Yadav",
             section: study.category,
           }),

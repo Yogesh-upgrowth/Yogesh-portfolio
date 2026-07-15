@@ -1,7 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ContactSection from "@/components/sections/Contact";
-import { Seo, breadcrumbSchema } from "@/lib/seo";
+import { Seo, breadcrumbSchema, professionalServiceSchema } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
 
 const meta = getPageSeo("/contact")!;
@@ -13,10 +13,13 @@ export default function ContactPage() {
         title={meta.title}
         description={meta.description!}
         path="/contact"
-        schema={breadcrumbSchema([
-          { name: "Home", path: "/" },
-          { name: "Contact", path: "/contact" },
-        ])}
+        schema={[
+          professionalServiceSchema(),
+          breadcrumbSchema([
+            { name: "Home", path: "/" },
+            { name: "Contact", path: "/contact" },
+          ]),
+        ]}
       />
       <Navbar />
       <main id="main-content" className="flex-grow pt-24">

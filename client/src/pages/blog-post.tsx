@@ -6,7 +6,7 @@ import { getPostContent } from "@/lib/blog-content";
 import { ArrowLeft, Clock, Calendar, Share2, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import NotFound from "@/pages/not-found";
-import { Seo, articleSchema, breadcrumbSchema } from "@/lib/seo";
+import { Seo, articleSchema, breadcrumbSchema, getModifiedDate } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
 
 export default function BlogPost() {
@@ -20,6 +20,7 @@ export default function BlogPost() {
   if (!post) return <NotFound />;
 
   const meta = getPageSeo(`/blog/${post.slug}`);
+  const modifiedAt = getModifiedDate(`/blog/${post.slug}`);
 
   return (
     <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
@@ -29,6 +30,7 @@ export default function BlogPost() {
         path={`/blog/${post.slug}`}
         type="article"
         publishedAt={post.date}
+        modifiedAt={modifiedAt}
         keywords={`${post.category}, product management, ${post.title.toLowerCase()}`}
         schema={[
           articleSchema({
@@ -36,6 +38,7 @@ export default function BlogPost() {
             description: post.description,
             path: `/blog/${post.slug}`,
             publishedAt: post.date,
+            modifiedAt,
             author: post.author || "Yogesh Yadav",
             section: post.category,
           }),
