@@ -8,6 +8,30 @@ import { caseStudies, categoryColors } from "@/data/caseStudies";
 import NotFound from "@/pages/not-found";
 import { Seo, articleSchema, breadcrumbSchema, toIsoDate, getModifiedDate } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
+import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import { CASE_STUDY_METRICS } from "@/data/case-study-metrics";
+
+/* ─── Results at a glance ─── */
+function ResultsAtAGlance({ slug }: { slug: string }) {
+  const metrics = CASE_STUDY_METRICS[slug];
+  if (!metrics || metrics.length === 0) return null;
+  return (
+    <section aria-label="Results at a glance" className="mb-12 rounded-2xl border border-border bg-muted/30 p-6 md:p-8">
+      <h2 className="text-sm font-semibold uppercase tracking-widest text-muted-foreground mb-5">
+        Results at a glance
+      </h2>
+      <dl className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+        {metrics.map((m) => (
+          <div key={m.label}>
+            <dt className="sr-only">{m.label}</dt>
+            <dd className="text-2xl md:text-3xl font-serif font-bold text-primary leading-tight">{m.value}</dd>
+            <p className="text-sm text-muted-foreground mt-1 leading-snug">{m.label}</p>
+          </div>
+        ))}
+      </dl>
+    </section>
+  );
+}
 
 // ── Proof / Impact case studies ───────────────────────────────────────────────
 const CarInfo45mContent = lazy(() => import("@/pages/cs-carinfo-45m-content"));
@@ -400,7 +424,7 @@ function RelatedCaseStudies({ currentSlug }: { currentSlug: string }) {
           <Link href="/case-studies">
             <div className="p-5 rounded-xl border border-border hover-lift hover-glow cursor-pointer text-center group">
               <p className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">All Case Studies</p>
-              <p className="text-sm text-muted-foreground">Browse all 26 breakdowns</p>
+              <p className="text-sm text-muted-foreground">Browse all 30 breakdowns</p>
             </div>
           </Link>
           <Link href="/contact">
@@ -496,6 +520,16 @@ export default function CaseStudyDetail() {
 
         {/* Body */}
         <div className="container px-4 md:px-6 mx-auto max-w-5xl py-12">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Case Studies", href: "/case-studies" },
+              { name: study.title, href: `/case-study/${study.slug}` },
+            ]}
+          />
+
+          <ResultsAtAGlance slug={slug} />
+
           <Link href="/case-studies">
             <button className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
               <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />

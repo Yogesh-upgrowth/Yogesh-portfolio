@@ -48,8 +48,9 @@ export default function Hero() {
 
             {/* Headline */}
             <h1 className="hero-title text-3xl md:text-5xl font-serif font-bold tracking-tight text-foreground leading-[1.1]">
-              I help <span className="text-primary">consumer</span> &{" "}
-              <span className="text-primary">B2B products</span> grow revenue, retention, and scale.
+              Product Growth &amp; Monetisation Consultant for{" "}
+              <span className="text-primary">Fintech</span> &amp;{" "}
+              <span className="text-primary">Consumer Apps</span>
             </h1>
 
             {/* Subtext */}

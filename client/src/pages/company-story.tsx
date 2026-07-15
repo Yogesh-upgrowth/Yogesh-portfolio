@@ -7,6 +7,7 @@ import { ArrowLeft, Clock, User } from "lucide-react";
 import NotFound from "@/pages/not-found";
 import { Seo, articleSchema, breadcrumbSchema, getModifiedDate } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
+import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 const LoanwiserStory  = lazy(() => import("@/pages/story-loanwiser"));
 const CarInfoStory    = lazy(() => import("@/pages/story-carinfo"));
@@ -280,6 +281,14 @@ export default function CompanyStoryPage() {
 
         {/* Body */}
         <div className="container px-4 md:px-6 mx-auto max-w-5xl py-12">
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Work With Me", href: "/work" },
+              { name: story.company, href: `/work/${slug}` },
+            ]}
+          />
+
           <Link href="/work">
             <button className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
               <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />

@@ -8,6 +8,40 @@ import { Button } from "@/components/ui/button";
 import NotFound from "@/pages/not-found";
 import { Seo, articleSchema, breadcrumbSchema, getModifiedDate } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
+import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import { caseStudies } from "@/data/caseStudies";
+
+// Two most relevant case studies per blog category, for contextual internal links.
+const RELATED_CS_BY_CATEGORY: Record<string, string[]> = {
+  "AI & Product": ["ai-recommendation-engine", "ml-ux-growth-3x-conversion"],
+  "Growth & SEO": ["seo-0-to-100k", "programmatic-seo-calculators"],
+  "Experiments": ["ux-redesign-conversion-28", "funnel-dropoff-ux-optimization"],
+  "PM Career": ["carinfo-45m-mau", "insurance-funnel-1200-growth"],
+  "Comparisons": ["comparison-platform-india", "cab-fare-comparison-engine"],
+  "Founder Notes": ["mvp-in-7-days", "zero-cost-growth-engine"],
+};
+
+function RelatedCaseStudies({ category }: { category: string }) {
+  const slugs = RELATED_CS_BY_CATEGORY[category] ?? ["carinfo-45m-mau", "insurance-funnel-1200-growth"];
+  const studies = slugs
+    .map((s) => caseStudies.find((c) => c.slug === s))
+    .filter((c): c is (typeof caseStudies)[number] => Boolean(c));
+  if (studies.length === 0) return null;
+  return (
+    <section aria-label="Related case studies" className="mt-12 pt-8 border-t border-border">
+      <h2 className="text-xl font-serif font-bold mb-5">Related case studies</h2>
+      <ul className="space-y-3">
+        {studies.map((s) => (
+          <li key={s.slug}>
+            <Link href={`/case-study/${s.slug}`} className="text-primary font-medium hover:underline">
+              {s.title}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
 
 export default function BlogPost() {
   const [match, params] = useRoute("/blog/:slug");
@@ -52,7 +86,15 @@ export default function BlogPost() {
       <Navbar />
       <main id="main-content" className="flex-grow pt-32 pb-24">
         <article className="container px-4 md:px-6 mx-auto max-w-3xl">
-          
+
+          <Breadcrumbs
+            items={[
+              { name: "Home", href: "/" },
+              { name: "Blog", href: "/blog" },
+              { name: post.title, href: `/blog/${post.slug}` },
+            ]}
+          />
+
           {/* Back Link */}
           <Link href="/blog" className="inline-flex items-center text-sm text-muted-foreground hover:text-primary mb-8 transition-colors group">
             <ArrowLeft className="mr-2 h-4 w-4 group-hover:-translate-x-1 transition-transform" /> Back to Blog
@@ -114,6 +156,8 @@ export default function BlogPost() {
               <Twitter className="h-4 w-4" />
             </Button>
           </div>
+
+          <RelatedCaseStudies category={post.category} />
 
           {/* CTA Section */}
           <div className="bg-primary/5 p-8 md:p-12 rounded-2xl border border-primary/10 text-center mt-12">
