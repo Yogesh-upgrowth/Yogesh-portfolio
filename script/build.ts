@@ -3,6 +3,8 @@ import { build as viteBuild } from "vite";
 import { rm, readFile } from "fs/promises";
 import path from "path";
 import { prerender } from "./prerender";
+import { genGitDates } from "./gen-git-dates";
+import { genSitemap } from "./gen-sitemap";
 
 // server deps to bundle to reduce openat(2) syscalls
 // which helps cold start times
@@ -37,6 +39,9 @@ const allowlist = [
 async function buildAll() {
   await rm("dist", { recursive: true, force: true });
 
+  console.log("generating git-derived page dates...");
+  genGitDates();
+
   console.log("building client...");
   await viteBuild();
 
@@ -54,6 +59,9 @@ async function buildAll() {
 
   console.log("prerendering routes to static HTML...");
   await prerender();
+
+  console.log("generating sitemap.xml...");
+  genSitemap();
 
   console.log("building server...");
   const pkg = JSON.parse(await readFile("package.json", "utf-8"));
