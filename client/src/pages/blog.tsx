@@ -177,12 +177,15 @@ export default function Blog() {
     return counts;
   }, [allNonFeatured]);
 
+  // Render every post as a real anchor (crawlable); the "Load All" button only
+  // reveals the visually-hidden overflow rows — it never injects links.
   const filteredPosts = useMemo(() => {
-    const posts = activeCategory === "All"
+    return activeCategory === "All"
       ? allNonFeatured
       : allNonFeatured.filter(p => p.category === activeCategory);
-    return showAll ? posts : posts.slice(0, 12);
-  }, [activeCategory, showAll, allNonFeatured]);
+  }, [activeCategory, allNonFeatured]);
+
+  const VISIBLE_CAP = 12; // lead (1) + grid (6) + first 5 list rows
 
   const totalCount = useMemo(() =>
     activeCategory === "All"
@@ -359,7 +362,12 @@ export default function Blog() {
                   </div>
                   <div>
                     {listPosts.map((post, i) => (
-                      <ListCard key={post.id} post={post} index={i} />
+                      <div
+                        key={post.id}
+                        className={!showAll && i + 7 >= VISIBLE_CAP ? "hidden" : ""}
+                      >
+                        <ListCard post={post} index={i} />
+                      </div>
                     ))}
                   </div>
                 </div>
