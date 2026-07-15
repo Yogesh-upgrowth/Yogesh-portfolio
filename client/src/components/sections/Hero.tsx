@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
-import profileImage from "@assets/yogesh-profile.png";
+import profileImage from "@assets/yogesh-profile.webp";
 import { Link } from "wouter";
 
 export default function Hero() {
@@ -28,7 +28,7 @@ export default function Hero() {
             <div className="relative w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl z-10 bg-muted">
               <img
                 src={profileImage}
-                alt="Yogesh Yadav"
+                alt="Yogesh Yadav, Product Growth & Monetisation Consultant"
                 width="224"
                 height="224"
                 className="w-full h-full object-cover"

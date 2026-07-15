@@ -248,7 +248,9 @@ export default function CompanyStoryPage() {
         <div className="relative w-full h-72 md:h-[460px] overflow-hidden mt-16 bg-foreground">
           <img
             src={story.image}
-            alt={story.company}
+            alt={`${story.company} — ${story.title}`}
+            width={1600}
+            height={500}
             className="w-full h-full object-cover opacity-30"
             loading="eager"
           />

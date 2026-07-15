@@ -52,7 +52,9 @@ function HeroFeaturedCard({ post }: { post: BlogPost }) {
       <div className="relative h-full min-h-[340px] rounded-2xl overflow-hidden border border-border shadow-sm bg-muted">
         <img
           src={post.image}
-          alt={post.title}
+          alt={`${post.title} — featured article`}
+          width={800}
+          height={600}
           className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           loading="eager"
         />
@@ -91,7 +93,7 @@ function LeadCard({ post }: { post: BlogPost }) {
   return (
     <Link href={`/blog/${post.slug}`} className="group block" data-testid={`blog-card-${post.id}`}>
       <div className="overflow-hidden rounded-2xl bg-muted mb-4 aspect-[16/10] border border-border/40">
-        <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+        <img src={post.image} alt={post.title} width={640} height={400} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
       </div>
       <CategoryBadge category={post.category} />
       <h3 className="font-serif font-bold text-lg md:text-xl mt-3 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-snug">
@@ -117,7 +119,7 @@ function GridCard({ post }: { post: BlogPost }) {
   return (
     <Link href={`/blog/${post.slug}`} className="group block" data-testid={`blog-card-${post.id}`}>
       <div className="overflow-hidden rounded-xl bg-muted mb-3 aspect-[16/9] border border-border/30">
-        <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400" loading="lazy" />
+        <img src={post.image} alt={post.title} width={480} height={270} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-400" loading="lazy" />
       </div>
       <CategoryBadge category={post.category} />
       <h3 className="font-serif font-bold text-base mt-2.5 mb-2 group-hover:text-primary transition-colors line-clamp-2 leading-snug">

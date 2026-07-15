@@ -30,6 +30,8 @@ function CaseStudyCard({ study, index }: { study: typeof caseStudies[0]; index: 
           <img
             src={study.image}
             alt={study.title}
+            width={400}
+            height={225}
             loading="lazy"
             className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
