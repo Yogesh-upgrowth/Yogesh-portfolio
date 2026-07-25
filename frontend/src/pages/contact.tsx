@@ -16,10 +16,10 @@ export default function ContactPage() {
         ])}
       />
       <Navbar />
-      <main id="main-content" className="flex-grow pt-24">
-        <div className="container px-4 mx-auto text-center mb-8">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold mb-6">Hire a Product Growth &amp; Monetisation Consultant</h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+      <main id="main-content" className="flex-grow pt-20 md:pt-24">
+        <div className="container px-4 mx-auto text-center mb-6 md:mb-8">
+            <h1 className="text-3xl md:text-5xl font-serif font-bold mb-4 md:mb-6 leading-tight">Hire a Product Growth &amp; Monetisation Consultant</h1>
+            <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto">
               Tell me what you’re building. Let’s see if I can help you scale it.
             </p>
         </div>

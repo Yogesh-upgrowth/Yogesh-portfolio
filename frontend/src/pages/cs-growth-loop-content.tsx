@@ -10,10 +10,10 @@ export default function GrowthLoopContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">We Spent More on Retargeting and Retention Got Worse</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">It took us an embarrassingly long time to notice the pattern. Every month: acquisition spend increased, retargeting budget increased, D30 retention stayed at 4%. The numbers moved in lockstep — and in the wrong direction for what we were trying to achieve.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Month 8 of this cycle, I finally pulled a scatter plot that nobody had thought to run: retargeting spend vs D30 retention, plotted by month. Correlation: essentially zero. We'd been spending more to get less.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">It took us an embarrassingly long time to notice the pattern. Every month: acquisition spend increased, retargeting budget increased, D30 retention stayed at 4%. The numbers moved in lockstep — and in the wrong direction for what we were trying to achieve.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Month 8 of this cycle, I finally pulled a scatter plot that nobody had thought to run: retargeting spend vs D30 retention, plotted by month. Correlation: essentially zero. We'd been spending more to get less.</p>
         <ProblemBox>The leaky bucket insight is cliché by now, but we were living it in full fidelity: pour in users, watch them leave. Respond by pouring in more. The problem wasn't the faucet. It was that we'd never asked what the bucket was actually doing to hold water.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">The decision wasn't "spend more on retention." It was "design retention into the product" — because notifications and ads can remind someone to return, but they can't give them a reason.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">The decision wasn't "spend more on retention." It was "design retention into the product" — because notifications and ads can remind someone to return, but they can't give them a reason.</p>
       </section>
 
       <SectionDivider label="The Retention Reality" />

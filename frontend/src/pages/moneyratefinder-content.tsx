@@ -36,7 +36,7 @@ export default function MoneyRateFinderCaseStudy() {
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">
           The Day We Realized Traffic Was a Vanity Metric
         </h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">
           When we launched MoneyRateFinder, we weren't naïve. We knew SEO takes time, fintech is competitive, and remittance is crowded. But what we didn't expect was how <strong className="text-foreground">misleading early signals would be</strong>.
         </p>
 
@@ -52,7 +52,7 @@ export default function MoneyRateFinderCaseStudy() {
           ]}
         />
 
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">At first glance, the answer looked obvious: "We just need more traffic." But when we zoomed in on the behavioral data, the picture was completely different.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">At first glance, the answer looked obvious: "We just need more traffic." But when we zoomed in on the behavioral data, the picture was completely different.</p>
 
         <h3 className="text-xl font-serif font-bold text-foreground mt-8 mb-3">Behavioral Reality</h3>
         <DataTable
@@ -98,7 +98,7 @@ export default function MoneyRateFinderCaseStudy() {
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">
           Mapping the Intent Universe
         </h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We approached SEO like a <strong className="text-foreground">data modeling problem</strong>. Every search query had underlying dimensions, and those dimensions could be combined to map every possible buyer intent.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">We approached SEO like a <strong className="text-foreground">data modeling problem</strong>. Every search query had underlying dimensions, and those dimensions could be combined to map every possible buyer intent.</p>
 
         <h3 className="text-xl font-serif font-bold text-foreground mt-8 mb-3">Core Dimensions</h3>
         <DataTable

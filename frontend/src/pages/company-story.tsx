@@ -180,24 +180,53 @@ function TableOfContents({ items }: { items: { id: string; label: string }[] }) 
   }, []);
 
   return (
-    <nav className="hidden xl:block sticky top-28 self-start w-52 shrink-0">
-      <p className="text-xs font-bold tracking-widest text-muted-foreground uppercase mb-4">On this page</p>
-      <ul className="space-y-0.5 max-h-[70vh] overflow-y-auto pr-2">
-        {items.map(({ id, label }) => (
-          <li key={id}>
-            <button
-              onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })}
-              className={`text-left w-full text-xs py-1.5 px-3 rounded-lg transition-all ${
-                active === id
-                  ? "bg-primary/10 text-primary font-semibold border-l-2 border-primary pl-2"
-                  : "text-muted-foreground hover:text-foreground hover:bg-muted/40"
-              }`}
-            >
-              {label}
-            </button>
-          </li>
-        ))}
-      </ul>
+    <nav className="xl:sticky xl:top-28 xl:self-start xl:w-52 xl:shrink-0 mb-8 xl:mb-0">
+      {/* Mobile Accordion */}
+      <div className="xl:hidden border border-border/50 rounded-xl bg-muted/10 overflow-hidden">
+        <details className="group">
+          <summary className="text-xs font-bold tracking-widest text-muted-foreground uppercase p-4 cursor-pointer flex justify-between items-center list-none [&::-webkit-details-marker]:hidden">
+            <span>On this page</span>
+            <span className="text-xs opacity-60 group-open:rotate-180 transition-transform">▼</span>
+          </summary>
+          <ul className="px-2 pb-4 space-y-1 max-h-64 overflow-y-auto">
+            {items.map(({ id, label }) => (
+              <li key={id}>
+                <button
+                  onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                  className={`text-left w-full text-sm py-2 px-3 rounded-lg transition-all ${
+                    active === id
+                      ? "bg-primary/10 text-primary font-semibold border-l-2 border-primary pl-2"
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted/40"
+                  }`}
+                >
+                  {label}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </details>
+      </div>
+
+      {/* Desktop Sidebar */}
+      <div className="hidden xl:block">
+        <p className="text-xs font-bold tracking-widest text-muted-foreground uppercase mb-4">On this page</p>
+        <ul className="space-y-0.5 max-h-[70vh] overflow-y-auto pr-2">
+          {items.map(({ id, label }) => (
+            <li key={id}>
+              <button
+                onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })}
+                className={`text-left w-full text-xs py-1.5 px-3 rounded-lg transition-all ${
+                  active === id
+                    ? "bg-primary/10 text-primary font-semibold border-l-2 border-primary pl-2"
+                    : "text-muted-foreground hover:text-foreground hover:bg-muted/40"
+                }`}
+              >
+                {label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   );
 }
@@ -216,7 +245,7 @@ export default function CompanyStoryPage() {
         <Navbar />
 
         {/* Hero */}
-        <div className="relative w-full h-72 md:h-[460px] overflow-hidden mt-16 bg-foreground">
+        <div className="relative w-full h-[320px] md:h-[460px] overflow-hidden mt-14 md:mt-16 bg-foreground">
           <img
             src={story.image}
             alt={story.company}
@@ -224,23 +253,23 @@ export default function CompanyStoryPage() {
             loading="eager"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/95 via-foreground/60 to-foreground/20" />
-          <div className="absolute bottom-0 left-0 right-0 p-6 md:p-14">
+          <div className="absolute bottom-0 left-0 right-0 p-5 md:p-14">
             <div className="container mx-auto max-w-5xl">
-              <div className="flex items-center gap-3 mb-4">
+              <div className="flex flex-wrap items-center gap-2 md:gap-3 mb-3 md:mb-4">
                 <span className="text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full border border-primary/40 bg-primary/15 text-primary">
                   {story.category}
                 </span>
-                <span className="text-white/40 text-xs flex items-center gap-1.5">
-                  <Clock className="h-3.5 w-3.5" /> {story.readTime}
+                <span className="text-white/40 text-[10px] md:text-xs flex items-center gap-1 md:gap-1.5">
+                  <Clock className="h-3 w-3 md:h-3.5 md:w-3.5" /> {story.readTime}
                 </span>
-                <span className="text-white/40 text-xs flex items-center gap-1.5">
-                  <User className="h-3.5 w-3.5" /> Yogesh Yadav
+                <span className="text-white/40 text-[10px] md:text-xs flex items-center gap-1 md:gap-1.5">
+                  <User className="h-3 w-3 md:h-3.5 md:w-3.5" /> Yogesh Yadav
                 </span>
               </div>
               <h1 className="text-2xl md:text-[2.4rem] font-serif font-bold text-white leading-tight max-w-3xl mb-3">
                 {story.title}
               </h1>
-              <p className="text-white/50 text-sm md:text-base max-w-2xl leading-relaxed italic">
+              <p className="text-white/50 text-sm md:text-base max-w-2xl leading-relaxed italic hidden sm:block">
                 {story.tagline}
               </p>
             </div>
@@ -248,17 +277,17 @@ export default function CompanyStoryPage() {
         </div>
 
         {/* Body */}
-        <div className="container px-4 md:px-6 mx-auto max-w-5xl py-12">
+        <div className="container px-4 md:px-6 mx-auto max-w-5xl py-8 md:py-12">
           <Link href="/work">
-            <button className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
+            <button className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-6 md:mb-10 group">
               <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
               Back to Work With Me
             </button>
           </Link>
 
-          <div className="flex gap-12 items-start">
+          <div className="flex flex-col xl:flex-row gap-8 xl:gap-12 items-start">
             <TableOfContents items={toc} />
-            <main id="main-content" className="flex-1 min-w-0" style={{ fontSize: "17px", lineHeight: "1.9" }}>
+            <main id="main-content" className="flex-1 min-w-0 text-base md:text-[17px] leading-[1.8] md:leading-[1.9] article-content">
               <Suspense fallback={
                 <div className="animate-pulse space-y-4">
                   {[...Array(10)].map((_, i) => (
@@ -270,31 +299,31 @@ export default function CompanyStoryPage() {
               </Suspense>
 
               {/* Bottom CTA */}
-              <div className="mt-20 pt-10 border-t border-border">
-                <div className="rounded-3xl bg-foreground p-8 md:p-12 text-center relative overflow-hidden">
+              <div className="mt-16 md:mt-20 pt-10 border-t border-border">
+                <div className="rounded-2xl md:rounded-3xl bg-foreground p-6 md:p-12 text-center relative overflow-hidden">
                   <div className="absolute inset-0 pointer-events-none"
                     style={{ background: "radial-gradient(ellipse 60% 60% at 50% 50%, rgba(37,99,235,0.12) 0%, transparent 65%)" }} />
-                  <p className="relative text-xs font-bold tracking-widest uppercase text-primary mb-4">Ready to Talk?</p>
+                  <p className="relative text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary mb-3 md:mb-4">Ready to Talk?</p>
                   <h2 className="relative text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">
-                    Your product has a version of this story too.<br /> Let's find and fix it together.
+                    Your product has a version of this story too.<br className="hidden md:block" /> Let's find and fix it together.
                   </h2>
-                  <p className="relative text-white/45 text-sm mb-8 max-w-md mx-auto">Every company I've worked with had the same thing: a gap between what the data showed and what the team believed. Let's close that gap.</p>
-                  <Button size="lg" className="rounded-full px-10" asChild>
+                  <p className="relative text-white/45 text-sm mb-6 md:mb-8 max-w-md mx-auto">Every company I've worked with had the same thing: a gap between what the data showed and what the team believed. Let's close that gap.</p>
+                  <Button size="lg" className="rounded-full px-10 w-full sm:w-auto h-12 md:h-11" asChild>
                     <Link href="/contact">Start a Conversation →</Link>
                   </Button>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4 mt-6">
                   <Link href="/work">
-                    <div className="p-5 rounded-xl border border-border hover:border-primary/30 cursor-pointer group transition-all text-center">
+                    <div className="p-4 md:p-5 rounded-xl border border-border hover:border-primary/30 cursor-pointer group transition-all text-center">
                       <p className="font-bold text-sm text-foreground group-hover:text-primary transition-colors">All Company Stories</p>
-                      <p className="text-xs text-muted-foreground mt-1">Read the full work history</p>
+                      <p className="text-[10px] md:text-xs text-muted-foreground mt-1">Read the full work history</p>
                     </div>
                   </Link>
                   <Link href="/case-studies">
-                    <div className="p-5 rounded-xl border border-primary/20 bg-primary/5 cursor-pointer text-center">
+                    <div className="p-4 md:p-5 rounded-xl border border-primary/20 bg-primary/5 cursor-pointer text-center">
                       <p className="font-bold text-sm text-primary">26 Case Studies</p>
-                      <p className="text-xs text-muted-foreground mt-1">Deep technical breakdowns</p>
+                      <p className="text-[10px] md:text-xs text-muted-foreground mt-1">Deep technical breakdowns</p>
                     </div>
                   </Link>
                 </div>

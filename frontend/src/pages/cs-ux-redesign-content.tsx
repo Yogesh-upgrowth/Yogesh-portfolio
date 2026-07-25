@@ -10,10 +10,10 @@ export default function UxRedesignContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">We Watched 300 Users Struggle With Something We Were Proud Of</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The product had shipped 8 months earlier after a 4-month design and development cycle. The team had done good work — the visual design was clean, the information architecture was logical, the user flows had been through 3 rounds of internal review.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Then we watched 300 session recordings of actual users, and the experience was humbling. Features we were proud of were being ignored. Flows that felt intuitive to us were producing visible confusion in the recordings — back-and-forth navigation, rage clicks, long pauses on screens where there should be no ambiguity.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The product had shipped 8 months earlier after a 4-month design and development cycle. The team had done good work — the visual design was clean, the information architecture was logical, the user flows had been through 3 rounds of internal review.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Then we watched 300 session recordings of actual users, and the experience was humbling. Features we were proud of were being ignored. Flows that felt intuitive to us were producing visible confusion in the recordings — back-and-forth navigation, rage clicks, long pauses on screens where there should be no ambiguity.</p>
         <ProblemBox>The gap between "we tested this internally" and "real users on real devices in real contexts" is larger than most product teams want to admit. Our information architecture made sense to people who already understood the product. It made limited sense to people encountering it for the first time.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">The redesign wasn't about aesthetics. It was about closing that gap — using evidence from real users, not intuition from the team that built it.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">The redesign wasn't about aesthetics. It was about closing that gap — using evidence from real users, not intuition from the team that built it.</p>
       </section>
 
       <SectionDivider label="The Evidence" />

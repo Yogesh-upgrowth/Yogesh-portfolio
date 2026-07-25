@@ -10,10 +10,10 @@ export default function MicrocopyContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The 4 Words That Moved Our Biggest Conversion Metric</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">There was a 6-month engineering project on the roadmap to redesign our loan application flow. Estimated impact: 15–20% conversion improvement. Timeline: Q3–Q4. Engineering cost: significant.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Before that project kicked off, a content designer on the team named Shreya asked a quiet question in a design review: "What if we just changed the helper text on the income field? Users seem confused there." The change took 45 minutes. The A/B test ran for 2 weeks. Conversion at that step improved 31%.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">There was a 6-month engineering project on the roadmap to redesign our loan application flow. Estimated impact: 15–20% conversion improvement. Timeline: Q3–Q4. Engineering cost: significant.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Before that project kicked off, a content designer on the team named Shreya asked a quiet question in a design review: "What if we just changed the helper text on the income field? Users seem confused there." The change took 45 minutes. The A/B test ran for 2 weeks. Conversion at that step improved 31%.</p>
         <InsightBox>The engineering project was eventually deprioritized. Not because the redesign wasn't valuable — but because a significant portion of the problem was microcopy, and microcopy was faster, cheaper, and more immediately impactful to fix.</InsightBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">This is the story of what happened when we took microcopy seriously as a discipline — not an afterthought — and applied it systematically across the product.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">This is the story of what happened when we took microcopy seriously as a discipline — not an afterthought — and applied it systematically across the product.</p>
       </section>
 
       <SectionDivider label="What Microcopy Actually Is" />

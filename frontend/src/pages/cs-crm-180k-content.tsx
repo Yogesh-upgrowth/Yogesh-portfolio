@@ -10,10 +10,10 @@ export default function Crm180kContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The System That Couldn't Handle the Load It Was Built For</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The brief sounded straightforward: build a CRM to handle challan transactions across multiple states. Track vehicle violations, link them to RC owners, enable resolution workflows for field enforcement teams, produce compliance reports.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Six months after the first version launched, the system was processing about 18,000 transactions per month. At 22,000, it started throwing errors. At 26,000, it would intermittently lock up. At 30,000, it crashed entirely — twice in one week. Field teams in three states had to stop operations.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The brief sounded straightforward: build a CRM to handle challan transactions across multiple states. Track vehicle violations, link them to RC owners, enable resolution workflows for field enforcement teams, produce compliance reports.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Six months after the first version launched, the system was processing about 18,000 transactions per month. At 22,000, it started throwing errors. At 26,000, it would intermittently lock up. At 30,000, it crashed entirely — twice in one week. Field teams in three states had to stop operations.</p>
         <ProblemBox>The irony was sharp: a CRM built specifically to handle high-volume enforcement operations couldn't sustain the volume of actual enforcement operations. The architecture had been designed for the expected case, not the real case. We needed a complete rethink, not a patch.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85]">I led the product rebuild from the ground up. Eight months later, the system was processing 180,000+ monthly transactions with 99.6% uptime. Here's everything I learned doing it.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85]">I led the product rebuild from the ground up. Eight months later, the system was processing 180,000+ monthly transactions with 99.6% uptime. Here's everything I learned doing it.</p>
       </section>
 
       <SectionDivider label="What Broke and Why" />

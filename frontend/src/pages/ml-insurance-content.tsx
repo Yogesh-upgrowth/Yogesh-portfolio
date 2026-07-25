@@ -93,19 +93,19 @@ export default function MLInsuranceCaseStudy() {
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Problem Hidden in Plain Sight</h2>
         <BlockQuote>We analyzed over 50,000+ user journeys to answer one simple but critical question: "Which users are actually going to buy insurance — and when?"</BlockQuote>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">At first glance, everything looked fine. Millions of users. High engagement. Strong traffic inflow. But one metric told a very different story.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">At first glance, everything looked fine. Millions of users. High engagement. Strong traffic inflow. But one metric told a very different story.</p>
         <ProblemBox>Insurance conversions were disproportionately low — despite having users with relevant use cases, real-time triggers (expiry, RC checks), and clear monetisation opportunity.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85]">This wasn't just a funnel problem. It was a <strong className="text-foreground">system-level inefficiency</strong>.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85]">This wasn't just a funnel problem. It was a <strong className="text-foreground">system-level inefficiency</strong>.</p>
       </section>
 
       <SectionDivider label="Context" />
 
       <section id="context" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Ecosystem We Were Operating In</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The platform — a Vehicle Info ecosystem — served users who came with a clear, real-world intent: checking RC details, verifying ownership, reviewing insurance validity.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The platform — a Vehicle Info ecosystem — served users who came with a clear, real-world intent: checking RC details, verifying ownership, reviewing insurance validity.</p>
         <InsightBox>These are high-intent, real-world users — not passive browsers. Which makes them extremely valuable from a monetisation standpoint.</InsightBox>
         <h3 className="text-xl font-serif font-bold text-foreground mt-8 mb-3">The Disconnect</h3>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Even with strong relevance — insurance modules were visible, timing seemed logical, traffic was high — conversion didn't scale proportionally.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Even with strong relevance — insurance modules were visible, timing seemed logical, traffic was high — conversion didn't scale proportionally.</p>
         <BulletList items={[
           "Insurance modules were visible to the right audience",
           "User intent (vehicle expiry, RC checks) was contextually relevant",
@@ -118,7 +118,7 @@ export default function MLInsuranceCaseStudy() {
 
       <section id="problem-statement" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Problem Statement: We Were Treating Every User the Same</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">Every user saw the same insurance CTA. Every user received similar nudges. Every user experienced identical flows — regardless of where they actually were in their buying journey.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">Every user saw the same insurance CTA. Every user received similar nudges. Every user experienced identical flows — regardless of where they actually were in their buying journey.</p>
         <h3 className="text-xl font-serif font-bold text-foreground mt-8 mb-3">Core Issues</h3>
         <div className="space-y-4 mt-4">
           {[
@@ -139,7 +139,7 @@ export default function MLInsuranceCaseStudy() {
 
       <section id="key-insight" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Key Insight: Intent is Behavioral, Not Declared</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We observed a critical pattern: users don't randomly convert — they exhibit <strong className="text-foreground">predictable behavioural signals</strong> beforehand.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">We observed a critical pattern: users don't randomly convert — they exhibit <strong className="text-foreground">predictable behavioural signals</strong> beforehand.</p>
         <div className="grid sm:grid-cols-2 gap-4 my-6">
           <div className="p-5 rounded-xl border border-green-200 bg-green-50">
             <p className="font-bold text-green-700 mb-3 text-sm uppercase tracking-wider">High-Intent Signals</p>
@@ -158,7 +158,7 @@ export default function MLInsuranceCaseStudy() {
 
       <section id="data-strategy" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Data Strategy: 50,000+ User Sessions</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">We didn't guess. We built a data collection pipeline that captured granular behavioural signals across 50,000+ user sessions — structured, cleaned, and ready for modelling.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">We didn't guess. We built a data collection pipeline that captured granular behavioural signals across 50,000+ user sessions — structured, cleaned, and ready for modelling.</p>
         <div className="grid sm:grid-cols-2 gap-4 my-4">
           {[
             { title: "Behavioural Signals", items: ["Search count per session", "Session duration (seconds)", "Scroll depth (%)"] },
@@ -196,7 +196,7 @@ Derived Features:
             <p className="text-sm text-muted-foreground">Production model — best for structured data, interpretable feature importance, scalable</p>
           </div>
         </div>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The model output was a single <strong className="text-foreground">Intent Score (0–100)</strong> per user, computed in near real-time and used to drive personalisation decisions downstream.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The model output was a single <strong className="text-foreground">Intent Score (0–100)</strong> per user, computed in near real-time and used to drive personalisation decisions downstream.</p>
         <h3 className="text-xl font-serif font-bold text-foreground mt-8 mb-3">Intent Segmentation</h3>
         <div className="space-y-3 my-4">
           {[
@@ -217,15 +217,15 @@ Derived Features:
 
       <section id="product-integration" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Product Integration: Where Real Value Was Created</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">The ML model alone meant nothing. The value came from how the intent score was wired into the product experience.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">The ML model alone meant nothing. The value came from how the intent score was wired into the product experience.</p>
         <div className="space-y-4 my-6">
           {[
-            { emoji: "🔥", title: "High Intent (70–100)", cls: "border-green-200 bg-green-50", titleCls: "text-green-800", items: ["Fast-track journey with pre-filled forms", "Minimal friction — no unnecessary steps", "Strong, urgent CTA ('Renew Now – Expires in 3 days')", "Priority placement in navigation and homepage"] },
-            { emoji: "⚖️", title: "Medium Intent (30–70)", cls: "border-orange-200 bg-orange-50", titleCls: "text-orange-800", items: ["Nudge-based messaging (benefits, comparisons, social proof)", "Contextual reminders tied to their vehicle data", "Progressive disclosure — not overwhelming, not absent"] },
-            { emoji: "❄️", title: "Low Intent (0–30)", cls: "border-border bg-muted/20", titleCls: "text-muted-foreground", items: ["Education-first content — build awareness, not urgency", "Soft engagement: 'Did you know your insurance covers X?'", "Retargeting via push notifications at better timing"] },
+            { title: "High Intent (70–100)", cls: "border-green-200 bg-green-50", titleCls: "text-green-800", items: ["Fast-track journey with pre-filled forms", "Minimal friction — no unnecessary steps", "Strong, urgent CTA ('Renew Now – Expires in 3 days')", "Priority placement in navigation and homepage"] },
+            { title: "Medium Intent (30–70)", cls: "border-orange-200 bg-orange-50", titleCls: "text-orange-800", items: ["Nudge-based messaging (benefits, comparisons, social proof)", "Contextual reminders tied to their vehicle data", "Progressive disclosure — not overwhelming, not absent"] },
+            { title: "Low Intent (0–30)", cls: "border-border bg-muted/20", titleCls: "text-muted-foreground", items: ["Education-first content — build awareness, not urgency", "Soft engagement: 'Did you know your insurance covers X?'", "Retargeting via push notifications at better timing"] },
           ].map((seg) => (
             <div key={seg.title} className={`p-6 rounded-xl border ${seg.cls}`}>
-              <p className={`font-bold mb-2 flex items-center gap-2 ${seg.titleCls}`}><span className="text-lg">{seg.emoji}</span>{seg.title}</p>
+              <p className={`font-bold mb-2 flex items-center gap-2 ${seg.titleCls}`}>{seg.title}</p>
               <BulletList items={seg.items} />
             </div>
           ))}

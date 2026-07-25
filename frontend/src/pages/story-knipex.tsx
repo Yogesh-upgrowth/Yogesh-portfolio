@@ -23,6 +23,19 @@ export default function KnipexStory() {
         .chapter-divider { display: flex; align-items: center; gap: 1rem; margin: 4rem 0 2rem; }
         .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(var(--border)); line-height: 1; }
         .chapter-divider .sep { flex: 1; height: 1px; background: hsl(var(--border)); }
+
+        @media (max-width: 640px) {
+          .prose-story h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; }
+          .prose-story h3 { font-size: 1.15rem; margin: 1.75rem 0 0.75rem; }
+          .prose-story p { font-size: 1rem; line-height: 1.7; }
+          .chapter-divider { margin: 3rem 0 1.5rem; }
+          .chapter-divider .num { font-size: 3.5rem; }
+          .metric-row { grid-template-columns: repeat(2, 1fr); border-radius: 12px; }
+          .metric-cell { padding: 1rem; }
+          .metric-cell .val { font-size: 1.5rem; }
+          .metric-cell .lbl { font-size: 0.65rem; }
+          .callout-box { padding: 1rem 1.25rem; }
+        }
       `}</style>
 
       <section id="hook">
@@ -58,7 +71,7 @@ export default function KnipexStory() {
 
         <p>India's professional hand tools market was a complex and fragmented landscape when KNIPEX was entering seriously. The market had several distinct segments:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Segment</th><th>Price Sensitivity</th><th>Brand Awareness</th><th>Professional Grade?</th></tr></thead>
           <tbody>
             <tr><td>Unorganized local brands</td><td>Very High</td><td>Near Zero</td><td>No</td></tr>
@@ -66,7 +79,7 @@ export default function KnipexStory() {
             <tr><td>International mid-range (Stanley global, Bosch)</td><td>Medium</td><td>Medium-High</td><td>Yes</td></tr>
             <tr><td>Premium professional (KNIPEX, Wiha, Wera)</td><td>Low-Medium</td><td>Low (India)</td><td>Yes</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>KNIPEX occupied the premium professional segment — a category that was real and growing in India as the professional trades formalized, but that was served almost entirely by imports with limited brand awareness among the target user base.</p>
 
@@ -127,7 +140,7 @@ export default function KnipexStory() {
 
         <p>I built a prioritization matrix for the India SKU selection:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Factor</th><th>Weight</th><th>Rationale</th></tr></thead>
           <tbody>
             <tr><td>Market size (addressable professional users)</td><td>30%</td><td>Enough demand to justify inventory commitment</td></tr>
@@ -136,7 +149,7 @@ export default function KnipexStory() {
             <tr><td>Application criticality (professional need vs nice-to-have)</td><td>15%</td><td>Higher criticality = more willingness to pay premium</td></tr>
             <tr><td>Inventory turnover expectation</td><td>10%</td><td>Capital efficiency, warehouse management</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The output of this analysis was a prioritized SKU list of approximately 85 products — less than 8% of the full catalog — that represented the highest-probability commercial opportunities in the India market at this stage of development.</p>
 
@@ -169,7 +182,7 @@ export default function KnipexStory() {
 
         <p>In physical product management with a 6-month supply chain, a wrong inventory decision has a different cost structure:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Decision Error</th><th>Immediate Cost</th><th>Recovery Time</th><th>Hidden Cost</th></tr></thead>
           <tbody>
             <tr><td>Overestimate demand for a SKU</td><td>Capital locked in inventory</td><td>12–18 months to sell through</td><td>Warehouse cost, opportunity cost of capital</td></tr>
@@ -177,7 +190,7 @@ export default function KnipexStory() {
             <tr><td>Wrong product category prioritization</td><td>Misallocated marketing spend</td><td>12+ months to pivot</td><td>First-mover advantage lost to a competitor</td></tr>
             <tr><td>Wrong geographic focus</td><td>Distributor relationships in wrong markets</td><td>6–12 months to redirect</td><td>Competitor establishes presence in correct markets</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The asymmetry of consequences forced a discipline that software product management rarely demands: get the analysis right before committing. Not "ship it and see." Not "launch a quick test." Think it through. Model the scenarios. Commit only when the case is clear.</p>
 
@@ -282,7 +295,7 @@ export default function KnipexStory() {
 
         <p>We tracked the demonstration conversion funnel meticulously:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Funnel Stage</th><th>Rate</th><th>Time Lag to Next Stage</th></tr></thead>
           <tbody>
             <tr><td>Demonstration attended</td><td>100% (baseline)</td><td>—</td></tr>
@@ -291,7 +304,7 @@ export default function KnipexStory() {
             <tr><td>Purchased (first unit)</td><td>22%</td><td>3–6 weeks</td></tr>
             <tr><td>Reordered within 6 months</td><td>81% of purchasers</td><td>3–6 months</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The 81% reorder rate among first-time purchasers was the most validating number in the entire KNIPEX India data set. Once a professional experienced KNIPEX quality in use, they came back. The demonstration model was working to create genuine preference, not just trial purchase.</p>
       </section>

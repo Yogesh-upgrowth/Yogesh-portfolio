@@ -279,14 +279,13 @@ function FullWriteup({ slug }: { slug: string }) {
 function ComingSoonContent({ study }: { study: typeof caseStudies[0] }) {
   return (
     <div className="mt-8">
-      <p className="text-xl text-muted-foreground leading-relaxed mb-10 font-medium">{study.description}</p>
-      <div className="rounded-2xl border-2 border-dashed border-border bg-muted/30 p-10 md:p-16 text-center">
-        <div className="text-5xl mb-4">🚧</div>
-        <h2 className="text-2xl font-serif font-bold text-foreground mb-3">Detailed case study coming soon</h2>
-        <p className="text-muted-foreground max-w-md mx-auto mb-6">
+      <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8 md:mb-10 font-medium">{study.description}</p>
+      <div className="rounded-2xl border-2 border-dashed border-border bg-muted/30 p-6 sm:p-10 md:p-16 text-center">
+        <h2 className="text-xl md:text-2xl font-serif font-bold text-foreground mb-3 mt-4">Detailed case study coming soon</h2>
+        <p className="text-sm md:text-base text-muted-foreground max-w-md mx-auto mb-6">
           The full breakdown — strategy, execution, results, and learnings — is being written up. Reach out if you'd like to discuss this directly.
         </p>
-        <Button asChild><Link href="/contact">Discuss this with Yogesh →</Link></Button>
+        <Button asChild className="w-full sm:w-auto"><Link href="/contact">Discuss this with Yogesh →</Link></Button>
       </div>
     </div>
   );
@@ -318,7 +317,7 @@ function RelatedCaseStudies({ currentSlug }: { currentSlug: string }) {
     <div className="mt-16 space-y-10">
       {/* Prev / Next navigation */}
       {(prevStudy || nextStudy) && (
-        <div className="grid grid-cols-2 gap-4 pt-10 border-t border-border">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-10 border-t border-border">
           {prevStudy ? (
             <Link href={`/case-study/${prevStudy.slug}`}>
               <div className="group p-5 rounded-xl border border-border hover:border-primary/40 hover-lift cursor-pointer transition-all">
@@ -359,7 +358,7 @@ function RelatedCaseStudies({ currentSlug }: { currentSlug: string }) {
       {related.length > 0 && (
         <div>
           <h2 className="text-xl font-serif font-bold text-foreground mb-5">You might also like</h2>
-          <div className="grid sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {related.map((s) => (
               <Link key={s.slug} href={`/case-study/${s.slug}`}>
                 <div className="group rounded-xl border border-border overflow-hidden hover:border-primary/40 hover-lift cursor-pointer transition-all h-full flex flex-col">
@@ -392,21 +391,21 @@ function RelatedCaseStudies({ currentSlug }: { currentSlug: string }) {
 
       {/* Bottom CTA */}
       <div className="pt-8 border-t border-border">
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
           <Link href="/case-studies">
-            <div className="p-5 rounded-xl border border-border hover-lift hover-glow cursor-pointer text-center group">
+            <div className="p-4 sm:p-5 rounded-xl border border-border hover-lift hover-glow cursor-pointer text-center group">
               <p className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">All Case Studies</p>
               <p className="text-sm text-muted-foreground">Browse all 26 breakdowns</p>
             </div>
           </Link>
           <Link href="/contact">
-            <div className="p-5 rounded-xl border border-primary/20 bg-primary/5 hover-lift cursor-pointer text-center">
+            <div className="p-4 sm:p-5 rounded-xl border border-primary/20 bg-primary/5 hover-lift cursor-pointer text-center">
               <p className="font-bold text-primary mb-1">Work With Me</p>
               <p className="text-sm text-muted-foreground">Let's build something together</p>
             </div>
           </Link>
           <a href="https://linkedin.com/in/yogeshyadav" target="_blank" rel="noopener noreferrer">
-            <div className="p-5 rounded-xl border border-border hover-lift cursor-pointer text-center group">
+            <div className="p-4 sm:p-5 rounded-xl border border-border hover-lift cursor-pointer text-center group">
               <p className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">Connect on LinkedIn</p>
               <p className="text-sm text-muted-foreground">Follow for more insights</p>
             </div>
@@ -432,7 +431,7 @@ export default function CaseStudyDetail() {
         <Navbar />
 
         {/* Hero */}
-        <div className="relative w-full h-64 md:h-[420px] overflow-hidden mt-16 bg-muted">
+        <div className="relative w-full h-[340px] md:h-[420px] overflow-hidden mt-14 md:mt-16 bg-muted">
           <img
             src={study.image.replace("w=400&q=65", "w=900&q=75")}
             alt={study.title}
@@ -443,38 +442,40 @@ export default function CaseStudyDetail() {
             decoding="async"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/40 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-6 md:p-12">
+          <div className="absolute bottom-0 left-0 right-0 p-5 md:p-12">
             <div className="container mx-auto max-w-5xl">
               <span className={`text-xs font-semibold px-3 py-1 rounded-full border mb-4 inline-block ${categoryColors[study.category] ?? "bg-muted text-muted-foreground"}`}>
                 {study.category}
               </span>
-              <h1 className="text-2xl md:text-4xl font-serif font-bold text-white leading-tight max-w-3xl mb-4">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white leading-tight max-w-3xl mb-4">
                 {study.title}
               </h1>
-              <div className="flex flex-wrap gap-4 text-white/70 text-sm">
+              <div className="flex flex-wrap gap-3 md:gap-4 text-white/70 text-sm mt-4">
                 <span className="flex items-center gap-1.5"><User className="h-4 w-4" />Yogesh Yadav</span>
                 <span className="flex items-center gap-1.5"><Clock className="h-4 w-4" />{study.readTime}</span>
                 <span className="flex items-center gap-1.5"><Calendar className="h-4 w-4" />{study.date}</span>
-                {study.tags.map((tag) => (
-                  <span key={tag} className="px-2 py-0.5 rounded-full bg-white/20 text-white text-xs font-medium">{tag}</span>
-                ))}
+                <div className="flex flex-wrap gap-2 mt-1 md:mt-0 w-full md:w-auto">
+                  {study.tags.map((tag) => (
+                    <span key={tag} className="px-2 py-0.5 rounded-full bg-white/20 text-white text-xs font-medium">{tag}</span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Body */}
-        <div className="container px-4 md:px-6 mx-auto max-w-5xl py-12">
+        <div className="container px-4 md:px-6 mx-auto max-w-5xl py-8 md:py-12">
           <Link href="/case-studies">
-            <button className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-10 group">
+            <button className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors mb-6 md:mb-10 group">
               <ArrowLeft className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
               Back to Case Studies
             </button>
           </Link>
 
-          <div className="flex gap-12 items-start">
+          <div className="flex flex-col xl:flex-row gap-8 xl:gap-12 items-start">
             {isFullWriteup && <TableOfContents slug={slug} />}
-            <main id="main-content" className="flex-1 min-w-0" style={{ fontSize: "17px", lineHeight: "1.85" }}>
+            <main id="main-content" className="flex-1 min-w-0 w-full text-[16px] md:text-[17px] leading-[1.75] md:leading-[1.85]">
               {isFullWriteup ? (
                 <FullWriteup slug={slug} />
               ) : (

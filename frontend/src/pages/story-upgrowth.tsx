@@ -23,6 +23,19 @@ export default function UpGrowthStory() {
         .chapter-divider { display: flex; align-items: center; gap: 1rem; margin: 4rem 0 2rem; }
         .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(var(--border)); line-height: 1; }
         .chapter-divider .sep { flex: 1; height: 1px; background: hsl(var(--border)); }
+
+        @media (max-width: 640px) {
+          .prose-story h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; }
+          .prose-story h3 { font-size: 1.15rem; margin: 1.75rem 0 0.75rem; }
+          .prose-story p { font-size: 1rem; line-height: 1.7; }
+          .chapter-divider { margin: 3rem 0 1.5rem; }
+          .chapter-divider .num { font-size: 3.5rem; }
+          .metric-row { grid-template-columns: repeat(2, 1fr); border-radius: 12px; }
+          .metric-cell { padding: 1rem; }
+          .metric-cell .val { font-size: 1.5rem; }
+          .metric-cell .lbl { font-size: 0.65rem; }
+          .callout-box { padding: 1rem 1.25rem; }
+        }
       `}</style>
 
       <section id="hook">
@@ -135,7 +148,7 @@ export default function UpGrowthStory() {
 
         <p>Priority inflation has costs that are easy to undercount:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Cost Type</th><th>Description</th><th>Frequency</th></tr></thead>
           <tbody>
             <tr><td>Context-switching cost</td><td>Each priority switch costs 30–60 min of engineer re-orientation</td><td>Multiple times daily</td></tr>
@@ -144,7 +157,7 @@ export default function UpGrowthStory() {
             <tr><td>Team morale</td><td>Constant priority shifting creates a sense of chaos and futility</td><td>Continuous</td></tr>
             <tr><td>External trust</td><td>Missed commitments damage client and partner relationships</td><td>Episodic</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The team I inherited was experiencing all five cost types simultaneously. The engineers were working hard. They were not, in aggregate, making the strategic progress the business needed. The gap between effort and output was the unmeasured cost of priority inflation.</p>
 
@@ -227,7 +240,7 @@ export default function UpGrowthStory() {
 
         <p>Alongside the structural change, I created an explicit Decision Authority Map — a document that specified, for every significant category of product decision, who had the authority to make it and what the escalation path was if consensus couldn't be reached:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Decision Category</th><th>Primary Authority</th><th>Consultation Required</th><th>Escalation</th></tr></thead>
           <tbody>
             <tr><td>Feature scope within product line</td><td>Product Line PM</td><td>Engineering lead</td><td>Me</td></tr>
@@ -237,7 +250,7 @@ export default function UpGrowthStory() {
             <tr><td>Enterprise client commitments &gt;30 days work</td><td>Me + Commercial lead</td><td>Relevant PM + Eng lead</td><td>CEO</td></tr>
             <tr><td>Technical architecture changes</td><td>Engineering leads collectively</td><td>Affected PMs</td><td>Me</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The Decision Authority Map was imperfect and required ongoing refinement. But having an explicit document that everyone could reference when a decision came up — instead of a fog of implied authority and political navigation — significantly reduced the time and energy spent on decision-making process rather than decision content.</p>
       </section>

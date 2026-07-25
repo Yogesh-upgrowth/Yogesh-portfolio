@@ -10,10 +10,10 @@ export default function ZeroCostGrowthContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Marketing Budget Was Cut to Zero</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">October. Q3 reviews done, Q4 budgets getting tighter. The CFO made a call: all paid marketing paused for 90 days while the finance team figured out unit economics. Marketing budget: ₹0.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The initial reaction was panic. Six months of acquisition infrastructure — Meta campaigns, Google Ads, affiliate networks — all paused. The growth team had two choices: sit on their hands for 90 days, or figure out how to grow without money.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">October. Q3 reviews done, Q4 budgets getting tighter. The CFO made a call: all paid marketing paused for 90 days while the finance team figured out unit economics. Marketing budget: ₹0.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The initial reaction was panic. Six months of acquisition infrastructure — Meta campaigns, Google Ads, affiliate networks — all paused. The growth team had two choices: sit on their hands for 90 days, or figure out how to grow without money.</p>
         <ProblemBox>We chose the second option. Not because we were confident it would work, but because the alternative was three months of doing nothing while the business needed growth. Constraints force creativity in ways that comfortable budgets don't.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">What emerged in those 90 days became a permanent part of our growth strategy — even after the paid budgets came back.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">What emerged in those 90 days became a permanent part of our growth strategy — even after the paid budgets came back.</p>
       </section>
 
       <SectionDivider label="Starting Point" />

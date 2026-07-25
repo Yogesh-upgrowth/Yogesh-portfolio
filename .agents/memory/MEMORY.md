@@ -1,0 +1,1 @@
+- [Mobile responsiveness convention](mobile-responsive-convention.md) — desktop UI is approved; mobile edits must keep exact desktop values behind md:/lg: prefixes.

@@ -24,6 +24,19 @@ export default function LoanwiserStory() {
         .chapter-divider { display: flex; align-items: center; gap: 1rem; margin: 4rem 0 2rem; }
         .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(var(--border)); line-height: 1; }
         .chapter-divider .sep { flex: 1; height: 1px; background: hsl(var(--border)); }
+
+        @media (max-width: 640px) {
+          .prose-story h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; }
+          .prose-story h3 { font-size: 1.15rem; margin: 1.75rem 0 0.75rem; }
+          .prose-story p { font-size: 1rem; line-height: 1.7; }
+          .chapter-divider { margin: 3rem 0 1.5rem; }
+          .chapter-divider .num { font-size: 3.5rem; }
+          .metric-row { grid-template-columns: repeat(2, 1fr); border-radius: 12px; }
+          .metric-cell { padding: 1rem; }
+          .metric-cell .val { font-size: 1.5rem; }
+          .metric-cell .lbl { font-size: 0.65rem; }
+          .callout-box { padding: 1rem 1.25rem; }
+        }
       `}</style>
 
       {/* ── SECTION 1: HOOK ─────────────────────────────────── */}
@@ -137,14 +150,14 @@ export default function LoanwiserStory() {
 
         <p>Before I could build anything, I needed to define what winning looked like in a way that was specific and measurable. I landed on three metrics:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Metric</th><th>Baseline</th><th>Target</th><th>Why It Mattered</th></tr></thead>
           <tbody>
             <tr><td>Disbursement rate on routed applications</td><td>16–18%</td><td>70%+</td><td>Core business health</td></tr>
             <tr><td>Bank NPS on lead quality</td><td>Unknown (unmeasured)</td><td>Track and improve</td><td>Partnership longevity</td></tr>
             <tr><td>Time to disbursement (borrower)</td><td>~14 days</td><td>Sub-7 days</td><td>Borrower experience</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The disbursement rate target of 70% was aggressive. Industry benchmarks I could find ranged from 20–35% for digital lenders. I set 70% not because it seemed achievable in the short term, but because it represented a fundamentally different operating model — one where we were routing intelligently, not spraying and praying.</p>
 
@@ -166,7 +179,7 @@ export default function LoanwiserStory() {
 
         <p>The first pass was sobering. Here is what the raw data showed:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Outcome Category</th><th>Count</th><th>% of Total</th><th>Avg. Time to Decision</th></tr></thead>
           <tbody>
             <tr><td>Disbursed</td><td>3,426</td><td>15.6%</td><td>11.3 days</td></tr>
@@ -175,7 +188,7 @@ export default function LoanwiserStory() {
             <tr><td>Withdrawn by borrower</td><td>1,843</td><td>8.4%</td><td>7.6 days</td></tr>
             <tr><td>Still in process (&gt;60 days)</td><td>818</td><td>3.7%</td><td>—</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The 15.6% disbursement rate confirmed the problem. But more interesting than the headline number was what the rejection data contained — or rather, what it didn't.</p>
 
@@ -193,7 +206,7 @@ export default function LoanwiserStory() {
 
         <p>Within the structured rejection data, the reasons clustered into a surprisingly small number of categories:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Rejection Reason (structured)</th><th>Count</th><th>% of Structured Rejections</th></tr></thead>
           <tbody>
             <tr><td>Insufficient income documentation</td><td>1,840</td><td>29.5%</td></tr>
@@ -204,7 +217,7 @@ export default function LoanwiserStory() {
             <tr><td>Address verification failure</td><td>312</td><td>5.0%</td></tr>
             <tr><td>Other / miscellaneous</td><td>231</td><td>3.7%</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The first thing that jumped out: the top four rejection reasons together accounted for 81.4% of all structured rejections. These weren't rare edge cases — they were the standard failure modes of the system, happening over and over.</p>
 
@@ -263,7 +276,7 @@ export default function LoanwiserStory() {
 
         <p>The stated criteria might say: "CIBIL score ≥ 700, monthly income ≥ ₹25,000, employed for ≥ 1 year." These were necessary but not sufficient conditions. The actual decision also depended on:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Factor</th><th>Stated?</th><th>Actual Impact on Decisions</th></tr></thead>
           <tbody>
             <tr><td>Employer category (large corp, SME, proprietorship)</td><td>Partially</td><td>High — SME/proprietorship rejections 2.4× higher</td></tr>
@@ -273,7 +286,7 @@ export default function LoanwiserStory() {
             <tr><td>Number of simultaneous loan enquiries</td><td>Partially</td><td>High — "enquiry shopping" triggers risk flags</td></tr>
             <tr><td>Geographic pin code of employer</td><td>Never</td><td>Moderate — some banks restrict to certain pin codes</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>This table was the product of many conversations and quite a bit of inferential analysis. Banks don't give you this information directly — in many cases they couldn't, because these factors operated as implicit heuristics in underwriter judgment rather than explicit policy. But the patterns were visible in the rejection data if you knew what to look for.</p>
 
@@ -337,7 +350,7 @@ export default function LoanwiserStory() {
 
         <p>The features we extracted from bank statements and their predictive value:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Feature</th><th>Description</th><th>Predictive Power</th></tr></thead>
           <tbody>
             <tr><td>Salary regularity score</td><td>Consistency of monthly salary credit date and amount</td><td>Very High</td></tr>
@@ -349,7 +362,7 @@ export default function LoanwiserStory() {
             <tr><td>Balance volatility</td><td>Standard deviation of daily closing balance</td><td>Medium</td></tr>
             <tr><td>Employer credit pattern</td><td>Whether employer credits are consistent company payments</td><td>High</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>Each feature was calibrated against our historical rejection data. We ran regression analysis to estimate the predictive weight of each variable on our outcome metric (disbursement yes/no). The salary regularity score and EMI-to-credit ratio emerged as the two most powerful individual predictors — both much more predictive than the declared monthly income that had been driving most routing decisions before.</p>
       </section>
@@ -375,7 +388,7 @@ export default function LoanwiserStory() {
 
         <p>We called this the "Salary Regularity Score" — a composite metric from 0 to 100 that captured the consistency, predictability, and stability of income credits over a 6-month period. The correlation between this score and loan approval outcomes in our dataset was striking:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Salary Regularity Score Band</th><th>Approval Rate (Historical)</th><th>Our Sample Size</th></tr></thead>
           <tbody>
             <tr><td>85–100 (Highly regular)</td><td>72.4%</td><td>1,840 applications</td></tr>
@@ -384,7 +397,7 @@ export default function LoanwiserStory() {
             <tr><td>40–54 (Irregular)</td><td>18.3%</td><td>1,140 applications</td></tr>
             <tr><td>Below 40 (Highly irregular)</td><td>6.2%</td><td>620 applications</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The difference in approval rates between the top and bottom band was more than 66 percentage points. This was the most predictive single variable we found, and it was completely absent from the information Loanwiser had been using for routing decisions.</p>
 
@@ -468,7 +481,7 @@ export default function LoanwiserStory() {
 
         <p>Each bank profile consisted of:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Profile Element</th><th>Source</th><th>Update Frequency</th></tr></thead>
           <tbody>
             <tr><td>Acceptable FOIR range</td><td>Bank documentation + historical data</td><td>Quarterly</td></tr>
@@ -478,7 +491,7 @@ export default function LoanwiserStory() {
             <tr><td>Geographic restrictions</td><td>Bank documentation</td><td>Ad hoc</td></tr>
             <tr><td>Current capacity signal</td><td>Approval velocity tracking</td><td>Weekly</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The "current capacity signal" deserves explanation. We noticed that bank approval rates varied significantly week to week, apparently in response to portfolio capacity constraints. When a bank had filled its monthly personal loan quota, approval rates dropped sharply even for high-quality applications. By tracking our approval velocity per bank, we could detect these capacity signals and temporarily deprioritize that bank in routing decisions.</p>
 

@@ -51,7 +51,7 @@ export default function Testimonials() {
 
   return (
     <section
-      className="relative py-28 bg-background overflow-hidden"
+      className="relative py-20 md:py-28 bg-background overflow-hidden"
       style={{ contentVisibility: "auto", containIntrinsicSize: "0 460px" }}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
@@ -66,9 +66,9 @@ export default function Testimonials() {
 
       {/* Decorative background quote mark */}
       <div
-        className="absolute -top-8 left-4 md:left-12 pointer-events-none select-none"
+        className="absolute -top-4 md:-top-8 left-0 md:left-12 pointer-events-none select-none"
         style={{
-          fontSize: "clamp(12rem, 22vw, 20rem)",
+          fontSize: "clamp(10rem, 22vw, 20rem)",
           lineHeight: 1,
           fontFamily: "Georgia, serif",
           color: "#2563EB",
@@ -85,20 +85,20 @@ export default function Testimonials() {
         {/* Header */}
         <div
           ref={sectionRef}
-          className={`flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-14 reveal ${sectionVisible ? "in-view" : ""}`}
+          className={`flex flex-col md:flex-row md:items-end md:justify-between gap-6 md:gap-4 mb-10 md:mb-14 reveal ${sectionVisible ? "in-view" : ""}`}
         >
           <div>
-            <p className="text-xs font-bold tracking-widest uppercase text-primary mb-3">What People Say</p>
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground leading-tight">
+            <p className="text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary mb-2 md:mb-3">What People Say</p>
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground leading-[1.1]">
               Trusted by founders<br className="hidden md:block" /> &amp; leaders.
             </h2>
           </div>
           {/* Navigation arrows */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 self-start md:self-auto">
             <button
               onClick={prev}
               data-testid="testimonial-prev"
-              className="h-11 w-11 rounded-full border border-border hover:border-primary hover:bg-primary/5 flex items-center justify-center transition-all group"
+              className="h-10 w-10 md:h-11 md:w-11 rounded-full border border-border hover:border-primary hover:bg-primary/5 flex items-center justify-center transition-all group"
               aria-label="Previous"
             >
               <ArrowLeft className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
@@ -106,13 +106,13 @@ export default function Testimonials() {
             <button
               onClick={next}
               data-testid="testimonial-next"
-              className="h-11 w-11 rounded-full border border-border hover:border-primary hover:bg-primary/5 flex items-center justify-center transition-all group"
+              className="h-10 w-10 md:h-11 md:w-11 rounded-full border border-border hover:border-primary hover:bg-primary/5 flex items-center justify-center transition-all group"
               aria-label="Next"
             >
               <ArrowRight className="h-4 w-4 text-muted-foreground group-hover:text-primary transition-colors" />
             </button>
             {/* Dot counter */}
-            <div className="flex items-center gap-1.5 ml-2">
+            <div className="flex items-center gap-1.5 ml-1 md:ml-2">
               {testimonials.map((_, i) => (
                 <button
                   key={i}
@@ -120,7 +120,7 @@ export default function Testimonials() {
                   data-testid={`testimonial-dot-${i}`}
                   aria-label={`Go to testimonial ${i + 1}`}
                   className={`rounded-full transition-all duration-300 ${
-                    i === featured ? "bg-primary w-6 h-2" : "bg-border hover:bg-primary/40 w-2 h-2"
+                    i === featured ? "bg-primary w-5 md:w-6 h-1.5 md:h-2" : "bg-border hover:bg-primary/40 w-1.5 md:w-2 h-1.5 md:h-2"
                   }`}
                 />
               ))}
@@ -129,12 +129,12 @@ export default function Testimonials() {
         </div>
 
         {/* Main layout: featured left + stacked right */}
-        <div className="grid lg:grid-cols-[1.45fr_1fr] gap-5 items-stretch">
+        <div className="grid lg:grid-cols-[1.45fr_1fr] gap-4 md:gap-5 items-stretch">
 
           {/* Featured quote — large */}
           <div
             key={featured}
-            className="t-fade relative flex flex-col justify-between p-8 md:p-12 rounded-3xl bg-foreground text-background overflow-hidden min-h-[320px]"
+            className="t-fade relative flex flex-col justify-between p-6 sm:p-8 md:p-12 rounded-2xl md:rounded-3xl bg-foreground text-background overflow-hidden min-h-[320px]"
           >
             {/* Subtle grid texture */}
             <div
@@ -155,44 +155,44 @@ export default function Testimonials() {
 
             <div className="relative">
               {/* Tag */}
-              <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border border-primary/30 bg-primary/15 text-primary mb-7">
+              <span className="inline-flex items-center gap-1.5 text-[10px] md:text-[11px] font-bold uppercase tracking-widest px-2.5 md:px-3 py-1 rounded-full border border-primary/30 bg-primary/15 text-primary mb-5 md:mb-7">
                 <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                 {featuredItem.tag}
               </span>
 
               {/* Opening mark */}
               <div
-                className="font-serif font-bold text-primary leading-none mb-4"
-                style={{ fontSize: "4rem", lineHeight: 0.8, opacity: 0.7 }}
+                className="font-serif font-bold text-primary leading-none mb-3 md:mb-4"
+                style={{ fontSize: "3rem", lineHeight: 0.8, opacity: 0.7 }}
                 aria-hidden
               >
                 "
               </div>
 
               {/* Quote */}
-              <blockquote className="font-serif text-xl md:text-2xl text-white/90 leading-relaxed mb-8">
+              <blockquote className="font-serif text-lg sm:text-xl md:text-2xl text-white/90 leading-relaxed mb-6 md:mb-8">
                 {featuredItem.quote}
               </blockquote>
             </div>
 
             {/* Attribution */}
-            <div className="relative flex items-center gap-4 pt-6 border-t border-white/10">
-              <div className="h-12 w-12 rounded-2xl bg-primary flex items-center justify-center text-white font-bold text-base shrink-0">
+            <div className="relative flex items-center gap-3 md:gap-4 pt-5 md:pt-6 border-t border-white/10">
+              <div className="h-10 w-10 md:h-12 md:w-12 rounded-xl md:rounded-2xl bg-primary flex items-center justify-center text-white font-bold text-sm md:text-base shrink-0">
                 {featuredItem.initials}
               </div>
               <div>
-                <p className="font-serif font-bold text-white text-base">{featuredItem.name}</p>
-                <p className="text-white/45 text-xs font-medium mt-0.5">{featuredItem.role}</p>
+                <p className="font-serif font-bold text-white text-sm md:text-base">{featuredItem.name}</p>
+                <p className="text-white/45 text-[11px] md:text-xs font-medium mt-0.5">{featuredItem.role}</p>
               </div>
               <div className="ml-auto text-right hidden sm:block">
-                <p className="text-[11px] text-white/30 uppercase tracking-widest font-medium mb-1">Key Result</p>
+                <p className="text-[10px] md:text-[11px] text-white/30 uppercase tracking-widest font-medium mb-1">Key Result</p>
                 <p className="text-primary text-sm font-bold">{featuredItem.highlight}</p>
               </div>
             </div>
           </div>
 
           {/* Stacked side cards */}
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-4 md:gap-5">
             {sideItems.map((item, i) => {
               const originalIndex = testimonials.indexOf(item);
               return (
@@ -200,18 +200,18 @@ export default function Testimonials() {
                   key={originalIndex}
                   onClick={() => setFeatured(originalIndex)}
                   data-testid={`testimonial-card-${originalIndex}`}
-                  className="group text-left flex flex-col justify-between p-6 md:p-8 rounded-3xl bg-muted/30 border border-border/60 hover:border-primary/30 hover:bg-primary/[0.025] hover:shadow-[0_0_30px_rgba(37,99,235,0.06)] transition-all duration-300 flex-1 cursor-pointer"
+                  className="group text-left flex flex-col justify-between p-5 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-muted/30 border border-border/60 hover:border-primary/30 hover:bg-primary/[0.025] hover:shadow-[0_0_30px_rgba(37,99,235,0.06)] transition-all duration-300 flex-1 cursor-pointer"
                 >
                   {/* Tag */}
                   <div>
-                    <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full border border-border bg-background text-muted-foreground group-hover:border-primary/25 group-hover:text-primary transition-colors mb-4">
+                    <span className="inline-flex items-center gap-1.5 text-[10px] md:text-[11px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full border border-border bg-background text-muted-foreground group-hover:border-primary/25 group-hover:text-primary transition-colors mb-3 md:mb-4">
                       {item.tag}
                     </span>
 
                     {/* Opening mark */}
                     <p
-                      className="font-serif font-bold text-primary/25 group-hover:text-primary/40 transition-colors leading-none mb-3"
-                      style={{ fontSize: "2.5rem", lineHeight: 0.9 }}
+                      className="font-serif font-bold text-primary/25 group-hover:text-primary/40 transition-colors leading-none mb-2 md:mb-3"
+                      style={{ fontSize: "2rem", lineHeight: 0.9 }}
                       aria-hidden
                     >
                       "
@@ -223,15 +223,15 @@ export default function Testimonials() {
                   </div>
 
                   {/* Attribution */}
-                  <div className="flex items-center gap-3 mt-6 pt-4 border-t border-border/50 group-hover:border-primary/15 transition-colors">
-                    <div className="h-9 w-9 rounded-xl bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center text-primary font-bold text-sm shrink-0 transition-colors">
+                  <div className="flex items-center gap-2.5 md:gap-3 mt-4 md:mt-6 pt-3 md:pt-4 border-t border-border/50 group-hover:border-primary/15 transition-colors">
+                    <div className="h-8 w-8 md:h-9 md:w-9 rounded-lg md:rounded-xl bg-primary/10 group-hover:bg-primary/20 flex items-center justify-center text-primary font-bold text-xs md:text-sm shrink-0 transition-colors">
                       {item.initials}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <p className="font-semibold text-sm text-foreground">{item.name}</p>
-                      <p className="text-xs text-muted-foreground">{item.role}</p>
+                      <p className="font-semibold text-xs md:text-sm text-foreground">{item.name}</p>
+                      <p className="text-[10px] md:text-xs text-muted-foreground">{item.role}</p>
                     </div>
-                    <ArrowRight className="h-4 w-4 text-muted-foreground/30 group-hover:text-primary group-hover:translate-x-0.5 transition-all shrink-0" />
+                    <ArrowRight className="h-3.5 w-3.5 md:h-4 md:w-4 text-muted-foreground/30 group-hover:text-primary group-hover:translate-x-0.5 transition-all shrink-0" />
                   </div>
                 </button>
               );

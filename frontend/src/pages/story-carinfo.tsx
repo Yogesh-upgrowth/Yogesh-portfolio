@@ -24,6 +24,19 @@ export default function CarInfoStory() {
         .chapter-divider { display: flex; align-items: center; gap: 1rem; margin: 4rem 0 2rem; }
         .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(var(--border)); line-height: 1; }
         .chapter-divider .sep { flex: 1; height: 1px; background: hsl(var(--border)); }
+
+        @media (max-width: 640px) {
+          .prose-story h2 { font-size: 1.5rem; margin: 2.5rem 0 1rem; }
+          .prose-story h3 { font-size: 1.15rem; margin: 1.75rem 0 0.75rem; }
+          .prose-story p { font-size: 1rem; line-height: 1.7; }
+          .chapter-divider { margin: 3rem 0 1.5rem; }
+          .chapter-divider .num { font-size: 3.5rem; }
+          .metric-row { grid-template-columns: repeat(2, 1fr); border-radius: 12px; }
+          .metric-cell { padding: 1rem; }
+          .metric-cell .val { font-size: 1.5rem; }
+          .metric-cell .lbl { font-size: 0.65rem; }
+          .callout-box { padding: 1rem 1.25rem; }
+        }
       `}</style>
 
       <section id="hook">
@@ -87,7 +100,7 @@ export default function CarInfoStory() {
 
         <p>Using session recording and funnel analysis, I mapped what users actually did inside the app after completing an RC check:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Action After RC Check</th><th>% of Users</th><th>Insight</th></tr></thead>
           <tbody>
             <tr><td>Left immediately</td><td>51.3%</td><td>Used it as a lookup tool, got what they needed</td></tr>
@@ -97,7 +110,7 @@ export default function CarInfoStory() {
             <tr><td>Started insurance form</td><td>1.1%</td><td>Form start was deeply in the funnel</td></tr>
             <tr><td>Completed insurance purchase</td><td>0.007%</td><td>The disaster number</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The funnel analysis was illuminating. Of the 14.2% of users who clicked on the insurance section after seeing their vehicle's insurance status, only 0.05% eventually purchased. That's the conversion rate within an already-interested cohort — and it was catastrophically low. Something was happening between "interested user sees insurance section" and "user buys insurance" that was killing almost every potential transaction.</p>
       </section>
@@ -181,7 +194,7 @@ export default function CarInfoStory() {
 
         <p>When I audited CarInfo's SEO position, I found:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>SEO Dimension</th><th>Current State</th><th>Opportunity</th></tr></thead>
           <tbody>
             <tr><td>Total indexed pages</td><td>~340</td><td>Potentially 5,000–8,000</td></tr>
@@ -191,7 +204,7 @@ export default function CarInfoStory() {
             <tr><td>Insurance how-to content</td><td>None</td><td>High-volume informational queries</td></tr>
             <tr><td>Page load speed (mobile)</td><td>4.8s avg</td><td>Industry best: under 2s</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The opportunity was enormous. CarInfo had 340 indexed pages competing for a keyword universe of tens of thousands of highly relevant queries. The solution was programmatic SEO: building a content architecture that could generate thousands of relevant, high-quality pages from structured data.</p>
 
@@ -222,7 +235,7 @@ export default function CarInfoStory() {
 
         <p>Through user research — a combination of qualitative interviews and A/B-testable trust signal experiments — we identified the signals that actually moved conversion in the CarInfo context:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Trust Signal</th><th>Type</th><th>Conversion Impact</th></tr></thead>
           <tbody>
             <tr><td>Insurer brand visibility (Bajaj, Tata, HDFC)</td><td>Institutional credibility</td><td>+34% on quote acceptance</td></tr>
@@ -232,7 +245,7 @@ export default function CarInfoStory() {
             <tr><td>Instant policy issuance guarantee</td><td>Process reassurance</td><td>+41% on checkout start</td></tr>
             <tr><td>Data security / SSL visible badge</td><td>Safety signal</td><td>+11% on form completion</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The biggest impact came from a combination of insurer brand visibility (showing the logos of recognized insurance brands prominently, not just CarInfo's brand) and the claim settlement ratio. The latter deserves special attention.</p>
 
@@ -272,17 +285,17 @@ export default function CarInfoStory() {
 
         <p>The urgency message was calibrated to the actual expiry situation:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Days to/from Expiry</th><th>Messaging Tone</th><th>CTA Copy</th></tr></thead>
           <tbody>
             <tr><td>61+ days before expiry</td><td>Informational</td><td>"Your insurance is active. Renew early for best rates."</td></tr>
             <tr><td>31–60 days before expiry</td><td>Proactive</td><td>"Renew in the next 30 days to avoid any lapse."</td></tr>
             <tr><td>8–30 days before expiry</td><td>Urgent</td><td>"Your insurance expires in X days. Renew to stay protected."</td></tr>
-            <tr><td>1–7 days before expiry</td><td>High urgency</td><td>"⚠ Insurance expires in X days. Driving without insurance is illegal."</td></tr>
+            <tr><td>1–7 days before expiry</td><td>High urgency</td><td>"Insurance expires in X days. Driving without insurance is illegal."</td></tr>
             <tr><td>1–30 days after expiry</td><td>Compliance + risk</td><td>"Your insurance expired X days ago. You're driving illegally."</td></tr>
             <tr><td>31+ days after expiry</td><td>Recovery</td><td>"Renew insurance to protect yourself from ₹2,000+ fines and legal liability."</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>This sounds like basic personalization. It is. But it was completely absent in the original product, which used the same generic CTA regardless of insurance status. The difference in conversion across these urgency bands was significant — expired insurance users (the highest urgency state) converted at 4.8× the rate of users with 60+ days remaining.</p>
 
@@ -332,7 +345,7 @@ export default function CarInfoStory() {
 
         <p>When we had this infrastructure in place and ran the analysis on four months of data, the results were startling. The cost per install by channel varied enormously, as expected. But the cost per insurance purchase — what we actually cared about — varied far more:</p>
 
-        <table className="data-table">
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Channel</th><th>CPI</th><th>Insurance CPP</th><th>CPP / CPI Multiple</th><th>ARPU (3-month)</th></tr></thead>
           <tbody>
             <tr><td>Google Search (insurance intent)</td><td>₹28</td><td>₹420</td><td>15×</td><td>₹280</td></tr>
@@ -342,7 +355,7 @@ export default function CarInfoStory() {
             <tr><td>YouTube pre-roll</td><td>₹41</td><td>₹3,100</td><td>76×</td><td>₹48</td></tr>
             <tr><td>Organic (SEO)</td><td>₹0 (no paid cost)</td><td>₹190</td><td>—</td><td>₹310</td></tr>
           </tbody>
-        </table>
+        </table></div>
 
         <p>The Facebook interest targeting channel was spending significantly. On a CPI basis, it looked reasonable. On a cost-per-insurance-purchase basis, it was 5× more expensive than Google Search intent keywords and 12× more expensive than organic traffic. The users it was delivering were people who were in the broad "vehicle owner" interest category but had no immediate intent or need — they were window shoppers who would check the app once and never return.</p>
 

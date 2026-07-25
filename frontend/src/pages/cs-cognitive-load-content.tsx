@@ -10,10 +10,10 @@ export default function CognitiveLoadContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">We Simplified the Product. Conversions Dropped. Here's What We Missed.</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The redesign had strong conviction behind it. The existing comparison interface showed 14 data points per insurance plan — premium, IDV, claim settlement ratio, NCB, zero depreciation availability, roadside assistance, and 8 more. It was overwhelming. Users were clearly spending too much time processing it.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We simplified. Cut to 6 data points. Cleaner layout. Less cognitive load. The A/B test ran for 3 weeks. Conversions fell 18%. We were confused for about 10 days before we figured out what had happened.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The redesign had strong conviction behind it. The existing comparison interface showed 14 data points per insurance plan — premium, IDV, claim settlement ratio, NCB, zero depreciation availability, roadside assistance, and 8 more. It was overwhelming. Users were clearly spending too much time processing it.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">We simplified. Cut to 6 data points. Cleaner layout. Less cognitive load. The A/B test ran for 3 weeks. Conversions fell 18%. We were confused for about 10 days before we figured out what had happened.</p>
         <ProblemBox>We had reduced cognitive load — but we'd also removed the information users needed to feel confident in their decision. The "overwhelming" interface was overwhelming because it contained too much data. But the simplified version was unconverting because it contained too little trust.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">The real insight wasn't about how much information to show. It was about <em>which</em> information reduces anxiety vs which information creates it — and those are different questions entirely.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">The real insight wasn't about how much information to show. It was about <em>which</em> information reduces anxiety vs which information creates it — and those are different questions entirely.</p>
       </section>
 
       <SectionDivider label="What the Data Said" />

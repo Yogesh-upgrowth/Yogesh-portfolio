@@ -10,10 +10,10 @@ export default function ChurnModelContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Problem with Fixing Churn After It Happens</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Every Monday we'd pull the weekly retention report. Users who churned last week. Win-back campaigns sent. Discount codes deployed. Response rates: 3–7%. The users were already gone.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We were fighting churn retrospectively — responding to an event that had already happened rather than preventing it. The entire retention strategy was essentially a post-mortem dressed up as engagement.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Every Monday we'd pull the weekly retention report. Users who churned last week. Win-back campaigns sent. Discount codes deployed. Response rates: 3–7%. The users were already gone.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">We were fighting churn retrospectively — responding to an event that had already happened rather than preventing it. The entire retention strategy was essentially a post-mortem dressed up as engagement.</p>
         <ProblemBox>By the time a user churns, you've already lost. The window to intervene is 10–14 days before the churn event — when behavior starts to degrade but the user is still reachable and still cares.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">The goal shifted: stop measuring churn. Start predicting it. Specifically, predict it 14 days before it happens — when there's still something we can do about it.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">The goal shifted: stop measuring churn. Start predicting it. Specifically, predict it 14 days before it happens — when there's still something we can do about it.</p>
       </section>
 
       <SectionDivider label="What We Observed" />

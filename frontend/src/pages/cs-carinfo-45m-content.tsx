@@ -10,10 +10,10 @@ export default function CarInfo45mContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The App That Had Everything Except Growth</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">When I joined the CarInfo product team, the platform had genuinely useful data. Real-time RC details, insurance status, owner history, challan records — information millions of Indian vehicle owners actively needed. The product worked. Users who found it loved it.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The problem: barely anyone was finding it. Monthly active users sat around 3.8M. Growth was slow, organic, and driven entirely by word of mouth and a handful of Google rankings that had accumulated by accident. No systematic growth engine. No compounding flywheel. Traffic came in, didn't stick, and didn't bring friends.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">When I joined the CarInfo product team, the platform had genuinely useful data. Real-time RC details, insurance status, owner history, challan records — information millions of Indian vehicle owners actively needed. The product worked. Users who found it loved it.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The problem: barely anyone was finding it. Monthly active users sat around 3.8M. Growth was slow, organic, and driven entirely by word of mouth and a handful of Google rankings that had accumulated by accident. No systematic growth engine. No compounding flywheel. Traffic came in, didn't stick, and didn't bring friends.</p>
         <ProblemBox>We had product-market fit. We did not have a growth model. The users who found us loved us — but the funnel between "exists online" and "user opens the app" was essentially a random walk.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85]">My job was to go from 3.8M to a number that made the platform defensible — not just larger, but compounding. A platform where growth fed growth. We ended up at 45M+ MAU. Here's exactly how.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85]">My job was to go from 3.8M to a number that made the platform defensible — not just larger, but compounding. A platform where growth fed growth. We ended up at 45M+ MAU. Here's exactly how.</p>
       </section>
 
       <SectionDivider label="The Data Reality" />

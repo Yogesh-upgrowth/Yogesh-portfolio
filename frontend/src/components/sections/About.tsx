@@ -63,16 +63,16 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="py-24 bg-background">
+    <section id="about" className="py-20 md:py-24 bg-background">
       <div className="container px-4 md:px-6 mx-auto max-w-4xl">
         <div className="animate-fade-in-up">
-          <h2 className="text-sm font-bold tracking-widest text-primary uppercase mb-6">About Me</h2>
-          <h3 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-8 leading-tight">
+          <h2 className="text-xs md:text-sm font-bold tracking-widest text-primary uppercase mb-4 md:mb-6">About Me</h2>
+          <h3 className="text-3xl md:text-5xl font-serif font-bold text-foreground mb-6 md:mb-8 leading-[1.2]">
             I don't just ship features. <br className="hidden md:block"/>
             I build <span className="text-primary/90 decoration-primary/30 underline decoration-2 underline-offset-4">engines for growth</span>.
           </h3>
           
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4">
             {dropdowns.map((item, index) => (
               <div 
                 key={index} 
@@ -80,10 +80,10 @@ export default function About() {
               >
                 <button
                   onClick={() => toggleDropdown(index)}
-                  className="w-full flex items-center justify-between p-5 text-left hover:bg-muted/30 transition-colors"
+                  className="w-full flex items-center justify-between p-4 md:p-5 text-left hover:bg-muted/30 transition-colors"
                   data-testid={`about-dropdown-${index}`}
                 >
-                  <span className="text-lg font-medium text-foreground pr-4">{item.headline}</span>
+                  <span className="text-base md:text-lg font-medium text-foreground pr-4 leading-snug">{item.headline}</span>
                   <ChevronDown 
                     className={`h-5 w-5 text-muted-foreground shrink-0 transition-transform duration-200 ${
                       openIndex === index ? "rotate-180" : ""
@@ -91,8 +91,8 @@ export default function About() {
                   />
                 </button>
                 {openIndex === index && (
-                  <div className="px-5 pb-5">
-                    <div className="prose prose-lg prose-slate text-muted-foreground leading-relaxed whitespace-pre-line">
+                  <div className="px-4 pb-4 md:px-5 md:pb-5">
+                    <div className="prose prose-base md:prose-lg prose-slate text-muted-foreground leading-relaxed whitespace-pre-line">
                       {item.content}
                     </div>
                   </div>
@@ -101,7 +101,7 @@ export default function About() {
             ))}
           </div>
 
-          <p className="mt-8 text-lg text-muted-foreground leading-relaxed">
+          <p className="mt-8 text-base md:text-lg text-muted-foreground leading-relaxed">
             If you're looking for execution help, there are many PMs.<br />
             If you're looking for someone who thinks like an owner, explore further.
           </p>

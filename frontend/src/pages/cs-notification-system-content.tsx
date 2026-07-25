@@ -10,10 +10,10 @@ export default function NotificationSystemContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">We Sent Fewer Notifications. Revenue Went Up.</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The counterintuitive result came in on a Tuesday. The experiment had been running for 3 weeks: Group A got our standard notification cadence (11 per month), Group B got our new intelligent system (4.2 per month on average). The rule of thumb says more touchpoints equals more engagement.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Group B had 28% higher click-through, 34% higher revenue per user, and 61% lower unsubscribe rate. We'd been spamming ourselves into lower performance for over a year.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The counterintuitive result came in on a Tuesday. The experiment had been running for 3 weeks: Group A got our standard notification cadence (11 per month), Group B got our new intelligent system (4.2 per month on average). The rule of thumb says more touchpoints equals more engagement.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Group B had 28% higher click-through, 34% higher revenue per user, and 61% lower unsubscribe rate. We'd been spamming ourselves into lower performance for over a year.</p>
         <ProblemBox>Notifications aren't engagement tools. They're trust tokens. Every notification you send that isn't relevant is a withdrawal from the trust account. When you overdraw, users unsubscribe — permanently. You don't get a second opt-in.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">The rebuild wasn't about sending fewer notifications. It was about building a system that only sent notifications that were genuinely worth interrupting someone for.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">The rebuild wasn't about sending fewer notifications. It was about building a system that only sent notifications that were genuinely worth interrupting someone for.</p>
       </section>
 
       <SectionDivider label="The Problem State" />

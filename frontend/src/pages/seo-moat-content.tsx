@@ -13,10 +13,10 @@ export default function SeoMoatCaseStudy() {
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">
           The Moment We Realized SEO Was Broken
         </h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">
           We weren't losing because we had a bad product. We were losing because <strong className="text-foreground">users never found us</strong>.
         </p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">
           When we launched MoneyRateFinder, we believed we had a strong value proposition: real-time comparison, better UX than legacy platforms, and a focused decision-making flow. But the reality was brutal.
         </p>
 
@@ -138,7 +138,7 @@ export default function SeoMoatCaseStudy() {
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">
           Step 1: Deconstructing Competitor SEO Systems
         </h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">
           Instead of guessing, we broke competitors down like products — analyzing 3 distinct layers of their SEO architecture.
         </p>
 
@@ -222,7 +222,7 @@ export default function SeoMoatCaseStudy() {
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">
           Step 2: Designing Our SEO System (Not Strategy)
         </h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">
           We didn't copy competitors. We built a <strong className="text-foreground">more structured system</strong> — the MoneyRateFinder SEO Engine, broken into 4 core components.
         </p>
 
@@ -342,7 +342,7 @@ export default function SeoMoatCaseStudy() {
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">
           Step 3: Execution — Where Most Strategies Fail
         </h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">This wasn't just planning. Execution ran in three distinct phases, each with a clear focus and measurable outcome.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">This wasn't just planning. Execution ran in three distinct phases, each with a clear focus and measurable outcome.</p>
 
         <div className="space-y-4">
           {[
@@ -402,7 +402,7 @@ export default function SeoMoatCaseStudy() {
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">
           Step 4: What Didn't Work (Important)
         </h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Not every move paid off. Being honest about failure is as important as celebrating success.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Not every move paid off. Being honest about failure is as important as celebrating success.</p>
         <div className="space-y-4">
           {[
             {

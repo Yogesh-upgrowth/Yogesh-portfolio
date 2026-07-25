@@ -216,7 +216,7 @@ export default function Blog() {
       <main id="main-content" className="flex-grow">
 
         {/* ── Hero: asymmetric 2-col ─────────────────────────────── */}
-        <section className="relative pt-28 pb-0 overflow-hidden">
+        <section className="relative pt-24 md:pt-28 pb-6 md:pb-0 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-primary/[0.04] via-background to-background pointer-events-none" />
 
           <div
@@ -226,35 +226,35 @@ export default function Blog() {
             <div className="grid lg:grid-cols-[1fr_420px] xl:grid-cols-[1fr_460px] gap-8 xl:gap-14 items-start">
 
               {/* Left: editorial text */}
-              <div className="pt-6 pb-10">
-                <div className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-white/80 shadow-sm px-4 py-1.5 text-sm font-semibold text-primary mb-7 backdrop-blur-sm">
-                  <Pen className="h-3.5 w-3.5" />
+              <div className="pt-2 md:pt-6 pb-6 md:pb-10">
+                <div className="inline-flex items-center gap-2 rounded-full border border-primary/25 bg-white/80 shadow-sm px-3 md:px-4 py-1.5 text-[11px] md:text-sm font-semibold text-primary mb-5 md:mb-7 backdrop-blur-sm">
+                  <Pen className="h-3 md:h-3.5 w-3 md:w-3.5" />
                   The Blog
                 </div>
 
-                <h1 className="font-serif font-bold text-4xl md:text-5xl xl:text-[3.5rem] leading-[1.08] tracking-tight text-foreground mb-5">
-                  Product Management, Growth<br />
-                  &amp; Monetisation <span className="text-primary">Essays<br />
+                <h1 className="font-serif font-bold text-3xl md:text-5xl xl:text-[3.5rem] leading-[1.1] md:leading-[1.08] tracking-tight text-foreground mb-4 md:mb-5">
+                  Product Management, Growth<br className="hidden md:block" />
+                  &amp; Monetisation <span className="text-primary">Essays<br className="hidden md:block" />
                   by Yogesh Yadav</span>
                 </h1>
 
-                <p className="text-muted-foreground text-lg leading-relaxed mb-8 max-w-lg">
+                <p className="text-muted-foreground text-base md:text-lg leading-relaxed mb-6 md:mb-8 max-w-lg">
                   50 deep-dive articles on product management, growth strategy, and AI — from 9+ years of building real products.
                 </p>
 
                 {/* Category quick-links */}
                 <div className="space-y-2">
-                  <p className="text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-3">Browse by topic</p>
-                  <div className="flex flex-wrap gap-2">
+                  <p className="text-[10px] md:text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-2 md:mb-3">Browse by topic</p>
+                  <div className="flex flex-wrap gap-1.5 md:gap-2">
                     {BLOG_CATEGORIES.map(cat => (
                       <button
                         key={cat}
                         onClick={() => { handleCategoryChange(cat); document.getElementById("articles")?.scrollIntoView({ behavior: "smooth" }); }}
-                        className="inline-flex items-center gap-1.5 text-sm font-medium px-3.5 py-1.5 rounded-full border border-border hover:border-primary/40 hover:bg-primary/5 hover:text-primary transition-all text-foreground"
+                        className="inline-flex items-center gap-1.5 text-xs md:text-sm font-medium px-3 md:px-3.5 py-1 md:py-1.5 rounded-full border border-border hover:border-primary/40 hover:bg-primary/5 hover:text-primary transition-all text-foreground"
                       >
-                        <span className={`w-2 h-2 rounded-full shrink-0 ${CAT_DOT[cat]}`} />
+                        <span className={`w-1.5 md:w-2 h-1.5 md:h-2 rounded-full shrink-0 ${CAT_DOT[cat]}`} />
                         {cat}
-                        <span className="text-muted-foreground text-xs">{categoryCounts[cat] ?? 0}</span>
+                        <span className="text-muted-foreground text-[10px] md:text-xs">{categoryCounts[cat] ?? 0}</span>
                       </button>
                     ))}
                   </div>
@@ -263,7 +263,7 @@ export default function Blog() {
 
               {/* Right: featured post card */}
               {featuredPost && (
-                <div className="lg:pt-6 pb-0 lg:pb-0">
+                <div className="lg:pt-6 pb-0">
                   <HeroFeaturedCard post={featuredPost} />
                 </div>
               )}
@@ -272,20 +272,20 @@ export default function Blog() {
         </section>
 
         {/* ── Category Filter (sticky) ───────────────────────────── */}
-        <div id="articles" className="border-y border-border bg-background/95 sticky top-16 z-30 backdrop-blur-md">
+        <div id="articles" className="border-y border-border bg-background/95 sticky top-14 md:top-16 z-30 backdrop-blur-md">
           <div className="container px-4 md:px-6 mx-auto">
-            <div className="flex items-center gap-1.5 overflow-x-auto py-3.5 scrollbar-hide">
+            <div className="flex items-center gap-1.5 overflow-x-auto py-3 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
               <button
                 onClick={() => handleCategoryChange("All")}
                 data-testid="filter-all"
-                className={`flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-semibold border transition-all ${
+                className={`flex-shrink-0 inline-flex items-center gap-1.5 px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold border transition-all ${
                   activeCategory === "All"
                     ? "bg-primary text-white border-primary shadow-sm"
                     : "bg-background border-border text-muted-foreground hover:border-primary/40 hover:text-foreground hover:bg-primary/5"
                 }`}
               >
                 All
-                <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${activeCategory === "All" ? "bg-white/25 text-white" : "bg-muted text-muted-foreground"}`}>
+                <span className={`text-[10px] md:text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${activeCategory === "All" ? "bg-white/25 text-white" : "bg-muted text-muted-foreground"}`}>
                   {categoryCounts["All"]}
                 </span>
               </button>
@@ -294,7 +294,7 @@ export default function Blog() {
                   key={cat}
                   onClick={() => handleCategoryChange(cat)}
                   data-testid={`filter-${cat.toLowerCase().replace(/\s+/g, '-')}`}
-                  className={`flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-sm font-semibold border transition-all ${
+                  className={`flex-shrink-0 inline-flex items-center gap-1.5 px-3 md:px-4 py-1.5 rounded-full text-xs md:text-sm font-semibold border transition-all ${
                     activeCategory === cat
                       ? "bg-primary text-white border-primary shadow-sm"
                       : "bg-background border-border text-muted-foreground hover:border-primary/40 hover:text-foreground hover:bg-primary/5"
@@ -302,7 +302,7 @@ export default function Blog() {
                 >
                   <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${activeCategory === cat ? "bg-white" : CAT_DOT[cat]}`} />
                   {cat}
-                  <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${activeCategory === cat ? "bg-white/25 text-white" : "bg-muted text-muted-foreground"}`}>
+                  <span className={`text-[10px] md:text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${activeCategory === cat ? "bg-white/25 text-white" : "bg-muted text-muted-foreground"}`}>
                     {categoryCounts[cat] ?? 0}
                   </span>
                 </button>
@@ -312,14 +312,14 @@ export default function Blog() {
         </div>
 
         {/* ── Articles ──────────────────────────────────────────── */}
-        <section className="container px-4 md:px-6 mx-auto py-14">
+        <section className="container px-4 md:px-6 mx-auto py-10 md:py-14">
 
           {/* Section header */}
-          <div className="flex items-center justify-between mb-10">
-            <h2 className="font-serif text-2xl font-bold">
+          <div className="flex items-center justify-between mb-8 md:mb-10">
+            <h2 className="font-serif text-xl md:text-2xl font-bold">
               {activeCategory === "All" ? "All Articles" : activeCategory}
             </h2>
-            <span className="text-sm text-muted-foreground">{totalCount} articles</span>
+            <span className="text-xs md:text-sm text-muted-foreground">{totalCount} articles</span>
           </div>
 
           {filteredPosts.length === 0 ? (
@@ -329,7 +329,7 @@ export default function Blog() {
 
               {/* Row 1: 1 large lead + up to 2 side cards */}
               {leadPost && (
-                <div className="grid md:grid-cols-[1.4fr_1fr_1fr] gap-6 mb-12 pb-12 border-b border-border/50">
+                <div className="grid md:grid-cols-[1.4fr_1fr_1fr] gap-6 mb-10 md:mb-12 pb-10 md:pb-12 border-b border-border/50">
                   <LeadCard post={leadPost} />
                   {gridPosts.slice(0, 2).map(post => (
                     <GridCard key={post.id} post={post} />
@@ -339,7 +339,7 @@ export default function Blog() {
 
               {/* Row 2+: uniform 3-col grid */}
               {gridPosts.slice(2).length > 0 && (
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 md:mb-12">
                   {gridPosts.slice(2).map(post => (
                     <GridCard key={post.id} post={post} />
                   ))}
@@ -349,9 +349,9 @@ export default function Blog() {
               {/* List rows */}
               {listPosts.length > 0 && (
                 <div className="mt-4">
-                  <div className="flex items-center gap-3 mb-2">
+                  <div className="flex items-center gap-3 mb-4 md:mb-2">
                     <span className="flex-1 h-px bg-border/60" />
-                    <span className="text-xs text-muted-foreground uppercase tracking-widest font-medium px-3">More Articles</span>
+                    <span className="text-[10px] md:text-xs text-muted-foreground uppercase tracking-widest font-medium px-3">More Articles</span>
                     <span className="flex-1 h-px bg-border/60" />
                   </div>
                   <div>
@@ -364,10 +364,10 @@ export default function Blog() {
 
               {/* Load more */}
               {hasMore && (
-                <div className="mt-12 text-center">
+                <div className="mt-10 md:mt-12 text-center">
                   <button
                     onClick={() => setShowAll(true)}
-                    className="inline-flex items-center gap-2 px-8 py-3 rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-all text-sm"
+                    className="inline-flex items-center justify-center gap-2 px-8 py-3 w-full sm:w-auto rounded-full border-2 border-primary text-primary font-semibold hover:bg-primary hover:text-white transition-all text-sm"
                     data-testid="load-more"
                   >
                     Load All Articles
@@ -381,18 +381,18 @@ export default function Blog() {
 
         {/* ── Full-width CTA strip ───────────────────────────────── */}
         <section className="border-t border-border/60 bg-primary/[0.03]">
-          <div className="container px-4 md:px-6 mx-auto py-14">
+          <div className="container px-4 md:px-6 mx-auto py-12 md:py-14">
             <div className="max-w-2xl mx-auto text-center">
-              <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-5">
-                <BookOpen className="h-6 w-6 text-primary" />
+              <div className="w-10 h-10 md:w-12 md:h-12 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-4 md:mb-5">
+                <BookOpen className="h-5 w-5 md:h-6 md:w-6 text-primary" />
               </div>
-              <h3 className="font-serif font-bold text-2xl md:text-3xl mb-3">Building something ambitious?</h3>
-              <p className="text-muted-foreground text-base leading-relaxed mb-7">
+              <h3 className="font-serif font-bold text-xl md:text-3xl mb-3">Building something ambitious?</h3>
+              <p className="text-muted-foreground text-sm md:text-base leading-relaxed mb-6 md:mb-7">
                 I work with founders and product teams to turn strategy into execution. Let's talk about your product.
               </p>
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 bg-primary text-white px-8 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors text-sm"
+                className="inline-flex items-center justify-center gap-2 bg-primary text-white px-8 py-3 w-full sm:w-auto rounded-full font-semibold hover:bg-primary/90 transition-colors text-sm"
               >
                 Work with me <ArrowRight className="h-4 w-4" />
               </Link>

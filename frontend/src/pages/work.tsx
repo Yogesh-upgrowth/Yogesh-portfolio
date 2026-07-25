@@ -180,15 +180,15 @@ export default function Work() {
       <main id="main-content" className="flex-grow">
 
         {/* ── HERO ────────────────────────────────────────────── */}
-        <section className="pt-28 pb-20 relative overflow-hidden bg-background">
-          <div className="absolute top-0 right-0 w-[600px] h-[600px] pointer-events-none"
-            style={{ background: "radial-gradient(ellipse 70% 70% at 90% 10%, rgba(37,99,235,0.06) 0%, transparent 65%)" }} />
+        <section className="pt-24 md:pt-28 pb-12 md:pb-20 relative overflow-hidden bg-background">
+          <div className="absolute top-0 right-0 w-[400px] md:w-[600px] h-[400px] md:h-[600px] pointer-events-none"
+               style={{ background: "radial-gradient(ellipse 70% 70% at 90% 10%, rgba(37,99,235,0.06) 0%, transparent 65%)" }} />
 
           <div className="container px-4 md:px-6 mx-auto">
-            <div className="grid lg:grid-cols-[1fr_420px] gap-12 xl:gap-20 items-center">
+            <div className="grid lg:grid-cols-[1fr_420px] gap-10 md:gap-12 xl:gap-20 items-center">
               <div>
                 {/* badge */}
-                <div className="wv d0 inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-primary/25 bg-primary/8 text-xs font-bold tracking-widest uppercase text-primary">
+                <div className="wv d0 inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-primary/25 bg-primary/8 text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary">
                   <span className="relative flex h-2 w-2">
                     <span className="absolute inline-flex h-full w-full rounded-full bg-primary opacity-60" style={{ animation: "wPulse 2s ease-in-out infinite" }} />
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
@@ -196,48 +196,48 @@ export default function Work() {
                   Available for new Projects
                 </div>
 
-                <h1 className="wv d1 text-4xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.1] text-foreground mb-6">
-                  Product Growth &amp; Monetisation<br />
-                  Consulting for <span className="text-primary">Fintech,<br />
+                <h1 className="wv d1 text-3xl md:text-5xl lg:text-[3.5rem] font-serif font-bold leading-[1.15] md:leading-[1.1] text-foreground mb-4 md:mb-6">
+                  Product Growth &amp; Monetisation<br className="hidden md:block" />
+                  Consulting for <span className="text-primary">Fintech,<br className="hidden md:block" />
                   SaaS &amp; Consumer Internet</span>
                 </h1>
 
-                <p className="wv d2 text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
+                <p className="wv d2 text-base md:text-lg text-muted-foreground mb-8 max-w-lg leading-relaxed">
                   I work with founders and leadership teams who are past the honeymoon phase — you have users and momentum, but cracks are showing in execution. You need fewer, better decisions.
                 </p>
 
-                <div className="wv d3 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-                  <Button size="lg" className="h-13 px-8 text-base rounded-full" asChild>
+                <div className="wv d3 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                  <Button size="lg" className="h-13 px-8 text-base rounded-full w-full sm:w-auto" asChild>
                     <Link href="/contact">
                       Start a Conversation <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
-                  <span className="text-sm text-muted-foreground">Response within 24 hours</span>
+                  <span className="text-sm text-muted-foreground text-center sm:text-left">Response within 24 hours</span>
                 </div>
               </div>
 
               {/* Stats card */}
-              <Reveal className="">
-                <div className="hidden lg:block relative">
-                  <div className="dr rounded-3xl bg-foreground p-8 overflow-hidden">
+              <Reveal className="mt-8 lg:mt-0">
+                <div className="relative">
+                  <div className="dr rounded-2xl md:rounded-3xl bg-foreground p-6 md:p-8 overflow-hidden">
                     <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
                       style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
-                    <div className="absolute bottom-0 right-0 w-48 h-48 pointer-events-none"
+                    <div className="absolute bottom-0 right-0 w-32 md:w-48 h-32 md:h-48 pointer-events-none"
                       style={{ background: "radial-gradient(circle at bottom right, rgba(37,99,235,0.2) 0%, transparent 65%)" }} />
-                    <p className="relative text-[11px] font-bold tracking-widest uppercase text-white/35 mb-6">Track Record</p>
-                    <div className="relative grid grid-cols-2 gap-px bg-white/[0.06] rounded-2xl overflow-hidden">
+                    <p className="relative text-[10px] md:text-[11px] font-bold tracking-widest uppercase text-white/35 mb-4 md:mb-6">Track Record</p>
+                    <div className="relative grid grid-cols-2 gap-px bg-white/[0.06] rounded-xl md:rounded-2xl overflow-hidden">
                       {stats.map(({ value, label }, i) => (
-                        <div key={i} className="bg-foreground p-6 flex flex-col gap-1">
-                          <span className="font-serif font-bold text-primary leading-none"
-                            style={{ fontSize: "clamp(2rem, 4vw, 2.6rem)", textShadow: "0 0 40px rgba(37,99,235,0.4)" }}>
+                        <div key={i} className="bg-foreground p-4 md:p-6 flex flex-col gap-1">
+                          <span className="font-serif font-bold text-primary leading-none text-2xl md:text-3xl lg:text-[2.6rem]"
+                            style={{ textShadow: "0 0 40px rgba(37,99,235,0.4)" }}>
                             {value}
                           </span>
-                          <span className="text-xs text-white/40 font-medium leading-snug">{label}</span>
+                          <span className="text-[10px] md:text-xs text-white/40 font-medium leading-snug">{label}</span>
                         </div>
                       ))}
                     </div>
-                    <div className="relative mt-6 pt-6 border-t border-white/[0.07]">
-                      <p className="text-white/40 text-xs leading-relaxed italic">
+                    <div className="relative mt-5 md:mt-6 pt-5 md:pt-6 border-t border-white/[0.07]">
+                      <p className="text-white/40 text-[11px] md:text-xs leading-relaxed italic">
                         "I don't operate as an external consultant. I operate as a thinking partner who carries outcome accountability."
                       </p>
                     </div>
@@ -249,13 +249,13 @@ export default function Work() {
         </section>
 
         {/* ── WHO THIS IS FOR ─────────────────────────────────── */}
-        <section className="py-24 bg-muted/25 border-y border-border/50">
+        <section className="py-16 md:py-24 bg-muted/25 border-y border-border/50">
           <div className="container px-4 md:px-6 mx-auto">
             <Reveal>
-              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-14">
+              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 md:mb-14">
                 <div>
-                  <p className="d0 text-xs font-bold tracking-widest uppercase text-primary mb-3">Ideal Fit</p>
-                  <h2 className="d1 text-3xl md:text-4xl font-serif font-bold">Who This Is For</h2>
+                  <p className="d0 text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary mb-2 md:mb-3">Ideal Fit</p>
+                  <h2 className="d1 text-2xl md:text-4xl font-serif font-bold">Who This Is For</h2>
                 </div>
                 <p className="d2 text-muted-foreground text-sm max-w-xs">If you see yourself here, we're probably a match.</p>
               </div>
@@ -264,17 +264,19 @@ export default function Work() {
             <RevealGrid className="grid md:grid-cols-2 lg:grid-cols-3 gap-0">
               {idealFit.map(({ num, icon: Icon, title, desc }, i) => (
                 <div key={i}
-                  className={`d${i} group relative flex gap-5 p-7 border-b border-border/50 hover:bg-background transition-colors duration-200`}
-                  style={{ borderRight: (i + 1) % 3 === 0 ? "none" : "1px solid hsl(var(--border) / 0.5)" }}
+                  className={`d${i} group relative flex flex-col sm:flex-row gap-4 sm:gap-5 p-6 md:p-7 border-b border-border/50 hover:bg-background transition-colors duration-200 
+                    ${(i + 1) % 3 === 0 ? "lg:border-r-0" : "lg:border-r"} 
+                    ${(i + 1) % 2 === 0 ? "md:border-r-0" : "md:border-r"} 
+                    border-r-0`}
                 >
-                  <span className="absolute top-5 right-5 text-4xl font-serif font-bold text-border/60 select-none group-hover:text-primary/10 transition-colors">
+                  <span className="absolute top-5 right-5 text-3xl md:text-4xl font-serif font-bold text-border/60 select-none group-hover:text-primary/10 transition-colors">
                     {num}
                   </span>
                   <div className="shrink-0 w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center group-hover:bg-primary/15 transition-colors mt-0.5">
                     <Icon className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-foreground mb-1.5">{title}</h3>
+                    <h3 className="font-bold text-foreground mb-1.5 pr-8 sm:pr-0">{title}</h3>
                     <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
                   </div>
                 </div>
@@ -284,21 +286,21 @@ export default function Work() {
         </section>
 
         {/* ── MY APPROACH ─────────────────────────────────────── */}
-        <section className="py-24 bg-background">
+        <section className="py-16 md:py-24 bg-background">
           <div className="container px-4 md:px-6 mx-auto">
-            <div className="grid lg:grid-cols-2 gap-14 xl:gap-20 items-start max-w-6xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-10 md:gap-14 xl:gap-20 items-start max-w-6xl mx-auto">
               <Reveal>
                 <div>
-                  <p className="d0 text-xs font-bold tracking-widest uppercase text-primary mb-4">My Approach</p>
-                  <h2 className="d1 text-3xl md:text-4xl font-serif font-bold mb-6">Context Before Capability</h2>
-                  <p className="d2 text-lg text-muted-foreground mb-5 leading-relaxed">
+                  <p className="d0 text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary mb-2 md:mb-4">My Approach</p>
+                  <h2 className="d1 text-2xl md:text-4xl font-serif font-bold mb-4 md:mb-6">Context Before Capability</h2>
+                  <p className="d2 text-base md:text-lg text-muted-foreground mb-4 md:mb-5 leading-relaxed">
                     Most product problems are not feature problems. They are decision problems, incentive problems, sequencing problems.
                   </p>
-                  <p className="d3 text-muted-foreground leading-relaxed mb-8">
+                  <p className="d3 text-sm md:text-base text-muted-foreground leading-relaxed mb-6 md:mb-8">
                     By the time teams feel "stuck," the root cause is usually months old. My job is to surface those hidden constraints early — before they become expensive or irreversible.
                   </p>
-                  <blockquote className="d4 border-l-4 border-primary pl-5">
-                    <p className="text-xl font-serif font-bold italic text-foreground leading-relaxed">
+                  <blockquote className="d4 border-l-4 border-primary pl-4 md:pl-5">
+                    <p className="text-lg md:text-xl font-serif font-bold italic text-foreground leading-relaxed">
                       "I don't operate as an external consultant. I operate as a thinking partner who carries outcome accountability."
                     </p>
                   </blockquote>
@@ -306,16 +308,16 @@ export default function Work() {
               </Reveal>
 
               <Reveal>
-                <div className="dr relative rounded-3xl bg-foreground p-8 overflow-hidden">
+                <div className="dr relative rounded-2xl md:rounded-3xl bg-foreground p-6 md:p-8 overflow-hidden mt-4 md:mt-0">
                   <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
                     style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)", backgroundSize: "28px 28px" }} />
-                  <div className="absolute top-0 left-0 w-40 h-40 pointer-events-none"
+                  <div className="absolute top-0 left-0 w-32 md:w-40 h-32 md:h-40 pointer-events-none"
                     style={{ background: "radial-gradient(circle at top left, rgba(37,99,235,0.15) 0%, transparent 65%)" }} />
-                  <p className="relative text-[11px] font-bold tracking-widest uppercase text-primary mb-7">I Start By Understanding:</p>
+                  <p className="relative text-[10px] md:text-[11px] font-bold tracking-widest uppercase text-primary mb-5 md:mb-7">I Start By Understanding:</p>
                   <div className="relative space-y-0">
                     {understandList.map((item, i) => (
-                      <div key={i} className="flex gap-4 py-5 border-b border-white/[0.07] last:border-0 group">
-                        <span className="text-2xl font-serif font-bold text-primary/25 shrink-0 w-7 leading-none mt-0.5 group-hover:text-primary/50 transition-colors">
+                      <div key={i} className="flex gap-3 md:gap-4 py-4 md:py-5 border-b border-white/[0.07] last:border-0 group">
+                        <span className="text-xl md:text-2xl font-serif font-bold text-primary/25 shrink-0 w-6 md:w-7 leading-none mt-0.5 group-hover:text-primary/50 transition-colors">
                           {String(i + 1).padStart(2, "0")}
                         </span>
                         <span className="text-white/75 text-sm leading-relaxed">{item}</span>
@@ -329,22 +331,22 @@ export default function Work() {
         </section>
 
         {/* ── TRACK RECORD ─────────────────────────────────────── */}
-        <section className="py-24 bg-foreground text-background relative overflow-hidden">
+        <section className="py-16 md:py-24 bg-foreground text-background relative overflow-hidden">
           <div className="absolute inset-0 pointer-events-none opacity-[0.025]"
             style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px)", backgroundSize: "100% 72px" }} />
-          <div className="absolute top-0 right-0 w-[500px] h-full pointer-events-none"
+          <div className="absolute top-0 right-0 w-full md:w-[500px] h-full pointer-events-none"
             style={{ background: "radial-gradient(ellipse 60% 70% at 100% 50%, rgba(37,99,235,0.1) 0%, transparent 65%)" }} />
 
           <div className="relative container px-4 md:px-6 mx-auto">
             <Reveal>
-              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-12">
+              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8 md:mb-12">
                 <div>
-                  <p className="d0 text-xs font-bold tracking-widest uppercase text-primary mb-3">Proven Results</p>
-                  <h2 className="d1 text-3xl md:text-4xl font-serif font-bold text-background leading-tight">
+                  <p className="d0 text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary mb-2 md:mb-3">Proven Results</p>
+                  <h2 className="d1 text-2xl md:text-4xl font-serif font-bold text-background leading-tight">
                     Work That Shaped<br className="hidden md:block" /> How I See Problems
                   </h2>
                 </div>
-                <p className="d2 text-white/35 text-sm max-w-xs">Click any story to read the full 20,000-word breakdown.</p>
+                <p className="d2 text-white/35 text-sm max-w-xs">Click any story to read the full breakdown.</p>
               </div>
             </Reveal>
 
@@ -354,26 +356,36 @@ export default function Work() {
               {companies.map((c, i) => (
                 <div key={i} className={`d${i} group`}>
                   <Link href={`/work/${c.slug}`}>
-                    <div className="grid grid-cols-1 md:grid-cols-[160px_1fr_140px] lg:grid-cols-[180px_1fr_220px] gap-6 md:gap-10 items-center py-8 px-3 -mx-3 rounded-lg hover:bg-white/[0.03] transition-colors duration-200 cursor-pointer">
-                      <div>
-                        <p className="text-[10px] font-bold tracking-widest uppercase text-primary/60 mb-1">{c.category}</p>
-                        <p className="font-serif font-bold text-background text-lg leading-snug">{c.name}</p>
-                        <p className="text-white/30 text-xs mt-0.5">{c.role}</p>
+                    <div className="grid grid-cols-1 md:grid-cols-[160px_1fr_140px] lg:grid-cols-[180px_1fr_220px] gap-4 md:gap-10 items-start md:items-center py-6 md:py-8 px-4 md:px-3 -mx-4 md:-mx-3 rounded-none md:rounded-lg hover:bg-white/[0.03] transition-colors duration-200 cursor-pointer">
+                      
+                      <div className="flex flex-row md:flex-col justify-between md:justify-start items-center md:items-start w-full md:w-auto">
+                        <div>
+                          <p className="text-[10px] font-bold tracking-widest uppercase text-primary/60 mb-1">{c.category}</p>
+                          <p className="font-serif font-bold text-background text-lg leading-snug">{c.name}</p>
+                          <p className="text-white/30 text-xs mt-0.5">{c.role}</p>
+                        </div>
+                        <div className="md:hidden text-right">
+                          <p className="font-serif font-bold text-primary leading-none mb-1 text-2xl md:text-3xl"
+                            style={{ textShadow: "0 0 50px rgba(37,99,235,0.45)" }}>
+                            {c.metric}
+                          </p>
+                          <p className="text-white/35 text-[10px] font-medium">{c.metricLabel}</p>
+                        </div>
                       </div>
 
                       <div>
                         <p className="text-white/55 text-sm leading-relaxed mb-3">{c.desc}</p>
-                        <div className="flex items-start gap-2">
-                          <span className="text-primary shrink-0 text-xs font-bold uppercase tracking-widest mt-0.5">Insight →</span>
+                        <div className="flex items-start gap-2 bg-white/[0.02] md:bg-transparent p-3 md:p-0 rounded-lg md:rounded-none">
+                          <span className="text-primary shrink-0 text-[10px] md:text-xs font-bold uppercase tracking-widest mt-0.5">Insight →</span>
                           <p className="text-white/80 text-sm font-medium leading-snug italic">{c.insight}</p>
                         </div>
-                        <div className="mt-3 inline-flex items-center gap-1.5 text-primary/70 text-xs font-semibold group-hover:text-primary transition-colors">
+                        <div className="mt-4 md:mt-3 inline-flex items-center gap-1.5 text-primary/70 text-xs font-semibold group-hover:text-primary transition-colors">
                           Read full story <ArrowUpRight className="h-3.5 w-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                         </div>
                       </div>
 
                       <div className="hidden md:block text-right md:text-left lg:text-right">
-                        <p className="font-serif font-bold text-primary leading-none mb-1"
+                        <p className="font-serif font-bold text-primary leading-none mb-1 text-2xl lg:text-[3rem]"
                           style={{ fontSize: "clamp(2rem, 4vw, 3rem)", textShadow: "0 0 50px rgba(37,99,235,0.45)" }}>
                           {c.metric}
                         </p>
@@ -389,23 +401,23 @@ export default function Work() {
         </section>
 
         {/* ── SERVICES ─────────────────────────────────────────── */}
-        <section className="py-24 bg-background">
+        <section className="py-16 md:py-24 bg-background">
           <div className="container px-4 md:px-6 mx-auto">
-            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-14">
+            <div className="max-w-6xl mx-auto grid lg:grid-cols-2 gap-10 md:gap-14">
               <Reveal>
                 <div>
-                  <p className="d0 text-xs font-bold tracking-widest uppercase text-primary mb-4">Services</p>
-                  <h2 className="d1 text-3xl font-serif font-bold mb-8">What I Can Help With</h2>
+                  <p className="d0 text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary mb-2 md:mb-4">Services</p>
+                  <h2 className="d1 text-2xl md:text-3xl font-serif font-bold mb-6 md:mb-8">What I Can Help With</h2>
                   <div className="space-y-3">
                     {canHelp.map((item, i) => (
                       <div key={i}
-                        className={`d${i + 2} flex items-start gap-4 p-4 rounded-xl border border-border/60 hover:border-primary/30 hover:bg-primary/[0.02] transition-all group`}>
+                        className={`d${i + 2} flex items-start gap-3 md:gap-4 p-4 rounded-xl border border-border/60 hover:border-primary/30 hover:bg-primary/[0.02] transition-all group`}>
                         <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                         <span className="text-foreground/80 text-sm leading-relaxed group-hover:text-foreground transition-colors">{item}</span>
                       </div>
                     ))}
                   </div>
-                  <p className="d4 text-xs text-muted-foreground mt-6 italic border-l-2 border-primary/30 pl-3">
+                  <p className="d4 text-xs text-muted-foreground mt-5 md:mt-6 italic border-l-2 border-primary/30 pl-3">
                     If it doesn't move a real metric, we don't do it.
                   </p>
                 </div>
@@ -413,18 +425,18 @@ export default function Work() {
 
               <Reveal>
                 <div>
-                  <p className="d0 text-xs font-bold tracking-widest uppercase text-muted-foreground mb-4">Boundaries</p>
-                  <h2 className="d1 text-3xl font-serif font-bold mb-8">What I Don't Do</h2>
+                  <p className="d0 text-[10px] md:text-xs font-bold tracking-widest uppercase text-muted-foreground mb-2 md:mb-4">Boundaries</p>
+                  <h2 className="d1 text-2xl md:text-3xl font-serif font-bold mb-6 md:mb-8">What I Don't Do</h2>
                   <div className="space-y-3">
                     {cantHelp.map((item, i) => (
-                      <div key={i} className="flex items-start gap-4 p-4 rounded-xl border border-border/40 bg-muted/20">
+                      <div key={i} className="flex items-start gap-3 md:gap-4 p-4 rounded-xl border border-border/40 bg-muted/20">
                         <XCircle className="h-5 w-5 text-muted-foreground/60 shrink-0 mt-0.5" />
                         <span className="text-muted-foreground text-sm leading-relaxed line-through decoration-muted-foreground/30">{item}</span>
                       </div>
                     ))}
                   </div>
-                  <div className="mt-8 p-5 rounded-xl bg-primary/5 border border-primary/15">
-                    <p className="text-xs font-bold tracking-widest uppercase text-primary mb-2">Engagement Model</p>
+                  <div className="mt-6 md:mt-8 p-4 md:p-5 rounded-xl bg-primary/5 border border-primary/15">
+                    <p className="text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary mb-2">Engagement Model</p>
                     <p className="text-sm text-foreground/70 leading-relaxed">
                       Sometimes advisory. Sometimes hands-on execution. Sometimes an ongoing partnership. We always start by defining the real problem. The engagement model follows the solution.
                     </p>
@@ -436,7 +448,7 @@ export default function Work() {
         </section>
 
         {/* ── CTA ──────────────────────────────────────────────── */}
-        <section className="relative py-28 bg-foreground overflow-hidden">
+        <section className="relative py-20 md:py-28 bg-foreground overflow-hidden">
           <div className="absolute inset-0 pointer-events-none opacity-[0.03]"
             style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
           <div className="absolute inset-0 pointer-events-none"
@@ -444,24 +456,24 @@ export default function Work() {
 
           <Reveal className="">
             <div className="relative container px-4 md:px-6 mx-auto text-center">
-              <p className="d0 text-xs font-bold tracking-widest uppercase text-primary mb-5">Let's Talk</p>
-              <h2 className="d1 text-4xl md:text-5xl font-serif font-bold text-background leading-tight mb-6 max-w-2xl mx-auto">
-                Ready to Move<br /> the Needle?
+              <p className="d0 text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary mb-4 md:mb-5">Let's Talk</p>
+              <h2 className="d1 text-3xl md:text-5xl font-serif font-bold text-background leading-tight mb-5 md:mb-6 max-w-2xl mx-auto">
+                Ready to Move<br className="hidden md:block" /> the Needle?
               </h2>
-              <p className="d2 text-white/45 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+              <p className="d2 text-white/45 text-base md:text-lg max-w-xl mx-auto mb-8 md:mb-10 leading-relaxed">
                 We always start by defining the real problem. The engagement model follows the solution.
               </p>
               <div className="d3">
-                <Button size="lg" className="h-14 px-10 text-base rounded-full" asChild>
+                <Button size="lg" className="h-14 px-8 md:px-10 text-base rounded-full w-full sm:w-auto" asChild>
                   <Link href="/contact">
                     Start a Conversation <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
               </div>
-              <p className="d4 text-white/25 text-sm mt-6">
+              <p className="d4 text-white/25 text-xs md:text-sm mt-6">
                 Or email directly:{" "}
                 <a href="mailto:yogesh.productmanager@gmail.com"
-                  className="text-primary hover:text-primary/80 transition-colors">
+                  className="text-primary hover:text-primary/80 transition-colors block sm:inline mt-1 sm:mt-0">
                   yogesh.productmanager@gmail.com
                 </a>
               </p>

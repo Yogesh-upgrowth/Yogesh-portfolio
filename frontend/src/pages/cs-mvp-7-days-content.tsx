@@ -10,10 +10,10 @@ export default function Mvp7DaysContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Seven Days to Know If the Idea Was Worth Building</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The context: we had three potential product directions in Q3. One needed 4 months to build properly before we could test market response. One needed 2 months. One — if we cut it aggressively — could be live in 7 days in a form that would tell us whether the demand hypothesis was real.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We chose the 7-day option. Not because 7 days was comfortable (it wasn't — it was anxious and slightly chaotic), but because the alternative was spending 4 months building something that might fail, when we could spend 7 days learning whether we should build it at all.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The context: we had three potential product directions in Q3. One needed 4 months to build properly before we could test market response. One needed 2 months. One — if we cut it aggressively — could be live in 7 days in a form that would tell us whether the demand hypothesis was real.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">We chose the 7-day option. Not because 7 days was comfortable (it wasn't — it was anxious and slightly chaotic), but because the alternative was spending 4 months building something that might fail, when we could spend 7 days learning whether we should build it at all.</p>
         <ProblemBox>The most expensive thing in product development isn't engineering time. It's building the wrong thing slowly. A 7-day MVP that proves a hypothesis wrong is worth more than a 4-month build that discovers the same failure.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">This is what those 7 days looked like — honestly, including the parts that didn't go according to plan.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">This is what those 7 days looked like — honestly, including the parts that didn't go according to plan.</p>
       </section>
 
       <SectionDivider label="The Hypothesis" />
@@ -48,12 +48,12 @@ export default function Mvp7DaysContent() {
             { day: "Day 6 (Saturday)", what: "Data review and first user calls", detail: "Three user calls with people who'd signed up. Two insights from the calls that changed the pricing page framing before the full launch. One insight I genuinely didn't expect: users wanted to save and share results — the shareable URL feature jumped to the top of the post-MVP backlog." },
             { day: "Day 7 (Sunday)", what: "Full launch + pricing page test", detail: "Posted to r/IndiaFinance, r/personalfinanceindia, shared in two private finance communities. By evening: 2,400 total visitors. Pricing page CTR: 6.2% (threshold was 3%). D3 return rate from Day 5 users: 29% (threshold was 20%). All four hypotheses passed." },
           ].map((d, i) => (
-            <div key={i} className="flex gap-4 p-5 rounded-xl border border-border bg-muted/20">
-              <div className="flex-shrink-0 w-32">
-                <p className="text-xs font-bold text-primary uppercase tracking-wider">{d.day}</p>
+            <div key={i} className="flex flex-col sm:flex-row gap-2 sm:gap-4 p-4 sm:p-5 rounded-xl border border-border bg-muted/20">
+              <div className="flex-shrink-0 sm:w-32">
+                <p className="text-[10px] sm:text-xs font-bold text-primary uppercase tracking-wider">{d.day}</p>
                 <p className="text-sm font-semibold text-foreground mt-0.5">{d.what}</p>
               </div>
-              <p className="text-sm text-foreground/70 leading-relaxed">{d.detail}</p>
+              <p className="text-[13px] sm:text-sm text-foreground/70 leading-relaxed">{d.detail}</p>
             </div>
           ))}
         </div>

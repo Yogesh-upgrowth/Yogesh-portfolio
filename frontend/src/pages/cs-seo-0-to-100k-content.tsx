@@ -10,8 +10,8 @@ export default function Seo0To100kContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Month 3: 28 Top-10 Rankings. Team Thought It Was Failing.</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The first 90 days of the SEO program were genuinely demoralizing. Zero organic sessions at launch. Three months of publishing, and we had 28 top-10 rankings — which felt like nothing against competitors with thousands. The budget committee asked whether to continue funding it.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We continued. Month 6: 64,000 sessions. Month 14: 100,000+ sessions per month, 2,400+ keyword rankings, 61% of customer acquisition from organic. The shape of SEO growth is front-loaded with apparent failure — which is why most companies stop too early.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The first 90 days of the SEO program were genuinely demoralizing. Zero organic sessions at launch. Three months of publishing, and we had 28 top-10 rankings — which felt like nothing against competitors with thousands. The budget committee asked whether to continue funding it.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">We continued. Month 6: 64,000 sessions. Month 14: 100,000+ sessions per month, 2,400+ keyword rankings, 61% of customer acquisition from organic. The shape of SEO growth is front-loaded with apparent failure — which is why most companies stop too early.</p>
         <InsightBox>The insight that made the difference wasn't a tactic. It was understanding that SEO is an infrastructure investment, not a campaign. You're not buying traffic — you're building an asset. The asset doesn't pay dividends until month 5 or 6. Teams that quit in month 3 never see the compounding.</InsightBox>
       </section>
 

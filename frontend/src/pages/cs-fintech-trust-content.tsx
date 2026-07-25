@@ -10,10 +10,10 @@ export default function FintechTrustContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Trust Is Invisible — Until It Breaks</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We learned this the hard way in Q2 2022. A WhatsApp forward misidentified our platform as being associated with a crypto scam (it wasn't — wrong company, similar name). Within 72 hours, our daily active users dropped 31%. Signups fell 44%.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The users who left weren't irrationally suspicious. They were people making financial decisions — decisions where the cost of trusting the wrong platform could be catastrophic. When an uncertain signal appeared, they did the rational thing: they stopped.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">We learned this the hard way in Q2 2022. A WhatsApp forward misidentified our platform as being associated with a crypto scam (it wasn't — wrong company, similar name). Within 72 hours, our daily active users dropped 31%. Signups fell 44%.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The users who left weren't irrationally suspicious. They were people making financial decisions — decisions where the cost of trusting the wrong platform could be catastrophic. When an uncertain signal appeared, they did the rational thing: they stopped.</p>
         <InsightBox>Trust in fintech is not built through features. It's built through consistent, specific, credible signals that accumulate over time — and it's destroyed almost instantly when contradicted. The rebuild took 4 months. The breakdown took 72 hours.</InsightBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">What came out of that crisis was a systematic audit of every trust signal across the product — and a redesign of the trust architecture that made us more resilient to future reputation shocks, while also lifting baseline conversion by 34%.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">What came out of that crisis was a systematic audit of every trust signal across the product — and a redesign of the trust architecture that made us more resilient to future reputation shocks, while also lifting baseline conversion by 34%.</p>
       </section>
 
       <SectionDivider label="The Trust Audit" />

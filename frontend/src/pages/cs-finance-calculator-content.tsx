@@ -10,10 +10,10 @@ export default function FinanceCalculatorContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">A User Wrote Us a Three-Paragraph Email About a Calculator</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Most user feedback is one line. "Good app" or "this is broken" or "when is feature X coming?" Priya from Pune wrote three paragraphs. I still have the email.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">She'd been trying to figure out whether to prepay part of her home loan or invest the same money in a mutual fund. Our EMI calculator gave her a monthly payment — useful, but not what she needed. She needed a comparison: prepay vs invest, over 10 years, accounting for tax benefits on home loan interest. She'd built a spreadsheet. It had taken her 4 hours. She was asking if we could build what she'd just built.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Most user feedback is one line. "Good app" or "this is broken" or "when is feature X coming?" Priya from Pune wrote three paragraphs. I still have the email.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">She'd been trying to figure out whether to prepay part of her home loan or invest the same money in a mutual fund. Our EMI calculator gave her a monthly payment — useful, but not what she needed. She needed a comparison: prepay vs invest, over 10 years, accounting for tax benefits on home loan interest. She'd built a spreadsheet. It had taken her 4 hours. She was asking if we could build what she'd just built.</p>
         <InsightBox>That email was one user. But it described a problem that millions of middle-class Indian earners face every year: they have financial decisions to make that require calculation, they don't have financial advisors, and the tools that exist tell them what their EMI is — not what they should actually do.</InsightBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">We built Priya's spreadsheet into the product. Then we built 11 more like it. The result was a calculator suite that became our highest-retention, highest-acquisition, and most-referred feature.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">We built Priya's spreadsheet into the product. Then we built 11 more like it. The result was a calculator suite that became our highest-retention, highest-acquisition, and most-referred feature.</p>
       </section>
 
       <SectionDivider label="What We Had" />

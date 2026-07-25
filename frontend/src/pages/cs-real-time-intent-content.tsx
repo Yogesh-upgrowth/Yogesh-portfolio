@@ -10,10 +10,10 @@ export default function RealTimeIntentContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">"This Is Over-Engineering." (It Wasn't.)</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Our lead engineer said it plainly in the sprint planning session: "A real-time intent scoring engine is overkill. Batch scoring every 24 hours is enough." Half the room nodded. I wasn't sure he was wrong.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Six months later, the engine was processing 4 million events per day, scoring users every 12 minutes, and had generated ₹4.2 crore in incremental revenue by catching users at the exact moment they were ready to act — moments that a 24-hour batch system would have missed entirely.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Our lead engineer said it plainly in the sprint planning session: "A real-time intent scoring engine is overkill. Batch scoring every 24 hours is enough." Half the room nodded. I wasn't sure he was wrong.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Six months later, the engine was processing 4 million events per day, scoring users every 12 minutes, and had generated ₹4.2 crore in incremental revenue by catching users at the exact moment they were ready to act — moments that a 24-hour batch system would have missed entirely.</p>
         <ProblemBox>Intent has a half-life. A user who searches "remittance to UAE" at 11am is a completely different proposition at 11pm. Batch scoring doesn't capture the moment. It captures the aftermath.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">The business case we'd been missing wasn't about smarter segmentation — it was about <strong className="text-foreground">timing</strong>. Reach the right user with the right offer at the right moment, not 12 hours after the moment has passed.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">The business case we'd been missing wasn't about smarter segmentation — it was about <strong className="text-foreground">timing</strong>. Reach the right user with the right offer at the right moment, not 12 hours after the moment has passed.</p>
       </section>
 
       <SectionDivider label="What We Were Seeing" />

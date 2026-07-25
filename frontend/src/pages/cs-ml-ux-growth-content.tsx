@@ -10,8 +10,8 @@ export default function MlUxGrowthContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What Happens When You Give a Designer Access to the Model's Predictions</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The experiment started as a minor workflow change: we gave our lead product designer, Aditi, a daily dashboard showing the ML model's user intent predictions — which users were classified as High Intent, which as Research Mode, which as Likely to Churn — and asked her to redesign the comparison interface with that information in mind.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">What followed was the most productive design sprint we'd ever run. Not because Aditi built better UX alone, or because the ML model was better than expected, but because the combination produced something neither discipline would have arrived at independently.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The experiment started as a minor workflow change: we gave our lead product designer, Aditi, a daily dashboard showing the ML model's user intent predictions — which users were classified as High Intent, which as Research Mode, which as Likely to Churn — and asked her to redesign the comparison interface with that information in mind.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">What followed was the most productive design sprint we'd ever run. Not because Aditi built better UX alone, or because the ML model was better than expected, but because the combination produced something neither discipline would have arrived at independently.</p>
         <InsightBox>ML models know things that designers can't infer from session recordings. UX designers know things that ML models can't infer from behavioral logs. The intersection — using model predictions to inform design decisions in real-time — turned out to be a genuinely new capability that neither function had on its own.</InsightBox>
       </section>
 

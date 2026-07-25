@@ -10,8 +10,8 @@ export default function Rank1FintechContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Position 4 to Position 1. The 8-Month Story.</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The keyword was "best health insurance India." 90,000 monthly searches. Our highest-value commercial keyword. We were at position 4, consistently, for 6 months. Positions 1–3 were occupied by competitors with 5+ years of domain authority and backlink profiles we couldn't easily match.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The temptation was to focus elsewhere. The calculation said don't: the traffic difference between position 4 (estimated 7.2% CTR) and position 1 (estimated 28.5%) was 19,300 visits per month. At our conversion rate and LTV, that gap was worth ₹1.8 crore monthly. It was worth fighting for.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The keyword was "best health insurance India." 90,000 monthly searches. Our highest-value commercial keyword. We were at position 4, consistently, for 6 months. Positions 1–3 were occupied by competitors with 5+ years of domain authority and backlink profiles we couldn't easily match.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The temptation was to focus elsewhere. The calculation said don't: the traffic difference between position 4 (estimated 7.2% CTR) and position 1 (estimated 28.5%) was 19,300 visits per month. At our conversion rate and LTV, that gap was worth ₹1.8 crore monthly. It was worth fighting for.</p>
         <InsightBox>The conventional SEO advice is "don't target keywords where you can't win." That's wrong when you're at position 4 for a ₹1.8Cr/month keyword. The correct frame is: can you win, and if so, what would it take? The answer turned out to be different from what we expected.</InsightBox>
       </section>
 

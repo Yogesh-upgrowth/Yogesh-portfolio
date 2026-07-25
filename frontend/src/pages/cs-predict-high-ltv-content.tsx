@@ -10,10 +10,10 @@ export default function PredictHighLtvContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Chart That Silenced a Room</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">It was a Thursday afternoon in July. Our finance lead, Priya, had been quiet through most of the revenue review. Then she put up one chart — not a deck, just one slide — and the room stopped.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">It showed that <strong className="text-foreground">2.3% of our 40,000 registered users were generating 71% of all revenue.</strong> The other 97.7% — the people we'd spent months and crores acquiring — were effectively break-even or negative.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">It was a Thursday afternoon in July. Our finance lead, Priya, had been quiet through most of the revenue review. Then she put up one chart — not a deck, just one slide — and the room stopped.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">It showed that <strong className="text-foreground">2.3% of our 40,000 registered users were generating 71% of all revenue.</strong> The other 97.7% — the people we'd spent months and crores acquiring — were effectively break-even or negative.</p>
         <ProblemBox>We weren't running a growth business. We were running an expensive lottery. And we'd been optimizing the lottery ticket price, not the odds.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">I remember sitting there thinking: we don't need more users. We need to figure out who those 2% are — <em>before</em> we spend money on them.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">I remember sitting there thinking: we don't need more users. We need to figure out who those 2% are — <em>before</em> we spend money on them.</p>
       </section>
 
       <SectionDivider label="What the Data Said" />

@@ -10,10 +10,10 @@ export default function CacReductionContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">We Were Paying ₹340 to Acquire Users Who Cost ₹40 to Serve</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">At ₹340 blended CAC, the unit economics didn't work. The average first-month revenue per user was ₹280. We were losing money on every new user before they had a chance to become profitable. The growth team celebrated user count milestones. The finance team quietly flagged that we'd hit ₹2.8 crore in acquisition spend for ₹2.1 crore in first-month revenue.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">What made it worse: nobody had decomposed the ₹340 number. It was a blended average. Some channels were delivering users at ₹80. Others at ₹780. We had no idea which was which — or why — because we hadn't built the attribution infrastructure to find out.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">At ₹340 blended CAC, the unit economics didn't work. The average first-month revenue per user was ₹280. We were losing money on every new user before they had a chance to become profitable. The growth team celebrated user count milestones. The finance team quietly flagged that we'd hit ₹2.8 crore in acquisition spend for ₹2.1 crore in first-month revenue.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">What made it worse: nobody had decomposed the ₹340 number. It was a blended average. Some channels were delivering users at ₹80. Others at ₹780. We had no idea which was which — or why — because we hadn't built the attribution infrastructure to find out.</p>
         <ProblemBox>The acquisition spend wasn't the problem. The absence of channel-level unit economics visibility was the problem. We were averaging our way to the wrong answer — blending highly efficient channels with catastrophically inefficient ones and treating the average as the truth.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85]">Six months later, blended CAC was ₹238. Revenue per acquired user in month 1 was ₹295. The business was cash-flow positive on first-month revenue for the first time. Here's the full breakdown.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85]">Six months later, blended CAC was ₹238. Revenue per acquired user in month 1 was ₹295. The business was cash-flow positive on first-month revenue for the first time. Here's the full breakdown.</p>
       </section>
 
       <SectionDivider label="Building the Attribution Layer" />

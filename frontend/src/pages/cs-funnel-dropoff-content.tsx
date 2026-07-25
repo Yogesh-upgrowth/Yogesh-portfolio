@@ -10,10 +10,10 @@ export default function FunnelDropoffContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Session Recording #47 Made Me Want to Redesign Everything</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">We'd been looking at funnel metrics for weeks. Conversion step 3 had a 58% drop-off. The analytics said "users leave at step 3." That was true and completely useless — it told us where but not why.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">I sat down with 200 session recordings across the funnel. By recording 47, I'd stopped taking notes and was just watching with a knot in my stomach. A user spent 4 minutes on step 3. They filled in a field. Then deleted it. Filled it in again. Scrolled up, scrolled down. Looked for something that wasn't there. Then left.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">We'd been looking at funnel metrics for weeks. Conversion step 3 had a 58% drop-off. The analytics said "users leave at step 3." That was true and completely useless — it told us where but not why.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">I sat down with 200 session recordings across the funnel. By recording 47, I'd stopped taking notes and was just watching with a knot in my stomach. A user spent 4 minutes on step 3. They filled in a field. Then deleted it. Filled it in again. Scrolled up, scrolled down. Looked for something that wasn't there. Then left.</p>
         <ProblemBox>We weren't losing users because they didn't want to complete the flow. We were losing them because the flow was making them feel stupid. They couldn't find what they needed to answer the question we were asking.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">That was the moment the optimization playbook changed — from "reduce friction" to "remove confusion." They're different problems.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">That was the moment the optimization playbook changed — from "reduce friction" to "remove confusion." They're different problems.</p>
       </section>
 
       <SectionDivider label="The Funnel Data" />

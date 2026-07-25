@@ -10,10 +10,10 @@ export default function InsuranceFunnel1200Content() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">₹14 Lakh a Month. From a Funnel That Was Leaking at Every Step.</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">When I first pulled the insurance funnel data, the revenue number looked like a typo. ₹14 lakh per month, from a platform with 10M+ monthly active users and millions of vehicle owners with active insurance renewal intent.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The math was embarrassing. If even 0.1% of the MAU converted at ₹1,200 average policy value, that's ₹1.2 crore per month. We were at ₹14 lakh. Actual conversion rate from visit-with-intent to policy purchase: 0.007%.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">When I first pulled the insurance funnel data, the revenue number looked like a typo. ₹14 lakh per month, from a platform with 10M+ monthly active users and millions of vehicle owners with active insurance renewal intent.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The math was embarrassing. If even 0.1% of the MAU converted at ₹1,200 average policy value, that's ₹1.2 crore per month. We were at ₹14 lakh. Actual conversion rate from visit-with-intent to policy purchase: 0.007%.</p>
         <ProblemBox>This wasn't an audience problem. We had millions of people checking insurance expiry dates — the most purchase-ready signal that exists. We just had a funnel that converted like a broken pipe. Every step lost users. No one had ever traced exactly where.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85]">Twelve months later, that ₹14 lakh was ₹1.82 crore — a 1,200% increase. Here's the full breakdown of what I found, what I changed, and what actually moved the number.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85]">Twelve months later, that ₹14 lakh was ₹1.82 crore — a 1,200% increase. Here's the full breakdown of what I found, what I changed, and what actually moved the number.</p>
       </section>
 
       <SectionDivider label="The Leak Map" />
@@ -80,7 +80,7 @@ export default function InsuranceFunnel1200Content() {
           <FrameworkDimension
             icon={<DollarSign className="h-5 w-5 text-green-600" />}
             title="2. Trust Signal Layer"
-            body="Insurer logos, IRDAI registration numbers, claim settlement ratios, policy count badges ('2.8L policies renewed via CarInfo'), and 4.6★ rating displayed before the quote form. Trust first, form second."
+            body="Insurer logos, IRDAI registration numbers, claim settlement ratios, policy count badges ('2.8L policies renewed via CarInfo'), and 4.6 rating displayed before the quote form. Trust first, form second."
             color="bg-green-50 border-green-200"
           />
           <FrameworkDimension

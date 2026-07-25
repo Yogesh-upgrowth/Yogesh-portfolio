@@ -10,8 +10,8 @@ export default function InsuranceCtaContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">We Changed Three Words. Revenue Doubled.</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">That's the headline. It's technically accurate. It's also almost entirely misleading — because we didn't just change three words. We ran 14 failed experiments first, misread the data twice, and almost cancelled the whole program before the winning variant appeared.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">This is the version with the messy middle included.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">That's the headline. It's technically accurate. It's also almost entirely misleading — because we didn't just change three words. We ran 14 failed experiments first, misread the data twice, and almost cancelled the whole program before the winning variant appeared.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">This is the version with the messy middle included.</p>
         <InsightBox>The actual insight from this project wasn't about button copy. It was about the psychological state users were in at the moment of CTA — and how wrong our assumptions about that state had been for years.</InsightBox>
       </section>
 
@@ -97,7 +97,7 @@ export default function InsuranceCtaContent() {
           {[
             { title: "Sub-CTA Reassurance Text", points: ["Added below button: 'No payment required. Takes 2 minutes.'", "Removed: 'Best price guaranteed' (too salesy, undermined trust in testing)", "Added: 'You can compare more before deciding' — explicitly gave users permission to continue"] },
             { title: "CTA Placement", points: ["Moved from bottom of plan card to inline — visible without scrolling", "Added secondary floating CTA on scroll depth > 60% of page", "Mobile: sticky bottom bar with CTA appeared after 2 minutes on page"] },
-            { title: "Trust Signals Adjacent to CTA", points: ["Star rating (4.7★, 12,400 reviews) placed within 40px of CTA", "IRDAI logo and SEBI badge directly adjacent — regulatory credibility", "'X people bought this plan today' social proof — urgency without pressure"] },
+            { title: "Trust Signals Adjacent to CTA", points: ["Star rating (4.7, 12,400 reviews) placed within 40px of CTA", "IRDAI logo and SEBI badge directly adjacent — regulatory credibility", "'X people bought this plan today' social proof — urgency without pressure"] },
           ].map((l) => (
             <div key={l.title} className="p-6 rounded-xl border border-border bg-muted/20">
               <p className="font-bold text-foreground mb-3 text-primary">{l.title}</p>

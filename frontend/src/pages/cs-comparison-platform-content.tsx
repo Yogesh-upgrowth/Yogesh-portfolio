@@ -10,8 +10,8 @@ export default function ComparisonPlatformContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">"The Market Is Too Crowded." They Were Right — and Wrong.</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Every investor meeting in 2021 started the same way: "BankBazaar is already doing this. PolicyBazaar is already doing this. What's your differentiation?" The question was fair. The implied advice — don't build it — was wrong.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Crowded markets aren't uniformly served markets. BankBazaar was dominant but desktop-first, and genuinely terrible on mobile. PolicyBazaar owned insurance but had minimal presence in the lending comparison space. The "crowded" market had significant whitespace — it just wasn't visible from the incumbent's perspective.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Every investor meeting in 2021 started the same way: "BankBazaar is already doing this. PolicyBazaar is already doing this. What's your differentiation?" The question was fair. The implied advice — don't build it — was wrong.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Crowded markets aren't uniformly served markets. BankBazaar was dominant but desktop-first, and genuinely terrible on mobile. PolicyBazaar owned insurance but had minimal presence in the lending comparison space. The "crowded" market had significant whitespace — it just wasn't visible from the incumbent's perspective.</p>
         <InsightBox>The strategic insight wasn't "this market is wide open." It was: "this market has been served by incumbents optimizing for their original acquisition patterns — desktop, English-speaking, financially literate. A huge segment of the market is underserved by those patterns."</InsightBox>
       </section>
 

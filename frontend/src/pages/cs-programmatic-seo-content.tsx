@@ -10,8 +10,8 @@ export default function ProgrammaticSeoContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">One Google Sheet Generated 1,400 Pages and 40K Monthly Visitors</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">The insight came from a boring analysis. We pulled our top 50 converting organic pages and noticed something: 34 of them followed the same pattern — "Best [Product] in [City]" or "[Brand A] vs [Brand B]" or "Average [Product] Price in [City]." They weren't bespoke content pieces. They were templates filled with location-specific or comparison-specific data.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">If 34 of our best pages were templated, and we had 800+ location-product combinations we hadn't built pages for, the math was straightforward. The question was whether we could build those pages at scale without compromising quality enough to get penalized.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">The insight came from a boring analysis. We pulled our top 50 converting organic pages and noticed something: 34 of them followed the same pattern — "Best [Product] in [City]" or "[Brand A] vs [Brand B]" or "Average [Product] Price in [City]." They weren't bespoke content pieces. They were templates filled with location-specific or comparison-specific data.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">If 34 of our best pages were templated, and we had 800+ location-product combinations we hadn't built pages for, the math was straightforward. The question was whether we could build those pages at scale without compromising quality enough to get penalized.</p>
         <InsightBox>The tension in programmatic SEO: templated pages can look spammy to search engines if the template is thin. The resolution: templates are fine, but only when each instantiation contains genuinely unique, locally-relevant data — not boilerplate with a city name swapped in.</InsightBox>
       </section>
 

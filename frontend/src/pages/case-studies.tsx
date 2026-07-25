@@ -109,7 +109,7 @@ export default function CaseStudies() {
       <main id="main-content">
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 overflow-hidden">
         {/* Background gradient + grid */}
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-muted/30 to-background pointer-events-none" />
         <div
@@ -125,31 +125,31 @@ export default function CaseStudies() {
           className={`relative container px-4 md:px-6 mx-auto text-center reveal ${heroVisible ? "in-view" : ""}`}
         >
           {/* Badge */}
-          <div className="inline-flex items-center rounded-full border border-primary/25 bg-white/80 shadow-sm px-4 py-1.5 text-sm font-semibold text-primary mb-6 backdrop-blur-sm">
+          <div className="inline-flex items-center rounded-full border border-primary/25 bg-white/80 shadow-sm px-3 md:px-4 py-1.5 text-[11px] md:text-sm font-semibold text-primary mb-5 md:mb-6 backdrop-blur-sm">
             <span className="flex h-2 w-2 rounded-full bg-primary mr-2 animate-pulse" />
             Case Studies
           </div>
 
-          <h1 className="text-4xl md:text-6xl font-serif font-bold text-foreground mb-6 leading-[1.1] tracking-tight">
-            Product, Growth &amp; Monetisation<br />
-            <span className="text-primary">Case Studies</span> from<br />
+          <h1 className="text-3xl md:text-6xl font-serif font-bold text-foreground mb-4 md:mb-6 leading-[1.15] md:leading-[1.1] tracking-tight">
+            Product, Growth &amp; Monetisation<br className="hidden md:block" />
+            <span className="text-primary">Case Studies</span> from<br className="hidden md:block" />
             Fintech, SaaS &amp; Consumer Tech
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-10">
+          <p className="text-base md:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8 md:mb-10">
             Real strategies. Real outcomes. Behind-the-scenes breakdowns of how products grow and monetise at scale.
           </p>
 
           {/* Stats strip */}
-          <div className="inline-flex items-center gap-6 md:gap-10 bg-white/90 backdrop-blur-sm border border-border rounded-2xl px-6 md:px-10 py-4 shadow-sm mx-auto">
+          <div className="inline-flex flex-wrap justify-center md:flex-nowrap items-center gap-4 md:gap-10 bg-white/90 backdrop-blur-sm border border-border rounded-xl md:rounded-2xl px-5 md:px-10 py-4 shadow-sm mx-auto">
             {[
               { value: "26", label: "Case Studies" },
               { value: "9+", label: "Years Experience" },
               { value: "5", label: "Industries" },
             ].map(({ value, label }) => (
-              <div key={label} className="text-center">
-                <p className="text-2xl font-serif font-bold text-primary leading-none">{value}</p>
-                <p className="text-xs text-muted-foreground mt-1 font-medium">{label}</p>
+              <div key={label} className="text-center px-2 md:px-0">
+                <p className="text-xl md:text-2xl font-serif font-bold text-primary leading-none">{value}</p>
+                <p className="text-[10px] md:text-xs text-muted-foreground mt-1 font-medium">{label}</p>
               </div>
             ))}
           </div>
@@ -157,9 +157,9 @@ export default function CaseStudies() {
       </section>
 
       {/* Filter tabs */}
-      <section className="border-y border-border bg-background/95 sticky top-16 z-30 backdrop-blur-md">
+      <section className="border-y border-border bg-background/95 sticky top-14 md:top-16 z-30 backdrop-blur-md">
         <div className="container px-4 md:px-6 mx-auto">
-          <div className="flex items-center gap-2 overflow-x-auto py-4 scrollbar-hide">
+          <div className="flex items-center gap-2 overflow-x-auto py-3 md:py-4 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
             {allCategories.map((cat) => {
               const count = cat !== "All" ? (categoryCounts[cat] ?? 0) : caseStudies.length;
               const isActive = activeCategory === cat;
@@ -168,14 +168,14 @@ export default function CaseStudies() {
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
                   data-testid={`filter-${cat}`}
-                  className={`flex-shrink-0 inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-semibold border transition-all ${
+                  className={`flex-shrink-0 inline-flex items-center gap-1.5 px-3 md:px-4 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-semibold border transition-all ${
                     isActive
                       ? "bg-primary text-white border-primary shadow-md"
                       : "bg-background border-border text-muted-foreground hover:border-primary/40 hover:text-foreground hover:bg-primary/5"
                   }`}
                 >
                   {cat}
-                  <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${
+                  <span className={`text-[10px] md:text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${
                     isActive ? "bg-white/25 text-white" : "bg-muted text-muted-foreground"
                   }`}>
                     {count}
@@ -188,9 +188,9 @@ export default function CaseStudies() {
       </section>
 
       {/* Grid */}
-      <section className="py-16">
+      <section className="py-10 md:py-16">
         <div className="container px-4 md:px-6 mx-auto">
-          <p className="text-sm text-muted-foreground mb-8 text-center">
+          <p className="text-xs md:text-sm text-muted-foreground mb-6 md:mb-8 text-center">
             Showing <span className="font-semibold text-foreground">{filtered.length}</span> case {filtered.length === 1 ? "study" : "studies"}
             {activeCategory !== "All" && ` in ${activeCategory}`}
           </p>

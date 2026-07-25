@@ -28,18 +28,28 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => { document.body.style.overflow = 'unset'; };
+  }, [mobileMenuOpen]);
+
   return (
     <nav
       aria-label="Primary"
       className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-[background-color,box-shadow,padding] duration-300",
-        isScrolled || location !== "/"
-          ? "bg-background/80 backdrop-blur-md shadow-sm py-4"
-          : "bg-transparent py-6"
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+        isScrolled || location !== "/" || mobileMenuOpen
+          ? "bg-background/95 backdrop-blur-md shadow-sm py-3 md:py-4"
+          : "bg-transparent py-5 md:py-6"
       )}
     >
       <div className="container px-4 md:px-6 mx-auto flex items-center justify-between">
-        <Link href="/" className="text-2xl font-serif font-bold tracking-tight">
+        <Link href="/" className="text-2xl font-serif font-bold tracking-tight relative z-50">
           Yogesh Yadav<span className="text-primary">.</span>
         </Link>
 
@@ -67,36 +77,43 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden p-2"
+          className="md:hidden relative z-50 p-2 -mr-2 text-foreground"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           aria-label="Toggle menu"
         >
-          {mobileMenuOpen ? <X /> : <Menu />}
+          {mobileMenuOpen ? <X className="h-7 w-7" /> : <Menu className="h-7 w-7" />}
         </button>
       </div>
 
-      {/* Mobile Nav */}
+      {/* Mobile Nav Overlay */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-background border-b border-border p-4 shadow-lg animate-in slide-in-from-top-5">
-          <div className="flex flex-col gap-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-lg font-medium p-2 hover:bg-muted rounded-md"
-                onClick={() => setMobileMenuOpen(false)}
+        <div className="md:hidden fixed inset-0 top-[60px] z-40 bg-background flex flex-col px-4 animate-in slide-in-from-top-2 fade-in duration-200">
+          <div className="flex flex-col h-full pb-8 pt-4 overflow-y-auto">
+            <div className="flex flex-col gap-1">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className={cn(
+                    "text-[28px] font-serif font-medium py-5 border-b border-border/40 transition-colors",
+                    location === link.href ? "text-primary" : "text-foreground"
+                  )}
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              ))}
+            </div>
+            <div className="mt-12 mb-8">
+              <Button
+                className="w-full rounded-full h-14 text-lg font-semibold shadow-md shadow-primary/20"
+                asChild
               >
-                {link.name}
-              </Link>
-            ))}
-            <Button
-              className="w-full rounded-full px-7 py-5 text-sm font-semibold shadow-md shadow-primary/20"
-              asChild
-            >
-              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-                Hire Me
-              </Link>
-            </Button>
+                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                  Hire Me
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       )}

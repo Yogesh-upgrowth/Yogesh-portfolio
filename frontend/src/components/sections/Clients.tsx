@@ -41,7 +41,7 @@ export default function Clients() {
 
   return (
     <section
-      className="relative py-28 bg-background overflow-hidden"
+      className="relative py-20 md:py-28 bg-background overflow-hidden"
       style={{ contentVisibility: "auto", containIntrinsicSize: "0 480px" }}
     >
       {/* CSS keyframes */}
@@ -82,27 +82,27 @@ export default function Clients() {
         {/* Section Header */}
         <div
           ref={headRef}
-          className={`flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-14 reveal ${headVisible ? "in-view" : ""}`}
+          className={`flex flex-col md:flex-row md:items-end md:justify-between gap-5 mb-10 md:mb-14 reveal ${headVisible ? "in-view" : ""}`}
         >
           <div>
             {/* Status badge */}
-            <div className="inline-flex items-center gap-2 mb-5 px-3 py-1.5 rounded-full border border-primary/25 bg-primary/5">
+            <div className="inline-flex items-center gap-2 mb-4 md:mb-5 px-3 py-1.5 rounded-full border border-primary/25 bg-primary/5">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-50" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
               </span>
-              <span className="text-xs font-bold tracking-widest uppercase text-primary">
+              <span className="text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary">
                 Client Profiles
               </span>
             </div>
 
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground leading-tight">
+            <h2 className="text-3xl md:text-5xl font-serif font-bold text-foreground leading-[1.1]">
               Who I work<br />
               <span className="text-primary">best with.</span>
             </h2>
           </div>
 
-          <p className="text-muted-foreground max-w-xs leading-relaxed text-sm md:text-base">
+          <p className="text-muted-foreground max-w-xs leading-relaxed text-sm md:text-base mt-2 md:mt-0">
             I work with a specific type of founder and team — where the problem is real, the ambition is high, and execution actually matters.
           </p>
         </div>
@@ -115,7 +115,7 @@ export default function Clients() {
           {clientTypes.map((item, i) => (
             <div
               key={item.id}
-              className="client-card group relative flex flex-col p-6 rounded-2xl bg-background border border-border/70 hover:border-primary/40 hover:shadow-[0_0_24px_rgba(37,99,235,0.07)] transition-all duration-300 overflow-hidden"
+              className="client-card group relative flex flex-col p-5 md:p-6 rounded-2xl bg-background border border-border/70 hover:border-primary/40 hover:shadow-[0_0_24px_rgba(37,99,235,0.07)] transition-all duration-300 overflow-hidden"
               style={{ animationDelay: `${i * 0.08}s` }}
             >
               {/* Left glowing accent bar */}
@@ -140,14 +140,14 @@ export default function Clients() {
                 <span className="text-[11px] font-bold tracking-widest text-muted-foreground/50 group-hover:text-primary/50 transition-colors font-mono">
                   {item.id}
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary/70 group-hover:bg-primary/10 group-hover:text-primary transition-all">
+                <span className="inline-flex items-center gap-1.5 text-[10px] md:text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary/70 group-hover:bg-primary/10 group-hover:text-primary transition-all">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
                   {item.tag}
                 </span>
               </div>
 
               {/* Main label */}
-              <p className="font-serif font-bold text-foreground text-base leading-snug mb-3 group-hover:text-primary transition-colors duration-200">
+              <p className="font-serif font-bold text-foreground text-base md:text-[17px] leading-snug mb-3 group-hover:text-primary transition-colors duration-200">
                 {item.label}
               </p>
 
@@ -160,7 +160,7 @@ export default function Clients() {
 
           {/* CTA Card — "Your Company?" */}
           <Link href="/contact" className="group block">
-            <div className="relative flex flex-col items-center justify-center text-center p-8 rounded-2xl border-2 border-dashed border-primary/25 bg-primary/[0.025] hover:border-primary/50 hover:bg-primary/[0.05] transition-all duration-300 min-h-[160px] overflow-hidden">
+            <div className="relative flex flex-col items-center justify-center text-center p-6 md:p-8 rounded-2xl border-2 border-dashed border-primary/25 bg-primary/[0.025] hover:border-primary/50 hover:bg-primary/[0.05] transition-all duration-300 min-h-[140px] md:min-h-[160px] overflow-hidden">
               {/* Pulsing centre glow */}
               <div
                 className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -177,19 +177,19 @@ export default function Clients() {
 
               <div className="relative">
                 <div className="inline-flex items-center gap-2 mb-3">
-                  <span className="relative flex h-2.5 w-2.5">
+                  <span className="relative flex h-2 w-2 md:h-2.5 md:w-2.5">
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-40" />
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-primary" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 md:h-2.5 md:w-2.5 bg-primary" />
                   </span>
-                  <span className="text-xs font-bold tracking-widest uppercase text-primary/60">
+                  <span className="text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary/60">
                     Open Slot
                   </span>
                 </div>
-                <p className="font-serif font-bold text-xl text-foreground mb-1 group-hover:text-primary transition-colors">
+                <p className="font-serif font-bold text-lg md:text-xl text-foreground mb-1 group-hover:text-primary transition-colors">
                   Your Company?
                 </p>
-                <p className="text-muted-foreground text-sm mb-4">Let's see if we're a fit</p>
-                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2.5 transition-all">
+                <p className="text-muted-foreground text-[13px] md:text-sm mb-4">Let's see if we're a fit</p>
+                <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-primary group-hover:gap-2 transition-all">
                   Start a conversation <ArrowRight className="h-4 w-4" />
                 </span>
               </div>

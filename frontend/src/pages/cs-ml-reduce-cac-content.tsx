@@ -10,10 +10,10 @@ export default function MlReduceCacContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The CFO Said No. She Was Right.</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Q2 planning. Marketing team had built a case for a 40% increase in paid acquisition budget. The slide deck was polished. The CAC benchmarks were industry-standard. The growth projections curved upward satisfyingly.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">Our CFO, Sunita, looked at it and asked one question: "What percentage of the users we're currently acquiring are profitable at 90 days?" Nobody in the room knew the answer. That was the problem.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Q2 planning. Marketing team had built a case for a 40% increase in paid acquisition budget. The slide deck was polished. The CAC benchmarks were industry-standard. The growth projections curved upward satisfyingly.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">Our CFO, Sunita, looked at it and asked one question: "What percentage of the users we're currently acquiring are profitable at 90 days?" Nobody in the room knew the answer. That was the problem.</p>
         <ProblemBox>We were spending ₹2.4 crore per month on acquisition without knowing which 33% of that spend was generating 89% of the value. Budget approved with conditions: prove channel-level LTV within 60 days.</ProblemBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">That condition was the forcing function that built what became our most impactful data initiative of the year.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">That condition was the forcing function that built what became our most impactful data initiative of the year.</p>
       </section>
 
       <SectionDivider label="The Starting Reality" />

@@ -10,10 +10,10 @@ export default function CabFareContent() {
 
       <section id="hook" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Auto-Rickshaw Insight That Started Everything</h2>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">I was on my way to a client meeting in Bangalore, stuck in one of those peculiarly still traffic jams where nobody is moving and nobody seems bothered by it. The auto driver and I got talking — as you do.</p>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-4">He told me he'd stopped taking Ola bookings in the evenings because "the surge pricing is too unpredictable — passengers get angry when the app shows one price and they're charged another." He'd switched to a mix of Rapido and street hails. He didn't know — and had no way to know — that across town, a completely different surge situation was unfolding on Uber.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">I was on my way to a client meeting in Bangalore, stuck in one of those peculiarly still traffic jams where nobody is moving and nobody seems bothered by it. The auto driver and I got talking — as you do.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">He told me he'd stopped taking Ola bookings in the evenings because "the surge pricing is too unpredictable — passengers get angry when the app shows one price and they're charged another." He'd switched to a mix of Rapido and street hails. He didn't know — and had no way to know — that across town, a completely different surge situation was unfolding on Uber.</p>
         <InsightBox>That conversation stuck. Here was someone whose income depended entirely on platform-specific surge dynamics — and he had no visibility into the comparative landscape. The same invisibility problem existed for the 2 million daily cab users in Tier 1 Indian cities.</InsightBox>
-        <p className="text-lg text-foreground/80 leading-[1.85] mb-6">That insight became the premise for a cab fare comparison engine: not just which app is cheapest right now, but a real-time, route-specific view across platforms — with surge prediction baked in.</p>
+        <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">That insight became the premise for a cab fare comparison engine: not just which app is cheapest right now, but a real-time, route-specific view across platforms — with surge prediction baked in.</p>
       </section>
 
       <SectionDivider label="The Market Gap" />
