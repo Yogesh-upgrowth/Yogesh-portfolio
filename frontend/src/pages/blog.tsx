@@ -157,28 +157,35 @@ function ListCard({ post, index }: { post: BlogPost; index: number }) {
         </div>
       </Link>
 
-      {/* Mobile Vertical Card */}
+      {/* Mobile Typographic Row without boxes */}
       <Link
         href={`/blog/${post.slug}`}
-        className="md:hidden flex flex-col gap-3 py-5 border-b border-border/40 last:border-0 hover:bg-muted/50 transition-colors"
+        className="md:hidden block py-6 border-b border-border/50 relative group"
         data-testid={`blog-card-mobile-${post.id}`}
       >
-        <div className="flex items-center gap-2">
-          <span className="font-serif font-bold text-lg text-primary/20 leading-none">
+        <div className="flex gap-4 items-start">
+          <div className="font-serif text-3xl font-bold text-muted-foreground/30 pt-1 shrink-0 w-8 text-right">
             {String(index + 1).padStart(2, "0")}
-          </span>
-          <CategoryBadge category={post.category} />
-        </div>
-        <h3 className="font-serif font-bold text-base text-foreground leading-snug line-clamp-2">
-          {post.title}
-        </h3>
-        <p className="text-muted-foreground text-sm line-clamp-2">
-          {post.description}
-        </p>
-        <div className="flex items-center gap-3 text-xs text-muted-foreground mt-1">
-          <span className="flex items-center gap-1"><Clock className="h-3 w-3" /> {post.readTime}</span>
-          <span className="w-1 h-1 rounded-full bg-border" />
-          <span>{formatDate(post.date)}</span>
+          </div>
+          <div className="flex-1">
+            <div className="mb-3">
+              <CategoryBadge category={post.category} />
+            </div>
+            <h3 className="font-serif font-bold text-lg text-foreground leading-snug mb-2">
+              {post.title}
+            </h3>
+            <p className="text-[16px] text-muted-foreground leading-relaxed mb-4 line-clamp-2">
+              {post.description}
+            </p>
+            <div className="flex items-center justify-between text-xs">
+              <div className="flex items-center gap-2 text-muted-foreground">
+                <span className="flex items-center gap-1"><Clock className="h-3 w-3" /> {post.readTime}</span>
+                <span className="w-1 h-1 rounded-full bg-border" />
+                <span>{formatDate(post.date)}</span>
+              </div>
+              <span className="text-primary font-semibold flex items-center gap-1">Read <ArrowRight className="h-3 w-3" /></span>
+            </div>
+          </div>
         </div>
       </Link>
     </>

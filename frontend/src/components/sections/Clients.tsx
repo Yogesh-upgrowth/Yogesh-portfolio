@@ -107,10 +107,56 @@ export default function Clients() {
           </p>
         </div>
 
-        {/* Cards grid */}
+        {/* MOBILE: Editorial Flow (< md) */}
+        <div className="flex md:hidden flex-col mt-4">
+          {clientTypes.map((item, i) => (
+            <div 
+              key={item.id}
+              className="relative py-8 border-b border-border/50 flex flex-col justify-center overflow-hidden"
+            >
+              {/* Ghost Number */}
+              <div className="absolute top-6 right-0 font-serif font-bold text-[8rem] leading-none text-muted-foreground/[0.04] pointer-events-none select-none" aria-hidden>
+                {item.id.replace(/^0+/, '')}
+              </div>
+
+              <div className="relative z-10">
+                <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary mb-4">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary/60" />
+                  {item.tag}
+                </span>
+
+                <p className="font-serif font-bold text-foreground text-[22px] leading-snug mb-3">
+                  {item.label}
+                </p>
+
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  {item.detail}
+                </p>
+              </div>
+            </div>
+          ))}
+
+          {/* CTA Mobile */}
+          <Link href="/contact" className="group block mt-12 -mx-4">
+            <div className="flex flex-col items-center justify-center text-center py-12 px-4 bg-primary/5 active:bg-primary/10 transition-colors">
+              <span className="text-[11px] font-bold tracking-widest uppercase text-primary/60 mb-2">
+                Open Slot
+              </span>
+              <p className="font-serif font-bold text-[22px] text-foreground mb-2">
+                Your Company?
+              </p>
+              <p className="text-muted-foreground text-base mb-4">Let's see if we're a fit</p>
+              <span className="inline-flex items-center gap-1.5 text-base font-semibold text-primary">
+                Start a conversation <ArrowRight className="h-4 w-4" />
+              </span>
+            </div>
+          </Link>
+        </div>
+
+        {/* DESKTOP: Cards grid (>= md) */}
         <div
           ref={gridRef}
-          className={`grid md:grid-cols-2 gap-3 md:gap-4 ${gridVisible ? "client-grid-visible" : ""}`}
+          className={`hidden md:grid md:grid-cols-2 gap-4 ${gridVisible ? "client-grid-visible" : ""}`}
         >
           {clientTypes.map((item, i) => (
             <div

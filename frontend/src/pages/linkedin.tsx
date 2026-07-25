@@ -32,16 +32,33 @@ export default function Linkedin() {
             </Button>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 text-center md:text-left mt-10 md:mt-16 pt-10 md:pt-16 border-t border-border">
-            <div className="space-y-2 p-4 md:p-0 bg-muted/20 md:bg-transparent rounded-xl md:rounded-none">
+          {/* Mobile: Typographic List */}
+          <div className="md:hidden mt-12 flex flex-col gap-6 text-left text-foreground">
+             <div className="pl-4 border-l-2 border-[#0077b5]/30">
+               <h3 className="font-bold text-lg mb-1">Product Breakdowns</h3>
+               <p className="text-[16px] text-muted-foreground">Deep dives into how top companies grow.</p>
+             </div>
+             <div className="pl-4 border-l-2 border-[#0077b5]/30">
+               <h3 className="font-bold text-lg mb-1">Growth Lessons</h3>
+               <p className="text-[16px] text-muted-foreground">Tactical advice on reducing CAC and increasing LTV.</p>
+             </div>
+             <div className="pl-4 border-l-2 border-[#0077b5]/30">
+               <h3 className="font-bold text-lg mb-1">Leadership Insights</h3>
+               <p className="text-[16px] text-muted-foreground">Building and managing high-performance product teams.</p>
+             </div>
+          </div>
+
+          {/* Desktop: Grid */}
+          <div className="hidden md:grid md:grid-cols-3 gap-6 text-left mt-16 pt-16 border-t border-border">
+            <div className="space-y-2">
               <h3 className="font-bold">Product Breakdowns</h3>
               <p className="text-sm text-muted-foreground">Deep dives into how top companies grow.</p>
             </div>
-            <div className="space-y-2 p-4 md:p-0 bg-muted/20 md:bg-transparent rounded-xl md:rounded-none">
+            <div className="space-y-2">
               <h3 className="font-bold">Growth Lessons</h3>
               <p className="text-sm text-muted-foreground">Tactical advice on reducing CAC and increasing LTV.</p>
             </div>
-            <div className="space-y-2 p-4 md:p-0 bg-muted/20 md:bg-transparent rounded-xl md:rounded-none">
+            <div className="space-y-2">
               <h3 className="font-bold">Leadership Insights</h3>
               <p className="text-sm text-muted-foreground">Building and managing high-performance product teams.</p>
             </div>

@@ -199,25 +199,43 @@ export default function TrustStack() {
                 <p className="text-[13px] md:text-base text-muted-foreground">From strategy to scale — end-to-end ownership</p>
               </div>
               
-              {/* Capability cards — full-width icon-row cards on mobile, grid on desktop */}
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 max-w-5xl mx-auto">
+              {/* Capability - Mobile Editorial Unboxed List */}
+              <div className="flex md:hidden flex-col gap-6 mt-4">
                 {[
-                  { icon: Compass, title: "Product Strategy", desc: "Clear roadmaps aligned with business goals", featured: true },
+                  { icon: Compass, title: "Product Strategy", desc: "Clear roadmaps aligned with business goals" },
                   { icon: TrendingUp, title: "Growth", desc: "Higher conversions, lower CAC" },
                   { icon: DollarSign, title: "Monetisation", desc: "Sustainable revenue streams" },
                   { icon: Layers, title: "Platform Scaling", desc: "Scale 10x without breaking" },
+                ].map((item, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                      <item.icon className="h-5 w-5 text-primary" />
+                    </div>
+                    <div className="pt-0.5">
+                      <h3 className="font-bold text-[17px] text-foreground mb-1">{item.title}</h3>
+                      <p className="text-[15px] text-muted-foreground leading-snug">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Capability - Desktop Grid */}
+              <div className="hidden md:grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
+                {[
+                  { icon: Compass, title: "Product Strategy", desc: "Clear roadmaps aligned with business goals", featured: true },
+                  { icon: TrendingUp, title: "Growth", desc: "Higher conversions, lower CAC", featured: false },
+                  { icon: DollarSign, title: "Monetisation", desc: "Sustainable revenue streams", featured: false },
+                  { icon: Layers, title: "Platform Scaling", desc: "Scale 10x without breaking", featured: false },
                 ].map(({ icon: Icon, title, desc, featured }) => (
                   <div
                     key={title}
-                    className={`flex items-center gap-4 md:block p-4 md:p-6 rounded-2xl md:rounded-xl border border-border ${featured ? "bg-primary/5" : ""} hover:border-primary/30 hover:shadow-md active:scale-[0.98] transition-all group`}
+                    className={`p-6 rounded-xl border border-border ${featured ? "bg-primary/5" : ""} hover:border-primary/30 hover:shadow-md transition-all group`}
                   >
-                    <div className="h-12 w-12 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center md:mb-4 group-hover:bg-primary transition-colors">
-                      <Icon className="h-5 w-5 md:h-6 md:w-6 text-primary group-hover:text-white" />
+                    <div className="h-12 w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary transition-colors">
+                      <Icon className="h-6 w-6 text-primary group-hover:text-white" />
                     </div>
-                    <div className="min-w-0">
-                      <h3 className="font-bold text-base md:text-lg text-foreground mb-0.5 md:mb-2">{title}</h3>
-                      <p className="text-sm text-muted-foreground leading-snug">{desc}</p>
-                    </div>
+                    <h3 className="font-bold text-lg text-foreground mb-2">{title}</h3>
+                    <p className="text-sm text-muted-foreground leading-snug">{desc}</p>
                   </div>
                 ))}
               </div>

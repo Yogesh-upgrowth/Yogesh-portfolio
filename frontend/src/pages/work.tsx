@@ -272,24 +272,20 @@ export default function Work() {
               </div>
             </Reveal>
 
-            {/* Mobile: Swipe Carousel */}
-            <div 
-              className="md:hidden flex overflow-x-auto snap-x snap-mandatory pb-6 -mx-4 px-4 gap-4 scrollbar-hide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
-              tabIndex={0}
-              aria-label="Ideal fit profiles"
-            >
+            {/* Mobile: Editorial List */}
+            <div className="md:hidden flex flex-col mt-4 border-t border-border/50">
               {idealFit.map(({ num, icon: Icon, title, desc }, i) => (
-                <div key={i} className="snap-center shrink-0 w-[80%] bg-background p-6 rounded-2xl border border-border/50 shadow-sm relative flex flex-col gap-4">
-                  <span className="absolute top-4 right-4 text-3xl font-serif font-bold text-border/60 select-none">
-                    {num}
-                  </span>
-                  <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center">
-                    <Icon className="h-5 w-5 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-foreground mb-2 pr-6">{title}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
-                  </div>
+                <div key={i} className="py-8 border-b border-border/50 relative flex items-start gap-5">
+                   <div className="shrink-0 pt-0.5">
+                      <span className="font-serif text-3xl font-bold text-primary/30">{num}</span>
+                   </div>
+                   <div className="flex-1">
+                      <div className="flex items-center gap-3 mb-3">
+                        <Icon className="h-5 w-5 text-primary" />
+                        <h3 className="font-bold text-foreground text-lg">{title}</h3>
+                      </div>
+                      <p className="text-muted-foreground text-[16px] leading-relaxed">{desc}</p>
+                   </div>
                 </div>
               ))}
             </div>
@@ -386,40 +382,22 @@ export default function Work() {
 
             <div className="h-px bg-white/10 hidden md:block" />
 
-            {/* Mobile: Stacked Cards */}
-            <div className="md:hidden mt-8 space-y-4">
+            {/* Mobile: Typographic Flow */}
+            <div className="md:hidden mt-8 border-t border-white/10">
               {companies.map((c, i) => (
                 <Reveal key={i} className={`d${i}`}>
-                  <Link href={`/work/${c.slug}`}>
-                    <div className="bg-white/[0.03] p-5 rounded-2xl border border-white/10 relative overflow-hidden active:scale-[0.98] transition-transform">
-                      <div className="absolute top-0 right-0 w-32 h-32 pointer-events-none"
-                        style={{ background: "radial-gradient(circle at top right, rgba(37,99,235,0.2) 0%, transparent 70%)" }} />
-                      
-                      <div className="flex justify-between items-start mb-4">
-                        <div>
-                          <p className="text-[10px] font-bold tracking-widest uppercase text-primary/80 mb-1">{c.category}</p>
-                          <h3 className="font-serif font-bold text-background text-xl">{c.name}</h3>
-                          <p className="text-white/40 text-xs mt-0.5">{c.role}</p>
-                        </div>
-                        <div className="text-right">
-                          <p className="font-serif font-bold text-primary text-2xl leading-none"
-                            style={{ textShadow: "0 0 30px rgba(37,99,235,0.4)" }}>
-                            {c.metric}
-                          </p>
-                          <p className="text-white/40 text-[10px] font-medium">{c.metricLabel}</p>
-                        </div>
+                  <Link href={`/work/${c.slug}`} className="block py-10 border-b border-white/10 group relative">
+                    <p className="text-[11px] font-bold tracking-widest uppercase text-primary/80 mb-3">{c.category}</p>
+                    <div className="flex justify-between items-end mb-4">
+                      <h3 className="font-serif font-bold text-background text-2xl pr-4 leading-tight">{c.name}</h3>
+                      <div className="text-right shrink-0">
+                        <p className="font-serif font-bold text-primary text-3xl leading-none" style={{ textShadow: "0 0 30px rgba(37,99,235,0.4)" }}>{c.metric}</p>
+                        <p className="text-white/40 text-[10px] font-medium mt-1 uppercase tracking-wider">{c.metricLabel}</p>
                       </div>
-
-                      <p className="text-white/60 text-sm leading-relaxed mb-4">{c.desc}</p>
-                      
-                      <div className="bg-white/[0.03] p-3 rounded-lg mb-4">
-                        <span className="text-primary text-[10px] font-bold uppercase tracking-widest block mb-1">Insight</span>
-                        <p className="text-white/80 text-sm font-medium leading-snug italic">{c.insight}</p>
-                      </div>
-                      
-                      <div className="inline-flex items-center gap-1.5 text-primary text-xs font-semibold">
-                        Read full story <ArrowRight className="h-3.5 w-3.5" />
-                      </div>
+                    </div>
+                    <p className="text-white/60 text-[16px] leading-relaxed mb-6">{c.desc}</p>
+                    <div className="inline-flex items-center gap-2 text-primary text-sm font-semibold">
+                      Read full story <ArrowRight className="h-4 w-4" />
                     </div>
                   </Link>
                 </Reveal>
@@ -483,7 +461,18 @@ export default function Work() {
                 <div>
                   <p className="d0 text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary mb-2 md:mb-4">Services</p>
                   <h2 className="d1 text-2xl md:text-3xl font-serif font-bold mb-6 md:mb-8">What I Can Help With</h2>
-                  <div className="space-y-3">
+                  {/* Mobile: Timeline pattern */}
+                  <div className="md:hidden relative border-l-2 border-border ml-2 mt-6 space-y-6 pb-2">
+                    {canHelp.map((item, i) => (
+                      <div key={i} className={`d${i + 2} relative pl-6`}>
+                        <div className="absolute -left-[9px] top-1.5 h-4 w-4 rounded-full bg-primary border-4 border-background" />
+                        <span className="text-foreground/90 text-[16px] leading-relaxed block font-medium">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Desktop: Box Grid */}
+                  <div className="hidden md:block space-y-3">
                     {canHelp.map((item, i) => (
                       <div key={i}
                         className={`d${i + 2} flex items-start gap-3 md:gap-4 p-4 rounded-xl border border-border/60 hover:border-primary/30 hover:bg-primary/[0.02] transition-all group`}>
@@ -502,7 +491,18 @@ export default function Work() {
                 <div>
                   <p className="d0 text-[10px] md:text-xs font-bold tracking-widest uppercase text-muted-foreground mb-2 md:mb-4">Boundaries</p>
                   <h2 className="d1 text-2xl md:text-3xl font-serif font-bold mb-6 md:mb-8">What I Don't Do</h2>
-                  <div className="space-y-3">
+                  {/* Mobile: Typographic List */}
+                  <div className="md:hidden mt-6 space-y-5">
+                    {cantHelp.map((item, i) => (
+                      <div key={i} className="flex items-start gap-3">
+                        <XCircle className="h-5 w-5 text-muted-foreground/40 shrink-0 mt-1" />
+                        <span className="text-muted-foreground text-[16px] leading-relaxed line-through decoration-muted-foreground/30">{item}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  {/* Desktop: Box Grid */}
+                  <div className="hidden md:block space-y-3">
                     {cantHelp.map((item, i) => (
                       <div key={i} className="flex items-start gap-3 md:gap-4 p-4 rounded-xl border border-border/40 bg-muted/20">
                         <XCircle className="h-5 w-5 text-muted-foreground/60 shrink-0 mt-0.5" />

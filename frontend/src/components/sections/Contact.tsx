@@ -50,24 +50,51 @@ export default function Contact() {
               Ready to scale? Fill out the form or reach out directly. I'm always open to discussing new opportunities and challenges.
             </p>
             
-            <div className="space-y-2.5 md:space-y-4">
-              <a href="mailto:yogesh.productmanager@gmail.com" className="flex items-center gap-3 md:gap-4 p-3.5 md:p-4 rounded-xl bg-background border hover:border-primary/50 active:scale-[0.99] transition-all group hover-lift">
-                <div className="h-11 w-11 md:h-12 md:w-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors shrink-0">
+            {/* MOBILE: Contact Links (< md) */}
+            <div className="flex flex-col md:hidden mt-8 mb-10 border-y border-border/60 divide-y divide-border/60">
+              <a href="mailto:yogesh.productmanager@gmail.com" className="flex items-center justify-between py-5 active:opacity-60 transition-opacity">
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                    <Mail className="h-6 w-6 text-primary" />
+                  </div>
+                  <div className="min-w-0">
+                    <div className="text-[11px] font-bold text-muted-foreground uppercase tracking-widest mb-1">Email Me</div>
+                    <div className="font-serif text-[17px] font-bold text-foreground truncate">yogesh.productmanager@gmail.com</div>
+                  </div>
+                </div>
+              </a>
+              <div className="flex items-center justify-between py-5 active:opacity-60 transition-opacity cursor-pointer">
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 rounded-full bg-green-500/10 flex items-center justify-center shrink-0">
+                    <MessageCircle className="h-6 w-6 text-green-600" />
+                  </div>
+                  <div>
+                    <div className="text-[11px] font-bold text-muted-foreground uppercase tracking-widest mb-1">WhatsApp</div>
+                    <div className="font-serif text-[17px] font-bold text-foreground">Available on Request</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* DESKTOP: Contact Links (>= md) */}
+            <div className="hidden md:block space-y-4">
+              <a href="mailto:yogesh.productmanager@gmail.com" className="flex items-center gap-4 p-4 rounded-xl bg-background border hover:border-primary/50 transition-all group hover-lift">
+                <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors shrink-0">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-xs md:text-sm font-medium text-muted-foreground">Email Me</div>
-                  <div className="font-semibold text-sm md:text-base truncate">yogesh.productmanager@gmail.com</div>
+                  <div className="text-sm font-medium text-muted-foreground">Email Me</div>
+                  <div className="font-semibold text-base truncate">yogesh.productmanager@gmail.com</div>
                 </div>
               </a>
               
-              <div className="flex items-center gap-3 md:gap-4 p-3.5 md:p-4 rounded-xl bg-background border hover:border-primary/50 active:scale-[0.99] transition-all group cursor-pointer hover-lift">
-                <div className="h-11 w-11 md:h-12 md:w-12 rounded-full bg-green-500/10 flex items-center justify-center group-hover:bg-green-500 group-hover:text-white transition-colors shrink-0">
+              <div className="flex items-center gap-4 p-4 rounded-xl bg-background border hover:border-primary/50 transition-all group cursor-pointer hover-lift">
+                <div className="h-12 w-12 rounded-full bg-green-500/10 flex items-center justify-center group-hover:bg-green-500 group-hover:text-white transition-colors shrink-0">
                   <MessageCircle className="h-5 w-5 text-green-600 group-hover:text-white" />
                 </div>
                 <div>
-                  <div className="text-xs md:text-sm font-medium text-muted-foreground">WhatsApp</div>
-                  <div className="font-semibold text-sm md:text-base">Available on Request</div>
+                  <div className="text-sm font-medium text-muted-foreground">WhatsApp</div>
+                  <div className="font-semibold text-base">Available on Request</div>
                 </div>
               </div>
             </div>

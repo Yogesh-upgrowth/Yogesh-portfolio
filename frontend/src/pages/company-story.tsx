@@ -1,9 +1,9 @@
-import { useEffect, useState, lazy, Suspense } from "react";
+import { useEffect, useState, lazy, Suspense, JSX } from "react";
 import { Link, useParams } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Clock, User } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock, User } from "lucide-react";
 import NotFound from "@/pages/not-found";
 
 const LoanwiserStory  = lazy(() => import("@/pages/story-loanwiser"));
@@ -315,17 +315,36 @@ export default function CompanyStoryPage() {
                   </Button>
                 </div>
 
-                <div className="grid sm:grid-cols-2 gap-4 mt-6">
+                {/* Mobile: Unboxed List */}
+                <div className="md:hidden mt-8 flex flex-col divide-y divide-border/40 border-y border-border/40">
+                  <Link href="/work" className="py-6 flex items-center justify-between group">
+                    <div>
+                      <p className="font-bold text-[16px] text-foreground mb-1">All Company Stories</p>
+                      <p className="text-sm text-muted-foreground">Read the full work history</p>
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-muted-foreground" />
+                  </Link>
+                  <Link href="/case-studies" className="py-6 flex items-center justify-between group">
+                    <div>
+                      <p className="font-bold text-[16px] text-primary mb-1">26 Case Studies</p>
+                      <p className="text-sm text-muted-foreground">Deep technical breakdowns</p>
+                    </div>
+                    <ArrowRight className="h-5 w-5 text-primary" />
+                  </Link>
+                </div>
+
+                {/* Desktop: Grid */}
+                <div className="hidden md:grid sm:grid-cols-2 gap-4 mt-6">
                   <Link href="/work">
-                    <div className="p-4 md:p-5 rounded-xl border border-border hover:border-primary/30 cursor-pointer group transition-all text-center">
+                    <div className="p-5 rounded-xl border border-border hover:border-primary/30 cursor-pointer group transition-all text-center h-full flex flex-col justify-center">
                       <p className="font-bold text-sm text-foreground group-hover:text-primary transition-colors">All Company Stories</p>
-                      <p className="text-[10px] md:text-xs text-muted-foreground mt-1">Read the full work history</p>
+                      <p className="text-xs text-muted-foreground mt-1">Read the full work history</p>
                     </div>
                   </Link>
                   <Link href="/case-studies">
-                    <div className="p-4 md:p-5 rounded-xl border border-primary/20 bg-primary/5 cursor-pointer text-center">
+                    <div className="p-5 rounded-xl border border-primary/20 bg-primary/5 cursor-pointer text-center h-full flex flex-col justify-center">
                       <p className="font-bold text-sm text-primary">26 Case Studies</p>
-                      <p className="text-[10px] md:text-xs text-muted-foreground mt-1">Deep technical breakdowns</p>
+                      <p className="text-xs text-muted-foreground mt-1">Deep technical breakdowns</p>
                     </div>
                   </Link>
                 </div>

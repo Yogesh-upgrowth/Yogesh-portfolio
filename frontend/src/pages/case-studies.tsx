@@ -16,71 +16,112 @@ const categoryCounts = Object.fromEntries(
 
 function CaseStudyCard({ study, index }: { study: typeof caseStudies[0]; index: number }) {
   return (
-    <Link href={`/case-study/${study.slug}`}>
-      <div
-        className="group relative bg-background rounded-2xl border border-border overflow-hidden hover-lift hover-glow cursor-pointer h-full flex flex-col"
-        data-testid={`case-study-card-${study.slug}`}
-        style={{ animationDelay: `${(index % 3) * 0.09}s` }}
-      >
-        {/* Thumbnail */}
-        <div className="relative overflow-hidden h-48 bg-muted shrink-0">
-          <img
-            src={study.image}
-            alt={study.title}
-            loading="lazy"
-            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-          {/* Overlay on hover */}
-          <div className="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-            <span className="text-white font-semibold flex items-center gap-2 text-sm">
-              Read Case Study <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </span>
-          </div>
-          {/* Category pill */}
-          <div className="absolute top-3 left-3 flex gap-2">
-            <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${categoryColors[study.category] ?? "bg-muted text-muted-foreground"}`}>
-              {study.category}
-            </span>
-            {(study.slug === "ml-insurance-prediction" || study.slug === "scaling-moneyratefinder-growth" || study.slug === "seo-moat-remittance") && (
-              <span className="text-xs font-bold px-3 py-1 rounded-full border bg-green-600 text-white border-green-700">
-                ✦ Full Write-up
+    <>
+      {/* Desktop Card (Original) */}
+      <Link href={`/case-study/${study.slug}`} className="hidden md:block h-full">
+        <div
+          className="group relative bg-background rounded-2xl border border-border overflow-hidden hover-lift hover-glow cursor-pointer h-full flex flex-col"
+          data-testid={`case-study-card-desktop-${study.slug}`}
+          style={{ animationDelay: `${(index % 3) * 0.09}s` }}
+        >
+          {/* Thumbnail */}
+          <div className="relative overflow-hidden h-48 bg-muted shrink-0">
+            <img
+              src={study.image}
+              alt={study.title}
+              loading="lazy"
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            {/* Overlay on hover */}
+            <div className="absolute inset-0 bg-primary/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              <span className="text-white font-semibold flex items-center gap-2 text-sm">
+                Read Case Study <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </span>
-            )}
+            </div>
+            {/* Category pill */}
+            <div className="absolute top-3 left-3 flex gap-2">
+              <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${categoryColors[study.category] ?? "bg-muted text-muted-foreground"}`}>
+                {study.category}
+              </span>
+              {(study.slug === "ml-insurance-prediction" || study.slug === "scaling-moneyratefinder-growth" || study.slug === "seo-moat-remittance") && (
+                <span className="text-xs font-bold px-3 py-1 rounded-full border bg-green-600 text-white border-green-700">
+                  ✦ Full Write-up
+                </span>
+              )}
+            </div>
+          </div>
+
+          {/* Content */}
+          <div className="p-5 flex flex-col flex-1">
+            <h3 className="font-serif font-bold text-foreground text-base leading-snug mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+              {study.title}
+            </h3>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1 line-clamp-2">
+              {study.description}
+            </p>
+
+            {/* Tags */}
+            <div className="flex flex-wrap gap-1.5 mb-4">
+              {study.tags.map((tag) => (
+                <span key={tag} className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-muted text-muted-foreground border border-border">
+                  {tag}
+                </span>
+              ))}
+            </div>
+
+            {/* Meta + CTA */}
+            <div className="flex items-center justify-between pt-3 border-t border-border">
+              <div className="flex items-center gap-3 text-xs text-muted-foreground">
+                <span>{study.date}</span>
+                <span>·</span>
+                <span>{study.readTime}</span>
+              </div>
+              <span className="text-xs font-semibold text-primary flex items-center gap-1 group-hover:gap-2 transition-all">
+                Read <ArrowRight className="h-3.5 w-3.5" />
+              </span>
+            </div>
           </div>
         </div>
+      </Link>
 
-        {/* Content */}
-        <div className="p-5 flex flex-col flex-1">
-          <h3 className="font-serif font-bold text-foreground text-base leading-snug mb-2 line-clamp-2 group-hover:text-primary transition-colors">
-            {study.title}
-          </h3>
-          <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1 line-clamp-2">
-            {study.description}
-          </p>
-
+      {/* Mobile Editorial Band (No Boxes) */}
+      <Link href={`/case-study/${study.slug}`} className="md:hidden block py-8 border-b border-border/50">
+        <div className="flex flex-col gap-4">
+          <div>
+            <span className={`text-[11px] font-semibold px-2.5 py-1 rounded-full border mb-3 inline-block ${categoryColors[study.category] ?? "bg-muted text-muted-foreground"}`}>
+              {study.category}
+            </span>
+            <h3 className="font-serif font-bold text-foreground text-xl leading-snug mb-2">
+              {study.title}
+            </h3>
+            <p className="text-[16px] text-muted-foreground leading-relaxed">
+              {study.description}
+            </p>
+          </div>
+          {/* Full bleed image effect via negative margin */}
+          <div className="-mx-4 my-2 relative h-56 bg-muted border-y border-border">
+            <img src={study.image} alt={study.title} loading="lazy" className="w-full h-full object-cover" />
+          </div>
           {/* Tags */}
-          <div className="flex flex-wrap gap-1.5 mb-4">
+          <div className="flex flex-wrap gap-1.5 mt-1">
             {study.tags.map((tag) => (
               <span key={tag} className="text-[11px] font-medium px-2 py-0.5 rounded-full bg-muted text-muted-foreground border border-border">
                 {tag}
               </span>
             ))}
           </div>
-
           {/* Meta + CTA */}
-          <div className="flex items-center justify-between pt-3 border-t border-border">
-            <div className="flex items-center gap-3 text-xs text-muted-foreground">
+          <div className="flex items-center justify-between mt-3 pt-4 border-t border-border/40 font-medium">
+            <div className="flex items-center gap-2 text-muted-foreground text-xs">
               <span>{study.date}</span>
               <span>·</span>
               <span>{study.readTime}</span>
             </div>
-            <span className="text-xs font-semibold text-primary flex items-center gap-1 group-hover:gap-2 transition-all">
-              Read <ArrowRight className="h-3.5 w-3.5" />
-            </span>
+            <span className="text-primary flex items-center gap-1 font-semibold text-sm">Read Study <ArrowRight className="h-4 w-4"/></span>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </>
   );
 }
 
@@ -219,7 +260,7 @@ export default function CaseStudies() {
 
           <div
             ref={gridRef}
-            className={`grid sm:grid-cols-2 lg:grid-cols-3 gap-6 reveal-stagger ${gridVisible ? "in-view" : ""}`}
+            className={`flex flex-col gap-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 reveal-stagger ${gridVisible ? "in-view" : ""}`}
           >
             {filtered.map((study, i) => (
               <CaseStudyCard key={study.slug} study={study} index={i} />

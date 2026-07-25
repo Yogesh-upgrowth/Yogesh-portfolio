@@ -93,8 +93,8 @@ export default function Testimonials() {
               Trusted by founders<br className="hidden md:block" /> &amp; leaders.
             </h2>
           </div>
-          {/* Navigation arrows */}
-          <div className="flex items-center gap-2.5 md:gap-3 self-start md:self-auto">
+          {/* Navigation arrows (Desktop only) */}
+          <div className="hidden md:flex items-center gap-2.5 md:gap-3 self-start md:self-auto">
             <button
               onClick={prev}
               data-testid="testimonial-prev"
@@ -128,8 +128,47 @@ export default function Testimonials() {
           </div>
         </div>
 
-        {/* Main layout: featured left + stacked right */}
-        <div className="grid lg:grid-cols-[1.45fr_1fr] gap-4 md:gap-5 items-stretch">
+        {/* MOBILE: Horizontal Swipe Deck (< md) */}
+        <div 
+          className="flex md:hidden overflow-x-auto snap-x snap-mandatory gap-4 pb-6 mt-4 -mx-4 px-4 scrollbar-hide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl"
+          tabIndex={0}
+          aria-label="Testimonials carousel"
+        >
+          {testimonials.map((item, i) => (
+            <div 
+              key={i} 
+              className="w-[85vw] shrink-0 snap-center flex flex-col justify-between p-6 rounded-[24px] bg-foreground text-background"
+            >
+              <div>
+                <span className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full border border-primary/30 bg-primary/15 text-primary mb-5">
+                  <span className="w-1.5 h-1.5 rounded-full bg-primary" />
+                  {item.tag}
+                </span>
+
+                <p className="font-serif font-bold text-primary/80 leading-none mb-3" style={{ fontSize: "2rem", lineHeight: 0.9 }} aria-hidden>
+                  "
+                </p>
+
+                <p className="text-white/90 text-base leading-relaxed font-serif italic mb-6">
+                  {item.quote}
+                </p>
+              </div>
+
+              <div className="flex items-center gap-3 pt-5 border-t border-white/10">
+                <div className="h-10 w-10 rounded-xl bg-primary flex items-center justify-center text-white font-bold text-sm shrink-0">
+                  {item.initials}
+                </div>
+                <div className="flex-1 min-w-0">
+                  <p className="font-semibold text-sm text-white truncate">{item.name}</p>
+                  <p className="text-xs text-white/50 truncate">{item.role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* DESKTOP: Original Layout (>= md) */}
+        <div className="hidden md:grid lg:grid-cols-[1.45fr_1fr] gap-4 md:gap-5 items-stretch">
 
           {/* Featured quote — large */}
           <div
