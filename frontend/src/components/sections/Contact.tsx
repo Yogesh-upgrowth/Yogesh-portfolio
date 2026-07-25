@@ -56,7 +56,7 @@ export default function Contact() {
                   <Mail className="h-5 w-5" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-[11px] md:text-sm font-medium text-muted-foreground">Email Me</div>
+                  <div className="text-xs md:text-sm font-medium text-muted-foreground">Email Me</div>
                   <div className="font-semibold text-sm md:text-base truncate">yogesh.productmanager@gmail.com</div>
                 </div>
               </a>
@@ -66,7 +66,7 @@ export default function Contact() {
                   <MessageCircle className="h-5 w-5 text-green-600 group-hover:text-white" />
                 </div>
                 <div>
-                  <div className="text-[11px] md:text-sm font-medium text-muted-foreground">WhatsApp</div>
+                  <div className="text-xs md:text-sm font-medium text-muted-foreground">WhatsApp</div>
                   <div className="font-semibold text-sm md:text-base">Available on Request</div>
                 </div>
               </div>

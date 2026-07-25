@@ -176,7 +176,7 @@ export default function Impact() {
                     <p className="text-white/80 font-semibold text-[12px] md:text-base leading-snug mb-0.5 md:mb-1.5 group-hover:text-white transition-colors">
                       {item.label}
                     </p>
-                    <p className="text-white/40 text-[11px] md:text-sm leading-relaxed line-clamp-2 md:line-clamp-none">
+                    <p className="text-white/40 text-[13px] md:text-sm leading-relaxed line-clamp-2 md:line-clamp-none">
                       {item.desc}
                     </p>
                   </div>

@@ -199,39 +199,27 @@ export default function TrustStack() {
                 <p className="text-[13px] md:text-base text-muted-foreground">From strategy to scale — end-to-end ownership</p>
               </div>
               
-              {/* Capability cards grid */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 max-w-5xl mx-auto">
-                <div className="p-4 md:p-6 rounded-xl border border-border bg-primary/5 hover:border-primary/30 hover:shadow-md active:scale-[0.98] transition-all group">
-                  <div className="h-9 w-9 md:h-12 md:w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-primary transition-colors">
-                    <Compass className="h-4 w-4 md:h-6 md:w-6 text-primary group-hover:text-white" />
+              {/* Capability cards — full-width icon-row cards on mobile, grid on desktop */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 max-w-5xl mx-auto">
+                {[
+                  { icon: Compass, title: "Product Strategy", desc: "Clear roadmaps aligned with business goals", featured: true },
+                  { icon: TrendingUp, title: "Growth", desc: "Higher conversions, lower CAC" },
+                  { icon: DollarSign, title: "Monetisation", desc: "Sustainable revenue streams" },
+                  { icon: Layers, title: "Platform Scaling", desc: "Scale 10x without breaking" },
+                ].map(({ icon: Icon, title, desc, featured }) => (
+                  <div
+                    key={title}
+                    className={`flex items-center gap-4 md:block p-4 md:p-6 rounded-2xl md:rounded-xl border border-border ${featured ? "bg-primary/5" : ""} hover:border-primary/30 hover:shadow-md active:scale-[0.98] transition-all group`}
+                  >
+                    <div className="h-12 w-12 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center md:mb-4 group-hover:bg-primary transition-colors">
+                      <Icon className="h-5 w-5 md:h-6 md:w-6 text-primary group-hover:text-white" />
+                    </div>
+                    <div className="min-w-0">
+                      <h3 className="font-bold text-base md:text-lg text-foreground mb-0.5 md:mb-2">{title}</h3>
+                      <p className="text-sm text-muted-foreground leading-snug">{desc}</p>
+                    </div>
                   </div>
-                  <h3 className="font-bold text-sm md:text-lg text-foreground mb-1 md:mb-2">Product Strategy</h3>
-                  <p className="text-[11px] md:text-sm text-muted-foreground leading-snug">Clear roadmaps aligned with business goals</p>
-                </div>
-                
-                <div className="p-4 md:p-6 rounded-xl border border-border hover:border-primary/30 hover:shadow-md active:scale-[0.98] transition-all group">
-                  <div className="h-9 w-9 md:h-12 md:w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-primary transition-colors">
-                    <TrendingUp className="h-4 w-4 md:h-6 md:w-6 text-primary group-hover:text-white" />
-                  </div>
-                  <h3 className="font-bold text-sm md:text-lg text-foreground mb-1 md:mb-2">Growth</h3>
-                  <p className="text-[11px] md:text-sm text-muted-foreground leading-snug">Higher conversions, lower CAC</p>
-                </div>
-                
-                <div className="p-4 md:p-6 rounded-xl border border-border hover:border-primary/30 hover:shadow-md active:scale-[0.98] transition-all group">
-                  <div className="h-9 w-9 md:h-12 md:w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-primary transition-colors">
-                    <DollarSign className="h-4 w-4 md:h-6 md:w-6 text-primary group-hover:text-white" />
-                  </div>
-                  <h3 className="font-bold text-sm md:text-lg text-foreground mb-1 md:mb-2">Monetisation</h3>
-                  <p className="text-[11px] md:text-sm text-muted-foreground leading-snug">Sustainable revenue streams</p>
-                </div>
-                
-                <div className="p-4 md:p-6 rounded-xl border border-border hover:border-primary/30 hover:shadow-md active:scale-[0.98] transition-all group">
-                  <div className="h-9 w-9 md:h-12 md:w-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 md:mb-4 group-hover:bg-primary transition-colors">
-                    <Layers className="h-4 w-4 md:h-6 md:w-6 text-primary group-hover:text-white" />
-                  </div>
-                  <h3 className="font-bold text-sm md:text-lg text-foreground mb-1 md:mb-2">Platform Scaling</h3>
-                  <p className="text-[11px] md:text-sm text-muted-foreground leading-snug">Scale 10x without breaking</p>
-                </div>
+                ))}
               </div>
             </div>
           )}
