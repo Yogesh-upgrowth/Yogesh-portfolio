@@ -2,7 +2,7 @@ import { TrendingUp, Zap, Target, BarChart3, DollarSign, Layers } from "lucide-r
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function InsuranceFunnel1200Content() {
   return (
@@ -70,7 +70,7 @@ export default function InsuranceFunnel1200Content() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Six Parallel Interventions</h2>
-        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Target className="h-5 w-5 text-primary" />}
             title="1. Contextual CTA Architecture"
@@ -126,7 +126,7 @@ export default function InsuranceFunnel1200Content() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Full Outcome</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="1,200%" label="Revenue Growth" sub="₹14L → ₹1.82Cr/month" color="text-primary" />
           <MetricCard value="17%" label="CTA CTR" sub="from 4% baseline" color="text-green-600" />
           <MetricCard value="71%" label="Payment Completion" sub="from 39% baseline" color="text-primary" />
@@ -173,7 +173,7 @@ export default function InsuranceFunnel1200Content() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where the Funnel Goes Next</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Multi-Policy Household" body="Users with 2+ vehicles represent 34% of the active user base but only 12% of insurance revenue. Building a 'household policy view' to surface all vehicle policies in one dashboard — and renewal as a household event, not a per-vehicle one." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Instant Policy Issuance" body="Current flow: 20-second partner API processing. The next step: instant issuance using policy-as-a-service APIs with sub-2-second confirmation. The psychological difference between waiting and instant is significant for financial product completion rates." />
           <FutureCard icon={<Target className="h-5 w-5 text-primary" />} title="Dynamic Pricing Display" body="Showing real-time pricing changes ('This plan dropped ₹180 yesterday') adds urgency without being aggressive. Using historical pricing data to display market movement — the same mechanic that makes booking platforms compelling." />

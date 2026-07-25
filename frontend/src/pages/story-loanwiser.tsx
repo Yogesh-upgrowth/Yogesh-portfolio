@@ -31,7 +31,11 @@ export default function LoanwiserStory() {
           .prose-story p { font-size: 1rem; line-height: 1.7; }
           .chapter-divider { margin: 3rem 0 1.5rem; }
           .chapter-divider .num { font-size: 3.5rem; }
-          .metric-row { grid-template-columns: repeat(2, 1fr); border-radius: 12px; }
+          
+          .metric-row { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; margin-left: -1rem; margin-right: -1rem; padding-left: 1rem; padding-right: 1rem; padding-bottom: 1rem; gap: 1rem; background: transparent; -ms-overflow-style: none; scrollbar-width: none; border-radius: 0; }
+          .metric-row::-webkit-scrollbar { display: none; }
+          .metric-cell { min-width: 200px; flex-shrink: 0; scroll-snap-align: center; background: hsl(var(--background)); border: 1px solid hsl(var(--border)); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+    
           .metric-cell { padding: 1rem; }
           .metric-cell .val { font-size: 1.5rem; }
           .metric-cell .lbl { font-size: 0.65rem; }
@@ -70,7 +74,7 @@ export default function LoanwiserStory() {
 
         <p>India's credit-to-GDP ratio in 2019 was approximately 56%. The US was at 230%. The EU at 162%. Even Southeast Asian peers like Thailand and Malaysia sat at 160% and 130% respectively. India's financial deepening — the degree to which the formal economy serves ordinary people's capital needs — was a fraction of what it should be for a country of its size and growth rate.</p>
 
-        <div className="metric-row">
+        <div className="metric-row focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Metrics carousel">
           <div className="metric-cell"><div className="val">190M</div><div className="lbl">Formal credit access</div></div>
           <div className="metric-cell"><div className="val">56%</div><div className="lbl">Credit-to-GDP (2019)</div></div>
           <div className="metric-cell"><div className="val">300M+</div><div className="lbl">Underserved adults</div></div>
@@ -150,7 +154,7 @@ export default function LoanwiserStory() {
 
         <p>Before I could build anything, I needed to define what winning looked like in a way that was specific and measurable. I landed on three metrics:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Metric</th><th>Baseline</th><th>Target</th><th>Why It Mattered</th></tr></thead>
           <tbody>
             <tr><td>Disbursement rate on routed applications</td><td>16–18%</td><td>70%+</td><td>Core business health</td></tr>
@@ -179,7 +183,7 @@ export default function LoanwiserStory() {
 
         <p>The first pass was sobering. Here is what the raw data showed:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Outcome Category</th><th>Count</th><th>% of Total</th><th>Avg. Time to Decision</th></tr></thead>
           <tbody>
             <tr><td>Disbursed</td><td>3,426</td><td>15.6%</td><td>11.3 days</td></tr>
@@ -206,7 +210,7 @@ export default function LoanwiserStory() {
 
         <p>Within the structured rejection data, the reasons clustered into a surprisingly small number of categories:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Rejection Reason (structured)</th><th>Count</th><th>% of Structured Rejections</th></tr></thead>
           <tbody>
             <tr><td>Insufficient income documentation</td><td>1,840</td><td>29.5%</td></tr>
@@ -276,7 +280,7 @@ export default function LoanwiserStory() {
 
         <p>The stated criteria might say: "CIBIL score ≥ 700, monthly income ≥ ₹25,000, employed for ≥ 1 year." These were necessary but not sufficient conditions. The actual decision also depended on:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Factor</th><th>Stated?</th><th>Actual Impact on Decisions</th></tr></thead>
           <tbody>
             <tr><td>Employer category (large corp, SME, proprietorship)</td><td>Partially</td><td>High — SME/proprietorship rejections 2.4× higher</td></tr>
@@ -350,7 +354,7 @@ export default function LoanwiserStory() {
 
         <p>The features we extracted from bank statements and their predictive value:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Feature</th><th>Description</th><th>Predictive Power</th></tr></thead>
           <tbody>
             <tr><td>Salary regularity score</td><td>Consistency of monthly salary credit date and amount</td><td>Very High</td></tr>
@@ -388,7 +392,7 @@ export default function LoanwiserStory() {
 
         <p>We called this the "Salary Regularity Score" — a composite metric from 0 to 100 that captured the consistency, predictability, and stability of income credits over a 6-month period. The correlation between this score and loan approval outcomes in our dataset was striking:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Salary Regularity Score Band</th><th>Approval Rate (Historical)</th><th>Our Sample Size</th></tr></thead>
           <tbody>
             <tr><td>85–100 (Highly regular)</td><td>72.4%</td><td>1,840 applications</td></tr>
@@ -481,7 +485,7 @@ export default function LoanwiserStory() {
 
         <p>Each bank profile consisted of:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Profile Element</th><th>Source</th><th>Update Frequency</th></tr></thead>
           <tbody>
             <tr><td>Acceptable FOIR range</td><td>Bank documentation + historical data</td><td>Quarterly</td></tr>
@@ -644,7 +648,7 @@ export default function LoanwiserStory() {
 
         <p>Twelve months after the pilot launch and nine months after full rollout, here is what the data showed:</p>
 
-        <div className="metric-row">
+        <div className="metric-row focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Metrics carousel">
           <div className="metric-cell"><div className="val">90%+</div><div className="lbl">Disbursement rate (stable)</div></div>
           <div className="metric-cell"><div className="val">71%</div><div className="lbl">Bank statement submission</div></div>
           <div className="metric-cell"><div className="val">-38%</div><div className="lbl">Routing volume (reduction)</div></div>

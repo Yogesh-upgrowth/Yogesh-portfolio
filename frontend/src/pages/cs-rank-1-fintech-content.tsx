@@ -2,7 +2,7 @@ import { Trophy, Search, TrendingUp, Brain, BarChart3, Target } from "lucide-rea
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function Rank1FintechContent() {
   return (
@@ -68,7 +68,7 @@ export default function Rank1FintechContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What the Page Became</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Search className="h-5 w-5 text-primary" />}
             title="Question-Complete Content"
@@ -134,7 +134,7 @@ export default function Rank1FintechContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Position 1 in Numbers</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="#1" label="SERP Position" sub="held for 8+ weeks" color="text-green-600" />
           <MetricCard value="23.4K" label="Monthly Sessions" sub="from target keyword" color="text-primary" />
           <MetricCard value="+112%" label="Organic Traffic" sub="from this keyword vs Position 4" color="text-green-600" />
@@ -167,7 +167,7 @@ export default function Rank1FintechContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Holding and Expanding</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Trophy className="h-5 w-5 text-primary" />} title="Ranking Defense Monitoring" body="Automated weekly monitoring for competitors' content improvements and link acquisition on target keyword. Early warning system for ranking threats before they materialize in position changes." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Adjacent Keyword Cluster" body="Position 1 for 'best health insurance India' creates authority to pursue adjacent high-value terms: 'best family floater India', 'best health insurance for senior citizens'. Authority compounds to adjacent clusters." />
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="User-Specific Personalization" body="The page currently shows the same content to all users. Next: dynamic section reordering based on detected user type (individual vs family, age inferred from query signals). Personalized intent satisfaction for the same URL." />

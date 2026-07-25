@@ -2,7 +2,7 @@ import { Calculator, Brain, TrendingUp, Target, Zap, BarChart3 } from "lucide-re
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function FinanceCalculatorContent() {
   return (
@@ -64,7 +64,7 @@ export default function FinanceCalculatorContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Decision Calculator Suite</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Calculator className="h-5 w-5 text-primary" />}
             title="Prepay vs Invest Calculator"
@@ -139,7 +139,7 @@ export default function FinanceCalculatorContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">6-Month Calculator Suite Performance</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="134K" label="Monthly Calculator Users" sub="organic growth only" color="text-green-600" />
           <MetricCard value="18%" label="Calculator → Platform CVR" sub="highest of any acquisition source" color="text-primary" />
           <MetricCard value="44%" label="Calculator User D30 Retention" sub="vs 14% platform average" color="text-green-600" />
@@ -173,7 +173,7 @@ export default function FinanceCalculatorContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Calculator Roadmap</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Calculator className="h-5 w-5 text-primary" />} title="Linked Calculator Journeys" body="'You've decided to invest instead of prepay — here's the best mutual fund for your risk profile.' Calculator decisions flow into product recommendations seamlessly." />
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Personalized Assumptions" body="Default assumption rates (equity returns, inflation) personalized based on user's risk profile and stated investment horizon. Not one-size-fits-all 12% equity return." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Decision Journal" body="Users save their key calculations and can revisit them. 'You decided to invest 18 months ago based on 12% return assumption — here's how that's tracking.' Builds long-term relationship with financial decisions." />

@@ -2,7 +2,7 @@ import { Clock, Zap, Target, Brain, CheckCircle, BarChart3 } from "lucide-react"
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function Mvp7DaysContent() {
   return (
@@ -122,7 +122,7 @@ export default function Mvp7DaysContent() {
 
       <section id="execution" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Day 7 Results vs Hypothesis Thresholds</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="11.4%" label="Email Capture Rate" sub="threshold was 8%" color="text-green-600" />
           <MetricCard value="6.2%" label="Pricing Page CTR" sub="threshold was 3%" color="text-primary" />
           <MetricCard value="29%" label="D3 Return Rate" sub="threshold was 20%" color="text-green-600" />
@@ -166,7 +166,7 @@ export default function Mvp7DaysContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What the MVP Became</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<CheckCircle className="h-5 w-5 text-primary" />} title="Full Product Build" body="Decision to build full product made Day 8, based on clean hypothesis validation. 8-week full build began immediately. The MVP's learnings (shareable URLs, decision framing, mobile UX priority) all incorporated from Day 1 of full build." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="12 Decision Calculators" body="The MVP calculator became the first of 12. Suite expansion prioritized by user requests from the MVP email list. 134K monthly users 6 months after full launch." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="7-Day MVP Framework" body="The process documented as a repeatable framework for the product team. Used for 3 subsequent feature validations. Two passed; one failed and was cancelled, saving an estimated 6 weeks of build time." />

@@ -2,7 +2,7 @@ import { TrendingUp, Zap, Target, Brain, BarChart3, Database } from "lucide-reac
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function PredictHighLtvContent() {
   return (
@@ -66,7 +66,7 @@ export default function PredictHighLtvContent() {
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Lifetime Value Signal Architecture</h2>
         <p className="text-foreground/80 leading-[1.85] mb-6">We called it LVSA — not because the name matters, but because it helped the team think about it as a system rather than a model. Four layers, all dependent on each other.</p>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Database className="h-5 w-5 text-primary" />}
             title="Signal Collection"
@@ -145,7 +145,7 @@ export default function PredictHighLtvContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What Actually Changed</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="+61%" label="Revenue per Acquired User" sub="first cohort after routing" color="text-green-600" />
           <MetricCard value="−34%" label="Blended CAC" sub="without volume reduction" color="text-primary" />
           <MetricCard value="81%" label="Model Precision" sub="at 65-score threshold" color="text-green-600" />
@@ -192,7 +192,7 @@ export default function PredictHighLtvContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Next Version of This</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Real-Time Score Updates" body="Moving from 72-hour static scoring to continuous — recalculated every 6 hours. Some users cross the threshold on Day 4 or 5. We're currently missing them." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Score Velocity Triggers" body="It's not just the score — it's the direction and speed of change. A user going from 45 to 72 in 48 hours is different from one who's been at 73 for 5 days. Velocity should trigger different interventions." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Churn-Weighted LTV Scoring" body="Incorporate churn probability into the score. High LTV with high churn risk needs a different intervention than stable mid-LTV. Combining both would create a genuinely actionable risk-adjusted view." />

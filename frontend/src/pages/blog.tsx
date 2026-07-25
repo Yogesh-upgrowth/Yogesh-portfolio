@@ -130,30 +130,58 @@ function GridCard({ post }: { post: BlogPost }) {
 /* ─── List row card ─── */
 function ListCard({ post, index }: { post: BlogPost; index: number }) {
   return (
-    <Link
-      href={`/blog/${post.slug}`}
-      className="group grid grid-cols-[auto_1fr_auto] items-center gap-5 py-5 border-b border-border/40 last:border-0 hover:bg-primary/[0.025] -mx-3 px-3 rounded-xl transition-all"
-      data-testid={`blog-card-${post.id}`}
-    >
-      <span className="font-serif font-bold text-2xl text-primary/15 group-hover:text-primary/30 transition-colors leading-none w-9 text-right shrink-0">
-        {String(index + 1).padStart(2, "0")}
-      </span>
-      <div className="min-w-0">
-        <div className="flex items-center gap-2 mb-1.5">
+    <>
+      {/* Desktop List Row */}
+      <Link
+        href={`/blog/${post.slug}`}
+        className="hidden md:grid group grid-cols-[auto_1fr_auto] items-center gap-5 py-5 border-b border-border/40 last:border-0 hover:bg-primary/[0.025] -mx-3 px-3 rounded-xl transition-all"
+        data-testid={`blog-card-desktop-${post.id}`}
+      >
+        <span className="font-serif font-bold text-2xl text-primary/15 group-hover:text-primary/30 transition-colors leading-none w-9 text-right shrink-0">
+          {String(index + 1).padStart(2, "0")}
+        </span>
+        <div className="min-w-0">
+          <div className="flex items-center gap-2 mb-1.5">
+            <CategoryBadge category={post.category} />
+          </div>
+          <h3 className="font-serif font-bold text-base group-hover:text-primary transition-colors line-clamp-1 leading-snug mb-1">
+            {post.title}
+          </h3>
+          <p className="text-muted-foreground text-sm line-clamp-1 hidden sm:block">{post.description}</p>
+        </div>
+        <div className="shrink-0 text-right hidden sm:block">
+          <span className="text-xs text-muted-foreground flex items-center gap-1 justify-end mb-1">
+            <Clock className="h-3 w-3" /> {post.readTime}
+          </span>
+          <span className="text-xs text-muted-foreground">{formatDate(post.date)}</span>
+        </div>
+      </Link>
+
+      {/* Mobile Vertical Card */}
+      <Link
+        href={`/blog/${post.slug}`}
+        className="md:hidden flex flex-col gap-3 py-5 border-b border-border/40 last:border-0 hover:bg-muted/50 transition-colors"
+        data-testid={`blog-card-mobile-${post.id}`}
+      >
+        <div className="flex items-center gap-2">
+          <span className="font-serif font-bold text-lg text-primary/20 leading-none">
+            {String(index + 1).padStart(2, "0")}
+          </span>
           <CategoryBadge category={post.category} />
         </div>
-        <h3 className="font-serif font-bold text-base group-hover:text-primary transition-colors line-clamp-1 leading-snug mb-1">
+        <h3 className="font-serif font-bold text-base text-foreground leading-snug line-clamp-2">
           {post.title}
         </h3>
-        <p className="text-muted-foreground text-sm line-clamp-1 hidden sm:block">{post.description}</p>
-      </div>
-      <div className="shrink-0 text-right hidden sm:block">
-        <span className="text-xs text-muted-foreground flex items-center gap-1 justify-end mb-1">
-          <Clock className="h-3 w-3" /> {post.readTime}
-        </span>
-        <span className="text-xs text-muted-foreground">{formatDate(post.date)}</span>
-      </div>
-    </Link>
+        <p className="text-muted-foreground text-sm line-clamp-2">
+          {post.description}
+        </p>
+        <div className="flex items-center gap-3 text-xs text-muted-foreground mt-1">
+          <span className="flex items-center gap-1"><Clock className="h-3 w-3" /> {post.readTime}</span>
+          <span className="w-1 h-1 rounded-full bg-border" />
+          <span>{formatDate(post.date)}</span>
+        </div>
+      </Link>
+    </>
   );
 }
 
@@ -245,16 +273,37 @@ export default function Blog() {
                 {/* Category quick-links */}
                 <div className="space-y-2">
                   <p className="text-[10px] md:text-xs font-semibold text-muted-foreground uppercase tracking-widest mb-2 md:mb-3">Browse by topic</p>
-                  <div className="flex flex-wrap gap-1.5 md:gap-2">
+                  
+                  {/* Desktop Categories */}
+                  <div className="hidden md:flex flex-wrap gap-1.5 md:gap-2">
                     {BLOG_CATEGORIES.map(cat => (
                       <button
                         key={cat}
                         onClick={() => { handleCategoryChange(cat); document.getElementById("articles")?.scrollIntoView({ behavior: "smooth" }); }}
-                        className="inline-flex items-center gap-1.5 text-xs md:text-sm font-medium px-3 md:px-3.5 py-1 md:py-1.5 rounded-full border border-border hover:border-primary/40 hover:bg-primary/5 hover:text-primary transition-all text-foreground"
+                        className="inline-flex items-center gap-1.5 text-sm font-medium px-3.5 py-1.5 rounded-full border border-border hover:border-primary/40 hover:bg-primary/5 hover:text-primary transition-all text-foreground"
                       >
-                        <span className={`w-1.5 md:w-2 h-1.5 md:h-2 rounded-full shrink-0 ${CAT_DOT[cat]}`} />
+                        <span className={`w-2 h-2 rounded-full shrink-0 ${CAT_DOT[cat]}`} />
                         {cat}
-                        <span className="text-muted-foreground text-[10px] md:text-xs">{categoryCounts[cat] ?? 0}</span>
+                        <span className="text-muted-foreground text-xs">{categoryCounts[cat] ?? 0}</span>
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Mobile Categories - Swipeable */}
+                  <div 
+                    className="md:hidden flex overflow-x-auto snap-x snap-mandatory -mx-4 px-4 pb-2 gap-2 scrollbar-hide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
+                    tabIndex={0}
+                    aria-label="Browse by topic"
+                  >
+                    {BLOG_CATEGORIES.map(cat => (
+                      <button
+                        key={cat}
+                        onClick={() => { handleCategoryChange(cat); document.getElementById("articles")?.scrollIntoView({ behavior: "smooth" }); }}
+                        className="snap-start shrink-0 inline-flex items-center gap-1.5 text-xs font-medium px-3 py-1.5 rounded-full border border-border bg-background shadow-sm hover:border-primary/40 text-foreground"
+                      >
+                        <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${CAT_DOT[cat]}`} />
+                        {cat}
+                        <span className="text-muted-foreground text-[10px]">{categoryCounts[cat] ?? 0}</span>
                       </button>
                     ))}
                   </div>
@@ -274,7 +323,11 @@ export default function Blog() {
         {/* ── Category Filter (sticky) ───────────────────────────── */}
         <div id="articles" className="border-y border-border bg-background/95 sticky top-14 md:top-16 z-30 backdrop-blur-md">
           <div className="container px-4 md:px-6 mx-auto">
-            <div className="flex items-center gap-1.5 overflow-x-auto py-3 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+            <div 
+              className="flex items-center gap-1.5 overflow-x-auto py-3 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
+              tabIndex={0}
+              aria-label="Filter articles by category"
+            >
               <button
                 onClick={() => handleCategoryChange("All")}
                 data-testid="filter-all"
@@ -327,9 +380,9 @@ export default function Blog() {
           ) : (
             <div ref={gridRef} className={`reveal ${gridVisible ? "in-view" : ""}`}>
 
-              {/* Row 1: 1 large lead + up to 2 side cards */}
+              {/* Desktop Row 1: 1 large lead + up to 2 side cards */}
               {leadPost && (
-                <div className="grid md:grid-cols-[1.4fr_1fr_1fr] gap-6 mb-10 md:mb-12 pb-10 md:pb-12 border-b border-border/50">
+                <div className="hidden md:grid md:grid-cols-[1.4fr_1fr_1fr] gap-6 mb-10 md:mb-12 pb-10 md:pb-12 border-b border-border/50">
                   <LeadCard post={leadPost} />
                   {gridPosts.slice(0, 2).map(post => (
                     <GridCard key={post.id} post={post} />
@@ -337,14 +390,27 @@ export default function Blog() {
                 </div>
               )}
 
-              {/* Row 2+: uniform 3-col grid */}
+              {/* Desktop Row 2+: uniform 3-col grid */}
               {gridPosts.slice(2).length > 0 && (
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 md:mb-12">
+                <div className="hidden md:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-10 md:mb-12">
                   {gridPosts.slice(2).map(post => (
                     <GridCard key={post.id} post={post} />
                   ))}
                 </div>
               )}
+
+              {/* Mobile: Top Posts Swipe Carousel */}
+              <div 
+                className="md:hidden flex overflow-x-auto snap-x snap-mandatory pb-6 -mx-4 px-4 gap-4 scrollbar-hide mb-6 border-b border-border/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
+                tabIndex={0}
+                aria-label="Featured articles"
+              >
+                {[leadPost, ...gridPosts].filter(Boolean).map(post => (
+                  <div key={post.id} className="snap-center shrink-0 w-[85%]">
+                    <GridCard post={post} />
+                  </div>
+                ))}
+              </div>
 
               {/* List rows */}
               {listPosts.length > 0 && (

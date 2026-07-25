@@ -1,39 +1,9 @@
 import { TrendingUp, AlertTriangle, Lightbulb, CheckCircle2 } from "lucide-react";
+import { InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider } from "@/pages/mobile-components";
 
-export function InsightBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-8 p-5 rounded-xl bg-primary/5 border border-primary/20 flex gap-4">
-      <Lightbulb className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-      <p className="text-foreground font-medium leading-relaxed">{children}</p>
-    </div>
-  );
-}
 
-export function ProblemBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-8 p-5 rounded-xl bg-destructive/5 border border-destructive/20 flex gap-4">
-      <AlertTriangle className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
-      <p className="text-foreground font-medium leading-relaxed">{children}</p>
-    </div>
-  );
-}
 
-export function TakeawayBox({ children }: { children: React.ReactNode }) {
-  return (
-    <div className="my-8 p-6 rounded-xl bg-foreground text-background flex gap-4">
-      <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
-      <p className="font-semibold leading-relaxed text-lg">{children}</p>
-    </div>
-  );
-}
 
-export function BlockQuote({ children }: { children: React.ReactNode }) {
-  return (
-    <blockquote className="my-8 pl-5 border-l-4 border-primary">
-      <p className="text-xl font-serif font-bold text-foreground leading-relaxed italic">{children}</p>
-    </blockquote>
-  );
-}
 
 export function CodeBlock({ children }: { children: React.ReactNode }) {
   return (
@@ -56,15 +26,6 @@ export function BulletList({ items }: { items: string[] }) {
   );
 }
 
-export function SectionDivider({ label }: { label: string }) {
-  return (
-    <div className="flex items-center gap-4 my-10">
-      <div className="flex-1 h-px bg-border" />
-      <span className="text-xs font-bold tracking-widest uppercase text-muted-foreground">{label}</span>
-      <div className="flex-1 h-px bg-border" />
-    </div>
-  );
-}
 
 function MetricsGrid() {
   const metrics = [
@@ -140,7 +101,7 @@ export default function MLInsuranceCaseStudy() {
       <section id="key-insight" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Key Insight: Intent is Behavioral, Not Declared</h2>
         <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-4">We observed a critical pattern: users don't randomly convert — they exhibit <strong className="text-foreground">predictable behavioural signals</strong> beforehand.</p>
-        <div className="grid sm:grid-cols-2 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <div className="p-5 rounded-xl border border-green-200 bg-green-50">
             <p className="font-bold text-green-700 mb-3 text-sm uppercase tracking-wider">High-Intent Signals</p>
             <BulletList items={["Multiple searches in a session", "Longer session duration", "Insurance expiry within 30 days", "Repeated engagement across days"]} />
@@ -159,7 +120,7 @@ export default function MLInsuranceCaseStudy() {
       <section id="data-strategy" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Data Strategy: 50,000+ User Sessions</h2>
         <p className="text-base md:text-lg text-foreground/80 leading-[1.85] mb-6">We didn't guess. We built a data collection pipeline that captured granular behavioural signals across 50,000+ user sessions — structured, cleaned, and ready for modelling.</p>
-        <div className="grid sm:grid-cols-2 gap-4 my-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           {[
             { title: "Behavioural Signals", items: ["Search count per session", "Session duration (seconds)", "Scroll depth (%)"] },
             { title: "Interaction Signals", items: ["CTA click events", "Time on insurance page", "Form abandonment rate"] },
@@ -186,7 +147,7 @@ Derived Features:
 
       <section id="ml-model" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">ML Model & System Architecture</h2>
-        <div className="grid sm:grid-cols-2 gap-4 my-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <div className="p-5 rounded-xl border border-border bg-muted/30">
             <p className="font-bold text-foreground mb-1">Logistic Regression</p>
             <p className="text-sm text-muted-foreground">Baseline model — fast to train, interpretable, good for initial validation</p>
@@ -265,7 +226,7 @@ Derived Features:
             </div>
           ))}
         </div>
-        <div className="grid sm:grid-cols-3 gap-4 mt-8">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           {[
             { title: "Cold Start Problem", body: "New users have no behavioural history. We handled this via heuristics — defaulting to medium-intent treatment until enough data accumulated." },
             { title: "False Positives", body: "Some users scored high but didn't convert. We tuned thresholds over multiple cycles and added contextual override rules." },
@@ -283,7 +244,7 @@ Derived Features:
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Future Scope</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           {[
             { title: "Real-Time Scoring", body: "Move from near-real-time to sub-second intent scoring at the moment of each user action." },
             { title: "Deep Learning Models", body: "Experiment with sequence models (LSTMs, Transformers) to capture longer behavioural patterns." },

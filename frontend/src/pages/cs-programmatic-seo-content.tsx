@@ -2,7 +2,7 @@ import { Layers, Search, TrendingUp, Brain, BarChart3, Zap } from "lucide-react"
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function ProgrammaticSeoContent() {
   return (
@@ -37,7 +37,7 @@ export default function ProgrammaticSeoContent() {
       <section id="segmentation" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What Makes a Programmatic Page Not Spam</h2>
         <p className="text-foreground/80 leading-[1.85] mb-5">We looked at examples of programmatic SEO across our industry — some ranking well, some penalized, some just existing with zero traffic. The pattern was consistent.</p>
-        <div className="grid sm:grid-cols-2 gap-5 my-5">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
             <p className="font-bold text-destructive mb-3 text-sm uppercase tracking-wider">Penalized / Low-Ranking Pages</p>
             <ul className="space-y-1.5 text-sm text-foreground/70">
@@ -73,7 +73,7 @@ export default function ProgrammaticSeoContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Programmatic Page System</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Layers className="h-5 w-5 text-primary" />}
             title="Data Layer"
@@ -116,7 +116,7 @@ export default function ProgrammaticSeoContent() {
 
       <section id="execution" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">At Month 6</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="1,400" label="Programmatic Pages" sub="across 4 content types" color="text-green-600" />
           <MetricCard value="40K+" label="Monthly Sessions" sub="from programmatic pages alone" color="text-primary" />
           <MetricCard value="890" label="New Keyword Rankings" sub="long-tail, high-intent" color="text-green-600" />
@@ -158,7 +158,7 @@ export default function ProgrammaticSeoContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Programmatic Roadmap</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="User-Generated Data Integration" body="User reviews, purchase data, and comparison behavior from our own platform becoming inputs to programmatic pages. As more users transact, the data gets richer — and the pages become more valuable. Self-compounding data asset." />
           <FutureCard icon={<Search className="h-5 w-5 text-primary" />} title="Tier 2 and 3 City Expansion" body="Currently covers 40 major cities. Expanding to 120 Tier 2 and 3 cities with lower competition and often lower data availability from incumbent competitors. First-mover advantage in underserved markets." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Dynamic Content Freshness" body="Move from monthly data refresh to weekly for high-traffic pages. Rate changes that affect premium quotes by > 10% trigger immediate page refresh and Google Search Console re-index request." />

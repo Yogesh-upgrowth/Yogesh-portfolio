@@ -2,7 +2,7 @@ import { RefreshCw, Target, Brain, BarChart3, Users, Zap } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function GrowthLoopContent() {
   return (
@@ -67,7 +67,7 @@ export default function GrowthLoopContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Engineering Pull-Based Return Reasons</h2>
-        <div className="grid sm:grid-cols-3 gap-4 mb-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<RefreshCw className="h-5 w-5 text-primary" />}
             title="The Price Alert Loop"
@@ -137,7 +137,7 @@ export default function GrowthLoopContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What Changed in 10 Weeks</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="4.5×" label="D30 Retention" sub="4% → 18%" color="text-green-600" />
           <MetricCard value="47%" label="D1 Loop Activation" sub="up from 18%" color="text-primary" />
           <MetricCard value="−40%" label="Retargeting Spend" sub="replaced by product-native pull" color="text-green-600" />
@@ -182,7 +182,7 @@ export default function GrowthLoopContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where the Loops Go Next</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Predictive Price Alerts" body="Instead of waiting for prices to change, predict when they will. Seasonal patterns, provider renewal cycles, regulatory changes. Alert users proactively before the change — not reactively after." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Cross-Product Loops" body="Extend loop logic across categories. An insurance alert user showing car loan comparison behavior should get car loan alerts automatically. Cross-sell path as a retention mechanism." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Loop Health Monitoring" body="Real-time view of loop activation rates, loop return rates, and which loops are degrading over time. Enable the product team to intervene before retention metrics start moving — not after." />

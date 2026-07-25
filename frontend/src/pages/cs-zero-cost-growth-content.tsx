@@ -2,7 +2,7 @@ import { TrendingUp, Share2, Users, Zap, Brain, BarChart3 } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function ZeroCostGrowthContent() {
   return (
@@ -121,7 +121,7 @@ export default function ZeroCostGrowthContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">90 Days, No Marketing Budget</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="₹0" label="Paid Acquisition Spend" sub="for entire 90 days" color="text-green-600" />
           <MetricCard value="−18%" label="New User Volume" sub="vs paid peak (expected 40%+ drop)" color="text-primary" />
           <MetricCard value="−53%" label="Blended CAC" sub="referral + organic vs paid" color="text-green-600" />
@@ -157,7 +157,7 @@ export default function ZeroCostGrowthContent() {
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What We Kept</h2>
         <p className="text-foreground/80 leading-[1.85] mb-5">When paid acquisition came back in Q1, we didn't abandon the organic engines. We ran them in parallel. The result was a diversified acquisition mix that was more resilient and, on a blended basis, more profitable.</p>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Share2 className="h-5 w-5 text-primary" />} title="Referral as Permanent Channel" body="Referral stayed live post-budget restoration. At K=0.48, it generates 1 new user for every 2 who join — a compounding acquisition asset that paid channels can't replicate." />
           <FutureCard icon={<Users className="h-5 w-5 text-primary" />} title="Community as Distribution" body="WhatsApp community is now the fastest distribution channel for new features, rate alerts, and content. 4,800 engaged members = 4,800 people who can share to their networks organically." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Budget-Proof Growth Mix" body="Goal: no single acquisition channel >40% of total. Paid channels are efficient but fragile. The 90-day constraint built resilience into the acquisition mix that survives budget cycles." />

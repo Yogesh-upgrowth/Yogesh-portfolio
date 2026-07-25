@@ -2,7 +2,7 @@ import { Brain, Minus, Layers, Target, Zap, BarChart3 } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function CognitiveLoadContent() {
   return (
@@ -39,7 +39,7 @@ export default function CognitiveLoadContent() {
       <section id="segmentation" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Not All Load Is the Same</h2>
         <p className="text-foreground/80 leading-[1.85] mb-5">The mistake was treating cognitive load as a single thing to minimize. Research and user interviews showed two distinct load types — and they require opposite responses.</p>
-        <div className="grid sm:grid-cols-2 gap-5 my-5">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
             <p className="font-bold text-destructive mb-3 text-sm uppercase tracking-wider">Extraneous Load — Reduce This</p>
             <p className="text-sm text-foreground/80 mb-3">Load from poor design: confusing layout, technical jargon, irrelevant data, visual clutter. This load doesn't help users decide — it just exhausts them.</p>
@@ -75,7 +75,7 @@ export default function CognitiveLoadContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What We Actually Built</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Layers className="h-5 w-5 text-primary" />}
             title="Progressive Disclosure by User Type"
@@ -140,7 +140,7 @@ export default function CognitiveLoadContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Recovering and Then Exceeding Baseline</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="+31%" label="Conversion vs Original" sub="after progressive disclosure redesign" color="text-green-600" />
           <MetricCard value="−18%" label="Initial Simplification" sub="the failure that taught the lesson" color="text-primary" />
           <MetricCard value="−28%" label="Time on Comparison Step" sub="less time, better conversion" color="text-green-600" />
@@ -173,7 +173,7 @@ export default function CognitiveLoadContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where This Goes</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Decision Stage Detection" body="Different information is needed at different stages of the decision. Early-stage user needs category overview; late-stage user needs fine-grained comparison. Detect stage and adjust the view dynamically." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Explicit Personalization" body="Ask users explicitly on entry: 'What's most important to you?' (Price / Coverage / Claim History / All of the above). Use their answer to drive initial view. Explicit beats inferred when the question is simple enough to ask." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Per-Field Engagement Analytics" body="Track which data points users interact with most (tooltip opened, comparison time spent). Use engagement data to continuously reorder the default view to surface what users actually look at first." />

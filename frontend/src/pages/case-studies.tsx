@@ -140,8 +140,8 @@ export default function CaseStudies() {
             Real strategies. Real outcomes. Behind-the-scenes breakdowns of how products grow and monetise at scale.
           </p>
 
-          {/* Stats strip */}
-          <div className="inline-flex flex-wrap justify-center md:flex-nowrap items-center gap-4 md:gap-10 bg-white/90 backdrop-blur-sm border border-border rounded-xl md:rounded-2xl px-5 md:px-10 py-4 shadow-sm mx-auto">
+          {/* Desktop Stats strip */}
+          <div className="hidden md:inline-flex flex-wrap justify-center md:flex-nowrap items-center gap-4 md:gap-10 bg-white/90 backdrop-blur-sm border border-border rounded-xl md:rounded-2xl px-5 md:px-10 py-4 shadow-sm mx-auto">
             {[
               { value: "26", label: "Case Studies" },
               { value: "9+", label: "Years Experience" },
@@ -153,13 +153,35 @@ export default function CaseStudies() {
               </div>
             ))}
           </div>
+
+          {/* Mobile Stats Carousel */}
+          <div 
+            className="md:hidden flex overflow-x-auto snap-x snap-mandatory -mx-4 px-4 pb-4 gap-3 scrollbar-hide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
+            tabIndex={0}
+            aria-label="Experience stats"
+          >
+            {[
+              { value: "26", label: "Case Studies" },
+              { value: "9+", label: "Years Experience" },
+              { value: "5", label: "Industries" },
+            ].map(({ value, label }) => (
+              <div key={label} className="snap-center shrink-0 w-[45%] bg-background/80 backdrop-blur-sm border border-border rounded-2xl p-4 shadow-sm text-center">
+                <p className="text-2xl font-serif font-bold text-primary leading-none mb-1">{value}</p>
+                <p className="text-[11px] text-muted-foreground font-medium uppercase tracking-wider">{label}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Filter tabs */}
       <section className="border-y border-border bg-background/95 sticky top-14 md:top-16 z-30 backdrop-blur-md">
         <div className="container px-4 md:px-6 mx-auto">
-          <div className="flex items-center gap-2 overflow-x-auto py-3 md:py-4 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
+          <div 
+            className="flex items-center gap-2 overflow-x-auto py-3 md:py-4 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
+            tabIndex={0}
+            aria-label="Filter case studies by category"
+          >
             {allCategories.map((cat) => {
               const count = cat !== "All" ? (categoryCounts[cat] ?? 0) : caseStudies.length;
               const isActive = activeCategory === cat;

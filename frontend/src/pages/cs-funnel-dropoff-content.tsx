@@ -2,7 +2,7 @@ import { TrendingDown, Eye, Layers, Target, Brain, BarChart3 } from "lucide-reac
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function FunnelDropoffContent() {
   return (
@@ -66,7 +66,7 @@ export default function FunnelDropoffContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What We Changed and Why</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Layers className="h-5 w-5 text-primary" />}
             title="Progressive Disclosure"
@@ -125,7 +125,7 @@ export default function FunnelDropoffContent() {
           <Phase num="Week 3–5" period="Build" title="Implementation" actions={["Form architecture redesign: registration deferral", "Tooltip system built", "Mobile keyboard handling implemented"]} result="Staged on test environment. Internal review completed." color="border-green-200 bg-green-50" resultColor="text-green-700" />
           <Phase num="Week 6–8" period="A/B Test" title="50/50 Split" actions={["Old flow vs new flow: equal traffic split for 3 weeks", "Statistical significance reached at Week 6", "Step 3 completion: 42% → 74%"]} result="Full funnel completion: 26% → 47%. Revenue per 1,000 visitors: +81%." color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="+76%" label="Step 3 Completion" sub="42% → 74%" color="text-green-600" />
           <MetricCard value="+81%" label="Revenue per 1K Visitors" sub="full funnel impact" color="text-primary" />
           <MetricCard value="−62%" label="Avg Step 3 Time" sub="4 min → 1.5 min" color="text-green-600" />
@@ -159,7 +159,7 @@ export default function FunnelDropoffContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What's Next</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Eye className="h-5 w-5 text-primary" />} title="Continuous Recording Analysis" body="Set up automated session recording tagging using heuristics (rage clicks, u-turns, long pauses) to surface struggling sessions automatically — rather than manual review." />
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Predictive Field Completion" body="Pre-populate fields from known user data (previous policies, partner integrations, device-based autofill). Reduce required manual input — the best field is the one the user never had to type." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Per-Field Analytics" body="Track time, error rate, and abandonment at the individual field level (not just step level). Identify which specific fields are causing struggle before they affect step completion rates." />

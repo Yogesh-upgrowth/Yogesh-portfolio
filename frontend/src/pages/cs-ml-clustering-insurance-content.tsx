@@ -2,7 +2,7 @@ import { Users, Brain, Layers, Target, BarChart3, Zap } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function MlClusteringInsuranceContent() {
   return (
@@ -67,7 +67,7 @@ export default function MlClusteringInsuranceContent() {
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Archetype Routing System</h2>
         <p className="text-foreground/80 leading-[1.85] mb-6">We built a real-time classifier that assigns users to archetypes within their first 3 sessions, then routes them to differentiated experiences. The classifier doesn't ask users to self-identify — it infers from behavior.</p>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Brain className="h-5 w-5 text-primary" />}
             title="Behavioral Classifier"
@@ -132,7 +132,7 @@ export default function MlClusteringInsuranceContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Across the Platform</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="+65%" label="Blended CVR" sub="6.8% → 11.2%" color="text-green-600" />
           <MetricCard value="68.2%" label="Lapsed Renewer CVR" sub="from 44.8% baseline" color="text-primary" />
           <MetricCard value="7" label="Distinct Archetypes" sub="each with tailored journey" color="text-green-600" />
@@ -165,7 +165,7 @@ export default function MlClusteringInsuranceContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where This Goes</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Dynamic Archetype Migration" body="Users can move between archetypes over time — a Price Hunter who becomes a Loyalty Seeker. Tracking archetype migration and re-routing in real-time rather than static assignment." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Predictive Archetype at Acquisition" body="Use pre-acquisition signals (search query, referral source, landing page) to predict archetype before first session. Start the journey correctly from the first pageview." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Cross-Product Archetype Consistency" body="Extend archetypes across product categories. A Price Hunter in insurance is likely a Price Hunter in health or motor. Cross-category archetype consistency for unified personalization." />

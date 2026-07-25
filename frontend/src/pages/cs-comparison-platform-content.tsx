@@ -2,7 +2,7 @@ import { Layers, TrendingUp, Target, Brain, BarChart3, Users } from "lucide-reac
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function ComparisonPlatformContent() {
   return (
@@ -63,7 +63,7 @@ export default function ComparisonPlatformContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What Differentiated the Platform</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Layers className="h-5 w-5 text-primary" />}
             title="EMI-First Comparison Architecture"
@@ -128,7 +128,7 @@ export default function ComparisonPlatformContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">At Month 18</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="180K" label="Monthly Active Users" sub="18 months from zero" color="text-green-600" />
           <MetricCard value="3.8×" label="Application Completion" sub="vs incumbent average" color="text-primary" />
           <MetricCard value="5" label="Languages" sub="from day one for Hindi" color="text-green-600" />
@@ -161,7 +161,7 @@ export default function ComparisonPlatformContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where This Goes</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Personalized Comparison Ranking" body="Rank comparison results by individual user's predicted approval probability, not just rate. A lender who rarely approves users with the applicant's profile moves down the list — even if their rate is better." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Credit Score Advisory" body="For users who don't qualify for preferred products, a 90-day credit improvement plan — what to do to reach the next tier of products. Retention mechanism and trust builder simultaneously." />
           <FutureCard icon={<TrendingUp className="h-5 w-5 text-primary" />} title="Embedded Finance" body="Move from comparison to facilitation — completing the application in-platform, not redirecting to lender. Remove the last point of drop-off." />

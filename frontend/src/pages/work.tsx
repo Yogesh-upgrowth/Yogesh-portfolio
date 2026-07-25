@@ -163,8 +163,19 @@ function RevealRows({ children, className = "" }: { children: React.ReactNode; c
 
 /* ── Page ───────────────────────────────────────────────────── */
 export default function Work() {
+  const [showStickyCTA, setShowStickyCTA] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      // Show CTA after scrolling past the first screen
+      setShowStickyCTA(window.scrollY > 300);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
+    <div className="min-h-screen font-sans text-foreground bg-background flex flex-col pb-24 md:pb-0">
       <Seo
         title="Work With Me | Product Growth & Monetisation Consulting | Yogesh Yadav"
         description="Hire Yogesh Yadav — Product Growth & Monetisation Consultant. 9+ years scaling Fintech, Mobility and Consumer Internet products. Advisory, hands-on execution and ongoing partnerships for founders past the honeymoon phase."
@@ -255,13 +266,36 @@ export default function Work() {
               <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 md:mb-14">
                 <div>
                   <p className="d0 text-[10px] md:text-xs font-bold tracking-widest uppercase text-primary mb-2 md:mb-3">Ideal Fit</p>
-                  <h2 className="d1 text-2xl md:text-4xl font-serif font-bold">Who This Is For</h2>
+                  <h2 className="d1 text-3xl md:text-4xl font-serif font-bold">Who This Is For</h2>
                 </div>
                 <p className="d2 text-muted-foreground text-sm max-w-xs">If you see yourself here, we're probably a match.</p>
               </div>
             </Reveal>
 
-            <RevealGrid className="grid md:grid-cols-2 lg:grid-cols-3 gap-0">
+            {/* Mobile: Swipe Carousel */}
+            <div 
+              className="md:hidden flex overflow-x-auto snap-x snap-mandatory pb-6 -mx-4 px-4 gap-4 scrollbar-hide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
+              tabIndex={0}
+              aria-label="Ideal fit profiles"
+            >
+              {idealFit.map(({ num, icon: Icon, title, desc }, i) => (
+                <div key={i} className="snap-center shrink-0 w-[80%] bg-background p-6 rounded-2xl border border-border/50 shadow-sm relative flex flex-col gap-4">
+                  <span className="absolute top-4 right-4 text-3xl font-serif font-bold text-border/60 select-none">
+                    {num}
+                  </span>
+                  <div className="w-10 h-10 rounded-xl bg-primary/8 flex items-center justify-center">
+                    <Icon className="h-5 w-5 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-foreground mb-2 pr-6">{title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Desktop: Grid */}
+            <RevealGrid className="hidden md:grid md:grid-cols-2 lg:grid-cols-3 gap-0">
               {idealFit.map(({ num, icon: Icon, title, desc }, i) => (
                 <div key={i}
                   className={`d${i} group relative flex flex-col sm:flex-row gap-4 sm:gap-5 p-6 md:p-7 border-b border-border/50 hover:bg-background transition-colors duration-200 
@@ -350,9 +384,50 @@ export default function Work() {
               </div>
             </Reveal>
 
-            <div className="h-px bg-white/10" />
+            <div className="h-px bg-white/10 hidden md:block" />
 
-            <RevealRows>
+            {/* Mobile: Stacked Cards */}
+            <div className="md:hidden mt-8 space-y-4">
+              {companies.map((c, i) => (
+                <Reveal key={i} className={`d${i}`}>
+                  <Link href={`/work/${c.slug}`}>
+                    <div className="bg-white/[0.03] p-5 rounded-2xl border border-white/10 relative overflow-hidden active:scale-[0.98] transition-transform">
+                      <div className="absolute top-0 right-0 w-32 h-32 pointer-events-none"
+                        style={{ background: "radial-gradient(circle at top right, rgba(37,99,235,0.2) 0%, transparent 70%)" }} />
+                      
+                      <div className="flex justify-between items-start mb-4">
+                        <div>
+                          <p className="text-[10px] font-bold tracking-widest uppercase text-primary/80 mb-1">{c.category}</p>
+                          <h3 className="font-serif font-bold text-background text-xl">{c.name}</h3>
+                          <p className="text-white/40 text-xs mt-0.5">{c.role}</p>
+                        </div>
+                        <div className="text-right">
+                          <p className="font-serif font-bold text-primary text-2xl leading-none"
+                            style={{ textShadow: "0 0 30px rgba(37,99,235,0.4)" }}>
+                            {c.metric}
+                          </p>
+                          <p className="text-white/40 text-[10px] font-medium">{c.metricLabel}</p>
+                        </div>
+                      </div>
+
+                      <p className="text-white/60 text-sm leading-relaxed mb-4">{c.desc}</p>
+                      
+                      <div className="bg-white/[0.03] p-3 rounded-lg mb-4">
+                        <span className="text-primary text-[10px] font-bold uppercase tracking-widest block mb-1">Insight</span>
+                        <p className="text-white/80 text-sm font-medium leading-snug italic">{c.insight}</p>
+                      </div>
+                      
+                      <div className="inline-flex items-center gap-1.5 text-primary text-xs font-semibold">
+                        Read full story <ArrowRight className="h-3.5 w-3.5" />
+                      </div>
+                    </div>
+                  </Link>
+                </Reveal>
+              ))}
+            </div>
+
+            {/* Desktop: Rows */}
+            <RevealRows className="hidden md:block">
               {companies.map((c, i) => (
                 <div key={i} className={`d${i} group`}>
                   <Link href={`/work/${c.slug}`}>
@@ -483,6 +558,16 @@ export default function Work() {
 
       </main>
       <Footer />
+
+      {/* Mobile Sticky CTA */}
+      <div className={`md:hidden fixed bottom-0 left-0 right-0 p-4 z-50 transition-transform duration-300 ${showStickyCTA ? "translate-y-0" : "translate-y-full"}`}>
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-md border-t border-border shadow-[0_-10px_30px_rgba(0,0,0,0.05)] -z-10" />
+        <Button size="lg" className="h-12 w-full rounded-full shadow-lg shadow-primary/25 text-base font-semibold" asChild>
+          <Link href="/contact">
+            Work With Me <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
+        </Button>
+      </div>
     </div>
   );
 }

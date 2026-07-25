@@ -2,7 +2,7 @@ import { TrendingUp, Zap, Target, BarChart3, Search, Users } from "lucide-react"
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function CarInfo45mContent() {
   return (
@@ -69,7 +69,7 @@ export default function CarInfo45mContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Three-Layer Growth Architecture</h2>
-        <div className="grid sm:grid-cols-3 gap-4 mb-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Search className="h-5 w-5 text-primary" />}
             title="Layer 1: Programmatic SEO at Scale"
@@ -131,7 +131,7 @@ export default function CarInfo45mContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">From 3.8M to 45M: The Full Picture</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="45M+" label="Monthly Active Users" sub="from 3.8M baseline" color="text-primary" />
           <MetricCard value="1,084%" label="YoY Growth" sub="18-month period" color="text-green-600" />
           <MetricCard value="5,000+" label="SEO Pages Live" sub="fully programmatic" color="text-primary" />
@@ -178,7 +178,7 @@ export default function CarInfo45mContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where the Platform Goes Next</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Vehicle Valuation Engine" body="Real-time resale value based on make, model, year, registration state, mileage, and market demand signals. The next major high-intent use case: every vehicle owner wondering what their car is worth before selling." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="B2B API Products" body="The data asset built by 45M MAU is a platform for insurance companies, RTO vendors, financial institutions, and fleet operators. API monetisation at enterprise scale without any marginal user acquisition cost." />
           <FutureCard icon={<Target className="h-5 w-5 text-primary" />} title="Hyper-Local Push Intelligence" body="Using registration zone, vehicle age cohort, and seasonal data to predict upcoming expiry peaks by city. Proactive nudges before users think to look — the jump from reactive utility to proactive assistant." />

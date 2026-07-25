@@ -2,7 +2,7 @@ import { Shield, AlertTriangle, Brain, Target, BarChart3, Zap } from "lucide-rea
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function FintechTrustContent() {
   return (
@@ -64,7 +64,7 @@ export default function FintechTrustContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What We Built Into Every Key Touchpoint</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Shield className="h-5 w-5 text-primary" />}
             title="Comparison Results: Data Trust"
@@ -123,7 +123,7 @@ export default function FintechTrustContent() {
           <Phase num="Month 2–3" period="Rebuild" title="Trust Architecture Redesign" actions={["Data methodology disclosure on all comparison pages", "Contextual social proof system built", "Email identity architecture overhauled"]} result="Baseline conversion beginning to exceed pre-crisis levels." color="border-green-200 bg-green-50" resultColor="text-green-700" />
           <Phase num="Month 4" period="Full Recovery + Lift" title="Trust Dividend" actions={["All trust redesign live", "A/B test confirmed trust signals driving +34% conversion", "Social listening system operational"]} result="DAU at 118% of pre-crisis levels. Conversion +34% vs pre-crisis baseline." color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="+34%" label="Conversion Rate" sub="vs pre-crisis baseline" color="text-green-600" />
           <MetricCard value="118%" label="DAU Recovery" sub="vs pre-crisis levels" color="text-primary" />
           <MetricCard value="72 hrs" label="Trust Incident Response" sub="from detection to containment" color="text-green-600" />
@@ -157,7 +157,7 @@ export default function FintechTrustContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where Trust Architecture Goes Next</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Shield className="h-5 w-5 text-primary" />} title="Real-Time Data Freshness Indicator" body="Show users exactly when comparison data was last updated, per provider — not just a general 'updated every 4 hours.' Per-provider freshness improves data trust at the individual comparison level." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="User Reputation Portfolio" body="Opted-in users can share their comparison and purchase history publicly — building a verified track record. 'User since 2021, 4 purchases, all verified' creates peer trust signals that company-generated content can't replicate." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Trust Score Dashboard" body="Internal dashboard tracking trust signal coverage across all touchpoints, conversion correlation by trust signal type, and reputation monitoring health. Trust becomes a measurable product dimension, not an abstract value." />

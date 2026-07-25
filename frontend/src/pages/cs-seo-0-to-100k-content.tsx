@@ -2,7 +2,7 @@ import { TrendingUp, Search, Link2, Layers, Brain, BarChart3 } from "lucide-reac
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function Seo0To100kContent() {
   return (
@@ -65,7 +65,7 @@ export default function Seo0To100kContent() {
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Programmatic Intent Coverage Engine</h2>
         <p className="text-foreground/80 leading-[1.85] mb-6">We called it PICE internally. Four layers, each feeding the next.</p>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Search className="h-5 w-5 text-primary" />}
             title="Intent Mapping"
@@ -129,7 +129,7 @@ export default function Seo0To100kContent() {
 
       <section id="execution" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Month 14 Numbers</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="100K+" label="Monthly Organic Sessions" sub="from 0 at launch" color="text-green-600" />
           <MetricCard value="380+" label="Top-10 Rankings" sub="across all intent clusters" color="text-primary" />
           <MetricCard value="₹31" label="Organic CAC" sub="vs ₹285 blended paid CAC" color="text-green-600" />
@@ -164,7 +164,7 @@ export default function Seo0To100kContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Next 14 Months</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="AI-Assisted Content at Scale" body="GPT-powered first-draft generation for the 1,000+ remaining untapped long-tail clusters. Human editorial review for quality and accuracy. 10× content velocity without 10× team growth." />
           <FutureCard icon={<Search className="h-5 w-5 text-primary" />} title="User-Generated SEO" body="User reviews, comparison submissions, and calculator outputs create unique, indexable long-tail content automatically. UGC as a compounding SEO mechanism — better content that scales without editorial cost." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Revenue Attribution by Keyword" body="Full attribution: keyword → landing page → conversion → LTV. Every ranking tracked to its revenue contribution, not just sessions. The SEO program justified on customer value, not traffic metrics." />

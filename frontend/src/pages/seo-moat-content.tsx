@@ -2,7 +2,7 @@ import { AlertTriangle, Lightbulb, TrendingUp, Link2, Layers, Target, Zap } from
 import {
   InsightBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function SeoMoatCaseStudy() {
   return (
@@ -20,7 +20,7 @@ export default function SeoMoatCaseStudy() {
           When we launched MoneyRateFinder, we believed we had a strong value proposition: real-time comparison, better UX than legacy platforms, and a focused decision-making flow. But the reality was brutal.
         </p>
 
-        <div className="grid sm:grid-cols-2 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
             <p className="font-bold text-destructive mb-3 text-sm uppercase tracking-wider">Our Reality</p>
             <ul className="space-y-2 text-sm text-foreground/80">
@@ -55,7 +55,7 @@ export default function SeoMoatCaseStudy() {
             <p className="font-bold text-foreground mb-3 flex items-center gap-2">
               <span className="text-primary font-mono text-sm">01</span> We Didn't Understand Search Intent Properly
             </p>
-            <div className="grid sm:grid-cols-2 gap-4 text-sm">
+            <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
               <div>
                 <p className="font-semibold text-muted-foreground mb-2 uppercase tracking-wider text-xs">What we built</p>
                 <ul className="space-y-1 text-foreground/70">
@@ -79,7 +79,7 @@ export default function SeoMoatCaseStudy() {
             <p className="font-bold text-foreground mb-3 flex items-center gap-2">
               <span className="text-primary font-mono text-sm">02</span> SEO Was Treated as Content, Not a System
             </p>
-            <div className="grid sm:grid-cols-2 gap-4 text-sm">
+            <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
               <div>
                 <p className="font-semibold text-muted-foreground mb-2 uppercase tracking-wider text-xs">Our approach</p>
                 <ul className="space-y-1 text-foreground/70">
@@ -118,7 +118,7 @@ export default function SeoMoatCaseStudy() {
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">
           The Turning Point: We Stopped Competing on Content
         </h2>
-        <div className="grid sm:grid-cols-2 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
             <p className="font-bold text-destructive mb-2 text-sm uppercase tracking-wider">Old Frame</p>
             <p className="text-foreground font-medium text-lg">How do we rank higher?</p>
@@ -174,7 +174,7 @@ export default function SeoMoatCaseStudy() {
                 <p className="text-sm text-muted-foreground">5 core page types, each designed to push toward comparison</p>
               </div>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
               {[
                 { type: "Country Corridors", ex: "India → UK, India → Canada" },
                 { type: "Comparison Pages", ex: "Wise vs Remitly for India transfers" },
@@ -263,7 +263,7 @@ export default function SeoMoatCaseStudy() {
               <span className="text-primary font-mono">→</span> Programmatic SEO
             </p>
             <p className="text-foreground/70 text-sm leading-relaxed mb-4">Scale was the moat. We built a dynamic page generation system that made 200+ high-intent landing pages the work of one afternoon, not six months.</p>
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
               <div className="p-4 rounded-xl border border-destructive/20 bg-destructive/5">
                 <p className="font-semibold text-muted-foreground text-xs uppercase tracking-wider mb-2">Old approach</p>
                 <p className="font-bold text-2xl text-foreground mb-1">20</p>
@@ -288,7 +288,7 @@ export default function SeoMoatCaseStudy() {
               <span className="text-primary font-mono">→</span> Comparison-First UX
             </p>
             <p className="text-foreground/70 text-sm leading-relaxed mb-4">Our biggest differentiator. We flipped the standard page structure entirely.</p>
-            <div className="grid sm:grid-cols-2 gap-4">
+            <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
               <div>
                 <p className="font-semibold text-muted-foreground text-xs uppercase tracking-wider mb-2">Old structure</p>
                 <div className="space-y-2">
@@ -319,7 +319,7 @@ export default function SeoMoatCaseStudy() {
               <p>Comparison pages <span className="text-primary">→</span> Providers</p>
               <p>Providers <span className="text-primary">→</span> Related corridors</p>
             </div>
-            <div className="grid sm:grid-cols-3 gap-3 mt-4">
+            <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
               {[
                 { label: "Crawlability", desc: "Better crawl depth distribution" },
                 { label: "Authority", desc: "PageRank flows to key pages" },
@@ -436,7 +436,7 @@ export default function SeoMoatCaseStudy() {
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">
           Step 5: The Results
         </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="10×" label="Traffic Growth" sub="1K → 10K in 90 days" color="text-green-600" />
           <MetricCard value="100+" label="Top-10 Keywords" sub="high-intent rankings" color="text-primary" />
           <MetricCard value="3×" label="Comparison Clicks" sub="North Star metric" color="text-green-600" />
@@ -490,7 +490,7 @@ export default function SeoMoatCaseStudy() {
       {/* ── FUTURE ── */}
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What We're Doing Next</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           {[
             { icon: <Zap className="h-5 w-5 text-primary" />, title: "Personalized SEO Pages", body: "Pages that adapt based on user location and past behavior — same URL, different content priority." },
             { icon: <TrendingUp className="h-5 w-5 text-primary" />, title: "Real-Time Ranking Systems", body: "Dynamic provider rankings updated in real-time based on live exchange rates — making every page's answer always accurate." },

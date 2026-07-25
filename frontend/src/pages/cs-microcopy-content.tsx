@@ -2,7 +2,7 @@ import { Type, Brain, Target, Zap, BarChart3, MessageSquare } from "lucide-react
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function MicrocopyContent() {
   return (
@@ -124,7 +124,7 @@ export default function MicrocopyContent() {
           <Phase num="Month 2–3" period="High-Impact Rewrites" title="Priority 1 Strings" actions={["78 Priority 1 strings rewritten (error messages, form labels, CTAs)", "Each rewrite A/B tested for minimum 2 weeks", "Income field win (31%) validated approach"]} result="Overall application completion improving week-on-week" color="border-green-200 bg-green-50" resultColor="text-green-700" />
           <Phase num="Month 4–6" period="Full Rewrite" title="264 More Strings" actions={["Remaining strings rewritten in priority order", "Microcopy review gate added to design process", "String library built and populated"]} result="+23% overall application completion. −44% 'form confusion' support tickets." color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="+23%" label="Application Completion" sub="6-month program result" color="text-green-600" />
           <MetricCard value="+31%" label="Income Field Completion" sub="first and most impactful fix" color="text-primary" />
           <MetricCard value="−44%" label="Form Confusion Tickets" sub="support category eliminated" color="text-green-600" />
@@ -158,7 +158,7 @@ export default function MicrocopyContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where Microcopy Goes Next</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<MessageSquare className="h-5 w-5 text-primary" />} title="Personalized Error Guidance" body="Error messages that adapt to user context — a first-time user gets more detailed guidance; a returning user who likely made a typo gets a shorter, quicker fix prompt." />
           <FutureCard icon={<Type className="h-5 w-5 text-primary" />} title="Multi-Language Microcopy QA" body="Hindi and regional language microcopy hasn't received the same audit treatment as English. Running the systematic review across all 5 languages with native speaker validation." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Automated Microcopy Alerts" body="Flag any string not tested or reviewed in 18 months. Track per-string conversion performance automatically. Surface below-average strings for review without a manual audit cycle." />

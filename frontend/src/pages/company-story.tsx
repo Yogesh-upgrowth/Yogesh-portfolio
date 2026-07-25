@@ -180,35 +180,37 @@ function TableOfContents({ items }: { items: { id: string; label: string }[] }) 
   }, []);
 
   return (
-    <nav className="xl:sticky xl:top-28 xl:self-start xl:w-52 xl:shrink-0 mb-8 xl:mb-0">
-      {/* Mobile Accordion */}
-      <div className="xl:hidden border border-border/50 rounded-xl bg-muted/10 overflow-hidden">
-        <details className="group">
-          <summary className="text-xs font-bold tracking-widest text-muted-foreground uppercase p-4 cursor-pointer flex justify-between items-center list-none [&::-webkit-details-marker]:hidden">
-            <span>On this page</span>
-            <span className="text-xs opacity-60 group-open:rotate-180 transition-transform">▼</span>
-          </summary>
-          <ul className="px-2 pb-4 space-y-1 max-h-64 overflow-y-auto">
-            {items.map(({ id, label }) => (
-              <li key={id}>
-                <button
-                  onClick={() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" })}
-                  className={`text-left w-full text-sm py-2 px-3 rounded-lg transition-all ${
-                    active === id
-                      ? "bg-primary/10 text-primary font-semibold border-l-2 border-primary pl-2"
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted/40"
-                  }`}
-                >
-                  {label}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </details>
+    <>
+      {/* Mobile Sticky Horizontal TOC */}
+      <div className="xl:hidden sticky top-14 z-40 bg-background/95 backdrop-blur-md border-b border-border py-3 -mx-4 px-4 mb-6">
+        <div 
+          className="flex overflow-x-auto snap-x snap-mandatory gap-2 scrollbar-hide focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-inset"
+          tabIndex={0}
+          aria-label="Table of contents"
+        >
+          {items.map(({ id, label }) => (
+            <button
+              key={id}
+              onClick={() => {
+                const el = document.getElementById(id);
+                if (el) {
+                  const y = el.getBoundingClientRect().top + window.scrollY - 100;
+                  window.scrollTo({ top: y, behavior: 'smooth' });
+                }
+              }}
+              className={`snap-start shrink-0 text-[11px] font-semibold px-3 py-1.5 rounded-full border transition-all whitespace-nowrap ${
+                active === id
+                  ? "bg-primary text-white border-primary shadow-sm"
+                  : "bg-muted border-border text-muted-foreground hover:border-primary/40 hover:text-foreground"
+              }`}
+            >
+              {label}
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* Desktop Sidebar */}
-      <div className="hidden xl:block">
+      <nav className="hidden xl:block xl:sticky xl:top-28 xl:self-start xl:w-52 xl:shrink-0 mb-8 xl:mb-0">
         <p className="text-xs font-bold tracking-widest text-muted-foreground uppercase mb-4">On this page</p>
         <ul className="space-y-0.5 max-h-[70vh] overflow-y-auto pr-2">
           {items.map(({ id, label }) => (
@@ -226,8 +228,8 @@ function TableOfContents({ items }: { items: { id: string; label: string }[] }) 
             </li>
           ))}
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </>
   );
 }
 

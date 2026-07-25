@@ -2,7 +2,7 @@ import { Bell, BellOff, Brain, BarChart3, Target, Zap } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function NotificationSystemContent() {
   return (
@@ -66,7 +66,7 @@ export default function NotificationSystemContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What the Rebuilt System Does</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Brain className="h-5 w-5 text-primary" />}
             title="Relevance Scoring"
@@ -125,7 +125,7 @@ export default function NotificationSystemContent() {
           <Phase num="Weeks 4–8" period="Build" title="New System Implementation" actions={["Eligibility engine built and integrated with all notification trigger points", "Content personalization layer replaced template system", "Engagement feedback loop implemented"]} result="New system running in parallel. A/B test initiated at 50/50 split." color="border-green-200 bg-green-50" resultColor="text-green-700" />
           <Phase num="Weeks 9–12" period="A/B Results" title="Statistical Significance Reached" actions={["New system: 4.2 notifications/user/month vs 11 in control", "Statistical significance at Week 9 for click-through metric", "Unsubscribe delta significant by Week 11"]} result="New system: +28% CTR, +34% revenue/user, −61% unsubscribes. Full rollout." color="border-purple-200 bg-purple-50" resultColor="text-purple-700" />
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="+28%" label="Notification CTR" sub="at 62% lower volume" color="text-green-600" />
           <MetricCard value="+34%" label="Revenue per User" sub="notification-attributed" color="text-primary" />
           <MetricCard value="−61%" label="Unsubscribe Rate" sub="trust account restored" color="text-green-600" />
@@ -159,7 +159,7 @@ export default function NotificationSystemContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where the System Goes Next</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Per-User Frequency Optimization" body="Current frequency caps are category-level averages. Next: per-user optimal frequency modeled from individual engagement history. Some users want daily; some want monthly. Let them self-select through behavior." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Channel Arbitration" body="When the same alert could be push, email, or SMS — current system uses default channel. Next: select channel based on user's historical engagement by channel and time of day." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Lifetime Deliverability Metric" body="Track per-user delivery health over time: unsubscribed channels, open rate trends, dismiss rate. Flag users whose deliverability is declining before unsubscribe — intervene with re-permission campaign before losing the channel." />

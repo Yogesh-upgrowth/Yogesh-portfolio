@@ -2,7 +2,7 @@ import { Cpu, Users, Layers, Brain, BarChart3, Zap } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function MlUxGrowthContent() {
   return (
@@ -83,7 +83,7 @@ export default function MlUxGrowthContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">How Intent-Driven UI Actually Works</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Cpu className="h-5 w-5 text-primary" />}
             title="Real-Time Intent Classification"
@@ -115,7 +115,7 @@ export default function MlUxGrowthContent() {
 
       <section id="system-design" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Across All Three Variants vs Standard Interface</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="+28%" label="Blended Conversion Rate" sub="all intent classes combined" color="text-green-600" />
           <MetricCard value="+31%" label="High Intent CVR" sub="Decision Accelerator vs standard" color="text-primary" />
           <MetricCard value="−34%" label="At-Risk Exit Rate" sub="Intervention view" color="text-green-600" />
@@ -158,7 +158,7 @@ export default function MlUxGrowthContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Next Phase of ML-Driven UX</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Continuous Intent Classification" body="Moving from 3-minute recalculation to per-event recalculation. Intent classification updates every user action — a filter applied, a plan opened, a comparison made. UI adapts in near-real-time rather than in 3-minute intervals." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Embedded Design Principles in the Model" body="Currently: model classifies → design responds. Next: design principles encoded as model objectives. The model trained not just to predict intent but to predict which UI variant maximizes intent satisfaction. Design and model optimizing together." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Long-Term LTV Attribution" body="Current measurement: conversion rate. Next: track whether intent-class-matched design decisions predict higher LTV at 90 days. High Intent users may convert faster but have different LTV than Research Mode users who took longer. Design decisions should optimize for LTV, not just CVR." />

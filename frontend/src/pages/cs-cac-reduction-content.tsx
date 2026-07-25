@@ -2,7 +2,7 @@ import { TrendingUp, Zap, Target, BarChart3, Users, DollarSign } from "lucide-re
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function CacReductionContent() {
   return (
@@ -69,7 +69,7 @@ export default function CacReductionContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">How We Moved the Number</h2>
-        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<DollarSign className="h-5 w-5 text-primary" />}
             title="Lever 1: Channel Reallocation"
@@ -113,7 +113,7 @@ export default function CacReductionContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Outcome</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="−30%" label="Blended CAC" sub="₹340 → ₹238" color="text-green-600" />
           <MetricCard value="₹295" label="D30 ARPU" sub="up from ₹280 baseline" color="text-primary" />
           <MetricCard value="2.8×" label="LTV/CAC Ratio" sub="from 1.1× baseline" color="text-primary" />
@@ -160,7 +160,7 @@ export default function CacReductionContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where the Acquisition Model Goes Next</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Predictive LTV Bidding" body="Currently optimising toward D30 ARPU as the value signal. Building a model to predict D90 LTV from D3 behaviour signals — enabling ad platforms to bid directly against predicted long-term value, not early proxy metrics." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="SEO as CAC Deflation Engine" body="The programmatic SEO architecture drives organic installs at near-zero CAC. Each new ranking page adds to a permanent, compounding organic base. The long-term strategy is making paid acquisition a diminishing share of total installs as organic scales." />
           <FutureCard icon={<Target className="h-5 w-5 text-primary" />} title="B2B Acquisition Channel" body="Fleet operators, insurance agents, and RTO brokers represent high-LTV users who come in batches. Building a structured B2B acquisition motion: dedicated landing pages, custom onboarding, account management. LTV/CAC for B2B channel likely 6–8× vs. consumer." />

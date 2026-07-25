@@ -2,7 +2,7 @@ import { TrendingUp, Target, Brain, BarChart3, PieChart, Filter } from "lucide-r
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function MlReduceCacContent() {
   return (
@@ -67,7 +67,7 @@ export default function MlReduceCacContent() {
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Channel Quality Scoring</h2>
         <p className="text-foreground/80 leading-[1.85] mb-6">We built a system that assigned every acquisition channel a quality score updated monthly, driving budget allocation algorithmically rather than through quarterly planning cycles.</p>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Filter className="h-5 w-5 text-primary" />}
             title="User Quality Signals"
@@ -134,7 +134,7 @@ export default function MlReduceCacContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Quarter-on-Quarter Impact</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="−31%" label="Monthly Acquisition Spend" sub="same volume maintained" color="text-green-600" />
           <MetricCard value="3.8×" label="Blended LTV:CAC" sub="from 1.8× baseline" color="text-primary" />
           <MetricCard value="+67%" label="Profitable User Share" sub="of new cohorts" color="text-green-600" />
@@ -178,7 +178,7 @@ export default function MlReduceCacContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Next Layer</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Creative-Level LTV Attribution" body="We can attribute LTV to channel and campaign. Next: attribute to individual creative. Which ad copy and visual format predicts highest-LTV users? Creative briefing informed by downstream revenue, not just CTR." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Real-Time Budget Reallocation" body="Currently monthly reallocation based on LTV data. Next: weekly automated budget shifts between channels within predefined bounds. Respond to quality changes in real-time rather than monthly planning cycles." />
           <FutureCard icon={<TrendingUp className="h-5 w-5 text-primary" />} title="Lifetime Value Bidding" body="Feed 90-day LTV predictions into Google and Meta bidding algorithms. Bid not for the click — bid for the predicted downstream value of the user that click is likely to produce." />

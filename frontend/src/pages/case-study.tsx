@@ -3,7 +3,7 @@ import { Link, useParams } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, ArrowRight, Clock, Calendar, User } from "lucide-react";
+import { ArrowLeft, ArrowRight, Clock, Calendar, User, Zap, ChevronRight } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import NotFound from "@/pages/not-found";
 
@@ -317,7 +317,7 @@ function RelatedCaseStudies({ currentSlug }: { currentSlug: string }) {
     <div className="mt-16 space-y-10">
       {/* Prev / Next navigation */}
       {(prevStudy || nextStudy) && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-10 border-t border-border">
+        <div className="flex flex-col sm:grid sm:grid-cols-2 gap-4 pt-10 border-t border-border">
           {prevStudy ? (
             <Link href={`/case-study/${prevStudy.slug}`}>
               <div className="group p-5 rounded-xl border border-border hover:border-primary/40 hover-lift cursor-pointer transition-all">
@@ -358,10 +358,10 @@ function RelatedCaseStudies({ currentSlug }: { currentSlug: string }) {
       {related.length > 0 && (
         <div>
           <h2 className="text-xl font-serif font-bold text-foreground mb-5">You might also like</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Related case studies carousel">
             {related.map((s) => (
               <Link key={s.slug} href={`/case-study/${s.slug}`}>
-                <div className="group rounded-xl border border-border overflow-hidden hover:border-primary/40 hover-lift cursor-pointer transition-all h-full flex flex-col">
+                <div className="group rounded-xl border border-border overflow-hidden hover:border-primary/40 hover-lift cursor-pointer transition-all h-full flex flex-col min-w-[280px] shrink-0 snap-center md:min-w-0 md:shrink">
                   <div className="relative h-36 overflow-hidden bg-muted">
                     <img
                       src={s.image}
@@ -391,7 +391,7 @@ function RelatedCaseStudies({ currentSlug }: { currentSlug: string }) {
 
       {/* Bottom CTA */}
       <div className="pt-8 border-t border-border">
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="flex flex-col sm:grid sm:grid-cols-3 gap-4">
           <Link href="/case-studies">
             <div className="p-4 sm:p-5 rounded-xl border border-border hover-lift hover-glow cursor-pointer text-center group">
               <p className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">All Case Studies</p>
@@ -427,30 +427,32 @@ export default function CaseStudyDetail() {
   return (
     <>
       {isFullWriteup && <ReadingProgress />}
-      <div className="min-h-screen bg-background font-sans text-foreground">
+      <div className="min-h-screen bg-background font-sans text-foreground pb-24 md:pb-0">
         <Navbar />
 
         {/* Hero */}
-        <div className="relative w-full h-[340px] md:h-[420px] overflow-hidden mt-14 md:mt-16 bg-muted">
+        <div className="relative w-full h-[85vh] min-h-[500px] md:h-[420px] md:min-h-0 overflow-hidden mt-14 md:mt-16 bg-muted flex items-end">
           <img
             src={study.image.replace("w=400&q=65", "w=900&q=75")}
             alt={study.title}
             width="1200"
             height="420"
-            className="w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover md:object-center object-top"
             loading="eager"
             decoding="async"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-foreground/90 via-foreground/40 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-5 md:p-12">
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/95 via-foreground/60 to-transparent md:via-foreground/40" />
+          <div className="relative w-full p-5 pb-8 md:p-12 z-10">
             <div className="container mx-auto max-w-5xl">
-              <span className={`text-xs font-semibold px-3 py-1 rounded-full border mb-4 inline-block ${categoryColors[study.category] ?? "bg-muted text-muted-foreground"}`}>
+              <span className={`text-[10px] md:text-xs font-extrabold uppercase tracking-widest px-3 py-1.5 md:py-1 rounded-full border mb-4 md:mb-4 inline-block ${categoryColors[study.category] ?? "bg-muted text-muted-foreground"} border-white/20`}>
                 {study.category}
               </span>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-white leading-tight max-w-3xl mb-4">
+              <h1 className="text-[32px] leading-[1.15] md:text-4xl lg:text-5xl font-serif font-bold text-white max-w-3xl mb-6 md:mb-4">
                 {study.title}
               </h1>
-              <div className="flex flex-wrap gap-3 md:gap-4 text-white/70 text-sm mt-4">
+              
+              {/* Desktop metadata */}
+              <div className="hidden md:flex flex-wrap gap-3 md:gap-4 text-white/70 text-sm mt-4">
                 <span className="flex items-center gap-1.5"><User className="h-4 w-4" />Yogesh Yadav</span>
                 <span className="flex items-center gap-1.5"><Clock className="h-4 w-4" />{study.readTime}</span>
                 <span className="flex items-center gap-1.5"><Calendar className="h-4 w-4" />{study.date}</span>
@@ -459,6 +461,24 @@ export default function CaseStudyDetail() {
                     <span key={tag} className="px-2 py-0.5 rounded-full bg-white/20 text-white text-xs font-medium">{tag}</span>
                   ))}
                 </div>
+              </div>
+              
+              {/* Mobile metadata carousel */}
+              <div className="md:hidden flex overflow-x-auto snap-x snap-mandatory gap-3 pb-2 -mx-5 px-5 scrollbar-hide focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-primary" tabIndex={0} aria-label="Metadata carousel">
+                <div className="flex items-center gap-2 whitespace-nowrap bg-white/10 backdrop-blur-md border border-white/10 px-3 py-2 rounded-lg snap-start text-white/90 text-xs font-medium">
+                  <User className="h-3.5 w-3.5" /> Yogesh Yadav
+                </div>
+                <div className="flex items-center gap-2 whitespace-nowrap bg-white/10 backdrop-blur-md border border-white/10 px-3 py-2 rounded-lg snap-start text-white/90 text-xs font-medium">
+                  <Clock className="h-3.5 w-3.5" /> {study.readTime}
+                </div>
+                <div className="flex items-center gap-2 whitespace-nowrap bg-white/10 backdrop-blur-md border border-white/10 px-3 py-2 rounded-lg snap-start text-white/90 text-xs font-medium">
+                  <Calendar className="h-3.5 w-3.5" /> {study.date}
+                </div>
+                {study.tags.map((tag) => (
+                  <div key={tag} className="flex items-center gap-2 whitespace-nowrap bg-primary/20 backdrop-blur-md border border-primary/30 px-3 py-2 rounded-lg snap-start text-primary-foreground text-xs font-bold">
+                    {tag}
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -487,6 +507,15 @@ export default function CaseStudyDetail() {
         </div>
 
         <Footer />
+        
+        {/* Mobile Sticky CTA */}
+        <div className="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 md:hidden pointer-events-none flex justify-center w-full px-4">
+          <Link href="/contact">
+            <div className="pointer-events-auto shadow-2xl shadow-primary/20 bg-primary text-primary-foreground px-6 py-3.5 rounded-full font-bold flex items-center justify-center gap-2 border border-primary/50 transition-transform active:scale-95 text-[15px]">
+              <Zap className="w-4 h-4 fill-current" /> Work with me
+            </div>
+          </Link>
+        </div>
       </div>
     </>
   );

@@ -2,7 +2,7 @@ import { MousePointerClick, Zap, Target, Brain, BarChart3, TrendingUp } from "lu
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function InsuranceCtaContent() {
   return (
@@ -38,7 +38,7 @@ export default function InsuranceCtaContent() {
       <section id="segmentation" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Assumption We Got Wrong for Three Years</h2>
         <p className="text-foreground/80 leading-[1.85] mb-5">We had assumed users at the comparison stage were ready to buy. That's why the CTA said "Get Quote" — the next logical step in a purchase funnel. But qualitative research (5 user interviews, a quick survey, and session recording analysis) told a different story.</p>
-        <div className="grid sm:grid-cols-2 gap-5 mt-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
             <p className="font-bold text-destructive mb-3 text-sm uppercase tracking-wider">What We Assumed</p>
             <ul className="space-y-2 text-sm text-foreground/70">
@@ -126,7 +126,7 @@ export default function InsuranceCtaContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Final Numbers</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="+119%" label="CTA Click-Through Rate" sub="6.8% → 14.9%" color="text-green-600" />
           <MetricCard value="2.1×" label="Page Conversion Rate" sub="full package uplift" color="text-primary" />
           <MetricCard value="−31%" label="Exit Rate at CTA" sub="73% → 42%" color="text-green-600" />
@@ -170,7 +170,7 @@ export default function InsuranceCtaContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What We're Testing Next</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Archetype-Specific CTAs" body="Different archetypes have different decision triggers. Price Hunters may respond differently to Researchers. Testing archetype-specific CTA language for each of the 7 buyer segments." />
           <FutureCard icon={<MousePointerClick className="h-5 w-5 text-primary" />} title="Dynamic Copy by Dwell Time" body="CTA copy changes based on how long the user has been on the page. <2 minutes: exploratory copy. 5+ minutes: decision-stage copy. CTA adapts to where the user is in their own timeline." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Micro-Conversion Funnels" body="Test micro-CTAs before the main CTA. 'Save this comparison' → 'See full policy document' → 'Start My Cover.' Graduated commitment ladder before asking for the main action." />

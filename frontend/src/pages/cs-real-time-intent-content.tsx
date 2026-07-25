@@ -2,7 +2,7 @@ import { Zap, Target, Brain, BarChart3, Activity, Clock } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function RealTimeIntentContent() {
   return (
@@ -67,7 +67,7 @@ export default function RealTimeIntentContent() {
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">How the Intent Engine Works</h2>
         <p className="text-foreground/80 leading-[1.85] mb-6">Three components, each essential. None sufficient alone.</p>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Activity className="h-5 w-5 text-primary" />}
             title="Real-Time Event Stream"
@@ -139,7 +139,7 @@ export default function RealTimeIntentContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Six Months In</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="₹4.2Cr" label="Incremental Revenue" sub="vs batch baseline (6 months)" color="text-green-600" />
           <MetricCard value="10×" label="Conversion Lift" sub="real-time vs 24-hr batch" color="text-primary" />
           <MetricCard value="52.6%" label="Form Abandonment CVR" sub="with 10-min intervention" color="text-green-600" />
@@ -174,7 +174,7 @@ export default function RealTimeIntentContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Next Layer</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Clock className="h-5 w-5 text-primary" />} title="Predictive Intent" body="Instead of detecting current intent, predict future intent. User behavior patterns on Monday predict conversion likelihood on Friday. Pre-warm those users before they reach peak intent." />
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Cross-Channel State Sync" body="Intent state is currently session-scoped. Next: cross-channel state persistence — if a user researches on mobile on Monday and opens the app on Wednesday, resume from their last state, not from scratch." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Offer Personalisation by State" body="Current system varies intervention channel and timing. Next: vary the offer itself by state. Decision-Ready users get rate match; Comparing users get feature highlights. Message personalisation, not just delivery personalisation." />

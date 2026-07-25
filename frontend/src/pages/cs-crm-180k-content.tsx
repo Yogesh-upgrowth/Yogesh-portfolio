@@ -2,7 +2,7 @@ import { TrendingUp, Zap, Target, BarChart3, Database, Layers } from "lucide-rea
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function Crm180kContent() {
   return (
@@ -67,7 +67,7 @@ export default function Crm180kContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Four Pillars of the Rebuilt System</h2>
-        <div className="grid sm:grid-cols-2 gap-4 mb-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Database className="h-5 w-5 text-primary" />}
             title="1. Event Queue + Async Processing"
@@ -122,7 +122,7 @@ export default function Crm180kContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What Changed</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="180K+" label="Monthly Transactions" sub="from 18K stable ceiling" color="text-primary" />
           <MetricCard value="99.6%" label="System Uptime" sub="from ~94% baseline" color="text-green-600" />
           <MetricCard value="10×" label="Transaction Capacity" sub="without hardware scale" color="text-primary" />
@@ -169,7 +169,7 @@ export default function Crm180kContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Where the Platform Scales Next</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Database className="h-5 w-5 text-primary" />} title="National Coverage" body="Current deployment: 3 states. Architecture now supports multi-region data partitioning for national rollout. State-level data isolation (regulatory requirement) was designed into the schema from day one of the rebuild — expansion is a deployment exercise, not an architectural one." />
           <FutureCard icon={<Zap className="h-5 w-5 text-primary" />} title="Predictive Compliance Patterns" body="At 180K monthly transactions across 3 states, we have enough data to model enforcement patterns by zone, vehicle type, day of week, and weather. Predictive alerting for supervisors: 'Zone 4 historically has 3× violation density on Monday mornings — resource allocation suggestion.'" />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Real-Time Resolution Dashboard" body="Current owner resolution time: 3–7 days. With direct UPI integration for challan payment and digital acknowledgement, resolution time can compress to same-day. Building the real-time resolution pipeline is the next major feature milestone." />

@@ -2,7 +2,7 @@ import { Eye, MousePointer, Layers, Brain, BarChart3, TrendingUp } from "lucide-
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function UxRedesignContent() {
   return (
@@ -65,7 +65,7 @@ export default function UxRedesignContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Fix by Fix</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Eye className="h-5 w-5 text-primary" />}
             title="CTA Always Visible (Mobile)"
@@ -131,7 +131,7 @@ export default function UxRedesignContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">8 Weeks of Evidence-Based Fixing</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="+28%" label="Overall Conversion" sub="across all devices" color="text-green-600" />
           <MetricCard value="+41%" label="Mobile Conversion" sub="largest impact segment" color="text-primary" />
           <MetricCard value="+108%" label="CTA Click-Through" sub="6.8% → 14.1%" color="text-green-600" />
@@ -165,7 +165,7 @@ export default function UxRedesignContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Next Round</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Eye className="h-5 w-5 text-primary" />} title="Continuous Recording Review" body="Monthly session recording audit as a standing team practice — 50 recordings per month across product team. Institutionalize the evidence-gathering, not just run it when metrics are bad." />
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Automated Rage Click Monitoring" body="Rage click rate per screen tracked automatically. Alert if any screen crosses 15% rage click rate in a 7-day window. Catch new confusions as they emerge, not 8 months later." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Heatmap-Informed Design Reviews" body="All new feature designs reviewed against heatmap data from similar existing screens before shipping. If the pattern shows users don't scroll past 60% of the page, don't put critical content below 60%." />

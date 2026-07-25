@@ -2,7 +2,7 @@ import { MapPin, TrendingUp, Zap, Brain, BarChart3, Target } from "lucide-react"
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function CabFareContent() {
   return (
@@ -64,7 +64,7 @@ export default function CabFareContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Engine Design</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<MapPin className="h-5 w-5 text-primary" />}
             title="Real-Time Fare Fetching"
@@ -138,7 +138,7 @@ export default function CabFareContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Six-Month Numbers</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="80K" label="Monthly Active Users" sub="organic growth only" color="text-green-600" />
           <MetricCard value="38%" label="D30 Retention" sub="habit-grade engagement" color="text-primary" />
           <MetricCard value="88%" label="Surge Prediction Accuracy" sub="per user exit survey" color="text-green-600" />
@@ -172,7 +172,7 @@ export default function CabFareContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Roadmap</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Auto-Book Integration" body="When a user sets a fare alert and the threshold is hit, auto-initiate the booking in the preferred app — eliminating the step between notification and action where surge can change again." />
           <FutureCard icon={<MapPin className="h-5 w-5 text-primary" />} title="Tier 2 City Expansion" body="Extending to Tier 2 cities where Rapido and local platforms have gained significant share. The comparison value is higher in markets where platform fragmentation is greater." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Monthly Savings Report" body="Personal savings report: 'This month you saved ₹2,340 by using our comparison tool.' Real, attributable savings that reinforce the habit and create referral motivation." />

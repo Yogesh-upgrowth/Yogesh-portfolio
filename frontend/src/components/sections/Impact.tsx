@@ -48,7 +48,7 @@ export default function Impact() {
   return (
     <section
       id="impact"
-      className="relative py-20 md:py-24 bg-foreground text-background overflow-hidden"
+      className="relative py-14 md:py-24 bg-foreground text-background overflow-hidden"
       style={{ contentVisibility: "auto", containIntrinsicSize: "0 520px" }}
     >
       <style>{`
@@ -102,10 +102,10 @@ export default function Impact() {
         {/* Header */}
         <div
           ref={headRef}
-          className={`flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10 md:mb-12 reveal ${headVisible ? "in-view" : ""}`}
+          className={`flex flex-col md:flex-row md:items-end md:justify-between gap-3 md:gap-4 mb-8 md:mb-12 reveal ${headVisible ? "in-view" : ""}`}
         >
           <div>
-            <div className="inline-flex items-center gap-2 mb-4 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10">
+            <div className="inline-flex items-center gap-2 mb-3 md:mb-4 px-3 py-1.5 rounded-full border border-primary/30 bg-primary/10">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-60" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
@@ -114,11 +114,11 @@ export default function Impact() {
                 Proof / Impact
               </span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-serif font-bold text-background leading-tight">
+            <h2 className="text-[1.875rem] md:text-5xl font-serif font-bold text-background leading-tight">
               Numbers don't lie.
             </h2>
           </div>
-          <p className="text-white/50 md:text-white/40 text-sm max-w-xs leading-relaxed mt-1 md:mt-0">
+          <p className="text-white/50 md:text-white/40 text-[13px] md:text-sm max-w-xs leading-relaxed">
             Real outcomes across fintech, mobility, SaaS, and marketplaces — at scale.
           </p>
         </div>
@@ -138,10 +138,10 @@ export default function Impact() {
                 style={{ animationDelay: item.delay }}
               >
                 {/* Row layout */}
-                <div className="relative grid grid-cols-[28px_1fr] sm:grid-cols-[40px_1fr] md:grid-cols-[48px_180px_1fr_280px_44px] gap-x-4 md:gap-x-10 items-center py-6 md:py-8 hover:bg-white/[0.025] transition-colors duration-200 px-2 md:-mx-2 rounded-lg">
+                <div className="relative grid grid-cols-[24px_1fr] md:grid-cols-[48px_180px_1fr_280px_44px] gap-x-3 md:gap-x-10 items-center py-5 md:py-8 hover:bg-white/[0.025] active:bg-white/[0.035] transition-colors duration-200 px-2 md:-mx-2 rounded-lg">
 
                   {/* Index */}
-                  <span className="text-[10px] md:text-xs font-mono text-white/20 group-hover:text-primary/40 transition-colors self-start mt-[18px] md:mt-0 md:self-center">
+                  <span className="text-[9px] md:text-xs font-mono text-white/20 group-hover:text-primary/40 transition-colors self-start mt-3 md:mt-0 md:self-center">
                     {item.index}
                   </span>
 
@@ -155,14 +155,14 @@ export default function Impact() {
                   {/* Metric — the visual hero */}
                   <div className="col-span-1 md:col-span-1 flex flex-col gap-0.5">
                     {/* Company label on mobile */}
-                    <span className="text-[10px] font-bold tracking-widest uppercase text-white/30 md:hidden mb-0.5">
+                    <span className="text-[9px] font-bold tracking-widest uppercase text-white/30 md:hidden mb-0.5">
                       {item.company}
                     </span>
 
                     <span
                       className="impact-num font-serif font-bold text-primary leading-none"
                       style={{
-                        fontSize: "clamp(2.5rem, 8vw, 5rem)",
+                        fontSize: "clamp(2.25rem, 7vw, 5rem)",
                         textShadow: "0 0 60px rgba(37,99,235,0.5), 0 0 120px rgba(37,99,235,0.2)",
                         animationDelay: item.delay,
                       }}
@@ -172,11 +172,11 @@ export default function Impact() {
                   </div>
 
                   {/* Label + desc */}
-                  <div className="col-start-2 col-end-3 md:col-auto mt-3 md:mt-0 flex flex-col justify-center pr-2 md:pr-0">
-                    <p className="text-white/80 font-semibold text-[13px] md:text-base leading-snug mb-1 md:mb-1.5 group-hover:text-white transition-colors">
+                  <div className="col-start-2 col-end-3 md:col-auto mt-2 md:mt-0 flex flex-col justify-center pr-1 md:pr-0">
+                    <p className="text-white/80 font-semibold text-[12px] md:text-base leading-snug mb-0.5 md:mb-1.5 group-hover:text-white transition-colors">
                       {item.label}
                     </p>
-                    <p className="text-white/40 text-xs md:text-sm leading-relaxed line-clamp-2 md:line-clamp-none">
+                    <p className="text-white/40 text-[11px] md:text-sm leading-relaxed line-clamp-2 md:line-clamp-none">
                       {item.desc}
                     </p>
                   </div>
@@ -195,17 +195,17 @@ export default function Impact() {
         </div>
 
         {/* Footer stats row */}
-        <div className="flex flex-wrap items-center justify-center md:justify-end gap-6 md:gap-10 pt-10">
+        <div className="flex flex-wrap items-center justify-center md:justify-end gap-5 md:gap-10 pt-8 md:pt-10">
           {[
             { v: "9+", l: "Years" },
             { v: "5",  l: "Industries" },
             { v: "26", l: "Case Studies" },
           ].map(({ v, l }, i) => (
-            <div key={l} className="flex items-center gap-3">
+            <div key={l} className="flex items-center gap-2.5 md:gap-3">
               {i > 0 && <span className="hidden md:block text-white/10 text-lg">·</span>}
               <div className="text-center md:text-left">
-                <span className="font-serif font-bold text-xl md:text-2xl text-primary">{v}</span>
-                <span className="text-white/40 text-[10px] md:text-xs ml-1.5 md:ml-2 uppercase tracking-widest font-medium block md:inline">{l}</span>
+                <span className="font-serif font-bold text-lg md:text-2xl text-primary">{v}</span>
+                <span className="text-white/40 text-[9px] md:text-xs ml-1.5 md:ml-2 uppercase tracking-widest font-medium block md:inline">{l}</span>
               </div>
             </div>
           ))}

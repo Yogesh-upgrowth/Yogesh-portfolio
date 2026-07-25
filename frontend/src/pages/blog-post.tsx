@@ -1,4 +1,5 @@
 import { useRoute, Link } from "wouter";
+import { useEffect, useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { getPostBySlug, formatDate } from "@/lib/blog-data";
@@ -8,8 +9,35 @@ import { Button } from "@/components/ui/button";
 import NotFound from "@/pages/not-found";
 import { Seo, articleSchema, breadcrumbSchema } from "@/lib/seo";
 
+function ReadingProgress() {
+  const [progress, setProgress] = useState(0);
+  useEffect(() => {
+    const onScroll = () => {
+      const el = document.documentElement;
+      const pct = (el.scrollTop / (el.scrollHeight - el.clientHeight)) * 100;
+      setProgress(Math.min(100, pct));
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+  return (
+    <div className="md:hidden fixed top-0 left-0 right-0 h-1 bg-border z-[60]">
+      <div className="h-full bg-primary transition-none" style={{ width: `${progress}%` }} />
+    </div>
+  );
+}
+
 export default function BlogPost() {
   const [match, params] = useRoute("/blog/:slug");
+  const [showStickyShare, setShowStickyShare] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setShowStickyShare(window.scrollY > 400 && window.scrollY < document.documentElement.scrollHeight - 1000);
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
   
   if (!match) return <NotFound />;
 
@@ -19,7 +47,8 @@ export default function BlogPost() {
   if (!post) return <NotFound />;
 
   return (
-    <div className="min-h-screen font-sans text-foreground bg-background flex flex-col">
+    <div className="min-h-screen font-sans text-foreground bg-background flex flex-col pb-24 md:pb-0">
+      <ReadingProgress />
       <Seo
         title={`${post.title} | Yogesh Yadav`}
         description={post.description}
@@ -127,6 +156,22 @@ export default function BlogPost() {
         </article>
       </main>
       <Footer />
+
+      {/* Mobile Sticky Share Bar */}
+      <div className={`md:hidden fixed bottom-0 left-0 right-0 p-4 z-50 transition-transform duration-300 ${showStickyShare ? "translate-y-0" : "translate-y-full"}`}>
+        <div className="absolute inset-0 bg-background/90 backdrop-blur-xl border-t border-border shadow-[0_-10px_30px_rgba(0,0,0,0.05)] -z-10" />
+        <div className="flex items-center justify-between px-2">
+          <span className="text-sm font-semibold text-foreground">Share this</span>
+          <div className="flex gap-2">
+            <Button variant="outline" size="icon" className="rounded-full h-10 w-10 border-border bg-background shadow-sm">
+              <Linkedin className="h-4 w-4 text-primary" />
+            </Button>
+            <Button variant="outline" size="icon" className="rounded-full h-10 w-10 border-border bg-background shadow-sm">
+              <Twitter className="h-4 w-4 text-primary" />
+            </Button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

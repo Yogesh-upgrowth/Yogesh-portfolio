@@ -2,7 +2,7 @@ import { TrendingUp, Zap, Link2, Database, Search } from "lucide-react";
 import {
   InsightBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 function CodeBlock({ children }: { children: React.ReactNode }) {
   return (
@@ -75,7 +75,7 @@ export default function MoneyRateFinderCaseStudy() {
           Reframing the Problem: Traffic → Intent Coverage
         </h2>
 
-        <div className="grid sm:grid-cols-2 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <div className="p-5 rounded-xl border border-destructive/20 bg-destructive/5">
             <p className="font-bold text-destructive mb-3 text-sm uppercase tracking-wider">Old Question</p>
             <p className="text-foreground font-medium text-lg">How do we increase traffic?</p>
@@ -257,7 +257,7 @@ Rule: Only prioritize keywords with Intent Score > 70`}</CodeBlock>
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">
           Scaling Execution: 3 Phases
         </h2>
-        <div className="grid sm:grid-cols-3 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <PhaseCard
             phase="Phase 1"
             months="Month 1–2"
@@ -304,7 +304,7 @@ Rule: Only prioritize keywords with Intent Score > 70`}</CodeBlock>
           />
         </div>
 
-        <div className="grid sm:grid-cols-2 gap-6 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <div>
             <h3 className="text-xl font-serif font-bold text-foreground mb-3">Keyword Rankings</h3>
             <DataTable
@@ -329,7 +329,7 @@ Rule: Only prioritize keywords with Intent Score > 70`}</CodeBlock>
           </div>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="92×" label="Traffic Growth" sub="Month 1 to Month 9" color="text-green-600" />
           <MetricCard value="4,700" label="Indexed Pages" sub="from 5,000+ built" color="text-primary" />
           <MetricCard value="1,850" label="Top-10 Keywords" sub="in 9 months" color="text-green-600" />
@@ -391,7 +391,7 @@ Rule: Only prioritize keywords with Intent Score > 70`}</CodeBlock>
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">
           Challenges (Real Ones)
         </h2>
-        <div className="grid sm:grid-cols-3 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           {[
             {
               title: "Indexing Delays",
@@ -428,7 +428,7 @@ Rule: Only prioritize keywords with Intent Score > 70`}</CodeBlock>
       {/* ── FUTURE ── */}
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">Future Expansion</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           {[
             { title: "AI-Based Recommendations", body: "Personalized provider suggestions based on user history, transfer amount, and urgency pattern." },
             { title: "Personalized Routes", body: "Dynamic corridor suggestions based on where the user is located and their most likely destination." },

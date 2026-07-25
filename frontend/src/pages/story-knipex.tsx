@@ -30,7 +30,11 @@ export default function KnipexStory() {
           .prose-story p { font-size: 1rem; line-height: 1.7; }
           .chapter-divider { margin: 3rem 0 1.5rem; }
           .chapter-divider .num { font-size: 3.5rem; }
-          .metric-row { grid-template-columns: repeat(2, 1fr); border-radius: 12px; }
+          
+          .metric-row { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; margin-left: -1rem; margin-right: -1rem; padding-left: 1rem; padding-right: 1rem; padding-bottom: 1rem; gap: 1rem; background: transparent; -ms-overflow-style: none; scrollbar-width: none; border-radius: 0; }
+          .metric-row::-webkit-scrollbar { display: none; }
+          .metric-cell { min-width: 200px; flex-shrink: 0; scroll-snap-align: center; background: hsl(var(--background)); border: 1px solid hsl(var(--border)); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+    
           .metric-cell { padding: 1rem; }
           .metric-cell .val { font-size: 1.5rem; }
           .metric-cell .lbl { font-size: 0.65rem; }
@@ -71,7 +75,7 @@ export default function KnipexStory() {
 
         <p>India's professional hand tools market was a complex and fragmented landscape when KNIPEX was entering seriously. The market had several distinct segments:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Segment</th><th>Price Sensitivity</th><th>Brand Awareness</th><th>Professional Grade?</th></tr></thead>
           <tbody>
             <tr><td>Unorganized local brands</td><td>Very High</td><td>Near Zero</td><td>No</td></tr>
@@ -140,7 +144,7 @@ export default function KnipexStory() {
 
         <p>I built a prioritization matrix for the India SKU selection:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Factor</th><th>Weight</th><th>Rationale</th></tr></thead>
           <tbody>
             <tr><td>Market size (addressable professional users)</td><td>30%</td><td>Enough demand to justify inventory commitment</td></tr>
@@ -182,7 +186,7 @@ export default function KnipexStory() {
 
         <p>In physical product management with a 6-month supply chain, a wrong inventory decision has a different cost structure:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Decision Error</th><th>Immediate Cost</th><th>Recovery Time</th><th>Hidden Cost</th></tr></thead>
           <tbody>
             <tr><td>Overestimate demand for a SKU</td><td>Capital locked in inventory</td><td>12–18 months to sell through</td><td>Warehouse cost, opportunity cost of capital</td></tr>
@@ -295,7 +299,7 @@ export default function KnipexStory() {
 
         <p>We tracked the demonstration conversion funnel meticulously:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Funnel Stage</th><th>Rate</th><th>Time Lag to Next Stage</th></tr></thead>
           <tbody>
             <tr><td>Demonstration attended</td><td>100% (baseline)</td><td>—</td></tr>
@@ -393,7 +397,7 @@ export default function KnipexStory() {
 
         <p>KNIPEX India's trajectory during my time there was positive and measurable across several dimensions:</p>
 
-        <div className="metric-row">
+        <div className="metric-row focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Metrics carousel">
           <div className="metric-cell"><div className="val">+180%</div><div className="lbl">Revenue growth (2 years)</div></div>
           <div className="metric-cell"><div className="val">85 → 140</div><div className="lbl">Priority SKUs in market</div></div>
           <div className="metric-cell"><div className="val">81%</div><div className="lbl">First purchaser reorder rate</div></div>

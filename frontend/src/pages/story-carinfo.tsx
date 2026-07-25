@@ -31,7 +31,11 @@ export default function CarInfoStory() {
           .prose-story p { font-size: 1rem; line-height: 1.7; }
           .chapter-divider { margin: 3rem 0 1.5rem; }
           .chapter-divider .num { font-size: 3.5rem; }
-          .metric-row { grid-template-columns: repeat(2, 1fr); border-radius: 12px; }
+          
+          .metric-row { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; margin-left: -1rem; margin-right: -1rem; padding-left: 1rem; padding-right: 1rem; padding-bottom: 1rem; gap: 1rem; background: transparent; -ms-overflow-style: none; scrollbar-width: none; border-radius: 0; }
+          .metric-row::-webkit-scrollbar { display: none; }
+          .metric-cell { min-width: 200px; flex-shrink: 0; scroll-snap-align: center; background: hsl(var(--background)); border: 1px solid hsl(var(--border)); border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+    
           .metric-cell { padding: 1rem; }
           .metric-cell .val { font-size: 1.5rem; }
           .metric-cell .lbl { font-size: 0.65rem; }
@@ -66,7 +70,7 @@ export default function CarInfoStory() {
 
         <p>The consequence of this information fragmentation was significant. A used car buyer couldn't easily verify if the vehicle they were considering purchasing had a clean title and no hidden loans against it. A vehicle owner couldn't easily check if their insurance was still active or when it expired. A traffic police officer couldn't instantly verify insurance validity for a vehicle stopped at a checkpoint. This created a multi-sided problem: friction, opacity, compliance risk, and fraud.</p>
 
-        <div className="metric-row">
+        <div className="metric-row focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Metrics carousel">
           <div className="metric-cell"><div className="val">295M</div><div className="lbl">Registered vehicles (2021)</div></div>
           <div className="metric-cell"><div className="val">62%</div><div className="lbl">Uninsured or lapsed</div></div>
           <div className="metric-cell"><div className="val">3.8M</div><div className="lbl">CarInfo MAU when I joined</div></div>
@@ -100,7 +104,7 @@ export default function CarInfoStory() {
 
         <p>Using session recording and funnel analysis, I mapped what users actually did inside the app after completing an RC check:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Action After RC Check</th><th>% of Users</th><th>Insight</th></tr></thead>
           <tbody>
             <tr><td>Left immediately</td><td>51.3%</td><td>Used it as a lookup tool, got what they needed</td></tr>
@@ -194,7 +198,7 @@ export default function CarInfoStory() {
 
         <p>When I audited CarInfo's SEO position, I found:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>SEO Dimension</th><th>Current State</th><th>Opportunity</th></tr></thead>
           <tbody>
             <tr><td>Total indexed pages</td><td>~340</td><td>Potentially 5,000–8,000</td></tr>
@@ -235,7 +239,7 @@ export default function CarInfoStory() {
 
         <p>Through user research — a combination of qualitative interviews and A/B-testable trust signal experiments — we identified the signals that actually moved conversion in the CarInfo context:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Trust Signal</th><th>Type</th><th>Conversion Impact</th></tr></thead>
           <tbody>
             <tr><td>Insurer brand visibility (Bajaj, Tata, HDFC)</td><td>Institutional credibility</td><td>+34% on quote acceptance</td></tr>
@@ -285,7 +289,7 @@ export default function CarInfoStory() {
 
         <p>The urgency message was calibrated to the actual expiry situation:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Days to/from Expiry</th><th>Messaging Tone</th><th>CTA Copy</th></tr></thead>
           <tbody>
             <tr><td>61+ days before expiry</td><td>Informational</td><td>"Your insurance is active. Renew early for best rates."</td></tr>
@@ -345,7 +349,7 @@ export default function CarInfoStory() {
 
         <p>When we had this infrastructure in place and ran the analysis on four months of data, the results were startling. The cost per install by channel varied enormously, as expected. But the cost per insurance purchase — what we actually cared about — varied far more:</p>
 
-        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
+        <div className="overflow-x-auto pb-4 mb-6 -mx-4 px-4 sm:mx-0 sm:px-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Data table"><table className="data-table" style={{ minWidth: "600px", margin: 0 }}>
           <thead><tr><th>Channel</th><th>CPI</th><th>Insurance CPP</th><th>CPP / CPI Multiple</th><th>ARPU (3-month)</th></tr></thead>
           <tbody>
             <tr><td>Google Search (insurance intent)</td><td>₹28</td><td>₹420</td><td>15×</td><td>₹280</td></tr>
@@ -466,7 +470,7 @@ export default function CarInfoStory() {
 
         <p>At the 18-month mark, here is where CarInfo stood:</p>
 
-        <div className="metric-row">
+        <div className="metric-row focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Metrics carousel">
           <div className="metric-cell"><div className="val">45M+</div><div className="lbl">Monthly Active Users</div></div>
           <div className="metric-cell"><div className="val">1200%</div><div className="lbl">Insurance Revenue Growth</div></div>
           <div className="metric-cell"><div className="val">-30%</div><div className="lbl">Cost per Acquisition</div></div>

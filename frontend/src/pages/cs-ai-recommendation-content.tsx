@@ -2,7 +2,7 @@ import { Cpu, Brain, Target, Zap, BarChart3, TrendingUp } from "lucide-react";
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function AiRecommendationContent() {
   return (
@@ -63,7 +63,7 @@ export default function AiRecommendationContent() {
 
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Four-Mode Recommendation System</h2>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Target className="h-5 w-5 text-primary" />}
             title="Mode 1: Context Matching (Orienting)"
@@ -117,7 +117,7 @@ export default function AiRecommendationContent() {
 
       <section id="execution" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">V1 vs V2: The Full Comparison</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="+19%" label="Conversion Rate" sub="vs pre-recommendation baseline" color="text-green-600" />
           <MetricCard value="14.2%" label="Post-Quote CTR" sub="Mode 4 — highest of any mode" color="text-primary" />
           <MetricCard value="−11%" label="V1 Conversion Impact" sub="why we rebuilt it" color="text-green-600" />
@@ -161,7 +161,7 @@ export default function AiRecommendationContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">V3 Directions</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Hesitation Detection" body="Identify behavioral signals of decision hesitation (back-and-forth between same two plans, long pauses, return visits without progress). Trigger a specific 'help me decide' recommendation mode with a clearer comparison framework." />
           <FutureCard icon={<Cpu className="h-5 w-5 text-primary" />} title="Explainable Recommendations" body="Current recommendations show the plan but not why. Next: 'We recommend this because 84% of people with your profile bought it after comparing these 3 plans.' Explanation increases click-through and builds trust in the recommendation." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Recommendation Outcome Tracking" body="Full attribution: recommendation shown → clicked → converted → LTV outcome. Currently measuring CTR and stage conversion. Next: track whether recommendation-influenced purchases have different LTV from self-directed purchases." />

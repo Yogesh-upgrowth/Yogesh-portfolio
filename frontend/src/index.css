@@ -318,3 +318,23 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* =============================================
+   MOBILE ENHANCEMENTS
+   ============================================= */
+
+/* Touch-optimized active states */
+@media (max-width: 767px) {
+  button:active,
+  a:active {
+    opacity: 0.85;
+  }
+  
+  /* Ensure minimum touch target size */
+  button,
+  a[role="button"],
+  input[type="button"],
+  input[type="submit"] {
+    min-height: 44px;
+  }
+}

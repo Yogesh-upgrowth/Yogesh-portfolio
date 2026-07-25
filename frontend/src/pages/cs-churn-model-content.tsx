@@ -2,7 +2,7 @@ import { AlertTriangle, Brain, TrendingDown, Target, Zap, BarChart3 } from "luci
 import {
   InsightBox, ProblemBox, TakeawayBox, BlockQuote, SectionDivider,
   DataTable, MetricCard, Phase, Insight, FailurePoint, FutureCard, FrameworkDimension,
-} from "@/components/case-study/shared";
+} from "@/pages/mobile-components";
 
 export default function ChurnModelContent() {
   return (
@@ -67,7 +67,7 @@ export default function ChurnModelContent() {
       <section id="framework" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">The Churn Risk Monitoring System</h2>
         <p className="text-foreground/80 leading-[1.85] mb-6">We built in four components, each necessary. The hardest was the intervention playbook — getting the model right was actually the easier half.</p>
-        <div className="grid sm:grid-cols-2 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FrameworkDimension
             icon={<Brain className="h-5 w-5 text-primary" />}
             title="Daily Churn Probability Scoring"
@@ -140,7 +140,7 @@ export default function ChurnModelContent() {
 
       <section id="results" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What Changed</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 my-6">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-2 lg:grid-cols-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <MetricCard value="−39%" label="Monthly Churn Rate" sub="8.4% → 5.1%" color="text-green-600" />
           <MetricCard value="51%" label="Red Tier Response Rate" sub="human outreach" color="text-primary" />
           <MetricCard value="₹2.1Cr" label="Annual Revenue Retained" sub="from prevented churn" color="text-green-600" />
@@ -175,7 +175,7 @@ export default function ChurnModelContent() {
 
       <section id="future" className="scroll-mt-28">
         <h2 className="text-2xl md:text-3xl font-serif font-bold text-foreground mt-10 mb-4">What's Still Left to Build</h2>
-        <div className="grid sm:grid-cols-3 gap-4">
+        <div className="flex md:grid overflow-x-auto md:overflow-visible snap-x snap-mandatory md:snap-none gap-4 pb-6 md:pb-0 -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide my-6 md:grid-cols-3 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2" tabIndex={0} aria-label="Horizontal swipe carousel">
           <FutureCard icon={<Brain className="h-5 w-5 text-primary" />} title="Churn Root Cause Model" body="Current model predicts who will churn. Missing: why. A secondary classifier identifying whether the churn signal is price sensitivity, feature gap, or competitive. Different root causes need different interventions." />
           <FutureCard icon={<TrendingDown className="h-5 w-5 text-primary" />} title="Re-engagement Scoring" body="Churned users who come back are underserved by the current system. A re-engagement model that identifies which churned users have elevated return probability, and what triggered them to reconsider." />
           <FutureCard icon={<BarChart3 className="h-5 w-5 text-primary" />} title="Product-Level Churn Attribution" body="Connect churn signals to specific product features or flows. Which parts of the product are consistently present in the journeys of churning users? Inform product roadmap with churn data, not just engagement metrics." />
