@@ -11,7 +11,7 @@ export const PERSON_ID = `${SITE_URL}/#person`;
  * LinkedIn URLs in three files reads as three weak signals instead of one strong
  * one. Every LinkedIn link in the UI imports LINKEDIN_URL from here.
  */
-export const LINKEDIN_URL = "https://www.linkedin.com/in/yogeshyadavpm/";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/yogesh-productmanager/";
 export const CONTACT_EMAIL = "yogesh.productmanager@gmail.com";
 
 export const SAME_AS = [LINKEDIN_URL];
