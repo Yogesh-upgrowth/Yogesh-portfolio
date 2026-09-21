@@ -4,7 +4,7 @@ _Generated from the prerendered HTML in `dist/public`. This report is diagnostic
 
 - Pages analyzed: **95**
 - Median word count: **1142**
-- Thin pages (<300 words): **1**
+- Thin pages (<300 words): **0**
 - Pages whose H1 misses most of the keyword's terms: **0**
 - Pages whose copy barely covers the keyword at all: **0**
 - Pages missing the exact keyword phrase (weak signal, FYI): **49**
@@ -12,9 +12,7 @@ _Generated from the prerendered HTML in `dist/public`. This report is diagnostic
 
 ## Thin content (<300 words) — rewrite candidates
 
-| Page | Words |
-|---|---|
-| `/contact` | 75 |
+_None._
 
 ## Keyword/H1 misalignment — fix the H1 or retarget the keyword
 
@@ -126,7 +124,7 @@ _None._
 | `/case-study/user-acquisition-cac-30` | 2239 | 75% | 100% | no |
 | `/case-study/ux-redesign-conversion-28` | 1774 | 100% | 100% | no |
 | `/case-study/zero-cost-growth-engine` | 1656 | 100% | 100% | yes |
-| `/contact` | 75 | 100% | 100% | yes |
+| `/contact` | 595 | 100% | 100% | yes |
 | `/work` | 666 | 100% | 100% | yes |
 | `/work/carinfo` | 6355 | 50% | 100% | no |
 | `/work/knipex` | 6077 | 75% | 100% | no |
