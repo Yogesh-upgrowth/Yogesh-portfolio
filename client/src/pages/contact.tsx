@@ -117,9 +117,9 @@ export default function ContactPage() {
             ))}
           </div>
           <p className="text-muted-foreground mt-10">
-            The <Link href="/case-studies" className="text-primary hover:underline">case studies</Link>{" "}
+            The <Link href="/case-studies" className="text-primary underline underline-offset-2">case studies</Link>{" "}
             go through this work in detail, with the numbers attached — or see
-            the longer <Link href="/work" className="text-primary hover:underline">company stories</Link>{" "}
+            the longer <Link href="/work" className="text-primary underline underline-offset-2">company stories</Link>{" "}
             for how it played out over multi-year engagements.
           </p>
         </section>

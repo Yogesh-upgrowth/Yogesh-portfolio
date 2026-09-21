@@ -58,7 +58,7 @@
   --popover-foreground: 222 47% 11%;
 
   /* Primary: A deep, authoritative blue */
-  --primary: 221 83% 53%;        /* Royal Blue */
+  --primary: 221 83% 51%;        /* Royal Blue — 51% not 53%: at 53% the tinted badge (bg-primary/10 + text-primary) measured 4.49:1, just under the 4.5:1 AA floor */
   --primary-foreground: 210 40% 98%;
 
   /* Secondary: Subtle cool gray for backgrounds/cards */
@@ -66,7 +66,7 @@
   --secondary-foreground: 222 47% 11.2%;
 
   --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
+  --muted-foreground: 215.4 16.3% 45%; /* 45% not 46.9%: measured 4.43:1 on the light section background, just under AA */
 
   --accent: 210 40% 96.1%;
   --accent-foreground: 222 47% 11.2%;
@@ -157,6 +157,16 @@
   to   { opacity: 1; transform: translateX(0); }
 }
 
+/* Transform-only entrance. An element animating from opacity:0 is not
+   "contentful" until the animation runs, so using fade-in-left on the hero
+   H1 pushed Largest Contentful Paint out past the whole stagger and left the
+   navbar logo as the LCP element. Sliding without fading keeps the headline
+   painted from the first frame. */
+@keyframes slide-in-left {
+  from { transform: translateX(-24px); }
+  to   { transform: translateX(0); }
+}
+
 @keyframes fade-in-right {
   from { opacity: 0; transform: translateX(24px); }
   to   { opacity: 1; transform: translateX(0); }
@@ -209,11 +219,15 @@
 
 /* Hero load animations (no scroll needed — above fold) */
 .hero-image  { animation: scale-in      0.6s ease-out 0.05s both; }
-.hero-badge  { animation: fade-in       0.5s ease-out 0.1s  both; }
-.hero-title  { animation: fade-in-left  0.6s ease-out 0.2s  both; }
-.hero-sub    { animation: fade-in-up    0.5s ease-out 0.35s both; }
-.hero-cta    { animation: fade-in-up    0.5s ease-out 0.45s both; }
-.hero-tags   { animation: fade-in-up    0.4s ease-out 0.55s both; }
+/* Above-the-fold stagger is kept, but tightened: it previously ran to 0.55s
+   of delay on top of render-blocking CSS, so the hero assembled about a
+   second after first paint. The H1 no longer fades at all (see
+   slide-in-left) because it is the LCP element. */
+.hero-badge  { animation: fade-in        0.4s ease-out both; }
+.hero-title  { animation: slide-in-left  0.5s ease-out both; }
+.hero-sub    { animation: fade-in-up     0.4s ease-out 0.12s both; }
+.hero-cta    { animation: fade-in-up     0.4s ease-out 0.20s both; }
+.hero-tags   { animation: fade-in-up     0.4s ease-out 0.28s both; }
 
 /* ---- Hover micro-interactions (CSS only) ---- */
 /* Lift card on hover */
@@ -317,4 +331,20 @@
 }
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
+}
+
+
+/* Users who ask for reduced motion get no entrance animations, transitions or
+   smooth scrolling. Everything still renders in its final state. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    scroll-behavior: auto !important;
+  }
 }

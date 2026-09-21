@@ -57,9 +57,9 @@ function CaseStudyCard({ study, index }: { study: typeof caseStudies[0]; index: 
 
         {/* Content */}
         <div className="p-5 flex flex-col flex-1">
-          <h3 className="font-serif font-bold text-foreground text-base leading-snug mb-2 line-clamp-2 group-hover:text-primary transition-colors">
+          <h2 className="font-serif font-bold text-foreground text-base leading-snug mb-2 line-clamp-2 group-hover:text-primary transition-colors">
             {study.title}
-          </h3>
+          </h2>
           <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1 line-clamp-2">
             {study.description}
           </p>
@@ -181,7 +181,7 @@ export default function CaseStudies() {
                 >
                   {cat}
                   <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${
-                    isActive ? "bg-white/25 text-white" : "bg-muted text-muted-foreground"
+                    isActive ? "bg-white text-primary" : "bg-muted text-muted-foreground"
                   }`}>
                     {count}
                   </span>

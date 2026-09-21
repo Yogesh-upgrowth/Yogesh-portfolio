@@ -21,12 +21,12 @@ export default function UpGrowthStory() {
         .callout-box .label { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: hsl(var(--primary)); margin-bottom: 0.5rem; }
         .callout-box p { margin: 0; color: hsl(var(--foreground) / 0.85); font-size: 0.9rem; }
         .chapter-divider { display: flex; align-items: center; gap: 1rem; margin: 4rem 0 2rem; }
-        .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(var(--border)); line-height: 1; }
+        .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(214 32% 59%); line-height: 1; }
         .chapter-divider .sep { flex: 1; height: 1px; background: hsl(var(--border)); }
       `}</style>
 
       <section id="hook">
-        <div className="chapter-divider"><span className="num">01</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">01</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Week Everything Launched Simultaneously</h2>
 
         <p>In the spring of my second year as Product Head at UpGrowth, we launched three product updates in a single week. Not a planned, coordinated release. Three separate product teams, operating on three separate roadmaps, converging on the same week through a combination of deadline pressure, miscommunication, and the kind of optimism that accumulates in organizations where nobody wants to be the person who says "we should probably push this."</p>
@@ -45,7 +45,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="context">
-        <div className="chapter-divider"><span className="num">02</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">02</span><span className="sep" aria-hidden="true" /></div>
         <h2>Scale is Not Just Numbers</h2>
 
         <p>When people talk about "scale" in product organizations, they usually mean user numbers or revenue. UpGrowth was scaling on those dimensions. But the scale that I was dealing with was organizational — the complexity that comes from coordinating many people across many products toward shared goals, when the people, products, and goals are all evolving simultaneously.</p>
@@ -76,7 +76,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="inherited">
-        <div className="chapter-divider"><span className="num">03</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">03</span><span className="sep" aria-hidden="true" /></div>
         <h2>What I Inherited</h2>
 
         <p>My first 60 days at UpGrowth were spent understanding the organization before trying to change it. This was a conscious discipline that I had developed from earlier product experiences — the cost of misdiagnosing an organizational problem is at least as high as the cost of misdiagnosing a product problem.</p>
@@ -101,7 +101,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="coherence">
-        <div className="chapter-divider"><span className="num">04</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">04</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Decision Coherence Problem</h2>
 
         <p>I want to spend time on what I mean by "decision coherence," because it's the conceptual center of everything I did at UpGrowth, and it's a concept that I don't think is articulated clearly enough in most product management thinking.</p>
@@ -124,7 +124,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="priority">
-        <div className="chapter-divider"><span className="num">05</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">05</span><span className="sep" aria-hidden="true" /></div>
         <h2>When Everything is Priority One</h2>
 
         <p>The symptom that most visibly manifested the coherence problem was priority inflation. In a system without clear cross-team prioritization, every request becomes urgent. Client X needs feature Y by end of month. Sales committed to client Z that we'd have capability W by next quarter. Engineering is blocked on infrastructure unless they upgrade the database — and that affects all four products. A competitor has released a feature that clients are asking about.</p>
@@ -158,7 +158,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="operating">
-        <div className="chapter-divider"><span className="num">06</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">06</span><span className="sep" aria-hidden="true" /></div>
         <h2>Building the PM Operating System</h2>
 
         <p>After the diagnosis and the uncomfortable conversations, the work began. I call what I built the "PM Operating System" — the collection of processes, tools, rituals, and frameworks that define how product decisions get made and communicated across the organization.</p>
@@ -202,7 +202,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="structure">
-        <div className="chapter-divider"><span className="num">07</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">07</span><span className="sep" aria-hidden="true" /></div>
         <h2>How I Structured the Team</h2>
 
         <p>Organizational structure is a product decision. The way you organize people determines the information flows, the decision authority, and ultimately the products that get built. Most organizations don't treat structure this deliberately — they inherit it or iterate on it incrementally without explicit strategic intent. I tried to design it.</p>
@@ -243,7 +243,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="okr">
-        <div className="chapter-divider"><span className="num">08</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">08</span><span className="sep" aria-hidden="true" /></div>
         <h2>The OKR Failure and Recovery</h2>
 
         <p>At some point in my first year, I decided that UpGrowth needed OKRs. Objectives and Key Results is a goal-setting framework with a good track record at organizations that implement it well. I had seen it work well in previous contexts. I introduced it at UpGrowth with what I thought was appropriate care.</p>
@@ -276,7 +276,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="growth">
-        <div className="chapter-divider"><span className="num">09</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">09</span><span className="sep" aria-hidden="true" /></div>
         <h2>Growth Platform Architecture</h2>
 
         <p>The Growth Platform was UpGrowth's core product and the one I spent the most time on strategically. Understanding it deeply, and making the right architectural bets, was central to the company's long-term competitive position.</p>
@@ -303,7 +303,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="monetisation">
-        <div className="chapter-divider"><span className="num">10</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">10</span><span className="sep" aria-hidden="true" /></div>
         <h2>Monetisation at Scale</h2>
 
         <p>UpGrowth had a monetization challenge that was interesting in its specific shape: the product was valuable but its pricing model wasn't capturing that value effectively. Clients were paying flat monthly fees that bore limited relationship to how much value they were extracting from the platform.</p>
@@ -332,7 +332,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="engineering">
-        <div className="chapter-divider"><span className="num">11</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">11</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Engineering Relationship</h2>
 
         <p>The relationship between product and engineering is the most important relationship in a product organization, and the most frequently mismanaged. I want to describe how I thought about and worked to build this relationship at UpGrowth, because it was central to everything that worked.</p>
@@ -359,7 +359,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="leadership">
-        <div className="chapter-divider"><span className="num">12</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">12</span><span className="sep" aria-hidden="true" /></div>
         <h2>Leadership in Ambiguity</h2>
 
         <p>Running a 50-person product organization across four product lines, in a company that was itself evolving its strategy and competitive position, meant operating in persistent ambiguity. The market was moving. The competitive landscape was shifting. The company's own strategic clarity varied with the business cycle. My job was to provide organizational direction when that direction was genuinely uncertain — not to pretend certainty I didn't have, and not to be paralyzed by the uncertainty.</p>
@@ -378,7 +378,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="team">
-        <div className="chapter-divider"><span className="num">13</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">13</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Team That Grew Me More Than I Grew Them</h2>
 
         <p>I want to write something honest about the people at UpGrowth, because the narrative of product leadership can become overly focused on the leader's frameworks and decisions in a way that obscures where the real work happens: in the product managers, engineers, and designers who execute every day.</p>
@@ -406,7 +406,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="results">
-        <div className="chapter-divider"><span className="num">14</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">14</span><span className="sep" aria-hidden="true" /></div>
         <h2>Results: 12 Months of Clarity</h2>
 
         <p>I want to be careful here, because I think product leaders often take too much individual credit for organizational outcomes. The results at UpGrowth were produced by a team of 50+ people, most of whom were doing excellent work before I arrived and continued doing excellent work within and beyond the frameworks I introduced.</p>
@@ -434,7 +434,7 @@ export default function UpGrowthStory() {
       </section>
 
       <section id="learnings">
-        <div className="chapter-divider"><span className="num">15</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">15</span><span className="sep" aria-hidden="true" /></div>
         <h2>What Scale Taught Me About Simplicity</h2>
 
         <p>The most counterintuitive thing I learned at UpGrowth — the insight that most surprised me and that I apply most consistently now — is that the answer to organizational complexity is not more sophisticated organizational management. It is simplicity.</p>

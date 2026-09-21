@@ -292,7 +292,7 @@ export default function Blog() {
                 }`}
               >
                 All
-                <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${activeCategory === "All" ? "bg-white/25 text-white" : "bg-muted text-muted-foreground"}`}>
+                <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${activeCategory === "All" ? "bg-white text-primary" : "bg-muted text-muted-foreground"}`}>
                   {categoryCounts["All"]}
                 </span>
               </button>
@@ -309,7 +309,7 @@ export default function Blog() {
                 >
                   <span className={`w-1.5 h-1.5 rounded-full shrink-0 ${activeCategory === cat ? "bg-white" : CAT_DOT[cat]}`} />
                   {cat}
-                  <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${activeCategory === cat ? "bg-white/25 text-white" : "bg-muted text-muted-foreground"}`}>
+                  <span className={`text-xs rounded-full px-1.5 py-0.5 font-bold leading-none ${activeCategory === cat ? "bg-white text-primary" : "bg-muted text-muted-foreground"}`}>
                     {categoryCounts[cat] ?? 0}
                   </span>
                 </button>

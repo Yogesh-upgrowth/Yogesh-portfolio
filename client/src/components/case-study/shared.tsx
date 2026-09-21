@@ -122,7 +122,7 @@ export function Phase({ num, period, title, actions, result, color = "border-blu
 export function Insight({ num, title, body }: { num: string; title: string; body: string }) {
   return (
     <div className="flex gap-5">
-      <span className="text-3xl font-serif font-bold text-primary/30 shrink-0 w-10">{num}</span>
+      <span className="text-3xl font-serif font-bold text-primary/80 shrink-0 w-10">{num}</span>
       <div>
         <h3 className="text-base font-bold text-foreground mb-2 flex items-center gap-2">
           <TrendingUp className="h-4 w-4 text-primary shrink-0" /> {title}

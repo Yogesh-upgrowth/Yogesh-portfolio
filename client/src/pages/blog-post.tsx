@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import NotFound from "@/pages/not-found";
 import { Seo, articleSchema, breadcrumbSchema, getModifiedDate } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
+import { SITE_URL } from "@shared/seo-data";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { caseStudies } from "@/data/caseStudies";
 
@@ -85,6 +86,9 @@ export default function BlogPost() {
 
   const post = getPostBySlug(params.slug);
   const content = post ? getPostContent(post.slug) : undefined;
+  // The share buttons previously had no href and no handler — they rendered
+  // as icon-only <button>s that did nothing and had no accessible name.
+  const shareUrl = `${SITE_URL}/blog/${post?.slug ?? ""}`;
 
   if (!post) return <NotFound />;
 
@@ -186,11 +190,25 @@ export default function BlogPost() {
             <span className="text-sm font-medium text-muted-foreground flex items-center gap-2">
               <Share2 className="h-4 w-4" /> Share this article:
             </span>
-            <Button variant="outline" size="icon" className="rounded-full h-8 w-8">
-              <Linkedin className="h-4 w-4" />
+            <Button variant="outline" size="icon" className="rounded-full h-8 w-8" asChild>
+              <a
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(shareUrl)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Share "${post.title}" on LinkedIn`}
+              >
+                <Linkedin className="h-4 w-4" aria-hidden="true" />
+              </a>
             </Button>
-            <Button variant="outline" size="icon" className="rounded-full h-8 w-8">
-              <Twitter className="h-4 w-4" />
+            <Button variant="outline" size="icon" className="rounded-full h-8 w-8" asChild>
+              <a
+                href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Share "${post.title}" on X`}
+              >
+                <Twitter className="h-4 w-4" aria-hidden="true" />
+              </a>
             </Button>
           </div>
 

@@ -21,12 +21,12 @@ export default function KnipexStory() {
         .callout-box .label { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: hsl(var(--primary)); margin-bottom: 0.5rem; }
         .callout-box p { margin: 0; color: hsl(var(--foreground) / 0.85); font-size: 0.9rem; }
         .chapter-divider { display: flex; align-items: center; gap: 1rem; margin: 4rem 0 2rem; }
-        .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(var(--border)); line-height: 1; }
+        .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(214 32% 59%); line-height: 1; }
         .chapter-divider .sep { flex: 1; height: 1px; background: hsl(var(--border)); }
       `}</style>
 
       <section id="hook">
-        <div className="chapter-divider"><span className="num">01</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">01</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Shipment That Was Late</h2>
 
         <p>In October, a container of pliers was somewhere in the Indian Ocean. It had left the KNIPEX manufacturing plant in Wuppertal, Germany, in August. It was supposed to arrive at Nhava Sheva port in Mumbai by the end of September. A customs issue had delayed clearance by three weeks. The container was now expected in the third week of October.</p>
@@ -43,7 +43,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="context">
-        <div className="chapter-divider"><span className="num">02</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">02</span><span className="sep" aria-hidden="true" /></div>
         <h2>Germany Meets India: The Context</h2>
 
         <p>KNIPEX is a German family-owned company, headquartered in Wuppertal in the state of North Rhine-Westphalia, making precision pliers since 1882. That is not a typo. Since 1882. The company is in its fifth generation of family ownership. It employs approximately 1,400 people at its Wuppertal facility. It exports to over 100 countries.</p>
@@ -74,7 +74,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="knipex">
-        <div className="chapter-divider"><span className="num">03</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">03</span><span className="sep" aria-hidden="true" /></div>
         <h2>KNIPEX India's Story</h2>
 
         <p>KNIPEX had been exporting to India through distributor relationships for a decade before establishing a more direct presence. The India strategy evolved in phases, and by the time I joined, the company was committed to a proper market development approach — not just selling through existing distributor networks, but actively building brand awareness, training end users, and developing the professional community that would drive sustained demand.</p>
@@ -93,7 +93,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="reality">
-        <div className="chapter-divider"><span className="num">04</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">04</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Physical PM's Reality</h2>
 
         <p>My first week at KNIPEX India was spent in what the company called "tool school" — a structured introduction to the product range, manufacturing philosophy, and professional applications. I handled hundreds of different plier types, understanding the engineering rationale behind each design choice. I talked to the German trainers who flew in periodically to conduct professional development for the India team.</p>
@@ -114,7 +114,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="inventory">
-        <div className="chapter-divider"><span className="num">05</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">05</span><span className="sep" aria-hidden="true" /></div>
         <h2>Inventory as a Product Decision</h2>
 
         <p>Software product managers make decisions about what features to build with rough cost estimates and the ability to iterate. Physical product managers make decisions about what inventory to carry with hard capital commitments and zero ability to iterate on a per-unit basis.</p>
@@ -158,7 +158,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="lead-times">
-        <div className="chapter-divider"><span className="num">06</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">06</span><span className="sep" aria-hidden="true" /></div>
         <h2>What 6-Month Lead Times Teach You</h2>
 
         <p>The 6-month supply chain was the defining constraint of my work at KNIPEX. Every decision I made was filtered through it. And thinking through that constraint every day for two years installed a set of mental habits that I've never lost, even now that I work in software where iteration cycles are measured in days, not months.</p>
@@ -199,7 +199,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="distribution">
-        <div className="chapter-divider"><span className="num">07</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">07</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Distribution Problem in India</h2>
 
         <p>India's distribution infrastructure for specialty professional products is fragmented, relationship-driven, and deeply local in a way that requires significant field presence to understand and work with. Understanding this was one of the most important things I did at KNIPEX.</p>
@@ -226,7 +226,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="demand">
-        <div className="chapter-divider"><span className="num">08</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">08</span><span className="sep" aria-hidden="true" /></div>
         <h2>Building Demand Intelligence</h2>
 
         <p>One of the most significant product-adjacent contributions I made at KNIPEX was building a demand intelligence system — a structured way of collecting and synthesizing market information to inform decisions about where to focus, what to carry, and how to develop the market.</p>
@@ -253,7 +253,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="category">
-        <div className="chapter-divider"><span className="num">09</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">09</span><span className="sep" aria-hidden="true" /></div>
         <h2>Creating vs Entering a Category</h2>
 
         <p>One of the conceptual frameworks that sharpened most during my time at KNIPEX was the difference between entering an existing category and creating a new one. This distinction sounds abstract but has enormous practical implications for how you allocate resources and measure success.</p>
@@ -297,7 +297,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="b2b">
-        <div className="chapter-divider"><span className="num">10</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">10</span><span className="sep" aria-hidden="true" /></div>
         <h2>B2B Relationship Architecture</h2>
 
         <p>Professional tools in India are sold through relationships at least as much as through rational product comparison. This is especially true in the B2B segment — the institutional buyers, the large contractors, the engineering companies that specify tools for their projects.</p>
@@ -324,7 +324,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="failures">
-        <div className="chapter-divider"><span className="num">11</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">11</span><span className="sep" aria-hidden="true" /></div>
         <h2>What Physical Products Break That Software Doesn't</h2>
 
         <p>I want to be direct about the failures at KNIPEX — not just as professional honesty, but because the failures in physical product management are instructive precisely because they can't be fixed quickly.</p>
@@ -352,7 +352,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="framework">
-        <div className="chapter-divider"><span className="num">12</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">12</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Constraint-First Framework</h2>
 
         <p>The most durable thing I took from KNIPEX wasn't a specific market insight or tactical approach. It was a thinking framework that I now apply to every product problem I encounter: start with constraints, then build solutions within them.</p>
@@ -375,7 +375,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="results">
-        <div className="chapter-divider"><span className="num">13</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">13</span><span className="sep" aria-hidden="true" /></div>
         <h2>Results</h2>
 
         <p>KNIPEX India's trajectory during my time there was positive and measurable across several dimensions:</p>
@@ -398,7 +398,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="transfer">
-        <div className="chapter-divider"><span className="num">14</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">14</span><span className="sep" aria-hidden="true" /></div>
         <h2>How Physical Products Made Me a Better Software PM</h2>
 
         <p>I want to be explicit about the transfer of learning, because this is the part of the KNIPEX story that has the most lasting value for how I work now.</p>
@@ -423,7 +423,7 @@ export default function KnipexStory() {
       </section>
 
       <section id="learnings">
-        <div className="chapter-divider"><span className="num">15</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">15</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Mental Models That Stuck</h2>
 
         <p>Every meaningful work experience deposits some mental models that become part of how you think. KNIPEX deposited several that I use constantly:</p>

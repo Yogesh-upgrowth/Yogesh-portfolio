@@ -473,7 +473,7 @@ export default function SeoMoatCaseStudy() {
             { num: "05", title: "Internal linking is your hidden growth lever.", body: "Most teams treat internal links as an afterthought. We treated them as a primary distribution system for authority, crawlability, and user flow." },
           ].map((item) => (
             <div key={item.num} className="flex gap-5">
-              <span className="text-3xl font-serif font-bold text-primary/30 shrink-0 w-10">{item.num}</span>
+              <span className="text-3xl font-serif font-bold text-primary/80 shrink-0 w-10">{item.num}</span>
               <div>
                 <h3 className="text-base font-bold text-foreground mb-2 flex items-center gap-2">
                   <TrendingUp className="h-4 w-4 text-primary shrink-0" /> {item.title}

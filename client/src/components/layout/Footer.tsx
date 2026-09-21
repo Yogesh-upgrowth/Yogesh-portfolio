@@ -28,7 +28,7 @@ export default function Footer() {
           </ul>
         </nav>
 
-        <p className="text-white/40 text-sm">
+        <p className="text-white/60 text-sm">
           &copy; {new Date().getFullYear()} Yogesh Yadav. All rights reserved.
         </p>
       </div>

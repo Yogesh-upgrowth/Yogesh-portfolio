@@ -118,7 +118,7 @@ export default function Impact() {
               Numbers don't lie.
             </h2>
           </div>
-          <p className="text-white/40 text-sm max-w-xs leading-relaxed">
+          <p className="text-white/60 text-sm max-w-xs leading-relaxed">
             Real outcomes across fintech, mobility, SaaS, and marketplaces — at scale.
           </p>
         </div>
@@ -141,13 +141,13 @@ export default function Impact() {
                 <div className="relative grid grid-cols-[32px_1fr] md:grid-cols-[48px_180px_1fr_280px_44px] gap-x-6 md:gap-x-10 items-center py-8 hover:bg-white/[0.025] transition-colors duration-200 px-2 -mx-2 rounded-lg">
 
                   {/* Index */}
-                  <span className="text-xs font-mono text-white/20 group-hover:text-primary/40 transition-colors self-start mt-1 md:mt-0 md:self-center">
+                  <span className="text-xs font-mono text-white/55 group-hover:text-primary/40 transition-colors self-start mt-1 md:mt-0 md:self-center">
                     {item.index}
                   </span>
 
                   {/* Company — hidden on mobile */}
                   <div className="hidden md:flex flex-col justify-center">
-                    <span className="text-[11px] font-bold tracking-widest uppercase text-white/35 group-hover:text-white/55 transition-colors">
+                    <span className="text-[11px] font-bold tracking-widest uppercase text-white/55 group-hover:text-white/55 transition-colors">
                       {item.company}
                     </span>
                   </div>
@@ -155,7 +155,7 @@ export default function Impact() {
                   {/* Metric — the visual hero */}
                   <div className="col-span-1 md:col-span-1 flex flex-col gap-0.5">
                     {/* Company label on mobile */}
-                    <span className="text-[10px] font-bold tracking-widest uppercase text-white/30 md:hidden mb-1">
+                    <span className="text-[10px] font-bold tracking-widest uppercase text-white/55 md:hidden mb-1">
                       {item.company}
                     </span>
 
@@ -176,7 +176,7 @@ export default function Impact() {
                     <p className="text-white/80 font-semibold text-sm md:text-base leading-snug mb-1.5 group-hover:text-white transition-colors">
                       {item.label}
                     </p>
-                    <p className="text-white/35 text-xs md:text-sm leading-relaxed line-clamp-2">
+                    <p className="text-white/55 text-xs md:text-sm leading-relaxed line-clamp-2">
                       {item.desc}
                     </p>
                   </div>
@@ -205,7 +205,7 @@ export default function Impact() {
               {i > 0 && <span className="hidden md:block text-white/10 text-lg">·</span>}
               <div className="text-center md:text-left">
                 <span className="font-serif font-bold text-xl text-primary">{v}</span>
-                <span className="text-white/35 text-xs ml-2 uppercase tracking-widest font-medium">{l}</span>
+                <span className="text-white/55 text-xs ml-2 uppercase tracking-widest font-medium">{l}</span>
               </div>
             </div>
           ))}

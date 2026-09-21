@@ -261,10 +261,10 @@ export default function CompanyStoryPage() {
                 <span className="text-[10px] font-bold tracking-widest uppercase px-3 py-1 rounded-full border border-primary/40 bg-primary/15 text-primary">
                   {story.category}
                 </span>
-                <span className="text-white/40 text-xs flex items-center gap-1.5">
+                <span className="text-white/60 text-xs flex items-center gap-1.5">
                   <Clock className="h-3.5 w-3.5" /> {story.readTime}
                 </span>
-                <span className="text-white/40 text-xs flex items-center gap-1.5">
+                <span className="text-white/60 text-xs flex items-center gap-1.5">
                   <User className="h-3.5 w-3.5" /> Yogesh Yadav
                 </span>
               </div>
@@ -317,7 +317,7 @@ export default function CompanyStoryPage() {
                   <h2 className="relative text-2xl md:text-3xl font-serif font-bold text-white mb-4 leading-tight">
                     Your product has a version of this story too.<br /> Let's find and fix it together.
                   </h2>
-                  <p className="relative text-white/45 text-sm mb-8 max-w-md mx-auto">Every company I've worked with had the same thing: a gap between what the data showed and what the team believed. Let's close that gap.</p>
+                  <p className="relative text-white/60 text-sm mb-8 max-w-md mx-auto">Every company I've worked with had the same thing: a gap between what the data showed and what the team believed. Let's close that gap.</p>
                   <Button size="lg" className="rounded-full px-10" asChild>
                     <Link href="/contact">Start a Conversation →</Link>
                   </Button>

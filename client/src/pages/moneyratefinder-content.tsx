@@ -372,7 +372,7 @@ Rule: Only prioritize keywords with Intent Score > 70`}</CodeBlock>
             },
           ].map((item) => (
             <div key={item.num} className="flex gap-5">
-              <span className="text-3xl font-serif font-bold text-primary/30 shrink-0 w-10">{item.num}</span>
+              <span className="text-3xl font-serif font-bold text-primary/80 shrink-0 w-10">{item.num}</span>
               <div>
                 <h3 className="text-lg font-bold text-foreground mb-2 flex items-center gap-2">
                   {item.icon} {item.title}

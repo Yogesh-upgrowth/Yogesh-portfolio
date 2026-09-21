@@ -22,12 +22,12 @@ export default function CarInfoStory() {
         .callout-box .label { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: hsl(var(--primary)); margin-bottom: 0.5rem; }
         .callout-box p { margin: 0; color: hsl(var(--foreground) / 0.85); font-size: 0.9rem; }
         .chapter-divider { display: flex; align-items: center; gap: 1rem; margin: 4rem 0 2rem; }
-        .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(var(--border)); line-height: 1; }
+        .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(214 32% 59%); line-height: 1; }
         .chapter-divider .sep { flex: 1; height: 1px; background: hsl(var(--border)); }
       `}</style>
 
       <section id="hook">
-        <div className="chapter-divider"><span className="num">01</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">01</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Number That Started It</h2>
 
         <p>There is a number that I return to whenever someone asks me about CarInfo. It is not 45 million — the monthly active users we eventually reached. It is not 680 times — the insurance revenue multiplier we achieved over 18 months. It is not even 1,200% — the headline revenue growth figure that ends up in presentations.</p>
@@ -44,7 +44,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="context">
-        <div className="chapter-divider"><span className="num">02</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">02</span><span className="sep" aria-hidden="true" /></div>
         <h2>India's Vehicle Information Desert</h2>
 
         <p>To understand CarInfo, you need to understand the problem it was solving. India had, as of 2021, approximately 295 million registered vehicles. Cars, two-wheelers, commercial vehicles, three-wheelers — the full spectrum. Every single one of those vehicles had data attached to it: registration information, owner history, insurance status, fitness certification, challan (traffic violation) records, emission testing dates.</p>
@@ -74,7 +74,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="audit">
-        <div className="chapter-divider"><span className="num">03</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">03</span><span className="sep" aria-hidden="true" /></div>
         <h2>What I Inherited: The Full Audit</h2>
 
         <p>My first thirty days at CarInfo were entirely diagnostic. I built a complete picture of where the product stood before proposing any solutions. Here is what that picture showed:</p>
@@ -103,7 +103,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="conversion">
-        <div className="chapter-divider"><span className="num">04</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">04</span><span className="sep" aria-hidden="true" /></div>
         <h2>The 0.007% Revelation: Mapping the Seven Leak Points</h2>
 
         <p>I spent two weeks on nothing but the insurance funnel. Session recordings, heatmaps, drop-off analysis at every step, and qualitative interviews with users who had started but not completed insurance purchases. What I found was not one problem. It was seven distinct problems, layered on top of each other, each doing its share of damage.</p>
@@ -149,7 +149,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="insurance">
-        <div className="chapter-divider"><span className="num">05</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">05</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Insurance Opportunity — Properly Sized</h2>
 
         <p>Before moving to solutions, I needed to size the opportunity accurately. The team had a sense that insurance monetization was important, but nobody had put a rigorous number on what it could actually be worth.</p>
@@ -168,7 +168,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="seo">
-        <div className="chapter-divider"><span className="num">06</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">06</span><span className="sep" aria-hidden="true" /></div>
         <h2>The SEO Architecture Decision</h2>
 
         <p>The insurance funnel fix was the immediate priority. But parallel to it, I was thinking about a different problem: CarInfo's growth engine was weak. At 3.8M MAU, the app had good traction but no mechanism that would drive it to 10M, 20M, or 40M users without proportional increases in marketing spend.</p>
@@ -211,7 +211,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="trust">
-        <div className="chapter-divider"><span className="num">07</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">07</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Trust Problem in Financial Products</h2>
 
         <p>Let me come back to the insurance funnel, specifically to Leak 2: the trust deficit. Solving the trust problem was the most interesting and nuanced part of the funnel optimization work, and it's the piece that most product teams underinvest in.</p>
@@ -250,7 +250,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="funnel-rebuild">
-        <div className="chapter-divider"><span className="num">08</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">08</span><span className="sep" aria-hidden="true" /></div>
         <h2>Rebuilding the Insurance Funnel</h2>
 
         <p>With the leak analysis complete and the trust architecture designed, we rebuilt the insurance funnel from scratch. Not patched — rebuilt. The old funnel was abandoned entirely. Here is what the new funnel looked like and why each decision was made:</p>
@@ -319,7 +319,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="cac">
-        <div className="chapter-divider"><span className="num">09</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">09</span><span className="sep" aria-hidden="true" /></div>
         <h2>CAC: The Attribution Discovery</h2>
 
         <p>While the insurance funnel was being rebuilt, a parallel problem was surfacing in the growth data: CarInfo was spending on user acquisition without any real understanding of which acquisition channels were generating users who actually monetized.</p>
@@ -358,7 +358,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="loops">
-        <div className="chapter-divider"><span className="num">10</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">10</span><span className="sep" aria-hidden="true" /></div>
         <h2>Engineering Growth Loops</h2>
 
         <p>By month six, the insurance funnel was working, the CAC was improving, and the SEO architecture was in place. The growth rate was accelerating. But I was increasingly focused on a question that felt more important than any of the tactical optimizations: what was the growth loop?</p>
@@ -389,7 +389,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="execution">
-        <div className="chapter-divider"><span className="num">11</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">11</span><span className="sep" aria-hidden="true" /></div>
         <h2>18 Months of Building: The Full Execution Timeline</h2>
 
         <p>From the initial audit to the point where the growth rate was self-sustaining, the work spanned approximately 18 months. Here is an honest account of that timeline:</p>
@@ -414,7 +414,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="failures">
-        <div className="chapter-divider"><span className="num">12</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">12</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Mistakes That Hurt</h2>
 
         <p>No 18-month product journey of this complexity runs without significant failures. Here are the ones that cost us most:</p>
@@ -448,7 +448,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="results">
-        <div className="chapter-divider"><span className="num">13</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">13</span><span className="sep" aria-hidden="true" /></div>
         <h2>Results: The Full Picture</h2>
 
         <p>At the 18-month mark, here is where CarInfo stood:</p>
@@ -473,7 +473,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="meaning">
-        <div className="chapter-divider"><span className="num">14</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">14</span><span className="sep" aria-hidden="true" /></div>
         <h2>What 45M MAU Actually Means</h2>
 
         <p>Forty-five million monthly active users is a large number. It's easy to say and harder to visualize. Let me try to give it some texture.</p>
@@ -488,7 +488,7 @@ export default function CarInfoStory() {
       </section>
 
       <section id="learnings">
-        <div className="chapter-divider"><span className="num">15</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">15</span><span className="sep" aria-hidden="true" /></div>
         <h2>What CarInfo Taught Me</h2>
 
         <p>The CarInfo experience compressed a decade of product lessons into 18 months. Here are the ones I carry most consistently:</p>

@@ -22,13 +22,13 @@ export default function LoanwiserStory() {
         .callout-box .label { font-size: 0.65rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: hsl(var(--primary)); margin-bottom: 0.5rem; }
         .callout-box p { margin: 0; color: hsl(var(--foreground) / 0.85); font-size: 0.9rem; }
         .chapter-divider { display: flex; align-items: center; gap: 1rem; margin: 4rem 0 2rem; }
-        .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(var(--border)); line-height: 1; }
+        .chapter-divider .num { font-family: 'Libre Baskerville', serif; font-size: 5rem; font-weight: 700; color: hsl(214 32% 59%); line-height: 1; }
         .chapter-divider .sep { flex: 1; height: 1px; background: hsl(var(--border)); }
       `}</style>
 
       {/* ── SECTION 1: HOOK ─────────────────────────────────── */}
       <section id="hook">
-        <div className="chapter-divider"><span className="num">01</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">01</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Opening Number</h2>
 
         <p>It was a Tuesday morning in early 2020 when I first sat down with the head of credit operations at a mid-size private bank. He pushed a printout across the table without saying a word. I looked down at it. Then looked up at him. Then back down.</p>
@@ -50,7 +50,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 2: CONTEXT ─────────────────────────────── */}
       <section id="context">
-        <div className="chapter-divider"><span className="num">02</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">02</span><span className="sep" aria-hidden="true" /></div>
         <h2>India's Lending Desert</h2>
 
         <p>By 2019, India had somewhere between 500 and 600 million adults who were formally or semi-formally employed. Of those, roughly 190 million had access to any kind of institutional credit — meaning a credit score, a bank account, a loan history, some formal footprint in the financial system. The remaining 300 million-plus? They existed in an economic grey zone: real incomes, real expenses, real financial needs, but almost completely invisible to the formal credit infrastructure.</p>
@@ -94,7 +94,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 3: ORIGIN ──────────────────────────────── */}
       <section id="origin">
-        <div className="chapter-divider"><span className="num">03</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">03</span><span className="sep" aria-hidden="true" /></div>
         <h2>How Loanwiser Was Born</h2>
 
         <p>Loanwiser started from a simple observation: that India had tens of millions of people who needed loans and couldn't easily get them, not because they were uncreditworthy, but because the matching between borrower needs and lender appetite was broken. The founders — both from banking and technology backgrounds — believed that better matching, powered by better data, could unlock a huge amount of latent credit demand.</p>
@@ -116,7 +116,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 4: BRIEF ───────────────────────────────── */}
       <section id="brief">
-        <div className="chapter-divider"><span className="num">04</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">04</span><span className="sep" aria-hidden="true" /></div>
         <h2>What I Was Hired To Do</h2>
 
         <p>The brief, as stated in my hiring conversation, was something like: "We need to improve our disbursement rate. Banks are frustrated with lead quality. We need to figure out why and fix it."</p>
@@ -153,7 +153,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 5: WEEK ONE ────────────────────────────── */}
       <section id="week-one">
-        <div className="chapter-divider"><span className="num">05</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">05</span><span className="sep" aria-hidden="true" /></div>
         <h2>Week One: The Audit</h2>
 
         <p>My first priority was data access. Not dashboards, not summaries — raw data. I needed to see every application that had passed through Loanwiser in the previous twelve months, with as much detail as was available: declared attributes, matched bank, outcome (approved/rejected/pending), and if rejected, any rejection reason data that came back from the bank.</p>
@@ -188,7 +188,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 6: 85% PROBLEM ─────────────────────────── */}
       <section id="85-problem">
-        <div className="chapter-divider"><span className="num">06</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">06</span><span className="sep" aria-hidden="true" /></div>
         <h2>The 85% Problem</h2>
 
         <p>Within the structured rejection data, the reasons clustered into a surprisingly small number of categories:</p>
@@ -236,7 +236,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 7: WHY BANKS SAID NO ───────────────────── */}
       <section id="why-banks">
-        <div className="chapter-divider"><span className="num">07</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">07</span><span className="sep" aria-hidden="true" /></div>
         <h2>Why Banks Said No</h2>
 
         <p>Armed with the rejection data, I spent the next three weeks doing something that sounds simple but was more revealing than almost anything else I did: I talked to bank underwriters. Not the relationship managers, not the digital banking heads — the actual credit officers who were making approval and rejection decisions.</p>
@@ -282,7 +282,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 8: THE INSIGHT ─────────────────────────── */}
       <section id="insight">
-        <div className="chapter-divider"><span className="num">08</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">08</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Insight That Changed Everything</h2>
 
         <p>After six weeks of data analysis, underwriter interviews, and literature review, I had a thesis. I wrote it as a single sentence on a whiteboard and stared at it for ten minutes:</p>
@@ -314,7 +314,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 9: BUILDING CREDIT LAYER ──────────────── */}
       <section id="credit-layer">
-        <div className="chapter-divider"><span className="num">09</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">09</span><span className="sep" aria-hidden="true" /></div>
         <h2>Building the Credit Intelligence Layer</h2>
 
         <p>The credit intelligence layer was not a single product — it was a stack of capabilities that worked together. Over three months of pilot development, we built four core components:</p>
@@ -356,7 +356,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 10: BANK STATEMENT SCIENCE ────────────── */}
       <section id="bank-statements">
-        <div className="chapter-divider"><span className="num">10</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">10</span><span className="sep" aria-hidden="true" /></div>
         <h2>Bank Statement Science</h2>
 
         <p>I want to spend some time on bank statement analysis specifically, because it was the most counterintuitive and the most powerful piece of what we built. The conventional wisdom in digital lending was that bank statements were a compliance document — a box to check, a PDF to upload, a thing the bank required. We discovered that they were actually the richest behavioral dataset you could have about a borrower.</p>
@@ -408,7 +408,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 11: BEHAVIORAL SIGNAL MODEL ───────────── */}
       <section id="behavioral">
-        <div className="chapter-divider"><span className="num">11</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">11</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Behavioral Signal Model</h2>
 
         <p>Beyond the structural financial metrics, we found a set of behavioral signals in bank statements that were predictive in ways that weren't obvious from credit theory alone. I'll describe the most interesting ones.</p>
@@ -440,7 +440,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 12: ROUTING ALGORITHM ─────────────────── */}
       <section id="routing">
-        <div className="chapter-divider"><span className="num">12</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">12</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Routing Algorithm</h2>
 
         <p>With the behavioral signal model in place, the routing algorithm became the product. This was the decision engine that, given a borrower profile (bureau data + bank statement analysis + declared application data), would determine which bank(s) to route the application to, or whether to route it at all.</p>
@@ -493,7 +493,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 13: PRODUCT INTEGRATION ───────────────── */}
       <section id="product">
-        <div className="chapter-divider"><span className="num">13</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">13</span><span className="sep" aria-hidden="true" /></div>
         <h2>Product Integration</h2>
 
         <p>Building the algorithm was one challenge. Integrating it into the existing product experience — in a way that users would actually engage with — was a different challenge of equal difficulty.</p>
@@ -531,7 +531,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 14: UX ─────────────────────────────────── */}
       <section id="ux">
-        <div className="chapter-divider"><span className="num">14</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">14</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Borrower Experience</h2>
 
         <p>The borrower experience redesign was the piece of this project I'm proudest of, because it addressed a problem that the fintech industry has been failing at for years: what do you tell someone when their application doesn't go through?</p>
@@ -565,7 +565,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 15: EXECUTION ──────────────────────────── */}
       <section id="execution">
-        <div className="chapter-divider"><span className="num">15</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">15</span><span className="sep" aria-hidden="true" /></div>
         <h2>What We Built: Execution Timeline</h2>
 
         <p>The pilot ran across three bank partners over a 4-month period. Here's the honest account of how it went:</p>
@@ -587,7 +587,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 16: FAILURES ───────────────────────────── */}
       <section id="failures">
-        <div className="chapter-divider"><span className="num">16</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">16</span><span className="sep" aria-hidden="true" /></div>
         <h2>What Broke First</h2>
 
         <p>No project of this scope runs cleanly. Here are the failures that slowed us down, taught us the most, and in two cases, almost derailed the effort entirely.</p>
@@ -626,7 +626,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 17: RESULTS ────────────────────────────── */}
       <section id="results">
-        <div className="chapter-divider"><span className="num">17</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">17</span><span className="sep" aria-hidden="true" /></div>
         <h2>Results: The Full Picture</h2>
 
         <p>Twelve months after the pilot launch and nine months after full rollout, here is what the data showed:</p>
@@ -658,7 +658,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 18: HUMAN MEANING ──────────────────────── */}
       <section id="human">
-        <div className="chapter-divider"><span className="num">18</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">18</span><span className="sep" aria-hidden="true" /></div>
         <h2>What +90% Means in People</h2>
 
         <p>I want to step back from the metrics for a moment. Because I think it's easy to talk about disbursement rates and forget what they represent.</p>
@@ -676,7 +676,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 19: RIPPLE EFFECTS ─────────────────────── */}
       <section id="ripple">
-        <div className="chapter-divider"><span className="num">19</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">19</span><span className="sep" aria-hidden="true" /></div>
         <h2>The Ripple Effects</h2>
 
         <p>Several things happened as a consequence of the credit intelligence model that I didn't anticipate when designing it.</p>
@@ -700,7 +700,7 @@ export default function LoanwiserStory() {
 
       {/* ── SECTION 20: LEARNINGS ──────────────────────────── */}
       <section id="learnings">
-        <div className="chapter-divider"><span className="num">20</span><span className="sep" /></div>
+        <div className="chapter-divider"><span className="num" aria-hidden="true">20</span><span className="sep" aria-hidden="true" /></div>
         <h2>What Loanwiser Taught Me</h2>
 
         <p>I've been in product management long enough now to have pattern-matched some lessons across companies and industries. The Loanwiser engagement gave me several that have turned out to be durable:</p>

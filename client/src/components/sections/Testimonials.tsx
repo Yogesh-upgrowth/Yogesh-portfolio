@@ -182,10 +182,10 @@ export default function Testimonials() {
               </div>
               <div>
                 <p className="font-serif font-bold text-white text-base">{featuredItem.name}</p>
-                <p className="text-white/45 text-xs font-medium mt-0.5">{featuredItem.role}</p>
+                <p className="text-white/60 text-xs font-medium mt-0.5">{featuredItem.role}</p>
               </div>
               <div className="ml-auto text-right hidden sm:block">
-                <p className="text-[11px] text-white/30 uppercase tracking-widest font-medium mb-1">Key Result</p>
+                <p className="text-[11px] text-white/55 uppercase tracking-widest font-medium mb-1">Key Result</p>
                 <p className="text-primary text-sm font-bold">{featuredItem.highlight}</p>
               </div>
             </div>

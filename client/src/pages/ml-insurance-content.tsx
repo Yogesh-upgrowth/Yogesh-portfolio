@@ -260,7 +260,7 @@ Derived Features:
             { num: "04", title: "Simplicity Wins in Production", body: "The XGBoost model outperformed deep learning experiments not because it was more powerful — but because it was interpretable, debuggable, and reliable in production." },
           ].map((item) => (
             <div key={item.num} className="flex gap-5">
-              <span className="text-3xl font-serif font-bold text-primary/30 shrink-0 w-10">{item.num}</span>
+              <span className="text-3xl font-serif font-bold text-primary/80 shrink-0 w-10">{item.num}</span>
               <div><h3 className="text-lg font-bold text-foreground mb-2">{item.title}</h3><p className="text-foreground/70 leading-relaxed">{item.body}</p></div>
             </div>
           ))}

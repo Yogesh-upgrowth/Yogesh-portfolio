@@ -22,10 +22,9 @@ function ResultsAtAGlance({ slug }: { slug: string }) {
       </h2>
       <dl className="grid grid-cols-2 lg:grid-cols-4 gap-6">
         {metrics.map((m) => (
-          <div key={m.label}>
-            <dt className="sr-only">{m.label}</dt>
+          <div key={m.label} className="flex flex-col-reverse">
+            <dt className="text-sm text-muted-foreground mt-1 leading-snug">{m.label}</dt>
             <dd className="text-2xl md:text-3xl font-serif font-bold text-primary leading-tight">{m.value}</dd>
-            <p className="text-sm text-muted-foreground mt-1 leading-snug">{m.label}</p>
           </div>
         ))}
       </dl>

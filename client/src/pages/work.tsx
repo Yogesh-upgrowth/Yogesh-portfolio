@@ -226,7 +226,7 @@ export default function Work() {
                       style={{ backgroundImage: "linear-gradient(rgba(255,255,255,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.6) 1px, transparent 1px)", backgroundSize: "32px 32px" }} />
                     <div className="absolute bottom-0 right-0 w-48 h-48 pointer-events-none"
                       style={{ background: "radial-gradient(circle at bottom right, rgba(37,99,235,0.2) 0%, transparent 65%)" }} />
-                    <p className="relative text-[11px] font-bold tracking-widest uppercase text-white/35 mb-6">Track Record</p>
+                    <p className="relative text-[11px] font-bold tracking-widest uppercase text-white/55 mb-6">Track Record</p>
                     <div className="relative grid grid-cols-2 gap-px bg-white/[0.06] rounded-2xl overflow-hidden">
                       {stats.map(({ value, label }, i) => (
                         <div key={i} className="bg-foreground p-6 flex flex-col gap-1">
@@ -234,12 +234,12 @@ export default function Work() {
                             style={{ fontSize: "clamp(2rem, 4vw, 2.6rem)", textShadow: "0 0 40px rgba(37,99,235,0.4)" }}>
                             {value}
                           </span>
-                          <span className="text-xs text-white/40 font-medium leading-snug">{label}</span>
+                          <span className="text-xs text-white/60 font-medium leading-snug">{label}</span>
                         </div>
                       ))}
                     </div>
                     <div className="relative mt-6 pt-6 border-t border-white/[0.07]">
-                      <p className="text-white/40 text-xs leading-relaxed italic">
+                      <p className="text-white/60 text-xs leading-relaxed italic">
                         "I don't operate as an external consultant. I operate as a thinking partner who carries outcome accountability."
                       </p>
                     </div>
@@ -346,7 +346,7 @@ export default function Work() {
                     Work That Shaped<br className="hidden md:block" /> How I See Problems
                   </h2>
                 </div>
-                <p className="d2 text-white/35 text-sm max-w-xs">Click any story to read the full 20,000-word breakdown.</p>
+                <p className="d2 text-white/55 text-sm max-w-xs">Click any story to read the full 20,000-word breakdown.</p>
               </div>
             </Reveal>
 
@@ -360,7 +360,7 @@ export default function Work() {
                       <div>
                         <p className="text-[10px] font-bold tracking-widest uppercase text-primary/60 mb-1">{c.category}</p>
                         <p className="font-serif font-bold text-background text-lg leading-snug">{c.name}</p>
-                        <p className="text-white/30 text-xs mt-0.5">{c.role}</p>
+                        <p className="text-white/55 text-xs mt-0.5">{c.role}</p>
                       </div>
 
                       <div>
@@ -379,7 +379,7 @@ export default function Work() {
                           style={{ fontSize: "clamp(2rem, 4vw, 3rem)", textShadow: "0 0 50px rgba(37,99,235,0.45)" }}>
                           {c.metric}
                         </p>
-                        <p className="text-white/35 text-xs font-medium">{c.metricLabel}</p>
+                        <p className="text-white/55 text-xs font-medium">{c.metricLabel}</p>
                       </div>
                     </div>
                   </Link>
@@ -450,7 +450,7 @@ export default function Work() {
               <h2 className="d1 text-4xl md:text-5xl font-serif font-bold text-background leading-tight mb-6 max-w-2xl mx-auto">
                 Ready to Move<br /> the Needle?
               </h2>
-              <p className="d2 text-white/45 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+              <p className="d2 text-white/60 text-lg max-w-xl mx-auto mb-10 leading-relaxed">
                 We always start by defining the real problem. The engagement model follows the solution.
               </p>
               <div className="d3">
@@ -460,7 +460,7 @@ export default function Work() {
                   </Link>
                 </Button>
               </div>
-              <p className="d4 text-white/25 text-sm mt-6">
+              <p className="d4 text-white/60 text-sm mt-6">
                 Or email directly:{" "}
                 <a href="mailto:yogesh.productmanager@gmail.com"
                   className="text-primary hover:text-primary/80 transition-colors">
