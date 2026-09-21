@@ -416,6 +416,18 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     keyword: "balancing growth and monetization",
     title: "Balancing Growth and Monetization",
   },
+  "/blog/reduce-customer-acquisition-cost": {
+    keyword: "how to reduce customer acquisition cost",
+    title: "How to Reduce Customer Acquisition Cost",
+    description:
+      "Cutting spend doesn't move CAC \u2014 changing who you acquire does. Four levers that took blended CAC down 30%+ without losing acquisition volume.",
+  },
+  "/blog/programmatic-seo-guide": {
+    keyword: "programmatic SEO",
+    title: "Programmatic SEO Without Thin Pages",
+    description:
+      "How to scale organic traffic with programmatic pages that earn their place \u2014 the data model, templates and internal linking behind 100K+ monthly sessions.",
+  },
   "/blog/writing-effective-prds-guide": {
     keyword: "how to write a PRD",
     title: "How to Write Effective PRDs",

@@ -65,6 +65,8 @@ export const BLOG_SLUGS = [
   "pricing-strategy-framework",
   "product-led-growth-guide",
   "balancing-growth-monetization",
+  "reduce-customer-acquisition-cost",
+  "programmatic-seo-guide",
   "writing-effective-prds-guide",
   "agile-vs-scrum-vs-kanban",
   "sprint-planning-best-practices",

@@ -2,8 +2,8 @@
 
 _Generated from the prerendered HTML in `dist/public`. This report is diagnostic only — thin pages are flagged for you to rewrite, never auto-padded._
 
-- Pages analyzed: **100**
-- Median word count: **1099**
+- Pages analyzed: **102**
+- Median word count: **1044**
 - Thin pages (<300 words): **0**
 - Pages whose H1 misses most of the keyword's terms: **0**
 - Pages whose copy barely covers the keyword at all: **0**
@@ -36,7 +36,7 @@ _None._
 | Page | Words | Keyword in H1 | Keyword in copy | Exact phrase |
 |---|---|---|---|---|
 | `/` | 552 | 100% | 100% | yes |
-| `/blog` | 1935 | 67% | 100% | yes |
+| `/blog` | 2016 | 67% | 100% | yes |
 | `/blog/ab-testing-product-decisions` | 589 | 100% | 100% | no |
 | `/blog/activation-metrics-product-growth` | 851 | 100% | 100% | yes |
 | `/blog/agile-vs-scrum-vs-kanban` | 893 | 100% | 100% | yes |
@@ -83,6 +83,8 @@ _None._
 | `/blog/product-lifecycle-explained` | 1524 | 100% | 100% | yes |
 | `/blog/product-management-misconceptions` | 1420 | 100% | 100% | yes |
 | `/blog/product-manager-interview-questions` | 1099 | 100% | 100% | yes |
+| `/blog/programmatic-seo-guide` | 1034 | 100% | 100% | yes |
+| `/blog/reduce-customer-acquisition-cost` | 1044 | 100% | 100% | yes |
 | `/blog/research-beyond-surveys` | 595 | 100% | 100% | yes |
 | `/blog/retention-strategies-consumer-apps` | 846 | 100% | 100% | yes |
 | `/blog/roadmap-planning-practical-guide` | 851 | 67% | 100% | no |

@@ -1,5 +1,135 @@
 export const GROWTH_CONTENT: Record<string, string> = {
 
+"reduce-customer-acquisition-cost": `
+  <p class="lead text-xl text-foreground font-medium mb-8">
+    Most teams try to reduce customer acquisition cost by negotiating better rates or pausing the worst-performing campaign. That moves CAC by a few percent. The reductions that actually matter — 30% and more, without losing volume — come from changing who you acquire and what happens after they arrive.
+  </p>
+
+  <p>CAC is a ratio, and teams almost always attack the numerator. Spend less, pay less per click, squeeze the agency. But the denominator is where the leverage is: how many of the people you paid for become users worth having.</p>
+
+  <p>Across the acquisition work I've done, the pattern repeats. The channel that looks cheapest on a cost-per-install basis is usually the one producing the least valuable users, and the channel that looks expensive is often subsidising the whole portfolio. You cannot see this without attribution at the channel level, which is why that is almost always the first thing to build.</p>
+
+  <hr class="my-12 border-border/50" />
+
+  <h2>Why Blended CAC Hides the Problem</h2>
+
+  <p>Blended CAC — total spend divided by total new users — is the number most teams report and the least useful number they have. It averages a channel delivering users worth ₹500 with a channel delivering users worth ₹50, and tells you neither.</p>
+
+  <p>The fix is unglamorous: attribute spend and downstream revenue to the channel that produced each user, then look at cost against value rather than cost alone. When we built channel-level attribution from scratch on one consumer product and reallocated spend on what it showed, blended CAC fell 30% while acquisition volume held. D30 ARPU came out at ₹295 against an LTV/CAC ratio of 2.8×. Nothing about the media buying got cleverer; the money simply stopped going to users who were never going to pay back.</p>
+
+  <p>That work is written up in full, including what the attribution missed, in <a href="/case-study/user-acquisition-cac-30">how we cut user acquisition cost by 30% without cutting volume</a>.</p>
+
+  <hr class="my-12 border-border/50" />
+
+  <h2>Four Levers, In The Order They Pay Off</h2>
+
+  <h3>1. Stop paying for users who never convert</h3>
+  <p>Before optimising anything, segment acquired users by whether they reached the action that makes them valuable. Most portfolios contain at least one channel where that share is close to zero. Cutting it releases budget immediately and costs nothing in real volume, because the volume was never real.</p>
+
+  <p>Using ML to cluster audiences by behaviour rather than demographics on one product cut monthly acquisition spend 31% and raised the profitable share of acquired users 67%, taking blended LTV:CAC to 3.8× and releasing ₹1.8 crore of monthly budget. The detail is in <a href="/case-study/ml-reduce-cac-segmentation">using ML to reduce CAC via smart audience segmentation</a>.</p>
+
+  <h3>2. Predict value before you pay for it</h3>
+  <p>If you can identify which behavioural signals in the first sessions predict long-term value, you can bid differently for users who show them. On a behavioural model built over 100K+ sessions, precision reached 81%, which was enough to shift targeting: revenue per acquired user rose 61%, blended CAC fell 34%, and acquisition of high-LTV users went up 2.7×. See <a href="/case-study/predict-high-ltv-users-ml">predicting high-LTV users using behavioural ML</a>.</p>
+
+  <p>The trap here is chasing accuracy. A model at 81% precision that changes bidding today beats a model at 91% that ships next quarter — the cost of a false positive in acquisition is one wasted acquisition, which is cheap.</p>
+
+  <h3>3. Fix the funnel before you refill it</h3>
+  <p>Every point of conversion you recover divides CAC across the whole spend. This is the cheapest lever available and it is consistently deprioritised because it belongs to product rather than marketing. A funnel that converts at 4% instead of 3% cuts effective CAC by a quarter with no change in spend at all.</p>
+
+  <h3>4. Build acquisition that does not cost per user</h3>
+  <p>Paid acquisition has a floor: you pay for every user, forever. Organic and referral do not. On one product, programmatic organic pages brought acquisition cost to ₹31 per user and eventually carried 61% of acquisition — a channel whose marginal cost approaches zero as it compounds. On another, referral reached 22% of installs.</p>
+
+  <p>This is the lever with the longest lead time and the largest ceiling. It is also the reason CAC reduction and <a href="/blog/growth-loops-product-management">growth loop design</a> are the same conversation.</p>
+
+  <hr class="my-12 border-border/50" />
+
+  <h2>What Does Not Work</h2>
+
+  <p><strong>Cutting spend across the board.</strong> This reduces total cost and total users proportionally. CAC does not move. It feels like action and changes nothing.</p>
+
+  <p><strong>Optimising to cost-per-install.</strong> Optimising to the cheapest install reliably buys the least valuable users. The metric to optimise is cost per user who reaches value, which requires knowing what value means for your product.</p>
+
+  <p><strong>Adding a channel.</strong> A new channel spreads the same problem across more surfaces. If the funnel leaks and the targeting is wrong, a fifth channel produces expensive users in a new place.</p>
+
+  <hr class="my-12 border-border/50" />
+
+  <h2>Where To Start</h2>
+
+  <p>In order: build channel-level attribution so you can see cost against value; cut the segments that never convert; fix the largest funnel drop before activation; then invest in the acquisition that does not charge per user. Each step funds the next, which matters, because the last one takes the longest and returns the most.</p>
+
+  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 mt-12">
+    <h3 class="text-xl font-bold mb-3">Paying too much for users who don't stay?</h3>
+    <p class="text-muted-foreground mb-4">Acquisition cost is usually a targeting and funnel problem wearing a media-buying costume. I've taken blended CAC down 30% and more on consumer products without losing volume. Let's look at where your spend is actually going.</p>
+    <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">Work with Yogesh →</a>
+  </div>
+`,
+
+"programmatic-seo-guide": `
+  <p class="lead text-xl text-foreground font-medium mb-8">
+    Programmatic SEO has a reputation problem: generate ten thousand pages from a spreadsheet, watch them get deindexed, conclude it doesn't work. The version that works treats each page as a product with a job, not as a keyword permutation.
+  </p>
+
+  <p>The distinction is simple and it decides everything. A programmatic page earns its place if someone searching that query would be satisfied landing on it. If the page only exists because the keyword exists, it is thin content with extra steps, and Google will eventually treat it that way.</p>
+
+  <p>Done properly, it is the most efficient acquisition channel available to a product with structured data — because the marginal cost of the next page approaches zero while the traffic compounds.</p>
+
+  <hr class="my-12 border-border/50" />
+
+  <h2>What Makes A Programmatic Page Worth Indexing</h2>
+
+  <p><strong>Real data per page.</strong> Every page needs something specific that no other page has — a rate, a specification, a comparison, a calculation. If two pages differ only in the noun in the heading, you have one page.</p>
+
+  <p><strong>A job the searcher came to do.</strong> The strongest programmatic pages are utilities. Calculators are the clearest case: the query has an answer, the page produces it, the visit succeeds. Building calculator-based programmatic pages on one fintech product produced 1,400 pages carrying 40K+ monthly sessions and 890 new keyword rankings, at an organic acquisition cost of ₹38 per user. That build is documented in <a href="/case-study/programmatic-seo-calculators">programmatic SEO for calculators</a>.</p>
+
+  <p><strong>Enough depth to stand alone.</strong> A page thin enough that its value is exhausted in one line will not hold a ranking against a competitor who wrote three paragraphs.</p>
+
+  <hr class="my-12 border-border/50" />
+
+  <h2>The Architecture</h2>
+
+  <h3>Start from the data, not the keywords</h3>
+  <p>The scalable set of pages is defined by what structured data you actually hold. Keyword research tells you which slices of that data people search for; it does not tell you which pages you can legitimately build. Teams that start from a keyword export end up generating pages they have nothing to say on.</p>
+
+  <h3>Template for the worst case, not the best</h3>
+  <p>Design the template around your thinnest data row. If the template only looks good when every field is populated, the long tail of sparse rows becomes your thin-content problem. Either enrich those rows or exclude them — excluding is usually right.</p>
+
+  <h3>Internal linking is the whole game at scale</h3>
+  <p>Thousands of pages with no links between them are thousands of orphans. Related, parent and sibling links are how crawl budget reaches the long tail and how authority moves through the set. Scaling to 100K+ monthly organic sessions on one product meant 380+ top-10 rankings, and the linking structure between pages mattered more than any individual page did. The full build is in <a href="/case-study/seo-0-to-100k">scaling SEO from 0 to 100K monthly traffic</a>.</p>
+
+  <h3>Convert, or the traffic is a cost</h3>
+  <p>Organic traffic that bounces is worse than no traffic: it consumes engineering and teaches Google the page does not satisfy the query. On that same build, organic acquisition cost settled at ₹31 per user and organic eventually carried 61% of acquisition — which only happened because the pages were built for the intent behind the query, not just to match it.</p>
+
+  <hr class="my-12 border-border/50" />
+
+  <h2>Competing In A Niche That Already Has Incumbents</h2>
+
+  <p>Volume alone does not win a competitive category. Mapping what competitors ranked for, and where their coverage was shallow enough to beat, produced 10× traffic growth and 100+ top-10 keywords on a remittance comparison product, alongside a 40% drop in bounce rate — the last number being the one that indicates the pages were actually right for their queries. That approach is in <a href="/case-study/seo-moat-remittance">how we reverse-engineered competitors to win SEO rankings</a>.</p>
+
+  <p>For high-intent commercial terms the economics change again: fewer searches, far more value per visit. Taking #1 for competitive fintech keywords delivered 23.4K monthly sessions and a 112% traffic increase, with 4.4 minutes average time on page — see <a href="/case-study/rank-1-fintech-keywords">ranking #1 for high-intent keywords in a competitive fintech niche</a>.</p>
+
+  <hr class="my-12 border-border/50" />
+
+  <h2>What Goes Wrong</h2>
+
+  <p><strong>Publishing everything at once.</strong> Releasing 5,000 pages in a day is a quality signal, and not a good one. Ship in batches, watch indexation, and let the set earn its way up.</p>
+
+  <p><strong>No pruning.</strong> Pages that never earn an impression should be removed. A large set of dead pages drags the whole domain; measuring which pages are actually working is not optional at this scale.</p>
+
+  <p><strong>Treating it as a content project.</strong> Programmatic SEO is a product build — data model, templates, internal linking, measurement. Handing it to a content team without engineering produces pages nobody can maintain.</p>
+
+  <hr class="my-12 border-border/50" />
+
+  <h2>Is It Right For Your Product?</h2>
+
+  <p>Programmatic SEO works when you hold structured data that people search for in slices, and when a page per slice genuinely helps someone. It does not work as a substitute for having something to say. If both are true, the ceiling is high: the same approach contributed 5,000+ live SEO pages to a consumer product that reached 45M+ monthly active users, detailed in <a href="/case-study/carinfo-45m-mau">the CarInfo growth architecture</a>.</p>
+
+  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 mt-12">
+    <h3 class="text-xl font-bold mb-3">Sitting on data you could be ranking with?</h3>
+    <p class="text-muted-foreground mb-4">Most products have a programmatic SEO opportunity and no idea what it's worth — or they've tried it, got deindexed, and written it off. I've built these from zero to 100K+ monthly sessions. Let's work out whether yours is one of them.</p>
+    <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">Work with Yogesh →</a>
+  </div>
+`,
+
 "growth-loops-product-management": `
   <p class="lead text-xl text-foreground font-medium mb-8">
     Funnels leak. Loops compound. If your growth strategy is built entirely on funnels — acquire users, convert them, hope they stick — you're working significantly harder than you need to and building something significantly less defensible than you could be.
