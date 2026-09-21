@@ -5,12 +5,16 @@ import gitDates from "@shared/git-dates.json";
 /** Stable @id for the single Person node, referenced as author across the site. */
 export const PERSON_ID = `${SITE_URL}/#person`;
 
-// TODO(before launch): confirm/replace these profile URLs. LinkedIn is carried
-// over from the existing site; the X/Twitter URL is a placeholder to fill in.
-export const SAME_AS = [
-  "https://www.linkedin.com/in/yogeshyadavpm/",
-  "https://x.com/TODO-your-x-handle",
-];
+/**
+ * Single source of truth for off-site identity. Google resolves a person as an
+ * entity by corroborating the same profile URLs across a site; three different
+ * LinkedIn URLs in three files reads as three weak signals instead of one strong
+ * one. Every LinkedIn link in the UI imports LINKEDIN_URL from here.
+ */
+export const LINKEDIN_URL = "https://www.linkedin.com/in/yogeshyadavpm/";
+export const CONTACT_EMAIL = "yogesh.productmanager@gmail.com";
+
+export const SAME_AS = [LINKEDIN_URL];
 
 /** The git commit date (YYYY-MM-DD) of a route's source file, if known. */
 export function getModifiedDate(path: string): string | undefined {
@@ -133,6 +137,8 @@ export function personSchema() {
     jobTitle: "Product Growth & Monetisation Consultant",
     description:
       "Product Growth & Monetisation Consultant with 9+ years scaling Fintech, Mobility, Marketplaces and consumer internet products.",
+    email: `mailto:${CONTACT_EMAIL}`,
+    nationality: "Indian",
     knowsAbout: [
       "Product Management",
       "Monetisation",

@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight, Clock, Calendar, User } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import NotFound from "@/pages/not-found";
-import { Seo, articleSchema, breadcrumbSchema, toIsoDate, getModifiedDate } from "@/lib/seo";
+import { Seo, articleSchema, breadcrumbSchema, toIsoDate, getModifiedDate, LINKEDIN_URL } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { CASE_STUDY_METRICS } from "@/data/case-study-metrics";
@@ -433,7 +433,7 @@ function RelatedCaseStudies({ currentSlug }: { currentSlug: string }) {
               <p className="text-sm text-muted-foreground">Let's build something together</p>
             </div>
           </Link>
-          <a href="https://linkedin.com/in/yogeshyadav" target="_blank" rel="noopener noreferrer">
+          <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
             <div className="p-5 rounded-xl border border-border hover-lift cursor-pointer text-center group">
               <p className="font-bold text-foreground mb-1 group-hover:text-primary transition-colors">Connect on LinkedIn</p>
               <p className="text-sm text-muted-foreground">Follow for more insights</p>

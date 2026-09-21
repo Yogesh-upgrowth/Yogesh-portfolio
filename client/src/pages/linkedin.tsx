@@ -2,7 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Linkedin as LinkedinIcon, ArrowRight } from "lucide-react";
-import { Seo, breadcrumbSchema } from "@/lib/seo";
+import { Seo, breadcrumbSchema, LINKEDIN_URL } from "@/lib/seo";
 
 export default function Linkedin() {
   return (
@@ -35,7 +35,7 @@ export default function Linkedin() {
 
           <div className="pt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="h-14 px-8 text-lg rounded-full bg-[#0077b5] hover:bg-[#0077b5]/90" asChild>
-              <a href="https://www.linkedin.com/in/yogesh-productmanager/" target="_blank" rel="noopener noreferrer">
+              <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
                 Follow Yogesh Yadav <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>

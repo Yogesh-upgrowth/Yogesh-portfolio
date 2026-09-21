@@ -55,6 +55,13 @@ async function buildAll() {
         output: { entryFileNames: "entry-server.js", format: "esm" },
       },
     },
+    ssr: {
+      // react-helmet-async@3 ships an ESM build at lib/index.esm.js, but its
+      // package.json has no "type": "module" — so Node parses that file as CJS
+      // and its named exports disappear. Bundling it into the SSR output
+      // instead of leaving it external side-steps the packaging bug.
+      noExternal: ["react-helmet-async"],
+    },
   });
 
   console.log("prerendering routes to static HTML...");
@@ -62,6 +69,13 @@ async function buildAll() {
 
   console.log("generating sitemap.xml...");
   genSitemap();
+
+  // Vercel serves dist/public as a static site and never runs the Express
+  // server, so `--static` stops here: everything below only builds dist/index.cjs.
+  if (process.argv.includes("--static")) {
+    console.log("static build complete (skipping server bundle).");
+    return;
+  }
 
   console.log("building server...");
   const pkg = JSON.parse(await readFile("package.json", "utf-8"));
