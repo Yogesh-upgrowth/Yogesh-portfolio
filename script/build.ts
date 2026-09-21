@@ -6,6 +6,7 @@ import { prerender } from "./prerender";
 import { genGitDates } from "./gen-git-dates";
 import { genSitemap } from "./gen-sitemap";
 import { genFeed } from "./gen-feed";
+import { genLlmsTxt } from "./gen-llms-txt";
 
 // server deps to bundle to reduce openat(2) syscalls
 // which helps cold start times
@@ -73,6 +74,9 @@ async function buildAll() {
 
   console.log("generating feed.xml...");
   genFeed();
+
+  console.log("generating llms.txt...");
+  genLlmsTxt();
 
   // Vercel serves dist/public as a static site and never runs the Express
   // server, so `--static` stops here: everything below only builds dist/index.cjs.
