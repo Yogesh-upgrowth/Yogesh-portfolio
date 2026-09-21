@@ -3,5 +3,17 @@
   "installCommand": "npm install",
   "outputDirectory": "dist/public",
   "trailingSlash": false,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/blog/engineer-to-product-manager",
+      "destination": "/blog/pm-skills-gap-analysis",
+      "permanent": true
+    },
+    {
+      "source": "/blog/product-manager-resume-guide",
+      "destination": "/blog/building-pm-portfolio",
+      "permanent": true
+    }
+  ]
 }
