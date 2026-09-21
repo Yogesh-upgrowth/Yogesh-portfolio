@@ -75,7 +75,7 @@ export const CAREER_CONTENT: Record<string, string> = {
   </div>
 `,
 
-"cracking-pm-interviews": `
+"product-manager-interview-questions": `
   <p class="lead text-xl text-foreground font-medium mb-8">
     PM interviews test a specific set of skills in a specific format. Understanding what's actually being evaluated — not what it looks like is being evaluated — is the difference between preparation that works and preparation that wastes your time.
   </p>
@@ -138,7 +138,7 @@ export const CAREER_CONTENT: Record<string, string> = {
   </div>
 `,
 
-"pm-career-progression": `
+"pm-career-path-complete-guide": `
   <p class="lead text-xl text-foreground font-medium mb-8">
     The PM career ladder is not a single path. There are multiple trajectories from associate PM to CPO or founder — and the right path depends on what you're optimizing for. Here's how to think clearly about where you want to go and how to get there.
   </p>

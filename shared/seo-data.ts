@@ -72,8 +72,8 @@ export const BLOG_SLUGS = [
   "roadmap-planning-practical-guide",
   "become-product-manager-india",
   "product-manager-interview-questions",
-  "engineer-to-product-manager",
-  "product-manager-resume-guide",
+  "pm-skills-gap-analysis",
+  "building-pm-portfolio",
   "pm-career-path-complete-guide",
 ];
 

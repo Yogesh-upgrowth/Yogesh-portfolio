@@ -1,7 +1,7 @@
 import { useRoute, Link } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import { getPostBySlug, formatDate } from "@/lib/blog-data";
+import { getPostBySlug, formatDate, BLOG_POSTS } from "@/lib/blog-data";
 import { getPostContent } from "@/lib/blog-content";
 import { ArrowLeft, Clock, Calendar, Share2, Linkedin, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -36,6 +36,41 @@ function RelatedCaseStudies({ category }: { category: string }) {
             <Link href={`/case-study/${s.slug}`} className="text-primary font-medium hover:underline">
               {s.title}
             </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
+
+/**
+ * Sibling posts in the same category. Without this, every post's only inbound
+ * in-content link is from /blog, leaving the whole blog one link deep and
+ * flattening how authority flows between related articles.
+ */
+function RelatedPosts({ slug, category }: { slug: string; category: string }) {
+  const siblings = BLOG_POSTS.filter(
+    (p) => p.category === category && p.slug !== slug
+  );
+  if (siblings.length === 0) return null;
+
+  // Deterministic rotation: each post links to the next few in its category, so
+  // inbound links spread evenly instead of piling onto the same two posts.
+  const start = Math.max(0, siblings.findIndex((p) => p.slug > slug));
+  const picks = Array.from({ length: Math.min(4, siblings.length) }, (_, i) =>
+    siblings[(start + i) % siblings.length]
+  );
+
+  return (
+    <section aria-label="Related articles" className="mt-12 pt-8 border-t border-border">
+      <h2 className="text-xl font-serif font-bold mb-5">More on {category}</h2>
+      <ul className="space-y-3">
+        {picks.map((p) => (
+          <li key={p.slug}>
+            <Link href={`/blog/${p.slug}`} className="text-primary font-medium hover:underline">
+              {p.title}
+            </Link>
+            <p className="text-sm text-muted-foreground mt-1">{p.description}</p>
           </li>
         ))}
       </ul>
@@ -159,6 +194,7 @@ export default function BlogPost() {
             </Button>
           </div>
 
+          <RelatedPosts slug={post.slug} category={post.category} />
           <RelatedCaseStudies category={post.category} />
 
           {/* CTA Section */}

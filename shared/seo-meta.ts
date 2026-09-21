@@ -49,7 +49,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
 
   /* ── Work stories ─────────────────────────────────────────── */
   "/work/loanwiser": {
-    keyword: "fintech lead quality product",
+    keyword: "better lending decisions",
     title: "Loanwiser: Better Lending Decisions | Yogesh Yadav",
     description:
       "How we helped banks stop drowning in bad leads and make better lending decisions — the Loanwiser product growth story.",
@@ -75,7 +75,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
 
   /* ── Case studies ─────────────────────────────────────────── */
   "/case-study/carinfo-45m-mau": {
-    keyword: "scaling a consumer app to 45M MAU",
+    keyword: "monthly active user growth",
     title: "Scaling a Consumer App to 45M+ MAU | Case Study",
   },
   "/case-study/insurance-funnel-1200-growth": {
@@ -83,7 +83,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     title: "Insurance Funnel: 1200% Revenue Growth | Case Study",
   },
   "/case-study/crm-180k-transactions": {
-    keyword: "scalable CRM architecture",
+    keyword: "building a high transaction CRM",
     title: "Scalable CRM for 180K+ Transactions | Case Study",
   },
   "/case-study/user-acquisition-cac-30": {
@@ -163,7 +163,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     title: "Fintech Trust UI Patterns | Case Study",
   },
   "/case-study/microcopy-ctr-increase": {
-    keyword: "microcopy for higher CTR",
+    keyword: "microcopy click through rate",
     title: "Microcopy That Lifted CTR by 35% | Case Study",
   },
   "/case-study/reduce-cognitive-load": {
@@ -175,7 +175,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     title: "Programmatic SEO: 0 to 100K Traffic | Case Study",
   },
   "/case-study/seo-moat-remittance": {
-    keyword: "building an SEO moat",
+    keyword: "reverse engineer competitor SEO",
     title: "Building an SEO Moat in Remittance | Case Study",
   },
   "/case-study/rank-1-fintech-keywords": {
@@ -410,13 +410,13 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     keyword: "product manager interview questions",
     title: "Product Manager Interview Questions & Answers",
   },
-  "/blog/engineer-to-product-manager": {
-    keyword: "engineer to product manager",
-    title: "Transitioning from Engineer to Product Manager",
+  "/blog/pm-skills-gap-analysis": {
+    keyword: "product manager skills gap",
+    title: "The PM Skills Gap: What to Learn Next",
   },
-  "/blog/product-manager-resume-guide": {
-    keyword: "product manager resume",
-    title: "How to Build a Strong Product Manager Resume",
+  "/blog/building-pm-portfolio": {
+    keyword: "product manager portfolio",
+    title: "How to Build a Product Manager Portfolio",
   },
   "/blog/pm-career-path-complete-guide": {
     keyword: "product manager career path",
