@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { SITE_URL, DEFAULT_OG_IMAGE, OG_IMAGE_ALT } from "@shared/seo-data";
+import { SITE_URL, DEFAULT_OG_IMAGE, OG_IMAGE_ALT, ogImageUrl } from "@shared/seo-data";
 import gitDates from "@shared/git-dates.json";
 
 /** Stable @id for the single Person node, referenced as author across the site. */
@@ -62,9 +62,14 @@ export function Seo({
   noindex = false,
   schema,
 }: SeoProps) {
-  const url = `${SITE_URL}${normalizeCanonicalPath(path)}`;
+  const canonicalPath = normalizeCanonicalPath(path);
+  const url = `${SITE_URL}${canonicalPath}`;
+  // Each route has its own generated card; an explicit image still wins, and
+  // DEFAULT_OG_IMAGE remains the fallback for any path without one.
   const ogImage =
-    image && image.startsWith("http") ? image : DEFAULT_OG_IMAGE;
+    image && image.startsWith("http")
+      ? image
+      : ogImageUrl(canonicalPath) || DEFAULT_OG_IMAGE;
 
   const schemaArray = schema
     ? Array.isArray(schema)
@@ -96,14 +101,14 @@ export function Seo({
       <meta property="og:image" content={ogImage} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />
-      <meta property="og:image:alt" content={OG_IMAGE_ALT} />
+      <meta property="og:image:alt" content={`${title} — ${OG_IMAGE_ALT}`} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={ogImage} />
-      <meta name="twitter:image:alt" content={OG_IMAGE_ALT} />
+      <meta name="twitter:image:alt" content={`${title} — ${OG_IMAGE_ALT}`} />
 
       {publishedAt && (
         <meta property="article:published_time" content={publishedAt} />
