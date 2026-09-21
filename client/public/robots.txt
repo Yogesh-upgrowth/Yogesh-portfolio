@@ -4,3 +4,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://pmyogesh.com/sitemap.xml
+
+# RSS feed (blog posts + case studies)
+# https://pmyogesh.com/feed.xml

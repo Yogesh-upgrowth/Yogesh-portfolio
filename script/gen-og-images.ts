@@ -14,7 +14,7 @@
  * Run after changing any page title:  tsx script/gen-og-images.ts
  */
 import { Resvg } from "@resvg/resvg-js";
-import { readFileSync, writeFileSync, mkdirSync } from "fs";
+import { writeFileSync, mkdirSync } from "fs";
 import path from "path";
 import { pathToFileURL } from "url";
 import {
@@ -27,6 +27,7 @@ import {
 import { PAGE_SEO } from "../shared/seo-meta";
 import { caseStudies } from "../client/src/data/caseStudies";
 import { CASE_STUDY_METRICS } from "../client/src/data/case-study-metrics";
+import { readBlogIndex } from "./lib/blog-index";
 
 const W = 1200;
 const H = 630;
@@ -141,17 +142,14 @@ function buildSvg(card: Card): string {
 </svg>`;
 }
 
-/** Blog titles live in blog-data.ts, which imports image assets and so cannot
- *  be imported from a plain script. The entries are flat, so parse them. */
+/** Blog titles come from the shared registry parser, which the feed generator
+ *  also uses, so the two cannot drift apart. */
 function blogCards(): Map<string, Card> {
-  const src = readFileSync("client/src/lib/blog-data.ts", "utf8");
   const map = new Map<string, Card>();
-  const re = /slug:\s*"([a-z0-9-]+)",\s*title:\s*"((?:[^"\\]|\\.)*)"[\s\S]*?category:\s*"([^"]+)"/g;
-  for (const m of src.matchAll(re)) {
-    const [, slug, title, category] = m;
-    map.set(`/blog/${slug}`, {
-      eyebrow: `Article · ${category}`,
-      title: title.replace(/\\"/g, '"'),
+  for (const post of readBlogIndex()) {
+    map.set(`/blog/${post.slug}`, {
+      eyebrow: `Article · ${post.category}`,
+      title: post.title,
     });
   }
   return map;
