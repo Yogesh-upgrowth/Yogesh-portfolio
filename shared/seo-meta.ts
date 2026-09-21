@@ -29,8 +29,10 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       "Advisory and hands-on product growth & monetisation consulting for founders. 9+ years scaling Fintech, Mobility and consumer internet products.",
   },
   "/case-studies": {
-    keyword: "product growth case studies",
-    title: "Product Growth Case Studies | Yogesh Yadav",
+    // The /case-studies/growth hub now owns "product growth case studies";
+    // the index covers all five topics, so it targets the broader term.
+    keyword: "product and growth case studies",
+    title: "30+ Product & Growth Case Studies | Yogesh Yadav",
     description:
       "30+ in-depth case studies on product growth, fintech, monetisation, ML and SEO — real numbers, real frameworks, real failures. By Yogesh Yadav.",
   },
@@ -45,6 +47,38 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     title: "Hire a Product Growth Consultant | Yogesh Yadav",
     description:
       "Get in touch with Yogesh Yadav for product growth, monetisation, SEO strategy and fintech advisory. Based in India. Response within 24 hours.",
+  },
+
+  /* ── Case-study topic hubs ────────────────────────────────── */
+  "/case-studies/growth": {
+    keyword: "product growth case studies",
+    title: "Product Growth Case Studies | Yogesh Yadav",
+    description:
+      "Eight growth case studies with the numbers attached — 45M MAU, 1200% revenue growth, CAC cut 30%. How each result was actually produced.",
+  },
+  "/case-studies/machine-learning": {
+    keyword: "machine learning product case studies",
+    title: "Machine Learning in Product: Case Studies | Yogesh Yadav",
+    description:
+      "ML applied to real product problems: purchase prediction, LTV modelling, churn, intent scoring and segmentation — with the outcomes they moved.",
+  },
+  "/case-studies/product": {
+    keyword: "product management case studies",
+    title: "Product Management Case Studies | Yogesh Yadav",
+    description:
+      "Product and platform case studies: scaling a CRM to 180K+ monthly transactions, notification systems, comparison platforms and 7-day MVPs.",
+  },
+  "/case-studies/seo": {
+    keyword: "SEO case studies",
+    title: "SEO Case Studies: 0 to 100K Traffic | Yogesh Yadav",
+    description:
+      "Programmatic SEO case studies with real traffic numbers — scaling to 100K monthly visits, ranking #1 for fintech terms, and building an SEO moat.",
+  },
+  "/case-studies/design": {
+    keyword: "UX design case studies",
+    title: "UX & Design Case Studies | Yogesh Yadav",
+    description:
+      "UX case studies measured in conversion, not aesthetics: redesigns worth 28% lift, microcopy worth 35% CTR, trust patterns and cognitive load.",
   },
 
   /* ── Work stories ─────────────────────────────────────────── */

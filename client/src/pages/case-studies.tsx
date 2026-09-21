@@ -7,6 +7,7 @@ import { caseStudies, categoryColors } from "@/data/caseStudies";
 import { useInView } from "@/hooks/useInView";
 import { Seo, breadcrumbSchema } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
+import { CASE_STUDY_TOPICS } from "@shared/seo-data";
 
 const meta = getPageSeo("/case-studies")!;
 
@@ -207,6 +208,33 @@ export default function CaseStudies() {
               <CaseStudyCard key={study.slug} study={study} index={i} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Crawlable topic hubs. The filter tabs above are client-side state and
+          produce no URLs, so these links are how the topic pages are reached. */}
+      <section className="py-16 border-t border-border">
+        <div className="container px-4 md:px-6 mx-auto max-w-4xl">
+          <h2 className="text-2xl font-serif font-bold mb-3">Browse by topic</h2>
+          <p className="text-muted-foreground mb-6">
+            Each topic page goes into how that kind of work is approached, with
+            every case study in that area.
+          </p>
+          <ul className="flex flex-wrap gap-x-6 gap-y-3">
+            {CASE_STUDY_TOPICS.map((t) => {
+              const count = caseStudies.filter((c) => c.category === t.category).length;
+              return (
+                <li key={t.slug}>
+                  <Link
+                    href={`/case-studies/${t.slug}`}
+                    className="text-primary font-medium hover:underline"
+                  >
+                    {t.category} case studies ({count})
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </section>
       </main>

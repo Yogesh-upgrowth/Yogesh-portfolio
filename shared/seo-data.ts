@@ -77,6 +77,23 @@ export const BLOG_SLUGS = [
   "pm-career-path-complete-guide",
 ];
 
+/**
+ * Case-study topic hubs. /case-studies filters by category in the browser only,
+ * so the categories had no URLs of their own — 30 studies with proprietary data
+ * sat one click under a single index page with nothing indexable between them.
+ * Each hub targets a mid-tail term and gives its studies a second inbound link
+ * from a topically-relevant parent.
+ *
+ * `category` must match the category strings in client/src/data/caseStudies.ts.
+ */
+export const CASE_STUDY_TOPICS: { slug: string; category: string }[] = [
+  { slug: "growth", category: "Growth" },
+  { slug: "machine-learning", category: "Machine Learning" },
+  { slug: "product", category: "Product" },
+  { slug: "seo", category: "SEO" },
+  { slug: "design", category: "Design" },
+];
+
 export const CASE_STUDY_SLUGS = [
   "carinfo-45m-mau",
   "insurance-funnel-1200-growth",
@@ -119,6 +136,7 @@ export const CASE_STUDY_SLUGS = [
 export function getAllRoutePaths(): string[] {
   const paths = [
     ...STATIC_ROUTES.map((r) => r.path),
+    ...CASE_STUDY_TOPICS.map((t) => `/case-studies/${t.slug}`),
     ...WORK_STORY_SLUGS.map((s) => `/work/${s}`),
     ...CASE_STUDY_SLUGS.map((s) => `/case-study/${s}`),
     ...BLOG_SLUGS.map((s) => `/blog/${s}`),

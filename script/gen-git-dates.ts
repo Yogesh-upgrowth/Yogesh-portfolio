@@ -16,6 +16,7 @@ import {
   WORK_STORY_SLUGS,
   CASE_STUDY_SLUGS,
   BLOG_SLUGS,
+  CASE_STUDY_TOPICS,
 } from "../shared/seo-data";
 
 const PAGES = "client/src/pages";
@@ -97,6 +98,13 @@ export function genGitDates(): Record<string, string> {
 
   for (const r of STATIC_ROUTES) {
     dates[r.path] = gitDate(STATIC_SOURCE[r.path], headDate);
+  }
+  // Topic hubs are driven by the hub component plus the case-study data they list.
+  for (const t of CASE_STUDY_TOPICS) {
+    dates[`/case-studies/${t.slug}`] = gitDate(
+      `${PAGES}/case-study-topic.tsx`,
+      headDate
+    );
   }
   for (const slug of WORK_STORY_SLUGS) {
     dates[`/work/${slug}`] = gitDate(`${PAGES}/story-${slug}.tsx`, headDate);

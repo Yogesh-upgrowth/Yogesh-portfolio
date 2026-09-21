@@ -7,6 +7,7 @@ import { Suspense, lazy } from "react";
 const Home = lazy(() => import("@/pages/home"));
 const Blog = lazy(() => import("@/pages/blog"));
 const CaseStudies = lazy(() => import("@/pages/case-studies"));
+const CaseStudyTopic = lazy(() => import("@/pages/case-study-topic"));
 const CaseStudyDetail = lazy(() => import("@/pages/case-study"));
 const ContactPage = lazy(() => import("@/pages/contact"));
 const Work = lazy(() => import("@/pages/work"));
@@ -29,6 +30,7 @@ function Router() {
       <Route path="/blog" component={() => <Suspense fallback={<PageLoader />}><Blog /></Suspense>} />
       <Route path="/blog/:slug" component={() => <Suspense fallback={<PageLoader />}><BlogPost /></Suspense>} />
       <Route path="/case-studies" component={() => <Suspense fallback={<PageLoader />}><CaseStudies /></Suspense>} />
+      <Route path="/case-studies/:category" component={() => <Suspense fallback={<PageLoader />}><CaseStudyTopic /></Suspense>} />
       <Route path="/case-study/:slug" component={() => <Suspense fallback={<PageLoader />}><CaseStudyDetail /></Suspense>} />
       <Route path="/contact" component={() => <Suspense fallback={<PageLoader />}><ContactPage /></Suspense>} />
       <Route path="/work" component={() => <Suspense fallback={<PageLoader />}><Work /></Suspense>} />

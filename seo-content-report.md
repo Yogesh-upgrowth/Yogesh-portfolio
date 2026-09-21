@@ -2,12 +2,12 @@
 
 _Generated from the prerendered HTML in `dist/public`. This report is diagnostic only — thin pages are flagged for you to rewrite, never auto-padded._
 
-- Pages analyzed: **95**
-- Median word count: **1142**
+- Pages analyzed: **100**
+- Median word count: **1099**
 - Thin pages (<300 words): **0**
 - Pages whose H1 misses most of the keyword's terms: **0**
 - Pages whose copy barely covers the keyword at all: **0**
-- Pages missing the exact keyword phrase (weak signal, FYI): **49**
+- Pages missing the exact keyword phrase (weak signal, FYI): **51**
 - Case studies with fewer than 3 concrete metrics: **1**
 
 ## Thin content (<300 words) — rewrite candidates
@@ -93,7 +93,12 @@ _None._
 | `/blog/what-does-a-pm-actually-do` | 3144 | 100% | 100% | no |
 | `/blog/what-makes-product-scalable` | 514 | 100% | 100% | yes |
 | `/blog/writing-effective-prds-guide` | 1042 | 100% | 100% | no |
-| `/case-studies` | 1154 | 100% | 100% | yes |
+| `/case-studies` | 1209 | 100% | 100% | yes |
+| `/case-studies/design` | 325 | 100% | 100% | no |
+| `/case-studies/growth` | 437 | 100% | 100% | yes |
+| `/case-studies/machine-learning` | 422 | 100% | 100% | no |
+| `/case-studies/product` | 413 | 100% | 100% | yes |
+| `/case-studies/seo` | 336 | 100% | 100% | yes |
 | `/case-study/ai-recommendation-engine` | 1788 | 75% | 75% | no |
 | `/case-study/cab-fare-comparison-engine` | 1778 | 100% | 100% | yes |
 | `/case-study/carinfo-45m-mau` | 2207 | 100% | 100% | no |
