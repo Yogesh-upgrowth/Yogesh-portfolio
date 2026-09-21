@@ -138,7 +138,7 @@ export const PAGE_SEO: Record<string, PageSeo> = {
   },
   "/case-study/ml-reduce-cac-segmentation": {
     keyword: "reduce CAC with ML segmentation",
-    title: "Cutting CAC 38% with ML Segmentation | Case Study",
+    title: "Cutting CAC 31% with ML Segmentation | Case Study",
   },
   "/case-study/predict-user-dropoff-churn-model": {
     keyword: "churn prediction model for apps",

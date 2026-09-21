@@ -87,7 +87,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "ml-reduce-cac-segmentation",
-    title: "Using ML to Reduce CAC by 38% via Smart Audience Segmentation",
+    title: "Using ML to Reduce CAC by 31% via Smart Audience Segmentation",
     description: "Reducing acquisition cost using intelligent ML-driven segmentation.",
     category: "Machine Learning",
     tags: ["ML", "Growth", "CAC"],
