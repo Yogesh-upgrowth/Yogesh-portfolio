@@ -16,6 +16,7 @@ export const STATIC_ROUTES: { path: string; priority: number; changefreq: string
   { path: "/case-studies",priority: 0.9, changefreq: "weekly" },
   { path: "/blog",        priority: 0.9, changefreq: "weekly" },
   { path: "/contact",     priority: 0.7, changefreq: "yearly" },
+  { path: "/product-growth-score", priority: 0.8, changefreq: "monthly" },
 ];
 
 export const WORK_STORY_SLUGS = ["loanwiser", "carinfo", "knipex", "upgrowth"];

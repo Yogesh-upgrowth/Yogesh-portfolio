@@ -9,6 +9,7 @@ const Blog = lazy(() => import("@/pages/blog"));
 const CaseStudies = lazy(() => import("@/pages/case-studies"));
 const CaseStudyTopic = lazy(() => import("@/pages/case-study-topic"));
 const ServicePage = lazy(() => import("@/pages/service"));
+const GrowthScore = lazy(() => import("@/pages/growth-score"));
 const CaseStudyDetail = lazy(() => import("@/pages/case-study"));
 const ContactPage = lazy(() => import("@/pages/contact"));
 const Work = lazy(() => import("@/pages/work"));
@@ -36,6 +37,7 @@ function Router() {
       <Route path="/contact" component={() => <Suspense fallback={<PageLoader />}><ContactPage /></Suspense>} />
       <Route path="/work" component={() => <Suspense fallback={<PageLoader />}><Work /></Suspense>} />
       <Route path="/work/:slug" component={() => <Suspense fallback={<PageLoader />}><CompanyStory /></Suspense>} />
+      <Route path="/product-growth-score" component={() => <Suspense fallback={<PageLoader />}><GrowthScore /></Suspense>} />
       {/* Service pages live at the root, so this must be the last route:
           a bare /:slug would otherwise swallow /blog, /work and the rest. */}
       <Route path="/:slug" component={() => <Suspense fallback={<PageLoader />}><ServicePage /></Suspense>} />

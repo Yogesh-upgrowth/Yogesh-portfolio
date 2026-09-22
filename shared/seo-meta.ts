@@ -49,6 +49,13 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       "Get in touch with Yogesh Yadav for product growth, monetisation, SEO strategy and fintech advisory. Based in India. Response within 24 hours.",
   },
 
+  "/product-growth-score": {
+    keyword: "product growth score",
+    title: "Product Growth Score \u2014 Free Diagnostic",
+    description:
+      "Thirteen questions on whether the things that decide growth are measured in your product. Scored in your browser, no email \u2014 with the case study that fixed each problem.",
+  },
+
   /* ── Service pages ────────────────────────────────────────── */
   "/fintech-product-consultant": {
     keyword: "fintech product consultant",

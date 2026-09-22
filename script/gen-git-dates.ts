@@ -29,6 +29,7 @@ const STATIC_SOURCE: Record<string, string> = {
   "/case-studies": `${PAGES}/case-studies.tsx`,
   "/blog": `${PAGES}/blog.tsx`,
   "/contact": `${PAGES}/contact.tsx`,
+  "/product-growth-score": `${PAGES}/growth-score.tsx`,
 };
 
 /** Parse case-study.tsx: slug -> content component file (@/pages/<file>). */

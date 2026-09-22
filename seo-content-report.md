@@ -2,7 +2,7 @@
 
 _Generated from the prerendered HTML in `dist/public`. This report is diagnostic only — thin pages are flagged for you to rewrite, never auto-padded._
 
-- Pages analyzed: **105**
+- Pages analyzed: **106**
 - Median word count: **1042**
 - Thin pages (<300 words): **0**
 - Pages whose H1 misses most of the keyword's terms: **0**
@@ -134,6 +134,7 @@ _None._
 | `/consumer-app-growth-consultant` | 710 | 100% | 100% | yes |
 | `/contact` | 613 | 100% | 100% | yes |
 | `/fintech-product-consultant` | 736 | 100% | 100% | yes |
+| `/product-growth-score` | 652 | 100% | 100% | yes |
 | `/product-monetisation-consultant` | 661 | 100% | 100% | yes |
 | `/work` | 666 | 100% | 100% | yes |
 | `/work/carinfo` | 6355 | 50% | 100% | no |
