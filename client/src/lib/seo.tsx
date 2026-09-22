@@ -182,8 +182,32 @@ export function organizationSchema() {
 }
 
 /** Site-wide graph for the homepage: Person + WebSite + Organization. */
+/**
+ * ProfilePage marks a page as being *about* a person rather than merely
+ * mentioning one, which is what lets a search engine attach the site's
+ * authorship and credentials to the same entity. The homepage is the
+ * canonical profile surface here, so the Person node is its mainEntity.
+ */
+export function profilePageSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfilePage",
+    "@id": `${SITE_URL}/#profilepage`,
+    url: `${SITE_URL}/`,
+    name: "Yogesh Yadav — Product Growth & Monetisation Consultant",
+    dateModified: getModifiedDate("/"),
+    mainEntity: { "@id": PERSON_ID },
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+  };
+}
+
 export function homeSchema() {
-  return [personSchema(), websiteSchema(), organizationSchema()];
+  return [
+    personSchema(),
+    profilePageSchema(),
+    websiteSchema(),
+    organizationSchema(),
+  ];
 }
 
 export function breadcrumbSchema(

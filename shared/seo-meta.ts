@@ -49,6 +49,26 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       "Get in touch with Yogesh Yadav for product growth, monetisation, SEO strategy and fintech advisory. Based in India. Response within 24 hours.",
   },
 
+  /* ── Service pages ────────────────────────────────────────── */
+  "/fintech-product-consultant": {
+    keyword: "fintech product consultant",
+    title: "Fintech Product Consultant | Yogesh Yadav",
+    description:
+      "Fintech product and growth consulting backed by 9 published case studies — 1200% insurance revenue growth, CAC down 30%, a CRM rebuilt for 180K+ monthly transactions.",
+  },
+  "/consumer-app-growth-consultant": {
+    keyword: "consumer app growth consultant",
+    title: "Consumer App Growth Consultant | Yogesh Yadav",
+    description:
+      "Consumer app growth consulting from someone who scaled one to 45M+ monthly active users — growth loops, activation, retention and organic acquisition at \u20b931 per user.",
+  },
+  "/product-monetisation-consultant": {
+    keyword: "product monetisation consultant",
+    title: "Product Monetisation Consultant | Yogesh Yadav",
+    description:
+      "Monetisation consulting for consumer and fintech products: paywall and CTA placement, pricing against real behaviour, and acquisition economics that pay back.",
+  },
+
   /* ── Case-study topic hubs ────────────────────────────────── */
   "/case-studies/growth": {
     keyword: "product growth case studies",

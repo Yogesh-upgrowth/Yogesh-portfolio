@@ -2,8 +2,8 @@
 
 _Generated from the prerendered HTML in `dist/public`. This report is diagnostic only — thin pages are flagged for you to rewrite, never auto-padded._
 
-- Pages analyzed: **102**
-- Median word count: **1044**
+- Pages analyzed: **105**
+- Median word count: **1042**
 - Thin pages (<300 words): **0**
 - Pages whose H1 misses most of the keyword's terms: **0**
 - Pages whose copy barely covers the keyword at all: **0**
@@ -131,7 +131,10 @@ _None._
 | `/case-study/user-acquisition-cac-30` | 2231 | 75% | 100% | no |
 | `/case-study/ux-redesign-conversion-28` | 1765 | 100% | 100% | no |
 | `/case-study/zero-cost-growth-engine` | 1646 | 100% | 100% | yes |
-| `/contact` | 595 | 100% | 100% | yes |
+| `/consumer-app-growth-consultant` | 710 | 100% | 100% | yes |
+| `/contact` | 613 | 100% | 100% | yes |
+| `/fintech-product-consultant` | 736 | 100% | 100% | yes |
+| `/product-monetisation-consultant` | 661 | 100% | 100% | yes |
 | `/work` | 666 | 100% | 100% | yes |
 | `/work/carinfo` | 6355 | 50% | 100% | no |
 | `/work/knipex` | 6077 | 75% | 100% | no |

@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { SERVICES } from "@shared/services";
 
 const footerLinks = [
   { name: "Home", href: "/" },
@@ -22,6 +23,21 @@ export default function Footer() {
               <li key={link.href}>
                 <Link href={link.href} className="text-white/70 hover:text-white transition-colors">
                   {link.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <nav aria-label="Services" className="mb-8">
+          <h2 className="text-xs font-semibold uppercase tracking-widest text-white/60 mb-3">
+            Consulting
+          </h2>
+          <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
+            {SERVICES.map((s) => (
+              <li key={s.slug}>
+                <Link href={`/${s.slug}`} className="text-white/70 hover:text-white transition-colors">
+                  {s.heading}
                 </Link>
               </li>
             ))}

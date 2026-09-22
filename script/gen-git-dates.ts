@@ -18,6 +18,7 @@ import {
   BLOG_SLUGS,
   CASE_STUDY_TOPICS,
 } from "../shared/seo-data";
+import { SERVICE_SLUGS } from "../shared/services";
 
 const PAGES = "client/src/pages";
 const LIB = "client/src/lib";
@@ -105,6 +106,9 @@ export function genGitDates(): Record<string, string> {
       `${PAGES}/case-study-topic.tsx`,
       headDate
     );
+  }
+  for (const slug of SERVICE_SLUGS) {
+    dates[`/${slug}`] = gitDate("shared/services.ts", headDate);
   }
   for (const slug of WORK_STORY_SLUGS) {
     dates[`/work/${slug}`] = gitDate(`${PAGES}/story-${slug}.tsx`, headDate);

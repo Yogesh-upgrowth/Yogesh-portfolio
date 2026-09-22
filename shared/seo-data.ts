@@ -8,6 +8,8 @@ export const DEFAULT_OG_IMAGE = "https://pmyogesh.com/og-image.png";
 export const OG_IMAGE_ALT =
   "Yogesh Yadav — Product Growth & Monetisation Consultant";
 
+import { SERVICE_SLUGS } from "./services";
+
 export const STATIC_ROUTES: { path: string; priority: number; changefreq: string }[] = [
   { path: "/",            priority: 1.0, changefreq: "weekly" },
   { path: "/work",        priority: 0.9, changefreq: "monthly" },
@@ -153,6 +155,7 @@ export function getAllRoutePaths(): string[] {
   const paths = [
     ...STATIC_ROUTES.map((r) => r.path),
     ...CASE_STUDY_TOPICS.map((t) => `/case-studies/${t.slug}`),
+    ...SERVICE_SLUGS.map((s) => `/${s}`),
     ...WORK_STORY_SLUGS.map((s) => `/work/${s}`),
     ...CASE_STUDY_SLUGS.map((s) => `/case-study/${s}`),
     ...BLOG_SLUGS.map((s) => `/blog/${s}`),

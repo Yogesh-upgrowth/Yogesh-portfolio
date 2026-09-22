@@ -9,6 +9,7 @@ import {
   faqSchema,
 } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
+import { SERVICES as CONSULTING_AREAS } from "@shared/services";
 
 const meta = getPageSeo("/contact")!;
 
@@ -117,6 +118,18 @@ export default function ContactPage() {
             ))}
           </div>
           <p className="text-muted-foreground mt-10">
+            Where that work is concentrated:{" "}
+            {CONSULTING_AREAS.map((s, i) => (
+              <span key={s.slug}>
+                {i > 0 && (i === CONSULTING_AREAS.length - 1 ? " and " : ", ")}
+                <Link href={`/${s.slug}`} className="text-primary underline underline-offset-2">
+                  {s.heading.toLowerCase()}
+                </Link>
+              </span>
+            ))}
+            .
+          </p>
+          <p className="text-muted-foreground mt-4">
             The <Link href="/case-studies" className="text-primary underline underline-offset-2">case studies</Link>{" "}
             go through this work in detail, with the numbers attached — or see
             the longer <Link href="/work" className="text-primary underline underline-offset-2">company stories</Link>{" "}
