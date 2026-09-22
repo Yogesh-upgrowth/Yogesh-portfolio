@@ -1,3 +1,4 @@
+import { proofStats } from "@shared/proof";
 import { useRef, useEffect, useState } from "react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -55,12 +56,12 @@ const ANIM_CSS = `
 `;
 
 /* ── Data ────────────────────────────────────────────────── */
-const stats = [
-  { value: "9+",   label: "Years Experience" },
-  { value: "50+",  label: "Team Members Led" },
-  { value: "680×", label: "Insurance Growth" },
-  { value: "90%",  label: "Better Disbursement" },
-];
+const stats = proofStats([
+  "years-experience",
+  "team-led",
+  "insurance-growth",
+  "disbursement-improvement",
+]);
 
 const idealFit = [
   { num: "01", icon: Target,     title: "Scaling Founders",       desc: "Product is getting heavier instead of sharper as you grow." },

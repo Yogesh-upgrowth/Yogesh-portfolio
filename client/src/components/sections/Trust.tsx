@@ -1,12 +1,14 @@
+import { proofStats } from "@shared/proof";
 import { useInView } from "@/hooks/useInView";
 
-// Static — never recreated on render
-const metrics = [
-  { label: "Years Experience", value: "9+" },
-  { label: "Daily Transactions", value: "10K+" },
-  { label: "DAU Scaled To", value: "1.2M+" },
-  { label: "Team Size Led", value: "250+" },
-];
+// Every headline number comes from the proof database, which records where it
+// came from and fails the build if two pages disagree.
+const metrics = proofStats([
+  "years-experience",
+  "daily-transactions",
+  "dau-scaled",
+  "team-led",
+]);
 
 const industryTags = ["Fintech", "Mobility", "SaaS", "Marketplaces", "E-commerce"];
 

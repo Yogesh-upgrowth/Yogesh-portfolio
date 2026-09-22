@@ -4,6 +4,7 @@ import { rm, readFile } from "fs/promises";
 import path from "path";
 import { prerender } from "./prerender";
 import { genGitDates } from "./gen-git-dates";
+import { checkProof } from "./check-proof";
 import { genSitemap } from "./gen-sitemap";
 import { genFeed } from "./gen-feed";
 import { genLlmsTxt } from "./gen-llms-txt";
@@ -40,6 +41,9 @@ const allowlist = [
 
 async function buildAll() {
   await rm("dist", { recursive: true, force: true });
+
+  console.log("verifying the proof database...");
+  checkProof();
 
   console.log("generating git-derived page dates...");
   genGitDates();

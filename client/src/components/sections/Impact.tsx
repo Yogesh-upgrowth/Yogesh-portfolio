@@ -2,6 +2,7 @@ import { useInView } from "@/hooks/useInView";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import { caseStudies } from "@/data/caseStudies";
+import { proof } from "@shared/proof";
 
 const impacts = [
   {
@@ -198,8 +199,8 @@ export default function Impact() {
         {/* Footer stats row */}
         <div className="flex flex-wrap items-center justify-center md:justify-end gap-6 md:gap-10 pt-10">
           {[
-            { v: "9+", l: "Years" },
-            { v: "5",  l: "Industries" },
+            { v: proof("years-experience").value, l: "Years" },
+            { v: proof("industries").value, l: "Industries" },
             { v: String(caseStudies.length), l: "Case Studies" },
           ].map(({ v, l }, i) => (
             <div key={l} className="flex items-center gap-3">
