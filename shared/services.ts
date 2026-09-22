@@ -261,4 +261,12 @@ export const SERVICES: Service[] = [
   },
 ];
 
+/** Commercial pages live under /consulting/ so the buyer-intent surface is one
+ *  coherent section rather than loose pages at the site root. */
+export const CONSULTING_BASE = "/consulting";
+
 export const SERVICE_SLUGS = SERVICES.map((s) => s.slug);
+
+export function servicePath(slug: string): string {
+  return `${CONSULTING_BASE}/${slug}`;
+}

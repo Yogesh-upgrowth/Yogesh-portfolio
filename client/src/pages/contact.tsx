@@ -9,7 +9,7 @@ import {
   faqSchema,
 } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
-import { SERVICES as CONSULTING_AREAS } from "@shared/services";
+import { SERVICES as CONSULTING_AREAS, servicePath } from "@shared/services";
 
 const meta = getPageSeo("/contact")!;
 
@@ -122,7 +122,7 @@ export default function ContactPage() {
             {CONSULTING_AREAS.map((s, i) => (
               <span key={s.slug}>
                 {i > 0 && (i === CONSULTING_AREAS.length - 1 ? " and " : ", ")}
-                <Link href={`/${s.slug}`} className="text-primary underline underline-offset-2">
+                <Link href={servicePath(s.slug)} className="text-primary underline underline-offset-2">
                   {s.heading.toLowerCase()}
                 </Link>
               </span>

@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { SERVICES } from "@shared/services";
+import { SERVICES, servicePath } from "@shared/services";
 
 const footerLinks = [
   { name: "Home", href: "/" },
@@ -36,7 +36,7 @@ export default function Footer() {
           <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
             {SERVICES.map((s) => (
               <li key={s.slug}>
-                <Link href={`/${s.slug}`} className="text-white/70 hover:text-white transition-colors">
+                <Link href={servicePath(s.slug)} className="text-white/70 hover:text-white transition-colors">
                   {s.heading}
                 </Link>
               </li>

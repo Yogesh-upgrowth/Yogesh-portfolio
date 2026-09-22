@@ -38,9 +38,7 @@ function Router() {
       <Route path="/work" component={() => <Suspense fallback={<PageLoader />}><Work /></Suspense>} />
       <Route path="/work/:slug" component={() => <Suspense fallback={<PageLoader />}><CompanyStory /></Suspense>} />
       <Route path="/product-growth-score" component={() => <Suspense fallback={<PageLoader />}><GrowthScore /></Suspense>} />
-      {/* Service pages live at the root, so this must be the last route:
-          a bare /:slug would otherwise swallow /blog, /work and the rest. */}
-      <Route path="/:slug" component={() => <Suspense fallback={<PageLoader />}><ServicePage /></Suspense>} />
+      <Route path="/consulting/:slug" component={() => <Suspense fallback={<PageLoader />}><ServicePage /></Suspense>} />
       <Route component={NotFound} />
     </Switch>
   );

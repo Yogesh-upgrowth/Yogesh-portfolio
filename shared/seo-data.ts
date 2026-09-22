@@ -156,7 +156,7 @@ export function getAllRoutePaths(): string[] {
   const paths = [
     ...STATIC_ROUTES.map((r) => r.path),
     ...CASE_STUDY_TOPICS.map((t) => `/case-studies/${t.slug}`),
-    ...SERVICE_SLUGS.map((s) => `/${s}`),
+    ...SERVICE_SLUGS.map((s) => `/consulting/${s}`),
     ...WORK_STORY_SLUGS.map((s) => `/work/${s}`),
     ...CASE_STUDY_SLUGS.map((s) => `/case-study/${s}`),
     ...BLOG_SLUGS.map((s) => `/blog/${s}`),

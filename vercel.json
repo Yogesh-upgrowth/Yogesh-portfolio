@@ -14,6 +14,31 @@
       "source": "/blog/product-manager-resume-guide",
       "destination": "/blog/building-pm-portfolio",
       "permanent": true
+    },
+    {
+      "source": "/fintech-product-consultant",
+      "destination": "/consulting/fintech-product-consultant",
+      "permanent": true
+    },
+    {
+      "source": "/consumer-app-growth-consultant",
+      "destination": "/consulting/consumer-app-growth-consultant",
+      "permanent": true
+    },
+    {
+      "source": "/product-monetisation-consultant",
+      "destination": "/consulting/product-monetisation-consultant",
+      "permanent": true
+    },
+    {
+      "source": "/marketplace-product-consultant",
+      "destination": "/consulting/marketplace-product-consultant",
+      "permanent": true
+    },
+    {
+      "source": "/saas-product-consultant",
+      "destination": "/consulting/saas-product-consultant",
+      "permanent": true
     }
   ]
 }

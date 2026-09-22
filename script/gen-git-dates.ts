@@ -109,7 +109,7 @@ export function genGitDates(): Record<string, string> {
     );
   }
   for (const slug of SERVICE_SLUGS) {
-    dates[`/${slug}`] = gitDate("shared/services.ts", headDate);
+    dates[`/consulting/${slug}`] = gitDate("shared/services.ts", headDate);
   }
   for (const slug of WORK_STORY_SLUGS) {
     dates[`/work/${slug}`] = gitDate(`${PAGES}/story-${slug}.tsx`, headDate);

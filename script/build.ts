@@ -9,6 +9,7 @@ import { checkServices } from "./check-services";
 import { genSitemap } from "./gen-sitemap";
 import { genFeed } from "./gen-feed";
 import { genLlmsTxt } from "./gen-llms-txt";
+import { checkContentStandard } from "./check-content-standard";
 
 // server deps to bundle to reduce openat(2) syscalls
 // which helps cold start times
@@ -74,6 +75,9 @@ async function buildAll() {
 
   console.log("prerendering routes to static HTML...");
   await prerender();
+
+  console.log("measuring pages against the content standard...");
+  checkContentStandard();
 
   console.log("generating sitemap.xml...");
   genSitemap();

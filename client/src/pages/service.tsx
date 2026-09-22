@@ -6,7 +6,7 @@ import NotFound from "@/pages/not-found";
 import { caseStudies } from "@/data/caseStudies";
 import { CASE_STUDY_METRICS } from "@/data/case-study-metrics";
 import { BLOG_POSTS } from "@/lib/blog-data";
-import { SERVICES, OFFERS } from "@shared/services";
+import { SERVICES, OFFERS, servicePath } from "@shared/services";
 import { SITE_URL } from "@shared/seo-data";
 import { getPageSeo } from "@shared/seo-meta";
 import {
@@ -17,11 +17,11 @@ import {
 } from "@/lib/seo";
 
 export default function ServicePage() {
-  const [match, params] = useRoute("/:slug");
+  const [match, params] = useRoute("/consulting/:slug");
   const service = match ? SERVICES.find((s) => s.slug === params?.slug) : undefined;
   if (!service) return <NotFound />;
 
-  const path = `/${service.slug}`;
+  const path = servicePath(service.slug);
   const meta = getPageSeo(path)!;
   const studies = service.caseStudies
     .map((slug) => caseStudies.find((c) => c.slug === slug))
@@ -194,7 +194,7 @@ export default function ServicePage() {
             <ul className="flex flex-wrap gap-x-6 gap-y-2">
               {SERVICES.filter((s) => s.slug !== service.slug).map((s) => (
                 <li key={s.slug}>
-                  <Link href={`/${s.slug}`} className="text-primary font-medium hover:underline">
+                  <Link href={servicePath(s.slug)} className="text-primary font-medium hover:underline">
                     {s.heading}
                   </Link>
                 </li>

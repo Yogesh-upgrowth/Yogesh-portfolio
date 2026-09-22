@@ -4,7 +4,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { caseStudies } from "@/data/caseStudies";
-import { SERVICES } from "@shared/services";
+import { SERVICES, servicePath } from "@shared/services";
 import {
   QUESTIONS,
   DIMENSIONS,
@@ -215,7 +215,7 @@ export default function GrowthScore() {
                           {svc && (
                             <li>
                               <Link
-                                href={`/${svc.slug}`}
+                                href={servicePath(svc.slug)}
                                 className="text-primary font-medium underline underline-offset-2"
                               >
                                 {svc.heading}

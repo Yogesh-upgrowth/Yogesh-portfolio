@@ -57,32 +57,32 @@ export const PAGE_SEO: Record<string, PageSeo> = {
   },
 
   /* ── Service pages ────────────────────────────────────────── */
-  "/fintech-product-consultant": {
+  "/consulting/fintech-product-consultant": {
     keyword: "fintech product consultant",
     title: "Fintech Product Consultant | Yogesh Yadav",
     description:
       "Fintech product and growth consulting backed by 9 published case studies — 1200% insurance revenue growth, CAC down 30%, a CRM rebuilt for 180K+ monthly transactions.",
   },
-  "/consumer-app-growth-consultant": {
+  "/consulting/consumer-app-growth-consultant": {
     keyword: "consumer app growth consultant",
     title: "Consumer App Growth Consultant | Yogesh Yadav",
     description:
       "Consumer app growth consulting from someone who scaled one to 45M+ monthly active users — growth loops, activation, retention and organic acquisition at \u20b931 per user.",
   },
-  "/product-monetisation-consultant": {
+  "/consulting/product-monetisation-consultant": {
     keyword: "product monetisation consultant",
     title: "Product Monetisation Consultant | Yogesh Yadav",
     description:
       "Monetisation consulting for consumer and fintech products: paywall and CTA placement, pricing against real behaviour, and acquisition economics that pay back.",
   },
 
-  "/marketplace-product-consultant": {
+  "/consulting/marketplace-product-consultant": {
     keyword: "marketplace product consultant",
     title: "Marketplace & Comparison Platform Consultant | Yogesh Yadav",
     description:
       "Comparison and aggregator product consulting \u2014 a real-time cab fare engine at 80K MAU, a remittance platform at 180K MAU, and 92\u00d7 organic traffic growth.",
   },
-  "/saas-product-consultant": {
+  "/consulting/saas-product-consultant": {
     keyword: "SaaS product consultant",
     title: "B2B & SaaS Product Consultant | Yogesh Yadav",
     description:
