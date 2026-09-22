@@ -3,6 +3,7 @@ import { Link, useParams } from "wouter";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
+import { caseStudies } from "@/data/caseStudies";
 import { ArrowLeft, Clock, User } from "lucide-react";
 import NotFound from "@/pages/not-found";
 import { Seo, articleSchema, breadcrumbSchema, getModifiedDate } from "@/lib/seo";
@@ -332,7 +333,7 @@ export default function CompanyStoryPage() {
                   </Link>
                   <Link href="/case-studies">
                     <div className="p-5 rounded-xl border border-primary/20 bg-primary/5 cursor-pointer text-center">
-                      <p className="font-bold text-sm text-primary">26 Case Studies</p>
+                      <p className="font-bold text-sm text-primary">{caseStudies.length} Case Studies</p>
                       <p className="text-xs text-muted-foreground mt-1">Deep technical breakdowns</p>
                     </div>
                   </Link>

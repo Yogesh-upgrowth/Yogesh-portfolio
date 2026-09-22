@@ -1,6 +1,7 @@
 import { useInView } from "@/hooks/useInView";
 import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
+import { caseStudies } from "@/data/caseStudies";
 
 const impacts = [
   {
@@ -199,7 +200,7 @@ export default function Impact() {
           {[
             { v: "9+", l: "Years" },
             { v: "5",  l: "Industries" },
-            { v: "26", l: "Case Studies" },
+            { v: String(caseStudies.length), l: "Case Studies" },
           ].map(({ v, l }, i) => (
             <div key={l} className="flex items-center gap-3">
               {i > 0 && <span className="hidden md:block text-white/10 text-lg">·</span>}
