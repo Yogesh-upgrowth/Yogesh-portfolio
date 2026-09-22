@@ -76,6 +76,19 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       "Monetisation consulting for consumer and fintech products: paywall and CTA placement, pricing against real behaviour, and acquisition economics that pay back.",
   },
 
+  "/marketplace-product-consultant": {
+    keyword: "marketplace product consultant",
+    title: "Marketplace & Comparison Platform Consultant | Yogesh Yadav",
+    description:
+      "Comparison and aggregator product consulting \u2014 a real-time cab fare engine at 80K MAU, a remittance platform at 180K MAU, and 92\u00d7 organic traffic growth.",
+  },
+  "/saas-product-consultant": {
+    keyword: "SaaS product consultant",
+    title: "B2B & SaaS Product Consultant | Yogesh Yadav",
+    description:
+      "B2B platform product consulting: a CRM rebuilt for 180K+ monthly transactions at 99.6% uptime, and an intent scoring engine worth \u20b94.2Cr in incremental revenue.",
+  },
+
   /* ── Case-study topic hubs ────────────────────────────────── */
   "/case-studies/growth": {
     keyword: "product growth case studies",

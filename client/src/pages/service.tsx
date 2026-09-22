@@ -173,12 +173,20 @@ export default function ServicePage() {
               and what you have already tried. That is usually enough for me to
               say whether I can help before we spend a call finding out.
             </p>
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors"
-            >
-              Work with Yogesh →
-            </Link>
+            <div className="flex flex-wrap items-center gap-4">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors"
+              >
+                Work with Yogesh →
+              </Link>
+              <Link
+                href="/product-growth-score"
+                className="text-primary font-medium underline underline-offset-2"
+              >
+                Or run the free 13-question diagnostic first
+              </Link>
+            </div>
           </section>
 
           <nav aria-label="Other services" className="mt-14 pt-8 border-t border-border">

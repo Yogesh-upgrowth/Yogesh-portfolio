@@ -2,12 +2,12 @@
 
 _Generated from the prerendered HTML in `dist/public`. This report is diagnostic only — thin pages are flagged for you to rewrite, never auto-padded._
 
-- Pages analyzed: **106**
-- Median word count: **1042**
+- Pages analyzed: **108**
+- Median word count: **1039**
 - Thin pages (<300 words): **0**
 - Pages whose H1 misses most of the keyword's terms: **0**
 - Pages whose copy barely covers the keyword at all: **0**
-- Pages missing the exact keyword phrase (weak signal, FYI): **51**
+- Pages missing the exact keyword phrase (weak signal, FYI): **52**
 - Case studies with fewer than 3 concrete metrics: **1**
 
 ## Thin content (<300 words) — rewrite candidates
@@ -131,11 +131,13 @@ _None._
 | `/case-study/user-acquisition-cac-30` | 2231 | 75% | 100% | no |
 | `/case-study/ux-redesign-conversion-28` | 1765 | 100% | 100% | no |
 | `/case-study/zero-cost-growth-engine` | 1646 | 100% | 100% | yes |
-| `/consumer-app-growth-consultant` | 710 | 100% | 100% | yes |
-| `/contact` | 613 | 100% | 100% | yes |
-| `/fintech-product-consultant` | 736 | 100% | 100% | yes |
+| `/consumer-app-growth-consultant` | 717 | 100% | 100% | yes |
+| `/contact` | 625 | 100% | 100% | yes |
+| `/fintech-product-consultant` | 743 | 100% | 100% | yes |
+| `/marketplace-product-consultant` | 703 | 67% | 100% | no |
 | `/product-growth-score` | 652 | 100% | 100% | yes |
-| `/product-monetisation-consultant` | 661 | 100% | 100% | yes |
+| `/product-monetisation-consultant` | 668 | 100% | 100% | yes |
+| `/saas-product-consultant` | 750 | 100% | 100% | yes |
 | `/work` | 666 | 100% | 100% | yes |
 | `/work/carinfo` | 6355 | 50% | 100% | no |
 | `/work/knipex` | 6077 | 75% | 100% | no |

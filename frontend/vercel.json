@@ -1,5 +1,19 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "installCommand": "npm install"
+  "installCommand": "npm install --no-audit --no-fund",
+  "trailingSlash": false,
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/blog/engineer-to-product-manager",
+      "destination": "/blog/pm-skills-gap-analysis",
+      "permanent": true
+    },
+    {
+      "source": "/blog/product-manager-resume-guide",
+      "destination": "/blog/building-pm-portfolio",
+      "permanent": true
+    }
+  ]
 }

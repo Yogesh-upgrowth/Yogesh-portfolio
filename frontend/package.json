@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "cd .. && npm install --no-audit --no-fund && npm run build:static && rm -rf frontend/dist && cp -r dist/public frontend/dist",
     "preview": "vite preview"
   },
   "dependencies": {

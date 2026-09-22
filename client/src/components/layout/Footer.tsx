@@ -41,6 +41,11 @@ export default function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link href="/product-growth-score" className="text-white/70 hover:text-white transition-colors">
+                Product Growth Score
+              </Link>
+            </li>
           </ul>
         </nav>
 

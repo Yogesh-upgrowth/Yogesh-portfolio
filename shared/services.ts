@@ -9,9 +9,17 @@
  * has none by default.
  *
  * So a vertical earns a page only when there is enough published work behind it
- * to say something specific. Fintech (9 case studies), consumer apps (9) and
- * monetisation (4) clear that bar. Marketplaces (2) and SaaS (0) do not, and are
- * omitted until the proof exists.
+ * to say something specific, and every page is anchored to case studies that
+ * carry real figures.
+ *
+ * Marketplaces was initially skipped on a miscount \u2014 the remittance and
+ * comparison-platform work was missed \u2014 and has five genuine case studies.
+ *
+ * The SaaS page is the weakest of the five and says so in its own opening
+ * paragraph: there is no subscription-SaaS case study here, so it is scoped to
+ * the B2B platform and lead-conversion work that is actually evidenced rather
+ * than claiming trial-conversion or NRR experience. It should be the first page
+ * to get a real case study behind it.
  *
  * script/check-services.ts enforces the minimum and verifies every cited case
  * study is real.
@@ -182,6 +190,74 @@ export const SERVICES: Service[] = [
       "user-acquisition-cac-30",
     ],
     relatedPosts: ["monetization-models-digital-products", "balancing-growth-monetization"],
+  },
+  {
+    slug: "marketplace-product-consultant",
+    heading: "Marketplace & Comparison Platform Consultant",
+    intro: [
+      "Comparison platforms look like content problems and are actually data problems. The interface is the easy part; keeping upstream prices, rates and availability honest at scale is what decides whether anyone returns, and it is where most of these products quietly fail.",
+      "The work here covers a real-time cab fare engine aggregating across Uber, Ola and InDrive, a remittance comparison platform built for the Indian market, and scaling one of them from 1K to 100K monthly users on organic acquisition alone.",
+    ],
+    workItems: [
+      {
+        title: "Aggregation is an operations problem, not a UI problem",
+        body: "Real-time fare comparison across three ride-hailing platforms reached 80K monthly active users and 38% D30 retention, with surge prediction at 88% accuracy. The hard part was never the comparison table.",
+      },
+      {
+        title: "Make the comparison finish, not just load",
+        body: "A remittance comparison platform for India reached 180K monthly active users and 3.8x application completion across five languages. Users comparing money transfers abandon at the handoff, so that is the step to instrument first.",
+      },
+      {
+        title: "Own the query before the competitor does",
+        body: "Mapping what competitors ranked for, and where their coverage was shallow enough to beat, produced 10x traffic growth, 100+ top-10 keywords and 3x comparison clicks on MoneyRateFinder.",
+      },
+      {
+        title: "Grow on pages that compound, not spend",
+        body: "Scaling the same product from 1K to 100K monthly users meant 92x traffic growth across 4,700 indexed pages and 1,850 top-10 keywords \u2014 an acquisition channel whose marginal cost approaches zero.",
+      },
+    ],
+    caseStudies: [
+      "cab-fare-comparison-engine",
+      "comparison-platform-india",
+      "seo-moat-remittance",
+      "scaling-moneyratefinder-growth",
+      "programmatic-seo-calculators",
+    ],
+    relatedPosts: ["programmatic-seo-guide", "growth-loops-product-management"],
+  },
+  {
+    slug: "saas-product-consultant",
+    heading: "B2B & SaaS Product Consultant",
+    intro: [
+      "A caveat worth stating before you read further: the deepest published work on this site is consumer and fintech, not subscription SaaS. If your question is specifically about trial conversion, net revenue retention or seat expansion, that is a different problem from the ones documented below, and you should ask me directly what I have actually done rather than take a service page's word for it.",
+      "What the work here does cover is the B2B side of platform products: systems that hold under transaction volume, lead conversion engines that move real revenue, and the operational architecture underneath both. That is usually what breaks first in a B2B product, and it is what the case studies below are about.",
+    ],
+    workItems: [
+      {
+        title: "Build for the volume that breaks things",
+        body: "A CRM that collapsed at 22K transactions, rebuilt to handle 180K+ monthly at 99.6% uptime \u2014 10x transaction capacity. B2B platforms fail at the architectural seams, not in the feature list.",
+      },
+      {
+        title: "Convert leads with scoring, not with follow-up volume",
+        body: "A real-time intent scoring engine produced \u20b94.2Cr of incremental revenue and a 10x conversion lift, by acting on which leads were worth attention rather than working the whole list harder.",
+      },
+      {
+        title: "Make the platform's own messaging earn its place",
+        body: "A trigger-based notification system for 1M+ users lifted revenue per user 34% while cutting unsubscribes 61% \u2014 engagement infrastructure that adds revenue without costing trust.",
+      },
+      {
+        title: "Validate before building the roadmap",
+        body: "An MVP shipped in 7 days, instrumented from day one: 11.4% email capture, 6.2% pricing page click-through, 29% D3 return. Scoping discipline is the transferable part, not the speed.",
+      },
+    ],
+    caseStudies: [
+      "crm-180k-transactions",
+      "real-time-intent-scoring-engine",
+      "scalable-notification-system",
+      "mvp-in-7-days",
+      "ai-recommendation-engine",
+    ],
+    relatedPosts: ["writing-effective-prds-guide", "product-led-growth-guide"],
   },
 ];
 
