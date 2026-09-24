@@ -5,6 +5,9 @@ import gitDates from "@shared/git-dates.json";
 /** Stable @id for the single Person node, referenced as author across the site. */
 export const PERSON_ID = `${SITE_URL}/#person`;
 
+/** The author/profile page every article's author URL resolves to. */
+export const AUTHOR_PROFILE_PATH = "/about-yogesh-yadav";
+
 /**
  * Single source of truth for off-site identity. Google resolves a person as an
  * entity by corroborating the same profile URLs across a site; three different
@@ -137,7 +140,8 @@ export function personSchema() {
     "@type": "Person",
     "@id": PERSON_ID,
     name: "Yogesh Yadav",
-    url: `${SITE_URL}/`,
+    url: `${SITE_URL}${AUTHOR_PROFILE_PATH}`,
+    mainEntityOfPage: `${SITE_URL}${AUTHOR_PROFILE_PATH}`,
     image: DEFAULT_OG_IMAGE,
     jobTitle: "Product Growth & Monetisation Consultant",
     description:
@@ -260,7 +264,9 @@ export function articleSchema(opts: {
       "@type": "Person",
       "@id": PERSON_ID,
       name: opts.author || "Yogesh Yadav",
-      url: `${SITE_URL}/`,
+      // Google recommends an author URL pointing at a dedicated profile page,
+      // not the site root, so the author resolves to one entity.
+      url: `${SITE_URL}${AUTHOR_PROFILE_PATH}`,
     },
     publisher: {
       "@type": "Person",

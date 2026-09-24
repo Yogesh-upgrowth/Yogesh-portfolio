@@ -6,6 +6,7 @@ const footerLinks = [
   { name: "Work With Me", href: "/work" },
   { name: "Case Studies", href: "/case-studies" },
   { name: "Blog", href: "/blog" },
+  { name: "About", href: "/about-yogesh-yadav" },
   { name: "Contact", href: "/contact" },
 ];
 

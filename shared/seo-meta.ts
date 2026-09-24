@@ -49,6 +49,12 @@ export const PAGE_SEO: Record<string, PageSeo> = {
       "Get in touch with Yogesh Yadav for product growth, monetisation, SEO strategy and fintech advisory. Based in India. Response within 24 hours.",
   },
 
+  "/about-yogesh-yadav": {
+    keyword: "Yogesh Yadav product consultant",
+    title: "About Yogesh Yadav \u2014 Product Growth Consultant",
+    description:
+      "Nine years on consumer and fintech products in India \u2014 Loanwiser, CarInfo, KNIPEX and UpGrowth. What I work on, how I work, and where every figure on this site comes from.",
+  },
   "/product-growth-score": {
     keyword: "product growth score",
     title: "Product Growth Score \u2014 Free Diagnostic",

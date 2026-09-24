@@ -2,12 +2,12 @@
 
 _Generated from the prerendered HTML in `dist/public`. This report is diagnostic only — thin pages are flagged for you to rewrite, never auto-padded._
 
-- Pages analyzed: **108**
-- Median word count: **1039**
+- Pages analyzed: **109**
+- Median word count: **1034**
 - Thin pages (<300 words): **0**
 - Pages whose H1 misses most of the keyword's terms: **0**
 - Pages whose copy barely covers the keyword at all: **0**
-- Pages missing the exact keyword phrase (weak signal, FYI): **52**
+- Pages missing the exact keyword phrase (weak signal, FYI): **53**
 - Case studies with fewer than 3 concrete metrics: **1**
 
 ## Thin content (<300 words) — rewrite candidates
@@ -36,6 +36,7 @@ _None._
 | Page | Words | Keyword in H1 | Keyword in copy | Exact phrase |
 |---|---|---|---|---|
 | `/` | 552 | 100% | 100% | yes |
+| `/about-yogesh-yadav` | 600 | 50% | 100% | no |
 | `/blog` | 2016 | 67% | 100% | yes |
 | `/blog/ab-testing-product-decisions` | 589 | 100% | 100% | no |
 | `/blog/activation-metrics-product-growth` | 851 | 100% | 100% | yes |

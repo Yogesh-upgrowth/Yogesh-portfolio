@@ -9,6 +9,7 @@ import NotFound from "@/pages/not-found";
 import { Seo, articleSchema, breadcrumbSchema, getModifiedDate } from "@/lib/seo";
 import { getPageSeo } from "@shared/seo-meta";
 import { SITE_URL } from "@shared/seo-data";
+import { ABOUT_PATH } from "@/pages/about";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { caseStudies } from "@/data/caseStudies";
 
@@ -151,9 +152,29 @@ export default function BlogPost() {
               <span className="flex items-center"><Clock className="mr-2 h-4 w-4" /> {post.readTime}</span>
             </div>
             
-            <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight mb-8">
+            <h1 className="text-3xl md:text-5xl font-serif font-bold leading-tight mb-6">
               {post.title}
             </h1>
+
+            {/* Visible byline pointing at the author profile the Article
+                schema's author URL also resolves to, so the human-readable
+                attribution and the structured data agree. */}
+            <div className="flex items-baseline gap-2 flex-wrap mb-8 pb-8 border-b border-border">
+              <p className="text-sm">
+                <span className="text-muted-foreground">Written by </span>
+                <Link
+                  href={ABOUT_PATH}
+                  rel="author"
+                  className="font-semibold text-primary underline underline-offset-2"
+                >
+                  {post.author || "Yogesh Yadav"}
+                </Link>
+                <span className="text-muted-foreground">
+                  {" "}— nine years on consumer and fintech products, working on
+                  growth and monetisation.
+                </span>
+              </p>
+            </div>
 
             <div className="aspect-[2/1] w-full rounded-2xl overflow-hidden mb-12 border border-border/50 bg-muted">
               <img 

@@ -10,6 +10,7 @@ const CaseStudies = lazy(() => import("@/pages/case-studies"));
 const CaseStudyTopic = lazy(() => import("@/pages/case-study-topic"));
 const ServicePage = lazy(() => import("@/pages/service"));
 const GrowthScore = lazy(() => import("@/pages/growth-score"));
+const About = lazy(() => import("@/pages/about"));
 const CaseStudyDetail = lazy(() => import("@/pages/case-study"));
 const ContactPage = lazy(() => import("@/pages/contact"));
 const Work = lazy(() => import("@/pages/work"));
@@ -37,6 +38,7 @@ function Router() {
       <Route path="/contact" component={() => <Suspense fallback={<PageLoader />}><ContactPage /></Suspense>} />
       <Route path="/work" component={() => <Suspense fallback={<PageLoader />}><Work /></Suspense>} />
       <Route path="/work/:slug" component={() => <Suspense fallback={<PageLoader />}><CompanyStory /></Suspense>} />
+      <Route path="/about-yogesh-yadav" component={() => <Suspense fallback={<PageLoader />}><About /></Suspense>} />
       <Route path="/product-growth-score" component={() => <Suspense fallback={<PageLoader />}><GrowthScore /></Suspense>} />
       <Route path="/consulting/:slug" component={() => <Suspense fallback={<PageLoader />}><ServicePage /></Suspense>} />
       <Route component={NotFound} />

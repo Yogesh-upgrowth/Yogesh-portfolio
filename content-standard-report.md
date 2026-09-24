@@ -2,9 +2,9 @@
 
 _Generated from the prerendered HTML. Nav, header and footer are excluded from the count._
 
-- Pages measured: **103** (functional pages are exempt)
+- Pages measured: **104** (functional pages are exempt)
 - Meeting the minimum: **20**
-- Short: **83**, by **40,423** words in total
+- Short: **84**, by **41,825** words in total
 
 A short page is not automatically a problem. Where the first-hand material to
 fill it does not exist yet, the page staying short is the correct outcome —
@@ -21,6 +21,7 @@ scaled-content guidance describes.
 | `/case-studies/machine-learning` | core | 422 | 2000 | 1578 |
 | `/case-studies/growth` | core | 437 | 2000 | 1563 |
 | `/` | core | 555 | 2000 | 1445 |
+| `/about-yogesh-yadav` | core | 598 | 2000 | 1402 |
 | `/consulting/product-monetisation-consultant` | core | 668 | 2000 | 1332 |
 | `/consulting/marketplace-product-consultant` | core | 703 | 2000 | 1297 |
 | `/consulting/consumer-app-growth-consultant` | core | 719 | 2000 | 1281 |
@@ -104,6 +105,7 @@ scaled-content guidance describes.
 | Page | Type | Words | Minimum |
 |---|---|---|---|
 | `/` | core | 555 | 2000 |
+| `/about-yogesh-yadav` | core | 598 | 2000 |
 | `/blog/ab-testing-product-decisions` | article | 595 | 1200 |
 | `/blog/activation-metrics-product-growth` | article | 856 | 1200 |
 | `/blog/agile-vs-scrum-vs-kanban` | article | 896 | 1200 |
