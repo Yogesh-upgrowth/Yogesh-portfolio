@@ -14,9 +14,17 @@ import { SITE_URL } from "@shared/seo-data";
 import { servicePath } from "@shared/services";
 import { Seo, breadcrumbSchema, getModifiedDate } from "@/lib/seo";
 
+function unitize(n: number, unit: Datapoint["unit"]): string {
+  if (unit === "percent") return `${n}%`;
+  if (unit === "usd") return `$${n}`;
+  if (unit === "inr") return `₹${n}`;
+  return `${n}×`;
+}
+
 function fmt(d: Datapoint): string {
-  const s = Array.isArray(d.value) ? `${d.value[0]}–${d.value[1]}` : String(d.value);
-  return d.unit === "percent" ? `${s}%` : s;
+  return Array.isArray(d.value)
+    ? `${unitize(d.value[0], d.unit)}–${unitize(d.value[1], d.unit)}`
+    : unitize(d.value, d.unit);
 }
 
 /** Widest span across all reported figures — the honest headline. */
@@ -35,9 +43,16 @@ export default function BenchmarkPage() {
 
   const path = `/benchmarks/${key}`;
   const [lo, hi] = spread(points);
+  const unit = points[0].unit;
+  const headline = lo === hi ? unitize(lo, unit) : `${unitize(lo, unit)}–${unitize(hi, unit)}`;
+  // Mixed units in one cell (e.g. monthly and annual ARPU) make a single span
+  // meaningless, so the headline is suppressed rather than quietly misleading.
+  const mixedUnits =
+    new Set(points.map((p) => p.unit)).size > 1 ||
+    new Set(points.map((p) => p.basis ?? "")).size > 1;
   const disputed = points.length > 1;
   const title = `${metric.name} benchmark for ${industry.name} apps`;
-  const description = `Published ${metric.name.toLowerCase()} benchmarks for ${industry.name.toLowerCase()} apps range from ${lo}% to ${hi}%${
+  const description = `Published ${metric.name.toLowerCase()} benchmarks for ${industry.name.toLowerCase()} apps${mixedUnits ? " are reported on different bases" : ` range ${headline}`}${
     disputed ? " across sources that disagree" : ""
   } — with every figure traced to its publisher.`;
 
@@ -86,7 +101,7 @@ export default function BenchmarkPage() {
               Published range
             </p>
             <p className="text-5xl font-serif font-bold mb-3">
-              {lo === hi ? `${lo}%` : `${lo}–${hi}%`}
+              {mixedUnits ? "Not comparable" : headline}
             </p>
             <p className="text-muted-foreground">
               {disputed
@@ -155,6 +170,7 @@ export default function BenchmarkPage() {
             <p className="text-muted-foreground">{metric.measurementTrap}</p>
           </section>
 
+          {metric.slug.endsWith("-retention") && (
           <section aria-labelledby="context-heading" className="mb-12 pt-10 border-t border-border">
             <h2 id="context-heading" className="text-2xl font-serif font-bold mb-6">
               Three things that change how you should read this
@@ -178,6 +194,7 @@ export default function BenchmarkPage() {
               ))}
             </dl>
           </section>
+          )}
 
           <section className="pt-10 border-t border-border">
             <h2 className="text-2xl font-serif font-bold mb-3">

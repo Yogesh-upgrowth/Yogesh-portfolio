@@ -2,9 +2,9 @@
 
 _Generated from the prerendered HTML. Nav, header and footer are excluded from the count._
 
-- Pages measured: **118** (functional pages are exempt)
+- Pages measured: **126** (functional pages are exempt)
 - Meeting the minimum: **20**
-- Short: **98**, by **43,982** words in total
+- Short: **106**, by **45,764** words in total
 
 A short page is not automatically a problem. Where the first-hand material to
 fill it does not exist yet, the page staying short is the correct outcome —
@@ -69,10 +69,13 @@ scaled-content guidance describes.
 | `/case-study/zero-cost-growth-engine` | case-study | 1662 | 2000 | 338 |
 | `/blog/future-role-pms-ai-world` | article | 867 | 1200 | 333 |
 | `/case-study/comparison-platform-india` | case-study | 1670 | 2000 | 330 |
+| `/benchmarks/install-to-purchase/travel` | benchmark | 185 | 500 | 315 |
 | `/case-study/ml-reduce-cac-segmentation` | case-study | 1689 | 2000 | 311 |
 | `/case-study/funnel-dropoff-ux-optimization` | case-study | 1693 | 2000 | 307 |
 | `/blog/ai-tools-product-managers` | article | 895 | 1200 | 305 |
 | `/blog/agile-vs-scrum-vs-kanban` | article | 896 | 1200 | 304 |
+| `/benchmarks/app-store-conversion/entertainment` | benchmark | 203 | 500 | 297 |
+| `/benchmarks/app-store-conversion/medical` | benchmark | 205 | 500 | 295 |
 | `/case-study/scalable-notification-system` | case-study | 1706 | 2000 | 294 |
 | `/blog/metrics-that-matter-product-managers` | article | 914 | 1200 | 286 |
 | `/blog/monetization-models-digital-products` | article | 919 | 1200 | 281 |
@@ -84,21 +87,26 @@ scaled-content guidance describes.
 | `/case-study/ml-ux-growth-3x-conversion` | case-study | 1784 | 2000 | 216 |
 | `/case-study/cab-fare-comparison-engine` | case-study | 1787 | 2000 | 213 |
 | `/case-study/ux-redesign-conversion-28` | case-study | 1792 | 2000 | 208 |
+| `/benchmarks/install-to-purchase/ecommerce` | benchmark | 297 | 500 | 203 |
 | `/case-study/ai-recommendation-engine` | case-study | 1798 | 2000 | 202 |
 | `/benchmarks/d7-retention/fintech` | benchmark | 315 | 500 | 185 |
 | `/benchmarks/d7-retention/ecommerce` | benchmark | 315 | 500 | 185 |
 | `/benchmarks/d7-retention/health-fitness` | benchmark | 315 | 500 | 185 |
 | `/benchmarks/d7-retention/gaming` | benchmark | 317 | 500 | 183 |
 | `/benchmarks/d30-retention/productivity` | benchmark | 318 | 500 | 182 |
+| `/benchmarks/trial-to-paid/subscription-apps` | benchmark | 319 | 500 | 181 |
 | `/benchmarks/d30-retention/health-fitness` | benchmark | 320 | 500 | 180 |
 | `/benchmarks/d30-retention/social` | benchmark | 320 | 500 | 180 |
 | `/blog/prioritization-frameworks-every-pm` | article | 1024 | 1200 | 176 |
+| `/benchmarks/arpu/gaming` | benchmark | 325 | 500 | 175 |
 | `/benchmarks/d1-retention/ecommerce` | benchmark | 330 | 500 | 170 |
 | `/benchmarks/d1-retention/health-fitness` | benchmark | 330 | 500 | 170 |
 | `/case-study/real-time-intent-scoring-engine` | case-study | 1833 | 2000 | 167 |
 | `/benchmarks/d1-retention/gaming` | benchmark | 334 | 500 | 166 |
 | `/case-study/predict-user-dropoff-churn-model` | case-study | 1835 | 2000 | 165 |
 | `/blog/programmatic-seo-guide` | article | 1041 | 1200 | 159 |
+| `/benchmarks/app-store-conversion/subscription-apps` | benchmark | 342 | 500 | 158 |
+| `/benchmarks/arpu/subscription-apps` | benchmark | 342 | 500 | 158 |
 | `/blog/writing-effective-prds-guide` | article | 1044 | 1200 | 156 |
 | `/blog/data-driven-product-management` | article | 1046 | 1200 | 154 |
 | `/case-study/finance-calculator-app-retention` | case-study | 1848 | 2000 | 152 |
@@ -120,6 +128,11 @@ scaled-content guidance describes.
 |---|---|---|---|
 | `/` | core | 440 | 2000 |
 | `/about-yogesh-yadav` | core | 598 | 2000 |
+| `/benchmarks/app-store-conversion/entertainment` | benchmark | 203 | 500 |
+| `/benchmarks/app-store-conversion/medical` | benchmark | 205 | 500 |
+| `/benchmarks/app-store-conversion/subscription-apps` | benchmark | 342 | 500 |
+| `/benchmarks/arpu/gaming` | benchmark | 325 | 500 |
+| `/benchmarks/arpu/subscription-apps` | benchmark | 342 | 500 |
 | `/benchmarks/d1-retention/ecommerce` | benchmark | 330 | 500 |
 | `/benchmarks/d1-retention/fintech` | benchmark | 447 | 500 |
 | `/benchmarks/d1-retention/gaming` | benchmark | 334 | 500 |
@@ -134,6 +147,9 @@ scaled-content guidance describes.
 | `/benchmarks/d7-retention/fintech` | benchmark | 315 | 500 |
 | `/benchmarks/d7-retention/gaming` | benchmark | 317 | 500 |
 | `/benchmarks/d7-retention/health-fitness` | benchmark | 315 | 500 |
+| `/benchmarks/install-to-purchase/ecommerce` | benchmark | 297 | 500 |
+| `/benchmarks/install-to-purchase/travel` | benchmark | 185 | 500 |
+| `/benchmarks/trial-to-paid/subscription-apps` | benchmark | 319 | 500 |
 | `/blog/ab-testing-product-decisions` | article | 595 | 1200 |
 | `/blog/activation-metrics-product-growth` | article | 856 | 1200 |
 | `/blog/agile-vs-scrum-vs-kanban` | article | 896 | 1200 |

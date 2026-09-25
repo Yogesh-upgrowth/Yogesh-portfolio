@@ -28,6 +28,8 @@ export interface Datapoint {
   /** Single value, or a low-high range where the source gives one. */
   value: number | [number, number];
   unit: "percent" | "usd" | "inr" | "ratio";
+  /** The period the figure covers. Figures on different bases must not be spanned. */
+  basis?: "daily" | "monthly" | "annual" | "cohort";
   source: Source;
   /** Qualifier that must travel with the number, e.g. "subscription apps only". */
   qualifier?: string;
@@ -71,6 +73,37 @@ export const METRICS: BenchmarkMetric[] = [
     measurementTrap:
       "D30 is where published benchmarks diverge most, because it is most sensitive to whether a cohort is paid or organic. A benchmark drawn mostly from paid installs will sit far below one drawn from organic.",
   },
+  {
+    slug: "install-to-purchase",
+    name: "Install-to-purchase conversion",
+    definition:
+      "The share of installs that go on to make a first purchase.",
+    measurementTrap:
+      "Almost every published figure here omits the window. A 1.4% rate over 90 days and a 1.4% rate over 7 days describe very different products, and sources rarely say which they measured.",
+  },
+  {
+    slug: "app-store-conversion",
+    name: "App store conversion rate",
+    definition:
+      "The share of people who install after encountering your store listing.",
+    measurementTrap:
+      "This is the worst-defined metric in mobile. Impression-to-install runs around 3.6%; page-view-to-install runs around 8.56%. Both get published as \"app store conversion rate\", and the second is more than double the first. Check which one a benchmark means before comparing.",
+  },
+  {
+    slug: "arpu",
+    name: "Average revenue per user",
+    definition: "Revenue divided by users over a period.",
+    measurementTrap:
+      "Published ARPU mixes monthly and annual figures without saying so \u2014 gaming ARPU is often quoted annually, subscription ARPU monthly. A 7x difference between two numbers can be nothing more than the period. It also varies by whether the denominator is all users or paying users.",
+  },
+  {
+    slug: "trial-to-paid",
+    name: "Trial-to-paid conversion",
+    definition:
+      "The share of users starting a free trial who convert to a paid subscription.",
+    measurementTrap:
+      "Trial-to-paid looks healthy in isolation while the install-to-trial step quietly fails. The two must be read together: 60% of a trial cohort that is 3% of installs is a worse business than 40% of a cohort that is 25%.",
+  },
 ];
 
 export const INDUSTRIES: BenchmarkIndustry[] = [
@@ -80,10 +113,45 @@ export const INDUSTRIES: BenchmarkIndustry[] = [
   { slug: "health-fitness", name: "Health & fitness" },
   { slug: "social", name: "Social & communication" },
   { slug: "productivity", name: "Productivity" },
+  { slug: "travel", name: "Travel" },
+  { slug: "entertainment", name: "Entertainment" },
+  { slug: "medical", name: "Medical & healthcare" },
+  { slug: "subscription-apps", name: "Subscription apps" },
 ];
 
 /** Keyed `${metric}/${industry}`. Multiple datapoints per cell is the point. */
 export const DATA: Record<string, Datapoint[]> = {
+  "install-to-purchase/ecommerce": [
+    { value: 1.38, unit: "percent", qualifier: "Reported for retail apps", source: { publisher: "Insider Intelligence / EMARKETER", url: "https://www.insiderintelligence.com/industry-kpis/64c7cf56505e09bb76835eeb", asOf: "2026" }, needsPrimaryCheck: true },
+    { value: [1, 2], unit: "percent", qualifier: "The cross-category range most apps fall in", source: { publisher: "UXCam", url: "https://uxcam.com/blog/mobile-app-conversion-rate/", asOf: "2026" }, needsPrimaryCheck: true },
+  ],
+  "install-to-purchase/travel": [
+    { value: 2.41, unit: "percent", source: { publisher: "Insider Intelligence / EMARKETER", url: "https://www.insiderintelligence.com/industry-kpis/64c7cf56505e09bb76835eeb", asOf: "2026" }, needsPrimaryCheck: true },
+  ],
+  "app-store-conversion/medical": [
+    { value: 7.8, unit: "percent", qualifier: "Highest of any iOS category, impression-to-install", source: { publisher: "SEM Nexus", url: "https://semnexus.com/app-store-conversion-funnel-impression-to-install-benchmarks-2026", asOf: "2026" }, needsPrimaryCheck: true },
+  ],
+  "app-store-conversion/entertainment": [
+    { value: 1.1, unit: "percent", qualifier: "Lowest of any iOS category, impression-to-install", source: { publisher: "SEM Nexus", url: "https://semnexus.com/app-store-conversion-funnel-impression-to-install-benchmarks-2026", asOf: "2026" }, needsPrimaryCheck: true },
+  ],
+  "app-store-conversion/subscription-apps": [
+    { value: 3.6, unit: "percent", qualifier: "App Store, impression-to-install, all categories", source: { publisher: "Business of Apps, App Conversion Rates", url: "https://www.businessofapps.com/data/app-conversion-rates/", asOf: "2026" }, needsPrimaryCheck: true },
+    { value: 3.8, unit: "percent", qualifier: "US data published May 2026, impression-based", source: { publisher: "AppTweak", url: "https://www.apptweak.com/en/aso-blog/average-app-conversion-rate-per-category", asOf: "2026" }, needsPrimaryCheck: true },
+    { value: 8.56, unit: "percent", qualifier: "Page-view-to-install \u2014 a different funnel step, routinely published under the same name. Food & Drink reaches 52.8%; Games-Trivia 5.2%.", source: { publisher: "Adapty", url: "https://adapty.io/blog/app-store-conversion-rate/", asOf: "2026" }, needsPrimaryCheck: true },
+  ],
+  "arpu/subscription-apps": [
+    { value: 8.41, unit: "usd", basis: "monthly", qualifier: "Average monthly subscription ARPU", source: { publisher: "AppsFlyer, State of App Monetization", url: "https://www.appsflyer.com/resources/reports/app-marketing-monetization-report/", asOf: "2026" }, needsPrimaryCheck: true },
+    { value: [3, 9], unit: "usd", basis: "monthly", qualifier: "Typical monthly range for subscription apps", source: { publisher: "AppsFlyer, State of App Monetization", url: "https://www.appsflyer.com/resources/reports/app-marketing-monetization-report/", asOf: "2026" }, needsPrimaryCheck: true },
+    { value: [0.5, 1], unit: "usd", basis: "monthly", qualifier: "Ad-supported apps, monthly \u2014 roughly an order of magnitude below subscription", source: { publisher: "AppsFlyer, State of App Monetization", url: "https://www.appsflyer.com/resources/reports/app-marketing-monetization-report/", asOf: "2026" }, needsPrimaryCheck: true },
+  ],
+  "arpu/gaming": [
+    { value: 57.64, unit: "usd", basis: "annual", qualifier: "Annual, not monthly \u2014 do not compare directly against the monthly subscription figures", source: { publisher: "Perkox, ARPDAU Benchmarks", url: "https://blog.perkox.com/2026/08/arpdau-benchmarks-2026/", asOf: "2026" }, needsPrimaryCheck: true },
+    { value: [0.02, 0.5], unit: "usd", basis: "daily", qualifier: "ARPDAU by sub-genre: hyper-casual 0.02\u20130.05, casual 0.05\u20130.15, mid-core 0.10\u20130.30, hardcore 0.15\u20130.50", source: { publisher: "Perkox, ARPDAU Benchmarks", url: "https://blog.perkox.com/2026/08/arpdau-benchmarks-2026/", asOf: "2026" }, needsPrimaryCheck: true },
+  ],
+  "trial-to-paid/subscription-apps": [
+    { value: [40, 65], unit: "percent", qualifier: "Trial to paid, for apps described as healthy", source: { publisher: "AppsFlyer, State of App Monetization", url: "https://www.appsflyer.com/resources/reports/app-marketing-monetization-report/", asOf: "2026" }, needsPrimaryCheck: true },
+    { value: [15, 30], unit: "percent", qualifier: "The preceding step \u2014 install to trial. Read the two together.", source: { publisher: "AppsFlyer, State of App Monetization", url: "https://www.appsflyer.com/resources/reports/app-marketing-monetization-report/", asOf: "2026" }, needsPrimaryCheck: true },
+  ],
   "d1-retention/fintech": [
     {
       value: [22, 30],

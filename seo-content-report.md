@@ -2,9 +2,9 @@
 
 _Generated from the prerendered HTML in `dist/public`. This report is diagnostic only — thin pages are flagged for you to rewrite, never auto-padded._
 
-- Pages analyzed: **124**
-- Median word count: **863**
-- Thin pages (<300 words): **1**
+- Pages analyzed: **132**
+- Median word count: **848**
+- Thin pages (<300 words): **4**
 - Pages whose H1 misses most of the keyword's terms: **0**
 - Pages whose copy barely covers the keyword at all: **0**
 - Pages missing the exact keyword phrase (weak signal, FYI): **54**
@@ -14,7 +14,10 @@ _Generated from the prerendered HTML in `dist/public`. This report is diagnostic
 
 | Page | Words |
 |---|---|
-| `/benchmarks` | 296 |
+| `/benchmarks/install-to-purchase/travel` | 184 |
+| `/benchmarks/app-store-conversion/entertainment` | 202 |
+| `/benchmarks/app-store-conversion/medical` | 206 |
+| `/benchmarks/install-to-purchase/ecommerce` | 297 |
 
 ## Keyword/H1 misalignment — fix the H1 or retarget the keyword
 
@@ -39,7 +42,12 @@ _None._
 |---|---|---|---|---|
 | `/` | 436 | 100% | 100% | yes |
 | `/about-yogesh-yadav` | 600 | 50% | 100% | no |
-| `/benchmarks` | 296 | 100% | 100% | no |
+| `/benchmarks` | 390 | 100% | 100% | no |
+| `/benchmarks/app-store-conversion/entertainment` | 202 | 100% | 100% | yes |
+| `/benchmarks/app-store-conversion/medical` | 206 | 100% | 100% | yes |
+| `/benchmarks/app-store-conversion/subscription-apps` | 340 | 100% | 100% | yes |
+| `/benchmarks/arpu/gaming` | 323 | 100% | 100% | yes |
+| `/benchmarks/arpu/subscription-apps` | 339 | 100% | 100% | yes |
 | `/benchmarks/d1-retention/ecommerce` | 331 | 100% | 100% | yes |
 | `/benchmarks/d1-retention/fintech` | 448 | 100% | 100% | yes |
 | `/benchmarks/d1-retention/gaming` | 333 | 100% | 100% | yes |
@@ -54,6 +62,9 @@ _None._
 | `/benchmarks/d7-retention/fintech` | 314 | 100% | 100% | yes |
 | `/benchmarks/d7-retention/gaming` | 314 | 100% | 100% | yes |
 | `/benchmarks/d7-retention/health-fitness` | 314 | 100% | 100% | yes |
+| `/benchmarks/install-to-purchase/ecommerce` | 297 | 100% | 100% | yes |
+| `/benchmarks/install-to-purchase/travel` | 184 | 100% | 100% | yes |
+| `/benchmarks/trial-to-paid/subscription-apps` | 317 | 100% | 100% | yes |
 | `/blog` | 2016 | 67% | 100% | yes |
 | `/blog/ab-testing-product-decisions` | 589 | 100% | 100% | no |
 | `/blog/activation-metrics-product-growth` | 851 | 100% | 100% | yes |
