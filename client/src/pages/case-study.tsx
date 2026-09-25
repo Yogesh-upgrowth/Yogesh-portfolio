@@ -7,6 +7,7 @@ import { ArrowLeft, ArrowRight, Clock, Calendar, User } from "lucide-react";
 import { caseStudies, categoryColors } from "@/data/caseStudies";
 import NotFound from "@/pages/not-found";
 import { Seo, articleSchema, breadcrumbSchema, toIsoDate, getModifiedDate, LINKEDIN_URL } from "@/lib/seo";
+import TopicalLinks from "@/components/TopicalLinks";
 import { getPageSeo } from "@shared/seo-meta";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { CASE_STUDY_METRICS } from "@/data/case-study-metrics";
@@ -547,6 +548,9 @@ export default function CaseStudyDetail() {
                 <ComingSoonContent study={study} />
               )}
               <RelatedCaseStudies currentSlug={slug} />
+              <TopicalLinks
+                signals={[study.title, study.description, study.category, ...study.tags]}
+              />
             </main>
           </div>
         </div>

@@ -10,6 +10,7 @@ import { Seo, articleSchema, breadcrumbSchema, getModifiedDate } from "@/lib/seo
 import { getPageSeo } from "@shared/seo-meta";
 import { SITE_URL } from "@shared/seo-data";
 import { ABOUT_PATH } from "@/pages/about";
+import TopicalLinks from "@/components/TopicalLinks";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { caseStudies } from "@/data/caseStudies";
 
@@ -233,6 +234,7 @@ export default function BlogPost() {
             </Button>
           </div>
 
+          <TopicalLinks signals={[post.title, post.description, post.category]} />
           <RelatedPosts slug={post.slug} category={post.category} />
           <RelatedCaseStudies category={post.category} />
 
