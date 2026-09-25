@@ -1,38 +1,15 @@
+import { PUBLISHABLE_TESTIMONIALS } from "@shared/testimonials";
 import { useState, useEffect, useCallback } from "react";
 import { useInView } from "@/hooks/useInView";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 
-const testimonials = [
-  {
-    name: "Rahul M.",
-    role: "CEO, FinTechStart",
-    initials: "RM",
-    quote:
-      "Yogesh completely transformed our monetization strategy. We went from struggling to convert free users to seeing a 300% increase in paid subscriptions within 3 months.",
-    highlight: "300% increase in paid subscriptions",
-    tag: "Monetisation",
-  },
-  {
-    name: "Sarah K.",
-    role: "VP of Growth, EcomScale",
-    initials: "SK",
-    quote:
-      "Working with Yogesh was the best investment we made this year. He rolled up his sleeves and helped us optimize our entire funnel. Our CAC dropped by 40%.",
-    highlight: "CAC dropped by 40%",
-    tag: "Growth",
-  },
-  {
-    name: "Amit V.",
-    role: "Founder, SaaSFlow",
-    initials: "AV",
-    quote:
-      "Yogesh brings a rare combination of data-driven rigor and creative problem solving. He helped us unlock a new revenue stream that now accounts for 20% of our MRR.",
-    highlight: "20% of our MRR",
-    tag: "Revenue",
-  },
-];
+const testimonials = PUBLISHABLE_TESTIMONIALS;
 
 export default function Testimonials() {
+  // Renders nothing until a verifiable testimonial exists. See shared/testimonials.ts
+  // for why the previous three were removed.
+  if (testimonials.length === 0) return null;
+
   const [featured, setFeatured] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const { ref: sectionRef, inView: sectionVisible } = useInView<HTMLDivElement>();
@@ -182,7 +159,7 @@ export default function Testimonials() {
               </div>
               <div>
                 <p className="font-serif font-bold text-white text-base">{featuredItem.name}</p>
-                <p className="text-white/60 text-xs font-medium mt-0.5">{featuredItem.role}</p>
+                <p className="text-white/60 text-xs font-medium mt-0.5">{featuredItem.attribution}</p>
               </div>
               <div className="ml-auto text-right hidden sm:block">
                 <p className="text-[11px] text-white/55 uppercase tracking-widest font-medium mb-1">Key Result</p>
@@ -229,7 +206,7 @@ export default function Testimonials() {
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="font-semibold text-sm text-foreground">{item.name}</p>
-                      <p className="text-xs text-muted-foreground">{item.role}</p>
+                      <p className="text-xs text-muted-foreground">{item.attribution}</p>
                     </div>
                     <ArrowRight className="h-4 w-4 text-muted-foreground/30 group-hover:text-primary group-hover:translate-x-0.5 transition-all shrink-0" />
                   </div>

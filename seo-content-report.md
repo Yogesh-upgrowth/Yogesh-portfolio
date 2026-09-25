@@ -35,7 +35,7 @@ _None._
 
 | Page | Words | Keyword in H1 | Keyword in copy | Exact phrase |
 |---|---|---|---|---|
-| `/` | 552 | 100% | 100% | yes |
+| `/` | 436 | 100% | 100% | yes |
 | `/about-yogesh-yadav` | 600 | 50% | 100% | no |
 | `/blog` | 2016 | 67% | 100% | yes |
 | `/blog/ab-testing-product-decisions` | 589 | 100% | 100% | no |
