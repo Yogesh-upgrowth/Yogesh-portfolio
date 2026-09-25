@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import { SITE_URL, DEFAULT_OG_IMAGE, OG_IMAGE_ALT, ogImageUrl } from "@shared/seo-data";
 import gitDates from "@shared/git-dates.json";
+import { profileSameAs, LIVE_PUBLIC_PROFILES } from "@shared/profiles";
 
 /** Stable @id for the single Person node, referenced as author across the site. */
 export const PERSON_ID = `${SITE_URL}/#person`;
@@ -17,7 +18,12 @@ export const AUTHOR_PROFILE_PATH = "/about-yogesh-yadav";
 export const LINKEDIN_URL = "https://www.linkedin.com/in/yogesh-productmanager/";
 export const CONTACT_EMAIL = "yogesh.productmanager@gmail.com";
 
-export const SAME_AS = [LINKEDIN_URL];
+/**
+ * sameAs is LinkedIn plus every off-site profile confirmed live and public.
+ * Profiles are added by shared/profiles.ts once they exist, never in advance:
+ * claiming an identity that does not resolve is worse than omitting it.
+ */
+export const SAME_AS = [LINKEDIN_URL, ...profileSameAs()];
 
 /** The git commit date (YYYY-MM-DD) of a route's source file, if known. */
 export function getModifiedDate(path: string): string | undefined {

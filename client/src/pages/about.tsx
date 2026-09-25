@@ -5,6 +5,7 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import { caseStudies } from "@/data/caseStudies";
 import { SERVICES, servicePath } from "@shared/services";
 import { PROOF } from "@shared/proof";
+import ProfilesElsewhere from "@/components/ProfilesElsewhere";
 import { SITE_URL, WORK_STORY_SLUGS } from "@shared/seo-data";
 import { getPageSeo } from "@shared/seo-meta";
 import {
@@ -241,6 +242,8 @@ export default function About() {
               is thirteen questions and takes about five minutes.
             </p>
           </section>
+
+          <ProfilesElsewhere />
 
           <section
             aria-labelledby="contact-heading"

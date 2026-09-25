@@ -1,0 +1,85 @@
+platform,domain,cat,tier,gate,public_profile,tier_label,deep_link_assigned,signup_url,profile_url_pattern,required_fields,char_limits,image_sizes,link_policy,link_slots,rel_observed,meta_robots,canonical,review_time,fee,kyc_docs,status,profile_url,link_present,rel,indexable,last_verified,leads,in_platform_rank_for_primary_term,badge_status,response_time_avg,reviews_count,review_avg,entry_orders,core_rate,last_rate_change,research_source_url,notes
+Upwork,upwork.com,MKT,1,ID+review,Y,Tier 1,/case-study/carinfo-45m-mau,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Contra,contra.com,MKT,1,OTP,Y,Tier 1,/case-study/seo-0-to-100k,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Fiverr Pro,fiverr.com,MKT,2,VET,Y,Tier 2,/case-study/insurance-funnel-1200-growth,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Fiverr,fiverr.com,MKT,3,OTP+ID,Y,Tier 3,/case-study/programmatic-seo-calculators,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+PeoplePerHour,peopleperhour.com,MKT,2,VET-light,Y,Tier 2,/case-study/rank-1-fintech-keywords,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Freelancer.com,freelancer.com,MKT,3,ID,Y,Tier 3,/case-study/seo-moat-remittance,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Guru,guru.com,MKT,3,OTP,Y,Tier 3,/case-study/growth-loop-repeat-users,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Truelancer,truelancer.com,MKT,3,OTP+ID,Y,Tier 3,/case-study/user-acquisition-cac-30,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Workana,workana.com,MKT,3,OTP,Y,Tier 3,/consulting/consumer-app-growth-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+FreeUp,freeup.net,MKT,3,VET,N,Tier 3,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Twine,twine.net,MKT,3,OTP,Y,Tier 3,/consulting/fintech-product-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Toptal,toptal.com,VET,1,VET,N,Tier 1,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Braintrust,usebraintrust.com,VET,1,VET,N,Tier 1,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+A.Team,a.team,VET,1,VET,N,Tier 1,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+MarketerHire,marketerhire.com,VET,1,VET,N,Tier 1,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Growth Collective,growthcollective.com,VET,1,VET,?,Tier 1,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Mayple,mayple.com,VET,2,VET,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Credo,getcredo.com,VET,2,VET+SUB,Y,Tier 2,/consulting/product-monetisation-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Hire Digital,hiredigital.com,VET,2,VET,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Uplers,uplers.com,VET,2,VET,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Flexiple,flexiple.com,VET,3,VET,N,Tier 3,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Flexing It,flexingit.com,CON,1,VET,N,Tier 1,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Outsized,outsized.com,CON,2,VET,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Catalant,gocatalant.com,CON,2,VET,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Business Talent Group,businesstalentgroup.com,CON,2,VET,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Graphite,graphite.com,CON,2,VET,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Talmix,talmix.com,CON,2,VET,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Malt,malt.com,CON,2,OTP+review,Y,Tier 2,/consulting/saas-product-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Consultport,consultport.com,CON,3,VET,N,Tier 3,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Movemeon,movemeon.com,CON,3,VET,N,Tier 3,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Expert360,expert360.com,CON,3,VET,N,Tier 3,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+YunoJuno,yunojuno.com,CON,3,VET,N,Tier 3,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Freelancermap,freelancermap.com,CON,3,OTP,Y,Tier 3,/consulting/marketplace-product-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+GLG,glginsights.com,EXP,1,VET+compliance,N,Tier 1,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+AlphaSights,alphasights.com,EXP,1,VET+compliance,N,Tier 1,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Guidepoint,guidepoint.com,EXP,1,VET+compliance,N,Tier 1,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Third Bridge,thirdbridge.com,EXP,2,VET+compliance,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Coleman Research,colemanrg.com,EXP,2,VET+compliance,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Dialectica,dialecticanet.com,EXP,2,VET+compliance,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Atheneum,atheneum.ai,EXP,2,VET+compliance,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+proSapient,prosapient.com,EXP,2,VET+compliance,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+NewtonX,newtonx.com,EXP,2,VET+compliance,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Techspert,techspert.com,EXP,2,VET+compliance,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+AlphaSense,alpha-sense.com,EXP,2,VET+compliance,N,Tier 2,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Arbolus,arbolus.com,EXP,3,VET+compliance,N,Tier 3,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Lynk,lynk.global,EXP,3,VET+compliance,N,Tier 3,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Office Hours,officehours.com,EXP,3,VET,?,Tier 3,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Topmate,topmate.io,1:1,1,OTP,Y,Tier 1,/product-growth-score,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+GrowthMentor,growthmentor.com,1:1,1,VET,Y,Tier 1,/case-study/carinfo-45m-mau,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+MentorCruise,mentorcruise.com,1:1,2,VET,Y,Tier 2,/case-study/seo-0-to-100k,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+ADPList,adplist.org,1:1,2,VET-light,Y,Tier 2,/case-study/insurance-funnel-1200-growth,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Intro,intro.co,1:1,2,VET,Y,Tier 2,/case-study/programmatic-seo-calculators,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Superpeer,superpeer.com,1:1,3,OTP,Y,Tier 3,/case-study/rank-1-fintech-keywords,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Clarity.fm,clarity.fm,1:1,3,OTP,Y,Tier 3,/case-study/seo-moat-remittance,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Plato,platohq.com,1:1,3,VET,N,Tier 3,,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Preplaced,preplaced.in,1:1,3,VET,Y,Tier 3,/case-study/growth-loop-repeat-users,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Clutch,clutch.co,DIR,1,REV,Y,Tier 1,/case-study/user-acquisition-cac-30,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+GoodFirms,goodfirms.co,DIR,1,REV,Y,Tier 1,/consulting/consumer-app-growth-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Google Business Profile,business.google.com,DIR,1,ID/video,Y,Tier 1,/consulting/fintech-product-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+The Manifest,themanifest.com,DIR,2,via Clutch,Y,Tier 2,/consulting/product-monetisation-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+DesignRush,designrush.com,DIR,2,REV/SUB,Y,Tier 2,/consulting/saas-product-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Semrush Agency Partners,agencies.semrush.com,DIR,2,SUB,Y,Tier 2,/consulting/marketplace-product-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Peerlist,peerlist.io,DIR,2,OTP,Y,Tier 2,/product-growth-score,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Behance,behance.net,DIR,2,OTP,Y,Tier 2,/case-study/carinfo-45m-mau,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+n8n Experts,n8n.io,DIR,2,partner,Y,Tier 2,/case-study/seo-0-to-100k,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Zapier Experts,zapier.com,DIR,3,VET,Y,Tier 3,/case-study/insurance-funnel-1200-growth,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Make Partners,make.com,DIR,3,partner,Y,Tier 3,/case-study/programmatic-seo-calculators,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Notion Consultants,notion.com,DIR,3,certification,Y,Tier 3,/case-study/rank-1-fintech-keywords,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Sortlist,sortlist.com,DIR,3,SUB,Y,Tier 3,/case-study/seo-moat-remittance,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+UpCity,upcity.com,DIR,3,REV/SUB,Y,Tier 3,/case-study/growth-loop-repeat-users,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Agency Spotter,agencyspotter.com,DIR,3,OTP,Y,Tier 3,/case-study/user-acquisition-cac-30,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+TechBehemoths,techbehemoths.com,DIR,3,OTP,Y,Tier 3,/consulting/consumer-app-growth-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+TopDevelopers,topdevelopers.co,DIR,3,OTP,Y,Tier 3,/consulting/fintech-product-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Bark,bark.com,DIR,3,OTP,Y,Tier 3,/consulting/product-monetisation-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+LinkedIn Services Marketplace,linkedin.com,JOB,1,OTP,Y,Tier 1,/consulting/saas-product-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Wellfound,wellfound.com,JOB,3,OTP,Y,Tier 3,/consulting/marketplace-product-consultant,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Crunchbase,crunchbase.com,ENT,1,OTP,Y,Tier 1,/product-growth-score,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+F6S,f6s.com,ENT,2,OTP,Y,Tier 2,/case-study/carinfo-45m-mau,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Product Hunt,producthunt.com,ENT,2,OTP,Y,Tier 2,/case-study/seo-0-to-100k,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Medium,medium.com,ENT,2,OTP,Y,Tier 2,/case-study/insurance-funnel-1200-growth,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+Substack,substack.com,ENT,3,OTP,Y,Tier 3,/case-study/programmatic-seo-calculators,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+YouTube,youtube.com,ENT,3,OTP,Y,Tier 3,/case-study/rank-1-fintech-keywords,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+X,x.com,ENT,2,OTP,Y,Tier 2,/case-study/seo-moat-remittance,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment
+About.me,about.me,ENT,3,OTP,Y,Tier 3,/case-study/growth-loop-repeat-users,,,,,,,,,,,,,,todo,,,,,,,,,,,,,,,RESEARCH BLOCKED: platform domain unreachable from build environment

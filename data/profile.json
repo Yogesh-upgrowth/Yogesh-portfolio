@@ -1,0 +1,226 @@
+{
+  "_note": "Canonical source of truth. Fields marked NEEDS_INPUT are not in the repo and must come from Yogesh; nothing here is invented.",
+  "identity": {
+    "name": "Yogesh Yadav",
+    "headline": "Product Growth & Monetisation Consultant for Fintech & Consumer Apps",
+    "positioning": "Product Growth & Monetisation Consultant for Fintech & Consumer Apps — programmatic SEO, growth loops, pricing.",
+    "city": "Jaipur",
+    "region": "Rajasthan",
+    "country": "India",
+    "email_pattern": "yogesh.productmanager+{platform}@gmail.com",
+    "phone": "NEEDS_INPUT",
+    "links": {
+      "site": "https://pmyogesh.com",
+      "linkedin": "https://www.linkedin.com/in/yogesh-productmanager/",
+      "tripmojo": "https://tripmojo.ai"
+    }
+  },
+  "offers": [
+    {
+      "name": "Product Growth Diagnostic",
+      "duration": "2 weeks",
+      "price_inr": "NEEDS_INPUT",
+      "price_usd": "NEEDS_INPUT",
+      "summary": "A written diagnosis of the single biggest constraint on growth, with the evidence behind it and what to do first. Most teams are optimising the wrong step; this establishes which one matters."
+    },
+    {
+      "name": "Growth Funnel Audit",
+      "duration": "3 weeks",
+      "price_inr": "NEEDS_INPUT",
+      "price_usd": "NEEDS_INPUT",
+      "summary": "Acquisition through activation, conversion and retention mapped end to end, with the drop-offs quantified and ranked by what recovering each one is worth."
+    },
+    {
+      "name": "Monetisation Audit",
+      "duration": "3 weeks",
+      "price_inr": "NEEDS_INPUT",
+      "price_usd": "NEEDS_INPUT",
+      "summary": "Pricing, packaging, paywall placement and revenue leakage reviewed against how your users actually behave, with specific changes and expected impact."
+    },
+    {
+      "name": "90-Day Growth Sprint",
+      "duration": "90 days",
+      "price_inr": "NEEDS_INPUT",
+      "price_usd": "NEEDS_INPUT",
+      "summary": "Hands-on implementation of the changes an audit identifies — instrumentation, experiments and shipped product work, accountable to an agreed metric."
+    },
+    {
+      "name": "Fractional Product Growth Lead",
+      "duration": "Ongoing, monthly",
+      "price_inr": "NEEDS_INPUT",
+      "price_usd": "NEEDS_INPUT",
+      "summary": "Ongoing product and growth leadership for founders without a senior product hire: roadmap ownership, prioritisation, and the calls that need someone who has made them before."
+    }
+  ],
+  "rates": {
+    "hourly_usd": "NEEDS_INPUT",
+    "expert_call_usd": "NEEDS_INPUT"
+  },
+  "numbers": [
+    {
+      "label": "Years Experience",
+      "value": "9+",
+      "source_kind": "biographical",
+      "source_url": null,
+      "caveat": null
+    },
+    {
+      "label": "Industries",
+      "value": "5",
+      "source_kind": "biographical",
+      "source_url": null,
+      "caveat": "Fintech, Mobility, SaaS, Marketplaces, E-commerce."
+    },
+    {
+      "label": "Insurance Growth",
+      "value": "680×",
+      "source_kind": "work-story",
+      "source_url": "https://pmyogesh.com/work/carinfo",
+      "caveat": "A single insurance revenue line, not blended revenue — the CarInfo story says so explicitly. Do not relabel this as overall growth."
+    },
+    {
+      "label": "Better Disbursement",
+      "value": "90%",
+      "source_kind": "unsourced",
+      "source_url": null,
+      "caveat": null
+    },
+    {
+      "label": "DAU Scaled To",
+      "value": "1.2M+",
+      "source_kind": "unsourced",
+      "source_url": null,
+      "caveat": null
+    },
+    {
+      "label": "Daily Transactions",
+      "value": "10K+",
+      "source_kind": "unsourced",
+      "source_url": null,
+      "caveat": null
+    },
+    {
+      "label": "Team Members Led",
+      "value": "50+",
+      "source_kind": "work-story",
+      "source_url": "https://pmyogesh.com/work/upgrowth",
+      "caveat": "The homepage previously claimed 250+ for the same metric. If that is the correct career total, update this entry and add the engagement it refers to."
+    }
+  ],
+  "case_studies": [
+    {
+      "title": "From 3.8M to 45M+ Monthly Active Users: The CarInfo Growth Architecture",
+      "metric": "45M+ Monthly Active Users",
+      "url": "https://pmyogesh.com/case-study/carinfo-45m-mau"
+    },
+    {
+      "title": "Scaling SEO from 0 to 100K Monthly Traffic Using Programmatic Pages",
+      "metric": "100K+ Monthly Organic Sessions",
+      "url": "https://pmyogesh.com/case-study/seo-0-to-100k"
+    },
+    {
+      "title": "1200% Insurance Revenue Growth in 12 Months: The Full Funnel Story",
+      "metric": "1,200% Revenue Growth",
+      "url": "https://pmyogesh.com/case-study/insurance-funnel-1200-growth"
+    },
+    {
+      "title": "Programmatic SEO for Calculators: Driving 10X Organic Traffic",
+      "metric": "1,400 Programmatic Pages",
+      "url": "https://pmyogesh.com/case-study/programmatic-seo-calculators"
+    },
+    {
+      "title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
+      "metric": "#1 SERP Position",
+      "url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords"
+    },
+    {
+      "title": "How We Reverse-Engineered Competitors to Win SEO Rankings (MoneyRateFinder)",
+      "metric": "10× Traffic Growth",
+      "url": "https://pmyogesh.com/case-study/seo-moat-remittance"
+    },
+    {
+      "title": "Designing a Growth Loop That Brought 30% Repeat Users in 14 Days",
+      "metric": "4.5× D30 Retention",
+      "url": "https://pmyogesh.com/case-study/growth-loop-repeat-users"
+    },
+    {
+      "title": "How We Cut User Acquisition Cost by 30% Without Cutting Volume",
+      "metric": "−30% Blended CAC",
+      "url": "https://pmyogesh.com/case-study/user-acquisition-cac-30"
+    }
+  ],
+  "service_pages": [
+    {
+      "name": "Fintech Product Consultant",
+      "url": "https://pmyogesh.com/consulting/fintech-product-consultant"
+    },
+    {
+      "name": "Consumer App Growth Consultant",
+      "url": "https://pmyogesh.com/consulting/consumer-app-growth-consultant"
+    },
+    {
+      "name": "Product Monetisation Consultant",
+      "url": "https://pmyogesh.com/consulting/product-monetisation-consultant"
+    },
+    {
+      "name": "Marketplace & Comparison Platform Consultant",
+      "url": "https://pmyogesh.com/consulting/marketplace-product-consultant"
+    },
+    {
+      "name": "B2B & SaaS Product Consultant",
+      "url": "https://pmyogesh.com/consulting/saas-product-consultant"
+    },
+    {
+      "name": "Product Growth Score",
+      "url": "https://pmyogesh.com/product-growth-score"
+    }
+  ],
+  "testimonials": [],
+  "_testimonials_note": "EMPTY BY DESIGN. The three previously on the homepage were placeholders (FinTechStart / EcomScale / SaaSFlow) and were removed. Supply real ones per shared/testimonials.ts: name, role, company or anonymisation reason, quote, a verification URL, and confirmed permission.",
+  "skills": [
+    "product strategy",
+    "growth",
+    "monetisation",
+    "pricing",
+    "programmatic SEO",
+    "SEO",
+    "retention",
+    "notification systems",
+    "funnel optimisation",
+    "marketplaces",
+    "fintech",
+    "mobile apps",
+    "A/B testing",
+    "product analytics",
+    "PRDs"
+  ],
+  "keywords": [
+    "programmatic SEO consultant",
+    "fintech product consultant",
+    "consumer app growth consultant",
+    "product monetisation consultant",
+    "fractional head of growth",
+    "growth consultant India"
+  ],
+  "assets": {
+    "headshot": "NEEDS_INPUT — original of /assets/yogesh-profile-*.webp; site is egress-blocked from here",
+    "banner": "NEEDS_GENERATION",
+    "wordmark": "NEEDS_GENERATION",
+    "colour": "#2563EB"
+  },
+  "copy_buckets": {
+    "headline": [
+      70,
+      80,
+      120,
+      220
+    ],
+    "bio": [
+      300,
+      600,
+      1200,
+      2600,
+      5000
+    ]
+  }
+}
