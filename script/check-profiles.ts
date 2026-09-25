@@ -3,7 +3,7 @@
  * private profile never enters sameAs.
  */
 import { pathToFileURL } from "url";
-import { OFFSITE_PROFILES } from "../shared/profiles";
+import { OFFSITE_PROFILES, AWAITING_VERIFICATION } from "../shared/profiles";
 
 export function checkProfiles() {
   const errors: string[] = [];
@@ -30,6 +30,12 @@ export function checkProfiles() {
 
   if (errors.length) {
     throw new Error("[profiles] registry is invalid:\n  - " + errors.join("\n  - "));
+  }
+  if (AWAITING_VERIFICATION.length) {
+    console.log(
+      `[profiles] ${AWAITING_VERIFICATION.length} live public profile(s) awaiting verification \u2014 run tools/verify.py; excluded from sameAs until observed:`
+    );
+    for (const p of AWAITING_VERIFICATION) console.log(`          ${p.platform}`);
   }
   const live = OFFSITE_PROFILES.filter((p) => p.status === "live").length;
   const pub = OFFSITE_PROFILES.filter((p) => p.status === "live" && p.visibility === "public").length;

@@ -31,8 +31,20 @@ export interface OffsiteProfile {
   tier: 1 | 2 | 3;
   /** Which deep link this profile's second slot points at, where allowed. */
   deepLink?: string;
-  /** Set once W3 has confirmed the outbound link and its rel. */
-  linkVerified?: { present: boolean; rel: string; checkedAt: string };
+  /**
+   * Written by tools/verify.py (and W3, which shares its logic). A row only
+   * reaches sameAs once a real fetch observed the page — `reported` policy
+   * research is never enough on its own.
+   */
+  linkVerified?: {
+    present: boolean;
+    rel: string;
+    /** "verified" only where a page was actually fetched and parsed. */
+    status: "verified" | "reported" | "unknown";
+    /** From meta robots / canonical; an app shell leaves this unknown. */
+    indexable: "yes" | "no" | "unknown";
+    checkedAt: string;
+  };
 }
 
 /**
@@ -42,8 +54,26 @@ export interface OffsiteProfile {
  */
 export const OFFSITE_PROFILES: OffsiteProfile[] = [];
 
+/**
+ * sameAs is built only from rows that reached `verified` with indexable = yes.
+ * Everything else waits: a profile we have not observed, or one Google will not
+ * index, is not a citation and claiming it as one helps nothing.
+ */
 export const LIVE_PUBLIC_PROFILES = OFFSITE_PROFILES.filter(
-  (p) => p.status === "live" && p.visibility === "public" && p.url
+  (p) =>
+    p.status === "live" &&
+    p.visibility === "public" &&
+    Boolean(p.url) &&
+    p.linkVerified?.status === "verified" &&
+    p.linkVerified.indexable === "yes"
+);
+
+/** Live and public, but not yet observed — surfaced by the build, not published. */
+export const AWAITING_VERIFICATION = OFFSITE_PROFILES.filter(
+  (p) =>
+    p.status === "live" &&
+    p.visibility === "public" &&
+    p.linkVerified?.status !== "verified"
 );
 
 /** sameAs entries for the Person node. */
