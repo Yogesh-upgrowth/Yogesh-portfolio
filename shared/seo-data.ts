@@ -9,6 +9,7 @@ export const OG_IMAGE_ALT =
   "Yogesh Yadav — Product Growth & Monetisation Consultant";
 
 import { SERVICE_SLUGS } from "./services";
+import { BENCHMARK_PATHS } from "./benchmarks";
 
 export const STATIC_ROUTES: { path: string; priority: number; changefreq: string }[] = [
   { path: "/",            priority: 1.0, changefreq: "weekly" },
@@ -18,6 +19,7 @@ export const STATIC_ROUTES: { path: string; priority: number; changefreq: string
   { path: "/contact",     priority: 0.7, changefreq: "yearly" },
   { path: "/product-growth-score", priority: 0.8, changefreq: "monthly" },
   { path: "/about-yogesh-yadav", priority: 0.9, changefreq: "monthly" },
+  { path: "/benchmarks", priority: 0.8, changefreq: "weekly" },
 ];
 
 export const WORK_STORY_SLUGS = ["loanwiser", "carinfo", "knipex", "upgrowth"];
@@ -158,6 +160,7 @@ export function getAllRoutePaths(): string[] {
     ...STATIC_ROUTES.map((r) => r.path),
     ...CASE_STUDY_TOPICS.map((t) => `/case-studies/${t.slug}`),
     ...SERVICE_SLUGS.map((s) => `/consulting/${s}`),
+    ...BENCHMARK_PATHS,
     ...WORK_STORY_SLUGS.map((s) => `/work/${s}`),
     ...CASE_STUDY_SLUGS.map((s) => `/case-study/${s}`),
     ...BLOG_SLUGS.map((s) => `/blog/${s}`),

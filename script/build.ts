@@ -6,6 +6,7 @@ import { prerender } from "./prerender";
 import { genGitDates } from "./gen-git-dates";
 import { checkProof } from "./check-proof";
 import { checkServices } from "./check-services";
+import { checkBenchmarks } from "./check-benchmarks";
 import { genSitemap } from "./gen-sitemap";
 import { genFeed } from "./gen-feed";
 import { genLlmsTxt } from "./gen-llms-txt";
@@ -47,6 +48,7 @@ async function buildAll() {
   console.log("verifying the proof database...");
   checkProof();
   checkServices();
+  checkBenchmarks();
 
   console.log("generating git-derived page dates...");
   genGitDates();

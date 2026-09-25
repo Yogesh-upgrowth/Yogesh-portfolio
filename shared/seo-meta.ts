@@ -14,6 +14,8 @@ export interface PageSeo {
   description?: string;
 }
 
+import { METRICS, INDUSTRIES, DATA } from "./benchmarks";
+
 export const PAGE_SEO: Record<string, PageSeo> = {
   /* ── Static pages ─────────────────────────────────────────── */
   "/": {
@@ -54,6 +56,12 @@ export const PAGE_SEO: Record<string, PageSeo> = {
     title: "About Yogesh Yadav \u2014 Product Growth Consultant",
     description:
       "Nine years on consumer and fintech products in India \u2014 Loanwiser, CarInfo, KNIPEX and UpGrowth. What I work on, how I work, and where every figure on this site comes from.",
+  },
+  "/benchmarks": {
+    keyword: "product growth benchmarks",
+    title: "Product & App Growth Benchmarks | Yogesh Yadav",
+    description:
+      "Retention, acquisition and monetisation benchmarks for consumer and fintech apps \u2014 every figure traced to its publisher, with the disagreements between sources shown rather than averaged away.",
   },
   "/product-growth-score": {
     keyword: "product growth score",
@@ -517,5 +525,35 @@ export const PAGE_SEO: Record<string, PageSeo> = {
 };
 
 export function getPageSeo(path: string): PageSeo | undefined {
-  return PAGE_SEO[path];
+  return PAGE_SEO[path] ?? generatedPageSeo(path);
+}
+
+/**
+ * Metadata for programmatic routes. Hand-writing an entry per benchmark cell
+ * does not scale past a few dozen, and a stale hand-written title is worse
+ * than a generated accurate one.
+ */
+function generatedPageSeo(path: string): PageSeo | undefined {
+  const m = path.match(/^\/benchmarks\/([a-z0-9-]+)\/([a-z0-9-]+)$/);
+  if (!m) return undefined;
+  const metric = METRICS.find((x) => x.slug === m[1]);
+  const industry = INDUSTRIES.find((x) => x.slug === m[2]);
+  const points = DATA[`${m[1]}/${m[2]}`];
+  if (!metric || !industry || !points?.length) return undefined;
+
+  const all = points.flatMap((p) => (Array.isArray(p.value) ? p.value : [p.value]));
+  const lo = Math.min(...all);
+  const hi = Math.max(...all);
+  const range = lo === hi ? `${lo}%` : `${lo}\u2013${hi}%`;
+  const label = `${metric.name} benchmark for ${industry.name.toLowerCase()} apps`;
+
+  return {
+    keyword: `${industry.name.toLowerCase()} app ${metric.name.toLowerCase()} benchmark`,
+    title: `${label} (2026)`,
+    description:
+      `Published ${metric.name.toLowerCase()} benchmarks for ${industry.name.toLowerCase()} apps range ${range}` +
+      (points.length > 1
+        ? ` across ${points.length} sources that disagree. Every figure traced to its publisher, with why they differ.`
+        : `. Traced to its publisher, with how the metric is commonly mismeasured.`),
+  };
 }

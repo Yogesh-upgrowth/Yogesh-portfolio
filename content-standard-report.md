@@ -2,9 +2,9 @@
 
 _Generated from the prerendered HTML. Nav, header and footer are excluded from the count._
 
-- Pages measured: **104** (functional pages are exempt)
+- Pages measured: **118** (functional pages are exempt)
 - Meeting the minimum: **20**
-- Short: **84**, by **41,940** words in total
+- Short: **98**, by **43,982** words in total
 
 A short page is not automatically a problem. Where the first-hand material to
 fill it does not exist yet, the page staying short is the correct outcome —
@@ -85,8 +85,18 @@ scaled-content guidance describes.
 | `/case-study/cab-fare-comparison-engine` | case-study | 1787 | 2000 | 213 |
 | `/case-study/ux-redesign-conversion-28` | case-study | 1792 | 2000 | 208 |
 | `/case-study/ai-recommendation-engine` | case-study | 1798 | 2000 | 202 |
+| `/benchmarks/d7-retention/fintech` | benchmark | 315 | 500 | 185 |
+| `/benchmarks/d7-retention/ecommerce` | benchmark | 315 | 500 | 185 |
+| `/benchmarks/d7-retention/health-fitness` | benchmark | 315 | 500 | 185 |
+| `/benchmarks/d7-retention/gaming` | benchmark | 317 | 500 | 183 |
+| `/benchmarks/d30-retention/productivity` | benchmark | 318 | 500 | 182 |
+| `/benchmarks/d30-retention/health-fitness` | benchmark | 320 | 500 | 180 |
+| `/benchmarks/d30-retention/social` | benchmark | 320 | 500 | 180 |
 | `/blog/prioritization-frameworks-every-pm` | article | 1024 | 1200 | 176 |
+| `/benchmarks/d1-retention/ecommerce` | benchmark | 330 | 500 | 170 |
+| `/benchmarks/d1-retention/health-fitness` | benchmark | 330 | 500 | 170 |
 | `/case-study/real-time-intent-scoring-engine` | case-study | 1833 | 2000 | 167 |
+| `/benchmarks/d1-retention/gaming` | benchmark | 334 | 500 | 166 |
 | `/case-study/predict-user-dropoff-churn-model` | case-study | 1835 | 2000 | 165 |
 | `/blog/programmatic-seo-guide` | article | 1041 | 1200 | 159 |
 | `/blog/writing-effective-prds-guide` | article | 1044 | 1200 | 156 |
@@ -95,10 +105,14 @@ scaled-content guidance describes.
 | `/blog/growth-loops-product-management` | article | 1050 | 1200 | 150 |
 | `/blog/reduce-customer-acquisition-cost` | article | 1051 | 1200 | 149 |
 | `/blog/product-manager-interview-questions` | article | 1100 | 1200 | 100 |
+| `/benchmarks/d30-retention/ecommerce` | benchmark | 419 | 500 | 81 |
 | `/blog/user-centric-product-thinking` | article | 1120 | 1200 | 80 |
+| `/benchmarks/d30-retention/gaming` | benchmark | 421 | 500 | 79 |
 | `/case-study/mvp-in-7-days` | case-study | 1946 | 2000 | 54 |
+| `/benchmarks/d1-retention/fintech` | benchmark | 447 | 500 | 53 |
 | `/blog/how-i-think-about-product-framework` | article | 1148 | 1200 | 52 |
 | `/blog/ai-changing-product-management` | article | 1148 | 1200 | 52 |
+| `/benchmarks/d30-retention/fintech` | benchmark | 457 | 500 | 43 |
 
 ## All measured pages
 
@@ -106,6 +120,20 @@ scaled-content guidance describes.
 |---|---|---|---|
 | `/` | core | 440 | 2000 |
 | `/about-yogesh-yadav` | core | 598 | 2000 |
+| `/benchmarks/d1-retention/ecommerce` | benchmark | 330 | 500 |
+| `/benchmarks/d1-retention/fintech` | benchmark | 447 | 500 |
+| `/benchmarks/d1-retention/gaming` | benchmark | 334 | 500 |
+| `/benchmarks/d1-retention/health-fitness` | benchmark | 330 | 500 |
+| `/benchmarks/d30-retention/ecommerce` | benchmark | 419 | 500 |
+| `/benchmarks/d30-retention/fintech` | benchmark | 457 | 500 |
+| `/benchmarks/d30-retention/gaming` | benchmark | 421 | 500 |
+| `/benchmarks/d30-retention/health-fitness` | benchmark | 320 | 500 |
+| `/benchmarks/d30-retention/productivity` | benchmark | 318 | 500 |
+| `/benchmarks/d30-retention/social` | benchmark | 320 | 500 |
+| `/benchmarks/d7-retention/ecommerce` | benchmark | 315 | 500 |
+| `/benchmarks/d7-retention/fintech` | benchmark | 315 | 500 |
+| `/benchmarks/d7-retention/gaming` | benchmark | 317 | 500 |
+| `/benchmarks/d7-retention/health-fitness` | benchmark | 315 | 500 |
 | `/blog/ab-testing-product-decisions` | article | 595 | 1200 |
 | `/blog/activation-metrics-product-growth` | article | 856 | 1200 |
 | `/blog/agile-vs-scrum-vs-kanban` | article | 896 | 1200 |

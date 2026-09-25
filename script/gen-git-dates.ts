@@ -19,6 +19,7 @@ import {
   CASE_STUDY_TOPICS,
 } from "../shared/seo-data";
 import { SERVICE_SLUGS } from "../shared/services";
+import { BENCHMARK_PATHS } from "../shared/benchmarks";
 
 const PAGES = "client/src/pages";
 const LIB = "client/src/lib";
@@ -112,6 +113,10 @@ export function genGitDates(): Record<string, string> {
   for (const slug of SERVICE_SLUGS) {
     dates[`/consulting/${slug}`] = gitDate("shared/services.ts", headDate);
   }
+  for (const bp of BENCHMARK_PATHS) {
+    dates[bp] = gitDate("shared/benchmarks.ts", headDate);
+  }
+  dates["/benchmarks"] = gitDate("shared/benchmarks.ts", headDate);
   for (const slug of WORK_STORY_SLUGS) {
     dates[`/work/${slug}`] = gitDate(`${PAGES}/story-${slug}.tsx`, headDate);
   }

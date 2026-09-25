@@ -20,6 +20,7 @@ export type PageType =
   | "case-study"  // operator stories with numbers
   | "research"    // original datasets and analysis
   | "article"     // supporting editorial
+  | "benchmark"   // data pages: value is the figures and their sourcing
   | "functional"; // contact, tools, indexes — bloating these would be vandalism
 
 export interface StandardBand {
@@ -53,6 +54,12 @@ export const STANDARD: Record<PageType, StandardBand> = {
     min: 1200,
     ideal: [2000, 3000],
     note: "Supporting editorial. Below 1,200 words it is usually a section of another page.",
+  },
+  benchmark: {
+    type: "benchmark",
+    min: 500,
+    ideal: [600, 1200],
+    note: "A benchmark page earns its place on traceable figures and an honest account of why sources differ, not on length. Padding one buries the data it exists to present.",
   },
   functional: {
     type: "functional",
@@ -89,6 +96,8 @@ export const EVIDENCE_RULES: Record<EvidenceKind, string> = {
 export function pageTypeFor(routePath: string): PageType {
   if (routePath === "/contact") return "functional";
   if (routePath === "/product-growth-score") return "functional";
+  if (routePath.startsWith("/benchmarks/")) return "benchmark";
+  if (routePath === "/benchmarks") return "functional";
   if (routePath.startsWith("/research/")) return "research";
   if (routePath.startsWith("/case-study/")) return "case-study";
   if (routePath.startsWith("/blog/")) return "article";

@@ -2,17 +2,19 @@
 
 _Generated from the prerendered HTML in `dist/public`. This report is diagnostic only — thin pages are flagged for you to rewrite, never auto-padded._
 
-- Pages analyzed: **109**
-- Median word count: **1034**
-- Thin pages (<300 words): **0**
+- Pages analyzed: **124**
+- Median word count: **863**
+- Thin pages (<300 words): **1**
 - Pages whose H1 misses most of the keyword's terms: **0**
 - Pages whose copy barely covers the keyword at all: **0**
-- Pages missing the exact keyword phrase (weak signal, FYI): **53**
+- Pages missing the exact keyword phrase (weak signal, FYI): **54**
 - Case studies with fewer than 3 concrete metrics: **1**
 
 ## Thin content (<300 words) — rewrite candidates
 
-_None._
+| Page | Words |
+|---|---|
+| `/benchmarks` | 296 |
 
 ## Keyword/H1 misalignment — fix the H1 or retarget the keyword
 
@@ -37,6 +39,21 @@ _None._
 |---|---|---|---|---|
 | `/` | 436 | 100% | 100% | yes |
 | `/about-yogesh-yadav` | 600 | 50% | 100% | no |
+| `/benchmarks` | 296 | 100% | 100% | no |
+| `/benchmarks/d1-retention/ecommerce` | 331 | 100% | 100% | yes |
+| `/benchmarks/d1-retention/fintech` | 448 | 100% | 100% | yes |
+| `/benchmarks/d1-retention/gaming` | 333 | 100% | 100% | yes |
+| `/benchmarks/d1-retention/health-fitness` | 331 | 100% | 100% | yes |
+| `/benchmarks/d30-retention/ecommerce` | 419 | 100% | 100% | yes |
+| `/benchmarks/d30-retention/fintech` | 456 | 100% | 100% | yes |
+| `/benchmarks/d30-retention/gaming` | 419 | 100% | 100% | yes |
+| `/benchmarks/d30-retention/health-fitness` | 321 | 100% | 100% | yes |
+| `/benchmarks/d30-retention/productivity` | 317 | 100% | 100% | yes |
+| `/benchmarks/d30-retention/social` | 321 | 100% | 100% | yes |
+| `/benchmarks/d7-retention/ecommerce` | 314 | 100% | 100% | yes |
+| `/benchmarks/d7-retention/fintech` | 314 | 100% | 100% | yes |
+| `/benchmarks/d7-retention/gaming` | 314 | 100% | 100% | yes |
+| `/benchmarks/d7-retention/health-fitness` | 314 | 100% | 100% | yes |
 | `/blog` | 2016 | 67% | 100% | yes |
 | `/blog/ab-testing-product-decisions` | 589 | 100% | 100% | no |
 | `/blog/activation-metrics-product-growth` | 851 | 100% | 100% | yes |
