@@ -4,7 +4,7 @@ _Generated from the prerendered HTML. Nav, header and footer are excluded from t
 
 - Pages measured: **126** (functional pages are exempt)
 - Meeting the minimum: **22**
-- Short: **104**, by **43,167** words in total
+- Short: **104**, by **43,157** words in total
 
 A short page is not automatically a problem. Where the first-hand material to
 fill it does not exist yet, the page staying short is the correct outcome —
@@ -22,11 +22,11 @@ scaled-content guidance describes.
 | `/case-studies/growth` | core | 437 | 2000 | 1563 |
 | `/` | core | 440 | 2000 | 1560 |
 | `/about-yogesh-yadav` | core | 598 | 2000 | 1402 |
-| `/consulting/product-monetisation-consultant` | core | 668 | 2000 | 1332 |
-| `/consulting/marketplace-product-consultant` | core | 703 | 2000 | 1297 |
-| `/consulting/consumer-app-growth-consultant` | core | 719 | 2000 | 1281 |
-| `/consulting/fintech-product-consultant` | core | 745 | 2000 | 1255 |
-| `/consulting/saas-product-consultant` | core | 755 | 2000 | 1245 |
+| `/consulting/product-monetisation-consultant` | core | 670 | 2000 | 1330 |
+| `/consulting/marketplace-product-consultant` | core | 705 | 2000 | 1295 |
+| `/consulting/consumer-app-growth-consultant` | core | 721 | 2000 | 1279 |
+| `/consulting/fintech-product-consultant` | core | 747 | 2000 | 1253 |
+| `/consulting/saas-product-consultant` | core | 757 | 2000 | 1243 |
 | `/blog/leadership-not-feature-ownership` | article | 550 | 1200 | 650 |
 | `/blog/product-frameworks-at-scale` | article | 566 | 1200 | 634 |
 | `/case-study/ml-insurance-prediction` | case-study | 1376 | 2000 | 624 |
@@ -241,11 +241,11 @@ scaled-content guidance describes.
 | `/case-study/user-acquisition-cac-30` | case-study | 2326 | 2000 |
 | `/case-study/ux-redesign-conversion-28` | case-study | 1865 | 2000 |
 | `/case-study/zero-cost-growth-engine` | case-study | 1735 | 2000 |
-| `/consulting/consumer-app-growth-consultant` | core | 719 | 2000 |
-| `/consulting/fintech-product-consultant` | core | 745 | 2000 |
-| `/consulting/marketplace-product-consultant` | core | 703 | 2000 |
-| `/consulting/product-monetisation-consultant` | core | 668 | 2000 |
-| `/consulting/saas-product-consultant` | core | 755 | 2000 |
+| `/consulting/consumer-app-growth-consultant` | core | 721 | 2000 |
+| `/consulting/fintech-product-consultant` | core | 747 | 2000 |
+| `/consulting/marketplace-product-consultant` | core | 705 | 2000 |
+| `/consulting/product-monetisation-consultant` | core | 670 | 2000 |
+| `/consulting/saas-product-consultant` | core | 757 | 2000 |
 | `/work/carinfo` | case-study | 6420 | 2000 |
 | `/work/knipex` | case-study | 6150 | 2000 |
 | `/work/loanwiser` | case-study | 9449 | 2000 |

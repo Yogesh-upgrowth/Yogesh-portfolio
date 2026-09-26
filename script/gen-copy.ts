@@ -15,6 +15,7 @@ import { writeFileSync, mkdirSync } from "fs";
 import { pathToFileURL } from "url";
 import { PROOF } from "../shared/proof";
 import { OFFERS } from "../shared/services";
+import { MARKETPLACE_SERVICES, RATE_CARD } from "../shared/marketplace-services";
 
 const SITE = "pmyogesh.com";
 
@@ -190,7 +191,21 @@ ${c.skills.map((s) => `- ${s}`).join("\n")}
 - Unlinked citation: "${SITE}" appears as plain text in the bio above.
 
 ## Offers
-${OFFERS.map((o) => `- **${o.name}** (${o.timeframe}) — ${o.outcome}\n  - Price: NEEDS_INPUT`).join("\n")}
+${OFFERS.map((o) => `- **${o.name}** (${o.timeframe}) — ${o.price ?? "on request"}\n  ${o.outcome}`).join("\n")}
+
+## Rates
+- Marketplace hourly: $${RATE_CARD.marketplace_hourly_usd}
+- Direct hourly: $${RATE_CARD.direct_hourly_usd}
+- Expert-network call: $${RATE_CARD.expert_network_call_usd}/hr
+
+${RATE_CARD.note}
+
+## Additional service categories (marketplaces only)
+_Listed on marketplaces because their search is category-based — a profile only
+appears in categories it has a listing in. Not mirrored onto pmyogesh.com,
+where breadth would cost topical focus. Every line is evidenced._
+
+${MARKETPLACE_SERVICES.map((m) => `- **${m.name}** — ${m.category}\n  - Entry: ${m.entryPrice} · Core: ${m.corePrice}\n  - Evidence: ${m.evidence} (${m.evidenceUrl})`).join("\n")}
 
 ---
 _Written to the bucket set. Record the platform's observed limits in tracker.csv during signup, then regenerate._
