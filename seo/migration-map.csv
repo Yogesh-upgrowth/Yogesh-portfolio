@@ -123,6 +123,6 @@ from,to,kind,reason
 /product-growth-score,/tools/monetization-health-score,301,explicit mapping
 /work,/case-studies,301,explicit mapping
 /work/carinfo,/case-studies/carinfo-3-8m-to-45m-mau,301,explicit mapping
-/work/knipex,/notes/knipex,301,explicit mapping
+/work/knipex,/case-studies,301,explicit mapping
 /work/loanwiser,/case-studies/loanwiser-credit-routing,301,explicit mapping
-/work/upgrowth,/notes/upgrowth,301,explicit mapping
+/work/upgrowth,/case-studies,301,explicit mapping

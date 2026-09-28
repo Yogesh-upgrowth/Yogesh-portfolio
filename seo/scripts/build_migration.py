@@ -89,8 +89,10 @@ SINGLETONS = {
     "/work":                 "/case-studies",
     "/work/carinfo":         "/case-studies/carinfo-3-8m-to-45m-mau",
     "/work/loanwiser":       "/case-studies/loanwiser-credit-routing",
-    "/work/knipex":          "/notes/knipex",
-    "/work/upgrowth":        "/notes/upgrowth",
+    # Company stories, not blog posts: no /notes body exists for them, so they
+    # go to the case-studies hub rather than to a 404.
+    "/work/knipex":          "/case-studies",
+    "/work/upgrowth":        "/case-studies",
     # Live /case-studies/* are category filters; the plan uses the prefix for
     # individual studies, so the filters move under the hub as query state.
     "/case-studies/design":           "/case-studies",

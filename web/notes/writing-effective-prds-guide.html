@@ -1,0 +1,50 @@
+<p class="lead text-xl text-foreground font-medium mb-8">
+    A PRD that engineers don't read is not a PRD. It's a liability. Here's what separates product requirement documents that actually drive excellent engineering from the ones that get skimmed and ignored.
+  </p>
+
+  <p>The worst PRD I ever wrote was 47 pages long. It had a table of contents. It had a requirements traceability matrix. It had mockups for every state, extensive edge case documentation, and a comprehensive glossary. The engineering lead read the first three pages and then started asking me clarifying questions that were answered on page 12, page 23, and page 38. Three weeks into the sprint, the team was building something that wasn't quite what I meant by what I'd written.</p>
+
+  <p>The best PRD I ever wrote was 4 pages. It had a clear problem statement, three user stories that captured the core scenarios, a handful of acceptance criteria, and a brief section on constraints. The engineering lead read it once and said "got it." We shipped something that matched the intent exactly.</p>
+
+  <p>Length is not quality. Comprehensiveness is not clarity. The purpose of a PRD is to create shared understanding, not to demonstrate thoroughness.</p>
+
+  <hr class="my-12 border-border/50" />
+
+  <h2>What a Good PRD Actually Contains</h2>
+
+  <h3>The problem statement (the most important section)</h3>
+  <p>Before describing the solution, describe the problem with precision. Who is experiencing it? In what context? What are the consequences if it's not solved? What evidence do you have that this problem is real and worth solving?</p>
+
+  <p>The problem statement is the section most PMs underinvest in and most engineers wish were better. When the problem is described clearly, engineers can make good implementation decisions independently — because they understand the goal, not just the specification. When the problem is vague or absent, engineers build exactly what they're told and you get a product that technically matches the spec but doesn't solve the problem.</p>
+
+  <h3>The solution overview (high-level, not exhaustive)</h3>
+  <p>Describe the solution at the level of user behavior, not engineering implementation. "Users can connect a bank account and see their balance updated in real time" is a user behavior description. "The system will poll the bank API every 30 seconds and update the database record with the new balance, refreshing the frontend via WebSocket" is an implementation description. The first belongs in the PRD. The second belongs in the technical design document that engineering produces based on the PRD.</p>
+
+  <p>This distinction matters because implementation details don't belong to the PM. They belong to engineering. When PMs specify implementation in PRDs, they constrain engineers to a specific approach that may not be the best one available. Describe what the product needs to do. Let engineering figure out how.</p>
+
+  <h3>User stories or scenarios</h3>
+  <p>Three to five scenarios that capture the primary use cases in user-centric language. Not all edge cases — the primary flows. "A first-time user who has never connected a bank account before." "A returning user who needs to switch from one bank to another." "A user whose bank connection has expired and needs to reconnect." These scenarios should be real — based on actual users you've talked to, not hypothetical profiles you've invented.</p>
+
+  <h3>Acceptance criteria</h3>
+  <p>Clear, binary criteria that determine whether the feature is done. Not "the feature should be fast" — that's not testable. "API responses under 500ms for 95% of requests" — that's testable. Not "users should understand the interface" — not testable. "Users can complete the bank connection flow in under 5 minutes without any help text, as validated by 5 unmoderated user tests" — testable.</p>
+
+  <h3>What's out of scope</h3>
+  <p>Explicitly stating what is not included in this version is as important as stating what is included. "We are not building multi-bank support in this version." "We are not handling corporate account connections in this version." This prevents scope creep during development and aligns stakeholder expectations before the sprint starts.</p>
+
+  <hr class="my-12 border-border/50" />
+
+  <h2>How to Make Your PRDs Actually Get Read</h2>
+
+  <p><strong>Shorter is almost always better.</strong> If you can say it in 2 pages, don't take 5. Compression forces clarity. Long PRDs often reflect unclear thinking more than comprehensive thinking.</p>
+
+  <p><strong>Lead with the most important information.</strong> Many engineers read the first section carefully and skim the rest. Put the problem statement and the core solution overview first, where they'll be read. Put appendices, detailed edge case handling, and reference documentation at the end, where they'll be consulted as needed.</p>
+
+  <p><strong>Include context, not just specifications.</strong> The best PRDs explain why the feature is being built, what alternatives were considered, and what trade-offs were made. This context helps engineers make good decisions when they encounter situations the PRD doesn't cover — which is inevitable.</p>
+
+  <p><strong>Walk the team through it before it's final.</strong> A PRD walkthrough session — where you present the document and take questions before it's considered final — is one of the most valuable things you can do. It catches misunderstandings early, surfaces questions the PRD should answer but doesn't, and creates shared ownership of the direction before engineering begins.</p>
+
+  <div class="bg-primary/5 p-8 rounded-2xl border border-primary/10 mt-12">
+    <h3 class="text-xl font-bold mb-3">Improving your PRD quality?</h3>
+    <p class="text-muted-foreground mb-4">PRD quality is one of the clearest signals of PM quality. The best PRDs I've read created genuine clarity and drove excellent outcomes. I'm happy to share templates, examples, and frameworks. Let's talk about what would help you most.</p>
+    <a href="/contact" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-colors">Work with Yogesh →</a>
+  </div>

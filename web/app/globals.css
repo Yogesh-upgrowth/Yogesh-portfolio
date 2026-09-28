@@ -123,3 +123,11 @@ td.num, .num { text-align: right; font-family: var(--font-mono); }
 .outcome-strip caption { font-family: var(--font-display); font-size: 20px; opacity: 1; }
 .permission-note { font-size: 14px; opacity: 0.75; font-style: italic; }
 .tool-method { font-size: 15px; }
+
+/* ── Notes archive ──────────────────────────────────────────────────────── */
+.notes-index { list-style: none; padding: 0; }
+.notes-index li { border-bottom: 1px solid var(--border); padding: 20px 0; }
+.notes-index a { font-family: var(--font-display); font-size: 24px; }
+.note-body h2 { font-size: 28px; }
+.note-body img { max-width: 100%; height: auto; }
+.note-body pre { overflow-x: auto; }

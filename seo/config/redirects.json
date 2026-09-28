@@ -747,7 +747,7 @@
     },
     {
       "source": "/work/knipex",
-      "destination": "/notes/knipex",
+      "destination": "/case-studies",
       "permanent": true,
       "note": "explicit mapping"
     },
@@ -759,7 +759,7 @@
     },
     {
       "source": "/work/upgrowth",
-      "destination": "/notes/upgrowth",
+      "destination": "/case-studies",
       "permanent": true,
       "note": "explicit mapping"
     }

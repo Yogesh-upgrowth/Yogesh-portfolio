@@ -22,7 +22,8 @@
     "price:check": "tsx scripts/price-check.ts",
     "research": "tsx scripts/research.ts",
     "draft": "tsx scripts/draft.ts",
-    "e2e": "playwright test"
+    "e2e": "playwright test",
+    "notes:migrate": "tsx scripts/migrate-notes.ts"
   },
   "dependencies": {
     "next": "^16.3.6",

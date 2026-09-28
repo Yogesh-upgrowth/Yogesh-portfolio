@@ -86,3 +86,26 @@ test("the review surface is not reachable in production", async ({ request }) =>
     expect([200, 404]).toContain(res.status());
   }
 });
+
+test("notes migration: a redirected article lands on real content", async ({ page }) => {
+  // 46 URLs were sent to /notes by the D1 migration. Before the archive
+  // existed, every one of them 404'd.
+  const res = await page.goto("/blog/programmatic-seo-guide");
+  expect(res?.status()).toBe(200);
+  expect(new URL(page.url()).pathname).toBe("/notes/programmatic-seo-guide");
+  await expect(page.locator("h1")).not.toBeEmpty();
+  const words = (await page.locator(".note-body").innerText()).split(/\s+/).length;
+  expect(words).toBeGreaterThan(300);
+});
+
+test("notes index lists the migrated archive", async ({ page }) => {
+  await page.goto("/notes");
+  await expect(page.locator(".notes-index li")).toHaveCount(45);
+});
+
+test("notes stay out of the hub sitemaps", async ({ request }) => {
+  // /notes is outside the 1,017-page system (00-STRATEGY §6). It must not
+  // appear alongside the hubs.
+  const res = await request.get("/sitemap.xml");
+  expect(await res.text()).not.toContain("/notes");
+});

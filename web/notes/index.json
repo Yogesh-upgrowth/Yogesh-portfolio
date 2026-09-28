@@ -1,0 +1,362 @@
+[
+  {
+    "slug": "programmatic-seo-guide",
+    "title": "Programmatic SEO: Scaling Organic Traffic Without Thin Pages",
+    "description": "Generate ten thousand pages and get deindexed, or build pages that earn their place. The architecture behind 0 to 100K monthly sessions.",
+    "date": "2025-04-11",
+    "category": "Growth & SEO",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "ai-changing-product-management",
+    "title": "How AI is Changing Product Management",
+    "description": "AI is reshaping what PMs do, how they research, how they write, and how they make decisions. A ground-level assessment.",
+    "date": "2025-04-10",
+    "category": "AI & Product",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "become-product-manager-india",
+    "title": "How to Become a Product Manager in India",
+    "description": "From CS grad to startup PM to FAANG — the realistic paths into product management in the Indian ecosystem.",
+    "date": "2025-04-10",
+    "category": "PM Career",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "data-driven-product-management",
+    "title": "Why Data-Driven Product Management Matters (And Where It Breaks Down)",
+    "description": "Data is not a substitute for judgment. But judgment without data is guessing. Here's how to use both.",
+    "date": "2025-04-10",
+    "category": "Experiments",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "outcome-driven-roadmaps",
+    "title": "Outcome-Driven Roadmaps: Why Features Don't Matter",
+    "description": "A feature roadmap is a commitment to build things. An outcome roadmap is a commitment to change things. One of them works.",
+    "date": "2025-04-10",
+    "category": "Founder Notes",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "what-does-a-pm-actually-do",
+    "title": "What Does a Product Manager Actually Do in 2026?",
+    "description": "The job title is everywhere. The actual job is still wildly misunderstood. A ground-level look at what PMs really spend their days on.",
+    "date": "2025-04-10",
+    "category": "PM Career",
+    "readTime": "15 min read"
+  },
+  {
+    "slug": "writing-effective-prds-guide",
+    "title": "How to Write Effective Product Requirement Documents (PRDs)",
+    "description": "A PRD that engineers don't read is not a PRD. It's a liability. Here's how to write ones that actually get built correctly.",
+    "date": "2025-04-10",
+    "category": "PM Career",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "agile-vs-scrum-vs-kanban",
+    "title": "Agile vs Scrum vs Kanban for Product Managers",
+    "description": "The difference between frameworks — and why choosing the right one for your team context matters more than most PMs realize.",
+    "date": "2025-04-09",
+    "category": "Comparisons",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "ai-tools-product-managers",
+    "title": "AI Tools Every Product Manager Should Use",
+    "description": "Not a list of hype. A practical breakdown of AI tools that actually change how PMs work — and which ones to skip.",
+    "date": "2025-04-09",
+    "category": "AI & Product",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "evolution-of-product-management",
+    "title": "The Evolution of Product Management: From Feature Owner to Business Owner",
+    "description": "How the PM role has been quietly redefined over the past decade — and what it means for your career.",
+    "date": "2025-04-09",
+    "category": "PM Career",
+    "readTime": "8 min read"
+  },
+  {
+    "slug": "how-to-build-winning-product-strategy",
+    "title": "How to Build a Winning Product Strategy",
+    "description": "Strategy is not a vision statement. It's a set of choices that exclude other choices. Here's how to make the right ones.",
+    "date": "2025-04-09",
+    "category": "Founder Notes",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "product-manager-interview-questions",
+    "title": "Product Manager Interview Questions and Answers",
+    "description": "Real questions from real PM interviews at top companies — with the frameworks and thinking behind strong answers.",
+    "date": "2025-04-09",
+    "category": "PM Career",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "ai-product-discovery-techniques",
+    "title": "Using AI for Product Discovery",
+    "description": "AI can simulate user interviews, analyze feedback at scale, and find patterns no human analyst would catch. Here's how.",
+    "date": "2025-04-08",
+    "category": "AI & Product",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "core-skills-every-product-manager",
+    "title": "Core Skills Every Product Manager Must Master",
+    "description": "Beyond frameworks and templates — the actual skills that separate good PMs from great ones.",
+    "date": "2025-04-08",
+    "category": "PM Career",
+    "readTime": "9 min read"
+  },
+  {
+    "slug": "pm-skills-gap-analysis",
+    "title": "The PM Skills Gap: What to Learn Before Your Next Role",
+    "description": "Run an honest inventory against the skills PM roles actually test for — then close the two or three gaps that are holding you back.",
+    "date": "2025-04-08",
+    "category": "PM Career",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "prioritization-frameworks-every-pm",
+    "title": "Prioritization Frameworks Every PM Should Know",
+    "description": "RICE, ICE, MoSCoW, Kano — and when to throw all of them out and just use judgment.",
+    "date": "2025-04-08",
+    "category": "PM Career",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "sprint-planning-best-practices",
+    "title": "Sprint Planning Best Practices for PMs",
+    "description": "Bad sprint planning wastes weeks. Good sprint planning sets up your team to actually finish what they start.",
+    "date": "2025-04-08",
+    "category": "PM Career",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "ai-roadmap-planning",
+    "title": "AI for Roadmap Planning: Reality vs Hype",
+    "description": "Can AI help you build better roadmaps? Sort of. The truth is more nuanced than the demos suggest.",
+    "date": "2025-04-07",
+    "category": "AI & Product",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "building-pm-portfolio",
+    "title": "How to Build a Product Manager Portfolio",
+    "description": "A PM portfolio is not a folder of screenshots. It is curated evidence that you can think, execute and move outcomes like a PM.",
+    "date": "2025-04-07",
+    "category": "PM Career",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "managing-cross-functional-teams",
+    "title": "Managing Cross-Functional Product Teams",
+    "description": "You have accountability but no authority. Here's how to make cross-functional teams work despite that impossible dynamic.",
+    "date": "2025-04-07",
+    "category": "PM Career",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "pm-vs-product-owner-vs-project-manager",
+    "title": "Product Manager vs Product Owner vs Project Manager: The Real Differences",
+    "description": "These three roles get confused constantly. Here's a clear, opinionated breakdown of how they actually differ.",
+    "date": "2025-04-07",
+    "category": "Comparisons",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "setting-strong-product-vision",
+    "title": "Setting a Strong Product Vision That Teams Follow",
+    "description": "Most product visions are forgotten within 3 months. Here's what makes one actually stick.",
+    "date": "2025-04-07",
+    "category": "Founder Notes",
+    "readTime": "4 min read"
+  },
+  {
+    "slug": "ai-improve-product-analytics",
+    "title": "How AI Can Improve Product Analytics",
+    "description": "Traditional analytics tells you what happened. AI analytics starts to tell you why — and what to do about it.",
+    "date": "2025-04-06",
+    "category": "AI & Product",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "pm-career-path-complete-guide",
+    "title": "Career Path for Product Managers: A Complete Guide",
+    "description": "APM to CPO — what each level actually expects, how long each stage takes, and what accelerates the climb.",
+    "date": "2025-04-06",
+    "category": "PM Career",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "product-leadership-vs-management",
+    "title": "Product Leadership vs Product Management: What Changes at the Top",
+    "description": "When you stop managing features and start managing direction. The shift is more disorienting than people tell you.",
+    "date": "2025-04-06",
+    "category": "Comparisons",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "product-lifecycle-explained",
+    "title": "The Product Lifecycle Explained for Modern PMs",
+    "description": "Introduction, growth, maturity, decline — and how smart PMs navigate each phase differently.",
+    "date": "2025-04-06",
+    "category": "PM Career",
+    "readTime": "7 min read"
+  },
+  {
+    "slug": "roadmap-planning-practical-guide",
+    "title": "Roadmap Planning: A Practical Guide for PMs",
+    "description": "A roadmap is not a schedule. It's a communication tool. Here's how to use it to align teams without locking yourself in.",
+    "date": "2025-04-06",
+    "category": "PM Career",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "generative-ai-writing-prds",
+    "title": "Generative AI for Writing PRDs",
+    "description": "I've been using AI to draft PRDs for six months. Here's what it's good at, where it falls flat, and what I've kept.",
+    "date": "2025-04-05",
+    "category": "AI & Product",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "strategic-thinking-senior-pm",
+    "title": "Strategic Thinking for Senior Product Managers",
+    "description": "What strategic thinking actually looks like in practice — not in MBA frameworks, but in daily product decisions.",
+    "date": "2025-04-05",
+    "category": "Founder Notes",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "user-centric-product-thinking",
+    "title": "Understanding User-Centric Product Thinking",
+    "description": "What it actually means to build for users — not what users ask for, but what they actually need.",
+    "date": "2025-04-05",
+    "category": "PM Career",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "ai-user-research",
+    "title": "AI in User Research: Opportunities and Risks",
+    "description": "AI can speed up research dramatically. It can also introduce bias at scale. Here's how to get the upside without the downside.",
+    "date": "2025-04-04",
+    "category": "AI & Product",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "data-driven-product-culture",
+    "title": "How to Build a Data-Driven Product Culture",
+    "description": "Culture, not tools, is what makes an organization actually data-driven. Here's how to build it from inside.",
+    "date": "2025-04-04",
+    "category": "Experiments",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "how-pms-balance-business-tech-ux",
+    "title": "How Product Managers Balance Business, Tech, and UX",
+    "description": "The impossible triangle of product management. How experienced PMs actually navigate competing pressures.",
+    "date": "2025-04-04",
+    "category": "PM Career",
+    "readTime": "5 min read"
+  },
+  {
+    "slug": "long-term-vs-short-term-product-strategy",
+    "title": "Building Long-Term vs Short-Term Product Strategy",
+    "description": "The tension between quarterly goals and three-year vision. How to hold both without losing either.",
+    "date": "2025-04-04",
+    "category": "Founder Notes",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "ai-copilots-for-pms",
+    "title": "AI Copilots for Product Managers",
+    "description": "The framing of AI as a 'copilot' is either the most useful metaphor in tech or the most dangerous. Here's my honest take.",
+    "date": "2025-04-03",
+    "category": "AI & Product",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "decision-making-frameworks-product-leaders",
+    "title": "Decision-Making Frameworks for Product Leaders",
+    "description": "When data is incomplete, stakeholders disagree, and the clock is ticking — how senior PMs actually decide.",
+    "date": "2025-04-03",
+    "category": "Founder Notes",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "product-management-misconceptions",
+    "title": "Common Misconceptions About Product Management",
+    "description": "What people outside the role get wrong. And honestly, what people inside the role get wrong too.",
+    "date": "2025-04-03",
+    "category": "PM Career",
+    "readTime": "6 min read"
+  },
+  {
+    "slug": "building-ai-first-products",
+    "title": "Building AI-First Products: A PM's Perspective",
+    "description": "What's actually different about building a product where AI is the core capability, not a feature bolted on.",
+    "date": "2025-04-02",
+    "category": "AI & Product",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "future-role-pms-ai-world",
+    "title": "The Future Role of Product Managers in an AI World",
+    "description": "In 5 years, some of what PMs do today will be automated. What remains — and what expands — is worth planning for now.",
+    "date": "2025-04-01",
+    "category": "AI & Product",
+    "readTime": "3 min read"
+  },
+  {
+    "slug": "how-ai-is-changing-product-decisions",
+    "title": "How AI Is Actually Changing Product Decision-Making",
+    "description": "It's not about replacing PMs. It's about shifting from intuition-based bets to data-validated hypotheses at scale.",
+    "date": "2025-03-15",
+    "category": "AI & Product",
+    "readTime": "2 min read"
+  },
+  {
+    "slug": "product-frameworks-at-scale",
+    "title": "Product Frameworks I Actually Use at Scale",
+    "description": "Forget the textbook theory. These are the frameworks that survive the chaos of hypergrowth.",
+    "date": "2025-03-14",
+    "category": "PM Career",
+    "readTime": "2 min read"
+  },
+  {
+    "slug": "what-makes-product-scalable",
+    "title": "What Makes a Product Scalable",
+    "description": "Scalability isn't just about backend code. It's about operational and design leverage.",
+    "date": "2025-03-13",
+    "category": "Growth & SEO",
+    "readTime": "2 min read"
+  },
+  {
+    "slug": "research-beyond-surveys",
+    "title": "Market Research Beyond Surveys",
+    "description": "Surveys are biased. Here are 5 better ways to understand your market.",
+    "date": "2025-03-12",
+    "category": "Experiments",
+    "readTime": "2 min read"
+  },
+  {
+    "slug": "leadership-not-feature-ownership",
+    "title": "Product Leadership Is Not Feature Ownership",
+    "description": "Moving from managing tickets to managing outcomes and teams.",
+    "date": "2025-03-11",
+    "category": "Founder Notes",
+    "readTime": "2 min read"
+  },
+  {
+    "slug": "how-i-think-about-product-framework",
+    "title": "How I Think About Product: A Product Thinking Framework Built Over 9 Years",
+    "description": "A senior product leader shares a practical product thinking framework built over 9 years of scaling real products across growth, monetisation, and operations.",
+    "date": "2025-01-15",
+    "category": "Founder Notes",
+    "readTime": "5 min read"
+  }
+]
