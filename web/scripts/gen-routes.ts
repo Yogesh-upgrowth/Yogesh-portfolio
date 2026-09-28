@@ -6,7 +6,7 @@
  * Hand-writing thirty near-identical files invites drift, so they are generated
  * from the inventory's real URL shapes and never hand-edited.
  */
-import { mkdirSync, writeFileSync, rmSync, existsSync } from "node:fs";
+import { mkdirSync, writeFileSync, rmSync, existsSync, readdirSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { inventory } from "../lib/content/inventory";
 
@@ -106,9 +106,22 @@ function routeSource(s: Shape): string {
     `  return renderPage(urlFor(await params), null);\n}\n`;
 }
 
+/**
+ * URLs with a hand-authored route. The generator would otherwise overwrite them
+ * on every run, which is how a carefully written conversion page quietly
+ * becomes a 404 three weeks later.
+ */
+const HAND_AUTHORED = new Set(["about", "work-with-me", "notes"]);
+
 function main(): void {
-  if (existsSync(SITE_DIR)) rmSync(SITE_DIR, { recursive: true });
-  const all = shapes();
+  if (existsSync(SITE_DIR)) {
+    // Preserve hand-authored routes across a regenerate.
+    for (const name of readdirSync(SITE_DIR)) {
+      if (HAND_AUTHORED.has(name)) continue;
+      rmSync(join(SITE_DIR, name), { recursive: true });
+    }
+  }
+  const all = shapes().filter((s) => !HAND_AUTHORED.has(s.segments[0] ?? ""));
   for (const s of all) {
     const file = join(SITE_DIR, ...s.segments, "page.tsx");
     mkdirSync(dirname(file), { recursive: true });

@@ -11,6 +11,7 @@ import { loadAllPages } from "../lib/content/loader";
 import { ensureKeyFile, submitUrls } from "../lib/indexnow";
 import { entity } from "../lib/schema/entity";
 import { runScript } from "../lib/net";
+import { buildKit } from "../lib/distribution";
 
 const REPORTS = join(process.cwd(), "..", "reports");
 const LINK_PLAN = join(process.cwd(), "..", "seo", "data", "link-plan.json");
@@ -103,16 +104,19 @@ async function main(): Promise<void> {
     : `[publish] IndexNow ping failed (${res.reason}). Pages are live; retry later.`);
 
   mkdirSync(REPORTS, { recursive: true });
-  writeFileSync(join(REPORTS, `${batch}-distribution.md`),
-    [`# Distribution kit — ${batch}`, "",
-     `Published ${now}. ${urls.length} page(s).`, "",
-     "## URLs", ...urls.map((u) => `- ${entity().site}${u}`), "",
-     "## Next steps (04 §2)",
-     "- Submit the highest-value URLs in Search Console",
-     "- Post the primary finding where the audience already is, with the number in the first line",
-     "- Reply to the threads that asked this question, linking only where it answers them",
-     res.ok ? "" : `- Retry the IndexNow ping: ${res.reason}`,
-    ].join("\n"), "utf8");
+  const kit = buildKit(
+    pages.map((p) => ({ meta: p.meta, site: entity().site })),
+    batch,
+  ) + (res.ok ? "" : `\n\n> IndexNow ping failed: ${res.reason}. Retry it.\n`);
+  writeFileSync(join(REPORTS, `${batch}-distribution.md`), kit, "utf8");
+
+  // 04 §2 asks for a log so the weekly minimums are measurable rather than
+  // remembered.
+  const logPath = join(process.cwd(), "..", "seo", "data", "distribution-log.csv");
+  mkdirSync(join(logPath, ".."), { recursive: true });
+  if (!existsSync(logPath)) {
+    writeFileSync(logPath, "date,page_id,channel,url,notes\n", "utf8");
+  }
   console.log(`[publish] distribution kit: reports/${batch}-distribution.md`);
 }
 

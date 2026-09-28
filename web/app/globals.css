@@ -131,3 +131,23 @@ td.num, .num { text-align: right; font-family: var(--font-mono); }
 .note-body h2 { font-size: 28px; }
 .note-body img { max-width: 100%; height: auto; }
 .note-body pre { overflow-x: auto; }
+
+/* ── Conversion page ────────────────────────────────────────────────────── */
+.engagement { border-top: 1px solid var(--border); padding-top: 20px; margin-top: 32px; }
+.engagement-price { font-family: var(--font-mono); font-size: 20px; color: var(--accent); margin: 4px 0 12px; }
+
+/* ── Consent ────────────────────────────────────────────────────────────── */
+.consent {
+  position: fixed; bottom: 16px; left: 16px; right: 16px; max-width: 520px;
+  margin: 0 auto; background: var(--paper); color: var(--ink);
+  border: 1px solid var(--border); border-radius: var(--radius); padding: 16px;
+  display: flex; flex-wrap: wrap; gap: 12px; align-items: center;
+  justify-content: space-between; font-size: 14px; z-index: 50;
+}
+.consent p { margin: 0; flex: 1 1 260px; }
+.consent button {
+  font: inherit; padding: 8px 14px; border-radius: var(--radius);
+  border: 1px solid var(--border); background: transparent; color: inherit; cursor: pointer;
+}
+.consent button:first-child { background: var(--accent); color: var(--paper); border-color: var(--accent); }
+.consent div { display: flex; gap: 8px; }

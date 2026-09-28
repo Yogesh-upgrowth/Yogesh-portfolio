@@ -23,7 +23,8 @@
     "research": "tsx scripts/research.ts",
     "draft": "tsx scripts/draft.ts",
     "e2e": "playwright test",
-    "notes:migrate": "tsx scripts/migrate-notes.ts"
+    "notes:migrate": "tsx scripts/migrate-notes.ts",
+    "lighthouse": "lhci autorun --config=lighthouserc.json"
   },
   "dependencies": {
     "next": "^16.3.6",
