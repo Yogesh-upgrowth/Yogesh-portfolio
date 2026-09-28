@@ -153,3 +153,23 @@ td.num, .num { text-align: right; font-family: var(--font-mono); }
 }
 .consent button:first-child { background: var(--accent); color: var(--paper); border-color: var(--accent); }
 .consent div { display: flex; gap: 8px; }
+
+/* ── Qualification form and citation ────────────────────────────────────── */
+.qualify {
+  border: 1px solid var(--border); border-radius: var(--radius);
+  padding: 24px; margin: 32px 0; display: grid; gap: 8px;
+}
+.qualify h2 { margin: 0; }
+.qualify p { margin: 0 0 8px; }
+.qualify label { font-size: 14px; font-weight: 500; margin-top: 8px; }
+.qualify select, .qualify button {
+  font: inherit; padding: 10px 12px; border-radius: var(--radius);
+  border: 1px solid var(--border); background: var(--paper); color: var(--ink);
+}
+.qualify button {
+  background: var(--accent); color: var(--paper); border-color: var(--accent);
+  cursor: pointer; margin-top: 16px;
+}
+.qualify button:disabled { opacity: 1; background: transparent; color: var(--ink-muted); border-color: var(--border); cursor: not-allowed; }
+.cite-this { border-top: 1px solid var(--border); margin-top: 48px; padding-top: 20px; font-size: 15px; }
+.cite-this .citation code { display: block; padding: 12px; border: 1px solid var(--border); border-radius: var(--radius); overflow-x: auto; }

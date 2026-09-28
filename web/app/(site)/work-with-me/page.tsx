@@ -13,6 +13,7 @@
 import type { Metadata } from "next";
 import { entity, organizationNode, personNode } from "@/lib/schema/entity";
 import { AuthorBox, CTABand, FAQ } from "@/components/primitives";
+import { QualificationForm } from "@/components/QualificationForm";
 
 export const dynamic = "force-static";
 
@@ -155,6 +156,8 @@ export default function WorkWithMe() {
           A 30-minute call. Bring the number that will not move. If I am not the
           right person, I will say so on that call rather than after an invoice.
         </p>
+
+        <QualificationForm booking={BOOKING} pageId="work-with-me" />
 
         <FAQ items={FAQ_ITEMS} />
 

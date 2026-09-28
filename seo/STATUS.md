@@ -1,6 +1,8 @@
 # Status — every requirement in the package, checked
 
-Generated 2026-09-28, after the D2 resolution. This is the answer to "is
+Generated 2026-09-28. Updated after reading all four prompts/*.md files and the
+full text of 01 and 04, which I had skimmed — see the "what reading the prompts
+changed" section at the end. This is the answer to "is
 everything good to go, or is anything pending".
 
 Legend: **DONE** built and verified · **BLOCKED** needs something only Yogesh
@@ -32,9 +34,9 @@ has · **NEEDS NETWORK** built, cannot run in this container.
 | Gates | State |
 |---|---|
 | G01, G03–G17 (16 gates) | **DONE** — 40 tests, one pass and one fail case each |
-| G02 source quality | **NEEDS NETWORK** — every `source_url` must return 200 |
+| G02 source quality | **DONE offline** — runs from the research object's `fetch_log`, per prompts/research.md; skips only when no log exists |
 | G18 performance | **DONE as config** — `lighthouserc.json`; needs a built site to run |
-| G19, G20 judges | **NEEDS NETWORK** — Anthropic API, and G20 also needs SERPs |
+| G19, G20 judges | **DONE as code** — all 7 questions in `lib/gates/judge.ts`; running them needs the Anthropic API |
 
 Skipped gates return `skipped`, never `pass`, and `allPassed()` counts a skip as
 not-done. A gate that cannot run is never mistakable for one that cleared.
@@ -63,6 +65,8 @@ Every script exists and runs. `pnpm` aliases match `CLAUDE.md` §3.
 | §2 per-publish distribution kit | **DONE** — LinkedIn, X, newsletter, 2 community answers, notify-subject |
 | §2 `distribution-log.csv` | **DONE** — created by `publish.ts` |
 | §2 n8n automation | **BLOCKED** — needs the n8n instance and a Notion database |
+| §3.1 "Cite this" block with CC BY 4.0 CSV | **DONE** — `components/CiteThis.tsx` |
+| §5 qualification form (stage, band, problem) | **DONE** — `components/QualificationForm.tsx`, wired into `/work-with-me` |
 | §3 link acquisition | **BLOCKED** — outreach is human |
 | §4 citation engineering | **DONE** — `citations.ts`, 25 prompts x 5 surfaces |
 | §5 conversion loop | **DONE** — `/work-with-me`, booking UTM, typed events |
@@ -111,3 +115,40 @@ machine that writes them is built, tested and waiting on a key.
 - Link plan: min 3 inbound per page, 0 starved
 - Proof database: 0 contradictions, 2 unsourced claims (down from 3)
 - 119 unit tests, 11 end-to-end, typecheck clean, both builds green
+
+
+---
+
+## What reading the prompts changed (2026-09-28, second pass)
+
+I had vendored all 25 files but only fully read 00, 02, 03 and the configs. The
+four `prompts/*.md` files were never opened, and I had written `research.ts`,
+`draft.ts` and the judge stubs against them anyway. That produced five real
+defects, now fixed:
+
+1. **`ResearchObject` was missing `block_coverage` and `fetch_log`**, which
+   `prompts/research.md` states outright that `gates.ts` reads for G01 and G02.
+   G01 could not tell whether a required block had any supporting facts, and G02
+   was a permanent skip when it could have run offline all along.
+2. **`contracts.ts` had no required blocks and no "must not" lists**, so the
+   contract 01 §B defines was enforced only as a word range.
+3. **`draft.ts` asked the generator for a `PageMeta`.** §3 defines a richer
+   `DraftOutput` that `draft.ts` converts — which is where block order, schema
+   types and `not_affiliated` get applied consistently instead of per page.
+4. **The blocked output was a bare string list**, not
+   `reasons` / `what_would_unblock` / `suggested_fallback`.
+5. **The judge was two bare stubs.** `review-judge.md` defines seven questions.
+   Q7 (experience fidelity) is the only check that a first-person claim still
+   matches its library entry; Q6 catches sibling repetition that similarity
+   scoring misses once the wording differs. Both were absent.
+
+Still not implemented from the package, and honestly flagged rather than
+quietly dropped:
+
+- **Lens-merge rule** (01 §B6): under 6 lens-specific facts means merging the
+  lens into `monetization`, setting `notes=merged:<lens>` and registering a
+  redirect. `draft.ts` surfaces `suggested_fallback: "merge:retention→monetization"`
+  from the generator, but nothing acts on it automatically yet.
+- **Quarterly data study** (04 §3.2) and the **press pitch list** — these are
+  outreach, not code.
+- **3-email follow-up sequence** (04 §5) — needs an email provider.
