@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# AI crawlers explicitly allowed. Tokens need re-checking against each vendor's
+# docs at Wave 0 — they change, and a stale token silently blocks a crawler.
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Google-Extended
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: Amazonbot
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://pmyogesh.com/sitemap.xml

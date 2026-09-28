@@ -1,0 +1,26 @@
+{
+  "_readme": "The Person and Organization entity. sameAs is intentionally empty: a profile only belongs here once it exists, is public, and a real fetch has confirmed it is indexable. The same rule is enforced for the Vite site by script/check-profiles.ts against shared/profiles.ts. Adding an unverified URL here is a claim to Google that cannot be backed.",
+  "site": "https://pmyogesh.com",
+  "siteName": "pmyogesh.com",
+  "person": {
+    "name": "Yogesh Yadav",
+    "jobTitle": "Product growth and monetization consultant for consumer and subscription apps — India-first, global.",
+    "url": "https://pmyogesh.com/about",
+    "worksFor": "pmyogesh.com",
+    "addressLocality": "Jaipur",
+    "addressRegion": "Rajasthan",
+    "addressCountry": "IN",
+    "knowsAbout": [
+      "App monetization", "Subscription pricing", "Paywall optimization",
+      "User retention", "Product-led growth", "Unit economics",
+      "UPI Autopay and e-mandate billing", "India app pricing",
+      "Product analytics", "Experimentation"
+    ],
+    "sameAs": []
+  },
+  "organization": {
+    "name": "pmyogesh.com",
+    "url": "https://pmyogesh.com",
+    "areaServed": ["IN", "Worldwide"]
+  }
+}
