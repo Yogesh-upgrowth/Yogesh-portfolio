@@ -366,3 +366,66 @@ describe("gates that cannot run here", () => {
     expect(G.allPassed(G.runGates(input()))).toBe(false);
   });
 });
+
+describe("01 §C cross-archetype rules", () => {
+  it("fails a MOFU page with no tool or template link", () => {
+    const links = meta().internal_links.filter((l) => l.role !== "tool");
+    links.push({ url: "/glossary/ltv", anchor: "LTV", role: "lateral" });
+    const r = G.g08(input({ meta: meta({ internal_links: links }), funnel: "MOFU" }));
+    expect(r.status).toBe("fail");
+    expect(r.detail).toMatch(/toolOrTemplate/);
+  });
+  it("accepts a templates link in place of a tool link", () => {
+    const links = meta().internal_links.filter((l) => l.role !== "tool");
+    links.push({ url: "/templates/pricing-experiment", anchor: "the template", role: "related" });
+    expect(G.g08(input({ meta: meta({ internal_links: links }), funnel: "MOFU" })).status).toBe("pass");
+  });
+  it("asks a BOFU page for proof and a reference, not for a BOFU link", () => {
+    // Checking only for a BOFU link missed half of §C4.
+    const r = G.g08(input({ meta: meta(), funnel: "BOFU" }));
+    expect(r.status).toBe("fail");
+    expect(r.detail).toMatch(/proof/);
+  });
+  it("passes a BOFU page that links a case study and a benchmark", () => {
+    const links = [
+      { url: "/services", anchor: "services", role: "hub" as const },
+      { url: "/case-studies/carinfo-3-8m-to-45m-mau", anchor: "the CarInfo case study", role: "proof" as const },
+      { url: "/benchmarks/arpu/fintech", anchor: "fintech ARPU", role: "lateral" as const },
+      { url: "/glossary/ltv", anchor: "LTV", role: "lateral" as const },
+      { url: "/tools/ltv-calculator", anchor: "the calculator", role: "tool" as const },
+    ];
+    // Not the default /glossary/arpu URL: G08 also rejects a page that links
+    // to itself, which is what made the first version of this test fail.
+    const m = meta({ url: "/services/app-monetization-strategy", internal_links: links });
+    expect(G.g08(input({ meta: m, funnel: "BOFU" })).status).toBe("pass");
+  });
+});
+
+describe("reuse caps — 01 §C2 and §C3", () => {
+  it("fails a fact used on more than three pages site-wide", () => {
+    const usage = new Map(FACTS.map((f) => [f.fact_id, 1]));
+    usage.set(FACTS[0]!.fact_id, 5);
+    expect(G.gReuse(input({ factUsage: usage })).status).toBe("fail");
+  });
+  it("fails a fact on more than two lenses of the same app", () => {
+    const m = meta({ archetype: "teardown", entity_a: "duolingo",
+      url: "/teardowns/duolingo/pricing" });
+    const corpus = ["monetization", "onboarding", "retention"].map((lens) =>
+      meta({ archetype: "teardown", entity_a: "duolingo",
+        url: `/teardowns/duolingo/${lens}`, facts_used: [FACTS[0]!.fact_id] }));
+    const r = G.gReuse(input({ meta: m, corpus: [m, ...corpus] }));
+    expect(r.status).toBe("fail");
+    expect(r.detail).toMatch(/lenses of duolingo/);
+  });
+  it("fails an experience entry used on more than eight pages", () => {
+    const m = meta({ experience_used: ["exp-014"] });
+    const corpus = Array.from({ length: 9 }, (_, k) =>
+      meta({ url: `/x/${k}`, experience_used: ["exp-014"] }));
+    const r = G.gReuse(input({ meta: m, corpus }));
+    expect(r.status).toBe("fail");
+    expect(r.detail).toMatch(/exp-014/);
+  });
+  it("passes when everything is inside the caps", () => {
+    expect(G.gReuse(input()).status).toBe("pass");
+  });
+});

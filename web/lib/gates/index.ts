@@ -11,7 +11,7 @@
 import { readFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import type { PageMeta, Fact, ExperienceEntry } from "../content/schemas";
-import { contractFor, UNDER_TOLERANCE, OVER_TOLERANCE } from "./contracts";
+import { contractFor, requiredLinkRoles, CROSS, UNDER_TOLERANCE, OVER_TOLERANCE } from "./contracts";
 import {
   firstParagraph, sections, sentences, toProse, wordCount, words,
   fleschKincaidGrade, passiveShare,
@@ -41,6 +41,8 @@ export interface GateInput {
   blockCoverage?: Record<string, string[]>;
   /** research.md output: every fetch and its status. Read by G02. */
   fetchLog?: { url: string; status: number; used: boolean; why: string }[];
+  /** Funnel position from the inventory row — 01 §C4 link rules depend on it. */
+  funnel?: string;
   /** Set when similarity_check.py has run (G04/G05). */
   similarity?: {
     max_sibling: number; max_parent: number; max_any: number; boilerplate_ratio: number;
@@ -255,7 +257,20 @@ export function g08(i: GateInput): GateResult {
   const fails: string[] = [];
   if (links.length < 5) fails.push(`${links.length} internal links (need 5)`);
   if (!links.some((l) => l.role === "hub")) fails.push("no link up to a hub");
-  if (!links.some((l) => l.role === "bofu")) fails.push("no link to a BOFU page");
+
+  // 01 §C4 is funnel-aware, and checking only for a BOFU link missed half of
+  // it: a BOFU page owes proof and a reference instead, so the graph is not
+  // one-way traffic into the hubs.
+  const { roles, why } = requiredLinkRoles(i.funnel ?? "MOFU");
+  for (const role of roles) {
+    const has =
+      role === "toolOrTemplate"
+        ? links.some((l) => l.role === "tool" || /^\/templates\//.test(l.url))
+        : role === "reference"
+          ? links.some((l) => /^\/(benchmarks|teardowns)\//.test(l.url))
+          : links.some((l) => l.role === role);
+    if (!has) fails.push(`no ${role} link — ${why}`);
+  }
   const generic = links.filter((l) => /^(click here|here|read more|this page|link)$/i.test(l.anchor.trim()));
   if (generic.length) fails.push(`${generic.length} non-descriptive anchor(s)`);
   const self = links.filter((l) => l.url === i.meta.url);
@@ -263,6 +278,53 @@ export function g08(i: GateInput): GateResult {
   const observed = `${links.length} outbound`;
   return fails.length ? bad("G08", N, fails.join("; "), observed)
                       : ok("G08", N, "5+ contextual links with hub and BOFU", observed);
+}
+
+/**
+ * Reuse caps — 01 §C2 and §C3.
+ *
+ * Not one of the twenty numbered gates, but the rule that keeps a corpus from
+ * becoming the same six facts rearranged 1,071 times. Reported alongside them
+ * so a breach surfaces in the batch report rather than in a spam update.
+ */
+export function gReuse(i: GateInput): GateResult {
+  const N = "Reuse caps";
+  const fails: string[] = [];
+
+  for (const id of i.meta.facts_used) {
+    const uses = i.factUsage.get(id) ?? 1;
+    if (uses > CROSS.FACT_REUSE_SITEWIDE) {
+      fails.push(`fact ${id} is on ${uses} pages (cap ${CROSS.FACT_REUSE_SITEWIDE})`);
+    }
+    // Within one app's teardowns the cap is tighter, because four lenses of one
+    // app leaning on the same fact is exactly the near-duplicate set §C2 exists
+    // to prevent.
+    if (i.meta.archetype === "teardown" && i.meta.entity_a) {
+      const sameApp = i.corpus.filter(
+        (p) => p.archetype === "teardown" && p.entity_a === i.meta.entity_a &&
+          p.facts_used.includes(id),
+      ).length;
+      if (sameApp > CROSS.FACT_REUSE_PER_APP) {
+        fails.push(
+          `fact ${id} is on ${sameApp} lenses of ${i.meta.entity_a} ` +
+            `(cap ${CROSS.FACT_REUSE_PER_APP})`,
+        );
+      }
+    }
+  }
+
+  if (i.meta.experience_used.length > CROSS.EXPERIENCE_PER_PAGE) {
+    fails.push(`${i.meta.experience_used.length} experience entries (cap ${CROSS.EXPERIENCE_PER_PAGE})`);
+  }
+  for (const id of i.meta.experience_used) {
+    const uses = i.corpus.filter((p) => p.experience_used.includes(id)).length;
+    if (uses > CROSS.EXPERIENCE_REUSE) {
+      fails.push(`experience ${id} is on ${uses} pages (cap ${CROSS.EXPERIENCE_REUSE})`);
+    }
+  }
+  return fails.length
+    ? bad("CR", N, fails.slice(0, 4).join("; "), `${fails.length} breach(es)`)
+    : ok("CR", N, "fact and experience reuse within the §C caps");
 }
 
 // ── G09 Structured data ─────────────────────────────────────────────────────
@@ -550,6 +612,7 @@ export function runGates(i: GateInput): GateResult[] {
   return [
     g01(i), g02(i), g03(i), g04(i), g05(i), g06(i), g07(i), g08(i), g09(i), g10(i),
     g11(i), g12(i), g13(i), g14(i), g15(i), g16(i), g17(i), g18(), g19(), g20(),
+    gReuse(i),
   ];
 }
 

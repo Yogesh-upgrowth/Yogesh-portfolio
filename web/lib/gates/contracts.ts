@@ -210,40 +210,53 @@ export const CONTRACTS: Record<string, ArchetypeContract> = {
   tool: {
     words: [700, 1100], section: [120, 400],
     requiredSchema: ["WebApplication", ...PERSON_CRUMB],
+    sibling: 0.5,
   },
   playbook: {
     words: [1800, 3000], section: [120, 400],
     requiredSchema: ["Article", ...PERSON_CRUMB],
+    sibling: 0.4,
+    uniquenessNotes: "<=0.40 vs any other playbook; <=0.45 vs the related growth or decision page (01 §B10).",
   },
   glossary: {
     words: [350, 700], section: [60, 250],
     requiredSchema: ["DefinedTerm", ...PERSON_CRUMB],
+    sibling: 0.55,
   },
   compare: {
     words: [1000, 1600], section: [120, 400],
     requiredSchema: ["Article", ...PERSON_CRUMB],
     notAffiliated: true, yearTokenAllowed: true,
+    sibling: 0.5,
   },
   template: {
     words: [600, 1000], section: [120, 400],
-    requiredSchema: ["Article", ...PERSON_CRUMB],
+    // 01 §B13 requires DigitalDocument for the downloadable itself.
+    requiredSchema: ["Article", "DigitalDocument", ...PERSON_CRUMB],
+    sibling: 0.5,
   },
   india: {
     words: [1000, 1800], section: [120, 400],
     requiredSchema: ["Article", ...PERSON_CRUMB],
+    sibling: 0.5,
   },
   "pricing-examples": {
     words: [900, 1400], section: [120, 400],
-    requiredSchema: ["Article", ...PERSON_CRUMB],
+    // 01 §B15: Dataset, because the CSV is downloadable under a stated licence.
+    requiredSchema: ["Article", "Dataset", ...PERSON_CRUMB],
     notAffiliated: true, yearTokenAllowed: true,
   },
   decision: {
     words: [1000, 1600], section: [120, 400],
     requiredSchema: ["Article", ...PERSON_CRUMB],
+    sibling: 0.5,
+    uniquenessNotes: "<=0.45 vs the related playbook; <=0.50 vs other decisions (01 §B16).",
   },
   growth: {
     words: [900, 1400], section: [120, 400],
     requiredSchema: ["Article", ...PERSON_CRUMB],
+    sibling: 0.5,
+    uniquenessNotes: "<=0.50 vs the same problem in another app type and vs another problem in the same app type; <=0.45 vs the related playbook or benchmark (01 §B17).",
   },
 };
 
@@ -256,4 +269,40 @@ export function contractFor(archetype: string): ArchetypeContract {
     );
   }
   return c;
+}
+
+/**
+ * Cross-archetype rules — 01 §C.
+ *
+ * These are the rules that hold across every contract and are easy to lose
+ * because they belong to no single archetype.
+ */
+export const CROSS = {
+  /** §C2: a fact_id may appear on at most this many pages site-wide. */
+  FACT_REUSE_SITEWIDE: 3,
+  /** §C2: and at most this many within one app's teardowns. */
+  FACT_REUSE_PER_APP: 2,
+  /** §C3: an exp_id appears on at most this many pages. */
+  EXPERIENCE_REUSE: 8,
+  /** §C3: a page uses at most this many entries. */
+  EXPERIENCE_PER_PAGE: 2,
+} as const;
+
+/** §C4: which link roles a page owes, by funnel position. */
+export function requiredLinkRoles(funnel: string): {
+  roles: string[]; why: string;
+} {
+  // A BOFU page owes proof and a reference; everything else owes a way to
+  // convert and something to use. Both directions exist so the graph is not
+  // one-way traffic into the hubs.
+  if (funnel === "BOFU") {
+    return {
+      roles: ["proof", "reference"],
+      why: "01 §C4: every BOFU page links to at least one case study and one benchmark or teardown",
+    };
+  }
+  return {
+    roles: ["bofu", "toolOrTemplate"],
+    why: "01 §C4: every MOFU/TOFU page links to at least one BOFU page and one tool or template",
+  };
 }

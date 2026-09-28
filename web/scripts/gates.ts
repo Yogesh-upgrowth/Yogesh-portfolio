@@ -8,6 +8,7 @@
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { Fact, ExperienceEntry, ResearchObject } from "../lib/content/schemas";
+import type { ResearchObject as ResearchObjectType } from "../lib/content/schemas";
 import { loadAllPages, type LoadedPage } from "../lib/content/loader";
 import {
   loadGateConfig, runGates, g01, g02, g03, summarise,
@@ -45,16 +46,29 @@ function loadExperience(): Map<string, ExperienceEntry> {
   return out;
 }
 
-function loadFacts(page: LoadedPage): Fact[] {
+const researchCache = new Map<string, ResearchObjectType | null>();
+
+function loadResearch(page: LoadedPage): ResearchObjectType | null {
+  if (researchCache.has(page.meta.id)) return researchCache.get(page.meta.id)!;
   const p = join(SEO, "research", `${page.meta.id}.json`);
-  if (!existsSync(p)) return [];
+  if (!existsSync(p)) {
+    researchCache.set(page.meta.id, null);
+    return null;
+  }
   const parsed = ResearchObject.safeParse(JSON.parse(readFileSync(p, "utf8")));
   if (!parsed.success) {
     throw new Error(`[gates] research/${page.meta.id}.json is invalid: ` +
       parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; "));
   }
+  researchCache.set(page.meta.id, parsed.data);
+  return parsed.data;
+}
+
+function loadFacts(page: LoadedPage): Fact[] {
+  const research = loadResearch(page);
+  if (!research) return [];
   const want = new Set(page.meta.facts_used);
-  return parsed.data.facts.filter((f) => want.has(f.fact_id));
+  return research.facts.filter((f) => want.has(f.fact_id));
 }
 
 function loadSimilarity(id: string): GateInput["similarity"] {
@@ -103,9 +117,14 @@ function main(): number {
   for (const page of pages) {
     const input: GateInput = {
       meta: page.meta, body: page.body, facts: loadFacts(page),
+      // 01 §C4's link rules depend on funnel position, which lives on the
+      // inventory row rather than on the page.
+      funnel: page.row.funnel,
+      blockCoverage: loadResearch(page)?.block_coverage,
+      fetchLog: loadResearch(page)?.fetch_log,
       factUsage, experience, corpus, similarity: loadSimilarity(page.meta.id), config,
     };
-    const results = researchOnly ? [g01(input), g02(), g03(input)] : runGates(input);
+    const results = researchOnly ? [g01(input), g02(input), g03(input)] : runGates(input);
     const s = summarise(results);
     const worst = results.some((r) => r.status === "blocked") ? "BLOCKED"
       : results.some((r) => r.status === "fail") ? "FAILED"
