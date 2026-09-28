@@ -10,3 +10,4 @@ web/node_modules/
 web/next-env.d.ts
 reports/
 seo/data/
+web/tsconfig.tsbuildinfo
