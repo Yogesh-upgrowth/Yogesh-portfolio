@@ -12,7 +12,8 @@
     "similarity": "python3 ../seo/scripts/similarity_check.py --content content --out ../seo/data/similarity/report.json",
     "test": "vitest run",
     "gates": "tsx scripts/gates.ts",
-    "routes": "tsx scripts/gen-routes.ts"
+    "routes": "tsx scripts/gen-routes.ts",
+    "links": "tsx scripts/link-plan.ts"
   },
   "dependencies": {
     "next": "^16.3.6",
