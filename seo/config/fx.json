@@ -1,0 +1,9 @@
+{
+  "_readme": "Single site-wide conversion rate. Update monthly via refresh.ts (records the previous value in history). Round INR to natural price points (₹49/99/149/199/299/499/999) only when presenting a converted USD price as an INR reference; never round a device-checked INR price.",
+  "base": "USD",
+  "quote": "INR",
+  "rate": null,
+  "as_of": null,
+  "source": "RBI reference rate (https://www.rbi.org.in) — set at Wave 0",
+  "history": []
+}

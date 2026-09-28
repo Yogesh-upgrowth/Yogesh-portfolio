@@ -1,0 +1,14 @@
+{
+  "_readme": "Never cite. Content farms, AI-summary sites, scraper directories, and any page that cites no source itself. Extend freely; removals need a DECISIONS.md entry.",
+  "patterns": [
+    "*.blogspot.*", "*.wordpress.com", "medium.com/@*", "linkedin.com/pulse/*", "quora.com/*", "scribd.com", "slideshare.net",
+    "*answers*", "*wiki*.fandom.com", "*.ai-summary.*", "*bestapps*", "*top10*", "*toplist*", "*appsreview*", "*techjockey*", "*softwaresuggest*",
+    "coursehero.com", "chegg.com", "studocu.com", "brainly.*", "*essay*", "*pdfcoffee*", "*dokumen*"
+  ],
+  "domains": [
+    "businessofapps.com/data",
+    "startuptalky.com", "ideausher.com", "nimbleappgenie.com", "appinventiv.com", "mindinventory.com", "spaceotechnologies.com", "excellentwebworld.com", "techjockey.com", "softwaresuggest.com", "goodfirms.co", "clutch.co"
+  ],
+  "note_on_the_last_two": "Directories are fine for listing yourself (04 §3) but never as fact sources.",
+  "note_on_businessofapps": "The /data pages are secondary aggregations; cite the original report they summarise."
+}

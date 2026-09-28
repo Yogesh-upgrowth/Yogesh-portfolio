@@ -1,0 +1,22 @@
+{
+  "_readme": "Zero occurrences allowed in any page body, title, meta, FAQ or CTA (case-insensitive, whole-phrase). Openers apply to the first paragraph only. Extend via DECISIONS.md.",
+  "phrases": [
+    "in today's fast-paced", "in today's digital", "in today's world", "in the ever-evolving", "ever-changing landscape",
+    "delve", "delving", "dive into", "let's dive", "deep dive into", "unpack", "navigate the", "journey",
+    "game-changer", "game changer", "game-changing", "unlock", "unlocking", "unleash", "supercharge", "skyrocket",
+    "seamless", "seamlessly", "robust", "leverage", "leveraging", "landscape", "ecosystem", "synergy", "holistic",
+    "cutting-edge", "state-of-the-art", "best-in-class", "world-class", "next-level", "revolutionary", "transformative",
+    "empower", "elevate", "harness", "tapestry", "testament to", "beacon", "realm", "paradigm",
+    "it's important to note", "it is important to note", "it's worth noting", "needless to say", "at the end of the day",
+    "in conclusion", "to sum up", "as we can see", "in this article", "in this guide", "in this post", "in this teardown, we",
+    "whether you're a", "look no further", "the bottom line is", "when it comes to", "one size fits all",
+    "crucial", "vital", "pivotal", "myriad", "plethora", "utilize", "utilise", "facilitate",
+    "not only... but also", "it's no secret", "in a nutshell", "the world of", "a wide range of", "a variety of",
+    "user-friendly", "top-notch", "hassle-free", "boost your", "take your", "to the next level",
+    "we understand that", "our team of experts", "rest assured", "contact us today", "don't hesitate"
+  ],
+  "banned_openers": [
+    "in today's", "when it comes to", "have you ever", "welcome to", "are you", "imagine", "picture this", "in the world of", "as a", "with the rise of"
+  ],
+  "hedges_limit_per_page": { "phrases": ["may", "might", "could", "can be", "depending on"], "max_per_1000_words": 8 }
+}

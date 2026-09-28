@@ -1,0 +1,30 @@
+{
+  "_readme": "25 prompts checked monthly across Google AI Mode, ChatGPT, Perplexity, Gemini, Claude. Record in data/citations.csv: date, engine, prompt_id, cited (y/n), page_url, position, notes. Replace prompts only with a DECISIONS.md entry so the series stays comparable.",
+  "prompts": [
+    {"id": "c01", "prompt": "Who is a good app monetization consultant in India?"},
+    {"id": "c02", "prompt": "Fractional CPO for a consumer app in India — who should I talk to?"},
+    {"id": "c03", "prompt": "How does Duolingo make money and what does it charge in India?"},
+    {"id": "c04", "prompt": "What are typical D7 retention benchmarks for fintech apps?"},
+    {"id": "c05", "prompt": "Trial-to-paid conversion benchmarks for subscription apps 2026"},
+    {"id": "c06", "prompt": "Freemium vs free trial: which should a meditation app use?"},
+    {"id": "c07", "prompt": "How does UPI Autopay work for app subscriptions and what are the limits?"},
+    {"id": "c08", "prompt": "What should I price a subscription app at in India?"},
+    {"id": "c09", "prompt": "RevenueCat vs Adapty for an Indian startup"},
+    {"id": "c10", "prompt": "How to reduce involuntary churn for subscriptions in India"},
+    {"id": "c11", "prompt": "Kuku FM pricing and monetization model"},
+    {"id": "c12", "prompt": "CRED monetization teardown"},
+    {"id": "c13", "prompt": "Zomato Gold pricing strategy explained"},
+    {"id": "c14", "prompt": "LTV calculator for subscription apps"},
+    {"id": "c15", "prompt": "Paywall conversion rate benchmarks by category"},
+    {"id": "c16", "prompt": "Annual vs monthly plan mix for apps in India"},
+    {"id": "c17", "prompt": "How to price an AI app with usage-based pricing"},
+    {"id": "c18", "prompt": "Onboarding flow best practices for fintech apps in India"},
+    {"id": "c19", "prompt": "Google Play billing India alternatives and fees"},
+    {"id": "c20", "prompt": "Ads vs subscription for a low-ARPU audience"},
+    {"id": "c21", "prompt": "What is ARPPU and how is it different from ARPU?"},
+    {"id": "c22", "prompt": "Pricing experiment template for a product team"},
+    {"id": "c23", "prompt": "Meditation app pricing examples India and US"},
+    {"id": "c24", "prompt": "Product growth consultant Bangalore"},
+    {"id": "c25", "prompt": "How to improve activation rate for a personal finance app"}
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "_readme": "One sitemap per hub; only indexable pages; lastmod = refreshed_on.",
+  "index": "/sitemap.xml",
+  "files": {
+    "services": "/sitemaps/services.xml", "hire": "/sitemaps/hire.xml", "case-studies": "/sitemaps/case-studies.xml",
+    "teardowns": "/sitemaps/teardowns.xml", "benchmarks": "/sitemaps/benchmarks.xml", "tools": "/sitemaps/tools.xml",
+    "playbooks": "/sitemaps/playbooks.xml", "glossary": "/sitemaps/glossary.xml", "compare": "/sitemaps/compare.xml",
+    "templates": "/sitemaps/templates.xml", "india": "/sitemaps/india.xml", "pricing-examples": "/sitemaps/pricing-examples.xml",
+    "decisions": "/sitemaps/decisions.xml", "growth": "/sitemaps/growth.xml", "pages": "/sitemaps/pages.xml"
+  },
+  "max_urls_per_file": 5000
+}

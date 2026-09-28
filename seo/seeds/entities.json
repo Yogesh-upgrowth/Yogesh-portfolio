@@ -1,0 +1,165 @@
+{
+  "_readme": "Entity seeds. Edit these, then run scripts/build_inventory.py. Never hand-edit page-inventory.csv. Waves: 1 = foundation, 2 = expansion, 3 = scale, 4 = conditional/long-tail.",
+
+  "services": [
+    {"slug": "app-monetization-strategy", "label": "App Monetization Strategy", "kw": "app monetization consultant", "kw2": ["app monetization strategy", "mobile app monetization consulting"], "industry_kw": "{industry} app monetization", "industries": "all", "industry_wave": 2},
+    {"slug": "pricing-and-packaging", "label": "Pricing & Packaging", "kw": "pricing strategy consultant", "kw2": ["saas pricing consultant", "pricing and packaging consulting"], "industry_kw": "{industry} pricing strategy", "industries": "all", "industry_wave": 2},
+    {"slug": "subscription-and-paywall-optimization", "label": "Subscription & Paywall Optimization", "kw": "subscription app consultant", "kw2": ["paywall optimization", "subscription conversion rate optimization"], "industry_kw": "{industry} subscription optimization", "industries": "all", "industry_wave": 2},
+    {"slug": "retention-and-lifecycle", "label": "Retention & Lifecycle", "kw": "app retention consultant", "kw2": ["user retention consulting", "lifecycle marketing consultant"], "industry_kw": "{industry} app retention strategy", "industries": "all", "industry_wave": 2},
+    {"slug": "plg-and-self-serve", "label": "Product-Led Growth", "kw": "product led growth consultant", "kw2": ["plg consultant", "self-serve saas growth"], "industry_kw": "plg for {industry}", "industries": ["b2b-saas", "ai-apps", "fintech"], "industry_wave": 2},
+    {"slug": "onboarding-and-activation", "label": "Onboarding & Activation", "kw": "user onboarding consultant", "kw2": ["activation rate optimization", "onboarding optimization"], "industry_kw": "{industry} app onboarding", "industries": "all", "industry_wave": 3},
+    {"slug": "product-growth-audit", "label": "Product Growth Audit", "kw": "product growth audit", "kw2": ["app growth audit", "product teardown service"], "industry_kw": "{industry} product audit", "industries": "all", "industry_wave": 3},
+    {"slug": "fractional-cpo", "label": "Fractional CPO", "kw": "fractional cpo", "kw2": ["fractional chief product officer", "fractional cpo india"], "industry_kw": "fractional cpo for {industry}", "industries": "all", "industry_wave": 3},
+    {"slug": "ads-and-hybrid-monetization", "label": "Ads & Hybrid Monetization", "kw": "in-app advertising strategy consultant", "kw2": ["hybrid monetization", "ad monetization consultant"], "industry_kw": "{industry} app ad monetization", "industries": "all", "exclude_industries": ["b2b-saas"], "industry_wave": 3},
+    {"slug": "ai-product-monetization", "label": "AI Product Strategy & Monetization", "kw": "ai product strategy consultant", "kw2": ["how to monetize ai features", "ai pricing strategy consultant"], "industry_kw": "ai monetization for {industry}", "industries": "all", "industry_wave": 3},
+    {"slug": "fractional-head-of-growth", "label": "Fractional Head of Growth", "kw": "fractional head of growth", "kw2": ["growth consultant for startups", "fractional growth leader"], "industries": "none"},
+    {"slug": "analytics-and-experimentation", "label": "Product Analytics & Experimentation", "kw": "product analytics consultant", "kw2": ["a/b testing consultant", "experimentation program setup"], "industries": "none"}
+  ],
+
+  "industries": [
+    {"slug": "fintech", "label": "Fintech", "kw": "fintech", "example_apps": ["cred", "groww", "jupiter"]},
+    {"slug": "edtech", "label": "Edtech", "kw": "edtech", "example_apps": ["physicswallah", "duolingo", "unacademy"]},
+    {"slug": "healthtech", "label": "Health & Wellness", "kw": "health and wellness", "example_apps": ["healthifyme", "cult-fit", "headspace"]},
+    {"slug": "d2c-ecommerce", "label": "D2C & E-commerce", "kw": "ecommerce", "example_apps": ["nykaa", "meesho", "lenskart"]},
+    {"slug": "travel", "label": "Travel", "kw": "travel", "example_apps": ["makemytrip", "ixigo", "airbnb"]},
+    {"slug": "marketplaces", "label": "Marketplaces & Services", "kw": "marketplace", "example_apps": ["urban-company", "zomato", "swiggy"]},
+    {"slug": "b2b-saas", "label": "B2B SaaS", "kw": "saas", "example_apps": ["notion", "canva", "figma"]},
+    {"slug": "media-ott", "label": "Media, OTT & Audio", "kw": "ott and audio", "example_apps": ["jiohotstar", "kuku-fm", "spotify"]},
+    {"slug": "gaming", "label": "Gaming & Fantasy Sports", "kw": "gaming", "example_apps": ["dream11", "discord-nitro"]},
+    {"slug": "mobility", "label": "Mobility & Logistics", "kw": "mobility", "example_apps": ["rapido", "uber", "zepto"]},
+    {"slug": "ai-apps", "label": "AI-Native Apps", "kw": "ai app", "example_apps": ["chatgpt", "perplexity", "grammarly"]},
+    {"slug": "social-dating", "label": "Social, Dating & Community", "kw": "dating and social", "example_apps": ["tinder", "bumble", "sharechat"]}
+  ],
+
+  "cities": [
+    {"slug": "bangalore", "label": "Bengaluru", "kw": "bangalore", "region": "IN"},
+    {"slug": "mumbai", "label": "Mumbai", "kw": "mumbai", "region": "IN"},
+    {"slug": "delhi-ncr", "label": "Delhi NCR", "kw": "delhi ncr", "region": "IN"},
+    {"slug": "hyderabad", "label": "Hyderabad", "kw": "hyderabad", "region": "IN"},
+    {"slug": "pune", "label": "Pune", "kw": "pune", "region": "IN"},
+    {"slug": "chennai", "label": "Chennai", "kw": "chennai", "region": "IN"},
+    {"slug": "jaipur", "label": "Jaipur", "kw": "jaipur", "region": "IN"},
+    {"slug": "dubai", "label": "Dubai", "kw": "dubai", "region": "AE"},
+    {"slug": "singapore", "label": "Singapore", "kw": "singapore", "region": "SG"}
+  ],
+
+  "city_roles": [
+    {"slug": "product-consultant", "label": "Product Consultant", "kw": "product consultant {city}"},
+    {"slug": "growth-consultant", "label": "Growth Consultant", "kw": "growth consultant {city}"},
+    {"slug": "fractional-cpo", "label": "Fractional CPO", "kw": "fractional cpo {city}"}
+  ],
+
+  "teardown_lenses": [
+    {"slug": "monetization", "label": "Monetization", "kw": "{app} monetization"},
+    {"slug": "pricing", "label": "Pricing", "kw": "{app} pricing"},
+    {"slug": "onboarding", "label": "Onboarding", "kw": "{app} onboarding"},
+    {"slug": "retention", "label": "Retention", "kw": "{app} retention strategy"}
+  ],
+
+  "apps": [
+    {"slug": "duolingo", "name": "Duolingo", "industry": "edtech", "region": "global", "wave": 1},
+    {"slug": "zomato", "name": "Zomato", "industry": "marketplaces", "region": "in", "wave": 1},
+    {"slug": "cred", "name": "CRED", "industry": "fintech", "region": "in", "wave": 1},
+    {"slug": "kuku-fm", "name": "Kuku FM", "industry": "media-ott", "region": "in", "wave": 1},
+
+    {"slug": "spotify", "name": "Spotify", "industry": "media-ott", "region": "global", "wave": 2},
+    {"slug": "netflix", "name": "Netflix", "industry": "media-ott", "region": "global", "wave": 2},
+    {"slug": "swiggy", "name": "Swiggy", "industry": "marketplaces", "region": "in", "wave": 2},
+    {"slug": "phonepe", "name": "PhonePe", "industry": "fintech", "region": "in", "wave": 2},
+    {"slug": "groww", "name": "Groww", "industry": "fintech", "region": "in", "wave": 2},
+    {"slug": "zerodha", "name": "Zerodha", "industry": "fintech", "region": "in", "wave": 2},
+    {"slug": "headspace", "name": "Headspace", "industry": "healthtech", "region": "global", "wave": 2},
+    {"slug": "canva", "name": "Canva", "industry": "b2b-saas", "region": "global", "wave": 2},
+    {"slug": "notion", "name": "Notion", "industry": "b2b-saas", "region": "global", "wave": 2},
+    {"slug": "chatgpt", "name": "ChatGPT", "industry": "ai-apps", "region": "global", "wave": 2},
+    {"slug": "physicswallah", "name": "PhysicsWallah", "industry": "edtech", "region": "in", "wave": 2},
+    {"slug": "cult-fit", "name": "Cult.fit", "industry": "healthtech", "region": "in", "wave": 2},
+    {"slug": "tinder", "name": "Tinder", "industry": "social-dating", "region": "global", "wave": 2},
+    {"slug": "linkedin-premium", "name": "LinkedIn Premium", "industry": "b2b-saas", "region": "global", "wave": 2},
+    {"slug": "jiohotstar", "name": "JioHotstar", "industry": "media-ott", "region": "in", "wave": 2},
+    {"slug": "youtube-premium", "name": "YouTube Premium", "industry": "media-ott", "region": "global", "wave": 2},
+
+    {"slug": "pocket-fm", "name": "Pocket FM", "industry": "media-ott", "region": "in", "wave": 3},
+    {"slug": "healthifyme", "name": "HealthifyMe", "industry": "healthtech", "region": "in", "wave": 3},
+    {"slug": "paytm", "name": "Paytm", "industry": "fintech", "region": "in", "wave": 3},
+    {"slug": "meesho", "name": "Meesho", "industry": "d2c-ecommerce", "region": "in", "wave": 3},
+    {"slug": "flipkart", "name": "Flipkart", "industry": "d2c-ecommerce", "region": "in", "wave": 3},
+    {"slug": "zepto", "name": "Zepto", "industry": "mobility", "region": "in", "wave": 3},
+    {"slug": "blinkit", "name": "Blinkit", "industry": "mobility", "region": "in", "wave": 3},
+    {"slug": "makemytrip", "name": "MakeMyTrip", "industry": "travel", "region": "in", "wave": 3},
+    {"slug": "ixigo", "name": "ixigo", "industry": "travel", "region": "in", "wave": 3},
+    {"slug": "dream11", "name": "Dream11", "industry": "gaming", "region": "in", "wave": 3},
+    {"slug": "jupiter", "name": "Jupiter", "industry": "fintech", "region": "in", "wave": 3},
+    {"slug": "urban-company", "name": "Urban Company", "industry": "marketplaces", "region": "in", "wave": 3},
+    {"slug": "calm", "name": "Calm", "industry": "healthtech", "region": "global", "wave": 3},
+    {"slug": "strava", "name": "Strava", "industry": "healthtech", "region": "global", "wave": 3},
+    {"slug": "figma", "name": "Figma", "industry": "b2b-saas", "region": "global", "wave": 3},
+    {"slug": "grammarly", "name": "Grammarly", "industry": "ai-apps", "region": "global", "wave": 3},
+    {"slug": "perplexity", "name": "Perplexity", "industry": "ai-apps", "region": "global", "wave": 3},
+    {"slug": "bumble", "name": "Bumble", "industry": "social-dating", "region": "global", "wave": 3},
+    {"slug": "hinge", "name": "Hinge", "industry": "social-dating", "region": "global", "wave": 3},
+    {"slug": "airbnb", "name": "Airbnb", "industry": "travel", "region": "global", "wave": 3},
+
+    {"slug": "practo", "name": "Practo", "industry": "healthtech", "region": "in", "wave": 4},
+    {"slug": "tata-1mg", "name": "Tata 1mg", "industry": "healthtech", "region": "in", "wave": 4},
+    {"slug": "myntra", "name": "Myntra", "industry": "d2c-ecommerce", "region": "in", "wave": 4},
+    {"slug": "nykaa", "name": "Nykaa", "industry": "d2c-ecommerce", "region": "in", "wave": 4},
+    {"slug": "rapido", "name": "Rapido", "industry": "mobility", "region": "in", "wave": 4},
+    {"slug": "unacademy", "name": "Unacademy", "industry": "edtech", "region": "in", "wave": 4},
+    {"slug": "truecaller", "name": "Truecaller", "industry": "ai-apps", "region": "global", "wave": 4},
+    {"slug": "lenskart", "name": "Lenskart", "industry": "d2c-ecommerce", "region": "in", "wave": 4},
+    {"slug": "sharechat", "name": "ShareChat", "industry": "social-dating", "region": "in", "wave": 4},
+    {"slug": "uber", "name": "Uber", "industry": "mobility", "region": "global", "wave": 4},
+    {"slug": "booking-com", "name": "Booking.com", "industry": "travel", "region": "global", "wave": 4},
+    {"slug": "amazon-prime", "name": "Amazon Prime", "industry": "d2c-ecommerce", "region": "global", "wave": 4},
+    {"slug": "snapchat-plus", "name": "Snapchat+", "industry": "social-dating", "region": "global", "wave": 4},
+    {"slug": "discord-nitro", "name": "Discord Nitro", "industry": "gaming", "region": "global", "wave": 4},
+    {"slug": "coursera", "name": "Coursera", "industry": "edtech", "region": "global", "wave": 4},
+    {"slug": "whoop", "name": "WHOOP", "industry": "healthtech", "region": "global", "wave": 4},
+    {"slug": "oura", "name": "Oura", "industry": "healthtech", "region": "global", "wave": 4},
+    {"slug": "flo", "name": "Flo", "industry": "healthtech", "region": "global", "wave": 4},
+    {"slug": "noom", "name": "Noom", "industry": "healthtech", "region": "global", "wave": 4},
+    {"slug": "blinkist", "name": "Blinkist", "industry": "edtech", "region": "global", "wave": 4},
+    {"slug": "audible", "name": "Audible", "industry": "media-ott", "region": "global", "wave": 4},
+    {"slug": "myfitnesspal", "name": "MyFitnessPal", "industry": "healthtech", "region": "global", "wave": 4},
+    {"slug": "superhuman", "name": "Superhuman", "industry": "b2b-saas", "region": "global", "wave": 4},
+    {"slug": "google-one", "name": "Google One", "industry": "b2b-saas", "region": "global", "wave": 4}
+  ],
+
+  "metrics": [
+    {"slug": "retention", "label": "Retention (D1/D7/D30)", "hub_kw": "app retention benchmarks by industry", "industry_kw": "{industry} app retention benchmarks", "industry_wave": 2},
+    {"slug": "churn", "label": "Monthly Churn", "hub_kw": "subscription churn rate benchmarks", "industry_kw": "{industry} subscription churn rate benchmark", "industry_wave": 2},
+    {"slug": "trial-to-paid-conversion", "label": "Trial-to-Paid Conversion", "hub_kw": "trial to paid conversion rate benchmarks", "industry_kw": "{industry} trial to paid conversion rate", "industry_wave": 2},
+    {"slug": "paywall-conversion", "label": "Paywall Conversion Rate", "hub_kw": "paywall conversion rate benchmarks", "industry_kw": "{industry} paywall conversion rate", "industry_wave": 2},
+    {"slug": "free-to-paid-conversion", "label": "Freemium Free-to-Paid Conversion", "hub_kw": "freemium conversion rate benchmarks", "industry_kw": "{industry} freemium conversion rate", "industry_wave": 3},
+    {"slug": "arpu", "label": "ARPU / ARPPU", "hub_kw": "app arpu benchmarks by industry", "industry_kw": "{industry} app arpu benchmark", "industry_wave": 3},
+    {"slug": "ltv-cac-payback", "label": "LTV:CAC & CAC Payback", "hub_kw": "ltv cac benchmarks by industry", "industry_kw": "{industry} ltv cac benchmark", "industry_wave": 3},
+    {"slug": "activation-rate", "label": "Activation Rate", "hub_kw": "activation rate benchmarks", "industry_kw": "{industry} app activation rate benchmark", "industry_wave": 3}
+  ],
+
+  "app_types": [
+    {"slug": "meditation-apps", "label": "meditation & mindfulness apps", "kw": "meditation app"},
+    {"slug": "fitness-apps", "label": "fitness apps", "kw": "fitness app"},
+    {"slug": "language-learning-apps", "label": "language learning apps", "kw": "language learning app"},
+    {"slug": "test-prep-apps", "label": "test-prep & exam apps", "kw": "test prep app"},
+    {"slug": "ott-video-apps", "label": "OTT video apps", "kw": "ott app"},
+    {"slug": "audio-podcast-apps", "label": "audio & podcast apps", "kw": "audio app"},
+    {"slug": "dating-apps", "label": "dating apps", "kw": "dating app"},
+    {"slug": "productivity-apps", "label": "productivity & notes apps", "kw": "productivity app"},
+    {"slug": "ai-assistant-apps", "label": "AI assistant apps", "kw": "ai app"},
+    {"slug": "personal-finance-apps", "label": "personal finance apps", "kw": "personal finance app"},
+    {"slug": "quick-commerce-apps", "label": "quick-commerce apps", "kw": "quick commerce app"},
+    {"slug": "food-delivery-apps", "label": "food delivery apps", "kw": "food delivery app"}
+  ],
+
+  "problems": [
+    {"slug": "improve-day-7-retention", "label": "Improve Day-7 Retention", "kw": "improve day 7 retention"},
+    {"slug": "increase-trial-to-paid-conversion", "label": "Increase Trial-to-Paid Conversion", "kw": "increase trial to paid conversion"},
+    {"slug": "reduce-subscription-churn", "label": "Reduce Subscription Churn", "kw": "reduce churn"},
+    {"slug": "increase-activation-rate", "label": "Increase Activation Rate", "kw": "increase activation rate"},
+    {"slug": "increase-arpu", "label": "Increase ARPU", "kw": "increase arpu"},
+    {"slug": "improve-onboarding-completion", "label": "Improve Onboarding Completion", "kw": "improve onboarding completion rate"},
+    {"slug": "increase-annual-plan-adoption", "label": "Increase Annual Plan Adoption", "kw": "increase annual subscriptions"},
+    {"slug": "reduce-involuntary-churn", "label": "Reduce Involuntary Churn", "kw": "reduce involuntary churn"}
+  ]
+}

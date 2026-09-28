@@ -1,0 +1,15 @@
+{
+  "_readme": "Domains counted as PRIMARY for G02 (≥50% of a page's facts must be primary). Regulators, filings, platform policy pages, and the vendor's own site are primary by rule; this list adds the benchmark publishers we trust. Everything else is secondary. Add with a DECISIONS.md entry.",
+  "primary_by_rule": ["regulator pages", "company filings (SEC, MCA/Tofler, DRHP)", "the subject company's own site/help center/pricing page", "platform policy pages (Google Play, Apple, RevenueCat docs)", "device_check and own_data facts"],
+  "domains": [
+    "sec.gov", "mca.gov.in", "tofler.in", "zaubacorp.com", "sebi.gov.in", "rbi.org.in", "npci.org.in", "irdai.gov.in", "trai.gov.in", "meity.gov.in", "digitalindia.gov.in",
+    "support.google.com", "play.google.com", "developer.android.com", "developer.apple.com", "apps.apple.com",
+    "revenuecat.com", "adapty.io", "superwall.com", "chartmogul.com", "paddle.com", "openviewpartners.com", "sensortower.com", "appmagic.rocks", "data.ai",
+    "adjust.com", "appsflyer.com", "amplitude.com", "mixpanel.com", "braze.com", "clevertap.com", "moengage.com", "onesignal.com",
+    "redseer.com", "bain.com", "iamai.in", "kantar.com", "mckinsey.com", "bcg.com", "nasscom.in", "tracxn.com", "inc42.com",
+    "razorpay.com", "cashfree.com", "juspay.in", "phonepe.com", "paytm.com",
+    "economictimes.indiatimes.com", "livemint.com", "entrackr.com", "yourstory.com", "the-ken.com", "themorningcontext.com", "moneycontrol.com", "medianama.com",
+    "techcrunch.com", "theinformation.com", "stratechery.com", "a16z.com", "lennysnewsletter.com", "mobiledevmemo.com"
+  ],
+  "secondary_examples": ["businessofapps.com", "statista.com (summaries)", "wikipedia.org", "g2.com (user_reported)", "capterra.com (user_reported)", "reddit.com (user_reported)", "quora.com (user_reported)"]
+}
