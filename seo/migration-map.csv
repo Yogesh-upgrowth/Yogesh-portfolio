@@ -1,0 +1,128 @@
+from,to,kind,reason
+/about-yogesh-yadav,/about,301,explicit mapping
+/benchmarks/app-store-conversion/entertainment,/benchmarks/app-store-conversion/media-ott,301,slug renamed to the plan's vocabulary
+/benchmarks/app-store-conversion/medical,/benchmarks/app-store-conversion/healthtech,301,slug renamed to the plan's vocabulary
+/benchmarks/app-store-conversion/subscription-apps,/benchmarks/app-store-conversion/b2b-saas,301,slug renamed to the plan's vocabulary
+/benchmarks/arpu/subscription-apps,/benchmarks/arpu/b2b-saas,301,slug renamed to the plan's vocabulary
+/benchmarks/d1-retention/ecommerce,/benchmarks/retention/d2c-ecommerce,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d1-retention/fintech,/benchmarks/retention/fintech,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d1-retention/gaming,/benchmarks/retention/gaming,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d1-retention/health-fitness,/benchmarks/retention/healthtech,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d30-retention/ecommerce,/benchmarks/retention/d2c-ecommerce,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d30-retention/fintech,/benchmarks/retention/fintech,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d30-retention/gaming,/benchmarks/retention/gaming,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d30-retention/health-fitness,/benchmarks/retention/healthtech,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d30-retention/productivity,/benchmarks/retention/b2b-saas,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d30-retention/social,/benchmarks/retention/social-dating,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d7-retention/ecommerce,/benchmarks/retention/d2c-ecommerce,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d7-retention/fintech,/benchmarks/retention/fintech,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d7-retention/gaming,/benchmarks/retention/gaming,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/d7-retention/health-fitness,/benchmarks/retention/healthtech,301-merge,D1/D7/D30 collapse onto the plan's single retention metric
+/benchmarks/install-to-purchase/ecommerce,/benchmarks/install-to-purchase/d2c-ecommerce,301,slug renamed to the plan's vocabulary
+/benchmarks/trial-to-paid/subscription-apps,/benchmarks/trial-to-paid-conversion/b2b-saas,301,slug renamed to the plan's vocabulary
+/blog,/notes,301,explicit mapping
+/blog/ab-testing-product-decisions,/playbooks/experimentation-program,301,topic matches a plan archetype
+/blog/activation-metrics-product-growth,/playbooks/activation-metric,301,topic matches a plan archetype
+/blog/agile-vs-scrum-vs-kanban,/notes/agile-vs-scrum-vs-kanban,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/ai-changing-product-management,/notes/ai-changing-product-management,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/ai-copilots-for-pms,/notes/ai-copilots-for-pms,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/ai-improve-product-analytics,/notes/ai-improve-product-analytics,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/ai-product-discovery-techniques,/notes/ai-product-discovery-techniques,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/ai-roadmap-planning,/notes/ai-roadmap-planning,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/ai-tools-product-managers,/notes/ai-tools-product-managers,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/ai-user-research,/notes/ai-user-research,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/balancing-growth-monetization,/playbooks/hybrid-monetization,301,topic matches a plan archetype
+/blog/become-product-manager-india,/notes/become-product-manager-india,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/building-ai-first-products,/notes/building-ai-first-products,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/building-pm-portfolio,/notes/building-pm-portfolio,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/core-skills-every-product-manager,/notes/core-skills-every-product-manager,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/data-driven-product-culture,/notes/data-driven-product-culture,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/data-driven-product-management,/notes/data-driven-product-management,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/decision-making-frameworks-product-leaders,/notes/decision-making-frameworks-product-leaders,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/evolution-of-product-management,/notes/evolution-of-product-management,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/funnel-analysis-product-managers,/playbooks/growth-loops-vs-funnels,301,topic matches a plan archetype
+/blog/future-role-pms-ai-world,/notes/future-role-pms-ai-world,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/generative-ai-writing-prds,/notes/generative-ai-writing-prds,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/growth-loops-product-management,/playbooks/growth-loops-vs-funnels,301,topic matches a plan archetype
+/blog/how-ai-is-changing-product-decisions,/notes/how-ai-is-changing-product-decisions,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/how-i-think-about-product-framework,/notes/how-i-think-about-product-framework,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/how-pms-balance-business-tech-ux,/notes/how-pms-balance-business-tech-ux,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/how-to-build-winning-product-strategy,/notes/how-to-build-winning-product-strategy,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/leadership-not-feature-ownership,/notes/leadership-not-feature-ownership,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/long-term-vs-short-term-product-strategy,/notes/long-term-vs-short-term-product-strategy,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/managing-cross-functional-teams,/notes/managing-cross-functional-teams,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/metrics-that-matter-product-managers,/glossary/omtm,301,topic matches a plan archetype
+/blog/monetization-models-digital-products,/playbooks/app-monetization-models,301,topic matches a plan archetype
+/blog/north-star-metrics-how-to,/playbooks/north-star-metric,301,topic matches a plan archetype
+/blog/outcome-driven-roadmaps,/notes/outcome-driven-roadmaps,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/pm-career-path-complete-guide,/notes/pm-career-path-complete-guide,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/pm-skills-gap-analysis,/notes/pm-skills-gap-analysis,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/pm-vs-product-owner-vs-project-manager,/notes/pm-vs-product-owner-vs-project-manager,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/pricing-strategy-framework,/playbooks/subscription-pricing-strategy,301,topic matches a plan archetype
+/blog/prioritization-frameworks-every-pm,/notes/prioritization-frameworks-every-pm,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/product-analytics-improve-retention,/playbooks/retention-curve-analysis,301,topic matches a plan archetype
+/blog/product-frameworks-at-scale,/notes/product-frameworks-at-scale,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/product-leadership-vs-management,/notes/product-leadership-vs-management,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/product-led-growth-guide,/playbooks/plg-for-consumer-apps,301,topic matches a plan archetype
+/blog/product-lifecycle-explained,/notes/product-lifecycle-explained,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/product-management-misconceptions,/notes/product-management-misconceptions,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/product-manager-interview-questions,/notes/product-manager-interview-questions,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/programmatic-seo-guide,/notes/programmatic-seo-guide,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/reduce-customer-acquisition-cost,/playbooks/unit-economics-for-consumer-apps,301,topic matches a plan archetype
+/blog/research-beyond-surveys,/notes/research-beyond-surveys,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/retention-strategies-consumer-apps,/playbooks/retention-curve-analysis,301,topic matches a plan archetype
+/blog/roadmap-planning-practical-guide,/notes/roadmap-planning-practical-guide,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/setting-strong-product-vision,/notes/setting-strong-product-vision,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/sprint-planning-best-practices,/notes/sprint-planning-best-practices,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/strategic-thinking-senior-pm,/notes/strategic-thinking-senior-pm,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/user-centric-product-thinking,/notes/user-centric-product-thinking,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/what-does-a-pm-actually-do,/notes/what-does-a-pm-actually-do,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/what-makes-product-scalable,/notes/what-makes-product-scalable,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/blog/writing-effective-prds-guide,/notes/writing-effective-prds-guide,301,"PM craft/career — 00-STRATEGY §6 /notes, outside the 1,017"
+/case-studies/design,/case-studies,301,explicit mapping
+/case-studies/growth,/case-studies,301,explicit mapping
+/case-studies/machine-learning,/case-studies,301,explicit mapping
+/case-studies/product,/case-studies,301,explicit mapping
+/case-studies/seo,/case-studies,301,explicit mapping
+/case-study/ai-recommendation-engine,/case-studies/ai-recommendation-engine,301,singular → plural prefix
+/case-study/cab-fare-comparison-engine,/case-studies/cab-fare-comparison-engine,301,singular → plural prefix
+/case-study/carinfo-45m-mau,/case-studies/carinfo-350k-to-1-2m-dau,301,singular → plural prefix
+/case-study/comparison-platform-india,/case-studies/comparison-platform-india,301,singular → plural prefix
+/case-study/crm-180k-transactions,/case-studies/crm-180k-transactions,301,singular → plural prefix
+/case-study/finance-calculator-app-retention,/case-studies/finance-calculator-app-retention,301,singular → plural prefix
+/case-study/fintech-trust-ui-patterns,/case-studies/fintech-trust-ui-patterns,301,singular → plural prefix
+/case-study/funnel-dropoff-ux-optimization,/case-studies/funnel-dropoff-ux-optimization,301,singular → plural prefix
+/case-study/growth-loop-repeat-users,/case-studies/growth-loop-repeat-users,301,singular → plural prefix
+/case-study/insurance-cta-2x-growth,/case-studies/insurance-cta-2x-growth,301,singular → plural prefix
+/case-study/insurance-funnel-1200-growth,/case-studies/carinfo-motor-insurance-monetization,301,singular → plural prefix
+/case-study/microcopy-ctr-increase,/case-studies/microcopy-ctr-increase,301,singular → plural prefix
+/case-study/ml-insurance-prediction,/case-studies/ml-insurance-prediction,301,singular → plural prefix
+/case-study/ml-reduce-cac-segmentation,/case-studies/ml-reduce-cac-segmentation,301,singular → plural prefix
+/case-study/ml-user-clustering-insurance,/case-studies/ml-user-clustering-insurance,301,singular → plural prefix
+/case-study/ml-ux-growth-3x-conversion,/case-studies/ml-ux-growth-3x-conversion,301,singular → plural prefix
+/case-study/mvp-in-7-days,/case-studies/mvp-in-7-days,301,singular → plural prefix
+/case-study/predict-high-ltv-users-ml,/case-studies/predict-high-ltv-users-ml,301,singular → plural prefix
+/case-study/predict-user-dropoff-churn-model,/case-studies/predict-user-dropoff-churn-model,301,singular → plural prefix
+/case-study/programmatic-seo-calculators,/case-studies/programmatic-seo-calculators,301,singular → plural prefix
+/case-study/rank-1-fintech-keywords,/case-studies/rank-1-fintech-keywords,301,singular → plural prefix
+/case-study/real-time-intent-scoring-engine,/case-studies/real-time-intent-scoring-engine,301,singular → plural prefix
+/case-study/reduce-cognitive-load,/case-studies/reduce-cognitive-load,301,singular → plural prefix
+/case-study/scalable-notification-system,/case-studies/scalable-notification-system,301,singular → plural prefix
+/case-study/scaling-moneyratefinder-growth,/case-studies/scaling-moneyratefinder-growth,301,singular → plural prefix
+/case-study/seo-0-to-100k,/case-studies/seo-0-to-100k,301,singular → plural prefix
+/case-study/seo-moat-remittance,/case-studies/seo-moat-remittance,301,singular → plural prefix
+/case-study/user-acquisition-cac-30,/case-studies/user-acquisition-cac-30,301,singular → plural prefix
+/case-study/ux-redesign-conversion-28,/case-studies/ux-redesign-conversion-28,301,singular → plural prefix
+/case-study/zero-cost-growth-engine,/case-studies/zero-cost-growth-engine,301,singular → plural prefix
+/consulting/consumer-app-growth-consultant,/services/retention-and-lifecycle,301,consulting → services
+/consulting/fintech-product-consultant,/services/app-monetization-strategy/fintech,301,consulting → services
+/consulting/marketplace-product-consultant,/services/app-monetization-strategy/marketplaces,301,consulting → services
+/consulting/product-monetisation-consultant,/services/app-monetization-strategy,301,consulting → services
+/consulting/saas-product-consultant,/services/pricing-and-packaging/b2b-saas,301,consulting → services
+/contact,/work-with-me,301,explicit mapping
+/product-growth-score,/tools/monetization-health-score,301,explicit mapping
+/work,/case-studies,301,explicit mapping
+/work/carinfo,/case-studies/carinfo-350k-to-1-2m-dau,301,explicit mapping
+/work/knipex,/notes/knipex,301,explicit mapping
+/work/loanwiser,/case-studies/loanwiser-credit-routing,301,explicit mapping
+/work/upgrowth,/notes/upgrowth,301,explicit mapping

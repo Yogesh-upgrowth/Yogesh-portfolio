@@ -1,353 +1,2597 @@
 {
   "_readme": "Hand-curated page lists. Fields: slug, title (hint, refine at generation), kw (primary keyword), wave. Edit here, then run scripts/build_inventory.py.",
-
   "tools": [
-    {"slug": "ltv-calculator", "title": "LTV Calculator for Subscription Apps", "kw": "ltv calculator", "wave": 1},
-    {"slug": "cac-payback-calculator", "title": "CAC Payback Period Calculator", "kw": "cac payback calculator", "wave": 1},
-    {"slug": "churn-to-lifetime-calculator", "title": "Churn Rate to Customer Lifetime Calculator", "kw": "churn rate to lifetime calculator", "wave": 1},
-    {"slug": "retention-curve-projector", "title": "Retention Curve Projector (D1 → D90)", "kw": "retention curve calculator", "wave": 1},
-    {"slug": "subscription-mrr-calculator", "title": "Subscription MRR & ARR Calculator", "kw": "mrr calculator", "wave": 1},
-    {"slug": "app-store-fee-net-revenue-calculator", "title": "App Store & Play Store Fee Calculator (Net Revenue, India & US)", "kw": "app store commission calculator", "wave": 1},
-    {"slug": "india-subscription-price-point-picker", "title": "India Subscription Price Point Picker (₹ + GST)", "kw": "subscription pricing calculator india", "wave": 1},
-    {"slug": "monetization-health-score", "title": "Monetization Health Score (5-minute diagnostic)", "kw": "app monetization audit tool", "wave": 1},
-    {"slug": "trial-conversion-simulator", "title": "Free Trial Conversion Simulator", "kw": "free trial conversion calculator", "wave": 2},
-    {"slug": "paywall-uplift-calculator", "title": "Paywall Conversion Uplift → Revenue Calculator", "kw": "conversion rate uplift calculator", "wave": 2},
-    {"slug": "annual-vs-monthly-plan-calculator", "title": "Annual vs Monthly Plan Calculator (Discount, Cash Flow, Churn)", "kw": "annual vs monthly pricing calculator", "wave": 2},
-    {"slug": "van-westendorp-analyzer", "title": "Van Westendorp Price Sensitivity Analyzer", "kw": "van westendorp calculator", "wave": 2},
-    {"slug": "freemium-break-even-calculator", "title": "Freemium Break-Even Calculator", "kw": "freemium conversion rate calculator", "wave": 2},
-    {"slug": "ab-test-sample-size-calculator", "title": "A/B Test Sample Size Calculator for Conversion Tests", "kw": "ab test sample size calculator", "wave": 2},
-    {"slug": "arpu-arppu-calculator", "title": "ARPU & ARPPU Calculator", "kw": "arpu calculator", "wave": 2},
-    {"slug": "cohort-revenue-model", "title": "Cohort Revenue Model (12-Month Projection)", "kw": "cohort revenue model", "wave": 2},
-    {"slug": "nrr-grr-calculator", "title": "NRR & GRR Calculator", "kw": "net revenue retention calculator", "wave": 2},
-    {"slug": "ads-vs-subscription-comparator", "title": "Ads vs Subscription Revenue Comparator", "kw": "ad revenue vs subscription calculator", "wave": 2},
-    {"slug": "ecpm-ad-revenue-calculator", "title": "eCPM Ad Revenue Calculator for Apps", "kw": "ecpm calculator", "wave": 2},
-    {"slug": "usage-based-ai-pricing-calculator", "title": "AI Product Pricing Calculator (Tokens, Credits, Margin)", "kw": "ai pricing calculator", "wave": 2},
-    {"slug": "price-elasticity-estimator", "title": "Price Elasticity Estimator", "kw": "price elasticity calculator", "wave": 3},
-    {"slug": "rule-of-40-calculator", "title": "Rule of 40 Calculator", "kw": "rule of 40 calculator", "wave": 3},
-    {"slug": "burn-multiple-calculator", "title": "Burn Multiple Calculator", "kw": "burn multiple calculator", "wave": 3},
-    {"slug": "saas-magic-number-calculator", "title": "SaaS Magic Number Calculator", "kw": "saas magic number calculator", "wave": 3},
-    {"slug": "activation-rate-benchmarker", "title": "Activation Rate Benchmarker (Where Do You Stand?)", "kw": "activation rate calculator", "wave": 3},
-    {"slug": "push-notification-roi-calculator", "title": "Push Notification ROI Calculator", "kw": "push notification roi", "wave": 3},
-    {"slug": "win-back-campaign-roi-calculator", "title": "Win-Back Campaign ROI Calculator", "kw": "win back campaign roi", "wave": 3},
-    {"slug": "referral-program-roi-calculator", "title": "Referral Program ROI Calculator", "kw": "referral program roi calculator", "wave": 3},
-    {"slug": "pricing-tier-designer", "title": "Pricing Tier Designer (Good-Better-Best)", "kw": "pricing tier calculator", "wave": 3},
-    {"slug": "trial-length-optimizer", "title": "Trial Length Optimizer", "kw": "free trial length calculator", "wave": 3}
+    {
+      "slug": "ltv-calculator",
+      "title": "LTV Calculator for Subscription Apps",
+      "kw": "ltv calculator",
+      "wave": 1
+    },
+    {
+      "slug": "cac-payback-calculator",
+      "title": "CAC Payback Period Calculator",
+      "kw": "cac payback calculator",
+      "wave": 1
+    },
+    {
+      "slug": "churn-to-lifetime-calculator",
+      "title": "Churn Rate to Customer Lifetime Calculator",
+      "kw": "churn rate to lifetime calculator",
+      "wave": 1
+    },
+    {
+      "slug": "retention-curve-projector",
+      "title": "Retention Curve Projector (D1 → D90)",
+      "kw": "retention curve calculator",
+      "wave": 1
+    },
+    {
+      "slug": "subscription-mrr-calculator",
+      "title": "Subscription MRR & ARR Calculator",
+      "kw": "mrr calculator",
+      "wave": 1
+    },
+    {
+      "slug": "app-store-fee-net-revenue-calculator",
+      "title": "App Store & Play Store Fee Calculator (Net Revenue, India & US)",
+      "kw": "app store commission calculator",
+      "wave": 1
+    },
+    {
+      "slug": "india-subscription-price-point-picker",
+      "title": "India Subscription Price Point Picker (₹ + GST)",
+      "kw": "subscription pricing calculator india",
+      "wave": 1
+    },
+    {
+      "slug": "monetization-health-score",
+      "title": "Monetization Health Score (5-minute diagnostic)",
+      "kw": "app monetization audit tool",
+      "wave": 1
+    },
+    {
+      "slug": "trial-conversion-simulator",
+      "title": "Free Trial Conversion Simulator",
+      "kw": "free trial conversion calculator",
+      "wave": 2
+    },
+    {
+      "slug": "paywall-uplift-calculator",
+      "title": "Paywall Conversion Uplift → Revenue Calculator",
+      "kw": "conversion rate uplift calculator",
+      "wave": 2
+    },
+    {
+      "slug": "annual-vs-monthly-plan-calculator",
+      "title": "Annual vs Monthly Plan Calculator (Discount, Cash Flow, Churn)",
+      "kw": "annual vs monthly pricing calculator",
+      "wave": 2
+    },
+    {
+      "slug": "van-westendorp-analyzer",
+      "title": "Van Westendorp Price Sensitivity Analyzer",
+      "kw": "van westendorp calculator",
+      "wave": 2
+    },
+    {
+      "slug": "freemium-break-even-calculator",
+      "title": "Freemium Break-Even Calculator",
+      "kw": "freemium conversion rate calculator",
+      "wave": 2
+    },
+    {
+      "slug": "ab-test-sample-size-calculator",
+      "title": "A/B Test Sample Size Calculator for Conversion Tests",
+      "kw": "ab test sample size calculator",
+      "wave": 2
+    },
+    {
+      "slug": "arpu-arppu-calculator",
+      "title": "ARPU & ARPPU Calculator",
+      "kw": "arpu calculator",
+      "wave": 2
+    },
+    {
+      "slug": "cohort-revenue-model",
+      "title": "Cohort Revenue Model (12-Month Projection)",
+      "kw": "cohort revenue model",
+      "wave": 2
+    },
+    {
+      "slug": "nrr-grr-calculator",
+      "title": "NRR & GRR Calculator",
+      "kw": "net revenue retention calculator",
+      "wave": 2
+    },
+    {
+      "slug": "ads-vs-subscription-comparator",
+      "title": "Ads vs Subscription Revenue Comparator",
+      "kw": "ad revenue vs subscription calculator",
+      "wave": 2
+    },
+    {
+      "slug": "ecpm-ad-revenue-calculator",
+      "title": "eCPM Ad Revenue Calculator for Apps",
+      "kw": "ecpm calculator",
+      "wave": 2
+    },
+    {
+      "slug": "usage-based-ai-pricing-calculator",
+      "title": "AI Product Pricing Calculator (Tokens, Credits, Margin)",
+      "kw": "ai pricing calculator",
+      "wave": 2
+    },
+    {
+      "slug": "price-elasticity-estimator",
+      "title": "Price Elasticity Estimator",
+      "kw": "price elasticity calculator",
+      "wave": 3
+    },
+    {
+      "slug": "rule-of-40-calculator",
+      "title": "Rule of 40 Calculator",
+      "kw": "rule of 40 calculator",
+      "wave": 3
+    },
+    {
+      "slug": "burn-multiple-calculator",
+      "title": "Burn Multiple Calculator",
+      "kw": "burn multiple calculator",
+      "wave": 3
+    },
+    {
+      "slug": "saas-magic-number-calculator",
+      "title": "SaaS Magic Number Calculator",
+      "kw": "saas magic number calculator",
+      "wave": 3
+    },
+    {
+      "slug": "activation-rate-benchmarker",
+      "title": "Activation Rate Benchmarker (Where Do You Stand?)",
+      "kw": "activation rate calculator",
+      "wave": 3
+    },
+    {
+      "slug": "push-notification-roi-calculator",
+      "title": "Push Notification ROI Calculator",
+      "kw": "push notification roi",
+      "wave": 3
+    },
+    {
+      "slug": "win-back-campaign-roi-calculator",
+      "title": "Win-Back Campaign ROI Calculator",
+      "kw": "win back campaign roi",
+      "wave": 3
+    },
+    {
+      "slug": "referral-program-roi-calculator",
+      "title": "Referral Program ROI Calculator",
+      "kw": "referral program roi calculator",
+      "wave": 3
+    },
+    {
+      "slug": "pricing-tier-designer",
+      "title": "Pricing Tier Designer (Good-Better-Best)",
+      "kw": "pricing tier calculator",
+      "wave": 3
+    },
+    {
+      "slug": "trial-length-optimizer",
+      "title": "Trial Length Optimizer",
+      "kw": "free trial length calculator",
+      "wave": 3
+    }
   ],
-
   "playbooks": [
-    {"slug": "app-monetization-models", "title": "App Monetization Models Explained: Subscriptions, IAP, Ads, Hybrid", "kw": "app monetization models", "wave": 1},
-    {"slug": "how-to-choose-a-monetization-model", "title": "How to Choose a Monetization Model for Your App", "kw": "how to monetize an app", "wave": 1},
-    {"slug": "freemium-strategy", "title": "Freemium Strategy: Designing a Free Tier That Converts", "kw": "freemium strategy", "wave": 1},
-    {"slug": "monetizing-ai-features", "title": "Monetizing AI Features: Credits, Usage-Based, and Premium Tiers", "kw": "how to monetize ai features", "wave": 1},
-    {"slug": "monetizing-a-consumer-app-in-india", "title": "Monetizing a Consumer App in India: The Full Playbook", "kw": "monetize app in india", "wave": 1},
-    {"slug": "monetization-audit-checklist", "title": "Monetization Audit: The 40-Point Checklist", "kw": "monetization audit", "wave": 1},
-    {"slug": "subscription-pricing-strategy", "title": "Pricing Strategy for Subscription Apps (Step by Step)", "kw": "subscription pricing strategy", "wave": 1},
-    {"slug": "price-localization", "title": "Price Localization: How to Price for India, SEA, and MENA", "kw": "price localization strategy", "wave": 1},
-    {"slug": "paywall-design-patterns", "title": "Paywall Design: 30 Patterns That Convert", "kw": "paywall design best practices", "wave": 1},
-    {"slug": "subscription-metrics", "title": "Subscription Metrics Every Founder Should Track", "kw": "subscription metrics", "wave": 1},
-    {"slug": "activation-metric", "title": "Activation Metric: How to Find and Define It", "kw": "activation metric", "wave": 1},
-    {"slug": "app-onboarding-flow-design", "title": "Onboarding Flow Design for Consumer Apps", "kw": "app onboarding best practices", "wave": 1},
-    {"slug": "retention-curve-analysis", "title": "Retention Curve Analysis: Reading and Bending the Curve", "kw": "retention curve", "wave": 1},
-    {"slug": "push-notification-strategy", "title": "Push Notification Strategy: Frequency, Timing, Personalization", "kw": "push notification strategy", "wave": 1},
-    {"slug": "retention-benchmarks-how-to-compare", "title": "Retention Benchmarks: How to Compare Yourself Properly", "kw": "retention benchmarks", "wave": 1},
-    {"slug": "north-star-metric", "title": "North Star Metric: Picking and Operationalizing It", "kw": "north star metric", "wave": 1},
-    {"slug": "unit-economics-for-consumer-apps", "title": "Unit Economics for Consumer Apps", "kw": "unit economics app", "wave": 1},
-
-    {"slug": "hybrid-monetization", "title": "Hybrid Monetization: Ads + Subscriptions Without Killing Retention", "kw": "hybrid monetization", "wave": 2},
-    {"slug": "free-trial-design", "title": "Free Trial Design: Length, Timing, and Conversion Mechanics", "kw": "free trial conversion rate", "wave": 2},
-    {"slug": "membership-programs", "title": "Membership Programs That Pay for Themselves (Gold, One, Prime)", "kw": "membership program strategy", "wave": 2},
-    {"slug": "web-checkout-vs-app-store", "title": "Web-to-App and Web Checkout: Escaping App Store Fees Legally", "kw": "web checkout vs in-app purchase", "wave": 2},
-    {"slug": "good-better-best-tiers", "title": "Good-Better-Best: Designing Tiers and Packaging", "kw": "tiered pricing strategy", "wave": 2},
-    {"slug": "willingness-to-pay-research", "title": "Willingness-to-Pay Research: Van Westendorp, Gabor-Granger, Conjoint", "kw": "willingness to pay research", "wave": 2},
-    {"slug": "how-to-raise-prices", "title": "How to Raise Prices Without a Churn Spike", "kw": "how to raise prices saas", "wave": 2},
-    {"slug": "annual-plans", "title": "Annual Plans: Getting 60%+ of Subscribers on Yearly", "kw": "annual vs monthly subscription", "wave": 2},
-    {"slug": "usage-based-pricing-for-ai", "title": "Usage-Based Pricing for AI Products", "kw": "usage based pricing", "wave": 2},
-    {"slug": "pricing-experiments", "title": "Pricing Experiments: How to A/B Test Price Safely", "kw": "price testing", "wave": 2},
-    {"slug": "paywall-placement-and-timing", "title": "Paywall Placement and Timing", "kw": "when to show paywall", "wave": 2},
-    {"slug": "onboarding-paywalls-vs-value-first", "title": "Onboarding Paywalls vs Value-First Paywalls", "kw": "hard paywall vs soft paywall", "wave": 2},
-    {"slug": "involuntary-churn", "title": "Reducing Involuntary Churn: Dunning, Grace Periods, Mandate Failures", "kw": "involuntary churn", "wave": 2},
-    {"slug": "cancellation-flows", "title": "Cancellation Flows That Save Subscribers (Ethically)", "kw": "cancellation flow best practices", "wave": 2},
-    {"slug": "time-to-value", "title": "Time-to-Value: Measuring and Shrinking It", "kw": "time to value", "wave": 2},
-    {"slug": "aha-moment-analysis", "title": "Aha Moment Analysis with Product Analytics", "kw": "aha moment", "wave": 2},
-    {"slug": "onboarding-audit-framework", "title": "Onboarding Audit: The Framework I Use", "kw": "onboarding audit", "wave": 2},
-    {"slug": "habit-loops-and-streaks", "title": "Habit Loops and Streaks: Retention Mechanics That Work", "kw": "streaks retention", "wave": 2},
-    {"slug": "win-back-campaigns", "title": "Win-Back Campaigns for Lapsed Subscribers", "kw": "win back campaign", "wave": 2},
-    {"slug": "growth-loops-vs-funnels", "title": "Growth Loops vs Funnels", "kw": "growth loops", "wave": 2},
-    {"slug": "referral-program-design", "title": "Referral Programs: Design, Rewards, Fraud", "kw": "referral program design", "wave": 2},
-    {"slug": "event-tracking-plan", "title": "Event Tracking Plan: The Taxonomy That Scales", "kw": "event tracking plan", "wave": 2},
-    {"slug": "cohort-analysis-for-monetization", "title": "Cohort Analysis for Monetization", "kw": "cohort analysis", "wave": 2},
-
-    {"slug": "reverse-trials", "title": "Reverse Trials: When They Beat Freemium", "kw": "reverse trial", "wave": 3},
-    {"slug": "in-app-purchase-strategy", "title": "In-App Purchase Strategy for Non-Game Apps", "kw": "in app purchase strategy", "wave": 3},
-    {"slug": "marketplace-take-rate", "title": "Take-Rate Design for Marketplaces", "kw": "marketplace take rate", "wave": 3},
-    {"slug": "psychological-pricing", "title": "Psychological Pricing for Apps: Anchors, Decoys, Endings", "kw": "psychological pricing", "wave": 3},
-    {"slug": "saas-pricing-models", "title": "Seat-Based vs Usage-Based vs Outcome-Based Pricing", "kw": "pricing models saas", "wave": 3},
-    {"slug": "pricing-page-teardown-checklist", "title": "Pricing Page Teardown Checklist", "kw": "pricing page best practices", "wave": 3},
-    {"slug": "discounting-strategy", "title": "Discounting Strategy: Intro Offers, Promo Codes, Win-Back Deals", "kw": "subscription discount strategy", "wave": 3},
-    {"slug": "intro-offers-ios-android", "title": "Intro Offers on iOS and Android: Rules and Tactics", "kw": "introductory offers app store", "wave": 3},
-    {"slug": "subscription-fatigue", "title": "Subscription Fatigue: What the Data Says and How to Design Around It", "kw": "subscription fatigue", "wave": 3},
-    {"slug": "progressive-onboarding-delayed-signup", "title": "Progressive Onboarding and Delayed Signup", "kw": "delayed signup", "wave": 3},
-    {"slug": "onboarding-quizzes", "title": "Personalization Quizzes in Onboarding: When They Help", "kw": "onboarding quiz", "wave": 3},
-    {"slug": "onboarding-messaging-sequences", "title": "Onboarding Email, Push, and WhatsApp Sequences", "kw": "onboarding email sequence", "wave": 3},
-    {"slug": "churn-prediction-and-save-plays", "title": "Churn Prediction and Save Plays", "kw": "churn prediction model", "wave": 3},
-    {"slug": "resurrecting-dormant-users", "title": "Resurrection: Bringing Back Dormant Users", "kw": "user resurrection", "wave": 3},
-    {"slug": "rfm-lifecycle-segmentation", "title": "Lifecycle Segmentation with RFM", "kw": "rfm segmentation app", "wave": 3},
-    {"slug": "gamification-for-retention", "title": "Gamification Without Cheapening the Product", "kw": "gamification retention", "wave": 3},
-    {"slug": "plg-for-consumer-apps", "title": "Product-Led Growth for Consumer Apps", "kw": "product led growth consumer", "wave": 3},
-    {"slug": "growth-model", "title": "Growth Model: Building Your First", "kw": "growth model template", "wave": 3},
-    {"slug": "ab-testing-with-low-traffic", "title": "A/B Testing for Small Apps: Significance with Low Traffic", "kw": "a/b testing low traffic", "wave": 3},
-    {"slug": "experimentation-program", "title": "Experimentation Program: From 0 to 10 Tests a Month", "kw": "experimentation program", "wave": 3},
-
-    {"slug": "lifetime-deals", "title": "Lifetime Deals: Math, Risks, and When They Work", "kw": "lifetime deal strategy", "wave": 4},
-    {"slug": "segmented-pricing-student-family-regional", "title": "Student, Family, and Regional Plans: Segmented Pricing Done Right", "kw": "family plan pricing", "wave": 4},
-    {"slug": "grandfathering-policy", "title": "Grandfathering and Legacy Pricing Policy", "kw": "grandfathering pricing", "wave": 4},
-    {"slug": "trial-abuse-prevention", "title": "Trial Abuse and Fraud Prevention for Subscription Apps", "kw": "free trial abuse", "wave": 4},
-    {"slug": "pause-subscriptions", "title": "Pause Subscriptions: Do They Reduce Churn?", "kw": "pause subscription feature", "wave": 4},
-    {"slug": "empty-states", "title": "Empty States That Drive First Actions", "kw": "empty state design", "wave": 4},
-    {"slug": "permission-priming", "title": "Permission Priming: Notifications, Contacts, Location", "kw": "push notification permission priming", "wave": 4},
-    {"slug": "community-features-and-retention", "title": "Community Features and Retention", "kw": "community features retention", "wave": 4},
-    {"slug": "app-loyalty-programs", "title": "Loyalty Programs for Apps", "kw": "app loyalty program", "wave": 4},
-    {"slug": "notification-fatigue", "title": "Notification Fatigue: Diagnosing and Fixing It", "kw": "notification fatigue", "wave": 4},
-    {"slug": "aso-for-monetization-teams", "title": "ASO Fundamentals for Monetization-Focused Teams", "kw": "app store optimization", "wave": 4},
-    {"slug": "viral-loops-and-k-factor", "title": "Viral Loops and K-Factor", "kw": "viral coefficient", "wave": 4}
+    {
+      "slug": "app-monetization-models",
+      "title": "App Monetization Models Explained: Subscriptions, IAP, Ads, Hybrid",
+      "kw": "app monetization models",
+      "wave": 1
+    },
+    {
+      "slug": "how-to-choose-a-monetization-model",
+      "title": "How to Choose a Monetization Model for Your App",
+      "kw": "how to monetize an app",
+      "wave": 1
+    },
+    {
+      "slug": "freemium-strategy",
+      "title": "Freemium Strategy: Designing a Free Tier That Converts",
+      "kw": "freemium strategy",
+      "wave": 1
+    },
+    {
+      "slug": "monetizing-ai-features",
+      "title": "Monetizing AI Features: Credits, Usage-Based, and Premium Tiers",
+      "kw": "how to monetize ai features",
+      "wave": 1
+    },
+    {
+      "slug": "monetizing-a-consumer-app-in-india",
+      "title": "Monetizing a Consumer App in India: The Full Playbook",
+      "kw": "monetize app in india",
+      "wave": 1
+    },
+    {
+      "slug": "monetization-audit-checklist",
+      "title": "Monetization Audit: The 40-Point Checklist",
+      "kw": "monetization audit",
+      "wave": 1
+    },
+    {
+      "slug": "subscription-pricing-strategy",
+      "title": "Pricing Strategy for Subscription Apps (Step by Step)",
+      "kw": "subscription pricing strategy",
+      "wave": 1
+    },
+    {
+      "slug": "price-localization",
+      "title": "Price Localization: How to Price for India, SEA, and MENA",
+      "kw": "price localization strategy",
+      "wave": 1
+    },
+    {
+      "slug": "paywall-design-patterns",
+      "title": "Paywall Design: 30 Patterns That Convert",
+      "kw": "paywall design best practices",
+      "wave": 1
+    },
+    {
+      "slug": "subscription-metrics",
+      "title": "Subscription Metrics Every Founder Should Track",
+      "kw": "subscription metrics",
+      "wave": 1
+    },
+    {
+      "slug": "activation-metric",
+      "title": "Activation Metric: How to Find and Define It",
+      "kw": "activation metric",
+      "wave": 1
+    },
+    {
+      "slug": "app-onboarding-flow-design",
+      "title": "Onboarding Flow Design for Consumer Apps",
+      "kw": "app onboarding best practices",
+      "wave": 1
+    },
+    {
+      "slug": "retention-curve-analysis",
+      "title": "Retention Curve Analysis: Reading and Bending the Curve",
+      "kw": "retention curve",
+      "wave": 1
+    },
+    {
+      "slug": "push-notification-strategy",
+      "title": "Push Notification Strategy: Frequency, Timing, Personalization",
+      "kw": "push notification strategy",
+      "wave": 1
+    },
+    {
+      "slug": "retention-benchmarks-how-to-compare",
+      "title": "Retention Benchmarks: How to Compare Yourself Properly",
+      "kw": "retention benchmarks",
+      "wave": 1
+    },
+    {
+      "slug": "north-star-metric",
+      "title": "North Star Metric: Picking and Operationalizing It",
+      "kw": "north star metric",
+      "wave": 1
+    },
+    {
+      "slug": "unit-economics-for-consumer-apps",
+      "title": "Unit Economics for Consumer Apps",
+      "kw": "unit economics app",
+      "wave": 1
+    },
+    {
+      "slug": "hybrid-monetization",
+      "title": "Hybrid Monetization: Ads + Subscriptions Without Killing Retention",
+      "kw": "hybrid monetization",
+      "wave": 2
+    },
+    {
+      "slug": "free-trial-design",
+      "title": "Free Trial Design: Length, Timing, and Conversion Mechanics",
+      "kw": "free trial conversion rate",
+      "wave": 2
+    },
+    {
+      "slug": "membership-programs",
+      "title": "Membership Programs That Pay for Themselves (Gold, One, Prime)",
+      "kw": "membership program strategy",
+      "wave": 2
+    },
+    {
+      "slug": "web-checkout-vs-app-store",
+      "title": "Web-to-App and Web Checkout: Escaping App Store Fees Legally",
+      "kw": "web checkout vs in-app purchase",
+      "wave": 2
+    },
+    {
+      "slug": "good-better-best-tiers",
+      "title": "Good-Better-Best: Designing Tiers and Packaging",
+      "kw": "tiered pricing strategy",
+      "wave": 2
+    },
+    {
+      "slug": "willingness-to-pay-research",
+      "title": "Willingness-to-Pay Research: Van Westendorp, Gabor-Granger, Conjoint",
+      "kw": "willingness to pay research",
+      "wave": 2
+    },
+    {
+      "slug": "how-to-raise-prices",
+      "title": "How to Raise Prices Without a Churn Spike",
+      "kw": "how to raise prices saas",
+      "wave": 2
+    },
+    {
+      "slug": "annual-plans",
+      "title": "Annual Plans: Getting 60%+ of Subscribers on Yearly",
+      "kw": "annual vs monthly subscription",
+      "wave": 2
+    },
+    {
+      "slug": "usage-based-pricing-for-ai",
+      "title": "Usage-Based Pricing for AI Products",
+      "kw": "usage based pricing",
+      "wave": 2
+    },
+    {
+      "slug": "pricing-experiments",
+      "title": "Pricing Experiments: How to A/B Test Price Safely",
+      "kw": "price testing",
+      "wave": 2
+    },
+    {
+      "slug": "paywall-placement-and-timing",
+      "title": "Paywall Placement and Timing",
+      "kw": "when to show paywall",
+      "wave": 2
+    },
+    {
+      "slug": "onboarding-paywalls-vs-value-first",
+      "title": "Onboarding Paywalls vs Value-First Paywalls",
+      "kw": "hard paywall vs soft paywall",
+      "wave": 2
+    },
+    {
+      "slug": "involuntary-churn",
+      "title": "Reducing Involuntary Churn: Dunning, Grace Periods, Mandate Failures",
+      "kw": "involuntary churn",
+      "wave": 2
+    },
+    {
+      "slug": "cancellation-flows",
+      "title": "Cancellation Flows That Save Subscribers (Ethically)",
+      "kw": "cancellation flow best practices",
+      "wave": 2
+    },
+    {
+      "slug": "time-to-value",
+      "title": "Time-to-Value: Measuring and Shrinking It",
+      "kw": "time to value",
+      "wave": 2
+    },
+    {
+      "slug": "aha-moment-analysis",
+      "title": "Aha Moment Analysis with Product Analytics",
+      "kw": "aha moment",
+      "wave": 2
+    },
+    {
+      "slug": "onboarding-audit-framework",
+      "title": "Onboarding Audit: The Framework I Use",
+      "kw": "onboarding audit",
+      "wave": 2
+    },
+    {
+      "slug": "habit-loops-and-streaks",
+      "title": "Habit Loops and Streaks: Retention Mechanics That Work",
+      "kw": "streaks retention",
+      "wave": 2
+    },
+    {
+      "slug": "win-back-campaigns",
+      "title": "Win-Back Campaigns for Lapsed Subscribers",
+      "kw": "win back campaign",
+      "wave": 2
+    },
+    {
+      "slug": "growth-loops-vs-funnels",
+      "title": "Growth Loops vs Funnels",
+      "kw": "growth loops",
+      "wave": 2
+    },
+    {
+      "slug": "referral-program-design",
+      "title": "Referral Programs: Design, Rewards, Fraud",
+      "kw": "referral program design",
+      "wave": 2
+    },
+    {
+      "slug": "event-tracking-plan",
+      "title": "Event Tracking Plan: The Taxonomy That Scales",
+      "kw": "event tracking plan",
+      "wave": 2
+    },
+    {
+      "slug": "cohort-analysis-for-monetization",
+      "title": "Cohort Analysis for Monetization",
+      "kw": "cohort analysis",
+      "wave": 2
+    },
+    {
+      "slug": "reverse-trials",
+      "title": "Reverse Trials: When They Beat Freemium",
+      "kw": "reverse trial",
+      "wave": 3
+    },
+    {
+      "slug": "in-app-purchase-strategy",
+      "title": "In-App Purchase Strategy for Non-Game Apps",
+      "kw": "in app purchase strategy",
+      "wave": 3
+    },
+    {
+      "slug": "marketplace-take-rate",
+      "title": "Take-Rate Design for Marketplaces",
+      "kw": "marketplace take rate",
+      "wave": 3
+    },
+    {
+      "slug": "psychological-pricing",
+      "title": "Psychological Pricing for Apps: Anchors, Decoys, Endings",
+      "kw": "psychological pricing",
+      "wave": 3
+    },
+    {
+      "slug": "saas-pricing-models",
+      "title": "Seat-Based vs Usage-Based vs Outcome-Based Pricing",
+      "kw": "pricing models saas",
+      "wave": 3
+    },
+    {
+      "slug": "pricing-page-teardown-checklist",
+      "title": "Pricing Page Teardown Checklist",
+      "kw": "pricing page best practices",
+      "wave": 3
+    },
+    {
+      "slug": "discounting-strategy",
+      "title": "Discounting Strategy: Intro Offers, Promo Codes, Win-Back Deals",
+      "kw": "subscription discount strategy",
+      "wave": 3
+    },
+    {
+      "slug": "intro-offers-ios-android",
+      "title": "Intro Offers on iOS and Android: Rules and Tactics",
+      "kw": "introductory offers app store",
+      "wave": 3
+    },
+    {
+      "slug": "subscription-fatigue",
+      "title": "Subscription Fatigue: What the Data Says and How to Design Around It",
+      "kw": "subscription fatigue",
+      "wave": 3
+    },
+    {
+      "slug": "progressive-onboarding-delayed-signup",
+      "title": "Progressive Onboarding and Delayed Signup",
+      "kw": "delayed signup",
+      "wave": 3
+    },
+    {
+      "slug": "onboarding-quizzes",
+      "title": "Personalization Quizzes in Onboarding: When They Help",
+      "kw": "onboarding quiz",
+      "wave": 3
+    },
+    {
+      "slug": "onboarding-messaging-sequences",
+      "title": "Onboarding Email, Push, and WhatsApp Sequences",
+      "kw": "onboarding email sequence",
+      "wave": 3
+    },
+    {
+      "slug": "churn-prediction-and-save-plays",
+      "title": "Churn Prediction and Save Plays",
+      "kw": "churn prediction model",
+      "wave": 3
+    },
+    {
+      "slug": "resurrecting-dormant-users",
+      "title": "Resurrection: Bringing Back Dormant Users",
+      "kw": "user resurrection",
+      "wave": 3
+    },
+    {
+      "slug": "rfm-lifecycle-segmentation",
+      "title": "Lifecycle Segmentation with RFM",
+      "kw": "rfm segmentation app",
+      "wave": 3
+    },
+    {
+      "slug": "gamification-for-retention",
+      "title": "Gamification Without Cheapening the Product",
+      "kw": "gamification retention",
+      "wave": 3
+    },
+    {
+      "slug": "plg-for-consumer-apps",
+      "title": "Product-Led Growth for Consumer Apps",
+      "kw": "product led growth consumer",
+      "wave": 3
+    },
+    {
+      "slug": "growth-model",
+      "title": "Growth Model: Building Your First",
+      "kw": "growth model template",
+      "wave": 3
+    },
+    {
+      "slug": "ab-testing-with-low-traffic",
+      "title": "A/B Testing for Small Apps: Significance with Low Traffic",
+      "kw": "a/b testing low traffic",
+      "wave": 3
+    },
+    {
+      "slug": "experimentation-program",
+      "title": "Experimentation Program: From 0 to 10 Tests a Month",
+      "kw": "experimentation program",
+      "wave": 3
+    },
+    {
+      "slug": "lifetime-deals",
+      "title": "Lifetime Deals: Math, Risks, and When They Work",
+      "kw": "lifetime deal strategy",
+      "wave": 4
+    },
+    {
+      "slug": "segmented-pricing-student-family-regional",
+      "title": "Student, Family, and Regional Plans: Segmented Pricing Done Right",
+      "kw": "family plan pricing",
+      "wave": 4
+    },
+    {
+      "slug": "grandfathering-policy",
+      "title": "Grandfathering and Legacy Pricing Policy",
+      "kw": "grandfathering pricing",
+      "wave": 4
+    },
+    {
+      "slug": "trial-abuse-prevention",
+      "title": "Trial Abuse and Fraud Prevention for Subscription Apps",
+      "kw": "free trial abuse",
+      "wave": 4
+    },
+    {
+      "slug": "pause-subscriptions",
+      "title": "Pause Subscriptions: Do They Reduce Churn?",
+      "kw": "pause subscription feature",
+      "wave": 4
+    },
+    {
+      "slug": "empty-states",
+      "title": "Empty States That Drive First Actions",
+      "kw": "empty state design",
+      "wave": 4
+    },
+    {
+      "slug": "permission-priming",
+      "title": "Permission Priming: Notifications, Contacts, Location",
+      "kw": "push notification permission priming",
+      "wave": 4
+    },
+    {
+      "slug": "community-features-and-retention",
+      "title": "Community Features and Retention",
+      "kw": "community features retention",
+      "wave": 4
+    },
+    {
+      "slug": "app-loyalty-programs",
+      "title": "Loyalty Programs for Apps",
+      "kw": "app loyalty program",
+      "wave": 4
+    },
+    {
+      "slug": "notification-fatigue",
+      "title": "Notification Fatigue: Diagnosing and Fixing It",
+      "kw": "notification fatigue",
+      "wave": 4
+    },
+    {
+      "slug": "aso-for-monetization-teams",
+      "title": "ASO Fundamentals for Monetization-Focused Teams",
+      "kw": "app store optimization",
+      "wave": 4
+    },
+    {
+      "slug": "viral-loops-and-k-factor",
+      "title": "Viral Loops and K-Factor",
+      "kw": "viral coefficient",
+      "wave": 4
+    }
   ],
-
   "glossary": [
-    {"slug": "arpu", "term": "ARPU", "wave": 1}, {"slug": "arppu", "term": "ARPPU", "wave": 1}, {"slug": "ltv", "term": "LTV (Customer Lifetime Value)", "wave": 1}, {"slug": "cac", "term": "CAC (Customer Acquisition Cost)", "wave": 1}, {"slug": "ltv-to-cac-ratio", "term": "LTV:CAC Ratio", "wave": 1}, {"slug": "cac-payback-period", "term": "CAC Payback Period", "wave": 1}, {"slug": "churn-rate", "term": "Churn Rate", "wave": 1}, {"slug": "mrr", "term": "MRR", "wave": 1}, {"slug": "arr", "term": "ARR", "wave": 1}, {"slug": "retention-rate", "term": "Retention Rate", "wave": 1}, {"slug": "activation-rate", "term": "Activation Rate", "wave": 1}, {"slug": "conversion-rate", "term": "Conversion Rate", "wave": 1}, {"slug": "trial-to-paid-conversion", "term": "Trial-to-Paid Conversion", "wave": 1}, {"slug": "free-to-paid-conversion", "term": "Free-to-Paid Conversion", "wave": 1}, {"slug": "paywall", "term": "Paywall", "wave": 1}, {"slug": "freemium", "term": "Freemium", "wave": 1}, {"slug": "free-trial", "term": "Free Trial", "wave": 1}, {"slug": "north-star-metric", "term": "North Star Metric", "wave": 1}, {"slug": "aha-moment", "term": "Aha Moment", "wave": 1}, {"slug": "cohort-analysis", "term": "Cohort Analysis", "wave": 1}, {"slug": "unit-economics", "term": "Unit Economics", "wave": 1}, {"slug": "take-rate", "term": "Take Rate", "wave": 1}, {"slug": "nrr", "term": "NRR (Net Revenue Retention)", "wave": 1}, {"slug": "grr", "term": "GRR (Gross Revenue Retention)", "wave": 1},
-
-    {"slug": "arpdau", "term": "ARPDAU", "wave": 2}, {"slug": "dau-mau-stickiness", "term": "DAU/MAU (Stickiness)", "wave": 2}, {"slug": "d1-d7-d30-retention", "term": "D1/D7/D30 Retention", "wave": 2}, {"slug": "rolling-retention", "term": "Rolling Retention", "wave": 2}, {"slug": "unbounded-retention", "term": "Unbounded Retention", "wave": 2}, {"slug": "hard-paywall", "term": "Hard Paywall", "wave": 2}, {"slug": "soft-paywall", "term": "Soft Paywall", "wave": 2}, {"slug": "reverse-trial", "term": "Reverse Trial", "wave": 2}, {"slug": "usage-based-pricing", "term": "Usage-Based Pricing", "wave": 2}, {"slug": "seat-based-pricing", "term": "Seat-Based Pricing", "wave": 2}, {"slug": "tiered-pricing", "term": "Tiered Pricing", "wave": 2}, {"slug": "price-anchoring", "term": "Price Anchoring", "wave": 2}, {"slug": "decoy-pricing", "term": "Decoy Pricing", "wave": 2}, {"slug": "price-localization", "term": "Price Localization", "wave": 2}, {"slug": "ppp-pricing", "term": "PPP (Purchasing Power Parity) Pricing", "wave": 2}, {"slug": "willingness-to-pay", "term": "Willingness to Pay", "wave": 2}, {"slug": "van-westendorp", "term": "Van Westendorp Price Sensitivity Meter", "wave": 2}, {"slug": "gabor-granger", "term": "Gabor-Granger Method", "wave": 2}, {"slug": "conjoint-analysis", "term": "Conjoint Analysis", "wave": 2}, {"slug": "price-elasticity", "term": "Price Elasticity", "wave": 2}, {"slug": "gmv", "term": "GMV", "wave": 2}, {"slug": "contribution-margin", "term": "Contribution Margin", "wave": 2}, {"slug": "retention-curve", "term": "Retention Curve", "wave": 2}, {"slug": "time-to-value", "term": "Time to Value", "wave": 2}, {"slug": "growth-loop", "term": "Growth Loop", "wave": 2}, {"slug": "viral-coefficient", "term": "Viral Coefficient (K-Factor)", "wave": 2}, {"slug": "referral-rate", "term": "Referral Rate", "wave": 2}, {"slug": "nps", "term": "NPS", "wave": 2}, {"slug": "involuntary-churn", "term": "Involuntary Churn", "wave": 2}, {"slug": "dunning", "term": "Dunning", "wave": 2}, {"slug": "grace-period", "term": "Grace Period", "wave": 2}, {"slug": "e-mandate", "term": "e-Mandate", "wave": 2}, {"slug": "upi-autopay", "term": "UPI Autopay", "wave": 2}, {"slug": "user-choice-billing", "term": "User Choice Billing", "wave": 2}, {"slug": "in-app-purchase", "term": "In-App Purchase (IAP)", "wave": 2}, {"slug": "ecpm", "term": "eCPM", "wave": 2}, {"slug": "fill-rate", "term": "Fill Rate", "wave": 2}, {"slug": "rewarded-video", "term": "Rewarded Video", "wave": 2}, {"slug": "hybrid-monetization", "term": "Hybrid Monetization", "wave": 2}, {"slug": "expansion-revenue", "term": "Expansion Revenue", "wave": 2},
-
-    {"slug": "omtm", "term": "OMTM (One Metric That Matters)", "wave": 3}, {"slug": "heart-framework", "term": "HEART Framework", "wave": 3}, {"slug": "aarrr-pirate-metrics", "term": "AARRR (Pirate Metrics)", "wave": 3}, {"slug": "session-frequency", "term": "Session Frequency", "wave": 3}, {"slug": "habit-loop", "term": "Habit Loop", "wave": 3}, {"slug": "hook-model", "term": "Hook Model", "wave": 3}, {"slug": "streaks", "term": "Streaks", "wave": 3}, {"slug": "gamification", "term": "Gamification", "wave": 3}, {"slug": "win-back", "term": "Win-Back", "wave": 3}, {"slug": "resurrection", "term": "Resurrection (Resurrected Users)", "wave": 3}, {"slug": "intro-offer", "term": "Intro Offer", "wave": 3}, {"slug": "promotional-pricing", "term": "Promotional Pricing", "wave": 3}, {"slug": "annual-plan", "term": "Annual Plan", "wave": 3}, {"slug": "price-increase", "term": "Price Increase", "wave": 3}, {"slug": "grandfathering", "term": "Grandfathering", "wave": 3}, {"slug": "packaging", "term": "Packaging", "wave": 3}, {"slug": "feature-gating", "term": "Feature Gating", "wave": 3}, {"slug": "credits-based-pricing", "term": "Credits-Based Pricing", "wave": 3}, {"slug": "token-based-pricing", "term": "Token-Based Pricing", "wave": 3}, {"slug": "outcome-based-pricing", "term": "Outcome-Based Pricing", "wave": 3}, {"slug": "product-led-growth", "term": "Product-Led Growth (PLG)", "wave": 3}, {"slug": "product-qualified-lead", "term": "Product-Qualified Lead (PQL)", "wave": 3}, {"slug": "self-serve", "term": "Self-Serve", "wave": 3}, {"slug": "onboarding-checklist", "term": "Onboarding Checklist", "wave": 3}, {"slug": "progressive-onboarding", "term": "Progressive Onboarding", "wave": 3}, {"slug": "empty-state", "term": "Empty State", "wave": 3}, {"slug": "rfm-segmentation", "term": "RFM Segmentation", "wave": 3}, {"slug": "propensity-model", "term": "Propensity Model", "wave": 3}, {"slug": "churn-prediction", "term": "Churn Prediction", "wave": 3}, {"slug": "minimum-detectable-effect", "term": "Minimum Detectable Effect (MDE)", "wave": 3}, {"slug": "statistical-power", "term": "Statistical Power", "wave": 3}, {"slug": "sequential-testing", "term": "Sequential Testing", "wave": 3}, {"slug": "holdout-group", "term": "Holdout Group", "wave": 3}, {"slug": "ice-score", "term": "ICE Score", "wave": 3}, {"slug": "rice-score", "term": "RICE Score", "wave": 3}, {"slug": "jobs-to-be-done", "term": "Jobs to Be Done (JTBD)", "wave": 3}
+    {
+      "slug": "arpu",
+      "term": "ARPU",
+      "wave": 1
+    },
+    {
+      "slug": "arppu",
+      "term": "ARPPU",
+      "wave": 1
+    },
+    {
+      "slug": "ltv",
+      "term": "LTV (Customer Lifetime Value)",
+      "wave": 1
+    },
+    {
+      "slug": "cac",
+      "term": "CAC (Customer Acquisition Cost)",
+      "wave": 1
+    },
+    {
+      "slug": "ltv-to-cac-ratio",
+      "term": "LTV:CAC Ratio",
+      "wave": 1
+    },
+    {
+      "slug": "cac-payback-period",
+      "term": "CAC Payback Period",
+      "wave": 1
+    },
+    {
+      "slug": "churn-rate",
+      "term": "Churn Rate",
+      "wave": 1
+    },
+    {
+      "slug": "mrr",
+      "term": "MRR",
+      "wave": 1
+    },
+    {
+      "slug": "arr",
+      "term": "ARR",
+      "wave": 1
+    },
+    {
+      "slug": "retention-rate",
+      "term": "Retention Rate",
+      "wave": 1
+    },
+    {
+      "slug": "activation-rate",
+      "term": "Activation Rate",
+      "wave": 1
+    },
+    {
+      "slug": "conversion-rate",
+      "term": "Conversion Rate",
+      "wave": 1
+    },
+    {
+      "slug": "trial-to-paid-conversion",
+      "term": "Trial-to-Paid Conversion",
+      "wave": 1
+    },
+    {
+      "slug": "free-to-paid-conversion",
+      "term": "Free-to-Paid Conversion",
+      "wave": 1
+    },
+    {
+      "slug": "paywall",
+      "term": "Paywall",
+      "wave": 1
+    },
+    {
+      "slug": "freemium",
+      "term": "Freemium",
+      "wave": 1
+    },
+    {
+      "slug": "free-trial",
+      "term": "Free Trial",
+      "wave": 1
+    },
+    {
+      "slug": "north-star-metric",
+      "term": "North Star Metric",
+      "wave": 1
+    },
+    {
+      "slug": "aha-moment",
+      "term": "Aha Moment",
+      "wave": 1
+    },
+    {
+      "slug": "cohort-analysis",
+      "term": "Cohort Analysis",
+      "wave": 1
+    },
+    {
+      "slug": "unit-economics",
+      "term": "Unit Economics",
+      "wave": 1
+    },
+    {
+      "slug": "take-rate",
+      "term": "Take Rate",
+      "wave": 1
+    },
+    {
+      "slug": "nrr",
+      "term": "NRR (Net Revenue Retention)",
+      "wave": 1
+    },
+    {
+      "slug": "grr",
+      "term": "GRR (Gross Revenue Retention)",
+      "wave": 1
+    },
+    {
+      "slug": "arpdau",
+      "term": "ARPDAU",
+      "wave": 2
+    },
+    {
+      "slug": "dau-mau-stickiness",
+      "term": "DAU/MAU (Stickiness)",
+      "wave": 2
+    },
+    {
+      "slug": "d1-d7-d30-retention",
+      "term": "D1/D7/D30 Retention",
+      "wave": 2
+    },
+    {
+      "slug": "rolling-retention",
+      "term": "Rolling Retention",
+      "wave": 2
+    },
+    {
+      "slug": "unbounded-retention",
+      "term": "Unbounded Retention",
+      "wave": 2
+    },
+    {
+      "slug": "hard-paywall",
+      "term": "Hard Paywall",
+      "wave": 2
+    },
+    {
+      "slug": "soft-paywall",
+      "term": "Soft Paywall",
+      "wave": 2
+    },
+    {
+      "slug": "reverse-trial",
+      "term": "Reverse Trial",
+      "wave": 2
+    },
+    {
+      "slug": "usage-based-pricing",
+      "term": "Usage-Based Pricing",
+      "wave": 2
+    },
+    {
+      "slug": "seat-based-pricing",
+      "term": "Seat-Based Pricing",
+      "wave": 2
+    },
+    {
+      "slug": "tiered-pricing",
+      "term": "Tiered Pricing",
+      "wave": 2
+    },
+    {
+      "slug": "price-anchoring",
+      "term": "Price Anchoring",
+      "wave": 2
+    },
+    {
+      "slug": "decoy-pricing",
+      "term": "Decoy Pricing",
+      "wave": 2
+    },
+    {
+      "slug": "price-localization",
+      "term": "Price Localization",
+      "wave": 2
+    },
+    {
+      "slug": "ppp-pricing",
+      "term": "PPP (Purchasing Power Parity) Pricing",
+      "wave": 2
+    },
+    {
+      "slug": "willingness-to-pay",
+      "term": "Willingness to Pay",
+      "wave": 2
+    },
+    {
+      "slug": "van-westendorp",
+      "term": "Van Westendorp Price Sensitivity Meter",
+      "wave": 2
+    },
+    {
+      "slug": "gabor-granger",
+      "term": "Gabor-Granger Method",
+      "wave": 2
+    },
+    {
+      "slug": "conjoint-analysis",
+      "term": "Conjoint Analysis",
+      "wave": 2
+    },
+    {
+      "slug": "price-elasticity",
+      "term": "Price Elasticity",
+      "wave": 2
+    },
+    {
+      "slug": "gmv",
+      "term": "GMV",
+      "wave": 2
+    },
+    {
+      "slug": "contribution-margin",
+      "term": "Contribution Margin",
+      "wave": 2
+    },
+    {
+      "slug": "retention-curve",
+      "term": "Retention Curve",
+      "wave": 2
+    },
+    {
+      "slug": "time-to-value",
+      "term": "Time to Value",
+      "wave": 2
+    },
+    {
+      "slug": "growth-loop",
+      "term": "Growth Loop",
+      "wave": 2
+    },
+    {
+      "slug": "viral-coefficient",
+      "term": "Viral Coefficient (K-Factor)",
+      "wave": 2
+    },
+    {
+      "slug": "referral-rate",
+      "term": "Referral Rate",
+      "wave": 2
+    },
+    {
+      "slug": "nps",
+      "term": "NPS",
+      "wave": 2
+    },
+    {
+      "slug": "involuntary-churn",
+      "term": "Involuntary Churn",
+      "wave": 2
+    },
+    {
+      "slug": "dunning",
+      "term": "Dunning",
+      "wave": 2
+    },
+    {
+      "slug": "grace-period",
+      "term": "Grace Period",
+      "wave": 2
+    },
+    {
+      "slug": "e-mandate",
+      "term": "e-Mandate",
+      "wave": 2
+    },
+    {
+      "slug": "upi-autopay",
+      "term": "UPI Autopay",
+      "wave": 2
+    },
+    {
+      "slug": "user-choice-billing",
+      "term": "User Choice Billing",
+      "wave": 2
+    },
+    {
+      "slug": "in-app-purchase",
+      "term": "In-App Purchase (IAP)",
+      "wave": 2
+    },
+    {
+      "slug": "ecpm",
+      "term": "eCPM",
+      "wave": 2
+    },
+    {
+      "slug": "fill-rate",
+      "term": "Fill Rate",
+      "wave": 2
+    },
+    {
+      "slug": "rewarded-video",
+      "term": "Rewarded Video",
+      "wave": 2
+    },
+    {
+      "slug": "hybrid-monetization",
+      "term": "Hybrid Monetization",
+      "wave": 2
+    },
+    {
+      "slug": "expansion-revenue",
+      "term": "Expansion Revenue",
+      "wave": 2
+    },
+    {
+      "slug": "omtm",
+      "term": "OMTM (One Metric That Matters)",
+      "wave": 3
+    },
+    {
+      "slug": "heart-framework",
+      "term": "HEART Framework",
+      "wave": 3
+    },
+    {
+      "slug": "aarrr-pirate-metrics",
+      "term": "AARRR (Pirate Metrics)",
+      "wave": 3
+    },
+    {
+      "slug": "session-frequency",
+      "term": "Session Frequency",
+      "wave": 3
+    },
+    {
+      "slug": "habit-loop",
+      "term": "Habit Loop",
+      "wave": 3
+    },
+    {
+      "slug": "hook-model",
+      "term": "Hook Model",
+      "wave": 3
+    },
+    {
+      "slug": "streaks",
+      "term": "Streaks",
+      "wave": 3
+    },
+    {
+      "slug": "gamification",
+      "term": "Gamification",
+      "wave": 3
+    },
+    {
+      "slug": "win-back",
+      "term": "Win-Back",
+      "wave": 3
+    },
+    {
+      "slug": "resurrection",
+      "term": "Resurrection (Resurrected Users)",
+      "wave": 3
+    },
+    {
+      "slug": "intro-offer",
+      "term": "Intro Offer",
+      "wave": 3
+    },
+    {
+      "slug": "promotional-pricing",
+      "term": "Promotional Pricing",
+      "wave": 3
+    },
+    {
+      "slug": "annual-plan",
+      "term": "Annual Plan",
+      "wave": 3
+    },
+    {
+      "slug": "price-increase",
+      "term": "Price Increase",
+      "wave": 3
+    },
+    {
+      "slug": "grandfathering",
+      "term": "Grandfathering",
+      "wave": 3
+    },
+    {
+      "slug": "packaging",
+      "term": "Packaging",
+      "wave": 3
+    },
+    {
+      "slug": "feature-gating",
+      "term": "Feature Gating",
+      "wave": 3
+    },
+    {
+      "slug": "credits-based-pricing",
+      "term": "Credits-Based Pricing",
+      "wave": 3
+    },
+    {
+      "slug": "token-based-pricing",
+      "term": "Token-Based Pricing",
+      "wave": 3
+    },
+    {
+      "slug": "outcome-based-pricing",
+      "term": "Outcome-Based Pricing",
+      "wave": 3
+    },
+    {
+      "slug": "product-led-growth",
+      "term": "Product-Led Growth (PLG)",
+      "wave": 3
+    },
+    {
+      "slug": "product-qualified-lead",
+      "term": "Product-Qualified Lead (PQL)",
+      "wave": 3
+    },
+    {
+      "slug": "self-serve",
+      "term": "Self-Serve",
+      "wave": 3
+    },
+    {
+      "slug": "onboarding-checklist",
+      "term": "Onboarding Checklist",
+      "wave": 3
+    },
+    {
+      "slug": "progressive-onboarding",
+      "term": "Progressive Onboarding",
+      "wave": 3
+    },
+    {
+      "slug": "empty-state",
+      "term": "Empty State",
+      "wave": 3
+    },
+    {
+      "slug": "rfm-segmentation",
+      "term": "RFM Segmentation",
+      "wave": 3
+    },
+    {
+      "slug": "propensity-model",
+      "term": "Propensity Model",
+      "wave": 3
+    },
+    {
+      "slug": "churn-prediction",
+      "term": "Churn Prediction",
+      "wave": 3
+    },
+    {
+      "slug": "minimum-detectable-effect",
+      "term": "Minimum Detectable Effect (MDE)",
+      "wave": 3
+    },
+    {
+      "slug": "statistical-power",
+      "term": "Statistical Power",
+      "wave": 3
+    },
+    {
+      "slug": "sequential-testing",
+      "term": "Sequential Testing",
+      "wave": 3
+    },
+    {
+      "slug": "holdout-group",
+      "term": "Holdout Group",
+      "wave": 3
+    },
+    {
+      "slug": "ice-score",
+      "term": "ICE Score",
+      "wave": 3
+    },
+    {
+      "slug": "rice-score",
+      "term": "RICE Score",
+      "wave": 3
+    },
+    {
+      "slug": "jobs-to-be-done",
+      "term": "Jobs to Be Done (JTBD)",
+      "wave": 3
+    }
   ],
-
   "compare": [
-    {"a": "RevenueCat", "b": "Adapty", "category": "subscription-infra", "wave": 3},
-    {"a": "RevenueCat", "b": "Qonversion", "category": "subscription-infra", "wave": 3},
-    {"a": "Adapty", "b": "Superwall", "category": "paywall-builders", "wave": 3},
-    {"a": "RevenueCat", "b": "Superwall", "category": "paywall-builders", "wave": 3},
-    {"a": "Apphud", "b": "Adapty", "category": "subscription-infra", "wave": 4},
-    {"a": "Purchasely", "b": "Adapty", "category": "paywall-builders", "wave": 4},
-    {"a": "Stripe Billing", "b": "Chargebee", "category": "billing", "wave": 3},
-    {"a": "Chargebee", "b": "Zoho Billing", "category": "billing", "wave": 4},
-    {"a": "Paddle", "b": "Stripe", "category": "billing", "wave": 3},
-    {"a": "Recurly", "b": "Chargebee", "category": "billing", "wave": 4},
-    {"a": "Razorpay Subscriptions", "b": "Cashfree", "category": "india-payments", "wave": 3},
-    {"a": "Razorpay", "b": "PayU", "category": "india-payments", "wave": 3},
-    {"a": "PhonePe PG", "b": "Razorpay", "category": "india-payments", "wave": 4},
-    {"a": "Juspay", "b": "Razorpay", "category": "india-payments", "wave": 4},
-    {"a": "Mixpanel", "b": "Amplitude", "category": "analytics", "wave": 3},
-    {"a": "Amplitude", "b": "PostHog", "category": "analytics", "wave": 3},
-    {"a": "Mixpanel", "b": "PostHog", "category": "analytics", "wave": 3},
-    {"a": "GA4", "b": "Mixpanel", "category": "analytics", "wave": 3},
-    {"a": "Heap", "b": "Amplitude", "category": "analytics", "wave": 4},
-    {"a": "Microsoft Clarity", "b": "Hotjar", "category": "session-replay", "wave": 3},
-    {"a": "Hotjar", "b": "FullStory", "category": "session-replay", "wave": 4},
-    {"a": "UXCam", "b": "Smartlook", "category": "session-replay", "wave": 4},
-    {"a": "Countly", "b": "Mixpanel", "category": "analytics", "wave": 4},
-    {"a": "Braze", "b": "CleverTap", "category": "engagement", "wave": 3},
-    {"a": "CleverTap", "b": "MoEngage", "category": "engagement", "wave": 3},
-    {"a": "MoEngage", "b": "WebEngage", "category": "engagement", "wave": 3},
-    {"a": "OneSignal", "b": "Firebase Cloud Messaging", "category": "engagement", "wave": 3},
-    {"a": "Customer.io", "b": "Braze", "category": "engagement", "wave": 4},
-    {"a": "Iterable", "b": "Braze", "category": "engagement", "wave": 4},
-    {"a": "Klaviyo", "b": "Customer.io", "category": "engagement", "wave": 4},
-    {"a": "Netcore", "b": "MoEngage", "category": "engagement", "wave": 4},
-    {"a": "Optimizely", "b": "VWO", "category": "experimentation", "wave": 3},
-    {"a": "Statsig", "b": "LaunchDarkly", "category": "experimentation", "wave": 3},
-    {"a": "LaunchDarkly", "b": "Firebase Remote Config", "category": "experimentation", "wave": 3},
-    {"a": "Statsig", "b": "Eppo", "category": "experimentation", "wave": 4},
-    {"a": "GrowthBook", "b": "Statsig", "category": "experimentation", "wave": 3},
-    {"a": "AB Tasty", "b": "VWO", "category": "experimentation", "wave": 4},
-    {"a": "Split", "b": "LaunchDarkly", "category": "experimentation", "wave": 4},
-    {"a": "Firebase A/B Testing", "b": "Statsig", "category": "experimentation", "wave": 4},
-    {"a": "AppsFlyer", "b": "Adjust", "category": "attribution", "wave": 3},
-    {"a": "Branch", "b": "AppsFlyer", "category": "attribution", "wave": 3},
-    {"a": "Singular", "b": "AppsFlyer", "category": "attribution", "wave": 4},
-    {"a": "Kochava", "b": "Adjust", "category": "attribution", "wave": 4},
-    {"a": "Appcues", "b": "Userpilot", "category": "product-adoption", "wave": 3},
-    {"a": "Pendo", "b": "Appcues", "category": "product-adoption", "wave": 3},
-    {"a": "Userflow", "b": "Userpilot", "category": "product-adoption", "wave": 4},
-    {"a": "Chameleon", "b": "Appcues", "category": "product-adoption", "wave": 4},
-    {"a": "UserGuiding", "b": "Appcues", "category": "product-adoption", "wave": 4},
-    {"a": "Whatfix", "b": "Pendo", "category": "product-adoption", "wave": 4},
-    {"a": "Sprig", "b": "Maze", "category": "research", "wave": 3},
-    {"a": "Typeform", "b": "Tally", "category": "research", "wave": 4},
-    {"a": "Hotjar", "b": "Sprig", "category": "research", "wave": 4},
-    {"a": "Qualtrics", "b": "Sprig", "category": "research", "wave": 4},
-    {"a": "AdMob", "b": "AppLovin MAX", "category": "ads-mediation", "wave": 3},
-    {"a": "Unity LevelPlay", "b": "AppLovin MAX", "category": "ads-mediation", "wave": 4},
-    {"a": "AppTweak", "b": "Sensor Tower", "category": "aso", "wave": 3},
-    {"a": "MobileAction", "b": "AppTweak", "category": "aso", "wave": 4},
-    {"a": "Sensor Tower", "b": "AppMagic", "category": "aso", "wave": 4},
-    {"a": "Appfigures", "b": "Sensor Tower", "category": "aso", "wave": 4},
-    {"a": "SplitMetrics", "b": "StoreMaven", "category": "aso", "wave": 4}
+    {
+      "a": "RevenueCat",
+      "b": "Adapty",
+      "category": "subscription-infra",
+      "wave": 3
+    },
+    {
+      "a": "RevenueCat",
+      "b": "Qonversion",
+      "category": "subscription-infra",
+      "wave": 3
+    },
+    {
+      "a": "Adapty",
+      "b": "Superwall",
+      "category": "paywall-builders",
+      "wave": 3
+    },
+    {
+      "a": "RevenueCat",
+      "b": "Superwall",
+      "category": "paywall-builders",
+      "wave": 3
+    },
+    {
+      "a": "Apphud",
+      "b": "Adapty",
+      "category": "subscription-infra",
+      "wave": 4
+    },
+    {
+      "a": "Purchasely",
+      "b": "Adapty",
+      "category": "paywall-builders",
+      "wave": 4
+    },
+    {
+      "a": "Stripe Billing",
+      "b": "Chargebee",
+      "category": "billing",
+      "wave": 3
+    },
+    {
+      "a": "Chargebee",
+      "b": "Zoho Billing",
+      "category": "billing",
+      "wave": 4
+    },
+    {
+      "a": "Paddle",
+      "b": "Stripe",
+      "category": "billing",
+      "wave": 3
+    },
+    {
+      "a": "Recurly",
+      "b": "Chargebee",
+      "category": "billing",
+      "wave": 4
+    },
+    {
+      "a": "Razorpay Subscriptions",
+      "b": "Cashfree",
+      "category": "india-payments",
+      "wave": 3
+    },
+    {
+      "a": "Razorpay",
+      "b": "PayU",
+      "category": "india-payments",
+      "wave": 3
+    },
+    {
+      "a": "PhonePe PG",
+      "b": "Razorpay",
+      "category": "india-payments",
+      "wave": 4
+    },
+    {
+      "a": "Juspay",
+      "b": "Razorpay",
+      "category": "india-payments",
+      "wave": 4
+    },
+    {
+      "a": "Mixpanel",
+      "b": "Amplitude",
+      "category": "analytics",
+      "wave": 3
+    },
+    {
+      "a": "Amplitude",
+      "b": "PostHog",
+      "category": "analytics",
+      "wave": 3
+    },
+    {
+      "a": "Mixpanel",
+      "b": "PostHog",
+      "category": "analytics",
+      "wave": 3
+    },
+    {
+      "a": "GA4",
+      "b": "Mixpanel",
+      "category": "analytics",
+      "wave": 3
+    },
+    {
+      "a": "Heap",
+      "b": "Amplitude",
+      "category": "analytics",
+      "wave": 4
+    },
+    {
+      "a": "Microsoft Clarity",
+      "b": "Hotjar",
+      "category": "session-replay",
+      "wave": 3
+    },
+    {
+      "a": "Hotjar",
+      "b": "FullStory",
+      "category": "session-replay",
+      "wave": 4
+    },
+    {
+      "a": "UXCam",
+      "b": "Smartlook",
+      "category": "session-replay",
+      "wave": 4
+    },
+    {
+      "a": "Countly",
+      "b": "Mixpanel",
+      "category": "analytics",
+      "wave": 4
+    },
+    {
+      "a": "Braze",
+      "b": "CleverTap",
+      "category": "engagement",
+      "wave": 3
+    },
+    {
+      "a": "CleverTap",
+      "b": "MoEngage",
+      "category": "engagement",
+      "wave": 3
+    },
+    {
+      "a": "MoEngage",
+      "b": "WebEngage",
+      "category": "engagement",
+      "wave": 3
+    },
+    {
+      "a": "OneSignal",
+      "b": "Firebase Cloud Messaging",
+      "category": "engagement",
+      "wave": 3
+    },
+    {
+      "a": "Customer.io",
+      "b": "Braze",
+      "category": "engagement",
+      "wave": 4
+    },
+    {
+      "a": "Iterable",
+      "b": "Braze",
+      "category": "engagement",
+      "wave": 4
+    },
+    {
+      "a": "Klaviyo",
+      "b": "Customer.io",
+      "category": "engagement",
+      "wave": 4
+    },
+    {
+      "a": "Netcore",
+      "b": "MoEngage",
+      "category": "engagement",
+      "wave": 4
+    },
+    {
+      "a": "Optimizely",
+      "b": "VWO",
+      "category": "experimentation",
+      "wave": 3
+    },
+    {
+      "a": "Statsig",
+      "b": "LaunchDarkly",
+      "category": "experimentation",
+      "wave": 3
+    },
+    {
+      "a": "LaunchDarkly",
+      "b": "Firebase Remote Config",
+      "category": "experimentation",
+      "wave": 3
+    },
+    {
+      "a": "Statsig",
+      "b": "Eppo",
+      "category": "experimentation",
+      "wave": 4
+    },
+    {
+      "a": "GrowthBook",
+      "b": "Statsig",
+      "category": "experimentation",
+      "wave": 3
+    },
+    {
+      "a": "AB Tasty",
+      "b": "VWO",
+      "category": "experimentation",
+      "wave": 4
+    },
+    {
+      "a": "Split",
+      "b": "LaunchDarkly",
+      "category": "experimentation",
+      "wave": 4
+    },
+    {
+      "a": "Firebase A/B Testing",
+      "b": "Statsig",
+      "category": "experimentation",
+      "wave": 4
+    },
+    {
+      "a": "AppsFlyer",
+      "b": "Adjust",
+      "category": "attribution",
+      "wave": 3
+    },
+    {
+      "a": "Branch",
+      "b": "AppsFlyer",
+      "category": "attribution",
+      "wave": 3
+    },
+    {
+      "a": "Singular",
+      "b": "AppsFlyer",
+      "category": "attribution",
+      "wave": 4
+    },
+    {
+      "a": "Kochava",
+      "b": "Adjust",
+      "category": "attribution",
+      "wave": 4
+    },
+    {
+      "a": "Appcues",
+      "b": "Userpilot",
+      "category": "product-adoption",
+      "wave": 3
+    },
+    {
+      "a": "Pendo",
+      "b": "Appcues",
+      "category": "product-adoption",
+      "wave": 3
+    },
+    {
+      "a": "Userflow",
+      "b": "Userpilot",
+      "category": "product-adoption",
+      "wave": 4
+    },
+    {
+      "a": "Chameleon",
+      "b": "Appcues",
+      "category": "product-adoption",
+      "wave": 4
+    },
+    {
+      "a": "UserGuiding",
+      "b": "Appcues",
+      "category": "product-adoption",
+      "wave": 4
+    },
+    {
+      "a": "Whatfix",
+      "b": "Pendo",
+      "category": "product-adoption",
+      "wave": 4
+    },
+    {
+      "a": "Sprig",
+      "b": "Maze",
+      "category": "research",
+      "wave": 3
+    },
+    {
+      "a": "Typeform",
+      "b": "Tally",
+      "category": "research",
+      "wave": 4
+    },
+    {
+      "a": "Hotjar",
+      "b": "Sprig",
+      "category": "research",
+      "wave": 4
+    },
+    {
+      "a": "Qualtrics",
+      "b": "Sprig",
+      "category": "research",
+      "wave": 4
+    },
+    {
+      "a": "AdMob",
+      "b": "AppLovin MAX",
+      "category": "ads-mediation",
+      "wave": 3
+    },
+    {
+      "a": "Unity LevelPlay",
+      "b": "AppLovin MAX",
+      "category": "ads-mediation",
+      "wave": 4
+    },
+    {
+      "a": "AppTweak",
+      "b": "Sensor Tower",
+      "category": "aso",
+      "wave": 3
+    },
+    {
+      "a": "MobileAction",
+      "b": "AppTweak",
+      "category": "aso",
+      "wave": 4
+    },
+    {
+      "a": "Sensor Tower",
+      "b": "AppMagic",
+      "category": "aso",
+      "wave": 4
+    },
+    {
+      "a": "Appfigures",
+      "b": "Sensor Tower",
+      "category": "aso",
+      "wave": 4
+    },
+    {
+      "a": "SplitMetrics",
+      "b": "StoreMaven",
+      "category": "aso",
+      "wave": 4
+    }
   ],
-
   "templates": [
-    {"slug": "pricing-experiment-doc", "title": "Pricing Experiment Doc", "kw": "pricing experiment template", "wave": 2, "gated": true},
-    {"slug": "paywall-test-plan", "title": "Paywall A/B Test Plan", "kw": "paywall test plan template", "wave": 2, "gated": true},
-    {"slug": "onboarding-audit-checklist", "title": "Onboarding Audit Checklist", "kw": "onboarding audit checklist", "wave": 2, "gated": true},
-    {"slug": "subscription-pnl-model", "title": "Subscription P&L Model (Sheets)", "kw": "subscription business model template", "wave": 2, "gated": true},
-    {"slug": "ltv-model-sheet", "title": "LTV Model Sheet", "kw": "ltv model template", "wave": 2, "gated": true},
-    {"slug": "cohort-retention-sheet", "title": "Cohort Retention Analysis Sheet", "kw": "cohort analysis template", "wave": 2, "gated": true},
-    {"slug": "north-star-metric-tree", "title": "North Star Metric Tree", "kw": "north star metric template", "wave": 2, "gated": false},
-    {"slug": "growth-experiment-backlog-ice", "title": "Growth Experiment Backlog (ICE)", "kw": "growth experiment backlog template", "wave": 2, "gated": false},
-    {"slug": "event-tracking-plan", "title": "Event Tracking Plan", "kw": "event tracking plan template", "wave": 2, "gated": true},
-    {"slug": "ab-test-readout", "title": "A/B Test Readout", "kw": "ab test results template", "wave": 2, "gated": false},
-    {"slug": "van-westendorp-survey", "title": "Van Westendorp Pricing Survey", "kw": "van westendorp survey template", "wave": 2, "gated": true},
-    {"slug": "wtp-interview-guide", "title": "Willingness-to-Pay Interview Guide", "kw": "willingness to pay interview questions", "wave": 2, "gated": true},
-    {"slug": "competitor-pricing-tracker", "title": "Competitor Pricing Tracker", "kw": "competitor pricing analysis template", "wave": 2, "gated": false},
-    {"slug": "cancellation-flow-script", "title": "Cancellation Flow Script", "kw": "cancellation flow template", "wave": 2, "gated": true},
-    {"slug": "win-back-sequence", "title": "Win-Back Email & Push Sequence", "kw": "win back email template", "wave": 2, "gated": true},
-    {"slug": "monetization-prd", "title": "PRD Template for Monetization Features", "kw": "prd template monetization", "wave": 2, "gated": true},
-    {"slug": "pricing-page-copy", "title": "Pricing Page Copy Template", "kw": "pricing page template", "wave": 3, "gated": false},
-    {"slug": "subscription-metrics-dashboard-spec", "title": "Subscription Metrics Dashboard Spec", "kw": "subscription dashboard template", "wave": 3, "gated": false},
-    {"slug": "quarterly-growth-review-deck", "title": "Quarterly Growth Review Deck", "kw": "growth review template", "wave": 3, "gated": false},
-    {"slug": "plg-funnel-model", "title": "PLG Funnel Model", "kw": "plg funnel template", "wave": 3, "gated": false},
-    {"slug": "activation-metric-definition", "title": "Activation Metric Definition Doc", "kw": "activation metric template", "wave": 3, "gated": false},
-    {"slug": "notification-strategy-doc", "title": "Notification Strategy Doc", "kw": "push notification strategy template", "wave": 3, "gated": false},
-    {"slug": "referral-program-spec", "title": "Referral Program Spec", "kw": "referral program template", "wave": 3, "gated": false},
-    {"slug": "annual-plan-migration-playbook", "title": "Annual Plan Migration Playbook", "kw": "annual plan migration", "wave": 3, "gated": false},
-    {"slug": "price-increase-email", "title": "Price Increase Communication Email", "kw": "price increase email template", "wave": 3, "gated": false},
-    {"slug": "grandfathering-policy", "title": "Grandfathering Policy Doc", "kw": "grandfathering policy template", "wave": 3, "gated": false},
-    {"slug": "india-pricing-localization-sheet", "title": "India Pricing Localization Sheet", "kw": "pricing localization template", "wave": 3, "gated": false},
-    {"slug": "app-store-paywall-copy-tests", "title": "App Store & Paywall Copy Test Sheet", "kw": "paywall copy template", "wave": 3, "gated": false},
-    {"slug": "fractional-cpo-90-day-plan", "title": "Fractional CPO 90-Day Plan", "kw": "cpo 90 day plan template", "wave": 3, "gated": false},
-    {"slug": "product-strategy-one-pager", "title": "Product Strategy One-Pager", "kw": "product strategy one pager template", "wave": 3, "gated": false},
-    {"slug": "opportunity-solution-tree", "title": "Opportunity Solution Tree", "kw": "opportunity solution tree template", "wave": 3, "gated": false},
-    {"slug": "jtbd-interview-script", "title": "JTBD Interview Script", "kw": "jtbd interview script", "wave": 3, "gated": false},
-    {"slug": "churn-survey", "title": "Churn Survey", "kw": "churn survey template", "wave": 3, "gated": false},
-    {"slug": "feature-gating-matrix", "title": "Feature Gating Matrix", "kw": "feature gating template", "wave": 3, "gated": false},
-    {"slug": "monetization-audit-scorecard", "title": "Monetization Audit Scorecard", "kw": "monetization audit template", "wave": 3, "gated": false},
-    {"slug": "unit-economics-sheet", "title": "Unit Economics Sheet", "kw": "unit economics template", "wave": 3, "gated": false}
+    {
+      "slug": "pricing-experiment-doc",
+      "title": "Pricing Experiment Doc",
+      "kw": "pricing experiment template",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "paywall-test-plan",
+      "title": "Paywall A/B Test Plan",
+      "kw": "paywall test plan template",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "onboarding-audit-checklist",
+      "title": "Onboarding Audit Checklist",
+      "kw": "onboarding audit checklist",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "subscription-pnl-model",
+      "title": "Subscription P&L Model (Sheets)",
+      "kw": "subscription business model template",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "ltv-model-sheet",
+      "title": "LTV Model Sheet",
+      "kw": "ltv model template",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "cohort-retention-sheet",
+      "title": "Cohort Retention Analysis Sheet",
+      "kw": "cohort analysis template",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "north-star-metric-tree",
+      "title": "North Star Metric Tree",
+      "kw": "north star metric template",
+      "wave": 2,
+      "gated": false
+    },
+    {
+      "slug": "growth-experiment-backlog-ice",
+      "title": "Growth Experiment Backlog (ICE)",
+      "kw": "growth experiment backlog template",
+      "wave": 2,
+      "gated": false
+    },
+    {
+      "slug": "event-tracking-plan",
+      "title": "Event Tracking Plan",
+      "kw": "event tracking plan template",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "ab-test-readout",
+      "title": "A/B Test Readout",
+      "kw": "ab test results template",
+      "wave": 2,
+      "gated": false
+    },
+    {
+      "slug": "van-westendorp-survey",
+      "title": "Van Westendorp Pricing Survey",
+      "kw": "van westendorp survey template",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "wtp-interview-guide",
+      "title": "Willingness-to-Pay Interview Guide",
+      "kw": "willingness to pay interview questions",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "competitor-pricing-tracker",
+      "title": "Competitor Pricing Tracker",
+      "kw": "competitor pricing analysis template",
+      "wave": 2,
+      "gated": false
+    },
+    {
+      "slug": "cancellation-flow-script",
+      "title": "Cancellation Flow Script",
+      "kw": "cancellation flow template",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "win-back-sequence",
+      "title": "Win-Back Email & Push Sequence",
+      "kw": "win back email template",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "monetization-prd",
+      "title": "PRD Template for Monetization Features",
+      "kw": "prd template monetization",
+      "wave": 2,
+      "gated": true
+    },
+    {
+      "slug": "pricing-page-copy",
+      "title": "Pricing Page Copy Template",
+      "kw": "pricing page template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "subscription-metrics-dashboard-spec",
+      "title": "Subscription Metrics Dashboard Spec",
+      "kw": "subscription dashboard template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "quarterly-growth-review-deck",
+      "title": "Quarterly Growth Review Deck",
+      "kw": "growth review template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "plg-funnel-model",
+      "title": "PLG Funnel Model",
+      "kw": "plg funnel template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "activation-metric-definition",
+      "title": "Activation Metric Definition Doc",
+      "kw": "activation metric template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "notification-strategy-doc",
+      "title": "Notification Strategy Doc",
+      "kw": "push notification strategy template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "referral-program-spec",
+      "title": "Referral Program Spec",
+      "kw": "referral program template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "annual-plan-migration-playbook",
+      "title": "Annual Plan Migration Playbook",
+      "kw": "annual plan migration",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "price-increase-email",
+      "title": "Price Increase Communication Email",
+      "kw": "price increase email template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "grandfathering-policy",
+      "title": "Grandfathering Policy Doc",
+      "kw": "grandfathering policy template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "india-pricing-localization-sheet",
+      "title": "India Pricing Localization Sheet",
+      "kw": "pricing localization template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "app-store-paywall-copy-tests",
+      "title": "App Store & Paywall Copy Test Sheet",
+      "kw": "paywall copy template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "fractional-cpo-90-day-plan",
+      "title": "Fractional CPO 90-Day Plan",
+      "kw": "cpo 90 day plan template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "product-strategy-one-pager",
+      "title": "Product Strategy One-Pager",
+      "kw": "product strategy one pager template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "opportunity-solution-tree",
+      "title": "Opportunity Solution Tree",
+      "kw": "opportunity solution tree template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "jtbd-interview-script",
+      "title": "JTBD Interview Script",
+      "kw": "jtbd interview script",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "churn-survey",
+      "title": "Churn Survey",
+      "kw": "churn survey template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "feature-gating-matrix",
+      "title": "Feature Gating Matrix",
+      "kw": "feature gating template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "monetization-audit-scorecard",
+      "title": "Monetization Audit Scorecard",
+      "kw": "monetization audit template",
+      "wave": 3,
+      "gated": false
+    },
+    {
+      "slug": "unit-economics-sheet",
+      "title": "Unit Economics Sheet",
+      "kw": "unit economics template",
+      "wave": 3,
+      "gated": false
+    }
   ],
-
   "india": [
-    {"slug": "upi-autopay-for-subscriptions", "title": "UPI Autopay for Subscriptions: How It Works and What It Does to Conversion", "kw": "upi autopay subscription", "wave": 1},
-    {"slug": "rbi-e-mandate-rules-recurring-payments", "title": "RBI e-Mandate Rules for Recurring Payments (Current Limits)", "kw": "rbi e mandate rules recurring payments", "wave": 1},
-    {"slug": "google-play-billing-india", "title": "Google Play Billing in India: User Choice Billing, Fees, and Alternatives", "kw": "google play billing india", "wave": 1},
-    {"slug": "app-store-pricing-tiers-inr", "title": "App Store Pricing in India: INR Tiers and Price Points", "kw": "app store pricing india inr", "wave": 1},
-    {"slug": "gst-on-digital-subscriptions", "title": "GST on App Subscriptions and Digital Services in India (incl. OIDAR)", "kw": "gst on app subscription india", "wave": 1},
-    {"slug": "inr-price-points-that-convert", "title": "INR Price Points That Convert (₹49 to ₹4,999)", "kw": "app pricing in india", "wave": 1},
-    {"slug": "free-trials-in-india", "title": "Free Trials in India: Cards, UPI Mandates, and Why Trials Fail", "kw": "free trial india upi", "wave": 1},
-    {"slug": "subscription-app-market-india", "title": "The Subscription App Market in India (2026): Size, Leaders, Benchmarks", "kw": "subscription app market india", "wave": 1},
-    {"slug": "annual-vs-monthly-plans-india", "title": "Annual vs Monthly Plans in India: What the Data Says", "kw": "annual plan india subscription", "wave": 2},
-    {"slug": "involuntary-churn-mandate-failures", "title": "Involuntary Churn in India: Mandate Failures and How to Cut Them", "kw": "involuntary churn india", "wave": 2},
-    {"slug": "monetizing-tier-2-tier-3-users", "title": "Monetizing Tier-2/3 India: Micro-payments, Ads, and Sachet Plans", "kw": "monetize bharat users", "wave": 2},
-    {"slug": "ads-vs-subscriptions-indian-apps", "title": "Ads vs Subscriptions for Indian Consumer Apps", "kw": "ads vs subscription india apps", "wave": 2},
-    {"slug": "regional-language-monetization", "title": "Regional Language Monetization: What Changes Beyond English", "kw": "regional language app monetization", "wave": 2},
-    {"slug": "audio-subscriptions-india", "title": "Audio Subscriptions in India: Kuku FM, Pocket FM, Spotify, Audible", "kw": "audio app subscription india", "wave": 2},
-    {"slug": "ott-pricing-india", "title": "OTT Pricing in India: Mobile Plans, Ad Tiers, Telecom Bundles", "kw": "ott pricing india", "wave": 2},
-    {"slug": "fintech-monetization-india", "title": "Fintech App Monetization in India: Take Rates, Lending, Insurance Cross-Sell", "kw": "fintech app monetization india", "wave": 2},
-    {"slug": "edtech-monetization-india", "title": "Edtech Monetization in India After the Reset: What Works Now", "kw": "edtech monetization india", "wave": 2},
-    {"slug": "quick-commerce-memberships-economics", "title": "Zepto Pass vs Blinkit: Quick-Commerce Membership Economics", "kw": "quick commerce membership", "wave": 2},
-    {"slug": "membership-programs-india", "title": "Zomato Gold, Swiggy One, Flipkart Plus: How Indian Membership Programs Work", "kw": "zomato gold vs swiggy one", "wave": 2},
-    {"slug": "whatsapp-led-growth-and-monetization", "title": "WhatsApp-Led Growth and Monetization in India", "kw": "whatsapp business api growth strategy", "wave": 2},
-    {"slug": "telecom-bundling-jio-airtel", "title": "Telecom Bundling with Jio and Airtel as a Distribution Channel", "kw": "jio airtel app bundling", "wave": 2},
-    {"slug": "cod-to-prepaid-conversion-d2c", "title": "COD to Prepaid: Converting Cash-on-Delivery Buyers", "kw": "cod to prepaid conversion", "wave": 2},
-    {"slug": "india-app-economy-statistics", "title": "India App Economy Statistics 2026", "kw": "india app economy statistics", "wave": 2},
-    {"slug": "payment-success-rates-india", "title": "Payment Success Rates in India: Benchmarks and Fixes", "kw": "payment success rate india", "wave": 2},
-    {"slug": "dpdp-act-growth-personalization", "title": "DPDP Act: What It Means for Growth, Personalization, and Notifications", "kw": "dpdp act impact on apps", "wave": 2},
-    {"slug": "ondc-for-commerce-apps", "title": "ONDC for Commerce Apps: Where It Helps Monetization", "kw": "ondc for apps", "wave": 2},
-    {"slug": "festival-and-seasonal-pricing", "title": "Diwali, IPL, and Exam-Season Pricing for Consumer Apps", "kw": "festival pricing strategy india", "wave": 2},
-    {"slug": "referral-programs-india", "title": "Referral Programs in India: CRED, Groww, PhonePe Patterns", "kw": "referral program india apps", "wave": 2}
+    {
+      "slug": "upi-autopay-for-subscriptions",
+      "title": "UPI Autopay for Subscriptions: How It Works and What It Does to Conversion",
+      "kw": "upi autopay subscription",
+      "wave": 1
+    },
+    {
+      "slug": "rbi-e-mandate-rules-recurring-payments",
+      "title": "RBI e-Mandate Rules for Recurring Payments (Current Limits)",
+      "kw": "rbi e mandate rules recurring payments",
+      "wave": 1
+    },
+    {
+      "slug": "google-play-billing-india",
+      "title": "Google Play Billing in India: User Choice Billing, Fees, and Alternatives",
+      "kw": "google play billing india",
+      "wave": 1
+    },
+    {
+      "slug": "app-store-pricing-tiers-inr",
+      "title": "App Store Pricing in India: INR Tiers and Price Points",
+      "kw": "app store pricing india inr",
+      "wave": 1
+    },
+    {
+      "slug": "gst-on-digital-subscriptions",
+      "title": "GST on App Subscriptions and Digital Services in India (incl. OIDAR)",
+      "kw": "gst on app subscription india",
+      "wave": 1
+    },
+    {
+      "slug": "inr-price-points-that-convert",
+      "title": "INR Price Points That Convert (₹49 to ₹4,999)",
+      "kw": "app pricing in india",
+      "wave": 1
+    },
+    {
+      "slug": "free-trials-in-india",
+      "title": "Free Trials in India: Cards, UPI Mandates, and Why Trials Fail",
+      "kw": "free trial india upi",
+      "wave": 1
+    },
+    {
+      "slug": "subscription-app-market-india",
+      "title": "The Subscription App Market in India (2026): Size, Leaders, Benchmarks",
+      "kw": "subscription app market india",
+      "wave": 1
+    },
+    {
+      "slug": "annual-vs-monthly-plans-india",
+      "title": "Annual vs Monthly Plans in India: What the Data Says",
+      "kw": "annual plan india subscription",
+      "wave": 2
+    },
+    {
+      "slug": "involuntary-churn-mandate-failures",
+      "title": "Involuntary Churn in India: Mandate Failures and How to Cut Them",
+      "kw": "involuntary churn india",
+      "wave": 2
+    },
+    {
+      "slug": "monetizing-tier-2-tier-3-users",
+      "title": "Monetizing Tier-2/3 India: Micro-payments, Ads, and Sachet Plans",
+      "kw": "monetize bharat users",
+      "wave": 2
+    },
+    {
+      "slug": "ads-vs-subscriptions-indian-apps",
+      "title": "Ads vs Subscriptions for Indian Consumer Apps",
+      "kw": "ads vs subscription india apps",
+      "wave": 2
+    },
+    {
+      "slug": "regional-language-monetization",
+      "title": "Regional Language Monetization: What Changes Beyond English",
+      "kw": "regional language app monetization",
+      "wave": 2
+    },
+    {
+      "slug": "audio-subscriptions-india",
+      "title": "Audio Subscriptions in India: Kuku FM, Pocket FM, Spotify, Audible",
+      "kw": "audio app subscription india",
+      "wave": 2
+    },
+    {
+      "slug": "ott-pricing-india",
+      "title": "OTT Pricing in India: Mobile Plans, Ad Tiers, Telecom Bundles",
+      "kw": "ott pricing india",
+      "wave": 2
+    },
+    {
+      "slug": "fintech-monetization-india",
+      "title": "Fintech App Monetization in India: Take Rates, Lending, Insurance Cross-Sell",
+      "kw": "fintech app monetization india",
+      "wave": 2
+    },
+    {
+      "slug": "edtech-monetization-india",
+      "title": "Edtech Monetization in India After the Reset: What Works Now",
+      "kw": "edtech monetization india",
+      "wave": 2
+    },
+    {
+      "slug": "quick-commerce-memberships-economics",
+      "title": "Zepto Pass vs Blinkit: Quick-Commerce Membership Economics",
+      "kw": "quick commerce membership",
+      "wave": 2
+    },
+    {
+      "slug": "membership-programs-india",
+      "title": "Zomato Gold, Swiggy One, Flipkart Plus: How Indian Membership Programs Work",
+      "kw": "zomato gold vs swiggy one",
+      "wave": 2
+    },
+    {
+      "slug": "whatsapp-led-growth-and-monetization",
+      "title": "WhatsApp-Led Growth and Monetization in India",
+      "kw": "whatsapp business api growth strategy",
+      "wave": 2
+    },
+    {
+      "slug": "telecom-bundling-jio-airtel",
+      "title": "Telecom Bundling with Jio and Airtel as a Distribution Channel",
+      "kw": "jio airtel app bundling",
+      "wave": 2
+    },
+    {
+      "slug": "cod-to-prepaid-conversion-d2c",
+      "title": "COD to Prepaid: Converting Cash-on-Delivery Buyers",
+      "kw": "cod to prepaid conversion",
+      "wave": 2
+    },
+    {
+      "slug": "india-app-economy-statistics",
+      "title": "India App Economy Statistics 2026",
+      "kw": "india app economy statistics",
+      "wave": 2
+    },
+    {
+      "slug": "payment-success-rates-india",
+      "title": "Payment Success Rates in India: Benchmarks and Fixes",
+      "kw": "payment success rate india",
+      "wave": 2
+    },
+    {
+      "slug": "dpdp-act-growth-personalization",
+      "title": "DPDP Act: What It Means for Growth, Personalization, and Notifications",
+      "kw": "dpdp act impact on apps",
+      "wave": 2
+    },
+    {
+      "slug": "ondc-for-commerce-apps",
+      "title": "ONDC for Commerce Apps: Where It Helps Monetization",
+      "kw": "ondc for apps",
+      "wave": 2
+    },
+    {
+      "slug": "festival-and-seasonal-pricing",
+      "title": "Diwali, IPL, and Exam-Season Pricing for Consumer Apps",
+      "kw": "festival pricing strategy india",
+      "wave": 2
+    },
+    {
+      "slug": "referral-programs-india",
+      "title": "Referral Programs in India: CRED, Groww, PhonePe Patterns",
+      "kw": "referral program india apps",
+      "wave": 2
+    }
   ],
-
   "pricing_examples": [
-    {"slug": "meditation-apps", "category": "Meditation & Mindfulness Apps", "wave": 3},
-    {"slug": "fitness-apps", "category": "Fitness Apps", "wave": 3},
-    {"slug": "language-learning-apps", "category": "Language Learning Apps", "wave": 3},
-    {"slug": "test-prep-apps", "category": "Test-Prep & Exam Apps", "wave": 3},
-    {"slug": "ott-video-apps", "category": "OTT Video Apps", "wave": 3},
-    {"slug": "audio-podcast-apps", "category": "Audio & Podcast Apps", "wave": 3},
-    {"slug": "music-streaming-apps", "category": "Music Streaming Apps", "wave": 3},
-    {"slug": "news-apps", "category": "News Apps", "wave": 3},
-    {"slug": "dating-apps", "category": "Dating Apps", "wave": 3},
-    {"slug": "productivity-apps", "category": "Productivity & Notes Apps", "wave": 3},
-    {"slug": "ai-assistant-apps", "category": "AI Assistant Apps", "wave": 3},
-    {"slug": "photo-video-editing-apps", "category": "Photo & Video Editing Apps", "wave": 3},
-    {"slug": "vpn-apps", "category": "VPN Apps", "wave": 3},
-    {"slug": "password-manager-apps", "category": "Password Manager Apps", "wave": 3},
-    {"slug": "budgeting-apps", "category": "Budgeting & Personal Finance Apps", "wave": 3},
-    {"slug": "investing-apps", "category": "Investing & Trading Apps", "wave": 3},
-    {"slug": "wearable-health-apps", "category": "Wearable & Health Tracking Apps", "wave": 3},
-    {"slug": "sleep-apps", "category": "Sleep Apps", "wave": 3},
-    {"slug": "parenting-apps", "category": "Parenting & Pregnancy Apps", "wave": 3},
-    {"slug": "audiobook-reading-apps", "category": "Audiobook & Reading Apps", "wave": 3},
-    {"slug": "food-delivery-memberships", "category": "Food Delivery Memberships", "wave": 3},
-    {"slug": "quick-commerce-memberships", "category": "Quick-Commerce Memberships", "wave": 3},
-    {"slug": "ecommerce-memberships", "category": "E-commerce Memberships", "wave": 3},
-    {"slug": "ride-hailing-passes", "category": "Ride-Hailing Passes", "wave": 3}
+    {
+      "slug": "meditation-apps",
+      "category": "Meditation & Mindfulness Apps",
+      "wave": 3
+    },
+    {
+      "slug": "fitness-apps",
+      "category": "Fitness Apps",
+      "wave": 3
+    },
+    {
+      "slug": "language-learning-apps",
+      "category": "Language Learning Apps",
+      "wave": 3
+    },
+    {
+      "slug": "test-prep-apps",
+      "category": "Test-Prep & Exam Apps",
+      "wave": 3
+    },
+    {
+      "slug": "ott-video-apps",
+      "category": "OTT Video Apps",
+      "wave": 3
+    },
+    {
+      "slug": "audio-podcast-apps",
+      "category": "Audio & Podcast Apps",
+      "wave": 3
+    },
+    {
+      "slug": "music-streaming-apps",
+      "category": "Music Streaming Apps",
+      "wave": 3
+    },
+    {
+      "slug": "news-apps",
+      "category": "News Apps",
+      "wave": 3
+    },
+    {
+      "slug": "dating-apps",
+      "category": "Dating Apps",
+      "wave": 3
+    },
+    {
+      "slug": "productivity-apps",
+      "category": "Productivity & Notes Apps",
+      "wave": 3
+    },
+    {
+      "slug": "ai-assistant-apps",
+      "category": "AI Assistant Apps",
+      "wave": 3
+    },
+    {
+      "slug": "photo-video-editing-apps",
+      "category": "Photo & Video Editing Apps",
+      "wave": 3
+    },
+    {
+      "slug": "vpn-apps",
+      "category": "VPN Apps",
+      "wave": 3
+    },
+    {
+      "slug": "password-manager-apps",
+      "category": "Password Manager Apps",
+      "wave": 3
+    },
+    {
+      "slug": "budgeting-apps",
+      "category": "Budgeting & Personal Finance Apps",
+      "wave": 3
+    },
+    {
+      "slug": "investing-apps",
+      "category": "Investing & Trading Apps",
+      "wave": 3
+    },
+    {
+      "slug": "wearable-health-apps",
+      "category": "Wearable & Health Tracking Apps",
+      "wave": 3
+    },
+    {
+      "slug": "sleep-apps",
+      "category": "Sleep Apps",
+      "wave": 3
+    },
+    {
+      "slug": "parenting-apps",
+      "category": "Parenting & Pregnancy Apps",
+      "wave": 3
+    },
+    {
+      "slug": "audiobook-reading-apps",
+      "category": "Audiobook & Reading Apps",
+      "wave": 3
+    },
+    {
+      "slug": "food-delivery-memberships",
+      "category": "Food Delivery Memberships",
+      "wave": 3
+    },
+    {
+      "slug": "quick-commerce-memberships",
+      "category": "Quick-Commerce Memberships",
+      "wave": 3
+    },
+    {
+      "slug": "ecommerce-memberships",
+      "category": "E-commerce Memberships",
+      "wave": 3
+    },
+    {
+      "slug": "ride-hailing-passes",
+      "category": "Ride-Hailing Passes",
+      "wave": 3
+    }
   ],
-
   "decisions": [
-    {"slug": "freemium-vs-free-trial", "title": "Freemium vs Free Trial: Which Should Your App Use?", "kw": "freemium vs free trial", "wave": 3},
-    {"slug": "freemium-vs-free-trial-b2b-saas", "title": "Freemium vs Free Trial for B2B SaaS", "kw": "freemium vs free trial saas", "wave": 3},
-    {"slug": "free-trial-vs-reverse-trial", "title": "Free Trial vs Reverse Trial", "kw": "reverse trial vs free trial", "wave": 3},
-    {"slug": "monthly-vs-annual-subscription", "title": "Monthly vs Annual: Should You Offer Both?", "kw": "monthly vs annual subscription", "wave": 3},
-    {"slug": "annual-only-pricing", "title": "Should You Go Annual-Only?", "kw": "annual only subscription", "wave": 3},
-    {"slug": "hard-paywall-vs-soft-paywall", "title": "Hard Paywall vs Soft Paywall", "kw": "hard paywall vs soft paywall", "wave": 3},
-    {"slug": "trial-length-3-7-14-30-days", "title": "3, 7, 14 or 30-Day Trial?", "kw": "how long should a free trial be", "wave": 3},
-    {"slug": "ads-vs-subscription-vs-hybrid", "title": "Ads vs Subscription vs Hybrid", "kw": "ads vs subscription app", "wave": 3},
-    {"slug": "usage-based-vs-seat-based-pricing", "title": "Usage-Based vs Seat-Based Pricing", "kw": "usage based vs seat based pricing", "wave": 3},
-    {"slug": "credits-vs-subscription-for-ai-features", "title": "Credits vs Subscription for AI Features", "kw": "credits vs subscription ai", "wave": 3},
-    {"slug": "should-you-raise-prices", "title": "Should You Raise Prices Now?", "kw": "when to raise prices", "wave": 3},
-    {"slug": "grandfather-existing-users-or-not", "title": "Grandfather Existing Users, or Not?", "kw": "grandfathering price increase", "wave": 3},
-    {"slug": "lifetime-deal-or-not", "title": "Should You Offer a Lifetime Deal?", "kw": "should i offer a lifetime deal", "wave": 3},
-    {"slug": "regional-pricing-yes-or-no", "title": "Regional Pricing: Yes or No?", "kw": "should you use regional pricing", "wave": 3},
-    {"slug": "signup-before-or-after-value", "title": "Signup Before or After Value?", "kw": "delayed signup vs upfront signup", "wave": 3},
-    {"slug": "paywall-in-onboarding-or-after-aha", "title": "Paywall in Onboarding or After the Aha Moment?", "kw": "when to show paywall onboarding", "wave": 3},
-    {"slug": "web-checkout-vs-in-app-purchase", "title": "Web Checkout vs In-App Purchase", "kw": "web checkout vs in app purchase", "wave": 3},
-    {"slug": "build-vs-buy-subscription-infrastructure", "title": "Build vs Buy Subscription Infrastructure", "kw": "revenuecat vs in house", "wave": 3},
-    {"slug": "fractional-cpo-vs-full-time-cpo", "title": "Fractional CPO vs Full-Time CPO", "kw": "fractional cpo vs full time", "wave": 3},
-    {"slug": "when-to-start-monetizing", "title": "When Should You Start Monetizing?", "kw": "when to start monetizing app", "wave": 3},
-    {"slug": "intro-offer-vs-free-trial", "title": "Intro Offer vs Free Trial", "kw": "intro offer vs free trial", "wave": 4},
-    {"slug": "bundle-vs-a-la-carte", "title": "Bundle vs À La Carte", "kw": "bundle pricing vs a la carte", "wave": 4},
-    {"slug": "loyalty-program-or-not", "title": "Should You Build a Loyalty Program?", "kw": "should you build a loyalty program app", "wave": 4},
-    {"slug": "referral-vs-paid-acquisition-at-seed", "title": "Referral vs Paid Acquisition at Seed Stage", "kw": "referral program vs paid ads startup", "wave": 4},
-    {"slug": "pause-subscription-or-not", "title": "Should You Offer a Pause Option?", "kw": "should you offer pause subscription", "wave": 4},
-    {"slug": "cancellation-friction-vs-one-click", "title": "Cancellation: Friction or One-Click?", "kw": "cancellation flow friction", "wave": 4},
-    {"slug": "family-plan-or-not", "title": "Should You Offer a Family Plan?", "kw": "should you offer a family plan", "wave": 4},
-    {"slug": "student-and-ppp-discounts", "title": "Student and PPP Discounts: Worth It?", "kw": "should you offer student discount saas", "wave": 4},
-    {"slug": "charm-pricing-vs-round-pricing", "title": "₹99 vs ₹100: Charm Pricing vs Round Pricing", "kw": "charm pricing vs round pricing", "wave": 4},
-    {"slug": "feature-gating-vs-usage-limits", "title": "Feature Gating vs Usage Limits", "kw": "feature gating vs usage limits freemium", "wave": 4},
-    {"slug": "discounting-never-vs-strategic", "title": "Discounting: Never, or Strategic?", "kw": "should saas discount", "wave": 4},
-    {"slug": "how-generous-should-a-free-tier-be", "title": "How Generous Should a Free Tier Be?", "kw": "how generous should a free tier be", "wave": 4},
-    {"slug": "notification-frequency", "title": "How Many Push Notifications Per Day?", "kw": "how many push notifications per day", "wave": 4},
-    {"slug": "localize-for-hindi-or-not", "title": "Should Your App Support Hindi (and Which Screens First)?", "kw": "should app support hindi", "wave": 4},
-    {"slug": "web-first-or-app-first-for-ai-products", "title": "Web-First or App-First for AI Products?", "kw": "web first vs mobile first ai app", "wave": 4},
-    {"slug": "growth-team-pm-led-vs-marketing-led", "title": "Growth Team: PM-Led or Marketing-Led?", "kw": "growth team structure", "wave": 4},
-    {"slug": "north-star-revenue-vs-engagement", "title": "North Star: Revenue or Engagement?", "kw": "north star metric revenue or engagement", "wave": 4},
-    {"slug": "growth-model-or-not-yet", "title": "Do You Need a Growth Model Yet?", "kw": "do you need a growth model", "wave": 4},
-    {"slug": "one-plan-vs-tiers", "title": "One Plan or Multiple Tiers?", "kw": "single plan vs multiple tiers", "wave": 4},
-    {"slug": "in-house-vs-consultant-for-pricing", "title": "Pricing: In-House or Consultant?", "kw": "pricing consultant vs in house", "wave": 4}
+    {
+      "slug": "freemium-vs-free-trial",
+      "title": "Freemium vs Free Trial: Which Should Your App Use?",
+      "kw": "freemium vs free trial",
+      "wave": 3
+    },
+    {
+      "slug": "freemium-vs-free-trial-b2b-saas",
+      "title": "Freemium vs Free Trial for B2B SaaS",
+      "kw": "freemium vs free trial saas",
+      "wave": 3
+    },
+    {
+      "slug": "free-trial-vs-reverse-trial",
+      "title": "Free Trial vs Reverse Trial",
+      "kw": "reverse trial vs free trial",
+      "wave": 3
+    },
+    {
+      "slug": "monthly-vs-annual-subscription",
+      "title": "Monthly vs Annual: Should You Offer Both?",
+      "kw": "monthly vs annual subscription",
+      "wave": 3
+    },
+    {
+      "slug": "annual-only-pricing",
+      "title": "Should You Go Annual-Only?",
+      "kw": "annual only subscription",
+      "wave": 3
+    },
+    {
+      "slug": "hard-paywall-vs-soft-paywall",
+      "title": "Hard Paywall vs Soft Paywall",
+      "kw": "hard paywall vs soft paywall",
+      "wave": 3
+    },
+    {
+      "slug": "trial-length-3-7-14-30-days",
+      "title": "3, 7, 14 or 30-Day Trial?",
+      "kw": "how long should a free trial be",
+      "wave": 3
+    },
+    {
+      "slug": "ads-vs-subscription-vs-hybrid",
+      "title": "Ads vs Subscription vs Hybrid",
+      "kw": "ads vs subscription app",
+      "wave": 3
+    },
+    {
+      "slug": "usage-based-vs-seat-based-pricing",
+      "title": "Usage-Based vs Seat-Based Pricing",
+      "kw": "usage based vs seat based pricing",
+      "wave": 3
+    },
+    {
+      "slug": "credits-vs-subscription-for-ai-features",
+      "title": "Credits vs Subscription for AI Features",
+      "kw": "credits vs subscription ai",
+      "wave": 3
+    },
+    {
+      "slug": "should-you-raise-prices",
+      "title": "Should You Raise Prices Now?",
+      "kw": "when to raise prices",
+      "wave": 3
+    },
+    {
+      "slug": "grandfather-existing-users-or-not",
+      "title": "Grandfather Existing Users, or Not?",
+      "kw": "grandfathering price increase",
+      "wave": 3
+    },
+    {
+      "slug": "lifetime-deal-or-not",
+      "title": "Should You Offer a Lifetime Deal?",
+      "kw": "should i offer a lifetime deal",
+      "wave": 3
+    },
+    {
+      "slug": "regional-pricing-yes-or-no",
+      "title": "Regional Pricing: Yes or No?",
+      "kw": "should you use regional pricing",
+      "wave": 3
+    },
+    {
+      "slug": "signup-before-or-after-value",
+      "title": "Signup Before or After Value?",
+      "kw": "delayed signup vs upfront signup",
+      "wave": 3
+    },
+    {
+      "slug": "paywall-in-onboarding-or-after-aha",
+      "title": "Paywall in Onboarding or After the Aha Moment?",
+      "kw": "when to show paywall onboarding",
+      "wave": 3
+    },
+    {
+      "slug": "web-checkout-vs-in-app-purchase",
+      "title": "Web Checkout vs In-App Purchase",
+      "kw": "web checkout vs in app purchase",
+      "wave": 3
+    },
+    {
+      "slug": "build-vs-buy-subscription-infrastructure",
+      "title": "Build vs Buy Subscription Infrastructure",
+      "kw": "revenuecat vs in house",
+      "wave": 3
+    },
+    {
+      "slug": "fractional-cpo-vs-full-time-cpo",
+      "title": "Fractional CPO vs Full-Time CPO",
+      "kw": "fractional cpo vs full time",
+      "wave": 3
+    },
+    {
+      "slug": "when-to-start-monetizing",
+      "title": "When Should You Start Monetizing?",
+      "kw": "when to start monetizing app",
+      "wave": 3
+    },
+    {
+      "slug": "intro-offer-vs-free-trial",
+      "title": "Intro Offer vs Free Trial",
+      "kw": "intro offer vs free trial",
+      "wave": 4
+    },
+    {
+      "slug": "bundle-vs-a-la-carte",
+      "title": "Bundle vs À La Carte",
+      "kw": "bundle pricing vs a la carte",
+      "wave": 4
+    },
+    {
+      "slug": "loyalty-program-or-not",
+      "title": "Should You Build a Loyalty Program?",
+      "kw": "should you build a loyalty program app",
+      "wave": 4
+    },
+    {
+      "slug": "referral-vs-paid-acquisition-at-seed",
+      "title": "Referral vs Paid Acquisition at Seed Stage",
+      "kw": "referral program vs paid ads startup",
+      "wave": 4
+    },
+    {
+      "slug": "pause-subscription-or-not",
+      "title": "Should You Offer a Pause Option?",
+      "kw": "should you offer pause subscription",
+      "wave": 4
+    },
+    {
+      "slug": "cancellation-friction-vs-one-click",
+      "title": "Cancellation: Friction or One-Click?",
+      "kw": "cancellation flow friction",
+      "wave": 4
+    },
+    {
+      "slug": "family-plan-or-not",
+      "title": "Should You Offer a Family Plan?",
+      "kw": "should you offer a family plan",
+      "wave": 4
+    },
+    {
+      "slug": "student-and-ppp-discounts",
+      "title": "Student and PPP Discounts: Worth It?",
+      "kw": "should you offer student discount saas",
+      "wave": 4
+    },
+    {
+      "slug": "charm-pricing-vs-round-pricing",
+      "title": "₹99 vs ₹100: Charm Pricing vs Round Pricing",
+      "kw": "charm pricing vs round pricing",
+      "wave": 4
+    },
+    {
+      "slug": "feature-gating-vs-usage-limits",
+      "title": "Feature Gating vs Usage Limits",
+      "kw": "feature gating vs usage limits freemium",
+      "wave": 4
+    },
+    {
+      "slug": "discounting-never-vs-strategic",
+      "title": "Discounting: Never, or Strategic?",
+      "kw": "should saas discount",
+      "wave": 4
+    },
+    {
+      "slug": "how-generous-should-a-free-tier-be",
+      "title": "How Generous Should a Free Tier Be?",
+      "kw": "how generous should a free tier be",
+      "wave": 4
+    },
+    {
+      "slug": "notification-frequency",
+      "title": "How Many Push Notifications Per Day?",
+      "kw": "how many push notifications per day",
+      "wave": 4
+    },
+    {
+      "slug": "localize-for-hindi-or-not",
+      "title": "Should Your App Support Hindi (and Which Screens First)?",
+      "kw": "should app support hindi",
+      "wave": 4
+    },
+    {
+      "slug": "web-first-or-app-first-for-ai-products",
+      "title": "Web-First or App-First for AI Products?",
+      "kw": "web first vs mobile first ai app",
+      "wave": 4
+    },
+    {
+      "slug": "growth-team-pm-led-vs-marketing-led",
+      "title": "Growth Team: PM-Led or Marketing-Led?",
+      "kw": "growth team structure",
+      "wave": 4
+    },
+    {
+      "slug": "north-star-revenue-vs-engagement",
+      "title": "North Star: Revenue or Engagement?",
+      "kw": "north star metric revenue or engagement",
+      "wave": 4
+    },
+    {
+      "slug": "growth-model-or-not-yet",
+      "title": "Do You Need a Growth Model Yet?",
+      "kw": "do you need a growth model",
+      "wave": 4
+    },
+    {
+      "slug": "one-plan-vs-tiers",
+      "title": "One Plan or Multiple Tiers?",
+      "kw": "single plan vs multiple tiers",
+      "wave": 4
+    },
+    {
+      "slug": "in-house-vs-consultant-for-pricing",
+      "title": "Pricing: In-House or Consultant?",
+      "kw": "pricing consultant vs in house",
+      "wave": 4
+    }
   ],
-
   "case_studies": [
-    {"slug": "carinfo-350k-to-1-2m-dau", "title": "Scaling CarInfo from ~350K to 1.2M+ DAU", "kw": "carinfo growth case study", "wave": 1, "note": "From your public profile — VERIFY numbers, timeframe, and what you're allowed to disclose before publishing"},
-    {"slug": "carinfo-motor-insurance-monetization", "title": "Turning Motor Insurance into a Revenue Line: ~10 to 6,800+ Policies a Day", "kw": "app insurance monetization case study", "wave": 1, "note": "From your public profile — VERIFY"},
-    {"slug": "appy-pie-connect-launch", "title": "Launching Appy Pie Connect as a Paid Product (~$60K MRR)", "kw": "saas launch case study", "wave": 1, "note": "From your public profile — VERIFY"},
-    {"slug": "loanwiser-credit-routing", "title": "ML-Driven Credit Routing at Loanwiser (90%+ Approval Rates)", "kw": "fintech credit routing case study", "wave": 1, "note": "From your public profile — VERIFY"},
-    {"slug": "tripmojo-monetization", "title": "TripMojo: Monetizing Group Trip Planning (Founder Notes)", "kw": "travel app monetization case study", "wave": 1, "note": "Founder — write from your own notes"},
-    {"slug": "tripmojo-programmatic-seo", "title": "TripMojo: Programmatic SEO for Travel — What Worked, What Didn't", "kw": "programmatic seo travel case study", "wave": 1, "note": "Founder — write from your own notes"},
-    {"slug": "client-paywall-redesign", "title": "Client Engagement: Paywall Redesign for a Subscription App", "kw": "paywall redesign case study", "wave": 1, "note": "PLACEHOLDER — anonymised client work; only if you have permission"},
-    {"slug": "client-india-pricing-localization", "title": "Client Engagement: Pricing Localization for India", "kw": "pricing localization case study", "wave": 1, "note": "PLACEHOLDER — anonymised client work; only if you have permission"}
+    {
+      "slug": "carinfo-350k-to-1-2m-dau",
+      "title": "Scaling CarInfo from ~350K to 1.2M+ DAU",
+      "kw": "carinfo growth case study",
+      "wave": 1,
+      "note": "From your public profile — VERIFY numbers, timeframe, and what you're allowed to disclose before publishing"
+    },
+    {
+      "slug": "carinfo-motor-insurance-monetization",
+      "title": "Turning Motor Insurance into a Revenue Line: ~10 to 6,800+ Policies a Day",
+      "kw": "app insurance monetization case study",
+      "wave": 1,
+      "note": "From your public profile — VERIFY"
+    },
+    {
+      "slug": "appy-pie-connect-launch",
+      "title": "Launching Appy Pie Connect as a Paid Product (~$60K MRR)",
+      "kw": "saas launch case study",
+      "wave": 1,
+      "note": "From your public profile — VERIFY"
+    },
+    {
+      "slug": "loanwiser-credit-routing",
+      "title": "ML-Driven Credit Routing at Loanwiser (90%+ Approval Rates)",
+      "kw": "fintech credit routing case study",
+      "wave": 1,
+      "note": "From your public profile — VERIFY"
+    },
+    {
+      "slug": "tripmojo-monetization",
+      "title": "TripMojo: Monetizing Group Trip Planning (Founder Notes)",
+      "kw": "travel app monetization case study",
+      "wave": 1,
+      "note": "Founder — write from your own notes"
+    },
+    {
+      "slug": "tripmojo-programmatic-seo",
+      "title": "TripMojo: Programmatic SEO for Travel — What Worked, What Didn't",
+      "kw": "programmatic seo travel case study",
+      "wave": 1,
+      "note": "Founder — write from your own notes"
+    },
+    {
+      "slug": "client-paywall-redesign",
+      "title": "Client Engagement: Paywall Redesign for a Subscription App",
+      "kw": "paywall redesign case study",
+      "wave": 1,
+      "note": "PLACEHOLDER — anonymised client work; only if you have permission"
+    },
+    {
+      "slug": "client-india-pricing-localization",
+      "title": "Client Engagement: Pricing Localization for India",
+      "kw": "pricing localization case study",
+      "wave": 1,
+      "note": "PLACEHOLDER — anonymised client work; only if you have permission"
+    },
+    {
+      "slug": "crm-180k-transactions",
+      "title": "Building a CRM That Handles 180K+ Monthly Transactions at 99.6% Uptime",
+      "kw": "crm 180k transactions case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "user-acquisition-cac-30",
+      "title": "How We Cut User Acquisition Cost by 30% Without Cutting Volume",
+      "kw": "user acquisition cac 30 case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "ml-insurance-prediction",
+      "title": "How We Used ML to Predict Insurance Buyers (50,000+ Data Points)",
+      "kw": "ml insurance prediction case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "predict-high-ltv-users-ml",
+      "title": "How We Predicted High-LTV Users Using Behavioral ML (100K+ Sessions)",
+      "kw": "predict high ltv users ml case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "real-time-intent-scoring-engine",
+      "title": "Building a Real-Time Intent Scoring Engine for Lead Conversion",
+      "kw": "real time intent scoring engine case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "ml-reduce-cac-segmentation",
+      "title": "Using ML to Reduce CAC by 31% via Smart Audience Segmentation",
+      "kw": "ml reduce cac segmentation case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "predict-user-dropoff-churn-model",
+      "title": "Predicting User Drop-Off Before It Happens (Churn Prevention Model)",
+      "kw": "predict user dropoff churn model case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "ml-user-clustering-insurance",
+      "title": "Personalizing Insurance Offers Using ML-Driven User Clustering",
+      "kw": "ml user clustering insurance case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "scaling-moneyratefinder-growth",
+      "title": "From 1K to 100K Monthly Users: Scaling MoneyRateFinder with SEO + Product Loops",
+      "kw": "scaling moneyratefinder growth case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "insurance-cta-2x-growth",
+      "title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
+      "kw": "insurance cta 2x growth case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "growth-loop-repeat-users",
+      "title": "Designing a Growth Loop That Brought 30% Repeat Users in 14 Days",
+      "kw": "growth loop repeat users case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "funnel-dropoff-ux-optimization",
+      "title": "Optimizing Funnel Drop-Off Using Micro UX Interventions",
+      "kw": "funnel dropoff ux optimization case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "zero-cost-growth-engine",
+      "title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+      "kw": "zero cost growth engine case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "cab-fare-comparison-engine",
+      "title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "kw": "cab fare comparison engine case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "comparison-platform-india",
+      "title": "Designing a Comparison Platform Like Monito for the Indian Market",
+      "kw": "comparison platform india case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "scalable-notification-system",
+      "title": "Creating a Scalable Notification System for 1M+ Users (Trigger-Based)",
+      "kw": "scalable notification system case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "finance-calculator-app-retention",
+      "title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+      "kw": "finance calculator app retention case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "mvp-in-7-days",
+      "title": "From Idea to MVP in 7 Days: Building a High-Intent Utility Product",
+      "kw": "mvp in 7 days case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "ux-redesign-conversion-28",
+      "title": "UX Redesign That Improved Conversion by 28% (Before vs After Breakdown)",
+      "kw": "ux redesign conversion 28 case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "fintech-trust-ui-patterns",
+      "title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+      "kw": "fintech trust ui patterns case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "microcopy-ctr-increase",
+      "title": "How Microcopy Increased Click-Through Rate by 35% (UX Writing Case Study)",
+      "kw": "microcopy ctr increase case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "reduce-cognitive-load",
+      "title": "Reducing Cognitive Load to Improve Funnel Completion (UX Case Study)",
+      "kw": "reduce cognitive load case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "seo-0-to-100k",
+      "title": "Scaling SEO from 0 to 100K Monthly Traffic Using Programmatic Pages",
+      "kw": "seo 0 to 100k case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "seo-moat-remittance",
+      "title": "How We Reverse-Engineered Competitors to Win SEO Rankings (MoneyRateFinder)",
+      "kw": "seo moat remittance case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "rank-1-fintech-keywords",
+      "title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
+      "kw": "rank 1 fintech keywords case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "programmatic-seo-calculators",
+      "title": "Programmatic SEO for Calculators: Driving 10X Organic Traffic",
+      "kw": "programmatic seo calculators case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "ai-recommendation-engine",
+      "title": "How We Built an AI-Powered Recommendation Engine for Financial Products",
+      "kw": "ai recommendation engine case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    },
+    {
+      "slug": "ml-ux-growth-3x-conversion",
+      "title": "Combining ML + UX + Growth to Increase Conversion by 3X (Full Stack Case Study)",
+      "kw": "ml ux growth 3x conversion case study",
+      "wave": 1,
+      "note": "Migrated from /case-study/ (D1). Content exists and is live; re-gate before flipping indexable — it predates the gates."
+    }
   ],
-
   "hubs": [
-    {"slug": "services", "title": "Services", "kw": "product growth and monetization consulting"},
-    {"slug": "hire", "title": "Hire a Product & Growth Consultant", "kw": "hire product consultant"},
-    {"slug": "case-studies", "title": "Case Studies", "kw": "product growth case studies"},
-    {"slug": "teardowns", "title": "App Monetization, Pricing, Onboarding & Retention Teardowns", "kw": "app teardowns"},
-    {"slug": "benchmarks", "title": "App & Subscription Benchmarks by Industry", "kw": "app benchmarks by industry"},
-    {"slug": "tools", "title": "Free Calculators for Growth & Monetization", "kw": "subscription calculators"},
-    {"slug": "playbooks", "title": "Growth & Monetization Playbooks", "kw": "growth playbooks"},
-    {"slug": "glossary", "title": "Product Growth & Monetization Glossary", "kw": "product metrics glossary"},
-    {"slug": "compare", "title": "Growth & Monetization Stack Comparisons", "kw": "product analytics tools comparison"},
-    {"slug": "templates", "title": "Free Templates", "kw": "product growth templates"},
-    {"slug": "india", "title": "Monetizing Apps in India: The Reference", "kw": "app monetization india"},
-    {"slug": "pricing-examples", "title": "App Pricing Examples by Category (India & US)", "kw": "app pricing examples"},
-    {"slug": "decisions", "title": "Monetization & Growth Decisions", "kw": "monetization decisions"},
-    {"slug": "work-with-me", "title": "Work With Me", "kw": "hire yogesh product consultant"}
+    {
+      "slug": "services",
+      "title": "Services",
+      "kw": "product growth and monetization consulting"
+    },
+    {
+      "slug": "hire",
+      "title": "Hire a Product & Growth Consultant",
+      "kw": "hire product consultant"
+    },
+    {
+      "slug": "case-studies",
+      "title": "Case Studies",
+      "kw": "product growth case studies"
+    },
+    {
+      "slug": "teardowns",
+      "title": "App Monetization, Pricing, Onboarding & Retention Teardowns",
+      "kw": "app teardowns"
+    },
+    {
+      "slug": "benchmarks",
+      "title": "App & Subscription Benchmarks by Industry",
+      "kw": "app benchmarks by industry"
+    },
+    {
+      "slug": "tools",
+      "title": "Free Calculators for Growth & Monetization",
+      "kw": "subscription calculators"
+    },
+    {
+      "slug": "playbooks",
+      "title": "Growth & Monetization Playbooks",
+      "kw": "growth playbooks"
+    },
+    {
+      "slug": "glossary",
+      "title": "Product Growth & Monetization Glossary",
+      "kw": "product metrics glossary"
+    },
+    {
+      "slug": "compare",
+      "title": "Growth & Monetization Stack Comparisons",
+      "kw": "product analytics tools comparison"
+    },
+    {
+      "slug": "templates",
+      "title": "Free Templates",
+      "kw": "product growth templates"
+    },
+    {
+      "slug": "india",
+      "title": "Monetizing Apps in India: The Reference",
+      "kw": "app monetization india"
+    },
+    {
+      "slug": "pricing-examples",
+      "title": "App Pricing Examples by Category (India & US)",
+      "kw": "app pricing examples"
+    },
+    {
+      "slug": "decisions",
+      "title": "Monetization & Growth Decisions",
+      "kw": "monetization decisions"
+    },
+    {
+      "slug": "work-with-me",
+      "title": "Work With Me",
+      "kw": "hire yogesh product consultant"
+    }
   ]
 }

@@ -1,4 +1,768 @@
 {
-  "_readme": "Merged pages → 301 to the parent; retired → 410. Every entry needs a DECISIONS.md line. Compiled into next.config redirects().",
-  "redirects": []
+  "_readme": "Merged pages \u2192 301 to the parent; retired \u2192 410. Every entry needs a DECISIONS.md line. Compiled into next.config redirects().",
+  "redirects": [
+    {
+      "source": "/about-yogesh-yadav",
+      "destination": "/about",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/benchmarks/app-store-conversion/entertainment",
+      "destination": "/benchmarks/app-store-conversion/media-ott",
+      "permanent": true,
+      "note": "slug renamed to the plan's vocabulary"
+    },
+    {
+      "source": "/benchmarks/app-store-conversion/medical",
+      "destination": "/benchmarks/app-store-conversion/healthtech",
+      "permanent": true,
+      "note": "slug renamed to the plan's vocabulary"
+    },
+    {
+      "source": "/benchmarks/app-store-conversion/subscription-apps",
+      "destination": "/benchmarks/app-store-conversion/b2b-saas",
+      "permanent": true,
+      "note": "slug renamed to the plan's vocabulary"
+    },
+    {
+      "source": "/benchmarks/arpu/subscription-apps",
+      "destination": "/benchmarks/arpu/b2b-saas",
+      "permanent": true,
+      "note": "slug renamed to the plan's vocabulary"
+    },
+    {
+      "source": "/benchmarks/d1-retention/ecommerce",
+      "destination": "/benchmarks/retention/d2c-ecommerce",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d1-retention/fintech",
+      "destination": "/benchmarks/retention/fintech",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d1-retention/gaming",
+      "destination": "/benchmarks/retention/gaming",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d1-retention/health-fitness",
+      "destination": "/benchmarks/retention/healthtech",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d30-retention/ecommerce",
+      "destination": "/benchmarks/retention/d2c-ecommerce",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d30-retention/fintech",
+      "destination": "/benchmarks/retention/fintech",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d30-retention/gaming",
+      "destination": "/benchmarks/retention/gaming",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d30-retention/health-fitness",
+      "destination": "/benchmarks/retention/healthtech",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d30-retention/productivity",
+      "destination": "/benchmarks/retention/b2b-saas",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d30-retention/social",
+      "destination": "/benchmarks/retention/social-dating",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d7-retention/ecommerce",
+      "destination": "/benchmarks/retention/d2c-ecommerce",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d7-retention/fintech",
+      "destination": "/benchmarks/retention/fintech",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d7-retention/gaming",
+      "destination": "/benchmarks/retention/gaming",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/d7-retention/health-fitness",
+      "destination": "/benchmarks/retention/healthtech",
+      "permanent": true,
+      "note": "D1/D7/D30 collapse onto the plan's single retention metric"
+    },
+    {
+      "source": "/benchmarks/install-to-purchase/ecommerce",
+      "destination": "/benchmarks/install-to-purchase/d2c-ecommerce",
+      "permanent": true,
+      "note": "slug renamed to the plan's vocabulary"
+    },
+    {
+      "source": "/benchmarks/trial-to-paid/subscription-apps",
+      "destination": "/benchmarks/trial-to-paid-conversion/b2b-saas",
+      "permanent": true,
+      "note": "slug renamed to the plan's vocabulary"
+    },
+    {
+      "source": "/blog",
+      "destination": "/notes",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/blog/ab-testing-product-decisions",
+      "destination": "/playbooks/experimentation-program",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/activation-metrics-product-growth",
+      "destination": "/playbooks/activation-metric",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/agile-vs-scrum-vs-kanban",
+      "destination": "/notes/agile-vs-scrum-vs-kanban",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/ai-changing-product-management",
+      "destination": "/notes/ai-changing-product-management",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/ai-copilots-for-pms",
+      "destination": "/notes/ai-copilots-for-pms",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/ai-improve-product-analytics",
+      "destination": "/notes/ai-improve-product-analytics",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/ai-product-discovery-techniques",
+      "destination": "/notes/ai-product-discovery-techniques",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/ai-roadmap-planning",
+      "destination": "/notes/ai-roadmap-planning",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/ai-tools-product-managers",
+      "destination": "/notes/ai-tools-product-managers",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/ai-user-research",
+      "destination": "/notes/ai-user-research",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/balancing-growth-monetization",
+      "destination": "/playbooks/hybrid-monetization",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/become-product-manager-india",
+      "destination": "/notes/become-product-manager-india",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/building-ai-first-products",
+      "destination": "/notes/building-ai-first-products",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/building-pm-portfolio",
+      "destination": "/notes/building-pm-portfolio",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/core-skills-every-product-manager",
+      "destination": "/notes/core-skills-every-product-manager",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/data-driven-product-culture",
+      "destination": "/notes/data-driven-product-culture",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/data-driven-product-management",
+      "destination": "/notes/data-driven-product-management",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/decision-making-frameworks-product-leaders",
+      "destination": "/notes/decision-making-frameworks-product-leaders",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/evolution-of-product-management",
+      "destination": "/notes/evolution-of-product-management",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/funnel-analysis-product-managers",
+      "destination": "/playbooks/growth-loops-vs-funnels",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/future-role-pms-ai-world",
+      "destination": "/notes/future-role-pms-ai-world",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/generative-ai-writing-prds",
+      "destination": "/notes/generative-ai-writing-prds",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/growth-loops-product-management",
+      "destination": "/playbooks/growth-loops-vs-funnels",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/how-ai-is-changing-product-decisions",
+      "destination": "/notes/how-ai-is-changing-product-decisions",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/how-i-think-about-product-framework",
+      "destination": "/notes/how-i-think-about-product-framework",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/how-pms-balance-business-tech-ux",
+      "destination": "/notes/how-pms-balance-business-tech-ux",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/how-to-build-winning-product-strategy",
+      "destination": "/notes/how-to-build-winning-product-strategy",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/leadership-not-feature-ownership",
+      "destination": "/notes/leadership-not-feature-ownership",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/long-term-vs-short-term-product-strategy",
+      "destination": "/notes/long-term-vs-short-term-product-strategy",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/managing-cross-functional-teams",
+      "destination": "/notes/managing-cross-functional-teams",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/metrics-that-matter-product-managers",
+      "destination": "/glossary/omtm",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/monetization-models-digital-products",
+      "destination": "/playbooks/app-monetization-models",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/north-star-metrics-how-to",
+      "destination": "/playbooks/north-star-metric",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/outcome-driven-roadmaps",
+      "destination": "/notes/outcome-driven-roadmaps",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/pm-career-path-complete-guide",
+      "destination": "/notes/pm-career-path-complete-guide",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/pm-skills-gap-analysis",
+      "destination": "/notes/pm-skills-gap-analysis",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/pm-vs-product-owner-vs-project-manager",
+      "destination": "/notes/pm-vs-product-owner-vs-project-manager",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/pricing-strategy-framework",
+      "destination": "/playbooks/subscription-pricing-strategy",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/prioritization-frameworks-every-pm",
+      "destination": "/notes/prioritization-frameworks-every-pm",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/product-analytics-improve-retention",
+      "destination": "/playbooks/retention-curve-analysis",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/product-frameworks-at-scale",
+      "destination": "/notes/product-frameworks-at-scale",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/product-leadership-vs-management",
+      "destination": "/notes/product-leadership-vs-management",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/product-led-growth-guide",
+      "destination": "/playbooks/plg-for-consumer-apps",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/product-lifecycle-explained",
+      "destination": "/notes/product-lifecycle-explained",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/product-management-misconceptions",
+      "destination": "/notes/product-management-misconceptions",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/product-manager-interview-questions",
+      "destination": "/notes/product-manager-interview-questions",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/programmatic-seo-guide",
+      "destination": "/notes/programmatic-seo-guide",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/reduce-customer-acquisition-cost",
+      "destination": "/playbooks/unit-economics-for-consumer-apps",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/research-beyond-surveys",
+      "destination": "/notes/research-beyond-surveys",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/retention-strategies-consumer-apps",
+      "destination": "/playbooks/retention-curve-analysis",
+      "permanent": true,
+      "note": "topic matches a plan archetype"
+    },
+    {
+      "source": "/blog/roadmap-planning-practical-guide",
+      "destination": "/notes/roadmap-planning-practical-guide",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/setting-strong-product-vision",
+      "destination": "/notes/setting-strong-product-vision",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/sprint-planning-best-practices",
+      "destination": "/notes/sprint-planning-best-practices",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/strategic-thinking-senior-pm",
+      "destination": "/notes/strategic-thinking-senior-pm",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/user-centric-product-thinking",
+      "destination": "/notes/user-centric-product-thinking",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/what-does-a-pm-actually-do",
+      "destination": "/notes/what-does-a-pm-actually-do",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/what-makes-product-scalable",
+      "destination": "/notes/what-makes-product-scalable",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/blog/writing-effective-prds-guide",
+      "destination": "/notes/writing-effective-prds-guide",
+      "permanent": true,
+      "note": "PM craft/career \u2014 00-STRATEGY \u00a76 /notes, outside the 1,017"
+    },
+    {
+      "source": "/case-studies/design",
+      "destination": "/case-studies",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/case-studies/growth",
+      "destination": "/case-studies",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/case-studies/machine-learning",
+      "destination": "/case-studies",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/case-studies/product",
+      "destination": "/case-studies",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/case-studies/seo",
+      "destination": "/case-studies",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/case-study/ai-recommendation-engine",
+      "destination": "/case-studies/ai-recommendation-engine",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/cab-fare-comparison-engine",
+      "destination": "/case-studies/cab-fare-comparison-engine",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/carinfo-45m-mau",
+      "destination": "/case-studies/carinfo-350k-to-1-2m-dau",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/comparison-platform-india",
+      "destination": "/case-studies/comparison-platform-india",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/crm-180k-transactions",
+      "destination": "/case-studies/crm-180k-transactions",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/finance-calculator-app-retention",
+      "destination": "/case-studies/finance-calculator-app-retention",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/fintech-trust-ui-patterns",
+      "destination": "/case-studies/fintech-trust-ui-patterns",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/funnel-dropoff-ux-optimization",
+      "destination": "/case-studies/funnel-dropoff-ux-optimization",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/growth-loop-repeat-users",
+      "destination": "/case-studies/growth-loop-repeat-users",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/insurance-cta-2x-growth",
+      "destination": "/case-studies/insurance-cta-2x-growth",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/insurance-funnel-1200-growth",
+      "destination": "/case-studies/carinfo-motor-insurance-monetization",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/microcopy-ctr-increase",
+      "destination": "/case-studies/microcopy-ctr-increase",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/ml-insurance-prediction",
+      "destination": "/case-studies/ml-insurance-prediction",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/ml-reduce-cac-segmentation",
+      "destination": "/case-studies/ml-reduce-cac-segmentation",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/ml-user-clustering-insurance",
+      "destination": "/case-studies/ml-user-clustering-insurance",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/ml-ux-growth-3x-conversion",
+      "destination": "/case-studies/ml-ux-growth-3x-conversion",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/mvp-in-7-days",
+      "destination": "/case-studies/mvp-in-7-days",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/predict-high-ltv-users-ml",
+      "destination": "/case-studies/predict-high-ltv-users-ml",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/predict-user-dropoff-churn-model",
+      "destination": "/case-studies/predict-user-dropoff-churn-model",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/programmatic-seo-calculators",
+      "destination": "/case-studies/programmatic-seo-calculators",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/rank-1-fintech-keywords",
+      "destination": "/case-studies/rank-1-fintech-keywords",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/real-time-intent-scoring-engine",
+      "destination": "/case-studies/real-time-intent-scoring-engine",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/reduce-cognitive-load",
+      "destination": "/case-studies/reduce-cognitive-load",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/scalable-notification-system",
+      "destination": "/case-studies/scalable-notification-system",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/scaling-moneyratefinder-growth",
+      "destination": "/case-studies/scaling-moneyratefinder-growth",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/seo-0-to-100k",
+      "destination": "/case-studies/seo-0-to-100k",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/seo-moat-remittance",
+      "destination": "/case-studies/seo-moat-remittance",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/user-acquisition-cac-30",
+      "destination": "/case-studies/user-acquisition-cac-30",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/ux-redesign-conversion-28",
+      "destination": "/case-studies/ux-redesign-conversion-28",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/case-study/zero-cost-growth-engine",
+      "destination": "/case-studies/zero-cost-growth-engine",
+      "permanent": true,
+      "note": "singular \u2192 plural prefix"
+    },
+    {
+      "source": "/consulting/consumer-app-growth-consultant",
+      "destination": "/services/retention-and-lifecycle",
+      "permanent": true,
+      "note": "consulting \u2192 services"
+    },
+    {
+      "source": "/consulting/fintech-product-consultant",
+      "destination": "/services/app-monetization-strategy/fintech",
+      "permanent": true,
+      "note": "consulting \u2192 services"
+    },
+    {
+      "source": "/consulting/marketplace-product-consultant",
+      "destination": "/services/app-monetization-strategy/marketplaces",
+      "permanent": true,
+      "note": "consulting \u2192 services"
+    },
+    {
+      "source": "/consulting/product-monetisation-consultant",
+      "destination": "/services/app-monetization-strategy",
+      "permanent": true,
+      "note": "consulting \u2192 services"
+    },
+    {
+      "source": "/consulting/saas-product-consultant",
+      "destination": "/services/pricing-and-packaging/b2b-saas",
+      "permanent": true,
+      "note": "consulting \u2192 services"
+    },
+    {
+      "source": "/contact",
+      "destination": "/work-with-me",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/product-growth-score",
+      "destination": "/tools/monetization-health-score",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/work",
+      "destination": "/case-studies",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/work/carinfo",
+      "destination": "/case-studies/carinfo-350k-to-1-2m-dau",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/work/knipex",
+      "destination": "/notes/knipex",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/work/loanwiser",
+      "destination": "/case-studies/loanwiser-credit-routing",
+      "permanent": true,
+      "note": "explicit mapping"
+    },
+    {
+      "source": "/work/upgrowth",
+      "destination": "/notes/upgrowth",
+      "permanent": true,
+      "note": "explicit mapping"
+    }
+  ],
+  "_generated_by": "seo/scripts/build_migration.py \u2014 never hand-edit"
 }
