@@ -152,3 +152,64 @@ quietly dropped:
 - **Quarterly data study** (04 §3.2) and the **press pitch list** — these are
   outreach, not code.
 - **3-email follow-up sequence** (04 §5) — needs an email provider.
+
+
+---
+
+## Launch readiness — full run, 2026-09-28
+
+Everything green except one thing, and that one thing is a deploy blocker.
+
+| Check | Result |
+|---|---|
+| Vite build (the live site) | pass — 132 URLs, all validators green |
+| TypeScript | clean |
+| Unit tests | **162 passing** |
+| `build_inventory.py` | 1,071 rows |
+| `build_migration.py` + `check_migration.py` | 127 redirects, every target resolves |
+| `link-plan.ts` | min 3 inbound, 0 starved |
+| `gen-routes.ts` | 30 routes; the 3 hand-authored ones survive a regenerate |
+| `migrate-notes.ts` | 45/45 |
+| Next build | 83 pages |
+| Playwright | **13 passing** |
+| Crawl of every built page | **54/54 return 200** |
+| Every redirect fires | **127/127 return 301/308** |
+| Lighthouse, 4 page types | **100 / 100 / 100 / 100** |
+| **`launch:check`** | **FAIL — not safe to deploy** |
+
+### The blocker
+
+**79 of the 127 redirects land on a 404.** They fire correctly; their
+destinations do not exist, because no Wave-1 content has been drafted.
+
+| Destination | Dead | Was |
+|---|---|---|
+| `/case-studies/*` | 40 | 30 live case studies plus the category pages |
+| `/benchmarks/*` | 20 | 21 live benchmark pages |
+| `/playbooks/*` | 12 | 13 migrated blog posts |
+| `/services/*` | 5 | the 5 live consulting pages |
+| `/glossary/*`, `/tools/*` | 2 | |
+
+Only the 48 pointing at `/notes` resolve, because those articles were actually
+migrated.
+
+**Deploying this build today would 301 seventy-nine currently-ranking URLs to
+404s.** That is worse than not migrating: the old pages stop serving and the new
+ones do not exist, so the equity goes nowhere rather than moving.
+
+`pnpm launch:check` now enforces this. It walks every redirect to its final
+destination and exits non-zero on any that is not 200. Nothing else in the
+suite catches it — a build can typecheck, pass every gate and score 100 across
+the board while still being unsafe to put live, because a redirect is only as
+good as what it lands on.
+
+### What makes it deployable
+
+Draft and publish the 79 destination pages — which is Wave 1, and needs the four
+outstanding items (experience library, the $60K MRR source, GSC/GA4 accounts,
+and network for `research.ts`). Until then:
+
+- **The live Vite site is unaffected and safe.** `vercel.json` still points at
+  it, and its own build is green.
+- **The Next build is safe to preview**, not to promote.
+- Cut over only when `pnpm launch:check` passes.
