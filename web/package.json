@@ -11,7 +11,8 @@
     "migration": "python3 ../seo/scripts/build_migration.py && python3 ../seo/scripts/check_migration.py",
     "similarity": "python3 ../seo/scripts/similarity_check.py --content content --out ../seo/data/similarity/report.json",
     "test": "vitest run",
-    "gates": "tsx scripts/gates.ts"
+    "gates": "tsx scripts/gates.ts",
+    "routes": "tsx scripts/gen-routes.ts"
   },
   "dependencies": {
     "next": "^16.3.6",
