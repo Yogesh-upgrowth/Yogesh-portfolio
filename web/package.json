@@ -13,7 +13,15 @@
     "test": "vitest run",
     "gates": "tsx scripts/gates.ts",
     "routes": "tsx scripts/gen-routes.ts",
-    "links": "tsx scripts/link-plan.ts"
+    "links": "tsx scripts/link-plan.ts",
+    "keywords": "tsx scripts/validate-keywords.ts",
+    "publish": "tsx scripts/publish.ts",
+    "monitor": "tsx scripts/monitor.ts",
+    "refresh": "tsx scripts/refresh.ts",
+    "citations": "tsx scripts/citations.ts",
+    "price:check": "tsx scripts/price-check.ts",
+    "research": "tsx scripts/research.ts",
+    "draft": "tsx scripts/draft.ts"
   },
   "dependencies": {
     "next": "^16.3.6",
