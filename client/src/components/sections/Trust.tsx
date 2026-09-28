@@ -6,7 +6,7 @@ import { useInView } from "@/hooks/useInView";
 const metrics = proofStats([
   "years-experience",
   "daily-transactions",
-  "dau-scaled",
+  "mau-scaled",
   "team-led",
 ]);
 

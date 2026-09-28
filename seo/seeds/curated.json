@@ -2270,11 +2270,11 @@
   ],
   "case_studies": [
     {
-      "slug": "carinfo-350k-to-1-2m-dau",
-      "title": "Scaling CarInfo from ~350K to 1.2M+ DAU",
+      "slug": "carinfo-3-8m-to-45m-mau",
+      "title": "Scaling CarInfo from 3.8M to 45M+ Monthly Active Users",
       "kw": "carinfo growth case study",
       "wave": 1,
-      "note": "From your public profile — VERIFY numbers, timeframe, and what you're allowed to disclose before publishing"
+      "note": "MAU confirmed by Yogesh 2026-09-28 (D2). Sourced to CASE_STUDY_METRICS[\"carinfo-45m-mau\"], which states 45M+ Monthly Active Users. Do not relabel as DAU."
     },
     {
       "slug": "carinfo-motor-insurance-monetization",

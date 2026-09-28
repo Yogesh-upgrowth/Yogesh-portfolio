@@ -525,7 +525,7 @@
     },
     {
       "source": "/case-study/carinfo-45m-mau",
-      "destination": "/case-studies/carinfo-350k-to-1-2m-dau",
+      "destination": "/case-studies/carinfo-3-8m-to-45m-mau",
       "permanent": true,
       "note": "singular \u2192 plural prefix"
     },
@@ -741,7 +741,7 @@
     },
     {
       "source": "/work/carinfo",
-      "destination": "/case-studies/carinfo-350k-to-1-2m-dau",
+      "destination": "/case-studies/carinfo-3-8m-to-45m-mau",
       "permanent": true,
       "note": "explicit mapping"
     },

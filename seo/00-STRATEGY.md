@@ -23,7 +23,7 @@ Yes to ~1,000 pages. No to shipping them as one batch of templated text. pmyoges
 Positioning line (use verbatim on service pages, About, LinkedIn): **Product growth and monetization consultant for consumer and subscription apps — India-first, global.**
 
 Moat — why these pages can't be commoditised by content farms:
-1. **Operator numbers, not theory.** [VERIFY before use — these come from your public profiles] CarInfo scale-up (~350K → 1.2M+ DAU); motor-insurance line (~10 → 6,800+ policies/day); Appy Pie Connect (~$60K MRR); TripMojo (founder). These become first-person "From my work" blocks across playbooks, teardowns and decisions.
+1. **Operator numbers, not theory.** CarInfo scale-up (3.8M → 45M+ MAU — confirmed 2026-09-28, sourced to the carinfo-45m-mau case study metrics; the earlier "~350K → 1.2M+ DAU" framing was wrong and is retired); motor-insurance line (~10 → 6,800+ policies/day, i.e. the 680× insurance revenue line in shared/proof.ts); Appy Pie Connect (~$60K MRR — [VERIFY: no source on the site, see AUDIT.md D2]); TripMojo (founder). These become first-person "From my work" blocks across playbooks, teardowns and decisions.
 2. **India monetization depth** global sites don't have: UPI Autopay and e-mandate behaviour, Play/App Store billing in India, INR price points, hybrid ads+subscriptions for low-ARPU users, telecom bundling, festival seasonality.
 3. **Opinions with numbers.** 64 apps × 4 lenses of teardowns, 24 category price maps, benchmarks with an India layer.
 

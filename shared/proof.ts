@@ -71,13 +71,15 @@ export const PROOF: ProofClaim[] = [
     },
   },
   {
-    id: "dau-scaled",
-    value: "1.2M+",
-    label: "DAU Scaled To",
-    source: {
-      kind: "unsourced",
-      reason: "Shown on the homepage. Appears in no case study or work story.",
-    },
+    // Was "1.2M+ DAU", registered unsourced because no case study or work story
+    // carried it — while services.ts, caseStudies.ts and seo-meta.ts all said
+    // 45M+ MAU. Yogesh confirmed MAU is the correct framing (2026-09-28), so
+    // the claim now points at the case study whose metrics already state it.
+    id: "mau-scaled",
+    value: "45M+",
+    label: "Monthly Active Users",
+    source: { kind: "case-study", slug: "carinfo-45m-mau" },
+    note: "Scaled from 3.8M. This is monthly actives, not daily \u2014 do not relabel as DAU.",
   },
   {
     id: "daily-transactions",

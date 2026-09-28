@@ -87,7 +87,7 @@ SINGLETONS = {
     "/contact":              "/work-with-me",
     "/blog":                 "/notes",
     "/work":                 "/case-studies",
-    "/work/carinfo":         "/case-studies/carinfo-350k-to-1-2m-dau",
+    "/work/carinfo":         "/case-studies/carinfo-3-8m-to-45m-mau",
     "/work/loanwiser":       "/case-studies/loanwiser-credit-routing",
     "/work/knipex":          "/notes/knipex",
     "/work/upgrowth":        "/notes/upgrowth",
@@ -103,7 +103,7 @@ SINGLETONS = {
 # Live case studies that are the same work as a plan slug (the D2 conflict:
 # one says 45M+ MAU, the other 1.2M+ DAU).
 CASE_STUDY_ALIASES = {
-    "carinfo-45m-mau":              "carinfo-350k-to-1-2m-dau",
+    "carinfo-45m-mau":              "carinfo-3-8m-to-45m-mau",
     "insurance-funnel-1200-growth": "carinfo-motor-insurance-monetization",
 }
 

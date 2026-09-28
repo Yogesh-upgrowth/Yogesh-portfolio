@@ -63,7 +63,16 @@ plan needs 30 tool pages under that prefix. Leave the 59 `/blog` articles and
 
 ---
 
-## Conflict 2 — the moat numbers are the ones our own build cannot source
+## Conflict 2 — RESOLVED 2026-09-28 — the moat numbers
+
+> **Resolved.** Yogesh confirmed **3.8M → 45M+ MAU** is the correct framing.
+> `shared/proof.ts` now carries `mau-scaled: 45M+`, sourced to
+> `CASE_STUDY_METRICS["carinfo-45m-mau"]`. The `1.2M+ DAU` claim is retired,
+> the seed slug is `carinfo-3-8m-to-45m-mau`, and `00-STRATEGY.md` §2 is
+> updated. Unsourced claims in the proof database went 3 → 2.
+> Still open: the **$60K MRR** figure for Appy Pie Connect has no source.
+
+The original finding, kept as the record:
 
 `00-STRATEGY.md` §2 builds the moat on four figures, marked
 `[VERIFY before use]`:
@@ -192,15 +201,14 @@ unresolved. It gets promoted to root once **D1** is decided.
 
 ## The four questions a script cannot answer
 
-1. **D1** — extend the seeds to cover the 129 existing URLs, migrate them to the
-   plan's taxonomy, or run both? (My read: extend, plus move
-   `/product-growth-score` under `/tools/`.)
-2. **D2** — is the CarInfo figure **1.2M+ DAU** or **45M+ MAU**, what is the
-   source, and what is the source for $60K MRR at Appy Pie Connect?
-3. **D3** — rewrite on Next.js, or adapt the spec to Vite + wouter?
-   (My read: adapt.)
-4. **D4** — `config/fx.json` has `rate: null` and `as_of: null`. G15 fails every
-   page until an RBI reference rate and date are set. What rate?
+1. ~~**D1**~~ — **RESOLVED**: migrate to the plan's taxonomy. 127 redirects built
+   and validated; `seo/migration-map.csv`.
+2. ~~**D2**~~ — **RESOLVED**: 45M+ MAU. One part still open — the **$60K MRR**
+   figure for Appy Pie Connect has no source and stays out of §2 until it does.
+3. ~~**D3**~~ — **RESOLVED**: rewrite on Next.js. Built in `web/`.
+4. **D4** — `config/fx.json` still has `rate: null` and `as_of: null`. G15 fails
+   every priced page until an RBI reference rate and its date are set. This is
+   one number and one date, and it is the last thing blocking priced pages.
 
 Items 3 and 4 in `seo/README.md`'s "before Claude Code starts" list are also
 outstanding and only you can do them: the experience-capture session
