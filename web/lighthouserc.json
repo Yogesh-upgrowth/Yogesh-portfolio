@@ -1,5 +1,5 @@
 {
-  "_readme": "Lighthouse CI against the Wave 0 templates (02 §2 G18, 03 §6). Thresholds are the spec's lab budgets, not defaults.",
+  "_readme": "Lighthouse CI against the Wave 0 templates (02 \u00a72 G18, 03 \u00a76). All four categories are asserted at 100 because the site reached 100 on 2026-09-28 and a regression is easier to prevent than to find later.",
   "ci": {
     "collect": {
       "startServerCommand": "pnpm start -p 3311",
@@ -19,14 +19,65 @@
     },
     "assert": {
       "assertions": {
-        "categories:accessibility": ["error", { "minScore": 1 }],
-        "categories:seo": ["error", { "minScore": 1 }],
-        "categories:best-practices": ["error", { "minScore": 0.95 }],
-        "largest-contentful-paint": ["error", { "maxNumericValue": 2000 }],
-        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.1 }],
-        "total-blocking-time": ["error", { "maxNumericValue": 150 }]
+        "categories:performance": [
+          "error",
+          {
+            "minScore": 1
+          }
+        ],
+        "categories:accessibility": [
+          "error",
+          {
+            "minScore": 1
+          }
+        ],
+        "categories:best-practices": [
+          "error",
+          {
+            "minScore": 1
+          }
+        ],
+        "categories:seo": [
+          "error",
+          {
+            "minScore": 1
+          }
+        ],
+        "largest-contentful-paint": [
+          "error",
+          {
+            "maxNumericValue": 2000
+          }
+        ],
+        "cumulative-layout-shift": [
+          "error",
+          {
+            "maxNumericValue": 0.1
+          }
+        ],
+        "total-blocking-time": [
+          "error",
+          {
+            "maxNumericValue": 150
+          }
+        ],
+        "color-contrast": [
+          "error",
+          {
+            "minScore": 1
+          }
+        ],
+        "errors-in-console": [
+          "error",
+          {
+            "minScore": 1
+          }
+        ]
       }
     },
-    "upload": { "target": "filesystem", "outputDir": "./lighthouse-report" }
+    "upload": {
+      "target": "filesystem",
+      "outputDir": "./lighthouse-report"
+    }
   }
 }

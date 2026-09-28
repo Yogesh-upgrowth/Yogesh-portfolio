@@ -2,7 +2,15 @@
 :root {
   --paper: #fafaf7;
   --ink: #101010;
-  --accent: #d9480f;          /* verdicts, CTAs and the Last verified pill only */
+  /* Deviates from 03 §7's #D9480F, which measures 4.11:1 against the paper and
+     fails WCAG AA both as text and as the CTA background. #b93a09 keeps the
+     deep-orange intent at 5.47:1. Logged in DECISIONS.md. */
+  --accent: #b93a09;          /* verdicts, CTAs and the Last verified pill only */
+  /* Secondary text colour. Dimming text with `opacity` is a contrast trap:
+     .source-pill at opacity .75 inside the accent rendered as #c96a45 at
+     3.56:1 and failed WCAG AA, and the value depends on whatever it is nested
+     in, so it cannot be checked in isolation. An explicit token can. */
+  --ink-muted: #5c5c5c;       /* 6.39:1 on paper */
   --border: rgb(16 16 16 / 10%);
   --zebra: rgb(16 16 16 / 3%);
   --font-display: "Instrument Serif", Georgia, serif;
@@ -15,13 +23,18 @@
   :root:not([data-theme="light"]) {
     --paper: #0f0f0e;
     --ink: #f1efe8;
+    --ink-muted: #9a9a95;     /* 6.79:1 on dark paper */
     --border: rgb(241 239 232 / 12%);
     --zebra: rgb(241 239 232 / 3%);
+    /* The light accent is 4.46:1 on dark paper — just under AA. Brighten. */
+    --accent: #e8590c;
   }
 }
 :root[data-theme="dark"] {
   --paper: #0f0f0e;
   --ink: #f1efe8;
+  --ink-muted: #9a9a95;
   --border: rgb(241 239 232 / 12%);
   --zebra: rgb(241 239 232 / 3%);
+  --accent: #e8590c;
 }

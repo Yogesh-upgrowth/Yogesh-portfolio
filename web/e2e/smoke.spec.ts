@@ -109,3 +109,22 @@ test("notes stay out of the hub sitemaps", async ({ request }) => {
   const res = await request.get("/sitemap.xml");
   expect(await res.text()).not.toContain("/notes");
 });
+
+test("no text is dimmed with opacity", async ({ page }) => {
+  // opacity on text was what broke contrast: .source-pill at .75 inside the
+  // accent rendered as #c96a45 at 3.56:1. Its computed value depends on what
+  // it is nested in, so it cannot be checked in isolation — the rule is that
+  // secondary text uses the --ink-muted token instead.
+  await page.goto("/work-with-me");
+  const dimmed = await page.evaluate(() =>
+    [...document.querySelectorAll("main *")].filter((el) => {
+      const o = Number(getComputedStyle(el).opacity);
+      return o > 0 && o < 1 && (el.textContent ?? "").trim().length > 0;
+    }).length,
+  );
+  expect(dimmed).toBe(0);
+});
+
+test("the favicon resolves, so no 404 reaches the console", async ({ request }) => {
+  expect((await request.get("/icon.svg")).status()).toBe(200);
+});
