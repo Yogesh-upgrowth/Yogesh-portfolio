@@ -11,3 +11,5 @@ web/next-env.d.ts
 reports/
 seo/data/
 web/tsconfig.tsbuildinfo
+web/test-results/
+web/playwright-report/

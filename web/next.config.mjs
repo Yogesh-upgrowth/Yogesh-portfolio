@@ -23,7 +23,9 @@ function loadRedirects() {
 export default {
   reactStrictMode: true,
   typescript: { ignoreBuildErrors: false },
-  eslint: { ignoreDuringBuilds: true },
+  // The Vite app's lockfile sits one level up, so Next infers the wrong
+  // workspace root and warns on every build. Pin it to this app.
+  outputFileTracingRoot: here,
   async redirects() {
     return loadRedirects();
   },

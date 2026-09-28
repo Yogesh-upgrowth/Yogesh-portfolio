@@ -21,7 +21,8 @@
     "citations": "tsx scripts/citations.ts",
     "price:check": "tsx scripts/price-check.ts",
     "research": "tsx scripts/research.ts",
-    "draft": "tsx scripts/draft.ts"
+    "draft": "tsx scripts/draft.ts",
+    "e2e": "playwright test"
   },
   "dependencies": {
     "next": "^16.3.6",
@@ -30,6 +31,7 @@
     "zod": "^3.25.76"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^22.10.0",
     "@types/react": "^19.0.0",
