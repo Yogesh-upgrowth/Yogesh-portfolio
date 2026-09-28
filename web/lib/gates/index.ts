@@ -37,6 +37,10 @@ export interface GateInput {
   experience: Map<string, ExperienceEntry>;
   /** Every other page's meta, for corpus-wide uniqueness (G10). */
   corpus: PageMeta[];
+  /** research.md rule 7: required block -> supporting fact_ids. Read by G01. */
+  blockCoverage?: Record<string, string[]>;
+  /** research.md output: every fetch and its status. Read by G02. */
+  fetchLog?: { url: string; status: number; used: boolean; why: string }[];
   /** Set when similarity_check.py has run (G04/G05). */
   similarity?: {
     max_sibling: number; max_parent: number; max_any: number; boilerplate_ratio: number;
@@ -47,6 +51,8 @@ export interface GateInput {
 export interface GateConfig {
   bannedPhrases: string[];
   bannedOpeners: string[];
+  /** config/blocked-domains.json — never a legitimate source (G02). */
+  blockedDomains: string[];
   fxRate: number | null;
   fxAsOf: string | null;
   /** ISO date the gates are being run for — freshness is measured from here. */
@@ -58,9 +64,11 @@ const CONFIG_DIR = join(process.cwd(), "..", "seo", "config");
 export function loadGateConfig(today = new Date().toISOString().slice(0, 10)): GateConfig {
   const banned = JSON.parse(readFileSync(join(CONFIG_DIR, "banned-phrases.json"), "utf8"));
   const fx = JSON.parse(readFileSync(join(CONFIG_DIR, "fx.json"), "utf8"));
+  const blocked = JSON.parse(readFileSync(join(CONFIG_DIR, "blocked-domains.json"), "utf8"));
   return {
     bannedPhrases: banned.phrases,
     bannedOpeners: banned.banned_openers,
+    blockedDomains: blocked.domains ?? [],
     fxRate: fx.rate ?? null,
     fxAsOf: fx.as_of ?? null,
     today,
@@ -99,7 +107,30 @@ export function g01(i: GateInput): GateResult {
       detail: `${missing.length} fact(s) missing source_url, verified_on or excerpt: ` +
         missing.slice(0, 3).map((f) => f.fact_id).join(", ") };
   }
-  return ok("G01", N, `${specific.length} page-specific sourced facts`, `${specific.length}/6`);
+
+  // Required-block coverage. prompts/research.md rule 7 has the researcher
+  // report which fact_ids support each required block, and states that gates.ts
+  // reads block_coverage for G01. Without this, six facts that all support one
+  // section pass a check meant to prove the whole contract is evidenced.
+  const contract = contractFor(i.meta.archetype);
+  if (contract.requiredBlocks?.length) {
+    if (!i.blockCoverage) {
+      return { id: "G01", name: N, status: "blocked",
+        detail: "research object has no block_coverage, so required-block support " +
+          "cannot be checked (prompts/research.md rule 7)" };
+    }
+    const uncovered = contract.requiredBlocks.filter(
+      (b) => !(i.blockCoverage![b]?.length),
+    );
+    if (uncovered.length) {
+      return { id: "G01", name: N, status: "blocked",
+        detail: `${uncovered.length} required block(s) have no supporting facts: ` +
+          uncovered.slice(0, 5).join(", "),
+        observed: `${contract.requiredBlocks.length - uncovered.length}/${contract.requiredBlocks.length} blocks` };
+    }
+  }
+  return ok("G01", N, `${specific.length} page-specific sourced facts, all required blocks covered`,
+    `${specific.length} facts`);
 }
 
 // ── G03 Number provenance ───────────────────────────────────────────────────
@@ -457,9 +488,46 @@ export function g17(i: GateInput): GateResult {
 }
 
 // ── Gates that need what this environment lacks ─────────────────────────────
-export function g02(): GateResult {
-  return skip("G02", "Source quality",
-    "every source_url must return 200 — needs outbound HTTP (AUDIT.md §4)");
+/**
+ * G02 — source quality.
+ *
+ * research.md records a fetch_log (url, status, used, why) and states that
+ * gates.ts reads it for G02. When it is present this runs offline against what
+ * the researcher actually observed, which is better evidence than a re-fetch
+ * months later anyway. Without one, it skips rather than guessing.
+ */
+export function g02(i?: GateInput): GateResult {
+  const N = "Source quality";
+  if (!i || !i.fetchLog?.length) {
+    return skip("G02", N,
+      "no fetch_log on the research object; a live re-check needs outbound HTTP (AUDIT.md §4)");
+  }
+  const byUrl = new Map(i.fetchLog.map((f) => [f.url, f]));
+  const fails: string[] = [];
+  for (const f of i.facts) {
+    const logged = byUrl.get(f.source_url);
+    if (!logged) {
+      fails.push(`${f.fact_id}: source not in fetch_log, so its status was never observed`);
+    } else if (logged.status !== 200 && !f.archive_url) {
+      fails.push(`${f.fact_id}: source returned ${logged.status} and has no archive_url`);
+    }
+  }
+  const primary = i.facts.filter(
+    (f) => f.primary || ["device_check", "own_data", "filing", "interview"].includes(f.method),
+  ).length;
+  if (i.facts.length && primary / i.facts.length < 0.5) {
+    fails.push(`${primary}/${i.facts.length} primary sources, need at least half`);
+  }
+  const blocked = i.facts.filter((f) => i.config.blockedDomains.some(
+    (d) => f.source_domain === d || f.source_domain.endsWith(`.${d}`)));
+  if (blocked.length) {
+    fails.push(`${blocked.length} fact(s) cite blocked domains: ` +
+      blocked.map((f) => f.source_domain).join(", "));
+  }
+  const observed = `${primary}/${i.facts.length} primary`;
+  return fails.length
+    ? { id: "G02", name: N, status: "blocked", detail: fails.slice(0, 4).join("; "), observed }
+    : ok("G02", N, "all sources observed 200 (or archived), majority primary", observed);
 }
 export function g18(): GateResult {
   return skip("G18", "Performance & a11y",
@@ -480,7 +548,7 @@ export const ALL_GATES = [
 
 export function runGates(i: GateInput): GateResult[] {
   return [
-    g01(i), g02(), g03(i), g04(i), g05(i), g06(i), g07(i), g08(i), g09(i), g10(i),
+    g01(i), g02(i), g03(i), g04(i), g05(i), g06(i), g07(i), g08(i), g09(i), g10(i),
     g11(i), g12(i), g13(i), g14(i), g15(i), g16(i), g17(i), g18(), g19(), g20(),
   ];
 }

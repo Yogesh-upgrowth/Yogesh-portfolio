@@ -96,6 +96,7 @@ function input(over: Partial<GateInput> = {}): GateInput {
     config: {
       bannedPhrases: ["leverage", "seamless", "in today's"],
       bannedOpeners: ["in today's", "when it comes to"],
+      blockedDomains: ["startuptalky.com", "appinventiv.com"],
       fxRate: 88.2, fxAsOf: "2026-09-01", today: TODAY,
     },
     ...over,
@@ -113,6 +114,69 @@ describe("G01 research completeness", () => {
   });
   it("passes with 6 page-specific sourced facts", () => {
     expect(G.g01(input()).status).toBe("pass");
+  });
+  it("blocks an archetype with required blocks when block_coverage is absent", () => {
+    // prompts/research.md rule 7 — gates.ts reads block_coverage for G01.
+    const m = meta({ archetype: "teardown", url: "/teardowns/duolingo/pricing" });
+    const r = G.g01(input({ meta: m }));
+    expect(r.status).toBe("blocked");
+    expect(r.detail).toMatch(/block_coverage/);
+  });
+  it("blocks when a required block has no supporting facts", () => {
+    const m = meta({ archetype: "teardown", url: "/teardowns/duolingo/pricing" });
+    const coverage: Record<string, string[]> = {};
+    for (const b of ["answer_box", "what_the_app_is", "lens_body", "what_id_steal",
+                     "where_its_fragile", "india_vs_global", "faq", "sources",
+                     "not_affiliated"]) coverage[b] = ["f-test-01"];
+    // "related" deliberately left uncovered.
+    const r = G.g01(input({ meta: m, blockCoverage: coverage }));
+    expect(r.status).toBe("blocked");
+    expect(r.detail).toMatch(/related/);
+  });
+  it("passes when every required block is covered", () => {
+    const m = meta({ archetype: "teardown", url: "/teardowns/duolingo/pricing" });
+    const coverage: Record<string, string[]> = {};
+    for (const b of ["answer_box", "what_the_app_is", "lens_body", "what_id_steal",
+                     "where_its_fragile", "india_vs_global", "faq", "sources",
+                     "not_affiliated", "related"]) coverage[b] = ["f-test-01"];
+    expect(G.g01(input({ meta: m, blockCoverage: coverage })).status).toBe("pass");
+  });
+});
+
+describe("G02 source quality — runs offline from fetch_log", () => {
+  const log = FACTS.map((f) => ({ url: f.source_url, status: 200, used: true, why: "cited" }));
+  it("skips when the research object recorded no fetch_log", () => {
+    expect(G.g02(input()).status).toBe("skipped");
+  });
+  it("passes when every source was observed at 200 and most are primary", () => {
+    expect(G.g02(input({ fetchLog: log })).status).toBe("pass");
+  });
+  it("blocks a source that 404'd with no archive_url", () => {
+    const bad = [...log];
+    bad[0] = { ...bad[0]!, status: 404 };
+    const r = G.g02(input({ fetchLog: bad }));
+    expect(r.status).toBe("blocked");
+    expect(r.detail).toMatch(/404/);
+  });
+  it("accepts a dead source that has an archived snapshot", () => {
+    const facts = [...FACTS];
+    facts[0] = { ...facts[0]!, archive_url: "https://web.archive.org/x" };
+    const bad = [...log];
+    bad[0] = { ...bad[0]!, status: 404 };
+    expect(G.g02(input({ facts, fetchLog: bad })).status).toBe("pass");
+  });
+  it("blocks a fact citing a blocked domain", () => {
+    const facts = [...FACTS];
+    facts[0] = { ...facts[0]!, source_domain: "startuptalky.com" };
+    const r = G.g02(input({ facts, fetchLog: log }));
+    expect(r.status).toBe("blocked");
+    expect(r.detail).toMatch(/blocked domains/);
+  });
+  it("blocks when fewer than half the sources are primary", () => {
+    const facts = FACTS.map((f, k) => (k < 4 ? { ...f, primary: false, method: "user_reported" as const } : f));
+    const r = G.g02(input({ facts, fetchLog: log }));
+    expect(r.status).toBe("blocked");
+    expect(r.detail).toMatch(/primary/);
   });
 });
 

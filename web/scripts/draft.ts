@@ -7,7 +7,9 @@
  */
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { dirname, join } from "node:path";
-import { PageMeta, ResearchObject } from "../lib/content/schemas";
+import { ResearchObject } from "../lib/content/schemas";
+import { DraftOutput } from "../lib/content/draft-schema";
+import { draftToMdx, draftToMeta } from "../lib/content/draft-convert";
 import { inventory } from "../lib/content/inventory";
 import { guardedFetch, requireEnv, runScript } from "../lib/net";
 
@@ -57,6 +59,9 @@ async function main(): Promise<void> {
   const { ANTHROPIC_API_KEY } = requireEnv("ANTHROPIC_API_KEY");
   const system = [readFileSync(PROMPT, "utf8"), "", "---", "",
     readFileSync(CONTRACTS, "utf8")].join("\n");
+  const fx = JSON.parse(
+    readFileSync(join(process.cwd(), "..", "seo", "config", "fx.json"), "utf8"),
+  ) as { rate: number | null };
   const experiencePath = join(CONTENT, "experience.json");
   const experience = existsSync(experiencePath) ? readFileSync(experiencePath, "utf8") : "[]";
 
@@ -89,28 +94,40 @@ async function main(): Promise<void> {
 
     const text = await callModel(system, user, ANTHROPIC_API_KEY);
     const json = text.slice(text.indexOf("{"), text.lastIndexOf("}") + 1);
-    const out = JSON.parse(json) as { meta: unknown; mdx?: string; blocked?: string[] };
 
-    if (out.blocked?.length) {
-      console.log(`[draft] ${row.id}: generator returned blocked — ${out.blocked.join("; ")}`);
-      blocked++;
-      continue;
-    }
-    const meta = PageMeta.safeParse(out.meta);
-    if (!meta.success) {
-      console.error(`[draft] ${row.id}: PageMeta invalid:`);
-      for (const i of meta.error.issues.slice(0, 6)) {
-        console.error(`    ${i.path.join(".")}: ${i.message}`);
+    // The generator returns the DraftOutput of page-generation.md §3, not a
+    // PageMeta. draft.ts converts it — that is where the base contract's block
+    // order is applied, so the model does not have to remember it per page.
+    const parsed = DraftOutput.safeParse(JSON.parse(json));
+    if (!parsed.success) {
+      console.error(`[draft] ${row.id}: generator output failed DraftOutput validation:`);
+      for (const i of parsed.error.issues.slice(0, 6)) {
+        console.error(`    ${i.path.join(".") || "(root)"}: ${i.message}`);
       }
       blocked++;
       continue;
     }
+    const out = parsed.data;
+    if (out.status === "blocked") {
+      console.log(`[draft] ${row.id}: BLOCKED`);
+      for (const r of out.reasons) console.log(`    why: ${r}`);
+      for (const w of out.what_would_unblock) console.log(`    unblock: ${w}`);
+      if (out.suggested_fallback) console.log(`    fallback: ${out.suggested_fallback}`);
+      blocked++;
+      continue;
+    }
+
+    const today = new Date().toISOString().slice(0, 10);
+    const meta = draftToMeta({ draft: out, row, batchId: batch, today, fxRate: fx.rate ?? undefined });
+    const mdx = draftToMdx(out);
+
     const base = join(CONTENT, `${row.url.replace(/^\//, "")}`);
     mkdirSync(dirname(base), { recursive: true });
-    writeFileSync(`${base}.json`, JSON.stringify(meta.data, null, 2) + "\n", "utf8");
-    writeFileSync(`${base}.mdx`, out.mdx ?? "", "utf8");
+    writeFileSync(`${base}.json`, JSON.stringify(meta, null, 2) + "\n", "utf8");
+    writeFileSync(`${base}.mdx`, mdx, "utf8");
     written++;
-    console.log(`[draft] wrote ${row.url}`);
+    console.log(`[draft] wrote ${row.url} (${out.sections.length} sections, ` +
+      `${out.facts_used_all.length} facts)`);
   }
 
   console.log(`\n[draft] ${written} written, ${blocked} blocked.`);

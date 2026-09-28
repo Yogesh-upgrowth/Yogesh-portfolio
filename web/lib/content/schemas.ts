@@ -47,6 +47,21 @@ export const SerpItem = z.object({
   domain: z.string(),
 });
 
+/** One SERP leader, summarised in five bullets — prompts/research.md rule 5. */
+export const SerpLeaderSummary = z.object({
+  url: z.string(),
+  market: z.enum(["IN", "US"]),
+  bullets: z.array(z.string()).min(1).max(8),
+});
+
+/** Every fetch the researcher made, and whether it was used — research.md §output. */
+export const FetchLogEntry = z.object({
+  url: z.string(),
+  status: z.number().int(),
+  used: z.boolean(),
+  why: z.string(),
+});
+
 export const ResearchObject = z.object({
   page_id: z.string(),
   url: z.string(),
@@ -66,6 +81,18 @@ export const ResearchObject = z.object({
   status: z.enum(["complete", "incomplete"]),
   incomplete_reasons: z.array(z.string()),
   researched_on: z.string(),
+
+  // The five fields prompts/research.md specifies beyond the §3 schema. Two of
+  // them are not optional extras: research.md states that gates.ts reads
+  // block_coverage for G01 and fetch_log for G02. Without them G01 cannot tell
+  // whether a required block has any supporting facts, which is the check that
+  // stops a page being drafted with six facts that all support one section.
+  serp_leader_summaries: z.array(SerpLeaderSummary).default([]),
+  shared_candidates: z.array(z.string()).default([]),
+  /** Required block name -> the fact_ids supporting it (research.md rule 7). */
+  block_coverage: z.record(z.string(), z.array(z.string())).default({}),
+  contradictions: z.array(z.string()).default([]),
+  fetch_log: z.array(FetchLogEntry).default([]),
 });
 export type ResearchObject = z.infer<typeof ResearchObject>;
 

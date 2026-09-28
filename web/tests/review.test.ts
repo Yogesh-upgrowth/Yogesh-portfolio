@@ -62,3 +62,53 @@ describe("seededRandom", () => {
     }
   });
 });
+
+import { judgeOutcomes, needsEscalation, JudgeVerdict } from "../lib/gates/judge";
+
+const clean: JudgeVerdict = {
+  answer_first: true, claims_ok: true, violations: [], intent_ok: true,
+  offending_sections: [], voice_score: 5, voice_notes: [],
+  unique_items: ["device-checked INR", "dated history", "an owned verdict"],
+  extracted_answer: "It charges 1699 a year.", answerable: true, unique_value: 5,
+  sibling_overlap: [], experience_faithful: true, notes: "",
+};
+
+describe("judge — prompts/review-judge.md", () => {
+  it("passes every gate on a clean verdict", () => {
+    expect(judgeOutcomes(clean).every((o) => o.pass)).toBe(true);
+  });
+  it("fails G12 when a claim is untraceable", () => {
+    const v = { ...clean, claims_ok: false,
+      violations: [{ sentence: "Retention is 43%.", type: "untraceable number" }] };
+    expect(judgeOutcomes(v).find((o) => o.gate === "G12")!.pass).toBe(false);
+  });
+  it("fails G12 when the experience block is not faithful, even if claims are fine", () => {
+    // Q7 — the only check that a first-person claim still matches what Yogesh
+    // actually said. My first pass ignored it entirely.
+    const v = { ...clean, experience_faithful: false, notes: "numbers rounded" };
+    const g12 = judgeOutcomes(v).find((o) => o.gate === "G12")!;
+    expect(g12.pass).toBe(false);
+    expect(g12.detail).toMatch(/faithfully/);
+  });
+  it("fails G20 on fewer than three unique items even at a high score", () => {
+    const v = { ...clean, unique_items: ["one", "two"] };
+    expect(judgeOutcomes(v).find((o) => o.gate === "G20")!.pass).toBe(false);
+  });
+  it("fails G20 when the page cannot answer its own H1", () => {
+    expect(judgeOutcomes({ ...clean, answerable: false })
+      .find((o) => o.gate === "G20")!.pass).toBe(false);
+  });
+  it("fails G13 below a voice score of 4", () => {
+    expect(judgeOutcomes({ ...clean, voice_score: 3 })
+      .find((o) => o.gate === "G13")!.pass).toBe(false);
+  });
+  it("reports sibling overlap, which similarity scoring misses when wording differs", () => {
+    const v = { ...clean, sibling_overlap: [
+      { sibling_url: "/teardowns/duolingo/monetization", repeated_point: "annual is the default" }] };
+    expect(judgeOutcomes(v).find((o) => o.gate === "Q6")!.pass).toBe(false);
+  });
+  it("escalates a borderline 3 to the larger model rather than deciding", () => {
+    expect(needsEscalation({ ...clean, unique_value: 3 })).toBe(true);
+    expect(needsEscalation({ ...clean, unique_value: 4 })).toBe(false);
+  });
+});
