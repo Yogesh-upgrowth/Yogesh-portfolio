@@ -1,0 +1,27 @@
+/* Design tokens — 03-TECHNICAL-SPEC §7. Editorial reference, not SaaS landing. */
+:root {
+  --paper: #fafaf7;
+  --ink: #101010;
+  --accent: #d9480f;          /* verdicts, CTAs and the Last verified pill only */
+  --border: rgb(16 16 16 / 10%);
+  --zebra: rgb(16 16 16 / 3%);
+  --font-display: "Instrument Serif", Georgia, serif;
+  --font-text: Inter, system-ui, -apple-system, sans-serif;
+  --font-mono: "SF Mono", ui-monospace, monospace;
+  --measure: 66ch;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0f0f0e;
+    --ink: #f1efe8;
+    --border: rgb(241 239 232 / 12%);
+    --zebra: rgb(241 239 232 / 3%);
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0f0f0e;
+  --ink: #f1efe8;
+  --border: rgb(241 239 232 / 12%);
+  --zebra: rgb(241 239 232 / 3%);
+}
