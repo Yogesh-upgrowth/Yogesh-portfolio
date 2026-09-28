@@ -33,12 +33,14 @@ export interface ServiceOffer {
   outcome: string;
   timeframe: string;
   /**
-   * Set from 2026 market benchmarks, positioned deliberately above the
-   * marketplace floor. Upwork's PM band is $25-45/hr and an India seat is
-   * commonly discounted to ~0.6x the global median; independent consultants
-   * with comparable seniority charge $150-350/hr. Pricing at the Upwork floor
-   * would signal the wrong thing to the buyer these pages are written for, so
-   * the core rates sit between the two.
+   * "$X / ₹Y". Derived from the bands in seo/config/rate-benchmarks.json, not
+   * chosen, and both currencies are quoted at the seo/config/fx.json rate.
+   *
+   * script/check-rates.ts fails the build when a pair drifts more than 3% from
+   * that rate. It exists because the original prices were set at roughly
+   * ₹83/$1 and the rate moved to ₹95.89, which quietly quoted Indian buyers
+   * about 13% less than US buyers for identical work — every price was
+   * individually plausible, so nothing caught it.
    */
   price?: string;
 }
@@ -63,35 +65,35 @@ export const OFFERS: ServiceOffer[] = [
     outcome:
       "A written diagnosis of the single biggest constraint on growth, with the evidence behind it and what to do first. Most teams are optimising the wrong step; this establishes which one matters.",
     timeframe: "2 weeks",
-    price: "$1,500 / \u20b91,25,000",
+    price: "$2,500 / \u20b92,40,000",
   },
   {
     name: "Growth Funnel Audit",
     outcome:
       "Acquisition through activation, conversion and retention mapped end to end, with the drop-offs quantified and ranked by what recovering each one is worth.",
     timeframe: "3 weeks",
-    price: "$2,500 / \u20b92,10,000",
+    price: "$4,500 / \u20b94,30,000",
   },
   {
     name: "Monetisation Audit",
     outcome:
       "Pricing, packaging, paywall placement and revenue leakage reviewed against how your users actually behave, with specific changes and expected impact.",
     timeframe: "3 weeks",
-    price: "$2,500 / \u20b92,10,000",
+    price: "$4,500 / \u20b94,30,000",
   },
   {
     name: "90-Day Growth Sprint",
     outcome:
       "Hands-on implementation of the changes an audit identifies — instrumentation, experiments and shipped product work, accountable to an agreed metric.",
     timeframe: "90 days",
-    price: "$9,000 / \u20b97,50,000",
+    price: "$18,000 / \u20b917,25,000",
   },
   {
     name: "Fractional Product Growth Lead",
     outcome:
       "Ongoing product and growth leadership for founders without a senior product hire: roadmap ownership, prioritisation, and the calls that need someone who has made them before.",
     timeframe: "Ongoing, monthly",
-    price: "$4,000 / \u20b93,30,000 per month",
+    price: "$7,500 / \u20b97,20,000 per month",
   },
 ];
 

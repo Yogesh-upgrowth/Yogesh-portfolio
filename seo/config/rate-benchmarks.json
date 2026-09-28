@@ -1,0 +1,75 @@
+{
+  "_readme": "Competitor rate evidence gathered 2026-09-28 via web search. Every figure names its source. Rates in shared/services.ts and shared/marketplace-services.ts are derived from these bands, not chosen. Re-gather before any repricing; consulting rates move roughly annually.",
+  "gathered_on": "2026-09-28",
+  "method": "web search. WebFetch to primary sources (federalreserve.gov, rbi.org.in) is blocked by this environment's egress proxy, so figures are as reported by the search index rather than read off the primary page. Re-verify against rbi.org.in and the vendor pages before publishing any of these numbers on a page.",
+  "fx": {
+    "pair": "USD/INR",
+    "rate": 95.89,
+    "as_of": "2026-09-25",
+    "source": "RBI reference rate as reported 2026-09-25 (1 USD = 95.892 INR). A 2026-09-11 reading of 95.725 corroborates the level.",
+    "confidence": "medium — not read from rbi.org.in directly; see method"
+  },
+  "bands": [
+    {
+      "id": "upwork-pm-median",
+      "what": "Product manager median hourly rate on Upwork",
+      "low_usd": 25, "high_usd": 45, "point_usd": 32,
+      "source": "Upwork published rate guidance",
+      "relevance": "marketplace floor — the band Yogesh's marketplace listing must sit above to avoid the wrong brief"
+    },
+    {
+      "id": "freelance-pm-experienced",
+      "what": "Experienced freelance product manager hourly",
+      "low_usd": 60, "high_usd": 130, "point_usd": 103,
+      "source": "contractrates.fyi 2026 freelance product manager rates",
+      "relevance": "the band a nine-year operator should be inside, not below"
+    },
+    {
+      "id": "india-boutique-day",
+      "what": "Indian boutique and specialist consulting firms, per consultant per day",
+      "low_inr": 25000, "high_inr": 75000,
+      "source": "PKC Management Consulting, management consultancy fees in India 2026",
+      "relevance": "the tier Yogesh actually competes in for Indian buyers"
+    },
+    {
+      "id": "india-big4-day",
+      "what": "Big 4 India, per consultant per day",
+      "low_inr": 150000, "high_inr": 300000,
+      "source": "PKC Management Consulting, top firms in India 2026",
+      "relevance": "ceiling — an independent should price visibly below this"
+    },
+    {
+      "id": "india-mbb-day",
+      "what": "MBB India, per consultant per day",
+      "low_inr": 300000, "high_inr": 500000,
+      "source": "PKC Management Consulting, top firms in India 2026",
+      "relevance": "context only; not a competitor for this buyer"
+    },
+    {
+      "id": "fractional-cpo-monthly",
+      "what": "Fractional CPO monthly retainer",
+      "low_usd": 7999, "high_usd": 15999,
+      "note": "$7,999 at roughly 10 hours a week; $15,999 at roughly 20",
+      "source": "The Fractional Product Manager, fractional CPO pricing guide 2026",
+      "relevance": "direct comparable for the fractional leadership offer"
+    },
+    {
+      "id": "fractional-cmo-hourly",
+      "what": "Fractional CMO hourly",
+      "low_usd": 200, "high_usd": 500,
+      "source": "Growtal 2026 fractional CMO rates; Revenue Nomad 2026",
+      "relevance": "adjacent seniority, useful as an upper anchor for direct hourly"
+    },
+    {
+      "id": "senior-fractional-day",
+      "what": "Senior fractional leader day rate",
+      "low_usd": 1500, "high_usd": 3500,
+      "source": "Growtal 2026 fractional CMO rates",
+      "relevance": "sanity check on fixed-scope engagements expressed per day"
+    }
+  ],
+  "positioning": {
+    "claim": "Independent specialist, India-based, nine years operating, documented outcomes. Prices above the Indian boutique day band and below Big 4; fractional near the lower bound of the fractional-CPO market.",
+    "explicitly_not": "Not priced at the Upwork PM median. Pricing at the floor attracts the brief that wants a pair of hands rather than a diagnosis, and that brief does not produce the case studies this site is built on."
+  }
+}

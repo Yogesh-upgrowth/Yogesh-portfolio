@@ -93,9 +93,12 @@ export const MARKETPLACE_SERVICES: MarketplaceService[] = [
 
 /** Rates that never get discounted, whatever the platform. */
 export const RATE_CARD = {
-  marketplace_hourly_usd: 55,
-  direct_hourly_usd: 120,
+  marketplace_hourly_usd: 65,
+  direct_hourly_usd: 150,
   expert_network_call_usd: 300,
+  /** ₹/$1 used for every INR figure here. Source: seo/config/fx.json. */
+  fx_rate: 95.89,
+  fx_as_of: "2026-09-25",
   note:
-    "Marketplace hourly sits above Upwork's $25-45 PM band rather than inside it: the proof justifies it and pricing at the floor attracts the wrong brief. Direct and expert-network rates are never discounted to match a marketplace.",
+    "Derived from seo/config/rate-benchmarks.json, not chosen. Marketplace hourly sits above Upwork's $25-45 PM median band and below the $60-130 experienced-freelancer band, which is where a nine-year operator belongs on a surface that still has to earn its first reviews. Direct hourly sits between the experienced-freelance average ($103) and the fractional-CMO floor ($200). The expert-network rate is unchanged: $300 is mid-band for those networks and they do not negotiate. None of these is discounted to match a marketplace.",
 };

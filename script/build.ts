@@ -5,6 +5,7 @@ import path from "path";
 import { prerender } from "./prerender";
 import { genGitDates } from "./gen-git-dates";
 import { checkProof } from "./check-proof";
+import { checkRates } from "./check-rates";
 import { checkServices } from "./check-services";
 import { checkBenchmarks } from "./check-benchmarks";
 import { checkProfiles } from "./check-profiles";
@@ -48,6 +49,7 @@ async function buildAll() {
 
   console.log("verifying the proof database...");
   checkProof();
+  checkRates();
   checkServices();
   checkBenchmarks();
   checkProfiles();

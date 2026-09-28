@@ -2,8 +2,14 @@
   "_readme": "Single site-wide conversion rate. Update monthly via refresh.ts (records the previous value in history). Round INR to natural price points (₹49/99/149/199/299/499/999) only when presenting a converted USD price as an INR reference; never round a device-checked INR price.",
   "base": "USD",
   "quote": "INR",
-  "rate": null,
-  "as_of": null,
-  "source": "RBI reference rate (https://www.rbi.org.in) — set at Wave 0",
-  "history": []
+  "rate": 95.89,
+  "as_of": "2026-09-25",
+  "source": "RBI reference rate, 2026-09-25. RBI reference rate as reported 2026-09-25 (1 USD = 95.892 INR). A 2026-09-11 reading of 95.725 corroborates the level. Gathered by web search; WebFetch to rbi.org.in is blocked by this environment's egress proxy, so re-verify against the primary page before a price fact cites this rate (G02).",
+  "history": [
+    {
+      "rate": 95.89,
+      "as_of": "2026-09-25",
+      "set_on": "2026-09-28"
+    }
+  ]
 }

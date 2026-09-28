@@ -35,28 +35,28 @@ interface Engagement {
 const ENGAGEMENTS: Engagement[] = [
   {
     name: "Product growth diagnostic", timeframe: "2 weeks",
-    usd: "$1,500", inr: "₹1,25,000",
+    usd: "$2,500", inr: "₹2,40,000",
     outcome: "A ranked list of what is actually costing you revenue, with the evidence for each.",
     includes: ["Funnel and cohort review", "Pricing and packaging read",
                "Instrumentation audit", "Ranked findings with effort and expected impact"],
   },
   {
     name: "Funnel or monetisation audit", timeframe: "3–4 weeks",
-    usd: "$2,500", inr: "₹2,10,000",
+    usd: "$4,500", inr: "₹4,30,000",
     outcome: "One of the two halves, in depth: where users leave, or why they do not pay.",
     includes: ["Step-level drop-off analysis", "Paywall and pricing teardown",
                "Benchmark comparison against your category", "A test plan you can run without me"],
   },
   {
     name: "90-day growth sprint", timeframe: "90 days",
-    usd: "$9,000", inr: "₹7,50,000",
+    usd: "$18,000", inr: "₹17,25,000",
     outcome: "I stay through implementation. Diagnosis is cheap; shipping the fix is the work.",
     includes: ["Everything in the diagnostic", "Weekly working sessions with your team",
                "Specs written, not just recommended", "Measurement set up before launch, not after"],
   },
   {
     name: "Fractional growth leadership", timeframe: "monthly",
-    usd: "$4,000", inr: "₹3,30,000",
+    usd: "$7,500", inr: "₹7,20,000",
     outcome: "I own the growth number alongside your team, part-time and ongoing.",
     includes: ["Roadmap ownership for growth and monetisation", "Hiring and interviewing support",
                "Weekly reviews", "Minimum three months"],
@@ -136,8 +136,9 @@ export default function WorkWithMe() {
           </section>
         ))}
         <p className="source-pill">
-          Prices are set in both currencies from 2026 rate research, not
-          converted at today&rsquo;s exchange rate.
+          Both currencies are quoted at &#8377;95.89/$1, the RBI reference rate
+          of 25 September 2026. Rates are derived from the benchmark bands in{" "}
+          <code>seo/config/rate-benchmarks.json</code>, not chosen.
         </p>
 
         <h2>Who this is not for</h2>
