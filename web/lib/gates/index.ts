@@ -184,6 +184,26 @@ export function g03(i: GateInput): GateResult {
     }
   }
 
+  /**
+   * Numbers inside a FromMyWork block are sourced by the experience entry it
+   * cites, not by a research fact. G12 already checks the block renders that
+   * entry faithfully, so requiring a second source here would make the two
+   * gates contradict: G12 says first-person numbers come from the library and
+   * G03 would reject them for not being in `facts`.
+   *
+   * The exemption is per-number, not per-block: the figure has to actually
+   * appear in the cited entry, so a block cannot smuggle in a number the entry
+   * never contained.
+   */
+  const fromExperience = new Set<string>();
+  for (const b of i.body.matchAll(/<FromMyWork\b[^>]*\bexp=["']([^"']+)["'][^>]*>([\s\S]*?)<\/FromMyWork>/g)) {
+    const entry = i.experience.get(b[1] ?? "");
+    if (!entry) continue;
+    const inEntry = `${entry.claim} ${entry.quote ?? ""} ` +
+      entry.numbers.map((n) => `${n.value ?? ""} ${n.from ?? ""} ${n.to ?? ""} ${n.window ?? ""}`).join(" ");
+    for (const n of inEntry.match(/[\d][\d,.]*/g) ?? []) fromExperience.add(norm(n));
+  }
+
   const offenders: string[] = [];
   for (const s of sentences(prose)) {
     if (ESTIMATE.test(s) && METHOD.test(s)) continue;
@@ -192,6 +212,7 @@ export function g03(i: GateInput): GateResult {
       const bare = norm(raw.replace(/[₹$%]/g, ""));
       if (factNumbers.has(bare)) continue;
       if (converted.has(bare)) continue;
+      if (fromExperience.has(bare)) continue;
       offenders.push(raw.trim());
     }
   }

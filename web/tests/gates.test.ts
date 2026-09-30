@@ -467,3 +467,26 @@ describe("G03 currency-conversion exemption", () => {
     expect(G.g03(input({ body, facts: priced, meta: m })).status).toBe("fail");
   });
 });
+
+describe("G03 experience-sourced numbers", () => {
+  // G12 says first-person numbers come from the library. Without this, G03
+  // rejects them for not being in `facts` and the two gates contradict.
+  const block = (text: string) =>
+    GOOD_BODY + `\n\n<FromMyWork exp="exp-014">${text}</FromMyWork>`;
+  it("accepts a number that appears in the cited entry", () => {
+    const entry = { ...EXP, numbers: [{ metric: "policies/day", from: "~10", to: "6,800+" }] };
+    const body = block("We went from ~10 to 6,800+ policies a day.");
+    const m = meta({ experience_used: ["exp-014"] });
+    const r = G.g03(input({ body, meta: m, experience: new Map([["exp-014", entry]]) }));
+    expect(r.status).toBe("pass");
+  });
+  it("rejects a number the entry never contained", () => {
+    // The exemption is per-number, so a block cannot smuggle in a figure.
+    const entry = { ...EXP, numbers: [{ metric: "policies/day", from: "~10", to: "6,800+" }] };
+    const body = block("We went from ~10 to 6,800+ policies a day, lifting revenue 412%.");
+    const m = meta({ experience_used: ["exp-014"] });
+    const r = G.g03(input({ body, meta: m, experience: new Map([["exp-014", entry]]) }));
+    expect(r.status).toBe("fail");
+    expect(r.detail).toMatch(/412/);
+  });
+});

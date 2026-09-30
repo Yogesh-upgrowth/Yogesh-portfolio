@@ -25,7 +25,8 @@
     "e2e": "playwright test",
     "notes:migrate": "tsx scripts/migrate-notes.ts",
     "lighthouse": "lhci autorun --config=lighthouserc.json",
-    "launch:check": "tsx scripts/check-launch.ts"
+    "launch:check": "tsx scripts/check-launch.ts",
+    "experience:check": "tsx scripts/check-experience.ts"
   },
   "dependencies": {
     "next": "^16.3.6",

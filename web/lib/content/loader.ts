@@ -18,12 +18,26 @@ export interface LoadedPage {
   row: InventoryRow;
 }
 
-function walk(dir: string, out: string[] = []): string[] {
+/**
+ * Files under content/ that are libraries rather than pages.
+ *
+ * 03 §2 puts experience.json and the hub picks inside content/, so a walk that
+ * treats every .json as a page reads them as URLs — content/experience.json
+ * became "/experience" and failed the inventory check.
+ */
+const NOT_PAGES = new Set(["experience.json"]);
+const NOT_PAGE_DIRS = new Set(["hubs"]);
+
+function walk(dir: string, out: string[] = [], depth = 0): string[] {
   if (!existsSync(dir)) return out;
   for (const name of readdirSync(dir)) {
     const p = join(dir, name);
-    if (statSync(p).isDirectory()) walk(p, out);
-    else if (name.endsWith(".json")) out.push(p);
+    if (statSync(p).isDirectory()) {
+      if (depth === 0 && NOT_PAGE_DIRS.has(name)) continue;
+      walk(p, out, depth + 1);
+    } else if (name.endsWith(".json") && !(depth === 0 && NOT_PAGES.has(name))) {
+      out.push(p);
+    }
   }
   return out;
 }
