@@ -1,0 +1,458 @@
+{
+  "batch_id": "w1-service-01",
+  "wave": 1,
+  "verified_on": "2026-09-30",
+  "fx_rate": 95.89,
+  "default_cta": {
+    "primary": {
+      "label": "Start a services engagement",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "facts": {
+    "f-unit-14": {
+      "fact_id": "f-unit-14",
+      "claim": "Smart retry alone recovers about 40% of failed payments, a card updater 25%, and dunning email adds 15 to 20% on top",
+      "value": "40",
+      "unit": "%",
+      "source_url": "https://www.digitalapplied.com/blog/failed-payment-recovery-dunning-playbook-2026",
+      "source_title": "Failed-Payment Recovery: The 2026 Dunning Playbook",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "Smart retry alone recovers 40%, card updater 25%, and emails add 15-20% on top; combining all three reaches 70%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-unit-27": {
+      "fact_id": "f-unit-27",
+      "claim": "India's 2021 card e-mandate rules pushed card subscription failure rates above 20% in some categories",
+      "value": "20",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "The mandate requiring extra authentication for card payments above Rs 5,000 caused failure rates to spike to 20%+ in some categories, accelerating UPI Autopay adoption.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-act-11": {
+      "fact_id": "f-act-11",
+      "claim": "From 1 January 2026 Apple replaced the per-install Core Technology Fee with a 5% Core Technology Commission on digital-goods revenue",
+      "value": "5",
+      "unit": "%",
+      "source_url": "https://blog.funnelfox.com/apple-app-store-fees-2026-eu-dma/",
+      "source_title": "App Store Fees and Commission Rates in 2026",
+      "source_domain": "funnelfox.com",
+      "excerpt": "From January 1, 2026, Apple replaced the per-install Core Technology Fee with a 5% Core Technology Commission on digital-goods revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-18": {
+      "fact_id": "f-act-18",
+      "claim": "Zepto Pass, a paid membership, ran fourteen months from February 2024 to April 2025 before being replaced",
+      "value": "14",
+      "unit": "months",
+      "source_url": "https://www.markhub24.com/post/zepto-pass-a-membership-strategy-for-customer-retention-in-indian-quick-commerce",
+      "source_title": "Zepto Pass: A Membership Strategy for Customer Retention",
+      "source_domain": "markhub24.com",
+      "excerpt": "Zepto Pass had a fourteen-month lifespan, February 2024 to April 2025, before its quiet replacement by Zepto Daily.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-20": {
+      "fact_id": "f-act-20",
+      "claim": "Google Play's 2026 standard rate is 10% on the first 1 million dollars of annual revenue and 20% above it",
+      "value": "10",
+      "unit": "%",
+      "source_url": "https://www.strataigize.com/insights/google-play-external-payments-fee-changes-2026/",
+      "source_title": "Google Play External Payments and Fee Changes",
+      "source_domain": "strataigize.com",
+      "excerpt": "Google lowered its baseline: the standard rate is now 10% on the first $1 million and 20% above it, plus a billing fee charged separately.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-hub-03": {
+      "fact_id": "f-hub-03",
+      "claim": "Indian in-app purchase spending passed 1 billion dollars in 2025 and is expected to reach 1.25 billion by the end of 2026",
+      "value": "1",
+      "unit": "USD billion",
+      "source_url": "https://www.businessofapps.com/data/india-app-market/",
+      "source_title": "India App Market Statistics",
+      "source_domain": "businessofapps.com",
+      "excerpt": "In-app purchase spending by Indians passed one billion dollars in 2025, expected to rise to $1.25 billion by the end of 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-hub-08": {
+      "fact_id": "f-hub-08",
+      "claim": "Winning tests average an 8.4% lift with a 6.1% median",
+      "value": "6.1",
+      "unit": "%",
+      "source_url": "https://www.conversionteam.com/ab-test-win-rate/",
+      "source_title": "A/B Test Win Rate: Benchmarks From 2,288 Audited Tests",
+      "source_domain": "conversionteam.com",
+      "excerpt": "The average lift on winning tests is 8.4%, median 6.1%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-hub-09": {
+      "fact_id": "f-hub-09",
+      "claim": "Winning tests delivered a median 1.88% conversion uplift and 2.77% revenue per visitor uplift",
+      "value": "1.88",
+      "unit": "%",
+      "source_url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "source_title": "E-commerce A/B Test Benchmarks 2026",
+      "source_domain": "advertorialwizard.com",
+      "excerpt": "Winners delivered a median +1.88% conversion rate uplift and +2.77% revenue per visitor uplift.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-svc-01": {
+      "fact_id": "f-svc-01",
+      "claim": "PhonePe earns merchant interchange of 0.5% to 1.1% on eligible flows, with lending distribution at 11.55% of first-half FY26 revenue",
+      "value": "0.5-1.1",
+      "unit": "%",
+      "source_url": "https://tfnmarkets.com/insights/phonepe-ipo-india-2026",
+      "source_title": "PhonePe IPO India 2026: Valuation, OFS Structure, NPCI Cap Risk",
+      "source_domain": "tfnmarkets.com",
+      "excerpt": "PhonePe's revenue comes from merchant interchange (0.5%-1.1% on eligible flows), device subscriptions, bill-payment commissions and lending distribution at 11.55% of H1 FY26 revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-svc-02": {
+      "fact_id": "f-svc-02",
+      "claim": "UPI runs on zero merchant discount rate as a national policy decision",
+      "value": "0",
+      "unit": "%",
+      "source_url": "https://tfnmarkets.com/insights/phonepe-ipo-india-2026",
+      "source_title": "PhonePe IPO India 2026: Valuation, OFS Structure, NPCI Cap Risk",
+      "source_domain": "tfnmarkets.com",
+      "excerpt": "UPI operates on zero MDR, a policy decision made at the national level, which constrains direct payment transaction monetization.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-svc-03": {
+      "fact_id": "f-svc-03",
+      "claim": "India's leading UPI app earns roughly 112 rupees of gross revenue per registered user per year",
+      "value": "112",
+      "unit": "INR",
+      "source_url": "https://tfnmarkets.com/insights/phonepe-ipo-india-2026",
+      "source_title": "PhonePe IPO India 2026: Valuation, OFS Structure, NPCI Cap Risk",
+      "source_domain": "tfnmarkets.com",
+      "excerpt": "The category leader generates approximately Rs 112 of gross revenue per registered user per year.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-svc-04": {
+      "fact_id": "f-svc-04",
+      "claim": "PhonePe's FY26 operating revenue rose 11% to 7,920 crore rupees with a net loss of 2,792 crore, against Paytm's 8,437 crore revenue and 552 crore profit",
+      "value": "7920",
+      "unit": "INR crore",
+      "source_url": "https://www.cxodigitalpulse.com/phonepes-upi-scale-trails-paytms-monetisation-in-fy26-results/",
+      "source_title": "PhonePe's UPI Scale Trails Paytm's Monetisation in FY26 Results",
+      "source_domain": "cxodigitalpulse.com",
+      "excerpt": "PhonePe revenue rose 11% to Rs 7,920 crore in FY26, net loss Rs 2,792 crore; Paytm Rs 8,437 crore revenue, Rs 552 crore profit.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  },
+  "pages": [
+    {
+      "id": "service-0015",
+      "url": "/services/app-monetization-strategy",
+      "archetype": "service",
+      "hub": "services",
+      "funnel": "BOFU",
+      "title": "App Monetization Strategy Consulting: Scope and Price",
+      "meta_description": "A six-week engagement that sets the monetization model, the paywall and the price. Scope, deliverables and cost stated up front, in rupees and dollars.",
+      "h1": "App monetization strategy consulting",
+      "primary_keyword": "app monetization strategy",
+      "secondary_keywords": [
+        "mobile app monetization consulting",
+        "app monetization consultant"
+      ],
+      "entity_a": "app-monetization-strategy",
+      "facts": [
+        "f-svc-01",
+        "f-svc-02",
+        "f-svc-03",
+        "f-hub-03",
+        "f-act-11",
+        "f-act-20"
+      ],
+      "experience": [
+        "exp-010",
+        "exp-043"
+      ],
+      "links": [
+        {
+          "url": "/case-studies/carinfo-motor-insurance-monetization",
+          "anchor": "the motor insurance monetisation case study",
+          "role": "proof"
+        },
+        {
+          "url": "/benchmarks/trial-to-paid-conversion",
+          "anchor": "trial-to-paid benchmarks",
+          "role": "reference"
+        },
+        {
+          "url": "/services",
+          "anchor": "the services",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/paywall",
+          "anchor": "paywall",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "start the engagement",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#monetization-inputs",
+          "alt": "Six inputs a monetization strategy has to price against: India's in-app purchase spending and its projected level, the zero merchant discount rate on UPI, merchant interchange and lending distribution shares at the category leader, gross revenue per registered user, Apple's core technology commission and Google Play's standard rate, each row carrying its source and verification date",
+          "caption": "What a monetization model in India is priced against. Verified 30 September 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Start an app monetization strategy engagement",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Run the monetisation health score",
+          "href": "/tools/monetization-health-score"
+        }
+      },
+      "faq": [
+        {
+          "q": "What does an app monetization strategy engagement cost?",
+          "a": "₹4,30,000, or $4,500, for the six-week engagement, at the exchange rate recorded in config and re-checked on every build. Industry variants are the same price; the scope differs, not the fee."
+        },
+        {
+          "q": "How long before anything changes in the product?",
+          "a": "The first shippable change lands in week three, and it is usually a measurement fix rather than a price change. Pricing decisions made before the funnel is measurable get attributed to the wrong thing."
+        },
+        {
+          "q": "Do you work on ad-funded apps?",
+          "a": "Yes, and often the answer is a hybrid rather than a switch. Where UPI runs at zero merchant discount rate, payments cannot carry the model on their own and the revenue has to come from distribution or subscription."
+        }
+      ],
+      "schema_types": [
+        "Service",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Prices the engagement in public and builds the model against India's specific constraints — zero-MDR UPI, roughly ₹112 of annual revenue per registered user at the category leader, store commissions — rather than applying a Western subscription template.",
+      "block_coverage": {
+        "answer_box": [
+          "f-hub-03"
+        ],
+        "who_this_is_for": [
+          "f-svc-03"
+        ],
+        "first_six_weeks": [
+          "f-svc-02"
+        ],
+        "deliverables": [
+          "f-act-20"
+        ],
+        "method": [
+          "f-svc-01"
+        ],
+        "proof": [
+          "f-svc-03"
+        ],
+        "pricing_anchors": [
+          "f-act-11"
+        ],
+        "industry_variants": [
+          "f-act-20"
+        ],
+        "tools_and_templates": [
+          "f-act-11"
+        ],
+        "faq": [
+          "f-svc-02"
+        ],
+        "cta": [
+          "f-hub-03"
+        ]
+      },
+      "body": "\n<AnswerBox>\nApp monetization strategy, as a six-week engagement that ends with a chosen model,\na paywall design and a price. It costs ₹4,30,000, or $4,500. Indian in-app\npurchase spending passed $1 billion in 2025, about ₹9,589 crore, and most products\nin that market have never tested a price.\n</AnswerBox>\n\n<FactTable\n  id=\"monetization-inputs\"\n  caption=\"What a monetization model in India is priced against\"\n  columns={[\"Input\", \"Figure\"]}\n  rows={[\n    { cells: [\"India in-app purchase spending, 2025 and projected 2026\", \"over $1 billion, rising to $1.25 billion\"], factId: \"f-hub-03\" },\n    { cells: [\"UPI merchant discount rate\", \"zero, by national policy\"], factId: \"f-svc-02\" },\n    { cells: [\"Category leader: interchange, and lending share of revenue\", \"0.5% to 1.1%, and 11.55%\"], factId: \"f-svc-01\" },\n    { cells: [\"Gross revenue per registered user per year, category leader\", \"about ₹112 (about $1.17)\"], factId: \"f-svc-03\" },\n    { cells: [\"Apple core technology commission from January 2026\", \"5% of digital-goods revenue\"], factId: \"f-act-11\" },\n    { cells: [\"Google Play standard rate, 2026\", \"10% on the first $1M, 20% above\"], factId: \"f-act-20\" },\n  ]}\n/>\n\n## Who this is for\n\nProducts with real usage and no working revenue model, or with a model somebody\ncopied rather than chose. The typical starting point is six figures of monthly\nactives, a paywall nobody has tested, and a price set by looking at a competitor's\nscreenshot.\n\nIt suits teams who already accept an uncomfortable answer. A monetization\nengagement that cannot conclude \"charge more\" or \"stop charging for this\" is a\nbranding exercise. Most of the value in the six weeks comes from\nnarrowing what to charge for, and narrowing means dropping something.\n\nIt does not suit pre-launch products. Monetization choices need traffic to test\nagainst, and a model built on projections produces a document rather than a\ndecision. It also does not suit products whose real constraint is retention. A price change\non a leaking base moves revenue for one month and then stops. Teams usually misread\nthat month as a win. If the cohort curve has never flattened,\nthe retention engagement comes first and this one waits.\n\n## The first six weeks\n\nWeeks one and two go to measurement, and that is not a warm-up. Most engagements\nbegin by working out which existing numbers can be relied on, and the answer is\nusually fewer than the team expects. Conversion and churn most often carry a\ndifferent denominator than the model assumes, so a plan resting on them inherits the\nerror.\n\nWeek three ships something. Normally an instrumentation fix or a paywall placement\ntest rather than a price change. Change the price before the funnel reads cleanly\nand the result arrives with nothing to attribute it to. Shipping in week three also tests\nwhether the organisation can ship at all, which is information worth having early.\n\nWeeks four and five run the pricing and packaging work against live traffic. That\nmeans real tests with pre-registered thresholds, not a survey. Week six sets the\nmodel, the price points in both currencies, and the small set of numbers that will\nsay whether the model held. The engagement ends with a decision and a way to check\nit, which is a narrower promise than a strategy deck and a more useful one.\n\n## What you get\n\nA written monetization model with the reasoning attached, not only the conclusion.\nThe reasoning matters because the conclusion needs revisiting within a year.\nA conclusion without its argument cannot be revisited, only thrown out.\n\nPrice points in rupees and dollars, with the exchange rate and the date recorded\nagainst them. A paywall specification covering placement, the gate, the copy and the fallback for\nusers who decline. A twelve-month revenue model that keeps its assumptions in a\nseparate list, so each one takes an argument on its own rather than as part of a\nbundle.\n\nThen the measurement plan: which numbers to watch weekly, which to ignore however\nmuch they move, and the threshold at which the model should be revisited rather\nthan defended. That last item is the one clients use most, and it is the one no\nstrategy document normally contains.\n\n## How the work is done\n\nDiagnosis before design, and store economics before either, because store\neconomics are fixed and large. Google Play takes 10% on the first $1M of annual\nrevenue, roughly ₹9.59 crore, and 20% above it. Apple has added a 5% core\ntechnology commission on digital-goods revenue from January 2026. Those numbers\nset the ceiling on every model that runs through an app store. A model that enters\nthe spreadsheet without them is wrong by exactly that much.\n\nThen the market constraint, which in India is specific and structural. Payments\ncannot carry a model by themselves, because UPI runs at zero merchant discount\nrate as a national policy decision rather than a competitive one. The category\nleader earns about ₹112 of gross revenue per registered user per year, roughly\n$1.17, with merchant interchange of 0.5% to 1.1% on eligible flows and lending\ndistribution at 11.55% of half-year revenue.\n\nThat shape — thin payments, revenue arriving through distribution — is where most\nIndian consumer products end up. Designing for it in month three rather than year\nthree is most of what this engagement is worth, because the alternative is\nbuilding a subscription business in a market whose payment rail earns nothing.\n\n## Proof\n\n<FromMyWork exp=\"exp-010\">\nThe insurance conversion rate was 0.007% and had seven separate causes, not one.\nEach leak cut conversion by 60-80% on its own; compounded, they produced seven\npurchases per hundred thousand users.\n</FromMyWork>\n\nSeven compounding leaks is the normal case rather than an extreme one, and it is\nwhy the diagnosis phase is not optional. Ranking the leaks and fixing the largest\nwould have moved that funnel by very little.\n\n<FromMyWork exp=\"exp-043\">\nBoth insurance lines moved by orders of magnitude once the\nquote-to-redirect-to-purchase drop-offs were diagnosed: bike from about 10 a day\nto 6,800+, car from about 5 a day to 2,300+. The fix was CTA placement, partner\nsequencing and context-led nudges rather than more traffic.\n</FromMyWork>\n\nNeither of those outcomes came from a better price. They came from removing the\nreasons a user who had already decided could not complete.\n\n## Price\n\n₹4,30,000, or $4,500, for the six weeks. The rate is recorded in config and a\nbuild of this site fails if the pair drifts more than 3% from it, which is a small\ndiscipline that stops Indian buyers being quoted a stale number.\n\nIndustry variants cost the same. The scope differs rather than the fee, because\nthe work is the same length whether the compliance surface is lending or logistics.\nThere is no separate discovery fee, no charge for the proposal, and no retainer\nattached to the outcome.\n\nIf the diagnosis concludes that the constraint is retention or activation rather\nthan monetization, that is the finding and the engagement says so. Repricing a\nproduct that loses its users is a way of spending a quarter to learn something a\ncohort report would have said in a week.\n\n## By industry\n\nFintech, marketplaces, ed-tech, health, D2C, travel, B2B SaaS and media each have\na variant. A variant exists only where the mechanics genuinely differ, which means\ncompliance surface, take rate or payment rail — not a different set of examples.\n\nFintech carries regulatory constraints on what can be charged and when, which\nnarrows the model before design starts. Marketplaces carry a take rate that sets the\nceiling before the product does, so the work runs on net rather than gross. Media\ncarries content-cycle churn that makes annual plans behave differently from the same\nplan in a utility product. Ed-tech carries a seasonal cycle that makes a\ntwelve-month model read wrong if it starts in the wrong quarter.\n\nWhere an industry would only change the illustrations, there is no page for it. A\ngeneric industry overview looks thorough and says less than the parent page.\n\n## Tools and templates\n\nThe monetisation health score narrows the likely constraint in about ten minutes,\nbefore any conversation, and it is worth running before you decide whether to book\nanything. The app store fee calculator prices commission against your own revenue\nband, including the 5% core technology commission where it applies, so the ceiling\nis visible before the model is built.\n\nBoth are free and neither asks for an email. Both show their formulas, so you can check the\noutput rather than believe it. That matters more for a fee calculator than for most\ntools, because commission rules moved twice in 2026 and a calculator hiding its\narithmetic cannot be audited against the current ones.\n\nIf the score says your constraint sits outside monetization, the honest next step is\nthe engagement that addresses the constraint you actually have. Several enquiries a\nquarter end that way, and saying so early costs a fee and saves a client a\nquarter.\n"
+    },
+    {
+      "id": "service-0018",
+      "url": "/services/retention-and-lifecycle",
+      "archetype": "service",
+      "hub": "services",
+      "funnel": "BOFU",
+      "title": "User Retention Consulting and Lifecycle Design",
+      "meta_description": "A six-week engagement on retention curves, lifecycle triggers and failed-payment recovery. Scope, deliverables and cost stated up front.",
+      "h1": "User retention consulting and lifecycle design",
+      "primary_keyword": "user retention consulting",
+      "secondary_keywords": [
+        "lifecycle marketing consultant",
+        "retention consulting india"
+      ],
+      "entity_a": "retention-and-lifecycle",
+      "facts": [
+        "f-unit-14",
+        "f-act-18",
+        "f-hub-08",
+        "f-hub-09",
+        "f-svc-04",
+        "f-unit-27"
+      ],
+      "experience": [
+        "exp-045",
+        "exp-014"
+      ],
+      "links": [
+        {
+          "url": "/case-studies/growth-loop-repeat-users",
+          "anchor": "the repeat-user growth loop case study",
+          "role": "proof"
+        },
+        {
+          "url": "/benchmarks/retention",
+          "anchor": "retention benchmarks",
+          "role": "reference"
+        },
+        {
+          "url": "/services",
+          "anchor": "the services",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/retention-rate",
+          "anchor": "retention rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/retention-curve-projector",
+          "anchor": "the retention curve projector",
+          "role": "tool"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "start the engagement",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#retention-levers",
+          "alt": "Six levers a retention engagement works through: failed-payment recovery by intervention, the lifespan of a withdrawn Indian membership programme, the average and median lift on winning experiments, median conversion and revenue uplift on winners, two Indian fintech revenue and profit outcomes and the card failure spike after India's 2021 rules, each row carrying its source and verification date",
+          "caption": "The levers, with their realistic sizes. Verified 30 September 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Start a retention and lifecycle engagement",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Project your retention curve",
+          "href": "/tools/retention-curve-projector"
+        }
+      },
+      "faq": [
+        {
+          "q": "What does a retention and lifecycle engagement cost?",
+          "a": "₹4,30,000, or $4,500, for six weeks, at the rate recorded in config. The scope covers the curve, the lifecycle triggers and the collection layer, because the third is where a surprising share of churn lives."
+        },
+        {
+          "q": "Where does a retention engagement usually start?",
+          "a": "With collection, not messaging. Smart retry recovers about 40% of failed payments and a card updater another 25%, and none of that needs a product change or a new campaign."
+        },
+        {
+          "q": "Is this lifecycle marketing or product work?",
+          "a": "Both, and the split is the point. Timing beats copy in most lifecycle work, and timing is a product and data problem rather than a creative one."
+        }
+      ],
+      "schema_types": [
+        "Service",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Treats collection as the first retention lever rather than the last, with the published recovery rates by intervention, and sizes every proposed lever against the median 6.1% lift a winning experiment actually delivers.",
+      "block_coverage": {
+        "answer_box": [
+          "f-hub-08"
+        ],
+        "who_this_is_for": [
+          "f-act-18"
+        ],
+        "first_six_weeks": [
+          "f-unit-14"
+        ],
+        "deliverables": [
+          "f-hub-09"
+        ],
+        "method": [
+          "f-unit-27"
+        ],
+        "proof": [
+          "f-svc-04"
+        ],
+        "pricing_anchors": [
+          "f-hub-08"
+        ],
+        "industry_variants": [
+          "f-act-18"
+        ],
+        "tools_and_templates": [
+          "f-unit-14"
+        ],
+        "faq": [
+          "f-unit-27"
+        ],
+        "cta": [
+          "f-hub-09"
+        ]
+      },
+      "body": "\n<AnswerBox>\nUser retention consulting, as a six-week engagement covering the cohort curve, the\nlifecycle triggers and the collection layer. It costs ₹4,30,000, or $4,500.\nExpect ordinary sizes: winning experiments move a median 6.1%, and the largest\nrecoverable block is usually failed payments rather than lost interest.\n</AnswerBox>\n\n<FactTable\n  id=\"retention-levers\"\n  caption=\"The levers, with their realistic sizes\"\n  columns={[\"Lever\", \"Published effect\"]}\n  rows={[\n    { cells: [\"Failed-payment recovery: retry / card updater / email\", \"40% / 25% / plus 15% to 20%\"], factId: \"f-unit-14\" },\n    { cells: [\"Lift on winning experiments\", \"8.4% average, 6.1% median\"], factId: \"f-hub-08\" },\n    { cells: [\"Median uplift on winners, conversion and revenue per visitor\", \"1.88% and 2.77%\"], factId: \"f-hub-09\" },\n    { cells: [\"India card subscription failure after the 2021 rules\", \"above 20% in some categories\"], factId: \"f-unit-27\" },\n    { cells: [\"A paid membership withdrawn after 14 months\", \"Zepto Pass, February 2024 to April 2025\"], factId: \"f-act-18\" },\n    { cells: [\"Two Indian fintech outcomes, FY26\", \"₹7,920 crore revenue at a ₹2,792 crore loss, against ₹8,437 crore at ₹552 crore profit\"], factId: \"f-svc-04\" },\n  ]}\n/>\n\n## Who this is for\n\nSubscription and transactional products where somebody has measured the curve and\nit does not flatten, or where nobody has measured it as cohorts at all. A paying\nbase normally exists already, because retention work without payers is activation\nwork under a different name.\n\nThe engagement suits teams who can act on an unglamorous answer. A large share of\nwhat looks like churn turns out to be collection, and fixing collection is\nunexciting, mechanical and the highest-return work available. If the team needs the\nanswer to be a campaign, the money is better spent elsewhere.\n\nIt does not suit products still searching for a proposition. A paid membership\nwithdrawn after fourteen months, as Zepto Pass was between February 2024 and April\n2025, is rarely a retention execution failure. It is a proposition failure, and\nlifecycle work cannot reach one. Watch for a curve that falls at the same rate\nwhichever cohort you look at. That pattern says the product has not yet found the\ngroup it keeps.\n\n## The first six weeks\n\nWeek one rebuilds the cohort report with closed cohorts only, then splits decided\nchurn from failed payments. That single split changes the plan more often than\nanything else in the engagement. The two have completely different fixes, and most\ndashboards report them as one number.\n\nWeeks two and three fix collection. These fixes need no product change and no new\ncreative, which makes them the fastest available return and the reason they come\nfirst. Smart retry, a card updater and a dunning sequence all sit in configuration, and\neach has a published effect size.\n\nWeeks four and five build the trigger set around observed intent and real\ndeadlines rather than a calendar. The work here is choosing the event and the\ndelay, not writing the message. Week six sets the measurement and the thresholds\nthat will say whether it held, including the threshold at which a trigger should be\nretired rather than rewritten.\n\n## What you get\n\nA cohort report you can maintain after the engagement ends, with its definitions\nwritten down beside it so the next person to open it reads the same numbers. A\nchurn decomposition separating cancellations from collection failures, sized, so\nthe recoverable share is a figure rather than an intuition.\n\nA trigger specification listing the event, the timing and the expected effect for\neach one. Each expected effect sits against a median 1.88% conversion uplift and a 2.77%\nrevenue-per-visitor uplift rather than a hoped-for double. That makes the set easier\nto defend in a planning meeting and harder to oversell.\n\nPlus a list of the things not worth doing, which on most products runs longer than\nthe list of things that are. That list is what stops a lifecycle programme growing\ninto forty campaigns nobody can attribute.\n\n## How the work is done\n\nCollection first, because the numbers are unambiguous. Smart retry recovers about\n40% of failed payments, a card updater about 25%, and dunning email adds 15% to 20%\non top of those. In India this matters more than elsewhere: the 2021 card rules\npushed subscription failure above 20% in some categories, and every one of those\nfailures appears in a retention dashboard as a customer choosing to leave.\n\nThen timing. Teams rewrite most lifecycle programmes when they should reschedule\nthem. A trigger fired at the moment of real need outperforms better copy\nfired at a convenient hour, and that makes it a data and product problem rather\nthan a creative one. The practical consequence is that the engagement spends its\ntime on event definitions and delays rather than on message testing.\n\nExperiment sizing runs underneath both. Winning experiments move a median 6.1%,\nwhich means a retention plan built from four changes each expected to deliver 30%\nis not a plan. Sizing honestly changes which changes get attempted, and it changes\nhow long the team expects to wait before reading a result.\n\n## Proof\n\n<FromMyWork exp=\"exp-045\">\nOrchestrating triggers around policy expiry, compliance deadlines and observed\nintent improved monetisation per active user. The gain came from the schedule\nrather than the message.\n</FromMyWork>\n\n<FromMyWork exp=\"exp-014\">\nTiming beat messaging. A user whose insurance expired three days ago converted at\n4.8 times the rate of one with 60 days remaining, on identical copy.\n</FromMyWork>\n\nIdentical copy is the important part of that second result. The same words at the\nwrong moment produced a fifth of the conversion, a larger effect than any copy test\nin that programme produced.\n\nBoth results point the same way. The schedule carried the outcome, and a schedule\ncomes out of event data rather than a content calendar. That is why the\nengagement spends weeks four and five on event definitions and delays, and almost\nnone of its time on message variants.\n\n## Price\n\n₹4,30,000, or $4,500, for six weeks, at the rate recorded in config. Collection\nwork, the cohort rebuild and the trigger set all sit inside that scope. There is no\nper-campaign fee, because the number of campaigns is not the deliverable and\ncharging for it would reward the wrong thing.\n\nTwo Indian fintech results from FY26 make the case for scope over volume. One\nproduced ₹7,920 crore of revenue, about $826 million, at a ₹2,792 crore loss,\nroughly $291 million. The other produced ₹8,437 crore, about $880 million, at a\n₹552 crore profit, roughly $58 million.\n\nSimilar revenue, opposite outcomes. Retention economics rather than activity account\nfor most of that gap, and neither company got there by running more campaigns. That\nis the argument for buying a scope rather than a volume: the work that closes the\ngap is a handful of structural fixes, and a per-campaign fee would pay for the\nopposite.\n\n## By industry\n\nFintech, media, ed-tech and D2C variants exist where the churn mechanics actually\ndiffer. Insurance and lending churn against deadlines, so the trigger set runs on dates.\nMedia churns against content gaps, so it runs on catalogue events. D2C churns against\ndelivery, so it starts after fulfilment rather than after purchase. Each of those\nchanges which table the triggers read from, not only which words they carry.\n\nFintech also carries a mandate layer nothing else does. That is why the India variant\nof this engagement opens at the payment rail rather than the funnel, and why its\nfirst week often produces a larger number than its last.\n\nWhere an industry would only change the examples, there is no variant. A generic\nindustry page is a way of appearing thorough while saying less than the parent.\n\n## Tools and templates\n\nThe retention curve projector fits a curve to your own cohort data and shows where\nit flattens, which is the question a single retention number cannot answer. The\nchurn-to-lifetime calculator converts a monthly rate into an expected tenure\nwithout assuming the rate holds, because assuming it holds is what makes most\nlifetime-value models optimistic.\n\nBoth are free, both show their formulas, and neither asks for an email. Running the\nprojector on your own data before a conversation usually shortens the first week of\nthe engagement by several days, because the cohort rebuild starts from something\nrather than nothing.\n\nThe churn-to-lifetime calculator is also the fastest way to sanity-check a lifetime\nvalue figure somebody else produced. If the two disagree by more than a little, the\ndifference is almost always a churn rate that was measured over one window and\napplied to another.\n"
+    }
+  ]
+}

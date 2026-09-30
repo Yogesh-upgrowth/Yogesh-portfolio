@@ -1,0 +1,108 @@
+{
+  "id": "service-0015",
+  "url": "/services/app-monetization-strategy",
+  "archetype": "service",
+  "hub": "services",
+  "wave": 1,
+  "batch_id": "w1-service-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "App Monetization Strategy Consulting: Scope and Price",
+  "meta_description": "A six-week engagement that sets the monetization model, the paywall and the price. Scope, deliverables and cost stated up front, in rupees and dollars.",
+  "h1": "App monetization strategy consulting",
+  "primary_keyword": "app monetization strategy",
+  "secondary_keywords": [
+    "mobile app monetization consulting",
+    "app monetization consultant"
+  ],
+  "entity_a": "app-monetization-strategy",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-svc-01",
+    "f-svc-02",
+    "f-svc-03",
+    "f-hub-03",
+    "f-act-11",
+    "f-act-20"
+  ],
+  "experience_used": [
+    "exp-010",
+    "exp-043"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies/carinfo-motor-insurance-monetization",
+      "anchor": "the motor insurance monetisation case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/trial-to-paid-conversion",
+      "anchor": "trial-to-paid benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/services",
+      "anchor": "the services",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/paywall",
+      "anchor": "paywall",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "start the engagement",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#monetization-inputs",
+      "alt": "Six inputs a monetization strategy has to price against: India's in-app purchase spending and its projected level, the zero merchant discount rate on UPI, merchant interchange and lending distribution shares at the category leader, gross revenue per registered user, Apple's core technology commission and Google Play's standard rate, each row carrying its source and verification date",
+      "caption": "What a monetization model in India is priced against. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What does an app monetization strategy engagement cost?",
+      "a": "₹4,30,000, or $4,500, for the six-week engagement, at the exchange rate recorded in config and re-checked on every build. Industry variants are the same price; the scope differs, not the fee."
+    },
+    {
+      "q": "How long before anything changes in the product?",
+      "a": "The first shippable change lands in week three, and it is usually a measurement fix rather than a price change. Pricing decisions made before the funnel is measurable get attributed to the wrong thing."
+    },
+    {
+      "q": "Do you work on ad-funded apps?",
+      "a": "Yes, and often the answer is a hybrid rather than a switch. Where UPI runs at zero merchant discount rate, payments cannot carry the model on their own and the revenue has to come from distribution or subscription."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Start an app monetization strategy engagement",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Run the monetisation health score",
+      "href": "/tools/monetization-health-score"
+    }
+  },
+  "schema_types": [
+    "Service",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Prices the engagement in public and builds the model against India's specific constraints — zero-MDR UPI, roughly ₹112 of annual revenue per registered user at the category leader, store commissions — rather than applying a Western subscription template.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

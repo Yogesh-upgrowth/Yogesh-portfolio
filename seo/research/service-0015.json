@@ -1,0 +1,147 @@
+{
+  "page_id": "service-0015",
+  "url": "/services/app-monetization-strategy",
+  "archetype": "service",
+  "primary_keyword": "app monetization strategy",
+  "secondary_keywords": [
+    "mobile app monetization consulting",
+    "app monetization consultant"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-svc-01",
+      "claim": "PhonePe earns merchant interchange of 0.5% to 1.1% on eligible flows, with lending distribution at 11.55% of first-half FY26 revenue",
+      "value": "0.5-1.1",
+      "unit": "%",
+      "source_url": "https://tfnmarkets.com/insights/phonepe-ipo-india-2026",
+      "source_title": "PhonePe IPO India 2026: Valuation, OFS Structure, NPCI Cap Risk",
+      "source_domain": "tfnmarkets.com",
+      "excerpt": "PhonePe's revenue comes from merchant interchange (0.5%-1.1% on eligible flows), device subscriptions, bill-payment commissions and lending distribution at 11.55% of H1 FY26 revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-svc-02",
+      "claim": "UPI runs on zero merchant discount rate as a national policy decision",
+      "value": "0",
+      "unit": "%",
+      "source_url": "https://tfnmarkets.com/insights/phonepe-ipo-india-2026",
+      "source_title": "PhonePe IPO India 2026: Valuation, OFS Structure, NPCI Cap Risk",
+      "source_domain": "tfnmarkets.com",
+      "excerpt": "UPI operates on zero MDR, a policy decision made at the national level, which constrains direct payment transaction monetization.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-svc-03",
+      "claim": "India's leading UPI app earns roughly 112 rupees of gross revenue per registered user per year",
+      "value": "112",
+      "unit": "INR",
+      "source_url": "https://tfnmarkets.com/insights/phonepe-ipo-india-2026",
+      "source_title": "PhonePe IPO India 2026: Valuation, OFS Structure, NPCI Cap Risk",
+      "source_domain": "tfnmarkets.com",
+      "excerpt": "The category leader generates approximately Rs 112 of gross revenue per registered user per year.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-hub-03",
+      "claim": "Indian in-app purchase spending passed 1 billion dollars in 2025 and is expected to reach 1.25 billion by the end of 2026",
+      "value": "1",
+      "unit": "USD billion",
+      "source_url": "https://www.businessofapps.com/data/india-app-market/",
+      "source_title": "India App Market Statistics",
+      "source_domain": "businessofapps.com",
+      "excerpt": "In-app purchase spending by Indians passed one billion dollars in 2025, expected to rise to $1.25 billion by the end of 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-11",
+      "claim": "From 1 January 2026 Apple replaced the per-install Core Technology Fee with a 5% Core Technology Commission on digital-goods revenue",
+      "value": "5",
+      "unit": "%",
+      "source_url": "https://blog.funnelfox.com/apple-app-store-fees-2026-eu-dma/",
+      "source_title": "App Store Fees and Commission Rates in 2026",
+      "source_domain": "funnelfox.com",
+      "excerpt": "From January 1, 2026, Apple replaced the per-install Core Technology Fee with a 5% Core Technology Commission on digital-goods revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-20",
+      "claim": "Google Play's 2026 standard rate is 10% on the first 1 million dollars of annual revenue and 20% above it",
+      "value": "10",
+      "unit": "%",
+      "source_url": "https://www.strataigize.com/insights/google-play-external-payments-fee-changes-2026/",
+      "source_title": "Google Play External Payments and Fee Changes",
+      "source_domain": "strataigize.com",
+      "excerpt": "Google lowered its baseline: the standard rate is now 10% on the first $1 million and 20% above it, plus a billing fee charged separately.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-hub-03"
+    ],
+    "who_this_is_for": [
+      "f-svc-03"
+    ],
+    "first_six_weeks": [
+      "f-svc-02"
+    ],
+    "deliverables": [
+      "f-act-20"
+    ],
+    "method": [
+      "f-svc-01"
+    ],
+    "proof": [
+      "f-svc-03"
+    ],
+    "pricing_anchors": [
+      "f-act-11"
+    ],
+    "industry_variants": [
+      "f-act-20"
+    ],
+    "tools_and_templates": [
+      "f-act-11"
+    ],
+    "faq": [
+      "f-svc-02"
+    ],
+    "cta": [
+      "f-hub-03"
+    ]
+  }
+}

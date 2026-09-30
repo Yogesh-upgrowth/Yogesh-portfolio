@@ -260,6 +260,14 @@ def check(spec: dict) -> list[str]:
         # G08 wants a link up to a hub on every page, in addition to the C4 roles.
         need = {"proof", "reference"} if page.get("funnel") == "BOFU" else {"bofu", "tool"}
         need |= {"hub"}
+        # G08 does not take the "reference" role at face value: the target has to
+        # be a child of /benchmarks or /teardowns, not the hub itself (01 §C4
+        # says one benchmark or teardown, and a hub is neither).
+        if "reference" in need and not any(
+            re.match(r"^/(benchmarks|teardowns)/", l["url"]) for l in page["links"]
+        ):
+            errs.append(f"{page['id']}: G08 no link to a /benchmarks/ or /teardowns/ page (C4)")
+            need.discard("reference")
         for r in need - roles:
             errs.append(f"{page['id']}: no link with role {r} (C4)")
         for href in re.findall(r"\]\((/[^)\s]+)\)", page.get("body", "")):

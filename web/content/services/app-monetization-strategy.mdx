@@ -1,0 +1,168 @@
+<AnswerBox>
+App monetization strategy, as a six-week engagement that ends with a chosen model,
+a paywall design and a price. It costs ₹4,30,000, or $4,500. Indian in-app
+purchase spending passed $1 billion in 2025, about ₹9,589 crore, and most products
+in that market have never tested a price.
+</AnswerBox>
+
+<FactTable
+  id="monetization-inputs"
+  caption="What a monetization model in India is priced against"
+  columns={["Input", "Figure"]}
+  rows={[
+    { cells: ["India in-app purchase spending, 2025 and projected 2026", "over $1 billion, rising to $1.25 billion"], factId: "f-hub-03" },
+    { cells: ["UPI merchant discount rate", "zero, by national policy"], factId: "f-svc-02" },
+    { cells: ["Category leader: interchange, and lending share of revenue", "0.5% to 1.1%, and 11.55%"], factId: "f-svc-01" },
+    { cells: ["Gross revenue per registered user per year, category leader", "about ₹112 (about $1.17)"], factId: "f-svc-03" },
+    { cells: ["Apple core technology commission from January 2026", "5% of digital-goods revenue"], factId: "f-act-11" },
+    { cells: ["Google Play standard rate, 2026", "10% on the first $1M, 20% above"], factId: "f-act-20" },
+  ]}
+/>
+
+## Who this is for
+
+Products with real usage and no working revenue model, or with a model somebody
+copied rather than chose. The typical starting point is six figures of monthly
+actives, a paywall nobody has tested, and a price set by looking at a competitor's
+screenshot.
+
+It suits teams who already accept an uncomfortable answer. A monetization
+engagement that cannot conclude "charge more" or "stop charging for this" is a
+branding exercise. Most of the value in the six weeks comes from
+narrowing what to charge for, and narrowing means dropping something.
+
+It does not suit pre-launch products. Monetization choices need traffic to test
+against, and a model built on projections produces a document rather than a
+decision. It also does not suit products whose real constraint is retention. A price change
+on a leaking base moves revenue for one month and then stops. Teams usually misread
+that month as a win. If the cohort curve has never flattened,
+the retention engagement comes first and this one waits.
+
+## The first six weeks
+
+Weeks one and two go to measurement, and that is not a warm-up. Most engagements
+begin by working out which existing numbers can be relied on, and the answer is
+usually fewer than the team expects. Conversion and churn most often carry a
+different denominator than the model assumes, so a plan resting on them inherits the
+error.
+
+Week three ships something. Normally an instrumentation fix or a paywall placement
+test rather than a price change. Change the price before the funnel reads cleanly
+and the result arrives with nothing to attribute it to. Shipping in week three also tests
+whether the organisation can ship at all, which is information worth having early.
+
+Weeks four and five run the pricing and packaging work against live traffic. That
+means real tests with pre-registered thresholds, not a survey. Week six sets the
+model, the price points in both currencies, and the small set of numbers that will
+say whether the model held. The engagement ends with a decision and a way to check
+it, which is a narrower promise than a strategy deck and a more useful one.
+
+## What you get
+
+A written monetization model with the reasoning attached, not only the conclusion.
+The reasoning matters because the conclusion needs revisiting within a year.
+A conclusion without its argument cannot be revisited, only thrown out.
+
+Price points in rupees and dollars, with the exchange rate and the date recorded
+against them. A paywall specification covering placement, the gate, the copy and the fallback for
+users who decline. A twelve-month revenue model that keeps its assumptions in a
+separate list, so each one takes an argument on its own rather than as part of a
+bundle.
+
+Then the measurement plan: which numbers to watch weekly, which to ignore however
+much they move, and the threshold at which the model should be revisited rather
+than defended. That last item is the one clients use most, and it is the one no
+strategy document normally contains.
+
+## How the work is done
+
+Diagnosis before design, and store economics before either, because store
+economics are fixed and large. Google Play takes 10% on the first $1M of annual
+revenue, roughly ₹9.59 crore, and 20% above it. Apple has added a 5% core
+technology commission on digital-goods revenue from January 2026. Those numbers
+set the ceiling on every model that runs through an app store. A model that enters
+the spreadsheet without them is wrong by exactly that much.
+
+Then the market constraint, which in India is specific and structural. Payments
+cannot carry a model by themselves, because UPI runs at zero merchant discount
+rate as a national policy decision rather than a competitive one. The category
+leader earns about ₹112 of gross revenue per registered user per year, roughly
+$1.17, with merchant interchange of 0.5% to 1.1% on eligible flows and lending
+distribution at 11.55% of half-year revenue.
+
+That shape — thin payments, revenue arriving through distribution — is where most
+Indian consumer products end up. Designing for it in month three rather than year
+three is most of what this engagement is worth, because the alternative is
+building a subscription business in a market whose payment rail earns nothing.
+
+## Proof
+
+<FromMyWork exp="exp-010">
+The insurance conversion rate was 0.007% and had seven separate causes, not one.
+Each leak cut conversion by 60-80% on its own; compounded, they produced seven
+purchases per hundred thousand users.
+</FromMyWork>
+
+Seven compounding leaks is the normal case rather than an extreme one, and it is
+why the diagnosis phase is not optional. Ranking the leaks and fixing the largest
+would have moved that funnel by very little.
+
+<FromMyWork exp="exp-043">
+Both insurance lines moved by orders of magnitude once the
+quote-to-redirect-to-purchase drop-offs were diagnosed: bike from about 10 a day
+to 6,800+, car from about 5 a day to 2,300+. The fix was CTA placement, partner
+sequencing and context-led nudges rather than more traffic.
+</FromMyWork>
+
+Neither of those outcomes came from a better price. They came from removing the
+reasons a user who had already decided could not complete.
+
+## Price
+
+₹4,30,000, or $4,500, for the six weeks. The rate is recorded in config and a
+build of this site fails if the pair drifts more than 3% from it, which is a small
+discipline that stops Indian buyers being quoted a stale number.
+
+Industry variants cost the same. The scope differs rather than the fee, because
+the work is the same length whether the compliance surface is lending or logistics.
+There is no separate discovery fee, no charge for the proposal, and no retainer
+attached to the outcome.
+
+If the diagnosis concludes that the constraint is retention or activation rather
+than monetization, that is the finding and the engagement says so. Repricing a
+product that loses its users is a way of spending a quarter to learn something a
+cohort report would have said in a week.
+
+## By industry
+
+Fintech, marketplaces, ed-tech, health, D2C, travel, B2B SaaS and media each have
+a variant. A variant exists only where the mechanics genuinely differ, which means
+compliance surface, take rate or payment rail — not a different set of examples.
+
+Fintech carries regulatory constraints on what can be charged and when, which
+narrows the model before design starts. Marketplaces carry a take rate that sets the
+ceiling before the product does, so the work runs on net rather than gross. Media
+carries content-cycle churn that makes annual plans behave differently from the same
+plan in a utility product. Ed-tech carries a seasonal cycle that makes a
+twelve-month model read wrong if it starts in the wrong quarter.
+
+Where an industry would only change the illustrations, there is no page for it. A
+generic industry overview looks thorough and says less than the parent page.
+
+## Tools and templates
+
+The monetisation health score narrows the likely constraint in about ten minutes,
+before any conversation, and it is worth running before you decide whether to book
+anything. The app store fee calculator prices commission against your own revenue
+band, including the 5% core technology commission where it applies, so the ceiling
+is visible before the model is built.
+
+Both are free and neither asks for an email. Both show their formulas, so you can check the
+output rather than believe it. That matters more for a fee calculator than for most
+tools, because commission rules moved twice in 2026 and a calculator hiding its
+arithmetic cannot be audited against the current ones.
+
+If the score says your constraint sits outside monetization, the honest next step is
+the engagement that addresses the constraint you actually have. Several enquiries a
+quarter end that way, and saying so early costs a fee and saves a client a
+quarter.

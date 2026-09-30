@@ -1,0 +1,108 @@
+{
+  "id": "service-0018",
+  "url": "/services/retention-and-lifecycle",
+  "archetype": "service",
+  "hub": "services",
+  "wave": 1,
+  "batch_id": "w1-service-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "User Retention Consulting and Lifecycle Design",
+  "meta_description": "A six-week engagement on retention curves, lifecycle triggers and failed-payment recovery. Scope, deliverables and cost stated up front.",
+  "h1": "User retention consulting and lifecycle design",
+  "primary_keyword": "user retention consulting",
+  "secondary_keywords": [
+    "lifecycle marketing consultant",
+    "retention consulting india"
+  ],
+  "entity_a": "retention-and-lifecycle",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-14",
+    "f-act-18",
+    "f-hub-08",
+    "f-hub-09",
+    "f-svc-04",
+    "f-unit-27"
+  ],
+  "experience_used": [
+    "exp-045",
+    "exp-014"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies/growth-loop-repeat-users",
+      "anchor": "the repeat-user growth loop case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "retention benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/services",
+      "anchor": "the services",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/retention-rate",
+      "anchor": "retention rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/retention-curve-projector",
+      "anchor": "the retention curve projector",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "start the engagement",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#retention-levers",
+      "alt": "Six levers a retention engagement works through: failed-payment recovery by intervention, the lifespan of a withdrawn Indian membership programme, the average and median lift on winning experiments, median conversion and revenue uplift on winners, two Indian fintech revenue and profit outcomes and the card failure spike after India's 2021 rules, each row carrying its source and verification date",
+      "caption": "The levers, with their realistic sizes. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What does a retention and lifecycle engagement cost?",
+      "a": "₹4,30,000, or $4,500, for six weeks, at the rate recorded in config. The scope covers the curve, the lifecycle triggers and the collection layer, because the third is where a surprising share of churn lives."
+    },
+    {
+      "q": "Where does a retention engagement usually start?",
+      "a": "With collection, not messaging. Smart retry recovers about 40% of failed payments and a card updater another 25%, and none of that needs a product change or a new campaign."
+    },
+    {
+      "q": "Is this lifecycle marketing or product work?",
+      "a": "Both, and the split is the point. Timing beats copy in most lifecycle work, and timing is a product and data problem rather than a creative one."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Start a retention and lifecycle engagement",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Project your retention curve",
+      "href": "/tools/retention-curve-projector"
+    }
+  },
+  "schema_types": [
+    "Service",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Treats collection as the first retention lever rather than the last, with the published recovery rates by intervention, and sizes every proposed lever against the median 6.1% lift a winning experiment actually delivers.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

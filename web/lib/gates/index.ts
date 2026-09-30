@@ -57,6 +57,16 @@ export interface GateConfig {
   blockedDomains: string[];
   fxRate: number | null;
   fxAsOf: string | null;
+  /**
+   * Numbers the site owns rather than cites: its own prices, and the drift
+   * tolerance those prices are checked against. G03 asks every figure in prose
+   * to trace to a research fact, which is right for a claim about the world and
+   * wrong for a claim about this business — a price has no third-party source,
+   * and asking for one would push authors into inventing a "fact" that says
+   * what they charge. These are verifiable in the repo instead, and
+   * script/check-rates.ts already fails the build when a pair drifts.
+   */
+  ownNumbers: string[];
   /** ISO date the gates are being run for — freshness is measured from here. */
   today: string;
 }
@@ -68,6 +78,7 @@ export function loadGateConfig(today = new Date().toISOString().slice(0, 10)): G
   const fx = JSON.parse(readFileSync(join(CONFIG_DIR, "fx.json"), "utf8"));
   const blocked = JSON.parse(readFileSync(join(CONFIG_DIR, "blocked-domains.json"), "utf8"));
   return {
+    ownNumbers: ownNumbers(),
     bannedPhrases: banned.phrases,
     bannedOpeners: banned.banned_openers,
     blockedDomains: blocked.domains ?? [],
@@ -75,6 +86,34 @@ export function loadGateConfig(today = new Date().toISOString().slice(0, 10)): G
     fxAsOf: fx.as_of ?? null,
     today,
   };
+}
+
+/**
+ * Every figure in the price register, plus the fx drift tolerance, as the digit
+ * strings a page would write. Read from the register rather than listed here, so
+ * a reprice cannot leave the exemption behind.
+ */
+function ownNumbers(): string[] {
+  const out = new Set<string>();
+  const fx = JSON.parse(readFileSync(join(CONFIG_DIR, "fx.json"), "utf8"));
+  if (fx.rate) out.add(String(fx.rate));
+  for (const rel of ["services.ts", "marketplace-services.ts"]) {
+    const p = join(process.cwd(), "..", "shared", rel);
+    if (!existsSync(p)) continue;
+    const src = readFileSync(p, "utf8");
+    for (const m of src.matchAll(/price:\s*"([^"]+)"/g)) {
+      for (const n of (m[1] ?? "").match(/[\d][\d,]*(?:\.\d+)?/g) ?? []) {
+        out.add(n.replace(/,/g, ""));
+      }
+    }
+  }
+  // script/check-rates.ts TOLERANCE, as a page states it.
+  const rates = join(process.cwd(), "..", "script", "check-rates.ts");
+  if (existsSync(rates)) {
+    const m = /TOLERANCE\s*=\s*([\d.]+)/.exec(readFileSync(rates, "utf8"));
+    if (m) out.add(String(Number(m[1]) * 100));
+  }
+  return [...out];
 }
 
 const ok = (id: string, name: string, detail: string, observed?: string): GateResult =>
@@ -261,17 +300,43 @@ export function g03(i: GateInput): GateResult {
     }
   }
 
+  const own = new Set(i.config.ownNumbers);
+  if (fx) {
+    // A price quoted in the other currency is still the site's own price.
+    for (const v of [...own]) {
+      const n = Number(v);
+      if (!Number.isFinite(n) || n === 0) continue;
+      for (const candidate of [n * fx, n / fx]) {
+        for (const r of [Math.round(candidate), Math.round(candidate / 10) * 10,
+                         Math.round(candidate / 100) * 100, Number(candidate.toFixed(2))]) {
+          if (Math.abs(r - candidate) / candidate <= 0.03) own.add(String(r));
+        }
+      }
+    }
+  }
+
   const offenders: string[] = [];
   for (const s of sentences(prose)) {
     if (ESTIMATE.test(s) && METHOD.test(s)) continue;
+    // The suffix group has to include the spelled-out scale words, not just the
+    // letter abbreviations: "$880 million" otherwise matched as "$880" and
+    // failed against a fact carrying 8,437 crore, whose conversion is 880
+    // million. Same figure, written the way a reader writes it.
+    const SCALE_SUFFIX =
+      "K|M|Mn|B|Bn|cr|thousand|million|billion|lakh|lakhs|lac|crore|crores";
     const nums = s.match(
-      /(?:₹|\$)\s?[\d][\d,.]*\s?(?:K|M|Mn|B|Bn|lakh|lakhs|lac|crore|crores|cr)?\b|[\d][\d,.]*\s?%|\b[\d][\d,.]{2,}\b/gi,
+      new RegExp(
+        `(?:₹|\\$)\\s?[\\d][\\d,.]*\\s?(?:${SCALE_SUFFIX})?\\b|[\\d][\\d,.]*\\s?%|` +
+          `\\b[\\d][\\d,.]*\\s?(?:${SCALE_SUFFIX})\\b|\\b[\\d][\\d,.]{2,}\\b`,
+        "gi",
+      ),
     ) ?? [];
     for (const raw of nums) {
       const bare = norm(raw.replace(/[₹$%]/g, ""));
       if (factNumbers.has(bare)) continue;
       if (converted.has(bare)) continue;
       if (fromExperience.has(bare)) continue;
+      if (own.has(bare)) continue;
       // Same figure, written at a different scale: $25K against a fact's 25,000,
       // or ₹9.59 crore against a converted 95,890,000.
       const v = figureValue(raw.replace(/[₹$%]/g, "").trim());
@@ -281,7 +346,7 @@ export function g03(i: GateInput): GateResult {
             const cv = Number(c);
             return Number.isFinite(cv) && cv !== 0 && Math.abs(cv - v) / Math.max(cv, v) <= 0.03;
           });
-        if (near(factNumbers) || near(converted) || near(fromExperience)) continue;
+        if (near(factNumbers) || near(converted) || near(fromExperience) || near(own)) continue;
       }
       offenders.push(raw.trim());
     }

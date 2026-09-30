@@ -97,7 +97,7 @@ function input(over: Partial<GateInput> = {}): GateInput {
       bannedPhrases: ["leverage", "seamless", "in today's"],
       bannedOpeners: ["in today's", "when it comes to"],
       blockedDomains: ["startuptalky.com", "appinventiv.com"],
-      fxRate: 88.2, fxAsOf: "2026-09-01", today: TODAY,
+      fxRate: 88.2, fxAsOf: "2026-09-01", ownNumbers: [], today: TODAY,
     },
     ...over,
   };

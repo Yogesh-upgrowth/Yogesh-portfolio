@@ -79,6 +79,17 @@ function humanise(slug: string): string {
 }
 
 /**
+ * A service's industry variants, from the inventory so the list is complete
+ * while the variants are still being drafted. Nothing passed these before, so
+ * the "By industry" block never rendered on any service page.
+ */
+function industryVariants(url: string): { url: string; name: string }[] {
+  return inventory()
+    .filter((r) => r.archetype === "service-industry" && r.url.startsWith(`${url}/`))
+    .map((r) => ({ url: r.url, name: r.title_hint }));
+}
+
+/**
  * Hand-curated picks for a hub (01 §5: picks live in content/hubs/<hub>.json,
  * never auto-sorted by date). Absent file means no picks yet, which the layout
  * renders as an index without a start-here row rather than as an error — a hub
@@ -135,7 +146,12 @@ export function renderPage(url: string, body: ReactNode): ReactNode {
     case "service-industry":
     case "hire-city":
       return (
-        <ServiceLayout meta={meta} facts={facts} trail={trail}>
+        <ServiceLayout
+          meta={meta}
+          facts={facts}
+          trail={trail}
+          industryVariants={industryVariants(url)}
+        >
           {children}
         </ServiceLayout>
       );

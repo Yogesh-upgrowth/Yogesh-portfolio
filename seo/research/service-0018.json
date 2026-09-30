@@ -1,0 +1,147 @@
+{
+  "page_id": "service-0018",
+  "url": "/services/retention-and-lifecycle",
+  "archetype": "service",
+  "primary_keyword": "user retention consulting",
+  "secondary_keywords": [
+    "lifecycle marketing consultant",
+    "retention consulting india"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-14",
+      "claim": "Smart retry alone recovers about 40% of failed payments, a card updater 25%, and dunning email adds 15 to 20% on top",
+      "value": "40",
+      "unit": "%",
+      "source_url": "https://www.digitalapplied.com/blog/failed-payment-recovery-dunning-playbook-2026",
+      "source_title": "Failed-Payment Recovery: The 2026 Dunning Playbook",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "Smart retry alone recovers 40%, card updater 25%, and emails add 15-20% on top; combining all three reaches 70%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-18",
+      "claim": "Zepto Pass, a paid membership, ran fourteen months from February 2024 to April 2025 before being replaced",
+      "value": "14",
+      "unit": "months",
+      "source_url": "https://www.markhub24.com/post/zepto-pass-a-membership-strategy-for-customer-retention-in-indian-quick-commerce",
+      "source_title": "Zepto Pass: A Membership Strategy for Customer Retention",
+      "source_domain": "markhub24.com",
+      "excerpt": "Zepto Pass had a fourteen-month lifespan, February 2024 to April 2025, before its quiet replacement by Zepto Daily.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-hub-08",
+      "claim": "Winning tests average an 8.4% lift with a 6.1% median",
+      "value": "6.1",
+      "unit": "%",
+      "source_url": "https://www.conversionteam.com/ab-test-win-rate/",
+      "source_title": "A/B Test Win Rate: Benchmarks From 2,288 Audited Tests",
+      "source_domain": "conversionteam.com",
+      "excerpt": "The average lift on winning tests is 8.4%, median 6.1%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-hub-09",
+      "claim": "Winning tests delivered a median 1.88% conversion uplift and 2.77% revenue per visitor uplift",
+      "value": "1.88",
+      "unit": "%",
+      "source_url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "source_title": "E-commerce A/B Test Benchmarks 2026",
+      "source_domain": "advertorialwizard.com",
+      "excerpt": "Winners delivered a median +1.88% conversion rate uplift and +2.77% revenue per visitor uplift.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-svc-04",
+      "claim": "PhonePe's FY26 operating revenue rose 11% to 7,920 crore rupees with a net loss of 2,792 crore, against Paytm's 8,437 crore revenue and 552 crore profit",
+      "value": "7920",
+      "unit": "INR crore",
+      "source_url": "https://www.cxodigitalpulse.com/phonepes-upi-scale-trails-paytms-monetisation-in-fy26-results/",
+      "source_title": "PhonePe's UPI Scale Trails Paytm's Monetisation in FY26 Results",
+      "source_domain": "cxodigitalpulse.com",
+      "excerpt": "PhonePe revenue rose 11% to Rs 7,920 crore in FY26, net loss Rs 2,792 crore; Paytm Rs 8,437 crore revenue, Rs 552 crore profit.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-27",
+      "claim": "India's 2021 card e-mandate rules pushed card subscription failure rates above 20% in some categories",
+      "value": "20",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "The mandate requiring extra authentication for card payments above Rs 5,000 caused failure rates to spike to 20%+ in some categories, accelerating UPI Autopay adoption.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-hub-08"
+    ],
+    "who_this_is_for": [
+      "f-act-18"
+    ],
+    "first_six_weeks": [
+      "f-unit-14"
+    ],
+    "deliverables": [
+      "f-hub-09"
+    ],
+    "method": [
+      "f-unit-27"
+    ],
+    "proof": [
+      "f-svc-04"
+    ],
+    "pricing_anchors": [
+      "f-hub-08"
+    ],
+    "industry_variants": [
+      "f-act-18"
+    ],
+    "tools_and_templates": [
+      "f-unit-14"
+    ],
+    "faq": [
+      "f-unit-27"
+    ],
+    "cta": [
+      "f-hub-09"
+    ]
+  }
+}
