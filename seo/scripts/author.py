@@ -140,8 +140,23 @@ def check(spec: dict) -> list[str]:
     """Local cap checks. Cheap here, expensive in the gate runner."""
     errs: list[str] = []
     known = inventory_urls()
+    # Usage already on disk. Without this the cap is enforced per batch, and a
+    # fact at 3 uses in batch 01 would silently reach 4 in batch 02 — gReuse
+    # would catch it, but only after a full gate run.
+    on_disk: Counter[str] = Counter()
+    exp_on_disk: Counter[str] = Counter()
+    batch_urls = {p["url"] for p in spec["pages"]}
+    for f in CONTENT.glob("*/*.json"):
+        try:
+            m = json.loads(f.read_text())
+        except json.JSONDecodeError:
+            continue
+        if m.get("url") in batch_urls or "facts_used" not in m:
+            continue
+        on_disk.update(m["facts_used"])
+        exp_on_disk.update(m.get("experience_used", []))
     pool = spec["facts"]
-    counts: Counter[str] = Counter()
+    counts: Counter[str] = Counter(on_disk)
     for page in spec["pages"]:
         for fid in page["facts"]:
             if fid not in pool:
@@ -212,12 +227,21 @@ def check(spec: dict) -> list[str]:
             errs.append(f"{fid}: excerpt {len(ex.split())} words (max 25, G02 renders it verbatim)")
     for fid, n in counts.items():
         if n > FACT_REUSE_SITEWIDE:
-            errs.append(f"fact {fid} used on {n} pages in this batch (cap {FACT_REUSE_SITEWIDE})")
+            errs.append(
+                f"fact {fid} would be on {n} pages site-wide, {on_disk[fid]} of them already "
+                f"written (cap {FACT_REUSE_SITEWIDE})"
+            )
     for field in ("title", "meta_description", "h1"):
         seen: Counter[str] = Counter(p[field] for p in spec["pages"])
         for v, n in seen.items():
             if n > 1:
                 errs.append(f"G10 {field} repeated on {n} pages: \"{v[:50]}…\"")
+    exp_counts = Counter(exp_on_disk)
+    for page in spec["pages"]:
+        exp_counts.update(page.get("experience", []))
+    for eid, n in exp_counts.items():
+        if n > 8:
+            errs.append(f"experience {eid} would be on {n} pages (cap 8)")
     urls = Counter(p["url"] for p in spec["pages"])
     for u, n in urls.items():
         if n > 1:

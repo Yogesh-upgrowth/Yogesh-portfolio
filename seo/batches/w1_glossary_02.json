@@ -1,0 +1,481 @@
+{
+  "batch_id": "w1-glossary-02",
+  "wave": 1,
+  "verified_on": "2026-09-30",
+  "fx_rate": 95.89,
+  "default_cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "facts": {
+    "f-unit-22": {
+      "fact_id": "f-unit-22",
+      "claim": "Average SaaS activation rate is 36%, with 20% to 40% counted as good and above 50% as excellent",
+      "value": "36",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/activation-rate-benchmarks",
+      "source_title": "Activation rate benchmarks 2026",
+      "source_domain": "usetandem.ai",
+      "excerpt": "Activation rate benchmarks show 36% average for SaaS in 2026. Good performance is 20% to 40% and excellent exceeds 50%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-unit-23": {
+      "fact_id": "f-unit-23",
+      "claim": "The top 10% of products see four times the median day-one activation: 21% against 5%",
+      "value": "21",
+      "unit": "%",
+      "source_url": "https://info.amplitude.com/rs/138-CDN-550/images/the-product-benchmark-report.pdf",
+      "source_title": "Product Benchmark Report",
+      "source_domain": "amplitude.com",
+      "excerpt": "The top 10% of products see 4x higher day-one activation than the median (21% vs. 5%).",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-24": {
+      "fact_id": "f-unit-24",
+      "claim": "Only about 34% of product-led companies actively track activation at all",
+      "value": "34",
+      "unit": "%",
+      "source_url": "https://mixpanel.com/blog/product-led-growth/",
+      "source_title": "Product-led growth in 2026",
+      "source_domain": "mixpanel.com",
+      "excerpt": "Only about 34% of PLG companies actively track activation, the single metric that best predicts whether a free user ever becomes a paying one.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-35": {
+      "fact_id": "f-unit-35",
+      "claim": "Cost per install in India runs about 0.12 times the United States level, 70% to 90% lower",
+      "value": "0.12",
+      "unit": "x",
+      "source_url": "https://linkrunner.io/tools/cost-per-install-benchmark",
+      "source_title": "Cost per install benchmarks by country, platform and category",
+      "source_domain": "linkrunner.io",
+      "excerpt": "India has a CPI of 0.12x relative to the United States. CPIs in India are often 70-90% lower than US CPIs.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-38": {
+      "fact_id": "f-unit-38",
+      "claim": "The median app retains 4% of its users at day 30, and 25.3% return on day one",
+      "value": "4",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-retention-benchmarks/",
+      "source_title": "Mobile App Retention Benchmarks by Industry 2026",
+      "source_domain": "uxcam.com",
+      "excerpt": "The median app retains just 4% of users at Day 30. Only 25.3% of mobile app users return on Day 1.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-glossary-0700-01": {
+      "fact_id": "f-glossary-0700-01",
+      "claim": "Median trial-to-paid conversion is 42.5% for 17-32 day trials and 25.5% for trials of 4 days or fewer",
+      "value": "42.5",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "17-32 day trials have a median of 42.5%, while trials of 4 days or fewer have a median of 25.5%",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-glossary-0700-04": {
+      "fact_id": "f-glossary-0700-04",
+      "claim": "Hard paywalls reach a 10.7% median day-35 download-to-paid conversion against 2.1% for freemium",
+      "value": "10.7",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "median of 10.7% for apps with hard paywalls versus 2.1% in freemium apps for Day 35 download-to-paid",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-glossary-0700-07": {
+      "fact_id": "f-glossary-0700-07",
+      "claim": "Price localisation wins 62.3% of experiments, the highest win rate of any test type",
+      "value": "62.3",
+      "unit": "%",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions-report/",
+      "source_title": "In-App Subscription Benchmarks 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "Localization tests win 62.3% of the time in experiments, the highest win rate of any test type",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-act-01": {
+      "fact_id": "f-act-01",
+      "claim": "Median free-to-paid conversion across all products is 8%, while freemium models sit closer to 2% to 5%",
+      "value": "8",
+      "unit": "%",
+      "source_url": "https://chartmogul.com/reports/saas-conversion-report/",
+      "source_title": "The SaaS Conversion Report",
+      "source_domain": "chartmogul.com",
+      "excerpt": "The median free-to-paid conversion rate across all products is 8%. Freemium models sit closer to 2-5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-act-02": {
+      "fact_id": "f-act-02",
+      "claim": "Across 80+ SaaS products, freemium-to-paid averaged 3.7%, ranging from 2.6% in ed-tech to 5.8% in reg-tech",
+      "value": "3.7",
+      "unit": "%",
+      "source_url": "https://firstpagesage.com/reports/freemium-conversion-rate-benchmarks/",
+      "source_title": "Freemium conversion rate benchmarks",
+      "source_domain": "firstpagesage.com",
+      "excerpt": "An average freemium-to-paid conversion rate of 3.7% for traditional freemium, with industry variation from 2.6% in EdTech to 5.8% in RegTech.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-03": {
+      "fact_id": "f-act-03",
+      "claim": "In a survey of 200 B2B software products, one in four freemium products converts under 2.5% of free users within six months, and another quarter reaches 10% to 15%",
+      "value": "2.5",
+      "unit": "%",
+      "source_url": "https://chartmogul.com/reports/saas-conversion-report/",
+      "source_title": "The SaaS Conversion Report",
+      "source_domain": "chartmogul.com",
+      "excerpt": "One-in-four freemium products convert less than 2.5% of free users within six months, while another quarter manages 10-15%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-act-04": {
+      "fact_id": "f-act-04",
+      "claim": "The SaaS-only median activation rate is 30%, against a blended free-to-paid conversion of 8%",
+      "value": "30",
+      "unit": "%",
+      "source_url": "https://www.userflow.com/blog/saas-onboarding-benchmarks-2026",
+      "source_title": "SaaS Onboarding Benchmarks 2026",
+      "source_domain": "userflow.com",
+      "excerpt": "The SaaS-only median activation rate is 30%, and the blended free-to-paid conversion rate is 8%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-05": {
+      "fact_id": "f-act-05",
+      "claim": "Two-thirds of new SaaS users never reach the aha moment",
+      "value": "66",
+      "unit": "%",
+      "source_url": "https://www.digitalapplied.com/blog/customer-onboarding-time-to-value-2026-saas-metrics-framework",
+      "source_title": "Time to Value: The 2026 SaaS Onboarding Metrics Framework",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "Two-thirds of new SaaS users never reach the aha moment.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-07": {
+      "fact_id": "f-act-07",
+      "claim": "AI and ML products show 54.8% benchmark activation with a time-to-value median near 17 hours, against 42.6% for CRM and sales tools",
+      "value": "54.8",
+      "unit": "%",
+      "source_url": "https://www.digitalapplied.com/blog/customer-onboarding-time-to-value-2026-saas-metrics-framework",
+      "source_title": "Time to Value: The 2026 SaaS Onboarding Metrics Framework",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "AI & ML products have benchmark activation of 54.8% with TTV medians of roughly 17 hours. CRM & Sales products show 42.6% benchmark activation.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  },
+  "pages": [
+    {
+      "id": "glossary-0698",
+      "url": "/glossary/activation-rate",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is Activation Rate? Formula, Benchmarks and Events",
+      "meta_description": "Activation rate is the share of new users who reach first value. The formula, the 30% to 36% medians, and why two-thirds of users never get there.",
+      "h1": "What is activation rate?",
+      "primary_keyword": "what is activation rate",
+      "secondary_keywords": [
+        "activation rate formula",
+        "activation rate benchmark"
+      ],
+      "entity_a": "activation-rate",
+      "facts": [
+        "f-act-04",
+        "f-unit-22",
+        "f-unit-23",
+        "f-unit-24",
+        "f-act-05",
+        "f-act-07"
+      ],
+      "experience": [
+        "exp-005",
+        "exp-011"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/aha-moment",
+          "anchor": "the aha moment",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/retention-rate",
+          "anchor": "retention rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/activation-rate-benchmarker",
+          "anchor": "the activation rate benchmarker",
+          "role": "tool"
+        },
+        {
+          "url": "/benchmarks/retention",
+          "anchor": "retention benchmarks",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#activation-benchmarks",
+          "alt": "Six activation reference points: the SaaS-only median, the average across SaaS, the gap between the top decile and the median at day one, the share of companies that track activation at all, the share of users who never reach first value, and activation by product category, each row carrying its source and verification date",
+          "caption": "Activation reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good activation rate?",
+          "a": "The SaaS-only median is 30% and the broader average is 36%. Above 50% is strong. The more useful comparison is your own category: AI and machine-learning products benchmark at 54.8% while CRM and sales tools sit at 42.6%."
+        },
+        {
+          "q": "How do I define the activation event?",
+          "a": "Pick the first action that predicts retention, not the first action that is easy to instrument. Signing up is not activation. The event should be the smallest thing a user can do that proves the product worked for them."
+        },
+        {
+          "q": "Why do so few teams track activation?",
+          "a": "Only about 34% of product-led companies track it at all, largely because it needs a defined event and most teams never agree on one. The cost is that the metric best predicting conversion goes unmeasured."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Pairs the activation medians with the two facts that make them actionable — two-thirds of users never reach first value, and only a third of companies measure whether they did — and gives a worked reframing that moved a real compliance step from 35% to 71%.",
+      "body": "\n<AnswerBox>\nWhat is activation rate? It is the share of new users who reach a defined first\nmoment of value. The SaaS-only median is 30% and the broader average is 36%. Two\nthirds of new users never get there at all, which makes activation the largest\nsingle leak in most funnels.\n</AnswerBox>\n\n<FactTable\n  id=\"activation-benchmarks\"\n  caption=\"Activation reference points, and what each one measures\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"SaaS-only median activation rate\", \"30%\"], factId: \"f-act-04\" },\n    { cells: [\"Average activation rate across SaaS\", \"36%, above 50% is strong\"], factId: \"f-unit-22\" },\n    { cells: [\"Top decile against median, day-one activation\", \"21% against 5%\"], factId: \"f-unit-23\" },\n    { cells: [\"Companies that track activation at all\", \"about 34%\"], factId: \"f-unit-24\" },\n    { cells: [\"New users who never reach the aha moment\", \"two thirds\"], factId: \"f-act-05\" },\n    { cells: [\"Activation by category, AI and ML against CRM\", \"54.8% against 42.6%\"], factId: \"f-act-07\" },\n  ]}\n/>\n\n## How is activation rate calculated?\n\nDivide the users who completed the activation event by all users who signed up in\nthe same cohort. The arithmetic is trivial. Choosing the event is the whole job.\n\nPick the first action that predicts retention, not the first action that is easy\nto instrument. Signing up is not activation. Nor is opening the app. The event\nshould be the smallest thing a user can do that proves the product worked for\nthem, and it should be visible in the retention curve.\n\n## What counts as a good activation rate\n\nThe SaaS-only median is 30%. The broader average is 36%, and above 50% is strong.\nCategory moves it more than craft does: AI and machine-learning products benchmark\nat 54.8% while CRM and sales tools sit at 42.6%.\n\nThe spread inside a category is wider still. Top-decile products see 21% day-one\nactivation against a 5% median, which is a four-fold gap on the same day of the\nsame funnel. That gap is where the work is.\n\n## Why activation goes unmeasured\n\nOnly about 34% of product-led companies track activation at all. The reason is\nusually that nobody will commit to the event definition, so the metric never gets\nbuilt. Meanwhile two thirds of new users never reach first value, and that loss\nsits in the numbers as generalised churn.\n\nThat misdirects effort. A team without an activation number optimises\nacquisition, because acquisition already has a dashboard. It then pours users into\na funnel that loses most of them in the first session.\n\n## What actually moves activation\n\nReframing the ask moves it more reliably than shortening it.\n\n<FromMyWork exp=\"exp-005\">\nAsking for a bank statement upfront got 35% compliance. Showing a preliminary\neligibility range first, then asking for the statement to reveal the exact offer,\ntook it to 71% — the same ask, reframed from a compliance step into a reward.\n</FromMyWork>\n\nRemoving work moves it too. Measure the removal on the device users actually\nhold, not on a desk machine.\n\n<FromMyWork exp=\"exp-011\">\nThe renewal form was 23 fields across 6 steps and took 11 minutes on a mid-range\nAndroid handset, timed. It went to 4 fields and one step for most renewals, using\nregistration data the insurer already held.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0699",
+      "url": "/glossary/conversion-rate",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is Conversion Rate? Formula, Benchmarks & Denominators",
+      "meta_description": "Conversion rate is completions divided by a denominator you choose. The formula, the medians that matter, and why the denominator decides the answer.",
+      "h1": "What is conversion rate?",
+      "primary_keyword": "what is conversion rate",
+      "secondary_keywords": [
+        "conversion rate formula",
+        "conversion rate benchmark"
+      ],
+      "entity_a": "conversion-rate",
+      "facts": [
+        "f-act-01",
+        "f-unit-38",
+        "f-glossary-0700-04",
+        "f-act-02",
+        "f-glossary-0700-07",
+        "f-unit-35"
+      ],
+      "experience": [
+        "exp-010"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/free-to-paid-conversion",
+          "anchor": "free-to-paid conversion",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/activation-rate",
+          "anchor": "activation rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/paywall-uplift-calculator",
+          "anchor": "the paywall uplift calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/inr-price-points-that-convert",
+          "anchor": "INR price points that convert",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#conversion-benchmarks",
+          "alt": "Six conversion reference points: median free-to-paid across products, median day-one return rate, hard paywall against freemium download-to-paid, average freemium-to-paid across 80-plus products, the win rate of price localisation experiments and India's cost-per-install ratio, each row carrying its source and verification date",
+          "caption": "Conversion reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good conversion rate?",
+          "a": "The question has no answer without a denominator. Median free-to-paid across products is 8%. Download-to-paid within 35 days is 2.1% for freemium apps and 10.7% for hard paywalls. Those are all conversion rates and none is comparable to another."
+        },
+        {
+          "q": "Why did my conversion rate improve without any change?",
+          "a": "Usually the denominator moved. Cutting low-intent traffic raises conversion while lowering total conversions. Both effects are real, and only one of them is good news."
+        },
+        {
+          "q": "What is the highest-yield conversion experiment?",
+          "a": "Price localisation wins 62.3% of experiments, the highest win rate of any test type. For a product selling across markets it beats most copy and layout work."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Treats the denominator as the definition rather than a footnote, lining up four published conversion medians that are routinely compared and are not comparable, and carries a worked case where one funnel had seven separate multiplicative leaks.",
+      "body": "\n<AnswerBox>\nWhat is conversion rate? It divides completions by a population you\nchoose, and the choice decides the answer. Median free-to-paid across products is 8%.\nDownload-to-paid inside 35 days is 2.1% for freemium apps and 10.7% for hard\npaywalls. All three are conversion rates and none compares to another.\n</AnswerBox>\n\n<FactTable\n  id=\"conversion-benchmarks\"\n  caption=\"Conversion rates that get compared and should not be\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median free-to-paid across products\", \"8%\"], factId: \"f-act-01\" },\n    { cells: [\"Median day-one return, all apps\", \"25.3%\"], factId: \"f-unit-38\" },\n    { cells: [\"Download-to-paid at day 35, hard paywall against freemium\", \"10.7% against 2.1%\"], factId: \"f-glossary-0700-04\" },\n    { cells: [\"Average freemium-to-paid across 80+ products\", \"3.7%, from 2.6% to 5.8% by sector\"], factId: \"f-act-02\" },\n    { cells: [\"Win rate of price localisation experiments\", \"62.3%\"], factId: \"f-glossary-0700-07\" },\n    { cells: [\"India cost per install against the US\", \"0.12x\"], factId: \"f-unit-35\" },\n  ]}\n/>\n\n## How is conversion rate calculated?\n\nDivide the users who completed the step by the users who could have. Then write\nthe denominator down, because a conversion rate without one is a number without a\nclaim.\n\n<Example illustrative>\n500 purchases from 10,000 visitors is 5%. The same 500 purchases from the 2,000\nvisitors who reached the pricing page is 25%. Both are true.\n</Example>\n\nThe denominator also explains most unexplained movement. Cutting low-intent\ntraffic raises conversion rate and lowers total conversions at the same time.\nBoth effects are real and only one is good news.\n\n## Which conversion rate to compare against\n\nMatch the denominator before the number. Download-to-paid starts at the install\nand folds in every step after. Free-to-paid starts at signup. Trial-to-paid starts\nat trial start. Median free-to-paid across products is 8%, and freemium products\naverage 3.7% with a range from 2.6% to 5.8% by sector.\n\nThe paywall gap shows how much the denominator matters. Hard paywalls reach 10.7%\ndownload-to-paid against 2.1% for freemium, which is not a five-fold improvement\nin persuasion. It is a smaller, more qualified denominator.\n\n## Where the biggest wins sit\n\nPrice, more often than copy. Price localisation wins 62.3% of experiments, the\nhighest win rate of any test type. For anything selling across borders that\noutranks most layout work.\n\nGeography compounds it. Cost per install in India runs 0.12 times the US level, so\nthe same conversion rate carries very different economics, and the same absolute\nprice asks much more of the buyer.\n\n## Conversion problems are rarely single\n\nThe instinct is to look for the leak. Often there are several, and they multiply.\n\n<FromMyWork exp=\"exp-010\">\nThe insurance conversion rate was 0.007% and had seven separate causes, not one.\nEach leak cut conversion by 60-80% on its own; compounded, they produced seven\npurchases per hundred thousand users.\n</FromMyWork>\n\nRanking seven leaks at that severity and taking the top one does not work.\nCompounding makes a funnel look unfixable, then makes it move sharply once several\nclear at once.\n"
+    },
+    {
+      "id": "glossary-0701",
+      "url": "/glossary/free-to-paid-conversion",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is Free-to-Paid Conversion? Formula and Benchmarks",
+      "meta_description": "Free-to-paid conversion is the share of free users who start paying. The formula, the 8% median almost nobody has, and the six-month window that hides it.",
+      "h1": "What is free-to-paid conversion?",
+      "primary_keyword": "what is free-to-paid conversion",
+      "secondary_keywords": [
+        "free to paid conversion rate",
+        "free to paid benchmark"
+      ],
+      "entity_a": "free-to-paid-conversion",
+      "facts": [
+        "f-act-01",
+        "f-act-02",
+        "f-act-03",
+        "f-act-04",
+        "f-glossary-0700-01",
+        "f-glossary-0700-07"
+      ],
+      "experience": [
+        "exp-043"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/freemium",
+          "anchor": "freemium",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/conversion-rate",
+          "anchor": "conversion rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/freemium-break-even-calculator",
+          "anchor": "the freemium break-even calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/free-trials-in-india",
+          "anchor": "free trials in India",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#free-to-paid-benchmarks",
+          "alt": "Six free-to-paid reference points: the median across products, the average across 80-plus products with its sector range, the bimodal split in a 200-product survey, the SaaS-only activation median, median trial-to-paid by trial length and the win rate of price localisation experiments, each row carrying its source and verification date",
+          "caption": "Free-to-paid reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good free-to-paid conversion rate?",
+          "a": "The median is 8%, and almost no company sits at it. In a survey of 200 B2B products, one quarter converted under 2.5% within six months and another quarter reached 10% to 15%. The distribution is bimodal, so the median describes nobody."
+        },
+        {
+          "q": "How long should I wait before measuring it?",
+          "a": "Six months is the window the published survey uses, and shorter windows systematically understate. A product with a long consideration cycle measured at 30 days will look broken when it is only slow."
+        },
+        {
+          "q": "Is free-to-paid the same as trial-to-paid?",
+          "a": "No. Free-to-paid counts everyone on a free tier, including people who will never evaluate paying. Trial-to-paid counts people who started a time-boxed evaluation. The second runs several times higher on the same product."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "States plainly that the 8% median describes almost no real company, using the bimodal split from the 200-product survey, and separates free-to-paid from trial-to-paid with published figures for both rather than treating them as one metric.",
+      "body": "\n<AnswerBox>\nWhat is free-to-paid conversion? It is the share of free users who become paying\ncustomers. The median across products is 8%. The distribution behind that median\nis bimodal: a quarter of freemium products convert under 2.5% in six months and\nanother quarter reaches 10% to 15%.\n</AnswerBox>\n\n<FactTable\n  id=\"free-to-paid-benchmarks\"\n  caption=\"Free-to-paid reference points, and the distribution behind them\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median free-to-paid across products\", \"8%, freemium closer to 2% to 5%\"], factId: \"f-act-01\" },\n    { cells: [\"Average across 80+ products, by sector\", \"3.7%, from 2.6% to 5.8%\"], factId: \"f-act-02\" },\n    { cells: [\"200-product survey, bottom and second quartile\", \"under 2.5% in six months, and 10% to 15%\"], factId: \"f-act-03\" },\n    { cells: [\"SaaS-only median activation rate\", \"30%\"], factId: \"f-act-04\" },\n    { cells: [\"Median trial-to-paid by trial length\", \"42.5% at 17 to 32 days, 25.5% at 4 days or fewer\"], factId: \"f-glossary-0700-01\" },\n    { cells: [\"Win rate of price localisation experiments\", \"62.3%\"], factId: \"f-glossary-0700-07\" },\n  ]}\n/>\n\n## How is free-to-paid conversion calculated?\n\nDivide the free users who started paying by all free users in the same cohort,\nthen fix the window. The published survey uses six months. Shorter windows\nunderstate systematically.\n\nA product with a long consideration cycle measured at 30 days looks broken when it\nis only slow. Pick one window, keep it, and state it beside the number. Changing\nthe window between quarters is how a flat metric starts to look like progress.\n\n## Why the median describes nobody\n\nThe median is 8% and the distribution is bimodal. A quarter of freemium products\nconvert under 2.5% of free users within six months. Another quarter reaches 10% to\n15%. Very few sit in between.\n\nThat shape matters for target-setting. A team at 2% is not 6 points from average;\nit is in the lower mode, and the products in the upper mode are usually built\ndifferently rather than executed better. The average across 80-plus products is\n3.7%, ranging from 2.6% to 5.8% by sector, which is the fairer benchmark for a\ntraditional freemium tier.\n\n## Free-to-paid is not trial-to-paid\n\nFree-to-paid counts everyone on a free tier, including people who will never\nevaluate paying. Trial-to-paid counts people who chose a time-boxed evaluation.\nMedian trial-to-paid runs 42.5% for trials of 17 to 32 days and 25.5% for four\ndays or fewer.\n\nComparing those two directly is the commonest way a freemium product convinces\nitself it is failing. The denominators are not the same population.\n\n## What moves it\n\nActivation first. The SaaS-only median activation rate is 30%, and a user who\nnever reached first value has nothing to buy. Then price, because price\nlocalisation wins 62.3% of experiments.\n\nOften the step between value and payment is mechanical, not persuasive.\n\n<FromMyWork exp=\"exp-043\">\nBoth insurance lines moved by orders of magnitude once the\nquote-to-redirect-to-purchase drop-offs were diagnosed: bike from about 10 a day\nto 6,800+, car from about 5 a day to 2,300+. The fix was CTA placement, partner\nsequencing and context-led nudges rather than more traffic.\n</FromMyWork>\n"
+    }
+  ]
+}

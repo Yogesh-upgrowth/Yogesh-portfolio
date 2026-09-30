@@ -1,0 +1,70 @@
+<AnswerBox>
+What is activation rate? It is the share of new users who reach a defined first
+moment of value. The SaaS-only median is 30% and the broader average is 36%. Two
+thirds of new users never get there at all, which makes activation the largest
+single leak in most funnels.
+</AnswerBox>
+
+<FactTable
+  id="activation-benchmarks"
+  caption="Activation reference points, and what each one measures"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["SaaS-only median activation rate", "30%"], factId: "f-act-04" },
+    { cells: ["Average activation rate across SaaS", "36%, above 50% is strong"], factId: "f-unit-22" },
+    { cells: ["Top decile against median, day-one activation", "21% against 5%"], factId: "f-unit-23" },
+    { cells: ["Companies that track activation at all", "about 34%"], factId: "f-unit-24" },
+    { cells: ["New users who never reach the aha moment", "two thirds"], factId: "f-act-05" },
+    { cells: ["Activation by category, AI and ML against CRM", "54.8% against 42.6%"], factId: "f-act-07" },
+  ]}
+/>
+
+## How is activation rate calculated?
+
+Divide the users who completed the activation event by all users who signed up in
+the same cohort. The arithmetic is trivial. Choosing the event is the whole job.
+
+Pick the first action that predicts retention, not the first action that is easy
+to instrument. Signing up is not activation. Nor is opening the app. The event
+should be the smallest thing a user can do that proves the product worked for
+them, and it should be visible in the retention curve.
+
+## What counts as a good activation rate
+
+The SaaS-only median is 30%. The broader average is 36%, and above 50% is strong.
+Category moves it more than craft does: AI and machine-learning products benchmark
+at 54.8% while CRM and sales tools sit at 42.6%.
+
+The spread inside a category is wider still. Top-decile products see 21% day-one
+activation against a 5% median, which is a four-fold gap on the same day of the
+same funnel. That gap is where the work is.
+
+## Why activation goes unmeasured
+
+Only about 34% of product-led companies track activation at all. The reason is
+usually that nobody will commit to the event definition, so the metric never gets
+built. Meanwhile two thirds of new users never reach first value, and that loss
+sits in the numbers as generalised churn.
+
+That misdirects effort. A team without an activation number optimises
+acquisition, because acquisition already has a dashboard. It then pours users into
+a funnel that loses most of them in the first session.
+
+## What actually moves activation
+
+Reframing the ask moves it more reliably than shortening it.
+
+<FromMyWork exp="exp-005">
+Asking for a bank statement upfront got 35% compliance. Showing a preliminary
+eligibility range first, then asking for the statement to reveal the exact offer,
+took it to 71% — the same ask, reframed from a compliance step into a reward.
+</FromMyWork>
+
+Removing work moves it too. Measure the removal on the device users actually
+hold, not on a desk machine.
+
+<FromMyWork exp="exp-011">
+The renewal form was 23 fields across 6 steps and took 11 minutes on a mid-range
+Android handset, timed. It went to 4 fields and one step for most renewals, using
+registration data the insurer already held.
+</FromMyWork>

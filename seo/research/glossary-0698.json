@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0698",
+  "url": "/glossary/activation-rate",
+  "archetype": "glossary",
+  "primary_keyword": "what is activation rate",
+  "secondary_keywords": [
+    "activation rate formula",
+    "activation rate benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-act-04",
+      "claim": "The SaaS-only median activation rate is 30%, against a blended free-to-paid conversion of 8%",
+      "value": "30",
+      "unit": "%",
+      "source_url": "https://www.userflow.com/blog/saas-onboarding-benchmarks-2026",
+      "source_title": "SaaS Onboarding Benchmarks 2026",
+      "source_domain": "userflow.com",
+      "excerpt": "The SaaS-only median activation rate is 30%, and the blended free-to-paid conversion rate is 8%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-22",
+      "claim": "Average SaaS activation rate is 36%, with 20% to 40% counted as good and above 50% as excellent",
+      "value": "36",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/activation-rate-benchmarks",
+      "source_title": "Activation rate benchmarks 2026",
+      "source_domain": "usetandem.ai",
+      "excerpt": "Activation rate benchmarks show 36% average for SaaS in 2026. Good performance is 20% to 40% and excellent exceeds 50%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-23",
+      "claim": "The top 10% of products see four times the median day-one activation: 21% against 5%",
+      "value": "21",
+      "unit": "%",
+      "source_url": "https://info.amplitude.com/rs/138-CDN-550/images/the-product-benchmark-report.pdf",
+      "source_title": "Product Benchmark Report",
+      "source_domain": "amplitude.com",
+      "excerpt": "The top 10% of products see 4x higher day-one activation than the median (21% vs. 5%).",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-24",
+      "claim": "Only about 34% of product-led companies actively track activation at all",
+      "value": "34",
+      "unit": "%",
+      "source_url": "https://mixpanel.com/blog/product-led-growth/",
+      "source_title": "Product-led growth in 2026",
+      "source_domain": "mixpanel.com",
+      "excerpt": "Only about 34% of PLG companies actively track activation, the single metric that best predicts whether a free user ever becomes a paying one.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-05",
+      "claim": "Two-thirds of new SaaS users never reach the aha moment",
+      "value": "66",
+      "unit": "%",
+      "source_url": "https://www.digitalapplied.com/blog/customer-onboarding-time-to-value-2026-saas-metrics-framework",
+      "source_title": "Time to Value: The 2026 SaaS Onboarding Metrics Framework",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "Two-thirds of new SaaS users never reach the aha moment.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-07",
+      "claim": "AI and ML products show 54.8% benchmark activation with a time-to-value median near 17 hours, against 42.6% for CRM and sales tools",
+      "value": "54.8",
+      "unit": "%",
+      "source_url": "https://www.digitalapplied.com/blog/customer-onboarding-time-to-value-2026-saas-metrics-framework",
+      "source_title": "Time to Value: The 2026 SaaS Onboarding Metrics Framework",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "AI & ML products have benchmark activation of 54.8% with TTV medians of roughly 17 hours. CRM & Sales products show 42.6% benchmark activation.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

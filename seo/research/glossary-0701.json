@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0701",
+  "url": "/glossary/free-to-paid-conversion",
+  "archetype": "glossary",
+  "primary_keyword": "what is free-to-paid conversion",
+  "secondary_keywords": [
+    "free to paid conversion rate",
+    "free to paid benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-act-01",
+      "claim": "Median free-to-paid conversion across all products is 8%, while freemium models sit closer to 2% to 5%",
+      "value": "8",
+      "unit": "%",
+      "source_url": "https://chartmogul.com/reports/saas-conversion-report/",
+      "source_title": "The SaaS Conversion Report",
+      "source_domain": "chartmogul.com",
+      "excerpt": "The median free-to-paid conversion rate across all products is 8%. Freemium models sit closer to 2-5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-02",
+      "claim": "Across 80+ SaaS products, freemium-to-paid averaged 3.7%, ranging from 2.6% in ed-tech to 5.8% in reg-tech",
+      "value": "3.7",
+      "unit": "%",
+      "source_url": "https://firstpagesage.com/reports/freemium-conversion-rate-benchmarks/",
+      "source_title": "Freemium conversion rate benchmarks",
+      "source_domain": "firstpagesage.com",
+      "excerpt": "An average freemium-to-paid conversion rate of 3.7% for traditional freemium, with industry variation from 2.6% in EdTech to 5.8% in RegTech.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-03",
+      "claim": "In a survey of 200 B2B software products, one in four freemium products converts under 2.5% of free users within six months, and another quarter reaches 10% to 15%",
+      "value": "2.5",
+      "unit": "%",
+      "source_url": "https://chartmogul.com/reports/saas-conversion-report/",
+      "source_title": "The SaaS Conversion Report",
+      "source_domain": "chartmogul.com",
+      "excerpt": "One-in-four freemium products convert less than 2.5% of free users within six months, while another quarter manages 10-15%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-04",
+      "claim": "The SaaS-only median activation rate is 30%, against a blended free-to-paid conversion of 8%",
+      "value": "30",
+      "unit": "%",
+      "source_url": "https://www.userflow.com/blog/saas-onboarding-benchmarks-2026",
+      "source_title": "SaaS Onboarding Benchmarks 2026",
+      "source_domain": "userflow.com",
+      "excerpt": "The SaaS-only median activation rate is 30%, and the blended free-to-paid conversion rate is 8%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-glossary-0700-01",
+      "claim": "Median trial-to-paid conversion is 42.5% for 17-32 day trials and 25.5% for trials of 4 days or fewer",
+      "value": "42.5",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "17-32 day trials have a median of 42.5%, while trials of 4 days or fewer have a median of 25.5%",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-07",
+      "claim": "Price localisation wins 62.3% of experiments, the highest win rate of any test type",
+      "value": "62.3",
+      "unit": "%",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions-report/",
+      "source_title": "In-App Subscription Benchmarks 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "Localization tests win 62.3% of the time in experiments, the highest win rate of any test type",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

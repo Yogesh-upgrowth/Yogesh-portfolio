@@ -1,0 +1,108 @@
+{
+  "id": "glossary-0698",
+  "url": "/glossary/activation-rate",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is Activation Rate? Formula, Benchmarks and Events",
+  "meta_description": "Activation rate is the share of new users who reach first value. The formula, the 30% to 36% medians, and why two-thirds of users never get there.",
+  "h1": "What is activation rate?",
+  "primary_keyword": "what is activation rate",
+  "secondary_keywords": [
+    "activation rate formula",
+    "activation rate benchmark"
+  ],
+  "entity_a": "activation-rate",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-act-04",
+    "f-unit-22",
+    "f-unit-23",
+    "f-unit-24",
+    "f-act-05",
+    "f-act-07"
+  ],
+  "experience_used": [
+    "exp-005",
+    "exp-011"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/aha-moment",
+      "anchor": "the aha moment",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/retention-rate",
+      "anchor": "retention rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/activation-rate-benchmarker",
+      "anchor": "the activation rate benchmarker",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "retention benchmarks",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#activation-benchmarks",
+      "alt": "Six activation reference points: the SaaS-only median, the average across SaaS, the gap between the top decile and the median at day one, the share of companies that track activation at all, the share of users who never reach first value, and activation by product category, each row carrying its source and verification date",
+      "caption": "Activation reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good activation rate?",
+      "a": "The SaaS-only median is 30% and the broader average is 36%. Above 50% is strong. The more useful comparison is your own category: AI and machine-learning products benchmark at 54.8% while CRM and sales tools sit at 42.6%."
+    },
+    {
+      "q": "How do I define the activation event?",
+      "a": "Pick the first action that predicts retention, not the first action that is easy to instrument. Signing up is not activation. The event should be the smallest thing a user can do that proves the product worked for them."
+    },
+    {
+      "q": "Why do so few teams track activation?",
+      "a": "Only about 34% of product-led companies track it at all, largely because it needs a defined event and most teams never agree on one. The cost is that the metric best predicting conversion goes unmeasured."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Pairs the activation medians with the two facts that make them actionable — two-thirds of users never reach first value, and only a third of companies measure whether they did — and gives a worked reframing that moved a real compliance step from 35% to 71%.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

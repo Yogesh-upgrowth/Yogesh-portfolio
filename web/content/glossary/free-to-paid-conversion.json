@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0701",
+  "url": "/glossary/free-to-paid-conversion",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is Free-to-Paid Conversion? Formula and Benchmarks",
+  "meta_description": "Free-to-paid conversion is the share of free users who start paying. The formula, the 8% median almost nobody has, and the six-month window that hides it.",
+  "h1": "What is free-to-paid conversion?",
+  "primary_keyword": "what is free-to-paid conversion",
+  "secondary_keywords": [
+    "free to paid conversion rate",
+    "free to paid benchmark"
+  ],
+  "entity_a": "free-to-paid-conversion",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-act-01",
+    "f-act-02",
+    "f-act-03",
+    "f-act-04",
+    "f-glossary-0700-01",
+    "f-glossary-0700-07"
+  ],
+  "experience_used": [
+    "exp-043"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/freemium",
+      "anchor": "freemium",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/conversion-rate",
+      "anchor": "conversion rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/freemium-break-even-calculator",
+      "anchor": "the freemium break-even calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/free-trials-in-india",
+      "anchor": "free trials in India",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#free-to-paid-benchmarks",
+      "alt": "Six free-to-paid reference points: the median across products, the average across 80-plus products with its sector range, the bimodal split in a 200-product survey, the SaaS-only activation median, median trial-to-paid by trial length and the win rate of price localisation experiments, each row carrying its source and verification date",
+      "caption": "Free-to-paid reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good free-to-paid conversion rate?",
+      "a": "The median is 8%, and almost no company sits at it. In a survey of 200 B2B products, one quarter converted under 2.5% within six months and another quarter reached 10% to 15%. The distribution is bimodal, so the median describes nobody."
+    },
+    {
+      "q": "How long should I wait before measuring it?",
+      "a": "Six months is the window the published survey uses, and shorter windows systematically understate. A product with a long consideration cycle measured at 30 days will look broken when it is only slow."
+    },
+    {
+      "q": "Is free-to-paid the same as trial-to-paid?",
+      "a": "No. Free-to-paid counts everyone on a free tier, including people who will never evaluate paying. Trial-to-paid counts people who started a time-boxed evaluation. The second runs several times higher on the same product."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "States plainly that the 8% median describes almost no real company, using the bimodal split from the 200-product survey, and separates free-to-paid from trial-to-paid with published figures for both rather than treating them as one metric.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

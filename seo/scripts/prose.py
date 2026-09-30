@@ -9,6 +9,7 @@ so the thresholds here are deliberately set a shade tighter than the gate's.
 from __future__ import annotations
 
 import re
+from pathlib import Path
 
 RENDERED_FROM_META = ["Sources", "FAQ", "Changelog", "AuthorBox", "Breadcrumbs"]
 
@@ -99,11 +100,31 @@ FIRST_PERSON = re.compile(r"\b(?:I|my client|we shipped|in my work|we built|we r
 SUPERLATIVE = re.compile(r"\b(?:best|#1|number one|leading|world.?class|top.rated)\b", re.I)
 
 
+_BANNED: list[str] | None = None
+
+
+def banned_phrases() -> list[str]:
+    """The same list G13 loads, read from the one config that owns it."""
+    global _BANNED
+    if _BANNED is None:
+        import json
+        cfg = json.loads(
+            (Path(__file__).resolve().parents[1] / "config" / "banned-phrases.json").read_text()
+        )
+        _BANNED = cfg["phrases"]
+    return _BANNED
+
+
 def style_problems(mdx: str, archetype: str, word_band: tuple[int, int],
                    section_band: tuple[int, int]) -> list[str]:
     """Everything G06, G07, G12, G13 and G15 would say, said earlier."""
     prose = to_prose(mdx)
     out: list[str] = []
+
+    low = prose.lower()
+    hits = [b for b in banned_phrases() if b.lower() in low]
+    if hits:
+        out.append(f"G13 banned phrase(s): {', '.join(hits[:5])}")
 
     # G13 — thresholds are the gate's, checked one notch tighter on the two that
     # drift with a single long sentence.

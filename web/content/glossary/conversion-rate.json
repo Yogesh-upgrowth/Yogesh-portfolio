@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0699",
+  "url": "/glossary/conversion-rate",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is Conversion Rate? Formula, Benchmarks & Denominators",
+  "meta_description": "Conversion rate is completions divided by a denominator you choose. The formula, the medians that matter, and why the denominator decides the answer.",
+  "h1": "What is conversion rate?",
+  "primary_keyword": "what is conversion rate",
+  "secondary_keywords": [
+    "conversion rate formula",
+    "conversion rate benchmark"
+  ],
+  "entity_a": "conversion-rate",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-act-01",
+    "f-unit-38",
+    "f-glossary-0700-04",
+    "f-act-02",
+    "f-glossary-0700-07",
+    "f-unit-35"
+  ],
+  "experience_used": [
+    "exp-010"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/free-to-paid-conversion",
+      "anchor": "free-to-paid conversion",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/activation-rate",
+      "anchor": "activation rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/paywall-uplift-calculator",
+      "anchor": "the paywall uplift calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/inr-price-points-that-convert",
+      "anchor": "INR price points that convert",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#conversion-benchmarks",
+      "alt": "Six conversion reference points: median free-to-paid across products, median day-one return rate, hard paywall against freemium download-to-paid, average freemium-to-paid across 80-plus products, the win rate of price localisation experiments and India's cost-per-install ratio, each row carrying its source and verification date",
+      "caption": "Conversion reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good conversion rate?",
+      "a": "The question has no answer without a denominator. Median free-to-paid across products is 8%. Download-to-paid within 35 days is 2.1% for freemium apps and 10.7% for hard paywalls. Those are all conversion rates and none is comparable to another."
+    },
+    {
+      "q": "Why did my conversion rate improve without any change?",
+      "a": "Usually the denominator moved. Cutting low-intent traffic raises conversion while lowering total conversions. Both effects are real, and only one of them is good news."
+    },
+    {
+      "q": "What is the highest-yield conversion experiment?",
+      "a": "Price localisation wins 62.3% of experiments, the highest win rate of any test type. For a product selling across markets it beats most copy and layout work."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Treats the denominator as the definition rather than a footnote, lining up four published conversion medians that are routinely compared and are not comparable, and carries a worked case where one funnel had seven separate multiplicative leaks.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}
