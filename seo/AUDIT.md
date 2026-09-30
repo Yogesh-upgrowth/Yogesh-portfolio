@@ -296,3 +296,36 @@ refuses to break after a digit, and it will not break before a `##` heading. A
 money sentence that ends on a number therefore merges with whatever follows, and
 G15 reads the merged text as carrying one currency only. Do not end a sentence on
 a figure.
+
+## D7 — three more wiring gaps and a schema/contract contradiction (30 September 2026)
+
+Found while building the first hubs.
+
+1. **`renderPage` hardcoded `picks={[]}`.** 01 §5 says hub picks live in
+   `content/hubs/<hub>.json` and are curated by hand, never auto-sorted. Nothing
+   read that file, so every hub would have rendered its index with no start-here
+   row. Now read, with an absent file treated as "not curated yet" rather than an
+   error — a hub is useful before it is curated.
+
+2. **`author.py` could not write a single-segment URL.** `/case-studies` is
+   `content/case-studies.json`; the old path logic produced
+   `content/case-studies/case-studies.json`, which loads as
+   `/case-studies/case-studies` and fails the inventory check. The path helper is
+   now the inverse of `loader.urlForFile` rather than an approximation of it.
+
+3. **`PageMeta` rejected a link role its own contract requires.** `internal_links[].role`
+   allowed hub, lateral, bofu, proof, tool and related. `requiredLinkRoles()` in
+   gates/contracts.ts requires `reference` on every BOFU page (01 §C4: a BOFU page
+   links to at least one case study and one benchmark or teardown). So a BOFU page
+   that satisfied the contract failed to load at all. The contract is right and
+   the enum was short; `reference` added.
+
+4. **The pre-flight's word bands were hand-copied and had drifted.** `tool` was
+   500–900 against the contract's 700–1100, `playbook` 1200–2200 against
+   1800–3000, and case-study, teardown, benchmark-hub and india were all wrong
+   too. A pre-flight that passes a page the gate will fail is worse than none, so
+   `author.py` now parses the bands out of `web/lib/gates/contracts.ts`, and the
+   link-role enum out of `schemas.ts`. It refuses to run if it cannot read either.
+
+The pre-flight also grew G09's FAQPage rule and G16's CTA-context rule, both of
+which had only been failing after a full gate run.

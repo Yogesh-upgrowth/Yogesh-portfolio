@@ -30,27 +30,48 @@ ROOT = Path(__file__).resolve().parents[2]
 CONTENT = ROOT / "web" / "content"
 RESEARCH = ROOT / "seo" / "research"
 
-FACT_REUSE_SITEWIDE = 3
-MIN_FACTS = 6  # G01: page-specific sourced facts.
+FACT_REUSE_SITEWIDE = 3   # §C2
+EXPERIENCE_PER_PAGE = 2   # §C3
+EXPERIENCE_REUSE = 8      # §C3
+MIN_FACTS = 6             # G01: page-specific sourced facts.
+
+
+def link_roles() -> frozenset[str]:
+    """The role enum PageMeta accepts, read from the schema that enforces it."""
+    src = (ROOT / "web" / "lib" / "content" / "schemas.ts").read_text()
+    m = re.search(r"role: z\.enum\(\[([^\]]+)\]\)", src)
+    if not m:
+        raise SystemExit("author.py: could not read the link-role enum from schemas.ts")
+    return frozenset(re.findall(r'"([a-z]+)"', m.group(1)))
+
+
+LINK_ROLES = link_roles()
 
 # Archetypes 01 §B allows a year token in the title.
 TIME_BOUND = {"benchmark", "benchmark-hub", "pricing-examples", "teardown", "compare"}
 
-# 01 §B word and section bands, mirrored from web/lib/gates/contracts.ts.
-BANDS = {
-    "glossary": ((350, 700), (60, 250)),
-    "hub": ((300, 600), (60, 250)),
-    "service": ((900, 1500), (120, 400)),
-    "playbook": ((1200, 2200), (120, 400)),
-    "teardown": ((1100, 1800), (120, 400)),
-    "case-study": ((900, 1600), (120, 400)),
-    "benchmark-hub": ((700, 1200), (120, 400)),
-    "benchmark": ((600, 1100), (120, 400)),
-    "tool": ((500, 900), (100, 300)),
-    "india": ((900, 1600), (120, 400)),
-    "compare": ((900, 1500), (120, 400)),
-}
-EXPERIENCE_PER_PAGE = 2
+
+def bands() -> dict[str, tuple[tuple[int, int], tuple[int, int]]]:
+    """Word and section bands, read from the contracts the gate runner uses.
+
+    Duplicating them here once produced a `tool` band of 500-900 against the
+    contract's 700-1100, which is the kind of drift that makes a pre-flight worse
+    than no pre-flight: it passes a page the gate will fail.
+    """
+    src = (ROOT / "web" / "lib" / "gates" / "contracts.ts").read_text()
+    out: dict[str, tuple[tuple[int, int], tuple[int, int]]] = {}
+    for m in re.finditer(
+        r"^  \"?([a-z-]+)\"?: \{\s*\n?\s*words: \[(\d+), (\d+)\], section: \[(\d+), (\d+)\]",
+        src, re.M,
+    ):
+        name, w1, w2, s1, s2 = m.groups()
+        out[name] = ((int(w1), int(w2)), (int(s1), int(s2)))
+    if not out:
+        raise SystemExit("author.py: could not read any archetype bands from contracts.ts")
+    return out
+
+
+BANDS = bands()
 
 
 def slug_of(url: str) -> str:
@@ -59,6 +80,17 @@ def slug_of(url: str) -> str:
 
 def hub_of(url: str) -> str:
     return url.strip("/").split("/")[0]
+
+
+def path_for(url: str) -> Path:
+    """Mirror of loader.urlForFile, inverted.
+
+    A single-segment URL is a file at the top of content/, not a directory with
+    a file of the same name inside it: /case-studies is content/case-studies.json,
+    and content/case-studies/case-studies.json would load as
+    /case-studies/case-studies and fail the inventory check.
+    """
+    return CONTENT.joinpath(*url.strip("/").split("/"))
 
 
 def build_research(page: dict, pool: dict, batch: dict) -> dict:
@@ -193,6 +225,19 @@ def check(spec: dict) -> list[str]:
         if re.search(r"\b20\d\d\b", t) and page["archetype"] not in TIME_BOUND:
             errs.append(f"{page['id']}: G10 year token in the title of a non-time-bound archetype")
 
+        # G09 and G16, both of which only bite after a full gate run otherwise.
+        has_faq = len(page.get("faq", [])) >= 3
+        if has_faq and "FAQPage" not in page["schema_types"]:
+            errs.append(f"{page['id']}: G09 FAQ has {len(page['faq'])} entries but FAQPage is not emitted")
+        if not has_faq and "FAQPage" in page["schema_types"]:
+            errs.append(f"{page['id']}: G09 FAQPage emitted with no FAQ")
+        cta = page.get("cta") or spec["default_cta"]
+        label = cta["primary"]["label"].lower()
+        ctx = [c.lower().replace("-", " ") for c in
+               (page.get("entity_a"), page.get("entity_b"), page["archetype"]) if c]
+        if ctx and len(label) < 25 and not any(c in label for c in ctx):
+            errs.append(f"{page['id']}: G16 CTA \"{cta['primary']['label']}\" names no page context")
+
         bands = BANDS.get(page["archetype"])
         if bands:
             for problem in style_problems(page["body"], page["archetype"], *bands):
@@ -208,8 +253,13 @@ def check(spec: dict) -> list[str]:
         for link in page["links"]:
             if link["url"].split("#")[0] not in known:
                 errs.append(f"{page['id']}: link {link['url']} is not a known URL")
+        for link in page["links"]:
+            if link["role"] not in LINK_ROLES:
+                errs.append(f"{page['id']}: link role \"{link['role']}\" is not in the PageMeta enum")
         roles = {l["role"] for l in page["links"]}
+        # G08 wants a link up to a hub on every page, in addition to the C4 roles.
         need = {"proof", "reference"} if page.get("funnel") == "BOFU" else {"bofu", "tool"}
+        need |= {"hub"}
         for r in need - roles:
             errs.append(f"{page['id']}: no link with role {r} (C4)")
         for href in re.findall(r"\]\((/[^)\s]+)\)", page.get("body", "")):
@@ -240,8 +290,8 @@ def check(spec: dict) -> list[str]:
     for page in spec["pages"]:
         exp_counts.update(page.get("experience", []))
     for eid, n in exp_counts.items():
-        if n > 8:
-            errs.append(f"experience {eid} would be on {n} pages (cap 8)")
+        if n > EXPERIENCE_REUSE:
+            errs.append(f"experience {eid} would be on {n} pages (cap {EXPERIENCE_REUSE})")
     urls = Counter(p["url"] for p in spec["pages"])
     for u, n in urls.items():
         if n > 1:
@@ -273,8 +323,8 @@ def main() -> int:
     pool = spec["facts"]
     written = 0
     for page in spec["pages"]:
-        d = CONTENT / hub_of(page["url"])
-        stem = slug_of(page["url"])
+        target = path_for(page["url"])
+        d, stem = target.parent, target.name
         research = build_research(page, pool, spec)
         meta = build_meta(page, spec)
         body = page["body"].strip() + "\n"

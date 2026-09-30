@@ -1,0 +1,106 @@
+{
+  "id": "hub-0006",
+  "url": "/tools",
+  "archetype": "hub",
+  "hub": "tools",
+  "wave": 1,
+  "batch_id": "w1-hub-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Free Product Growth and Monetization Calculators",
+  "meta_description": "Calculators for LTV, CAC payback, churn, retention curves, app store fees and INR pricing. Each states its formula and its assumptions.",
+  "h1": "Product growth and monetization calculators",
+  "primary_keyword": "product growth and monetization calculators",
+  "secondary_keywords": [
+    "ltv calculator",
+    "cac payback calculator"
+  ],
+  "entity_a": "tools",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-hub-08",
+    "f-hub-09",
+    "f-unit-26",
+    "f-unit-36",
+    "f-act-12",
+    "f-glossary-0700-09"
+  ],
+  "experience_used": [
+    "exp-049"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/ltv-calculator",
+      "anchor": "the LTV calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/payment-success-rates-india",
+      "anchor": "payment success rates in India",
+      "role": "related"
+    },
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a review of your numbers",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#tools-assumptions",
+      "alt": "Six reference points the calculators default to: average and median lift on winning tests, median conversion and revenue uplift on winners, India's recurring-debit authentication threshold, India's median cost per install, Indian domestic and international payment costs and UPI Autopay mandate success, each row carrying its source and verification date",
+      "caption": "The defaults these calculators ship with. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Are these calculators free?",
+      "a": "Yes, and none of them asks for an email before showing a result. Each states its formula so the arithmetic can be checked rather than trusted."
+    },
+    {
+      "q": "Where do the default values come from?",
+      "a": "Published benchmarks, each carrying its source and verification date. India's median cost per install is $0.42, about ₹40, and the Indian payment costs default to 2% plus 18% GST domestically."
+    },
+    {
+      "q": "Do these work for Indian pricing?",
+      "a": "They are built for it. The recurring-debit threshold of ₹15,000, about $156, and UPI Autopay's reported 92% or better mandate success are in the defaults rather than in a footnote."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a review of your tools output",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "CollectionPage",
+    "ItemList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Every calculator states its formula and ships Indian payment and pricing defaults — GST, the mandate threshold, UPI success rates — which the generic SaaS calculators omit and which change the answer materially.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

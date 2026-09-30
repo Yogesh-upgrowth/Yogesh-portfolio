@@ -1,0 +1,106 @@
+{
+  "id": "hub-0005",
+  "url": "/benchmarks",
+  "archetype": "hub",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-hub-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Product Monetization Benchmarks, Sourced and Dated",
+  "meta_description": "Retention, churn, conversion, ARPU and pricing benchmarks by industry, each figure carrying its source and the date it was verified.",
+  "h1": "Product monetization benchmarks",
+  "primary_keyword": "product monetization benchmarks",
+  "secondary_keywords": [
+    "app benchmarks by industry",
+    "india app benchmarks"
+  ],
+  "entity_a": "benchmarks",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-hub-02",
+    "f-unit-01",
+    "f-unit-03",
+    "f-unit-18",
+    "f-unit-30",
+    "f-unit-37"
+  ],
+  "experience_used": [
+    "exp-048"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "retention benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/india/india-app-economy-statistics",
+      "anchor": "India app economy statistics",
+      "role": "related"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a benchmarking review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#benchmark-index",
+      "alt": "Six representative figures from across this hub: India's quarterly app revenue and download volume, average mobile subscription ARPU, the regional refund-rate gap, gross revenue retention by contract size, India's projected streaming ARPU and United States cost per install by platform, each row carrying its source and verification date",
+      "caption": "A sample of what this hub indexes. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How current are these benchmarks?",
+      "a": "Each figure carries the date its source was last checked, and anything older than 90 days is re-verified before it can be published. Price figures run on a tighter 45-day cycle."
+    },
+    {
+      "q": "Why do benchmarks differ so much between sources?",
+      "a": "Mostly because they measure different populations. A download-to-paid rate and a trial-to-paid rate describe the same product and differ by an order of magnitude. Every figure here states its denominator."
+    },
+    {
+      "q": "Are there India-specific benchmarks?",
+      "a": "Where they exist and where they differ, yes. India's projected streaming ARPU is $9.02 against a $15 to $20 monthly figure in the US, and the regional refund rate is 7.7% against 3.4% in North America."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a benchmarks review of your product",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "CollectionPage",
+    "ItemList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "States the denominator beside every figure and carries India rows where a published India figure exists, rather than presenting one global median per metric as though products in different markets were comparable.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

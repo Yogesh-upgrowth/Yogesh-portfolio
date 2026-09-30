@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0712",
+  "url": "/glossary/omtm",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-hub-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is OMTM? One Metric That Matters, and Its Limits",
+  "meta_description": "OMTM is the one metric that matters for the current stage. How to pick it, when to change it, and the failure it shares with every single-number approach.",
+  "h1": "What is OMTM (one metric that matters)?",
+  "primary_keyword": "what is omtm",
+  "secondary_keywords": [
+    "one metric that matters",
+    "omtm examples"
+  ],
+  "entity_a": "omtm",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-24",
+    "f-hub-07",
+    "f-hub-10",
+    "f-act-19",
+    "f-act-14",
+    "f-glossary-0700-08"
+  ],
+  "experience_used": [
+    "exp-036"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/north-star-metric",
+      "anchor": "north star metric",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/activation-rate",
+      "anchor": "activation rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a metrics review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#omtm-checks",
+      "alt": "Six reference points for choosing one metric that matters: the share of companies tracking activation, experiment win rate across 90-plus brands, testing volume at top programmes, platform-reported against true return on ad spend, quick-commerce market share and UPI Autopay mandate volume growth, each row carrying its source and verification date",
+      "caption": "What to check before committing to one metric. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between OMTM and a north star metric?",
+      "a": "Horizon. An OMTM belongs to the current stage and is expected to change when the stage does. A north star metric is meant to hold for years. Treating an OMTM as permanent is how teams keep optimising a solved problem."
+    },
+    {
+      "q": "How do I choose an OMTM?",
+      "a": "Name the riskiest assumption in the current stage, then pick the number that would disprove it fastest. If the assumption is that users will return, the OMTM is a retention figure, not revenue."
+    },
+    {
+      "q": "When should an OMTM change?",
+      "a": "When the assumption behind it has been answered, either way. Holding the same metric after that point measures something nobody is deciding anything from."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get an OMTM review of your metrics",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Frames OMTM by the assumption it is meant to falsify and states an explicit retirement condition, rather than presenting it as a permanent focus metric, and names the platform-reported figure that fails as an OMTM.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

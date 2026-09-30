@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0712",
+  "url": "/glossary/omtm",
+  "archetype": "glossary",
+  "primary_keyword": "what is omtm",
+  "secondary_keywords": [
+    "one metric that matters",
+    "omtm examples"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-24",
+      "claim": "Only about 34% of product-led companies actively track activation at all",
+      "value": "34",
+      "unit": "%",
+      "source_url": "https://mixpanel.com/blog/product-led-growth/",
+      "source_title": "Product-led growth in 2026",
+      "source_domain": "mixpanel.com",
+      "excerpt": "Only about 34% of PLG companies actively track activation, the single metric that best predicts whether a free user ever becomes a paying one.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-hub-07",
+      "claim": "Across 90-plus European e-commerce brands, 36.3% of tests produced a statistically significant win",
+      "value": "36.3",
+      "unit": "%",
+      "source_url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "source_title": "E-commerce A/B Test Benchmarks 2026",
+      "source_domain": "advertorialwizard.com",
+      "excerpt": "36.3% produced a statistically significant win across thousands of A/B tests on 90+ European e-commerce brands.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-hub-10",
+      "claim": "Top-performing programmes run 3 to 5 times more tests than the median, producing 6 to 8 winners a quarter from 36 to 50 tests",
+      "value": "3-5",
+      "unit": "x",
+      "source_url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "source_title": "E-commerce A/B Test Benchmarks 2026",
+      "source_domain": "advertorialwizard.com",
+      "excerpt": "Top-performing brands run 3-5x more tests per year than the median, with 6-8 winning tests per quarter out of 36-50 tests run.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-19",
+      "claim": "Quick-commerce platforms report 3x to 5x return on ad spend, while true return after commission and cost of goods runs 1.2x to 2.5x",
+      "value": "1.2-2.5",
+      "unit": "x",
+      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "source_title": "Quick Commerce Ad Benchmarks India 2026",
+      "source_domain": "ladya.in",
+      "excerpt": "Platform-reported RoAS ranges from 3x to 5x, but true RoAS after commission and cost of goods is 1.2x to 2.5x depending on the platform.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-14",
+      "claim": "Indian quick commerce splits by GMV into Blinkit near 46%, Swiggy Instamart near 24% and Zepto near 22%",
+      "value": "46",
+      "unit": "%",
+      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "source_title": "Quick Commerce Ad Benchmarks India 2026",
+      "source_domain": "ladya.in",
+      "excerpt": "Blinkit holds about 46% of the market by GMV, Swiggy Instamart around 24%, and Zepto around 22%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-glossary-0700-08",
+      "claim": "UPI Autopay mandates ran 175 million transactions in January 2025 against 58 million a year earlier, overtaking card-based recurring payments",
+      "value": "175",
+      "unit": "million/month",
+      "source_url": "https://www.npci.org.in/product/upi/product-statistics",
+      "source_title": "UPI Product Statistics",
+      "source_domain": "npci.org.in",
+      "excerpt": "UPI AutoPay transaction volume reached 175 million in January 2025, compared with 58 million in January 2024",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

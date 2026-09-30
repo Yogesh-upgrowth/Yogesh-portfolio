@@ -1,0 +1,73 @@
+<AnswerBox>
+These are free product growth and monetization calculators for lifetime value,
+acquisition payback, churn, retention curves, app store fees and rupee pricing.
+Each states its formula and its defaults. Winning A/B tests move a median 6.1%, so
+the defaults are set to plausible rather than flattering.
+</AnswerBox>
+
+<FactTable
+  id="tools-assumptions"
+  caption="The defaults these calculators ship with"
+  columns={["Default", "Figure"]}
+  rows={[
+    { cells: ["Lift on winning tests", "8.4% average, 6.1% median"], factId: "f-hub-08" },
+    { cells: ["Median uplift on winners, conversion and revenue per visitor", "1.88% and 2.77%"], factId: "f-hub-09" },
+    { cells: ["India recurring debit without extra authentication", "up to ₹15,000 (about $156)"], factId: "f-unit-26" },
+    { cells: ["India median cost per install, June 2026", "$0.42 (about ₹40)"], factId: "f-unit-36" },
+    { cells: ["India payment cost, domestic and international cards", "2% plus 18% GST, and 3%"], factId: "f-act-12" },
+    { cells: ["UPI Autopay mandate success under the threshold", "92% or better"], factId: "f-glossary-0700-09" },
+  ]}
+/>
+
+## What these calculators do
+
+They compute one thing each, state the formula, and show the inputs. No calculator
+here asks for an email before showing a result, and none of them hides the
+arithmetic behind a score.
+
+Defaults come from published benchmarks with sources attached. A winning
+experiment moves a median 6.1%, and winners deliver a median 1.88% conversion
+uplift, A model whose default improvement is an order of magnitude above that
+is selling optimism rather than estimating.
+
+## Start here
+
+Three by frequency of use. The lifetime value calculator, because almost every
+other number depends on it. The acquisition payback calculator, because payback
+decides how fast you can reinvest. The app store fee calculator, because
+commission is the largest cost most models forget.
+
+If you are pricing for India specifically, the rupee price point picker and the
+subscription price calculator carry the tax and mandate rules rather than leaving
+them to you.
+
+## How to read the index
+
+Each tool states its prerequisite inputs and its assumptions. Some need only a
+price and a churn rate. Others need a cohort table. The list shows which before
+you open it.
+
+The Indian defaults matter more than they look. Recurring debits clear without
+extra authentication up to ₹15,000, about $156, and India's median cost per
+install is $0.42, roughly ₹40. A generic SaaS calculator with US defaults gets
+both wrong in the same direction.
+
+## What recently verified means
+
+Every default carries the date its source was last checked, and the exchange rate
+used for any rupee and dollar pair is recorded in config rather than typed into
+the page. A build fails if a pair drifts more than 3% from that recorded rate.
+
+<FromMyWork exp="exp-049">
+Real-time data reliability improved about 80%, which is what made accurate
+pricing, attribution and monetisation decisions possible at all. Before that, every
+model was arguing with its own inputs.
+</FromMyWork>
+
+## Where this leads
+
+A calculator gives you a number. It does not tell you whether the inputs are right,
+and wrong inputs are the usual problem. If the output looks implausible, check the
+input you were least sure about before you doubt the formula. Churn rate and
+conversion rate are the two that most often turn out to have been measured against
+a different denominator than the model assumes.

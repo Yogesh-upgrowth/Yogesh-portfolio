@@ -1,0 +1,131 @@
+{
+  "page_id": "hub-0003",
+  "url": "/case-studies",
+  "archetype": "hub",
+  "primary_keyword": "product growth case studies",
+  "secondary_keywords": [
+    "product management case studies india",
+    "growth case study with numbers"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-hub-06",
+      "claim": "Across 2,408 audited tests, 17.4% of A/B tests reached statistical significance with a winning variant",
+      "value": "17.4",
+      "unit": "%",
+      "source_url": "https://www.conversionteam.com/ab-test-win-rate/",
+      "source_title": "A/B Test Win Rate: Benchmarks From 2,288 Audited Tests",
+      "source_domain": "conversionteam.com",
+      "excerpt": "17.4% of A/B tests reached statistical significance with a winning variant across 2,408 tests.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-hub-08",
+      "claim": "Winning tests average an 8.4% lift with a 6.1% median",
+      "value": "6.1",
+      "unit": "%",
+      "source_url": "https://www.conversionteam.com/ab-test-win-rate/",
+      "source_title": "A/B Test Win Rate: Benchmarks From 2,288 Audited Tests",
+      "source_domain": "conversionteam.com",
+      "excerpt": "The average lift on winning tests is 8.4%, median 6.1%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-hub-09",
+      "claim": "Winning tests delivered a median 1.88% conversion uplift and 2.77% revenue per visitor uplift",
+      "value": "1.88",
+      "unit": "%",
+      "source_url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "source_title": "E-commerce A/B Test Benchmarks 2026",
+      "source_domain": "advertorialwizard.com",
+      "excerpt": "Winners delivered a median +1.88% conversion rate uplift and +2.77% revenue per visitor uplift.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-04",
+      "claim": "AI apps hold a 41% year-one realised LTV premium: 30.16 dollars median against 21.37 for non-AI apps",
+      "value": "30.16",
+      "unit": "USD",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "AI apps sustain a 41% Year 1 realized LTV premium ($30.16 median vs $21.37 median).",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-21",
+      "claim": "The median Rule of 40 score was 25% in 2025, and the measure only starts to bite from about 20 million dollars ARR",
+      "value": "25",
+      "unit": "%",
+      "source_url": "https://aventis-advisors.com/rule-of-40-in-saas-2026/",
+      "source_title": "Rule of 40 in SaaS: 2026 Data, Benchmarks and Valuation Impact",
+      "source_domain": "aventis-advisors.com",
+      "excerpt": "The 2025 median Rule of 40 score is 25%. The Rule of 40 becomes a meaningful benchmark at roughly $20M ARR and above.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-29",
+      "claim": "India has 601 million OTT users and 119 million paying subscribers",
+      "value": "119",
+      "unit": "million",
+      "source_url": "https://www.medianews4u.com/indias-ott-market-hits-601-million-users-but-only-119-million-pay-monetisation-gap-widens/",
+      "source_title": "India's OTT Market Hits 601 Million Users, But Only 119 Million Pay",
+      "source_domain": "medianews4u.com",
+      "excerpt": "Despite a massive base of 601 million OTT users, only 119 million are active paying subscribers.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "editorial_intro": [
+      "f-hub-06",
+      "f-hub-08"
+    ],
+    "start_here_cards": [
+      "f-unit-04",
+      "f-unit-21"
+    ],
+    "filterable_index": [
+      "f-unit-29"
+    ],
+    "recently_verified": [
+      "f-hub-09"
+    ],
+    "cta_band": [
+      "f-unit-21"
+    ]
+  }
+}

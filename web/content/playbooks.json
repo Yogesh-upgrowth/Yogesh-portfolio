@@ -1,0 +1,106 @@
+{
+  "id": "hub-0007",
+  "url": "/playbooks",
+  "archetype": "hub",
+  "hub": "playbooks",
+  "wave": 1,
+  "batch_id": "w1-hub-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Product Growth Playbooks: Retention, Pricing, Activation",
+  "meta_description": "Growth playbooks with the sequence, the decision points and the numbers to check at each one. Written to be run, not admired.",
+  "h1": "Product growth playbooks",
+  "primary_keyword": "product growth playbooks",
+  "secondary_keywords": [
+    "growth playbook",
+    "retention playbook"
+  ],
+  "entity_a": "playbooks",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-hub-06",
+    "f-hub-07",
+    "f-hub-10",
+    "f-unit-08",
+    "f-act-09",
+    "f-act-06"
+  ],
+  "experience_used": [
+    "exp-047"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/ab-test-sample-size-calculator",
+      "anchor": "the sample size calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/inr-price-points-that-convert",
+      "anchor": "INR price points that convert",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a playbook run with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#playbook-reality",
+      "alt": "Six reference points a playbook has to be written against: the share of A/B tests that produce a winner in two separate audited studies, the testing volume top programmes run, the standing lifetime-value to acquisition-cost bar, the share of companies tracking activation and typical time to value, each row carrying its source and verification date",
+      "caption": "The odds a playbook is actually working against. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What makes a playbook different from a framework?",
+      "a": "A playbook has a sequence and a stopping rule. It says what to do first, what to measure before the second step, and when to abandon the sequence. A framework names the boxes and leaves the order to you."
+    },
+    {
+      "q": "How many experiments should a playbook expect to lose?",
+      "a": "Most of them. Audited studies put the winning share at 17.4% of 2,408 tests and 36.3% across 90-plus e-commerce brands. A playbook written as though every step works is a plan with no failure budget."
+    },
+    {
+      "q": "Do these playbooks assume a large team?",
+      "a": "No. Each one states the smallest version that still produces a readable result, because top programmes run 3 to 5 times more tests than the median and most teams cannot start there."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Run a growth playbook with me",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "CollectionPage",
+    "ItemList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Each playbook carries a failure budget drawn from the published experiment win rates, and a stopping rule, instead of presenting a sequence of steps as though each one lands.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

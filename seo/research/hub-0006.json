@@ -1,0 +1,130 @@
+{
+  "page_id": "hub-0006",
+  "url": "/tools",
+  "archetype": "hub",
+  "primary_keyword": "product growth and monetization calculators",
+  "secondary_keywords": [
+    "ltv calculator",
+    "cac payback calculator"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-hub-08",
+      "claim": "Winning tests average an 8.4% lift with a 6.1% median",
+      "value": "6.1",
+      "unit": "%",
+      "source_url": "https://www.conversionteam.com/ab-test-win-rate/",
+      "source_title": "A/B Test Win Rate: Benchmarks From 2,288 Audited Tests",
+      "source_domain": "conversionteam.com",
+      "excerpt": "The average lift on winning tests is 8.4%, median 6.1%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-hub-09",
+      "claim": "Winning tests delivered a median 1.88% conversion uplift and 2.77% revenue per visitor uplift",
+      "value": "1.88",
+      "unit": "%",
+      "source_url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "source_title": "E-commerce A/B Test Benchmarks 2026",
+      "source_domain": "advertorialwizard.com",
+      "excerpt": "Winners delivered a median +1.88% conversion rate uplift and +2.77% revenue per visitor uplift.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-26",
+      "claim": "The RBI E-Mandate Framework 2026 allows recurring debits up to 15,000 rupees without additional authentication, and up to 1,00,000 rupees for insurance, mutual funds and credit-card bills",
+      "value": "15000",
+      "unit": "INR",
+      "source_url": "https://amlegals.com/upi-autopay-and-recurring-payments-compliance-checklist-under-rbis-e-mandate-framework-2026/",
+      "source_title": "UPI Autopay and Recurring Payments: Compliance Checklist Under RBI's E-Mandate Framework 2026",
+      "source_domain": "amlegals.com",
+      "excerpt": "Recurring transactions up to Rs 15,000 process without additional factor authentication after setup; insurance, mutual funds and card bills up to Rs 1,00,000.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-36",
+      "claim": "India's median cost per install fell from 0.71 dollars in July 2025 to 0.42 dollars in June 2026",
+      "value": "0.42",
+      "unit": "USD",
+      "source_url": "https://linkrunner.io/tools/cost-per-install-benchmark",
+      "source_title": "Cost per install benchmarks by country, platform and category",
+      "source_domain": "linkrunner.io",
+      "excerpt": "India's median CPI averaged about $1.18 per install, starting at $0.71 in July 2025 and finishing at $0.42 in June 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-12",
+      "claim": "Razorpay charges Indian businesses 2% plus 18% GST on domestic payments and 3% on international card exports",
+      "value": "2",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/best-payment-gateway-pricing-saas-india-tco-guide",
+      "source_title": "Payment gateway pricing for SaaS businesses in India",
+      "source_domain": "razorpay.com",
+      "excerpt": "Razorpay charges 2% platform fee plus 18% GST for domestic payments, and 3% for international exports by card.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-09",
+      "claim": "UPI Autopay is reported at 92% or better mandate success for recurring debits under Rs 15,000",
+      "value": "92",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "UPI Autopay mandates are showing 92%+ mandate success rates for recurring payments under Rs 15,000",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "editorial_intro": [
+      "f-hub-08"
+    ],
+    "start_here_cards": [
+      "f-unit-26",
+      "f-act-12"
+    ],
+    "filterable_index": [
+      "f-unit-36"
+    ],
+    "recently_verified": [
+      "f-hub-09"
+    ],
+    "cta_band": [
+      "f-glossary-0700-09"
+    ]
+  }
+}

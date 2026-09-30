@@ -1,0 +1,106 @@
+{
+  "id": "hub-0003",
+  "url": "/case-studies",
+  "archetype": "hub",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-hub-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Product Growth Case Studies with Numbers and Method",
+  "meta_description": "Case studies from fintech, insurance and consumer apps, each with the numbers, the method and what did not work. Sourced, dated and decomposed.",
+  "h1": "Product growth case studies",
+  "primary_keyword": "product growth case studies",
+  "secondary_keywords": [
+    "product management case studies india",
+    "growth case study with numbers"
+  ],
+  "entity_a": "case-studies",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-hub-06",
+    "f-hub-08",
+    "f-hub-09",
+    "f-unit-04",
+    "f-unit-21",
+    "f-unit-29"
+  ],
+  "experience_used": [
+    "exp-021"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies/carinfo-3-8m-to-45m-mau",
+      "anchor": "the CarInfo growth case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "retention benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/teardowns",
+      "anchor": "the teardowns",
+      "role": "hub"
+    },
+    {
+      "url": "/playbooks",
+      "anchor": "the playbooks",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#case-study-standard",
+      "alt": "Six reference points that set the bar for a case study on this site: the share of A/B tests that produce a winner, the average and median lift on winners, median conversion and revenue uplift on winning tests, realised year-one lifetime value by app type, the compounded insurance revenue growth figure and India's paying OTT subscriber base, each row carrying its source and verification date",
+      "caption": "What an honest outcome claim looks like against published ranges. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Are these case studies verifiable?",
+      "a": "Each one names the metric, the period and the mechanism, and separates what was measured from what was inferred. Where a client has not given permission to be named, the context is anonymised and the figures are given as ranges."
+    },
+    {
+      "q": "Why decompose the headline numbers?",
+      "a": "Because a single multiple credits the last change with all of the growth. A 1200% revenue figure that compounds a larger base with a 457-times conversion improvement is two findings, and only one of them transfers to another product."
+    },
+    {
+      "q": "What makes an outcome claim credible?",
+      "a": "A stated counterfactual and a plausible size. Winning A/B tests deliver a median 6.1% lift, so a case study claiming a tripling from a copy change is describing something other than the copy change."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a case study of your own funnel",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "CollectionPage",
+    "ItemList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Sets each case study against the published distribution of experiment outcomes, so a reader can judge whether a claimed result is large, ordinary or implausible — which no competing case-study index does.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

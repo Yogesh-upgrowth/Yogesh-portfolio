@@ -138,7 +138,14 @@ export const PageMeta = z.object({
       z.object({
         url: z.string(),
         anchor: z.string(),
-        role: z.enum(["hub", "lateral", "bofu", "proof", "tool", "related"]),
+        /**
+         * "reference" was missing, and requiredLinkRoles() in gates/contracts.ts
+         * requires it on every BOFU page (01 §C4: a BOFU page links to at least
+         * one case study and one benchmark or teardown). A BOFU page satisfying
+         * the contract therefore failed to load at all. The contract is right;
+         * the enum was short.
+         */
+        role: z.enum(["hub", "lateral", "bofu", "proof", "reference", "tool", "related"]),
       }),
     )
     .min(5),

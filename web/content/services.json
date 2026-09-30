@@ -1,0 +1,106 @@
+{
+  "id": "hub-0001",
+  "url": "/services",
+  "archetype": "hub",
+  "hub": "services",
+  "wave": 1,
+  "batch_id": "w1-hub-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Product Growth and Monetization Consulting Services",
+  "meta_description": "Consulting on monetization, retention, pricing and activation for consumer and B2B products, with scope, price and first-six-weeks stated up front.",
+  "h1": "Product growth and monetization consulting services",
+  "primary_keyword": "product growth and monetization consulting services",
+  "secondary_keywords": [
+    "product monetization consultant",
+    "growth consulting india"
+  ],
+  "entity_a": "services",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-hub-01",
+    "f-hub-04",
+    "f-hub-05",
+    "f-unit-06",
+    "f-unit-20",
+    "f-act-09"
+  ],
+  "experience_used": [
+    "exp-046"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies/carinfo-3-8m-to-45m-mau",
+      "anchor": "the CarInfo growth case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/hire",
+      "anchor": "hire a consultant",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "start a conversation",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#services-context",
+      "alt": "Six reference points behind this practice: India's app market revenue and its growth rate, India's smartphone base, the projected share of GDP the app economy reaches by 2030, median lifetime-value to acquisition-cost by price tier, a decomposed monthly-active-user growth figure and median gross margin by revenue band, each row carrying its source and verification date",
+      "caption": "The market this practice works in. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What do these engagements cost?",
+      "a": "Each service page states a price in both rupees and dollars, at a rate recorded in config and checked on every build. There is no bespoke quoting for the standard engagements."
+    },
+    {
+      "q": "Which engagement should I pick?",
+      "a": "The one matching your binding constraint. Median LTV to CAC at the $8.99 to $11.99 monthly tier is 2.5 to 1, so if your ratio is near that the constraint is usually conversion or price rather than acquisition volume."
+    },
+    {
+      "q": "Do you work outside India?",
+      "a": "Yes, and the India context is an advantage rather than a limit. India has 783 million smartphone users, and products that monetise there have already solved problems that most Western products meet later."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Scope a services engagement",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "CollectionPage",
+    "ItemList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "States price, scope and the first six weeks on every service page rather than routing every enquiry through a discovery call, and names the market context with sourced figures instead of asserting expertise.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

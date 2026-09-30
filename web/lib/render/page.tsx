@@ -78,6 +78,21 @@ function humanise(slug: string): string {
   return slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 }
 
+/**
+ * Hand-curated picks for a hub (01 §5: picks live in content/hubs/<hub>.json,
+ * never auto-sorted by date). Absent file means no picks yet, which the layout
+ * renders as an index without a start-here row rather than as an error — a hub
+ * is useful before it is curated.
+ */
+function hubPicks(hub: string): { url: string; title: string; why: string }[] {
+  const p = join(process.cwd(), "content", "hubs", `${hub}.json`);
+  if (!existsSync(p)) return [];
+  const doc = JSON.parse(readFileSync(p, "utf8")) as {
+    picks?: { url: string; title: string; why: string }[];
+  };
+  return doc.picks ?? [];
+}
+
 /** Children of a hub, from the inventory rather than from disk, so the index is
  *  complete even while pages are still being drafted. */
 function hubIndex(hub: string): { url: string; name: string }[] {
@@ -110,7 +125,7 @@ export function renderPage(url: string, body: ReactNode): ReactNode {
         <HubLayout
           meta={meta}
           facts={facts}
-          picks={[]}
+          picks={hubPicks(meta.hub)}
           index={hubIndex(meta.hub)}
         >
           {children}
