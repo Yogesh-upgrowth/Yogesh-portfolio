@@ -1,0 +1,199 @@
+<AnswerBox>
+Simplifying complex flows to drive significantly higher task completion rates. The subject is reduce cognitive load case study, with the numbers as measured. Written up Aug 2025.
+</AnswerBox>
+
+## We Simplified the Product. Conversions Dropped. Here's What We Missed.
+
+The redesign had strong conviction behind it. The existing comparison interface showed 14 data points per insurance plan — premium, IDV, claim settlement ratio, NCB, zero depreciation availability, roadside assistance, and 8 more. It was overwhelming. Users were clearly spending too much time processing it.
+
+We simplified. Cut to 6 data points. Cleaner layout. Less cognitive load. The A/B test ran for 3 weeks. Conversions fell 18%. We were confused for about 10 days before we figured out what had happened.
+
+> **The problem.** We had reduced cognitive load — but we'd also removed the information users needed to feel confident in their decision. The "overwhelming" interface was overwhelming because it contained too much data. But the simplified version was unconverting because it contained too little trust.
+
+The real insight wasn't about how much information to show. It was about which information reduces anxiety vs which information creates it — and those are different questions entirely.
+
+## Why the Simplification Failed
+
+Post-test analysis, user interviews, and session recording review told a coherent story about why conversion fell when we simplified.
+
+<FactTable
+  id="reduce-cognitive-load-figures"
+  caption="Removed Data Point breakdown"
+  columns={["Removed Data Point", "User Quote from Interviews", "Impact of Removal"]}
+  rows={[
+    { cells: ["Claim Settlement Ratio", "'How do I know they'll actually pay?'", "Trust metric \u2014 absence increased anxiety"] },
+    { cells: ["Network Hospital Count", "'I want to check if my hospital is covered'", "Personal relevance signal \u2014 absence stalled decision"] },
+    { cells: ["IDV Explanation", "'What does IDV mean? Is it important?'", "Jargon without context created confusion"] },
+    { cells: ["Policy Document Link", "'Where do I see the actual terms?'", "Transparency signal \u2014 absence felt like hiding"] },
+    { cells: ["User Rating + Count", "'Do people actually buy this?'", "Social proof \u2014 absence removed peer confidence"] }
+  ]}
+/>
+
+> **What this showed.** Every piece of information we removed was something that a segment of users needed to feel confident enough to proceed. We'd read "high time-on-page" as confusion. Some of it was. But some of it was deliberate due diligence — users doing exactly what we should want them to do.
+
+## Not All Load Is the Same
+
+The mistake was treating cognitive load as a single thing to minimize. Research and user interviews showed two distinct load types — and they require opposite responses.
+
+Extraneous Load — Reduce This
+
+Load from poor design: confusing layout, technical jargon, irrelevant data, visual clutter. This load doesn't help users decide — it just exhausts them.
+
+- → Insurance jargon without explanation
+
+- → 14 data points with no priority hierarchy
+
+- → Compare button buried below the fold
+
+Germane Load — Preserve This
+
+Load from the inherent complexity of the decision itself. This load is the product of genuine due diligence. Remove it and users feel uncertain, not confident.
+
+- → Claim settlement ratio comparison
+
+- → Network hospital check
+
+- → Policy document review
+
+> **The takeaway.** We had reduced both types of load simultaneously by removing 8 data points. The extraneous load reduced correctly — users spent less time confused by jargon and visual noise. The germane load reduced incorrectly — users lost the information they needed to feel confident, and responded by not converting.
+
+## From "Show Less" to "Show the Right Things at the Right Time"
+
+The redesign question changed: not "how many data points?" but "which data points, presented how, at which stage of the decision?"
+
+> A 35-year-old buying health insurance for their family needs claim settlement ratio, network hospitals, and room rent limits. An 18-year-old buying bike insurance needs premium price, zero depreciation, and roadside assistance. Same interface; completely different decision-critical information.
+
+The solution was progressive disclosure by decision stage — not wholesale simplification — combined with jargon elimination to reduce extraneous load without removing decision-relevant information.
+
+## What We Actually Built
+
+### Progressive Disclosure by User Type
+
+Default view: 5 core metrics relevant to the detected user type (health vs motor vs life). 'See all details' expands to full comparison. User type inferred from product category and initial browsing behavior. Right information first; full transparency available.
+
+### Jargon Elimination Layer
+
+All insurance terms accompanied by plain-language tooltips triggered on tap. 'Claim Settlement Ratio' → 'What % of claims this insurer paid last year (higher = better)'. Extraneous load from jargon reduced; germane load of actual content preserved.
+
+### Priority Ranking by Decision Relevance
+
+Data points ranked by decision importance for the specific user's situation — not alphabetically or by insurer preference. A first-time buyer's default view differs from a renewal buyer's. Rank by usefulness, not convention.
+
+### Visual Hierarchy for Comparison
+
+Strongest data point for each plan highlighted visually. Weakest data point (vs competitive set) marked differently. Users process relative comparison faster than absolute numbers. Reduce processing load through visual comparison rather than requiring mental math.
+
+## Implementation Details
+
+### User Type Inference
+
+- Product category (health/motor/life) drives default data point set
+
+- Behavioral signals: if user filters by price first → price-sensitive view; if user checks claim ratio first → trust-sensitive view
+
+- User type stored in session: view preference consistent across comparison pages
+
+### Jargon Tooltip System
+
+- Plain-language definitions for 140+ insurance terms
+
+- Triggered on tap (mobile) / hover (desktop)
+
+- Tooltip content reviewed quarterly for accuracy with IRDAI guidelines
+
+### Visual Comparison System
+
+- Per data point: best value in comparison highlighted green, worst value highlighted red
+
+- Competitive position shown as percentile: 'Better than 78% of plans in this category'
+
+- No absolute numbers required for comparison — visual encoding does the cognitive work
+
+## Diagnosis, Redesign, and Recovery
+
+### Weeks 1–3 · Post-Mortem — Understanding Why It Failed
+
+- 10-day analysis: session recordings, user interviews, data point usage tracking
+
+- Identified: extraneous vs germane load distinction
+
+- Specific data points mapped to their impact on decision confidence
+
+**Result.** Root cause confirmed: removed germane load. Redesign brief written.
+
+### Weeks 4–7 · Redesign — Progressive Disclosure Architecture
+
+- User type inference built and tested
+
+- Jargon tooltip system implemented for 140+ terms
+
+- Visual comparison system built (highlight best/worst per metric)
+
+**Result.** New design in staging. Ready for A/B test.
+
+### Weeks 8–11 · A/B Test — New Design vs Original
+
+- Progressive disclosure vs original 14-point view
+
+- Not vs the failed simplification — vs the original
+
+- User type inference validated: correct type detected 78% of first session
+
+**Result.** New design: +31% vs original. Extraneous load reduced; germane load preserved.
+
+## Recovering and Then Exceeding Baseline
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Conversion vs Original", "+31%"] },
+    { cells: ["Initial Simplification", "\u221218%"] },
+    { cells: ["Time on Comparison Step", "\u221228%"] },
+    { cells: ["User Type Inference Accuracy", "78%"] }
+  ]}
+/>
+
+## What This Changed About How I Think About Complexity
+
+### 01. 'Reduce cognitive load' is the right goal applied to the wrong object
+
+Reduce extraneous load (jargon, poor layout, irrelevant data). Preserve germane load (the complexity inherent in the decision itself). Conflating the two produces a simplified interface that users distrust — because they can feel that something important is missing.
+
+### 02. High time-on-page isn't always confusion
+
+We interpreted 4+ minutes on the comparison page as evidence of overwhelming complexity. Some of it was. But interview data showed that power users — the ones with highest conversion — spent more time on the comparison, not less. Engagement time and confusion time are different signals that look identical in analytics.
+
+### 03. Progressive disclosure needs a reliable user type signal to work
+
+Our progressive disclosure only works if we correctly infer the user's decision context. When we get it wrong, users see an unhelpful default view and have to expand manually — adding friction. The inference quality directly determines the disclosure system's value.
+
+## What Hurt — Besides the Initial Failure
+
+### What did not work: We shipped the simplification without enough user research
+
+**Why it broke.** The simplification decision was driven primarily by time-on-page analytics and internal team sentiment ('this is too complex'). We had 2 user interviews that confirmed 'confusion' — but didn't investigate whether the complexity was extraneous or germane.
+
+**The fix.** Now require: any information architecture change must include 5+ user interviews specifically asking 'what information do you need to feel confident before deciding?' before design begins.
+
+### What did not work: User type inference had poor accuracy for first-time visitors
+
+**Why it broke.** First-time visitors showed no behavioral signal to infer user type from — they hadn't filtered by anything yet. We defaulted to 'general' view which was generic and unhelpful.
+
+**The fix.** Added product-category detection from entry page and UTM source. 'Health insurance' landing page users see health-optimized default. Accuracy improved from 51% to 78% for first-session visitors.
+
+## Where This Goes
+
+### Decision Stage Detection
+
+Different information is needed at different stages of the decision. Early-stage user needs category overview; late-stage user needs fine-grained comparison. Detect stage and adjust the view dynamically.
+
+### Explicit Personalization
+
+Ask users explicitly on entry: 'What's most important to you?' (Price / Coverage / Claim History / All of the above). Use their answer to drive initial view. Explicit beats inferred when the question is simple enough to ask.
+
+### Per-Field Engagement Analytics
+
+Track which data points users interact with most (tooltip opened, comparison time spent). Use engagement data to continuously reorder the default view to surface what users actually look at first.
+
+> The simplest interface isn't the one with the fewest elements. It's the one that makes the decision feel possible. Sometimes that requires more information, not less — presented with more clarity, not removed entirely.

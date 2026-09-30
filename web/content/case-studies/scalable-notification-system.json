@@ -1,0 +1,106 @@
+{
+  "id": "case-study-0187",
+  "url": "/case-studies/scalable-notification-system",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Scalable notification system case study",
+  "meta_description": "Designing a trigger-based push notification engine that drives action at scale. A first-hand account of scalable notification system case study, with th.",
+  "h1": "Creating a Scalable Notification System for 1M+ Users (Trigger-Based) (scalable notification system case study)",
+  "primary_keyword": "scalable notification system case study",
+  "secondary_keywords": [],
+  "entity_a": "scalable-notification-system",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-scalable-notification-system-01",
+    "f-cs-scalable-notification-system-02",
+    "f-cs-scalable-notification-system-03",
+    "f-cs-scalable-notification-system-04",
+    "f-cs-scalable-notification-system-05",
+    "f-cs-scalable-notification-system-06",
+    "f-cs-scalable-notification-system-07",
+    "f-cs-scalable-notification-system-08",
+    "f-cs-scalable-notification-system-09",
+    "f-cs-scalable-notification-system-10",
+    "f-cs-scalable-notification-system-11",
+    "f-cs-scalable-notification-system-12",
+    "f-cs-scalable-notification-system-13",
+    "f-cs-scalable-notification-system-14",
+    "f-cs-scalable-notification-system-15",
+    "f-cs-scalable-notification-system-16",
+    "f-cs-scalable-notification-system-17",
+    "f-cs-scalable-notification-system-18",
+    "f-cs-scalable-notification-system-19",
+    "f-cs-scalable-notification-system-20",
+    "f-cs-scalable-notification-system-21",
+    "f-cs-scalable-notification-system-22"
+  ],
+  "experience_used": [
+    "exp-045",
+    "exp-050"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#scalable-notification-system-figures",
+      "alt": "Figures from Creating a Scalable Notification System for 1M+ Users (Trigger-Based), each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

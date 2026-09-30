@@ -149,6 +149,15 @@ def style_problems(mdx: str, archetype: str, word_band: tuple[int, int],
             out.append(f"G13 risk: {len(words(s))}-word sentence \"{s[:48]}…\"")
 
     lead, secs = split_sections(mdx)
+    # Mirror of h2Sections in prose.ts: an H3 is part of its parent H2, not a
+    # section of its own, so its words count toward the parent's band.
+    h2s: list[tuple[str, int, str]] = []
+    for h, lvl, t in secs:
+        if lvl == 2:
+            h2s.append((h, lvl, t))
+        elif h2s:
+            ph, pl, pt = h2s[-1]
+            h2s[-1] = (ph, pl, f"{pt}\n\n### {h}\n{t}")
     body_q = sum(t.count("?") for _, _, t in secs)
     if body_q:
         out.append(f"G13 {body_q} question mark(s) in body prose")
@@ -174,10 +183,12 @@ def style_problems(mdx: str, archetype: str, word_band: tuple[int, int],
     lo = int(word_band[0] * 0.8)
     if n < lo or n > word_band[1]:
         out.append(f"G07 {n} words (band {word_band[0]}–{word_band[1]}, floor {lo})")
-    for h, _, t in secs:
+    if not 4 <= len(h2s) <= 10:
+        out.append(f"G07 {len(h2s)} H2s (need 4-10)")
+    for h, _, t in h2s:
         c = len(words(t))
         if c < section_band[0] or c > section_band[1]:
-            out.append(f"G07 section \"{h}\" {c} words (band {section_band[0]}–{section_band[1]})")
+            out.append(f"G07 H2 \"{h}\" {c} words (band {section_band[0]}–{section_band[1]})")
 
     # G06 — the opening paragraph carries a number and stays under 80 words.
     para = next((p.strip() for p in re.split(r"\n\s*\n", lead) if words(p)), "")

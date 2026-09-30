@@ -1,0 +1,113 @@
+{
+  "id": "case-study-0177",
+  "url": "/case-studies/ml-reduce-cac-segmentation",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Ml reduce cac segmentation case study",
+  "meta_description": "Reducing acquisition cost using intelligent ML-driven segmentation. A first-hand account of ml reduce cac segmentation case study, with the figures as m.",
+  "h1": "Using ML to Reduce CAC by 31% via Smart Audience Segmentation (ml reduce cac segmentation case study)",
+  "primary_keyword": "ml reduce cac segmentation case study",
+  "secondary_keywords": [],
+  "entity_a": "ml-reduce-cac-segmentation",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-ml-reduce-cac-segmentation-01",
+    "f-cs-ml-reduce-cac-segmentation-02",
+    "f-cs-ml-reduce-cac-segmentation-03",
+    "f-cs-ml-reduce-cac-segmentation-04",
+    "f-cs-ml-reduce-cac-segmentation-05",
+    "f-cs-ml-reduce-cac-segmentation-06",
+    "f-cs-ml-reduce-cac-segmentation-07",
+    "f-cs-ml-reduce-cac-segmentation-08",
+    "f-cs-ml-reduce-cac-segmentation-09",
+    "f-cs-ml-reduce-cac-segmentation-10",
+    "f-cs-ml-reduce-cac-segmentation-11",
+    "f-cs-ml-reduce-cac-segmentation-12",
+    "f-cs-ml-reduce-cac-segmentation-13",
+    "f-cs-ml-reduce-cac-segmentation-14",
+    "f-cs-ml-reduce-cac-segmentation-15",
+    "f-cs-ml-reduce-cac-segmentation-16",
+    "f-cs-ml-reduce-cac-segmentation-17",
+    "f-cs-ml-reduce-cac-segmentation-18",
+    "f-cs-ml-reduce-cac-segmentation-19",
+    "f-cs-ml-reduce-cac-segmentation-20",
+    "f-cs-ml-reduce-cac-segmentation-21",
+    "f-cs-ml-reduce-cac-segmentation-22",
+    "f-cs-ml-reduce-cac-segmentation-23",
+    "f-cs-ml-reduce-cac-segmentation-24",
+    "f-cs-ml-reduce-cac-segmentation-25",
+    "f-cs-ml-reduce-cac-segmentation-26",
+    "f-cs-ml-reduce-cac-segmentation-27",
+    "f-cs-ml-reduce-cac-segmentation-28",
+    "f-cs-ml-reduce-cac-segmentation-29"
+  ],
+  "experience_used": [
+    "exp-044",
+    "exp-015"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/fintech",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#ml-reduce-cac-segmentation-figures",
+      "alt": "Figures from Using ML to Reduce CAC by 31% via Smart Audience Segmentation, each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

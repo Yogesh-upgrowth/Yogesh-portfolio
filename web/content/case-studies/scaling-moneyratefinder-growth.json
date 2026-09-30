@@ -1,0 +1,115 @@
+{
+  "id": "case-study-0180",
+  "url": "/case-studies/scaling-moneyratefinder-growth",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Scaling moneyratefinder growth case study",
+  "meta_description": "Scaling traffic and retention using compounding growth loops and organic SEO. A first-hand account of scaling moneyratefinder growth case study, with th.",
+  "h1": "From 1K to 100K Monthly Users: Scaling MoneyRateFinder with SEO + Product Loops (scaling moneyratefinder growth case study)",
+  "primary_keyword": "scaling moneyratefinder growth case study",
+  "secondary_keywords": [],
+  "entity_a": "scaling-moneyratefinder-growth",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-scaling-moneyratefinder-growth-01",
+    "f-cs-scaling-moneyratefinder-growth-02",
+    "f-cs-scaling-moneyratefinder-growth-03",
+    "f-cs-scaling-moneyratefinder-growth-04",
+    "f-cs-scaling-moneyratefinder-growth-05",
+    "f-cs-scaling-moneyratefinder-growth-06",
+    "f-cs-scaling-moneyratefinder-growth-07",
+    "f-cs-scaling-moneyratefinder-growth-08",
+    "f-cs-scaling-moneyratefinder-growth-09",
+    "f-cs-scaling-moneyratefinder-growth-10",
+    "f-cs-scaling-moneyratefinder-growth-11",
+    "f-cs-scaling-moneyratefinder-growth-12",
+    "f-cs-scaling-moneyratefinder-growth-13",
+    "f-cs-scaling-moneyratefinder-growth-14",
+    "f-cs-scaling-moneyratefinder-growth-15",
+    "f-cs-scaling-moneyratefinder-growth-16",
+    "f-cs-scaling-moneyratefinder-growth-17",
+    "f-cs-scaling-moneyratefinder-growth-18",
+    "f-cs-scaling-moneyratefinder-growth-19",
+    "f-cs-scaling-moneyratefinder-growth-20",
+    "f-cs-scaling-moneyratefinder-growth-21",
+    "f-cs-scaling-moneyratefinder-growth-22",
+    "f-cs-scaling-moneyratefinder-growth-23",
+    "f-cs-scaling-moneyratefinder-growth-24",
+    "f-cs-scaling-moneyratefinder-growth-25",
+    "f-cs-scaling-moneyratefinder-growth-26",
+    "f-cs-scaling-moneyratefinder-growth-27",
+    "f-cs-scaling-moneyratefinder-growth-28",
+    "f-cs-scaling-moneyratefinder-growth-29",
+    "f-cs-scaling-moneyratefinder-growth-30",
+    "f-cs-scaling-moneyratefinder-growth-31"
+  ],
+  "experience_used": [
+    "exp-016",
+    "exp-053"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#scaling-moneyratefinder-growth-figures",
+      "alt": "Figures from From 1K to 100K Monthly Users: Scaling MoneyRateFinder with SEO + Product Loops, each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

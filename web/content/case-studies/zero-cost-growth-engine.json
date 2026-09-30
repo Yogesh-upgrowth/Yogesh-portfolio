@@ -1,0 +1,107 @@
+{
+  "id": "case-study-0184",
+  "url": "/case-studies/zero-cost-growth-engine",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Zero cost growth engine case study: a case study with the numbers",
+  "meta_description": "Scaling growth to 50K users per month without any paid acquisition budget. A first-hand account of zero cost growth engine case study, with the figures.",
+  "h1": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks (zero cost growth engine case study)",
+  "primary_keyword": "zero cost growth engine case study",
+  "secondary_keywords": [],
+  "entity_a": "zero-cost-growth-engine",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-zero-cost-growth-engine-01",
+    "f-cs-zero-cost-growth-engine-02",
+    "f-cs-zero-cost-growth-engine-03",
+    "f-cs-zero-cost-growth-engine-04",
+    "f-cs-zero-cost-growth-engine-05",
+    "f-cs-zero-cost-growth-engine-06",
+    "f-cs-zero-cost-growth-engine-07",
+    "f-cs-zero-cost-growth-engine-08",
+    "f-cs-zero-cost-growth-engine-09",
+    "f-cs-zero-cost-growth-engine-10",
+    "f-cs-zero-cost-growth-engine-11",
+    "f-cs-zero-cost-growth-engine-12",
+    "f-cs-zero-cost-growth-engine-13",
+    "f-cs-zero-cost-growth-engine-14",
+    "f-cs-zero-cost-growth-engine-15",
+    "f-cs-zero-cost-growth-engine-16",
+    "f-cs-zero-cost-growth-engine-17",
+    "f-cs-zero-cost-growth-engine-18",
+    "f-cs-zero-cost-growth-engine-19",
+    "f-cs-zero-cost-growth-engine-20",
+    "f-cs-zero-cost-growth-engine-21",
+    "f-cs-zero-cost-growth-engine-22",
+    "f-cs-zero-cost-growth-engine-23"
+  ],
+  "experience_used": [
+    "exp-019",
+    "exp-053"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#zero-cost-growth-engine-figures",
+      "alt": "Figures from How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks, each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

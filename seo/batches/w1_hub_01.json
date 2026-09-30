@@ -818,8 +818,8 @@
           "role": "proof"
         },
         {
-          "url": "/benchmarks",
-          "anchor": "the benchmarks",
+          "url": "/benchmarks/retention",
+          "anchor": "retention benchmarks",
           "role": "reference"
         },
         {

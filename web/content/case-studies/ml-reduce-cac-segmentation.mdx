@@ -1,0 +1,223 @@
+<AnswerBox>
+Reducing acquisition cost using intelligent ML-driven segmentation. The subject is ml reduce cac segmentation case study, including the version that failed. Written up Apr 2024.
+</AnswerBox>
+
+## The CFO Said No. She Was Right.
+
+Q2 planning. Marketing team had built a case for a 40% increase in paid acquisition budget. The slide deck was polished. The CAC benchmarks were industry-standard. The growth projections curved upward satisfyingly.
+
+Our CFO, Sunita, looked at it and asked one question: "What percentage of the users we're currently acquiring are profitable at 90 days?" Nobody in the room knew the answer. That was the problem.
+
+> **The problem.** We were spending ₹2.4 crore (about $0.25 million) per month on acquisition without knowing which 33% of that spend was generating 89% of the value. Budget approved with conditions: prove channel-level LTV within 60 days.
+
+That condition was the forcing function that built what became our most impactful data initiative of the year.
+
+## We Were Spending Money Blind
+
+When we finally built the attribution model, the channel-level LTV data was stunning in how unequal it was. Same blended CAC across all channels. Completely different value being delivered.
+
+<FactTable
+  id="ml-reduce-cac-segmentation-figures"
+  caption="Acquisition Channel breakdown"
+  columns={["Acquisition Channel", "Monthly Spend", "CAC", "90-Day LTV", "LTV:CAC", "Profitability"]}
+  rows={[
+    { cells: ["Google Search (branded)", "\u20b928L (about $29,200)", "\u20b9210 (about $2.19)", "\u20b9890 (about $9.28)", "4.2\u00d7", "\u2713 Strong"] },
+    { cells: ["Google Search (non-branded)", "\u20b941L (about $42,757)", "\u20b9380 (about $3.96)", "\u20b9720 (about $7.51)", "1.9\u00d7", "\u2713 Marginal"] },
+    { cells: ["Facebook/Instagram", "\u20b962L (about $64,657)", "\u20b9295 (about $3.08)", "\u20b9310 (about $3.23)", "1.05\u00d7", "\u2717 Break-even"] },
+    { cells: ["YouTube Pre-roll", "\u20b935L (about $36,500)", "\u20b9440 (about $4.59)", "\u20b9280 (about $2.92)", "0.64\u00d7", "\u2717 Losing"] },
+    { cells: ["Affiliate Network", "\u20b974L (about $77,172)", "\u20b9160 (about $1.67)", "\u20b9195 (about $2.03)", "1.22\u00d7", "\u2717 Marginal"] }
+  ]}
+/>
+
+> **What this showed.** YouTube and Affiliate together represented 45% of our acquisition spend and were generating value at 0.64× and 1.22× LTV:CAC respectively. We were actively subsidizing unprofitable growth.
+
+The CFO's instinct was right. We hadn't needed more budget — we needed to understand where the budget we had was actually working.
+
+## The User Quality Gap Was Behavioral, Not Demographic
+
+We expected the high-LTV channels to have demographically different users: higher income, different cities, older. They didn't. The difference was entirely behavioral — intent level at the moment of acquisition.
+
+<FactTable
+  caption="Channel breakdown"
+  columns={["Channel", "D1 Depth (avg features used)", "D7 Return Rate", "90-Day LTV", "Key Behavioral Difference"]}
+  rows={[
+    { cells: ["Google Search (branded)", "3.8", "61%", "\u20b9890 (about $9.28)", "Already knew the product; came to convert"] },
+    { cells: ["Google Search (generic)", "2.9", "44%", "\u20b9720 (about $7.51)", "Research-intent; comparing options"] },
+    { cells: ["Facebook", "1.6", "28%", "\u20b9310 (about $3.23)", "Passive discovery; low initial intent"] },
+    { cells: ["YouTube", "1.2", "19%", "\u20b9280 (about $2.92)", "Passive awareness; rarely converts to habit"] },
+    { cells: ["Affiliate", "1.9", "31%", "\u20b9195 (about $2.03)", "Deal-seeking; high early churn"] }
+  ]}
+/>
+
+> **The takeaway.** The differentiating factor was intent at entry. High-LTV channels brought users with existing intent. Low-LTV channels were trying to manufacture intent through exposure — which rarely produces durable user behavior.
+
+## Stop Optimizing CAC. Start Optimizing LTV:CAC.
+
+The marketing team's north star had been CAC minimization. That metric, optimized in isolation, actively incentivized acquiring cheap, low-quality users from affiliate and display channels.
+
+> A ₹160 (about $1.67) CAC from an affiliate user with ₹195 LTV is a worse investment than a ₹380 CAC from a search user with ₹720 LTV. The math is obvious. The dashboards had been hiding it.
+
+We replaced CAC as the primary metric with LTV:CAC ratio and 90-day payback period. Every channel had to hit a minimum LTV:CAC of 2.5× to keep receiving budget allocation. That single metric change restructured the entire acquisition strategy.
+
+## Channel Quality Scoring
+
+We built a system that assigned every acquisition channel a quality score updated monthly, driving budget allocation algorithmically rather than through quarterly planning cycles.
+
+### User Quality Signals
+
+D1 feature depth, D7 return rate, D30 transaction rate — all by acquisition channel. Tracked as cohorts, not blended. Channel quality score = weighted average of these three signals.
+
+### Budget Allocation Algorithm
+
+Budget allocated proportionally to channel LTV:CAC ratio, with floor protection for strategic channels (brand, SEO). Channels below 2.5× threshold placed on 30-day improvement plan before budget cuts.
+
+### Lookalike Seeding
+
+High-LTV user behavioral profiles (not demographics) exported to Meta and Google for lookalike targeting. Updated monthly. Each cycle narrowed the target to higher-quality incoming cohorts.
+
+### Real-Time LTV Prediction
+
+ML model scoring new users at 72 hours with predicted 90-day LTV. Enables faster channel quality assessment than waiting 90 days. Channel quality updated from predictions, not just actuals.
+
+## Attribution Pipeline
+
+The technical challenge was connecting acquisition channel (ad platform data) to 90-day revenue (product database) through a userId that persisted across anonymous → registered → transacting user states. That join was the hard part.
+
+### Attribution Stitching
+
+- Anonymous device ID linked to acquisition UTMs at landing page
+
+- ID stitching: anonymous ID → registered user ID upon signup via deterministic match
+
+- Revenue events joined to acquisition source through persistent userId chain
+
+### LTV Prediction Model
+
+- XGBoost model: 72-hour behavioral features → 90-day LTV prediction
+
+- Training data: 14 months of matched acquisition-to-revenue pairs
+
+- Output: predicted LTV per user, attributed back to channel + campaign + creative
+
+### Channel Quality Dashboard
+
+- Real-time: LTV:CAC by channel (using 72hr predicted LTV)
+
+- Lagging: actual 90-day LTV by channel cohort (monthly refresh)
+
+- Budget reallocation proposals auto-generated weekly based on LTV:CAC movement
+
+## How It Unfolded
+
+### Weeks 1–3 · Attribution Build — Stitching the Data
+
+- Built anonymous-to-registered ID stitching pipeline
+
+- Matched 14 months of revenue data to acquisition source
+
+- First channel-level LTV report produced
+
+**Result.** Data confirmed: YouTube and Affiliate significantly below LTV:CAC threshold.
+
+### Weeks 4–6 · Reallocation — Budget Restructure
+
+- YouTube spend cut 80% (from ₹35L (about $36,500) to ₹7L monthly)
+
+- Affiliate network renegotiated: CPA model replaced CPL
+
+- Released budget redirected to Google branded and non-branded
+
+**Result.** Immediate CAC improvement as channel mix shifted to higher-quality sources.
+
+### Weeks 7–10 · ML Layer — Predictive LTV Scoring
+
+- 72-hour LTV prediction model built and validated
+
+- Channel quality dashboard updated weekly from predictions
+
+- Lookalike audiences rebuilt from High-LTV behavioral profiles
+
+**Result.** First month: LTV:CAC blended ratio improved from 1.8× to 2.9×
+
+### Month 3+ · Compounding — Ongoing Optimization
+
+- Monthly model refresh with actual LTV outcomes
+
+- Affiliate partners tiered: top 12% (highest LTV users) got 3× commission
+
+- Programmatic display eliminated entirely
+
+**Result.** Blended LTV:CAC reached 3.8×. Acquisition volume maintained. Spend down 31%.
+
+## Quarter-on-Quarter Impact
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Monthly Acquisition Spend", "\u221231%"] },
+    { cells: ["Blended LTV:CAC", "3.8\u00d7"] },
+    { cells: ["Profitable User Share", "+67%"] },
+    { cells: ["Monthly Budget Released", "\u20b91.8Cr (about $0.19 million)"] }
+  ]}
+/>
+
+<FactTable
+  caption="Metric breakdown"
+  columns={["Metric", "Before", "After (90 Days)"]}
+  rows={[
+    { cells: ["Monthly Acquisition Spend", "\u20b92.4Cr (about $0.25 million)", "\u20b91.66Cr (about $0.17 million) (\u221231%)"] },
+    { cells: ["Blended LTV:CAC", "1.8\u00d7", "3.8\u00d7"] },
+    { cells: ["% Users Above 2.5\u00d7 LTV:CAC", "33%", "71%"] },
+    { cells: ["90-Day Payback Period", "68 days", "41 days"] },
+    { cells: ["Budget on Profitable Channels", "55%", "89%"] }
+  ]}
+/>
+
+## The Harder Lessons
+
+### 01. CAC minimization without LTV context is self-defeating
+
+Optimizing CAC alone will reliably drive you toward cheap, low-intent acquisition channels. Those channels produce users with poor engagement and high churn — which then requires more spend to compensate. It's a feedback loop that looks like growth but isn't.
+
+### 02. The attribution join is the technical bottleneck
+
+Most teams can't do channel-level LTV analysis because they can't reliably join acquisition source to long-term revenue. The anonymous-to-registered ID stitch is unglamorous data work — but it's the foundation everything else depends on.
+
+### 03. Channel quality varies more than channel cost
+
+YouTube CAC was ₹440 (about $4.59) vs Facebook's ₹295. Facebook looked like the better deal. But YouTube LTV:CAC was 0.64× vs Facebook's 1.05×. Both were bad, but different bad. Same cost, different quality — and quality is harder to see.
+
+### 04. Lookalike audiences from LTV data outperform demographic targeting
+
+We rebuilt all our paid audiences from behavioral signals of High-LTV users rather than demographic profiles. The first cohort acquired via behavioral lookalikes had 2.3× better LTV than the demographic-targeted cohort at the same spend.
+
+## What We Got Wrong
+
+### What did not work: Cut affiliate spend too aggressively, too fast
+
+**Why it broke.** Reduced affiliate spend 60% in Month 1. Acquisition volume fell sharply and we had no immediate alternative at scale. Revenue targets missed for 6 weeks.
+
+**The fix.** Tiered approach: cut bottom 60% of affiliates by LTV quality. Retained top performers, increased their commission. Net spend fell 28% but volume recovered within 3 weeks.
+
+### What did not work: Used the same CAC target across all geographies
+
+**Why it broke.** Metro cities had higher LTVs but also higher CACs. Our single CAC ceiling was constraining metro acquisition disproportionately — where the economics actually worked best.
+
+**The fix.** Geo-specific LTV:CAC targets. Metro cities: CAC ceiling raised 40%. Tier-2: ceiling reduced. Blended ratio improved further as metro mix increased.
+
+## The Next Layer
+
+### Creative-Level LTV Attribution
+
+We can attribute LTV to channel and campaign. Next: attribute to individual creative. Which ad copy and visual format predicts highest-LTV users? Creative briefing informed by downstream revenue, not just CTR.
+
+### Real-Time Budget Reallocation
+
+Currently monthly reallocation based on LTV data. Next: weekly automated budget shifts between channels within predefined bounds. Respond to quality changes in real-time rather than monthly planning cycles.
+
+### Lifetime Value Bidding
+
+Feed 90-day LTV predictions into Google and Meta bidding algorithms. Bid not for the click — bid for the predicted downstream value of the user that click is likely to produce.
+
+> We didn't need more budget. We needed to know which 33% of our existing budget was doing 89% of the work — and then do more of that.

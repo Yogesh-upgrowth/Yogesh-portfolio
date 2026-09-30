@@ -426,7 +426,7 @@ choice.
     facts=["f-hub-01", "f-hub-04", "f-hub-05", "f-unit-06", "f-unit-20", "f-act-09"],
     experience=["exp-046"],
     links=L(("/case-studies/carinfo-3-8m-to-45m-mau", "the CarInfo growth case study", "proof"),
-            ("/benchmarks", "the benchmarks", "reference"),
+            ("/benchmarks/retention", "retention benchmarks", "reference"),
             ("/glossary", "the glossary", "hub"),
             ("/hire", "hire a consultant", "lateral"),
             ("/tools/monetization-health-score", "the monetisation health score", "tool"),

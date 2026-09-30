@@ -1,0 +1,98 @@
+{
+  "id": "case-study-0186",
+  "url": "/case-studies/comparison-platform-india",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Comparison platform india case study",
+  "meta_description": "Building a fintech comparison platform tailored for India's remittance market. A first-hand account of comparison platform india case study, with the fi.",
+  "h1": "Designing a Comparison Platform Like Monito for the Indian Market (comparison platform india case study)",
+  "primary_keyword": "comparison platform india case study",
+  "secondary_keywords": [],
+  "entity_a": "comparison-platform-india",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-comparison-platform-india-01",
+    "f-cs-comparison-platform-india-02",
+    "f-cs-comparison-platform-india-03",
+    "f-cs-comparison-platform-india-04",
+    "f-cs-comparison-platform-india-05",
+    "f-cs-comparison-platform-india-06",
+    "f-cs-comparison-platform-india-07",
+    "f-cs-comparison-platform-india-08",
+    "f-cs-comparison-platform-india-09",
+    "f-cs-comparison-platform-india-10",
+    "f-cs-comparison-platform-india-11",
+    "f-cs-comparison-platform-india-12",
+    "f-cs-comparison-platform-india-13",
+    "f-cs-comparison-platform-india-14"
+  ],
+  "experience_used": [
+    "exp-007",
+    "exp-013"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/fintech",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#comparison-platform-india-figures",
+      "alt": "Figures from Designing a Comparison Platform Like Monito for the Indian Market, each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

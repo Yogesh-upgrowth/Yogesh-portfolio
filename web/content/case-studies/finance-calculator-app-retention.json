@@ -1,0 +1,108 @@
+{
+  "id": "case-study-0188",
+  "url": "/case-studies/finance-calculator-app-retention",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Finance calculator app retention case study",
+  "meta_description": "Building a utility product with compounding daily retention loops. A first-hand account of finance calculator app retention case study, with the figures.",
+  "h1": "How We Built a Multi-Calculator Finance App That Drives Daily Retention (finance calculator app retention case study)",
+  "primary_keyword": "finance calculator app retention case study",
+  "secondary_keywords": [],
+  "entity_a": "finance-calculator-app-retention",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-finance-calculator-app-retention-01",
+    "f-cs-finance-calculator-app-retention-02",
+    "f-cs-finance-calculator-app-retention-03",
+    "f-cs-finance-calculator-app-retention-04",
+    "f-cs-finance-calculator-app-retention-05",
+    "f-cs-finance-calculator-app-retention-06",
+    "f-cs-finance-calculator-app-retention-07",
+    "f-cs-finance-calculator-app-retention-08",
+    "f-cs-finance-calculator-app-retention-09",
+    "f-cs-finance-calculator-app-retention-10",
+    "f-cs-finance-calculator-app-retention-11",
+    "f-cs-finance-calculator-app-retention-12",
+    "f-cs-finance-calculator-app-retention-13",
+    "f-cs-finance-calculator-app-retention-14",
+    "f-cs-finance-calculator-app-retention-15",
+    "f-cs-finance-calculator-app-retention-16",
+    "f-cs-finance-calculator-app-retention-17",
+    "f-cs-finance-calculator-app-retention-18",
+    "f-cs-finance-calculator-app-retention-19",
+    "f-cs-finance-calculator-app-retention-20",
+    "f-cs-finance-calculator-app-retention-21",
+    "f-cs-finance-calculator-app-retention-22",
+    "f-cs-finance-calculator-app-retention-23",
+    "f-cs-finance-calculator-app-retention-24"
+  ],
+  "experience_used": [
+    "exp-018",
+    "exp-016"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#finance-calculator-app-retention-figures",
+      "alt": "Figures from How We Built a Multi-Calculator Finance App That Drives Daily Retention, each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

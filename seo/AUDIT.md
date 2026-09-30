@@ -329,3 +329,63 @@ Found while building the first hubs.
 
 The pre-flight also grew G09's FAQPage rule and G16's CTA-context rule, both of
 which had only been failing after a full gate run.
+
+## D8 — five gate defects found by migrating the published case studies (30 September 2026)
+
+The 30 case-study write-ups already exist on pmyogesh.com as React components. They
+are Yogesh's own first-person account of his own work, so they were converted rather
+than rewritten (`seo/scripts/migrate_case_studies.py`). Running them through the
+gates found five implementation defects, all of which had been failing correct pages.
+
+1. **G12 forbade what the case-study contract requires.** 01 §B5 restricts
+   first-person prose to `FromMyWork` blocks; the case-study contract requires "my
+   role" in the answer box and "what I'd do differently" as a section. Neither can
+   live in a 60–150-word library block. A case study is by definition an account of
+   Yogesh's own work, so the restriction has nothing to protect there. It is now
+   skipped for that archetype, and replaced by a requirement that the page declare
+   the experience entries it draws on — which G03's per-number exemption then
+   enforces.
+
+2. **`requiredBlocks` held 01's full section list, so G01 demanded a citation
+   behind an opinion.** G01 fails a page whose `block_coverage` leaves a named block
+   unsupported, and the case-study list included `what_id_do_differently`,
+   `applicability` and `cta`. No source exists behind a lesson or a CTA band, and a
+   gate that asks for one pushes an author toward inventing a fact. prompts/research.md
+   rule 7 shows the intent — its example blocks are all evidence-bearing. Narrowed
+   for hub, service, service-industry, hire-city and case-study; the full list is
+   kept as `sectionsContract` and G07 remains what checks structure.
+
+3. **G07 banded H3 sections as if they were H2s.** 02 §2 bands "every H2 section"
+   and separately asks for an H3 break above 450 words, which only makes sense if an
+   H3 belongs to its parent. `sections()` closes a section at any heading, so an H2
+   whose body sits in H3 subsections counted as almost nothing. `h2Sections()` now
+   folds H3s into their parent.
+
+4. **G07 read a table-only section as empty.** `toProse` strips component tags,
+   correctly for style gates and wrongly for a word count: a section whose body is a
+   sourced FactTable measured 2 words and failed as thin. `tableText()` adds the cell
+   text a reader actually sees.
+
+5. **G17 counted JSX string props as quotations.** It scanned the raw body, so a
+   FactTable with long row labels failed the 15-word quote limit for containing code.
+   It now reads the prose.
+
+Two smaller ones: G03 flagged bare four-digit years, which 02 already excludes in
+titles and which are dates rather than claims; and `Fact.claim` caps at 240
+characters, which the migration now trims on a word boundary.
+
+**Three defects in the migration itself**, each found by a gate rather than by
+reading the output:
+
+- The parser read the files' own helper-component definitions as content, so two
+  pages opened with the literal text `{from} → {to}`.
+- Most of the writing lives in component *props* (`Phase` carries four actions and a
+  result), which a children-only parser dropped entirely.
+- Several sections hold their whole content in an inline `{[{…}].map()}` array. The
+  parser captured the template and lost the data: one section rendered as
+  `{l.title}` followed by `- →{p}`.
+
+Numbers in these pages are Yogesh's own operating measurements with no third-party
+source, so each becomes an `own_data` fact referencing the page it was published on.
+749 facts across 30 pages. Inventing a research citation for an operator's own figure
+would have been the worse failure.

@@ -1,0 +1,107 @@
+{
+  "id": "case-study-0190",
+  "url": "/case-studies/ux-redesign-conversion-28",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Ux redesign conversion 28 case study",
+  "meta_description": "A full design audit and redesign cycle driven by heatmaps and user testing. A first-hand account of ux redesign conversion 28 case study, with the figur.",
+  "h1": "UX Redesign That Improved Conversion by 28% (Before vs After Breakdown) (ux redesign conversion 28 case study)",
+  "primary_keyword": "ux redesign conversion 28 case study",
+  "secondary_keywords": [],
+  "entity_a": "ux-redesign-conversion-28",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-ux-redesign-conversion-28-01",
+    "f-cs-ux-redesign-conversion-28-02",
+    "f-cs-ux-redesign-conversion-28-03",
+    "f-cs-ux-redesign-conversion-28-04",
+    "f-cs-ux-redesign-conversion-28-05",
+    "f-cs-ux-redesign-conversion-28-06",
+    "f-cs-ux-redesign-conversion-28-07",
+    "f-cs-ux-redesign-conversion-28-08",
+    "f-cs-ux-redesign-conversion-28-09",
+    "f-cs-ux-redesign-conversion-28-10",
+    "f-cs-ux-redesign-conversion-28-11",
+    "f-cs-ux-redesign-conversion-28-12",
+    "f-cs-ux-redesign-conversion-28-13",
+    "f-cs-ux-redesign-conversion-28-14",
+    "f-cs-ux-redesign-conversion-28-15",
+    "f-cs-ux-redesign-conversion-28-16",
+    "f-cs-ux-redesign-conversion-28-17",
+    "f-cs-ux-redesign-conversion-28-18",
+    "f-cs-ux-redesign-conversion-28-19",
+    "f-cs-ux-redesign-conversion-28-20",
+    "f-cs-ux-redesign-conversion-28-21",
+    "f-cs-ux-redesign-conversion-28-22",
+    "f-cs-ux-redesign-conversion-28-23"
+  ],
+  "experience_used": [
+    "exp-011",
+    "exp-005"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#ux-redesign-conversion-28-figures",
+      "alt": "Figures from UX Redesign That Improved Conversion by 28% (Before vs After Breakdown), each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

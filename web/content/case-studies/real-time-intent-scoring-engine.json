@@ -1,0 +1,113 @@
+{
+  "id": "case-study-0176",
+  "url": "/case-studies/real-time-intent-scoring-engine",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Real time intent scoring engine case study",
+  "meta_description": "Designing a system to score user intent in real-time and improve conversions. A first-hand account of real time intent scoring engine case study, with t.",
+  "h1": "Building a Real-Time Intent Scoring Engine for Lead Conversion (real time intent scoring engine case study)",
+  "primary_keyword": "real time intent scoring engine case study",
+  "secondary_keywords": [],
+  "entity_a": "real-time-intent-scoring-engine",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-real-time-intent-scoring-engine-01",
+    "f-cs-real-time-intent-scoring-engine-02",
+    "f-cs-real-time-intent-scoring-engine-03",
+    "f-cs-real-time-intent-scoring-engine-04",
+    "f-cs-real-time-intent-scoring-engine-05",
+    "f-cs-real-time-intent-scoring-engine-06",
+    "f-cs-real-time-intent-scoring-engine-07",
+    "f-cs-real-time-intent-scoring-engine-08",
+    "f-cs-real-time-intent-scoring-engine-09",
+    "f-cs-real-time-intent-scoring-engine-10",
+    "f-cs-real-time-intent-scoring-engine-11",
+    "f-cs-real-time-intent-scoring-engine-12",
+    "f-cs-real-time-intent-scoring-engine-13",
+    "f-cs-real-time-intent-scoring-engine-14",
+    "f-cs-real-time-intent-scoring-engine-15",
+    "f-cs-real-time-intent-scoring-engine-16",
+    "f-cs-real-time-intent-scoring-engine-17",
+    "f-cs-real-time-intent-scoring-engine-18",
+    "f-cs-real-time-intent-scoring-engine-19",
+    "f-cs-real-time-intent-scoring-engine-20",
+    "f-cs-real-time-intent-scoring-engine-21",
+    "f-cs-real-time-intent-scoring-engine-22",
+    "f-cs-real-time-intent-scoring-engine-23",
+    "f-cs-real-time-intent-scoring-engine-24",
+    "f-cs-real-time-intent-scoring-engine-25",
+    "f-cs-real-time-intent-scoring-engine-26",
+    "f-cs-real-time-intent-scoring-engine-27",
+    "f-cs-real-time-intent-scoring-engine-28",
+    "f-cs-real-time-intent-scoring-engine-29"
+  ],
+  "experience_used": [
+    "exp-045",
+    "exp-049"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/ai-apps",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#real-time-intent-scoring-engine-figures",
+      "alt": "Figures from Building a Real-Time Intent Scoring Engine for Lead Conversion, each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

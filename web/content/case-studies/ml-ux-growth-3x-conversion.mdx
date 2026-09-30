@@ -1,0 +1,159 @@
+<AnswerBox>
+End-to-end conversion optimisation using ML intent scoring, UX redesign, and growth loops. The subject is ml ux growth 3x conversion case study, including the version that failed. Written up Feb 2026.
+</AnswerBox>
+
+## What Happens When You Give a Designer Access to the Model's Predictions
+
+The experiment started as a minor workflow change: we gave our lead product designer, Aditi, a daily dashboard showing the ML model's user intent predictions — which users were classified as High Intent, which as Research Mode, which as Likely to Churn — and asked her to redesign the comparison interface with that information in mind.
+
+What followed was the most productive design sprint we'd ever run. Not because Aditi built better UX alone, or because the ML model was better than expected, but because the combination produced something neither discipline would have arrived at independently.
+
+> **What this showed.** ML models know things that designers can't infer from session recordings. UX designers know things that ML models can't infer from behavioral logs. The intersection — using model predictions to inform design decisions in real-time — turned out to be a genuinely new capability that neither function had on its own.
+
+## The Gap Between Model Knowledge and Design Knowledge
+
+Before the collaboration, each discipline was working with incomplete information. The designer was making UI decisions based on session recordings and user interviews — rich qualitative data, but no predictive signal. The ML team was producing predictions that lived in a database but had no interface consequence.
+
+<FactTable
+  id="ml-ux-growth-3x-conversion-figures"
+  caption="What the ML Model Knew breakdown"
+  columns={["What the ML Model Knew", "What Design Knew", "What Neither Knew Without Collaboration"]}
+  rows={[
+    { cells: ["User's predicted intent (High/Research/Churn)", "User's expressed confusion (recordings)", "Which design element to show to which intent class"] },
+    { cells: ["Probability of conversion in this session", "Where users clicked and hesitated", "Whether a hesitation was confusion or deliberation"] },
+    { cells: ["Likely churn risk for specific users", "General churn pattern from cohort analysis", "Which users on the page right now are at risk"] },
+    { cells: ["Predicted LTV for this user", "Average LTV from analytics", "Whether to invest in high-touch experience for this user"] }
+  ]}
+/>
+
+> **The takeaway.** The ML model was predicting things in real-time that design was inferring in aggregate, post-hoc. Making model predictions available to the design layer meant the interface could respond to individual user context — not average user behavior. That's the shift.
+
+## How We Set Up the ML-Design Partnership
+
+The setup was intentionally low-tech to start. We didn't build complex personalization infrastructure first. We did something simpler: gave Aditi read access to the model's live predictions for the current session of every active user, and asked her to sit with it for a week before designing anything.
+
+### Week 1: Observation Only
+
+Aditi spent a week watching model predictions alongside session recordings simultaneously. For the same user, at the same moment: what was the model classifying their intent as, and what were they actually doing in the UI? The mismatches were instructive — cases where the model predicted High Intent but the user was clearly struggling, or Research Mode but the user had a shortlist ready.
+
+### Week 2: Hypothesis Formation
+
+Based on observations, Aditi proposed 3 design hypotheses — not about average users, but about specific intent classes. 'High Intent users see too many options and need a decision accelerator. Research Mode users need more information but we're showing them the same CTA as High Intent users. Likely Churn users are showing frustration signals that the current design has no response to.'
+
+### Week 3–6: Prototype and Test
+
+Three interface variants built, each targeting a specific intent class. A/B tested against each other and against the standard interface. Intent class detected by model → relevant variant shown. Measured conversion by intent class × design variant.
+
+## What Aditi Designed for Each Intent Class
+
+> The insight from the observation week: we'd been showing the same interface to three fundamentally different people — someone ready to buy, someone trying to understand, and someone about to leave. That's like speaking in one tone to a crowd of people who need entirely different things from you.
+
+Three design responses to three intent states:
+
+High Intent (P(convert) ≥ 0.65)
+
+Decision Accelerator view: shortlisted plans featured prominently, comparison reduced to 3 key differentiators (not 14), CTA changed from 'Get Quote' to 'Start My Cover', trust signals (claim ratio, reviews) shown inline. Goal: reduce decision friction for someone who's essentially already decided.
+
+Result: +31% conversion vs standard interface for this intent class
+
+Research Mode (P(convert) = 0.20–0.65)
+
+Information-Rich view: full 14-point comparison, methodology disclosure shown, calculator embedded in comparison, additional provider details accessible, CTA changed to 'Save This Comparison'. Goal: serve the decision process rather than trying to rush past it.
+
+Result: +18% return rate (D3 return), +22% eventual conversion vs standard
+
+At-Risk / Likely Churn (Churn P ≥ 0.60)
+
+Intervention view: chat prompt appears after 4 minutes ('Looks like you might have questions — I can help'), comparison simplified to most popular option for their profile, social proof (how many similar users bought this) shown prominently. Goal: break the friction loop before exit.
+
+Result: −34% exit rate for users in this class; +19% conversion of recovered users
+
+## How Intent-Driven UI Actually Works
+
+### Real-Time Intent Classification
+
+Gradient boosting model classifying users into 3 intent states, recalculated every 3 minutes during active sessions. Features: session depth, filter usage, time per plan, return visit history, comparison actions. Score streamed to frontend via WebSocket.
+
+### UI Variant Switching
+
+Frontend feature flag system: intent class received → variant selected → component swap without full page reload. Transition: 400ms cross-fade to prevent jarring switch if intent changes mid-session. Smooth, not disorienting.
+
+### Churn Intervention System
+
+At-Risk classification triggers: chat prompt at 4 minutes of session (not on first detection — only after sustained at-risk signal). Chat connects to CS queue; response SLA 2 minutes during business hours. After hours: pre-written support options.
+
+### Attribution and Learning
+
+Every conversion tagged with intent class at time of CTA click. Monthly model refresh uses conversion outcomes by intent class. High Intent model performance tracked separately from Research Mode — different precision/recall targets for each class.
+
+## Across All Three Variants vs Standard Interface
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Blended Conversion Rate", "+28%"] },
+    { cells: ["High Intent CVR", "+31%"] },
+    { cells: ["At-Risk Exit Rate", "\u221234%"] },
+    { cells: ["Research Mode CVR", "+22%"] }
+  ]}
+/>
+
+<FactTable
+  caption="Intent Class breakdown"
+  columns={["Intent Class", "Standard CVR", "Variant CVR", "Lift"]}
+  rows={[
+    { cells: ["High Intent", "18.4%", "24.1%", "+31%"] },
+    { cells: ["Research Mode", "6.2%", "7.6%", "+22%"] },
+    { cells: ["At-Risk", "3.1%", "3.7% (+ reduced exit)", "+19% of recovered users"] },
+    { cells: ["Blended (all classes)", "9.8%", "12.5%", "+28%"] }
+  ]}
+/>
+
+## What the Collaboration Taught Both Teams
+
+### 01. ML predictions are most valuable when they're visible to the design layer
+
+The model had been running for 4 months, producing intent predictions that went into a database and drove email sequences. Making those predictions visible to the designer — in real-time, with session recordings — opened up a new category of design decision: designing for predicted behavior, not average behavior.
+
+### 02. Observation before design is undervalued in both disciplines
+
+The most valuable phase of the project was Aditi's week of observation-only. No design, no implementation — just watching model predictions alongside user behavior. The design hypotheses that emerged from that week were more specific and more testable than any brief we could have written for her.
+
+### 03. One interface for all users is a category error
+
+We'd been building one comparison interface for three fundamentally different psychological states. The design effort wasn't larger to address all three — it was targeted differently. The same engineering investment, directed at three focused variants, outperformed one generalized design significantly.
+
+### 04. Churn intervention is most effective at 4 minutes, not immediately
+
+First churn intervention attempt triggered chat at 2 minutes of at-risk session. Users found it intrusive — they'd only been on the page 2 minutes. 4 minutes was the threshold after which the chat offer felt like help rather than surveillance. Timing matters as much as the intervention content.
+
+## What We Got Wrong
+
+### What did not work: UI variant switch was jarring at first
+
+**Why it broke.** Early version: instant switch when intent class changed mid-session. Users in session recordings visibly startled by elements moving. Some thought the page had loaded incorrectly.
+
+**The fix.** 400ms cross-fade transition added. Components that don't change across variants (header, footer, navigation) anchored as stable. Only the dynamic comparison section fades. No more visible startling in session recordings post-fix.
+
+### What did not work: Research Mode CTA 'Save This Comparison' was too passive
+
+**Why it broke.** Users in Research Mode were engaging deeply with the information but few were saving. Exit rate was still high. 'Save This Comparison' didn't communicate enough value — what does saving do for me?
+
+**The fix.** CTA changed to 'Save & Track Rate Changes.' Added instant sub-message: 'We'll alert you when rates change for your saved comparison.' Value explicit. Save rate improved 2.8×.
+
+## The Next Phase of ML-Driven UX
+
+### Continuous Intent Classification
+
+Moving from 3-minute recalculation to per-event recalculation. Intent classification updates every user action — a filter applied, a plan opened, a comparison made. UI adapts in near-real-time rather than in 3-minute intervals.
+
+### Embedded Design Principles in the Model
+
+Currently: model classifies → design responds. Next: design principles encoded as model objectives. The model trained not just to predict intent but to predict which UI variant maximizes intent satisfaction. Design and model optimizing together.
+
+### Long-Term LTV Attribution
+
+Current measurement: conversion rate. Next: track whether intent-class-matched design decisions predict higher LTV at 90 days. High Intent users may convert faster but have different LTV than Research Mode users who took longer. Design decisions should optimize for LTV, not just CVR.
+
+> The best interfaces aren't designed for the average user. They're designed for the actual user — who is in a specific psychological state, at a specific point in their decision, with a specific thing they need. ML-driven UX is the infrastructure for that specificity.

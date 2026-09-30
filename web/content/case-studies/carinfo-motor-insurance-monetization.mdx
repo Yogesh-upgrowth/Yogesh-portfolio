@@ -1,0 +1,218 @@
+<AnswerBox>
+Rebuilding a broken insurance purchase funnel — from ₹14 lakh (about $14,600) to ₹1.82 crore per month through 6 parallel interventions. The subject is app insurance monetization case study, from the baseline to what shipped. Written up Mar 2026.
+</AnswerBox>
+
+## ₹14 Lakh (about $14,600) a Month. From a Funnel That Was Leaking at Every Step.
+
+When I first pulled the insurance funnel data, the revenue number looked like a typo. ₹14 lakh (about $14,600) per month, from a platform with 10M+ monthly active users and millions of vehicle owners with active insurance renewal intent.
+
+The math was embarrassing. If even 0.1% of the MAU converted at ₹1,200 (about $12.51) average policy value, that's ₹1.2 crore per month. We were at ₹14 lakh (about $14,600). Actual conversion rate from visit-with-intent to policy purchase: 0.007%.
+
+> **The problem.** This wasn't an audience problem. We had millions of people checking insurance expiry dates — the most purchase-ready signal that exists. We just had a funnel that converted like a broken pipe. Every step lost users. No one had ever traced exactly where.
+
+Twelve months later, that ₹14 lakh (about $14,600) was ₹1.82 crore — a 1,200% increase. Here's the full breakdown of what I found, what I changed, and what actually moved the number.
+
+## Mapping Every Drop-Off Point
+
+I spent the first two weeks doing nothing but funnel instrumentation. Every step, tagged. Every exit, recorded. The drop-off waterfall looked like this:
+
+<FactTable
+  id="carinfo-motor-insurance-monetization-figures"
+  caption="Funnel Step breakdown"
+  columns={["Funnel Step", "Users Reaching Step", "Drop-off Rate", "Root Cause (Initial Finding)"]}
+  rows={[
+    { cells: ["Insurance expiry check (intent signal)", "1,200,000/mo", "\u2014", "Entry point"] },
+    { cells: ["Insurance CTA visible", "940,000", "22% drop", "CTA below fold; generic copy"] },
+    { cells: ["CTA clicked (interest)", "47,000", "95% drop", "CTA not contextual; timing wrong"] },
+    { cells: ["Quote page reached", "31,000", "34% drop", "Form too long; trust signals absent"] },
+    { cells: ["Quote submitted", "8,400", "73% drop", "Price shock; no social proof"] },
+    { cells: ["Payment initiated", "2,800", "67% drop", "Payment UX broken on mobile"] },
+    { cells: ["Purchase completed", "1,100", "61% drop", "OTP failures; partner API timeouts"] }
+  ]}
+/>
+
+> **What this showed.** 95% of users who saw the insurance CTA didn't click it. Not 30%, not 50% — 95%. The problem wasn't the funnel. The problem was the door into the funnel: the CTA itself was invisible, generic, and untimed.
+
+There were 7 distinct failure points. Most teams would pick the biggest one and fix it. I mapped all 7 and built parallel solutions. When you have 0.007% conversion, every step matters.
+
+## Not All Intent Is Equal
+
+Within the 1.2M monthly intent-signal users, I segmented by days-to-expiry. The conversion data by segment was the single most important finding of the entire project.
+
+<FactTable
+  caption="Days to Expiry breakdown"
+  columns={["Days to Expiry", "Monthly Volume", "Existing Conversion", "Insight"]}
+  rows={[
+    { cells: ["Already expired", "320,000", "0.1%", "Users in pain \u2014 but we had no 'just expired' path"] },
+    { cells: ["0\u20137 days", "180,000", "0.9%", "Highest intent; identical generic experience as 90-day segment"] },
+    { cells: ["8\u201330 days", "310,000", "0.4%", "Moderate intent; urgency not reflected in product"] },
+    { cells: ["31\u201390 days", "260,000", "0.03%", "Low intent; shouldn't be in active conversion funnel"] },
+    { cells: ["90+ days", "130,000", "0.01%", "Not a purchase audience; information seekers only"] }
+  ]}
+/>
+
+> **The takeaway.** The 0–7 day segment converted at 0.9% — 90× better than the 90+ day group — but received the same interface, same CTA copy, same flow. We were serving the wrong experience to every segment and wasting the highest-intent moments entirely.
+
+The strategic decision: build segment-specific paths. Not 5 different funnels — 3 tiers: expired + critical (0–7), active decision window (8–30), and awareness-only (31+). The 31+ segment was removed from the active purchase flow entirely and moved to an education track.
+
+## The Purchase Decision Is Made Before the Funnel Starts
+
+The biggest realisation from the funnel data: by the time a user clicked the insurance CTA, 80% of the purchase decision was already made. They weren't evaluating whether to buy — they were evaluating whether to buy here, or go to the insurer's own website.
+
+> The funnel's job wasn't to convince people to buy insurance. It was to convince them not to leave. That's a trust problem, not a persuasion problem.
+
+When I audited competitor paths — Policybazaar, insurer direct sites, agent flows — the pattern was clear: our funnel had zero trust architecture. No insurer logos. No policy count displayed. No claim settlement ratio. No customer reviews. Nothing that said "this is a legitimate place to buy a financial product."
+
+For a vehicle info app that people trusted for RC lookups, we had entirely failed to transfer that trust to the commercial flow. That was the strategic gap.
+
+## Six Parallel Interventions
+
+### 1. Contextual CTA Architecture
+
+CTA copy, placement, and urgency tier matched to expiry segment. 'Renew now — expires in 4 days' for critical tier. 'Your policy renewal window is open' for active tier. Static generic CTA eliminated entirely.
+
+### 2. Trust Signal Layer
+
+Insurer logos, IRDAI registration numbers, claim settlement ratios, policy count badges ('2.8L policies renewed via CarInfo'), and 4.6★ rating displayed before the quote form. Trust first, form second.
+
+### 3. Form Compression
+
+Quote form reduced from 11 fields to 4 (vehicle number, current insurer, expiry date, coverage type). Vehicle number pre-filled from RC data. User typed nothing they hadn't already provided to reach the page.
+
+### 4. Mobile Payment Overhaul
+
+UPI deep-linking added as primary payment option. Net banking flow removed from mobile. One-tap payment for returning users who had stored method. Payment step reduced from 4 screens to 1.
+
+### 5. Expiry Notification Redesign
+
+Replaced generic weekly reminder with 5-step cadence: 45d (informational), 30d (comparison prompt), 14d (quote locked), 7d (urgent), 3d (critical action). Each notification deep-linked to the exact funnel step with pre-filled context.
+
+### 6. API Reliability Engineering
+
+Partner insurer API timeouts caused 23% of payment failures. Built a queue-based retry layer with user-visible progress states. 'Processing your policy — this takes 20 seconds' replaced silent failure. Completion rate improved 58%.
+
+## The 12-Month Execution Timeline
+
+### Month 1–2 · Diagnosis — Full Funnel Instrumentation + Segment Analysis
+
+- Tagged every funnel step; recorded all exit points with context
+
+- Segmented users by days-to-expiry; built conversion baseline per segment
+
+- Competitive audit: Policybazaar, HDFC Ergo, TATA AIG direct flows
+
+- Identified 6 independent failure points for parallel intervention
+
+**Result.** Strategy locked. Prioritised: CTA redesign + trust layer as P0.
+
+### Month 3–5 · Trust + CTA — The Trust Layer and Contextual CTAs Ship
+
+- Insurer logos, ratings, IRDAI badges, policy count — trust shelf deployed above quote form
+
+- CTA copy segmented by expiry tier; placement moved above fold with sticky behaviour
+
+- Quote form: 11 fields → 4 fields; vehicle number pre-fill from RC data
+
+**Result.** CTA CTR: 4% → 17%. Quote form completion: 27% → 61%.
+
+### Month 6–9 · Payment + Notifications — Conversion Layer Rebuilt
+
+- UPI deep-link as primary mobile payment; 4-screen flow → 1-screen
+
+- 5-step notification cadence live; all notifications deep-linked to mid-funnel
+
+- Retry layer for partner API timeouts: silent failure → status transparency
+
+**Result.** Payment completion: 39% → 71%. Revenue run rate: ₹14L (about $14,600) → ₹78L/mo.
+
+### Month 10–12 · Compounding — Loyalty + Repeat Purchase Engine
+
+- Policy wallet: stored active policies with renewal 1-click trigger
+
+- 'Renew with same insurer' CTA for repeat users — zero re-entry required
+
+- Referral mechanic: 'Share your renewal link' with ₹200 (about $2.09) reward for first purchase by referee
+
+**Result.** Repeat purchase rate: 8% → 31%. Revenue: ₹1.82Cr (about $0.19 million)/mo (1,200% growth).
+
+## The Full Outcome
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Revenue Growth", "1,200%"] },
+    { cells: ["CTA CTR", "17%"] },
+    { cells: ["Payment Completion", "71%"] },
+    { cells: ["Repeat Purchase Rate", "31%"] }
+  ]}
+/>
+
+<FactTable
+  caption="Metric breakdown"
+  columns={["Metric", "Month 0", "Month 12"]}
+  rows={[
+    { cells: ["Monthly Insurance Revenue", "\u20b914 lakh (about $14,600)", "\u20b91.82 crore (about $0.19 million)"] },
+    { cells: ["Overall Funnel Conversion", "0.007%", "0.092%"] },
+    { cells: ["CTA Click Rate (intent segment)", "4%", "17%"] },
+    { cells: ["Quote Form Completion", "27%", "61%"] },
+    { cells: ["Payment Completion Rate", "39%", "71%"] },
+    { cells: ["Repeat Purchase Rate (12-month)", "8%", "31%"] }
+  ]}
+/>
+
+> **The takeaway.** 1,200% revenue growth didn't come from a single insight. It came from fixing 6 independent failure points simultaneously. Any one of them in isolation would have moved revenue 20–50%. All 6 together created compounding improvement across the full funnel.
+
+## The Mental Models That Stuck
+
+### 01. Trust is a prerequisite, not a nice-to-have
+
+Conversion on financial products is gated by trust, not persuasion. No CTA copy optimization will work if users don't believe they're buying from a legitimate source. Trust signals (regulator badges, claim ratios, transaction count) should be designed as structural elements, not decorative additions. We added the trust shelf before changing any copy — and that alone improved form completion by 34%.
+
+### 02. Pre-filling is the most underrated conversion lever
+
+Every field a user has to type is a decision point to exit. When we pre-filled the vehicle number (which we already had from their RC lookup), quote form drop-off dropped immediately. The user was already mid-path — we just removed the friction that made them feel like they were starting over.
+
+### 03. Repeat purchase is a product architecture problem, not a marketing one
+
+Getting from 8% to 31% repeat purchase didn't come from email campaigns. It came from the policy wallet — a persistent record of purchased policies with one-tap renewal. The moment buying again required zero re-entry, the repeat rate changed. Marketing can remind; product architecture enables.
+
+### 04. API failures are funnel failures — treat them as such
+
+23% of payment failures came from partner API timeouts. We tracked these as 'technical errors', not 'conversion failures'. That categorisation mistake let the issue persist for 9 months. Once we reclassified them as funnel failures and owned the fix, completion rate improved 58% at that step alone.
+
+## The Mistakes That Cost Us Time
+
+### What did not work: Rewrote CTA copy before fixing CTA placement
+
+**Why it broke.** Month 2 improvement: rewrote CTA copy across 14 variants. A/B tested extensively. Best variant: 12% improvement. Satisfying but insufficient. We'd optimised the headline of an ad that wasn't being seen — the CTA was below the fold on 71% of mobile sessions.
+
+**The fix.** Fixed placement first: sticky CTA bar that appeared after 5 seconds on insurance-expiry pages. CTR doubled before we changed any copy. Always validate visibility before optimising message.
+
+### What did not work: Served the 90+ day segment an aggressive purchase flow
+
+**Why it broke.** All users with any expiry data saw the full purchase path regardless of how far away their expiry was. A user with 180 days remaining would see 'Renew your insurance today' — which was accurate but contextually wrong. Unsubscribe rate from insurance notifications: 41%.
+
+**The fix.** Introduced segment-aware paths. 90+ days: informational only ('Know your options'). 31–90 days: comparison mode. 0–30: active purchase. 90+ day unsubscribe rate dropped to 6% once they stopped receiving purchase pressure.
+
+### What did not work: Referral mechanic launched without explaining the reward clearly
+
+**Why it broke.** 'Earn ₹200 (about $2.09)' button existed but the copy said 'Share and earn' with no context on what ₹200 was for or when it was paid. First two weeks: 0.8% participation rate. Users didn't trust the mechanic.
+
+**The fix.** Rewrote to: 'Your friend buys any policy → ₹200 (about $2.09) added to your wallet in 48 hours. No catch, no minimum.' Participation rate: 0.8% → 6.4%. Clarity eliminates hesitation in ways that incentive size alone cannot.
+
+## Where the Funnel Goes Next
+
+### Multi-Policy Household
+
+Users with 2+ vehicles represent 34% of the active user base but only 12% of insurance revenue. Building a 'household policy view' to surface all vehicle policies in one dashboard — and renewal as a household event, not a per-vehicle one.
+
+### Instant Policy Issuance
+
+Current flow: 20-second partner API processing. The next step: instant issuance using policy-as-a-service APIs with sub-2-second confirmation. The psychological difference between waiting and instant is significant for financial product completion rates.
+
+### Dynamic Pricing Display
+
+Showing real-time pricing changes ('This plan dropped ₹180 (about $1.88) yesterday') adds urgency without being aggressive. Using historical pricing data to display market movement — the same mechanic that makes booking platforms compelling.
+
+> The funnel wasn't broken because the product was bad. It was broken because nobody had ever instrumented it properly. Once you see where the water is escaping, fixing it is engineering — not creativity.

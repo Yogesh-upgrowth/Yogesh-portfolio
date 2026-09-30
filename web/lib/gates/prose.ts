@@ -17,6 +17,25 @@ export interface Section {
   text: string;
 }
 
+/**
+ * Text a reader sees inside a table component, for word counting.
+ *
+ * toProse strips component tags, which is right for style and claim gates — a
+ * caption is not authored prose. It is wrong for G07's section word count: a
+ * section whose body is a sourced FactTable reads as two words and gets failed as
+ * thin, when what is actually on the page is a table of figures. So G07 counts
+ * this in addition.
+ */
+export function tableText(mdx: string): string {
+  const out: string[] = [];
+  for (const m of mdx.matchAll(/<(?:Fact|Price|Decision)Table\b([\s\S]*?)\/>/g)) {
+    for (const cell of (m[1] ?? "").matchAll(/"((?:[^"\\]|\\.)*)"/g)) {
+      out.push(cell[1] ?? "");
+    }
+  }
+  return out.join(" ");
+}
+
 /** Strip code fences, component tags and meta-rendered blocks. */
 export function toProse(mdx: string): string {
   let s = mdx.replace(/```[\s\S]*?```/g, " ").replace(/`[^`\n]*`/g, " ");
@@ -70,6 +89,38 @@ export function sections(mdx: string): { lead: string; sections: Section[] } {
   }
   flush();
   return { lead: lead.join("\n").trim(), sections: out };
+}
+
+/**
+ * H2 sections with their H3 subsections folded in.
+ *
+ * `sections()` closes a section at the next heading of any level, so an H2 whose
+ * body lives in H3 subsections counts as almost no words. 02 §2 G07 bands "every
+ * H2 section" and separately asks for an H3 break above 450 words, which only
+ * makes sense if an H3 is part of its parent rather than a section in its own
+ * right. Banding H3s directly failed pages for having subheadings.
+ */
+export function h2Sections(mdx: string): Section[] {
+  const all = sections(mdx).sections;
+  // Section boundaries come from the prose form, so the raw MDX has to be split
+  // the same way to attribute each table to its section.
+  const rawParts = mdx.split(/^(?=##\s)/m);
+  const tableWords = new Map<string, number>();
+  for (const part of rawParts) {
+    const heading = /^##\s+(.*)$/m.exec(part)?.[1]?.trim();
+    if (heading) tableWords.set(heading, wordCount(tableText(part)));
+  }
+  const out: Section[] = [];
+  for (const s of all) {
+    if (s.level === 2) {
+      out.push({ ...s, words: s.words + (tableWords.get(s.heading) ?? 0) });
+    } else if (out.length) {
+      const parent = out[out.length - 1]!;
+      parent.words += s.words;
+      parent.text = `${parent.text}\n\n${s.heading}\n${s.text}`;
+    }
+  }
+  return out;
 }
 
 /** The first paragraph of the lead — what G06 judges. */

@@ -1,0 +1,256 @@
+<AnswerBox>
+Using behavioral ML to identify high-value users and optimize monetisation. The subject is predict high ltv users ml case study, including the version that failed. Written up Feb 2024.
+</AnswerBox>
+
+## The Chart That Silenced a Room
+
+It was a Thursday afternoon in July. Our finance lead, Priya, had been quiet through most of the revenue review. Then she put up one chart — not a deck, just one slide — and the room stopped.
+
+It showed that 2.3% of our 40,000 registered users were generating 71% of all revenue. The other 97.7% — the people we'd spent months and crores acquiring — were effectively break-even or negative.
+
+> **The problem.** We weren't running a growth business. We were running an expensive lottery. And we'd been optimizing the lottery ticket price, not the odds.
+
+I remember sitting there thinking: we don't need more users. We need to figure out who those 2% are — before we spend money on them.
+
+## Two Very Different Businesses Hiding in One Dashboard
+
+The problem with averages is they lie gracefully. Our average revenue per user was ₹18 (about $0.19)/month. Respectable, right? Not when you disaggregate it.
+
+<FactTable
+  id="predict-high-ltv-users-ml-figures"
+  caption="Segment breakdown"
+  columns={["Segment", "Users", "Avg Monthly Revenue", "Revenue Share"]}
+  rows={[
+    { cells: ["All Registered Users", "40,000", "\u20b918 (about $0.19)", "\u2014"] },
+    { cells: ["Monthly Active Users", "8,200 (20.5%)", "\u20b987 (about $0.91)", "\u2014"] },
+    { cells: ["Revenue-Generating Users", "920 (2.3%)", "\u20b91,390 (about $14.50)", "71%"] },
+    { cells: ["Everyone else", "39,080 (97.7%)", "\u20b95.40 (about $0.06)", "29%"] }
+  ]}
+/>
+
+> **What this showed.** ₹18 (about $0.19) average. ₹1,390 (about $14.50) reality. Decisions made on blended averages are decisions made on fiction. We'd been optimizing the wrong number for six months.
+
+The marketing team's instinct was to improve onboarding and run re-engagement campaigns. Both felt right. Both were wrong — because they assumed the problem was activation, not selection.
+
+## What High-LTV Users Did in the First 72 Hours
+
+We pulled 18 months of user event logs and manually tagged every user as High-LTV or not. Then we looked backwards: what did the 2.3% do in their first 3 days that the other 97.7% didn't?
+
+<FactTable
+  caption="Cohort breakdown"
+  columns={["Cohort", "72-hr Behavior Pattern", "90-Day LTV", "D30 Retention"]}
+  rows={[
+    { cells: ["Explorer (never converts)", "1 session, bounces", "\u20b90 (about $0.00)", "3%"] },
+    { cells: ["One-and-Done", "1 transaction, disappears", "\u20b945 (about $0.47)", "8%"] },
+    { cells: ["Occasional User", "3+ sessions, 2 features", "\u20b9380 (about $3.96)", "24%"] },
+    { cells: ["High-LTV Power User", "5+ sessions, 4+ features, D2-3 return", "\u20b91,390 (about $14.50)", "79%"] }
+  ]}
+/>
+
+> **The takeaway.** The Power Users didn't become valuable slowly. They showed every signal of it within 72 hours of signup — they just had no idea they were being watched. The question was whether we were reading the signals in time to act.
+
+One pattern was particularly striking: High-LTV users almost always returned on Day 2 or Day 3. Not Day 7. Not "whenever they remembered." Within 72 hours. That return visit was the single strongest predictor we found.
+
+## Rethinking the Problem Entirely
+
+The team's first response was "let's improve onboarding so more users behave like the 2%." I pushed back hard on this. You can't engineer someone into becoming a high-intent user through better UX. You can make it easier for them to express that intent — but you can't manufacture it.
+
+> The 2% weren't special because of our product. They were special because of who they were when they arrived. Our job was to find more of them — and recognize them faster.
+
+The reframe: stop trying to convert everyone, start predicting who's worth investing in — at the 72-hour mark, not after 30 days of guessing.
+
+## The Lifetime Value Signal Architecture
+
+We called it LVSA — not because the name matters, but because it helped the team think about it as a system rather than a model. Four layers, all dependent on each other.
+
+### Signal Collection
+
+Real-time event capture: session depth, feature sequencing, return timing, comparison actions. Each event assigned a predictive weight based on correlation with 90-day LTV — not based on recency or instinct.
+
+### 72-Hour Scoring
+
+XGBoost model trained on 18 months of data. Score computed at the 72-hour mark: 0–100. ≥65 = High-LTV candidate. Threshold chosen after testing 60, 65, and 70 — 65 gave the best precision-recall tradeoff for our cost of white-glove treatment.
+
+### Experience Routing
+
+Score ≥65: white-glove onboarding, priority support, early premium access. Score ≥80: VP-level manual outreach within 4 hours. Everyone else: standard retention flow. Same product, different investment level.
+
+### Monthly Model Refresh
+
+Model retrained monthly with actual 90-day LTV outcomes. This part most teams skip — and it's why their models degrade. Each cycle we improve; each cycle the prediction gets sharper. Score drift alerts trigger manual review.
+
+<FactTable
+  caption="Behavioral Signal breakdown"
+  columns={["Behavioral Signal", "Predictive Weight", "Why"]}
+  rows={[
+    { cells: ["Return visit within 72 hours", "0.28", "Strongest single predictor of retention"] },
+    { cells: ["4+ features used in session 1", "0.22", "Depth of exploration = serious intent"] },
+    { cells: ["Comparison action performed", "0.18", "Decision-stage behavior"] },
+    { cells: ["Session duration > 8 minutes", "0.15", "Engagement quality"] },
+    { cells: ["Share or export action", "0.10", "Product-as-tool signal"] },
+    { cells: ["Push notification opt-in", "0.07", "Communication willingness"] }
+  ]}
+/>
+
+## How It Was Built
+
+The engineering side took 6 weeks. Not because it was technically complex — it wasn't — but because we had to fight about what it should and shouldn't do for most of Week 1.
+
+Data Pipeline
+
+- Event stream: Segment → Kafka → real-time feature store
+
+- 26-feature vector built per user, updated every 2 hours for first 72 hours
+
+- LTV probability score computed at the 72-hour mark and stored in user profile
+
+Product Routing
+
+- High-LTV flag surfaced in internal CRM and support tooling
+
+- White-glove email sequence triggered automatically for ≥65 scorers
+
+- Manual review queue for ≥80 scorers — VP outreach within 4 hours
+
+Acquisition Impact
+
+- Lookalike audiences built from High-LTV cohort behavioral profile (not just demographics)
+
+- CAC ceiling raised 3× for campaigns targeting high-LTV lookalikes
+
+- Source-level LTV attribution: organic had 2.1× more High-LTV users than paid social
+
+Feedback Loop
+
+- Monthly model refresh with actual 90-day revenue outcomes
+
+- Score drift monitoring weekly — any sudden change triggers investigation
+
+- A/B test: white-glove vs standard for borderline scores (60–65)
+
+## 90 Days, in Honest Detail
+
+### Weeks 1–4 · The Signal Hunt — Finding What Actually Predicted LTV
+
+- Pulled 18 months of user logs; manually labeled 12,000 users as High/Low LTV
+
+- Built correlation heatmap of 60+ behavioral signals vs actual 90-day revenue
+
+- Narrowed to 6 signals with combined AUC of 0.78 — not perfect, but actionable
+
+**Result.** Signal hypothesis validated. Confidence to build the model.
+
+### Weeks 5–8 · Building and Testing — Model Training and Threshold Calibration
+
+- XGBoost trained: 18 months, 12K labelled users, 26 features
+
+- Threshold tested at 60, 65, 70 — 65 gave best precision-recall tradeoff
+
+- 81% precision, 74% recall at threshold 65
+
+**Result.** Model live in staging. First live scoring run on new signups.
+
+### Weeks 9–12 · Routing Live — White-Glove Treatment for High Scorers
+
+- High-LTV routing triggered: email sequence, priority support, early premium access
+
+- Lookalike audiences pushed to Meta and Google from High-LTV behavioral profiles
+
+- CAC ceiling raised 3× for High-LTV-targeted campaigns
+
+**Result.** Revenue per acquired user +61% in first cohort
+
+### Month 4+ · Compounding — Optimization and Source Attribution
+
+- Monthly model refresh established as standard process
+
+- Source-level LTV attribution added — organic 2.1× better than paid social
+
+- 3 underperforming paid channels paused based on LTV data, not just CAC
+
+**Result.** Blended CAC down 34% without reducing acquisition volume
+
+## What Actually Changed
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Revenue per Acquired User", "+61%"] },
+    { cells: ["Blended CAC", "\u221234%"] },
+    { cells: ["Model Precision", "81%"] },
+    { cells: ["High-LTV User Acquisition", "2.7\u00d7"] }
+  ]}
+/>
+
+<FactTable
+  caption="Metric breakdown"
+  columns={["Metric", "Before", "After (90 Days)"]}
+  rows={[
+    { cells: ["High-LTV User Share of New Cohort", "2.3%", "6.1%"] },
+    { cells: ["Revenue per Acquired User", "\u20b918 (about $0.19)/mo avg", "\u20b929 (about $0.30)/mo avg"] },
+    { cells: ["Blended CAC", "\u20b9340 (about $3.55)", "\u20b9225 (about $2.35)"] },
+    { cells: ["Paid Channel ROAS", "1.8\u00d7", "3.4\u00d7"] },
+    { cells: ["Model Precision", "\u2014", "81%"] }
+  ]}
+/>
+
+> **The takeaway.** The number I'm proudest of isn't the revenue lift. It's that the High-LTV share of new cohorts went from 2.3% to 6.1%. We didn't get lucky more often — we got better at recognizing luck when it arrived.
+
+## What I'd Tell Someone Starting This Today
+
+### 01. LTV is a sorting problem disguised as a growth problem
+
+Most teams try to grow LTV by adding features, improving onboarding, or running engagement campaigns. The real lever is routing: get high-LTV users to intensive engagement early; let low-LTV users self-serve. The product already existed. The routing didn't.
+
+### 02. The 72-hour window matters more than any other
+
+Behavior in the first 3 days after signup predicted 90-day LTV better than any demographic, channel, or survey response. High-value users show themselves almost immediately — if you're looking.
+
+### 03. Set different CAC ceilings by predicted LTV segment
+
+If you apply one CAC ceiling across all users, you systematically underspend acquiring high-LTV users and overspend on low-LTV ones. Differentiated CAC limits restructure the economics of every channel you run.
+
+### 04. Precision beats recall when white-glove treatment has real costs
+
+At 81% precision and 74% recall, we deliberately accepted missing some true High-LTV users. The cost of treating false positives (low-LTV users) to white-glove standards was higher than missing true positives. Know your cost structure before choosing your threshold.
+
+### 05. The model output becomes your best acquisition brief
+
+Once you know exactly who your high-LTV users are at a behavioral level, building lookalike audiences is almost automatic. The model didn't just improve retention investment — it improved acquisition targeting simultaneously.
+
+## The Mistakes I'm Glad We Made Early
+
+### What did not work: Our first model had 83 features and overfit badly
+
+**Why it broke.** Validation AUC looked great at 0.84. Live scoring performance degraded within 3 weeks — the model had memorized training noise. We were celebrating the wrong metric.
+
+**The fix.** Cut to the top 10 features by mutual information score. Validation AUC dropped to 0.78, but live scoring AUC improved to 0.81. Less is genuinely more when the signal-to-noise ratio is this low.
+
+### What did not work: We started white-glove treatment at score ≥60
+
+**Why it broke.** Felt conservative enough. It wasn't. 40% of users above 60 churned within 30 days — too many false positives getting expensive treatment.
+
+**The fix.** Raised threshold to 65. False positive rate dropped 51%. Manual VP outreach reserved for ≥80. At that threshold, paid-to-conversion was 3.4×.
+
+### What did not work: We forgot to surface the score to the sales team
+
+**Why it broke.** High-LTV users were being routed to the right email sequences but handled identically to everyone else in sales calls. Reps had no visibility into their score.
+
+**The fix.** LTV score added to CRM view. Tiered playbooks by score band. Score ≥80 users got VP-level call within 4 hours of signup. That change alone moved conversion rate for those users by 28%.
+
+## The Next Version of This
+
+### Real-Time Score Updates
+
+Moving from 72-hour static scoring to continuous — recalculated every 6 hours. Some users cross the threshold on Day 4 or 5. We're currently missing them.
+
+### Score Velocity Triggers
+
+It's not just the score — it's the direction and speed of change. A user going from 45 to 72 in 48 hours is different from one who's been at 73 for 5 days. Velocity should trigger different interventions.
+
+### Churn-Weighted LTV Scoring
+
+Incorporate churn probability into the score. High LTV with high churn risk needs a different intervention than stable mid-LTV. Combining both would create a genuinely actionable risk-adjusted view.
+
+> We didn't need more users. We needed to get much better at recognizing the right ones the moment they walked in the door.

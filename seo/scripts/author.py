@@ -141,7 +141,9 @@ def build_meta(page: dict, batch: dict) -> dict:
         "experience_used": page.get("experience", []),
         "internal_links": page["links"],
         "visuals": page.get("visuals", []),
-        "faq": page.get("faq", []),
+        # PageMeta allows an absent FAQ but not an empty one (02 §2 G07: "3–5 or
+        # absent"), so an empty list is dropped rather than written.
+        **({"faq": page["faq"]} if page.get("faq") else {}),
         "cta": page.get("cta", batch["default_cta"]),
         "schema_types": page["schema_types"],
         "unique_value_statement": page["unique_value"],
@@ -241,6 +243,11 @@ def check(spec: dict) -> list[str]:
         bands = BANDS.get(page["archetype"])
         if bands:
             for problem in style_problems(page["body"], page["archetype"], *bands):
+                # G12 exempts case studies from the first-person rule: the
+                # archetype is an account of Yogesh's own work and its contract
+                # requires "my role" and "what I'd do differently" in the body.
+                if page["archetype"] == "case-study" and problem.startswith("G12 first person"):
+                    continue
                 errs.append(f"{page['id']}: {problem}")
         # A FromMyWork block that cites an id the meta does not list fails the
         # draft schema; catch the mismatch in both directions here.
@@ -248,8 +255,13 @@ def check(spec: dict) -> list[str]:
         listed = set(page.get("experience", []))
         for c in cited - listed:
             errs.append(f"{page['id']}: body cites {c}, meta does not list it")
-        for l in listed - cited:
-            errs.append(f"{page['id']}: meta lists {l}, body does not cite it")
+        # A case study's whole body is the first-person account, so its
+        # experience_used declares provenance rather than marking inline blocks.
+        # Requiring a FromMyWork per declared entry would force decorative blocks
+        # into a page that is already the account those entries came from.
+        if page["archetype"] != "case-study":
+            for l in listed - cited:
+                errs.append(f"{page['id']}: meta lists {l}, body does not cite it")
         for link in page["links"]:
             if link["url"].split("#")[0] not in known:
                 errs.append(f"{page['id']}: link {link['url']} is not a known URL")
@@ -311,6 +323,14 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("spec", type=Path)
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument(
+        "--allow-failing", action="store_true",
+        help="write the pages even when content gates would fail. For migrating "
+             "published pages that redirects already point at: the page has to "
+             "exist and return 200, and it stays status=drafted / indexable=false "
+             "until pnpm gates passes it. Structural problems (a bad link target, "
+             "a fact over its reuse cap, an invented URL) still refuse to write.",
+    )
     args = ap.parse_args()
 
     spec = json.loads(args.spec.read_text())
@@ -322,11 +342,25 @@ def main() -> int:
     errs = [e for e in errs if " G13 risk: " not in e]
     for w in warns:
         print(f"author.py: warn: {w}", file=sys.stderr)
+    # Content findings are the author's to fix; structural ones would produce a
+    # broken page, so they refuse to write whatever the flag says.
+    STRUCTURAL = ("is not a known URL", "no link with role", "not in the pool",
+                  "cap ", "appears ", "empty body", "does not define", "no visual",
+                  "G08 no link", "repeated on", "body cites", "body links")
     if errs:
+        blocking = [e for e in errs if not args.allow_failing
+                    or any(k in e for k in STRUCTURAL)]
         print(f"author.py: {len(errs)} problem(s) in {args.spec.name}", file=sys.stderr)
         for e in errs:
             print(f"  - {e}", file=sys.stderr)
-        return 1
+        if blocking:
+            return 1
+        print(
+            f"author.py: writing anyway (--allow-failing). {len(errs)} content "
+            "finding(s) stand; these pages stay indexable:false until pnpm gates "
+            "passes them.",
+            file=sys.stderr,
+        )
 
     pool = spec["facts"]
     written = 0

@@ -1,0 +1,203 @@
+<AnswerBox>
+Aggregating real-time fares across ride-hailing platforms at scale. The subject is cab fare comparison engine case study, with the constraints that shaped it. Written up Dec 2024.
+</AnswerBox>
+
+## The Auto-Rickshaw Insight That Started Everything
+
+I was on my way to a client meeting in Bangalore, stuck in one of those peculiarly still traffic jams where nobody is moving and nobody seems bothered by it. The auto driver and I got talking — as you do.
+
+He told me he'd stopped taking Ola bookings in the evenings because "the surge pricing is too unpredictable — passengers get angry when the app shows one price and they're charged another." He'd switched to a mix of Rapido and street hails. He didn't know — and had no way to know — that across town, a completely different surge situation was unfolding on Uber.
+
+> **What this showed.** That conversation stuck. Here was someone whose income depended entirely on platform-specific surge dynamics — and he had no visibility into the comparative market. The same invisibility problem existed for the 2 million daily cab users in Tier 1 Indian cities.
+
+That insight became the premise for a cab fare comparison engine: not just which app is cheapest right now, but a real-time, route-specific view across platforms — with surge prediction baked in.
+
+## What Users Were Doing Without a Comparison Tool
+
+Before building, we surveyed 400 frequent cab users in Bangalore, Mumbai, and Delhi. The current "comparison" behavior was manual and painful.
+
+<FactTable
+  id="cab-fare-comparison-engine-figures"
+  caption="Behavior breakdown"
+  columns={["Behavior", "% of Users", "Time Spent", "Success Rate"]}
+  rows={[
+    { cells: ["Open 2\u20133 apps manually and compare", "68%", "3\u20137 minutes", "Moderate (surge changes during this time)"] },
+    { cells: ["Stick to one platform always", "21%", "0 minutes", "Low (missing better deals)"] },
+    { cells: ["Ask colleague/friend what they're using", "8%", "1\u20132 minutes", "Low"] },
+    { cells: ["Use comparison tool (existing options)", "3%", "\u2014", "Poor (none were real-time)"] }
+  ]}
+/>
+
+The existing 3% using comparison tools were using browser extensions or third-party apps that scraped static data — not real-time pricing. A user who opened a comparison at 7:55pm was seeing data from 7:40pm, by which time surge multipliers had often changed significantly.
+
+> **The problem.** The comparison problem wasn't information access — it was information velocity. Cab fares change every 2–4 minutes during peak hours. Any comparison tool that wasn't updating at that frequency was creating false confidence in stale data.
+
+## Five Types of Cab Users
+
+<FactTable
+  caption="User Type breakdown"
+  columns={["User Type", "% of Market", "Price Sensitivity", "Key Need", "Comparison Value"]}
+  rows={[
+    { cells: ["Daily Commuter", "34%", "High", "Predictability + lowest morning fare", "Highest \u2014 repeat value"] },
+    { cells: ["Weekend Leisure", "22%", "Medium", "Convenience over price", "Medium"] },
+    { cells: ["Corporate Traveler", "18%", "Low (expensed)", "Reliability + receipt", "Low"] },
+    { cells: ["Late Night User", "15%", "High", "Safety + availability", "High \u2014 surge sensitivity"] },
+    { cells: ["Airport Shuttle", "11%", "Medium-High", "Fixed-price predictability", "High \u2014 single high-value trip"] }
+  ]}
+/>
+
+> **The takeaway.** Daily Commuters (34% of users) were the core segment — high price sensitivity, repeat use, predictable routes. If the tool saved a commuter ₹40 (about $0.42)/day on a daily commute, that was ₹880/month in real savings. That's the value proposition that builds daily habits.
+
+## Comparison Isn't Enough — Prediction Is the Differentiator
+
+Every competitor showed current fares. That was necessary but not sufficient. The higher-value feature — and the technically harder one — was surge prediction: telling users not just what prices are now, but whether waiting 8 minutes would drop the surge multiplier.
+
+> The best comparison tool in the world fails if the comparison it shows becomes wrong before the user acts on it. Real-time was table stakes. Prediction was the moat.
+
+Surge patterns are predictable with enough historical data. An 8:15am Monday ride from Koramangala to MG Road follows a consistent surge curve. We had the data. The question was whether users would trust and act on a prediction.
+
+## The Engine Design
+
+### Real-Time Fare Fetching
+
+Platform API integrations + scraping layer for platforms without public APIs. Fare refresh every 90 seconds. Route-specific (not city-wide) pricing — because surge varies by pickup zone within the same city at the same time.
+
+### Surge Prediction Model
+
+LSTM model trained on 14 months of route-specific surge data. Features: time of day, day of week, weather (rain increases surge 40–80%), local events, historical patterns for that specific origin-destination pair. Output: 15-minute surge forecast.
+
+### Wait vs Book Recommendation
+
+'Wait 8 minutes — surge likely to drop from 1.8× to 1.2×, saving ~₹65 (about $0.68)' or 'Book now — surge rising over next 15 minutes.' Probabilistic recommendation with confidence level shown. Users see the bet they're making.
+
+### Commute Route Memory
+
+Repeat commuters: save up to 3 frequent routes. One-tap comparison for saved route. Daily commute digest: 'Your 8:30am Koramangala → MG Road: best fare right now is Rapido at ₹128 (about $1.33).' Habit-forming format.
+
+<FactTable
+  caption="Feature breakdown"
+  columns={["Feature", "Adoption Rate", "Impact on Return Rate"]}
+  rows={[
+    { cells: ["Saved Commute Routes", "61% of daily users", "+3.2\u00d7 D30 retention vs non-savers"] },
+    { cells: ["Surge Prediction (used)", "44% of sessions", "+28% conversion to app open"] },
+    { cells: ["Wait/Book Recommendation", "38% followed it", "88% found it accurate per exit survey"] },
+    { cells: ["Real-Time Refresh", "Base feature", "Foundation of trust metrics"] }
+  ]}
+/>
+
+## The Data Layer That Made It Work
+
+### Data Ingestion
+
+- Ola/Uber/Rapido APIs polled every 90 seconds per active route query
+
+- Route-level pricing stored: city + zone + time + fare + surge multiplier
+
+- Historical surge data: 14 months, 6 cities, 840 route pairs
+
+### Prediction Pipeline
+
+- LSTM model: sequence input (last 6 hours of surge for that route) → 15-minute surge forecast
+
+- Weather API integration: rain detection adds 45–80% to surge probability
+
+- Model accuracy: 78% within ±10% of actual surge at 15-minute horizon
+
+### User Experience Layer
+
+- Saved routes: one-tap comparison on app open
+
+- Push notification: 'Your commute route looks good right now — low surge until 8:45am'
+
+- Fare alert: notify when fare crosses user-set threshold for specific route
+
+## Growth Without Paid Acquisition
+
+### Month 1 · Launch — Bangalore + Delhi Only
+
+- Launched with 6 cities' route data; Bangalore and Delhi prioritized
+
+- No paid acquisition — organic only (word of mouth, LinkedIn post, tech communities)
+
+- First 2,000 users within 10 days
+
+**Result.** D7 retention: 41% (far above typical fintech; habit forming quickly)
+
+### Month 2–3 · Surge Prediction Launch — The Differentiating Feature
+
+- Surge prediction launched; initially beta-gated to 20% of users
+
+- In-app accuracy feedback: users reported 88% found it useful or very useful
+
+- Wait/Book feature launched and became most-used non-comparison feature
+
+**Result.** DAU growing organically 18% week-over-week through sharing
+
+### Month 4–6 · Scale — 4 New Cities + Commute Routes
+
+- Mumbai, Hyderabad, Chennai, Pune added
+
+- Saved commute routes launched — adopted by 61% of daily users within 4 weeks
+
+- 80,000 monthly active users; primarily organic
+
+**Result.** 80K MAU. ₹3.2L (about $3,337) avg monthly user savings across active users. D30 retention: 38%.
+
+## Six-Month Numbers
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Monthly Active Users", "80K"] },
+    { cells: ["D30 Retention", "38%"] },
+    { cells: ["Surge Prediction Accuracy", "88%"] },
+    { cells: ["Monthly User Savings", "\u20b93.2L (about $3,337)"] }
+  ]}
+/>
+
+> **What this showed.** The metric I'm most proud of: 80,000 users who came back every month without a single rupee of paid acquisition. Every user came because someone told them about it, or because they searched for "cheapest cab in Bangalore" and we showed up. That's product-market fit in its clearest form.
+
+## What Built the Habit
+
+### 01. Saved routes are retention mechanisms, not convenience features
+
+Users who saved commute routes had 3.2× better D30 retention than users who didn't. The route save wasn't a convenience — it was a commitment to return. The product held something they'd invested in setting up.
+
+### 02. Prediction accuracy above 80% is the threshold for behavioral trust
+
+Below 80%, users tried the surge prediction and filed it as 'interesting but unreliable.' Above 80%, they started making booking decisions based on it — waiting when told to wait, booking when told to book. Trust threshold: 80%.
+
+### 03. Real-time refresh cadence directly correlates with user trust
+
+When we experimented with 5-minute refresh (to reduce API costs), user complaints about 'wrong prices' increased significantly. When we moved back to 90-second refresh, complaints fell. Accuracy and recency are inseparable in pricing contexts.
+
+## Where We Got It Wrong
+
+### What did not work: First prediction model used city-level surge, not route-level
+
+**Why it broke.** Initial LSTM trained on city-wide average surge data. Bangalore as a whole doesn't surge — Koramangala surges while Whitefield might not. City-level predictions were often directionally wrong.
+
+**The fix.** Rebuilt model with 840 route-pair specific models. Each popular origin-destination pair gets its own surge model trained on that route's specific historical data. Prediction accuracy: 61% → 78%.
+
+### What did not work: Weekend surge patterns were different; model didn't know
+
+**Why it broke.** The initial model was trained and performed well on weekday commute patterns. Weekend surge is driven by entertainment venues, late nights, weather events — completely different pattern. Weekend predictions were poor.
+
+**The fix.** Separate weekday/weekend model training. Weekend model includes proximity to entertainment districts, historical event data, late-night surge decay curves. Weekend prediction accuracy improved from 54% to 74%.
+
+## The Roadmap
+
+### Auto-Book Integration
+
+When a user sets a fare alert and the threshold is hit, auto-initiate the booking in the preferred app — eliminating the step between notification and action where surge can change again.
+
+### Tier 2 City Expansion
+
+Extending to Tier 2 cities where Rapido and local platforms have gained significant share. The comparison value is higher in markets where platform fragmentation is greater.
+
+### Monthly Savings Report
+
+Personal savings report: 'This month you saved ₹2,340 (about $24.40) by using our comparison tool.' Real, attributable savings that reinforce the habit and create referral motivation.
+
+> The auto driver who started the conversation saved ₹600 (about $6.26)/week by switching platforms based on surge patterns. He didn't use our app — but the 80,000 people who did were solving the same problem he described in that traffic jam.

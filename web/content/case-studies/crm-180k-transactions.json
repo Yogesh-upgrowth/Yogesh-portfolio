@@ -1,0 +1,112 @@
+{
+  "id": "case-study-0172",
+  "url": "/case-studies/crm-180k-transactions",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Crm 180k transactions case study: a case study with the numbers",
+  "meta_description": "A complete architectural rebuild of a vehicle enforcement CRM that crashed at 22K transactions — rebuilt to handle 10× the load.",
+  "h1": "Building a CRM That Handles 180K+ Monthly Transactions at 99.6% Uptime (crm 180k transactions case study)",
+  "primary_keyword": "crm 180k transactions case study",
+  "secondary_keywords": [],
+  "entity_a": "crm-180k-transactions",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-crm-180k-transactions-01",
+    "f-cs-crm-180k-transactions-02",
+    "f-cs-crm-180k-transactions-03",
+    "f-cs-crm-180k-transactions-04",
+    "f-cs-crm-180k-transactions-05",
+    "f-cs-crm-180k-transactions-06",
+    "f-cs-crm-180k-transactions-07",
+    "f-cs-crm-180k-transactions-08",
+    "f-cs-crm-180k-transactions-09",
+    "f-cs-crm-180k-transactions-10",
+    "f-cs-crm-180k-transactions-11",
+    "f-cs-crm-180k-transactions-12",
+    "f-cs-crm-180k-transactions-13",
+    "f-cs-crm-180k-transactions-14",
+    "f-cs-crm-180k-transactions-15",
+    "f-cs-crm-180k-transactions-16",
+    "f-cs-crm-180k-transactions-17",
+    "f-cs-crm-180k-transactions-18",
+    "f-cs-crm-180k-transactions-19",
+    "f-cs-crm-180k-transactions-20",
+    "f-cs-crm-180k-transactions-21",
+    "f-cs-crm-180k-transactions-22",
+    "f-cs-crm-180k-transactions-23",
+    "f-cs-crm-180k-transactions-24",
+    "f-cs-crm-180k-transactions-25",
+    "f-cs-crm-180k-transactions-26",
+    "f-cs-crm-180k-transactions-27",
+    "f-cs-crm-180k-transactions-28"
+  ],
+  "experience_used": [
+    "exp-041",
+    "exp-050"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/fintech",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#crm-180k-transactions-figures",
+      "alt": "Figures from Building a CRM That Handles 180K+ Monthly Transactions at 99.6% Uptime, each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

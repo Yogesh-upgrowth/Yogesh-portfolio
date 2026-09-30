@@ -1,0 +1,117 @@
+{
+  "id": "case-study-0185",
+  "url": "/case-studies/cab-fare-comparison-engine",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Cab fare comparison engine case study",
+  "meta_description": "Aggregating real-time fares across ride-hailing platforms at scale. A first-hand account of cab fare comparison engine case study, with the figures as m.",
+  "h1": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive) (cab fare comparison engine case study)",
+  "primary_keyword": "cab fare comparison engine case study",
+  "secondary_keywords": [],
+  "entity_a": "cab-fare-comparison-engine",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-cab-fare-comparison-engine-01",
+    "f-cs-cab-fare-comparison-engine-02",
+    "f-cs-cab-fare-comparison-engine-03",
+    "f-cs-cab-fare-comparison-engine-04",
+    "f-cs-cab-fare-comparison-engine-05",
+    "f-cs-cab-fare-comparison-engine-06",
+    "f-cs-cab-fare-comparison-engine-07",
+    "f-cs-cab-fare-comparison-engine-08",
+    "f-cs-cab-fare-comparison-engine-09",
+    "f-cs-cab-fare-comparison-engine-10",
+    "f-cs-cab-fare-comparison-engine-11",
+    "f-cs-cab-fare-comparison-engine-12",
+    "f-cs-cab-fare-comparison-engine-13",
+    "f-cs-cab-fare-comparison-engine-14",
+    "f-cs-cab-fare-comparison-engine-15",
+    "f-cs-cab-fare-comparison-engine-16",
+    "f-cs-cab-fare-comparison-engine-17",
+    "f-cs-cab-fare-comparison-engine-18",
+    "f-cs-cab-fare-comparison-engine-19",
+    "f-cs-cab-fare-comparison-engine-20",
+    "f-cs-cab-fare-comparison-engine-21",
+    "f-cs-cab-fare-comparison-engine-22",
+    "f-cs-cab-fare-comparison-engine-23",
+    "f-cs-cab-fare-comparison-engine-24",
+    "f-cs-cab-fare-comparison-engine-25",
+    "f-cs-cab-fare-comparison-engine-26",
+    "f-cs-cab-fare-comparison-engine-27",
+    "f-cs-cab-fare-comparison-engine-28",
+    "f-cs-cab-fare-comparison-engine-29",
+    "f-cs-cab-fare-comparison-engine-30",
+    "f-cs-cab-fare-comparison-engine-31",
+    "f-cs-cab-fare-comparison-engine-32",
+    "f-cs-cab-fare-comparison-engine-33"
+  ],
+  "experience_used": [
+    "exp-024",
+    "exp-028"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#cab-fare-comparison-engine-figures",
+      "alt": "Figures from Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive), each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

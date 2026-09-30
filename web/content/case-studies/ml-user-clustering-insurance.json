@@ -1,0 +1,119 @@
+{
+  "id": "case-study-0179",
+  "url": "/case-studies/ml-user-clustering-insurance",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Ml user clustering insurance case study",
+  "meta_description": "Clustering users to personalise offers and boost conversion rates. A first-hand account of ml user clustering insurance case study, with the figures as.",
+  "h1": "Personalizing Insurance Offers Using ML-Driven User Clustering (ml user clustering insurance case study)",
+  "primary_keyword": "ml user clustering insurance case study",
+  "secondary_keywords": [],
+  "entity_a": "ml-user-clustering-insurance",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-ml-user-clustering-insurance-01",
+    "f-cs-ml-user-clustering-insurance-02",
+    "f-cs-ml-user-clustering-insurance-03",
+    "f-cs-ml-user-clustering-insurance-04",
+    "f-cs-ml-user-clustering-insurance-05",
+    "f-cs-ml-user-clustering-insurance-06",
+    "f-cs-ml-user-clustering-insurance-07",
+    "f-cs-ml-user-clustering-insurance-08",
+    "f-cs-ml-user-clustering-insurance-09",
+    "f-cs-ml-user-clustering-insurance-10",
+    "f-cs-ml-user-clustering-insurance-11",
+    "f-cs-ml-user-clustering-insurance-12",
+    "f-cs-ml-user-clustering-insurance-13",
+    "f-cs-ml-user-clustering-insurance-14",
+    "f-cs-ml-user-clustering-insurance-15",
+    "f-cs-ml-user-clustering-insurance-16",
+    "f-cs-ml-user-clustering-insurance-17",
+    "f-cs-ml-user-clustering-insurance-18",
+    "f-cs-ml-user-clustering-insurance-19",
+    "f-cs-ml-user-clustering-insurance-20",
+    "f-cs-ml-user-clustering-insurance-21",
+    "f-cs-ml-user-clustering-insurance-22",
+    "f-cs-ml-user-clustering-insurance-23",
+    "f-cs-ml-user-clustering-insurance-24",
+    "f-cs-ml-user-clustering-insurance-25",
+    "f-cs-ml-user-clustering-insurance-26",
+    "f-cs-ml-user-clustering-insurance-27",
+    "f-cs-ml-user-clustering-insurance-28",
+    "f-cs-ml-user-clustering-insurance-29",
+    "f-cs-ml-user-clustering-insurance-30",
+    "f-cs-ml-user-clustering-insurance-31",
+    "f-cs-ml-user-clustering-insurance-32",
+    "f-cs-ml-user-clustering-insurance-33",
+    "f-cs-ml-user-clustering-insurance-34",
+    "f-cs-ml-user-clustering-insurance-35"
+  ],
+  "experience_used": [
+    "exp-022",
+    "exp-004"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/ai-apps",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#ml-user-clustering-insurance-figures",
+      "alt": "Figures from Personalizing Insurance Offers Using ML-Driven User Clustering, each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

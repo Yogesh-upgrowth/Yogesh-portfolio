@@ -1,0 +1,229 @@
+<AnswerBox>
+Designing a system to score user intent in real-time and improve conversions. The subject is real time intent scoring engine case study, including the version that failed. Written up Mar 2024.
+</AnswerBox>
+
+## "This Is Over-Engineering." (It Wasn't.)
+
+Our lead engineer said it plainly in the sprint planning session: "A real-time intent scoring engine is overkill. Batch scoring every 24 hours is enough." Half the room nodded. I wasn't sure he was wrong.
+
+Six months later, the engine was processing 4 million events per day, scoring users every 12 minutes, and had generated ₹4.2 crore (about $0.44 million) in incremental revenue by catching users at the exact moment they were ready to act — moments that a 24-hour batch system would have missed entirely.
+
+> **The problem.** Intent has a half-life. A user who searches "remittance to UAE" at 11am is a completely different proposition at 11pm. Batch scoring doesn't capture the moment. It captures the aftermath.
+
+The business case we'd been missing wasn't about smarter segmentation — it was about timing. Reach the right user with the right offer at the right moment, not 12 hours after the moment has passed.
+
+## The Timing Problem in Numbers
+
+Before building anything, we ran an analysis on our existing batch-scored user interventions. The results were uncomfortable.
+
+<FactTable
+  id="real-time-intent-scoring-engine-figures"
+  caption="Intervention Timing breakdown"
+  columns={["Intervention Timing", "Conversion Rate", "Revenue/Intervention"]}
+  rows={[
+    { cells: ["Triggered within 10 minutes of high-intent behavior", "14.2%", "\u20b91,840 (about $19.19)"] },
+    { cells: ["Triggered 1\u20133 hours after high-intent behavior", "6.8%", "\u20b9880 (about $9.18)"] },
+    { cells: ["Triggered 3\u201312 hours after", "3.1%", "\u20b9402 (about $4.19)"] },
+    { cells: ["Triggered 12\u201324 hours after (batch)", "1.4%", "\u20b9181 (about $1.89)"] },
+    { cells: ["Triggered >24 hours after", "0.6%", "\u20b978 (about $0.81)"] }
+  ]}
+/>
+
+> **What this showed.** Conversion rate dropped 10× between a 10-minute trigger and a 24-hour batch trigger. We were consistently operating in the 12–24 hour window and calling it personalization.
+
+The calculation was straightforward: if we could move even 30% of our interventions from the 24-hour window to the 10-minute window, the revenue impact was significant. The engineering investment wasn't overkill — it was underinvestment in the right problem.
+
+## Five Intent States, Not One
+
+We mapped user intent into five states based on behavioral signals. The key insight: users don't stay in one state — they move between them, and the transition moments are where conversion happens.
+
+<FactTable
+  caption="Intent State breakdown"
+  columns={["Intent State", "Behavioral Signal", "Conversion Probability", "Best Intervention"]}
+  rows={[
+    { cells: ["Browsing", "< 3 page views, no search", "2.1%", "Educational content nudge"] },
+    { cells: ["Researching", "Search, 3+ providers viewed", "8.4%", "Comparison feature highlight"] },
+    { cells: ["Comparing", "Active comparison, return visit", "18.7%", "Rate alert or urgency nudge"] },
+    { cells: ["Decision-Ready", "Quote started, return D2-3", "34.2%", "Direct offer, support chat"] },
+    { cells: ["Ready to Transact", "Form started, abandoned", "52.6%", "Immediate re-engagement"] }
+  ]}
+/>
+
+> **The takeaway.** The "Ready to Transact" state — someone who started and abandoned a form — had a 52.6% conversion rate with a 10-minute intervention. We had been triggering that intervention 14 hours later on average. The math of that miss is painful.
+
+## Reframing Personalization as a Timing Problem
+
+The conventional personalization playbook is about relevance: send the right message to the right person. That's necessary but not sufficient. Equally important — perhaps more important — is when that message arrives.
+
+> Relevant message, wrong timing = wasted relevance. The best offer in the world, sent 18 hours late, is noise.
+
+We stopped thinking about personalization as a segmentation challenge and started treating it as a state-machine problem: every user is in a state, states transition based on behavior, and the goal is to detect transitions and respond in the window where response still matters.
+
+## How the Intent Engine Works
+
+Three components, each essential. None sufficient alone.
+
+### Real-Time Event Stream
+
+Every user action (page view, search, comparison, form field entry) published to Kafka within 200ms. Kafka fan-out to scoring service and session state store. No batching; every event processed immediately.
+
+### Intent State Classifier
+
+Gradient boosting model classifying users into one of 5 intent states on each event. Model re-scores every 12 minutes or immediately on state-change-triggering events. Output: current state + transition probability for next state.
+
+### Intervention Orchestrator
+
+Rules engine consuming state classifications. Triggers: email (for non-active sessions), in-app nudge (for active sessions), chat prompt (for Decision-Ready+). Intervention fatigue management: max 2 per session, 24-hour cooldown per user.
+
+<FactTable
+  caption="Behavioral Signal breakdown"
+  columns={["Behavioral Signal", "Intent State Transition", "Trigger Latency Target"]}
+  rows={[
+    { cells: ["3+ providers compared in session", "Browsing \u2192 Comparing", "< 90 seconds"] },
+    { cells: ["Quote form opened", "Comparing \u2192 Decision-Ready", "< 2 minutes"] },
+    { cells: ["Form field entered then abandoned", "Decision-Ready \u2192 Ready to Transact", "< 10 minutes"] },
+    { cells: ["Return visit within 48 hours", "Any \u2192 Comparing (re-engagement)", "Within session start"] },
+    { cells: ["Session duration > 12 minutes", "Researching \u2192 Comparing", "< 3 minutes"] }
+  ]}
+/>
+
+## The Technical Architecture
+
+This is the part where it got genuinely complex. The event volume at peak (Friday evenings, payday weekends) was 800K events/hour. The p99 latency target for state classification was 500ms. That constraint drove most of the architecture decisions.
+
+### Event Ingestion
+
+- Client-side SDK published events to Kafka within 200ms of user action
+
+- Kafka partitioned by user_id — ensures ordering within user session
+
+- Dead letter queue for any events failing processing — reprocessed within 5 minutes
+
+### State Classification Service
+
+- Stateless microservice consuming from Kafka, reading session state from Redis
+
+- Feature vector computed from last 60 minutes of user events per session
+
+- Gradient boosting inference: p99 latency 180ms — well within 500ms target
+
+### Intervention Orchestration
+
+- State transition events published to separate Kafka topic consumed by orchestrator
+
+- Orchestrator checks fatigue rules, time-of-day, and channel preference before triggering
+
+- Email: SES with sub-30-second delivery SLA; In-app: websocket push if session active
+
+### Observability
+
+- State distribution dashboard: real-time view of how many users in each intent state
+
+- Intervention effectiveness: conversion rate by state × intervention type matrix
+
+- Latency monitoring: p50, p95, p99 for classification pipeline — alerting at p99 > 400ms
+
+## How We Rolled It Out
+
+### Month 1 · Proof of Concept — Manual Trigger Test
+
+- Identified 'form abandonment' as highest-use trigger manually
+
+- Manually triggered SMS to 200 abandoners within 15 minutes
+
+- Compared conversion vs next-day batch SMS to matched control
+
+**Result.** Manual real-time: 31% conversion vs batch: 8%. Proof of concept confirmed.
+
+### Month 2 · Infrastructure Build — Event Stream + Classifier
+
+- Kafka pipeline built and tested to 1M events/hour
+
+- Intent classifier trained on 6 months of labeled session data
+
+- A/B test framework set up: 50% real-time, 50% batch control group
+
+**Result.** Pipeline live, p99 latency 220ms. First automated triggers firing.
+
+### Month 3 · Intervention Expansion — All 5 States Covered
+
+- All 5 intent state triggers live
+
+- Fatigue management rules calibrated (started too aggressive — max 3 became max 2)
+
+- Email, in-app, and chat interventions all active by intent state
+
+**Result.** Revenue per session up 34% vs batch control group
+
+### Month 4–6 · Optimization — Model Refinement + Scale
+
+- Model retrained with live conversion data — precision improved 18%
+
+- Form abandonment intervention moved to 6-minute trigger (from 10) — further 9% lift
+
+- Engine scaled to handle 4M events/day at peak
+
+**Result.** ₹4.2Cr (about $0.44 million) incremental revenue attributed to real-time vs batch improvement
+
+## Six Months In
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Incremental Revenue", "\u20b94.2Cr (about $0.44 million)"] },
+    { cells: ["Conversion Lift", "10\u00d7"] },
+    { cells: ["Form Abandonment CVR", "52.6%"] },
+    { cells: ["p99 Classification Latency", "180ms"] }
+  ]}
+/>
+
+> **What this showed.** The engineer who called it "over-engineering" became the engine's loudest internal advocate six months later. That feels important to note.
+
+## What I'd Tell Someone Building This
+
+### 01. Intent has a half-life of minutes, not hours
+
+The data is unambiguous: conversion probability decays exponentially from the moment of peak intent. Every hour of delay is margin you're leaving behind. If your personalization system operates in 24-hour batches, you're personalizing in a world that's already moved on.
+
+### 02. Start with the highest-use single trigger
+
+Don't build the full engine first. We started with form abandonment and manually triggered it for 2 weeks. That proof of concept got engineering buy-in faster than any architecture diagram. Find your highest-value trigger and prove it manually before automating.
+
+### 03. Fatigue management is not optional
+
+We set initial limits too high — 3 interventions per session. Complaints went up. Satisfaction scores dropped. The rule we landed on: max 2 per session, minimum 4 hours between same-channel messages, 24-hour cooldown per user. Adjust for your product.
+
+### 04. State transitions matter more than states
+
+Knowing a user is in 'Comparing' state is less actionable than knowing they just transitioned from 'Researching' to 'Comparing.' The transition is when momentum is highest. Build your triggers around transitions, not static states.
+
+## The Things That Hurt
+
+### What did not work: Initial classifier was overfit to desktop behavior
+
+**Why it broke.** Training data was 70% desktop sessions. Mobile users classified incorrectly — mobile sessions are shorter and look like low-intent on the desktop model. Mobile conversion interventions fired too late or not at all.
+
+**The fix.** Separate mobile model trained on mobile-specific session patterns. Mobile users: shorter feature vectors, different state thresholds. Mobile intervention conversion improved 2.4× post-fix.
+
+### What did not work: Email intervention fired during active sessions
+
+**Why it broke.** A user in an active browser session received an email at the same time as an in-app nudge. Double intervention. Several users complained about feeling 'watched.'
+
+**The fix.** Added session-active check before email trigger. If active session: in-app nudge only. If session ended: email within 15 minutes. Complaint rate dropped to baseline.
+
+## The Next Layer
+
+### Predictive Intent
+
+Instead of detecting current intent, predict future intent. User behavior patterns on Monday predict conversion likelihood on Friday. Pre-warm those users before they reach peak intent.
+
+### Cross-Channel State Sync
+
+Intent state is currently session-scoped. Next: cross-channel state persistence — if a user researches on mobile on Monday and opens the app on Wednesday, resume from their last state, not from scratch.
+
+### Offer Personalisation by State
+
+Current system varies intervention channel and timing. Next: vary the offer itself by state. Decision-Ready users get rate match; Comparing users get feature highlights. Message personalisation, not just delivery personalisation.
+
+> Intent decays. The window to act on it is smaller than most teams assume. Build for the moment — not for the batch run that captures the echo of it.

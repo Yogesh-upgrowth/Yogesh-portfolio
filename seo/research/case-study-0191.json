@@ -1,0 +1,158 @@
+{
+  "page_id": "case-study-0191",
+  "url": "/case-studies/fintech-trust-ui-patterns",
+  "archetype": "case-study",
+  "primary_keyword": "fintech trust ui patterns case study",
+  "secondary_keywords": [],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-cs-fintech-trust-ui-patterns-01",
+      "claim": "We learned this the hard way in Q2 2022. A WhatsApp forward misidentified our platform as being associated with a crypto scam (it wasn't — wrong company, similar name). Within 72 hours, our daily active users dropped 31%. Signups fell 44%.",
+      "value": "2022",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
+      "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "We learned this the hard way in Q2 2022. A WhatsApp forward misidentified our platform as being associated with a crypto scam (it wasn't —",
+      "published_on": "Jun 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-fintech-trust-ui-patterns-02",
+      "claim": "We learned this the hard way in Q2 2022. A WhatsApp forward misidentified our platform as being associated with a crypto scam (it wasn't — wrong company, similar name). Within 72 hours, our daily active users dropped 31%. Signups fell 44%.",
+      "value": "31%",
+      "unit": "%",
+      "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
+      "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "wrong company, similar name). Within 72 hours, our daily active users dropped 31%. Signups fell 44%.",
+      "published_on": "Jun 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-fintech-trust-ui-patterns-03",
+      "claim": "We learned this the hard way in Q2 2022. A WhatsApp forward misidentified our platform as being associated with a crypto scam (it wasn't — wrong company, similar name). Within 72 hours, our daily active users dropped 31%. Signups fell 44%.",
+      "value": "44%",
+      "unit": "%",
+      "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
+      "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "name). Within 72 hours, our daily active users dropped 31%. Signups fell 44%.",
+      "published_on": "Jun 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-fintech-trust-ui-patterns-04",
+      "claim": "What came out of that crisis was a systematic audit of every trust signal across the product — and a redesign of the trust architecture that made us more resilient to future reputation shocks, while also lifting baseline conversion by 34%.",
+      "value": "34%",
+      "unit": "%",
+      "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
+      "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "more resilient to future reputation shocks, while also lifting baseline conversion by 34%.",
+      "published_on": "Jun 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-fintech-trust-ui-patterns-05",
+      "claim": "DAU at 118% of pre-crisis levels. Conversion +34% vs pre-crisis baseline.",
+      "value": "118%",
+      "unit": "%",
+      "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
+      "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "DAU at 118% of pre-crisis levels. Conversion +34% vs pre-crisis baseline.",
+      "published_on": "Jun 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-fintech-trust-ui-patterns-06",
+      "claim": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 — she later checked back for health insurance' is concrete. Specificity is what makes social proof credible rather…",
+      "value": "12,400",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
+      "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 — she later checked back for",
+      "published_on": "Jun 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-fintech-trust-ui-patterns-07",
+      "claim": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 — she later checked back for health insurance' is concrete. Specificity is what makes social proof credible rather…",
+      "value": "3,200",
+      "unit": "INR",
+      "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
+      "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 — she later checked back for health insurance' is concrete. Specificity is",
+      "published_on": "Jun 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-fintech-trust-ui-patterns-08",
+      "claim": "Opted-in users can share their comparison and purchase history publicly — building a verified track record. 'User since 2021, 4 purchases, all verified' creates peer trust signals that company-generated content can't replicate.",
+      "value": "2021",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
+      "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "and purchase history publicly — building a verified track record. 'User since 2021, 4 purchases, all verified' creates peer trust signals that company-generated content can't",
+      "published_on": "Jun 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "context": [
+      "f-cs-fintech-trust-ui-patterns-01",
+      "f-cs-fintech-trust-ui-patterns-02",
+      "f-cs-fintech-trust-ui-patterns-03",
+      "f-cs-fintech-trust-ui-patterns-04"
+    ],
+    "results": [
+      "f-cs-fintech-trust-ui-patterns-05"
+    ],
+    "interventions": [
+      "f-cs-fintech-trust-ui-patterns-06",
+      "f-cs-fintech-trust-ui-patterns-07"
+    ],
+    "applicability": [
+      "f-cs-fintech-trust-ui-patterns-08"
+    ],
+    "answer_box": [
+      "f-cs-fintech-trust-ui-patterns-01"
+    ]
+  }
+}

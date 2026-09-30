@@ -1,0 +1,193 @@
+<AnswerBox>
+Clustering users to personalise offers and boost conversion rates. The subject is ml user clustering insurance case study, including the version that failed. Written up Jun 2024.
+</AnswerBox>
+
+## The Insurance Industry's Comfortable Lie
+
+Insurance companies have historically sold one product to "the Indian customer" — a monolithic persona built from aggregated surveys and actuarial tables. Young, salaried, urban, safety-conscious. Send them the same email, the same features, the same pricing tiers.
+
+When we ran our first clustering analysis on 180,000 insurance platform users, we found not one customer but seven distinct behavioral archetypes — each with different purchase triggers, different price sensitivities, and different preferred features. The industry's comfort with the "average customer" had been leaving significant money on the table.
+
+> **What this showed.** The most surprising finding: our highest-converting segment wasn't the young urban salaried buyer the industry optimizes for. It was a 35–50 age segment we hadn't built a single feature for. They were converting despite the product, not because of it.
+
+## The Conversion Rate Anomaly
+
+We'd noticed an anomaly in our conversion data: a small group of users was converting at 4× the platform average, but their demographics looked ordinary. Same age range, similar cities, similar income proxies. What was different wasn't who they were — it was how they behaved.
+
+<FactTable
+  id="ml-user-clustering-insurance-figures"
+  caption="Metric breakdown"
+  columns={["Metric", "Platform Average", "High-Converting Anomaly Group", "Difference"]}
+  rows={[
+    { cells: ["Conversion Rate", "6.8%", "28.4%", "+318%"] },
+    { cells: ["Session Count Before Purchase", "3.2", "6.8", "+113%"] },
+    { cells: ["Features Explored", "2.1", "7.4", "+252%"] },
+    { cells: ["Time to Purchase", "4.2 days", "11.3 days", "+169%"] },
+    { cells: ["Return Visit Rate", "31%", "74%", "+139%"] }
+  ]}
+/>
+
+The anomaly group took longer, visited more often, explored more features — and converted at 4× the rate. They weren't impulsive. They were thorough. And we were treating them identically to casual browsers.
+
+## What K-Means Actually Found
+
+We ran K-means clustering with k=3 through k=12, measuring silhouette scores and business interpretability. k=7 gave us the best combination of statistical separation and explainable behavioral profiles. Here's what we found:
+
+<FactTable
+  caption="Archetype breakdown"
+  columns={["Archetype", "% of Users", "Purchase Trigger", "Avg Premium", "Conversion Rate"]}
+  rows={[
+    { cells: ["The Researcher", "18%", "Feature completeness + comparison depth", "\u20b918,400 (about $191.89)", "28.4%"] },
+    { cells: ["The Price Hunter", "22%", "Lowest premium, highest deductible OK", "\u20b97,200 (about $75.09)", "19.1%"] },
+    { cells: ["The Loyalty Seeker", "14%", "Known brand, even at premium", "\u20b922,100 (about $230.47)", "21.3%"] },
+    { cells: ["The Life-Event Buyer", "11%", "Marriage, child, new vehicle trigger", "\u20b915,800 (about $164.77)", "31.2%"] },
+    { cells: ["The Lapsed Renewer", "16%", "Reminder-driven, low-friction renewal", "\u20b911,400 (about $118.89)", "44.8%"] },
+    { cells: ["The Feature Maximizer", "9%", "Specific add-ons (zero dep, NCB protect)", "\u20b924,600 (about $256.54)", "16.2%"] },
+    { cells: ["The Passive Browser", "10%", "No clear trigger; rarely converts", "\u2014", "2.1%"] }
+  ]}
+/>
+
+> **The takeaway.** The Lapsed Renewer converted at 44.8% — highest of any archetype — but had almost no product features built for them. Renewal reminders were generic. The renewal flow had 7 steps. They were converting through friction, not because of it.
+
+## One Product, Seven Different Purchase paths
+
+The insight wasn't just that these segments existed — it was that the product had been designed around one of them (the Researcher, roughly) and three others (Price Hunter, Life-Event Buyer, Lapsed Renewer) were converting significantly while being actively underserved.
+
+> We'd built one checkout flow. We'd written one set of email sequences. We'd designed one pricing page. And seven different types of buyers were trying to navigate all of it — some succeeding despite us, most giving up.
+
+The highest-use play wasn't building new features. It was routing each archetype to an experience designed for their specific purchase trigger — using existing infrastructure, different sequencing.
+
+## Archetype Routing System
+
+We built a real-time classifier that assigns users to archetypes within their first 3 sessions, then routes them to differentiated experiences. The classifier doesn't ask users to self-identify — it infers from behavior.
+
+### Behavioral Classifier
+
+Random forest model: session depth, feature usage sequence, time on comparison pages, price filter behavior, brand filter usage. Classifies into one of 7 archetypes at session 3 or after 8+ pageviews — whichever comes first.
+
+### Experience Routing
+
+Each archetype gets different: landing page emphasis, email sequence, comparison UI defaults, pricing display order, and support trigger timing. Same underlying product; different path emphasis based on purchase trigger.
+
+### Lapsed Renewer Fast-Track
+
+Highest-value quick win: Renewal flow reduced from 7 to 3 steps. Pre-filled from previous policy. Single-click renewal for users whose policy expired within 30 days. Conversion rate went from 44.8% to 68.2%.
+
+### Life-Event Detection
+
+Triggered by UTM (wedding searches, baby searches, car searches in preceding days via platform partner signals). Life-Event Buyers shown curated bundles rather than full comparison. Decision simplified.
+
+## Technical Implementation
+
+### Clustering Pipeline
+
+- K-means run on 22-feature behavioral vectors (session-level)
+
+- Cluster stability validated with silhouette scores over 3 months of data
+
+- Archetype labels assigned by business interpretability + statistical separation criteria
+
+### Real-Time Classifier
+
+- Random forest classifier trained on labeled archetype data (ground truth: eventual cluster assignment)
+
+- Classification triggered at session 3 or 8+ pageviews, stored in user profile
+
+- Confidence threshold: > 70% probability to assign. Below threshold: default to Researcher path
+
+### Experience Layer
+
+- Feature flags control which UI variant each archetype sees
+
+- Email system: archetype tag drives sequence selection
+
+- Pricing page: default sort changes by archetype (Price Hunter: price ascending; Loyalty Seeker: brand prominence)
+
+## Where We Started and How It Grew
+
+### Month 1 · Clustering Analysis — Finding the Seven
+
+- K-means clustering on 180K users across 22 behavioral features
+
+- k=3 to k=12 tested; k=7 selected (silhouette + interpretability)
+
+- Archetypes named, validated with business team
+
+**Result.** Seven archetypes confirmed. Lapsed Renewer and Life-Event Buyer identified as highest-use quick wins.
+
+### Month 2 · Quick Wins — Lapsed Renewer + Life-Event Flows
+
+- Renewal flow simplified: 7 steps → 3
+
+- Pre-fill from previous policy activated
+
+- Life-Event bundle page built for wedding/baby/car contexts
+
+**Result.** Lapsed Renewer CVR: 44.8% → 68.2%. Life-Event CVR: 31.2% → 47.6%.
+
+### Month 3 · Classifier + Routing — Full Archetype System Live
+
+- Real-time classifier built and validated
+
+- All 7 archetype paths differentiated
+
+- A/B test: archetype routing vs standard path for Researchers and Price Hunters
+
+**Result.** Blended platform CVR: 6.8% → 11.2%
+
+## Across the Platform
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Blended CVR", "+65%"] },
+    { cells: ["Lapsed Renewer CVR", "68.2%"] },
+    { cells: ["Distinct Archetypes", "7"] },
+    { cells: ["Renewal Flow", "3 steps"] }
+  ]}
+/>
+
+## What Surprised Us
+
+### 01. The highest-converting segment was the most underserved
+
+The Lapsed Renewer converted at 44.8% despite a 7-step renewal flow — the worst UX on the platform. They were succeeding through sheer intent. Optimizing for their specific need moved the needle faster than any other single change.
+
+### 02. K-means found segments business intuition missed entirely
+
+We'd never explicitly thought about a 'Life-Event Buyer' archetype. Business intuition categorized these users as 'first-time buyers.' The clustering revealed their distinct behavior pattern, and the tailored experience showed their purchase trigger was entirely different.
+
+### 03. Confidence thresholds matter as much as model accuracy
+
+A mis-classified user shown the wrong path had lower conversion than an unclassified user shown the default path. Setting a confidence threshold (we used 70%) for routing decisions improved outcomes — it's better to not classify than to classify wrongly.
+
+## Where We Stumbled
+
+### What did not work: Initial clusters were statistically clean but business-meaningless
+
+**Why it broke.** First k=5 clustering produced clean statistical separation but the segments had no interpretable purchase trigger differences. 'Cluster 3' wasn't actionable.
+
+**The fix.** Added business interpretability as a first-class criteria alongside silhouette score. Ran qualitative interviews with users from each candidate cluster to validate behavioral interpretation before acting.
+
+### What did not work: Feature Maximizer path over-complicated the comparison UI
+
+**Why it broke.** Assumed Feature Maximizers would convert better with more filter options. Added 12 new filter dimensions. Conversion dropped — too much choice, decision paralysis.
+
+**The fix.** Narrowed to 5 most-purchased add-on combinations for that archetype. Showed 'most popular for similar buyers' as default. CVR recovered and exceeded baseline.
+
+## Where This Goes
+
+### Dynamic Archetype Migration
+
+Users can move between archetypes over time — a Price Hunter who becomes a Loyalty Seeker. Tracking archetype migration and re-routing in real-time rather than static assignment.
+
+### Predictive Archetype at Acquisition
+
+Use pre-acquisition signals (search query, referral source, landing page) to predict archetype before first session. Start the path correctly from the first pageview.
+
+### Cross-Product Archetype Consistency
+
+Extend archetypes across product categories. A Price Hunter in insurance is likely a Price Hunter in health or motor. Cross-category archetype consistency for unified personalization.
+
+> There is no such thing as "the Indian insurance customer." There are at least seven — each with a different purchase trigger, a different path, and a different definition of value. Build for all of them.

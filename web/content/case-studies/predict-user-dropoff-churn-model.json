@@ -1,0 +1,125 @@
+{
+  "id": "case-study-0178",
+  "url": "/case-studies/predict-user-dropoff-churn-model",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Predict user dropoff churn model case study",
+  "meta_description": "Using ML to predict churn and proactively retain users before they leave. A first-hand account of predict user dropoff churn model case study, with the.",
+  "h1": "Predicting User Drop-Off Before It Happens (Churn Prevention Model) (predict user dropoff churn model case study)",
+  "primary_keyword": "predict user dropoff churn model case study",
+  "secondary_keywords": [],
+  "entity_a": "predict-user-dropoff-churn-model",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-predict-user-dropoff-churn-model-01",
+    "f-cs-predict-user-dropoff-churn-model-02",
+    "f-cs-predict-user-dropoff-churn-model-03",
+    "f-cs-predict-user-dropoff-churn-model-04",
+    "f-cs-predict-user-dropoff-churn-model-05",
+    "f-cs-predict-user-dropoff-churn-model-06",
+    "f-cs-predict-user-dropoff-churn-model-07",
+    "f-cs-predict-user-dropoff-churn-model-08",
+    "f-cs-predict-user-dropoff-churn-model-09",
+    "f-cs-predict-user-dropoff-churn-model-10",
+    "f-cs-predict-user-dropoff-churn-model-11",
+    "f-cs-predict-user-dropoff-churn-model-12",
+    "f-cs-predict-user-dropoff-churn-model-13",
+    "f-cs-predict-user-dropoff-churn-model-14",
+    "f-cs-predict-user-dropoff-churn-model-15",
+    "f-cs-predict-user-dropoff-churn-model-16",
+    "f-cs-predict-user-dropoff-churn-model-17",
+    "f-cs-predict-user-dropoff-churn-model-18",
+    "f-cs-predict-user-dropoff-churn-model-19",
+    "f-cs-predict-user-dropoff-churn-model-20",
+    "f-cs-predict-user-dropoff-churn-model-21",
+    "f-cs-predict-user-dropoff-churn-model-22",
+    "f-cs-predict-user-dropoff-churn-model-23",
+    "f-cs-predict-user-dropoff-churn-model-24",
+    "f-cs-predict-user-dropoff-churn-model-25",
+    "f-cs-predict-user-dropoff-churn-model-26",
+    "f-cs-predict-user-dropoff-churn-model-27",
+    "f-cs-predict-user-dropoff-churn-model-28",
+    "f-cs-predict-user-dropoff-churn-model-29",
+    "f-cs-predict-user-dropoff-churn-model-30",
+    "f-cs-predict-user-dropoff-churn-model-31",
+    "f-cs-predict-user-dropoff-churn-model-32",
+    "f-cs-predict-user-dropoff-churn-model-33",
+    "f-cs-predict-user-dropoff-churn-model-34",
+    "f-cs-predict-user-dropoff-churn-model-35",
+    "f-cs-predict-user-dropoff-churn-model-36",
+    "f-cs-predict-user-dropoff-churn-model-37",
+    "f-cs-predict-user-dropoff-churn-model-38",
+    "f-cs-predict-user-dropoff-churn-model-39",
+    "f-cs-predict-user-dropoff-churn-model-40",
+    "f-cs-predict-user-dropoff-churn-model-41"
+  ],
+  "experience_used": [
+    "exp-006",
+    "exp-014"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#predict-user-dropoff-churn-model-figures",
+      "alt": "Figures from Predicting User Drop-Off Before It Happens (Churn Prevention Model), each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

@@ -1,0 +1,225 @@
+<AnswerBox>
+A complete architectural rebuild of a vehicle enforcement CRM that crashed at 22K transactions — rebuilt to handle 10× the load. The subject is crm 180k transactions case study, with the constraints that shaped it. Written up Mar 2026.
+</AnswerBox>
+
+## The System That Couldn't Handle the Load It Was Built For
+
+The brief sounded straightforward: build a CRM to handle challan transactions across multiple states. Track vehicle violations, link them to RC owners, enable resolution workflows for field enforcement teams, produce compliance reports.
+
+Six months after the first version launched, the system was processing about 18,000 transactions per month. At 22,000, it started throwing errors. At 26,000, it would intermittently lock up. At 30,000, it crashed entirely — twice in one week. Field teams in three states had to stop operations.
+
+> **The problem.** The irony was sharp: a CRM built specifically to handle high-volume enforcement operations couldn't sustain the volume of actual enforcement operations. The architecture had been designed for the expected case, not the real case. We needed a complete rethink, not a patch.
+
+I led the product rebuild from the ground up. Eight months later, the system was processing 180,000+ monthly transactions with 99.6% uptime. Here's everything I learned doing it.
+
+## The Forensics
+
+Before writing a single line of new architecture, I needed to understand exactly why the old system failed. Three weeks of forensics — log analysis, database query profiling, user workflow observation, and interviews with 14 field operators across 3 states.
+
+<FactTable
+  id="crm-180k-transactions-figures"
+  caption="Failure Point breakdown"
+  columns={["Failure Point", "Root Cause", "Impact"]}
+  rows={[
+    { cells: ["Database lock contention", "All transactions writing to single table with row-level locks", "System freeze at >22K concurrent records"] },
+    { cells: ["Synchronous API calls", "Every challan lookup triggered 3 blocking external API calls in series", "Response times of 12\u201318s; timeout cascades under load"] },
+    { cells: ["No transaction queue", "All writes attempted immediately on user action", "Spike overload \u2014 bulk uploads caused full table locks"] },
+    { cells: ["Missing state machine", "Transaction status handled via ad-hoc flag fields", "Inconsistent states; orphaned records that couldn't be resolved"] },
+    { cells: ["No pagination on reports", "Compliance report queries scanned full table unindexed", "Report generation: 45\u201390 seconds; crashed at month-end volumes"] },
+    { cells: ["Monolithic deployment", "All features in one process; any crash took down everything", "Single challan sync failure cascaded to CRM unavailability"] }
+  ]}
+/>
+
+> **What this showed.** The architecture had been built to demonstrate functionality — it had never been stress-tested. Every individual feature worked at 100 transactions. The integration of all features at 20,000 transactions was never validated. This is the classic prototype-to-production gap.
+
+## Who Was Actually Using This — and How
+
+The field team interviews revealed usage patterns the original design had completely missed. This was the most important research I did on the entire project.
+
+<FactTable
+  caption="User Type breakdown"
+  columns={["User Type", "Volume", "Key Behaviour", "System Implication"]}
+  rows={[
+    { cells: ["Field enforcement officers", "420 active users", "Batch uploads at end of shift (50\u2013200 challans at once)", "Spike pattern; need async ingestion"] },
+    { cells: ["RTO desk supervisors", "85 active users", "Real-time dashboard checks during peak hours (9\u201311am, 3\u20135pm)", "Read performance critical; must not degrade under write load"] },
+    { cells: ["State compliance managers", "23 active users", "Month-end bulk reports (20K+ record exports)", "Report queries need separate read replicas"] },
+    { cells: ["Vehicle owners (resolution)", "~6,000/month", "One-time access to pay/dispute a challan", "Stateless; no session persistence needed; can be a separate service"] }
+  ]}
+/>
+
+> **The takeaway.** Field officers weren't using the system as a continuous input stream — they were uploading in batches. The architectural assumption of a uniform transaction flow was wrong. The real pattern was: long quiet periods followed by 200-record spikes. The old system's synchronous write model was catastrophically wrong for this usage shape.
+
+## From a Database to an Event-Driven System
+
+The core architectural shift: stop thinking of the CRM as a database with a UI and start thinking of it as a workflow state machine with an event log.
+
+> A CRM at this scale isn't a database that gets queried. It's an event log that gets processed. The distinction changes the entire technical architecture.
+
+Old model: User action → immediate database write → response. This model breaks under concurrency because every write contends for the same resources.
+
+New model: User action → event queued → async processor → database write → state updated → notification sent. Decoupled. Each step independently scalable. Failures isolated and retryable.
+
+The field officer no longer waited for the system to confirm each record. They uploaded their batch, received a queue confirmation, and went home. The system processed it reliably over the next 2–4 minutes without any user impact on the RTO desk dashboards running simultaneously.
+
+## The Four Pillars of the Rebuilt System
+
+### 1. Event Queue + Async Processing
+
+All transaction ingestion queued via a message broker. Batch uploads acknowledged immediately; processed asynchronously. Workers scaled horizontally during spikes. Field officer experience: instant confirmation, zero waiting.
+
+### 2. Transaction State Machine
+
+Every challan record exists in an explicit state (received → validated → matched → resolved → archived). No ad-hoc flags. Every state transition is an event. Invalid transitions rejected at the application layer. Zero orphaned records.
+
+### 3. Read/Write Separation
+
+Writes go to primary. Supervisors' dashboards and compliance reports read from replica. Write spikes no longer degrade read performance. Month-end reports no longer compete with live transaction processing.
+
+### 4. Service Decomposition
+
+Vehicle owner resolution flow broken out as a stateless microservice. Challan sync service separated from CRM core. Any individual service failure isolated — field officers can still upload even if the owner-resolution portal is down.
+
+<FactTable
+  caption="Capability breakdown"
+  columns={["Capability", "Old Architecture", "New Architecture"]}
+  rows={[
+    { cells: ["Max stable transactions/month", "22,000", "200,000+"] },
+    { cells: ["Batch upload (200 records)", "12\u201318s per record (blocking)", "Instant acknowledgement; processed in 3m"] },
+    { cells: ["Dashboard during peak load", "Degraded to 15\u201325s load", "Sub-2s consistently"] },
+    { cells: ["Month-end compliance report", "45\u201390s; crash at >50K rows", "12\u201318s; pre-aggregated"] },
+    { cells: ["System availability", "~94%", "99.6%"] },
+    { cells: ["Failure recovery", "Manual restart required", "Automatic retry with dead-letter queue"] }
+  ]}
+/>
+
+## The 8-Month Build and Migration
+
+### Month 1–2 · Design — Architecture + User Research
+
+- 14 field operator interviews across 3 states; mapped actual usage patterns
+
+- Failure forensics: 6 root causes identified and classified by severity
+
+- New architecture designed; migration strategy planned
+
+- Zero-downtime migration approach defined — parallel-run old and new system
+
+**Result.** Architecture approved. Team aligned. Migration path de-risked.
+
+### Month 3–5 · Core Rebuild — Event Queue + State Machine Live
+
+- Message queue implemented; async processing workers deployed
+
+- Transaction state machine: all 9 states, all valid transitions
+
+- Read/write separation: replica provisioned, read queries migrated
+
+- Parallel operation: both systems running; cross-validation active
+
+**Result.** Parallel system handling 40K transactions/month. Zero errors.
+
+### Month 6–7 · Migration — Cutover + Service Decomposition
+
+- Owner resolution service extracted and deployed independently
+
+- Challan sync service decoupled from CRM core
+
+- Old system decommissioned after 3-week overlap validation
+
+- Field operator training: new upload flow demonstrated in 3 states
+
+**Result.** New system at 100% of traffic. Volume ramping: 40K → 120K/mo.
+
+### Month 8 · Optimisation — Performance Tuning + Dashboard Overhaul
+
+- Query index audit; 18 missing indexes added
+
+- Pre-aggregation jobs for month-end reports: nightly batch computation
+
+- Supervisor dashboard: 5 key real-time metrics surfaced above fold
+
+- Monitoring: automated alerts for queue depth, processing lag, error rate
+
+**Result.** 180K+ monthly transactions. 99.6% uptime. Month-end reports: 14s avg.
+
+## What Changed
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Monthly Transactions", "180K+"] },
+    { cells: ["System Uptime", "99.6%"] },
+    { cells: ["Transaction Capacity", "10\u00d7"] },
+    { cells: ["Month-End Report", "14s"] }
+  ]}
+/>
+
+<FactTable
+  caption="Metric breakdown"
+  columns={["Metric", "Before Rebuild", "After Rebuild"]}
+  rows={[
+    { cells: ["Max stable monthly transactions", "22,000", "200,000+"] },
+    { cells: ["System uptime", "~94%", "99.6%"] },
+    { cells: ["Batch upload user experience", "12\u201318s per record, blocking", "Instant acknowledgement"] },
+    { cells: ["Dashboard load during peak", "15\u201325 seconds", "<2 seconds"] },
+    { cells: ["Month-end compliance report", "45\u201390 seconds", "12\u201318 seconds"] },
+    { cells: ["Field team crash incidents", "2/month avg (severe)", "0 in 6+ months post-launch"] }
+  ]}
+/>
+
+> **The takeaway.** The transaction volume went up 10× because the system stopped being a bottleneck. The operations teams didn't change. The enforcement rates didn't change. The system simply stopped saying no. Sometimes the constraint is architecture, not demand.
+
+## What This Project Taught Me About Product at Scale
+
+### 01. Usage patterns are more important than user counts for infrastructure design
+
+We had usage analytics showing 420 field officers. What we didn't have was temporal usage data — when they uploaded, in what volumes, with what frequency. The batch-upload pattern at shift-end was invisible in the aggregate metrics but it was the entire architectural constraint. Observe the shape of usage, not just the volume.
+
+### 02. Async-first design eliminates an entire class of scaling problems
+
+Every synchronous blocking call is a point of failure under load. When we converted the write path to async, the field officer experience actually improved — instant confirmation vs. waiting 18 seconds. And the backend processing burden became smoothed over time instead of spiked at the user's moment of action. Async is usually the user-experience win, not just the engineering win.
+
+### 03. Read/write separation should be default architecture for any CRM at scale
+
+Reads and writes have fundamentally different scaling needs. Reads need consistency and speed. Writes need durability and isolation. Running them on the same resource means each degrades the other under load. We gained this insight the hard way — month-end reports killing the live dashboard during exactly the moments supervisors needed it most.
+
+### 04. State machines are under-used in product engineering
+
+The orphaned record problem — transactions stuck in unknown states because the system had multiple ways to represent 'partially processed' — cost us 3 months of manual data cleaning post-rebuild. An explicit state machine with validated transitions would have made this impossible. For any workflow that has more than 3 states, a formal state machine pays for itself in the first week of production.
+
+## The Expensive Mistakes
+
+### What did not work: Started migration without a parallel-run validation period
+
+**Why it broke.** First attempt at migration: switched traffic to new system on a Friday (classic mistake). Discovered that 340 transaction records had a state mapping difference between old and new schema. Had to roll back. 6 hours of manual reconciliation. Significant field team disruption.
+
+**The fix.** Designed a 3-week parallel-run: both systems processed all incoming transactions simultaneously. Automated comparison jobs checked for divergence daily. Zero differences observed for 3 consecutive weeks before cutover. Migration was then uneventful.
+
+### What did not work: Queue depth monitoring not set up before going live
+
+**Why it broke.** Async queues are opaque by default — you can't see what's backed up unless you instrument it. Week 1 of live operation: a worker process silently died. Queue depth grew to 12,000 unprocessed records over 6 hours before anyone noticed. Field teams saw 'uploaded' confirmations but their records weren't in the dashboard.
+
+**The fix.** Implemented queue depth alerts at 500, 2000, and 5000 records. Worker health checks every 30 seconds. Dead-letter queue for failed records with auto-notification to ops team. This infrastructure should have been in place before go-live, not after the first incident.
+
+### What did not work: Field operator training underestimated — new flow felt unfamiliar
+
+**Why it broke.** New upload flow was objectively better (instant acknowledgement vs. 18-second wait) but it felt different. Field officers who had memorised the old flow were confused by the new confirmation UX: 'It says queued — does that mean it worked?' Support tickets spiked 380% in week 1.
+
+**The fix.** Created a '2-minute explainer video' for the new flow with Hindi audio. Ran 3 live demo sessions with field team leads. Added a persistent 'last batch: 200 records processed ✓' status line to the upload screen. Support tickets normalised within 2 weeks.
+
+## Where the Platform Scales Next
+
+### National Coverage
+
+Current deployment: 3 states. Architecture now supports multi-region data partitioning for national rollout. State-level data isolation (regulatory requirement) was designed into the schema from day one of the rebuild — expansion is a deployment exercise, not an architectural one.
+
+### Predictive Compliance Patterns
+
+At 180K monthly transactions across 3 states, we have enough data to model enforcement patterns by zone, vehicle type, day of week, and weather. Predictive alerting for supervisors: 'Zone 4 historically has 3× violation density on Monday mornings — resource allocation suggestion.'
+
+### Real-Time Resolution Dashboard
+
+Current owner resolution time: 3–7 days. With direct UPI integration for challan payment and digital acknowledgement, resolution time can compress to same-day. Building the real-time resolution pipeline is the next major feature milestone.
+
+> We didn't process 180K transactions because we scaled the hardware. We processed 180K transactions because we stopped designing the system as if every operation needed to happen right now.

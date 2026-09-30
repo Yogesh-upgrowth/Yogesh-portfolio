@@ -1,0 +1,98 @@
+{
+  "id": "case-study-0199",
+  "url": "/case-studies/ml-ux-growth-3x-conversion",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Ml ux growth 3x conversion case study",
+  "meta_description": "End-to-end conversion optimisation using ML intent scoring, UX redesign, and growth loops. A first-hand account of ml ux growth 3x conversion case study.",
+  "h1": "Combining ML + UX + Growth to Increase Conversion by 3X (Full Stack Case Study) (ml ux growth 3x conversion case study)",
+  "primary_keyword": "ml ux growth 3x conversion case study",
+  "secondary_keywords": [],
+  "entity_a": "ml-ux-growth-3x-conversion",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-ml-ux-growth-3x-conversion-01",
+    "f-cs-ml-ux-growth-3x-conversion-02",
+    "f-cs-ml-ux-growth-3x-conversion-03",
+    "f-cs-ml-ux-growth-3x-conversion-04",
+    "f-cs-ml-ux-growth-3x-conversion-05",
+    "f-cs-ml-ux-growth-3x-conversion-06",
+    "f-cs-ml-ux-growth-3x-conversion-07",
+    "f-cs-ml-ux-growth-3x-conversion-08",
+    "f-cs-ml-ux-growth-3x-conversion-09",
+    "f-cs-ml-ux-growth-3x-conversion-10",
+    "f-cs-ml-ux-growth-3x-conversion-11",
+    "f-cs-ml-ux-growth-3x-conversion-12",
+    "f-cs-ml-ux-growth-3x-conversion-13",
+    "f-cs-ml-ux-growth-3x-conversion-14"
+  ],
+  "experience_used": [
+    "exp-003",
+    "exp-010"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/ai-apps",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#ml-ux-growth-3x-conversion-figures",
+      "alt": "Figures from Combining ML + UX + Growth to Increase Conversion by 3X (Full Stack Case Study), each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

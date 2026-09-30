@@ -1,0 +1,99 @@
+{
+  "id": "case-study-0192",
+  "url": "/case-studies/microcopy-ctr-increase",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Microcopy ctr increase case study: a case study with the numbers",
+  "meta_description": "Improving CTR with precision UX writing — button labels, headlines, and nudges. A first-hand account of microcopy ctr increase case study, with the figu.",
+  "h1": "How Microcopy Increased Click-Through Rate by 35% (UX Writing Case Study) (microcopy ctr increase case study)",
+  "primary_keyword": "microcopy ctr increase case study",
+  "secondary_keywords": [],
+  "entity_a": "microcopy-ctr-increase",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-microcopy-ctr-increase-01",
+    "f-cs-microcopy-ctr-increase-02",
+    "f-cs-microcopy-ctr-increase-03",
+    "f-cs-microcopy-ctr-increase-04",
+    "f-cs-microcopy-ctr-increase-05",
+    "f-cs-microcopy-ctr-increase-06",
+    "f-cs-microcopy-ctr-increase-07",
+    "f-cs-microcopy-ctr-increase-08",
+    "f-cs-microcopy-ctr-increase-09",
+    "f-cs-microcopy-ctr-increase-10",
+    "f-cs-microcopy-ctr-increase-11",
+    "f-cs-microcopy-ctr-increase-12",
+    "f-cs-microcopy-ctr-increase-13",
+    "f-cs-microcopy-ctr-increase-14",
+    "f-cs-microcopy-ctr-increase-15"
+  ],
+  "experience_used": [
+    "exp-005",
+    "exp-011"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#microcopy-ctr-increase-figures",
+      "alt": "Figures from How Microcopy Increased Click-Through Rate by 35% (UX Writing Case Study), each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

@@ -1,0 +1,119 @@
+{
+  "id": "case-study-0182",
+  "url": "/case-studies/growth-loop-repeat-users",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Growth loop repeat users case study",
+  "meta_description": "Creating a viral retention loop that drives users back within two weeks. A first-hand account of growth loop repeat users case study, with the figures a.",
+  "h1": "Designing a Growth Loop That Brought 30% Repeat Users in 14 Days (growth loop repeat users case study)",
+  "primary_keyword": "growth loop repeat users case study",
+  "secondary_keywords": [],
+  "entity_a": "growth-loop-repeat-users",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-growth-loop-repeat-users-01",
+    "f-cs-growth-loop-repeat-users-02",
+    "f-cs-growth-loop-repeat-users-03",
+    "f-cs-growth-loop-repeat-users-04",
+    "f-cs-growth-loop-repeat-users-05",
+    "f-cs-growth-loop-repeat-users-06",
+    "f-cs-growth-loop-repeat-users-07",
+    "f-cs-growth-loop-repeat-users-08",
+    "f-cs-growth-loop-repeat-users-09",
+    "f-cs-growth-loop-repeat-users-10",
+    "f-cs-growth-loop-repeat-users-11",
+    "f-cs-growth-loop-repeat-users-12",
+    "f-cs-growth-loop-repeat-users-13",
+    "f-cs-growth-loop-repeat-users-14",
+    "f-cs-growth-loop-repeat-users-15",
+    "f-cs-growth-loop-repeat-users-16",
+    "f-cs-growth-loop-repeat-users-17",
+    "f-cs-growth-loop-repeat-users-18",
+    "f-cs-growth-loop-repeat-users-19",
+    "f-cs-growth-loop-repeat-users-20",
+    "f-cs-growth-loop-repeat-users-21",
+    "f-cs-growth-loop-repeat-users-22",
+    "f-cs-growth-loop-repeat-users-23",
+    "f-cs-growth-loop-repeat-users-24",
+    "f-cs-growth-loop-repeat-users-25",
+    "f-cs-growth-loop-repeat-users-26",
+    "f-cs-growth-loop-repeat-users-27",
+    "f-cs-growth-loop-repeat-users-28",
+    "f-cs-growth-loop-repeat-users-29",
+    "f-cs-growth-loop-repeat-users-30",
+    "f-cs-growth-loop-repeat-users-31",
+    "f-cs-growth-loop-repeat-users-32",
+    "f-cs-growth-loop-repeat-users-33",
+    "f-cs-growth-loop-repeat-users-34",
+    "f-cs-growth-loop-repeat-users-35"
+  ],
+  "experience_used": [
+    "exp-019",
+    "exp-014"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#growth-loop-repeat-users-figures",
+      "alt": "Figures from Designing a Growth Loop That Brought 30% Repeat Users in 14 Days, each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

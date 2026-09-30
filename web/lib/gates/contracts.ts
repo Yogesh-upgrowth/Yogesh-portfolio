@@ -21,12 +21,23 @@ export interface ArchetypeContract {
   /** Time-bound archetypes may carry a year token in the title (G10). */
   yearTokenAllowed?: true;
   /**
-   * Required blocks, in the order 01 SectionB gives. prompts/research.md rule 7
-   * asks the researcher to report block_coverage against exactly these names,
-   * and G01 fails a page whose research object leaves one uncovered. That is
-   * the check that stops six facts all supporting the same section.
+   * The blocks research has to evidence, which G01 checks block_coverage against.
+   *
+   * This is NOT the archetype's full section list. It was, and that was wrong:
+   * G01 demands at least one supporting fact per named block, so listing every
+   * section made the gate ask for a citation behind "what I'd do differently"
+   * and behind the CTA band. Those are opinion and layout; no source exists and
+   * none should be invented to satisfy a gate. prompts/research.md rule 7 shows
+   * the intent — its worked example lists price_table, price_history,
+   * packaging_logic, localisation, promos, what_i_would_test, all
+   * evidence-bearing.
+   *
+   * The full section list lives in `sections_contract` for reference, and G07
+   * remains what checks a page's structure.
    */
   requiredBlocks?: readonly string[];
+  /** 01 SectionB's full section list, for reference. Not gated by G01. */
+  sectionsContract?: readonly string[];
   /** 01 SectionB "must not". The G19 judge receives this list verbatim. */
   mustNot?: readonly string[];
   /** Extra uniqueness ceilings beyond sibling/parent, per 01 SectionB. */
@@ -48,6 +59,10 @@ export const CONTRACTS: Record<string, ArchetypeContract> = {
     requiredSchema: ["CollectionPage", "ItemList"],
     requiredBlocks: [
       "editorial_intro",
+      "recently_verified",
+    ],
+    sectionsContract: [
+      "editorial_intro",
       "start_here_cards",
       "filterable_index",
       "recently_verified",
@@ -63,6 +78,13 @@ export const CONTRACTS: Record<string, ArchetypeContract> = {
     words: [900, 1500], section: [120, 400],
     requiredSchema: ["Service", ...PERSON_CRUMB], parent: 0.45, sibling: 0.45,
     requiredBlocks: [
+      "answer_box",
+      "who_this_is_for",
+      "method",
+      "proof",
+      "pricing_anchors",
+    ],
+    sectionsContract: [
       "answer_box",
       "who_this_is_for",
       "first_six_weeks",
@@ -88,6 +110,13 @@ export const CONTRACTS: Record<string, ArchetypeContract> = {
       "answer_box",
       "whats_different_about_industry",
       "named_apps",
+      "benchmark_card",
+      "pricing_anchors",
+    ],
+    sectionsContract: [
+      "answer_box",
+      "whats_different_about_industry",
+      "named_apps",
       "how_the_engagement_changes",
       "benchmark_card",
       "pricing_anchors",
@@ -104,6 +133,10 @@ export const CONTRACTS: Record<string, ArchetypeContract> = {
     words: [600, 900], section: [120, 400],
     requiredSchema: ["Service", ...PERSON_CRUMB],
     requiredBlocks: [
+      "answer_box",
+      "city_scene",
+    ],
+    sectionsContract: [
       "answer_box",
       "how_working_together_looks",
       "city_scene",
@@ -122,7 +155,16 @@ export const CONTRACTS: Record<string, ArchetypeContract> = {
   "case-study": {
     words: [1000, 1800], section: [120, 400],
     requiredSchema: ["Article", ...PERSON_CRUMB],
+    // The three places 01 SectionB5 explicitly requires numbers: the headline
+    // figure in the answer box, the baseline, and the outcome. Context and
+    // interventions are narrative drawn from the experience library, so they are
+    // in sectionsContract and checked by G07 rather than by G01.
     requiredBlocks: [
+      "answer_box",
+      "problem_with_baseline",
+      "results",
+    ],
+    sectionsContract: [
       "answer_box",
       "context",
       "problem_with_baseline",

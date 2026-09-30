@@ -1,0 +1,119 @@
+{
+  "id": "case-study-0175",
+  "url": "/case-studies/predict-high-ltv-users-ml",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Predict high ltv users ml case study",
+  "meta_description": "Using behavioral ML to identify high-value users and optimize monetisation. A first-hand account of predict high ltv users ml case study, with the figur.",
+  "h1": "How We Predicted High-LTV Users Using Behavioral ML (100K+ Sessions) (predict high ltv users ml case study)",
+  "primary_keyword": "predict high ltv users ml case study",
+  "secondary_keywords": [],
+  "entity_a": "predict-high-ltv-users-ml",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-predict-high-ltv-users-ml-01",
+    "f-cs-predict-high-ltv-users-ml-02",
+    "f-cs-predict-high-ltv-users-ml-03",
+    "f-cs-predict-high-ltv-users-ml-04",
+    "f-cs-predict-high-ltv-users-ml-05",
+    "f-cs-predict-high-ltv-users-ml-06",
+    "f-cs-predict-high-ltv-users-ml-07",
+    "f-cs-predict-high-ltv-users-ml-08",
+    "f-cs-predict-high-ltv-users-ml-09",
+    "f-cs-predict-high-ltv-users-ml-10",
+    "f-cs-predict-high-ltv-users-ml-11",
+    "f-cs-predict-high-ltv-users-ml-12",
+    "f-cs-predict-high-ltv-users-ml-13",
+    "f-cs-predict-high-ltv-users-ml-14",
+    "f-cs-predict-high-ltv-users-ml-15",
+    "f-cs-predict-high-ltv-users-ml-16",
+    "f-cs-predict-high-ltv-users-ml-17",
+    "f-cs-predict-high-ltv-users-ml-18",
+    "f-cs-predict-high-ltv-users-ml-19",
+    "f-cs-predict-high-ltv-users-ml-20",
+    "f-cs-predict-high-ltv-users-ml-21",
+    "f-cs-predict-high-ltv-users-ml-22",
+    "f-cs-predict-high-ltv-users-ml-23",
+    "f-cs-predict-high-ltv-users-ml-24",
+    "f-cs-predict-high-ltv-users-ml-25",
+    "f-cs-predict-high-ltv-users-ml-26",
+    "f-cs-predict-high-ltv-users-ml-27",
+    "f-cs-predict-high-ltv-users-ml-28",
+    "f-cs-predict-high-ltv-users-ml-29",
+    "f-cs-predict-high-ltv-users-ml-30",
+    "f-cs-predict-high-ltv-users-ml-31",
+    "f-cs-predict-high-ltv-users-ml-32",
+    "f-cs-predict-high-ltv-users-ml-33",
+    "f-cs-predict-high-ltv-users-ml-34",
+    "f-cs-predict-high-ltv-users-ml-35"
+  ],
+  "experience_used": [
+    "exp-003",
+    "exp-022"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/ai-apps",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#predict-high-ltv-users-ml-figures",
+      "alt": "Figures from How We Predicted High-LTV Users Using Behavioral ML (100K+ Sessions), each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

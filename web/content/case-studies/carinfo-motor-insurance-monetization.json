@@ -1,0 +1,137 @@
+{
+  "id": "case-study-0165",
+  "url": "/case-studies/carinfo-motor-insurance-monetization",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "App insurance monetization case study",
+  "meta_description": "Rebuilding a broken insurance purchase funnel — from ₹14 lakh (about $14,600) to ₹1.82 crore per month through 6 parallel interventions.",
+  "h1": "1200% Insurance Revenue Growth in 12 Months: The Full Funnel Story (app insurance monetization case study)",
+  "primary_keyword": "app insurance monetization case study",
+  "secondary_keywords": [],
+  "entity_a": "carinfo-motor-insurance-monetization",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-carinfo-motor-insurance-monetization-01",
+    "f-cs-carinfo-motor-insurance-monetization-02",
+    "f-cs-carinfo-motor-insurance-monetization-03",
+    "f-cs-carinfo-motor-insurance-monetization-04",
+    "f-cs-carinfo-motor-insurance-monetization-05",
+    "f-cs-carinfo-motor-insurance-monetization-06",
+    "f-cs-carinfo-motor-insurance-monetization-07",
+    "f-cs-carinfo-motor-insurance-monetization-08",
+    "f-cs-carinfo-motor-insurance-monetization-09",
+    "f-cs-carinfo-motor-insurance-monetization-10",
+    "f-cs-carinfo-motor-insurance-monetization-11",
+    "f-cs-carinfo-motor-insurance-monetization-12",
+    "f-cs-carinfo-motor-insurance-monetization-13",
+    "f-cs-carinfo-motor-insurance-monetization-14",
+    "f-cs-carinfo-motor-insurance-monetization-15",
+    "f-cs-carinfo-motor-insurance-monetization-16",
+    "f-cs-carinfo-motor-insurance-monetization-17",
+    "f-cs-carinfo-motor-insurance-monetization-18",
+    "f-cs-carinfo-motor-insurance-monetization-19",
+    "f-cs-carinfo-motor-insurance-monetization-20",
+    "f-cs-carinfo-motor-insurance-monetization-21",
+    "f-cs-carinfo-motor-insurance-monetization-22",
+    "f-cs-carinfo-motor-insurance-monetization-23",
+    "f-cs-carinfo-motor-insurance-monetization-24",
+    "f-cs-carinfo-motor-insurance-monetization-25",
+    "f-cs-carinfo-motor-insurance-monetization-26",
+    "f-cs-carinfo-motor-insurance-monetization-27",
+    "f-cs-carinfo-motor-insurance-monetization-28",
+    "f-cs-carinfo-motor-insurance-monetization-29",
+    "f-cs-carinfo-motor-insurance-monetization-30",
+    "f-cs-carinfo-motor-insurance-monetization-31",
+    "f-cs-carinfo-motor-insurance-monetization-32",
+    "f-cs-carinfo-motor-insurance-monetization-33",
+    "f-cs-carinfo-motor-insurance-monetization-34",
+    "f-cs-carinfo-motor-insurance-monetization-35",
+    "f-cs-carinfo-motor-insurance-monetization-36",
+    "f-cs-carinfo-motor-insurance-monetization-37",
+    "f-cs-carinfo-motor-insurance-monetization-38",
+    "f-cs-carinfo-motor-insurance-monetization-39",
+    "f-cs-carinfo-motor-insurance-monetization-40",
+    "f-cs-carinfo-motor-insurance-monetization-41",
+    "f-cs-carinfo-motor-insurance-monetization-42",
+    "f-cs-carinfo-motor-insurance-monetization-43",
+    "f-cs-carinfo-motor-insurance-monetization-44",
+    "f-cs-carinfo-motor-insurance-monetization-45",
+    "f-cs-carinfo-motor-insurance-monetization-46",
+    "f-cs-carinfo-motor-insurance-monetization-47",
+    "f-cs-carinfo-motor-insurance-monetization-48",
+    "f-cs-carinfo-motor-insurance-monetization-49",
+    "f-cs-carinfo-motor-insurance-monetization-50",
+    "f-cs-carinfo-motor-insurance-monetization-51",
+    "f-cs-carinfo-motor-insurance-monetization-52",
+    "f-cs-carinfo-motor-insurance-monetization-53"
+  ],
+  "experience_used": [
+    "exp-021",
+    "exp-010"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/fintech",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#carinfo-motor-insurance-monetization-figures",
+      "alt": "Figures from 1200% Insurance Revenue Growth in 12 Months: The Full Funnel Story, each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

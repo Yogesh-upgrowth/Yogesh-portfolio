@@ -1,0 +1,126 @@
+{
+  "page_id": "case-study-0174",
+  "url": "/case-studies/ml-insurance-prediction",
+  "archetype": "case-study",
+  "primary_keyword": "ml insurance prediction case study",
+  "secondary_keywords": [],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-cs-ml-insurance-prediction-01",
+      "claim": "We analyzed over 50,000+ user journeys to answer one simple but critical question: \"Which users are actually going to buy insurance — and when?\"",
+      "value": "50,000",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/ml-insurance-prediction",
+      "source_title": "How We Used ML to Predict Insurance Buyers (50,000+ Data Points)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "We analyzed over 50,000+ user journeys to answer one simple but critical question: \"Which users are actually going to buy insurance — and when?\"",
+      "published_on": "Jan 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ml-insurance-prediction-02",
+      "claim": "The model output was a single Intent Score (0–100) per user, computed in near real-time and used to drive personalisation decisions downstream.",
+      "value": "100",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/ml-insurance-prediction",
+      "source_title": "How We Used ML to Predict Insurance Buyers (50,000+ Data Points)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "The model output was a single Intent Score (0–100) per user, computed in near real-time and used to drive personalisation decisions downstream.",
+      "published_on": "Jan 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ml-insurance-prediction-03",
+      "claim": "border-orange-200 bg-orange-50 text-orange-700",
+      "value": "200",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/ml-insurance-prediction",
+      "source_title": "How We Used ML to Predict Insurance Buyers (50,000+ Data Points)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "border-orange-200 bg-orange-50 text-orange-700",
+      "published_on": "Jan 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ml-insurance-prediction-04",
+      "claim": "border-orange-200 bg-orange-50 text-orange-700",
+      "value": "700",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/ml-insurance-prediction",
+      "source_title": "How We Used ML to Predict Insurance Buyers (50,000+ Data Points)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "border-orange-200 bg-orange-50 text-orange-700",
+      "published_on": "Jan 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ml-insurance-prediction-05",
+      "claim": "text-green-800",
+      "value": "800",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/ml-insurance-prediction",
+      "source_title": "How We Used ML to Predict Insurance Buyers (50,000+ Data Points)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "text-green-800",
+      "published_on": "Jan 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ml-insurance-prediction-06",
+      "claim": "Insurance Conversions: +32% (within 90 days)",
+      "value": "32%",
+      "unit": "%",
+      "source_url": "https://pmyogesh.com/case-study/ml-insurance-prediction",
+      "source_title": "How We Used ML to Predict Insurance Buyers (50,000+ Data Points)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Insurance Conversions: +32% (within 90 days)",
+      "published_on": "Jan 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "problem_with_baseline": [
+      "f-cs-ml-insurance-prediction-01"
+    ],
+    "interventions": [
+      "f-cs-ml-insurance-prediction-02",
+      "f-cs-ml-insurance-prediction-03",
+      "f-cs-ml-insurance-prediction-04",
+      "f-cs-ml-insurance-prediction-05"
+    ],
+    "results": [
+      "f-cs-ml-insurance-prediction-06"
+    ],
+    "answer_box": [
+      "f-cs-ml-insurance-prediction-01"
+    ]
+  }
+}

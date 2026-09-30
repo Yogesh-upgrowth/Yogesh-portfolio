@@ -1,0 +1,210 @@
+<AnswerBox>
+Rapid product development, validation, and first-user acquisition in one week. The subject is mvp in 7 days case study, with the constraints that shaped it. Written up Apr 2025.
+</AnswerBox>
+
+## Seven Days to Know If the Idea Was Worth Building
+
+The context: we had three potential product directions in Q3. One needed 4 months to build properly before we could test market response. One needed 2 months. One — if we cut it aggressively — could be live in 7 days in a form that would tell us whether the demand hypothesis was real.
+
+We chose the 7-day option. Not because 7 days was comfortable (it wasn't — it was anxious and slightly chaotic), but because the alternative was spending 4 months building something that might fail, when we could spend 7 days learning whether we should build it at all.
+
+> **The problem.** The most expensive thing in product development isn't engineering time. It's building the wrong thing slowly. A 7-day MVP that proves a hypothesis wrong is worth more than a 4-month build that discovers the same failure.
+
+This is what those 7 days looked like — honestly, including the parts that didn't go according to plan.
+
+## What We Were Testing
+
+The hypothesis: urban Indian professionals in the 28–40 age bracket with home loans want a tool that helps them optimize the intersection of EMI planning, tax benefits, and investment decisions — and they'd pay for it if it were good enough.
+
+<FactTable
+  id="mvp-in-7-days-figures"
+  caption="Hypothesis Component breakdown"
+  columns={["Hypothesis Component", "How We'd Test It", "Pass Threshold"]}
+  rows={[
+    { cells: ["Demand: people search for this", "Keyword volume + Reddit/forum research", "> 50K monthly searches related problem"] },
+    { cells: ["Value: they'd use a tool", "Landing page + email capture", "> 8% email capture from landing page visitors"] },
+    { cells: ["Stickiness: they'd return", "3-day return from early users", "> 20% D3 return rate"] },
+    { cells: ["Willingness to pay", "Pricing page with fake payment wall", "> 3% click-to-pay (not actual payment)"] }
+  ]}
+/>
+
+> **What this showed.** The "fake payment wall" is worth calling out explicitly: we put a pricing page with a payment button that, when clicked, showed "Thanks! We're preparing your access — we'll email you." No actual payment processing. The click rate told us intent without requiring us to build billing infrastructure in 7 days.
+
+## The Actual Seven Days
+
+What follows is the honest version — what happened each day, including the things that went sideways.
+
+Day 1 (Monday)
+
+Scoping and cutting
+
+Wrote the full feature list. Cut 70% of it. Cut another 20%. What remained: one calculator (prepay vs invest), one landing page, one email capture, one pricing page. That's the MVP. Nothing else.
+
+Day 2 (Tuesday)
+
+Design and copy
+
+One designer, 8 hours. Landing page wireframe, calculator UI, pricing page. Copy written by me — not ideal, but faster than briefing a copywriter. First draft looked fine on desktop. On mobile it was broken in ways we didn't notice until Day 3.
+
+Day 3 (Wednesday)
+
+Build — and the first crisis
+
+Engineer started building at 9am. By 2pm: the calculator logic had an edge case with balloon payments that would have given users wrong results. We almost shipped it. Caught it in late-afternoon review. Fixed it. Lost 3 hours.
+
+Day 4 (Thursday)
+
+Mobile fix + tracking
+
+The Day 2 mobile issue was real — 3 elements were overlapping on screens below 375px width. Fixed. Analytics implementation: GA4, Hotjar session recordings, email capture connected to Mailchimp.
+
+Day 5 (Friday)
+
+Soft launch to warm audience
+
+Shared with our existing WhatsApp community (1,200 members) and a personal LinkedIn post. Goal: 200 visitors as initial signal set. Got 840. Email capture rate: 11.4%. Way above the 8% threshold.
+
+Day 6 (Saturday)
+
+Data review and first user calls
+
+Three user calls with people who'd signed up. Two insights from the calls that changed the pricing page framing before the full launch. One insight I genuinely didn't expect: users wanted to save and share results — the shareable URL feature jumped to the top of the post-MVP backlog.
+
+Day 7 (Sunday)
+
+Full launch + pricing page test
+
+Posted to r/IndiaFinance, r/personalfinanceindia, shared in two private finance communities. By evening: 2,400 total visitors. Pricing page CTR: 6.2% (threshold was 3%). D3 return rate from Day 5 users: 29% (threshold was 20%). All four hypotheses passed.
+
+## The Principles That Made 7 Days Possible
+
+> The constraint isn't 7 days. The constraint is: what is the minimum that tells you whether you should build the full thing? Find that minimum. Build only that. Ship it. Everything else is premature.
+
+Three decisions that made the timeline work:
+
+### No backend on Day 1–7
+
+Calculator logic in vanilla JavaScript, client-side only. No database, no user accounts, no server. Email capture via a third-party form. Pricing 'payment' was a mailto link dressed as a button. Zero infrastructure to build.
+
+### One feature, built properly
+
+The temptation was to build three features to 60% quality. We built one feature to 95% quality — the calculator, with correct math and good mobile UX. The one thing we shipped was actually useful. That's what drove the email captures and the Reddit engagement.
+
+### User calls before full launch
+
+Two user calls on Day 6, before the big launch on Day 7, changed the pricing page copy and added a line about shareable results. Those two calls were worth more than any A/B test we could have run. You learn different things from watching humans use something than from watching metrics describe how humans use something.
+
+## The 7-Day MVP Checklist
+
+Not a framework that scales to every product — a specific checklist that worked for this type of validation problem. Steal what's useful.
+
+<FactTable
+  caption="Phase breakdown"
+  columns={["Phase", "Action", "Time Budget"]}
+  rows={[
+    { cells: ["Define", "Write hypotheses. Define pass/fail thresholds BEFORE building anything.", "Day 1 morning: 3 hours max"] },
+    { cells: ["Cut", "Write full feature list. Cut 70%. Cut another 20%. Scope remaining ruthlessly.", "Day 1 afternoon: 2 hours"] },
+    { cells: ["Build", "One thing, properly. No backend. No accounts. No infrastructure.", "Day 2\u20134: focus"] },
+    { cells: ["Soft launch", "Warm audience only. Target: 200 visitors. Measure against thresholds.", "Day 5"] },
+    { cells: ["User calls", "3 calls. Watch, don't guide. Ask: what did you expect that you didn't find?", "Day 6"] },
+    { cells: ["Full launch", "Real channels. Measure. Decision by end of day.", "Day 7"] }
+  ]}
+/>
+
+## The Technical Stack for 7 Days
+
+### What We Used
+
+- Calculator logic: pure JavaScript — no framework
+
+- Landing page: HTML + Tailwind CSS, deployed to Vercel in 30 minutes
+
+- Email capture: Tally form embedded with 2 lines of HTML
+
+- Analytics: GA4 + Hotjar (both free tiers)
+
+- Pricing 'payment': Tally form disguised as a pricing CTA
+
+### What We Intentionally Didn't Build
+
+- User accounts (not needed to test demand)
+
+- Database (no data to store — emails go to Mailchimp directly)
+
+- Payment processing (fake wall tells us intent without billing infrastructure)
+
+- Backend API (calculator is client-side; nothing to serve)
+
+## Day 7 Results vs Hypothesis Thresholds
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Email Capture Rate", "11.4%"] },
+    { cells: ["Pricing Page CTR", "6.2%"] },
+    { cells: ["D3 Return Rate", "29%"] },
+    { cells: ["Total Visitors", "2,400"] }
+  ]}
+/>
+
+<FactTable
+  caption="Hypothesis breakdown"
+  columns={["Hypothesis", "Threshold", "Actual", "Result"]}
+  rows={[
+    { cells: ["Demand exists", ">50K monthly searches", "Confirmed via keyword research before Day 1", "\u2713 Pass"] },
+    { cells: ["Email capture rate", ">8%", "11.4%", "\u2713 Pass"] },
+    { cells: ["D3 return rate", ">20%", "29%", "\u2713 Pass"] },
+    { cells: ["Pricing page CTR", ">3%", "6.2%", "\u2713 Pass"] }
+  ]}
+/>
+
+> **The takeaway.** All four hypotheses passed. The decision was easy: build the full product. The 7-day investment gave us certainty that a 4-month build would have given us — just 3.5 months earlier. That's 3.5 months we could spend building the right things instead of guessing.
+
+## What 7-Day MVPs Teach You That Longer Builds Don't
+
+### 01. Thresholds before build, not after
+
+Setting pass/fail thresholds before you build prevents post-hoc rationalization. It's easy to look at 6.2% pricing CTR after launch and say 'that's good' or 'that's bad' depending on how attached you are to the idea. Decide what good means before you know the number.
+
+### 02. The fake payment wall is ethical when disclosed correctly
+
+We told users on the 'payment successful' page that we were in early access and hadn't enabled payment yet. Nobody complained. The data it generated was genuinely valuable: 6.2% would have been willing to take out their card. That's a real signal.
+
+### 03. User calls on Day 6 are worth more than a week of analytics
+
+Three 30-minute calls before the big launch changed the product. The shareable URL feature — which became our highest-use retention mechanism — came entirely from one of those calls. You can't extract 'I want to share this with my husband' from a click heatmap.
+
+### 04. One well-built feature beats three half-built ones
+
+The reason the landing page performed well on Reddit and in communities was that the calculator actually worked well — correct math, good mobile UX, fast. A rushed, buggy calculator would have generated negative reviews instead of sharing. Quality on the one thing you ship matters more than breadth.
+
+## The Days That Were Harder Than Expected
+
+### What did not work: The balloon payment edge case almost shipped broken
+
+**Why it broke.** Calculator logic was correct for standard home loans but gave wrong results when users had partial prepayments already made. We caught it at 5pm on Day 3 during internal testing. If it had shipped, users would have gotten wrong financial guidance.
+
+**The fix.** Added 3 mandatory test cases to pre-launch checklist: standard loan, loan with partial prepayment, loan nearing end of tenure. Each must produce validated output before any launch.
+
+### What did not work: Day 6 user calls were booked too late
+
+**Why it broke.** We scheduled user calls for Day 6 — one day before the big launch. The insights from those calls (shareable URL, pricing page copy) needed more time to implement properly. We rushed the changes.
+
+**The fix.** For future MVPs: user calls on Day 5, soft launch on Day 6, full launch on Day 7. One extra day of buffer between insights and launch.
+
+## What the MVP Became
+
+### Full Product Build
+
+Decision to build full product made Day 8, based on clean hypothesis validation. 8-week full build began immediately. The MVP's learnings (shareable URLs, decision framing, mobile UX priority) all incorporated from Day 1 of full build.
+
+### 12 Decision Calculators
+
+The MVP calculator became the first of 12. Suite expansion prioritized by user requests from the MVP email list. 134K monthly users 6 months after full launch.
+
+### 7-Day MVP Framework
+
+The process documented as a repeatable framework for the product team. Used for 3 subsequent feature validations. Two passed; one failed and was cancelled, saving an estimated 6 weeks of build time.
+
+> Seven days of focused building that validates a hypothesis is not a shortcut. It's the responsible approach. The alternative — building for months before knowing if the hypothesis is real — is what actually wastes time.

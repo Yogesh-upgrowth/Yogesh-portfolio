@@ -1,0 +1,204 @@
+<AnswerBox>
+Building a utility product with compounding daily retention loops. The subject is finance calculator app retention case study, with the constraints that shaped it. Written up Mar 2025.
+</AnswerBox>
+
+## A User Wrote Us a Three-Paragraph Email About a Calculator
+
+Most user feedback is one line. "Good app" or "this is broken" or "when is feature X coming?" Priya from Pune wrote three paragraphs. I still have the email.
+
+She'd been trying to figure out whether to prepay part of her home loan or invest the same money in a mutual fund. Our EMI calculator gave her a monthly payment — useful, but not what she needed. She needed a comparison: prepay vs invest, over 10 years, accounting for tax benefits on home loan interest. She'd built a spreadsheet. It had taken her 4 hours. She was asking if we could build what she'd just built.
+
+> **What this showed.** That email was one user. But it described a problem that millions of middle-class Indian earners face every year: they have financial decisions to make that require calculation, they don't have financial advisors, and the tools that exist tell them what their EMI is — not what they should actually do.
+
+We built Priya's spreadsheet into the product. Then we built 11 more like it. The result was a calculator suite that became our highest-retention, highest-acquisition, and most-referred feature.
+
+## The Basic Calculator Problem
+
+Our existing calculators were functional but shallow — they answered single questions rather than decision questions. The gap between "how much will my EMI be?" and "should I prepay or invest?" is the gap between a computation and a decision.
+
+<FactTable
+  id="finance-calculator-app-retention-figures"
+  caption="Calculator Type breakdown"
+  columns={["Calculator Type", "What It Answered", "What Users Actually Needed"]}
+  rows={[
+    { cells: ["EMI Calculator", "Monthly payment amount", "Which loan option is actually cheapest total cost?"] },
+    { cells: ["FD Return Calculator", "Return on fixed deposit", "Is this better than a liquid fund at my tax bracket?"] },
+    { cells: ["SIP Calculator", "Future value of SIP", "How much SIP to reach \u20b91 crore (about $0.10 million) by retirement at 58?"] },
+    { cells: ["Home Loan Calculator", "EMI for given principal", "Should I prepay or invest? What's break-even?"] },
+    { cells: ["Tax Savings Calculator", "Taxable income reduction", "Which 80C investments should I choose first?"] }
+  ]}
+/>
+
+> **What this showed.** Every existing calculator answered a calculation question. Every user email requesting new features was asking a decision question. The gap wasn't in computation capability — it was in the framing of what the tool was for.
+
+## Five Financial Decision Types We Kept Getting Asked About
+
+We went through 3 months of support emails, exit surveys, and user interviews. Five financial decision types came up repeatedly — these were the decisions users were building spreadsheets for and then asking us to automate.
+
+<FactTable
+  caption="Decision Type breakdown"
+  columns={["Decision Type", "Current Tool Gap", "User Pain Level", "Build Priority"]}
+  rows={[
+    { cells: ["Prepay home loan vs invest the money", "No comparison tool exists", "Very High", "1"] },
+    { cells: ["Which insurance tenure is best value", "No multi-year comparison", "High", "2"] },
+    { cells: ["How much to save monthly to retire by X age", "No goal-backward calculator", "High", "3"] },
+    { cells: ["Rent vs buy at current market", "No rent-vs-EMI calculator", "Very High", "4"] },
+    { cells: ["SIP vs lump sum in current market", "No mode comparison", "Medium", "5"] }
+  ]}
+/>
+
+## From Computation Tools to Decision Tools
+
+The design principle change was fundamental: calculators should answer "what should I do?" not "what is the answer?" That shift changed the input structure, the output format, and the way we thought about what "correct" meant.
+
+> A calculator that tells you your EMI is ₹28,450 (about $296.69) is accurate but not useful. A calculator that tells you "with prepayment option B, you save ₹4.2L (about $4,380) in interest over 10 years but miss ₹6.1L in equity returns — net: invest wins by ₹1.9L at 12% expected returns" is a decision tool.
+
+The new calculator architecture: inputs are parameters of a decision, not components of a formula. Outputs show both outcomes of the decision with a clear recommendation, plus the assumption sensitivity (what changes if return rate changes from 12% to 9%).
+
+## The Decision Calculator Suite
+
+### Prepay vs Invest Calculator
+
+Inputs: outstanding loan, remaining tenure, interest rate, monthly surplus, expected investment returns, tax bracket. Output: net financial impact of prepayment vs investment over 5/10/15 year horizons, with sensitivity to return rate assumptions.
+
+### Retirement Goal Calculator
+
+Inputs: current age, target retirement age, current savings, expected expenses at retirement (inflation-adjusted). Output: monthly SIP required to reach goal, with adjustments for different return scenarios. Shows impact of starting 1 year later.
+
+### Rent vs Buy Calculator
+
+Inputs: monthly rent, property price, down payment available, loan tenure, property appreciation assumption, investment alternative return. Output: break-even year for buying vs continuing to rent and invest. With 10-year wealth comparison.
+
+### Insurance Coverage Calculator
+
+Inputs: annual income, current savings, dependents, existing coverage, liabilities. Output: recommended coverage amount with explanation of each component. Not just 'you need ₹1.5Cr (about $0.16 million)' — 'here's why: income replacement + liability clearance + education fund.'
+
+<FactTable
+  caption="Calculator breakdown"
+  columns={["Calculator", "Monthly Users", "Share Rate", "Avg Session Time"]}
+  rows={[
+    { cells: ["Prepay vs Invest", "41,200", "High (38% share)", "6.2 min"] },
+    { cells: ["Retirement Goal", "38,800", "Very High (44% share)", "8.1 min"] },
+    { cells: ["Rent vs Buy", "29,400", "Very High (51% share)", "7.4 min"] },
+    { cells: ["Insurance Coverage", "24,600", "Medium (22% share)", "4.8 min"] }
+  ]}
+/>
+
+## Sharable Results (The Viral Mechanism)
+
+The highest-impact technical decision: making calculator results shareable as a unique URL. A user runs the Rent vs Buy calculation for their specific situation → gets a URL they can share with their spouse or family → the exact inputs and outputs persist at that URL.
+
+### Shareable Calculation URLs
+
+- Every calculation state encoded in URL parameters (no server-side storage needed)
+
+- Shareable URL copies to clipboard with one tap after any calculation
+
+- Results page optimized for social sharing: OG image generated with summary metrics
+
+### Assumption Sensitivity Visualization
+
+- Slider: 'What if returns are X% instead?' — output updates in real-time
+
+- Best/expected/pessimistic scenario bands shown on charts
+
+- Assumption disclosure: every default assumption displayed and editable
+
+### PDF Export
+
+- Full calculation results exportable as PDF: inputs, outputs, charts, assumptions
+
+- Used by users to present to family, CAs, loan officers
+
+- 'Your financial advisor summary' positioning — creates professional-feeling artifact
+
+## How It Grew
+
+### Month 1 · First 3 Calculators — Prepay, Retirement, Rent vs Buy
+
+- Built 3 decision calculators in 6-week sprint
+
+- Shareable URLs from day one
+
+- No paid promotion — linked from blog and existing comparison pages
+
+**Result.** 8,400 users in first month. 38% share rate on Prepay vs Invest.
+
+### Month 2–3 · SEO Traction — Organic Discovery
+
+- Ranked top 5 for 'prepay home loan or invest calculator India'
+
+- Reddit mentions in r/IndiaInvestments drove sustained traffic
+
+- PDF export launched — used as a lead magnet
+
+**Result.** 42,000 monthly users. Calculator pages: 11.2% conversion to main platform.
+
+### Month 4–6 · Suite Expansion — 9 More Calculators
+
+- Completed 12-calculator suite based on user request priority
+
+- Calculator index page as a standalone destination
+
+- WhatsApp sharing integration added to shareable URL feature
+
+**Result.** 134,000 monthly calculator users. 18% convert to main platform comparison. D30: 44%.
+
+## 6-Month Calculator Suite Performance
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Monthly Calculator Users", "134K"] },
+    { cells: ["Calculator \u2192 Platform CVR", "18%"] },
+    { cells: ["Calculator User D30 Retention", "44%"] },
+    { cells: ["Share Rate", "38%"] }
+  ]}
+/>
+
+> **The takeaway.** Calculator users have 3× better D30 retention than users who come through any other acquisition path. They come with a specific decision to make, they make it with our tool, and the product has proven its value in a concrete, personal way before they leave. That's a different quality of first impression than a generic comparison page.
+
+## The Deeper Lessons
+
+### 01. Decision tools retain better than information tools
+
+A calculator that helps someone make a ₹50L (about $52,143) decision is not competing with other calculators — it's competing with spreadsheets, CAs, and WhatsApp groups where people ask for advice. When you win that comparison, you earn trust that no feature comparison can replicate.
+
+### 02. Share rate is a proxy for value delivered
+
+Users share tools that made them feel smart, informed, or capable. A 38% share rate on Prepay vs Invest meant 38% of users had a decision valuable enough to discuss with someone else. That's not an engagement metric — it's a value delivery metric.
+
+### 03. Assumptions should be visible and editable
+
+Financial calculators that hide their assumptions breed mistrust. Users with different expectations (8% vs 12% equity returns) get different answers and should be able to see how the answer changes. Transparency about assumptions increases trust even when it introduces uncertainty.
+
+## What Didn't Work
+
+### What did not work: First version showed too many scenarios at once
+
+**Why it broke.** Rent vs Buy calculator displayed 5-year, 10-year, 15-year, 20-year comparison simultaneously. Users couldn't identify a single clear answer. Exit rate high.
+
+**The fix.** Default to one timeline (user's expected stay duration, asked upfront). Other timelines available as tabs. Single clear answer first; detail expandable. Exit rate dropped 44%.
+
+### What did not work: Insurance calculator recommended too-low coverage
+
+**Why it broke.** Initial model used industry standard 10× income multiplier. For users with high liabilities (home loan + car loan), this was dangerously low. One user emailed after getting a term life quote that would have barely covered their mortgage.
+
+**The fix.** Added liability-aware calculation: recommended coverage = income replacement + all outstanding liabilities + education fund for dependents. Higher recommendation; more honest math.
+
+## The Calculator Roadmap
+
+### Linked Calculator paths
+
+'You've decided to invest instead of prepay — here's the best mutual fund for your risk profile.' Calculator decisions flow into product recommendations cleanly.
+
+### Personalized Assumptions
+
+Default assumption rates (equity returns, inflation) personalized based on user's risk profile and stated investment horizon. Not one-size-fits-all 12% equity return.
+
+### Decision Journal
+
+Users save their key calculations and can revisit them. 'You decided to invest 18 months ago based on 12% return assumption — here's how that's tracking.' Builds long-term relationship with financial decisions.
+
+> Priya's email asked for something specific and personal. The calculator we built for her helped 134,000 people make better financial decisions in the first 6 months. That's the use that comes from listening carefully to individual user pain.

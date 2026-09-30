@@ -1,0 +1,174 @@
+<AnswerBox>
+Recommending financial products using AI personalisation and collaborative filtering. The subject is ai recommendation engine case study, including the version that failed. Written up Jan 2026.
+</AnswerBox>
+
+## Our First AI Recommendation Engine Made Things Worse
+
+The launch of V1 was enthusiastic. We'd spent 3 months building a collaborative filtering model, trained it on 8 months of user behavior, and shipped a "Recommended for You" section to the comparison results page. The day after launch, our data scientist Karan ran the metrics. Conversion rate for users who saw recommendations: down 11%.
+
+The model was technically correct. It was recommending plans that users statistically similar to the current user had chosen. The problem: it was recommending plans that users similar to the current user had chosen after completing a transaction — which was completely wrong for a user still mid-comparison. We were showing closing recommendations to users who were still opening.
+
+> **The problem.** Recommendation systems fail when they optimize for the wrong moment. A recommendation for someone who's decided is different from a recommendation for someone who's still comparing. Same user, same model — completely different need. We'd built one model for both contexts.
+
+V2 took a different approach. The story of building V2 — and what it took to actually make recommendations that helped — is more interesting than the original launch.
+
+## The Contextual Mismatch Problem
+
+Post-mortem analysis of V1 showed that the model was surfacing accurate recommendations — but accurate for the wrong moment in the user path.
+
+<FactTable
+  id="ai-recommendation-engine-figures"
+  caption="User path Stage breakdown"
+  columns={["User path Stage", "What User Needs", "V1 Recommendation", "Result"]}
+  rows={[
+    { cells: ["Early comparison (first visit)", "Orientation \u2014 what options exist?", "Best plans bought by converters", "Premature \u2014 users felt pushed"] },
+    { cells: ["Mid-comparison (filtering)", "Narrowing \u2014 which plans fit my criteria?", "Best plans bought by converters", "Wrong filter \u2014 converters had different criteria"] },
+    { cells: ["Decision stage (comparing 2-3 plans)", "Confirmation \u2014 am I making the right choice?", "Best plans bought by converters", "Helpful \u2014 this is the right moment"] },
+    { cells: ["Post-quote (reviewing quote)", "Validation \u2014 is this a good deal?", "Alternative plans at lower price", "Useful \u2014 showed alternatives correctly"] }
+  ]}
+/>
+
+> **What this showed.** V1 was right in one of four contexts. The model wasn't wrong — the context classification was missing entirely. We'd applied one model output to all four stages, and only one of them was actually the right moment for that recommendation style.
+
+## Mapping Recommendation Type to path Stage
+
+V2 started with a fundamental question: what does "helpful" mean at each stage of the user's decision path? The answer was different for each stage — which meant the recommendation model needed to be stage-aware.
+
+<FactTable
+  caption="Stage breakdown"
+  columns={["Stage", "What 'Helpful' Means", "Recommendation Type", "Basis"]}
+  rows={[
+    { cells: ["Orienting (1\u20132 sessions)", "Show me what's available for my context", "Category recommendations", "User's stated coverage need"] },
+    { cells: ["Comparing (3+ sessions)", "Help me narrow down", "Filter-matched recommendations", "User's active filter behavior"] },
+    { cells: ["Deciding (2\u20133 plans shortlisted)", "Confirm I'm making a good choice", "Social proof + best value", "Similar-user purchase + value comparison"] },
+    { cells: ["Post-quote (quote in hand)", "Is there a better option?", "Price-optimized alternatives", "Same coverage, lower premium"] }
+  ]}
+/>
+
+> **The takeaway.** The "best for similar users" collaborative filtering output was only appropriate at the Deciding stage. At every other stage, a different recommendation logic was more helpful. V2 needed four different recommendation modes, not one — and a classifier to detect which stage the user was in.
+
+## Stage-Aware Recommendations
+
+The key architectural shift: before generating a recommendation, the system first classifies the user's path stage from behavioral signals. The stage classification drives the recommendation mode. The recommendation engine itself is secondary to the classification.
+
+> A recommendation engine without path stage awareness is a product that knows a lot of things — but can't tell which of the things it knows are relevant to you right now. The stage classifier is what makes the knowledge contextually useful.
+
+The stage classifier: a simple decision tree based on session count, plan shortlist status, filter usage, and quote status. Not ML — rule-based, because the stages are distinct enough that heuristics outperformed any model we tried on this binary classification problem.
+
+## The Four-Mode Recommendation System
+
+### Mode 1: Context Matching (Orienting)
+
+Based on: product category selected, stated coverage need (self / family / senior), city, age. Returns 3 most-viewed plans for that context. No collaborative filtering — purely contextual. Goal: reduce orientation overwhelm.
+
+### Mode 2: Filter Inference (Comparing)
+
+Observes user's active filters (price range, sum insured, network hospital preference). Recommends plans that match current filters but the user hasn't yet viewed. 'Based on your filters, you might also want to look at...' Expands exploration without disrupting it.
+
+### Mode 3: Social Proof (Deciding)
+
+Collaborative filtering: users with similar profile (age bracket, city, coverage need, shortlisted plans) and their purchase choice. Returns the plan most commonly purchased by users with this specific shortlist combination. Answers 'what did people like me, with the same shortlist, ultimately choose?'
+
+### Mode 4: Price Optimization (Post-Quote)
+
+At quote receipt: 'Here are 2 plans with similar coverage at lower premium.' Comparison driven by coverage equivalence score, not just feature matching. Shows concrete rupee savings. Highest-converting mode: 14.2% click-through.
+
+## The Infrastructure
+
+### Stage Classifier
+
+- Rule-based decision tree: session count (1–2 vs 3+ vs quote received), shortlist size (0, 1–2, 3+), quote status
+
+- Evaluated every page load — stage can change within a session
+
+- 6 rules, 100% interpretable, 89% accurate vs ground truth labels from user interviews
+
+### Mode 1–3: Real-Time Matching
+
+- Context matching: database query against plan catalog with coverage/city/age filters
+
+- Filter inference: live read of active filter state → matching plans not yet viewed
+
+- Collaborative filtering: precomputed similarity matrix, updated nightly; lookup at serve time
+
+### Mode 4: Coverage Equivalence Scoring
+
+- Plans compared on 8 coverage dimensions (sum insured, room rent, day care, critical illness, etc.)
+
+- Equivalence score: weighted similarity across 8 dimensions (weights from user interview data)
+
+- If score > 0.82 AND premium lower: surface as alternative. Threshold calibrated to avoid showing plans that are cheaper but actually meaningfully worse
+
+## V1 vs V2: The Full Comparison
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Conversion Rate", "+19%"] },
+    { cells: ["Post-Quote CTR", "14.2%"] },
+    { cells: ["V1 Conversion Impact", "\u221211%"] },
+    { cells: ["Stage Classifier Accuracy", "89%"] }
+  ]}
+/>
+
+<FactTable
+  caption="Mode breakdown"
+  columns={["Mode", "Stage", "Click-Through Rate", "Conversion Lift"]}
+  rows={[
+    { cells: ["Mode 1: Context Matching", "Orienting", "8.2%", "+6% at that stage"] },
+    { cells: ["Mode 2: Filter Inference", "Comparing", "11.4%", "+9% at that stage"] },
+    { cells: ["Mode 3: Social Proof", "Deciding", "9.8%", "+14% at that stage"] },
+    { cells: ["Mode 4: Price Optimization", "Post-Quote", "14.2%", "+22% at that stage"] }
+  ]}
+/>
+
+> **The takeaway.** The biggest insight: Mode 4 (price optimization at the post-quote stage) outperformed everything because it appeared at the highest-intent moment with the most concrete value proposition. "This plan has equivalent coverage and costs ₹3,200 l (about $3.34 million)ess per year" is the right message for someone who has just received a quote and is considering whether to proceed.
+
+## What Building V1 and V2 Taught Me
+
+### 01. Recommendation systems need path stage awareness before they need accuracy
+
+V1 was technically accurate — it recommended plans that similar users purchased. V2 classified the path stage first, then chose the recommendation logic. The stage awareness made a larger impact than improving model accuracy would have.
+
+### 02. Collaborative filtering is right for deciding, not for orienting
+
+'People like you chose this' is compelling when you're making your final decision. It's premature and slightly pushy when you're still exploring. Every recommendation logic has an appropriate moment — force-fitting one logic to all moments is what makes recommendation systems feel annoying.
+
+### 03. Rule-based classifiers beat ML when the stages are clean
+
+We tried an ML classifier for path stage detection. F1 score: 0.76. Rule-based decision tree: 0.89. The stages were distinct enough that heuristics outperformed the model — and were 100% interpretable when they were wrong. For this problem, simpler was better.
+
+### 04. Post-quote is the highest-use recommendation moment in financial comparison
+
+Users who have received a quote are committed enough to evaluate alternatives but not yet so committed that switching feels like starting over. That window — post-quote, pre-purchase — is the highest-converting recommendation moment in our entire funnel.
+
+## Beyond the V1 Failure
+
+### What did not work: Coverage equivalence threshold too low initially
+
+**Why it broke.** Mode 4 initially surfaced plans with equivalence score > 0.70. This was too low — plans that were cheaper but meaningfully worse (lower room rent, no critical illness coverage) were being shown as 'similar.' Several users complained in support about recommended plans being worse.
+
+**The fix.** Threshold raised to 0.82. Added explicit coverage comparison: showed the 3 dimensions where the cheaper plan was different, with clear labeling of whether the difference was significant or negligible. Complaints eliminated; CTR maintained.
+
+### What did not work: Mode 3 social proof backfired for non-standard profiles
+
+**Why it broke.** 'Users similar to you chose Plan X' — for users with atypical coverage needs (very high or very low sum insured requirements), 'similar users' were actually not that similar. Recommendations were off-profile.
+
+**The fix.** Added profile distance score to Mode 3: if the nearest similar users have similarity \< 0.60, suppress social proof recommendation and fall back to Mode 2 (filter inference). Social proof only shown when the peer group is genuinely similar.
+
+## V3 Directions
+
+### Hesitation Detection
+
+Identify behavioral signals of decision hesitation (back-and-forth between same two plans, long pauses, return visits without progress). Trigger a specific 'help me decide' recommendation mode with a clearer comparison framework.
+
+### Explainable Recommendations
+
+Current recommendations show the plan but not why. Next: 'We recommend this because 84% of people with your profile bought it after comparing these 3 plans.' Explanation increases click-through and builds trust in the recommendation.
+
+### Recommendation Outcome Tracking
+
+Full attribution: recommendation shown → clicked → converted → LTV outcome. Currently measuring CTR and stage conversion. Next: track whether recommendation-influenced purchases have different LTV from self-directed purchases.
+
+> The recommendation engine that made things worse taught us more than the one that worked. V1 failed because it didn't understand context. V2 succeeded because it classified context first — and let that drive everything else.

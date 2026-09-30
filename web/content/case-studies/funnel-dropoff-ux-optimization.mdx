@@ -1,0 +1,194 @@
+<AnswerBox>
+Reducing drop-offs at each funnel stage with targeted UX improvements. The subject is funnel dropoff ux optimization case study, from the baseline to what shipped. Written up Oct 2024.
+</AnswerBox>
+
+## Session Recording #47 Made Me Want to Redesign Everything
+
+We'd been looking at funnel metrics for weeks. Conversion step 3 had a 58% drop-off. The analytics said "users leave at step 3." That was true and completely useless — it told us where but not why.
+
+I sat down with 200 session recordings across the funnel. By recording 47, I'd stopped taking notes and was just watching with a knot in my stomach. A user spent 4 minutes on step 3. They filled in a field. Then deleted it. Filled it in again. Scrolled up, scrolled down. Looked for something that wasn't there. Then left.
+
+> **The problem.** We weren't losing users because they didn't want to complete the flow. We were losing them because the flow was making them feel stupid. They couldn't find what they needed to answer the question we were asking.
+
+That was the moment the optimization playbook changed — from "reduce friction" to "remove confusion." They're different problems.
+
+## Where Everyone Was Leaving
+
+<FactTable
+  id="funnel-dropoff-ux-optimization-figures"
+  caption="Funnel Step breakdown"
+  columns={["Funnel Step", "Completion Rate", "Drop-off Rate", "Avg Time on Step"]}
+  rows={[
+    { cells: ["Step 1: Basic Info", "89%", "11%", "45 sec"] },
+    { cells: ["Step 2: Contact Details", "81%", "19%", "1 min 20 sec"] },
+    { cells: ["Step 3: Policy Details", "42%", "58%", "4 min 10 sec"] },
+    { cells: ["Step 4: Payment", "71%", "29%", "2 min 45 sec"] },
+    { cells: ["Step 5: Confirmation", "94%", "6%", "30 sec"] }
+  ]}
+/>
+
+> **What this showed.** Step 3 had a 4-minute average time — 5× longer than Step 1 — and a 58% drop rate. Users weren't abandoning quickly. They were struggling for 4 minutes and then giving up. That time difference was the tell.
+
+Standard analytics would have said "optimize step 3." Session recordings showed us what that optimization needed to be: users couldn't answer the question "Vehicle Registration Number" without knowing what it looked like on their documents. We'd provided no hint, example, or format guidance.
+
+## 200 Recordings. 6 Failure Patterns.
+
+I tagged every recording with the primary reason for exit or struggle. Six patterns appeared repeatedly. Together they explained over 85% of step 3 abandonment.
+
+<FactTable
+  caption="Failure Pattern breakdown"
+  columns={["Failure Pattern", "% of Abandoners", "Root Cause"]}
+  rows={[
+    { cells: ["Can't find required document", "31%", "Field asks for document number; no guidance on which document or where to find it"] },
+    { cells: ["Unsure what format is correct", "22%", "Validation error appears but doesn't explain correct format"] },
+    { cells: ["Confused by insurance jargon", "18%", "'IDV', 'NCB', 'Zero Depreciation' \u2014 no tooltips, no plain-language explanation"] },
+    { cells: ["Mobile keyboard covering form fields", "8%", "Last 2 fields of step 3 hidden behind keyboard; no scroll compensation"] },
+    { cells: ["Distrust of data being collected", "4%", "Asking for policy number before trust established"] },
+    { cells: ["Other / unclear", "17%", "Various individual issues"] }
+  ]}
+/>
+
+> **The takeaway.** The #1 failure was a document lookup problem, not a form design problem. Users couldn't complete the form not because of friction but because they physically didn't have the information in front of them. The solution wasn't a better form — it was not asking for that information at that stage.
+
+## From "Reduce Friction" to "Remove Confusion"
+
+Traditional funnel optimization focuses on reducing friction: fewer fields, shorter forms, fewer steps. That wasn't the right frame here. The issue wasn't effort — users were clearly willing to put in effort (4 minutes average). The issue was comprehension and confidence.
+
+> When users spend 4 minutes on a step and then leave, they didn't find the step too hard. They found it impossible. The difference between "difficult" and "impossible" is whether the user has what they need to complete the task.
+
+The redesign principle: every field in the form needed to be answerable by someone sitting on their couch with their phone — without needing to go find a document they may not know exists.
+
+## What We Changed and Why
+
+### Progressive Disclosure
+
+Vehicle registration moved from step 3 to an optional enhancement step post-purchase. Quote can be generated with just make/model/year. Pre-fill from registration happens if user provides it — but it's no longer a gate.
+
+### Field-Level Context
+
+Every field with potential confusion now has: a plain-language label, a tooltip with 'where to find this,' and a format example. 'NCB' became 'No Claim Bonus (years without a claim).' Validation errors show correct format, not just 'invalid.'
+
+### Mobile Scroll Compensation
+
+Form auto-scrolls to keep the active field above the keyboard on iOS and Android. Previously, fields 4 and 5 of step 3 were obscured by the keyboard — users typed blind.
+
+### Jargon Elimination
+
+Every insurance term used in the form audited and replaced with plain language. Where jargon was unavoidable, inline explanation added. 'IDV' → 'Insured Declared Value (what your insurer pays if your vehicle is totalled).'
+
+## What Was Built
+
+### Form Architecture Redesign
+
+- Step 3 split into 3a (must-have) and 3b (nice-to-have / post-purchase)
+
+- Vehicle registration moved to optional enhancement step
+
+- Field order reorganized: easy fields first, document-required fields last (or deferred)
+
+### Contextual Help System
+
+- Tooltip component built: shows on field focus, not hover (mobile-first)
+
+- Format examples: 'MH02 AB 1234' for registration, '2 years' for NCB
+
+- Validation errors rewritten: 'Should look like MH02 AB 1234' instead of 'Invalid format'
+
+### Mobile Keyboard Handling
+
+- Active field scroll-into-view implemented across iOS and Android
+
+- Form container height adjusted dynamically when keyboard visible
+
+- Submit CTA always visible above keyboard on mobile (floating, not inline)
+
+## Testing and Results
+
+### Week 1–2 · Session Recording Analysis — Diagnosis
+
+- 200 recordings tagged with primary failure reason
+
+- 6 failure patterns identified and quantified
+
+- Redesign brief written based on failure pattern data
+
+**Result.** Clear redesign hypothesis: progressive disclosure + field context + mobile fix.
+
+### Week 3–5 · Build — Implementation
+
+- Form architecture redesign: registration deferral
+
+- Tooltip system built
+
+- Mobile keyboard handling implemented
+
+**Result.** Staged on test environment. Internal review completed.
+
+### Week 6–8 · A/B Test — 50/50 Split
+
+- Old flow vs new flow: equal traffic split for 3 weeks
+
+- Statistical significance reached at Week 6
+
+- Step 3 completion: 42% → 74%
+
+**Result.** Full funnel completion: 26% → 47%. Revenue per 1,000 visitors: +81%.
+
+<FactTable
+  caption="Results at a glance"
+  columns={["Measure", "Result"]}
+  rows={[
+    { cells: ["Step 3 Completion", "+76%"] },
+    { cells: ["Revenue per 1K Visitors", "+81%"] },
+    { cells: ["Avg Step 3 Time", "\u221262%"] },
+    { cells: ["Mobile Completion", "+34%"] }
+  ]}
+/>
+
+## What I Now Believe About Funnel Optimization
+
+### 01. Time on step is the most underused diagnostic metric
+
+High time + high drop = confusion, not laziness. Low time + high drop = too hard (users give up immediately). High time + low drop = high engagement. Reading time alongside drop rate tells you what kind of problem you're solving.
+
+### 02. Session recordings are worth 10× funnel analytics for diagnosis
+
+Funnel analytics tells you where. Session recordings tell you why. The 4-minute struggle visible in Recording #47 was invisible in the drop-off percentage. You need both — analytics to prioritize, recordings to diagnose.
+
+### 03. 'Remove friction' and 'remove confusion' are different problems
+
+Friction reduction = fewer steps, fewer fields. Confusion removal = better context, clearer labels, appropriate field timing. Applying friction-reduction solutions to confusion problems will improve metrics without solving the actual user experience issue.
+
+### 04. Mobile keyboard handling is chronically underinvested
+
+8% of step 3 failures were from fields hidden behind the mobile keyboard — entirely invisible in any desktop QA process. Separate mobile-first testing and keyboard-visible flow review should be standard for any form.
+
+## What Didn't Work First
+
+### What did not work: First redesign just added progress indicators
+
+**Why it broke.** Initial hypothesis was that users didn't know how long the form was. Added a step progress bar. Drop rate moved from 58% to 54%. Improvement, but not where the real problem was.
+
+**The fix.** Session recordings showed users who could see the progress bar still left at the same point in step 3 — when they couldn't find their vehicle registration. Progress visibility wasn't the issue; answerable questions were.
+
+### What did not work: Tooltip content was too technical
+
+**Why it broke.** First version of tooltips used insurance industry standard language. 'Registration certificate (RC)' — but users called it 'RC book' or 'papers' and didn't recognize 'registration certificate.'
+
+**The fix.** Rewrote tooltip content using the language users used in session recordings and support chats. 'Your RC book — the green booklet from the RTO.' Recognition shot up.
+
+## What's Next
+
+### Continuous Recording Analysis
+
+Set up automated session recording tagging using heuristics (rage clicks, u-turns, long pauses) to surface struggling sessions automatically — rather than manual review.
+
+### Predictive Field Completion
+
+Pre-populate fields from known user data (previous policies, partner integrations, device-based autofill). Reduce required manual input — the best field is the one the user never had to type.
+
+### Per-Field Analytics
+
+Track time, error rate, and abandonment at the individual field level (not just step level). Identify which specific fields are causing struggle before they affect step completion rates.
+
+> The funnel didn't need fewer steps. It needed to stop asking users questions they couldn't answer from their couch. Fix that, and the drop-off fixed itself.

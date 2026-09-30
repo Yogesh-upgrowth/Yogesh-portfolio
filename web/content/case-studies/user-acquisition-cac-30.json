@@ -1,0 +1,137 @@
+{
+  "id": "case-study-0173",
+  "url": "/case-studies/user-acquisition-cac-30",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "User acquisition cac 30 case study: a case study with the numbers",
+  "meta_description": "Building channel-level attribution from scratch and reallocating spend from cheap-but-low-quality to expensive-but-high-LTV acquisition.",
+  "h1": "How We Cut User Acquisition Cost by 30% Without Cutting Volume (user acquisition cac 30 case study)",
+  "primary_keyword": "user acquisition cac 30 case study",
+  "secondary_keywords": [],
+  "entity_a": "user-acquisition-cac-30",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-user-acquisition-cac-30-01",
+    "f-cs-user-acquisition-cac-30-02",
+    "f-cs-user-acquisition-cac-30-03",
+    "f-cs-user-acquisition-cac-30-04",
+    "f-cs-user-acquisition-cac-30-05",
+    "f-cs-user-acquisition-cac-30-06",
+    "f-cs-user-acquisition-cac-30-07",
+    "f-cs-user-acquisition-cac-30-08",
+    "f-cs-user-acquisition-cac-30-09",
+    "f-cs-user-acquisition-cac-30-10",
+    "f-cs-user-acquisition-cac-30-11",
+    "f-cs-user-acquisition-cac-30-12",
+    "f-cs-user-acquisition-cac-30-13",
+    "f-cs-user-acquisition-cac-30-14",
+    "f-cs-user-acquisition-cac-30-15",
+    "f-cs-user-acquisition-cac-30-16",
+    "f-cs-user-acquisition-cac-30-17",
+    "f-cs-user-acquisition-cac-30-18",
+    "f-cs-user-acquisition-cac-30-19",
+    "f-cs-user-acquisition-cac-30-20",
+    "f-cs-user-acquisition-cac-30-21",
+    "f-cs-user-acquisition-cac-30-22",
+    "f-cs-user-acquisition-cac-30-23",
+    "f-cs-user-acquisition-cac-30-24",
+    "f-cs-user-acquisition-cac-30-25",
+    "f-cs-user-acquisition-cac-30-26",
+    "f-cs-user-acquisition-cac-30-27",
+    "f-cs-user-acquisition-cac-30-28",
+    "f-cs-user-acquisition-cac-30-29",
+    "f-cs-user-acquisition-cac-30-30",
+    "f-cs-user-acquisition-cac-30-31",
+    "f-cs-user-acquisition-cac-30-32",
+    "f-cs-user-acquisition-cac-30-33",
+    "f-cs-user-acquisition-cac-30-34",
+    "f-cs-user-acquisition-cac-30-35",
+    "f-cs-user-acquisition-cac-30-36",
+    "f-cs-user-acquisition-cac-30-37",
+    "f-cs-user-acquisition-cac-30-38",
+    "f-cs-user-acquisition-cac-30-39",
+    "f-cs-user-acquisition-cac-30-40",
+    "f-cs-user-acquisition-cac-30-41",
+    "f-cs-user-acquisition-cac-30-42",
+    "f-cs-user-acquisition-cac-30-43",
+    "f-cs-user-acquisition-cac-30-44",
+    "f-cs-user-acquisition-cac-30-45",
+    "f-cs-user-acquisition-cac-30-46",
+    "f-cs-user-acquisition-cac-30-47",
+    "f-cs-user-acquisition-cac-30-48",
+    "f-cs-user-acquisition-cac-30-49",
+    "f-cs-user-acquisition-cac-30-50",
+    "f-cs-user-acquisition-cac-30-51",
+    "f-cs-user-acquisition-cac-30-52",
+    "f-cs-user-acquisition-cac-30-53"
+  ],
+  "experience_used": [
+    "exp-044",
+    "exp-015"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/fintech",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#user-acquisition-cac-30-figures",
+      "alt": "Figures from How We Cut User Acquisition Cost by 30% Without Cutting Volume, each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

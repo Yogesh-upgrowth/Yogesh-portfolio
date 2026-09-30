@@ -1,0 +1,90 @@
+{
+  "id": "case-study-0193",
+  "url": "/case-studies/reduce-cognitive-load",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Reduce cognitive load case study: a case study with the numbers",
+  "meta_description": "Simplifying complex flows to drive significantly higher task completion rates. A first-hand account of reduce cognitive load case study, with the figure.",
+  "h1": "Reducing Cognitive Load to Improve Funnel Completion (UX Case Study) (reduce cognitive load case study)",
+  "primary_keyword": "reduce cognitive load case study",
+  "secondary_keywords": [],
+  "entity_a": "reduce-cognitive-load",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-reduce-cognitive-load-01",
+    "f-cs-reduce-cognitive-load-02",
+    "f-cs-reduce-cognitive-load-03",
+    "f-cs-reduce-cognitive-load-04",
+    "f-cs-reduce-cognitive-load-05",
+    "f-cs-reduce-cognitive-load-06"
+  ],
+  "experience_used": [
+    "exp-011",
+    "exp-018"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#reduce-cognitive-load-figures",
+      "alt": "Figures from Reducing Cognitive Load to Improve Funnel Completion (UX Case Study), each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

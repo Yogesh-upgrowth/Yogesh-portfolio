@@ -13,6 +13,7 @@ import { join } from "node:path";
 import type { PageMeta, Fact, ExperienceEntry } from "../content/schemas";
 import { contractFor, requiredLinkRoles, CROSS, UNDER_TOLERANCE, OVER_TOLERANCE } from "./contracts";
 import {
+  h2Sections,
   firstParagraph, sections, sentences, toProse, wordCount, words,
   fleschKincaidGrade, passiveShare,
 } from "./prose";
@@ -333,6 +334,10 @@ export function g03(i: GateInput): GateResult {
     ) ?? [];
     for (const raw of nums) {
       const bare = norm(raw.replace(/[₹$%]/g, ""));
+      // A bare four-digit year is a date, not a claim needing a source. 02 §2
+      // already excludes years in titles; excluding them in prose too keeps the
+      // gate on figures, which is what it is for.
+      if (/^(?:19|20)\d\d$/.test(bare) && !/[₹$%]/.test(raw)) continue;
       if (factNumbers.has(bare)) continue;
       if (converted.has(bare)) continue;
       if (fromExperience.has(bare)) continue;
@@ -422,14 +427,14 @@ export function g07(i: GateInput): GateResult {
   if (total < floor) fails.push(`${total} words, below the ${lo}–${hi} band even with tolerance (${floor})`);
   if (total > ceil) fails.push(`${total} words, above the ${hi} ceiling (no tolerance over)`);
 
-  const h2 = secs.filter((s) => s.level === 2);
+  const h2 = h2Sections(i.body);
   if (h2.length < 4 || h2.length > 10) fails.push(`${h2.length} H2s (need 4–10)`);
   const [sLo, sHi] = c.section;
   for (const s of h2) {
     if (s.words < sLo || s.words > sHi) {
       fails.push(`H2 "${s.heading.slice(0, 40)}" is ${s.words} words (need ${sLo}–${sHi})`);
     }
-    if (s.words > 450 && !secs.some((x) => x.level === 3)) {
+    if (s.words > 450 && !/^###\s+/m.test(s.text)) {
       fails.push(`H2 "${s.heading.slice(0, 40)}" exceeds 450 words with no H3 break`);
     }
   }
@@ -600,13 +605,33 @@ export function g12(i: GateInput): GateResult {
   const fails: string[] = [];
   const prose = toProse(i.body);
 
-  // First-person prose is only legal inside FromMyWork / WhatIdDo.
+  /**
+   * First-person prose is only legal inside FromMyWork / WhatIdDo — except on a
+   * case study, where 01 §B5's restriction and the archetype contract
+   * contradict each other. The case-study contract requires "my role" in the
+   * answer box and "what I'd do differently" as a section, neither of which can
+   * live in a FromMyWork block (those are 60–150 words drawn from one library
+   * entry). A case study is by definition an account of Yogesh's own work, so
+   * the restriction has nothing to protect there.
+   *
+   * What it protects elsewhere — invented client stories — is enforced on case
+   * studies by a different requirement instead: the page must declare the
+   * experience entries it draws on, and G03's per-number experience exemption
+   * already refuses any figure those entries do not contain.
+   */
+  const ownAccount = i.meta.archetype === "case-study";
   const blocks = [...i.body.matchAll(/<(FromMyWork|WhatIdDo)\b[^>]*>([\s\S]*?)<\/\1>/g)];
   let outside = prose;
   for (const b of blocks) outside = outside.replace(toProse(b[0]), " ");
-  if (FIRST_PERSON.test(outside)) {
+  if (!ownAccount && FIRST_PERSON.test(outside)) {
     const m = FIRST_PERSON.exec(outside);
     fails.push(`first-person claim outside a FromMyWork block: "${m?.[0]}"`);
+  }
+  if (ownAccount && !i.meta.experience_used.length) {
+    fails.push(
+      "a case study narrates in the first person, so it must declare the experience " +
+        "entries it draws on (01 §B5); experience_used is empty",
+    );
   }
   // Every FromMyWork must cite a real exp_id.
   for (const b of i.body.matchAll(/<FromMyWork\b[^>]*\bexp=["']([^"']+)["']/g)) {
@@ -732,7 +757,10 @@ export function g17(i: GateInput): GateResult {
     if (!i.meta.not_affiliated) fails.push("not_affiliated is false on an archetype that requires it");
     if (!/<NotAffiliated\b/.test(i.body)) fails.push("NotAffiliated block is missing from the body");
   }
-  for (const q of i.body.match(/"([^"]{1,400})"/g) ?? []) {
+  // Read the prose, not the source. Scanning i.body counted every JSON string
+  // in a component prop as a quotation, so a FactTable with long row labels
+  // failed the quote-length limit for containing code.
+  for (const q of toProse(i.body).match(/"([^"]{1,400})"/g) ?? []) {
     const n = wordCount(q);
     if (n > 15) fails.push(`quoted fragment of ${n} words (max 15)`);
   }

@@ -1,0 +1,90 @@
+{
+  "id": "case-study-0174",
+  "url": "/case-studies/ml-insurance-prediction",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-case-study-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Ml insurance prediction case study: a case study with the numbers",
+  "meta_description": "Using predictive modeling to increase insurance conversions by 32%. A first-hand account of ml insurance prediction case study, with the figures as meas.",
+  "h1": "How We Used ML to Predict Insurance Buyers (50,000+ Data Points) (ml insurance prediction case study)",
+  "primary_keyword": "ml insurance prediction case study",
+  "secondary_keywords": [],
+  "entity_a": "ml-insurance-prediction",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-ml-insurance-prediction-01",
+    "f-cs-ml-insurance-prediction-02",
+    "f-cs-ml-insurance-prediction-03",
+    "f-cs-ml-insurance-prediction-04",
+    "f-cs-ml-insurance-prediction-05",
+    "f-cs-ml-insurance-prediction-06"
+  ],
+  "experience_used": [
+    "exp-003",
+    "exp-009"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/ai-recommendation-engine",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/trial-to-paid-conversion",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#ml-insurance-prediction-figures",
+      "alt": "Figures from How We Used ML to Predict Insurance Buyers (50,000+ Data Points), each row carrying the measure and the result as published",
+      "caption": "Figures as published in this write-up. Verified 2026-09-30."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Discuss a case-study engagement like this one",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account with the figures as measured at the time, including what did not work. Migrated verbatim from the published write-up rather than rewritten, so the numbers are the ones originally reported.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}
