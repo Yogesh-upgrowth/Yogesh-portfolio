@@ -32,7 +32,7 @@
       "excerpt": "17-32 day trials have a median of 42.5%, while trials of 4 days or fewer have a median of 25.5%",
       "published_on": "2026",
       "verified_on": "2026-09-30",
-      "method": "fetched",
+      "method": "search_index",
       "primary": true
     },
     {
@@ -46,7 +46,7 @@
       "excerpt": "Travel 43.5%, Health and Fitness 37.7%, Gaming 25.0%, Photo and Video 22.2% median trial-to-paid",
       "published_on": "2026",
       "verified_on": "2026-09-30",
-      "method": "fetched",
+      "method": "search_index",
       "primary": true
     },
     {
@@ -60,7 +60,7 @@
       "excerpt": "North America median 34.2%, Asia-Pacific 31.9%, Western Europe 29.7%, IN/SEA lowest at 15.2%",
       "published_on": "2026",
       "verified_on": "2026-09-30",
-      "method": "fetched",
+      "method": "search_index",
       "primary": true
     },
     {
@@ -74,7 +74,7 @@
       "excerpt": "median of 10.7% for apps with hard paywalls versus 2.1% in freemium apps for Day 35 download-to-paid",
       "published_on": "2026",
       "verified_on": "2026-09-30",
-      "method": "fetched",
+      "method": "search_index",
       "primary": true
     },
     {
@@ -88,7 +88,7 @@
       "excerpt": "offering trials on annual plans boosts one-year LTV by 35% compared to direct purchases",
       "published_on": "2026",
       "verified_on": "2026-09-30",
-      "method": "fetched",
+      "method": "search_index",
       "primary": true
     },
     {
@@ -102,7 +102,7 @@
       "excerpt": "Europe prices at 1.2x the US baseline and India at 0.6x in Adapty's pricing index",
       "published_on": "2026",
       "verified_on": "2026-09-30",
-      "method": "fetched",
+      "method": "search_index",
       "primary": true
     },
     {
@@ -116,7 +116,7 @@
       "excerpt": "Localization tests win 62.3% of the time in experiments, the highest win rate of any test type",
       "published_on": "2026",
       "verified_on": "2026-09-30",
-      "method": "fetched",
+      "method": "search_index",
       "primary": true
     },
     {
@@ -130,7 +130,7 @@
       "excerpt": "UPI AutoPay transaction volume reached 175 million in January 2025, compared with 58 million in January 2024",
       "published_on": "2026",
       "verified_on": "2026-09-30",
-      "method": "fetched",
+      "method": "search_index",
       "primary": true
     },
     {
@@ -144,7 +144,7 @@
       "excerpt": "UPI Autopay mandates are showing 92%+ mandate success rates for recurring payments under Rs 15,000",
       "published_on": "2026",
       "verified_on": "2026-09-30",
-      "method": "fetched",
+      "method": "search_index",
       "primary": true
     },
     {
@@ -158,7 +158,7 @@
       "excerpt": "The median subscription app earns $492 per month, with 59.3% making less than $1,000 total",
       "published_on": "2026",
       "verified_on": "2026-09-30",
-      "method": "fetched",
+      "method": "search_index",
       "primary": true
     }
   ],

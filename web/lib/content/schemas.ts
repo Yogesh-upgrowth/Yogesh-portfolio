@@ -25,7 +25,19 @@ export const Fact = z.object({
     }),
   published_on: z.string().optional(),
   verified_on: z.string(),
-  method: z.enum(["fetched", "device_check", "filing", "interview", "own_data", "user_reported"]),
+  /**
+   * How the fact was actually obtained. `fetched` means the source page itself
+   * was retrieved and read; `search_index` means it was read through a search
+   * index that quoted the source, because direct egress to that host is blocked
+   * here. The two are not interchangeable — a search_index fact carries a real
+   * risk that the index paraphrased or aged the figure — so they are separate
+   * values rather than one honest-looking label, and G02 treats an empty
+   * fetch_log accordingly.
+   */
+  method: z.enum([
+    "fetched", "search_index", "device_check", "filing", "interview", "own_data",
+    "user_reported",
+  ]),
   primary: z.boolean(),
   archive_url: z.string().url().optional(),
   device: z

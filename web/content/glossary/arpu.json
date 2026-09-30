@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0688",
+  "url": "/glossary/arpu",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is ARPU? Formula, Benchmarks and the Blended Trap",
+  "meta_description": "ARPU divides revenue by every active user, payer or not. The formula, the $8.41 subscription median, and why one blended number hides more than it shows.",
+  "h1": "What is ARPU?",
+  "primary_keyword": "what is arpu",
+  "secondary_keywords": [
+    "arpu formula",
+    "average revenue per user benchmark"
+  ],
+  "entity_a": "arpu",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-01",
+    "f-unit-02",
+    "f-unit-29",
+    "f-unit-30",
+    "f-unit-03",
+    "f-glossary-0700-06"
+  ],
+  "experience_used": [
+    "exp-021"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/arppu",
+      "anchor": "ARPPU",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/ltv",
+      "anchor": "lifetime value",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/arpu-arppu-calculator",
+      "anchor": "the ARPU and ARPPU calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/ott-pricing-india",
+      "anchor": "OTT pricing in India",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#arpu-benchmarks",
+      "alt": "Six ARPU reference points: the mobile subscription average, the iOS to Android gap, India's projected streaming ARPU, India's paying-subscriber share, the India price index and the regional refund-rate gap, each row carrying its source and verification date",
+      "caption": "ARPU reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good ARPU?",
+      "a": "The mobile subscription average is $8.41, about ₹806. Platform mix moves it harder than product quality does: iOS earns roughly twice the ARPU of Android on the same app. Check your own platform split before treating a low number as a failure."
+    },
+    {
+      "q": "What is the difference between ARPU and ARPPU?",
+      "a": "ARPU divides revenue by every active user. ARPPU divides it by paying users only. In a freemium product the two differ by an order of magnitude, so labelling one as the other is the commonest error in a monetisation deck."
+    },
+    {
+      "q": "Why is ARPU lower in India?",
+      "a": "Mostly the denominator. India has 601 million OTT users and 119 million paying subscribers. Price adds to it, because Indian subscription prices sit at 0.6 times the US baseline, and refunds run at a 7.7% median against 3.4% in North America."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Names the published India-versus-US ARPU comparison as unit-mismatched, an annual figure set against a monthly one, instead of repeating it; and separates the denominator effect from the price effect, which the ranking pages conflate.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

@@ -1,0 +1,74 @@
+<AnswerBox>
+What is ARPPU? Average revenue per paying user divides revenue for a period by
+the paying users in that period. ARPU averages across everyone and lands at
+$8.41, about ₹806, for mobile subscriptions. ARPPU strips the free base out. That
+makes it right for pricing questions and wrong for reach questions.
+</AnswerBox>
+
+<FactTable
+  id="arppu-context"
+  caption="The numbers ARPPU has to be read against"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["All-user mobile subscription ARPU", "$8.41 (about ₹806)"], factId: "f-unit-01" },
+    { cells: ["iOS against Android ARPU, same app", "about 2x"], factId: "f-unit-02" },
+    { cells: ["India OTT paying base", "119M paying of 601M users"], factId: "f-unit-29" },
+    { cells: ["India streaming ARPU, projected 2026", "$9.02 (about ₹865)"], factId: "f-unit-30" },
+    { cells: ["Median subscription app, monthly revenue", "$492 (about ₹47,178)"], factId: "f-glossary-0700-10" },
+    { cells: ["Median refund rate, IN/SEA against North America", "7.7% against 3.4%"], factId: "f-unit-03" },
+  ]}
+/>
+
+## How is ARPPU calculated?
+
+Revenue divided by payers, same window for both. The subtlety is what counts as a
+payer in a monthly view when someone bought an annual plan. Count them in every
+month of the term and ARPPU smooths. Count them only in the month of purchase and
+it spikes.
+
+<Example illustrative>
+Take 100 payers billing ₹800 a month (about $8.34). Add 10 who each paid ₹9,600
+up front (about $100.11). Month one then holds ₹1,76,000 of revenue, or about
+$1,835. Across 110 payers that reads ₹1,600 (about $16.69) for month one, and
+₹800 (about $8.34) for every month after.
+</Example>
+
+Neither convention is wrong. Mixing them across quarters is, and it happens often
+enough to be worth checking before reading any trend.
+
+## What does ARPPU show that ARPU does not?
+
+ARPU blends monetisation with reach. ARPPU isolates price and plan mix. It
+answers a narrower and more actionable question. For the people who already
+decided to pay, is the price right and are they buying up.
+
+That narrowness is also the trap. ARPPU rises when you upsell. It rises just as
+reliably when you lose your cheapest payers. A team optimising ARPPU without
+watching paying-user count can report a clean quarter while the business shrinks.
+Read the two together or read neither.
+
+## Why is ARPPU harder in India?
+
+The paying base is small next to the audience. India has 601 million OTT users
+and 119 million paying subscribers. So the population ARPPU describes is a fifth
+of the population the product serves. A concentrated payer base pushes ARPPU well
+above the market average while total revenue stays thin.
+
+A healthy ARPPU on a narrow base is the most flattering number an Indian consumer
+product can show. It is also close to the least informative. Refunds narrow it
+further. The IN and South-East Asia median refund rate is 7.7% against 3.4% in
+North America.
+
+<FromMyWork exp="exp-022">
+The opportunity was sized before the work started. Of 3.8M monthly actives, 68%
+were returning users with a known vehicle, which is the population any insurance
+attach rate has to be measured against rather than the whole base.
+</FromMyWork>
+
+## What is a realistic ARPPU floor?
+
+Absolute scale is worth holding in view. The median subscription app earns $492 a
+month, about ₹47,178. And 59.3% never pass $1,000, roughly ₹95,890, in total
+revenue. Most published ARPPU benchmarks therefore come from a survivor set.
+Below the median, compare against apps at your revenue stage. Platform mix counts
+too, because iOS earns roughly twice the ARPU of Android on the same product.

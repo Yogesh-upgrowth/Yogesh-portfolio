@@ -1,0 +1,297 @@
+{
+  "batch_id": "w1-glossary-01",
+  "wave": 1,
+  "verified_on": "2026-09-30",
+  "fx_rate": 95.89,
+  "default_cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "facts": {
+    "f-unit-01": {
+      "fact_id": "f-unit-01",
+      "claim": "Average mobile subscription ARPU is 8.41 US dollars",
+      "value": "8.41",
+      "unit": "USD",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "The average mobile subscription ARPU is $8.41.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-02": {
+      "fact_id": "f-unit-02",
+      "claim": "iOS earns roughly twice the ARPU of Android on the same app",
+      "value": "2",
+      "unit": "x",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "iOS pays about 2x the ARPU compared to Android.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-03": {
+      "fact_id": "f-unit-03",
+      "claim": "India and South-East Asia show the highest median refund rate at 7.7%, against 3.4% in North America",
+      "value": "7.7",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "IN/SEA leads with a 7.7% median refund rate; North America's is 3.4%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-29": {
+      "fact_id": "f-unit-29",
+      "claim": "India has 601 million OTT users and 119 million paying subscribers",
+      "value": "119",
+      "unit": "million",
+      "source_url": "https://www.medianews4u.com/indias-ott-market-hits-601-million-users-but-only-119-million-pay-monetisation-gap-widens/",
+      "source_title": "India's OTT Market Hits 601 Million Users, But Only 119 Million Pay",
+      "source_domain": "medianews4u.com",
+      "excerpt": "Despite a massive base of 601 million OTT users, only 119 million are active paying subscribers.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-30": {
+      "fact_id": "f-unit-30",
+      "claim": "India's streaming ARPU is projected at 9.02 dollars for 2026 against 15 to 20 dollars a month in the United States",
+      "value": "9.02",
+      "unit": "USD",
+      "source_url": "https://www.statista.com/outlook/emo/online-food-delivery/india/",
+      "source_title": "Online video and OTT outlook, India",
+      "source_domain": "statista.com",
+      "excerpt": "India's projected ARPU of USD 9.02 in 2026. In the United States streaming ARPU runs above USD 15-20 per month.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-glossary-0700-06": {
+      "fact_id": "f-glossary-0700-06",
+      "claim": "Indian subscription prices sit at 0.6 times the US baseline, against 1.2 times in Europe",
+      "value": "0.6",
+      "unit": "x US baseline",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions-report/",
+      "source_title": "In-App Subscription Benchmarks 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "Europe prices at 1.2x the US baseline and India at 0.6x in Adapty's pricing index",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-glossary-0700-10": {
+      "fact_id": "f-glossary-0700-10",
+      "claim": "The median subscription app earns 492 US dollars a month, and 59.3% never pass 1,000 dollars in total revenue",
+      "value": "492",
+      "unit": "USD/month",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "The median subscription app earns $492 per month, with 59.3% making less than $1,000 total",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  },
+  "pages": [
+    {
+      "id": "glossary-0688",
+      "url": "/glossary/arpu",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is ARPU? Formula, Benchmarks and the Blended Trap",
+      "meta_description": "ARPU divides revenue by every active user, payer or not. The formula, the $8.41 subscription median, and why one blended number hides more than it shows.",
+      "h1": "What is ARPU?",
+      "primary_keyword": "what is arpu",
+      "secondary_keywords": [
+        "arpu formula",
+        "average revenue per user benchmark"
+      ],
+      "entity_a": "arpu",
+      "facts": [
+        "f-unit-01",
+        "f-unit-02",
+        "f-unit-29",
+        "f-unit-30",
+        "f-unit-03",
+        "f-glossary-0700-06"
+      ],
+      "experience": [
+        "exp-021"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/arppu",
+          "anchor": "ARPPU",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/ltv",
+          "anchor": "lifetime value",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/arpu-arppu-calculator",
+          "anchor": "the ARPU and ARPPU calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/ott-pricing-india",
+          "anchor": "OTT pricing in India",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#arpu-benchmarks",
+          "alt": "Six ARPU reference points: the mobile subscription average, the iOS to Android gap, India's projected streaming ARPU, India's paying-subscriber share, the India price index and the regional refund-rate gap, each row carrying its source and verification date",
+          "caption": "ARPU reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good ARPU?",
+          "a": "The mobile subscription average is $8.41, about ₹806. Platform mix moves it harder than product quality does: iOS earns roughly twice the ARPU of Android on the same app. Check your own platform split before treating a low number as a failure."
+        },
+        {
+          "q": "What is the difference between ARPU and ARPPU?",
+          "a": "ARPU divides revenue by every active user. ARPPU divides it by paying users only. In a freemium product the two differ by an order of magnitude, so labelling one as the other is the commonest error in a monetisation deck."
+        },
+        {
+          "q": "Why is ARPU lower in India?",
+          "a": "Mostly the denominator. India has 601 million OTT users and 119 million paying subscribers. Price adds to it, because Indian subscription prices sit at 0.6 times the US baseline, and refunds run at a 7.7% median against 3.4% in North America."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Names the published India-versus-US ARPU comparison as unit-mismatched, an annual figure set against a monthly one, instead of repeating it; and separates the denominator effect from the price effect, which the ranking pages conflate.",
+      "contradictions": [
+        "India's projected streaming ARPU of $9.02 for 2026 is published as an annual figure, and the US comparison usually set beside it ($15-20) is published per month. The gap as quoted is not like-for-like. Stated in the body rather than repeated."
+      ],
+      "body": "\n<AnswerBox>\nWhat is ARPU? Average revenue per user divides revenue for a period by every\nactive user in that period, payer or not. The mobile subscription average is\n$8.41, about ₹806. It blends payers with free users by design. That is why it is\neasy to quote and easy to misread.\n</AnswerBox>\n\n<FactTable\n  id=\"arpu-benchmarks\"\n  caption=\"ARPU reference points, and what each one is actually measuring\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Mobile subscription average\", \"$8.41 (about ₹806)\"], factId: \"f-unit-01\" },\n    { cells: [\"iOS against Android, same app\", \"about 2x\"], factId: \"f-unit-02\" },\n    { cells: [\"India streaming, projected 2026\", \"$9.02 (about ₹865), published as annual\"], factId: \"f-unit-30\" },\n    { cells: [\"India OTT paying base\", \"119M paying of 601M users\"], factId: \"f-unit-29\" },\n    { cells: [\"India price index against the US baseline\", \"0.6x\"], factId: \"f-glossary-0700-06\" },\n    { cells: [\"Median refund rate, IN/SEA against North America\", \"7.7% against 3.4%\"], factId: \"f-unit-03\" },\n  ]}\n/>\n\n## How is ARPU calculated?\n\nDivide revenue by active users over the same window. Then fix both halves. The\ndenominator causes most of the trouble. Monthly actives, registered accounts and\ncumulative installs give three very different answers from one revenue figure.\n\n<Example illustrative>\nTake ₹48,00,000 of revenue in a month, about $50,057. Across 10,000 monthly\nactives that is ₹480, about $5.01. Across 40,000 registered accounts it is ₹120,\nabout $1.25.\n</Example>\n\nPick the definition once. Write it beside the chart. Keep it when the number\nmoves the wrong way. Most reported ARPU gains turn out to be denominator changes\nnobody flagged.\n\n## What counts as a good ARPU?\n\nThe average is a starting point, not a target. Platform mix moves it harder than\nproduct quality does. iOS earns roughly twice the ARPU of Android on the same\napp. So an Android-heavy base reads low with nothing broken. Benchmark against a\nblended cross-platform figure and you chase a gap your install base created.\n\nRefunds sit in the same trap. They land in the numerator. India and South-East\nAsia show a 7.7% median refund rate. North America shows 3.4%. Two products with\nidentical gross conversion report different ARPU.\n\n## Why does ARPU read lower in India?\n\nThe denominator comes first. India has 601 million OTT users and 119 million\npaying subscribers. The free base dwarfs the paying one. Any all-user average\ntherefore sits near the floor before pricing enters. Price comes second and it is\nreal. Indian subscription prices sit at 0.6 times the US baseline.\n\nOne warning about the usual comparison. India's projected streaming ARPU for 2026\nis $9.02, about ₹865. The US figure set beside it, $15 to $20 or roughly ₹1,438\nto ₹1,918, is published per month. One is annual. The other is not. The gap is\nreal. The ratio in most decks is not.\n\n## Where does ARPU mislead?\n\nOne blended ARPU across geographies, platforms and models averages things that do\nnot belong together. It moves when country mix moves. It holds still when the\nproduct improves.\n\n<FromMyWork exp=\"exp-021\">\nThe headline growth figure needs decomposing to be honest. The 1200% insurance\nrevenue growth is the compound of several independent changes, and reporting it\nas one number would credit the last change with all of it.\n</FromMyWork>\n\nARPU has the same defect. Split it by platform and by market, or accept that you\ncannot act on it.\n"
+    },
+    {
+      "id": "glossary-0689",
+      "url": "/glossary/arppu",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is ARPPU? Formula, Benchmarks and When It Lies",
+      "meta_description": "ARPPU divides revenue by paying users only. The formula, how it diverges from ARPU in freemium, and the one way it rises while the business shrinks.",
+      "h1": "What is ARPPU?",
+      "primary_keyword": "what is arppu",
+      "secondary_keywords": [
+        "arppu formula",
+        "average revenue per paying user"
+      ],
+      "entity_a": "arppu",
+      "facts": [
+        "f-unit-01",
+        "f-unit-02",
+        "f-unit-03",
+        "f-unit-29",
+        "f-unit-30",
+        "f-glossary-0700-10"
+      ],
+      "experience": [
+        "exp-022"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/arpu",
+          "anchor": "ARPU",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/freemium",
+          "anchor": "freemium",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/arpu-arppu-calculator",
+          "anchor": "the ARPU and ARPPU calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/inr-price-points-that-convert",
+          "anchor": "INR price points that convert",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a pricing review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#arppu-context",
+          "alt": "Six reference points ARPPU has to be read against: the all-user subscription average, the iOS to Android gap, India's paying-subscriber base, India's projected streaming ARPU, the median subscription app's monthly revenue and the regional refund-rate gap, each row carrying its source and verification date",
+          "caption": "What ARPPU has to be read against. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the ARPPU formula?",
+          "a": "Revenue in a period divided by the paying users in that same period. The window matters. A monthly ARPPU that counts annual subscribers as payers in every month of their term reads very differently from one that counts them once."
+        },
+        {
+          "q": "Should I track ARPU or ARPPU?",
+          "a": "Both, for different questions. ARPU answers whether the whole base monetises. ARPPU answers whether the price suits the people who already said yes. Rising ARPPU with falling ARPU usually means you are shedding marginal payers."
+        },
+        {
+          "q": "Is a high ARPPU good?",
+          "a": "Not on its own. ARPPU rises when you upsell and rises just as reliably when you lose your cheapest payers. Read it beside paying-user count, never alone."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Shows the failure mode ARPPU has that ARPU does not — it improves when you shed cheap payers — and grounds the India read in the 601 million to 119 million paying gap rather than a global average.",
+      "body": "\n<AnswerBox>\nWhat is ARPPU? Average revenue per paying user divides revenue for a period by\nthe paying users in that period. ARPU averages across everyone and lands at\n$8.41, about ₹806, for mobile subscriptions. ARPPU strips the free base out. That\nmakes it right for pricing questions and wrong for reach questions.\n</AnswerBox>\n\n<FactTable\n  id=\"arppu-context\"\n  caption=\"The numbers ARPPU has to be read against\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"All-user mobile subscription ARPU\", \"$8.41 (about ₹806)\"], factId: \"f-unit-01\" },\n    { cells: [\"iOS against Android ARPU, same app\", \"about 2x\"], factId: \"f-unit-02\" },\n    { cells: [\"India OTT paying base\", \"119M paying of 601M users\"], factId: \"f-unit-29\" },\n    { cells: [\"India streaming ARPU, projected 2026\", \"$9.02 (about ₹865)\"], factId: \"f-unit-30\" },\n    { cells: [\"Median subscription app, monthly revenue\", \"$492 (about ₹47,178)\"], factId: \"f-glossary-0700-10\" },\n    { cells: [\"Median refund rate, IN/SEA against North America\", \"7.7% against 3.4%\"], factId: \"f-unit-03\" },\n  ]}\n/>\n\n## How is ARPPU calculated?\n\nRevenue divided by payers, same window for both. The subtlety is what counts as a\npayer in a monthly view when someone bought an annual plan. Count them in every\nmonth of the term and ARPPU smooths. Count them only in the month of purchase and\nit spikes.\n\n<Example illustrative>\nTake 100 payers billing ₹800 a month (about $8.34). Add 10 who each paid ₹9,600\nup front (about $100.11). Month one then holds ₹1,76,000 of revenue, or about\n$1,835. Across 110 payers that reads ₹1,600 (about $16.69) for month one, and\n₹800 (about $8.34) for every month after.\n</Example>\n\nNeither convention is wrong. Mixing them across quarters is, and it happens often\nenough to be worth checking before reading any trend.\n\n## What does ARPPU show that ARPU does not?\n\nARPU blends monetisation with reach. ARPPU isolates price and plan mix. It\nanswers a narrower and more actionable question. For the people who already\ndecided to pay, is the price right and are they buying up.\n\nThat narrowness is also the trap. ARPPU rises when you upsell. It rises just as\nreliably when you lose your cheapest payers. A team optimising ARPPU without\nwatching paying-user count can report a clean quarter while the business shrinks.\nRead the two together or read neither.\n\n## Why is ARPPU harder in India?\n\nThe paying base is small next to the audience. India has 601 million OTT users\nand 119 million paying subscribers. So the population ARPPU describes is a fifth\nof the population the product serves. A concentrated payer base pushes ARPPU well\nabove the market average while total revenue stays thin.\n\nA healthy ARPPU on a narrow base is the most flattering number an Indian consumer\nproduct can show. It is also close to the least informative. Refunds narrow it\nfurther. The IN and South-East Asia median refund rate is 7.7% against 3.4% in\nNorth America.\n\n<FromMyWork exp=\"exp-022\">\nThe opportunity was sized before the work started. Of 3.8M monthly actives, 68%\nwere returning users with a known vehicle, which is the population any insurance\nattach rate has to be measured against rather than the whole base.\n</FromMyWork>\n\n## What is a realistic ARPPU floor?\n\nAbsolute scale is worth holding in view. The median subscription app earns $492 a\nmonth, about ₹47,178. And 59.3% never pass $1,000, roughly ₹95,890, in total\nrevenue. Most published ARPPU benchmarks therefore come from a survivor set.\nBelow the median, compare against apps at your revenue stage. Platform mix counts\ntoo, because iOS earns roughly twice the ARPU of Android on the same product.\n"
+    }
+  ]
+}

@@ -19,6 +19,7 @@ import { existsSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { ResearchObject } from "@/lib/content/schemas";
 import { entity } from "@/lib/schema/entity";
+import { Body } from "./body";
 
 /** URLs with content on disk, for generateStaticParams. */
 export function builtUrlsFor(archetype: string): string[] {
@@ -85,12 +86,23 @@ function hubIndex(hub: string): { url: string; name: string }[] {
     .map((r) => ({ url: r.url, name: r.title_hint }));
 }
 
+/**
+ * `body` is the archetype-specific extra a route wants above the prose (a
+ * calculator, a curated pick list). The prose itself comes from the page's own
+ * .mdx and is rendered here, so no route can forget it.
+ */
 export function renderPage(url: string, body: ReactNode): ReactNode {
   const page = pageFor(url);
   if (!page) notFound();
   const { meta } = page;
   const facts = factsFor(page);
   const trail = trailFor(url);
+  const children = (
+    <>
+      {body}
+      <Body source={page.body} facts={facts} />
+    </>
+  );
 
   switch (meta.archetype) {
     case "hub":
@@ -101,7 +113,7 @@ export function renderPage(url: string, body: ReactNode): ReactNode {
           picks={[]}
           index={hubIndex(meta.hub)}
         >
-          {body}
+          {children}
         </HubLayout>
       );
     case "service":
@@ -109,13 +121,13 @@ export function renderPage(url: string, body: ReactNode): ReactNode {
     case "hire-city":
       return (
         <ServiceLayout meta={meta} facts={facts} trail={trail}>
-          {body}
+          {children}
         </ServiceLayout>
       );
     case "tool":
       return (
         <ToolLayout meta={meta} facts={facts} trail={trail} calculator={null}>
-          {body}
+          {children}
         </ToolLayout>
       );
     case "case-study":
@@ -127,7 +139,7 @@ export function renderPage(url: string, body: ReactNode): ReactNode {
           permission="public"
           outcome={[]}
         >
-          {body}
+          {children}
         </CaseStudyLayout>
       );
     case "teardown":
@@ -140,13 +152,13 @@ export function renderPage(url: string, body: ReactNode): ReactNode {
           trail={trail}
           notAffiliatedCompany={humanise(meta.entity_a ?? "the companies named here")}
         >
-          {body}
+          {children}
         </ReferenceLayout>
       );
     default:
       return (
         <ReferenceLayout meta={meta} facts={facts} trail={trail}>
-          {body}
+          {children}
         </ReferenceLayout>
       );
   }

@@ -215,3 +215,41 @@ outstanding and only you can do them: the experience-capture session
 (≥30 entries in `content/experience.json`, the sole permitted source of
 first-person claims), and confirming the four Wave-1 teardown apps — currently
 duolingo, zomato, cred, kuku-fm in `seeds/entities.json`.
+
+## D5 — the MDX body was never rendered (found 30 September 2026, fixed)
+
+Every archetype route called `renderPage(url, null)`. The layouts, JSON-LD, FAQ,
+sources block, changelog and CTA band all shipped; the article itself did not.
+84 pages were building and passing their gates with no prose in the HTML, and
+the gate runner could not see it because gates read the `.mdx` from disk rather
+than the rendered page.
+
+Three defects, all fixed:
+
+1. No MDX renderer existed. `lib/render/body.tsx` now compiles each page's own
+   `.mdx` inside `renderPage`, so no route can forget it, and the component map
+   lives in one place.
+2. `next-mdx-remote` v6 defaults `blockJS: true`, which strips every JSX
+   expression attribute before compiling. A `<FactTable>` arrived with its
+   quoted `id` and `caption` and **no rows**, silently — no warning, no error,
+   just less than was passed. Turned off deliberately: these bodies are repo
+   files reviewed in the diff, not MDX submitted by strangers.
+   `blockDangerousJS` stays on.
+3. `glossary-0700` closed a `FromMyWork` block mid-paragraph, which MDX rejects.
+   It had never been compiled, so nothing had caught it.
+
+Two related mislabels found while fixing this, both corrected:
+
+- `Fact.method` had no honest value for a fact read through a search index,
+  because direct egress to the source host is blocked here (§4). Ten facts on
+  `glossary-0700` were labelled `fetched` with an empty `fetch_log`. A
+  `search_index` value now exists and those ten carry it.
+- `FactTable` rendered no anchor, so `meta.visuals[].src` pointed at a `#id`
+  that did not exist on the page. `glossary-0700` declared
+  `#trial-length-table` and had no table at all.
+
+What this changes about the plan: page bodies now have to survive an MDX
+compile, which the gates do not check. `seo/scripts/author.py` therefore
+pre-flights every page in a batch against a Python port of the prose gates
+(`seo/scripts/prose.py`) before writing, and `pnpm build` is the check that the
+prose reaches a reader.

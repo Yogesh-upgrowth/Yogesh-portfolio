@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0689",
+  "url": "/glossary/arppu",
+  "archetype": "glossary",
+  "primary_keyword": "what is arppu",
+  "secondary_keywords": [
+    "arppu formula",
+    "average revenue per paying user"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-01",
+      "claim": "Average mobile subscription ARPU is 8.41 US dollars",
+      "value": "8.41",
+      "unit": "USD",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "The average mobile subscription ARPU is $8.41.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-02",
+      "claim": "iOS earns roughly twice the ARPU of Android on the same app",
+      "value": "2",
+      "unit": "x",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "iOS pays about 2x the ARPU compared to Android.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-03",
+      "claim": "India and South-East Asia show the highest median refund rate at 7.7%, against 3.4% in North America",
+      "value": "7.7",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "IN/SEA leads with a 7.7% median refund rate; North America's is 3.4%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-29",
+      "claim": "India has 601 million OTT users and 119 million paying subscribers",
+      "value": "119",
+      "unit": "million",
+      "source_url": "https://www.medianews4u.com/indias-ott-market-hits-601-million-users-but-only-119-million-pay-monetisation-gap-widens/",
+      "source_title": "India's OTT Market Hits 601 Million Users, But Only 119 Million Pay",
+      "source_domain": "medianews4u.com",
+      "excerpt": "Despite a massive base of 601 million OTT users, only 119 million are active paying subscribers.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-30",
+      "claim": "India's streaming ARPU is projected at 9.02 dollars for 2026 against 15 to 20 dollars a month in the United States",
+      "value": "9.02",
+      "unit": "USD",
+      "source_url": "https://www.statista.com/outlook/emo/online-food-delivery/india/",
+      "source_title": "Online video and OTT outlook, India",
+      "source_domain": "statista.com",
+      "excerpt": "India's projected ARPU of USD 9.02 in 2026. In the United States streaming ARPU runs above USD 15-20 per month.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-glossary-0700-10",
+      "claim": "The median subscription app earns 492 US dollars a month, and 59.3% never pass 1,000 dollars in total revenue",
+      "value": "492",
+      "unit": "USD/month",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "The median subscription app earns $492 per month, with 59.3% making less than $1,000 total",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

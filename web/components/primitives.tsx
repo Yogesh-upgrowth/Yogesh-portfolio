@@ -43,14 +43,16 @@ export function SourcePill({ domain, verifiedOn }: { domain: string; verifiedOn:
 
 /* ── FactTable — rows that each carry their own source. ─────────────────── */
 export function FactTable({
-  caption, columns, rows,
+  caption, columns, rows, id,
 }: {
   caption: string;
   columns: string[];
   rows: { cells: (string | number)[]; fact?: Fact }[];
+  /** Anchor target, so meta.visuals[].src can point at this table. */
+  id?: string;
 }) {
   return (
-    <figure className="fact-table">
+    <figure className="fact-table" id={id}>
       <table>
         <caption>{caption}</caption>
         <thead>

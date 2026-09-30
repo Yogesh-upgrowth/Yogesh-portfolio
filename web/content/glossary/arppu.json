@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0689",
+  "url": "/glossary/arppu",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is ARPPU? Formula, Benchmarks and When It Lies",
+  "meta_description": "ARPPU divides revenue by paying users only. The formula, how it diverges from ARPU in freemium, and the one way it rises while the business shrinks.",
+  "h1": "What is ARPPU?",
+  "primary_keyword": "what is arppu",
+  "secondary_keywords": [
+    "arppu formula",
+    "average revenue per paying user"
+  ],
+  "entity_a": "arppu",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-01",
+    "f-unit-02",
+    "f-unit-03",
+    "f-unit-29",
+    "f-unit-30",
+    "f-glossary-0700-10"
+  ],
+  "experience_used": [
+    "exp-022"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/arpu",
+      "anchor": "ARPU",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/freemium",
+      "anchor": "freemium",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/arpu-arppu-calculator",
+      "anchor": "the ARPU and ARPPU calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/inr-price-points-that-convert",
+      "anchor": "INR price points that convert",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a pricing review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#arppu-context",
+      "alt": "Six reference points ARPPU has to be read against: the all-user subscription average, the iOS to Android gap, India's paying-subscriber base, India's projected streaming ARPU, the median subscription app's monthly revenue and the regional refund-rate gap, each row carrying its source and verification date",
+      "caption": "What ARPPU has to be read against. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the ARPPU formula?",
+      "a": "Revenue in a period divided by the paying users in that same period. The window matters. A monthly ARPPU that counts annual subscribers as payers in every month of their term reads very differently from one that counts them once."
+    },
+    {
+      "q": "Should I track ARPU or ARPPU?",
+      "a": "Both, for different questions. ARPU answers whether the whole base monetises. ARPPU answers whether the price suits the people who already said yes. Rising ARPPU with falling ARPU usually means you are shedding marginal payers."
+    },
+    {
+      "q": "Is a high ARPPU good?",
+      "a": "Not on its own. ARPPU rises when you upsell and rises just as reliably when you lose your cheapest payers. Read it beside paying-user count, never alone."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Shows the failure mode ARPPU has that ARPU does not — it improves when you shed cheap payers — and grounds the India read in the 601 million to 119 million paying gap rather than a global average.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}
