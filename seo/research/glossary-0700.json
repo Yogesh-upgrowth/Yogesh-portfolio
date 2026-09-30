@@ -1,0 +1,182 @@
+{
+  "page_id": "glossary-0700",
+  "url": "/glossary/trial-to-paid-conversion",
+  "archetype": "glossary",
+  "primary_keyword": "what is trial-to-paid conversion",
+  "secondary_keywords": [
+    "trial to paid conversion rate",
+    "trial to paid benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [
+    "What is a good trial-to-paid conversion rate?",
+    "How long should a free trial be?",
+    "Why is trial-to-paid conversion lower in India?",
+    "Does a hard paywall beat freemium?",
+    "How do I calculate trial-to-paid conversion?"
+  ],
+  "facts": [
+    {
+      "fact_id": "f-glossary-0700-01",
+      "claim": "Median trial-to-paid conversion is 42.5% for 17-32 day trials and 25.5% for trials of 4 days or fewer",
+      "value": "42.5",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "17-32 day trials have a median of 42.5%, while trials of 4 days or fewer have a median of 25.5%",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "fetched",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-02",
+      "claim": "By category, Travel leads at 43.5% median trial-to-paid and Photo & Video trails at 22.2%",
+      "value": "43.5",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Travel 43.5%, Health and Fitness 37.7%, Gaming 25.0%, Photo and Video 22.2% median trial-to-paid",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "fetched",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-03",
+      "claim": "India and South-East Asia show the lowest regional median trial-to-paid conversion at 15.2%, against 34.2% in North America",
+      "value": "15.2",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "North America median 34.2%, Asia-Pacific 31.9%, Western Europe 29.7%, IN/SEA lowest at 15.2%",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "fetched",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-04",
+      "claim": "Hard paywalls reach a 10.7% median day-35 download-to-paid conversion against 2.1% for freemium",
+      "value": "10.7",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "median of 10.7% for apps with hard paywalls versus 2.1% in freemium apps for Day 35 download-to-paid",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "fetched",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-05",
+      "claim": "Offering a trial on an annual plan raises one-year LTV by 35% against a direct purchase",
+      "value": "35",
+      "unit": "%",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions-report/",
+      "source_title": "In-App Subscription Benchmarks 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "offering trials on annual plans boosts one-year LTV by 35% compared to direct purchases",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "fetched",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-06",
+      "claim": "Indian subscription prices sit at 0.6 times the US baseline, against 1.2 times in Europe",
+      "value": "0.6",
+      "unit": "x US baseline",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions-report/",
+      "source_title": "In-App Subscription Benchmarks 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "Europe prices at 1.2x the US baseline and India at 0.6x in Adapty's pricing index",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "fetched",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-07",
+      "claim": "Price localisation wins 62.3% of experiments, the highest win rate of any test type",
+      "value": "62.3",
+      "unit": "%",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions-report/",
+      "source_title": "In-App Subscription Benchmarks 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "Localization tests win 62.3% of the time in experiments, the highest win rate of any test type",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "fetched",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-08",
+      "claim": "UPI Autopay mandates ran 175 million transactions in January 2025 against 58 million a year earlier, overtaking card-based recurring payments",
+      "value": "175",
+      "unit": "million/month",
+      "source_url": "https://www.npci.org.in/product/upi/product-statistics",
+      "source_title": "UPI Product Statistics",
+      "source_domain": "npci.org.in",
+      "excerpt": "UPI AutoPay transaction volume reached 175 million in January 2025, compared with 58 million in January 2024",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "fetched",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-09",
+      "claim": "UPI Autopay is reported at 92% or better mandate success for recurring debits under Rs 15,000",
+      "value": "92",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "UPI Autopay mandates are showing 92%+ mandate success rates for recurring payments under Rs 15,000",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "fetched",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-10",
+      "claim": "The median subscription app earns 492 US dollars a month, and 59.3% never pass 1,000 dollars in total revenue",
+      "value": "492",
+      "unit": "USD/month",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "The median subscription app earns $492 per month, with 59.3% making less than $1,000 total",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "fetched",
+      "primary": true
+    }
+  ],
+  "entities": {
+    "metric": "trial-to-paid conversion",
+    "market": "IN+US"
+  },
+  "gaps": [
+    "Every source_url still needs a direct 200 check and a Wayback snapshot before this page flips indexable (G02). Facts were retrieved via the search index summarising each publisher's own report, not by fetching the report page directly.",
+    "No India-only figure exists for trial length effects; the 15.2% IN/SEA median is regional and pools India with South-East Asia.",
+    "RevenueCat's report does not publish a confidence interval per category, so the category medians carry unknown dispersion."
+  ],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

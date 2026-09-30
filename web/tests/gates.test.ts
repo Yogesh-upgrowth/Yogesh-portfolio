@@ -429,3 +429,41 @@ describe("reuse caps — 01 §C2 and §C3", () => {
     expect(G.gReuse(input()).status).toBe("pass");
   });
 });
+
+describe("G03 illustrative-example exemption", () => {
+  const withExample = GOOD_BODY + `
+
+<Example illustrative>
+100 trial starters, 30 of whom pay within 14 days, gives 30%.
+</Example>`;
+  it("exempts numbers inside an illustrative Example block", () => {
+    // This failed before: toProse strips component tags, so an exemption
+    // applied after it had nothing to match and never fired.
+    expect(G.g03(input({ body: withExample })).status).toBe("pass");
+  });
+  it("still catches an unsourced number outside the block", () => {
+    const leaky = withExample + "\n\nRetention sat at 43.7% across the cohort.";
+    expect(G.g03(input({ body: leaky })).status).toBe("fail");
+  });
+  it("does not exempt an Example that is not marked illustrative", () => {
+    const real = GOOD_BODY + "\n\n<Example>\nRetention was 43.7% here.\n</Example>";
+    expect(G.g03(input({ body: real })).status).toBe("fail");
+  });
+});
+
+describe("G03 currency-conversion exemption", () => {
+  // G15 requires every price to carry INR and USD. Without this exemption the
+  // two gates contradict: G15 demands the counterpart currency and G03 rejects
+  // it as unsourced.
+  const priced = [...FACTS.slice(0, 5), fact(6, { value: 15000, unit: "INR" })];
+  it("accepts a USD figure that is the sourced INR figure at the recorded rate", () => {
+    const body = GOOD_BODY + "\n\nMandates under ₹15,000 (about $156) clear more often.";
+    const m = meta({ fx_rate_used: 95.89 });
+    expect(G.g03(input({ body, facts: priced, meta: m })).status).toBe("pass");
+  });
+  it("rejects a USD figure the rate does not produce", () => {
+    const body = GOOD_BODY + "\n\nMandates under ₹15,000 (about $940) clear more often.";
+    const m = meta({ fx_rate_used: 95.89 });
+    expect(G.g03(input({ body, facts: priced, meta: m })).status).toBe("fail");
+  });
+});

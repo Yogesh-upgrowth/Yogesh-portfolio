@@ -142,22 +142,57 @@ const METHOD = /\b(?:method|because|based on|derived from|assuming)\b/i;
 export function g03(i: GateInput): GateResult {
   const N = "Number provenance";
   const used = new Set(i.meta.facts_used);
+  // Numbers are compared with thousands separators removed on both sides.
+  // Without that, a fact carrying value 15000 does not match the prose's
+  // "₹15,000", and the gate fails a figure it has the source for.
+  const norm = (v: string) => v.replace(/[,\s]/g, "").replace(/\.$/, "");
   const factNumbers = new Set<string>();
   for (const f of i.facts) {
-    for (const n of String(f.claim).match(/[\d][\d,.]*/g) ?? []) factNumbers.add(n.replace(/[,.]$/, ""));
-    if (f.value !== undefined) factNumbers.add(String(f.value));
+    for (const n of String(f.claim).match(/[\d][\d,.]*/g) ?? []) factNumbers.add(norm(n));
+    if (f.value !== undefined) factNumbers.add(norm(String(f.value)));
   }
-  const prose = toProse(i.body)
-    // Illustrative examples are explicitly exempt (02 §2 G03).
-    .replace(/<Example\s+illustrative[\s\S]*?<\/Example>/g, " ");
+  // Illustrative examples are exempt (02 §2 G03), and they must be removed
+  // BEFORE toProse: toProse strips component tags, so an exemption applied
+  // after it has nothing left to match and silently never fires. That bug made
+  // every worked example look like an unsourced number.
+  const prose = toProse(
+    i.body.replace(/<Example\b[^>]*\billustrative\b[^>]*>[\s\S]*?<\/Example>/g, " "),
+  );
+
+  /**
+   * A currency conversion of a sourced figure is not an unsourced number.
+   * G15 requires every price to carry INR and USD, so without this exemption
+   * the two gates contradict each other: G15 demands the counterpart currency
+   * and G03 rejects it for having no fact of its own.
+   *
+   * The conversion has to actually check out against the recorded rate, within
+   * 3% for the rounding a page is allowed to do.
+   */
+  const fx = i.meta.fx_rate_used ?? i.config.fxRate;
+  const converted = new Set<string>();
+  if (fx) {
+    for (const v of factNumbers) {
+      const n = Number(v);
+      if (!Number.isFinite(n) || n === 0) continue;
+      for (const candidate of [n * fx, n / fx]) {
+        // Every rounding a page might plausibly present.
+        for (const r of [Math.round(candidate), Math.round(candidate / 10) * 10,
+                         Math.round(candidate / 100) * 100, Number(candidate.toFixed(2))]) {
+          if (Math.abs(r - candidate) / candidate <= 0.03) converted.add(String(r));
+        }
+      }
+    }
+  }
 
   const offenders: string[] = [];
   for (const s of sentences(prose)) {
     if (ESTIMATE.test(s) && METHOD.test(s)) continue;
     const nums = s.match(/(?:₹|\$)\s?[\d][\d,.]*|[\d][\d,.]*\s?%|\b[\d][\d,.]{2,}\b/g) ?? [];
     for (const raw of nums) {
-      const bare = raw.replace(/[₹$%\s]/g, "").replace(/[,.]$/, "");
-      if (!factNumbers.has(bare)) offenders.push(raw.trim());
+      const bare = norm(raw.replace(/[₹$%]/g, ""));
+      if (factNumbers.has(bare)) continue;
+      if (converted.has(bare)) continue;
+      offenders.push(raw.trim());
     }
   }
   if (!used.size && offenders.length) {

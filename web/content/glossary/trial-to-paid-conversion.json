@@ -1,0 +1,114 @@
+{
+  "id": "glossary-0700",
+  "url": "/glossary/trial-to-paid-conversion",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is Trial-to-Paid Conversion? Formula & Benchmarks",
+  "meta_description": "Trial-to-paid conversion is the share of trial starters who pay. The formula, the category and regional medians, and why India runs at 15.2%.",
+  "h1": "What is trial-to-paid conversion?",
+  "primary_keyword": "what is trial-to-paid conversion",
+  "secondary_keywords": [
+    "trial to paid conversion rate",
+    "trial to paid benchmark"
+  ],
+  "entity_a": "trial-to-paid-conversion",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-glossary-0700-01",
+    "f-glossary-0700-02",
+    "f-glossary-0700-03",
+    "f-glossary-0700-04",
+    "f-glossary-0700-05",
+    "f-glossary-0700-06",
+    "f-glossary-0700-07",
+    "f-glossary-0700-08",
+    "f-glossary-0700-09",
+    "f-glossary-0700-10"
+  ],
+  "experience_used": [],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/benchmarks/trial-to-paid-conversion",
+      "anchor": "trial-to-paid benchmarks by industry",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/free-trial",
+      "anchor": "free trial",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/hard-paywall",
+      "anchor": "hard paywall",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/trial-conversion-simulator",
+      "anchor": "the trial conversion simulator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/upi-autopay-subscriptions",
+      "anchor": "UPI Autopay for subscriptions",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#trial-length-table",
+      "alt": "Median trial-to-paid conversion by trial length and by region, each row carrying its source and the date it was verified",
+      "caption": "Medians from RevenueCat's 2026 report, verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good trial-to-paid conversion rate?",
+      "a": "Compare against your category, not the overall median. Travel sits at 43.5% and Photo & Video at 22.2%, and that gap is wider than most teams move their own number in a year."
+    },
+    {
+      "q": "How long should a free trial be?",
+      "a": "Longer converts better in the data: 42.5% median for 17 to 32 days against 25.5% for four days or fewer. The long trial buys enough sessions for the product to prove itself."
+    },
+    {
+      "q": "Why is trial-to-paid conversion lower in India?",
+      "a": "The regional median is 15.2% against 34.2% in North America. Prices sit at 0.6 times the US baseline, and card recurring fails more often than UPI Autopay, which runs at 92% or better."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a trial-to-paid conversion review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the benchmarks by industry",
+      "href": "/benchmarks/trial-to-paid-conversion"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Carries the IN/SEA regional median of 15.2% alongside the 0.6x India price index and UPI Autopay mandate success, which the ranking pages omit entirely \u2014 they quote the global median and stop.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}
