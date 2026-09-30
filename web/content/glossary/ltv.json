@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0690",
+  "url": "/glossary/ltv",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is LTV? Customer Lifetime Value Formula & Benchmarks",
+  "meta_description": "LTV is the revenue one customer returns before leaving. The formula, the realised figures for AI and non-AI apps, and why a modelled LTV flatters itself.",
+  "h1": "What is LTV (customer lifetime value)?",
+  "primary_keyword": "what is ltv",
+  "secondary_keywords": [
+    "ltv formula",
+    "customer lifetime value benchmark"
+  ],
+  "entity_a": "ltv",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-04",
+    "f-unit-05",
+    "f-unit-09",
+    "f-unit-11",
+    "f-unit-15",
+    "f-glossary-0700-05"
+  ],
+  "experience_used": [
+    "exp-044"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/cac",
+      "anchor": "CAC",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/churn-rate",
+      "anchor": "churn rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/ltv-calculator",
+      "anchor": "the LTV calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "retention benchmarks",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#ltv-benchmarks",
+      "alt": "Six LTV reference points: realised year-one LTV for AI and non-AI apps, the highest-LTV paywall configuration, the monthly retention curve, annual renewal by category, typical monthly churn, and the lift from adding a trial to an annual plan, each row carrying its source and verification date",
+      "caption": "Realised LTV reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the LTV formula?",
+      "a": "ARPU divided by churn rate gives the simple version. It assumes a constant churn rate, which no real cohort has, so it overstates. Summing the actual revenue of a closed cohort is slower and correct."
+    },
+    {
+      "q": "What is a good LTV for a subscription app?",
+      "a": "Realised year-one LTV runs at a $21.37 median, about ₹2,049, for non-AI apps and $30.16, about ₹2,892, for AI apps. Judge yours against your own category and your own paywall shape, not against the overall figure."
+    },
+    {
+      "q": "Should LTV use revenue or gross profit?",
+      "a": "Gross profit, if you are comparing it against CAC. Store commission, payment fees and support cost all sit between the revenue line and the money that pays back acquisition. Revenue-based LTV flatters every ratio it touches."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Separates realised LTV from modelled LTV and gives the published realised figures for both AI and non-AI apps, where the ranking pages give only the ARPU-over-churn formula and no realised number to check it against.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

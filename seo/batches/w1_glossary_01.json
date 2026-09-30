@@ -56,6 +56,314 @@
       "method": "search_index",
       "primary": true
     },
+    "f-unit-04": {
+      "fact_id": "f-unit-04",
+      "claim": "AI apps hold a 41% year-one realised LTV premium: 30.16 dollars median against 21.37 for non-AI apps",
+      "value": "30.16",
+      "unit": "USD",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "AI apps sustain a 41% Year 1 realized LTV premium ($30.16 median vs $21.37 median).",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-05": {
+      "fact_id": "f-unit-05",
+      "claim": "A weekly plan with a trial is the highest-LTV paywall configuration at 49.27 dollars over twelve months",
+      "value": "49.27",
+      "unit": "USD",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Weekly+trial is the highest-LTV paywall configuration at $49.27 over 12 months.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-06": {
+      "fact_id": "f-unit-06",
+      "claim": "Median LTV:CAC is 2.5 to 1 for apps priced 8.99 to 11.99 a month and 2.7 to 1 at 12.99 to 14.99",
+      "value": "2.5",
+      "unit": "ratio",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions/",
+      "source_title": "State of In-App Subscriptions 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "Apps pricing at $8.99-$11.99 monthly have a median LTV:CAC of 2.5:1; $12.99-$14.99 achieve 2.7:1.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-07": {
+      "fact_id": "f-unit-07",
+      "claim": "Subscription apps typically recover acquisition cost in 60 to 90 days",
+      "value": "60-90",
+      "unit": "days",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions/",
+      "source_title": "State of In-App Subscriptions 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "For subscription apps the typical CAC payback period is 60-90 days, depending on plan length, trial conversion rate and pricing.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-08": {
+      "fact_id": "f-unit-08",
+      "claim": "3 to 1 remains the standing LTV:CAC bar while investors increasingly expect 4 to 1 or 5 to 1",
+      "value": "3",
+      "unit": "ratio",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions/",
+      "source_title": "State of In-App Subscriptions 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "A ratio of 4:1 to 5:1 is increasingly expected by investors, though 3:1 remains the gold standard for mobile apps.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-09": {
+      "fact_id": "f-unit-09",
+      "claim": "Monthly plans retain about 65% at day 30, 43% at day 90 and 17% at one year",
+      "value": "17",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "For monthly plans, day 30 retention is approximately 65%, day 90 approximately 43%, and one-year approximately 17%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-10": {
+      "fact_id": "f-unit-10",
+      "claim": "Median first-month renewal runs 42% to 61% by category, with Business highest at 61% and Social & Lifestyle lowest at 42%",
+      "value": "42-61",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Median first renewal rate ranges from 42-61% between categories; Business achieves 61%, Social & Lifestyle 42%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-11": {
+      "fact_id": "f-unit-11",
+      "claim": "Travel and Business lead annual renewal at a 40% median while Productivity and Photo & Video sit at 23%",
+      "value": "40",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Travel and Business apps see the highest median annual subscription renewal rate (40%); Productivity and Photo & Video see the lowest (23%).",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-12": {
+      "fact_id": "f-unit-12",
+      "claim": "Between 20% and 40% of total subscription churn is payment failure rather than cancellation",
+      "value": "20-40",
+      "unit": "%",
+      "source_url": "https://recurly.com/research/churn-rate-benchmarks/",
+      "source_title": "Churn rate benchmarks",
+      "source_domain": "recurly.com",
+      "excerpt": "Companies that measure only active cancellations miss the 20 to 40% of total churn driven by payment failures.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-13": {
+      "fact_id": "f-unit-13",
+      "claim": "Median recovery of involuntary churn is 47.6%, with top performers reaching 70% to 85%",
+      "value": "47.6",
+      "unit": "%",
+      "source_url": "https://www.dunningcompare.com/stats/involuntary-churn-statistics-2026",
+      "source_title": "Involuntary Churn Statistics 2026",
+      "source_domain": "dunningcompare.com",
+      "excerpt": "The industry median recovery rate for involuntary churn is 47.6%, with top-performer recovery reaching 70-85%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-unit-14": {
+      "fact_id": "f-unit-14",
+      "claim": "Smart retry alone recovers about 40% of failed payments, a card updater 25%, and dunning email adds 15 to 20% on top",
+      "value": "40",
+      "unit": "%",
+      "source_url": "https://www.digitalapplied.com/blog/failed-payment-recovery-dunning-playbook-2026",
+      "source_title": "Failed-Payment Recovery: The 2026 Dunning Playbook",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "Smart retry alone recovers 40%, card updater 25%, and emails add 15-20% on top; combining all three reaches 70%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-unit-15": {
+      "fact_id": "f-unit-15",
+      "claim": "Monthly churn of 5% to 12% is typical for mobile subscription apps, with the best holding under 5%",
+      "value": "5-12",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-churn-rates/",
+      "source_title": "App Churn Rates 2026",
+      "source_domain": "businessofapps.com",
+      "excerpt": "For mobile subscription apps, monthly churn of 5-12% is typical, with the best apps under 5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-16": {
+      "fact_id": "f-unit-16",
+      "claim": "Median private B2B SaaS gross revenue retention fell to 84% in 2025 while annual net revenue retention compressed to 101%",
+      "value": "84",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "The median SaaS gross revenue retention rate fell to 84% in 2025; annual NRR compressed to 101% across all private B2B SaaS.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-17": {
+      "fact_id": "f-unit-17",
+      "claim": "Net revenue retention splits hard by contract size: 97% under 25,000 dollars ACV, about 108% from 25,000 to 100,000, and 118% above that",
+      "value": "118",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "Enterprise (over $100K ACV) at a median 118% NRR, mid-market ($25K-$100K ACV) at about 108%, and SMB (under $25K ACV) at 97%.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-18": {
+      "fact_id": "f-unit-18",
+      "claim": "Gross revenue retention by contract size runs 82% under 25,000 dollars ACV, 88% from 25,000 to 100,000, and 95% above",
+      "value": "95",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "SMB (<$25K ACV): 82% GRR; Mid-Market ($25K-$100K): 88% GRR; Enterprise (>$100K ACV): 95% GRR.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-19": {
+      "fact_id": "f-unit-19",
+      "claim": "Median growth for companies between 1 million and 30 million dollars ARR is 26%, with top performers at 40% to 50%",
+      "value": "26",
+      "unit": "%",
+      "source_url": "https://aventis-advisors.com/rule-of-40-in-saas-2026/",
+      "source_title": "Rule of 40 in SaaS: 2026 Data, Benchmarks and Valuation Impact",
+      "source_domain": "aventis-advisors.com",
+      "excerpt": "For companies in the $1M-$30M ARR range, median growth is 26%, while top performers grow at 40-50%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-unit-20": {
+      "fact_id": "f-unit-20",
+      "claim": "Bootstrapped SaaS companies between 3 million and 20 million dollars ARR grow at a 15% median",
+      "value": "15",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "SaaS Capital's 2026 private B2B SaaS benchmark shows median revenue growth of 15% for bootstrapped SaaS companies with $3m to $20m ARR.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-21": {
+      "fact_id": "f-unit-21",
+      "claim": "The median Rule of 40 score was 25% in 2025, and the measure only starts to bite from about 20 million dollars ARR",
+      "value": "25",
+      "unit": "%",
+      "source_url": "https://aventis-advisors.com/rule-of-40-in-saas-2026/",
+      "source_title": "Rule of 40 in SaaS: 2026 Data, Benchmarks and Valuation Impact",
+      "source_domain": "aventis-advisors.com",
+      "excerpt": "The 2025 median Rule of 40 score is 25%. The Rule of 40 becomes a meaningful benchmark at roughly $20M ARR and above.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-unit-22": {
+      "fact_id": "f-unit-22",
+      "claim": "Average SaaS activation rate is 36%, with 20% to 40% counted as good and above 50% as excellent",
+      "value": "36",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/activation-rate-benchmarks",
+      "source_title": "Activation rate benchmarks 2026",
+      "source_domain": "usetandem.ai",
+      "excerpt": "Activation rate benchmarks show 36% average for SaaS in 2026. Good performance is 20% to 40% and excellent exceeds 50%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-unit-25": {
+      "fact_id": "f-unit-25",
+      "claim": "More than 120 million UPI Autopay mandates are created every month in India",
+      "value": "120",
+      "unit": "million",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "Over 120 million UPI Autopay mandates are created every month in India, supporting SIPs, OTT subscriptions and insurance renewals.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-26": {
+      "fact_id": "f-unit-26",
+      "claim": "The RBI E-Mandate Framework 2026 allows recurring debits up to 15,000 rupees without additional authentication, and up to 1,00,000 rupees for insurance, mutual funds and credit-card bills",
+      "value": "15000",
+      "unit": "INR",
+      "source_url": "https://amlegals.com/upi-autopay-and-recurring-payments-compliance-checklist-under-rbis-e-mandate-framework-2026/",
+      "source_title": "UPI Autopay and Recurring Payments: Compliance Checklist Under RBI's E-Mandate Framework 2026",
+      "source_domain": "amlegals.com",
+      "excerpt": "Recurring transactions up to Rs 15,000 process without additional factor authentication after setup; insurance, mutual funds and card bills up to Rs 1,00,000.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-27": {
+      "fact_id": "f-unit-27",
+      "claim": "India's 2021 card e-mandate rules pushed card subscription failure rates above 20% in some categories",
+      "value": "20",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "The mandate requiring extra authentication for card payments above Rs 5,000 caused failure rates to spike to 20%+ in some categories, accelerating UPI Autopay adoption.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
     "f-unit-29": {
       "fact_id": "f-unit-29",
       "claim": "India has 601 million OTT users and 119 million paying subscribers",
@@ -83,6 +391,104 @@
       "verified_on": "2026-09-30",
       "method": "search_index",
       "primary": false
+    },
+    "f-unit-35": {
+      "fact_id": "f-unit-35",
+      "claim": "Cost per install in India runs about 0.12 times the United States level, 70% to 90% lower",
+      "value": "0.12",
+      "unit": "x",
+      "source_url": "https://linkrunner.io/tools/cost-per-install-benchmark",
+      "source_title": "Cost per install benchmarks by country, platform and category",
+      "source_domain": "linkrunner.io",
+      "excerpt": "India has a CPI of 0.12x relative to the United States. CPIs in India are often 70-90% lower than US CPIs.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-36": {
+      "fact_id": "f-unit-36",
+      "claim": "India's median cost per install fell from 0.71 dollars in July 2025 to 0.42 dollars in June 2026",
+      "value": "0.42",
+      "unit": "USD",
+      "source_url": "https://linkrunner.io/tools/cost-per-install-benchmark",
+      "source_title": "Cost per install benchmarks by country, platform and category",
+      "source_domain": "linkrunner.io",
+      "excerpt": "India's median CPI averaged about $1.18 per install, starting at $0.71 in July 2025 and finishing at $0.42 in June 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-37": {
+      "fact_id": "f-unit-37",
+      "claim": "United States fintech cost per install is 11.62 dollars on iOS and 3.84 on Android, against 2.46 and 0.84 for utilities",
+      "value": "11.62",
+      "unit": "USD",
+      "source_url": "https://linkrunner.io/tools/cost-per-install-benchmark",
+      "source_title": "Cost per install benchmarks by country, platform and category",
+      "source_domain": "linkrunner.io",
+      "excerpt": "US CPIs by category include Fintech ($11.62 iOS / $3.84 Android) and Utilities ($2.46 / $0.84).",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-38": {
+      "fact_id": "f-unit-38",
+      "claim": "The median app retains 4% of its users at day 30, and 25.3% return on day one",
+      "value": "4",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-retention-benchmarks/",
+      "source_title": "Mobile App Retention Benchmarks by Industry 2026",
+      "source_domain": "uxcam.com",
+      "excerpt": "The median app retains just 4% of users at Day 30. Only 25.3% of mobile app users return on Day 1.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-unit-39": {
+      "fact_id": "f-unit-39",
+      "claim": "iOS averages 25.65% day-one and 4.13% day-30 retention against 23.01% and 2.59% on Android",
+      "value": "4.13",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-retention-benchmarks/",
+      "source_title": "Mobile App Retention Benchmarks by Industry 2026",
+      "source_domain": "uxcam.com",
+      "excerpt": "iOS averages 25.65% on Day 1 and 4.13% on Day 30, while Android averages 23.01% on Day 1 and 2.59% on Day 30.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-glossary-0700-03": {
+      "fact_id": "f-glossary-0700-03",
+      "claim": "India and South-East Asia show the lowest regional median trial-to-paid conversion at 15.2%, against 34.2% in North America",
+      "value": "15.2",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "North America median 34.2%, Asia-Pacific 31.9%, Western Europe 29.7%, IN/SEA lowest at 15.2%",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-glossary-0700-05": {
+      "fact_id": "f-glossary-0700-05",
+      "claim": "Offering a trial on an annual plan raises one-year LTV by 35% against a direct purchase",
+      "value": "35",
+      "unit": "%",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions-report/",
+      "source_title": "In-App Subscription Benchmarks 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "offering trials on annual plans boosts one-year LTV by 35% compared to direct purchases",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
     },
     "f-glossary-0700-06": {
       "fact_id": "f-glossary-0700-06",
@@ -203,7 +609,7 @@
       "contradictions": [
         "India's projected streaming ARPU of $9.02 for 2026 is published as an annual figure, and the US comparison usually set beside it ($15-20) is published per month. The gap as quoted is not like-for-like. Stated in the body rather than repeated."
       ],
-      "body": "\n<AnswerBox>\nWhat is ARPU? Average revenue per user divides revenue for a period by every\nactive user in that period, payer or not. The mobile subscription average is\n$8.41, about ₹806. It blends payers with free users by design. That is why it is\neasy to quote and easy to misread.\n</AnswerBox>\n\n<FactTable\n  id=\"arpu-benchmarks\"\n  caption=\"ARPU reference points, and what each one is actually measuring\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Mobile subscription average\", \"$8.41 (about ₹806)\"], factId: \"f-unit-01\" },\n    { cells: [\"iOS against Android, same app\", \"about 2x\"], factId: \"f-unit-02\" },\n    { cells: [\"India streaming, projected 2026\", \"$9.02 (about ₹865), published as annual\"], factId: \"f-unit-30\" },\n    { cells: [\"India OTT paying base\", \"119M paying of 601M users\"], factId: \"f-unit-29\" },\n    { cells: [\"India price index against the US baseline\", \"0.6x\"], factId: \"f-glossary-0700-06\" },\n    { cells: [\"Median refund rate, IN/SEA against North America\", \"7.7% against 3.4%\"], factId: \"f-unit-03\" },\n  ]}\n/>\n\n## How is ARPU calculated?\n\nDivide revenue by active users over the same window. Then fix both halves. The\ndenominator causes most of the trouble. Monthly actives, registered accounts and\ncumulative installs give three very different answers from one revenue figure.\n\n<Example illustrative>\nTake ₹48,00,000 of revenue in a month, about $50,057. Across 10,000 monthly\nactives that is ₹480, about $5.01. Across 40,000 registered accounts it is ₹120,\nabout $1.25.\n</Example>\n\nPick the definition once. Write it beside the chart. Keep it when the number\nmoves the wrong way. Most reported ARPU gains turn out to be denominator changes\nnobody flagged.\n\n## What counts as a good ARPU?\n\nThe average is a starting point, not a target. Platform mix moves it harder than\nproduct quality does. iOS earns roughly twice the ARPU of Android on the same\napp. So an Android-heavy base reads low with nothing broken. Benchmark against a\nblended cross-platform figure and you chase a gap your install base created.\n\nRefunds sit in the same trap. They land in the numerator. India and South-East\nAsia show a 7.7% median refund rate. North America shows 3.4%. Two products with\nidentical gross conversion report different ARPU.\n\n## Why does ARPU read lower in India?\n\nThe denominator comes first. India has 601 million OTT users and 119 million\npaying subscribers. The free base dwarfs the paying one. Any all-user average\ntherefore sits near the floor before pricing enters. Price comes second and it is\nreal. Indian subscription prices sit at 0.6 times the US baseline.\n\nOne warning about the usual comparison. India's projected streaming ARPU for 2026\nis $9.02, about ₹865. The US figure set beside it, $15 to $20 or roughly ₹1,438\nto ₹1,918, is published per month. One is annual. The other is not. The gap is\nreal. The ratio in most decks is not.\n\n## Where does ARPU mislead?\n\nOne blended ARPU across geographies, platforms and models averages things that do\nnot belong together. It moves when country mix moves. It holds still when the\nproduct improves.\n\n<FromMyWork exp=\"exp-021\">\nThe headline growth figure needs decomposing to be honest. The 1200% insurance\nrevenue growth is the compound of several independent changes, and reporting it\nas one number would credit the last change with all of it.\n</FromMyWork>\n\nARPU has the same defect. Split it by platform and by market, or accept that you\ncannot act on it.\n"
+      "body": "\n<AnswerBox>\nWhat is ARPU? Average revenue per user divides revenue for a period by every\nactive user in that period, payer or not. The mobile subscription average is\n$8.41, about ₹806. It blends payers with free users by design. That is why it is\neasy to quote and easy to misread.\n</AnswerBox>\n\n<FactTable\n  id=\"arpu-benchmarks\"\n  caption=\"ARPU reference points, and what each one is actually measuring\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Mobile subscription average\", \"$8.41 (about ₹806)\"], factId: \"f-unit-01\" },\n    { cells: [\"iOS against Android, same app\", \"about 2x\"], factId: \"f-unit-02\" },\n    { cells: [\"India streaming, projected 2026\", \"$9.02 (about ₹865), published as annual\"], factId: \"f-unit-30\" },\n    { cells: [\"India OTT paying base\", \"119M paying of 601M users\"], factId: \"f-unit-29\" },\n    { cells: [\"India price index against the US baseline\", \"0.6x\"], factId: \"f-glossary-0700-06\" },\n    { cells: [\"Median refund rate, IN/SEA against North America\", \"7.7% against 3.4%\"], factId: \"f-unit-03\" },\n  ]}\n/>\n\n## How is ARPU calculated?\n\nDivide revenue by active users over the same window. Then fix both halves. The\ndenominator causes most of the trouble. Monthly actives, registered accounts and\ncumulative installs give three very different answers from one revenue figure.\n\n<Example illustrative>\nTake ₹48,00,000 of revenue in a month, about $50,057. Across 10,000 monthly\nactives that is ₹480, about $5.01. Across 40,000 registered accounts it is ₹120,\nabout $1.25.\n</Example>\n\nPick the definition once. Write it beside the chart. Keep it when the number\nmoves the wrong way. Most reported ARPU gains turn out to be denominator changes\nnobody flagged.\n\n## What counts as a good ARPU?\n\nThe average is a starting point, not a target. Platform mix moves it harder than\nproduct quality does. iOS earns roughly twice the ARPU of Android on the same\napp. So an Android-heavy base reads low with nothing broken. Benchmark against a\nblended cross-platform figure and you chase a gap your install base created.\n\nRefunds sit in the same trap. They land in the numerator. India and South-East\nAsia show a 7.7% median refund rate. North America shows 3.4%. Two products with\nidentical gross conversion report different ARPU.\n\n## Why does ARPU read lower in India?\n\nThe denominator comes first. India has 601 million OTT users and 119 million\npaying subscribers. The free base dwarfs the paying one. Any all-user average\ntherefore sits near the floor before pricing enters. Price comes second and it is\nreal. Indian subscription prices sit at 0.6 times the US baseline.\n\nOne warning about the usual comparison. India's projected streaming ARPU for 2026\nis $9.02, about ₹865. The US figure set beside it, $15 to $20 or roughly ₹1,438\nto ₹1,918, is published per month. One is annual. The other is not. The gap is\nreal. The ratio in most decks is not.\n\n## Where does ARPU mislead?\n\nOne blended ARPU across geographies, platforms and models averages things that do\nnot belong together. It moves when country mix moves. It holds still when the\nproduct improves.\n\n<FromMyWork exp=\"exp-021\">\nThe headline growth figure needs decomposing to be honest. The 1200% insurance\nrevenue growth compounds a larger user base with a 457-times conversion\nimprovement, and one number would credit the last change with all of it.\n</FromMyWork>\n\nARPU has the same defect. Split it by platform and by market, or accept that you\ncannot act on it.\n"
     },
     {
       "id": "glossary-0689",
@@ -291,7 +697,890 @@
         "FAQPage"
       ],
       "unique_value": "Shows the failure mode ARPPU has that ARPU does not — it improves when you shed cheap payers — and grounds the India read in the 601 million to 119 million paying gap rather than a global average.",
-      "body": "\n<AnswerBox>\nWhat is ARPPU? Average revenue per paying user divides revenue for a period by\nthe paying users in that period. ARPU averages across everyone and lands at\n$8.41, about ₹806, for mobile subscriptions. ARPPU strips the free base out. That\nmakes it right for pricing questions and wrong for reach questions.\n</AnswerBox>\n\n<FactTable\n  id=\"arppu-context\"\n  caption=\"The numbers ARPPU has to be read against\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"All-user mobile subscription ARPU\", \"$8.41 (about ₹806)\"], factId: \"f-unit-01\" },\n    { cells: [\"iOS against Android ARPU, same app\", \"about 2x\"], factId: \"f-unit-02\" },\n    { cells: [\"India OTT paying base\", \"119M paying of 601M users\"], factId: \"f-unit-29\" },\n    { cells: [\"India streaming ARPU, projected 2026\", \"$9.02 (about ₹865)\"], factId: \"f-unit-30\" },\n    { cells: [\"Median subscription app, monthly revenue\", \"$492 (about ₹47,178)\"], factId: \"f-glossary-0700-10\" },\n    { cells: [\"Median refund rate, IN/SEA against North America\", \"7.7% against 3.4%\"], factId: \"f-unit-03\" },\n  ]}\n/>\n\n## How is ARPPU calculated?\n\nRevenue divided by payers, same window for both. The subtlety is what counts as a\npayer in a monthly view when someone bought an annual plan. Count them in every\nmonth of the term and ARPPU smooths. Count them only in the month of purchase and\nit spikes.\n\n<Example illustrative>\nTake 100 payers billing ₹800 a month (about $8.34). Add 10 who each paid ₹9,600\nup front (about $100.11). Month one then holds ₹1,76,000 of revenue, or about\n$1,835. Across 110 payers that reads ₹1,600 (about $16.69) for month one, and\n₹800 (about $8.34) for every month after.\n</Example>\n\nNeither convention is wrong. Mixing them across quarters is, and it happens often\nenough to be worth checking before reading any trend.\n\n## What does ARPPU show that ARPU does not?\n\nARPU blends monetisation with reach. ARPPU isolates price and plan mix. It\nanswers a narrower and more actionable question. For the people who already\ndecided to pay, is the price right and are they buying up.\n\nThat narrowness is also the trap. ARPPU rises when you upsell. It rises just as\nreliably when you lose your cheapest payers. A team optimising ARPPU without\nwatching paying-user count can report a clean quarter while the business shrinks.\nRead the two together or read neither.\n\n## Why is ARPPU harder in India?\n\nThe paying base is small next to the audience. India has 601 million OTT users\nand 119 million paying subscribers. So the population ARPPU describes is a fifth\nof the population the product serves. A concentrated payer base pushes ARPPU well\nabove the market average while total revenue stays thin.\n\nA healthy ARPPU on a narrow base is the most flattering number an Indian consumer\nproduct can show. It is also close to the least informative. Refunds narrow it\nfurther. The IN and South-East Asia median refund rate is 7.7% against 3.4% in\nNorth America.\n\n<FromMyWork exp=\"exp-022\">\nThe opportunity was sized before the work started. Of 3.8M monthly actives, 68%\nwere returning users with a known vehicle, which is the population any insurance\nattach rate has to be measured against rather than the whole base.\n</FromMyWork>\n\n## What is a realistic ARPPU floor?\n\nAbsolute scale is worth holding in view. The median subscription app earns $492 a\nmonth, about ₹47,178. And 59.3% never pass $1,000, roughly ₹95,890, in total\nrevenue. Most published ARPPU benchmarks therefore come from a survivor set.\nBelow the median, compare against apps at your revenue stage. Platform mix counts\ntoo, because iOS earns roughly twice the ARPU of Android on the same product.\n"
+      "body": "\n<AnswerBox>\nWhat is ARPPU? Average revenue per paying user divides revenue for a period by\nthe paying users in that period. ARPU averages across everyone and lands at\n$8.41, about ₹806, for mobile subscriptions. ARPPU strips the free base out. That\nmakes it right for pricing questions and wrong for reach questions.\n</AnswerBox>\n\n<FactTable\n  id=\"arppu-context\"\n  caption=\"The numbers ARPPU has to be read against\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"All-user mobile subscription ARPU\", \"$8.41 (about ₹806)\"], factId: \"f-unit-01\" },\n    { cells: [\"iOS against Android ARPU, same app\", \"about 2x\"], factId: \"f-unit-02\" },\n    { cells: [\"India OTT paying base\", \"119M paying of 601M users\"], factId: \"f-unit-29\" },\n    { cells: [\"India streaming ARPU, projected 2026\", \"$9.02 (about ₹865)\"], factId: \"f-unit-30\" },\n    { cells: [\"Median subscription app, monthly revenue\", \"$492 (about ₹47,178)\"], factId: \"f-glossary-0700-10\" },\n    { cells: [\"Median refund rate, IN/SEA against North America\", \"7.7% against 3.4%\"], factId: \"f-unit-03\" },\n  ]}\n/>\n\n## How is ARPPU calculated?\n\nRevenue divided by payers, same window for both. The subtlety is what counts as a\npayer in a monthly view when someone bought an annual plan. Count them in every\nmonth of the term and ARPPU smooths. Count them only in the month of purchase and\nit spikes.\n\n<Example illustrative>\nTake 100 payers billing ₹800 a month (about $8.34). Add 10 who each paid ₹9,600\nup front (about $100.11). Month one then holds ₹1,76,000 of revenue, or about\n$1,835. Across 110 payers that reads ₹1,600 (about $16.69) for month one, and\n₹800 (about $8.34) for every month after.\n</Example>\n\nNeither convention is wrong. Mixing them across quarters is, and it happens often\nenough to be worth checking before reading any trend.\n\n## What does ARPPU show that ARPU does not?\n\nARPU blends monetisation with reach. ARPPU isolates price and plan mix. It\nanswers a narrower and more actionable question. For the people who already\ndecided to pay, is the price right and are they buying up.\n\nThat narrowness is also the trap. ARPPU rises when you upsell. It rises just as\nreliably when you lose your cheapest payers. A team optimising ARPPU without\nwatching paying-user count can report a clean quarter while the business shrinks.\nRead the two together or read neither.\n\n## Why is ARPPU harder in India?\n\nThe paying base is small next to the audience. India has 601 million OTT users\nand 119 million paying subscribers. So the population ARPPU describes is a fifth\nof the population the product serves. A concentrated payer base pushes ARPPU well\nabove the market average while total revenue stays thin.\n\nA healthy ARPPU on a narrow base is the most flattering number an Indian consumer\nproduct can show. It is also close to the least informative. Refunds narrow it\nfurther. The IN and South-East Asia median refund rate is 7.7% against 3.4% in\nNorth America.\n\n<FromMyWork exp=\"exp-022\">\nThe opportunity was sized before the work started. Of 3.8M monthly actives, 68%\nwere returning users and 74% of those had insurance expired or close to it. That\nis the population an attach rate has to be measured against.\n</FromMyWork>\n\n## What is a realistic ARPPU floor?\n\nAbsolute scale is worth holding in view. The median subscription app earns $492 a\nmonth, about ₹47,178. And 59.3% never pass $1,000, roughly ₹95,890, in total\nrevenue. Most published ARPPU benchmarks therefore come from a survivor set.\nBelow the median, compare against apps at your revenue stage. Platform mix counts\ntoo, because iOS earns roughly twice the ARPU of Android on the same product.\n"
+    },
+    {
+      "id": "glossary-0690",
+      "url": "/glossary/ltv",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is LTV? Customer Lifetime Value Formula & Benchmarks",
+      "meta_description": "LTV is the revenue one customer returns before leaving. The formula, the realised figures for AI and non-AI apps, and why a modelled LTV flatters itself.",
+      "h1": "What is LTV (customer lifetime value)?",
+      "primary_keyword": "what is ltv",
+      "secondary_keywords": [
+        "ltv formula",
+        "customer lifetime value benchmark"
+      ],
+      "entity_a": "ltv",
+      "facts": [
+        "f-unit-04",
+        "f-unit-05",
+        "f-unit-09",
+        "f-unit-11",
+        "f-unit-15",
+        "f-glossary-0700-05"
+      ],
+      "experience": [
+        "exp-044"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/cac",
+          "anchor": "CAC",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/churn-rate",
+          "anchor": "churn rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/ltv-calculator",
+          "anchor": "the LTV calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/benchmarks/retention",
+          "anchor": "retention benchmarks",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#ltv-benchmarks",
+          "alt": "Six LTV reference points: realised year-one LTV for AI and non-AI apps, the highest-LTV paywall configuration, the monthly retention curve, annual renewal by category, typical monthly churn, and the lift from adding a trial to an annual plan, each row carrying its source and verification date",
+          "caption": "Realised LTV reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the LTV formula?",
+          "a": "ARPU divided by churn rate gives the simple version. It assumes a constant churn rate, which no real cohort has, so it overstates. Summing the actual revenue of a closed cohort is slower and correct."
+        },
+        {
+          "q": "What is a good LTV for a subscription app?",
+          "a": "Realised year-one LTV runs at a $21.37 median, about ₹2,049, for non-AI apps and $30.16, about ₹2,892, for AI apps. Judge yours against your own category and your own paywall shape, not against the overall figure."
+        },
+        {
+          "q": "Should LTV use revenue or gross profit?",
+          "a": "Gross profit, if you are comparing it against CAC. Store commission, payment fees and support cost all sit between the revenue line and the money that pays back acquisition. Revenue-based LTV flatters every ratio it touches."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Separates realised LTV from modelled LTV and gives the published realised figures for both AI and non-AI apps, where the ranking pages give only the ARPU-over-churn formula and no realised number to check it against.",
+      "body": "\n<AnswerBox>\nWhat is LTV? Customer lifetime value is the revenue a single customer returns\nbefore leaving. Realised year-one LTV sits at a $21.37 median, about ₹2,049, for\nnon-AI apps and $30.16, about ₹2,892, for AI ones. Modelled LTV usually reads\nhigher than either, and the gap is the interesting part.\n</AnswerBox>\n\n<FactTable\n  id=\"ltv-benchmarks\"\n  caption=\"Realised LTV reference points, and what shapes each one\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Year-one realised LTV, AI against non-AI apps\", \"$30.16 against $21.37 (about ₹2,892 against ₹2,049)\"], factId: \"f-unit-04\" },\n    { cells: [\"Highest-LTV paywall configuration, 12 months\", \"weekly plus trial, $49.27 (about ₹4,725)\"], factId: \"f-unit-05\" },\n    { cells: [\"Monthly plan retention, day 30 / day 90 / one year\", \"65% / 43% / 17%\"], factId: \"f-unit-09\" },\n    { cells: [\"Annual renewal median, strongest against weakest category\", \"40% against 23%\"], factId: \"f-unit-11\" },\n    { cells: [\"Typical monthly churn, mobile subscriptions\", \"5% to 12%\"], factId: \"f-unit-15\" },\n    { cells: [\"Trial added to an annual plan, one-year LTV\", \"+35%\"], factId: \"f-glossary-0700-05\" },\n  ]}\n/>\n\n## How is LTV calculated?\n\nTwo ways, and they disagree. The modelled version divides ARPU by churn rate. It\nassumes churn holds steady, which no real cohort does. Early churn runs high,\nthen the survivors settle. So a constant rate overstates the tail.\n\nThe realised version sums what a closed cohort actually paid. It takes a year to\nread and it needs no assumption. Realised year-one LTV lands at a $21.37 median,\nabout ₹2,049, for non-AI apps.\n\n<Example illustrative>\n₹800 of monthly ARPU, about $8.34, at 8% monthly churn models to ₹10,000 of LTV,\nabout $104.29. The same cohort tracked for a year often pays about half that.\n</Example>\n\nReport both. The gap between them is your churn assumption, priced.\n\n## What drives LTV more than price does?\n\nRetention shape, then plan length. Monthly plans hold 65% at day 30, 43% at day\n90 and 17% at one year. That curve, not the price tag, sets the ceiling.\n\nPlan mix moves it next. Annual renewal runs at a 40% median in the strongest\ncategories and 23% in the weakest. Adding a trial to an annual plan lifts\none-year LTV by 35% against a direct purchase. The highest-LTV configuration\npublished is a weekly plan with a trial, at $49.27 over twelve months, roughly\n₹4,725. Weekly pricing feels cheap per charge and compounds fast.\n\n## What should LTV be measured in?\n\nGross profit, whenever the number will be set against CAC. Store commission,\npayment fees, refunds and support all sit between revenue and the money that\nactually repays acquisition. A revenue-based LTV flatters every ratio built on\nit, and the flattery grows with the store fee.\n\n<FromMyWork exp=\"exp-044\">\nMoving monetisation from paid acquisition into embedded intent-led in-app flows\ncut effective CAC 25 to 30% and raised LTV without hurting engagement. Both sides\nof the ratio moved, which is rarer than either one moving alone.\n</FromMyWork>\n\n## Where does LTV get abused?\n\nThree patterns recur. Modelling from a first-month churn rate, which flattens a\ncurve that has not flattened. Quoting revenue LTV against fully-loaded CAC.\nExtending the horizon until the ratio works, which is the tell: a five-year LTV\non a product eighteen months old is an assumption wearing a number.\n\nTypical monthly churn of 5% to 12% implies a mean tenure most models quietly\nexceed. If the model needs a longer life than the churn rate allows, fix the\nmodel.\n"
+    },
+    {
+      "id": "glossary-0691",
+      "url": "/glossary/cac",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is CAC? Customer Acquisition Cost Formula & Benchmarks",
+      "meta_description": "CAC is the fully-loaded cost of one new paying customer. The formula, CPI benchmarks for India and the US, and why cheap installs are not cheap buyers.",
+      "h1": "What is CAC (customer acquisition cost)?",
+      "primary_keyword": "what is cac",
+      "secondary_keywords": [
+        "cac formula",
+        "customer acquisition cost benchmark"
+      ],
+      "entity_a": "cac",
+      "facts": [
+        "f-unit-35",
+        "f-unit-36",
+        "f-unit-37",
+        "f-unit-07",
+        "f-unit-06",
+        "f-glossary-0700-03"
+      ],
+      "experience": [
+        "exp-015",
+        "exp-044"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/ltv",
+          "anchor": "LTV",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/cac-payback-period",
+          "anchor": "CAC payback period",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/cac-payback-calculator",
+          "anchor": "the CAC payback calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/monetizing-tier-2-tier-3-users",
+          "anchor": "monetising tier 2 and tier 3 users",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#cac-benchmarks",
+          "alt": "Six CAC and cost-per-install reference points: India's cost per install relative to the US, India's median CPI trend, US fintech and utility CPI by platform, typical payback period, median LTV to CAC by price tier, and the India trial conversion gap, each row carrying its source and verification date",
+          "caption": "Acquisition cost reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the CAC formula?",
+          "a": "Total acquisition spend in a period divided by new paying customers won in that period. Fully loaded means media plus tooling plus the salaries of the people running it, not media alone."
+        },
+        {
+          "q": "Is CAC cheaper in India?",
+          "a": "Installs are. Cost per install in India runs about 0.12 times the US level. Customers are a different question, because trial conversion in India and South-East Asia sits at a 15.2% median against 34.2% in North America."
+        },
+        {
+          "q": "What is the difference between CAC and CPI?",
+          "a": "CPI buys an install. CAC buys a payer. Divide CPI by your install-to-paid rate to get from one to the other, and the divisor is usually a small number, so the two are not close."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Does the arithmetic the India-is-cheap claim usually skips: a 0.12x cost per install set against a 15.2% trial conversion median and a 0.6x price index, which is the calculation that decides whether the cheap install is actually cheap.",
+      "body": "\n<AnswerBox>\nWhat is CAC? Customer acquisition cost is the fully-loaded spend needed to win\none new paying customer. Media, tooling and the salaries of the people running it\nall count. Subscription apps typically recover it in 60 to 90 days. Cost per\ninstall is not CAC and is usually a tenth of it.\n</AnswerBox>\n\n<FactTable\n  id=\"cac-benchmarks\"\n  caption=\"Acquisition cost reference points, and what each one buys\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"India cost per install against the US\", \"0.12x, or 70% to 90% lower\"], factId: \"f-unit-35\" },\n    { cells: [\"India median CPI, July 2025 to June 2026\", \"$0.71 to $0.42 (about ₹68 to ₹40)\"], factId: \"f-unit-36\" },\n    { cells: [\"US fintech CPI, iOS and Android\", \"$11.62 and $3.84 (about ₹1,114 and ₹368)\"], factId: \"f-unit-37\" },\n    { cells: [\"Typical subscription app payback\", \"60 to 90 days\"], factId: \"f-unit-07\" },\n    { cells: [\"Median LTV to CAC at $8.99 to $11.99 a month\", \"2.5 to 1\"], factId: \"f-unit-06\" },\n    { cells: [\"Trial conversion, IN and SEA against North America\", \"15.2% against 34.2%\"], factId: \"f-glossary-0700-03\" },\n  ]}\n/>\n\n## How is CAC calculated?\n\nDivide acquisition spend by new paying customers over the same window. Fully\nloaded means every cost that exists to win customers. Media, creative\nproduction, agency fees, attribution tooling and the salaries of the growth team\nall belong in the numerator.\n\nTwo common exclusions break the number. Leaving out salaries understates CAC by\na third in most small teams. Counting installs instead of payers understates it\nby far more.\n\n## What is the difference between CAC and CPI?\n\nCPI buys an install. CAC buys a payer. To get from one to the other, divide CPI\nby the install-to-paid rate.\n\n<Example illustrative>\n₹190 per install, about $1.98, at a 4% install-to-paid rate gives a CAC of\n₹4,750, about $49.54. The install looked cheap. The customer did not.\n</Example>\n\nUS fintech CPI runs $11.62 on iOS and $3.84 on Android, roughly ₹1,114 and ₹368.\nPlatform alone moves the input threefold before conversion touches it.\n\n## Does cheap traffic mean cheap customers in India?\n\nNot by itself, and this is where the argument usually stops too early. Cost per\ninstall in India runs about 0.12 times the US level, and the median fell from\n$0.71 to $0.42 across the year, roughly ₹68 to ₹40. On installs alone India looks\neight times cheaper.\n\nThen two multipliers push back. Trial conversion in India and South-East Asia\nsits at a 15.2% median against 34.2% in North America, so more installs are\nneeded per payer. And the payer is worth less, because Indian prices sit below\nthe US baseline. Run those together and the advantage narrows sharply. It does\nnot vanish. It stops being eightfold.\n\n<FromMyWork exp=\"exp-015\">\nFacebook interest targeting looked fine on cost per install and was catastrophic\non cost per purchase, at 5 times Google Search intent and 12 times organic.\nCutting its share of paid budget took blended cost per purchase from ₹1,100 to\n₹590, about $11.47 to $6.15, in three months.\n</FromMyWork>\n\n## What actually moves CAC\n\nChannel mix moves it slowly. Conversion moves it immediately, because it is the\ndivisor. Median LTV to CAC at the $8.99 to $11.99 monthly tier, roughly ₹862 to ₹1,150,\nis 2.5 to 1. That leaves little room for a funnel leak.\n\n<FromMyWork exp=\"exp-044\">\nMoving monetisation from paid acquisition into embedded intent-led in-app flows\ncut effective CAC 25 to 30%. The intent was already present in the session and\ndid not have to be bought.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0692",
+      "url": "/glossary/ltv-to-cac-ratio",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is LTV:CAC Ratio? Formula, Benchmarks and Limits",
+      "meta_description": "LTV:CAC compares what a customer returns against what they cost. The formula, the 3:1 bar and the 2.5:1 reality, and the three ways the ratio gets faked.",
+      "h1": "What is LTV:CAC ratio (and what does it hide)?",
+      "primary_keyword": "what is ltv:cac ratio",
+      "secondary_keywords": [
+        "ltv cac ratio formula",
+        "ltv to cac benchmark"
+      ],
+      "entity_a": "ltv-to-cac-ratio",
+      "facts": [
+        "f-unit-06",
+        "f-unit-08",
+        "f-unit-04",
+        "f-unit-07",
+        "f-unit-35",
+        "f-glossary-0700-03"
+      ],
+      "experience": [
+        "exp-044"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/ltv",
+          "anchor": "LTV",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/cac",
+          "anchor": "CAC",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/ltv-calculator",
+          "anchor": "the LTV calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/benchmarks/churn",
+          "anchor": "churn benchmarks",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#ltv-cac-benchmarks",
+          "alt": "Six reference points for the LTV to CAC ratio: the medians by monthly price tier, the investor expectation, realised year-one LTV, typical payback period, India's cost-per-install advantage and India's trial conversion gap, each row carrying its source and verification date",
+          "caption": "LTV to CAC reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good LTV:CAC ratio?",
+          "a": "3 to 1 remains the standing bar and investors increasingly ask for 4 to 1 or 5 to 1. Published medians for subscription apps sit lower, at 2.5 to 1 in the $8.99 to $11.99 monthly tier, so the bar is an ambition rather than a norm."
+        },
+        {
+          "q": "Can an LTV:CAC ratio be too high?",
+          "a": "Yes. A ratio far past 5 to 1 usually means underspending rather than efficiency. If every acquired cohort pays back five times over, the constraint is the acquisition budget, not the economics."
+        },
+        {
+          "q": "Why does LTV:CAC hide problems?",
+          "a": "It has no time in it. A 4 to 1 ratio that takes three years to realise and a 4 to 1 ratio that pays back in three months are the same number and not the same business. Read payback period beside it."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "States the published subscription-app medians (2.5 to 1, rising to 2.7 to 1 with price) against the 3:1 bar the ranking pages repeat as though it were typical, and shows why the ratio needs payback period beside it to mean anything.",
+      "body": "\n<AnswerBox>\nWhat is LTV:CAC ratio? The LTV:CAC ratio divides customer lifetime value by the\ncost of acquiring that customer. The standing bar is 3 to 1, and investors increasingly\nask for 4 to 1. Published medians for subscription apps sit at 2.5 to 1. The bar\nis an ambition, not a norm.\n</AnswerBox>\n\n<FactTable\n  id=\"ltv-cac-benchmarks\"\n  caption=\"What the ratio actually reads at, by price tier and by market\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median at $8.99 to $11.99 a month\", \"2.5 to 1\"], factId: \"f-unit-06\" },\n    { cells: [\"The standing bar, and what investors now ask\", \"3 to 1, rising to 4 or 5 to 1\"], factId: \"f-unit-08\" },\n    { cells: [\"Year-one realised LTV, AI against non-AI\", \"$30.16 against $21.37 (about ₹2,892 against ₹2,049)\"], factId: \"f-unit-04\" },\n    { cells: [\"Typical payback period\", \"60 to 90 days\"], factId: \"f-unit-07\" },\n    { cells: [\"India cost per install against the US\", \"0.12x\"], factId: \"f-unit-35\" },\n    { cells: [\"Trial conversion, IN and SEA against North America\", \"15.2% against 34.2%\"], factId: \"f-glossary-0700-03\" },\n  ]}\n/>\n\n## How is the ratio calculated?\n\nDivide lifetime value by acquisition cost for the same cohort. Same cohort is the\npart teams skip. A ratio built from this quarter's CAC and last year's realised\nLTV compares two different businesses.\n\nBoth inputs need the same basis. If CAC is fully loaded, LTV has to be gross\nprofit. Mixing a revenue LTV with a media-only CAC can double the ratio without\nanything changing.\n\n## What is a good ratio in practice\n\n3 to 1 is the number everyone quotes. The published median at the $8.99 to\n$11.99 monthly tier, roughly ₹862 to ₹1,150, is 2.5 to 1. It rises with price. So most subscription\napps sit below the bar they are measured against, and the honest read is that\n2.5 to 1 with a 60-day payback beats 4 to 1 with a three-year one.\n\nA ratio can also run too high. Far past 5 to 1 usually signals underspending\nrather than efficiency. Every cohort paying back five times over means the\nconstraint is budget, not economics.\n\n## What does the ratio hide\n\nTime. The formula has none in it. A 4 to 1 that realises over three years and a\n4 to 1 that pays back in three months are the same number and different\nbusinesses. Typical subscription payback runs 60 to 90 days, so a ratio quoted\nwithout a payback period beside it is half an answer.\n\nIt also hides where the room to move sits. Realised year-one LTV differs by 41%\nbetween AI and non-AI apps. Category sets more of the ratio than execution does.\n\n## How the ratio gets faked\n\nThree moves, all common. Extending the LTV horizon until the ratio clears.\nExcluding salaries from CAC. Using blended CAC, where organic installs subsidise\nthe paid number and the paid channel never gets judged.\n\nIndia shows a fourth. Cost per install there runs 0.12 times the US level, which\nlooks like an instant ratio win. Trial conversion at a 15.2% median against 34.2%\nin North America takes most of it back.\n\n<FromMyWork exp=\"exp-044\">\nMoving monetisation from paid acquisition into embedded intent-led in-app flows\ncut effective CAC 25 to 30% and raised LTV at the same time. That moves the ratio\nby its denominator rather than by its horizon.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0693",
+      "url": "/glossary/cac-payback-period",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is CAC Payback Period? Formula and Benchmarks",
+      "meta_description": "CAC payback is how long a customer takes to repay what they cost. The formula, the 60 to 90 day norm, and why it constrains growth more than any ratio.",
+      "h1": "What is CAC payback period?",
+      "primary_keyword": "what is cac payback period",
+      "secondary_keywords": [
+        "cac payback formula",
+        "cac payback benchmark"
+      ],
+      "entity_a": "cac-payback-period",
+      "facts": [
+        "f-unit-07",
+        "f-unit-09",
+        "f-unit-19",
+        "f-unit-21",
+        "f-unit-26",
+        "f-unit-36"
+      ],
+      "experience": [
+        "exp-054"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/cac",
+          "anchor": "CAC",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/unit-economics",
+          "anchor": "unit economics",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/cac-payback-calculator",
+          "anchor": "the CAC payback calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/upi-autopay-for-subscriptions",
+          "anchor": "UPI Autopay for subscriptions",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#payback-benchmarks",
+          "alt": "Six reference points for CAC payback: the typical subscription app window, the monthly retention curve, median growth by revenue band, the median Rule of 40 score, India's recurring-debit authentication threshold and India's median cost per install, each row carrying its source and verification date",
+          "caption": "Payback reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good CAC payback period?",
+          "a": "Subscription apps typically recover acquisition cost in 60 to 90 days. Longer is survivable with patient capital and fatal without it, because payback sets how fast you can reinvest."
+        },
+        {
+          "q": "How do I calculate CAC payback period?",
+          "a": "Divide CAC by the monthly gross profit one customer produces. Gross profit, not revenue: store commission and payment fees are paid before any of it repays acquisition."
+        },
+        {
+          "q": "Why does payback matter more than LTV:CAC?",
+          "a": "Because it carries time, and the ratio does not. Payback decides how often the same rupee can be spent again. Two businesses with identical ratios and different payback grow at different speeds on the same capital."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Frames payback as the reinvestment-rate constraint rather than a health metric, and names the India-specific failure mode where a mandate that needs re-authentication stretches payback without changing price or churn.",
+      "body": "\n<AnswerBox>\nWhat is CAC payback period? It is how many months a customer takes to repay what\nthey cost to acquire. Subscription apps typically recover acquisition cost in 60\nto 90 days. Payback carries time, which the LTV to CAC ratio does not, and time\nis what limits growth.\n</AnswerBox>\n\n<FactTable\n  id=\"payback-benchmarks\"\n  caption=\"Payback reference points, and what each one constrains\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Typical subscription app payback\", \"60 to 90 days\"], factId: \"f-unit-07\" },\n    { cells: [\"Monthly plan retention, day 30 / day 90 / one year\", \"65% / 43% / 17%\"], factId: \"f-unit-09\" },\n    { cells: [\"Median growth, $1M to $30M ARR\", \"26%, top performers 40% to 50%\"], factId: \"f-unit-19\" },\n    { cells: [\"Median Rule of 40 score\", \"25%\"], factId: \"f-unit-21\" },\n    { cells: [\"India recurring debit without extra authentication\", \"up to ₹15,000 (about $156)\"], factId: \"f-unit-26\" },\n    { cells: [\"India median cost per install, June 2026\", \"$0.42 (about ₹40)\"], factId: \"f-unit-36\" },\n  ]}\n/>\n\n## How is CAC payback calculated?\n\nDivide CAC by the monthly gross profit one customer produces. The answer is in\nmonths. Gross profit matters here, because store commission, payment fees and\nsupport are all paid before a single rupee repays acquisition.\n\n<Example illustrative>\n₹4,800 of CAC, about $50.06, against ₹600 of monthly gross profit, about $6.26,\npays back in eight months.\n</Example>\n\nTwo refinements change the answer. Charge annually and payback can happen on day\none. Discount the first period heavily and payback stretches past the point where\nmost of the cohort has already left.\n\n## Why payback beats the ratio\n\nPayback decides how often the same rupee gets spent again. A 90-day payback\nrecycles capital four times a year. A 24-month payback recycles it once every two\nyears. Both can show the same LTV to CAC ratio.\n\nThat recycling rate is most of what separates median growth of 26% at the $1M to\n$30M ARR band, roughly ₹9.59 crore to ₹287.67 crore, from the 40% to 50% top\nperformers reach. The median Rule of 40\nscore is 25%, and payback is the lever inside it that a product team can actually\nmove.\n\n## What stretches payback without anyone deciding to\n\nRetention shape does the most damage early. Monthly plans hold 65% at day 30 and\n43% at day 90. A payback period that runs past day 90 is being repaid by fewer\nthan half the cohort that was acquired, so the real figure is worse than the\narithmetic suggests.\n\nPayment friction does the rest, and in India it is specific. Recurring debits\nclear without extra authentication up to ₹15,000, about $156. Above that\nthreshold the mandate needs re-authentication, and a payment that needs a human\nis a payment that sometimes does not happen. The result is a longer payback with\nno change in price, churn intent or product.\n\n<FromMyWork exp=\"exp-054\">\nA hyperlocal D2C food business at 300+ daily tiffins that unit economics told me\nto pivot out of. Customer feedback pointed at fresh grocery retail instead, and\nthe decision was an economics call rather than a demand one.\n</FromMyWork>\n\n## What to do with a long payback\n\nShorten it before funding it. Annual plans pull revenue forward, which is the\nbluntest available lever. Removing a discount on the first period often helps more\nthan raising the price, because the discount lands in exactly the months that\ndecide payback. Cutting involuntary payment failure shortens payback without\ntouching the offer at all.\n\nWhat rarely helps is buying cheaper traffic. India's median cost per install fell\nto $0.42, roughly ₹40, and that is already close to the floor. Conversion and\ncollection are where the months come from.\n"
+    },
+    {
+      "id": "glossary-0694",
+      "url": "/glossary/churn-rate",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is Churn Rate? Formula, Benchmarks and the Split",
+      "meta_description": "Churn rate is the share of customers who leave in a period. The formula, the 5 to 12% monthly norm, and why 20 to 40% of it is a failed payment.",
+      "h1": "What is churn rate?",
+      "primary_keyword": "what is churn rate",
+      "secondary_keywords": [
+        "churn rate formula",
+        "monthly churn benchmark"
+      ],
+      "entity_a": "churn-rate",
+      "facts": [
+        "f-unit-15",
+        "f-unit-12",
+        "f-unit-10",
+        "f-unit-13",
+        "f-unit-25",
+        "f-unit-27"
+      ],
+      "experience": [
+        "exp-014",
+        "exp-006"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/retention-rate",
+          "anchor": "retention rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/nrr",
+          "anchor": "net revenue retention",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/churn-to-lifetime-calculator",
+          "anchor": "the churn to lifetime calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/involuntary-churn-mandate-failures",
+          "anchor": "involuntary churn and mandate failures",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#churn-benchmarks",
+          "alt": "Six churn reference points: typical monthly churn for mobile subscriptions, the involuntary share of total churn, first-month renewal by category, the median recovery rate for involuntary churn, monthly UPI Autopay mandate volume in India and the card failure spike after India's 2021 rules, each row carrying its source and verification date",
+          "caption": "Churn reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good monthly churn rate?",
+          "a": "Monthly churn of 5% to 12% is typical for mobile subscription apps, and the strongest hold under 5%. Category sets much of it: first-month renewal ranges from 42% to 61% depending on what the app does."
+        },
+        {
+          "q": "What is involuntary churn?",
+          "a": "Churn caused by a failed payment rather than a decision to leave. It accounts for 20% to 40% of total churn, and the median recovery rate is 47.6%, so roughly half of it is winnable without changing the product."
+        },
+        {
+          "q": "How do I reduce churn in India?",
+          "a": "Start with collection, not retention messaging. India's 2021 card rules pushed failure rates above 20% in some categories. UPI Autopay now carries more than 120 million mandates a month and fails far less often."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Splits churn into decided and failed before benchmarking either, and treats the India collection problem as a churn cause with its own numbers rather than as a payments footnote.",
+      "body": "\n<AnswerBox>\nWhat is churn rate? It is the share of customers who stop paying in a period.\nMonthly churn of 5% to 12% is typical for mobile subscription apps, and the\nstrongest hold under 5%. Between 20% and 40% of that is a failed payment rather\nthan a decision.\n</AnswerBox>\n\n<FactTable\n  id=\"churn-benchmarks\"\n  caption=\"Churn reference points, split by cause where the data allows\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Typical monthly churn, mobile subscriptions\", \"5% to 12%, best under 5%\"], factId: \"f-unit-15\" },\n    { cells: [\"Share of total churn that is a failed payment\", \"20% to 40%\"], factId: \"f-unit-12\" },\n    { cells: [\"First-month renewal, strongest against weakest category\", \"61% against 42%\"], factId: \"f-unit-10\" },\n    { cells: [\"Median recovery of involuntary churn\", \"47.6%, top performers 70% to 85%\"], factId: \"f-unit-13\" },\n    { cells: [\"UPI Autopay mandates created monthly in India\", \"more than 120 million\"], factId: \"f-unit-25\" },\n    { cells: [\"India card subscription failure after the 2021 rules\", \"above 20% in some categories\"], factId: \"f-unit-27\" },\n  ]}\n/>\n\n## How is churn rate calculated?\n\nDivide customers lost in a period by customers at the start of it. Then decide\nwhether you are counting people or revenue, because the two diverge as soon as\nplans differ in price.\n\n<Example illustrative>\n1,000 subscribers at the start of a month and 80 lost gives 8% customer churn. If\nthose 80 were all on the ₹200 plan, about $2.09, and the base averages ₹800,\nabout $8.34, revenue churn is far lower.\n</Example>\n\nCustomer churn tells you about the product. Revenue churn tells you about the\nbusiness. Quote both or say which one you mean.\n\n## What is a good churn rate\n\n5% to 12% monthly is the typical band, and category explains much of the spread.\nFirst-month renewal runs from 42% in the weakest categories to 61% in the\nstrongest. Holding a gaming app to a business app's renewal rate sets a target\nthe category does not produce.\n\nCompounding is the part that surprises people. Monthly churn does not annualise\nby multiplication. Run a rate in the 5% to 12% band twelve times over and most of\nthe starting cohort has gone.\n\n## Why the split between decided and failed matters most\n\nBetween 20% and 40% of total churn is a failed payment. Those users did not\nchoose to leave. Median recovery of involuntary churn is 47.6%, and top\nperformers reach 70% to 85%, so about half of that slice is winnable without\ntouching the product.\n\nTeams that measure only cancellations therefore misread their own problem. They\nrun win-back campaigns at people whose card simply expired.\n\n<FromMyWork exp=\"exp-014\">\nTiming beat messaging. A user whose insurance expired three days ago converted at\n4.8 times the rate of one with 60 days remaining, on identical copy. The trigger\ndid more work than the words.\n</FromMyWork>\n\n## Why India churns differently\n\nCollection, not intent. India's 2021 card rules pushed subscription failure rates\nabove 20% in some categories, which shows up in every churn dashboard as\ncustomers leaving. UPI Autopay now carries more than 120 million mandates a\nmonth, and moving recurring collection onto it removes a large share of that\nfailure before any retention work begins.\n\n<FromMyWork exp=\"exp-006\">\nTurning a rejection into a pathway recovered borrowers nobody was counting.\nRejected applicants given a specific reason and a re-apply timeline came back at a\n28% re-application rate, and 67% of those cleared the filter second time.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0697",
+      "url": "/glossary/retention-rate",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is Retention Rate? Formula, Benchmarks and Curves",
+      "meta_description": "Retention rate is the share of a cohort still active after a period. Day 1 and day 30 medians, the iOS and Android gap, and why the curve beats any point.",
+      "h1": "What is retention rate?",
+      "primary_keyword": "what is retention rate",
+      "secondary_keywords": [
+        "retention rate formula",
+        "day 30 retention benchmark"
+      ],
+      "entity_a": "retention-rate",
+      "facts": [
+        "f-unit-38",
+        "f-unit-39",
+        "f-unit-09",
+        "f-unit-11",
+        "f-unit-10",
+        "f-unit-22"
+      ],
+      "experience": [
+        "exp-019",
+        "exp-018"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/churn-rate",
+          "anchor": "churn rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/cohort-analysis",
+          "anchor": "cohort analysis",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/retention-curve-projector",
+          "anchor": "the retention curve projector",
+          "role": "tool"
+        },
+        {
+          "url": "/benchmarks/retention",
+          "anchor": "retention benchmarks by industry",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#retention-benchmarks",
+          "alt": "Six retention reference points: median day 1 and day 30 app retention, the iOS and Android split, the monthly subscription retention curve, annual renewal by category, first-month renewal by category and the average SaaS activation rate, each row carrying its source and verification date",
+          "caption": "Retention reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good day 30 retention rate?",
+          "a": "The median app retains 4% of users at day 30, which surprises most teams. Subscription retention is a different measure and much higher, because a paying subscriber has already selected themselves."
+        },
+        {
+          "q": "What is the difference between retention rate and churn rate?",
+          "a": "They are complements for a single period. Retention is who stayed, churn is who left. They stop being interchangeable across multiple periods, because retention compounds down a curve while a single churn figure implies a straight line."
+        },
+        {
+          "q": "Is iOS retention better than Android?",
+          "a": "On the published medians, yes, and by more at day 30 than at day 1. iOS averages 25.65% day 1 and 4.13% day 30. Android averages 23.01% and 2.59%. Any cross-platform target needs the mix stated."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Keeps install retention and subscription retention as separate measures with their own published medians, which is the conflation that makes most retention targets meaningless, and reads the curve's shape rather than one day's number.",
+      "body": "\n<AnswerBox>\nWhat is retention rate? It is the share of a cohort still active after a set\nperiod. The median app retains 4% of users at day 30 and 25.3% return on day one.\nPaid subscription retention is a different and much higher measure, because a\nsubscriber has already selected themselves.\n</AnswerBox>\n\n<FactTable\n  id=\"retention-benchmarks\"\n  caption=\"Retention reference points, kept separate by what they measure\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median app retention, day 1 and day 30\", \"25.3% and 4%\"], factId: \"f-unit-38\" },\n    { cells: [\"iOS against Android, day 1 and day 30\", \"25.65% and 4.13% against 23.01% and 2.59%\"], factId: \"f-unit-39\" },\n    { cells: [\"Monthly subscription retention, day 30 / 90 / one year\", \"65% / 43% / 17%\"], factId: \"f-unit-09\" },\n    { cells: [\"Annual renewal median, strongest against weakest\", \"40% against 23%\"], factId: \"f-unit-11\" },\n    { cells: [\"First-month renewal, strongest against weakest\", \"61% against 42%\"], factId: \"f-unit-10\" },\n    { cells: [\"Average SaaS activation rate\", \"36%\"], factId: \"f-unit-22\" },\n  ]}\n/>\n\n## How is retention rate calculated?\n\nTake a cohort, fix its start date, and count how many are still active at day N.\nThe cohort has to be closed. Measuring against a moving base mixes new arrivals\ninto an old cohort and flatters every reading.\n\nTwo measures share the name and should not. Install retention asks whether a user\ncame back. Subscription retention asks whether a payer renewed. The first has a\n4% day-30 median. The second holds 65% at day 30. Quoting one as the other is how\ntargets become unreachable.\n\n## What the curve says that a single day cannot\n\nShape beats level. A curve that falls steeply and then flattens has found a\ndurable use case. A curve that keeps sliding has not, however good its day-1\nnumber looks.\n\nMonthly subscriptions hold 65% at day 30, 43% at day 90 and 17% at one year.\nThree points, one story: the damage concentrates early, and the survivors are\nworth far more than the average implies. Platform changes the level too. iOS\naverages 4.13% at day 30 against 2.59% on Android, so a blended cross-platform\ntarget hides which half of the base is actually leaving.\n\n## What moves retention\n\nThe first session moves it most. Average SaaS activation sits at 36%, and\nactivation is the gate everything downstream passes through. A user who never\nreached the point of value has nothing to be retained by.\n\nCategory sets the rest. Annual renewal runs at a 40% median in the strongest\ncategories and 23% in the weakest, with first-month renewal spanning 42% to 61%.\nThose gaps are wider than most teams move their own number in a year.\n\n<FromMyWork exp=\"exp-019\">\nLetting users share a vehicle report turned a utility check into an acquisition\nchannel. Shared reports carried 12.3% of new installs within four months, and\nthose users arrived with the intent already formed.\n</FromMyWork>\n\n## What retention work usually gets wrong\n\nTwo errors. Optimising day 1 because it is the number that moves fastest, when\nday 30 is the one that pays. And building depth for users who never activated.\n\n<FromMyWork exp=\"exp-018\">\nA feature I championed reached 2.8% adoption and was killed. Maintenance logging\nneeded repeated deliberate effort and returned nothing until enough history had\naccumulated, so it never cleared its own activation gate.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0695",
+      "url": "/glossary/mrr",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is MRR? Formula, Benchmarks and the Four Movements",
+      "meta_description": "MRR is normalised recurring monthly revenue. The formula, the four movements that explain any change in it, and the one they all hide.",
+      "h1": "What is MRR (monthly recurring revenue)?",
+      "primary_keyword": "what is mrr",
+      "secondary_keywords": [
+        "mrr formula",
+        "monthly recurring revenue benchmark"
+      ],
+      "entity_a": "mrr",
+      "facts": [
+        "f-unit-19",
+        "f-unit-20",
+        "f-unit-12",
+        "f-unit-14",
+        "f-unit-15",
+        "f-glossary-0700-10"
+      ],
+      "experience": [
+        "exp-037"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/arr",
+          "anchor": "ARR",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/churn-rate",
+          "anchor": "churn rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/subscription-mrr-calculator",
+          "anchor": "the MRR calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/payment-success-rates-india",
+          "anchor": "payment success rates in India",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#mrr-benchmarks",
+          "alt": "Six MRR reference points: median growth by revenue band, bootstrapped growth median, the involuntary share of churn, dunning recovery by intervention, typical monthly churn and the median subscription app's monthly revenue, each row carrying its source and verification date",
+          "caption": "MRR reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do I calculate MRR?",
+          "a": "Normalise every subscription to a monthly value and add them up. An annual plan divides by twelve. Do not count one-off fees, and do not count the annual payment in the month it arrives, or the series becomes unreadable."
+        },
+        {
+          "q": "What are the four MRR movements?",
+          "a": "New, expansion, contraction and churn. Any change in MRR decomposes into those four, and the decomposition is the whole value of tracking it. A flat month can hide strong new revenue cancelled out by churn."
+        },
+        {
+          "q": "What is a good MRR growth rate?",
+          "a": "Median growth for companies between $1M and $30M ARR is 26%, with top performers at 40% to 50%. Bootstrapped companies between $3M and $20M ARR grow at a 15% median, which is the fairer comparison without funding."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Names the movement the standard four-way decomposition leaves out — revenue lost to failed collection rather than to cancellation, 20 to 40% of churn — and gives the recovery rates by intervention so it can be sized.",
+      "body": "\n<AnswerBox>\nWhat is MRR? Monthly recurring revenue normalises every active subscription to a\nmonthly value and adds them together. Median growth at the $1M to $30M ARR band,\nroughly ₹9.59 crore to ₹287.67 crore, is 26%. The number matters far less than its\nfour movements: new, expansion, contraction and churn.\n</AnswerBox>\n\n<FactTable\n  id=\"mrr-benchmarks\"\n  caption=\"MRR reference points, and what each one constrains\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median growth, $1M to $30M ARR\", \"26%, top performers 40% to 50%\"], factId: \"f-unit-19\" },\n    { cells: [\"Bootstrapped median growth, $3M to $20M ARR\", \"15%\"], factId: \"f-unit-20\" },\n    { cells: [\"Share of churn that is a failed payment\", \"20% to 40%\"], factId: \"f-unit-12\" },\n    { cells: [\"Recovery by intervention: retry / card updater / email\", \"40% / 25% / plus 15% to 20%\"], factId: \"f-unit-14\" },\n    { cells: [\"Typical monthly churn, mobile subscriptions\", \"5% to 12%\"], factId: \"f-unit-15\" },\n    { cells: [\"Median subscription app, monthly revenue\", \"$492 (about ₹47,178)\"], factId: \"f-glossary-0700-10\" },\n  ]}\n/>\n\n## How is MRR calculated?\n\nNormalise each subscription to its monthly value, then sum. An annual plan\ndivides by twelve. A quarterly plan divides by three.\n\nTwo things do not belong in it. One-off fees are not recurring. An annual payment\ncounted in the month it lands turns the series into a sawtooth nobody can read.\nEither mistake inflates one month and makes the next look like a collapse.\n\n<Example illustrative>\n200 subscribers on ₹800 a month, about $8.34, plus 50 on ₹8,000 a year, about\n$83.43, gives ₹1,93,333 of MRR, roughly $2,016.\n</Example>\n\n## What the four movements show\n\nNew, expansion, contraction and churn. Every change in MRR decomposes into those\nfour, and the decomposition is the reason to track MRR at all.\n\nA flat month can hold strong new revenue exactly cancelled by churn. The headline\nsays nothing happened. The movements say two large things happened in opposite\ndirections, and only one of them is under your control this quarter.\n\n## The movement that is usually missing\n\nFailed collection. Between 20% and 40% of churn is a payment failure rather than\na cancellation, and in a four-way decomposition it lands silently in churn. So\nthe report reads as customers leaving when much of it is money not collected.\n\nSizing it is worth the effort, because the fixes are mechanical. Smart retry\nrecovers about 40%. A card updater recovers 25%. Dunning email adds 15% to 20% on\ntop. None of that needs a product change, and none of it needs a price change.\n\n## What is a good MRR growth rate\n\nAt the $1M to $30M ARR band, roughly ₹9.59 crore to ₹287.67 crore, 26% is the\nmedian. Top performers run 40% to 50%.\nFunding changes the comparison, though. Bootstrapped companies between $3M and\n$20M ARR, roughly ₹28.77 crore to ₹191.78 crore, grow at a 15% median. A\nbootstrapped product measured against the venture median is being held to someone\nelse's cost of capital.\n\nScale is worth keeping in view. The median subscription app earns $492 a month,\nabout ₹47,178. Most published growth benchmarks come from companies far past\nthat point.\n\n<FromMyWork exp=\"exp-037\">\nPricing an integrations platform on execution volume and connector usage rather\nthan seats took it to roughly $60K MRR, about ₹57.53 lakh. The price then tracked\nwhat the customer consumed instead of how many people logged in.\n</FromMyWork>\n\nTypical monthly churn of 5% to 12% sets the treadmill underneath all of it. New\nrevenue has to clear that before growth begins.\n"
+    },
+    {
+      "id": "glossary-0696",
+      "url": "/glossary/arr",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is ARR? Formula, Benchmarks and What It Overstates",
+      "meta_description": "ARR annualises recurring revenue. The formula, median growth by band, the Rule of 40 median, and the three ways ARR gets inflated before a raise.",
+      "h1": "What is ARR (annual recurring revenue)?",
+      "primary_keyword": "what is arr",
+      "secondary_keywords": [
+        "arr formula",
+        "arr growth benchmark"
+      ],
+      "entity_a": "arr",
+      "facts": [
+        "f-unit-19",
+        "f-unit-20",
+        "f-unit-21",
+        "f-unit-16",
+        "f-unit-17",
+        "f-unit-13"
+      ],
+      "experience": [
+        "exp-048"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/mrr",
+          "anchor": "MRR",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/nrr",
+          "anchor": "net revenue retention",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/rule-of-40-calculator",
+          "anchor": "the Rule of 40 calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/benchmarks/retention/b2b-saas",
+          "anchor": "B2B SaaS retention benchmarks",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#arr-benchmarks",
+          "alt": "Six ARR reference points: median growth by revenue band, bootstrapped growth median, the median Rule of 40 score, median gross and net revenue retention, net revenue retention by contract size and the median involuntary-churn recovery rate, each row carrying its source and verification date",
+          "caption": "ARR reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the difference between ARR and revenue?",
+          "a": "ARR counts only recurring contracted revenue, annualised. Revenue counts everything that arrived, including services, one-off fees and overages. A company with heavy services revenue has an ARR well below its revenue, and that is correct rather than a problem."
+        },
+        {
+          "q": "Is ARR just MRR times twelve?",
+          "a": "Arithmetically yes, and that is the trap. Multiplying a single month by twelve carries that month's seasonality, its churn and its one-off luck into a full-year figure twelve times over."
+        },
+        {
+          "q": "What is a good ARR growth rate?",
+          "a": "26% is the median between $1M and $30M ARR, with top performers at 40% to 50%. The median Rule of 40 score is 25%, and the measure only becomes meaningful from about $20M ARR."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Treats ARR as a claim that needs retention evidence beside it, pairing the growth medians with the 84% gross retention and 101% net retention that determine whether the annualised figure survives the year.",
+      "body": "\n<AnswerBox>\nWhat is ARR? Annual recurring revenue annualises contracted recurring revenue.\nMedian growth between $1M and $30M ARR, roughly ₹9.59 crore to ₹287.67 crore, is\n26%. Top performers run 40% to 50%. ARR is a forward claim rather than a record of\ncash, which is why retention has to sit beside it.\n</AnswerBox>\n\n<FactTable\n  id=\"arr-benchmarks\"\n  caption=\"ARR reference points, and the retention that has to support them\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median growth, $1M to $30M ARR\", \"26%, top performers 40% to 50%\"], factId: \"f-unit-19\" },\n    { cells: [\"Bootstrapped median growth, $3M to $20M ARR\", \"15%\"], factId: \"f-unit-20\" },\n    { cells: [\"Median Rule of 40 score\", \"25%, meaningful from about $20M ARR\"], factId: \"f-unit-21\" },\n    { cells: [\"Median private B2B SaaS gross and net retention\", \"84% and 101%\"], factId: \"f-unit-16\" },\n    { cells: [\"Net revenue retention by contract size\", \"97% under $25K ACV, 118% above $100K\"], factId: \"f-unit-17\" },\n    { cells: [\"Median recovery of involuntary churn\", \"47.6%\"], factId: \"f-unit-13\" },\n  ]}\n/>\n\n## How is ARR calculated?\n\nSum contracted recurring revenue and express it over twelve months. For a\nmonthly-billed book that means MRR times twelve, and the multiplication is where\nthe trouble starts.\n\nOne month carries its own seasonality, its own churn and its own luck. Multiply\nit by twelve and all three arrive magnified. A December with an unusual enterprise\nclose becomes a full-year figure the business never earned.\n\nServices, one-off fees and overages stay out. A company with heavy services\nrevenue has an ARR well below its total revenue, and that is accurate rather than\na problem to solve.\n\n## What has to sit beside ARR\n\nRetention, because ARR is a claim about next year. Median private B2B SaaS gross\nrevenue retention is 84% and net revenue retention is 101%. So the median company\nloses roughly a sixth of its contracted base each year, and expansion just covers\nthe loss.\n\nContract size changes that picture more than anything else. Net revenue retention\nruns 97% below $25K ACV, about ₹23.97 lakh. It runs 118% above $100K, about\n₹95.89 lakh. An ARR figure built on small contracts needs a much larger\nnew-business engine to hold flat.\n\n## What is a good ARR growth rate\n\nBetween $1M and $30M ARR, roughly ₹9.59 crore to ₹287.67 crore, the median is 26%.\nTop performers reach 40% to 50%.\nBootstrapped companies between $3M and $20M ARR, roughly ₹28.77 crore to ₹191.78\ncrore, grow at a 15% median. That is the honest comparison for a product without\nventure funding.\n\nEfficiency enters at scale. The median Rule of 40 score is 25%. The measure only\nstarts to bite from about $20M ARR, roughly ₹191.78 crore. Below that, growth rate\non its own is the more useful reading.\n\n## The three ways ARR gets inflated\n\nAnnualising the best month. Counting non-recurring revenue as recurring. Booking\na signed contract before it starts serving. All three survive a spreadsheet\nreview and none survives a cohort report.\n\nThere is a fourth that is less deliberate. Failed payments reduce collected\nrevenue while the contract still counts toward ARR, and median recovery of\ninvoluntary churn is 47.6%. About half of that gap is winnable, which means it is\nalso real.\n\n<FromMyWork exp=\"exp-048\">\nOne measurement framework spanning 20+ growth, retention and monetisation metrics\nmade executive decisions roughly twice as fast. Until then each team reported a\nnumber defined its own way.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0710",
+      "url": "/glossary/nrr",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is NRR? Net Revenue Retention Formula & Benchmarks",
+      "meta_description": "NRR measures revenue kept from existing customers, expansion included. The formula, the medians by contract size, and why over 100% can still hide churn.",
+      "h1": "What is NRR (net revenue retention)?",
+      "primary_keyword": "what is nrr",
+      "secondary_keywords": [
+        "nrr formula",
+        "net revenue retention benchmark"
+      ],
+      "entity_a": "nrr",
+      "facts": [
+        "f-unit-16",
+        "f-unit-17",
+        "f-unit-18",
+        "f-unit-13",
+        "f-unit-12",
+        "f-unit-10"
+      ],
+      "experience": [
+        "exp-039"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/grr",
+          "anchor": "GRR",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/churn-rate",
+          "anchor": "churn rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/nrr-grr-calculator",
+          "anchor": "the NRR and GRR calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/benchmarks/retention/b2b-saas",
+          "anchor": "B2B SaaS retention benchmarks",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#nrr-benchmarks",
+          "alt": "Six reference points for net revenue retention: the median gross and net figures, net retention by contract size, gross retention by contract size, the median involuntary-churn recovery rate, the involuntary share of churn and first-month renewal by category, each row carrying its source and verification date",
+          "caption": "Net revenue retention reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good NRR?",
+          "a": "The median for private B2B SaaS is 101%. Contract size decides most of it: 97% below $25K ACV against 118% above $100K. Judge yours against your own contract band, because the bands differ by more than execution does."
+        },
+        {
+          "q": "What is the difference between NRR and GRR?",
+          "a": "NRR includes expansion revenue and GRR does not. GRR can never rise above its starting point, so it measures how leaky the base is. NRR can rise above its starting point and measures whether expansion outruns the leak."
+        },
+        {
+          "q": "Can a healthy NRR hide a problem?",
+          "a": "Routinely. A handful of large accounts expanding can mask a majority of small accounts leaving. Read NRR beside GRR and beside customer count, or a shrinking base looks like growth."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Shows the specific arithmetic by which NRR above 100% coexists with a shrinking customer base, and pairs the contract-size bands for both net and gross retention so the leak can be read separately from the expansion covering it.",
+      "body": "\n<AnswerBox>\nWhat is NRR? Net revenue retention measures the revenue kept from an existing\ncohort a year on, with expansion counted and new customers excluded. The median\nfor private B2B SaaS is 101%. A figure above the starting point means expansion\noutran churn, not that nothing churned.\n</AnswerBox>\n\n<FactTable\n  id=\"nrr-benchmarks\"\n  caption=\"Net and gross revenue retention, by contract size\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median private B2B SaaS, net and gross\", \"101% and 84%\"], factId: \"f-unit-16\" },\n    { cells: [\"Net revenue retention by ACV\", \"97% under $25K, ~108% at $25K to $100K, 118% above\"], factId: \"f-unit-17\" },\n    { cells: [\"Gross revenue retention by ACV\", \"82% under $25K, 88% at $25K to $100K, 95% above\"], factId: \"f-unit-18\" },\n    { cells: [\"Median recovery of involuntary churn\", \"47.6%, top performers 70% to 85%\"], factId: \"f-unit-13\" },\n    { cells: [\"Share of churn that is a failed payment\", \"20% to 40%\"], factId: \"f-unit-12\" },\n    { cells: [\"First-month renewal, strongest against weakest\", \"61% against 42%\"], factId: \"f-unit-10\" },\n  ]}\n/>\n\n## How is NRR calculated?\n\nTake a cohort's revenue twelve months ago. Take the same cohort's revenue today,\nincluding any expansion and net of contraction and churn. Divide the second by the\nfirst.\n\nNew customers stay out. That exclusion is the whole point. NRR asks one thing:\nwhether the base you already had is worth more or less than it was. New sales\ncannot hide the answer.\n\n## What is a good NRR\n\n101% is the median for private B2B SaaS. Contract size explains most of the\nvariation. Net retention runs 97% below $25K ACV, or about ₹23.97 lakh. It reaches\nroughly 108% between $25K and $100K. Above $100K, about ₹95.89 lakh, it runs 118%.\n\nThose bands are further apart than execution usually moves a single company, so\nan SMB product measured against an enterprise benchmark is being held to a\nstructure it does not have. Larger contracts have more seats to add, more\nworkflow embedded and more people invested in keeping them.\n\n## How a healthy NRR hides a shrinking base\n\nThe arithmetic is unforgiving and easy to miss. NRR weights by revenue. A few\nlarge accounts expanding can therefore carry a majority of small accounts out\nof the base.\n\n<Example illustrative>\n100 accounts at ₹1,00,000 each, about $1,043, is ₹1,00,00,000 of cohort revenue,\nroughly $1,04,286. Lose 30 of them and grow the largest 10 by 50% each, and\nrevenue holds near flat while the customer count falls by nearly a third.\n</Example>\n\nSo NRR belongs beside GRR and beside customer count. Gross retention runs 82%\nbelow $25K ACV, about ₹23.97 lakh, against 95% above $100K. The gap between the\ntwo measures is the size of the leak expansion covers.\n\n## What moves NRR\n\nExpansion mechanics first, then collection. Between 20% and 40% of churn is a\nfailed payment, and median recovery is 47.6%, so a measurable slice of lost\nrevenue is recoverable without a renewal conversation.\n\nOnboarding sets the ceiling. First-month renewal spans 42% to 61% by category,\nand an account that never reached steady use will not expand later.\n\n<FromMyWork exp=\"exp-039\">\nMaking failures debuggable by the customer cut sales and support effort about\n25%. Idempotency, surfaced errors and retry mechanics meant customers resolved\ntheir own breakages instead of churning quietly.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0711",
+      "url": "/glossary/grr",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is GRR? Gross Revenue Retention Formula & Benchmarks",
+      "meta_description": "GRR measures revenue kept from an existing cohort, expansion excluded. The formula, the medians by contract size, and why it is the harder number to move.",
+      "h1": "What is GRR (gross revenue retention)?",
+      "primary_keyword": "what is grr",
+      "secondary_keywords": [
+        "grr formula",
+        "gross revenue retention benchmark"
+      ],
+      "entity_a": "grr",
+      "facts": [
+        "f-unit-16",
+        "f-unit-18",
+        "f-unit-17",
+        "f-unit-14",
+        "f-unit-26",
+        "f-unit-27"
+      ],
+      "experience": [
+        "exp-002"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/nrr",
+          "anchor": "NRR",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/churn-rate",
+          "anchor": "churn rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/nrr-grr-calculator",
+          "anchor": "the NRR and GRR calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/rbi-e-mandate-rules-recurring-payments",
+          "anchor": "RBI e-mandate rules",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#grr-benchmarks",
+          "alt": "Six reference points for gross revenue retention: the median gross and net figures, gross retention by contract size, net retention by contract size, dunning recovery by intervention, India's recurring-debit authentication threshold and the card failure spike after India's 2021 rules, each row carrying its source and verification date",
+          "caption": "Gross revenue retention reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good GRR?",
+          "a": "The median for private B2B SaaS fell to 84%. By contract size it runs 82% below $25K ACV, 88% between $25K and $100K, and 95% above $100K. GRR cannot rise above the revenue the cohort started with, so it is a ceiling measure."
+        },
+        {
+          "q": "Why is GRR harder to improve than NRR?",
+          "a": "Because expansion cannot help it. NRR can be rescued by upselling the accounts that stay. GRR only improves when fewer accounts and fewer rupees leave, which means fixing the product, the onboarding or the collection."
+        },
+        {
+          "q": "Does a failed payment count against GRR?",
+          "a": "Yes, and that is why the number is often worse than the product deserves. Revenue lost to a declined mandate leaves the cohort the same way a cancellation does, and the dashboard rarely distinguishes them."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Treats GRR as partly a collections metric rather than purely a satisfaction metric, with India's mandate thresholds and post-2021 card failure rates as the concrete case, and notes the data quality that reading it honestly requires.",
+      "body": "\n<AnswerBox>\nWhat is GRR? Gross revenue retention measures the revenue kept from an existing\ncohort a year on, with expansion excluded. The median for private B2B SaaS fell to\n84%. GRR has a ceiling at the revenue the cohort started with, which makes it the\nharder of the two retention numbers to move.\n</AnswerBox>\n\n<FactTable\n  id=\"grr-benchmarks\"\n  caption=\"Gross revenue retention, by contract size and against net\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median private B2B SaaS, gross and net\", \"84% and 101%\"], factId: \"f-unit-16\" },\n    { cells: [\"Gross revenue retention by ACV\", \"82% under $25K, 88% at $25K to $100K, 95% above\"], factId: \"f-unit-18\" },\n    { cells: [\"Net revenue retention by ACV\", \"97% under $25K, 118% above $100K\"], factId: \"f-unit-17\" },\n    { cells: [\"Recovery by intervention: retry / card updater / email\", \"40% / 25% / plus 15% to 20%\"], factId: \"f-unit-14\" },\n    { cells: [\"India recurring debit without extra authentication\", \"up to ₹15,000 (about $156)\"], factId: \"f-unit-26\" },\n    { cells: [\"India card subscription failure after the 2021 rules\", \"above 20% in some categories\"], factId: \"f-unit-27\" },\n  ]}\n/>\n\n## How is GRR calculated?\n\nTake a cohort's revenue twelve months ago. Take what remains of that same revenue\ntoday, counting contraction and churn but no expansion. Divide the second by the\nfirst.\n\nBecause expansion is excluded, the result cannot rise above where the cohort\nstarted. That cap is the point. GRR answers one question only: how leaky is the base. NRR answers whether\nexpansion is covering the leak, and the two answers are often very different.\n\n## What is a good GRR\n\nThe median for private B2B SaaS fell to 84%. Contract size sets most of it. Gross\nretention runs 82% below $25K ACV, about ₹23.97 lakh. Between $25K and $100K,\nabout ₹23.97 lakh to ₹95.89 lakh, it reaches 88%. Above that band it reaches 95%.\n\nCompare that against the net figures for the same bands, 97% and 118%. The gap\nbetween gross and net widens with contract size, because larger accounts both stay\nlonger and expand more. So an enterprise book looks far healthier on NRR than on\nGRR, and the smaller book has nowhere to hide.\n\n## Why GRR is the harder number\n\nExpansion cannot rescue it. A weak NRR can be lifted by selling more to the\naccounts that stayed, which a good sales team can do inside a quarter. GRR improves only when fewer\naccounts and fewer rupees leave.\n\nThat pushes the work upstream into onboarding, into the product, and into\ncollection. None of those move in a quarter, which is exactly why GRR is the\nnumber worth watching.\n\n## The collections half of GRR\n\nRevenue lost to a declined mandate leaves the cohort exactly as a cancellation\ndoes, and most dashboards do not separate them. So part of a poor GRR is a\npayments problem wearing a retention label.\n\nIndia makes the mechanism visible. The 2021 card rules pushed subscription failure\nrates above 20% in some categories. Recurring debits now clear without extra\nauthentication up to ₹15,000, about $156, and above that threshold each charge\nneeds the customer present again. The fixes are mechanical: smart retry recovers\nabout 40%, a card updater 25%, and dunning email adds 15% to 20% on top.\n\n<FromMyWork exp=\"exp-002\">\nMost of the failure data was unusable. Of 14,022 rejections only 6,240 carried a\nstructured reason, so the first job was making failures countable before anything\ncould be attributed to them.\n</FromMyWork>\n\nThe same applies here. A GRR you cannot decompose into decided and failed is a\nnumber you cannot act on.\n"
     }
   ]
 }

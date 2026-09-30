@@ -1,0 +1,72 @@
+<AnswerBox>
+What is LTV? Customer lifetime value is the revenue a single customer returns
+before leaving. Realised year-one LTV sits at a $21.37 median, about ₹2,049, for
+non-AI apps and $30.16, about ₹2,892, for AI ones. Modelled LTV usually reads
+higher than either, and the gap is the interesting part.
+</AnswerBox>
+
+<FactTable
+  id="ltv-benchmarks"
+  caption="Realised LTV reference points, and what shapes each one"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Year-one realised LTV, AI against non-AI apps", "$30.16 against $21.37 (about ₹2,892 against ₹2,049)"], factId: "f-unit-04" },
+    { cells: ["Highest-LTV paywall configuration, 12 months", "weekly plus trial, $49.27 (about ₹4,725)"], factId: "f-unit-05" },
+    { cells: ["Monthly plan retention, day 30 / day 90 / one year", "65% / 43% / 17%"], factId: "f-unit-09" },
+    { cells: ["Annual renewal median, strongest against weakest category", "40% against 23%"], factId: "f-unit-11" },
+    { cells: ["Typical monthly churn, mobile subscriptions", "5% to 12%"], factId: "f-unit-15" },
+    { cells: ["Trial added to an annual plan, one-year LTV", "+35%"], factId: "f-glossary-0700-05" },
+  ]}
+/>
+
+## How is LTV calculated?
+
+Two ways, and they disagree. The modelled version divides ARPU by churn rate. It
+assumes churn holds steady, which no real cohort does. Early churn runs high,
+then the survivors settle. So a constant rate overstates the tail.
+
+The realised version sums what a closed cohort actually paid. It takes a year to
+read and it needs no assumption. Realised year-one LTV lands at a $21.37 median,
+about ₹2,049, for non-AI apps.
+
+<Example illustrative>
+₹800 of monthly ARPU, about $8.34, at 8% monthly churn models to ₹10,000 of LTV,
+about $104.29. The same cohort tracked for a year often pays about half that.
+</Example>
+
+Report both. The gap between them is your churn assumption, priced.
+
+## What drives LTV more than price does?
+
+Retention shape, then plan length. Monthly plans hold 65% at day 30, 43% at day
+90 and 17% at one year. That curve, not the price tag, sets the ceiling.
+
+Plan mix moves it next. Annual renewal runs at a 40% median in the strongest
+categories and 23% in the weakest. Adding a trial to an annual plan lifts
+one-year LTV by 35% against a direct purchase. The highest-LTV configuration
+published is a weekly plan with a trial, at $49.27 over twelve months, roughly
+₹4,725. Weekly pricing feels cheap per charge and compounds fast.
+
+## What should LTV be measured in?
+
+Gross profit, whenever the number will be set against CAC. Store commission,
+payment fees, refunds and support all sit between revenue and the money that
+actually repays acquisition. A revenue-based LTV flatters every ratio built on
+it, and the flattery grows with the store fee.
+
+<FromMyWork exp="exp-044">
+Moving monetisation from paid acquisition into embedded intent-led in-app flows
+cut effective CAC 25 to 30% and raised LTV without hurting engagement. Both sides
+of the ratio moved, which is rarer than either one moving alone.
+</FromMyWork>
+
+## Where does LTV get abused?
+
+Three patterns recur. Modelling from a first-month churn rate, which flattens a
+curve that has not flattened. Quoting revenue LTV against fully-loaded CAC.
+Extending the horizon until the ratio works, which is the tell: a five-year LTV
+on a product eighteen months old is an assumption wearing a number.
+
+Typical monthly churn of 5% to 12% implies a mean tenure most models quietly
+exceed. If the model needs a longer life than the churn rate allows, fix the
+model.

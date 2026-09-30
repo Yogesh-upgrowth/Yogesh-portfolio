@@ -1,0 +1,76 @@
+<AnswerBox>
+What is churn rate? It is the share of customers who stop paying in a period.
+Monthly churn of 5% to 12% is typical for mobile subscription apps, and the
+strongest hold under 5%. Between 20% and 40% of that is a failed payment rather
+than a decision.
+</AnswerBox>
+
+<FactTable
+  id="churn-benchmarks"
+  caption="Churn reference points, split by cause where the data allows"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Typical monthly churn, mobile subscriptions", "5% to 12%, best under 5%"], factId: "f-unit-15" },
+    { cells: ["Share of total churn that is a failed payment", "20% to 40%"], factId: "f-unit-12" },
+    { cells: ["First-month renewal, strongest against weakest category", "61% against 42%"], factId: "f-unit-10" },
+    { cells: ["Median recovery of involuntary churn", "47.6%, top performers 70% to 85%"], factId: "f-unit-13" },
+    { cells: ["UPI Autopay mandates created monthly in India", "more than 120 million"], factId: "f-unit-25" },
+    { cells: ["India card subscription failure after the 2021 rules", "above 20% in some categories"], factId: "f-unit-27" },
+  ]}
+/>
+
+## How is churn rate calculated?
+
+Divide customers lost in a period by customers at the start of it. Then decide
+whether you are counting people or revenue, because the two diverge as soon as
+plans differ in price.
+
+<Example illustrative>
+1,000 subscribers at the start of a month and 80 lost gives 8% customer churn. If
+those 80 were all on the ₹200 plan, about $2.09, and the base averages ₹800,
+about $8.34, revenue churn is far lower.
+</Example>
+
+Customer churn tells you about the product. Revenue churn tells you about the
+business. Quote both or say which one you mean.
+
+## What is a good churn rate
+
+5% to 12% monthly is the typical band, and category explains much of the spread.
+First-month renewal runs from 42% in the weakest categories to 61% in the
+strongest. Holding a gaming app to a business app's renewal rate sets a target
+the category does not produce.
+
+Compounding is the part that surprises people. Monthly churn does not annualise
+by multiplication. Run a rate in the 5% to 12% band twelve times over and most of
+the starting cohort has gone.
+
+## Why the split between decided and failed matters most
+
+Between 20% and 40% of total churn is a failed payment. Those users did not
+choose to leave. Median recovery of involuntary churn is 47.6%, and top
+performers reach 70% to 85%, so about half of that slice is winnable without
+touching the product.
+
+Teams that measure only cancellations therefore misread their own problem. They
+run win-back campaigns at people whose card simply expired.
+
+<FromMyWork exp="exp-014">
+Timing beat messaging. A user whose insurance expired three days ago converted at
+4.8 times the rate of one with 60 days remaining, on identical copy. The trigger
+did more work than the words.
+</FromMyWork>
+
+## Why India churns differently
+
+Collection, not intent. India's 2021 card rules pushed subscription failure rates
+above 20% in some categories, which shows up in every churn dashboard as
+customers leaving. UPI Autopay now carries more than 120 million mandates a
+month, and moving recurring collection onto it removes a large share of that
+failure before any retention work begins.
+
+<FromMyWork exp="exp-006">
+Turning a rejection into a pathway recovered borrowers nobody was counting.
+Rejected applicants given a specific reason and a re-apply timeline came back at a
+28% re-application rate, and 67% of those cleared the filter second time.
+</FromMyWork>

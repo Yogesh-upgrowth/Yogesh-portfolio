@@ -24,7 +24,7 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from prose import style_problems  # noqa: E402
+from prose import style_problems, to_prose as _to_prose, words as _words  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[2]
 CONTENT = ROOT / "web" / "content"
@@ -32,6 +32,9 @@ RESEARCH = ROOT / "seo" / "research"
 
 FACT_REUSE_SITEWIDE = 3
 MIN_FACTS = 6  # G01: page-specific sourced facts.
+
+# Archetypes 01 §B allows a year token in the title.
+TIME_BOUND = {"benchmark", "benchmark-hub", "pricing-examples", "teardown", "compare"}
 
 # 01 §B word and section bands, mirrored from web/lib/gates/contracts.ts.
 BANDS = {
@@ -157,6 +160,24 @@ def check(spec: dict) -> list[str]:
             anchor = v["src"].lstrip("#")
             if v["src"].startswith("#") and f'id="{anchor}"' not in page["body"]:
                 errs.append(f"{page['id']}: visual points at #{anchor}, which the body does not define")
+        # G10, checked here because a 156-character meta fails PageMeta at load
+        # and takes the whole gate run down with it.
+        t, d = page["title"], page["meta_description"]
+        if not 35 <= len(t) <= 65:
+            errs.append(f"{page['id']}: G10 title {len(t)} chars (35-65)")
+        if not 110 <= len(d) <= 155:
+            errs.append(f"{page['id']}: G10 meta {len(d)} chars (110-155)")
+        kw = page["primary_keyword"].lower()
+        if kw not in t.lower():
+            errs.append(f"{page['id']}: G10 primary keyword not in title")
+        if kw not in page["h1"].lower():
+            errs.append(f"{page['id']}: G10 primary keyword not in H1")
+        first100 = " ".join(_words(_to_prose(page["body"]))[:100]).lower()
+        if kw not in first100:
+            errs.append(f"{page['id']}: G10 primary keyword not in the first 100 words")
+        if re.search(r"\b20\d\d\b", t) and page["archetype"] not in TIME_BOUND:
+            errs.append(f"{page['id']}: G10 year token in the title of a non-time-bound archetype")
+
         bands = BANDS.get(page["archetype"])
         if bands:
             for problem in style_problems(page["body"], page["archetype"], *bands):
@@ -179,9 +200,24 @@ def check(spec: dict) -> list[str]:
         for href in re.findall(r"\]\((/[^)\s]+)\)", page.get("body", "")):
             if href.split("#")[0] not in known:
                 errs.append(f"{page['id']}: body links {href}, which is not a known URL")
+    # Fact shape, because an over-long excerpt fails ResearchObject at load and
+    # takes the gate run down before any page is judged.
+    for fid, f in pool.items():
+        if fid not in counts:
+            continue
+        ex = f["excerpt"]
+        if len(ex) > 200:
+            errs.append(f"{fid}: excerpt {len(ex)} chars (max 200)")
+        if len(ex.split()) > 25:
+            errs.append(f"{fid}: excerpt {len(ex.split())} words (max 25, G02 renders it verbatim)")
     for fid, n in counts.items():
         if n > FACT_REUSE_SITEWIDE:
             errs.append(f"fact {fid} used on {n} pages in this batch (cap {FACT_REUSE_SITEWIDE})")
+    for field in ("title", "meta_description", "h1"):
+        seen: Counter[str] = Counter(p[field] for p in spec["pages"])
+        for v, n in seen.items():
+            if n > 1:
+                errs.append(f"G10 {field} repeated on {n} pages: \"{v[:50]}…\"")
     urls = Counter(p["url"] for p in spec["pages"])
     for u, n in urls.items():
         if n > 1:
@@ -197,6 +233,13 @@ def main() -> int:
 
     spec = json.loads(args.spec.read_text())
     errs = check(spec)
+    # "risk" findings are the port's own advice, not a gate: the gate's sentence
+    # splitter refuses to break after a digit or before a heading, so a sentence
+    # next to either reads long without being long. Surfaced, never blocking.
+    warns = [e for e in errs if " G13 risk: " in e]
+    errs = [e for e in errs if " G13 risk: " not in e]
+    for w in warns:
+        print(f"author.py: warn: {w}", file=sys.stderr)
     if errs:
         print(f"author.py: {len(errs)} problem(s) in {args.spec.name}", file=sys.stderr)
         for e in errs:

@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0694",
+  "url": "/glossary/churn-rate",
+  "archetype": "glossary",
+  "primary_keyword": "what is churn rate",
+  "secondary_keywords": [
+    "churn rate formula",
+    "monthly churn benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-15",
+      "claim": "Monthly churn of 5% to 12% is typical for mobile subscription apps, with the best holding under 5%",
+      "value": "5-12",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-churn-rates/",
+      "source_title": "App Churn Rates 2026",
+      "source_domain": "businessofapps.com",
+      "excerpt": "For mobile subscription apps, monthly churn of 5-12% is typical, with the best apps under 5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-12",
+      "claim": "Between 20% and 40% of total subscription churn is payment failure rather than cancellation",
+      "value": "20-40",
+      "unit": "%",
+      "source_url": "https://recurly.com/research/churn-rate-benchmarks/",
+      "source_title": "Churn rate benchmarks",
+      "source_domain": "recurly.com",
+      "excerpt": "Companies that measure only active cancellations miss the 20 to 40% of total churn driven by payment failures.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-10",
+      "claim": "Median first-month renewal runs 42% to 61% by category, with Business highest at 61% and Social & Lifestyle lowest at 42%",
+      "value": "42-61",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Median first renewal rate ranges from 42-61% between categories; Business achieves 61%, Social & Lifestyle 42%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-13",
+      "claim": "Median recovery of involuntary churn is 47.6%, with top performers reaching 70% to 85%",
+      "value": "47.6",
+      "unit": "%",
+      "source_url": "https://www.dunningcompare.com/stats/involuntary-churn-statistics-2026",
+      "source_title": "Involuntary Churn Statistics 2026",
+      "source_domain": "dunningcompare.com",
+      "excerpt": "The industry median recovery rate for involuntary churn is 47.6%, with top-performer recovery reaching 70-85%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-25",
+      "claim": "More than 120 million UPI Autopay mandates are created every month in India",
+      "value": "120",
+      "unit": "million",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "Over 120 million UPI Autopay mandates are created every month in India, supporting SIPs, OTT subscriptions and insurance renewals.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-27",
+      "claim": "India's 2021 card e-mandate rules pushed card subscription failure rates above 20% in some categories",
+      "value": "20",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "The mandate requiring extra authentication for card payments above Rs 5,000 caused failure rates to spike to 20%+ in some categories, accelerating UPI Autopay adoption.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

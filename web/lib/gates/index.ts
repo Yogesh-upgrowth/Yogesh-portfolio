@@ -139,6 +139,45 @@ export function g01(i: GateInput): GateResult {
 const ESTIMATE = /\bmy estimate\b/i;
 const METHOD = /\b(?:method|because|based on|derived from|assuming)\b/i;
 
+/**
+ * Scale suffixes, on both sides of the comparison.
+ *
+ * Without these the gate mis-parses rather than mis-judges: "$100K" matched as
+ * "$100", "₹9.59 crore" as "9.59". Both then failed against a fact that carried
+ * the figure in full, and the fix a page would reach for is to write
+ * ₹9,58,90,000 in running prose, which no reader wants. Indian scale words are
+ * here for the same reason the fx exemption exists — G15 requires the rupee
+ * counterpart, and a rupee counterpart at this magnitude is written in lakh and
+ * crore by everyone who reads it.
+ */
+const SCALE: Record<string, number> = {
+  k: 1e3, thousand: 1e3, m: 1e6, mn: 1e6, million: 1e6,
+  b: 1e9, bn: 1e9, billion: 1e9,
+  lakh: 1e5, lakhs: 1e5, lac: 1e5, crore: 1e7, crores: 1e7, cr: 1e7,
+};
+
+/** Every figure in a text, with its scale suffix or scale word applied. */
+function figureValues(text: string): number[] {
+  const out: number[] = [];
+  const re = /([\d][\d,]*(?:\.\d+)?)\s*(thousand|million|billion|lakhs?|lac|crores?|k|m|mn|bn?|cr)?\b/gi;
+  for (const m of text.matchAll(re)) {
+    const n = Number((m[1] ?? "").replace(/,/g, ""));
+    if (!Number.isFinite(n)) continue;
+    out.push(n * (SCALE[(m[2] ?? "").toLowerCase()] ?? 1));
+  }
+  return out;
+}
+
+/** The numeric value of a figure as written, scale suffix applied. */
+function figureValue(raw: string): number | undefined {
+  const m = /([\d][\d,]*(?:\.\d+)?)\s*([A-Za-z]+)?/.exec(raw);
+  if (!m) return undefined;
+  const n = Number((m[1] ?? "").replace(/,/g, ""));
+  if (!Number.isFinite(n)) return undefined;
+  const suffix = (m[2] ?? "").toLowerCase();
+  return n * (SCALE[suffix] ?? 1);
+}
+
 export function g03(i: GateInput): GateResult {
   const N = "Number provenance";
   const used = new Set(i.meta.facts_used);
@@ -150,6 +189,9 @@ export function g03(i: GateInput): GateResult {
   for (const f of i.facts) {
     for (const n of String(f.claim).match(/[\d][\d,.]*/g) ?? []) factNumbers.add(norm(n));
     if (f.value !== undefined) factNumbers.add(norm(String(f.value)));
+    // A claim writes "1 million dollars ARR" and a page writes "$1M". Same
+    // figure, and without expanding the scale word the page looks unsourced.
+    for (const v of figureValues(`${f.claim} ${f.value ?? ""}`)) factNumbers.add(String(v));
   }
   // Illustrative examples are exempt (02 §2 G03), and they must be removed
   // BEFORE toProse: toProse strips component tags, so an exemption applied
@@ -202,17 +244,45 @@ export function g03(i: GateInput): GateResult {
     const inEntry = `${entry.claim} ${entry.quote ?? ""} ` +
       entry.numbers.map((n) => `${n.value ?? ""} ${n.from ?? ""} ${n.to ?? ""} ${n.window ?? ""}`).join(" ");
     for (const n of inEntry.match(/[\d][\d,.]*/g) ?? []) fromExperience.add(norm(n));
+    for (const v of figureValues(inEntry)) fromExperience.add(String(v));
+  }
+  // An experience number needs its currency counterpart for the same reason a
+  // fact does: G15 requires the pair and G12 sources the original.
+  if (fx) {
+    for (const v of [...fromExperience]) {
+      const n = Number(v);
+      if (!Number.isFinite(n) || n === 0) continue;
+      for (const candidate of [n * fx, n / fx]) {
+        for (const r of [Math.round(candidate), Math.round(candidate / 10) * 10,
+                         Math.round(candidate / 100) * 100, Number(candidate.toFixed(2))]) {
+          if (Math.abs(r - candidate) / candidate <= 0.03) fromExperience.add(String(r));
+        }
+      }
+    }
   }
 
   const offenders: string[] = [];
   for (const s of sentences(prose)) {
     if (ESTIMATE.test(s) && METHOD.test(s)) continue;
-    const nums = s.match(/(?:₹|\$)\s?[\d][\d,.]*|[\d][\d,.]*\s?%|\b[\d][\d,.]{2,}\b/g) ?? [];
+    const nums = s.match(
+      /(?:₹|\$)\s?[\d][\d,.]*\s?(?:K|M|Mn|B|Bn|lakh|lakhs|lac|crore|crores|cr)?\b|[\d][\d,.]*\s?%|\b[\d][\d,.]{2,}\b/gi,
+    ) ?? [];
     for (const raw of nums) {
       const bare = norm(raw.replace(/[₹$%]/g, ""));
       if (factNumbers.has(bare)) continue;
       if (converted.has(bare)) continue;
       if (fromExperience.has(bare)) continue;
+      // Same figure, written at a different scale: $25K against a fact's 25,000,
+      // or ₹9.59 crore against a converted 95,890,000.
+      const v = figureValue(raw.replace(/[₹$%]/g, "").trim());
+      if (v !== undefined && v !== 0) {
+        const near = (set: Set<string>) =>
+          [...set].some((c) => {
+            const cv = Number(c);
+            return Number.isFinite(cv) && cv !== 0 && Math.abs(cv - v) / Math.max(cv, v) <= 0.03;
+          });
+        if (near(factNumbers) || near(converted) || near(fromExperience)) continue;
+      }
       offenders.push(raw.trim());
     }
   }

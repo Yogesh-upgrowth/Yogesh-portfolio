@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0691",
+  "url": "/glossary/cac",
+  "archetype": "glossary",
+  "primary_keyword": "what is cac",
+  "secondary_keywords": [
+    "cac formula",
+    "customer acquisition cost benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-35",
+      "claim": "Cost per install in India runs about 0.12 times the United States level, 70% to 90% lower",
+      "value": "0.12",
+      "unit": "x",
+      "source_url": "https://linkrunner.io/tools/cost-per-install-benchmark",
+      "source_title": "Cost per install benchmarks by country, platform and category",
+      "source_domain": "linkrunner.io",
+      "excerpt": "India has a CPI of 0.12x relative to the United States. CPIs in India are often 70-90% lower than US CPIs.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-36",
+      "claim": "India's median cost per install fell from 0.71 dollars in July 2025 to 0.42 dollars in June 2026",
+      "value": "0.42",
+      "unit": "USD",
+      "source_url": "https://linkrunner.io/tools/cost-per-install-benchmark",
+      "source_title": "Cost per install benchmarks by country, platform and category",
+      "source_domain": "linkrunner.io",
+      "excerpt": "India's median CPI averaged about $1.18 per install, starting at $0.71 in July 2025 and finishing at $0.42 in June 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-37",
+      "claim": "United States fintech cost per install is 11.62 dollars on iOS and 3.84 on Android, against 2.46 and 0.84 for utilities",
+      "value": "11.62",
+      "unit": "USD",
+      "source_url": "https://linkrunner.io/tools/cost-per-install-benchmark",
+      "source_title": "Cost per install benchmarks by country, platform and category",
+      "source_domain": "linkrunner.io",
+      "excerpt": "US CPIs by category include Fintech ($11.62 iOS / $3.84 Android) and Utilities ($2.46 / $0.84).",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-07",
+      "claim": "Subscription apps typically recover acquisition cost in 60 to 90 days",
+      "value": "60-90",
+      "unit": "days",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions/",
+      "source_title": "State of In-App Subscriptions 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "For subscription apps the typical CAC payback period is 60-90 days, depending on plan length, trial conversion rate and pricing.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-06",
+      "claim": "Median LTV:CAC is 2.5 to 1 for apps priced 8.99 to 11.99 a month and 2.7 to 1 at 12.99 to 14.99",
+      "value": "2.5",
+      "unit": "ratio",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions/",
+      "source_title": "State of In-App Subscriptions 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "Apps pricing at $8.99-$11.99 monthly have a median LTV:CAC of 2.5:1; $12.99-$14.99 achieve 2.7:1.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-03",
+      "claim": "India and South-East Asia show the lowest regional median trial-to-paid conversion at 15.2%, against 34.2% in North America",
+      "value": "15.2",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "North America median 34.2%, Asia-Pacific 31.9%, Western Europe 29.7%, IN/SEA lowest at 15.2%",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

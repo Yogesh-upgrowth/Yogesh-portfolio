@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0696",
+  "url": "/glossary/arr",
+  "archetype": "glossary",
+  "primary_keyword": "what is arr",
+  "secondary_keywords": [
+    "arr formula",
+    "arr growth benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-19",
+      "claim": "Median growth for companies between 1 million and 30 million dollars ARR is 26%, with top performers at 40% to 50%",
+      "value": "26",
+      "unit": "%",
+      "source_url": "https://aventis-advisors.com/rule-of-40-in-saas-2026/",
+      "source_title": "Rule of 40 in SaaS: 2026 Data, Benchmarks and Valuation Impact",
+      "source_domain": "aventis-advisors.com",
+      "excerpt": "For companies in the $1M-$30M ARR range, median growth is 26%, while top performers grow at 40-50%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-20",
+      "claim": "Bootstrapped SaaS companies between 3 million and 20 million dollars ARR grow at a 15% median",
+      "value": "15",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "SaaS Capital's 2026 private B2B SaaS benchmark shows median revenue growth of 15% for bootstrapped SaaS companies with $3m to $20m ARR.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-21",
+      "claim": "The median Rule of 40 score was 25% in 2025, and the measure only starts to bite from about 20 million dollars ARR",
+      "value": "25",
+      "unit": "%",
+      "source_url": "https://aventis-advisors.com/rule-of-40-in-saas-2026/",
+      "source_title": "Rule of 40 in SaaS: 2026 Data, Benchmarks and Valuation Impact",
+      "source_domain": "aventis-advisors.com",
+      "excerpt": "The 2025 median Rule of 40 score is 25%. The Rule of 40 becomes a meaningful benchmark at roughly $20M ARR and above.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-16",
+      "claim": "Median private B2B SaaS gross revenue retention fell to 84% in 2025 while annual net revenue retention compressed to 101%",
+      "value": "84",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "The median SaaS gross revenue retention rate fell to 84% in 2025; annual NRR compressed to 101% across all private B2B SaaS.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-17",
+      "claim": "Net revenue retention splits hard by contract size: 97% under 25,000 dollars ACV, about 108% from 25,000 to 100,000, and 118% above that",
+      "value": "118",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "Enterprise (over $100K ACV) at a median 118% NRR, mid-market ($25K-$100K ACV) at about 108%, and SMB (under $25K ACV) at 97%.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-13",
+      "claim": "Median recovery of involuntary churn is 47.6%, with top performers reaching 70% to 85%",
+      "value": "47.6",
+      "unit": "%",
+      "source_url": "https://www.dunningcompare.com/stats/involuntary-churn-statistics-2026",
+      "source_title": "Involuntary Churn Statistics 2026",
+      "source_domain": "dunningcompare.com",
+      "excerpt": "The industry median recovery rate for involuntary churn is 47.6%, with top-performer recovery reaching 70-85%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

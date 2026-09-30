@@ -1,0 +1,108 @@
+{
+  "id": "glossary-0697",
+  "url": "/glossary/retention-rate",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is Retention Rate? Formula, Benchmarks and Curves",
+  "meta_description": "Retention rate is the share of a cohort still active after a period. Day 1 and day 30 medians, the iOS and Android gap, and why the curve beats any point.",
+  "h1": "What is retention rate?",
+  "primary_keyword": "what is retention rate",
+  "secondary_keywords": [
+    "retention rate formula",
+    "day 30 retention benchmark"
+  ],
+  "entity_a": "retention-rate",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-38",
+    "f-unit-39",
+    "f-unit-09",
+    "f-unit-11",
+    "f-unit-10",
+    "f-unit-22"
+  ],
+  "experience_used": [
+    "exp-019",
+    "exp-018"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/churn-rate",
+      "anchor": "churn rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/cohort-analysis",
+      "anchor": "cohort analysis",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/retention-curve-projector",
+      "anchor": "the retention curve projector",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "retention benchmarks by industry",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#retention-benchmarks",
+      "alt": "Six retention reference points: median day 1 and day 30 app retention, the iOS and Android split, the monthly subscription retention curve, annual renewal by category, first-month renewal by category and the average SaaS activation rate, each row carrying its source and verification date",
+      "caption": "Retention reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good day 30 retention rate?",
+      "a": "The median app retains 4% of users at day 30, which surprises most teams. Subscription retention is a different measure and much higher, because a paying subscriber has already selected themselves."
+    },
+    {
+      "q": "What is the difference between retention rate and churn rate?",
+      "a": "They are complements for a single period. Retention is who stayed, churn is who left. They stop being interchangeable across multiple periods, because retention compounds down a curve while a single churn figure implies a straight line."
+    },
+    {
+      "q": "Is iOS retention better than Android?",
+      "a": "On the published medians, yes, and by more at day 30 than at day 1. iOS averages 25.65% day 1 and 4.13% day 30. Android averages 23.01% and 2.59%. Any cross-platform target needs the mix stated."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Keeps install retention and subscription retention as separate measures with their own published medians, which is the conflation that makes most retention targets meaningless, and reads the curve's shape rather than one day's number.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

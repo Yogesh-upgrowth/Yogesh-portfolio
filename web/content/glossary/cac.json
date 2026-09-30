@@ -1,0 +1,108 @@
+{
+  "id": "glossary-0691",
+  "url": "/glossary/cac",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is CAC? Customer Acquisition Cost Formula & Benchmarks",
+  "meta_description": "CAC is the fully-loaded cost of one new paying customer. The formula, CPI benchmarks for India and the US, and why cheap installs are not cheap buyers.",
+  "h1": "What is CAC (customer acquisition cost)?",
+  "primary_keyword": "what is cac",
+  "secondary_keywords": [
+    "cac formula",
+    "customer acquisition cost benchmark"
+  ],
+  "entity_a": "cac",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-35",
+    "f-unit-36",
+    "f-unit-37",
+    "f-unit-07",
+    "f-unit-06",
+    "f-glossary-0700-03"
+  ],
+  "experience_used": [
+    "exp-015",
+    "exp-044"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/ltv",
+      "anchor": "LTV",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/cac-payback-period",
+      "anchor": "CAC payback period",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/cac-payback-calculator",
+      "anchor": "the CAC payback calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/monetizing-tier-2-tier-3-users",
+      "anchor": "monetising tier 2 and tier 3 users",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#cac-benchmarks",
+      "alt": "Six CAC and cost-per-install reference points: India's cost per install relative to the US, India's median CPI trend, US fintech and utility CPI by platform, typical payback period, median LTV to CAC by price tier, and the India trial conversion gap, each row carrying its source and verification date",
+      "caption": "Acquisition cost reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the CAC formula?",
+      "a": "Total acquisition spend in a period divided by new paying customers won in that period. Fully loaded means media plus tooling plus the salaries of the people running it, not media alone."
+    },
+    {
+      "q": "Is CAC cheaper in India?",
+      "a": "Installs are. Cost per install in India runs about 0.12 times the US level. Customers are a different question, because trial conversion in India and South-East Asia sits at a 15.2% median against 34.2% in North America."
+    },
+    {
+      "q": "What is the difference between CAC and CPI?",
+      "a": "CPI buys an install. CAC buys a payer. Divide CPI by your install-to-paid rate to get from one to the other, and the divisor is usually a small number, so the two are not close."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Does the arithmetic the India-is-cheap claim usually skips: a 0.12x cost per install set against a 15.2% trial conversion median and a 0.6x price index, which is the calculation that decides whether the cheap install is actually cheap.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

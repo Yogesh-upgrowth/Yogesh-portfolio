@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0711",
+  "url": "/glossary/grr",
+  "archetype": "glossary",
+  "primary_keyword": "what is grr",
+  "secondary_keywords": [
+    "grr formula",
+    "gross revenue retention benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-16",
+      "claim": "Median private B2B SaaS gross revenue retention fell to 84% in 2025 while annual net revenue retention compressed to 101%",
+      "value": "84",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "The median SaaS gross revenue retention rate fell to 84% in 2025; annual NRR compressed to 101% across all private B2B SaaS.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-18",
+      "claim": "Gross revenue retention by contract size runs 82% under 25,000 dollars ACV, 88% from 25,000 to 100,000, and 95% above",
+      "value": "95",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "SMB (<$25K ACV): 82% GRR; Mid-Market ($25K-$100K): 88% GRR; Enterprise (>$100K ACV): 95% GRR.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-17",
+      "claim": "Net revenue retention splits hard by contract size: 97% under 25,000 dollars ACV, about 108% from 25,000 to 100,000, and 118% above that",
+      "value": "118",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "Enterprise (over $100K ACV) at a median 118% NRR, mid-market ($25K-$100K ACV) at about 108%, and SMB (under $25K ACV) at 97%.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-14",
+      "claim": "Smart retry alone recovers about 40% of failed payments, a card updater 25%, and dunning email adds 15 to 20% on top",
+      "value": "40",
+      "unit": "%",
+      "source_url": "https://www.digitalapplied.com/blog/failed-payment-recovery-dunning-playbook-2026",
+      "source_title": "Failed-Payment Recovery: The 2026 Dunning Playbook",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "Smart retry alone recovers 40%, card updater 25%, and emails add 15-20% on top; combining all three reaches 70%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-26",
+      "claim": "The RBI E-Mandate Framework 2026 allows recurring debits up to 15,000 rupees without additional authentication, and up to 1,00,000 rupees for insurance, mutual funds and credit-card bills",
+      "value": "15000",
+      "unit": "INR",
+      "source_url": "https://amlegals.com/upi-autopay-and-recurring-payments-compliance-checklist-under-rbis-e-mandate-framework-2026/",
+      "source_title": "UPI Autopay and Recurring Payments: Compliance Checklist Under RBI's E-Mandate Framework 2026",
+      "source_domain": "amlegals.com",
+      "excerpt": "Recurring transactions up to Rs 15,000 process without additional factor authentication after setup; insurance, mutual funds and card bills up to Rs 1,00,000.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-27",
+      "claim": "India's 2021 card e-mandate rules pushed card subscription failure rates above 20% in some categories",
+      "value": "20",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "The mandate requiring extra authentication for card payments above Rs 5,000 caused failure rates to spike to 20%+ in some categories, accelerating UPI Autopay adoption.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

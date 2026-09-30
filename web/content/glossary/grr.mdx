@@ -1,0 +1,72 @@
+<AnswerBox>
+What is GRR? Gross revenue retention measures the revenue kept from an existing
+cohort a year on, with expansion excluded. The median for private B2B SaaS fell to
+84%. GRR has a ceiling at the revenue the cohort started with, which makes it the
+harder of the two retention numbers to move.
+</AnswerBox>
+
+<FactTable
+  id="grr-benchmarks"
+  caption="Gross revenue retention, by contract size and against net"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Median private B2B SaaS, gross and net", "84% and 101%"], factId: "f-unit-16" },
+    { cells: ["Gross revenue retention by ACV", "82% under $25K, 88% at $25K to $100K, 95% above"], factId: "f-unit-18" },
+    { cells: ["Net revenue retention by ACV", "97% under $25K, 118% above $100K"], factId: "f-unit-17" },
+    { cells: ["Recovery by intervention: retry / card updater / email", "40% / 25% / plus 15% to 20%"], factId: "f-unit-14" },
+    { cells: ["India recurring debit without extra authentication", "up to ₹15,000 (about $156)"], factId: "f-unit-26" },
+    { cells: ["India card subscription failure after the 2021 rules", "above 20% in some categories"], factId: "f-unit-27" },
+  ]}
+/>
+
+## How is GRR calculated?
+
+Take a cohort's revenue twelve months ago. Take what remains of that same revenue
+today, counting contraction and churn but no expansion. Divide the second by the
+first.
+
+Because expansion is excluded, the result cannot rise above where the cohort
+started. That cap is the point. GRR answers one question only: how leaky is the base. NRR answers whether
+expansion is covering the leak, and the two answers are often very different.
+
+## What is a good GRR
+
+The median for private B2B SaaS fell to 84%. Contract size sets most of it. Gross
+retention runs 82% below $25K ACV, about ₹23.97 lakh. Between $25K and $100K,
+about ₹23.97 lakh to ₹95.89 lakh, it reaches 88%. Above that band it reaches 95%.
+
+Compare that against the net figures for the same bands, 97% and 118%. The gap
+between gross and net widens with contract size, because larger accounts both stay
+longer and expand more. So an enterprise book looks far healthier on NRR than on
+GRR, and the smaller book has nowhere to hide.
+
+## Why GRR is the harder number
+
+Expansion cannot rescue it. A weak NRR can be lifted by selling more to the
+accounts that stayed, which a good sales team can do inside a quarter. GRR improves only when fewer
+accounts and fewer rupees leave.
+
+That pushes the work upstream into onboarding, into the product, and into
+collection. None of those move in a quarter, which is exactly why GRR is the
+number worth watching.
+
+## The collections half of GRR
+
+Revenue lost to a declined mandate leaves the cohort exactly as a cancellation
+does, and most dashboards do not separate them. So part of a poor GRR is a
+payments problem wearing a retention label.
+
+India makes the mechanism visible. The 2021 card rules pushed subscription failure
+rates above 20% in some categories. Recurring debits now clear without extra
+authentication up to ₹15,000, about $156, and above that threshold each charge
+needs the customer present again. The fixes are mechanical: smart retry recovers
+about 40%, a card updater 25%, and dunning email adds 15% to 20% on top.
+
+<FromMyWork exp="exp-002">
+Most of the failure data was unusable. Of 14,022 rejections only 6,240 carried a
+structured reason, so the first job was making failures countable before anything
+could be attributed to them.
+</FromMyWork>
+
+The same applies here. A GRR you cannot decompose into decided and failed is a
+number you cannot act on.

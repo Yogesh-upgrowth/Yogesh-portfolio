@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0710",
+  "url": "/glossary/nrr",
+  "archetype": "glossary",
+  "primary_keyword": "what is nrr",
+  "secondary_keywords": [
+    "nrr formula",
+    "net revenue retention benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-16",
+      "claim": "Median private B2B SaaS gross revenue retention fell to 84% in 2025 while annual net revenue retention compressed to 101%",
+      "value": "84",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "The median SaaS gross revenue retention rate fell to 84% in 2025; annual NRR compressed to 101% across all private B2B SaaS.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-17",
+      "claim": "Net revenue retention splits hard by contract size: 97% under 25,000 dollars ACV, about 108% from 25,000 to 100,000, and 118% above that",
+      "value": "118",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "Enterprise (over $100K ACV) at a median 118% NRR, mid-market ($25K-$100K ACV) at about 108%, and SMB (under $25K ACV) at 97%.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-18",
+      "claim": "Gross revenue retention by contract size runs 82% under 25,000 dollars ACV, 88% from 25,000 to 100,000, and 95% above",
+      "value": "95",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "SMB (<$25K ACV): 82% GRR; Mid-Market ($25K-$100K): 88% GRR; Enterprise (>$100K ACV): 95% GRR.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-13",
+      "claim": "Median recovery of involuntary churn is 47.6%, with top performers reaching 70% to 85%",
+      "value": "47.6",
+      "unit": "%",
+      "source_url": "https://www.dunningcompare.com/stats/involuntary-churn-statistics-2026",
+      "source_title": "Involuntary Churn Statistics 2026",
+      "source_domain": "dunningcompare.com",
+      "excerpt": "The industry median recovery rate for involuntary churn is 47.6%, with top-performer recovery reaching 70-85%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-12",
+      "claim": "Between 20% and 40% of total subscription churn is payment failure rather than cancellation",
+      "value": "20-40",
+      "unit": "%",
+      "source_url": "https://recurly.com/research/churn-rate-benchmarks/",
+      "source_title": "Churn rate benchmarks",
+      "source_domain": "recurly.com",
+      "excerpt": "Companies that measure only active cancellations miss the 20 to 40% of total churn driven by payment failures.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-10",
+      "claim": "Median first-month renewal runs 42% to 61% by category, with Business highest at 61% and Social & Lifestyle lowest at 42%",
+      "value": "42-61",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Median first renewal rate ranges from 42-61% between categories; Business achieves 61%, Social & Lifestyle 42%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

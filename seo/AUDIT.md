@@ -253,3 +253,46 @@ compile, which the gates do not check. `seo/scripts/author.py` therefore
 pre-flights every page in a batch against a Python port of the prose gates
 (`seo/scripts/prose.py`) before writing, and `pnpm build` is the check that the
 prose reaches a reader.
+
+## D6 — one fabricated number, and three gate mis-parses (30 September 2026)
+
+Writing the first twelve-page batch surfaced four defects, one mine and three in
+the gates.
+
+**Mine.** Three `FromMyWork` blocks said moving monetisation into embedded
+in-app flows "cut effective CAC by roughly 60 to 70%". The library entry
+(`exp-044`) says **25 to 30%**. I had written a number the entry does not
+contain, in Yogesh's first-person voice, on three pages. G03's per-number
+experience exemption caught it, which is the check working exactly as intended:
+the exemption is per-number rather than per-block precisely so a block cannot
+smuggle in a figure the entry never held. Every other `FromMyWork` paraphrase in
+the batch was then re-checked against its entry and eight more were rewritten —
+none had invented a number, but several had added claims the entry did not make
+(`exp-019` "retained better than anyone acquired by advertising", `exp-054`
+"never paid back inside the retention window", `exp-014` "contacted at a random
+point"). Paraphrase drift in a first-person block is the same class of problem as
+a wrong number, so they are now all written from the entry's own claim.
+
+**Three mis-parses in G03**, all of which failed pages that were correctly
+sourced:
+
+1. Scale suffixes were not read. `$100K` matched as `$100`, `₹9.59 crore` as
+   `9.59`. Both then failed against a fact carrying the figure in full. Fixed on
+   both sides, including the Indian scale words, because G15 requires the rupee
+   counterpart and nobody writes ₹9,58,90,000 in running prose.
+2. Scale *words* in fact claims were not read either, so a claim saying "between
+   1 million and 30 million dollars ARR" did not match a page's `$1M to $30M`.
+3. The fx exemption covered research facts but not experience numbers, so
+   converting `₹590` from an entry to `$6.15` — which G15 demands — read as
+   unsourced. G12 sources the original; the conversion of it is sourced too.
+
+Also found: `Fact.excerpt` is capped at 200 characters and 25 words, and
+`PageMeta.meta_description` at 155. Both fail at load and take the whole gate run
+down before any page is judged, so `author.py` now checks them itself, along with
+G10's title and keyword rules.
+
+Standing note for later batches: the gate's sentence splitter deliberately
+refuses to break after a digit, and it will not break before a `##` heading. A
+money sentence that ends on a number therefore merges with whatever follows, and
+G15 reads the merged text as carrying one currency only. Do not end a sentence on
+a figure.

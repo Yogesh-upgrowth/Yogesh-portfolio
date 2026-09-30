@@ -1,0 +1,72 @@
+<AnswerBox>
+What is NRR? Net revenue retention measures the revenue kept from an existing
+cohort a year on, with expansion counted and new customers excluded. The median
+for private B2B SaaS is 101%. A figure above the starting point means expansion
+outran churn, not that nothing churned.
+</AnswerBox>
+
+<FactTable
+  id="nrr-benchmarks"
+  caption="Net and gross revenue retention, by contract size"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Median private B2B SaaS, net and gross", "101% and 84%"], factId: "f-unit-16" },
+    { cells: ["Net revenue retention by ACV", "97% under $25K, ~108% at $25K to $100K, 118% above"], factId: "f-unit-17" },
+    { cells: ["Gross revenue retention by ACV", "82% under $25K, 88% at $25K to $100K, 95% above"], factId: "f-unit-18" },
+    { cells: ["Median recovery of involuntary churn", "47.6%, top performers 70% to 85%"], factId: "f-unit-13" },
+    { cells: ["Share of churn that is a failed payment", "20% to 40%"], factId: "f-unit-12" },
+    { cells: ["First-month renewal, strongest against weakest", "61% against 42%"], factId: "f-unit-10" },
+  ]}
+/>
+
+## How is NRR calculated?
+
+Take a cohort's revenue twelve months ago. Take the same cohort's revenue today,
+including any expansion and net of contraction and churn. Divide the second by the
+first.
+
+New customers stay out. That exclusion is the whole point. NRR asks one thing:
+whether the base you already had is worth more or less than it was. New sales
+cannot hide the answer.
+
+## What is a good NRR
+
+101% is the median for private B2B SaaS. Contract size explains most of the
+variation. Net retention runs 97% below $25K ACV, or about ₹23.97 lakh. It reaches
+roughly 108% between $25K and $100K. Above $100K, about ₹95.89 lakh, it runs 118%.
+
+Those bands are further apart than execution usually moves a single company, so
+an SMB product measured against an enterprise benchmark is being held to a
+structure it does not have. Larger contracts have more seats to add, more
+workflow embedded and more people invested in keeping them.
+
+## How a healthy NRR hides a shrinking base
+
+The arithmetic is unforgiving and easy to miss. NRR weights by revenue. A few
+large accounts expanding can therefore carry a majority of small accounts out
+of the base.
+
+<Example illustrative>
+100 accounts at ₹1,00,000 each, about $1,043, is ₹1,00,00,000 of cohort revenue,
+roughly $1,04,286. Lose 30 of them and grow the largest 10 by 50% each, and
+revenue holds near flat while the customer count falls by nearly a third.
+</Example>
+
+So NRR belongs beside GRR and beside customer count. Gross retention runs 82%
+below $25K ACV, about ₹23.97 lakh, against 95% above $100K. The gap between the
+two measures is the size of the leak expansion covers.
+
+## What moves NRR
+
+Expansion mechanics first, then collection. Between 20% and 40% of churn is a
+failed payment, and median recovery is 47.6%, so a measurable slice of lost
+revenue is recoverable without a renewal conversation.
+
+Onboarding sets the ceiling. First-month renewal spans 42% to 61% by category,
+and an account that never reached steady use will not expand later.
+
+<FromMyWork exp="exp-039">
+Making failures debuggable by the customer cut sales and support effort about
+25%. Idempotency, surfaced errors and retry mechanics meant customers resolved
+their own breakages instead of churning quietly.
+</FromMyWork>

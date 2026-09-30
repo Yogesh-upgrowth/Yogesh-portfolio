@@ -1,0 +1,75 @@
+<AnswerBox>
+What is MRR? Monthly recurring revenue normalises every active subscription to a
+monthly value and adds them together. Median growth at the $1M to $30M ARR band,
+roughly ₹9.59 crore to ₹287.67 crore, is 26%. The number matters far less than its
+four movements: new, expansion, contraction and churn.
+</AnswerBox>
+
+<FactTable
+  id="mrr-benchmarks"
+  caption="MRR reference points, and what each one constrains"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Median growth, $1M to $30M ARR", "26%, top performers 40% to 50%"], factId: "f-unit-19" },
+    { cells: ["Bootstrapped median growth, $3M to $20M ARR", "15%"], factId: "f-unit-20" },
+    { cells: ["Share of churn that is a failed payment", "20% to 40%"], factId: "f-unit-12" },
+    { cells: ["Recovery by intervention: retry / card updater / email", "40% / 25% / plus 15% to 20%"], factId: "f-unit-14" },
+    { cells: ["Typical monthly churn, mobile subscriptions", "5% to 12%"], factId: "f-unit-15" },
+    { cells: ["Median subscription app, monthly revenue", "$492 (about ₹47,178)"], factId: "f-glossary-0700-10" },
+  ]}
+/>
+
+## How is MRR calculated?
+
+Normalise each subscription to its monthly value, then sum. An annual plan
+divides by twelve. A quarterly plan divides by three.
+
+Two things do not belong in it. One-off fees are not recurring. An annual payment
+counted in the month it lands turns the series into a sawtooth nobody can read.
+Either mistake inflates one month and makes the next look like a collapse.
+
+<Example illustrative>
+200 subscribers on ₹800 a month, about $8.34, plus 50 on ₹8,000 a year, about
+$83.43, gives ₹1,93,333 of MRR, roughly $2,016.
+</Example>
+
+## What the four movements show
+
+New, expansion, contraction and churn. Every change in MRR decomposes into those
+four, and the decomposition is the reason to track MRR at all.
+
+A flat month can hold strong new revenue exactly cancelled by churn. The headline
+says nothing happened. The movements say two large things happened in opposite
+directions, and only one of them is under your control this quarter.
+
+## The movement that is usually missing
+
+Failed collection. Between 20% and 40% of churn is a payment failure rather than
+a cancellation, and in a four-way decomposition it lands silently in churn. So
+the report reads as customers leaving when much of it is money not collected.
+
+Sizing it is worth the effort, because the fixes are mechanical. Smart retry
+recovers about 40%. A card updater recovers 25%. Dunning email adds 15% to 20% on
+top. None of that needs a product change, and none of it needs a price change.
+
+## What is a good MRR growth rate
+
+At the $1M to $30M ARR band, roughly ₹9.59 crore to ₹287.67 crore, 26% is the
+median. Top performers run 40% to 50%.
+Funding changes the comparison, though. Bootstrapped companies between $3M and
+$20M ARR, roughly ₹28.77 crore to ₹191.78 crore, grow at a 15% median. A
+bootstrapped product measured against the venture median is being held to someone
+else's cost of capital.
+
+Scale is worth keeping in view. The median subscription app earns $492 a month,
+about ₹47,178. Most published growth benchmarks come from companies far past
+that point.
+
+<FromMyWork exp="exp-037">
+Pricing an integrations platform on execution volume and connector usage rather
+than seats took it to roughly $60K MRR, about ₹57.53 lakh. The price then tracked
+what the customer consumed instead of how many people logged in.
+</FromMyWork>
+
+Typical monthly churn of 5% to 12% sets the treadmill underneath all of it. New
+revenue has to clear that before growth begins.

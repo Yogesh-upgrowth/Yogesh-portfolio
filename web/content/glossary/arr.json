@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0696",
+  "url": "/glossary/arr",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is ARR? Formula, Benchmarks and What It Overstates",
+  "meta_description": "ARR annualises recurring revenue. The formula, median growth by band, the Rule of 40 median, and the three ways ARR gets inflated before a raise.",
+  "h1": "What is ARR (annual recurring revenue)?",
+  "primary_keyword": "what is arr",
+  "secondary_keywords": [
+    "arr formula",
+    "arr growth benchmark"
+  ],
+  "entity_a": "arr",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-19",
+    "f-unit-20",
+    "f-unit-21",
+    "f-unit-16",
+    "f-unit-17",
+    "f-unit-13"
+  ],
+  "experience_used": [
+    "exp-048"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/mrr",
+      "anchor": "MRR",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/nrr",
+      "anchor": "net revenue retention",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/rule-of-40-calculator",
+      "anchor": "the Rule of 40 calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks/retention/b2b-saas",
+      "anchor": "B2B SaaS retention benchmarks",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#arr-benchmarks",
+      "alt": "Six ARR reference points: median growth by revenue band, bootstrapped growth median, the median Rule of 40 score, median gross and net revenue retention, net revenue retention by contract size and the median involuntary-churn recovery rate, each row carrying its source and verification date",
+      "caption": "ARR reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between ARR and revenue?",
+      "a": "ARR counts only recurring contracted revenue, annualised. Revenue counts everything that arrived, including services, one-off fees and overages. A company with heavy services revenue has an ARR well below its revenue, and that is correct rather than a problem."
+    },
+    {
+      "q": "Is ARR just MRR times twelve?",
+      "a": "Arithmetically yes, and that is the trap. Multiplying a single month by twelve carries that month's seasonality, its churn and its one-off luck into a full-year figure twelve times over."
+    },
+    {
+      "q": "What is a good ARR growth rate?",
+      "a": "26% is the median between $1M and $30M ARR, with top performers at 40% to 50%. The median Rule of 40 score is 25%, and the measure only becomes meaningful from about $20M ARR."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Treats ARR as a claim that needs retention evidence beside it, pairing the growth medians with the 84% gross retention and 101% net retention that determine whether the annualised figure survives the year.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

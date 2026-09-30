@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0695",
+  "url": "/glossary/mrr",
+  "archetype": "glossary",
+  "primary_keyword": "what is mrr",
+  "secondary_keywords": [
+    "mrr formula",
+    "monthly recurring revenue benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-19",
+      "claim": "Median growth for companies between 1 million and 30 million dollars ARR is 26%, with top performers at 40% to 50%",
+      "value": "26",
+      "unit": "%",
+      "source_url": "https://aventis-advisors.com/rule-of-40-in-saas-2026/",
+      "source_title": "Rule of 40 in SaaS: 2026 Data, Benchmarks and Valuation Impact",
+      "source_domain": "aventis-advisors.com",
+      "excerpt": "For companies in the $1M-$30M ARR range, median growth is 26%, while top performers grow at 40-50%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-20",
+      "claim": "Bootstrapped SaaS companies between 3 million and 20 million dollars ARR grow at a 15% median",
+      "value": "15",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "SaaS Capital's 2026 private B2B SaaS benchmark shows median revenue growth of 15% for bootstrapped SaaS companies with $3m to $20m ARR.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-12",
+      "claim": "Between 20% and 40% of total subscription churn is payment failure rather than cancellation",
+      "value": "20-40",
+      "unit": "%",
+      "source_url": "https://recurly.com/research/churn-rate-benchmarks/",
+      "source_title": "Churn rate benchmarks",
+      "source_domain": "recurly.com",
+      "excerpt": "Companies that measure only active cancellations miss the 20 to 40% of total churn driven by payment failures.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-14",
+      "claim": "Smart retry alone recovers about 40% of failed payments, a card updater 25%, and dunning email adds 15 to 20% on top",
+      "value": "40",
+      "unit": "%",
+      "source_url": "https://www.digitalapplied.com/blog/failed-payment-recovery-dunning-playbook-2026",
+      "source_title": "Failed-Payment Recovery: The 2026 Dunning Playbook",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "Smart retry alone recovers 40%, card updater 25%, and emails add 15-20% on top; combining all three reaches 70%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-15",
+      "claim": "Monthly churn of 5% to 12% is typical for mobile subscription apps, with the best holding under 5%",
+      "value": "5-12",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-churn-rates/",
+      "source_title": "App Churn Rates 2026",
+      "source_domain": "businessofapps.com",
+      "excerpt": "For mobile subscription apps, monthly churn of 5-12% is typical, with the best apps under 5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-10",
+      "claim": "The median subscription app earns 492 US dollars a month, and 59.3% never pass 1,000 dollars in total revenue",
+      "value": "492",
+      "unit": "USD/month",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "The median subscription app earns $492 per month, with 59.3% making less than $1,000 total",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

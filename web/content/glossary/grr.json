@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0711",
+  "url": "/glossary/grr",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is GRR? Gross Revenue Retention Formula & Benchmarks",
+  "meta_description": "GRR measures revenue kept from an existing cohort, expansion excluded. The formula, the medians by contract size, and why it is the harder number to move.",
+  "h1": "What is GRR (gross revenue retention)?",
+  "primary_keyword": "what is grr",
+  "secondary_keywords": [
+    "grr formula",
+    "gross revenue retention benchmark"
+  ],
+  "entity_a": "grr",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-16",
+    "f-unit-18",
+    "f-unit-17",
+    "f-unit-14",
+    "f-unit-26",
+    "f-unit-27"
+  ],
+  "experience_used": [
+    "exp-002"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/nrr",
+      "anchor": "NRR",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/churn-rate",
+      "anchor": "churn rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/nrr-grr-calculator",
+      "anchor": "the NRR and GRR calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/rbi-e-mandate-rules-recurring-payments",
+      "anchor": "RBI e-mandate rules",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#grr-benchmarks",
+      "alt": "Six reference points for gross revenue retention: the median gross and net figures, gross retention by contract size, net retention by contract size, dunning recovery by intervention, India's recurring-debit authentication threshold and the card failure spike after India's 2021 rules, each row carrying its source and verification date",
+      "caption": "Gross revenue retention reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good GRR?",
+      "a": "The median for private B2B SaaS fell to 84%. By contract size it runs 82% below $25K ACV, 88% between $25K and $100K, and 95% above $100K. GRR cannot rise above the revenue the cohort started with, so it is a ceiling measure."
+    },
+    {
+      "q": "Why is GRR harder to improve than NRR?",
+      "a": "Because expansion cannot help it. NRR can be rescued by upselling the accounts that stay. GRR only improves when fewer accounts and fewer rupees leave, which means fixing the product, the onboarding or the collection."
+    },
+    {
+      "q": "Does a failed payment count against GRR?",
+      "a": "Yes, and that is why the number is often worse than the product deserves. Revenue lost to a declined mandate leaves the cohort the same way a cancellation does, and the dashboard rarely distinguishes them."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Treats GRR as partly a collections metric rather than purely a satisfaction metric, with India's mandate thresholds and post-2021 card failure rates as the concrete case, and notes the data quality that reading it honestly requires.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0692",
+  "url": "/glossary/ltv-to-cac-ratio",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is LTV:CAC Ratio? Formula, Benchmarks and Limits",
+  "meta_description": "LTV:CAC compares what a customer returns against what they cost. The formula, the 3:1 bar and the 2.5:1 reality, and the three ways the ratio gets faked.",
+  "h1": "What is LTV:CAC ratio (and what does it hide)?",
+  "primary_keyword": "what is ltv:cac ratio",
+  "secondary_keywords": [
+    "ltv cac ratio formula",
+    "ltv to cac benchmark"
+  ],
+  "entity_a": "ltv-to-cac-ratio",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-06",
+    "f-unit-08",
+    "f-unit-04",
+    "f-unit-07",
+    "f-unit-35",
+    "f-glossary-0700-03"
+  ],
+  "experience_used": [
+    "exp-044"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/ltv",
+      "anchor": "LTV",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/cac",
+      "anchor": "CAC",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/ltv-calculator",
+      "anchor": "the LTV calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks/churn",
+      "anchor": "churn benchmarks",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#ltv-cac-benchmarks",
+      "alt": "Six reference points for the LTV to CAC ratio: the medians by monthly price tier, the investor expectation, realised year-one LTV, typical payback period, India's cost-per-install advantage and India's trial conversion gap, each row carrying its source and verification date",
+      "caption": "LTV to CAC reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good LTV:CAC ratio?",
+      "a": "3 to 1 remains the standing bar and investors increasingly ask for 4 to 1 or 5 to 1. Published medians for subscription apps sit lower, at 2.5 to 1 in the $8.99 to $11.99 monthly tier, so the bar is an ambition rather than a norm."
+    },
+    {
+      "q": "Can an LTV:CAC ratio be too high?",
+      "a": "Yes. A ratio far past 5 to 1 usually means underspending rather than efficiency. If every acquired cohort pays back five times over, the constraint is the acquisition budget, not the economics."
+    },
+    {
+      "q": "Why does LTV:CAC hide problems?",
+      "a": "It has no time in it. A 4 to 1 ratio that takes three years to realise and a 4 to 1 ratio that pays back in three months are the same number and not the same business. Read payback period beside it."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "States the published subscription-app medians (2.5 to 1, rising to 2.7 to 1 with price) against the 3:1 bar the ranking pages repeat as though it were typical, and shows why the ratio needs payback period beside it to mean anything.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

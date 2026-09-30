@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0710",
+  "url": "/glossary/nrr",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is NRR? Net Revenue Retention Formula & Benchmarks",
+  "meta_description": "NRR measures revenue kept from existing customers, expansion included. The formula, the medians by contract size, and why over 100% can still hide churn.",
+  "h1": "What is NRR (net revenue retention)?",
+  "primary_keyword": "what is nrr",
+  "secondary_keywords": [
+    "nrr formula",
+    "net revenue retention benchmark"
+  ],
+  "entity_a": "nrr",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-16",
+    "f-unit-17",
+    "f-unit-18",
+    "f-unit-13",
+    "f-unit-12",
+    "f-unit-10"
+  ],
+  "experience_used": [
+    "exp-039"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/grr",
+      "anchor": "GRR",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/churn-rate",
+      "anchor": "churn rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/nrr-grr-calculator",
+      "anchor": "the NRR and GRR calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks/retention/b2b-saas",
+      "anchor": "B2B SaaS retention benchmarks",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#nrr-benchmarks",
+      "alt": "Six reference points for net revenue retention: the median gross and net figures, net retention by contract size, gross retention by contract size, the median involuntary-churn recovery rate, the involuntary share of churn and first-month renewal by category, each row carrying its source and verification date",
+      "caption": "Net revenue retention reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good NRR?",
+      "a": "The median for private B2B SaaS is 101%. Contract size decides most of it: 97% below $25K ACV against 118% above $100K. Judge yours against your own contract band, because the bands differ by more than execution does."
+    },
+    {
+      "q": "What is the difference between NRR and GRR?",
+      "a": "NRR includes expansion revenue and GRR does not. GRR can never rise above its starting point, so it measures how leaky the base is. NRR can rise above its starting point and measures whether expansion outruns the leak."
+    },
+    {
+      "q": "Can a healthy NRR hide a problem?",
+      "a": "Routinely. A handful of large accounts expanding can mask a majority of small accounts leaving. Read NRR beside GRR and beside customer count, or a shrinking base looks like growth."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Shows the specific arithmetic by which NRR above 100% coexists with a shrinking customer base, and pairs the contract-size bands for both net and gross retention so the leak can be read separately from the expansion covering it.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

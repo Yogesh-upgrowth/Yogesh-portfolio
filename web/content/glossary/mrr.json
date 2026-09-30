@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0695",
+  "url": "/glossary/mrr",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is MRR? Formula, Benchmarks and the Four Movements",
+  "meta_description": "MRR is normalised recurring monthly revenue. The formula, the four movements that explain any change in it, and the one they all hide.",
+  "h1": "What is MRR (monthly recurring revenue)?",
+  "primary_keyword": "what is mrr",
+  "secondary_keywords": [
+    "mrr formula",
+    "monthly recurring revenue benchmark"
+  ],
+  "entity_a": "mrr",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-19",
+    "f-unit-20",
+    "f-unit-12",
+    "f-unit-14",
+    "f-unit-15",
+    "f-glossary-0700-10"
+  ],
+  "experience_used": [
+    "exp-037"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/arr",
+      "anchor": "ARR",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/churn-rate",
+      "anchor": "churn rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/subscription-mrr-calculator",
+      "anchor": "the MRR calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/payment-success-rates-india",
+      "anchor": "payment success rates in India",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#mrr-benchmarks",
+      "alt": "Six MRR reference points: median growth by revenue band, bootstrapped growth median, the involuntary share of churn, dunning recovery by intervention, typical monthly churn and the median subscription app's monthly revenue, each row carrying its source and verification date",
+      "caption": "MRR reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How do I calculate MRR?",
+      "a": "Normalise every subscription to a monthly value and add them up. An annual plan divides by twelve. Do not count one-off fees, and do not count the annual payment in the month it arrives, or the series becomes unreadable."
+    },
+    {
+      "q": "What are the four MRR movements?",
+      "a": "New, expansion, contraction and churn. Any change in MRR decomposes into those four, and the decomposition is the whole value of tracking it. A flat month can hide strong new revenue cancelled out by churn."
+    },
+    {
+      "q": "What is a good MRR growth rate?",
+      "a": "Median growth for companies between $1M and $30M ARR is 26%, with top performers at 40% to 50%. Bootstrapped companies between $3M and $20M ARR grow at a 15% median, which is the fairer comparison without funding."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Names the movement the standard four-way decomposition leaves out — revenue lost to failed collection rather than to cancellation, 20 to 40% of churn — and gives the recovery rates by intervention so it can be sized.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

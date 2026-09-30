@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0693",
+  "url": "/glossary/cac-payback-period",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is CAC Payback Period? Formula and Benchmarks",
+  "meta_description": "CAC payback is how long a customer takes to repay what they cost. The formula, the 60 to 90 day norm, and why it constrains growth more than any ratio.",
+  "h1": "What is CAC payback period?",
+  "primary_keyword": "what is cac payback period",
+  "secondary_keywords": [
+    "cac payback formula",
+    "cac payback benchmark"
+  ],
+  "entity_a": "cac-payback-period",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-07",
+    "f-unit-09",
+    "f-unit-19",
+    "f-unit-21",
+    "f-unit-26",
+    "f-unit-36"
+  ],
+  "experience_used": [
+    "exp-054"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/cac",
+      "anchor": "CAC",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/unit-economics",
+      "anchor": "unit economics",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/cac-payback-calculator",
+      "anchor": "the CAC payback calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/upi-autopay-for-subscriptions",
+      "anchor": "UPI Autopay for subscriptions",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#payback-benchmarks",
+      "alt": "Six reference points for CAC payback: the typical subscription app window, the monthly retention curve, median growth by revenue band, the median Rule of 40 score, India's recurring-debit authentication threshold and India's median cost per install, each row carrying its source and verification date",
+      "caption": "Payback reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good CAC payback period?",
+      "a": "Subscription apps typically recover acquisition cost in 60 to 90 days. Longer is survivable with patient capital and fatal without it, because payback sets how fast you can reinvest."
+    },
+    {
+      "q": "How do I calculate CAC payback period?",
+      "a": "Divide CAC by the monthly gross profit one customer produces. Gross profit, not revenue: store commission and payment fees are paid before any of it repays acquisition."
+    },
+    {
+      "q": "Why does payback matter more than LTV:CAC?",
+      "a": "Because it carries time, and the ratio does not. Payback decides how often the same rupee can be spent again. Two businesses with identical ratios and different payback grow at different speeds on the same capital."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Frames payback as the reinvestment-rate constraint rather than a health metric, and names the India-specific failure mode where a mandate that needs re-authentication stretches payback without changing price or churn.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

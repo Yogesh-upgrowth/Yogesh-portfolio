@@ -1,0 +1,70 @@
+<AnswerBox>
+What is retention rate? It is the share of a cohort still active after a set
+period. The median app retains 4% of users at day 30 and 25.3% return on day one.
+Paid subscription retention is a different and much higher measure, because a
+subscriber has already selected themselves.
+</AnswerBox>
+
+<FactTable
+  id="retention-benchmarks"
+  caption="Retention reference points, kept separate by what they measure"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Median app retention, day 1 and day 30", "25.3% and 4%"], factId: "f-unit-38" },
+    { cells: ["iOS against Android, day 1 and day 30", "25.65% and 4.13% against 23.01% and 2.59%"], factId: "f-unit-39" },
+    { cells: ["Monthly subscription retention, day 30 / 90 / one year", "65% / 43% / 17%"], factId: "f-unit-09" },
+    { cells: ["Annual renewal median, strongest against weakest", "40% against 23%"], factId: "f-unit-11" },
+    { cells: ["First-month renewal, strongest against weakest", "61% against 42%"], factId: "f-unit-10" },
+    { cells: ["Average SaaS activation rate", "36%"], factId: "f-unit-22" },
+  ]}
+/>
+
+## How is retention rate calculated?
+
+Take a cohort, fix its start date, and count how many are still active at day N.
+The cohort has to be closed. Measuring against a moving base mixes new arrivals
+into an old cohort and flatters every reading.
+
+Two measures share the name and should not. Install retention asks whether a user
+came back. Subscription retention asks whether a payer renewed. The first has a
+4% day-30 median. The second holds 65% at day 30. Quoting one as the other is how
+targets become unreachable.
+
+## What the curve says that a single day cannot
+
+Shape beats level. A curve that falls steeply and then flattens has found a
+durable use case. A curve that keeps sliding has not, however good its day-1
+number looks.
+
+Monthly subscriptions hold 65% at day 30, 43% at day 90 and 17% at one year.
+Three points, one story: the damage concentrates early, and the survivors are
+worth far more than the average implies. Platform changes the level too. iOS
+averages 4.13% at day 30 against 2.59% on Android, so a blended cross-platform
+target hides which half of the base is actually leaving.
+
+## What moves retention
+
+The first session moves it most. Average SaaS activation sits at 36%, and
+activation is the gate everything downstream passes through. A user who never
+reached the point of value has nothing to be retained by.
+
+Category sets the rest. Annual renewal runs at a 40% median in the strongest
+categories and 23% in the weakest, with first-month renewal spanning 42% to 61%.
+Those gaps are wider than most teams move their own number in a year.
+
+<FromMyWork exp="exp-019">
+Letting users share a vehicle report turned a utility check into an acquisition
+channel. Shared reports carried 12.3% of new installs within four months, and
+those users arrived with the intent already formed.
+</FromMyWork>
+
+## What retention work usually gets wrong
+
+Two errors. Optimising day 1 because it is the number that moves fastest, when
+day 30 is the one that pays. And building depth for users who never activated.
+
+<FromMyWork exp="exp-018">
+A feature I championed reached 2.8% adoption and was killed. Maintenance logging
+needed repeated deliberate effort and returned nothing until enough history had
+accumulated, so it never cleared its own activation gate.
+</FromMyWork>

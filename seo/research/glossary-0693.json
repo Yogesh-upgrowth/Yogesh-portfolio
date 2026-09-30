@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0693",
+  "url": "/glossary/cac-payback-period",
+  "archetype": "glossary",
+  "primary_keyword": "what is cac payback period",
+  "secondary_keywords": [
+    "cac payback formula",
+    "cac payback benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-07",
+      "claim": "Subscription apps typically recover acquisition cost in 60 to 90 days",
+      "value": "60-90",
+      "unit": "days",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions/",
+      "source_title": "State of In-App Subscriptions 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "For subscription apps the typical CAC payback period is 60-90 days, depending on plan length, trial conversion rate and pricing.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-09",
+      "claim": "Monthly plans retain about 65% at day 30, 43% at day 90 and 17% at one year",
+      "value": "17",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "For monthly plans, day 30 retention is approximately 65%, day 90 approximately 43%, and one-year approximately 17%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-19",
+      "claim": "Median growth for companies between 1 million and 30 million dollars ARR is 26%, with top performers at 40% to 50%",
+      "value": "26",
+      "unit": "%",
+      "source_url": "https://aventis-advisors.com/rule-of-40-in-saas-2026/",
+      "source_title": "Rule of 40 in SaaS: 2026 Data, Benchmarks and Valuation Impact",
+      "source_domain": "aventis-advisors.com",
+      "excerpt": "For companies in the $1M-$30M ARR range, median growth is 26%, while top performers grow at 40-50%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-21",
+      "claim": "The median Rule of 40 score was 25% in 2025, and the measure only starts to bite from about 20 million dollars ARR",
+      "value": "25",
+      "unit": "%",
+      "source_url": "https://aventis-advisors.com/rule-of-40-in-saas-2026/",
+      "source_title": "Rule of 40 in SaaS: 2026 Data, Benchmarks and Valuation Impact",
+      "source_domain": "aventis-advisors.com",
+      "excerpt": "The 2025 median Rule of 40 score is 25%. The Rule of 40 becomes a meaningful benchmark at roughly $20M ARR and above.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-26",
+      "claim": "The RBI E-Mandate Framework 2026 allows recurring debits up to 15,000 rupees without additional authentication, and up to 1,00,000 rupees for insurance, mutual funds and credit-card bills",
+      "value": "15000",
+      "unit": "INR",
+      "source_url": "https://amlegals.com/upi-autopay-and-recurring-payments-compliance-checklist-under-rbis-e-mandate-framework-2026/",
+      "source_title": "UPI Autopay and Recurring Payments: Compliance Checklist Under RBI's E-Mandate Framework 2026",
+      "source_domain": "amlegals.com",
+      "excerpt": "Recurring transactions up to Rs 15,000 process without additional factor authentication after setup; insurance, mutual funds and card bills up to Rs 1,00,000.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-36",
+      "claim": "India's median cost per install fell from 0.71 dollars in July 2025 to 0.42 dollars in June 2026",
+      "value": "0.42",
+      "unit": "USD",
+      "source_url": "https://linkrunner.io/tools/cost-per-install-benchmark",
+      "source_title": "Cost per install benchmarks by country, platform and category",
+      "source_domain": "linkrunner.io",
+      "excerpt": "India's median CPI averaged about $1.18 per install, starting at $0.71 in July 2025 and finishing at $0.42 in June 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}
