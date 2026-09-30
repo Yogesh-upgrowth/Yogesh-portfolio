@@ -28,7 +28,11 @@
     "f-cs-ml-ux-growth-3x-conversion-11",
     "f-cs-ml-ux-growth-3x-conversion-12",
     "f-cs-ml-ux-growth-3x-conversion-13",
-    "f-cs-ml-ux-growth-3x-conversion-14"
+    "f-cs-ml-ux-growth-3x-conversion-14",
+    "f-cs-ml-ux-growth-3x-conversion-15",
+    "f-cs-ml-ux-growth-3x-conversion-16",
+    "f-cs-ml-ux-growth-3x-conversion-17",
+    "f-cs-ml-ux-growth-3x-conversion-18"
   ],
   "experience_used": [
     "exp-003",
@@ -93,6 +97,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

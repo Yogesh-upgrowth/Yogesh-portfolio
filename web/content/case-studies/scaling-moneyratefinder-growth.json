@@ -45,7 +45,12 @@
     "f-cs-scaling-moneyratefinder-growth-28",
     "f-cs-scaling-moneyratefinder-growth-29",
     "f-cs-scaling-moneyratefinder-growth-30",
-    "f-cs-scaling-moneyratefinder-growth-31"
+    "f-cs-scaling-moneyratefinder-growth-31",
+    "f-cs-scaling-moneyratefinder-growth-32",
+    "f-cs-scaling-moneyratefinder-growth-33",
+    "f-cs-scaling-moneyratefinder-growth-34",
+    "f-cs-scaling-moneyratefinder-growth-35",
+    "f-cs-scaling-moneyratefinder-growth-36"
   ],
   "experience_used": [
     "exp-016",
@@ -110,6 +115,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

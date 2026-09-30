@@ -210,6 +210,20 @@
     },
     {
       "fact_id": "f-cs-ux-redesign-conversion-28-15",
+      "claim": "Mobile users were 4.8× more likely to miss the CTA than desktop users. The design that worked acceptably on desktop was broken on mobile. And mobile was 68% of our traffic. We'd been shipping a broken experience to more than half our…",
+      "value": "4.8",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/ux-redesign-conversion-28",
+      "source_title": "UX Redesign That Improved Conversion by 28% (Before vs After Breakdown)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Mobile users were 4.8× more likely to miss the CTA than desktop users. The design that worked acceptably on desktop was broken on mobile. And",
+      "published_on": "May 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ux-redesign-conversion-28-16",
       "claim": "Primary CTA moved from below-fold inline position to sticky bottom bar on mobile. Always visible regardless of scroll position. On scroll down: compresses to icon + text. On scroll up: expands. CTR improvement: from 6.8% to 14.1%.",
       "value": "6.8%",
       "unit": "%",
@@ -223,7 +237,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ux-redesign-conversion-28-16",
+      "fact_id": "f-cs-ux-redesign-conversion-28-17",
       "claim": "Primary CTA moved from below-fold inline position to sticky bottom bar on mobile. Always visible regardless of scroll position. On scroll down: compresses to icon + text. On scroll up: expands. CTR improvement: from 6.8% to 14.1%.",
       "value": "14.1%",
       "unit": "%",
@@ -237,7 +251,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ux-redesign-conversion-28-17",
+      "fact_id": "f-cs-ux-redesign-conversion-28-18",
       "claim": "Minimum touch target raised from 36px to 48px for all interactive elements. Elements within 8px of another interactive element: spacing increased to 16px minimum. Rage clicks on wrong elements dropped 71%.",
       "value": "71%",
       "unit": "%",
@@ -251,21 +265,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ux-redesign-conversion-28-18",
-      "claim": "Target: reduce from 28% of sessions to < 10% within 60 days of full rollout",
+      "fact_id": "f-cs-ux-redesign-conversion-28-19",
+      "claim": "Target: reduce from 28% of sessions to \\< 10% within 60 days of full rollout",
       "value": "10%",
       "unit": "%",
       "source_url": "https://pmyogesh.com/case-study/ux-redesign-conversion-28",
       "source_title": "UX Redesign That Improved Conversion by 28% (Before vs After Breakdown)",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Target: reduce from 28% of sessions to < 10% within 60 days of full rollout",
+      "excerpt": "Target: reduce from 28% of sessions to \\< 10% within 60 days of full rollout",
       "published_on": "May 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-ux-redesign-conversion-28-19",
+      "fact_id": "f-cs-ux-redesign-conversion-28-20",
       "claim": "CTA CTR: 6.8% → 14.1%. Rage clicks: 28% → 9% of sessions.",
       "value": "9%",
       "unit": "%",
@@ -279,7 +293,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ux-redesign-conversion-28-20",
+      "fact_id": "f-cs-ux-redesign-conversion-28-21",
       "claim": "All winning variants deployed to 100%",
       "value": "100%",
       "unit": "%",
@@ -293,7 +307,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ux-redesign-conversion-28-21",
+      "fact_id": "f-cs-ux-redesign-conversion-28-22",
       "claim": "CTA Click-Through: +108% (6.8% → 14.1%)",
       "value": "108%",
       "unit": "%",
@@ -307,7 +321,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ux-redesign-conversion-28-22",
+      "fact_id": "f-cs-ux-redesign-conversion-28-23",
       "claim": "Rage click rate per screen tracked automatically. Alert if any screen crosses 15% rage click rate in a 7-day window. Catch new confusions as they emerge, not 8 months later.",
       "value": "15%",
       "unit": "%",
@@ -321,7 +335,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ux-redesign-conversion-28-23",
+      "fact_id": "f-cs-ux-redesign-conversion-28-24",
       "claim": "All new feature designs reviewed against heatmap data from similar existing screens before shipping. If the pattern shows users don't scroll past 60% of the page, don't put critical content below 60%.",
       "value": "60%",
       "unit": "%",
@@ -363,25 +377,33 @@
       "f-cs-ux-redesign-conversion-28-11",
       "f-cs-ux-redesign-conversion-28-12",
       "f-cs-ux-redesign-conversion-28-13",
-      "f-cs-ux-redesign-conversion-28-14"
+      "f-cs-ux-redesign-conversion-28-14",
+      "f-cs-ux-redesign-conversion-28-15"
     ],
     "interventions": [
-      "f-cs-ux-redesign-conversion-28-15",
       "f-cs-ux-redesign-conversion-28-16",
       "f-cs-ux-redesign-conversion-28-17",
       "f-cs-ux-redesign-conversion-28-18",
       "f-cs-ux-redesign-conversion-28-19",
-      "f-cs-ux-redesign-conversion-28-20"
-    ],
-    "results": [
+      "f-cs-ux-redesign-conversion-28-20",
       "f-cs-ux-redesign-conversion-28-21"
     ],
+    "results": [
+      "f-cs-ux-redesign-conversion-28-22"
+    ],
     "applicability": [
-      "f-cs-ux-redesign-conversion-28-22",
-      "f-cs-ux-redesign-conversion-28-23"
+      "f-cs-ux-redesign-conversion-28-23",
+      "f-cs-ux-redesign-conversion-28-24"
     ],
     "answer_box": [
-      "f-cs-ux-redesign-conversion-28-01"
+      "f-cs-ux-redesign-conversion-28-08",
+      "f-cs-ux-redesign-conversion-28-09",
+      "f-cs-ux-redesign-conversion-28-10",
+      "f-cs-ux-redesign-conversion-28-11",
+      "f-cs-ux-redesign-conversion-28-12",
+      "f-cs-ux-redesign-conversion-28-13",
+      "f-cs-ux-redesign-conversion-28-14",
+      "f-cs-ux-redesign-conversion-28-15"
     ]
   }
 }

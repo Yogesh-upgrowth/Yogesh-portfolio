@@ -140,6 +140,34 @@
     },
     {
       "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-10",
+      "claim": "4.2 million monthly search impressions at 1.8% CTR means 3.9 million people saw CarInfo in search results and didn't click. The distribution problem wasn't SEO — it was conversion from impression to visit. That's a title/meta/intent…",
+      "value": "4.2 million",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/carinfo-45m-mau",
+      "source_title": "From 3.8M to 45M+ Monthly Active Users: The CarInfo Growth Architecture",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "4.2 million monthly search impressions at 1.8% CTR means 3.9 million people saw CarInfo in search results and didn't click. The distribution problem wasn't SEO",
+      "published_on": "Mar 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-11",
+      "claim": "4.2 million monthly search impressions at 1.8% CTR means 3.9 million people saw CarInfo in search results and didn't click. The distribution problem wasn't SEO — it was conversion from impression to visit. That's a title/meta/intent…",
+      "value": "3.9 million",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/carinfo-45m-mau",
+      "source_title": "From 3.8M to 45M+ Monthly Active Users: The CarInfo Growth Architecture",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "4.2 million monthly search impressions at 1.8% CTR means 3.9 million people saw CarInfo in search results and didn't click. The distribution problem wasn't SEO",
+      "published_on": "Mar 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-12",
       "claim": "Most product teams track 10–20 keywords. I tracked 4,200. The volume distribution was staggering.",
       "value": "4,200",
       "unit": "count",
@@ -153,7 +181,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-11",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-13",
       "claim": "challan check by number — 9.4M queries/month — Avg pos. 18.4 — New landing page",
       "value": "9.4M",
       "unit": "count",
@@ -167,7 +195,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-12",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-14",
+      "claim": "challan check by number — 9.4M queries/month — Avg pos. 18.4 — New landing page",
+      "value": "18.4",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/carinfo-45m-mau",
+      "source_title": "From 3.8M to 45M+ Monthly Active Users: The CarInfo Growth Architecture",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "challan check by number — 9.4M queries/month — Avg pos. 18.4 — New landing page",
+      "published_on": "Mar 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-15",
       "claim": "insurance expiry check — 7.1M queries/month — Not ranking — Entirely untapped",
       "value": "7.1M",
       "unit": "count",
@@ -181,7 +223,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-13",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-16",
       "claim": "vehicle owner details — 4.8M queries/month — Avg pos. 31 — Content architecture needed",
       "value": "4.8M",
       "unit": "count",
@@ -195,35 +237,35 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-14",
-      "claim": "The keyword landscape showed 55M+ monthly searches directly relevant to CarInfo — and we were capturing about 4.2M impressions from it. The TAM wasn't being exhausted. It was barely being touched.",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-17",
+      "claim": "The keyword market showed 55M+ monthly searches directly relevant to CarInfo — and we were capturing about 4.2M impressions from it. The TAM wasn't being exhausted. It was barely being touched.",
       "value": "55M",
       "unit": "count",
       "source_url": "https://pmyogesh.com/case-study/carinfo-45m-mau",
       "source_title": "From 3.8M to 45M+ Monthly Active Users: The CarInfo Growth Architecture",
       "source_domain": "pmyogesh.com",
-      "excerpt": "The keyword landscape showed 55M+ monthly searches directly relevant to CarInfo — and we were capturing about 4.2M impressions from it. The TAM wasn't being",
+      "excerpt": "The keyword market showed 55M+ monthly searches directly relevant to CarInfo — and we were capturing about 4.2M impressions from it. The TAM wasn't being",
       "published_on": "Mar 2026",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-15",
-      "claim": "5,000+ vehicle number, RTO, state, and city specific landing pages. Each page dynamically populated with real data. Built to capture the long-tail query landscape that no competitor was systematically addressing.",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-18",
+      "claim": "5,000+ vehicle number, RTO, state, and city specific landing pages. Each page dynamically populated with real data. Built to capture the long-tail query market that no competitor was systematically addressing.",
       "value": "5,000",
       "unit": "count",
       "source_url": "https://pmyogesh.com/case-study/carinfo-45m-mau",
       "source_title": "From 3.8M to 45M+ Monthly Active Users: The CarInfo Growth Architecture",
       "source_domain": "pmyogesh.com",
-      "excerpt": "5,000+ vehicle number, RTO, state, and city specific landing pages. Each page dynamically populated with real data. Built to capture the long-tail query landscape that",
+      "excerpt": "5,000+ vehicle number, RTO, state, and city specific landing pages. Each page dynamically populated with real data. Built to capture the long-tail query market that",
       "published_on": "Mar 2026",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-16",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-19",
       "claim": "Technical architecture complete. 400 initial pages deployed.",
       "value": "400",
       "unit": "count",
@@ -237,7 +279,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-17",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-20",
       "claim": "Organic clicks +180%. MAU: 3.8M → 9.2M.",
       "value": "180%",
       "unit": "%",
@@ -251,7 +293,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-18",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-21",
       "claim": "Organic clicks +180%. MAU: 3.8M → 9.2M.",
       "value": "9.2M",
       "unit": "count",
@@ -265,7 +307,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-19",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-22",
       "claim": "1,800 additional pages live across challan, insurance, RTO categories",
       "value": "1,800",
       "unit": "count",
@@ -279,7 +321,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-20",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-23",
       "claim": "MAU: 9.2M → 28M. Referral share of new installs: 22%.",
       "value": "28M",
       "unit": "count",
@@ -293,7 +335,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-21",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-24",
       "claim": "MAU: 9.2M → 28M. Referral share of new installs: 22%.",
       "value": "22%",
       "unit": "%",
@@ -307,7 +349,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-22",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-25",
       "claim": "Long-tail pages ranking page 1: 380+ new keyword positions captured",
       "value": "380",
       "unit": "count",
@@ -321,7 +363,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-23",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-26",
+      "claim": "D30 retention improving: engagement loops driving 3.1 avg sessions/retained user",
+      "value": "3.1",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/carinfo-45m-mau",
+      "source_title": "From 3.8M to 45M+ Monthly Active Users: The CarInfo Growth Architecture",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "D30 retention improving: engagement loops driving 3.1 avg sessions/retained user",
+      "published_on": "Mar 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-27",
       "claim": "MAU: 28M → 45M+. YoY growth 1,084%.",
       "value": "1,084%",
       "unit": "%",
@@ -335,7 +391,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-24",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-28",
       "claim": "Push notification CTR: 2.1% → 8.4% (event-triggered, vehicle-specific)",
       "value": "8.4%",
       "unit": "%",
@@ -349,7 +405,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-25",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-29",
       "claim": "Organic Search Traffic — 4.2M impressions/mo — 38M impressions/mo",
       "value": "38M",
       "unit": "count",
@@ -363,7 +419,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-26",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-30",
       "claim": "D30 Retention — 11% — 19%",
       "value": "19%",
       "unit": "%",
@@ -377,7 +433,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-27",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-31",
       "claim": "Page-1 Keyword Rankings — ~40 — 420+",
       "value": "420",
       "unit": "count",
@@ -391,7 +447,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-28",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-32",
+      "claim": "Avg Sessions per User (retained) — 1.4 — 3.1",
+      "value": "1.4",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/carinfo-45m-mau",
+      "source_title": "From 3.8M to 45M+ Monthly Active Users: The CarInfo Growth Architecture",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Avg Sessions per User (retained) — 1.4 — 3.1",
+      "published_on": "Mar 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-33",
       "claim": "We spent month 1 on title/meta rewrites for our existing 40 pages before building new ones. CTR went from 1.8% to 4.1% on existing impressions alone. That alone was equivalent to doubling organic traffic — without a single new page.…",
       "value": "4.1%",
       "unit": "%",
@@ -405,7 +475,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-29",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-34",
       "claim": "Our 2.1% CTR baseline was caused by sending too many generic notifications. When we switched to event-triggered (insurance expires in 7 days, challan unpaid, fitness certificate lapsing) CTR hit 8.4%. Frequency went down 70%. Engagement…",
       "value": "70%",
       "unit": "%",
@@ -419,7 +489,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-30",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-35",
       "claim": "Our 2.1% CTR baseline was caused by sending too many generic notifications. When we switched to event-triggered (insurance expires in 7 days, challan unpaid, fitness certificate lapsing) CTR hit 8.4%. Frequency went down 70%. Engagement…",
       "value": "300%",
       "unit": "%",
@@ -433,7 +503,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-31",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-36",
       "claim": "First batch of 800 pages went live with 90% identical content structure and minimal unique data per page. Google flagged them as thin content. Rankings didn't materialise. We'd built scale without substance.",
       "value": "800",
       "unit": "count",
@@ -447,7 +517,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-32",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-37",
       "claim": "First batch of 800 pages went live with 90% identical content structure and minimal unique data per page. Google flagged them as thin content. Rankings didn't materialise. We'd built scale without substance.",
       "value": "90%",
       "unit": "%",
@@ -461,7 +531,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-33",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-38",
       "claim": "Rebuilt page templates with dynamic data requirements: each page must surface at least 4 unique data points (real RTO code, jurisdiction, fee schedules, challan categories). Redeployed 600 of the 800 pages. Rankings started improving…",
       "value": "600",
       "unit": "count",
@@ -475,7 +545,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-34",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-39",
+      "claim": "Segmented reminder cadence: 45, 30, 14, 7, 3, 1, 0 days. Notification copy changed per segment to reflect urgency. Users with \\<7 days received a 'Critical' alert; users >30 days received an informational 'heads up'. Conversion from…",
+      "value": "3.4",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/carinfo-45m-mau",
+      "source_title": "From 3.8M to 45M+ Monthly Active Users: The CarInfo Growth Architecture",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "received an informational 'heads up'. Conversion from notification to renewal action improved 3.4×.",
+      "published_on": "Mar 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-40",
       "claim": "We built the share feature but put it in the profile menu. Usage rate was under 0.3% of users. It might as well not have existed.",
       "value": "0.3%",
       "unit": "%",
@@ -489,7 +573,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-35",
+      "fact_id": "f-cs-carinfo-3-8m-to-45m-mau-41",
       "claim": "Moved share CTA to appear at the natural completion moment of every lookup — after RC data loaded, after challan resolved, after insurance status confirmed. 'Share this info' appearing when the user already has the result in front of…",
       "value": "7.1%",
       "unit": "%",
@@ -525,13 +609,14 @@
       "f-cs-carinfo-3-8m-to-45m-mau-07",
       "f-cs-carinfo-3-8m-to-45m-mau-08",
       "f-cs-carinfo-3-8m-to-45m-mau-09",
-      "f-cs-carinfo-3-8m-to-45m-mau-25",
-      "f-cs-carinfo-3-8m-to-45m-mau-26",
-      "f-cs-carinfo-3-8m-to-45m-mau-27"
-    ],
-    "interventions": [
       "f-cs-carinfo-3-8m-to-45m-mau-10",
       "f-cs-carinfo-3-8m-to-45m-mau-11",
+      "f-cs-carinfo-3-8m-to-45m-mau-29",
+      "f-cs-carinfo-3-8m-to-45m-mau-30",
+      "f-cs-carinfo-3-8m-to-45m-mau-31",
+      "f-cs-carinfo-3-8m-to-45m-mau-32"
+    ],
+    "interventions": [
       "f-cs-carinfo-3-8m-to-45m-mau-12",
       "f-cs-carinfo-3-8m-to-45m-mau-13",
       "f-cs-carinfo-3-8m-to-45m-mau-14",
@@ -544,22 +629,62 @@
       "f-cs-carinfo-3-8m-to-45m-mau-21",
       "f-cs-carinfo-3-8m-to-45m-mau-22",
       "f-cs-carinfo-3-8m-to-45m-mau-23",
-      "f-cs-carinfo-3-8m-to-45m-mau-24"
+      "f-cs-carinfo-3-8m-to-45m-mau-24",
+      "f-cs-carinfo-3-8m-to-45m-mau-25",
+      "f-cs-carinfo-3-8m-to-45m-mau-26",
+      "f-cs-carinfo-3-8m-to-45m-mau-27",
+      "f-cs-carinfo-3-8m-to-45m-mau-28"
     ],
     "what_id_do_differently": [
-      "f-cs-carinfo-3-8m-to-45m-mau-28",
-      "f-cs-carinfo-3-8m-to-45m-mau-29",
-      "f-cs-carinfo-3-8m-to-45m-mau-30"
-    ],
-    "what_didnt_work": [
-      "f-cs-carinfo-3-8m-to-45m-mau-31",
-      "f-cs-carinfo-3-8m-to-45m-mau-32",
       "f-cs-carinfo-3-8m-to-45m-mau-33",
       "f-cs-carinfo-3-8m-to-45m-mau-34",
       "f-cs-carinfo-3-8m-to-45m-mau-35"
     ],
+    "what_didnt_work": [
+      "f-cs-carinfo-3-8m-to-45m-mau-36",
+      "f-cs-carinfo-3-8m-to-45m-mau-37",
+      "f-cs-carinfo-3-8m-to-45m-mau-38",
+      "f-cs-carinfo-3-8m-to-45m-mau-39",
+      "f-cs-carinfo-3-8m-to-45m-mau-40",
+      "f-cs-carinfo-3-8m-to-45m-mau-41"
+    ],
     "answer_box": [
-      "f-cs-carinfo-3-8m-to-45m-mau-01"
+      "f-cs-carinfo-3-8m-to-45m-mau-12",
+      "f-cs-carinfo-3-8m-to-45m-mau-13",
+      "f-cs-carinfo-3-8m-to-45m-mau-14",
+      "f-cs-carinfo-3-8m-to-45m-mau-15",
+      "f-cs-carinfo-3-8m-to-45m-mau-16",
+      "f-cs-carinfo-3-8m-to-45m-mau-17",
+      "f-cs-carinfo-3-8m-to-45m-mau-18",
+      "f-cs-carinfo-3-8m-to-45m-mau-19",
+      "f-cs-carinfo-3-8m-to-45m-mau-20",
+      "f-cs-carinfo-3-8m-to-45m-mau-21",
+      "f-cs-carinfo-3-8m-to-45m-mau-22",
+      "f-cs-carinfo-3-8m-to-45m-mau-23",
+      "f-cs-carinfo-3-8m-to-45m-mau-24",
+      "f-cs-carinfo-3-8m-to-45m-mau-25",
+      "f-cs-carinfo-3-8m-to-45m-mau-26",
+      "f-cs-carinfo-3-8m-to-45m-mau-27",
+      "f-cs-carinfo-3-8m-to-45m-mau-28"
+    ],
+    "problem_with_baseline": [
+      "f-cs-carinfo-3-8m-to-45m-mau-12",
+      "f-cs-carinfo-3-8m-to-45m-mau-13",
+      "f-cs-carinfo-3-8m-to-45m-mau-14",
+      "f-cs-carinfo-3-8m-to-45m-mau-15",
+      "f-cs-carinfo-3-8m-to-45m-mau-16",
+      "f-cs-carinfo-3-8m-to-45m-mau-17",
+      "f-cs-carinfo-3-8m-to-45m-mau-18",
+      "f-cs-carinfo-3-8m-to-45m-mau-19",
+      "f-cs-carinfo-3-8m-to-45m-mau-20",
+      "f-cs-carinfo-3-8m-to-45m-mau-21",
+      "f-cs-carinfo-3-8m-to-45m-mau-22",
+      "f-cs-carinfo-3-8m-to-45m-mau-23",
+      "f-cs-carinfo-3-8m-to-45m-mau-24",
+      "f-cs-carinfo-3-8m-to-45m-mau-25",
+      "f-cs-carinfo-3-8m-to-45m-mau-26",
+      "f-cs-carinfo-3-8m-to-45m-mau-27",
+      "f-cs-carinfo-3-8m-to-45m-mau-28"
     ]
   }
 }

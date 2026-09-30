@@ -36,7 +36,12 @@
     "f-cs-scalable-notification-system-19",
     "f-cs-scalable-notification-system-20",
     "f-cs-scalable-notification-system-21",
-    "f-cs-scalable-notification-system-22"
+    "f-cs-scalable-notification-system-22",
+    "f-cs-scalable-notification-system-23",
+    "f-cs-scalable-notification-system-24",
+    "f-cs-scalable-notification-system-25",
+    "f-cs-scalable-notification-system-26",
+    "f-cs-scalable-notification-system-27"
   ],
   "experience_used": [
     "exp-045",
@@ -101,6 +106,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

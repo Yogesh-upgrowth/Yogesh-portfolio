@@ -70,6 +70,20 @@
     },
     {
       "fact_id": "f-cs-ai-recommendation-engine-05",
+      "claim": "If score > 0.82 AND premium lower: surface as alternative. Threshold calibrated to avoid showing plans that are cheaper but actually meaningfully worse",
+      "value": "0.82",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/ai-recommendation-engine",
+      "source_title": "How We Built an AI-Powered Recommendation Engine for Financial Products",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "If score > 0.82 AND premium lower: surface as alternative. Threshold calibrated to avoid showing plans that are cheaper but actually meaningfully worse",
+      "published_on": "Jan 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ai-recommendation-engine-06",
       "claim": "Conversion Rate: +19% (vs pre-recommendation baseline)",
       "value": "19%",
       "unit": "%",
@@ -83,7 +97,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ai-recommendation-engine-06",
+      "fact_id": "f-cs-ai-recommendation-engine-07",
       "claim": "Mode 1: Context Matching — Orienting — 8.2% — +6% at that stage",
       "value": "8.2%",
       "unit": "%",
@@ -97,7 +111,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ai-recommendation-engine-07",
+      "fact_id": "f-cs-ai-recommendation-engine-08",
       "claim": "Mode 1: Context Matching — Orienting — 8.2% — +6% at that stage",
       "value": "6%",
       "unit": "%",
@@ -111,7 +125,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ai-recommendation-engine-08",
+      "fact_id": "f-cs-ai-recommendation-engine-09",
       "claim": "Mode 2: Filter Inference — Comparing — 11.4% — +9% at that stage",
       "value": "11.4%",
       "unit": "%",
@@ -125,7 +139,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ai-recommendation-engine-09",
+      "fact_id": "f-cs-ai-recommendation-engine-10",
       "claim": "Mode 2: Filter Inference — Comparing — 11.4% — +9% at that stage",
       "value": "9%",
       "unit": "%",
@@ -139,7 +153,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ai-recommendation-engine-10",
+      "fact_id": "f-cs-ai-recommendation-engine-11",
       "claim": "Mode 3: Social Proof — Deciding — 9.8% — +14% at that stage",
       "value": "9.8%",
       "unit": "%",
@@ -153,7 +167,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ai-recommendation-engine-11",
+      "fact_id": "f-cs-ai-recommendation-engine-12",
       "claim": "Mode 3: Social Proof — Deciding — 9.8% — +14% at that stage",
       "value": "14%",
       "unit": "%",
@@ -167,7 +181,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ai-recommendation-engine-12",
+      "fact_id": "f-cs-ai-recommendation-engine-13",
       "claim": "Mode 4: Price Optimization — Post-Quote — 14.2% — +22% at that stage",
       "value": "22%",
       "unit": "%",
@@ -181,21 +195,91 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-ai-recommendation-engine-13",
+      "fact_id": "f-cs-ai-recommendation-engine-14",
       "claim": "The biggest insight: Mode 4 (price optimization at the post-quote stage) outperformed everything because it appeared at the highest-intent moment with the most concrete value proposition. \"This plan has equivalent coverage and costs…",
       "value": "3,200",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/ai-recommendation-engine",
       "source_title": "How We Built an AI-Powered Recommendation Engine for Financial Products",
       "source_domain": "pmyogesh.com",
-      "excerpt": "the most concrete value proposition. \"This plan has equivalent coverage and costs ₹3,200 less per year\" is the right message for someone who has just",
+      "excerpt": "the most concrete value proposition. \"This plan has equivalent coverage and costs ₹3,200 (about $33.37) less per year\" is the right message for someone who",
       "published_on": "Jan 2026",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-ai-recommendation-engine-14",
+      "fact_id": "f-cs-ai-recommendation-engine-15",
+      "claim": "The biggest insight: Mode 4 (price optimization at the post-quote stage) outperformed everything because it appeared at the highest-intent moment with the most concrete value proposition. \"This plan has equivalent coverage and costs…",
+      "value": "33.37",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/ai-recommendation-engine",
+      "source_title": "How We Built an AI-Powered Recommendation Engine for Financial Products",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "concrete value proposition. \"This plan has equivalent coverage and costs ₹3,200 (about $33.37) less per year\" is the right message for someone who has just",
+      "published_on": "Jan 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ai-recommendation-engine-16",
+      "claim": "We tried an ML classifier for path stage detection. F1 score: 0.76. Rule-based decision tree: 0.89. The stages were distinct enough that heuristics outperformed the model — and were 100% interpretable when they were wrong. For this…",
+      "value": "0.76",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/ai-recommendation-engine",
+      "source_title": "How We Built an AI-Powered Recommendation Engine for Financial Products",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "We tried an ML classifier for path stage detection. F1 score: 0.76. Rule-based decision tree: 0.89. The stages were distinct enough that heuristics outperformed the",
+      "published_on": "Jan 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ai-recommendation-engine-17",
+      "claim": "We tried an ML classifier for path stage detection. F1 score: 0.76. Rule-based decision tree: 0.89. The stages were distinct enough that heuristics outperformed the model — and were 100% interpretable when they were wrong. For this…",
+      "value": "0.89",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/ai-recommendation-engine",
+      "source_title": "How We Built an AI-Powered Recommendation Engine for Financial Products",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "ML classifier for path stage detection. F1 score: 0.76. Rule-based decision tree: 0.89. The stages were distinct enough that heuristics outperformed the model — and",
+      "published_on": "Jan 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ai-recommendation-engine-18",
+      "claim": "Mode 4 initially surfaced plans with equivalence score > 0.70. This was too low — plans that were cheaper but meaningfully worse (lower room rent, no critical illness coverage) were being shown as 'similar.' Several users complained in…",
+      "value": "0.70",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/ai-recommendation-engine",
+      "source_title": "How We Built an AI-Powered Recommendation Engine for Financial Products",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Mode 4 initially surfaced plans with equivalence score > 0.70. This was too low — plans that were cheaper but meaningfully worse (lower room rent,",
+      "published_on": "Jan 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ai-recommendation-engine-19",
+      "claim": "Added profile distance score to Mode 3: if the nearest similar users have similarity \\< 0.60, suppress social proof recommendation and fall back to Mode 2 (filter inference). Social proof only shown when the peer group is genuinely similar.",
+      "value": "0.60",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/ai-recommendation-engine",
+      "source_title": "How We Built an AI-Powered Recommendation Engine for Financial Products",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "score to Mode 3: if the nearest similar users have similarity \\< 0.60, suppress social proof recommendation and fall back to Mode 2 (filter inference).",
+      "published_on": "Jan 2026",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-ai-recommendation-engine-20",
       "claim": "Current recommendations show the plan but not why. Next: 'We recommend this because 84% of people with your profile bought it after comparing these 3 plans.' Explanation increases click-through and builds trust in the recommendation.",
       "value": "84%",
       "unit": "%",
@@ -220,15 +304,17 @@
   "fetch_log": [],
   "block_coverage": {
     "what_didnt_work": [
-      "f-cs-ai-recommendation-engine-01"
+      "f-cs-ai-recommendation-engine-01",
+      "f-cs-ai-recommendation-engine-18",
+      "f-cs-ai-recommendation-engine-19"
     ],
     "interventions": [
       "f-cs-ai-recommendation-engine-02",
       "f-cs-ai-recommendation-engine-03",
-      "f-cs-ai-recommendation-engine-04"
+      "f-cs-ai-recommendation-engine-04",
+      "f-cs-ai-recommendation-engine-05"
     ],
     "results": [
-      "f-cs-ai-recommendation-engine-05",
       "f-cs-ai-recommendation-engine-06",
       "f-cs-ai-recommendation-engine-07",
       "f-cs-ai-recommendation-engine-08",
@@ -236,13 +322,28 @@
       "f-cs-ai-recommendation-engine-10",
       "f-cs-ai-recommendation-engine-11",
       "f-cs-ai-recommendation-engine-12",
-      "f-cs-ai-recommendation-engine-13"
+      "f-cs-ai-recommendation-engine-13",
+      "f-cs-ai-recommendation-engine-14",
+      "f-cs-ai-recommendation-engine-15"
+    ],
+    "what_id_do_differently": [
+      "f-cs-ai-recommendation-engine-16",
+      "f-cs-ai-recommendation-engine-17"
     ],
     "applicability": [
-      "f-cs-ai-recommendation-engine-14"
+      "f-cs-ai-recommendation-engine-20"
     ],
     "answer_box": [
-      "f-cs-ai-recommendation-engine-01"
+      "f-cs-ai-recommendation-engine-02",
+      "f-cs-ai-recommendation-engine-03",
+      "f-cs-ai-recommendation-engine-04",
+      "f-cs-ai-recommendation-engine-05"
+    ],
+    "problem_with_baseline": [
+      "f-cs-ai-recommendation-engine-02",
+      "f-cs-ai-recommendation-engine-03",
+      "f-cs-ai-recommendation-engine-04",
+      "f-cs-ai-recommendation-engine-05"
     ]
   }
 }

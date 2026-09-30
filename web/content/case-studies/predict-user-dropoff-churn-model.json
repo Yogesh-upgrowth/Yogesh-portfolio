@@ -55,7 +55,11 @@
     "f-cs-predict-user-dropoff-churn-model-38",
     "f-cs-predict-user-dropoff-churn-model-39",
     "f-cs-predict-user-dropoff-churn-model-40",
-    "f-cs-predict-user-dropoff-churn-model-41"
+    "f-cs-predict-user-dropoff-churn-model-41",
+    "f-cs-predict-user-dropoff-churn-model-42",
+    "f-cs-predict-user-dropoff-churn-model-43",
+    "f-cs-predict-user-dropoff-churn-model-44",
+    "f-cs-predict-user-dropoff-churn-model-45"
   ],
   "experience_used": [
     "exp-006",
@@ -120,6 +124,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

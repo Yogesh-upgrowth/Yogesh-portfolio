@@ -8,7 +8,7 @@ Q2 planning. Marketing team had built a case for a 40% increase in paid acquisit
 
 Our CFO, Sunita, looked at it and asked one question: "What percentage of the users we're currently acquiring are profitable at 90 days?" Nobody in the room knew the answer. That was the problem.
 
-> **The problem.** We were spending ₹2.4 crore (about $0.25 million) per month on acquisition without knowing which 33% of that spend was generating 89% of the value. Budget approved with conditions: prove channel-level LTV within 60 days.
+> **The problem.** We were spending ₹2.4 crore (about $250,287) per month on acquisition without knowing which 33% of that spend was generating 89% of the value. Budget approved with conditions: prove channel-level LTV within 60 days.
 
 That condition was the forcing function that built what became our most impactful data initiative of the year.
 
@@ -158,7 +158,7 @@ The technical challenge was connecting acquisition channel (ad platform data) to
     { cells: ["Monthly Acquisition Spend", "\u221231%"] },
     { cells: ["Blended LTV:CAC", "3.8\u00d7"] },
     { cells: ["Profitable User Share", "+67%"] },
-    { cells: ["Monthly Budget Released", "\u20b91.8Cr (about $0.19 million)"] }
+    { cells: ["Monthly Budget Released", "\u20b91.8Cr (about $187,715)"] }
   ]}
 />
 
@@ -166,7 +166,7 @@ The technical challenge was connecting acquisition channel (ad platform data) to
   caption="Metric breakdown"
   columns={["Metric", "Before", "After (90 Days)"]}
   rows={[
-    { cells: ["Monthly Acquisition Spend", "\u20b92.4Cr (about $0.25 million)", "\u20b91.66Cr (about $0.17 million) (\u221231%)"] },
+    { cells: ["Monthly Acquisition Spend", "\u20b92.4Cr (about $250,287)", "\u20b91.66Cr (about $173,115) (\u221231%)"] },
     { cells: ["Blended LTV:CAC", "1.8\u00d7", "3.8\u00d7"] },
     { cells: ["% Users Above 2.5\u00d7 LTV:CAC", "33%", "71%"] },
     { cells: ["90-Day Payback Period", "68 days", "41 days"] },
@@ -176,19 +176,19 @@ The technical challenge was connecting acquisition channel (ad platform data) to
 
 ## The Harder Lessons
 
-### 01. CAC minimization without LTV context is self-defeating
+### CAC minimization without LTV context is self-defeating
 
 Optimizing CAC alone will reliably drive you toward cheap, low-intent acquisition channels. Those channels produce users with poor engagement and high churn — which then requires more spend to compensate. It's a feedback loop that looks like growth but isn't.
 
-### 02. The attribution join is the technical bottleneck
+### The attribution join is the technical bottleneck
 
 Most teams can't do channel-level LTV analysis because they can't reliably join acquisition source to long-term revenue. The anonymous-to-registered ID stitch is unglamorous data work — but it's the foundation everything else depends on.
 
-### 03. Channel quality varies more than channel cost
+### Channel quality varies more than channel cost
 
 YouTube CAC was ₹440 (about $4.59) vs Facebook's ₹295. Facebook looked like the better deal. But YouTube LTV:CAC was 0.64× vs Facebook's 1.05×. Both were bad, but different bad. Same cost, different quality — and quality is harder to see.
 
-### 04. Lookalike audiences from LTV data outperform demographic targeting
+### Lookalike audiences from LTV data outperform demographic targeting
 
 We rebuilt all our paid audiences from behavioral signals of High-LTV users rather than demographic profiles. The first cohort acquired via behavioral lookalikes had 2.3× better LTV than the demographic-targeted cohort at the same spend.
 

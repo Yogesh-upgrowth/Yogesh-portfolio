@@ -22,7 +22,9 @@
     "f-cs-fintech-trust-ui-patterns-05",
     "f-cs-fintech-trust-ui-patterns-06",
     "f-cs-fintech-trust-ui-patterns-07",
-    "f-cs-fintech-trust-ui-patterns-08"
+    "f-cs-fintech-trust-ui-patterns-08",
+    "f-cs-fintech-trust-ui-patterns-09",
+    "f-cs-fintech-trust-ui-patterns-10"
   ],
   "experience_used": [
     "exp-013",
@@ -87,6 +89,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

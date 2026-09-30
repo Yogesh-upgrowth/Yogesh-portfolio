@@ -40,7 +40,7 @@ We pulled 18 months of user event logs and manually tagged every user as High-LT
   caption="Cohort breakdown"
   columns={["Cohort", "72-hr Behavior Pattern", "90-Day LTV", "D30 Retention"]}
   rows={[
-    { cells: ["Explorer (never converts)", "1 session, bounces", "\u20b90 (about $0.00)", "3%"] },
+    { cells: ["Explorer (never converts)", "1 session, bounces", "\u20b90 (about $0)", "3%"] },
     { cells: ["One-and-Done", "1 transaction, disappears", "\u20b945 (about $0.47)", "8%"] },
     { cells: ["Occasional User", "3+ sessions, 2 features", "\u20b9380 (about $3.96)", "24%"] },
     { cells: ["High-LTV Power User", "5+ sessions, 4+ features, D2-3 return", "\u20b91,390 (about $14.50)", "79%"] }
@@ -199,23 +199,23 @@ Feedback Loop
 
 ## What I'd Tell Someone Starting This Today
 
-### 01. LTV is a sorting problem disguised as a growth problem
+### LTV is a sorting problem disguised as a growth problem
 
 Most teams try to grow LTV by adding features, improving onboarding, or running engagement campaigns. The real lever is routing: get high-LTV users to intensive engagement early; let low-LTV users self-serve. The product already existed. The routing didn't.
 
-### 02. The 72-hour window matters more than any other
+### The 72-hour window matters more than any other
 
 Behavior in the first 3 days after signup predicted 90-day LTV better than any demographic, channel, or survey response. High-value users show themselves almost immediately — if you're looking.
 
-### 03. Set different CAC ceilings by predicted LTV segment
+### Set different CAC ceilings by predicted LTV segment
 
 If you apply one CAC ceiling across all users, you systematically underspend acquiring high-LTV users and overspend on low-LTV ones. Differentiated CAC limits restructure the economics of every channel you run.
 
-### 04. Precision beats recall when white-glove treatment has real costs
+### Precision beats recall when white-glove treatment has real costs
 
 At 81% precision and 74% recall, we deliberately accepted missing some true High-LTV users. The cost of treating false positives (low-LTV users) to white-glove standards was higher than missing true positives. Know your cost structure before choosing your threshold.
 
-### 05. The model output becomes your best acquisition brief
+### The model output becomes your best acquisition brief
 
 Once you know exactly who your high-LTV users are at a behavioral level, building lookalike audiences is almost automatic. The model didn't just improve retention investment — it improved acquisition targeting simultaneously.
 

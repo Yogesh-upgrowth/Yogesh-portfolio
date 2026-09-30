@@ -35,7 +35,15 @@
     "f-cs-rank-1-fintech-keywords-18",
     "f-cs-rank-1-fintech-keywords-19",
     "f-cs-rank-1-fintech-keywords-20",
-    "f-cs-rank-1-fintech-keywords-21"
+    "f-cs-rank-1-fintech-keywords-21",
+    "f-cs-rank-1-fintech-keywords-22",
+    "f-cs-rank-1-fintech-keywords-23",
+    "f-cs-rank-1-fintech-keywords-24",
+    "f-cs-rank-1-fintech-keywords-25",
+    "f-cs-rank-1-fintech-keywords-26",
+    "f-cs-rank-1-fintech-keywords-27",
+    "f-cs-rank-1-fintech-keywords-28",
+    "f-cs-rank-1-fintech-keywords-29"
   ],
   "experience_used": [
     "exp-016",
@@ -100,6 +108,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

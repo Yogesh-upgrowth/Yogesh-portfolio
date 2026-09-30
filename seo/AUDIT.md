@@ -389,3 +389,42 @@ Numbers in these pages are Yogesh's own operating measurements with no third-par
 source, so each becomes an `own_data` fact referencing the page it was published on.
 749 facts across 30 pages. Inventing a research citation for an operator's own figure
 would have been the worse failure.
+
+## D9 — the currency pairing corrupted figures, and four more parser/gate mismatches
+
+Fixing the last case-study failures surfaced a bug worse than the failures were.
+
+**`pair_currencies` was splicing conversions into the middle of numbers and
+words.** `"a ₹50L decision"` became `"a ₹5 (about $0.05)0L decision"` and
+`"costs ₹3,200 less"` became `"costs ₹3,200 l (about $3.34 million)ess"`. Two
+causes: a bare `l` was in the scale-suffix set, so the "l" of "less" parsed as
+lakh and multiplied the figure by 100,000; and the trailing lookahead excluded
+letters but not digits, so the engine backtracked to a single digit whenever the
+suffix did not match. Both the magnitude and the text were wrong, on a page
+quoting Yogesh's own figures.
+
+**The style and currency passes ran after facts were extracted, not before.** So
+the facts described the source text while the page showed the transformed text.
+`₹50L` was a fact; the page said `₹50L (about $52,143)`; G03 found a figure with
+nothing behind it. Reordered.
+
+**G03 had the same backtracking bug as my regex**, from the same cause — no `L`
+in its suffix set and a lookahead that excluded letters only. It read `₹50L` as
+`₹5` and failed a page for a figure nobody had written. The extractor's number
+regex and G03's are now aligned deliberately: when they disagree about where a
+figure ends, one of them invents a problem the other cannot fix.
+
+Also: the banned-phrase substitutions were hand-listed and missed inflections
+(`elevate` matched `elevated`, `ecosystem` matched `ecosystems`, `seamless`
+matched `seamlessly`), since G13 matches a banned phrase as a substring. They are
+generated from the list now, and the migration re-checks against the list rather
+than trusting its own substitutions.
+
+Two more: `toProse` stopped at a `>` inside a quoted prop, so a FactTable row
+reading `"Triggered >24 hours after"` leaked the whole table into the prose, where
+G15 then read the cells as a sentence; and G03's fx exemption used a flat 3%
+tolerance, which rejects a correct conversion of a small rupee amount because
+rounding to two decimals is a 4% error on three cents.
+
+**Result: all 66 content pages pass every runnable gate.** Only G02 (needs
+egress), G19 and G20 (LLM judge) skip.

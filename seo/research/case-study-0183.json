@@ -392,6 +392,20 @@
     },
     {
       "fact_id": "f-cs-funnel-dropoff-ux-optimization-28",
+      "claim": "Avg Step 3 Time: −62% (4 min → 1.5 min)",
+      "value": "1.5",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/funnel-dropoff-ux-optimization",
+      "source_title": "Optimizing Funnel Drop-Off Using Micro UX Interventions",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Avg Step 3 Time: −62% (4 min → 1.5 min)",
+      "published_on": "Oct 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-funnel-dropoff-ux-optimization-29",
       "claim": "Mobile Completion: +34% (biggest gain channel)",
       "value": "34%",
       "unit": "%",
@@ -405,7 +419,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-funnel-dropoff-ux-optimization-29",
+      "fact_id": "f-cs-funnel-dropoff-ux-optimization-30",
       "claim": "Initial hypothesis was that users didn't know how long the form was. Added a step progress bar. Drop rate moved from 58% to 54%. Improvement, but not where the real problem was.",
       "value": "54%",
       "unit": "%",
@@ -452,7 +466,7 @@
       "f-cs-funnel-dropoff-ux-optimization-16",
       "f-cs-funnel-dropoff-ux-optimization-17",
       "f-cs-funnel-dropoff-ux-optimization-18",
-      "f-cs-funnel-dropoff-ux-optimization-29"
+      "f-cs-funnel-dropoff-ux-optimization-30"
     ],
     "interventions": [
       "f-cs-funnel-dropoff-ux-optimization-19",
@@ -466,10 +480,18 @@
       "f-cs-funnel-dropoff-ux-optimization-25",
       "f-cs-funnel-dropoff-ux-optimization-26",
       "f-cs-funnel-dropoff-ux-optimization-27",
-      "f-cs-funnel-dropoff-ux-optimization-28"
+      "f-cs-funnel-dropoff-ux-optimization-28",
+      "f-cs-funnel-dropoff-ux-optimization-29"
     ],
     "answer_box": [
-      "f-cs-funnel-dropoff-ux-optimization-01"
+      "f-cs-funnel-dropoff-ux-optimization-12",
+      "f-cs-funnel-dropoff-ux-optimization-13",
+      "f-cs-funnel-dropoff-ux-optimization-14",
+      "f-cs-funnel-dropoff-ux-optimization-15",
+      "f-cs-funnel-dropoff-ux-optimization-16",
+      "f-cs-funnel-dropoff-ux-optimization-17",
+      "f-cs-funnel-dropoff-ux-optimization-18",
+      "f-cs-funnel-dropoff-ux-optimization-30"
     ]
   }
 }

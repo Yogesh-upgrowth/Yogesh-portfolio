@@ -43,7 +43,15 @@
     "f-cs-real-time-intent-scoring-engine-26",
     "f-cs-real-time-intent-scoring-engine-27",
     "f-cs-real-time-intent-scoring-engine-28",
-    "f-cs-real-time-intent-scoring-engine-29"
+    "f-cs-real-time-intent-scoring-engine-29",
+    "f-cs-real-time-intent-scoring-engine-30",
+    "f-cs-real-time-intent-scoring-engine-31",
+    "f-cs-real-time-intent-scoring-engine-32",
+    "f-cs-real-time-intent-scoring-engine-33",
+    "f-cs-real-time-intent-scoring-engine-34",
+    "f-cs-real-time-intent-scoring-engine-35",
+    "f-cs-real-time-intent-scoring-engine-36",
+    "f-cs-real-time-intent-scoring-engine-37"
   ],
   "experience_used": [
     "exp-045",
@@ -108,6 +116,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

@@ -14,13 +14,13 @@
   "facts": [
     {
       "fact_id": "f-cs-zero-cost-growth-engine-01",
-      "claim": "October. Q3 reviews done, Q4 budgets getting tighter. The CFO made a call: all paid marketing paused for 90 days while the finance team figured out unit economics. Marketing budget: ₹0.",
+      "claim": "October. Q3 reviews done, Q4 budgets getting tighter. The CFO made a call: all paid marketing paused for 90 days while the finance team figured out unit economics. Marketing budget: ₹0 (about $0).",
       "value": "0",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
       "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
       "source_domain": "pmyogesh.com",
-      "excerpt": "90 days while the finance team figured out unit economics. Marketing budget: ₹0.",
+      "excerpt": "90 days while the finance team figured out unit economics. Marketing budget: ₹0 (about $0).",
       "published_on": "Nov 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -28,6 +28,20 @@
     },
     {
       "fact_id": "f-cs-zero-cost-growth-engine-02",
+      "claim": "October. Q3 reviews done, Q4 budgets getting tighter. The CFO made a call: all paid marketing paused for 90 days while the finance team figured out unit economics. Marketing budget: ₹0 (about $0).",
+      "value": "0",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
+      "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "while the finance team figured out unit economics. Marketing budget: ₹0 (about $0).",
+      "published_on": "Nov 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-zero-cost-growth-engine-03",
       "claim": "Zero paid budget. A product with 28,000 registered users, 6,400 monthly actives. An email list. A WhatsApp community of 1,200 users that nobody had seriously invested in. And a comparison tool that users genuinely found useful when they…",
       "value": "28,000",
       "unit": "count",
@@ -41,7 +55,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-03",
+      "fact_id": "f-cs-zero-cost-growth-engine-04",
       "claim": "Zero paid budget. A product with 28,000 registered users, 6,400 monthly actives. An email list. A WhatsApp community of 1,200 users that nobody had seriously invested in. And a comparison tool that users genuinely found useful when they…",
       "value": "6,400",
       "unit": "count",
@@ -55,7 +69,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-04",
+      "fact_id": "f-cs-zero-cost-growth-engine-05",
       "claim": "Zero paid budget. A product with 28,000 registered users, 6,400 monthly actives. An email list. A WhatsApp community of 1,200 users that nobody had seriously invested in. And a comparison tool that users genuinely found useful when they…",
       "value": "1,200",
       "unit": "count",
@@ -69,7 +83,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-05",
+      "fact_id": "f-cs-zero-cost-growth-engine-06",
       "claim": "Email List — 28,000 — Monthly newsletter, 18% open rate — Medium",
       "value": "18%",
       "unit": "%",
@@ -83,7 +97,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-06",
+      "fact_id": "f-cs-zero-cost-growth-engine-07",
       "claim": "Referral Program — Users invite others; both get benefit — 3 weeks (build time) — 34% of new users",
       "value": "34%",
       "unit": "%",
@@ -97,7 +111,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-07",
+      "fact_id": "f-cs-zero-cost-growth-engine-08",
       "claim": "SEO Content Velocity — 3× content output; programmatic distribution — 6 weeks (SEO lag) — 28% of new traffic",
       "value": "28%",
       "unit": "%",
@@ -111,22 +125,36 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-08",
-      "claim": "Built in 3 weeks. Mechanic: users get ₹200 cashback on their next purchase for each successful referral; referred user gets ₹100 off first purchase. Both-sided reward because one-sided referral programs have poor viral coefficients.",
+      "fact_id": "f-cs-zero-cost-growth-engine-09",
+      "claim": "Built in 3 weeks. Mechanic: users get ₹200 (about $2.09) cashback on their next purchase for each successful referral; referred user gets ₹100 off first purchase. Both-sided reward because one-sided referral programs have poor viral…",
       "value": "200",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
       "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Built in 3 weeks. Mechanic: users get ₹200 cashback on their next purchase for each successful referral; referred user gets ₹100 off first purchase. Both-sided",
+      "excerpt": "Built in 3 weeks. Mechanic: users get ₹200 (about $2.09) cashback on their next purchase for each successful referral; referred user gets ₹100 off first",
       "published_on": "Nov 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-09",
-      "claim": "Built in 3 weeks. Mechanic: users get ₹200 cashback on their next purchase for each successful referral; referred user gets ₹100 off first purchase. Both-sided reward because one-sided referral programs have poor viral coefficients.",
+      "fact_id": "f-cs-zero-cost-growth-engine-10",
+      "claim": "Built in 3 weeks. Mechanic: users get ₹200 (about $2.09) cashback on their next purchase for each successful referral; referred user gets ₹100 off first purchase. Both-sided reward because one-sided referral programs have poor viral…",
+      "value": "2.09",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
+      "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Built in 3 weeks. Mechanic: users get ₹200 (about $2.09) cashback on their next purchase for each successful referral; referred user gets ₹100 off first",
+      "published_on": "Nov 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-zero-cost-growth-engine-11",
+      "claim": "Built in 3 weeks. Mechanic: users get ₹200 (about $2.09) cashback on their next purchase for each successful referral; referred user gets ₹100 off first purchase. Both-sided reward because one-sided referral programs have poor viral…",
       "value": "100",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
@@ -139,35 +167,77 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-10",
-      "claim": "Cost per referred user — ₹220 (vs ₹340 paid CAC)",
+      "fact_id": "f-cs-zero-cost-growth-engine-12",
+      "claim": "Viral coefficient (K) — 0.34 in first month, 0.48 by month 3",
+      "value": "0.34",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
+      "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Viral coefficient (K) — 0.34 in first month, 0.48 by month 3",
+      "published_on": "Nov 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-zero-cost-growth-engine-13",
+      "claim": "Viral coefficient (K) — 0.34 in first month, 0.48 by month 3",
+      "value": "0.48",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
+      "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Viral coefficient (K) — 0.34 in first month, 0.48 by month 3",
+      "published_on": "Nov 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-zero-cost-growth-engine-14",
+      "claim": "Cost per referred user — ₹220  (about $2.29)(vs ₹340 paid CAC)",
       "value": "220",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
       "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Cost per referred user — ₹220 (vs ₹340 paid CAC)",
+      "excerpt": "Cost per referred user — ₹220 (about $2.29)(vs ₹340 paid CAC)",
       "published_on": "Nov 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-11",
-      "claim": "Cost per referred user — ₹220 (vs ₹340 paid CAC)",
+      "fact_id": "f-cs-zero-cost-growth-engine-15",
+      "claim": "Cost per referred user — ₹220  (about $2.29)(vs ₹340 paid CAC)",
+      "value": "2.29",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
+      "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Cost per referred user — ₹220 (about $2.29)(vs ₹340 paid CAC)",
+      "published_on": "Nov 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-zero-cost-growth-engine-16",
+      "claim": "Cost per referred user — ₹220  (about $2.29)(vs ₹340 paid CAC)",
       "value": "340",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
       "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Cost per referred user — ₹220 (vs ₹340 paid CAC)",
+      "excerpt": "Cost per referred user — ₹220 (about $2.29)(vs ₹340 paid CAC)",
       "published_on": "Nov 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-12",
+      "fact_id": "f-cs-zero-cost-growth-engine-17",
       "claim": "The 1,200-member community had been dormant. We assigned a dedicated community manager (existing team member, 20% time) and changed the content strategy: 3 posts/week, all high-value and shareable — rate change alerts, money-saving…",
       "value": "20%",
       "unit": "%",
@@ -181,7 +251,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-13",
+      "fact_id": "f-cs-zero-cost-growth-engine-18",
       "claim": "Community Members — 1,200 — 4,800",
       "value": "4,800",
       "unit": "count",
@@ -195,7 +265,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-14",
+      "fact_id": "f-cs-zero-cost-growth-engine-19",
       "claim": "Weekly Active Members — ~80 (6.7%) — 1,240 (25.8%)",
       "value": "6.7%",
       "unit": "%",
@@ -209,7 +279,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-15",
+      "fact_id": "f-cs-zero-cost-growth-engine-20",
       "claim": "Weekly Active Members — ~80 (6.7%) — 1,240 (25.8%)",
       "value": "1,240",
       "unit": "count",
@@ -223,7 +293,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-16",
+      "fact_id": "f-cs-zero-cost-growth-engine-21",
       "claim": "Weekly Active Members — ~80 (6.7%) — 1,240 (25.8%)",
       "value": "25.8%",
       "unit": "%",
@@ -237,7 +307,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-17",
+      "fact_id": "f-cs-zero-cost-growth-engine-22",
       "claim": "Shares per week — Negligible — ~140",
       "value": "140",
       "unit": "count",
@@ -251,7 +321,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-18",
+      "fact_id": "f-cs-zero-cost-growth-engine-23",
       "claim": "Organic sessions (monthly) — 12,400 — 28,800",
       "value": "12,400",
       "unit": "count",
@@ -265,7 +335,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-19",
+      "fact_id": "f-cs-zero-cost-growth-engine-24",
       "claim": "Organic sessions (monthly) — 12,400 — 28,800",
       "value": "28,800",
       "unit": "count",
@@ -279,7 +349,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-20",
+      "fact_id": "f-cs-zero-cost-growth-engine-25",
       "claim": "New organic keyword rankings — — — +840",
       "value": "840",
       "unit": "count",
@@ -293,7 +363,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-21",
+      "fact_id": "f-cs-zero-cost-growth-engine-26",
+      "claim": "Referral K-factor measured: 0.34 (for every 10 users, 3.4 new users acquired)",
+      "value": "3.4",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
+      "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Referral K-factor measured: 0.34 (for every 10 users, 3.4 new users acquired)",
+      "published_on": "Nov 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-zero-cost-growth-engine-27",
       "claim": "Total new user volume: down 18% from paid peak, but CAC dropped 53%. Revenue per user improved.",
       "value": "53%",
       "unit": "%",
@@ -307,7 +391,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-22",
+      "fact_id": "f-cs-zero-cost-growth-engine-28",
       "claim": "Referral share of new users: rising from 8% → 34%",
       "value": "8%",
       "unit": "%",
@@ -321,7 +405,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-zero-cost-growth-engine-23",
+      "fact_id": "f-cs-zero-cost-growth-engine-29",
       "claim": "New User Volume: −18% (vs paid peak (expected 40%+ drop))",
       "value": "40%",
       "unit": "%",
@@ -329,6 +413,62 @@
       "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
       "source_domain": "pmyogesh.com",
       "excerpt": "New User Volume: −18% (vs paid peak (expected 40%+ drop))",
+      "published_on": "Nov 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-zero-cost-growth-engine-30",
+      "claim": "Our first referral concept (reward only for the referrer) had a K-factor of 0.11. Two-sided rewards (both referrer and new user benefit): 0.34 immediately, growing to 0.48. The referred user's motivation to actually join and engage is…",
+      "value": "0.11",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
+      "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "first referral concept (reward only for the referrer) had a K-factor of 0.11. Two-sided rewards (both referrer and new user benefit): 0.34 immediately, growing to",
+      "published_on": "Nov 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-zero-cost-growth-engine-31",
+      "claim": "Referral users had 2.4× better D30 retention than our average paid user. Organic SEO users converted at 1.8× the paid rate. Users who came because someone recommended the product or because they found it through genuine search showed…",
+      "value": "2.4",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
+      "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Referral users had 2.4× better D30 retention than our average paid user. Organic SEO users converted at 1.8× the paid rate. Users who came because",
+      "published_on": "Nov 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-zero-cost-growth-engine-32",
+      "claim": "Referral users had 2.4× better D30 retention than our average paid user. Organic SEO users converted at 1.8× the paid rate. Users who came because someone recommended the product or because they found it through genuine search showed…",
+      "value": "1.8",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
+      "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "D30 retention than our average paid user. Organic SEO users converted at 1.8× the paid rate. Users who came because someone recommended the product or",
+      "published_on": "Nov 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-zero-cost-growth-engine-33",
+      "claim": "Scaling growth to 50K users per month without any paid acquisition budget.",
+      "value": "50K",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/zero-cost-growth-engine",
+      "source_title": "How We Built a Zero-Cost Growth Engine Using Organic + Product Hooks",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Scaling growth to 50K users per month without any paid acquisition budget.",
       "published_on": "Nov 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -346,14 +486,14 @@
   "fetch_log": [],
   "block_coverage": {
     "context": [
-      "f-cs-zero-cost-growth-engine-01"
+      "f-cs-zero-cost-growth-engine-01",
+      "f-cs-zero-cost-growth-engine-02"
     ],
     "problem_with_baseline": [
-      "f-cs-zero-cost-growth-engine-02",
       "f-cs-zero-cost-growth-engine-03",
       "f-cs-zero-cost-growth-engine-04",
       "f-cs-zero-cost-growth-engine-05",
-      "f-cs-zero-cost-growth-engine-08",
+      "f-cs-zero-cost-growth-engine-06",
       "f-cs-zero-cost-growth-engine-09",
       "f-cs-zero-cost-growth-engine-10",
       "f-cs-zero-cost-growth-engine-11",
@@ -365,19 +505,37 @@
       "f-cs-zero-cost-growth-engine-17",
       "f-cs-zero-cost-growth-engine-18",
       "f-cs-zero-cost-growth-engine-19",
-      "f-cs-zero-cost-growth-engine-20"
+      "f-cs-zero-cost-growth-engine-20",
+      "f-cs-zero-cost-growth-engine-21",
+      "f-cs-zero-cost-growth-engine-22",
+      "f-cs-zero-cost-growth-engine-23",
+      "f-cs-zero-cost-growth-engine-24",
+      "f-cs-zero-cost-growth-engine-25"
     ],
     "interventions": [
-      "f-cs-zero-cost-growth-engine-06",
       "f-cs-zero-cost-growth-engine-07",
-      "f-cs-zero-cost-growth-engine-21",
-      "f-cs-zero-cost-growth-engine-22"
+      "f-cs-zero-cost-growth-engine-08",
+      "f-cs-zero-cost-growth-engine-26",
+      "f-cs-zero-cost-growth-engine-27",
+      "f-cs-zero-cost-growth-engine-28"
     ],
     "results": [
-      "f-cs-zero-cost-growth-engine-23"
+      "f-cs-zero-cost-growth-engine-29"
+    ],
+    "what_id_do_differently": [
+      "f-cs-zero-cost-growth-engine-30",
+      "f-cs-zero-cost-growth-engine-31",
+      "f-cs-zero-cost-growth-engine-32"
+    ],
+    "applicability": [
+      "f-cs-zero-cost-growth-engine-33"
     ],
     "answer_box": [
-      "f-cs-zero-cost-growth-engine-01"
+      "f-cs-zero-cost-growth-engine-07",
+      "f-cs-zero-cost-growth-engine-08",
+      "f-cs-zero-cost-growth-engine-26",
+      "f-cs-zero-cost-growth-engine-27",
+      "f-cs-zero-cost-growth-engine-28"
     ]
   }
 }

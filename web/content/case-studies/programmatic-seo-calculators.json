@@ -40,7 +40,8 @@
     "f-cs-programmatic-seo-calculators-23",
     "f-cs-programmatic-seo-calculators-24",
     "f-cs-programmatic-seo-calculators-25",
-    "f-cs-programmatic-seo-calculators-26"
+    "f-cs-programmatic-seo-calculators-26",
+    "f-cs-programmatic-seo-calculators-27"
   ],
   "experience_used": [
     "exp-016",
@@ -105,6 +106,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

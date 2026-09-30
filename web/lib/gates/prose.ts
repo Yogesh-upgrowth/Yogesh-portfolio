@@ -44,7 +44,10 @@ export function toProse(mdx: string): string {
     s = s.replace(new RegExp(`<${tag}\\b[^>]*/>`, "g"), " ");
     s = s.replace(new RegExp(`<${tag}\\b[^>]*>[\\s\\S]*?</${tag}>`, "g"), " ");
   }
-  s = s.replace(/<\/?[A-Z][A-Za-z0-9]*\b[^>]*>/g, " ");
+  // Quoted prop values may contain ">" — a FactTable row reading "Triggered >24
+  // hours after" ended the match early and leaked the rest of the table into the
+  // prose, where G15 then read the cells as a sentence. Skip over quoted strings.
+  s = s.replace(/<\/?[A-Z][A-Za-z0-9]*(?:"[^"]*"|'[^']*'|[^>"'])*>/g, " ");
   // Markdown syntax that is not words.
   s = s.replace(/!\[[^\]]*\]\([^)]*\)/g, " ");
   s = s.replace(/\[([^\]]*)\]\([^)]*\)/g, "$1");

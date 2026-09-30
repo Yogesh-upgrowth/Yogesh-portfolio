@@ -14,6 +14,20 @@
   "facts": [
     {
       "fact_id": "f-cs-scalable-notification-system-01",
+      "claim": "The counterintuitive result came in on a Tuesday. The experiment had been running for 3 weeks: Group A got our standard notification cadence (11 per month), Group B got our new intelligent system (4.2 per month on average). The rule of…",
+      "value": "4.2",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/scalable-notification-system",
+      "source_title": "Creating a Scalable Notification System for 1M+ Users (Trigger-Based)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "notification cadence (11 per month), Group B got our new intelligent system (4.2 per month on average). The rule of thumb says more touchpoints equals",
+      "published_on": "Feb 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-scalable-notification-system-02",
       "claim": "Group B had 28% higher click-through, 34% higher revenue per user, and 61% lower unsubscribe rate. We'd been spamming ourselves into lower performance for over a year.",
       "value": "28%",
       "unit": "%",
@@ -27,7 +41,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-02",
+      "fact_id": "f-cs-scalable-notification-system-03",
       "claim": "Group B had 28% higher click-through, 34% higher revenue per user, and 61% lower unsubscribe rate. We'd been spamming ourselves into lower performance for over a year.",
       "value": "34%",
       "unit": "%",
@@ -41,7 +55,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-03",
+      "fact_id": "f-cs-scalable-notification-system-04",
       "claim": "Group B had 28% higher click-through, 34% higher revenue per user, and 61% lower unsubscribe rate. We'd been spamming ourselves into lower performance for over a year.",
       "value": "61%",
       "unit": "%",
@@ -55,7 +69,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-04",
+      "fact_id": "f-cs-scalable-notification-system-05",
       "claim": "Weekly digest (generic) — 4/month — 14.2% — 3.1% — 28%",
       "value": "14.2%",
       "unit": "%",
@@ -69,7 +83,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-05",
+      "fact_id": "f-cs-scalable-notification-system-06",
       "claim": "Weekly digest (generic) — 4/month — 14.2% — 3.1% — 28%",
       "value": "3.1%",
       "unit": "%",
@@ -83,7 +97,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-06",
+      "fact_id": "f-cs-scalable-notification-system-07",
       "claim": "Product feature updates — 2/month — 8.4% — 1.8% — 19%",
       "value": "8.4%",
       "unit": "%",
@@ -97,7 +111,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-07",
+      "fact_id": "f-cs-scalable-notification-system-08",
       "claim": "Product feature updates — 2/month — 8.4% — 1.8% — 19%",
       "value": "1.8%",
       "unit": "%",
@@ -111,7 +125,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-08",
+      "fact_id": "f-cs-scalable-notification-system-09",
       "claim": "Product feature updates — 2/month — 8.4% — 1.8% — 19%",
       "value": "19%",
       "unit": "%",
@@ -125,7 +139,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-09",
+      "fact_id": "f-cs-scalable-notification-system-10",
+      "claim": "Price change alerts (all changes) — 3.2/month avg — 41.2% — 22.4% — 11%",
+      "value": "3.2",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/scalable-notification-system",
+      "source_title": "Creating a Scalable Notification System for 1M+ Users (Trigger-Based)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Price change alerts (all changes) — 3.2/month avg — 41.2% — 22.4% — 11%",
+      "published_on": "Feb 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-scalable-notification-system-11",
       "claim": "Price change alerts (all changes) — 3.2/month avg — 41.2% — 22.4% — 11%",
       "value": "41.2%",
       "unit": "%",
@@ -139,7 +167,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-10",
+      "fact_id": "f-cs-scalable-notification-system-12",
       "claim": "Price change alerts (all changes) — 3.2/month avg — 41.2% — 22.4% — 11%",
       "value": "22.4%",
       "unit": "%",
@@ -153,7 +181,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-11",
+      "fact_id": "f-cs-scalable-notification-system-13",
       "claim": "Price change alerts (all changes) — 3.2/month avg — 41.2% — 22.4% — 11%",
       "value": "11%",
       "unit": "%",
@@ -167,7 +195,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-12",
+      "fact_id": "f-cs-scalable-notification-system-14",
+      "claim": "Re-engagement nudges — 1.5/month — 6.1% — 2.2% — 31%",
+      "value": "1.5",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/scalable-notification-system",
+      "source_title": "Creating a Scalable Notification System for 1M+ Users (Trigger-Based)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Re-engagement nudges — 1.5/month — 6.1% — 2.2% — 31%",
+      "published_on": "Feb 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-scalable-notification-system-15",
       "claim": "Re-engagement nudges — 1.5/month — 6.1% — 2.2% — 31%",
       "value": "6.1%",
       "unit": "%",
@@ -181,7 +223,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-13",
+      "fact_id": "f-cs-scalable-notification-system-16",
       "claim": "Re-engagement nudges — 1.5/month — 6.1% — 2.2% — 31%",
       "value": "2.2%",
       "unit": "%",
@@ -195,7 +237,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-14",
+      "fact_id": "f-cs-scalable-notification-system-17",
       "claim": "Re-engagement nudges — 1.5/month — 6.1% — 2.2% — 31%",
       "value": "31%",
       "unit": "%",
@@ -209,7 +251,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-15",
+      "fact_id": "f-cs-scalable-notification-system-18",
+      "claim": "Promotional offers — 0.8/month — 9.8% — 4.1% — 11%",
+      "value": "0.8",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/scalable-notification-system",
+      "source_title": "Creating a Scalable Notification System for 1M+ Users (Trigger-Based)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Promotional offers — 0.8/month — 9.8% — 4.1% — 11%",
+      "published_on": "Feb 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-scalable-notification-system-19",
       "claim": "Promotional offers — 0.8/month — 9.8% — 4.1% — 11%",
       "value": "9.8%",
       "unit": "%",
@@ -223,7 +279,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-16",
+      "fact_id": "f-cs-scalable-notification-system-20",
       "claim": "Promotional offers — 0.8/month — 9.8% — 4.1% — 11%",
       "value": "4.1%",
       "unit": "%",
@@ -237,7 +293,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-17",
+      "fact_id": "f-cs-scalable-notification-system-21",
       "claim": "The generic weekly digest had a 3.1% click rate and contributed 28% of all unsubscribes. We were sending 4 notifications per month that were generating 3 clicks per 100 users and destroying our ability to reach 28% of users who received…",
       "value": "100",
       "unit": "count",
@@ -251,7 +307,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-18",
+      "fact_id": "f-cs-scalable-notification-system-22",
       "claim": "Personalized + Medium Value — Rate changed for your category — 12.4% — Low — Optimize and keep",
       "value": "12.4%",
       "unit": "%",
@@ -265,21 +321,35 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-19",
-      "claim": "Event-triggered + High Value — Your alert: Hdfc rate dropped ₹340 — 22.4% — Very Low — Scale",
+      "fact_id": "f-cs-scalable-notification-system-23",
+      "claim": "Event-triggered + High Value — Your alert: Hdfc rate dropped ₹340 (about $3.55) — 22.4% — Very Low — Scale",
       "value": "340",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/scalable-notification-system",
       "source_title": "Creating a Scalable Notification System for 1M+ Users (Trigger-Based)",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Event-triggered + High Value — Your alert: Hdfc rate dropped ₹340 — 22.4% — Very Low — Scale",
+      "excerpt": "Event-triggered + High Value — Your alert: Hdfc rate dropped ₹340 (about $3.55) — 22.4% — Very Low — Scale",
       "published_on": "Feb 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-20",
+      "fact_id": "f-cs-scalable-notification-system-24",
+      "claim": "Event-triggered + High Value — Your alert: Hdfc rate dropped ₹340 (about $3.55) — 22.4% — Very Low — Scale",
+      "value": "3.55",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/scalable-notification-system",
+      "source_title": "Creating a Scalable Notification System for 1M+ Users (Trigger-Based)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Event-triggered + High Value — Your alert: Hdfc rate dropped ₹340 (about $3.55) — 22.4% — Very Low — Scale",
+      "published_on": "Feb 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-scalable-notification-system-25",
       "claim": "Behavioral + High Value — You left a quote mid-way — here it is — 31.2% — Very Low — Expand",
       "value": "31.2%",
       "unit": "%",
@@ -293,7 +363,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-21",
+      "fact_id": "f-cs-scalable-notification-system-26",
       "claim": "Notification CTR: +28% (at 62% lower volume)",
       "value": "62%",
       "unit": "%",
@@ -307,7 +377,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scalable-notification-system-22",
+      "fact_id": "f-cs-scalable-notification-system-27",
       "claim": "A 14% open rate sounds acceptable. But if those opens produce 3.1% clicks and 28% of your unsubscribes — the math collapses. The correct metric for any notification type is revenue per notification, net of unsubscribe cost.",
       "value": "14%",
       "unit": "%",
@@ -334,10 +404,10 @@
     "context": [
       "f-cs-scalable-notification-system-01",
       "f-cs-scalable-notification-system-02",
-      "f-cs-scalable-notification-system-03"
+      "f-cs-scalable-notification-system-03",
+      "f-cs-scalable-notification-system-04"
     ],
     "problem_with_baseline": [
-      "f-cs-scalable-notification-system-04",
       "f-cs-scalable-notification-system-05",
       "f-cs-scalable-notification-system-06",
       "f-cs-scalable-notification-system-07",
@@ -350,19 +420,28 @@
       "f-cs-scalable-notification-system-14",
       "f-cs-scalable-notification-system-15",
       "f-cs-scalable-notification-system-16",
-      "f-cs-scalable-notification-system-17"
-    ],
-    "interventions": [
+      "f-cs-scalable-notification-system-17",
       "f-cs-scalable-notification-system-18",
       "f-cs-scalable-notification-system-19",
       "f-cs-scalable-notification-system-20",
-      "f-cs-scalable-notification-system-22"
-    ],
-    "results": [
       "f-cs-scalable-notification-system-21"
     ],
+    "interventions": [
+      "f-cs-scalable-notification-system-22",
+      "f-cs-scalable-notification-system-23",
+      "f-cs-scalable-notification-system-24",
+      "f-cs-scalable-notification-system-25",
+      "f-cs-scalable-notification-system-27"
+    ],
+    "results": [
+      "f-cs-scalable-notification-system-26"
+    ],
     "answer_box": [
-      "f-cs-scalable-notification-system-01"
+      "f-cs-scalable-notification-system-22",
+      "f-cs-scalable-notification-system-23",
+      "f-cs-scalable-notification-system-24",
+      "f-cs-scalable-notification-system-25",
+      "f-cs-scalable-notification-system-27"
     ]
   }
 }

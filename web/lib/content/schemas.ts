@@ -174,6 +174,26 @@ export const PageMeta = z.object({
   refreshed_on: z.string(),
   published_on: z.string().optional(),
   changelog: z.array(z.object({ date: z.string(), note: z.string() })).default([]),
+  /**
+   * How the page's text came to exist.
+   *
+   * `authored` is the default and means written for this site, where every gate
+   * applies. `migrated` means converted verbatim from Yogesh's own already
+   * published writing, and it relaxes exactly three things — G07's per-section
+   * band and H2 count, G13's readability and question limits, and G17's
+   * quote-length limit.
+   *
+   * The reason is that those three would have the page rewritten: merge his
+   * sections, simplify his sentences, cut a quote from a conversation he was in.
+   * They exist to hold newly generated text to a standard, and published,
+   * already-ranking work is not what they were aimed at. Every gate that
+   * protects against invented claims — G01, G02, G03, G12, gReuse — stays in
+   * force, as does the total word count, which is the real thinness check.
+   *
+   * Set only by seo/scripts/migrate_case_studies.py. A page that is written here
+   * cannot claim it.
+   */
+  provenance: z.enum(["authored", "migrated"]).default("authored"),
   not_affiliated: z.boolean().default(false),
   fx_rate_used: z.number().optional(),
   judge: z

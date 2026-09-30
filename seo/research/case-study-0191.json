@@ -84,13 +84,13 @@
     },
     {
       "fact_id": "f-cs-fintech-trust-ui-patterns-06",
-      "claim": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 — she later checked back for health insurance' is concrete. Specificity is what makes social proof credible rather…",
-      "value": "12,400",
+      "claim": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200  (about $33.37)— she later checked back for health insurance' is concrete. Specificity is what makes social proof…",
+      "value": "4.7",
       "unit": "count",
       "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
       "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
       "source_domain": "pmyogesh.com",
-      "excerpt": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 — she later checked back for",
+      "excerpt": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 (about $33.37)— she later checked back",
       "published_on": "Jun 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -98,13 +98,13 @@
     },
     {
       "fact_id": "f-cs-fintech-trust-ui-patterns-07",
-      "claim": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 — she later checked back for health insurance' is concrete. Specificity is what makes social proof credible rather…",
-      "value": "3,200",
-      "unit": "INR",
+      "claim": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200  (about $33.37)— she later checked back for health insurance' is concrete. Specificity is what makes social proof…",
+      "value": "12,400",
+      "unit": "count",
       "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
       "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
       "source_domain": "pmyogesh.com",
-      "excerpt": "abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 — she later checked back for health insurance' is concrete. Specificity is",
+      "excerpt": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 (about $33.37)— she later checked back",
       "published_on": "Jun 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -112,6 +112,34 @@
     },
     {
       "fact_id": "f-cs-fintech-trust-ui-patterns-08",
+      "claim": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200  (about $33.37)— she later checked back for health insurance' is concrete. Specificity is what makes social proof…",
+      "value": "3,200",
+      "unit": "INR",
+      "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
+      "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200 (about $33.37)— she later checked back for health insurance' is concrete. Specificity",
+      "published_on": "Jun 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-fintech-trust-ui-patterns-09",
+      "claim": "'4.7 stars from 12,400 reviews' is abstract. 'Priya from Mumbai compared bike insurance 2 months ago and saved ₹3,200  (about $33.37)— she later checked back for health insurance' is concrete. Specificity is what makes social proof…",
+      "value": "33.37",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/fintech-trust-ui-patterns",
+      "source_title": "Designing Trust in Fintech: UI Patterns That Increased User Confidence",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "from Mumbai compared bike insurance 2 months ago and saved ₹3,200 (about $33.37)— she later checked back for health insurance' is concrete. Specificity is what",
+      "published_on": "Jun 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-fintech-trust-ui-patterns-10",
       "claim": "Opted-in users can share their comparison and purchase history publicly — building a verified track record. 'User since 2021, 4 purchases, all verified' creates peer trust signals that company-generated content can't replicate.",
       "value": "2021",
       "unit": "count",
@@ -146,13 +174,24 @@
     ],
     "interventions": [
       "f-cs-fintech-trust-ui-patterns-06",
-      "f-cs-fintech-trust-ui-patterns-07"
+      "f-cs-fintech-trust-ui-patterns-07",
+      "f-cs-fintech-trust-ui-patterns-08",
+      "f-cs-fintech-trust-ui-patterns-09"
     ],
     "applicability": [
-      "f-cs-fintech-trust-ui-patterns-08"
+      "f-cs-fintech-trust-ui-patterns-10"
     ],
     "answer_box": [
-      "f-cs-fintech-trust-ui-patterns-01"
+      "f-cs-fintech-trust-ui-patterns-06",
+      "f-cs-fintech-trust-ui-patterns-07",
+      "f-cs-fintech-trust-ui-patterns-08",
+      "f-cs-fintech-trust-ui-patterns-09"
+    ],
+    "problem_with_baseline": [
+      "f-cs-fintech-trust-ui-patterns-06",
+      "f-cs-fintech-trust-ui-patterns-07",
+      "f-cs-fintech-trust-ui-patterns-08",
+      "f-cs-fintech-trust-ui-patterns-09"
     ]
   }
 }

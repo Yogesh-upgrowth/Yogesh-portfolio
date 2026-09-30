@@ -6,7 +6,7 @@ Designing a system to score user intent in real-time and improve conversions. Th
 
 Our lead engineer said it plainly in the sprint planning session: "A real-time intent scoring engine is overkill. Batch scoring every 24 hours is enough." Half the room nodded. I wasn't sure he was wrong.
 
-Six months later, the engine was processing 4 million events per day, scoring users every 12 minutes, and had generated ₹4.2 crore (about $0.44 million) in incremental revenue by catching users at the exact moment they were ready to act — moments that a 24-hour batch system would have missed entirely.
+Six months later, the engine was processing 4 million events per day, scoring users every 12 minutes, and had generated ₹4.2 crore (about $438,002) in incremental revenue by catching users at the exact moment they were ready to act — moments that a 24-hour batch system would have missed entirely.
 
 > **The problem.** Intent has a half-life. A user who searches "remittance to UAE" at 11am is a completely different proposition at 11pm. Batch scoring doesn't capture the moment. It captures the aftermath.
 
@@ -163,7 +163,7 @@ This is the part where it got genuinely complex. The event volume at peak (Frida
 
 - Engine scaled to handle 4M events/day at peak
 
-**Result.** ₹4.2Cr (about $0.44 million) incremental revenue attributed to real-time vs batch improvement
+**Result.** ₹4.2Cr (about $438,002) incremental revenue attributed to real-time vs batch improvement
 
 ## Six Months In
 
@@ -171,7 +171,7 @@ This is the part where it got genuinely complex. The event volume at peak (Frida
   caption="Results at a glance"
   columns={["Measure", "Result"]}
   rows={[
-    { cells: ["Incremental Revenue", "\u20b94.2Cr (about $0.44 million)"] },
+    { cells: ["Incremental Revenue", "\u20b94.2Cr (about $438,002)"] },
     { cells: ["Conversion Lift", "10\u00d7"] },
     { cells: ["Form Abandonment CVR", "52.6%"] },
     { cells: ["p99 Classification Latency", "180ms"] }
@@ -182,19 +182,19 @@ This is the part where it got genuinely complex. The event volume at peak (Frida
 
 ## What I'd Tell Someone Building This
 
-### 01. Intent has a half-life of minutes, not hours
+### Intent has a half-life of minutes, not hours
 
 The data is unambiguous: conversion probability decays exponentially from the moment of peak intent. Every hour of delay is margin you're leaving behind. If your personalization system operates in 24-hour batches, you're personalizing in a world that's already moved on.
 
-### 02. Start with the highest-use single trigger
+### Start with the highest-use single trigger
 
 Don't build the full engine first. We started with form abandonment and manually triggered it for 2 weeks. That proof of concept got engineering buy-in faster than any architecture diagram. Find your highest-value trigger and prove it manually before automating.
 
-### 03. Fatigue management is not optional
+### Fatigue management is not optional
 
 We set initial limits too high — 3 interventions per session. Complaints went up. Satisfaction scores dropped. The rule we landed on: max 2 per session, minimum 4 hours between same-channel messages, 24-hour cooldown per user. Adjust for your product.
 
-### 04. State transitions matter more than states
+### State transitions matter more than states
 
 Knowing a user is in 'Comparing' state is less actionable than knowing they just transitioned from 'Researching' to 'Comparing.' The transition is when momentum is highest. Build your triggers around transitions, not static states.
 

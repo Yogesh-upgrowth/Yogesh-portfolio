@@ -150,6 +150,7 @@ def build_meta(page: dict, batch: dict) -> dict:
         "verified_on": batch["verified_on"],
         "refreshed_on": batch["verified_on"],
         "changelog": [],
+        "provenance": page.get("provenance", "authored"),
         "not_affiliated": page.get("not_affiliated", False),
         "fx_rate_used": batch["fx_rate"],
     }
@@ -242,11 +243,21 @@ def check(spec: dict) -> list[str]:
 
         bands = BANDS.get(page["archetype"])
         if bands:
+            migrated = page.get("provenance") == "migrated"
             for problem in style_problems(page["body"], page["archetype"], *bands):
                 # G12 exempts case studies from the first-person rule: the
                 # archetype is an account of Yogesh's own work and its contract
                 # requires "my role" and "what I'd do differently" in the body.
                 if page["archetype"] == "case-study" and problem.startswith("G12 first person"):
+                    continue
+                # Mirror of PageMeta.provenance: a migrated page is not held to a
+                # section shape, a readability limit or the question rule.
+                if migrated and (
+                    problem.startswith(("G13 FK", "G13 passive", "G13 average", "G07 H2 ", "G07 risk"))
+                    or "question mark" in problem
+                    or re.match(r"^G07 \d+ H2s", problem)
+                    or re.match(r"^G07 \d+ words \(band", problem)
+                ):
                     continue
                 errs.append(f"{page['id']}: {problem}")
         # A FromMyWork block that cites an id the meta does not list fails the

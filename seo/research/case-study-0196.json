@@ -76,7 +76,7 @@
       "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
       "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
       "source_domain": "pmyogesh.com",
-      "excerpt": "per month. At our conversion rate and LTV, that gap was worth ₹1.8 crore monthly. It was worth fighting for.",
+      "excerpt": "per month. At our conversion rate and LTV, that gap was worth ₹1.8 crore (about $187,715) monthly. It was worth fighting for.",
       "published_on": "Nov 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -84,13 +84,13 @@
     },
     {
       "fact_id": "f-cs-rank-1-fintech-keywords-06",
-      "claim": "The conventional SEO advice is \"don't target keywords where you can't win.\" That's wrong when you're at position 4 for a ₹1.8Cr/month keyword. The correct frame is: can you win, and if so, what would it take? The answer turned out to be…",
-      "value": "1.8Cr",
-      "unit": "INR",
+      "claim": "The temptation was to focus elsewhere. The calculation said don't: the traffic difference between position 4 (estimated 7.2% CTR) and position 1 (estimated 28.5%) was 19,300 visits per month. At our conversion rate and LTV, that gap was…",
+      "value": "187,715",
+      "unit": "USD",
       "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
       "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
       "source_domain": "pmyogesh.com",
-      "excerpt": "you can't win.\" That's wrong when you're at position 4 for a ₹1.8Cr/month keyword. The correct frame is: can you win, and if so, what",
+      "excerpt": "our conversion rate and LTV, that gap was worth ₹1.8 crore (about $187,715) monthly. It was worth fighting for.",
       "published_on": "Nov 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -98,6 +98,20 @@
     },
     {
       "fact_id": "f-cs-rank-1-fintech-keywords-07",
+      "claim": "The conventional SEO advice is \"don't target keywords where you can't win.\" That's wrong when you're at position 4 for a ₹1.8Cr (about $187,715)/month keyword. The correct frame is: can you win, and if so, what would it take? The answer…",
+      "value": "1.8Cr",
+      "unit": "INR",
+      "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
+      "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "you can't win.\" That's wrong when you're at position 4 for a ₹1.8Cr (about $187,715)/month keyword. The correct frame is: can you win, and if",
+      "published_on": "Nov 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-rank-1-fintech-keywords-08",
       "claim": "Referring Domains — 214 — 892 — Large — not closeable quickly",
       "value": "214",
       "unit": "count",
@@ -111,7 +125,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-08",
+      "fact_id": "f-cs-rank-1-fintech-keywords-09",
       "claim": "Referring Domains — 214 — 892 — Large — not closeable quickly",
       "value": "892",
       "unit": "count",
@@ -125,7 +139,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-09",
+      "fact_id": "f-cs-rank-1-fintech-keywords-10",
       "claim": "Content Depth (word count) — 1,840 — 3,200 — Addressable in 2 weeks",
       "value": "1,840",
       "unit": "count",
@@ -139,7 +153,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-10",
+      "fact_id": "f-cs-rank-1-fintech-keywords-11",
       "claim": "Content Depth (word count) — 1,840 — 3,200 — Addressable in 2 weeks",
       "value": "3,200",
       "unit": "count",
@@ -153,21 +167,77 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-11",
-      "claim": "What are the top 5 plans under ₹15,000/year? — No — Yes — High",
-      "value": "15,000",
-      "unit": "INR",
+      "fact_id": "f-cs-rank-1-fintech-keywords-12",
+      "claim": "User engagement (time on page) — 2.1 min — 4.8 min — Addressable — content quality",
+      "value": "2.1",
+      "unit": "count",
       "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
       "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
       "source_domain": "pmyogesh.com",
-      "excerpt": "What are the top 5 plans under ₹15,000/year? — No — Yes — High",
+      "excerpt": "User engagement (time on page) — 2.1 min — 4.8 min — Addressable — content quality",
       "published_on": "Nov 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-12",
+      "fact_id": "f-cs-rank-1-fintech-keywords-13",
+      "claim": "User engagement (time on page) — 2.1 min — 4.8 min — Addressable — content quality",
+      "value": "4.8",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
+      "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "User engagement (time on page) — 2.1 min — 4.8 min — Addressable — content quality",
+      "published_on": "Nov 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-rank-1-fintech-keywords-14",
+      "claim": "Page speed (LCP) — 3.8 sec — 2.1 sec — Addressable in 1 week",
+      "value": "3.8",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
+      "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Page speed (LCP) — 3.8 sec — 2.1 sec — Addressable in 1 week",
+      "published_on": "Nov 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-rank-1-fintech-keywords-15",
+      "claim": "What are the top 5 plans under ₹15,000 (about $156.43)/year? — No — Yes — High",
+      "value": "15,000",
+      "unit": "INR",
+      "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
+      "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "What are the top 5 plans under ₹15,000 (about $156.43)/year? — No — Yes — High",
+      "published_on": "Nov 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-rank-1-fintech-keywords-16",
+      "claim": "What are the top 5 plans under ₹15,000 (about $156.43)/year? — No — Yes — High",
+      "value": "156.43",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
+      "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "What are the top 5 plans under ₹15,000 (about $156.43)/year? — No — Yes — High",
+      "published_on": "Nov 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-rank-1-fintech-keywords-17",
       "claim": "All 12 key user questions identified. Each answered with dedicated section: claim settlement data (updated quarterly), coverage comparison table, waiting period guide, porting process, coverage calculator. Page grew from 1,840 to 4,200…",
       "value": "4,200",
       "unit": "count",
@@ -181,7 +251,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-13",
+      "fact_id": "f-cs-rank-1-fintech-keywords-18",
+      "claim": "LCP from 3.8 to 1.9 seconds: image compression, lazy loading, critical CSS inlining, CDN implementation. Page experience signals are a Google ranking factor — at near-equal content quality, technical performance is a tiebreaker.",
+      "value": "1.9",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
+      "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "LCP from 3.8 to 1.9 seconds: image compression, lazy loading, critical CSS inlining, CDN implementation. Page experience signals are a Google ranking factor — at",
+      "published_on": "Nov 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-rank-1-fintech-keywords-19",
       "claim": "'India Health Insurance Satisfaction Survey' designed and published: 2,200 respondents",
       "value": "2,200",
       "unit": "count",
@@ -195,35 +279,63 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-14",
-      "claim": "Position 1 held. 23,400 sessions/month. ₹1.9Cr estimated monthly revenue contribution.",
+      "fact_id": "f-cs-rank-1-fintech-keywords-20",
+      "claim": "Position 3 → Position 2. Time on page: 2.1 → 4.4 minutes.",
+      "value": "4.4",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
+      "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Position 3 → Position 2. Time on page: 2.1 → 4.4 minutes.",
+      "published_on": "Nov 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-rank-1-fintech-keywords-21",
+      "claim": "Position 1 held. 23,400 sessions/month. ₹1.9Cr (about $198,144) estimated monthly revenue contribution.",
       "value": "23,400",
       "unit": "count",
       "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
       "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Position 1 held. 23,400 sessions/month. ₹1.9Cr estimated monthly revenue contribution.",
+      "excerpt": "Position 1 held. 23,400 sessions/month. ₹1.9Cr (about $198,144) estimated monthly revenue contribution.",
       "published_on": "Nov 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-15",
-      "claim": "Position 1 held. 23,400 sessions/month. ₹1.9Cr estimated monthly revenue contribution.",
+      "fact_id": "f-cs-rank-1-fintech-keywords-22",
+      "claim": "Position 1 held. 23,400 sessions/month. ₹1.9Cr (about $198,144) estimated monthly revenue contribution.",
       "value": "1.9Cr",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
       "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Position 1 held. 23,400 sessions/month. ₹1.9Cr estimated monthly revenue contribution.",
+      "excerpt": "Position 1 held. 23,400 sessions/month. ₹1.9Cr (about $198,144) estimated monthly revenue contribution.",
       "published_on": "Nov 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-16",
+      "fact_id": "f-cs-rank-1-fintech-keywords-23",
+      "claim": "Position 1 held. 23,400 sessions/month. ₹1.9Cr (about $198,144) estimated monthly revenue contribution.",
+      "value": "198,144",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/rank-1-fintech-keywords",
+      "source_title": "How We Ranked #1 for High-Intent Keywords in a Competitive Fintech Niche",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Position 1 held. 23,400 sessions/month. ₹1.9Cr (about $198,144) estimated monthly revenue contribution.",
+      "published_on": "Nov 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-rank-1-fintech-keywords-24",
       "claim": "Rich results (FAQ in SERPs) driving 34% higher CTR than position alone",
       "value": "34%",
       "unit": "%",
@@ -237,7 +349,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-17",
+      "fact_id": "f-cs-rank-1-fintech-keywords-25",
       "claim": "Monthly Sessions: 23.4K (from target keyword)",
       "value": "23.4K",
       "unit": "count",
@@ -251,7 +363,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-18",
+      "fact_id": "f-cs-rank-1-fintech-keywords-26",
       "claim": "Organic Traffic: +112% (from this keyword vs Position 4)",
       "value": "112%",
       "unit": "%",
@@ -265,7 +377,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-19",
+      "fact_id": "f-cs-rank-1-fintech-keywords-27",
       "claim": "First outreach campaign: cold emails to personal finance bloggers with a generic 'we have great content' pitch. Response rate: 2.1%. 4 responses, 1 link.",
       "value": "2.1%",
       "unit": "%",
@@ -279,7 +391,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-20",
+      "fact_id": "f-cs-rank-1-fintech-keywords-28",
       "claim": "Switched to data-led outreach: 'We have exclusive claim settlement ratio data for 2023 you might want to reference.' Response rate: 18.4%. 23 responses, 14 links. Specificity drives outreach performance.",
       "value": "2023",
       "unit": "count",
@@ -293,7 +405,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-rank-1-fintech-keywords-21",
+      "fact_id": "f-cs-rank-1-fintech-keywords-29",
       "claim": "Switched to data-led outreach: 'We have exclusive claim settlement ratio data for 2023 you might want to reference.' Response rate: 18.4%. 23 responses, 14 links. Specificity drives outreach performance.",
       "value": "18.4%",
       "unit": "%",
@@ -323,33 +435,50 @@
       "f-cs-rank-1-fintech-keywords-03",
       "f-cs-rank-1-fintech-keywords-04",
       "f-cs-rank-1-fintech-keywords-05",
-      "f-cs-rank-1-fintech-keywords-06"
+      "f-cs-rank-1-fintech-keywords-06",
+      "f-cs-rank-1-fintech-keywords-07"
     ],
     "problem_with_baseline": [
-      "f-cs-rank-1-fintech-keywords-07",
       "f-cs-rank-1-fintech-keywords-08",
       "f-cs-rank-1-fintech-keywords-09",
-      "f-cs-rank-1-fintech-keywords-10"
-    ],
-    "interventions": [
+      "f-cs-rank-1-fintech-keywords-10",
       "f-cs-rank-1-fintech-keywords-11",
       "f-cs-rank-1-fintech-keywords-12",
       "f-cs-rank-1-fintech-keywords-13",
-      "f-cs-rank-1-fintech-keywords-14",
+      "f-cs-rank-1-fintech-keywords-14"
+    ],
+    "interventions": [
       "f-cs-rank-1-fintech-keywords-15",
-      "f-cs-rank-1-fintech-keywords-16"
-    ],
-    "results": [
+      "f-cs-rank-1-fintech-keywords-16",
       "f-cs-rank-1-fintech-keywords-17",
-      "f-cs-rank-1-fintech-keywords-18"
-    ],
-    "what_didnt_work": [
+      "f-cs-rank-1-fintech-keywords-18",
       "f-cs-rank-1-fintech-keywords-19",
       "f-cs-rank-1-fintech-keywords-20",
-      "f-cs-rank-1-fintech-keywords-21"
+      "f-cs-rank-1-fintech-keywords-21",
+      "f-cs-rank-1-fintech-keywords-22",
+      "f-cs-rank-1-fintech-keywords-23",
+      "f-cs-rank-1-fintech-keywords-24"
+    ],
+    "results": [
+      "f-cs-rank-1-fintech-keywords-25",
+      "f-cs-rank-1-fintech-keywords-26"
+    ],
+    "what_didnt_work": [
+      "f-cs-rank-1-fintech-keywords-27",
+      "f-cs-rank-1-fintech-keywords-28",
+      "f-cs-rank-1-fintech-keywords-29"
     ],
     "answer_box": [
-      "f-cs-rank-1-fintech-keywords-01"
+      "f-cs-rank-1-fintech-keywords-15",
+      "f-cs-rank-1-fintech-keywords-16",
+      "f-cs-rank-1-fintech-keywords-17",
+      "f-cs-rank-1-fintech-keywords-18",
+      "f-cs-rank-1-fintech-keywords-19",
+      "f-cs-rank-1-fintech-keywords-20",
+      "f-cs-rank-1-fintech-keywords-21",
+      "f-cs-rank-1-fintech-keywords-22",
+      "f-cs-rank-1-fintech-keywords-23",
+      "f-cs-rank-1-fintech-keywords-24"
     ]
   }
 }

@@ -123,23 +123,23 @@ At quote receipt: 'Here are 2 plans with similar coverage at lower premium.' Com
   ]}
 />
 
-> **The takeaway.** The biggest insight: Mode 4 (price optimization at the post-quote stage) outperformed everything because it appeared at the highest-intent moment with the most concrete value proposition. "This plan has equivalent coverage and costs ₹3,200 l (about $3.34 million)ess per year" is the right message for someone who has just received a quote and is considering whether to proceed.
+> **The takeaway.** The biggest insight: Mode 4 (price optimization at the post-quote stage) outperformed everything because it appeared at the highest-intent moment with the most concrete value proposition. "This plan has equivalent coverage and costs ₹3,200 (about $33.37) less per year" is the right message for someone who has just received a quote and is considering whether to proceed.
 
 ## What Building V1 and V2 Taught Me
 
-### 01. Recommendation systems need path stage awareness before they need accuracy
+### Recommendation systems need path stage awareness before they need accuracy
 
 V1 was technically accurate — it recommended plans that similar users purchased. V2 classified the path stage first, then chose the recommendation logic. The stage awareness made a larger impact than improving model accuracy would have.
 
-### 02. Collaborative filtering is right for deciding, not for orienting
+### Collaborative filtering is right for deciding, not for orienting
 
 'People like you chose this' is compelling when you're making your final decision. It's premature and slightly pushy when you're still exploring. Every recommendation logic has an appropriate moment — force-fitting one logic to all moments is what makes recommendation systems feel annoying.
 
-### 03. Rule-based classifiers beat ML when the stages are clean
+### Rule-based classifiers beat ML when the stages are clean
 
 We tried an ML classifier for path stage detection. F1 score: 0.76. Rule-based decision tree: 0.89. The stages were distinct enough that heuristics outperformed the model — and were 100% interpretable when they were wrong. For this problem, simpler was better.
 
-### 04. Post-quote is the highest-use recommendation moment in financial comparison
+### Post-quote is the highest-use recommendation moment in financial comparison
 
 Users who have received a quote are committed enough to evaluate alternatives but not yet so committed that switching feels like starting over. That window — post-quote, pre-purchase — is the highest-converting recommendation moment in our entire funnel.
 

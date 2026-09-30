@@ -49,7 +49,13 @@
     "f-cs-carinfo-3-8m-to-45m-mau-32",
     "f-cs-carinfo-3-8m-to-45m-mau-33",
     "f-cs-carinfo-3-8m-to-45m-mau-34",
-    "f-cs-carinfo-3-8m-to-45m-mau-35"
+    "f-cs-carinfo-3-8m-to-45m-mau-35",
+    "f-cs-carinfo-3-8m-to-45m-mau-36",
+    "f-cs-carinfo-3-8m-to-45m-mau-37",
+    "f-cs-carinfo-3-8m-to-45m-mau-38",
+    "f-cs-carinfo-3-8m-to-45m-mau-39",
+    "f-cs-carinfo-3-8m-to-45m-mau-40",
+    "f-cs-carinfo-3-8m-to-45m-mau-41"
   ],
   "experience_used": [
     "exp-020",
@@ -114,6 +120,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

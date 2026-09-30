@@ -163,7 +163,14 @@
       "f-cs-seo-moat-remittance-09"
     ],
     "answer_box": [
-      "f-cs-seo-moat-remittance-01"
+      "f-cs-seo-moat-remittance-01",
+      "f-cs-seo-moat-remittance-02",
+      "f-cs-seo-moat-remittance-03"
+    ],
+    "problem_with_baseline": [
+      "f-cs-seo-moat-remittance-01",
+      "f-cs-seo-moat-remittance-02",
+      "f-cs-seo-moat-remittance-03"
     ]
   }
 }

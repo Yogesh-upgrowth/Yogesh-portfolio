@@ -122,7 +122,14 @@
       "f-cs-reduce-cognitive-load-06"
     ],
     "answer_box": [
-      "f-cs-reduce-cognitive-load-01"
+      "f-cs-reduce-cognitive-load-02",
+      "f-cs-reduce-cognitive-load-03",
+      "f-cs-reduce-cognitive-load-04"
+    ],
+    "problem_with_baseline": [
+      "f-cs-reduce-cognitive-load-02",
+      "f-cs-reduce-cognitive-load-03",
+      "f-cs-reduce-cognitive-load-04"
     ]
   }
 }

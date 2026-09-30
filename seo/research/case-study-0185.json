@@ -14,6 +14,20 @@
   "facts": [
     {
       "fact_id": "f-cs-cab-fare-comparison-engine-01",
+      "claim": "That conversation stuck. Here was someone whose income depended entirely on platform-specific surge dynamics — and he had no visibility into the comparative market. The same invisibility problem existed for the 2 million daily cab users…",
+      "value": "2 million",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
+      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "visibility into the comparative market. The same invisibility problem existed for the 2 million daily cab users in Tier 1 Indian cities.",
+      "published_on": "Dec 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-cab-fare-comparison-engine-02",
       "claim": "Before building, we surveyed 400 frequent cab users in Bangalore, Mumbai, and Delhi. The current \"comparison\" behavior was manual and painful.",
       "value": "400",
       "unit": "count",
@@ -27,7 +41,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-02",
+      "fact_id": "f-cs-cab-fare-comparison-engine-03",
       "claim": "Open 2–3 apps manually and compare — 68% — 3–7 minutes — Moderate (surge changes during this time)",
       "value": "68%",
       "unit": "%",
@@ -41,7 +55,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-03",
+      "fact_id": "f-cs-cab-fare-comparison-engine-04",
       "claim": "Stick to one platform always — 21% — 0 minutes — Low (missing better deals)",
       "value": "21%",
       "unit": "%",
@@ -55,7 +69,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-04",
+      "fact_id": "f-cs-cab-fare-comparison-engine-05",
       "claim": "Ask colleague/friend what they're using — 8% — 1–2 minutes — Low",
       "value": "8%",
       "unit": "%",
@@ -69,7 +83,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-05",
+      "fact_id": "f-cs-cab-fare-comparison-engine-06",
       "claim": "Use comparison tool (existing options) — 3% — — — Poor (none were real-time)",
       "value": "3%",
       "unit": "%",
@@ -83,7 +97,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-06",
+      "fact_id": "f-cs-cab-fare-comparison-engine-07",
       "claim": "Daily Commuter — 34% — High — Predictability + lowest morning fare — Highest — repeat value",
       "value": "34%",
       "unit": "%",
@@ -97,7 +111,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-07",
+      "fact_id": "f-cs-cab-fare-comparison-engine-08",
       "claim": "Weekend Leisure — 22% — Medium — Convenience over price — Medium",
       "value": "22%",
       "unit": "%",
@@ -111,7 +125,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-08",
+      "fact_id": "f-cs-cab-fare-comparison-engine-09",
       "claim": "Corporate Traveler — 18% — Low (expensed) — Reliability + receipt — Low",
       "value": "18%",
       "unit": "%",
@@ -125,7 +139,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-09",
+      "fact_id": "f-cs-cab-fare-comparison-engine-10",
       "claim": "Late Night User — 15% — High — Safety + availability — High — surge sensitivity",
       "value": "15%",
       "unit": "%",
@@ -139,7 +153,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-10",
+      "fact_id": "f-cs-cab-fare-comparison-engine-11",
       "claim": "Airport Shuttle — 11% — Medium-High — Fixed-price predictability — High — single high-value trip",
       "value": "11%",
       "unit": "%",
@@ -153,28 +167,14 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-11",
-      "claim": "Daily Commuters (34% of users) were the core segment — high price sensitivity, repeat use, predictable routes. If the tool saved a commuter ₹40/day on a daily commute, that was ₹880/month in real savings. That's the value proposition…",
+      "fact_id": "f-cs-cab-fare-comparison-engine-12",
+      "claim": "Daily Commuters (34% of users) were the core segment — high price sensitivity, repeat use, predictable routes. If the tool saved a commuter ₹40 (about $0.42)/day on a daily commute, that was ₹880/month in real savings. That's the value…",
       "value": "40",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
       "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
       "source_domain": "pmyogesh.com",
-      "excerpt": "price sensitivity, repeat use, predictable routes. If the tool saved a commuter ₹40/day on a daily commute, that was ₹880/month in real savings. That's the",
-      "published_on": "Dec 2024",
-      "verified_on": "2026-09-30",
-      "method": "own_data",
-      "primary": true
-    },
-    {
-      "fact_id": "f-cs-cab-fare-comparison-engine-12",
-      "claim": "Daily Commuters (34% of users) were the core segment — high price sensitivity, repeat use, predictable routes. If the tool saved a commuter ₹40/day on a daily commute, that was ₹880/month in real savings. That's the value proposition…",
-      "value": "880",
-      "unit": "INR",
-      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
-      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
-      "source_domain": "pmyogesh.com",
-      "excerpt": "the tool saved a commuter ₹40/day on a daily commute, that was ₹880/month in real savings. That's the value proposition that builds daily habits.",
+      "excerpt": "price sensitivity, repeat use, predictable routes. If the tool saved a commuter ₹40 (about $0.42)/day on a daily commute, that was ₹880/month in real savings.",
       "published_on": "Dec 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -182,6 +182,34 @@
     },
     {
       "fact_id": "f-cs-cab-fare-comparison-engine-13",
+      "claim": "Daily Commuters (34% of users) were the core segment — high price sensitivity, repeat use, predictable routes. If the tool saved a commuter ₹40 (about $0.42)/day on a daily commute, that was ₹880/month in real savings. That's the value…",
+      "value": "0.42",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
+      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "repeat use, predictable routes. If the tool saved a commuter ₹40 (about $0.42)/day on a daily commute, that was ₹880/month in real savings. That's the",
+      "published_on": "Dec 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-cab-fare-comparison-engine-14",
+      "claim": "Daily Commuters (34% of users) were the core segment — high price sensitivity, repeat use, predictable routes. If the tool saved a commuter ₹40 (about $0.42)/day on a daily commute, that was ₹880/month in real savings. That's the value…",
+      "value": "880",
+      "unit": "INR",
+      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
+      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "saved a commuter ₹40 (about $0.42)/day on a daily commute, that was ₹880/month in real savings. That's the value proposition that builds daily habits.",
+      "published_on": "Dec 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-cab-fare-comparison-engine-15",
       "claim": "LSTM model trained on 14 months of route-specific surge data. Features: time of day, day of week, weather (rain increases surge 40–80%), local events, historical patterns for that specific origin-destination pair. Output: 15-minute…",
       "value": "80%",
       "unit": "%",
@@ -195,35 +223,91 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-14",
-      "claim": "'Wait 8 minutes — surge likely to drop from 1.8× to 1.2×, saving ~₹65' or 'Book now — surge rising over next 15 minutes.' Probabilistic recommendation with confidence level shown. Users see the bet they're making.",
+      "fact_id": "f-cs-cab-fare-comparison-engine-16",
+      "claim": "'Wait 8 minutes — surge likely to drop from 1.8× to 1.2×, saving ~₹65 (about $0.68)' or 'Book now — surge rising over next 15 minutes.' Probabilistic recommendation with confidence level shown. Users see the bet they're making.",
+      "value": "1.8",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
+      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "'Wait 8 minutes — surge likely to drop from 1.8× to 1.2×, saving ~₹65 (about $0.68)' or 'Book now — surge rising over next 15",
+      "published_on": "Dec 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-cab-fare-comparison-engine-17",
+      "claim": "'Wait 8 minutes — surge likely to drop from 1.8× to 1.2×, saving ~₹65 (about $0.68)' or 'Book now — surge rising over next 15 minutes.' Probabilistic recommendation with confidence level shown. Users see the bet they're making.",
+      "value": "1.2",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
+      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "'Wait 8 minutes — surge likely to drop from 1.8× to 1.2×, saving ~₹65 (about $0.68)' or 'Book now — surge rising over next 15",
+      "published_on": "Dec 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-cab-fare-comparison-engine-18",
+      "claim": "'Wait 8 minutes — surge likely to drop from 1.8× to 1.2×, saving ~₹65 (about $0.68)' or 'Book now — surge rising over next 15 minutes.' Probabilistic recommendation with confidence level shown. Users see the bet they're making.",
       "value": "65",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
       "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
       "source_domain": "pmyogesh.com",
-      "excerpt": "8 minutes — surge likely to drop from 1.8× to 1.2×, saving ~₹65' or 'Book now — surge rising over next 15 minutes.' Probabilistic recommendation",
+      "excerpt": "8 minutes — surge likely to drop from 1.8× to 1.2×, saving ~₹65 (about $0.68)' or 'Book now — surge rising over next 15 minutes.'",
       "published_on": "Dec 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-15",
-      "claim": "Repeat commuters: save up to 3 frequent routes. One-tap comparison for saved route. Daily commute digest: 'Your 8:30am Koramangala → MG Road: best fare right now is Rapido at ₹128.' Habit-forming format.",
+      "fact_id": "f-cs-cab-fare-comparison-engine-19",
+      "claim": "'Wait 8 minutes — surge likely to drop from 1.8× to 1.2×, saving ~₹65 (about $0.68)' or 'Book now — surge rising over next 15 minutes.' Probabilistic recommendation with confidence level shown. Users see the bet they're making.",
+      "value": "0.68",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
+      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "— surge likely to drop from 1.8× to 1.2×, saving ~₹65 (about $0.68)' or 'Book now — surge rising over next 15 minutes.' Probabilistic recommendation",
+      "published_on": "Dec 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-cab-fare-comparison-engine-20",
+      "claim": "Repeat commuters: save up to 3 frequent routes. One-tap comparison for saved route. Daily commute digest: 'Your 8:30am Koramangala → MG Road: best fare right now is Rapido at ₹128 (about $1.33).' Habit-forming format.",
       "value": "128",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
       "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
       "source_domain": "pmyogesh.com",
-      "excerpt": "8:30am Koramangala → MG Road: best fare right now is Rapido at ₹128.' Habit-forming format.",
+      "excerpt": "8:30am Koramangala → MG Road: best fare right now is Rapido at ₹128 (about $1.33).' Habit-forming format.",
       "published_on": "Dec 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-16",
+      "fact_id": "f-cs-cab-fare-comparison-engine-21",
+      "claim": "Repeat commuters: save up to 3 frequent routes. One-tap comparison for saved route. Daily commute digest: 'Your 8:30am Koramangala → MG Road: best fare right now is Rapido at ₹128 (about $1.33).' Habit-forming format.",
+      "value": "1.33",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
+      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "→ MG Road: best fare right now is Rapido at ₹128 (about $1.33).' Habit-forming format.",
+      "published_on": "Dec 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-cab-fare-comparison-engine-22",
       "claim": "Saved Commute Routes — 61% of daily users — +3.2× D30 retention vs non-savers",
       "value": "61%",
       "unit": "%",
@@ -237,7 +321,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-17",
+      "fact_id": "f-cs-cab-fare-comparison-engine-23",
+      "claim": "Saved Commute Routes — 61% of daily users — +3.2× D30 retention vs non-savers",
+      "value": "3.2",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
+      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Saved Commute Routes — 61% of daily users — +3.2× D30 retention vs non-savers",
+      "published_on": "Dec 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-cab-fare-comparison-engine-24",
       "claim": "Surge Prediction (used) — 44% of sessions — +28% conversion to app open",
       "value": "44%",
       "unit": "%",
@@ -251,7 +349,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-18",
+      "fact_id": "f-cs-cab-fare-comparison-engine-25",
       "claim": "Surge Prediction (used) — 44% of sessions — +28% conversion to app open",
       "value": "28%",
       "unit": "%",
@@ -265,7 +363,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-19",
+      "fact_id": "f-cs-cab-fare-comparison-engine-26",
       "claim": "Wait/Book Recommendation — 38% followed it — 88% found it accurate per exit survey",
       "value": "38%",
       "unit": "%",
@@ -279,7 +377,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-20",
+      "fact_id": "f-cs-cab-fare-comparison-engine-27",
       "claim": "Wait/Book Recommendation — 38% followed it — 88% found it accurate per exit survey",
       "value": "88%",
       "unit": "%",
@@ -293,7 +391,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-21",
+      "fact_id": "f-cs-cab-fare-comparison-engine-28",
       "claim": "Historical surge data: 14 months, 6 cities, 840 route pairs",
       "value": "840",
       "unit": "count",
@@ -307,7 +405,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-22",
+      "fact_id": "f-cs-cab-fare-comparison-engine-29",
       "claim": "Model accuracy: 78% within ±10% of actual surge at 15-minute horizon",
       "value": "78%",
       "unit": "%",
@@ -321,7 +419,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-23",
+      "fact_id": "f-cs-cab-fare-comparison-engine-30",
       "claim": "Model accuracy: 78% within ±10% of actual surge at 15-minute horizon",
       "value": "10%",
       "unit": "%",
@@ -335,7 +433,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-24",
+      "fact_id": "f-cs-cab-fare-comparison-engine-31",
       "claim": "D7 retention: 41% (far above typical fintech; habit forming quickly)",
       "value": "41%",
       "unit": "%",
@@ -349,7 +447,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-25",
+      "fact_id": "f-cs-cab-fare-comparison-engine-32",
       "claim": "First 2,000 users within 10 days",
       "value": "2,000",
       "unit": "count",
@@ -363,7 +461,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-26",
+      "fact_id": "f-cs-cab-fare-comparison-engine-33",
       "claim": "Surge prediction launched; initially beta-gated to 20% of users",
       "value": "20%",
       "unit": "%",
@@ -377,35 +475,49 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-27",
-      "claim": "80K MAU. ₹3.2L avg monthly user savings across active users. D30 retention: 38%.",
+      "fact_id": "f-cs-cab-fare-comparison-engine-34",
+      "claim": "80K MAU. ₹3.2L (about $3,337) avg monthly user savings across active users. D30 retention: 38%.",
       "value": "80K",
       "unit": "count",
       "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
       "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
       "source_domain": "pmyogesh.com",
-      "excerpt": "80K MAU. ₹3.2L avg monthly user savings across active users. D30 retention: 38%.",
+      "excerpt": "80K MAU. ₹3.2L (about $3,337) avg monthly user savings across active users. D30 retention: 38%.",
       "published_on": "Dec 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-28",
-      "claim": "80K MAU. ₹3.2L avg monthly user savings across active users. D30 retention: 38%.",
-      "value": "3",
+      "fact_id": "f-cs-cab-fare-comparison-engine-35",
+      "claim": "80K MAU. ₹3.2L (about $3,337) avg monthly user savings across active users. D30 retention: 38%.",
+      "value": "3.2L",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
       "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
       "source_domain": "pmyogesh.com",
-      "excerpt": "80K MAU. ₹3.2L avg monthly user savings across active users. D30 retention: 38%.",
+      "excerpt": "80K MAU. ₹3.2L (about $3,337) avg monthly user savings across active users. D30 retention: 38%.",
       "published_on": "Dec 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-29",
+      "fact_id": "f-cs-cab-fare-comparison-engine-36",
+      "claim": "80K MAU. ₹3.2L (about $3,337) avg monthly user savings across active users. D30 retention: 38%.",
+      "value": "3,337",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
+      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "80K MAU. ₹3.2L (about $3,337) avg monthly user savings across active users. D30 retention: 38%.",
+      "published_on": "Dec 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-cab-fare-comparison-engine-37",
       "claim": "80,000 monthly active users; primarily organic",
       "value": "80,000",
       "unit": "count",
@@ -419,7 +531,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-30",
+      "fact_id": "f-cs-cab-fare-comparison-engine-38",
       "claim": "Separate weekday/weekend model training. Weekend model includes proximity to entertainment districts, historical event data, late-night surge decay curves. Weekend prediction accuracy improved from 54% to 74%.",
       "value": "54%",
       "unit": "%",
@@ -433,7 +545,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-31",
+      "fact_id": "f-cs-cab-fare-comparison-engine-39",
       "claim": "Separate weekday/weekend model training. Weekend model includes proximity to entertainment districts, historical event data, late-night surge decay curves. Weekend prediction accuracy improved from 54% to 74%.",
       "value": "74%",
       "unit": "%",
@@ -447,28 +559,56 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-32",
-      "claim": "Personal savings report: 'This month you saved ₹2,340 by using our comparison tool.' Real, attributable savings that reinforce the habit and create referral motivation.",
+      "fact_id": "f-cs-cab-fare-comparison-engine-40",
+      "claim": "Personal savings report: 'This month you saved ₹2,340 (about $24.40) by using our comparison tool.' Real, attributable savings that reinforce the habit and create referral motivation.",
       "value": "2,340",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
       "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Personal savings report: 'This month you saved ₹2,340 by using our comparison tool.' Real, attributable savings that reinforce the habit and create referral motivation.",
+      "excerpt": "Personal savings report: 'This month you saved ₹2,340 (about $24.40) by using our comparison tool.' Real, attributable savings that reinforce the habit and create referral",
       "published_on": "Dec 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-cab-fare-comparison-engine-33",
-      "claim": "The auto driver who started the conversation saved ₹600/week by switching platforms based on surge patterns. He didn't use our app — but the 80,000 people who did were solving the same problem he described in that traffic jam.",
+      "fact_id": "f-cs-cab-fare-comparison-engine-41",
+      "claim": "Personal savings report: 'This month you saved ₹2,340 (about $24.40) by using our comparison tool.' Real, attributable savings that reinforce the habit and create referral motivation.",
+      "value": "24.40",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
+      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Personal savings report: 'This month you saved ₹2,340 (about $24.40) by using our comparison tool.' Real, attributable savings that reinforce the habit and create referral",
+      "published_on": "Dec 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-cab-fare-comparison-engine-42",
+      "claim": "The auto driver who started the conversation saved ₹600 (about $6.26)/week by switching platforms based on surge patterns. He didn't use our app — but the 80,000 people who did were solving the same problem he described in that traffic jam.",
       "value": "600",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
       "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
       "source_domain": "pmyogesh.com",
-      "excerpt": "The auto driver who started the conversation saved ₹600/week by switching platforms based on surge patterns. He didn't use our app — but the 80,000",
+      "excerpt": "The auto driver who started the conversation saved ₹600 (about $6.26)/week by switching platforms based on surge patterns. He didn't use our app — but",
+      "published_on": "Dec 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-cab-fare-comparison-engine-43",
+      "claim": "The auto driver who started the conversation saved ₹600 (about $6.26)/week by switching platforms based on surge patterns. He didn't use our app — but the 80,000 people who did were solving the same problem he described in that traffic jam.",
+      "value": "6.26",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/cab-fare-comparison-engine",
+      "source_title": "Building a Real-Time Cab Fare Comparison Engine (Uber vs Ola vs InDrive)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "The auto driver who started the conversation saved ₹600 (about $6.26)/week by switching platforms based on surge patterns. He didn't use our app — but",
       "published_on": "Dec 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -485,15 +625,17 @@
   "contradictions": [],
   "fetch_log": [],
   "block_coverage": {
+    "context": [
+      "f-cs-cab-fare-comparison-engine-01"
+    ],
     "problem_with_baseline": [
-      "f-cs-cab-fare-comparison-engine-01",
       "f-cs-cab-fare-comparison-engine-02",
       "f-cs-cab-fare-comparison-engine-03",
       "f-cs-cab-fare-comparison-engine-04",
-      "f-cs-cab-fare-comparison-engine-05"
+      "f-cs-cab-fare-comparison-engine-05",
+      "f-cs-cab-fare-comparison-engine-06"
     ],
     "interventions": [
-      "f-cs-cab-fare-comparison-engine-06",
       "f-cs-cab-fare-comparison-engine-07",
       "f-cs-cab-fare-comparison-engine-08",
       "f-cs-cab-fare-comparison-engine-09",
@@ -510,26 +652,59 @@
       "f-cs-cab-fare-comparison-engine-20",
       "f-cs-cab-fare-comparison-engine-21",
       "f-cs-cab-fare-comparison-engine-22",
-      "f-cs-cab-fare-comparison-engine-23"
-    ],
-    "results": [
+      "f-cs-cab-fare-comparison-engine-23",
       "f-cs-cab-fare-comparison-engine-24",
       "f-cs-cab-fare-comparison-engine-25",
       "f-cs-cab-fare-comparison-engine-26",
       "f-cs-cab-fare-comparison-engine-27",
       "f-cs-cab-fare-comparison-engine-28",
-      "f-cs-cab-fare-comparison-engine-29"
+      "f-cs-cab-fare-comparison-engine-29",
+      "f-cs-cab-fare-comparison-engine-30"
+    ],
+    "results": [
+      "f-cs-cab-fare-comparison-engine-31",
+      "f-cs-cab-fare-comparison-engine-32",
+      "f-cs-cab-fare-comparison-engine-33",
+      "f-cs-cab-fare-comparison-engine-34",
+      "f-cs-cab-fare-comparison-engine-35",
+      "f-cs-cab-fare-comparison-engine-36",
+      "f-cs-cab-fare-comparison-engine-37"
     ],
     "what_didnt_work": [
-      "f-cs-cab-fare-comparison-engine-30",
-      "f-cs-cab-fare-comparison-engine-31"
+      "f-cs-cab-fare-comparison-engine-38",
+      "f-cs-cab-fare-comparison-engine-39"
     ],
     "applicability": [
-      "f-cs-cab-fare-comparison-engine-32",
-      "f-cs-cab-fare-comparison-engine-33"
+      "f-cs-cab-fare-comparison-engine-40",
+      "f-cs-cab-fare-comparison-engine-41",
+      "f-cs-cab-fare-comparison-engine-42",
+      "f-cs-cab-fare-comparison-engine-43"
     ],
     "answer_box": [
-      "f-cs-cab-fare-comparison-engine-01"
+      "f-cs-cab-fare-comparison-engine-07",
+      "f-cs-cab-fare-comparison-engine-08",
+      "f-cs-cab-fare-comparison-engine-09",
+      "f-cs-cab-fare-comparison-engine-10",
+      "f-cs-cab-fare-comparison-engine-11",
+      "f-cs-cab-fare-comparison-engine-12",
+      "f-cs-cab-fare-comparison-engine-13",
+      "f-cs-cab-fare-comparison-engine-14",
+      "f-cs-cab-fare-comparison-engine-15",
+      "f-cs-cab-fare-comparison-engine-16",
+      "f-cs-cab-fare-comparison-engine-17",
+      "f-cs-cab-fare-comparison-engine-18",
+      "f-cs-cab-fare-comparison-engine-19",
+      "f-cs-cab-fare-comparison-engine-20",
+      "f-cs-cab-fare-comparison-engine-21",
+      "f-cs-cab-fare-comparison-engine-22",
+      "f-cs-cab-fare-comparison-engine-23",
+      "f-cs-cab-fare-comparison-engine-24",
+      "f-cs-cab-fare-comparison-engine-25",
+      "f-cs-cab-fare-comparison-engine-26",
+      "f-cs-cab-fare-comparison-engine-27",
+      "f-cs-cab-fare-comparison-engine-28",
+      "f-cs-cab-fare-comparison-engine-29",
+      "f-cs-cab-fare-comparison-engine-30"
     ]
   }
 }

@@ -28,7 +28,13 @@
     "f-cs-ai-recommendation-engine-11",
     "f-cs-ai-recommendation-engine-12",
     "f-cs-ai-recommendation-engine-13",
-    "f-cs-ai-recommendation-engine-14"
+    "f-cs-ai-recommendation-engine-14",
+    "f-cs-ai-recommendation-engine-15",
+    "f-cs-ai-recommendation-engine-16",
+    "f-cs-ai-recommendation-engine-17",
+    "f-cs-ai-recommendation-engine-18",
+    "f-cs-ai-recommendation-engine-19",
+    "f-cs-ai-recommendation-engine-20"
   ],
   "experience_used": [
     "exp-003",
@@ -93,6 +99,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

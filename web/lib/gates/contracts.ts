@@ -232,7 +232,17 @@ export const CONTRACTS: Record<string, ArchetypeContract> = {
   benchmark: {
     words: [800, 1300], section: [120, 400],
     requiredSchema: ["Article", ...PERSON_CRUMB], yearTokenAllowed: true,
+    // Evidence-bearing only. `if_youre_below_median` is advice, and related,
+    // tool_embed, faq and sources are layout or reference — asking G01 for a
+    // supporting fact behind any of them invites an invented one.
     requiredBlocks: [
+      "answer_box",
+      "the_numbers",
+      "why_this_industry_differs",
+      "india_layer",
+      "what_good_looks_like",
+    ],
+    sectionsContract: [
       "answer_box",
       "the_numbers",
       "why_this_industry_differs",

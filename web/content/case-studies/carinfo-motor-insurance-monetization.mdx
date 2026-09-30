@@ -133,7 +133,7 @@ Partner insurer API timeouts caused 23% of payment failures. Built a queue-based
 
 - Referral mechanic: 'Share your renewal link' with ₹200 (about $2.09) reward for first purchase by referee
 
-**Result.** Repeat purchase rate: 8% → 31%. Revenue: ₹1.82Cr (about $0.19 million)/mo (1,200% growth).
+**Result.** Repeat purchase rate: 8% → 31%. Revenue: ₹1.82Cr (about $189,801)/mo (1,200% growth).
 
 ## The Full Outcome
 
@@ -152,7 +152,7 @@ Partner insurer API timeouts caused 23% of payment failures. Built a queue-based
   caption="Metric breakdown"
   columns={["Metric", "Month 0", "Month 12"]}
   rows={[
-    { cells: ["Monthly Insurance Revenue", "\u20b914 lakh (about $14,600)", "\u20b91.82 crore (about $0.19 million)"] },
+    { cells: ["Monthly Insurance Revenue", "\u20b914 lakh (about $14,600)", "\u20b91.82 crore (about $189,801)"] },
     { cells: ["Overall Funnel Conversion", "0.007%", "0.092%"] },
     { cells: ["CTA Click Rate (intent segment)", "4%", "17%"] },
     { cells: ["Quote Form Completion", "27%", "61%"] },
@@ -165,19 +165,19 @@ Partner insurer API timeouts caused 23% of payment failures. Built a queue-based
 
 ## The Mental Models That Stuck
 
-### 01. Trust is a prerequisite, not a nice-to-have
+### Trust is a prerequisite, not a nice-to-have
 
 Conversion on financial products is gated by trust, not persuasion. No CTA copy optimization will work if users don't believe they're buying from a legitimate source. Trust signals (regulator badges, claim ratios, transaction count) should be designed as structural elements, not decorative additions. We added the trust shelf before changing any copy — and that alone improved form completion by 34%.
 
-### 02. Pre-filling is the most underrated conversion lever
+### Pre-filling is the most underrated conversion lever
 
 Every field a user has to type is a decision point to exit. When we pre-filled the vehicle number (which we already had from their RC lookup), quote form drop-off dropped immediately. The user was already mid-path — we just removed the friction that made them feel like they were starting over.
 
-### 03. Repeat purchase is a product architecture problem, not a marketing one
+### Repeat purchase is a product architecture problem, not a marketing one
 
 Getting from 8% to 31% repeat purchase didn't come from email campaigns. It came from the policy wallet — a persistent record of purchased policies with one-tap renewal. The moment buying again required zero re-entry, the repeat rate changed. Marketing can remind; product architecture enables.
 
-### 04. API failures are funnel failures — treat them as such
+### API failures are funnel failures — treat them as such
 
 23% of payment failures came from partner API timeouts. We tracked these as 'technical errors', not 'conversion failures'. That categorisation mistake let the issue persist for 9 months. Once we reclassified them as funnel failures and owned the fix, completion rate improved 58% at that step alone.
 

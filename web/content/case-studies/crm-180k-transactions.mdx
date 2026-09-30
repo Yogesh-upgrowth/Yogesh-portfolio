@@ -172,19 +172,19 @@ Vehicle owner resolution flow broken out as a stateless microservice. Challan sy
 
 ## What This Project Taught Me About Product at Scale
 
-### 01. Usage patterns are more important than user counts for infrastructure design
+### Usage patterns are more important than user counts for infrastructure design
 
 We had usage analytics showing 420 field officers. What we didn't have was temporal usage data — when they uploaded, in what volumes, with what frequency. The batch-upload pattern at shift-end was invisible in the aggregate metrics but it was the entire architectural constraint. Observe the shape of usage, not just the volume.
 
-### 02. Async-first design eliminates an entire class of scaling problems
+### Async-first design eliminates an entire class of scaling problems
 
 Every synchronous blocking call is a point of failure under load. When we converted the write path to async, the field officer experience actually improved — instant confirmation vs. waiting 18 seconds. And the backend processing burden became smoothed over time instead of spiked at the user's moment of action. Async is usually the user-experience win, not just the engineering win.
 
-### 03. Read/write separation should be default architecture for any CRM at scale
+### Read/write separation should be default architecture for any CRM at scale
 
 Reads and writes have fundamentally different scaling needs. Reads need consistency and speed. Writes need durability and isolation. Running them on the same resource means each degrades the other under load. We gained this insight the hard way — month-end reports killing the live dashboard during exactly the moments supervisors needed it most.
 
-### 04. State machines are under-used in product engineering
+### State machines are under-used in product engineering
 
 The orphaned record problem — transactions stuck in unknown states because the system had multiple ways to represent 'partially processed' — cost us 3 months of manual data cleaning post-rebuild. An explicit state machine with validated transitions would have made this impossible. For any workflow that has more than 3 states, a formal state machine pays for itself in the first week of production.
 

@@ -37,7 +37,17 @@
     "f-cs-zero-cost-growth-engine-20",
     "f-cs-zero-cost-growth-engine-21",
     "f-cs-zero-cost-growth-engine-22",
-    "f-cs-zero-cost-growth-engine-23"
+    "f-cs-zero-cost-growth-engine-23",
+    "f-cs-zero-cost-growth-engine-24",
+    "f-cs-zero-cost-growth-engine-25",
+    "f-cs-zero-cost-growth-engine-26",
+    "f-cs-zero-cost-growth-engine-27",
+    "f-cs-zero-cost-growth-engine-28",
+    "f-cs-zero-cost-growth-engine-29",
+    "f-cs-zero-cost-growth-engine-30",
+    "f-cs-zero-cost-growth-engine-31",
+    "f-cs-zero-cost-growth-engine-32",
+    "f-cs-zero-cost-growth-engine-33"
   ],
   "experience_used": [
     "exp-019",
@@ -102,6 +112,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

@@ -38,7 +38,17 @@
     "f-cs-finance-calculator-app-retention-21",
     "f-cs-finance-calculator-app-retention-22",
     "f-cs-finance-calculator-app-retention-23",
-    "f-cs-finance-calculator-app-retention-24"
+    "f-cs-finance-calculator-app-retention-24",
+    "f-cs-finance-calculator-app-retention-25",
+    "f-cs-finance-calculator-app-retention-26",
+    "f-cs-finance-calculator-app-retention-27",
+    "f-cs-finance-calculator-app-retention-28",
+    "f-cs-finance-calculator-app-retention-29",
+    "f-cs-finance-calculator-app-retention-30",
+    "f-cs-finance-calculator-app-retention-31",
+    "f-cs-finance-calculator-app-retention-32",
+    "f-cs-finance-calculator-app-retention-33",
+    "f-cs-finance-calculator-app-retention-34"
   ],
   "experience_used": [
     "exp-018",
@@ -103,6 +113,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

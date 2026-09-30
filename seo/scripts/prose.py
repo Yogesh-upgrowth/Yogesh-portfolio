@@ -20,7 +20,9 @@ def to_prose(mdx: str) -> str:
     for tag in RENDERED_FROM_META:
         s = re.sub(rf"<{tag}\b[^>]*/>", " ", s)
         s = re.sub(rf"<{tag}\b[^>]*>[\s\S]*?</{tag}>", " ", s)
-    s = re.sub(r"</?[A-Z][A-Za-z0-9]*\b[^>]*>", " ", s)
+    # Mirror of prose.ts: a quoted prop value may contain ">", and stopping at it
+    # leaks the rest of the component's props into the prose.
+    s = re.sub(r"</?[A-Z][A-Za-z0-9]*(?:\"[^\"]*\"|'[^']*'|[^>\"'])*>", " ", s)
     s = re.sub(r"!\[[^\]]*\]\([^)]*\)", " ", s)
     s = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", s)
     s = re.sub(r"^\s*>\s?", "", s, flags=re.M)

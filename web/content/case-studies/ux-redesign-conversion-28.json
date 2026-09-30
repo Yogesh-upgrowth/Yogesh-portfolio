@@ -37,7 +37,8 @@
     "f-cs-ux-redesign-conversion-28-20",
     "f-cs-ux-redesign-conversion-28-21",
     "f-cs-ux-redesign-conversion-28-22",
-    "f-cs-ux-redesign-conversion-28-23"
+    "f-cs-ux-redesign-conversion-28-23",
+    "f-cs-ux-redesign-conversion-28-24"
   ],
   "experience_used": [
     "exp-011",
@@ -102,6 +103,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

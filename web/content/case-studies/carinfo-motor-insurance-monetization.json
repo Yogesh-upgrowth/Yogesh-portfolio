@@ -67,7 +67,16 @@
     "f-cs-carinfo-motor-insurance-monetization-50",
     "f-cs-carinfo-motor-insurance-monetization-51",
     "f-cs-carinfo-motor-insurance-monetization-52",
-    "f-cs-carinfo-motor-insurance-monetization-53"
+    "f-cs-carinfo-motor-insurance-monetization-53",
+    "f-cs-carinfo-motor-insurance-monetization-54",
+    "f-cs-carinfo-motor-insurance-monetization-55",
+    "f-cs-carinfo-motor-insurance-monetization-56",
+    "f-cs-carinfo-motor-insurance-monetization-57",
+    "f-cs-carinfo-motor-insurance-monetization-58",
+    "f-cs-carinfo-motor-insurance-monetization-59",
+    "f-cs-carinfo-motor-insurance-monetization-60",
+    "f-cs-carinfo-motor-insurance-monetization-61",
+    "f-cs-carinfo-motor-insurance-monetization-62"
   ],
   "experience_used": [
     "exp-021",
@@ -132,6 +141,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "migrated",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

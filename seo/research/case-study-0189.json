@@ -210,6 +210,20 @@
     },
     {
       "fact_id": "f-cs-mvp-in-7-days-15",
+      "claim": "All four hypotheses passed. The decision was easy: build the full product. The 7-day investment gave us certainty that a 4-month build would have given us — just 3.5 months earlier. That's 3.5 months we could spend building the right…",
+      "value": "3.5",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/mvp-in-7-days",
+      "source_title": "From Idea to MVP in 7 Days: Building a High-Intent Utility Product",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "us certainty that a 4-month build would have given us — just 3.5 months earlier. That's 3.5 months we could spend building the right things",
+      "published_on": "Apr 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-mvp-in-7-days-16",
       "claim": "The MVP calculator became the first of 12. Suite expansion prioritized by user requests from the MVP email list. 134K monthly users 6 months after full launch.",
       "value": "134K",
       "unit": "count",
@@ -251,11 +265,23 @@
       "f-cs-mvp-in-7-days-13",
       "f-cs-mvp-in-7-days-14"
     ],
-    "applicability": [
+    "results": [
       "f-cs-mvp-in-7-days-15"
     ],
+    "applicability": [
+      "f-cs-mvp-in-7-days-16"
+    ],
     "answer_box": [
-      "f-cs-mvp-in-7-days-01"
+      "f-cs-mvp-in-7-days-05",
+      "f-cs-mvp-in-7-days-06",
+      "f-cs-mvp-in-7-days-07",
+      "f-cs-mvp-in-7-days-08",
+      "f-cs-mvp-in-7-days-09",
+      "f-cs-mvp-in-7-days-10",
+      "f-cs-mvp-in-7-days-11",
+      "f-cs-mvp-in-7-days-12",
+      "f-cs-mvp-in-7-days-13",
+      "f-cs-mvp-in-7-days-14"
     ]
   }
 }

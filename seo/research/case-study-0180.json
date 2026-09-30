@@ -252,6 +252,34 @@
     },
     {
       "fact_id": "f-cs-scaling-moneyratefinder-growth-18",
+      "claim": "\\{`Intent Score = (Specificity × 0.4) + (Transaction Signal × 0.4) + (Urgency × 0.2) Rule: Only prioritize keywords with Intent Score > 70`\\}",
+      "value": "0.4",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/scaling-moneyratefinder-growth",
+      "source_title": "From 1K to 100K Monthly Users: Scaling MoneyRateFinder with SEO + Product Loops",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "\\{`Intent Score = (Specificity × 0.4) + (Transaction Signal × 0.4) + (Urgency × 0.2) Rule: Only prioritize keywords with Intent Score > 70`\\}",
+      "published_on": "Jul 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-19",
+      "claim": "\\{`Intent Score = (Specificity × 0.4) + (Transaction Signal × 0.4) + (Urgency × 0.2) Rule: Only prioritize keywords with Intent Score > 70`\\}",
+      "value": "0.2",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/scaling-moneyratefinder-growth",
+      "source_title": "From 1K to 100K Monthly Users: Scaling MoneyRateFinder with SEO + Product Loops",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "= (Specificity × 0.4) + (Transaction Signal × 0.4) + (Urgency × 0.2) Rule: Only prioritize keywords with Intent Score > 70`\\}",
+      "published_on": "Jul 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-20",
       "claim": "Pages should feel like tools, not articles. Users don't want 1,500-word blogs — they want the best rate right now.",
       "value": "1,500",
       "unit": "count",
@@ -265,7 +293,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-19",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-21",
       "claim": "Turning 5,000 pages into a network Google understands as authoritative",
       "value": "5,000",
       "unit": "count",
@@ -279,7 +307,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-20",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-22",
       "claim": "300 pages",
       "value": "300",
       "unit": "count",
@@ -293,7 +321,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-21",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-23",
       "claim": "2,000 pages",
       "value": "2,000",
       "unit": "count",
@@ -307,7 +335,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-22",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-24",
       "claim": "Month 3 — 4,800 — +4.3×",
       "value": "4,800",
       "unit": "count",
@@ -321,7 +349,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-23",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-25",
+      "claim": "Month 3 — 4,800 — +4.3×",
+      "value": "4.3",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/scaling-moneyratefinder-growth",
+      "source_title": "From 1K to 100K Monthly Users: Scaling MoneyRateFinder with SEO + Product Loops",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Month 3 — 4,800 — +4.3×",
+      "published_on": "Jul 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-26",
       "claim": "Month 5 — 18,500 — +16.5×",
       "value": "18,500",
       "unit": "count",
@@ -335,7 +377,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-24",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-27",
+      "claim": "Month 5 — 18,500 — +16.5×",
+      "value": "16.5",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/scaling-moneyratefinder-growth",
+      "source_title": "From 1K to 100K Monthly Users: Scaling MoneyRateFinder with SEO + Product Loops",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Month 5 — 18,500 — +16.5×",
+      "published_on": "Jul 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-28",
       "claim": "Month 7 — 52,000 — +46×",
       "value": "52,000",
       "unit": "count",
@@ -349,7 +405,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-25",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-29",
       "claim": "Month 9 — 103,000 — +92× from baseline",
       "value": "103,000",
       "unit": "count",
@@ -363,7 +419,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-26",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-30",
       "claim": "Top 3 positions — 320 keywords",
       "value": "320",
       "unit": "count",
@@ -377,7 +433,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-27",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-31",
       "claim": "Top 10 positions — 1,850 keywords",
       "value": "1,850",
       "unit": "count",
@@ -391,7 +447,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-28",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-32",
       "claim": "Total indexed pages — 4,700",
       "value": "4,700",
       "unit": "count",
@@ -405,7 +461,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-29",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-33",
       "claim": "Click-Through Rate — 1.9% — 4.8%",
       "value": "4.8%",
       "unit": "%",
@@ -419,7 +475,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-30",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-34",
       "claim": "Provider Conversion — 1.9% — 6.2%",
       "value": "6.2%",
       "unit": "%",
@@ -433,7 +489,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-scaling-moneyratefinder-growth-31",
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-35",
+      "claim": "Revenue / User — Baseline — ↑ 2.3×",
+      "value": "2.3",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/scaling-moneyratefinder-growth",
+      "source_title": "From 1K to 100K Monthly Users: Scaling MoneyRateFinder with SEO + Product Loops",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Revenue / User — Baseline — ↑ 2.3×",
+      "published_on": "Jul 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-scaling-moneyratefinder-growth-36",
       "claim": "border-orange-200 bg-orange-50",
       "value": "200",
       "unit": "count",
@@ -481,21 +551,38 @@
       "f-cs-scaling-moneyratefinder-growth-19",
       "f-cs-scaling-moneyratefinder-growth-20",
       "f-cs-scaling-moneyratefinder-growth-21",
-      "f-cs-scaling-moneyratefinder-growth-31"
-    ],
-    "results": [
       "f-cs-scaling-moneyratefinder-growth-22",
       "f-cs-scaling-moneyratefinder-growth-23",
+      "f-cs-scaling-moneyratefinder-growth-36"
+    ],
+    "results": [
       "f-cs-scaling-moneyratefinder-growth-24",
       "f-cs-scaling-moneyratefinder-growth-25",
       "f-cs-scaling-moneyratefinder-growth-26",
       "f-cs-scaling-moneyratefinder-growth-27",
       "f-cs-scaling-moneyratefinder-growth-28",
       "f-cs-scaling-moneyratefinder-growth-29",
-      "f-cs-scaling-moneyratefinder-growth-30"
+      "f-cs-scaling-moneyratefinder-growth-30",
+      "f-cs-scaling-moneyratefinder-growth-31",
+      "f-cs-scaling-moneyratefinder-growth-32",
+      "f-cs-scaling-moneyratefinder-growth-33",
+      "f-cs-scaling-moneyratefinder-growth-34",
+      "f-cs-scaling-moneyratefinder-growth-35"
     ],
     "answer_box": [
-      "f-cs-scaling-moneyratefinder-growth-01"
+      "f-cs-scaling-moneyratefinder-growth-12",
+      "f-cs-scaling-moneyratefinder-growth-13",
+      "f-cs-scaling-moneyratefinder-growth-14",
+      "f-cs-scaling-moneyratefinder-growth-15",
+      "f-cs-scaling-moneyratefinder-growth-16",
+      "f-cs-scaling-moneyratefinder-growth-17",
+      "f-cs-scaling-moneyratefinder-growth-18",
+      "f-cs-scaling-moneyratefinder-growth-19",
+      "f-cs-scaling-moneyratefinder-growth-20",
+      "f-cs-scaling-moneyratefinder-growth-21",
+      "f-cs-scaling-moneyratefinder-growth-22",
+      "f-cs-scaling-moneyratefinder-growth-23",
+      "f-cs-scaling-moneyratefinder-growth-36"
     ]
   }
 }

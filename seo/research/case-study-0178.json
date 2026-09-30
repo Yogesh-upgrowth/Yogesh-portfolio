@@ -476,6 +476,20 @@
     },
     {
       "fact_id": "f-cs-predict-user-dropoff-churn-model-34",
+      "claim": "Model validation: AUC 0.81 at 14-day prediction horizon",
+      "value": "0.81",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/predict-user-dropoff-churn-model",
+      "source_title": "Predicting User Drop-Off Before It Happens (Churn Prevention Model)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Model validation: AUC 0.81 at 14-day prediction horizon",
+      "published_on": "May 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-predict-user-dropoff-churn-model-35",
       "claim": "Intervention playbook drafted. First 200 at-risk users saved.",
       "value": "200",
       "unit": "count",
@@ -489,7 +503,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-predict-user-dropoff-churn-model-35",
+      "fact_id": "f-cs-predict-user-dropoff-churn-model-36",
+      "claim": "Orange tier email: personalized vs generic offer — personalized 2.8× better click rate",
+      "value": "2.8",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/predict-user-dropoff-churn-model",
+      "source_title": "Predicting User Drop-Off Before It Happens (Churn Prevention Model)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Orange tier email: personalized vs generic offer — personalized 2.8× better click rate",
+      "published_on": "May 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-predict-user-dropoff-churn-model-37",
       "claim": "Monthly churn rate: 8.4% → 5.1%. Significant drop in first 60 days of full rollout.",
       "value": "8.4%",
       "unit": "%",
@@ -503,7 +531,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-predict-user-dropoff-churn-model-36",
+      "fact_id": "f-cs-predict-user-dropoff-churn-model-38",
       "claim": "Monthly churn rate: 8.4% → 5.1%. Significant drop in first 60 days of full rollout.",
       "value": "5.1%",
       "unit": "%",
@@ -517,7 +545,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-predict-user-dropoff-churn-model-37",
+      "fact_id": "f-cs-predict-user-dropoff-churn-model-39",
       "claim": "Monthly Churn Rate: −39% (8.4% → 5.1%)",
       "value": "39%",
       "unit": "%",
@@ -531,21 +559,35 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-predict-user-dropoff-churn-model-38",
-      "claim": "Annual Revenue Retained: ₹2.1Cr (from prevented churn)",
+      "fact_id": "f-cs-predict-user-dropoff-churn-model-40",
+      "claim": "Annual Revenue Retained: ₹2.1Cr (about $219,001) (from prevented churn)",
       "value": "2.1Cr",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/predict-user-dropoff-churn-model",
       "source_title": "Predicting User Drop-Off Before It Happens (Churn Prevention Model)",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Annual Revenue Retained: ₹2.1Cr (from prevented churn)",
+      "excerpt": "Annual Revenue Retained: ₹2.1Cr (about $219,001) (from prevented churn)",
       "published_on": "May 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-predict-user-dropoff-churn-model-39",
+      "fact_id": "f-cs-predict-user-dropoff-churn-model-41",
+      "claim": "Annual Revenue Retained: ₹2.1Cr (about $219,001) (from prevented churn)",
+      "value": "219,001",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/predict-user-dropoff-churn-model",
+      "source_title": "Predicting User Drop-Off Before It Happens (Churn Prevention Model)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Annual Revenue Retained: ₹2.1Cr (about $219,001) (from prevented churn)",
+      "published_on": "May 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-predict-user-dropoff-churn-model-42",
       "claim": "A user at 70% churn probability who's been there for 2 weeks is more stable than a user who jumped from 30% to 65% in 3 days. The second user is actively making the decision to leave. Score velocity should trigger faster intervention…",
       "value": "70%",
       "unit": "%",
@@ -559,7 +601,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-predict-user-dropoff-churn-model-40",
+      "fact_id": "f-cs-predict-user-dropoff-churn-model-43",
       "claim": "A user at 70% churn probability who's been there for 2 weeks is more stable than a user who jumped from 30% to 65% in 3 days. The second user is actively making the decision to leave. Score velocity should trigger faster intervention…",
       "value": "65%",
       "unit": "%",
@@ -573,7 +615,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-predict-user-dropoff-churn-model-41",
+      "fact_id": "f-cs-predict-user-dropoff-churn-model-44",
       "claim": "'We noticed you haven't been as active lately. Here's what's new.' Ignored by 73% of users. Too vague to be compelling, too generic to be personal.",
       "value": "73%",
       "unit": "%",
@@ -581,6 +623,20 @@
       "source_title": "Predicting User Drop-Off Before It Happens (Churn Prevention Model)",
       "source_domain": "pmyogesh.com",
       "excerpt": "noticed you haven't been as active lately. Here's what's new.' Ignored by 73% of users. Too vague to be compelling, too generic to be personal.",
+      "published_on": "May 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-predict-user-dropoff-churn-model-45",
+      "claim": "Nudge personalized to the specific feature the user had stopped using. 'You haven't checked your rate alerts recently — here's a rate change that matches your saved comparison.' Click rate 4.2× better.",
+      "value": "4.2",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/predict-user-dropoff-churn-model",
+      "source_title": "Predicting User Drop-Off Before It Happens (Churn Prevention Model)",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "— here's a rate change that matches your saved comparison.' Click rate 4.2× better.",
       "published_on": "May 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -636,18 +692,48 @@
       "f-cs-predict-user-dropoff-churn-model-34",
       "f-cs-predict-user-dropoff-churn-model-35",
       "f-cs-predict-user-dropoff-churn-model-36",
-      "f-cs-predict-user-dropoff-churn-model-39",
-      "f-cs-predict-user-dropoff-churn-model-40"
+      "f-cs-predict-user-dropoff-churn-model-37",
+      "f-cs-predict-user-dropoff-churn-model-38",
+      "f-cs-predict-user-dropoff-churn-model-42",
+      "f-cs-predict-user-dropoff-churn-model-43"
     ],
     "results": [
-      "f-cs-predict-user-dropoff-churn-model-37",
-      "f-cs-predict-user-dropoff-churn-model-38"
-    ],
-    "what_didnt_work": [
+      "f-cs-predict-user-dropoff-churn-model-39",
+      "f-cs-predict-user-dropoff-churn-model-40",
       "f-cs-predict-user-dropoff-churn-model-41"
     ],
+    "what_didnt_work": [
+      "f-cs-predict-user-dropoff-churn-model-44",
+      "f-cs-predict-user-dropoff-churn-model-45"
+    ],
     "answer_box": [
-      "f-cs-predict-user-dropoff-churn-model-01"
+      "f-cs-predict-user-dropoff-churn-model-14",
+      "f-cs-predict-user-dropoff-churn-model-15",
+      "f-cs-predict-user-dropoff-churn-model-16",
+      "f-cs-predict-user-dropoff-churn-model-17",
+      "f-cs-predict-user-dropoff-churn-model-18",
+      "f-cs-predict-user-dropoff-churn-model-19",
+      "f-cs-predict-user-dropoff-churn-model-20",
+      "f-cs-predict-user-dropoff-churn-model-21",
+      "f-cs-predict-user-dropoff-churn-model-22",
+      "f-cs-predict-user-dropoff-churn-model-23",
+      "f-cs-predict-user-dropoff-churn-model-24",
+      "f-cs-predict-user-dropoff-churn-model-25",
+      "f-cs-predict-user-dropoff-churn-model-26",
+      "f-cs-predict-user-dropoff-churn-model-27",
+      "f-cs-predict-user-dropoff-churn-model-28",
+      "f-cs-predict-user-dropoff-churn-model-29",
+      "f-cs-predict-user-dropoff-churn-model-30",
+      "f-cs-predict-user-dropoff-churn-model-31",
+      "f-cs-predict-user-dropoff-churn-model-32",
+      "f-cs-predict-user-dropoff-churn-model-33",
+      "f-cs-predict-user-dropoff-churn-model-34",
+      "f-cs-predict-user-dropoff-churn-model-35",
+      "f-cs-predict-user-dropoff-churn-model-36",
+      "f-cs-predict-user-dropoff-churn-model-37",
+      "f-cs-predict-user-dropoff-churn-model-38",
+      "f-cs-predict-user-dropoff-churn-model-42",
+      "f-cs-predict-user-dropoff-churn-model-43"
     ]
   }
 }

@@ -112,13 +112,13 @@
     },
     {
       "fact_id": "f-cs-seo-0-to-100k-08",
-      "claim": "Organic CAC — N/A — ₹52 — ₹31",
+      "claim": "Organic CAC — N/A — ₹52 (about $0.54) — ₹31 (about $0.32)",
       "value": "52",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/seo-0-to-100k",
       "source_title": "Scaling SEO from 0 to 100K Monthly Traffic Using Programmatic Pages",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Organic CAC — N/A — ₹52 — ₹31",
+      "excerpt": "Organic CAC — N/A — ₹52 (about $0.54) — ₹31 (about $0.32)",
       "published_on": "Sep 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -126,13 +126,13 @@
     },
     {
       "fact_id": "f-cs-seo-0-to-100k-09",
-      "claim": "Organic CAC — N/A — ₹52 — ₹31",
-      "value": "31",
-      "unit": "INR",
+      "claim": "Organic CAC — N/A — ₹52 (about $0.54) — ₹31 (about $0.32)",
+      "value": "0.54",
+      "unit": "USD",
       "source_url": "https://pmyogesh.com/case-study/seo-0-to-100k",
       "source_title": "Scaling SEO from 0 to 100K Monthly Traffic Using Programmatic Pages",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Organic CAC — N/A — ₹52 — ₹31",
+      "excerpt": "Organic CAC — N/A — ₹52 (about $0.54) — ₹31 (about $0.32)",
       "published_on": "Sep 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -140,6 +140,34 @@
     },
     {
       "fact_id": "f-cs-seo-0-to-100k-10",
+      "claim": "Organic CAC — N/A — ₹52 (about $0.54) — ₹31 (about $0.32)",
+      "value": "31",
+      "unit": "INR",
+      "source_url": "https://pmyogesh.com/case-study/seo-0-to-100k",
+      "source_title": "Scaling SEO from 0 to 100K Monthly Traffic Using Programmatic Pages",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Organic CAC — N/A — ₹52 (about $0.54) — ₹31 (about $0.32)",
+      "published_on": "Sep 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-seo-0-to-100k-11",
+      "claim": "Organic CAC — N/A — ₹52 (about $0.54) — ₹31 (about $0.32)",
+      "value": "0.32",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/seo-0-to-100k",
+      "source_title": "Scaling SEO from 0 to 100K Monthly Traffic Using Programmatic Pages",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Organic CAC — N/A — ₹52 (about $0.54) — ₹31 (about $0.32)",
+      "published_on": "Sep 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-seo-0-to-100k-12",
       "claim": "Comparison Intent — 22% — 8.4% — 41% — Provider comparison pages",
       "value": "22%",
       "unit": "%",
@@ -153,7 +181,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-11",
+      "fact_id": "f-cs-seo-0-to-100k-13",
       "claim": "Comparison Intent — 22% — 8.4% — 41% — Provider comparison pages",
       "value": "8.4%",
       "unit": "%",
@@ -167,7 +195,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-12",
+      "fact_id": "f-cs-seo-0-to-100k-14",
       "claim": "Comparison Intent — 22% — 8.4% — 41% — Provider comparison pages",
       "value": "41%",
       "unit": "%",
@@ -181,7 +209,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-13",
+      "fact_id": "f-cs-seo-0-to-100k-15",
       "claim": "Calculator / Tool — 18% — 11.2% — 29% — Interactive calculators",
       "value": "18%",
       "unit": "%",
@@ -195,7 +223,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-14",
+      "fact_id": "f-cs-seo-0-to-100k-16",
       "claim": "Calculator / Tool — 18% — 11.2% — 29% — Interactive calculators",
       "value": "11.2%",
       "unit": "%",
@@ -209,7 +237,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-15",
+      "fact_id": "f-cs-seo-0-to-100k-17",
       "claim": "Calculator / Tool — 18% — 11.2% — 29% — Interactive calculators",
       "value": "29%",
       "unit": "%",
@@ -223,7 +251,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-16",
+      "fact_id": "f-cs-seo-0-to-100k-18",
       "claim": "How-To / Educational — 38% — 2.1% — 18% — Long-form guides",
       "value": "38%",
       "unit": "%",
@@ -237,7 +265,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-17",
+      "fact_id": "f-cs-seo-0-to-100k-19",
       "claim": "How-To / Educational — 38% — 2.1% — 18% — Long-form guides",
       "value": "2.1%",
       "unit": "%",
@@ -251,7 +279,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-18",
+      "fact_id": "f-cs-seo-0-to-100k-20",
       "claim": "Brand / Provider Query — 14% — 6.8% — 9% — Provider review pages",
       "value": "14%",
       "unit": "%",
@@ -265,7 +293,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-19",
+      "fact_id": "f-cs-seo-0-to-100k-21",
       "claim": "Brand / Provider Query — 14% — 6.8% — 9% — Provider review pages",
       "value": "6.8%",
       "unit": "%",
@@ -279,7 +307,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-20",
+      "fact_id": "f-cs-seo-0-to-100k-22",
       "claim": "Brand / Provider Query — 14% — 6.8% — 9% — Provider review pages",
       "value": "9%",
       "unit": "%",
@@ -293,7 +321,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-21",
+      "fact_id": "f-cs-seo-0-to-100k-23",
       "claim": "Location-Based — 8% — 14.2% — 3% — Geo-specific landing pages",
       "value": "8%",
       "unit": "%",
@@ -307,7 +335,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-22",
+      "fact_id": "f-cs-seo-0-to-100k-24",
       "claim": "Location-Based — 8% — 14.2% — 3% — Geo-specific landing pages",
       "value": "14.2%",
       "unit": "%",
@@ -321,7 +349,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-23",
+      "fact_id": "f-cs-seo-0-to-100k-25",
       "claim": "Location-Based — 8% — 14.2% — 3% — Geo-specific landing pages",
       "value": "3%",
       "unit": "%",
@@ -335,7 +363,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-24",
+      "fact_id": "f-cs-seo-0-to-100k-26",
       "claim": "3–4 — +40 — 340 — 28 — 8,400",
       "value": "340",
       "unit": "count",
@@ -349,7 +377,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-25",
+      "fact_id": "f-cs-seo-0-to-100k-27",
       "claim": "3–4 — +40 — 340 — 28 — 8,400",
       "value": "8,400",
       "unit": "count",
@@ -363,7 +391,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-26",
+      "fact_id": "f-cs-seo-0-to-100k-28",
       "claim": "5–7 — +60 — 890 — 110 — 28,000",
       "value": "28,000",
       "unit": "count",
@@ -377,7 +405,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-27",
+      "fact_id": "f-cs-seo-0-to-100k-29",
       "claim": "8–11 — +80 — 1,600 — 240 — 64,000",
       "value": "1,600",
       "unit": "count",
@@ -391,7 +419,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-28",
+      "fact_id": "f-cs-seo-0-to-100k-30",
       "claim": "8–11 — +80 — 1,600 — 240 — 64,000",
       "value": "240",
       "unit": "count",
@@ -405,7 +433,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-29",
+      "fact_id": "f-cs-seo-0-to-100k-31",
       "claim": "Month 1–4: exclusively targeted 3+ word queries with monthly volume under 5,000 and low competition",
       "value": "5,000",
       "unit": "count",
@@ -419,7 +447,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-30",
+      "fact_id": "f-cs-seo-0-to-100k-32",
       "claim": "'Best bike insurance for 2020 Honda Activa in Delhi' vs 'best bike insurance'",
       "value": "2020",
       "unit": "count",
@@ -433,7 +461,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-31",
+      "fact_id": "f-cs-seo-0-to-100k-33",
       "claim": "Monthly Organic Sessions: 100K+ (from 0 at launch)",
       "value": "100K",
       "unit": "count",
@@ -447,21 +475,35 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-32",
-      "claim": "Organic CAC: ₹31 (vs ₹285 blended paid CAC)",
+      "fact_id": "f-cs-seo-0-to-100k-34",
+      "claim": "Organic CAC: ₹31 (about $0.32) (vs ₹285 (about $2.97) blended paid CAC)",
       "value": "285",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/seo-0-to-100k",
       "source_title": "Scaling SEO from 0 to 100K Monthly Traffic Using Programmatic Pages",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Organic CAC: ₹31 (vs ₹285 blended paid CAC)",
+      "excerpt": "Organic CAC: ₹31 (about $0.32) (vs ₹285 (about $2.97) blended paid CAC)",
       "published_on": "Sep 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-33",
+      "fact_id": "f-cs-seo-0-to-100k-35",
+      "claim": "Organic CAC: ₹31 (about $0.32) (vs ₹285 (about $2.97) blended paid CAC)",
+      "value": "2.97",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/seo-0-to-100k",
+      "source_title": "Scaling SEO from 0 to 100K Monthly Traffic Using Programmatic Pages",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Organic CAC: ₹31 (about $0.32) (vs ₹285 (about $2.97) blended paid CAC)",
+      "published_on": "Sep 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-seo-0-to-100k-36",
       "claim": "'Best health insurance India' has 60,000 monthly searches. Seemed like the obvious target. DA 0 vs DA 60+ competitors. Zero rankings after 12 weeks. Demoralizing and wasteful.",
       "value": "60,000",
       "unit": "count",
@@ -475,21 +517,35 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-34",
-      "claim": "Pivoted hard to long-tail: 'Best family health insurance for 3 members under ₹12,000 in Bangalore.' Ranked top 5 within 6 weeks. The long-tail win restored team confidence and validated the approach definitively.",
+      "fact_id": "f-cs-seo-0-to-100k-37",
+      "claim": "Pivoted hard to long-tail: 'Best family health insurance for 3 members under ₹12,000 (about $125.14) in Bangalore.' Ranked top 5 within 6 weeks. The long-tail win restored team confidence and validated the approach definitively.",
       "value": "12,000",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/seo-0-to-100k",
       "source_title": "Scaling SEO from 0 to 100K Monthly Traffic Using Programmatic Pages",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Pivoted hard to long-tail: 'Best family health insurance for 3 members under ₹12,000 in Bangalore.' Ranked top 5 within 6 weeks. The long-tail win restored",
+      "excerpt": "Pivoted hard to long-tail: 'Best family health insurance for 3 members under ₹12,000 (about $125.14) in Bangalore.' Ranked top 5 within 6 weeks. The long-tail",
       "published_on": "Sep 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-seo-0-to-100k-35",
+      "fact_id": "f-cs-seo-0-to-100k-38",
+      "claim": "Pivoted hard to long-tail: 'Best family health insurance for 3 members under ₹12,000 (about $125.14) in Bangalore.' Ranked top 5 within 6 weeks. The long-tail win restored team confidence and validated the approach definitively.",
+      "value": "125.14",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/seo-0-to-100k",
+      "source_title": "Scaling SEO from 0 to 100K Monthly Traffic Using Programmatic Pages",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "to long-tail: 'Best family health insurance for 3 members under ₹12,000 (about $125.14) in Bangalore.' Ranked top 5 within 6 weeks. The long-tail win restored",
+      "published_on": "Sep 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-seo-0-to-100k-39",
       "claim": "GPT-powered first-draft generation for the 1,000+ remaining untapped long-tail clusters. Human editorial review for quality and accuracy. 10× content velocity without 10× team growth.",
       "value": "1,000",
       "unit": "count",
@@ -524,11 +580,11 @@
       "f-cs-seo-0-to-100k-06",
       "f-cs-seo-0-to-100k-07",
       "f-cs-seo-0-to-100k-08",
-      "f-cs-seo-0-to-100k-09"
+      "f-cs-seo-0-to-100k-09",
+      "f-cs-seo-0-to-100k-10",
+      "f-cs-seo-0-to-100k-11"
     ],
     "interventions": [
-      "f-cs-seo-0-to-100k-10",
-      "f-cs-seo-0-to-100k-11",
       "f-cs-seo-0-to-100k-12",
       "f-cs-seo-0-to-100k-13",
       "f-cs-seo-0-to-100k-14",
@@ -547,21 +603,45 @@
       "f-cs-seo-0-to-100k-27",
       "f-cs-seo-0-to-100k-28",
       "f-cs-seo-0-to-100k-29",
-      "f-cs-seo-0-to-100k-30"
-    ],
-    "results": [
+      "f-cs-seo-0-to-100k-30",
       "f-cs-seo-0-to-100k-31",
       "f-cs-seo-0-to-100k-32"
     ],
-    "what_didnt_work": [
+    "results": [
       "f-cs-seo-0-to-100k-33",
-      "f-cs-seo-0-to-100k-34"
-    ],
-    "applicability": [
+      "f-cs-seo-0-to-100k-34",
       "f-cs-seo-0-to-100k-35"
     ],
+    "what_didnt_work": [
+      "f-cs-seo-0-to-100k-36",
+      "f-cs-seo-0-to-100k-37",
+      "f-cs-seo-0-to-100k-38"
+    ],
+    "applicability": [
+      "f-cs-seo-0-to-100k-39"
+    ],
     "answer_box": [
-      "f-cs-seo-0-to-100k-01"
+      "f-cs-seo-0-to-100k-12",
+      "f-cs-seo-0-to-100k-13",
+      "f-cs-seo-0-to-100k-14",
+      "f-cs-seo-0-to-100k-15",
+      "f-cs-seo-0-to-100k-16",
+      "f-cs-seo-0-to-100k-17",
+      "f-cs-seo-0-to-100k-18",
+      "f-cs-seo-0-to-100k-19",
+      "f-cs-seo-0-to-100k-20",
+      "f-cs-seo-0-to-100k-21",
+      "f-cs-seo-0-to-100k-22",
+      "f-cs-seo-0-to-100k-23",
+      "f-cs-seo-0-to-100k-24",
+      "f-cs-seo-0-to-100k-25",
+      "f-cs-seo-0-to-100k-26",
+      "f-cs-seo-0-to-100k-27",
+      "f-cs-seo-0-to-100k-28",
+      "f-cs-seo-0-to-100k-29",
+      "f-cs-seo-0-to-100k-30",
+      "f-cs-seo-0-to-100k-31",
+      "f-cs-seo-0-to-100k-32"
     ]
   }
 }

@@ -84,6 +84,48 @@
     },
     {
       "fact_id": "f-cs-comparison-platform-india-06",
+      "claim": "Before showing full comparison, 4-question eligibility pre-check that surfaces only products the user is likely to qualify for. Reduces comparison overwhelm; increases application completion rate by 3.8×.",
+      "value": "3.8",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/comparison-platform-india",
+      "source_title": "Designing a Comparison Platform Like Monito for the Indian Market",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "likely to qualify for. Reduces comparison overwhelm; increases application completion rate by 3.8×.",
+      "published_on": "Jan 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-comparison-platform-india-07",
+      "claim": "Target: LCP \\< 2.5 seconds on 4G; \\<4 seconds on 3G (prevalent in Tier 2)",
+      "value": "2.5",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/comparison-platform-india",
+      "source_title": "Designing a Comparison Platform Like Monito for the Indian Market",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Target: LCP \\< 2.5 seconds on 4G; \\<4 seconds on 3G (prevalent in Tier 2)",
+      "published_on": "Jan 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-comparison-platform-india-08",
+      "claim": "Critical path: full comparison rendered in \\<1.2 seconds from tap to data visible",
+      "value": "1.2",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/comparison-platform-india",
+      "source_title": "Designing a Comparison Platform Like Monito for the Indian Market",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Critical path: full comparison rendered in \\<1.2 seconds from tap to data visible",
+      "published_on": "Jan 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-comparison-platform-india-09",
       "claim": "First 12,000 users. Hindi-speaking users: 44% of signups (vs 15% industry benchmark)",
       "value": "12,000",
       "unit": "count",
@@ -97,7 +139,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-comparison-platform-india-07",
+      "fact_id": "f-cs-comparison-platform-india-10",
       "claim": "First 12,000 users. Hindi-speaking users: 44% of signups (vs 15% industry benchmark)",
       "value": "44%",
       "unit": "%",
@@ -111,7 +153,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-comparison-platform-india-08",
+      "fact_id": "f-cs-comparison-platform-india-11",
       "claim": "First 12,000 users. Hindi-speaking users: 44% of signups (vs 15% industry benchmark)",
       "value": "15%",
       "unit": "%",
@@ -125,7 +167,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-comparison-platform-india-09",
+      "fact_id": "f-cs-comparison-platform-india-12",
       "claim": "60,000 MAU. Regional language users: 38% of total.",
       "value": "60,000",
       "unit": "count",
@@ -139,7 +181,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-comparison-platform-india-10",
+      "fact_id": "f-cs-comparison-platform-india-13",
       "claim": "60,000 MAU. Regional language users: 38% of total.",
       "value": "38%",
       "unit": "%",
@@ -153,7 +195,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-comparison-platform-india-11",
+      "fact_id": "f-cs-comparison-platform-india-14",
       "claim": "180K MAU. Application completion rate: 3.8× incumbents. CAC: 40% lower via SEO.",
       "value": "180K",
       "unit": "count",
@@ -167,7 +209,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-comparison-platform-india-12",
+      "fact_id": "f-cs-comparison-platform-india-15",
       "claim": "180K MAU. Application completion rate: 3.8× incumbents. CAC: 40% lower via SEO.",
       "value": "40%",
       "unit": "%",
@@ -181,7 +223,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-comparison-platform-india-13",
+      "fact_id": "f-cs-comparison-platform-india-16",
       "claim": "SEO content in 5 languages — drove 48% of acquisition",
       "value": "48%",
       "unit": "%",
@@ -195,7 +237,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-comparison-platform-india-14",
+      "fact_id": "f-cs-comparison-platform-india-17",
       "claim": "180,000 MAU; application completion 3.8× industry benchmark",
       "value": "180,000",
       "unit": "count",
@@ -237,10 +279,40 @@
       "f-cs-comparison-platform-india-11",
       "f-cs-comparison-platform-india-12",
       "f-cs-comparison-platform-india-13",
-      "f-cs-comparison-platform-india-14"
+      "f-cs-comparison-platform-india-14",
+      "f-cs-comparison-platform-india-15",
+      "f-cs-comparison-platform-india-16",
+      "f-cs-comparison-platform-india-17"
     ],
     "answer_box": [
-      "f-cs-comparison-platform-india-01"
+      "f-cs-comparison-platform-india-05",
+      "f-cs-comparison-platform-india-06",
+      "f-cs-comparison-platform-india-07",
+      "f-cs-comparison-platform-india-08",
+      "f-cs-comparison-platform-india-09",
+      "f-cs-comparison-platform-india-10",
+      "f-cs-comparison-platform-india-11",
+      "f-cs-comparison-platform-india-12",
+      "f-cs-comparison-platform-india-13",
+      "f-cs-comparison-platform-india-14",
+      "f-cs-comparison-platform-india-15",
+      "f-cs-comparison-platform-india-16",
+      "f-cs-comparison-platform-india-17"
+    ],
+    "results": [
+      "f-cs-comparison-platform-india-05",
+      "f-cs-comparison-platform-india-06",
+      "f-cs-comparison-platform-india-07",
+      "f-cs-comparison-platform-india-08",
+      "f-cs-comparison-platform-india-09",
+      "f-cs-comparison-platform-india-10",
+      "f-cs-comparison-platform-india-11",
+      "f-cs-comparison-platform-india-12",
+      "f-cs-comparison-platform-india-13",
+      "f-cs-comparison-platform-india-14",
+      "f-cs-comparison-platform-india-15",
+      "f-cs-comparison-platform-india-16",
+      "f-cs-comparison-platform-india-17"
     ]
   }
 }

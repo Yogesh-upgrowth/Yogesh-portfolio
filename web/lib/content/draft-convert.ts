@@ -128,6 +128,8 @@ export function draftToMeta({ draft, row, batchId, today, fxRate }: ConvertInput
     verified_on: today,
     refreshed_on: today,
     changelog: [],
+    // A drafted page is written here, never migrated.
+    provenance: "authored" as const,
     not_affiliated: contract.notAffiliated ? true : draft.not_affiliated,
     fx_rate_used: fxRate,
   } as PageMeta;

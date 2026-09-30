@@ -28,6 +28,34 @@
     },
     {
       "fact_id": "f-cs-insurance-cta-2x-growth-02",
+      "claim": "Our insurance comparison page had a single CTA: \"Get Quote.\" Click-through rate: 6.8%. For a page where users had already spent an average of 7.4 minutes comparing plans — deeply engaged, clearly intent-driven — 6.8% felt inexplicably low.",
+      "value": "7.4",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
+      "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "6.8%. For a page where users had already spent an average of 7.4 minutes comparing plans — deeply engaged, clearly intent-driven — 6.8% felt inexplicably",
+      "published_on": "Aug 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-insurance-cta-2x-growth-03",
+      "claim": "Plans compared per session — 3.8 — Active decision-making",
+      "value": "3.8",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
+      "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Plans compared per session — 3.8 — Active decision-making",
+      "published_on": "Aug 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-insurance-cta-2x-growth-04",
       "claim": "Users who scrolled past CTA — 91% — Saw it, didn't click",
       "value": "91%",
       "unit": "%",
@@ -41,7 +69,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-03",
+      "fact_id": "f-cs-insurance-cta-2x-growth-05",
       "claim": "Exit rate after seeing CTA — 73% — Left at the moment of ask",
       "value": "73%",
       "unit": "%",
@@ -55,7 +83,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-04",
+      "fact_id": "f-cs-insurance-cta-2x-growth-06",
       "claim": "Buy Now — Purchase urgency — 4.1% — −40% (worse)",
       "value": "4.1%",
       "unit": "%",
@@ -69,7 +97,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-05",
+      "fact_id": "f-cs-insurance-cta-2x-growth-07",
       "claim": "Buy Now — Purchase urgency — 4.1% — −40% (worse)",
       "value": "40%",
       "unit": "%",
@@ -83,7 +111,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-06",
+      "fact_id": "f-cs-insurance-cta-2x-growth-08",
       "claim": "See Full Details — Information seeking — 9.2% — +35%",
       "value": "9.2%",
       "unit": "%",
@@ -97,7 +125,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-07",
+      "fact_id": "f-cs-insurance-cta-2x-growth-09",
       "claim": "See Full Details — Information seeking — 9.2% — +35%",
       "value": "35%",
       "unit": "%",
@@ -111,7 +139,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-08",
+      "fact_id": "f-cs-insurance-cta-2x-growth-10",
       "claim": "Check Eligibility — Low-commitment entry — 11.4% — +68%",
       "value": "11.4%",
       "unit": "%",
@@ -125,7 +153,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-09",
+      "fact_id": "f-cs-insurance-cta-2x-growth-11",
       "claim": "Check Eligibility — Low-commitment entry — 11.4% — +68%",
       "value": "68%",
       "unit": "%",
@@ -139,7 +167,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-10",
+      "fact_id": "f-cs-insurance-cta-2x-growth-12",
       "claim": "View My Options — Autonomy + exploration — 13.8% — +103%",
       "value": "13.8%",
       "unit": "%",
@@ -153,7 +181,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-11",
+      "fact_id": "f-cs-insurance-cta-2x-growth-13",
       "claim": "View My Options — Autonomy + exploration — 13.8% — +103%",
       "value": "103%",
       "unit": "%",
@@ -167,35 +195,35 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-12",
-      "claim": "Unlock This Plan — Exclusivity framing — 10.1% — +49%",
+      "fact_id": "f-cs-insurance-cta-2x-growth-14",
+      "claim": "open This Plan — Exclusivity framing — 10.1% — +49%",
       "value": "10.1%",
       "unit": "%",
       "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
       "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Unlock This Plan — Exclusivity framing — 10.1% — +49%",
+      "excerpt": "open This Plan — Exclusivity framing — 10.1% — +49%",
       "published_on": "Aug 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-13",
-      "claim": "Unlock This Plan — Exclusivity framing — 10.1% — +49%",
+      "fact_id": "f-cs-insurance-cta-2x-growth-15",
+      "claim": "open This Plan — Exclusivity framing — 10.1% — +49%",
       "value": "49%",
       "unit": "%",
       "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
       "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Unlock This Plan — Exclusivity framing — 10.1% — +49%",
+      "excerpt": "open This Plan — Exclusivity framing — 10.1% — +49%",
       "published_on": "Aug 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-14",
+      "fact_id": "f-cs-insurance-cta-2x-growth-16",
       "claim": "Start My Cover (winner) — Ownership + low commitment — 14.9% — +119%",
       "value": "14.9%",
       "unit": "%",
@@ -209,7 +237,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-15",
+      "fact_id": "f-cs-insurance-cta-2x-growth-17",
       "claim": "Start My Cover (winner) — Ownership + low commitment — 14.9% — +119%",
       "value": "119%",
       "unit": "%",
@@ -223,7 +251,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-16",
+      "fact_id": "f-cs-insurance-cta-2x-growth-18",
       "claim": "Added secondary floating CTA on scroll depth > 60% of page",
       "value": "60%",
       "unit": "%",
@@ -237,7 +265,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-17",
+      "fact_id": "f-cs-insurance-cta-2x-growth-19",
+      "claim": "Star rating (4.7★, 12,400 reviews) placed within 40px of CTA",
+      "value": "4.7",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
+      "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Star rating (4.7★, 12,400 reviews) placed within 40px of CTA",
+      "published_on": "Aug 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-insurance-cta-2x-growth-20",
       "claim": "Star rating (4.7★, 12,400 reviews) placed within 40px of CTA",
       "value": "12,400",
       "unit": "count",
@@ -251,7 +293,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-18",
+      "fact_id": "f-cs-insurance-cta-2x-growth-21",
       "claim": "Exit survey added: 'What stopped you from continuing?' (300 responses)",
       "value": "300",
       "unit": "count",
@@ -265,7 +307,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-19",
+      "fact_id": "f-cs-insurance-cta-2x-growth-22",
       "claim": "Key insight: 67% cited uncertainty about what came next",
       "value": "67%",
       "unit": "%",
@@ -279,21 +321,35 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-20",
-      "claim": "4 failed to beat control; 3 beat by <25%; 1 beat by 68%",
+      "fact_id": "f-cs-insurance-cta-2x-growth-23",
+      "claim": "4 failed to beat control; 3 beat by \\<25%; 1 beat by 68%",
       "value": "25%",
       "unit": "%",
       "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
       "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
       "source_domain": "pmyogesh.com",
-      "excerpt": "4 failed to beat control; 3 beat by <25%; 1 beat by 68%",
+      "excerpt": "4 failed to beat control; 3 beat by \\<25%; 1 beat by 68%",
       "published_on": "Aug 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-21",
+      "fact_id": "f-cs-insurance-cta-2x-growth-24",
+      "claim": "Full package (CTA + context): +2.1× conversion vs original",
+      "value": "2.1",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
+      "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Full package (CTA + context): +2.1× conversion vs original",
+      "published_on": "Aug 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-insurance-cta-2x-growth-25",
       "claim": "Exit Rate at CTA: −31% (73% → 42%)",
       "value": "31%",
       "unit": "%",
@@ -307,7 +363,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-22",
+      "fact_id": "f-cs-insurance-cta-2x-growth-26",
       "claim": "Exit Rate at CTA: −31% (73% → 42%)",
       "value": "42%",
       "unit": "%",
@@ -321,7 +377,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-23",
+      "fact_id": "f-cs-insurance-cta-2x-growth-27",
       "claim": "Page-to-Quote Conversion — 6.8% — 14.3%",
       "value": "14.3%",
       "unit": "%",
@@ -335,49 +391,77 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-24",
-      "claim": "Revenue per 1,000 Visitors — ₹18,400 — ₹39,600",
+      "fact_id": "f-cs-insurance-cta-2x-growth-28",
+      "claim": "Revenue per 1,000 Visitors — ₹18,400 (about $191.89) — ₹39,600 (about $412.97)",
       "value": "1,000",
       "unit": "count",
       "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
       "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Revenue per 1,000 Visitors — ₹18,400 — ₹39,600",
+      "excerpt": "Revenue per 1,000 Visitors — ₹18,400 (about $191.89) — ₹39,600 (about $412.97)",
       "published_on": "Aug 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-25",
-      "claim": "Revenue per 1,000 Visitors — ₹18,400 — ₹39,600",
+      "fact_id": "f-cs-insurance-cta-2x-growth-29",
+      "claim": "Revenue per 1,000 Visitors — ₹18,400 (about $191.89) — ₹39,600 (about $412.97)",
       "value": "18,400",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
       "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Revenue per 1,000 Visitors — ₹18,400 — ₹39,600",
+      "excerpt": "Revenue per 1,000 Visitors — ₹18,400 (about $191.89) — ₹39,600 (about $412.97)",
       "published_on": "Aug 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-26",
-      "claim": "Revenue per 1,000 Visitors — ₹18,400 — ₹39,600",
+      "fact_id": "f-cs-insurance-cta-2x-growth-30",
+      "claim": "Revenue per 1,000 Visitors — ₹18,400 (about $191.89) — ₹39,600 (about $412.97)",
+      "value": "191.89",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
+      "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Revenue per 1,000 Visitors — ₹18,400 (about $191.89) — ₹39,600 (about $412.97)",
+      "published_on": "Aug 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-insurance-cta-2x-growth-31",
+      "claim": "Revenue per 1,000 Visitors — ₹18,400 (about $191.89) — ₹39,600 (about $412.97)",
       "value": "39,600",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
       "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Revenue per 1,000 Visitors — ₹18,400 — ₹39,600",
+      "excerpt": "Revenue per 1,000 Visitors — ₹18,400 (about $191.89) — ₹39,600 (about $412.97)",
       "published_on": "Aug 2024",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-27",
+      "fact_id": "f-cs-insurance-cta-2x-growth-32",
+      "claim": "Revenue per 1,000 Visitors — ₹18,400 (about $191.89) — ₹39,600 (about $412.97)",
+      "value": "412.97",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
+      "source_title": "How We Increased Insurance CTA Clicks by 2X Using Behavioral Triggers",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Revenue per 1,000 Visitors — ₹18,400 (about $191.89) — ₹39,600 (about $412.97)",
+      "published_on": "Aug 2024",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-insurance-cta-2x-growth-33",
       "claim": "Mobile CTA Engagement — 4.1% — 12.8%",
       "value": "12.8%",
       "unit": "%",
@@ -391,7 +475,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-insurance-cta-2x-growth-28",
+      "fact_id": "f-cs-insurance-cta-2x-growth-34",
       "claim": "Kept testing. 'Start My Cover' outperformed by another 51% on top. The difference between stopping at +68% and continuing to +119% was one more batch of experiments.",
       "value": "51%",
       "unit": "%",
@@ -418,11 +502,11 @@
     "problem_with_baseline": [
       "f-cs-insurance-cta-2x-growth-01",
       "f-cs-insurance-cta-2x-growth-02",
-      "f-cs-insurance-cta-2x-growth-03"
+      "f-cs-insurance-cta-2x-growth-03",
+      "f-cs-insurance-cta-2x-growth-04",
+      "f-cs-insurance-cta-2x-growth-05"
     ],
     "interventions": [
-      "f-cs-insurance-cta-2x-growth-04",
-      "f-cs-insurance-cta-2x-growth-05",
       "f-cs-insurance-cta-2x-growth-06",
       "f-cs-insurance-cta-2x-growth-07",
       "f-cs-insurance-cta-2x-growth-08",
@@ -433,28 +517,49 @@
       "f-cs-insurance-cta-2x-growth-13",
       "f-cs-insurance-cta-2x-growth-14",
       "f-cs-insurance-cta-2x-growth-15",
+      "f-cs-insurance-cta-2x-growth-16",
+      "f-cs-insurance-cta-2x-growth-17",
+      "f-cs-insurance-cta-2x-growth-21",
+      "f-cs-insurance-cta-2x-growth-22",
+      "f-cs-insurance-cta-2x-growth-23",
+      "f-cs-insurance-cta-2x-growth-24"
+    ],
+    "applicability": [
       "f-cs-insurance-cta-2x-growth-18",
       "f-cs-insurance-cta-2x-growth-19",
       "f-cs-insurance-cta-2x-growth-20"
     ],
-    "applicability": [
-      "f-cs-insurance-cta-2x-growth-16",
-      "f-cs-insurance-cta-2x-growth-17"
-    ],
     "results": [
+      "f-cs-insurance-cta-2x-growth-25",
+      "f-cs-insurance-cta-2x-growth-26",
+      "f-cs-insurance-cta-2x-growth-27",
+      "f-cs-insurance-cta-2x-growth-28",
+      "f-cs-insurance-cta-2x-growth-29",
+      "f-cs-insurance-cta-2x-growth-30",
+      "f-cs-insurance-cta-2x-growth-31",
+      "f-cs-insurance-cta-2x-growth-32",
+      "f-cs-insurance-cta-2x-growth-33"
+    ],
+    "what_didnt_work": [
+      "f-cs-insurance-cta-2x-growth-34"
+    ],
+    "answer_box": [
+      "f-cs-insurance-cta-2x-growth-06",
+      "f-cs-insurance-cta-2x-growth-07",
+      "f-cs-insurance-cta-2x-growth-08",
+      "f-cs-insurance-cta-2x-growth-09",
+      "f-cs-insurance-cta-2x-growth-10",
+      "f-cs-insurance-cta-2x-growth-11",
+      "f-cs-insurance-cta-2x-growth-12",
+      "f-cs-insurance-cta-2x-growth-13",
+      "f-cs-insurance-cta-2x-growth-14",
+      "f-cs-insurance-cta-2x-growth-15",
+      "f-cs-insurance-cta-2x-growth-16",
+      "f-cs-insurance-cta-2x-growth-17",
       "f-cs-insurance-cta-2x-growth-21",
       "f-cs-insurance-cta-2x-growth-22",
       "f-cs-insurance-cta-2x-growth-23",
-      "f-cs-insurance-cta-2x-growth-24",
-      "f-cs-insurance-cta-2x-growth-25",
-      "f-cs-insurance-cta-2x-growth-26",
-      "f-cs-insurance-cta-2x-growth-27"
-    ],
-    "what_didnt_work": [
-      "f-cs-insurance-cta-2x-growth-28"
-    ],
-    "answer_box": [
-      "f-cs-insurance-cta-2x-growth-01"
+      "f-cs-insurance-cta-2x-growth-24"
     ]
   }
 }

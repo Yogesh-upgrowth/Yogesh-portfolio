@@ -154,13 +154,13 @@
     },
     {
       "fact_id": "f-cs-programmatic-seo-calculators-11",
-      "claim": "Organic CAC: ₹38 (from programmatic traffic)",
+      "claim": "Organic CAC: ₹38 (about $0.40) (from programmatic traffic)",
       "value": "38",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/programmatic-seo-calculators",
       "source_title": "Programmatic SEO for Calculators: Driving 10X Organic Traffic",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Organic CAC: ₹38 (from programmatic traffic)",
+      "excerpt": "Organic CAC: ₹38 (about $0.40) (from programmatic traffic)",
       "published_on": "Dec 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -168,6 +168,20 @@
     },
     {
       "fact_id": "f-cs-programmatic-seo-calculators-12",
+      "claim": "Organic CAC: ₹38 (about $0.40) (from programmatic traffic)",
+      "value": "0.40",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/programmatic-seo-calculators",
+      "source_title": "Programmatic SEO for Calculators: Driving 10X Organic Traffic",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Organic CAC: ₹38 (about $0.40) (from programmatic traffic)",
+      "published_on": "Dec 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-programmatic-seo-calculators-13",
       "claim": "Location × Product — 340 — 18,200 — 7.4%",
       "value": "18,200",
       "unit": "count",
@@ -181,7 +195,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-13",
+      "fact_id": "f-cs-programmatic-seo-calculators-14",
       "claim": "Location × Product — 340 — 18,200 — 7.4%",
       "value": "7.4%",
       "unit": "%",
@@ -195,7 +209,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-14",
+      "fact_id": "f-cs-programmatic-seo-calculators-15",
       "claim": "Brand Comparison — 210 — 12,800 — 9.1%",
       "value": "12,800",
       "unit": "count",
@@ -209,7 +223,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-15",
+      "fact_id": "f-cs-programmatic-seo-calculators-16",
       "claim": "Brand Comparison — 210 — 12,800 — 9.1%",
       "value": "9.1%",
       "unit": "%",
@@ -223,7 +237,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-16",
+      "fact_id": "f-cs-programmatic-seo-calculators-17",
       "claim": "Price Benchmarks — 280 — 6,400 — 4.2%",
       "value": "280",
       "unit": "count",
@@ -237,7 +251,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-17",
+      "fact_id": "f-cs-programmatic-seo-calculators-18",
       "claim": "Price Benchmarks — 280 — 6,400 — 4.2%",
       "value": "6,400",
       "unit": "count",
@@ -251,7 +265,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-18",
+      "fact_id": "f-cs-programmatic-seo-calculators-19",
       "claim": "Price Benchmarks — 280 — 6,400 — 4.2%",
       "value": "4.2%",
       "unit": "%",
@@ -265,7 +279,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-19",
+      "fact_id": "f-cs-programmatic-seo-calculators-20",
       "claim": "Provider Reviews — 45 — 2,800 — 11.8%",
       "value": "2,800",
       "unit": "count",
@@ -279,7 +293,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-20",
+      "fact_id": "f-cs-programmatic-seo-calculators-21",
       "claim": "Provider Reviews — 45 — 2,800 — 11.8%",
       "value": "11.8%",
       "unit": "%",
@@ -293,7 +307,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-21",
+      "fact_id": "f-cs-programmatic-seo-calculators-22",
       "claim": "We spent 60% of the total project time on the data layer. The template system took 3 weeks. The data pipeline took 6. This is correct prioritization: without unique data, the templates produce spam. With unique data, the templates…",
       "value": "60%",
       "unit": "%",
@@ -307,7 +321,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-22",
+      "fact_id": "f-cs-programmatic-seo-calculators-23",
       "claim": "'Average health insurance cost in Chennai' — we had average data, but not enough city-specific context to make the page genuinely useful. Pages indexed but ranked poorly. Bounce rate: 78%.",
       "value": "78%",
       "unit": "%",
@@ -321,7 +335,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-23",
+      "fact_id": "f-cs-programmatic-seo-calculators-24",
       "claim": "Added city-specific context requirements: at minimum, the 3 cheapest plans available in that city, the most popular plan in that city (from our own sales data), and at least 2 city-specific reviews. 78% bounce → 54% bounce after content…",
       "value": "54%",
       "unit": "%",
@@ -335,7 +349,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-24",
+      "fact_id": "f-cs-programmatic-seo-calculators-25",
       "claim": "Currently covers 40 major cities. Expanding to 120 Tier 2 and 3 cities with lower competition and often lower data availability from incumbent competitors. First-mover advantage in underserved markets.",
       "value": "120",
       "unit": "count",
@@ -349,7 +363,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-25",
+      "fact_id": "f-cs-programmatic-seo-calculators-26",
       "claim": "Move from monthly data refresh to weekly for high-traffic pages. Rate changes that affect premium quotes by > 10% trigger immediate page refresh and Google Search Console re-index request.",
       "value": "10%",
       "unit": "%",
@@ -363,7 +377,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-programmatic-seo-calculators-26",
+      "fact_id": "f-cs-programmatic-seo-calculators-27",
       "claim": "One Google Sheet with 1,400 rows became 1,400 pages and 40,000 monthly visitors. Not because we gamed the algorithm — because we had the data to make each page genuinely useful for someone in a specific city making a specific decision.",
       "value": "40,000",
       "unit": "count",
@@ -413,22 +427,27 @@
       "f-cs-programmatic-seo-calculators-17",
       "f-cs-programmatic-seo-calculators-18",
       "f-cs-programmatic-seo-calculators-19",
-      "f-cs-programmatic-seo-calculators-20"
-    ],
-    "what_id_do_differently": [
+      "f-cs-programmatic-seo-calculators-20",
       "f-cs-programmatic-seo-calculators-21"
     ],
+    "what_id_do_differently": [
+      "f-cs-programmatic-seo-calculators-22"
+    ],
     "what_didnt_work": [
-      "f-cs-programmatic-seo-calculators-22",
-      "f-cs-programmatic-seo-calculators-23"
+      "f-cs-programmatic-seo-calculators-23",
+      "f-cs-programmatic-seo-calculators-24"
     ],
     "applicability": [
-      "f-cs-programmatic-seo-calculators-24",
       "f-cs-programmatic-seo-calculators-25",
-      "f-cs-programmatic-seo-calculators-26"
+      "f-cs-programmatic-seo-calculators-26",
+      "f-cs-programmatic-seo-calculators-27"
     ],
     "answer_box": [
-      "f-cs-programmatic-seo-calculators-01"
+      "f-cs-programmatic-seo-calculators-06",
+      "f-cs-programmatic-seo-calculators-07",
+      "f-cs-programmatic-seo-calculators-08",
+      "f-cs-programmatic-seo-calculators-09",
+      "f-cs-programmatic-seo-calculators-10"
     ]
   }
 }

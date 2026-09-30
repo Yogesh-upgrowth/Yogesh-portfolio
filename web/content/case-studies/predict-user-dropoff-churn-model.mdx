@@ -155,7 +155,7 @@ Every intervention tagged with user ID, risk score at trigger, and intervention 
   rows={[
     { cells: ["Monthly Churn Rate", "\u221239%"] },
     { cells: ["Red Tier Response Rate", "51%"] },
-    { cells: ["Annual Revenue Retained", "\u20b92.1Cr (about $0.22 million)"] },
+    { cells: ["Annual Revenue Retained", "\u20b92.1Cr (about $219,001)"] },
     { cells: ["Prediction Horizon", "14 days"] }
   ]}
 />
@@ -164,19 +164,19 @@ Every intervention tagged with user ID, risk score at trigger, and intervention 
 
 ## The Non-Obvious Findings
 
-### 01. Velocity matters more than level for urgent interventions
+### Velocity matters more than level for urgent interventions
 
 A user at 70% churn probability who's been there for 2 weeks is more stable than a user who jumped from 30% to 65% in 3 days. The second user is actively making the decision to leave. Score velocity should trigger faster intervention than score level alone.
 
-### 02. The earliest intervention window has the highest success rate
+### The earliest intervention window has the highest success rate
 
 Yellow tier (40–60%) had 61% prevention rate. Red tier (75%+) had 38%. Intervention earlier in the decision process — when users are ambivalent, not committed — is significantly more effective.
 
-### 03. Human outreach beats automation for the highest-risk users
+### Human outreach beats automation for the highest-risk users
 
 For Red tier users, automated messages felt tone-deaf. What worked was a CS rep who had context (what the user stopped doing, when, what they'd previously valued) and led with curiosity rather than retention offers.
 
-### 04. Core feature abandonment is the single most predictive signal
+### Core feature abandonment is the single most predictive signal
 
 Session frequency drops are visible but noisy — people go on vacation. Core feature abandonment is specific: a user who stops doing the thing they came for is making a statement about the product's value to them.
 
@@ -202,7 +202,7 @@ Current model predicts who will churn. Missing: why. A secondary classifier iden
 
 ### Re-engagement Scoring
 
-Churned users who come back are underserved by the current system. A re-engagement model that identifies which churned users have elevated return probability, and what triggered them to reconsider.
+Churned users who come back are underserved by the current system. A re-engagement model that identifies which churned users have raised return probability, and what triggered them to reconsider.
 
 ### Product-Level Churn Attribution
 

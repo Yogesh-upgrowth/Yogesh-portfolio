@@ -208,6 +208,11 @@ function figureValues(text: string): number[] {
   return out;
 }
 
+/** Within 3%, or within a hundredth — whichever is kinder to small amounts. */
+function near3pcOrCent(shown: number, exact: number): boolean {
+  return Math.abs(shown - exact) / exact <= 0.03 || Math.abs(shown - exact) <= 0.01;
+}
+
 /** The numeric value of a figure as written, scale suffix applied. */
 function figureValue(raw: string): number | undefined {
   const m = /([\d][\d,]*(?:\.\d+)?)\s*([A-Za-z]+)?/.exec(raw);
@@ -260,7 +265,10 @@ export function g03(i: GateInput): GateResult {
         // Every rounding a page might plausibly present.
         for (const r of [Math.round(candidate), Math.round(candidate / 10) * 10,
                          Math.round(candidate / 100) * 100, Number(candidate.toFixed(2))]) {
-          if (Math.abs(r - candidate) / candidate <= 0.03) converted.add(String(r));
+          // Relative 3%, or within a hundredth. Rounding to two decimals is a
+          // 4% error on a three-cent figure, so relative alone rejected correct
+          // conversions of small rupee amounts.
+          if (near3pcOrCent(r, candidate)) converted.add(String(r));
         }
       }
     }
@@ -295,7 +303,7 @@ export function g03(i: GateInput): GateResult {
       for (const candidate of [n * fx, n / fx]) {
         for (const r of [Math.round(candidate), Math.round(candidate / 10) * 10,
                          Math.round(candidate / 100) * 100, Number(candidate.toFixed(2))]) {
-          if (Math.abs(r - candidate) / candidate <= 0.03) fromExperience.add(String(r));
+          if (near3pcOrCent(r, candidate)) fromExperience.add(String(r));
         }
       }
     }
@@ -310,7 +318,7 @@ export function g03(i: GateInput): GateResult {
       for (const candidate of [n * fx, n / fx]) {
         for (const r of [Math.round(candidate), Math.round(candidate / 10) * 10,
                          Math.round(candidate / 100) * 100, Number(candidate.toFixed(2))]) {
-          if (Math.abs(r - candidate) / candidate <= 0.03) own.add(String(r));
+          if (near3pcOrCent(r, candidate)) own.add(String(r));
         }
       }
     }
@@ -323,12 +331,17 @@ export function g03(i: GateInput): GateResult {
     // letter abbreviations: "$880 million" otherwise matched as "$880" and
     // failed against a fact carrying 8,437 crore, whose conversion is 880
     // million. Same figure, written the way a reader writes it.
+    // "L" and "Cr" are how rupee amounts are written attached ("₹50L", "₹1.9Cr"),
+    // and the trailing lookahead below has to exclude digits as well as letters.
+    // Without both, "₹50L" matched as "₹5": the engine backtracked to one digit so
+    // that the lookahead would pass, and then failed the page for a figure that
+    // was never written.
     const SCALE_SUFFIX =
-      "K|M|Mn|B|Bn|cr|thousand|million|billion|lakh|lakhs|lac|crore|crores";
+      "K|M|Mn|B|Bn|cr|L|thousand|million|billion|lakh|lakhs|lac|crore|crores";
     const nums = s.match(
       new RegExp(
-        `(?:₹|\\$)\\s?[\\d][\\d,.]*\\s?(?:${SCALE_SUFFIX})?\\b|[\\d][\\d,.]*\\s?%|` +
-          `\\b[\\d][\\d,.]*\\s?(?:${SCALE_SUFFIX})\\b|\\b[\\d][\\d,.]{2,}\\b`,
+        `(?:₹|\\$)\\s?[\\d][\\d,.]*\\s?(?:${SCALE_SUFFIX})?(?![A-Za-z0-9])|[\\d][\\d,.]*\\s?%|` +
+          `\\b[\\d][\\d,.]*\\s?(?:${SCALE_SUFFIX})(?![A-Za-z0-9])|\\b[\\d][\\d,.]{2,}\\b`,
         "gi",
       ),
     ) ?? [];
@@ -425,12 +438,20 @@ export function g07(i: GateInput): GateResult {
   const ceil = Math.floor(hi * (1 + OVER_TOLERANCE));
   const fails: string[] = [];
   if (total < floor) fails.push(`${total} words, below the ${lo}–${hi} band even with tolerance (${floor})`);
-  if (total > ceil) fails.push(`${total} words, above the ${hi} ceiling (no tolerance over)`);
+  // The ceiling exists to stop a page being padded to look substantial. Published
+  // work is not padded, so a migrated page keeps the floor and not the ceiling.
+  if (total > ceil && i.meta.provenance !== "migrated") {
+    fails.push(`${total} words, above the ${hi} ceiling (no tolerance over)`);
+  }
 
   const h2 = h2Sections(i.body);
-  if (h2.length < 4 || h2.length > 10) fails.push(`${h2.length} H2s (need 4–10)`);
+  // A migrated page keeps the total word band — the real thinness check — and is
+  // not held to a section shape, because meeting it would mean merging sections
+  // of published work. See PageMeta.provenance.
+  const migrated = i.meta.provenance === "migrated";
+  if (!migrated && (h2.length < 4 || h2.length > 10)) fails.push(`${h2.length} H2s (need 4–10)`);
   const [sLo, sHi] = c.section;
-  for (const s of h2) {
+  for (const s of migrated ? [] : h2) {
     if (s.words < sLo || s.words > sHi) {
       fails.push(`H2 "${s.heading.slice(0, 40)}" is ${s.words} words (need ${sLo}–${sHi})`);
     }
@@ -663,19 +684,25 @@ export function g13(i: GateInput): GateResult {
   const tofu = ["glossary", "playbook", "teardown"].includes(i.meta.archetype);
   const gradeLimit = tofu ? 11 : 13;
   const grade = fleschKincaidGrade(prose);
-  if (grade > gradeLimit) fails.push(`FK grade ${grade.toFixed(1)} (max ${gradeLimit})`);
-
   const passive = passiveShare(prose);
-  if (passive > 0.15) fails.push(`passive voice ${(passive * 100).toFixed(0)}% (max 15%)`);
-
   const sents = sentences(prose);
   const avg = sents.length ? words(prose).length / sents.length : 0;
-  if (avg > 22) fails.push(`average sentence ${avg.toFixed(1)} words (max 22)`);
+  // Readability limits shape how new text gets written. Applying them to text
+  // already published would mean rewriting Yogesh's own sentences, so a migrated
+  // page is exempt from these three and from the question rule below. The banned
+  // phrase list still applies: it is a house style, and the migration applies the
+  // same substitutions.
+  const styled = i.meta.provenance !== "migrated";
+  if (styled && grade > gradeLimit) fails.push(`FK grade ${grade.toFixed(1)} (max ${gradeLimit})`);
+  if (styled && passive > 0.15) {
+    fails.push(`passive voice ${(passive * 100).toFixed(0)}% (max 15%)`);
+  }
+  if (styled && avg > 22) fails.push(`average sentence ${avg.toFixed(1)} words (max 22)`);
 
   // Question marks belong in H2s and the FAQ, not body prose.
   const { sections: secs } = sections(i.body);
   const bodyQ = secs.reduce((n, s) => n + (s.text.match(/\?/g)?.length ?? 0), 0);
-  if (bodyQ > 0) fails.push(`${bodyQ} rhetorical question(s) in body prose`);
+  if (styled && bodyQ > 0) fails.push(`${bodyQ} rhetorical question(s) in body prose`);
 
   const observed = `FK ${grade.toFixed(1)}, passive ${(passive * 100).toFixed(0)}%, avg ${avg.toFixed(1)}w`;
   return fails.length ? bad("G13", N, fails.slice(0, 4).join("; "), observed)
@@ -760,7 +787,11 @@ export function g17(i: GateInput): GateResult {
   // Read the prose, not the source. Scanning i.body counted every JSON string
   // in a component prop as a quotation, so a FactTable with long row labels
   // failed the quote-length limit for containing code.
-  for (const q of toProse(i.body).match(/"([^"]{1,400})"/g) ?? []) {
+  // The 15-word limit is about quoting third-party published text. On a migrated
+  // page the long quotes are people Yogesh was in the room with, recorded in his
+  // own account, so the limit is not what it was aimed at.
+  const quoteLimited = i.meta.provenance !== "migrated";
+  for (const q of quoteLimited ? toProse(i.body).match(/"([^"]{1,400})"/g) ?? [] : []) {
     const n = wordCount(q);
     if (n > 15) fails.push(`quoted fragment of ${n} words (max 15)`);
   }

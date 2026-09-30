@@ -14,13 +14,13 @@
   "facts": [
     {
       "fact_id": "f-cs-finance-calculator-app-retention-01",
-      "claim": "SIP Calculator — Future value of SIP — How much SIP to reach ₹1 crore by retirement at 58?",
+      "claim": "SIP Calculator — Future value of SIP — How much SIP to reach ₹1 crore (about $104,286) by retirement at 58?",
       "value": "1 crore",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
       "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
       "source_domain": "pmyogesh.com",
-      "excerpt": "Calculator — Future value of SIP — How much SIP to reach ₹1 crore by retirement at 58?",
+      "excerpt": "Calculator — Future value of SIP — How much SIP to reach ₹1 crore (about $104,286) by retirement at 58?",
       "published_on": "Mar 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -28,13 +28,13 @@
     },
     {
       "fact_id": "f-cs-finance-calculator-app-retention-02",
-      "claim": "A calculator that tells you your EMI is ₹28,450 is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L in interest over 10 years but miss ₹6.1L in equity returns — net: invest wins by ₹1.9L at…",
-      "value": "28,450",
-      "unit": "INR",
+      "claim": "SIP Calculator — Future value of SIP — How much SIP to reach ₹1 crore (about $104,286) by retirement at 58?",
+      "value": "104,286",
+      "unit": "USD",
       "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
       "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
       "source_domain": "pmyogesh.com",
-      "excerpt": "A calculator that tells you your EMI is ₹28,450 is accurate but not useful. A calculator that tells you \"with prepayment option B, you save",
+      "excerpt": "value of SIP — How much SIP to reach ₹1 crore (about $104,286) by retirement at 58?",
       "published_on": "Mar 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -42,13 +42,13 @@
     },
     {
       "fact_id": "f-cs-finance-calculator-app-retention-03",
-      "claim": "A calculator that tells you your EMI is ₹28,450 is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L in interest over 10 years but miss ₹6.1L in equity returns — net: invest wins by ₹1.9L at…",
-      "value": "4",
+      "claim": "A calculator that tells you your EMI is ₹28,450 (about $296.69) is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L (about $4,380) in interest over 10 years but miss ₹6.1L in equity returns…",
+      "value": "28,450",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
       "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
       "source_domain": "pmyogesh.com",
-      "excerpt": "useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L in interest over 10 years but miss ₹6.1L in equity returns —",
+      "excerpt": "A calculator that tells you your EMI is ₹28,450 (about $296.69) is accurate but not useful. A calculator that tells you \"with prepayment option B,",
       "published_on": "Mar 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -56,13 +56,13 @@
     },
     {
       "fact_id": "f-cs-finance-calculator-app-retention-04",
-      "claim": "A calculator that tells you your EMI is ₹28,450 is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L in interest over 10 years but miss ₹6.1L in equity returns — net: invest wins by ₹1.9L at…",
-      "value": "6",
-      "unit": "INR",
+      "claim": "A calculator that tells you your EMI is ₹28,450 (about $296.69) is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L (about $4,380) in interest over 10 years but miss ₹6.1L in equity returns…",
+      "value": "296.69",
+      "unit": "USD",
       "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
       "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
       "source_domain": "pmyogesh.com",
-      "excerpt": "option B, you save ₹4.2L in interest over 10 years but miss ₹6.1L in equity returns — net: invest wins by ₹1.9L at 12% expected",
+      "excerpt": "A calculator that tells you your EMI is ₹28,450 (about $296.69) is accurate but not useful. A calculator that tells you \"with prepayment option B,",
       "published_on": "Mar 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
@@ -70,8 +70,50 @@
     },
     {
       "fact_id": "f-cs-finance-calculator-app-retention-05",
-      "claim": "A calculator that tells you your EMI is ₹28,450 is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L in interest over 10 years but miss ₹6.1L in equity returns — net: invest wins by ₹1.9L at…",
-      "value": "1",
+      "claim": "A calculator that tells you your EMI is ₹28,450 (about $296.69) is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L (about $4,380) in interest over 10 years but miss ₹6.1L in equity returns…",
+      "value": "4.2L",
+      "unit": "INR",
+      "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
+      "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L (about $4,380) in interest over 10 years but miss ₹6.1L in equity",
+      "published_on": "Mar 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-finance-calculator-app-retention-06",
+      "claim": "A calculator that tells you your EMI is ₹28,450 (about $296.69) is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L (about $4,380) in interest over 10 years but miss ₹6.1L in equity returns…",
+      "value": "4,380",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
+      "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "calculator that tells you \"with prepayment option B, you save ₹4.2L (about $4,380) in interest over 10 years but miss ₹6.1L in equity returns —",
+      "published_on": "Mar 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-finance-calculator-app-retention-07",
+      "claim": "A calculator that tells you your EMI is ₹28,450 (about $296.69) is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L (about $4,380) in interest over 10 years but miss ₹6.1L in equity returns…",
+      "value": "6.1L",
+      "unit": "INR",
+      "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
+      "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "you save ₹4.2L (about $4,380) in interest over 10 years but miss ₹6.1L in equity returns — net: invest wins by ₹1.9L at 12% expected",
+      "published_on": "Mar 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-finance-calculator-app-retention-08",
+      "claim": "A calculator that tells you your EMI is ₹28,450 (about $296.69) is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L (about $4,380) in interest over 10 years but miss ₹6.1L in equity returns…",
+      "value": "1.9L",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
       "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
@@ -83,8 +125,8 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-06",
-      "claim": "A calculator that tells you your EMI is ₹28,450 is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L in interest over 10 years but miss ₹6.1L in equity returns — net: invest wins by ₹1.9L at…",
+      "fact_id": "f-cs-finance-calculator-app-retention-09",
+      "claim": "A calculator that tells you your EMI is ₹28,450 (about $296.69) is accurate but not useful. A calculator that tells you \"with prepayment option B, you save ₹4.2L (about $4,380) in interest over 10 years but miss ₹6.1L in equity returns…",
       "value": "12%",
       "unit": "%",
       "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
@@ -97,7 +139,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-07",
+      "fact_id": "f-cs-finance-calculator-app-retention-10",
       "claim": "The new calculator architecture: inputs are parameters of a decision, not components of a formula. Outputs show both outcomes of the decision with a clear recommendation, plus the assumption sensitivity (what changes if return rate…",
       "value": "9%",
       "unit": "%",
@@ -111,21 +153,35 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-08",
-      "claim": "Inputs: annual income, current savings, dependents, existing coverage, liabilities. Output: recommended coverage amount with explanation of each component. Not just 'you need ₹1.5Cr' — 'here's why: income replacement + liability…",
+      "fact_id": "f-cs-finance-calculator-app-retention-11",
+      "claim": "Inputs: annual income, current savings, dependents, existing coverage, liabilities. Output: recommended coverage amount with explanation of each component. Not just 'you need ₹1.5Cr (about $156,429)' — 'here's why: income replacement +…",
       "value": "1.5Cr",
       "unit": "INR",
       "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
       "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
       "source_domain": "pmyogesh.com",
-      "excerpt": "recommended coverage amount with explanation of each component. Not just 'you need ₹1.5Cr' — 'here's why: income replacement + liability clearance + education fund.'",
+      "excerpt": "recommended coverage amount with explanation of each component. Not just 'you need ₹1.5Cr (about $156,429)' — 'here's why: income replacement + liability clearance + education",
       "published_on": "Mar 2025",
       "verified_on": "2026-09-30",
       "method": "own_data",
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-09",
+      "fact_id": "f-cs-finance-calculator-app-retention-12",
+      "claim": "Inputs: annual income, current savings, dependents, existing coverage, liabilities. Output: recommended coverage amount with explanation of each component. Not just 'you need ₹1.5Cr (about $156,429)' — 'here's why: income replacement +…",
+      "value": "156,429",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
+      "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "amount with explanation of each component. Not just 'you need ₹1.5Cr (about $156,429)' — 'here's why: income replacement + liability clearance + education fund.'",
+      "published_on": "Mar 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-finance-calculator-app-retention-13",
       "claim": "Prepay vs Invest — 41,200 — High (38% share) — 6.2 min",
       "value": "41,200",
       "unit": "count",
@@ -139,7 +195,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-10",
+      "fact_id": "f-cs-finance-calculator-app-retention-14",
       "claim": "Prepay vs Invest — 41,200 — High (38% share) — 6.2 min",
       "value": "38%",
       "unit": "%",
@@ -153,7 +209,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-11",
+      "fact_id": "f-cs-finance-calculator-app-retention-15",
+      "claim": "Prepay vs Invest — 41,200 — High (38% share) — 6.2 min",
+      "value": "6.2",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
+      "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Prepay vs Invest — 41,200 — High (38% share) — 6.2 min",
+      "published_on": "Mar 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-finance-calculator-app-retention-16",
       "claim": "Retirement Goal — 38,800 — Very High (44% share) — 8.1 min",
       "value": "38,800",
       "unit": "count",
@@ -167,7 +237,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-12",
+      "fact_id": "f-cs-finance-calculator-app-retention-17",
       "claim": "Retirement Goal — 38,800 — Very High (44% share) — 8.1 min",
       "value": "44%",
       "unit": "%",
@@ -181,7 +251,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-13",
+      "fact_id": "f-cs-finance-calculator-app-retention-18",
+      "claim": "Retirement Goal — 38,800 — Very High (44% share) — 8.1 min",
+      "value": "8.1",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
+      "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Retirement Goal — 38,800 — Very High (44% share) — 8.1 min",
+      "published_on": "Mar 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-finance-calculator-app-retention-19",
       "claim": "Rent vs Buy — 29,400 — Very High (51% share) — 7.4 min",
       "value": "29,400",
       "unit": "count",
@@ -195,7 +279,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-14",
+      "fact_id": "f-cs-finance-calculator-app-retention-20",
       "claim": "Rent vs Buy — 29,400 — Very High (51% share) — 7.4 min",
       "value": "51%",
       "unit": "%",
@@ -209,7 +293,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-15",
+      "fact_id": "f-cs-finance-calculator-app-retention-21",
+      "claim": "Rent vs Buy — 29,400 — Very High (51% share) — 7.4 min",
+      "value": "7.4",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
+      "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Rent vs Buy — 29,400 — Very High (51% share) — 7.4 min",
+      "published_on": "Mar 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-finance-calculator-app-retention-22",
       "claim": "Insurance Coverage — 24,600 — Medium (22% share) — 4.8 min",
       "value": "24,600",
       "unit": "count",
@@ -223,7 +321,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-16",
+      "fact_id": "f-cs-finance-calculator-app-retention-23",
       "claim": "Insurance Coverage — 24,600 — Medium (22% share) — 4.8 min",
       "value": "22%",
       "unit": "%",
@@ -237,7 +335,21 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-17",
+      "fact_id": "f-cs-finance-calculator-app-retention-24",
+      "claim": "Insurance Coverage — 24,600 — Medium (22% share) — 4.8 min",
+      "value": "4.8",
+      "unit": "count",
+      "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
+      "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "Insurance Coverage — 24,600 — Medium (22% share) — 4.8 min",
+      "published_on": "Mar 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-finance-calculator-app-retention-25",
       "claim": "8,400 users in first month. 38% share rate on Prepay vs Invest.",
       "value": "8,400",
       "unit": "count",
@@ -251,7 +363,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-18",
+      "fact_id": "f-cs-finance-calculator-app-retention-26",
       "claim": "42,000 monthly users. Calculator pages: 11.2% conversion to main platform.",
       "value": "42,000",
       "unit": "count",
@@ -265,7 +377,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-19",
+      "fact_id": "f-cs-finance-calculator-app-retention-27",
       "claim": "42,000 monthly users. Calculator pages: 11.2% conversion to main platform.",
       "value": "11.2%",
       "unit": "%",
@@ -279,7 +391,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-20",
+      "fact_id": "f-cs-finance-calculator-app-retention-28",
       "claim": "134,000 monthly calculator users. 18% convert to main platform comparison. D30: 44%.",
       "value": "134,000",
       "unit": "count",
@@ -293,7 +405,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-21",
+      "fact_id": "f-cs-finance-calculator-app-retention-29",
       "claim": "134,000 monthly calculator users. 18% convert to main platform comparison. D30: 44%.",
       "value": "18%",
       "unit": "%",
@@ -307,7 +419,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-22",
+      "fact_id": "f-cs-finance-calculator-app-retention-30",
       "claim": "Monthly Calculator Users: 134K (organic growth only)",
       "value": "134K",
       "unit": "count",
@@ -321,7 +433,7 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-23",
+      "fact_id": "f-cs-finance-calculator-app-retention-31",
       "claim": "Calculator User D30 Retention: 44% (vs 14% platform average)",
       "value": "14%",
       "unit": "%",
@@ -335,7 +447,35 @@
       "primary": true
     },
     {
-      "fact_id": "f-cs-finance-calculator-app-retention-24",
+      "fact_id": "f-cs-finance-calculator-app-retention-32",
+      "claim": "A calculator that helps someone make a ₹50L (about $52,143) decision is not competing with other calculators — it's competing with spreadsheets, CAs, and WhatsApp groups where people ask for advice. When you win that comparison, you…",
+      "value": "50L",
+      "unit": "INR",
+      "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
+      "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "A calculator that helps someone make a ₹50L (about $52,143) decision is not competing with other calculators — it's competing with spreadsheets, CAs, and WhatsApp",
+      "published_on": "Mar 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-finance-calculator-app-retention-33",
+      "claim": "A calculator that helps someone make a ₹50L (about $52,143) decision is not competing with other calculators — it's competing with spreadsheets, CAs, and WhatsApp groups where people ask for advice. When you win that comparison, you…",
+      "value": "52,143",
+      "unit": "USD",
+      "source_url": "https://pmyogesh.com/case-study/finance-calculator-app-retention",
+      "source_title": "How We Built a Multi-Calculator Finance App That Drives Daily Retention",
+      "source_domain": "pmyogesh.com",
+      "excerpt": "A calculator that helps someone make a ₹50L (about $52,143) decision is not competing with other calculators — it's competing with spreadsheets, CAs, and WhatsApp",
+      "published_on": "Mar 2025",
+      "verified_on": "2026-09-30",
+      "method": "own_data",
+      "primary": true
+    },
+    {
+      "fact_id": "f-cs-finance-calculator-app-retention-34",
       "claim": "Financial calculators that hide their assumptions breed mistrust. Users with different expectations (8% vs 12% equity returns) get different answers and should be able to see how the answer changes. Transparency about assumptions…",
       "value": "8%",
       "unit": "%",
@@ -360,10 +500,10 @@
   "fetch_log": [],
   "block_coverage": {
     "problem_with_baseline": [
-      "f-cs-finance-calculator-app-retention-01"
+      "f-cs-finance-calculator-app-retention-01",
+      "f-cs-finance-calculator-app-retention-02"
     ],
     "interventions": [
-      "f-cs-finance-calculator-app-retention-02",
       "f-cs-finance-calculator-app-retention-03",
       "f-cs-finance-calculator-app-retention-04",
       "f-cs-finance-calculator-app-retention-05",
@@ -377,22 +517,53 @@
       "f-cs-finance-calculator-app-retention-13",
       "f-cs-finance-calculator-app-retention-14",
       "f-cs-finance-calculator-app-retention-15",
-      "f-cs-finance-calculator-app-retention-16"
-    ],
-    "results": [
+      "f-cs-finance-calculator-app-retention-16",
       "f-cs-finance-calculator-app-retention-17",
       "f-cs-finance-calculator-app-retention-18",
       "f-cs-finance-calculator-app-retention-19",
       "f-cs-finance-calculator-app-retention-20",
       "f-cs-finance-calculator-app-retention-21",
       "f-cs-finance-calculator-app-retention-22",
-      "f-cs-finance-calculator-app-retention-23"
-    ],
-    "what_id_do_differently": [
+      "f-cs-finance-calculator-app-retention-23",
       "f-cs-finance-calculator-app-retention-24"
     ],
+    "results": [
+      "f-cs-finance-calculator-app-retention-25",
+      "f-cs-finance-calculator-app-retention-26",
+      "f-cs-finance-calculator-app-retention-27",
+      "f-cs-finance-calculator-app-retention-28",
+      "f-cs-finance-calculator-app-retention-29",
+      "f-cs-finance-calculator-app-retention-30",
+      "f-cs-finance-calculator-app-retention-31"
+    ],
+    "what_id_do_differently": [
+      "f-cs-finance-calculator-app-retention-32",
+      "f-cs-finance-calculator-app-retention-33",
+      "f-cs-finance-calculator-app-retention-34"
+    ],
     "answer_box": [
-      "f-cs-finance-calculator-app-retention-01"
+      "f-cs-finance-calculator-app-retention-03",
+      "f-cs-finance-calculator-app-retention-04",
+      "f-cs-finance-calculator-app-retention-05",
+      "f-cs-finance-calculator-app-retention-06",
+      "f-cs-finance-calculator-app-retention-07",
+      "f-cs-finance-calculator-app-retention-08",
+      "f-cs-finance-calculator-app-retention-09",
+      "f-cs-finance-calculator-app-retention-10",
+      "f-cs-finance-calculator-app-retention-11",
+      "f-cs-finance-calculator-app-retention-12",
+      "f-cs-finance-calculator-app-retention-13",
+      "f-cs-finance-calculator-app-retention-14",
+      "f-cs-finance-calculator-app-retention-15",
+      "f-cs-finance-calculator-app-retention-16",
+      "f-cs-finance-calculator-app-retention-17",
+      "f-cs-finance-calculator-app-retention-18",
+      "f-cs-finance-calculator-app-retention-19",
+      "f-cs-finance-calculator-app-retention-20",
+      "f-cs-finance-calculator-app-retention-21",
+      "f-cs-finance-calculator-app-retention-22",
+      "f-cs-finance-calculator-app-retention-23",
+      "f-cs-finance-calculator-app-retention-24"
     ]
   }
 }

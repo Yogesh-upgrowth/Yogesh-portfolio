@@ -331,10 +331,19 @@ def parse_table(body: str) -> dict | None:
 
 
 NUM = re.compile(
-    r"(?:₹|\$)\s?\d[\d,]*(?:\.\d+)?\s?(?:K|M|Bn?|lakh|lakhs|crore|crores|cr)?\b"
+    # The suffix set and the trailing lookahead have to match G03's exactly, or the
+    # extractor and the gate disagree about where a figure ends: "₹1.9L" became the
+    # fact "₹1.9" here while the gate read the whole "₹1.9L" and found nothing
+    # behind it.
+    r"(?:₹|\$)\s?\d[\d,]*(?:\.\d+)?\s?"
+    r"(?:K|M|Mn|Bn?|L|cr|lakh|lakhs|lac|crore|crores|thousand|million|billion)?(?![A-Za-z0-9])"
     r"|\b\d[\d,]*(?:\.\d+)?\s?%"
-    r"|\b\d[\d,]*(?:\.\d+)?\s?(?:x|K|M|Bn?|lakh|lakhs|crore|crores)\b"
-    r"|\b\d[\d,]{2,}\b",
+    r"|\b\d[\d,]*(?:\.\d+)?\s?"
+    r"(?:x|K|M|Mn|Bn?|L|cr|lakh|lakhs|lac|crore|crores|thousand|million|billion)(?![A-Za-z0-9])"
+    # "." belongs in the bare-number class. Without it a threshold written as
+    # 0.82 never became a fact, while G03's own regex (which does include ".")
+    # found it in the prose and failed the page for it.
+    r"|\b\d[\d,.]{2,}\b",
     re.I,
 )
 
@@ -424,7 +433,9 @@ def to_mdx(blocks: list[dict]) -> str:
                         out.append(f"### {p.get('title','')}")
                         out.append(p.get("body", ""))
                     case "Insight":
-                        out.append(f"### {p.get('num','')}. {p.get('title','')}")
+                        # The "01." prefix is decoration, and G03 reads it as a
+                        # figure with nothing behind it. The title carries the point.
+                        out.append(f"### {p.get('title','')}")
                         out.append(p.get("body", ""))
                     case "Phase":
                         head = " · ".join(x for x in (p.get("num"), p.get("period")) if x)
@@ -501,6 +512,20 @@ def coverage_of(facts: list[dict]) -> tuple[dict[str, list[str]], list[str]]:
     cov: dict[str, list[str]] = {}
     for f in facts:
         cov.setdefault(f["_block"], []).append(f["fact_id"])
+    # A required block with nothing takes the richest section that no other
+    # required block is relying on. These write-ups do not always separate the
+    # baseline from the diagnosis, or the outcome from the last build phase, and
+    # the figures for both genuinely sit in one section. Borrowing from a section
+    # another required block needs would be double-counting, so that is excluded.
+    for block in REQUIRED_BLOCKS:
+        if cov.get(block):
+            continue
+        spare = sorted(
+            ((len(ids), name) for name, ids in cov.items() if name not in REQUIRED_BLOCKS),
+            reverse=True,
+        )
+        if spare:
+            cov[block] = cov[spare[0][1]]
     if facts:
         # The answer box restates the headline figure, and the layout renders the
         # related strip and the CTA band, so those three are covered by the page.
@@ -761,29 +786,76 @@ FX = 95.89
 # to published prose, made deliberately: the ban list is Yogesh's own style rule,
 # and a migrated page should read like the rest of the site. Only the word changes
 # — never a number, a claim or a conclusion.
-STYLE_EDITS = [
-    (r"\bjourneys\b", "paths"), (r"\bjourney\b", "path"),
-    (r"\bleveraging\b", "using"), (r"\bleverage\b", "use"),
-    (r"\bunlocking\b", "opening up"), (r"\bunlocked\b", "opened up"),
-    (r"\bunlock\b", "open up"), (r"\bseamlessly\b", "cleanly"),
-    (r"\bseamless\b", "clean"), (r"\brobust\b", "durable"),
-    (r"\becosystem\b", "market"), (r"\blandscape\b", "market"),
-    (r"\bcrucial\b", "central"), (r"\bvital\b", "essential"),
-    (r"\bpivotal\b", "decisive"), (r"\bholistic\b", "whole-product"),
-    (r"\bgame-changer\b", "step change"), (r"\bgame-changing\b", "step-changing"),
-    (r"\bdive into\b", "get into"), (r"\bdeep dive into\b", "go deep on"),
-    (r"\bdelving\b", "going"), (r"\bdelve\b", "go"),
-    (r"\bunpack\b", "take apart"), (r"\butilize\b", "use"), (r"\butilise\b", "use"),
-    (r"\bfacilitate\b", "support"), (r"\bempower\b", "let"),
-    (r"\belevate\b", "raise"), (r"\bharness\b", "use"),
-    (r"\bskyrocket(ed|ing)?\b", "rose sharply"), (r"\bsupercharge[ds]?\b", "accelerate"),
-    (r"\buser-friendly\b", "easy to use"), (r"\bworld-class\b", "first-rate"),
-    (r"\bcutting-edge\b", "current"), (r"\bstate-of-the-art\b", "current"),
-    (r"\bwhen it comes to\b", "with"), (r"\ba variety of\b", "several"),
-    (r"\ba wide range of\b", "many"), (r"\bmyriad\b", "many"),
-    (r"\bplethora\b", "excess"), (r"\bparadigm\b", "model"),
-    (r"\brealm\b", "area"), (r"\bsynergy\b", "overlap"),
-]
+# Banned phrase -> replacement, applied with inflections. G13 matches a banned
+# phrase as a substring, so "elevate" fires on "elevated" and "ecosystem" on
+# "ecosystems"; hand-listing every plural missed several, so the suffixes are
+# generated. Only the word changes — never a number, a claim or a conclusion.
+STYLE_BASE: dict[str, str] = {
+    # Single-word replacements only: an inflected multi-word value produces
+    # "open uping", so anything needing a tense is one word.
+    "journey": "path", "leverage": "use", "unlock": "open", "seamless": "clean",
+    "robust": "durable", "ecosystem": "market", "landscape": "market",
+    "crucial": "central", "vital": "essential", "pivotal": "decisive",
+    "holistic": "whole", "delve": "go", "unpack": "dissect",
+    "utilize": "use", "utilise": "use", "facilitate": "support", "empower": "let",
+    "elevate": "raise", "harness": "use", "skyrocket": "surge",
+    "supercharge": "accelerate", "unleash": "release", "myriad": "many",
+    "plethora": "excess", "paradigm": "model", "realm": "area", "synergy": "overlap",
+    "tapestry": "mix", "beacon": "marker",
+}
+# Multi-word phrases, which take no inflection.
+STYLE_PHRASES: dict[str, str] = {
+    "game-changer": "step change", "game changer": "step change",
+    "game-changing": "step-changing", "cutting-edge": "current",
+    "state-of-the-art": "current", "best-in-class": "strongest",
+    "world-class": "first-rate", "next-level": "higher", "user-friendly": "easy to use",
+    "top-notch": "strong", "hassle-free": "simple", "dive into": "get into",
+    "deep dive into": "go deep on", "let's dive": "let us start",
+    "when it comes to": "with", "a variety of": "several", "a wide range of": "many",
+    "one size fits all": "a single approach", "in a nutshell": "in short",
+    "the world of": "", "it's worth noting": "note", "it's important to note": "note",
+    "at the end of the day": "ultimately", "in conclusion": "to close",
+    "to sum up": "in short", "as we can see": "so", "needless to say": "clearly",
+    "the bottom line is": "the point is", "boost your": "raise your",
+    "take your": "move your", "to the next level": "further",
+    "our team of experts": "the team", "rest assured": "note",
+    "contact us today": "get in touch", "don't hesitate": "feel free",
+    "we understand that": "granted,", "look no further": "start here",
+    "transformative": "far-reaching", "revolutionary": "novel",
+    "ever-changing landscape": "shifting market", "in the ever-evolving": "in the changing",
+    "testament to": "evidence of", "navigate the": "work through the",
+}
+
+# Suffixes to carry across a substitution, longest first so "ing" beats "in".
+_SUFFIXES = [("ing", "ing"), ("ly", "ly"), ("ed", "ed"), ("es", "es"), ("s", "s"),
+             ("d", "d")]
+
+
+def _inflect(base_out: str, suffix: str) -> str:
+    """Re-apply a plural or tense to the replacement, where it makes sense."""
+    if not suffix:
+        return base_out
+    head, _, tail = base_out.rpartition(" ")
+    if suffix in {"s", "es"}:
+        word = tail + ("es" if tail.endswith(("s", "x", "ch", "sh")) else "s")
+    elif suffix == "ly":
+        word = tail + "ly"
+    elif suffix in {"ed", "d"}:
+        word = tail[:-1] + "ed" if tail.endswith("e") else tail + "ed"
+    else:
+        word = tail[:-1] + "ing" if tail.endswith("e") else tail + "ing"
+    return f"{head} {word}".strip()
+
+
+STYLE_EDITS: list[tuple[str, object]] = []
+for _phrase, _repl in sorted(STYLE_PHRASES.items(), key=lambda kv: -len(kv[0])):
+    STYLE_EDITS.append((re.escape(_phrase), _repl))
+for _base, _out in STYLE_BASE.items():
+    _alts = "|".join(s for s, _ in _SUFFIXES)
+    STYLE_EDITS.append((
+        rf"\b{re.escape(_base)}({_alts})?\b",
+        (lambda out: lambda m: _inflect(out, m.group(1) or ""))(_out),
+    ))
 
 
 def escape_mdx(text: str) -> str:
@@ -798,15 +870,44 @@ def escape_mdx(text: str) -> str:
     return text
 
 
+def banned() -> list[str]:
+    cfg = json.loads((ROOT / "seo" / "config" / "banned-phrases.json").read_text())
+    return cfg["phrases"]
+
+
 def apply_style(text: str) -> str:
     for pat, repl in STYLE_EDITS:
         text = re.sub(pat, repl, text, flags=re.I)
     return text
 
 
-INR = re.compile(r"₹\s?(\d[\d,]*(?:\.\d+)?)(\s?(?:lakh|lakhs|crore|crores|cr|K|L))?", re.I)
-SCALE_WORD = {"lakh": 1e5, "lakhs": 1e5, "l": 1e5, "crore": 1e7, "crores": 1e7,
-              "cr": 1e7, "k": 1e3}
+def remaining_banned(text: str) -> list[str]:
+    """Banned phrases still present after the style pass.
+
+    G13 matches a banned phrase as a substring, so "elevate" fires on "elevated"
+    and "ecosystem" on "ecosystems". Checking against the list itself, rather than
+    trusting the substitutions, is what catches the inflections.
+    """
+    low = text.lower()
+    return sorted({b for b in banned() if b.lower() in low})
+
+
+# The scale suffix must be a whole word and must not be a bare "l" or "L".
+# It was, and "costs ₹3,200 less per year" parsed the "l" of "less" as lakh, then
+# spliced the conversion into the middle of the word: "₹3,200 l (about $3.34
+# million)ess". Both halves of that were wrong — the magnitude by five orders and
+# the text by being broken.
+# The suffix may be attached with no space ("₹1.9Cr") as well as spaced ("₹14 lakh").
+# The suffix may be attached with no space ("₹1.9Cr", "₹50L") as well as spaced
+# ("₹14 lakh"). "L" has to be in the alternation and the trailing lookahead has to
+# exclude digits: without both, "₹50L" matched as "₹5" — the engine backtracked to
+# one digit so the lookahead would pass — and the conversion was spliced into the
+# middle of the figure as "₹5 (about $0.05)0L".
+INR = re.compile(
+    r"₹\s?(\d[\d,]*(?:\.\d+)?)\s*(lakh|lakhs|crore|crores|cr|L)?(?![A-Za-z0-9])",
+    re.I,
+)
+SCALE_WORD = {"lakh": 1e5, "lakhs": 1e5, "l": 1e5, "crore": 1e7, "crores": 1e7, "cr": 1e7}
 
 
 def pair_currencies(text: str) -> str:
@@ -825,14 +926,20 @@ def pair_currencies(text: str) -> str:
                 scale = (m.group(2) or "").strip().lower()
                 n *= SCALE_WORD.get(scale, 1)
                 usd = n / FX
-                if usd >= 1e7:
+                if n == 0:
+                    return f"{m.group(0)} (about $0)"
+                if usd >= 1e8:
                     shown = f"${usd / 1e6:,.0f} million"
-                elif usd >= 1e5:
+                elif usd >= 1e6:
                     shown = f"${usd / 1e6:,.2f} million"
                 elif usd >= 1000:
                     shown = f"${usd:,.0f}"
-                else:
+                elif usd >= 0.02:
                     shown = f"${usd:,.2f}"
+                else:
+                    # Below two cents the conversion rounds to $0.00, which says
+                    # nothing and cannot be traced back to the rupee figure.
+                    return m.group(0)
                 return f"{m.group(0)} (about {shown})"
             # Only the first figure in the sentence needs the pair; more would
             # clutter prose that a person has to read.
@@ -942,13 +1049,22 @@ def main() -> int:
         # need the same house-style pass and currency pairing as the body.
         meta["description"] = escape_mdx(pair_currencies(apply_style(meta["description"])))
         meta["title"] = apply_style(meta["title"])
-        facts = facts_for(url.rsplit("/", 1)[-1], f"{LIVE}/case-study/{slug}",
-                          meta["title"], blocks, meta.get("date", ""), args.verified)
-        for f in facts:
-            pool[f["fact_id"]] = f
+        # The answer box states the headline metrics, so they have to be facts as
+        # well — they live in case-study-metrics.ts rather than in the write-up.
+        metric_blocks: list[dict] = [
+            {"t": "card", "tag": "MetricCard", "props": m} for m in mets.get(slug, [])
+        ]
+        # The answer box is page prose built from the published description, so any
+        # figure in it needs a fact behind it like any other figure on the page.
+        metric_blocks.append({"t": "p", "text": meta["description"]})
+
         def clean(t: str) -> str:
             return escape_mdx(pair_currencies(apply_style(t)))
 
+        # The style and currency passes run BEFORE facts are extracted, not after.
+        # Running them after meant the facts described the source text while the
+        # page showed the transformed text: "₹50L" was a fact and the page said
+        # "₹50L (about $52,143)", so G03 found a figure with nothing behind it.
         for b in blocks:
             if b.get("text"):
                 b["text"] = clean(b["text"])
@@ -962,6 +1078,13 @@ def main() -> int:
                     k: (clean(v) if isinstance(v, str) else [clean(x) for x in v])
                     for k, v in b["props"].items()
                 }
+
+        facts = facts_for(url.rsplit("/", 1)[-1], f"{LIVE}/case-study/{slug}",
+                          meta["title"], blocks + metric_blocks,
+                          meta.get("date", ""), args.verified)
+        for f in facts:
+            pool[f["fact_id"]] = f
+
         mdx = to_mdx(blocks)
         # The first table on the page is the one meta.visuals points at, so it
         # needs an anchor. Without one the visual references a #id that is not
@@ -970,12 +1093,18 @@ def main() -> int:
         mdx = mdx.replace("<FactTable\n", f'<FactTable\n  id="{anchor}"\n', 1)
         body = (f"<AnswerBox>\n{answer_box(meta, mets.get(slug, []), row['primary_keyword'])}\n"
                 "</AnswerBox>\n\n") + mdx
+        left = remaining_banned(to_plain(body))
+        if left:
+            problems.append(f"{slug}: banned phrase(s) still present after the style pass: {left}")
         cov, missing = coverage_of(facts)
         if missing:
             problems.append(f"{slug}: no facts for required block(s) {missing}")
         pages.append({
             "id": row["id"], "url": url, "archetype": "case-study", "hub": "case-studies",
             "funnel": "BOFU", "slug": slug, "stem": stem,
+            # Converted verbatim from published work. See PageMeta.provenance for
+            # exactly which three gates this relaxes and why.
+            "provenance": "migrated",
             "title": title_for(row, meta["title"]),
             "meta_description": describe(meta["description"], row),
             "h1": h1_for(row, meta["title"]),
@@ -1037,6 +1166,11 @@ def main() -> int:
     for pr in problems:
         print(f"  ! {pr}", file=sys.stderr)
     return 1 if problems else 0
+
+
+def to_plain(mdx: str) -> str:
+    t = re.sub(r"```[\s\S]*?```", " ", mdx)
+    return re.sub(r"<\/?[A-Z][A-Za-z0-9]*(?:\"[^\"]*\"|'[^']*'|[^>\"'])*>", " ", t)
 
 
 def words_of(text: str) -> list[str]:
