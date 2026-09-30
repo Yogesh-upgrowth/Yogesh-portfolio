@@ -1,0 +1,108 @@
+{
+  "id": "service-industry-0027",
+  "url": "/services/app-monetization-strategy/fintech",
+  "archetype": "service-industry",
+  "hub": "services",
+  "wave": 1,
+  "batch_id": "w1-service-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Fintech App Monetization Consultant: India and Global",
+  "meta_description": "Monetizing a fintech app when the payment rail earns nothing. What changes, which Indian players prove it, and what the engagement covers.",
+  "h1": "Fintech app monetization consultant",
+  "primary_keyword": "fintech app monetization consultant",
+  "secondary_keywords": [
+    "fintech monetization strategy",
+    "india fintech revenue model"
+  ],
+  "entity_a": "fintech",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-svc-01",
+    "f-svc-02",
+    "f-svc-03",
+    "f-svc-04",
+    "f-unit-25",
+    "f-act-12"
+  ],
+  "experience_used": [
+    "exp-040",
+    "exp-042"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies/loanwiser-credit-routing",
+      "anchor": "the credit routing case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/fintech",
+      "anchor": "fintech retention benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/services",
+      "anchor": "the services",
+      "role": "hub"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the parent engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "start the engagement",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#fintech-monetization",
+      "alt": "Six figures that shape a fintech monetization model in India: the zero merchant discount rate on UPI, merchant interchange and lending distribution share at the category leader, gross revenue per registered user per year, two FY26 revenue and profit outcomes, monthly UPI Autopay mandate volume and Indian payment gateway costs, each row carrying its source and verification date",
+      "caption": "What a fintech model in India has to work around. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why can a fintech app not monetise payments directly in India?",
+      "a": "Because UPI runs at zero merchant discount rate as a national policy decision. Payment volume produces scale and data rather than revenue, so the model has to earn somewhere adjacent."
+    },
+    {
+      "q": "Where does fintech revenue actually come from?",
+      "a": "Distribution, mostly. At the category leader, lending distribution accounted for 11.55% of first-half FY26 revenue, with merchant interchange of 0.5% to 1.1% on eligible flows alongside subscriptions and bill-payment commissions."
+    },
+    {
+      "q": "Does this engagement cover regulatory constraints?",
+      "a": "It has to. What can be charged, when consent is required and how a mandate behaves are inputs to the model rather than a compliance review afterwards."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Start a fintech monetization engagement",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the parent engagement",
+      "href": "/services/app-monetization-strategy"
+    }
+  },
+  "schema_types": [
+    "Service",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Builds the model from the zero-MDR constraint outward, with the category leader's actual revenue mix and per-user revenue, rather than assuming a subscription or interchange model that Indian policy has already ruled out.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": true,
+  "fx_rate_used": 95.89
+}

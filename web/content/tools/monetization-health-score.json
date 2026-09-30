@@ -1,0 +1,107 @@
+{
+  "id": "tool-0586",
+  "url": "/tools/monetization-health-score",
+  "archetype": "tool",
+  "hub": "tools",
+  "wave": 1,
+  "batch_id": "w1-service-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Monetization Health Score: A Ten-Minute Diagnostic",
+  "meta_description": "Score your monetization across pricing, paywall, collection and store economics in ten minutes. Shows its formula and its Indian defaults.",
+  "h1": "Monetization health score",
+  "primary_keyword": "monetization health score",
+  "secondary_keywords": [
+    "app monetization audit tool",
+    "monetization diagnostic"
+  ],
+  "entity_a": "monetization-health-score",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-act-10",
+    "f-act-11",
+    "f-glossary-0700-09",
+    "f-svc-05",
+    "f-svc-07",
+    "f-act-13"
+  ],
+  "experience_used": [
+    "exp-049"
+  ],
+  "internal_links": [
+    {
+      "url": "/tools",
+      "anchor": "the tools",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/unit-economics",
+      "anchor": "unit economics",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/paywall",
+      "anchor": "paywall",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/app-store-fee-net-revenue-calculator",
+      "anchor": "the app store fee calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#score-inputs",
+      "alt": "Six inputs the monetization health score checks: store commission rates, Apple's core technology commission, UPI Autopay mandate success, the share of companies on hybrid pricing, the share of spend still on seats, and the all-in range for international payment costs from India, each row carrying its source and verification date",
+      "caption": "What the score checks, and the published figure behind each. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What does the monetization health score measure?",
+      "a": "Four things: whether the price has been tested, whether the paywall is placed against a known value moment, whether collection is instrumented, and whether store and payment costs are in the model. Each scores separately."
+    },
+    {
+      "q": "Does it need my data?",
+      "a": "It needs four or five numbers you already have, entered in the browser. Nothing is submitted, nothing is stored, and no email is requested before the result appears."
+    },
+    {
+      "q": "What is a good score?",
+      "a": "Any dimension scoring zero matters more than the total. A product with excellent pricing and uninstrumented collection is losing revenue it cannot see, and a total score would average that away."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetization health score review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "WebApplication",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Scores collection and store economics as separate dimensions rather than folding them into a single monetization total, and ships Indian payment defaults, so a zero on an invisible dimension surfaces instead of averaging away.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

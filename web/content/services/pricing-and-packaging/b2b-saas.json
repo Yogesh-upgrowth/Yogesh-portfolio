@@ -1,0 +1,108 @@
+{
+  "id": "service-industry-0040",
+  "url": "/services/pricing-and-packaging/b2b-saas",
+  "archetype": "service-industry",
+  "hub": "services",
+  "wave": 1,
+  "batch_id": "w1-service-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "SaaS Pricing and Packaging Consultant for B2B Products",
+  "meta_description": "Pricing and packaging for B2B SaaS as seats give way to hybrid. What changes, where the spend actually sits, and what the engagement covers.",
+  "h1": "SaaS pricing and packaging consultant",
+  "primary_keyword": "saas pricing and packaging consultant",
+  "secondary_keywords": [
+    "b2b saas pricing consultant",
+    "usage based pricing consultant"
+  ],
+  "entity_a": "b2b-saas",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-svc-05",
+    "f-svc-06",
+    "f-svc-07",
+    "f-svc-08",
+    "f-unit-18",
+    "f-act-09"
+  ],
+  "experience_used": [
+    "exp-037",
+    "exp-031"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies/crm-180k-transactions",
+      "anchor": "the CRM throughput case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/b2b-saas",
+      "anchor": "B2B SaaS retention benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/services",
+      "anchor": "the services",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/nrr",
+      "anchor": "net revenue retention",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/pricing-tier-designer",
+      "anchor": "the pricing tier designer",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "start the engagement",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#b2b-pricing-shift",
+      "alt": "Six figures behind the shift in B2B pricing: the share of companies running hybrid models and its growth, an independent hybrid adoption figure and its projection, the share of spend still on seats against consumption, investor model preferences, gross revenue retention by contract size and median gross margin by revenue band, each row carrying its source and verification date",
+      "caption": "Where B2B pricing actually sits, against where it is said to be going. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Should we move off per-seat pricing?",
+      "a": "Probably to a hybrid rather than away from seats entirely. 37% of companies now run a hybrid model, up from 25% a year earlier, while seat-based contracts still account for 65% to 75% of spend."
+    },
+    {
+      "q": "Is usage-based pricing what investors want?",
+      "a": "Hybrid is, by their own stated preference: 35% named hybrid, 26% outcome-based and 24% usage-based, against 5% for seat-based. That is a preference about alignment, not a prediction about your product."
+    },
+    {
+      "q": "How does contract size change the work?",
+      "a": "It changes the whole shape. Gross revenue retention runs 82% below $25K ACV against 95% above $100K, so a small-contract book needs packaging that reduces churn while a large-contract book needs packaging that creates expansion room."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Start a b2b-saas pricing engagement",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the retention benchmarks",
+      "href": "/benchmarks/retention/b2b-saas"
+    }
+  },
+  "schema_types": [
+    "Service",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Sets the hybrid-pricing narrative against the share of spend still sitting on seats, so the recommendation is a migration path rather than a model swap, and ties the packaging decision to gross retention by contract size.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

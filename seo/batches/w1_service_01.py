@@ -496,6 +496,648 @@ difference is almost always a churn rate that was measured over one window and
 applied to another.
 """,
   ),
+  dict(
+    id="service-industry-0027", url="/services/app-monetization-strategy/fintech",
+    archetype="service-industry", hub="services", funnel="BOFU", not_affiliated=True,
+    title="Fintech App Monetization Consultant: India and Global",
+    meta_description="Monetizing a fintech app when the payment rail earns nothing. What changes, which Indian players prove it, and what the engagement covers.",
+    h1="Fintech app monetization consultant",
+    primary_keyword="fintech app monetization consultant",
+    secondary_keywords=["fintech monetization strategy", "india fintech revenue model"],
+    entity_a="fintech", entity_b="app-monetization-strategy",
+    facts=["f-svc-01", "f-svc-02", "f-svc-03", "f-svc-04", "f-unit-25", "f-act-12"],
+    experience=["exp-040", "exp-042"],
+    links=L(("/case-studies/loanwiser-credit-routing", "the credit routing case study", "proof"),
+            ("/benchmarks/retention/fintech", "fintech retention benchmarks", "reference"),
+            ("/services", "the services", "hub"),
+            ("/services/app-monetization-strategy", "the parent engagement", "lateral"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
+            ("/work-with-me", "start the engagement", "bofu")),
+    visuals=V("fintech-monetization",
+              "Six figures that shape a fintech monetization model in India: the zero merchant discount rate on UPI, merchant interchange and lending distribution share at the category leader, gross revenue per registered user per year, two FY26 revenue and profit outcomes, monthly UPI Autopay mandate volume and Indian payment gateway costs, each row carrying its source and verification date",
+              "What a fintech model in India has to work around. Verified 30 September 2026."),
+    cta={"primary": {"label": "Start a fintech monetization engagement", "href": "/work-with-me"},
+         "secondary": {"label": "See the parent engagement", "href": "/services/app-monetization-strategy"}},
+    faq=[
+      dict(q="Why can a fintech app not monetise payments directly in India?",
+           a="Because UPI runs at zero merchant discount rate as a national policy decision. Payment volume produces scale and data rather than revenue, so the model has to earn somewhere adjacent."),
+      dict(q="Where does fintech revenue actually come from?",
+           a="Distribution, mostly. At the category leader, lending distribution accounted for 11.55% of first-half FY26 revenue, with merchant interchange of 0.5% to 1.1% on eligible flows alongside subscriptions and bill-payment commissions."),
+      dict(q="Does this engagement cover regulatory constraints?",
+           a="It has to. What can be charged, when consent is required and how a mandate behaves are inputs to the model rather than a compliance review afterwards."),
+    ],
+    schema_types=SVC_SCHEMA,
+    unique_value="Builds the model from the zero-MDR constraint outward, with the category leader's actual revenue mix and per-user revenue, rather than assuming a subscription or interchange model that Indian policy has already ruled out.",
+    block_coverage=ind_cover(["f-svc-02"], ["f-svc-02", "f-svc-03"],
+                             ["f-svc-01", "f-svc-04"], ["f-act-12"],
+                             ["f-svc-03"], ["f-unit-25"], ["f-svc-01"], ["f-svc-04"]),
+    body="""
+<AnswerBox>
+A fintech app monetization consultant working in India starts from an unusual
+constraint: UPI runs at zero merchant discount rate, so payment volume earns
+nothing directly. The category leader takes about ₹112 per registered user a year,
+roughly $1.17, and most of it arrives through distribution.
+</AnswerBox>
+
+<FactTable
+  id="fintech-monetization"
+  caption="What a fintech model in India has to work around"
+  columns={["Constraint or figure", "Value"]}
+  rows={[
+    { cells: ["UPI merchant discount rate", "zero, by national policy"], factId: "f-svc-02" },
+    { cells: ["Category leader: interchange, and lending share of revenue", "0.5% to 1.1%, and 11.55%"], factId: "f-svc-01" },
+    { cells: ["Gross revenue per registered user per year", "about ₹112 (about $1.17)"], factId: "f-svc-03" },
+    { cells: ["Two FY26 outcomes on similar revenue", "₹7,920 crore at a ₹2,792 crore loss, against ₹8,437 crore at ₹552 crore profit"], factId: "f-svc-04" },
+    { cells: ["UPI Autopay mandates created monthly", "more than 120 million"], factId: "f-unit-25" },
+    { cells: ["India gateway cost, domestic and international cards", "2% plus 18% GST, and 3%"], factId: "f-act-12" },
+  ]}
+/>
+
+## What is different about fintech
+
+The rail earns nothing. UPI operates at zero merchant discount rate as a policy
+decision taken nationally, not as a competitive move, which means it will not
+revert when a company decides it needs margin. Any model that assumes a cut of
+payment volume is planning against a rule rather than a market.
+
+What payment volume does produce is scale, frequency and data. All three are
+valuable, and none of them is revenue until something sits next to them. So a
+fintech monetization model in India is really a distribution model wearing a
+payments front end, and the strategic question is which adjacent product the
+traffic can honestly carry.
+
+Regulation compounds the difference. What a product may charge, when it needs
+explicit consent, and how a recurring mandate behaves are all inputs to the model
+rather than a compliance review bolted on at the end. A model designed first and
+checked for legality afterwards gets rebuilt, and the rebuild usually removes the
+part that made it work.
+
+## Who this shows up in
+
+Two Indian results from FY26 show how far apart the outcomes sit on similar
+revenue. One company produced ₹7,920 crore of revenue, about $826 million, at a
+₹2,792 crore loss, roughly $291 million. Another produced ₹8,437 crore, about $880
+million, at a ₹552 crore profit, roughly $58 million.
+
+The revenue mix at the category leader is the more instructive number. Merchant
+interchange runs 0.5% to 1.1% on eligible flows. Lending distribution accounted for
+11.55% of first-half FY26 revenue. Device subscriptions, bill-payment commissions,
+insurance distribution and advertising fill the rest. No single line carries the
+business, and the largest one is not payments.
+
+Neither company appears here as an endorsement or a partner. Both are public
+reference points for a market structure, and their figures come from published
+reporting with dates attached.
+
+## How the engagement changes
+
+The parent engagement starts at the funnel. This one starts at the rail, because
+the rail decides what the funnel can be asked to do. Week one maps where money can
+legally and mechanically be collected, and at what cost: domestic gateway charges
+run 2% plus 18% GST, international card exports 3%, and those percentages set the
+floor under every price.
+
+Mandates come next. More than 120 million UPI Autopay mandates get created monthly
+in India, and a fintech product with a recurring component either lives on that
+rail or explains why not. The engagement designs the mandate flow alongside the
+price rather than after it, because a price above the no-authentication threshold
+changes the collection rate rather than the revenue line.
+
+Only then does the work reach packaging and the paywall. Weeks four and five run
+the same pricing tests as the parent engagement, inside the constraints the first
+three weeks established.
+
+## Benchmarks that apply
+
+Fintech retention and conversion benchmarks sit on their own page, and the useful
+ones are per-funnel rather than per-category. A lending funnel and a payments
+funnel in the same app behave differently enough that a blended figure describes
+neither.
+
+The per-user revenue figure is the honest anchor. About ₹112 a year, roughly $1.17,
+at the largest player in the market sets a ceiling most plans quietly exceed. A
+model projecting several dollars per user per year in India is claiming to beat the
+category leader, and that claim needs a mechanism rather than an assumption.
+
+The second benchmark worth holding is mandate success rather than conversion. With
+more than 120 million UPI Autopay mandates created monthly, a recurring fintech
+product's revenue depends on how many of its mandates clear, and that number sits in
+a payments dashboard rather than a product one. Teams that benchmark conversion and
+ignore collection routinely report a retention problem they do not have.
+
+## Proof
+
+<FromMyWork exp="exp-040">
+Routing applicants only to lenders with high disbursement probability got bank and
+NBFC approval rates to 90%+. The gain came from the routing rule rather than the
+model that fed it.
+</FromMyWork>
+
+<FromMyWork exp="exp-042">
+Offline loan sourcing through 1.5M+ CSC and kiosk shops, backed by Haryana and
+Karnataka government tie-ups, reached borrowers no digital funnel was touching.
+Distribution was the product decision, not a channel choice.
+</FromMyWork>
+
+Both results point at the same thing. In Indian fintech the revenue follows who gets
+reached and how they get routed, rather than a better screen. That is why this variant
+spends its first weeks on rails and routing, and why a funnel optimisation brief
+usually arrives mis-scoped.
+
+Neither result came from pricing. One came from a routing rule and one from a
+distribution channel, and both would have been invisible to a conversion audit. That
+is the argument for starting a fintech engagement at the rail: the largest available
+gains sit in places a funnel review does not look.
+
+## Price
+
+₹4,30,000, or $4,500, for the six weeks, the same as the parent engagement. The
+scope differs and the fee does not, because the work takes the same six weeks
+whether the constraint is a paywall or a mandate.
+
+Compliance review is not included and is no substitute for counsel. What is included
+is a model that takes the rules as given rather than discovering them in week five,
+which is the cheaper order to find them in.
+
+Two things sit outside the fee. Partner negotiations with lenders or insurers are a
+commercial programme rather than a design exercise. And any change requiring a
+regulatory filing runs on the regulator's timetable, not a six-week one, so the
+engagement produces the design and flags the dependency rather than promising a
+date.
+""",
+  ),
+
+  dict(
+    id="service-industry-0032", url="/services/app-monetization-strategy/marketplaces",
+    archetype="service-industry", hub="services", funnel="BOFU", not_affiliated=True,
+    title="Marketplace App Monetization Consultant: Take Rate First",
+    meta_description="Monetizing a marketplace app when the take rate sets the ceiling. What changes, the Indian commission benchmarks, and what the engagement covers.",
+    h1="Marketplace app monetization consultant",
+    primary_keyword="marketplace app monetization consultant",
+    secondary_keywords=["marketplace take rate strategy", "marketplace monetization india"],
+    entity_a="marketplaces", entity_b="app-monetization-strategy",
+    facts=["f-act-14", "f-act-15", "f-act-16", "f-act-17", "f-act-21", "f-act-22"],
+    experience=["exp-024", "exp-051"],
+    links=L(("/case-studies/comparison-platform-india", "the comparison platform case study", "proof"),
+            ("/benchmarks/retention/marketplaces", "marketplace retention benchmarks", "reference"),
+            ("/services", "the services", "hub"),
+            ("/services/app-monetization-strategy", "the parent engagement", "lateral"),
+            ("/tools/app-store-fee-net-revenue-calculator", "the net revenue calculator", "tool"),
+            ("/work-with-me", "start the engagement", "bofu")),
+    visuals=V("marketplace-take-rates",
+              "Six take-rate reference points for marketplace monetization: Indian quick-commerce market share by gross merchandise value, quick-commerce commission ranges, the share of revenue platforms consume from brands, the ONDC alternative rate, eBay and Etsy reported take rates and Indian food-delivery commissions, each row carrying its source and verification date",
+              "The take rates a marketplace model sits inside. Verified 30 September 2026."),
+    cta={"primary": {"label": "Start a marketplaces monetization engagement", "href": "/work-with-me"},
+         "secondary": {"label": "See the parent engagement", "href": "/services/app-monetization-strategy"}},
+    faq=[
+      dict(q="What take rate should a marketplace charge?",
+           a="Whatever matches the share of the transaction it performs. eBay reported 13.91% and Etsy 25.7%, and the gap tracks how much discovery each one carries rather than how large each one is."),
+      dict(q="Is ONDC a real alternative in India?",
+           a="It offers a route near 3% against the 15% to 25% incumbents charge, so the arithmetic is real. Whether sellers move depends on whether the incumbent's demand is worth the difference, which is an empirical question rather than a strategic one."),
+      dict(q="Why does the engagement start with the take rate?",
+           a="Because it sets the ceiling before the product does. Indian brands lose 30% to 35% of revenue to quick-commerce platforms once listing fees, ad spend, commission and operations are counted, and no pricing change inside the app reaches that."),
+    ],
+    schema_types=SVC_SCHEMA,
+    unique_value="Starts from the take rate as a ceiling rather than a lever, with the Indian commission and platform-cost figures side by side and the ONDC alternative priced, instead of treating marketplace monetization as a funnel problem.",
+    block_coverage=ind_cover(["f-act-16"], ["f-act-16", "f-act-17"],
+                             ["f-act-14", "f-act-21", "f-act-22"], ["f-act-15"],
+                             ["f-act-21"], ["f-act-15"], ["f-act-17"], ["f-act-14"]),
+    body="""
+<AnswerBox>
+A marketplace app monetization consultant starts at the take rate, because it sets
+the ceiling before the product does. Indian brands lose 30% to 35% of revenue to
+quick-commerce platforms once listing fees, mandatory ad spend, commission and
+operations are counted, and no in-app pricing change reaches that.
+</AnswerBox>
+
+<FactTable
+  id="marketplace-take-rates"
+  caption="The take rates a marketplace model sits inside"
+  columns={["Platform or route", "Take"]}
+  rows={[
+    { cells: ["Revenue Indian quick-commerce platforms consume from brands", "30% to 35%"], factId: "f-act-16" },
+    { cells: ["Indian quick-commerce commissions", "Zepto 10% to 18%, Instamart 15% to 25%, Blinkit about 22%"], factId: "f-act-15" },
+    { cells: ["ONDC", "near 3%"], factId: "f-act-17" },
+    { cells: ["eBay and Etsy, reported take rate", "13.91% and 25.7%"], factId: "f-act-21" },
+    { cells: ["Zomato and Swiggy, restaurant commission", "18% to 25% and 18% to 22%"], factId: "f-act-22" },
+    { cells: ["Indian quick-commerce share by GMV", "Blinkit 46%, Instamart 24%, Zepto 22%"], factId: "f-act-14" },
+  ]}
+/>
+
+## What is different about marketplaces
+
+Two sides, one price, and the price sets the ceiling. A marketplace does not choose
+its margin the way a product company does. It chooses a take rate, and the take
+rate has to match the share of the transaction it actually performs. Charge above that share and supply
+leaves. Charge below it and the business cannot fund itself.
+
+That makes take-rate design the monetization strategy rather than an input to it.
+Everything a funnel can do sits inside a number somebody set before the funnel
+existed. A marketplace engagement opening with conversion work optimises inside a
+ceiling nobody examined.
+
+A second difference: competitors contest the take rate continuously. ONDC offers
+a route near 3% against the 15% to 25% incumbents charge in India. That arithmetic
+is available to every seller, which means an incumbent take rate is a claim about
+the value of its demand, re-tested every quarter.
+
+## Who this shows up in
+
+Indian quick commerce splits by gross merchandise value into Blinkit at about 46%,
+Swiggy Instamart at about 24% and Zepto at about 22%. Commissions run 10% to 18% at
+Zepto, 15% to 25% at Instamart and about 22% at Blinkit, and the lowest rate
+belongs to the smallest share. That is the trade a challenger makes.
+
+Globally the pattern holds on work rather than scale. eBay reported a 13.91% take
+rate and Etsy 25.7%. Etsy carries discovery for products with no brand of their
+own; eBay carries less and charges less. Indian food delivery sits between them,
+with Zomato at 18% to 25% and Swiggy at 18% to 22%.
+
+None of these companies is a client or a partner, and none appears here as an
+endorsement. They are published reference points for how take rate tracks
+function, each with its source and date.
+
+## How the engagement changes
+
+Week one prices the ceiling. Count every fee a seller or buyer pays, including the
+ones outside commission. Listing fees, mandatory ad spend and operations together
+take Indian brands from a nominal commission to 30% to 35% of revenue. A model
+resting on the commission line alone misses the difference.
+
+Weeks two and three decide what the platform is charging for. This is where
+assortment and supply structure enter, because a marketplace that charges for
+discovery has to produce discovery. Weeks four and five test the rate and the
+packaging on real supply, with pre-set thresholds, rather than surveying sellers
+about willingness to pay.
+
+Week six sets the rate, the fee schedule and the measurement. The measurement
+matters more here than in other variants: a take rate that looks accepted for two
+quarters and then loses supply was never accepted.
+
+## Benchmarks that apply
+
+Commission ranges are the wrong benchmark on their own. Compare take rate against
+function instead. The Indian quick-commerce numbers make that legible: Zepto charges
+10% to 18% while holding about 22% of gross merchandise value, which is buying supply
+with price.
+
+Retention benchmarks for marketplaces sit on their own page, and they need reading
+per side. Supply retention and demand retention move independently, and a blended
+figure hides which side is leaving.
+
+The other benchmark that matters is all-in cost rather than headline commission. A
+seller comparing a 22% commission against a 3% alternative is comparing the wrong
+two numbers if listing fees and mandatory ad spend take the first to a third of
+revenue. Every take-rate comparison in this engagement runs on all-in cost, because
+that is the number a seller experiences.
+
+## Proof
+
+<FromMyWork exp="exp-024">
+Carrying the full catalogue was never viable, so the first real work was choosing
+what not to stock. Of roughly 1,200 SKUs we prioritised 85 — under 8% — against the
+highest-probability commercial opportunities for the market's development stage.
+</FromMyWork>
+
+<FromMyWork exp="exp-051">
+A hub-and-spoke launch with three to four anchor distributors per city, aggregating
+downstream vendor demand into one consolidation point, was what made
+direct-to-vendor fulfilment from a single Bangalore warehouse work at all.
+</FromMyWork>
+
+Both decisions were structural rather than promotional. Narrowing assortment and
+consolidating demand changed what the platform could charge for, which is the move a
+take-rate design makes: decide what work the platform performs, then price that work.
+
+The assortment number is the one worth sitting with. Prioritising 85 of roughly 1,200
+SKUs meant declining more than nine tenths of the catalogue, and that decision did
+more for the economics than any fee change would have. Marketplace monetization is
+usually a subtraction problem before it is a pricing one.
+
+## Price
+
+₹4,30,000, or $4,500, for the six weeks, the same as the parent engagement. Take-rate
+work, fee-schedule design and the supply-side test all sit inside that scope.
+
+What is not inside it is renegotiating existing seller contracts. The engagement
+produces the rate and the reasoning. Moving an installed base onto it is a commercial
+programme rather than a six-week piece of work, and it usually needs a named owner on
+the client side before it starts.
+
+Supply-side research sits inside the fee, and clients most often expect it outside. A take rate cannot be set without talking to sellers about what they think
+they are paying for, and the answer is frequently different from what the platform
+believes it sells. That gap is usually where the rate has room to move.
+""",
+  ),
+  dict(
+    id="service-industry-0040", url="/services/pricing-and-packaging/b2b-saas",
+    archetype="service-industry", hub="services", funnel="BOFU",
+    title="SaaS Pricing and Packaging Consultant for B2B Products",
+    meta_description="Pricing and packaging for B2B SaaS as seats give way to hybrid. What changes, where the spend actually sits, and what the engagement covers.",
+    h1="SaaS pricing and packaging consultant",
+    primary_keyword="saas pricing and packaging consultant",
+    secondary_keywords=["b2b saas pricing consultant", "usage based pricing consultant"],
+    entity_a="b2b-saas", entity_b="pricing-and-packaging",
+    facts=["f-svc-05", "f-svc-06", "f-svc-07", "f-svc-08", "f-unit-18", "f-act-09"],
+    experience=["exp-037", "exp-031"],
+    links=L(("/case-studies/crm-180k-transactions", "the CRM throughput case study", "proof"),
+            ("/benchmarks/retention/b2b-saas", "B2B SaaS retention benchmarks", "reference"),
+            ("/services", "the services", "hub"),
+            ("/glossary/nrr", "net revenue retention", "lateral"),
+            ("/tools/pricing-tier-designer", "the pricing tier designer", "tool"),
+            ("/work-with-me", "start the engagement", "bofu")),
+    visuals=V("b2b-pricing-shift",
+              "Six figures behind the shift in B2B pricing: the share of companies running hybrid models and its growth, an independent hybrid adoption figure and its projection, the share of spend still on seats against consumption, investor model preferences, gross revenue retention by contract size and median gross margin by revenue band, each row carrying its source and verification date",
+              "Where B2B pricing actually sits, against where it is said to be going. Verified 30 September 2026."),
+    cta={"primary": {"label": "Start a b2b-saas pricing engagement", "href": "/work-with-me"},
+         "secondary": {"label": "See the retention benchmarks", "href": "/benchmarks/retention/b2b-saas"}},
+    faq=[
+      dict(q="Should we move off per-seat pricing?",
+           a="Probably to a hybrid rather than away from seats entirely. 37% of companies now run a hybrid model, up from 25% a year earlier, while seat-based contracts still account for 65% to 75% of spend."),
+      dict(q="Is usage-based pricing what investors want?",
+           a="Hybrid is, by their own stated preference: 35% named hybrid, 26% outcome-based and 24% usage-based, against 5% for seat-based. That is a preference about alignment, not a prediction about your product."),
+      dict(q="How does contract size change the work?",
+           a="It changes the whole shape. Gross revenue retention runs 82% below $25K ACV against 95% above $100K, so a small-contract book needs packaging that reduces churn while a large-contract book needs packaging that creates expansion room."),
+    ],
+    schema_types=SVC_SCHEMA,
+    unique_value="Sets the hybrid-pricing narrative against the share of spend still sitting on seats, so the recommendation is a migration path rather than a model swap, and ties the packaging decision to gross retention by contract size.",
+    block_coverage=ind_cover(["f-svc-05"], ["f-svc-07", "f-svc-05"],
+                             ["f-svc-06"], ["f-unit-18"],
+                             ["f-act-09"], ["f-svc-08"], ["f-svc-07"], ["f-svc-08"]),
+    body="""
+<AnswerBox>
+A SaaS pricing and packaging consultant working on B2B products in 2026 is mostly
+designing migrations, not models. 37% of companies now run a hybrid of seats and
+consumption, up from 25% a year earlier, while seat-based contracts still carry 65%
+to 75% of actual spend.
+</AnswerBox>
+
+<FactTable
+  id="b2b-pricing-shift"
+  caption="Where B2B pricing sits, against where it is said to be going"
+  columns={["Measure", "Figure"]}
+  rows={[
+    { cells: ["Companies running a hybrid model, now and a year ago", "37%, up from 25%"], factId: "f-svc-05" },
+    { cells: ["Independent hybrid adoption figure and projection", "43%, projected 61% by end of 2026"], factId: "f-svc-06" },
+    { cells: ["Share of spend: seats against consumption", "65% to 75%, against 4% to 6%"], factId: "f-svc-07" },
+    { cells: ["Investor preference by model", "hybrid 35%, outcome 26%, usage 24%, seats 5%"], factId: "f-svc-08" },
+    { cells: ["Gross revenue retention by ACV", "82% under $25K, 95% above $100K"], factId: "f-unit-18" },
+    { cells: ["Median gross margin, $5M to $50M ARR", "71% to 74%"], factId: "f-act-09" },
+  ]}
+/>
+
+## What is different about B2B SaaS
+
+The gap between the narrative and the spend. Every pricing article in 2026 says
+seats are finished, and 37% of companies do now run a hybrid, up sharply from 25% a
+year earlier. Meanwhile seat-based contracts still account for 65% to 75% of
+software spend and consumption-based pricing sits at 4% to 6%.
+
+Both facts are true, and holding them together is the whole job. A company that
+reads the narrative and rebuilds on pure consumption is pricing for a market that
+has not arrived. A company that ignores it keeps a model its buyers increasingly
+ask about and its investors increasingly discount.
+
+So the deliverable is usually a migration path rather than a model. Which meter
+goes alongside the seat, what it prices, how existing contracts move, and what
+happens to revenue predictability in the transition quarter. That last question
+kills more pricing changes than any other, and it is answerable in advance.
+
+## What the market says it wants
+
+Investor preference is unusually explicit. Asked which model they prefer, 35% named
+hybrid, 26% outcome-based and 24% usage-based, against 10% for flat fee and 5% for
+seats. That is a statement about revenue aligning with value delivered, not a
+forecast about any particular product.
+
+A second source puts hybrid adoption at 43% and projects 61% by the end of 2026.
+The two figures disagree by six points on today and agree on direction, which is
+about as much certainty as pricing data offers. Where they disagree, both appear.
+
+Named here are the reports rather than the vendors, deliberately. Published pricing
+pages change without notice and a quoted competitor price ages badly, so this
+engagement gathers current vendor prices during week one rather than citing a
+stale number on a page.
+
+## How the engagement changes
+
+Contract size sets the shape before anything else. Gross revenue retention runs 82%
+below $25K ACV, about ₹23.97 lakh, and 95% above $100K, about ₹95.89 lakh. A
+small-contract book needs packaging that reduces churn. A large-contract book needs
+packaging that creates expansion room. The same hybrid model serves those two badly
+if it is not tuned to which one you have.
+
+Then the meter. Weeks two and three pick what to charge for, and the test is
+whether the customer can predict their own bill. A meter that moves with something
+the customer does not control produces support load and churn regardless of how
+well it aligns with value.
+
+Weeks four and five model the migration: grandfathering, floors, the revenue bridge
+and the quarter where predictability drops. Week six sets the packaging, the price
+points and the thresholds for revisiting.
+
+## Benchmarks that apply
+
+Gross margin is the constraint most pricing work ignores. Median gross margin for
+private SaaS between $5M and $50M ARR, roughly ₹47.95 crore to ₹479.45 crore, is 71%
+to 74%. A consumption meter on a workload with real marginal cost can improve
+alignment and worsen margin at the same time, and the model has to show both.
+
+Retention benchmarks for B2B SaaS sit on their own page and should be read by
+contract band rather than in aggregate, for the same reason the packaging is.
+
+The benchmark to avoid is a competitor's list price. Published prices are a
+negotiating position, discounting is invisible from outside, and a page quoting one
+ages the moment the vendor edits it. This engagement gathers current prices during
+week one and treats them as evidence about positioning rather than as a target to
+match.
+
+## Proof
+
+<FromMyWork exp="exp-037">
+Pricing an integrations platform on execution volume and connector usage rather
+than seats took it to roughly $60K MRR, about ₹57.53 lakh. The price then tracked
+what the customer consumed instead of how many people logged in.
+</FromMyWork>
+
+<FromMyWork exp="exp-031">
+About 40% of engineering time across the organisation was going to client-specific
+requests that sales had sold as standard. Packaging was the fix, not capacity.
+</FromMyWork>
+
+That second result is the common case in B2B. A pricing problem presents as a
+capacity problem, because the bespoke work sales promised has to come from somewhere.
+Fixing the package stops the promise, and no amount of hiring achieves the same thing.
+
+The first result is the other half of the pattern. Moving from seats to execution
+volume changed which customers grew their spend, and it changed which customers
+complained about the bill. Both effects were predictable from the meter, and neither
+would have shown up in a willingness-to-pay survey.
+
+## Price
+
+₹4,30,000, or $4,500, for the six weeks. Meter selection, packaging, the migration
+model and the revenue bridge all sit inside that scope.
+
+Vendor price gathering happens during the engagement rather than beforehand, because
+a competitor's published price is only useful on the day it is read. Nothing here
+quotes a competitor price on a public page for that reason.
+
+Also inside the fee: the revenue bridge for the transition quarter, which is the
+artefact that gets a pricing change approved. Grandfathering rules and the floor
+design sit inside it too, because those are the decisions that determine whether the
+change survives its first renewal cycle.
+
+Outside it: implementing the meter. Metering is engineering work with its own
+timeline, and a pricing engagement promising the implementation would be promising
+someone else's quarter.
+""",
+  ),
+
+  dict(
+    id="tool-0586", url="/tools/monetization-health-score", archetype="tool",
+    hub="tools", funnel="MOFU",
+    title="Monetization Health Score: A Ten-Minute Diagnostic",
+    meta_description="Score your monetization across pricing, paywall, collection and store economics in ten minutes. Shows its formula and its Indian defaults.",
+    h1="Monetization health score", primary_keyword="monetization health score",
+    secondary_keywords=["app monetization audit tool", "monetization diagnostic"],
+    entity_a="monetization-health-score",
+    facts=["f-act-10", "f-act-11", "f-glossary-0700-09", "f-svc-05", "f-svc-07", "f-act-13"],
+    experience=["exp-049"],
+    links=L(("/tools", "the tools", "hub"),
+            ("/glossary/unit-economics", "unit economics", "lateral"),
+            ("/glossary/paywall", "paywall", "lateral"),
+            ("/tools/app-store-fee-net-revenue-calculator", "the app store fee calculator", "tool"),
+            ("/benchmarks", "the benchmarks", "related"),
+            ("/work-with-me", "a monetisation review", "bofu")),
+    visuals=V("score-inputs",
+              "Six inputs the monetization health score checks: store commission rates, Apple's core technology commission, UPI Autopay mandate success, the share of companies on hybrid pricing, the share of spend still on seats, and the all-in range for international payment costs from India, each row carrying its source and verification date",
+              "What the score checks, and the published figure behind each. Verified 30 September 2026."),
+    cta={"primary": {"label": "Get a monetization health score review", "href": "/work-with-me"},
+         "secondary": {"label": "Browse the benchmarks", "href": "/benchmarks"}},
+    faq=[
+      dict(q="What does the monetization health score measure?",
+           a="Four things: whether the price has been tested, whether the paywall is placed against a known value moment, whether collection is instrumented, and whether store and payment costs are in the model. Each scores separately."),
+      dict(q="Does it need my data?",
+           a="It needs four or five numbers you already have, entered in the browser. Nothing is submitted, nothing is stored, and no email is requested before the result appears."),
+      dict(q="What is a good score?",
+           a="Any dimension scoring zero matters more than the total. A product with excellent pricing and uninstrumented collection is losing revenue it cannot see, and a total score would average that away."),
+    ],
+    schema_types=["WebApplication", "Person", "BreadcrumbList", "FAQPage"],
+    unique_value="Scores collection and store economics as separate dimensions rather than folding them into a single monetization total, and ships Indian payment defaults, so a zero on an invisible dimension surfaces instead of averaging away.",
+    body="""
+<AnswerBox>
+The monetization health score checks 4 dimensions in about 10 minutes: whether
+anyone has tested the price, whether the paywall sits at a known value moment,
+whether any report splits failed payments from cancellations, and whether store and
+payment costs appear in the model. Each scores 0 to 5 on its own, because one zero
+matters more than the total.
+</AnswerBox>
+
+<FactTable
+  id="score-inputs"
+  caption="What the score checks, and the published figure behind each"
+  columns={["Input", "Reference figure"]}
+  rows={[
+    { cells: ["Store commission", "15% under $1M a year, 30% above"], factId: "f-act-10" },
+    { cells: ["Apple core technology commission from January 2026", "5% of digital-goods revenue"], factId: "f-act-11" },
+    { cells: ["UPI Autopay mandate success under the threshold", "92% or better"], factId: "f-glossary-0700-09" },
+    { cells: ["Companies running a hybrid pricing model", "37%"], factId: "f-svc-05" },
+    { cells: ["Share of spend still on seats, against consumption", "65% to 75%, against 4% to 6%"], factId: "f-svc-07" },
+    { cells: ["India international payment cost, all-in range", "0.5% to 1.2% against 6% to 8.5%"], factId: "f-act-13" },
+  ]}
+/>
+
+## How the score works
+
+Four dimensions, each scored 0 to 5, each reported on its own rather than summed
+into a headline. Summing them is the mistake most diagnostic tools make. A product
+with strong pricing and no collection instrumentation averages to respectable while
+losing revenue nobody measures.
+
+Each dimension asks for one or two numbers you already have. The price, and whether
+anyone has tested it. The paywall's position relative to the first value moment.
+Whether any report splits failed payments from cancellations. Whether store
+commission and payment costs appear in the revenue model at all.
+
+Everything runs in the browser. It submits nothing, stores nothing, and asks for no
+email before showing a result. The formula sits beside the output, so you can check
+the arithmetic rather than believe it.
+
+## Why collection is scored separately
+
+Because it sits at zero most often and draws attention least. A failed payment
+leaves a cohort exactly as a cancellation does, and most dashboards report the two
+together, so a product looks disliked when it is merely uncollected.
+
+The Indian case makes this concrete. Razorpay puts UPI Autopay mandate success at 92% or
+better under the threshold, a materially different collection rate from the card rail
+it replaced. A model that never split the two cannot say
+whether a retention change worked or a rail changed underneath it.
+
+International routing adds the same problem at the other end. All-in international
+payment cost for Indian businesses spans 0.5% to 1.2% through virtual export
+accounts and 6% to 8.5% through legacy wallet aggregators. That swing covers several
+percentage points of revenue, a routing choice rather than a product one, and it
+belongs in the score.
+
+## Why store economics are an input, not a footnote
+
+Store commission is the largest single cost most revenue models omit. Apple and
+Google both take 15% under $1M of annual revenue, about ₹9.59 crore, and 30% above
+it, and Apple has added a 5% core technology commission on digital-goods revenue
+from January 2026.
+
+A model pricing against gross revenue therefore overstates contribution by the
+commission rate at every volume, and the overstatement grows as revenue crosses the
+threshold into the higher rate. The score checks whether the figure appears at all
+rather than whether it looks favourable, because nothing about it is negotiable at
+most sizes.
+
+The same applies to the payment layer underneath it. Gateway cost, tax and refunds
+each take a percentage, and each lands before the money reaches the line a pricing
+decision works from. Ignore them and the score rates a model healthy on a
+margin it does not have.
+
+## What the pricing dimension actually checks
+
+Whether a price has been tested, and whether the model matches how the product gets
+used. 37% of companies now run a hybrid of seats and consumption, while seats still
+carry 65% to 75% of spend and consumption 4% to 6%. Both numbers are relevant: the
+first says hybrid is normal, the second says a full switch is not.
+
+The dimension scores low for an untested price whatever the price happens to be. An
+untested price stays a guess nobody has put to evidence, and its level stays beside
+the point until somebody does.
+
+It also checks predictability from the buyer's side. A meter the customer cannot
+forecast produces support load and churn however well it tracks value, so a
+consumption model scores lower when the metered event sits outside the customer's
+control. That check catches the most common failure in a well-intentioned move off
+seats.
+
+## What to do with a low score
+
+Fix the zero first, whichever dimension it is in. The dimensions run roughly in order of
+cost of neglect, and collection usually pays back fastest because those fixes are
+configuration rather than product work.
+
+<FromMyWork exp="exp-049">
+Real-time data reliability improved about 80%, which is what made accurate pricing,
+attribution and monetisation decisions possible at all. Before that, every model was
+arguing with its own inputs.
+</FromMyWork>
+
+If two dimensions score zero, take the instrumentation one first. Decisions resting
+on unreliable inputs produce work nobody can evaluate afterwards, and that costs more
+than the delay of fixing the inputs.
+
+One caution about the total. A respectable average across four dimensions can hide a
+zero, which is why the score reports each one and deliberately does not lead with a
+headline number. If a tool gives you a single monetization grade, check what it
+averaged to get there.
+""",
+  ),
 ]
 
 

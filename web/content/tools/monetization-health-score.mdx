@@ -1,0 +1,110 @@
+<AnswerBox>
+The monetization health score checks 4 dimensions in about 10 minutes: whether
+anyone has tested the price, whether the paywall sits at a known value moment,
+whether any report splits failed payments from cancellations, and whether store and
+payment costs appear in the model. Each scores 0 to 5 on its own, because one zero
+matters more than the total.
+</AnswerBox>
+
+<FactTable
+  id="score-inputs"
+  caption="What the score checks, and the published figure behind each"
+  columns={["Input", "Reference figure"]}
+  rows={[
+    { cells: ["Store commission", "15% under $1M a year, 30% above"], factId: "f-act-10" },
+    { cells: ["Apple core technology commission from January 2026", "5% of digital-goods revenue"], factId: "f-act-11" },
+    { cells: ["UPI Autopay mandate success under the threshold", "92% or better"], factId: "f-glossary-0700-09" },
+    { cells: ["Companies running a hybrid pricing model", "37%"], factId: "f-svc-05" },
+    { cells: ["Share of spend still on seats, against consumption", "65% to 75%, against 4% to 6%"], factId: "f-svc-07" },
+    { cells: ["India international payment cost, all-in range", "0.5% to 1.2% against 6% to 8.5%"], factId: "f-act-13" },
+  ]}
+/>
+
+## How the score works
+
+Four dimensions, each scored 0 to 5, each reported on its own rather than summed
+into a headline. Summing them is the mistake most diagnostic tools make. A product
+with strong pricing and no collection instrumentation averages to respectable while
+losing revenue nobody measures.
+
+Each dimension asks for one or two numbers you already have. The price, and whether
+anyone has tested it. The paywall's position relative to the first value moment.
+Whether any report splits failed payments from cancellations. Whether store
+commission and payment costs appear in the revenue model at all.
+
+Everything runs in the browser. It submits nothing, stores nothing, and asks for no
+email before showing a result. The formula sits beside the output, so you can check
+the arithmetic rather than believe it.
+
+## Why collection is scored separately
+
+Because it sits at zero most often and draws attention least. A failed payment
+leaves a cohort exactly as a cancellation does, and most dashboards report the two
+together, so a product looks disliked when it is merely uncollected.
+
+The Indian case makes this concrete. Razorpay puts UPI Autopay mandate success at 92% or
+better under the threshold, a materially different collection rate from the card rail
+it replaced. A model that never split the two cannot say
+whether a retention change worked or a rail changed underneath it.
+
+International routing adds the same problem at the other end. All-in international
+payment cost for Indian businesses spans 0.5% to 1.2% through virtual export
+accounts and 6% to 8.5% through legacy wallet aggregators. That swing covers several
+percentage points of revenue, a routing choice rather than a product one, and it
+belongs in the score.
+
+## Why store economics are an input, not a footnote
+
+Store commission is the largest single cost most revenue models omit. Apple and
+Google both take 15% under $1M of annual revenue, about ₹9.59 crore, and 30% above
+it, and Apple has added a 5% core technology commission on digital-goods revenue
+from January 2026.
+
+A model pricing against gross revenue therefore overstates contribution by the
+commission rate at every volume, and the overstatement grows as revenue crosses the
+threshold into the higher rate. The score checks whether the figure appears at all
+rather than whether it looks favourable, because nothing about it is negotiable at
+most sizes.
+
+The same applies to the payment layer underneath it. Gateway cost, tax and refunds
+each take a percentage, and each lands before the money reaches the line a pricing
+decision works from. Ignore them and the score rates a model healthy on a
+margin it does not have.
+
+## What the pricing dimension actually checks
+
+Whether a price has been tested, and whether the model matches how the product gets
+used. 37% of companies now run a hybrid of seats and consumption, while seats still
+carry 65% to 75% of spend and consumption 4% to 6%. Both numbers are relevant: the
+first says hybrid is normal, the second says a full switch is not.
+
+The dimension scores low for an untested price whatever the price happens to be. An
+untested price stays a guess nobody has put to evidence, and its level stays beside
+the point until somebody does.
+
+It also checks predictability from the buyer's side. A meter the customer cannot
+forecast produces support load and churn however well it tracks value, so a
+consumption model scores lower when the metered event sits outside the customer's
+control. That check catches the most common failure in a well-intentioned move off
+seats.
+
+## What to do with a low score
+
+Fix the zero first, whichever dimension it is in. The dimensions run roughly in order of
+cost of neglect, and collection usually pays back fastest because those fixes are
+configuration rather than product work.
+
+<FromMyWork exp="exp-049">
+Real-time data reliability improved about 80%, which is what made accurate pricing,
+attribution and monetisation decisions possible at all. Before that, every model was
+arguing with its own inputs.
+</FromMyWork>
+
+If two dimensions score zero, take the instrumentation one first. Decisions resting
+on unreliable inputs produce work nobody can evaluate afterwards, and that costs more
+than the delay of fixing the inputs.
+
+One caution about the total. A respectable average across four dimensions can hide a
+zero, which is why the score reports each one and deliberately does not lead with a
+headline number. If a tool gives you a single monetization grade, check what it
+averaged to get there.

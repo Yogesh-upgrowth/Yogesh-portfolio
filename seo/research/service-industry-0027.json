@@ -1,0 +1,140 @@
+{
+  "page_id": "service-industry-0027",
+  "url": "/services/app-monetization-strategy/fintech",
+  "archetype": "service-industry",
+  "primary_keyword": "fintech app monetization consultant",
+  "secondary_keywords": [
+    "fintech monetization strategy",
+    "india fintech revenue model"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-svc-01",
+      "claim": "PhonePe earns merchant interchange of 0.5% to 1.1% on eligible flows, with lending distribution at 11.55% of first-half FY26 revenue",
+      "value": "0.5-1.1",
+      "unit": "%",
+      "source_url": "https://tfnmarkets.com/insights/phonepe-ipo-india-2026",
+      "source_title": "PhonePe IPO India 2026: Valuation, OFS Structure, NPCI Cap Risk",
+      "source_domain": "tfnmarkets.com",
+      "excerpt": "PhonePe's revenue comes from merchant interchange (0.5%-1.1% on eligible flows), device subscriptions, bill-payment commissions and lending distribution at 11.55% of H1 FY26 revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-svc-02",
+      "claim": "UPI runs on zero merchant discount rate as a national policy decision",
+      "value": "0",
+      "unit": "%",
+      "source_url": "https://tfnmarkets.com/insights/phonepe-ipo-india-2026",
+      "source_title": "PhonePe IPO India 2026: Valuation, OFS Structure, NPCI Cap Risk",
+      "source_domain": "tfnmarkets.com",
+      "excerpt": "UPI operates on zero MDR, a policy decision made at the national level, which constrains direct payment transaction monetization.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-svc-03",
+      "claim": "India's leading UPI app earns roughly 112 rupees of gross revenue per registered user per year",
+      "value": "112",
+      "unit": "INR",
+      "source_url": "https://tfnmarkets.com/insights/phonepe-ipo-india-2026",
+      "source_title": "PhonePe IPO India 2026: Valuation, OFS Structure, NPCI Cap Risk",
+      "source_domain": "tfnmarkets.com",
+      "excerpt": "The category leader generates approximately Rs 112 of gross revenue per registered user per year.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-svc-04",
+      "claim": "PhonePe's FY26 operating revenue rose 11% to 7,920 crore rupees with a net loss of 2,792 crore, against Paytm's 8,437 crore revenue and 552 crore profit",
+      "value": "7920",
+      "unit": "INR crore",
+      "source_url": "https://www.cxodigitalpulse.com/phonepes-upi-scale-trails-paytms-monetisation-in-fy26-results/",
+      "source_title": "PhonePe's UPI Scale Trails Paytm's Monetisation in FY26 Results",
+      "source_domain": "cxodigitalpulse.com",
+      "excerpt": "PhonePe revenue rose 11% to Rs 7,920 crore in FY26, net loss Rs 2,792 crore; Paytm Rs 8,437 crore revenue, Rs 552 crore profit.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-25",
+      "claim": "More than 120 million UPI Autopay mandates are created every month in India",
+      "value": "120",
+      "unit": "million",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "Over 120 million UPI Autopay mandates are created every month in India, supporting SIPs, OTT subscriptions and insurance renewals.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-12",
+      "claim": "Razorpay charges Indian businesses 2% plus 18% GST on domestic payments and 3% on international card exports",
+      "value": "2",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/best-payment-gateway-pricing-saas-india-tco-guide",
+      "source_title": "Payment gateway pricing for SaaS businesses in India",
+      "source_domain": "razorpay.com",
+      "excerpt": "Razorpay charges 2% platform fee plus 18% GST for domestic payments, and 3% for international exports by card.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-svc-02"
+    ],
+    "whats_different_about_industry": [
+      "f-svc-02",
+      "f-svc-03"
+    ],
+    "named_apps": [
+      "f-svc-01",
+      "f-svc-04"
+    ],
+    "how_the_engagement_changes": [
+      "f-act-12"
+    ],
+    "benchmark_card": [
+      "f-svc-03"
+    ],
+    "pricing_anchors": [
+      "f-unit-25"
+    ],
+    "faq": [
+      "f-svc-01"
+    ],
+    "cta": [
+      "f-svc-04"
+    ]
+  }
+}

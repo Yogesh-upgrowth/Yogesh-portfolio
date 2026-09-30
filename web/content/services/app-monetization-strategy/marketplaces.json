@@ -1,0 +1,108 @@
+{
+  "id": "service-industry-0032",
+  "url": "/services/app-monetization-strategy/marketplaces",
+  "archetype": "service-industry",
+  "hub": "services",
+  "wave": 1,
+  "batch_id": "w1-service-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Marketplace App Monetization Consultant: Take Rate First",
+  "meta_description": "Monetizing a marketplace app when the take rate sets the ceiling. What changes, the Indian commission benchmarks, and what the engagement covers.",
+  "h1": "Marketplace app monetization consultant",
+  "primary_keyword": "marketplace app monetization consultant",
+  "secondary_keywords": [
+    "marketplace take rate strategy",
+    "marketplace monetization india"
+  ],
+  "entity_a": "marketplaces",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-act-14",
+    "f-act-15",
+    "f-act-16",
+    "f-act-17",
+    "f-act-21",
+    "f-act-22"
+  ],
+  "experience_used": [
+    "exp-024",
+    "exp-051"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies/comparison-platform-india",
+      "anchor": "the comparison platform case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/marketplaces",
+      "anchor": "marketplace retention benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/services",
+      "anchor": "the services",
+      "role": "hub"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the parent engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/app-store-fee-net-revenue-calculator",
+      "anchor": "the net revenue calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "start the engagement",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#marketplace-take-rates",
+      "alt": "Six take-rate reference points for marketplace monetization: Indian quick-commerce market share by gross merchandise value, quick-commerce commission ranges, the share of revenue platforms consume from brands, the ONDC alternative rate, eBay and Etsy reported take rates and Indian food-delivery commissions, each row carrying its source and verification date",
+      "caption": "The take rates a marketplace model sits inside. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What take rate should a marketplace charge?",
+      "a": "Whatever matches the share of the transaction it performs. eBay reported 13.91% and Etsy 25.7%, and the gap tracks how much discovery each one carries rather than how large each one is."
+    },
+    {
+      "q": "Is ONDC a real alternative in India?",
+      "a": "It offers a route near 3% against the 15% to 25% incumbents charge, so the arithmetic is real. Whether sellers move depends on whether the incumbent's demand is worth the difference, which is an empirical question rather than a strategic one."
+    },
+    {
+      "q": "Why does the engagement start with the take rate?",
+      "a": "Because it sets the ceiling before the product does. Indian brands lose 30% to 35% of revenue to quick-commerce platforms once listing fees, ad spend, commission and operations are counted, and no pricing change inside the app reaches that."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Start a marketplaces monetization engagement",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the parent engagement",
+      "href": "/services/app-monetization-strategy"
+    }
+  },
+  "schema_types": [
+    "Service",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Starts from the take rate as a ceiling rather than a lever, with the Indian commission and platform-cost figures side by side and the ONDC alternative priced, instead of treating marketplace monetization as a funnel problem.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": true,
+  "fx_rate_used": 95.89
+}
