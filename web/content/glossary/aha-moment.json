@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0706",
+  "url": "/glossary/aha-moment",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is the Aha Moment? Definition and How to Find It",
+  "meta_description": "The aha moment is when a user first sees the product work. How to locate it in data, the time-to-value benchmarks, and why two-thirds never arrive.",
+  "h1": "What is the aha moment?",
+  "primary_keyword": "what is the aha moment",
+  "secondary_keywords": [
+    "aha moment definition",
+    "time to value benchmark"
+  ],
+  "entity_a": "aha-moment",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-act-05",
+    "f-act-06",
+    "f-act-07",
+    "f-unit-23",
+    "f-unit-22",
+    "f-unit-39"
+  ],
+  "experience_used": [
+    "exp-046"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/activation-rate",
+      "anchor": "activation rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/north-star-metric",
+      "anchor": "north star metric",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/activation-rate-benchmarker",
+      "anchor": "the activation rate benchmarker",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "retention benchmarks",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#aha-benchmarks",
+      "alt": "Six reference points for the aha moment: the share of users who never reach it, typical time to value by product complexity, activation and time to value by category, the top-decile against median day-one activation gap, the average activation rate and day-one against day-30 retention by platform, each row carrying its source and verification date",
+      "caption": "Aha-moment reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How do I find my product's aha moment?",
+      "a": "Compare retained cohorts against churned ones and look for the earliest action that separates them. The aha moment is a hypothesis about that action, and it is testable: move more users through it and retention should rise."
+    },
+    {
+      "q": "How fast should the aha moment arrive?",
+      "a": "Typical time to value averages about 1 day 12 hours, from under 5 minutes for simple tools to two weeks for enterprise platforms. AI and machine-learning products reach it near 17 hours at the median."
+    },
+    {
+      "q": "What is the difference between the aha moment and activation?",
+      "a": "The aha moment is the experience. Activation is the measured event that stands in for it. The first explains why the number moves; the second proves the experience is real and repeatable."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Treats the aha moment as a falsifiable hypothesis with a stated test rather than a workshop exercise, and grounds the timing in published time-to-value medians by category instead of generic advice to shorten onboarding.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

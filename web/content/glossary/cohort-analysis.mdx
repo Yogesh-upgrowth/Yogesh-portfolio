@@ -1,0 +1,84 @@
+<AnswerBox>
+What is cohort analysis? It groups users by when they arrived and tracks each
+group separately, so improvement and decay stay visible. The median app retains
+4% of users at day 30. An aggregate number that size tells you nothing about
+direction; cohorts do.
+</AnswerBox>
+
+<FactTable
+  id="cohort-benchmarks"
+  caption="Cohort reference points, and what each comparison shows"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Median app retention, day 1 and day 30", "25.3% and 4%"], factId: "f-unit-38" },
+    { cells: ["Day-1 and day-30 retention, iOS against Android", "25.65% and 4.13% against 23.01% and 2.59%"], factId: "f-unit-39" },
+    { cells: ["Annual renewal median, strongest against weakest", "40% against 23%"], factId: "f-unit-11" },
+    { cells: ["Trial conversion by category, strongest against weakest", "43.5% against 22.2%"], factId: "f-glossary-0700-02" },
+    { cells: ["Zepto Pass paid membership lifespan", "14 months, February 2024 to April 2025"], factId: "f-act-18" },
+    { cells: ["Indian quick-commerce share by GMV", "Blinkit 46%, Instamart 24%, Zepto 22%"], factId: "f-act-14" },
+  ]}
+/>
+
+## How cohort analysis works
+
+Fix a start date. Every user who arrived in that period belongs to that cohort
+permanently. Then measure the same thing at the same ages across cohorts: day 7,
+day 30, day 90.
+
+The cohort has to stay closed. Adding later arrivals to an earlier cohort mixes
+ages and flatters every reading, and it is the single commonest error in a
+retention dashboard.
+
+## What a healthy curve looks like
+
+Steep, then flat. A curve that falls hard and then levels has found a group with a
+durable use case. A curve that keeps sliding has not found one, whatever its first
+week looked like.
+
+Level matters less than shape, and the levels themselves are sobering. Median day-1
+return is 25.3% and median day-30 retention is 4%. Compared across cohorts, the
+useful question is whether the newest cohort sits above the one before it at the
+same age.
+
+## What an aggregate number hides
+
+Direction, and it hides it for months. Older, better cohorts stay in the average
+long after the product stopped producing cohorts that good.
+
+<Example illustrative>
+Six monthly cohorts retaining 20%, 19%, 18%, 17%, 16% and 15% at day 30 average
+17.5%. The average looks stable across reporting periods. Every new cohort is
+worse than the last.
+</Example>
+
+Platform splits do the same. iOS retains 4.13% at day 30 against 2.59% on Android,
+so a shifting platform mix moves the blended number without any cohort changing.
+
+## Cohorts decide which bets get withdrawn
+
+Category level sets expectations before the product does. Annual renewal medians
+run 40% in the strongest categories against 23% in the weakest, and trial
+conversion spans 43.5% to 22.2%. A programme judged against the wrong category
+gets killed or kept for the wrong reason.
+
+Zepto Pass, a paid membership in Indian quick commerce, ran fourteen months from
+February 2024 to April 2025 before being replaced, in a market where Blinkit holds
+about 46% of gross merchandise value against Instamart at 24% and Zepto at 22%.
+A membership programme in third place is a cohort bet, and the cohorts answer it.
+
+## What cohorts are worth before the work starts
+
+Decomposition, mostly.
+
+<FromMyWork exp="exp-020">
+Scaling from 3.8M to 45M+ monthly actives came from three sources in roughly equal
+thirds: organic search, referral and sharing, and paid acquisition buying
+higher-intent users than before.
+</FromMyWork>
+
+<FromMyWork exp="exp-009">
+Two weeks went into assembling a clean dataset of roughly 22,000 prior
+applications before proposing anything. The target set afterwards — 70%
+disbursement against an industry range of 20-35% — was chosen to force a different
+operating model rather than to be achievable.
+</FromMyWork>

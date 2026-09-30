@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0703",
+  "url": "/glossary/freemium",
+  "archetype": "glossary",
+  "primary_keyword": "what is freemium",
+  "secondary_keywords": [
+    "freemium conversion rate",
+    "freemium model benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-act-01",
+      "claim": "Median free-to-paid conversion across all products is 8%, while freemium models sit closer to 2% to 5%",
+      "value": "8",
+      "unit": "%",
+      "source_url": "https://chartmogul.com/reports/saas-conversion-report/",
+      "source_title": "The SaaS Conversion Report",
+      "source_domain": "chartmogul.com",
+      "excerpt": "The median free-to-paid conversion rate across all products is 8%. Freemium models sit closer to 2-5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-02",
+      "claim": "Across 80+ SaaS products, freemium-to-paid averaged 3.7%, ranging from 2.6% in ed-tech to 5.8% in reg-tech",
+      "value": "3.7",
+      "unit": "%",
+      "source_url": "https://firstpagesage.com/reports/freemium-conversion-rate-benchmarks/",
+      "source_title": "Freemium conversion rate benchmarks",
+      "source_domain": "firstpagesage.com",
+      "excerpt": "An average freemium-to-paid conversion rate of 3.7% for traditional freemium, with industry variation from 2.6% in EdTech to 5.8% in RegTech.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-03",
+      "claim": "In a survey of 200 B2B software products, one in four freemium products converts under 2.5% of free users within six months, and another quarter reaches 10% to 15%",
+      "value": "2.5",
+      "unit": "%",
+      "source_url": "https://chartmogul.com/reports/saas-conversion-report/",
+      "source_title": "The SaaS Conversion Report",
+      "source_domain": "chartmogul.com",
+      "excerpt": "One-in-four freemium products convert less than 2.5% of free users within six months, while another quarter manages 10-15%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-08",
+      "claim": "Mature SaaS contribution margins run 70% to 80%, with median software gross margin at 80% and 76% blended with services",
+      "value": "70-80",
+      "unit": "%",
+      "source_url": "https://www.cloudzero.com/blog/saas-gross-margin-benchmarks/",
+      "source_title": "SaaS Gross Margin Benchmarks",
+      "source_domain": "cloudzero.com",
+      "excerpt": "For mature SaaS, contribution margins fall between 70-80%, while median software gross margin is 80%, and blended it is 76%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-31",
+      "claim": "Marketplace take rates span under 2% to over 70%, and most established multi-vendor marketplaces sit between 10% and 20%",
+      "value": "10-20",
+      "unit": "%",
+      "source_url": "https://origami-marketplace.com/en-gb/marketplace-take-rate-a-guide-for-marketplace-operators/",
+      "source_title": "Marketplace Take Rate Guide 2026",
+      "source_domain": "origami-marketplace.com",
+      "excerpt": "Marketplace take rates in 2026 range from under 2% to over 70%. Most established multi-vendor marketplaces charge between 10 and 20%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-16",
+      "claim": "Indian D2C brands lose 30% to 35% of revenue to quick-commerce platforms across listing fees, mandatory ad spend, commission and operations",
+      "value": "30-35",
+      "unit": "%",
+      "source_url": "https://base.com/en-IN/blog/quick-commerce-for-d2c-brands-the-complete-guide-2026/",
+      "source_title": "Quick Commerce for D2C Brands",
+      "source_domain": "base.com",
+      "excerpt": "For D2C brands, platforms consume 30% to 35% of revenue between listing fees, mandatory ad spend, commission, and operations.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0708",
+  "url": "/glossary/unit-economics",
+  "archetype": "glossary",
+  "primary_keyword": "what are unit economics",
+  "secondary_keywords": [
+    "unit economics formula",
+    "contribution margin benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-act-08",
+      "claim": "Mature SaaS contribution margins run 70% to 80%, with median software gross margin at 80% and 76% blended with services",
+      "value": "70-80",
+      "unit": "%",
+      "source_url": "https://www.cloudzero.com/blog/saas-gross-margin-benchmarks/",
+      "source_title": "SaaS Gross Margin Benchmarks",
+      "source_domain": "cloudzero.com",
+      "excerpt": "For mature SaaS, contribution margins fall between 70-80%, while median software gross margin is 80%, and blended it is 76%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-09",
+      "claim": "Median gross margin for private SaaS between 5 million and 50 million dollars ARR is 71% to 74%",
+      "value": "71-74",
+      "unit": "%",
+      "source_url": "https://www.cloudzero.com/blog/saas-gross-margin-benchmarks/",
+      "source_title": "SaaS Gross Margin Benchmarks",
+      "source_domain": "cloudzero.com",
+      "excerpt": "The median gross margin for private SaaS companies with $5M-$50M ARR is 71-74% in 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-10",
+      "claim": "Apple and Google both charge 15% on the first 1 million dollars of annual revenue and 30% above it, plus a 99 dollar and 25 dollar developer fee",
+      "value": "15",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/engineering/small-business-program",
+      "source_title": "The 15% App Store Fee: A Guide for Developers",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Apple App Store costs $99/year plus 15% for revenue under $1M/year, 30% above. Google Play charges $25 once plus 15% on first $1M/year, 30% above.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-12",
+      "claim": "Razorpay charges Indian businesses 2% plus 18% GST on domestic payments and 3% on international card exports",
+      "value": "2",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/best-payment-gateway-pricing-saas-india-tco-guide",
+      "source_title": "Payment gateway pricing for SaaS businesses in India",
+      "source_domain": "razorpay.com",
+      "excerpt": "Razorpay charges 2% platform fee plus 18% GST for domestic payments, and 3% for international exports by card.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-31",
+      "claim": "Marketplace take rates span under 2% to over 70%, and most established multi-vendor marketplaces sit between 10% and 20%",
+      "value": "10-20",
+      "unit": "%",
+      "source_url": "https://origami-marketplace.com/en-gb/marketplace-take-rate-a-guide-for-marketplace-operators/",
+      "source_title": "Marketplace Take Rate Guide 2026",
+      "source_domain": "origami-marketplace.com",
+      "excerpt": "Marketplace take rates in 2026 range from under 2% to over 70%. Most established multi-vendor marketplaces charge between 10 and 20%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-16",
+      "claim": "Indian D2C brands lose 30% to 35% of revenue to quick-commerce platforms across listing fees, mandatory ad spend, commission and operations",
+      "value": "30-35",
+      "unit": "%",
+      "source_url": "https://base.com/en-IN/blog/quick-commerce-for-d2c-brands-the-complete-guide-2026/",
+      "source_title": "Quick Commerce for D2C Brands",
+      "source_domain": "base.com",
+      "excerpt": "For D2C brands, platforms consume 30% to 35% of revenue between listing fees, mandatory ad spend, commission, and operations.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

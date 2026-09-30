@@ -1,0 +1,108 @@
+{
+  "id": "glossary-0708",
+  "url": "/glossary/unit-economics",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What are Unit Economics? Definition, Formula and Margins",
+  "meta_description": "Unit economics is the profit and loss of one customer. The formula, the margin benchmarks, and the platform and payment costs most models leave out.",
+  "h1": "What are unit economics?",
+  "primary_keyword": "what are unit economics",
+  "secondary_keywords": [
+    "unit economics formula",
+    "contribution margin benchmark"
+  ],
+  "entity_a": "unit-economics",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-act-08",
+    "f-act-09",
+    "f-act-10",
+    "f-act-12",
+    "f-unit-31",
+    "f-act-16"
+  ],
+  "experience_used": [
+    "exp-054",
+    "exp-025"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/cac-payback-period",
+      "anchor": "CAC payback period",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/ltv",
+      "anchor": "LTV",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/app-store-fee-net-revenue-calculator",
+      "anchor": "the app store fee calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/gst-on-digital-subscriptions",
+      "anchor": "GST on digital subscriptions",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#unit-economics-costs",
+      "alt": "Six cost reference points for unit economics: mature contribution margin, median gross margin by revenue band, store commission, Indian domestic and international payment costs, marketplace take rates and the share of revenue Indian quick-commerce platforms consume, each row carrying its source and verification date",
+      "caption": "The costs a unit-economics model has to carry. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the unit economics formula?",
+      "a": "Revenue per customer minus the variable cost of serving them, compared against what they cost to acquire. The contribution margin is the first half; unit economics works only when it is set against acquisition cost."
+    },
+    {
+      "q": "What is a good contribution margin?",
+      "a": "Mature SaaS runs 70% to 80%, and median gross margin for private companies between $5M and $50M ARR is 71% to 74%. Below 70% the model needs either higher prices or lower serving cost."
+    },
+    {
+      "q": "What do unit economics models usually leave out?",
+      "a": "Store commission, payment processing, tax and refunds. Each is a percentage of revenue rather than a fixed cost, so leaving them out overstates margin by the same proportion at every scale."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Assembles the specific percentage costs an Indian digital business actually pays — store commission, domestic gateway plus GST, international routing spread, platform take — into one model, where the general guides stop at gross margin.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0707",
+  "url": "/glossary/cohort-analysis",
+  "archetype": "glossary",
+  "primary_keyword": "what is cohort analysis",
+  "secondary_keywords": [
+    "cohort analysis method",
+    "retention cohort benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-38",
+      "claim": "The median app retains 4% of its users at day 30, and 25.3% return on day one",
+      "value": "4",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-retention-benchmarks/",
+      "source_title": "Mobile App Retention Benchmarks by Industry 2026",
+      "source_domain": "uxcam.com",
+      "excerpt": "The median app retains just 4% of users at Day 30. Only 25.3% of mobile app users return on Day 1.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-39",
+      "claim": "iOS averages 25.65% day-one and 4.13% day-30 retention against 23.01% and 2.59% on Android",
+      "value": "4.13",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-retention-benchmarks/",
+      "source_title": "Mobile App Retention Benchmarks by Industry 2026",
+      "source_domain": "uxcam.com",
+      "excerpt": "iOS averages 25.65% on Day 1 and 4.13% on Day 30, while Android averages 23.01% on Day 1 and 2.59% on Day 30.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-11",
+      "claim": "Travel and Business lead annual renewal at a 40% median while Productivity and Photo & Video sit at 23%",
+      "value": "40",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Travel and Business apps see the highest median annual subscription renewal rate (40%); Productivity and Photo & Video see the lowest (23%).",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-02",
+      "claim": "By category, Travel leads at 43.5% median trial-to-paid and Photo & Video trails at 22.2%",
+      "value": "43.5",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Travel 43.5%, Health and Fitness 37.7%, Gaming 25.0%, Photo and Video 22.2% median trial-to-paid",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-18",
+      "claim": "Zepto Pass, a paid membership, ran fourteen months from February 2024 to April 2025 before being replaced",
+      "value": "14",
+      "unit": "months",
+      "source_url": "https://www.markhub24.com/post/zepto-pass-a-membership-strategy-for-customer-retention-in-indian-quick-commerce",
+      "source_title": "Zepto Pass: A Membership Strategy for Customer Retention",
+      "source_domain": "markhub24.com",
+      "excerpt": "Zepto Pass had a fourteen-month lifespan, February 2024 to April 2025, before its quiet replacement by Zepto Daily.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-14",
+      "claim": "Indian quick commerce splits by GMV into Blinkit near 46%, Swiggy Instamart near 24% and Zepto near 22%",
+      "value": "46",
+      "unit": "%",
+      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "source_title": "Quick Commerce Ad Benchmarks India 2026",
+      "source_domain": "ladya.in",
+      "excerpt": "Blinkit holds about 46% of the market by GMV, Swiggy Instamart around 24%, and Zepto around 22%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0702",
+  "url": "/glossary/paywall",
+  "archetype": "glossary",
+  "primary_keyword": "what is a paywall",
+  "secondary_keywords": [
+    "paywall types",
+    "hard paywall conversion benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-glossary-0700-04",
+      "claim": "Hard paywalls reach a 10.7% median day-35 download-to-paid conversion against 2.1% for freemium",
+      "value": "10.7",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "median of 10.7% for apps with hard paywalls versus 2.1% in freemium apps for Day 35 download-to-paid",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-05",
+      "claim": "A weekly plan with a trial is the highest-LTV paywall configuration at 49.27 dollars over twelve months",
+      "value": "49.27",
+      "unit": "USD",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Weekly+trial is the highest-LTV paywall configuration at $49.27 over 12 months.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-03",
+      "claim": "In a survey of 200 B2B software products, one in four freemium products converts under 2.5% of free users within six months, and another quarter reaches 10% to 15%",
+      "value": "2.5",
+      "unit": "%",
+      "source_url": "https://chartmogul.com/reports/saas-conversion-report/",
+      "source_title": "The SaaS Conversion Report",
+      "source_domain": "chartmogul.com",
+      "excerpt": "One-in-four freemium products convert less than 2.5% of free users within six months, while another quarter manages 10-15%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-10",
+      "claim": "Apple and Google both charge 15% on the first 1 million dollars of annual revenue and 30% above it, plus a 99 dollar and 25 dollar developer fee",
+      "value": "15",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/engineering/small-business-program",
+      "source_title": "The 15% App Store Fee: A Guide for Developers",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Apple App Store costs $99/year plus 15% for revenue under $1M/year, 30% above. Google Play charges $25 once plus 15% on first $1M/year, 30% above.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-02",
+      "claim": "iOS earns roughly twice the ARPU of Android on the same app",
+      "value": "2",
+      "unit": "x",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "iOS pays about 2x the ARPU compared to Android.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-11",
+      "claim": "From 1 January 2026 Apple replaced the per-install Core Technology Fee with a 5% Core Technology Commission on digital-goods revenue",
+      "value": "5",
+      "unit": "%",
+      "source_url": "https://blog.funnelfox.com/apple-app-store-fees-2026-eu-dma/",
+      "source_title": "App Store Fees and Commission Rates in 2026",
+      "source_domain": "funnelfox.com",
+      "excerpt": "From January 1, 2026, Apple replaced the per-install Core Technology Fee with a 5% Core Technology Commission on digital-goods revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}

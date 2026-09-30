@@ -14,6 +14,62 @@
     }
   },
   "facts": {
+    "f-unit-02": {
+      "fact_id": "f-unit-02",
+      "claim": "iOS earns roughly twice the ARPU of Android on the same app",
+      "value": "2",
+      "unit": "x",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "iOS pays about 2x the ARPU compared to Android.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-05": {
+      "fact_id": "f-unit-05",
+      "claim": "A weekly plan with a trial is the highest-LTV paywall configuration at 49.27 dollars over twelve months",
+      "value": "49.27",
+      "unit": "USD",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Weekly+trial is the highest-LTV paywall configuration at $49.27 over 12 months.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-08": {
+      "fact_id": "f-unit-08",
+      "claim": "3 to 1 remains the standing LTV:CAC bar while investors increasingly expect 4 to 1 or 5 to 1",
+      "value": "3",
+      "unit": "ratio",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions/",
+      "source_title": "State of In-App Subscriptions 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "A ratio of 4:1 to 5:1 is increasingly expected by investors, though 3:1 remains the gold standard for mobile apps.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-11": {
+      "fact_id": "f-unit-11",
+      "claim": "Travel and Business lead annual renewal at a 40% median while Productivity and Photo & Video sit at 23%",
+      "value": "40",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Travel and Business apps see the highest median annual subscription renewal rate (40%); Productivity and Photo & Video see the lowest (23%).",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
     "f-unit-22": {
       "fact_id": "f-unit-22",
       "claim": "Average SaaS activation rate is 36%, with 20% to 40% counted as good and above 50% as excellent",
@@ -56,6 +112,34 @@
       "method": "search_index",
       "primary": true
     },
+    "f-unit-25": {
+      "fact_id": "f-unit-25",
+      "claim": "More than 120 million UPI Autopay mandates are created every month in India",
+      "value": "120",
+      "unit": "million",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "Over 120 million UPI Autopay mandates are created every month in India, supporting SIPs, OTT subscriptions and insurance renewals.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-unit-31": {
+      "fact_id": "f-unit-31",
+      "claim": "Marketplace take rates span under 2% to over 70%, and most established multi-vendor marketplaces sit between 10% and 20%",
+      "value": "10-20",
+      "unit": "%",
+      "source_url": "https://origami-marketplace.com/en-gb/marketplace-take-rate-a-guide-for-marketplace-operators/",
+      "source_title": "Marketplace Take Rate Guide 2026",
+      "source_domain": "origami-marketplace.com",
+      "excerpt": "Marketplace take rates in 2026 range from under 2% to over 70%. Most established multi-vendor marketplaces charge between 10 and 20%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
     "f-unit-35": {
       "fact_id": "f-unit-35",
       "claim": "Cost per install in India runs about 0.12 times the United States level, 70% to 90% lower",
@@ -84,6 +168,20 @@
       "method": "search_index",
       "primary": false
     },
+    "f-unit-39": {
+      "fact_id": "f-unit-39",
+      "claim": "iOS averages 25.65% day-one and 4.13% day-30 retention against 23.01% and 2.59% on Android",
+      "value": "4.13",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-retention-benchmarks/",
+      "source_title": "Mobile App Retention Benchmarks by Industry 2026",
+      "source_domain": "uxcam.com",
+      "excerpt": "iOS averages 25.65% on Day 1 and 4.13% on Day 30, while Android averages 23.01% on Day 1 and 2.59% on Day 30.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
     "f-glossary-0700-01": {
       "fact_id": "f-glossary-0700-01",
       "claim": "Median trial-to-paid conversion is 42.5% for 17-32 day trials and 25.5% for trials of 4 days or fewer",
@@ -98,6 +196,20 @@
       "method": "search_index",
       "primary": true
     },
+    "f-glossary-0700-02": {
+      "fact_id": "f-glossary-0700-02",
+      "claim": "By category, Travel leads at 43.5% median trial-to-paid and Photo & Video trails at 22.2%",
+      "value": "43.5",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Travel 43.5%, Health and Fitness 37.7%, Gaming 25.0%, Photo and Video 22.2% median trial-to-paid",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
     "f-glossary-0700-04": {
       "fact_id": "f-glossary-0700-04",
       "claim": "Hard paywalls reach a 10.7% median day-35 download-to-paid conversion against 2.1% for freemium",
@@ -107,6 +219,20 @@
       "source_title": "State of Subscription Apps 2026",
       "source_domain": "revenuecat.com",
       "excerpt": "median of 10.7% for apps with hard paywalls versus 2.1% in freemium apps for Day 35 download-to-paid",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-glossary-0700-05": {
+      "fact_id": "f-glossary-0700-05",
+      "claim": "Offering a trial on an annual plan raises one-year LTV by 35% against a direct purchase",
+      "value": "35",
+      "unit": "%",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions-report/",
+      "source_title": "In-App Subscription Benchmarks 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "offering trials on annual plans boosts one-year LTV by 35% compared to direct purchases",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
@@ -196,6 +322,20 @@
       "method": "search_index",
       "primary": false
     },
+    "f-act-06": {
+      "fact_id": "f-act-06",
+      "claim": "Time to value averages 1 day 12 hours across industries, from under 5 minutes for simple tools to 1 to 2 weeks for enterprise platforms",
+      "value": "1.5",
+      "unit": "days",
+      "source_url": "https://www.digitalapplied.com/blog/customer-onboarding-time-to-value-2026-saas-metrics-framework",
+      "source_title": "Time to Value: The 2026 SaaS Onboarding Metrics Framework",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "Typical TTV: simple SaaS under 5 minutes, mid-complexity 1-3 days, enterprise 1-2 weeks, cross-industry average 1d 12h 23m.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
     "f-act-07": {
       "fact_id": "f-act-07",
       "claim": "AI and ML products show 54.8% benchmark activation with a time-to-value median near 17 hours, against 42.6% for CRM and sales tools",
@@ -205,6 +345,202 @@
       "source_title": "Time to Value: The 2026 SaaS Onboarding Metrics Framework",
       "source_domain": "digitalapplied.com",
       "excerpt": "AI & ML products have benchmark activation of 54.8% with TTV medians of roughly 17 hours. CRM & Sales products show 42.6% benchmark activation.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-08": {
+      "fact_id": "f-act-08",
+      "claim": "Mature SaaS contribution margins run 70% to 80%, with median software gross margin at 80% and 76% blended with services",
+      "value": "70-80",
+      "unit": "%",
+      "source_url": "https://www.cloudzero.com/blog/saas-gross-margin-benchmarks/",
+      "source_title": "SaaS Gross Margin Benchmarks",
+      "source_domain": "cloudzero.com",
+      "excerpt": "For mature SaaS, contribution margins fall between 70-80%, while median software gross margin is 80%, and blended it is 76%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-act-09": {
+      "fact_id": "f-act-09",
+      "claim": "Median gross margin for private SaaS between 5 million and 50 million dollars ARR is 71% to 74%",
+      "value": "71-74",
+      "unit": "%",
+      "source_url": "https://www.cloudzero.com/blog/saas-gross-margin-benchmarks/",
+      "source_title": "SaaS Gross Margin Benchmarks",
+      "source_domain": "cloudzero.com",
+      "excerpt": "The median gross margin for private SaaS companies with $5M-$50M ARR is 71-74% in 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-act-10": {
+      "fact_id": "f-act-10",
+      "claim": "Apple and Google both charge 15% on the first 1 million dollars of annual revenue and 30% above it, plus a 99 dollar and 25 dollar developer fee",
+      "value": "15",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/engineering/small-business-program",
+      "source_title": "The 15% App Store Fee: A Guide for Developers",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Apple App Store costs $99/year plus 15% for revenue under $1M/year, 30% above. Google Play charges $25 once plus 15% on first $1M/year, 30% above.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-act-11": {
+      "fact_id": "f-act-11",
+      "claim": "From 1 January 2026 Apple replaced the per-install Core Technology Fee with a 5% Core Technology Commission on digital-goods revenue",
+      "value": "5",
+      "unit": "%",
+      "source_url": "https://blog.funnelfox.com/apple-app-store-fees-2026-eu-dma/",
+      "source_title": "App Store Fees and Commission Rates in 2026",
+      "source_domain": "funnelfox.com",
+      "excerpt": "From January 1, 2026, Apple replaced the per-install Core Technology Fee with a 5% Core Technology Commission on digital-goods revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-12": {
+      "fact_id": "f-act-12",
+      "claim": "Razorpay charges Indian businesses 2% plus 18% GST on domestic payments and 3% on international card exports",
+      "value": "2",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/best-payment-gateway-pricing-saas-india-tco-guide",
+      "source_title": "Payment gateway pricing for SaaS businesses in India",
+      "source_domain": "razorpay.com",
+      "excerpt": "Razorpay charges 2% platform fee plus 18% GST for domestic payments, and 3% for international exports by card.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-act-14": {
+      "fact_id": "f-act-14",
+      "claim": "Indian quick commerce splits by GMV into Blinkit near 46%, Swiggy Instamart near 24% and Zepto near 22%",
+      "value": "46",
+      "unit": "%",
+      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "source_title": "Quick Commerce Ad Benchmarks India 2026",
+      "source_domain": "ladya.in",
+      "excerpt": "Blinkit holds about 46% of the market by GMV, Swiggy Instamart around 24%, and Zepto around 22%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-15": {
+      "fact_id": "f-act-15",
+      "claim": "Quick-commerce commissions run 10% to 18% at Zepto, 15% to 25% at Instamart and about 22% at Blinkit",
+      "value": "10-25",
+      "unit": "%",
+      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "source_title": "Quick Commerce Ad Benchmarks India 2026",
+      "source_domain": "ladya.in",
+      "excerpt": "Zepto's commission rate is 10-18% against Instamart's 15-25%. Blinkit's commission is 22%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-16": {
+      "fact_id": "f-act-16",
+      "claim": "Indian D2C brands lose 30% to 35% of revenue to quick-commerce platforms across listing fees, mandatory ad spend, commission and operations",
+      "value": "30-35",
+      "unit": "%",
+      "source_url": "https://base.com/en-IN/blog/quick-commerce-for-d2c-brands-the-complete-guide-2026/",
+      "source_title": "Quick Commerce for D2C Brands",
+      "source_domain": "base.com",
+      "excerpt": "For D2C brands, platforms consume 30% to 35% of revenue between listing fees, mandatory ad spend, commission, and operations.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-17": {
+      "fact_id": "f-act-17",
+      "claim": "ONDC offers a commission route near 3%, against the 15% to 25% incumbent Indian marketplaces charge",
+      "value": "3",
+      "unit": "%",
+      "source_url": "https://ecorpit.com/retail-digital-transformation-d2c-quick-commerce-india-2026/",
+      "source_title": "2026 India retail: quick commerce, ONDC and D2C",
+      "source_domain": "ecorpit.com",
+      "excerpt": "ONDC offers a lower-commission route near 3%, against the 15% to 25% that incumbent marketplaces charge.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-18": {
+      "fact_id": "f-act-18",
+      "claim": "Zepto Pass, a paid membership, ran fourteen months from February 2024 to April 2025 before being replaced",
+      "value": "14",
+      "unit": "months",
+      "source_url": "https://www.markhub24.com/post/zepto-pass-a-membership-strategy-for-customer-retention-in-indian-quick-commerce",
+      "source_title": "Zepto Pass: A Membership Strategy for Customer Retention",
+      "source_domain": "markhub24.com",
+      "excerpt": "Zepto Pass had a fourteen-month lifespan, February 2024 to April 2025, before its quiet replacement by Zepto Daily.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-19": {
+      "fact_id": "f-act-19",
+      "claim": "Quick-commerce platforms report 3x to 5x return on ad spend, while true return after commission and cost of goods runs 1.2x to 2.5x",
+      "value": "1.2-2.5",
+      "unit": "x",
+      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "source_title": "Quick Commerce Ad Benchmarks India 2026",
+      "source_domain": "ladya.in",
+      "excerpt": "Platform-reported RoAS ranges from 3x to 5x, but true RoAS after commission and cost of goods is 1.2x to 2.5x depending on the platform.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-20": {
+      "fact_id": "f-act-20",
+      "claim": "Google Play's 2026 standard rate is 10% on the first 1 million dollars of annual revenue and 20% above it",
+      "value": "10",
+      "unit": "%",
+      "source_url": "https://www.strataigize.com/insights/google-play-external-payments-fee-changes-2026/",
+      "source_title": "Google Play External Payments and Fee Changes",
+      "source_domain": "strataigize.com",
+      "excerpt": "Google lowered its baseline: the standard rate is now 10% on the first $1 million and 20% above it, plus a billing fee charged separately.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-21": {
+      "fact_id": "f-act-21",
+      "claim": "eBay reported a 13.91% take rate on 22.2 billion dollars of gross merchandise volume in the first quarter of 2026, against Etsy at 25.7%, up 180 basis points",
+      "value": "13.91",
+      "unit": "%",
+      "source_url": "https://www.feinternational.com/blog/marketplace-app-valuation",
+      "source_title": "Marketplace App Valuation 2026",
+      "source_domain": "feinternational.com",
+      "excerpt": "eBay reported a 13.91% take rate on $22.2 billion of GMV in Q1 2026; Etsy reported 25.7%, up 180 basis points.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-22": {
+      "fact_id": "f-act-22",
+      "claim": "Zomato charges Indian restaurants 18% to 25% commission and Swiggy 18% to 22%, with a per-order platform fee of 17.58 rupees as of March 2026",
+      "value": "18-25",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/food-delivery-app-market/",
+      "source_title": "Food Delivery App Revenue and Usage Statistics",
+      "source_domain": "businessofapps.com",
+      "excerpt": "Zomato charges restaurants 18-25% commission and Swiggy 18-22%. Both raised per-order platform fees to Rs 17.58 in March 2026.",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
@@ -476,6 +812,714 @@
       ],
       "unique_value": "States plainly that the 8% median describes almost no real company, using the bimodal split from the 200-product survey, and separates free-to-paid from trial-to-paid with published figures for both rather than treating them as one metric.",
       "body": "\n<AnswerBox>\nWhat is free-to-paid conversion? It is the share of free users who become paying\ncustomers. The median across products is 8%. The distribution behind that median\nis bimodal: a quarter of freemium products convert under 2.5% in six months and\nanother quarter reaches 10% to 15%.\n</AnswerBox>\n\n<FactTable\n  id=\"free-to-paid-benchmarks\"\n  caption=\"Free-to-paid reference points, and the distribution behind them\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median free-to-paid across products\", \"8%, freemium closer to 2% to 5%\"], factId: \"f-act-01\" },\n    { cells: [\"Average across 80+ products, by sector\", \"3.7%, from 2.6% to 5.8%\"], factId: \"f-act-02\" },\n    { cells: [\"200-product survey, bottom and second quartile\", \"under 2.5% in six months, and 10% to 15%\"], factId: \"f-act-03\" },\n    { cells: [\"SaaS-only median activation rate\", \"30%\"], factId: \"f-act-04\" },\n    { cells: [\"Median trial-to-paid by trial length\", \"42.5% at 17 to 32 days, 25.5% at 4 days or fewer\"], factId: \"f-glossary-0700-01\" },\n    { cells: [\"Win rate of price localisation experiments\", \"62.3%\"], factId: \"f-glossary-0700-07\" },\n  ]}\n/>\n\n## How is free-to-paid conversion calculated?\n\nDivide the free users who started paying by all free users in the same cohort,\nthen fix the window. The published survey uses six months. Shorter windows\nunderstate systematically.\n\nA product with a long consideration cycle measured at 30 days looks broken when it\nis only slow. Pick one window, keep it, and state it beside the number. Changing\nthe window between quarters is how a flat metric starts to look like progress.\n\n## Why the median describes nobody\n\nThe median is 8% and the distribution is bimodal. A quarter of freemium products\nconvert under 2.5% of free users within six months. Another quarter reaches 10% to\n15%. Very few sit in between.\n\nThat shape matters for target-setting. A team at 2% is not 6 points from average;\nit is in the lower mode, and the products in the upper mode are usually built\ndifferently rather than executed better. The average across 80-plus products is\n3.7%, ranging from 2.6% to 5.8% by sector, which is the fairer benchmark for a\ntraditional freemium tier.\n\n## Free-to-paid is not trial-to-paid\n\nFree-to-paid counts everyone on a free tier, including people who will never\nevaluate paying. Trial-to-paid counts people who chose a time-boxed evaluation.\nMedian trial-to-paid runs 42.5% for trials of 17 to 32 days and 25.5% for four\ndays or fewer.\n\nComparing those two directly is the commonest way a freemium product convinces\nitself it is failing. The denominators are not the same population.\n\n## What moves it\n\nActivation first. The SaaS-only median activation rate is 30%, and a user who\nnever reached first value has nothing to buy. Then price, because price\nlocalisation wins 62.3% of experiments.\n\nOften the step between value and payment is mechanical, not persuasive.\n\n<FromMyWork exp=\"exp-043\">\nBoth insurance lines moved by orders of magnitude once the\nquote-to-redirect-to-purchase drop-offs were diagnosed: bike from about 10 a day\nto 6,800+, car from about 5 a day to 2,300+. The fix was CTA placement, partner\nsequencing and context-led nudges rather than more traffic.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0702",
+      "url": "/glossary/paywall",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is a Paywall? Types, Benchmarks and the Trade-off",
+      "meta_description": "A paywall is the gate between free use and payment. Hard, soft and metered types, the 10.7% against 2.1% conversion gap, and what each type costs you.",
+      "h1": "What is a paywall?",
+      "primary_keyword": "what is a paywall",
+      "secondary_keywords": [
+        "paywall types",
+        "hard paywall conversion benchmark"
+      ],
+      "entity_a": "paywall",
+      "facts": [
+        "f-glossary-0700-04",
+        "f-unit-05",
+        "f-act-03",
+        "f-act-10",
+        "f-unit-02",
+        "f-act-11"
+      ],
+      "experience": [
+        "exp-013"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/freemium",
+          "anchor": "freemium",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/free-trial",
+          "anchor": "free trial",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/paywall-uplift-calculator",
+          "anchor": "the paywall uplift calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/inr-price-points-that-convert",
+          "anchor": "INR price points that convert",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#paywall-benchmarks",
+          "alt": "Six paywall reference points: hard paywall against freemium download-to-paid conversion, the highest-lifetime-value paywall configuration, the bimodal freemium conversion split, store commission rates, the iOS to Android revenue gap and Apple's new core technology commission, each row carrying its source and verification date",
+          "caption": "Paywall reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which paywall converts best?",
+          "a": "Hard paywalls reach 10.7% median day-35 download-to-paid against 2.1% for freemium. That is a measured-rate difference and a funnel-size difference at once, so the higher rate does not automatically mean more revenue."
+        },
+        {
+          "q": "What are the main paywall types?",
+          "a": "Hard gates everything behind payment. Soft allows limited use then asks. Metered allows a fixed number of actions. Freemium keeps a permanently free tier. Each trades reach against measured conversion."
+        },
+        {
+          "q": "Where should the paywall sit in onboarding?",
+          "a": "After the first moment of value and before the second. Placed earlier it converts a colder audience; placed later it loses people who were ready. The right position is the step where the user has seen the product work."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Reads the hard-against-freemium conversion gap as a denominator effect rather than a persuasion win, and prices the paywall decision against store commission and platform revenue mix, which the type-comparison pages leave out entirely.",
+      "body": "\n<AnswerBox>\nWhat is a paywall? It is the gate between free use and payment. Hard paywalls\nreach a 10.7% median day-35 download-to-paid conversion against 2.1% for\nfreemium. The gap is mostly denominator, not persuasion, and choosing between\nthem is a reach decision.\n</AnswerBox>\n\n<FactTable\n  id=\"paywall-benchmarks\"\n  caption=\"Paywall reference points, and what each choice costs\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Day-35 download-to-paid, hard against freemium\", \"10.7% against 2.1%\"], factId: \"f-glossary-0700-04\" },\n    { cells: [\"Highest-LTV configuration over 12 months\", \"weekly plus trial, $49.27 (about ₹4,725)\"], factId: \"f-unit-05\" },\n    { cells: [\"Freemium products converting under 2.5% in six months\", \"one in four\"], factId: \"f-act-03\" },\n    { cells: [\"Apple and Google commission\", \"15% under $1M a year, 30% above\"], factId: \"f-act-10\" },\n    { cells: [\"iOS against Android ARPU, same app\", \"about 2x\"], factId: \"f-unit-02\" },\n    { cells: [\"Apple core technology commission from January 2026\", \"5% of digital-goods revenue\"], factId: \"f-act-11\" },\n  ]}\n/>\n\n## What are the paywall types?\n\nFour shapes, in order of how much they gate. Hard puts everything behind payment.\nSoft allows limited use, then asks. Metered allows a fixed number of actions and\nthen stops. Freemium keeps a permanently free tier and sells an upgrade.\n\nEach trades reach against measured conversion, and the trade is close to\nmechanical. Gate earlier and the denominator shrinks to people who already\nintended to pay, so the rate rises. Gate later and the rate falls while the base\ngrows.\n\n## Which paywall converts better\n\nHard paywalls reach 10.7% median day-35 download-to-paid against 2.1% for\nfreemium. Read as persuasion that looks like a five-fold win. Read as arithmetic\nit is a smaller, warmer denominator.\n\nTotal revenue is the question the rate cannot answer. A freemium product at 2.1%\nof a base ten times larger earns more. One in four freemium products converts\nunder 2.5% of free users in six months, so the freemium bet needs volume it may\nnever get.\n\n## Where the paywall should sit\n\nAfter the first moment of value and before the second. Earlier and it meets a\ncolder audience. Later and it loses people who were already ready.\n\nConfiguration matters as much as position. The highest-lifetime-value setup\npublished is a weekly plan with a trial, at $49.27 over twelve months, roughly\n₹4,725. Weekly pricing reads cheap at each charge and compounds across the year.\n\n## What the paywall costs before any user sees it\n\nStore commission lands on every rupee that passes through it. Apple and Google\nboth take 15% under $1M of annual revenue, about ₹9.59 crore, and 30% above. From\nJanuary 2026 Apple also applies a 5% core technology commission to digital-goods\nrevenue.\n\nPlatform mix then decides how much of that hurts. iOS earns roughly twice the ARPU\nof Android on the same app, so an Android-heavy base pays similar fees on thinner\nrevenue.\n\n## What lifts paywall conversion without a discount\n\nTrust, more often than price. A user at the paywall has two questions. Is the\nproduct worth the money, and is the company behind it reliable. Discounting answers\nthe first and ignores the second, which is why a price cut often moves conversion\nless than expected. Naming the counterparty and putting a verifiable number beside\nthe price answers the second directly.\n\n<FromMyWork exp=\"exp-013\">\nTrust was a conversion lever, not a brand exercise. Showing insurer brand names\nlifted quote acceptance 34%, and surfacing the IRDAI-mandated claim settlement\nratio next to the price broke the market's habit of treating insurance as a pure\nprice comparison.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0703",
+      "url": "/glossary/freemium",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is Freemium? Model, Benchmarks and Break-even",
+      "meta_description": "Freemium gives a permanently free tier and sells an upgrade. The conversion benchmarks, the margin the free tier costs, and when the model does not work.",
+      "h1": "What is freemium?",
+      "primary_keyword": "what is freemium",
+      "secondary_keywords": [
+        "freemium conversion rate",
+        "freemium model benchmark"
+      ],
+      "entity_a": "freemium",
+      "facts": [
+        "f-act-01",
+        "f-act-02",
+        "f-act-03",
+        "f-act-08",
+        "f-unit-31",
+        "f-act-16"
+      ],
+      "experience": [
+        "exp-053"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/paywall",
+          "anchor": "paywall",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/free-to-paid-conversion",
+          "anchor": "free-to-paid conversion",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/freemium-break-even-calculator",
+          "anchor": "the freemium break-even calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/ads-vs-subscriptions-indian-apps",
+          "anchor": "ads against subscriptions in Indian apps",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#freemium-benchmarks",
+          "alt": "Six freemium reference points: the median free-to-paid rate, the average across 80-plus products with its sector range, the bimodal split in a 200-product survey, mature contribution margin, marketplace take-rate spread and the share of revenue Indian platforms consume, each row carrying its source and verification date",
+          "caption": "Freemium reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What conversion rate does freemium need to work?",
+          "a": "It depends on the cost of a free user. With 70% to 80% contribution margin and near-zero marginal cost, 2% to 5% can work. With real serving cost per free user, the same rate loses money at scale."
+        },
+        {
+          "q": "When does freemium not work?",
+          "a": "When the free tier is expensive to serve, when the product's value needs a sales conversation, or when the free tier is good enough that nobody upgrades. All three show up as a conversion rate stuck below 2.5%."
+        },
+        {
+          "q": "Is freemium better than a free trial?",
+          "a": "Different instruments. Freemium builds a base and converts slowly. A trial forces a decision inside a window. Products with network effects or referral loops favour freemium; products with immediate single-user value favour trials."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Turns freemium from a conversion question into a margin question, pairing the conversion medians with contribution-margin and platform-cost figures so the break-even can actually be computed rather than asserted.",
+      "body": "\n<AnswerBox>\nWhat is freemium? It is a permanently free tier sold alongside a paid upgrade.\nMedian free-to-paid across products is 8%, and freemium specifically sits closer\nto 2% to 5%. Whether that works is a margin question, not a conversion question.\n</AnswerBox>\n\n<FactTable\n  id=\"freemium-benchmarks\"\n  caption=\"Freemium reference points, conversion and cost together\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median free-to-paid across products\", \"8%, freemium closer to 2% to 5%\"], factId: \"f-act-01\" },\n    { cells: [\"Average across 80+ products, by sector\", \"3.7%, from 2.6% to 5.8%\"], factId: \"f-act-02\" },\n    { cells: [\"200-product survey, bottom and second quartile\", \"under 2.5% in six months, and 10% to 15%\"], factId: \"f-act-03\" },\n    { cells: [\"Mature SaaS contribution margin\", \"70% to 80%\"], factId: \"f-act-08\" },\n    { cells: [\"Marketplace take rates\", \"under 2% to over 70%, most 10% to 20%\"], factId: \"f-unit-31\" },\n    { cells: [\"Revenue Indian quick-commerce platforms consume\", \"30% to 35%\"], factId: \"f-act-16\" },\n  ]}\n/>\n\n## How does freemium work\n\nA free tier carries the acquisition. The paid tier carries the revenue. The free\ntier has to be useful enough to keep people and limited enough that the useful\nnext step costs money.\n\nGetting that boundary wrong fails in two directions. Too generous and nobody\nupgrades. Too mean and nobody stays long enough to consider it. The tell for the\nfirst is a conversion rate stuck under 2.5%, which one in four freemium products\nreports within six months.\n\n## What conversion rate freemium needs\n\nThe rate alone answers nothing. Cost of a free user decides it.\n\n<Example illustrative>\n100,000 free users costing ₹2 each a month, about $0.02, is ₹2,00,000 of monthly\ncost, roughly $2,086. At 3% conversion and ₹800 of monthly revenue per payer,\nabout $8.34, the paid base returns ₹24,00,000, about $25,029.\n</Example>\n\nWith mature contribution margins of 70% to 80% and near-zero marginal serving\ncost, 2% to 5% works comfortably. With real per-user cost, the same rate loses\nmoney as the free base grows. Average freemium-to-paid across 80-plus products is\n3.7%, ranging 2.6% to 5.8% by sector, so most products live in the range where\ncost decides the outcome.\n\n## What the distribution channel takes\n\nFreemium economics get set outside the product too. Marketplace take rates span\nunder 2% to over 70%, and most sit between 10% and 20%. Indian quick-commerce\nplatforms consume 30% to 35% of revenue once listing fees, mandatory ad spend,\ncommission and operations are counted.\n\nA freemium model that pencils at 80% margin does not survive a channel taking a\nthird of the paid revenue. Compute the margin after the channel, not before it.\n\n## When to choose freemium\n\nChoose it when the free tier does work the paid tier cannot buy: distribution,\nreferral, network effects, content. Avoid it when value needs a sales\nconversation, or when serving a free user costs real money.\n\n<FromMyWork exp=\"exp-053\">\nValidating demand on Medium before building anything, then scaling a content\nplatform to 10,000+ published blogs. It was also where I learned SEO and content\noperations by running them rather than reading about them.\n</FromMyWork>\n\nThat is the freemium logic without a product: give the work away where the\naudience already is, and find out whether anyone wants it before paying to build\nthe tier.\n"
+    },
+    {
+      "id": "glossary-0704",
+      "url": "/glossary/free-trial",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is a Free Trial? Length, Benchmarks and Trade-offs",
+      "meta_description": "A free trial gives full access for a fixed window. The length data, the conversion medians by category, and why India needs the payment rail decided first.",
+      "h1": "What is a free trial?",
+      "primary_keyword": "what is a free trial",
+      "secondary_keywords": [
+        "free trial length benchmark",
+        "free trial conversion rate"
+      ],
+      "entity_a": "free-trial",
+      "facts": [
+        "f-glossary-0700-01",
+        "f-glossary-0700-02",
+        "f-glossary-0700-05",
+        "f-unit-05",
+        "f-unit-25",
+        "f-act-06"
+      ],
+      "experience": [
+        "exp-012"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/trial-to-paid-conversion",
+          "anchor": "trial-to-paid conversion",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/paywall",
+          "anchor": "paywall",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/trial-length-optimizer",
+          "anchor": "the trial length optimizer",
+          "role": "tool"
+        },
+        {
+          "url": "/india/free-trials-in-india",
+          "anchor": "free trials in India",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#trial-benchmarks",
+          "alt": "Six free-trial reference points: median trial-to-paid by trial length, the spread by category, the lifetime-value lift from adding a trial to an annual plan, the highest-lifetime-value configuration, monthly UPI Autopay mandate volume in India and typical time to value, each row carrying its source and verification date",
+          "caption": "Free-trial reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How long should a free trial be?",
+          "a": "Longer converts better in the published data: 42.5% median for trials of 17 to 32 days against 25.5% for four days or fewer. The long trial buys enough sessions for the product to prove itself."
+        },
+        {
+          "q": "Should the trial require a card?",
+          "a": "Requiring one raises conversion and shrinks starts. In India the question is sharper, because the card rail itself fails more often than UPI Autopay, which now carries more than 120 million mandates a month."
+        },
+        {
+          "q": "Should a trial sit on the monthly or annual plan?",
+          "a": "Annual, usually. Adding a trial to an annual plan raises one-year lifetime value by 35% against a direct purchase, so the choice is rarely trial against no trial. It is which plan the trial sits on."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Ties trial length to time-to-value rather than treating it as a pricing preference, and makes the payment rail part of the trial design, which matters in India where the card mandate is the failure point rather than the offer.",
+      "body": "\n<AnswerBox>\nWhat is a free trial? It is full or near-full access for a fixed window, after\nwhich payment begins. Median trial-to-paid runs 42.5% for trials of 17 to 32 days\nand 25.5% for four days or fewer. Length is the strongest lever, and it works by\nbuying sessions.\n</AnswerBox>\n\n<FactTable\n  id=\"trial-benchmarks\"\n  caption=\"Free-trial reference points, length and configuration\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median trial-to-paid by length\", \"42.5% at 17 to 32 days, 25.5% at 4 days or fewer\"], factId: \"f-glossary-0700-01\" },\n    { cells: [\"Spread by category, strongest against weakest\", \"43.5% against 22.2%\"], factId: \"f-glossary-0700-02\" },\n    { cells: [\"Trial added to an annual plan, one-year LTV\", \"+35%\"], factId: \"f-glossary-0700-05\" },\n    { cells: [\"Highest-LTV configuration over 12 months\", \"weekly plus trial, $49.27 (about ₹4,725)\"], factId: \"f-unit-05\" },\n    { cells: [\"UPI Autopay mandates created monthly in India\", \"more than 120 million\"], factId: \"f-unit-25\" },\n    { cells: [\"Typical time to value\", \"about 1 day 12 hours, from under 5 minutes to 2 weeks\"], factId: \"f-act-06\" },\n  ]}\n/>\n\n## How long should a free trial run\n\nLong enough to cross time to value, and no longer. Typical time to value averages\nabout 1 day 12 hours, from under 5 minutes for simple tools to two weeks for\nenterprise platforms. A trial shorter than that window cannot work, whatever the\ncopy says.\n\nThe data agrees. Median trial-to-paid runs 42.5% for trials of 17 to 32 days and\n25.5% for four days or fewer. The long trial is not generosity. It is buying\nenough sessions for the product to demonstrate itself.\n\n## What the trial should sit on\n\nThe annual plan, in most cases. Adding a trial to an annual plan raises one-year\nlifetime value by 35% against a direct purchase, so the real choice is which plan\ncarries the trial rather than whether to offer one.\n\nConfiguration outranks both. The highest-lifetime-value setup published is a\nweekly plan with a trial, at $49.27 over twelve months, roughly ₹4,725. Category\nsets the floor underneath all of it, with medians spanning 43.5% in the strongest\ncategory and 22.2% in the weakest.\n\n## Why the payment rail is part of trial design\n\nA trial ends in a charge, so the rail that charge runs on is part of the design\nrather than an implementation detail. In India that decision moves conversion more\nthan trial length does. UPI Autopay now carries more than 120 million mandates a\nmonth, and a trial that converts onto a card mandate meets a rail that fails more\noften.\n\n<FromMyWork exp=\"exp-012\">\nNot supporting UPI was the single most expensive omission in the funnel. Card and\nnet banking were the only options in a market where the buying demographic pays by\nUPI. Integration took six weeks, and 73% of purchases came through UPI in the\nfirst month after launch.\n</FromMyWork>\n\n## What a trial cannot fix\n\nA trial exposes the product rather than selling it. If the product does not\ndemonstrate value inside the window, a longer trial produces a longer look at the\nsame gap, and a shorter one simply hides it. Fix time to value first, then set the\nlength around it.\n\nThe same holds for the reminder sequence. Warning a user before the charge lands\nreduces refunds and disputes, and it does not make an unconvinced user convert. The\ntrial has already answered that question by then.\n"
+    },
+    {
+      "id": "glossary-0705",
+      "url": "/glossary/north-star-metric",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is a North Star Metric? Definition and Selection",
+      "meta_description": "A north star metric is the single number a team steers by. How to pick one, the tests it has to pass, and the reported figures that fail every one of them.",
+      "h1": "What is a north star metric?",
+      "primary_keyword": "what is a north star metric",
+      "secondary_keywords": [
+        "north star metric examples",
+        "how to choose a north star metric"
+      ],
+      "entity_a": "north-star-metric",
+      "facts": [
+        "f-unit-24",
+        "f-act-05",
+        "f-unit-23",
+        "f-unit-08",
+        "f-act-19",
+        "f-act-04"
+      ],
+      "experience": [
+        "exp-032",
+        "exp-033"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/activation-rate",
+          "anchor": "activation rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/aha-moment",
+          "anchor": "the aha moment",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/benchmarks/retention",
+          "anchor": "retention benchmarks",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#north-star-tests",
+          "alt": "Six reference points for choosing a north star metric: the share of companies that track activation, the share of users who never reach first value, the top-decile against median activation gap, the standing LTV to CAC bar, platform-reported against true return on ad spend, and the SaaS-only activation median, each row carrying its source and verification date",
+          "caption": "What a north star candidate has to survive. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What makes a good north star metric?",
+          "a": "It has to move before revenue does, respond to work the team controls, and break if the product gets worse. A metric that only rises is a vanity metric with a plan attached."
+        },
+        {
+          "q": "Should revenue be the north star metric?",
+          "a": "Rarely. Revenue is the outcome, and it lags too far behind the work to steer by. The better candidate is the leading indicator that predicts it, which for most product-led companies is activation."
+        },
+        {
+          "q": "How many north star metrics should a team have?",
+          "a": "One, with a small set of inputs beneath it. Aggregating independently-set team goals produces a list, and a list is a tracker rather than a direction."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Gives three falsifiable tests a candidate metric has to pass and then applies them to a real reported figure that fails — platform-reported return on ad spend against true return after commission — instead of listing well-known companies' metrics.",
+      "body": "\n<AnswerBox>\nWhat is a north star metric? It is the single number a team steers by, chosen\nbecause it leads revenue rather than reports it. Only about 34% of product-led\ncompanies track activation, the metric that best predicts whether a free user ever\npays, which is where most north star choices go wrong.\n</AnswerBox>\n\n<FactTable\n  id=\"north-star-tests\"\n  caption=\"What a north star candidate has to survive\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Companies tracking activation at all\", \"about 34%\"], factId: \"f-unit-24\" },\n    { cells: [\"New users who never reach first value\", \"two thirds\"], factId: \"f-act-05\" },\n    { cells: [\"Top decile against median day-one activation\", \"21% against 5%\"], factId: \"f-unit-23\" },\n    { cells: [\"Standing LTV to CAC bar\", \"3 to 1, rising to 4 or 5 to 1\"], factId: \"f-unit-08\" },\n    { cells: [\"Reported against true return on ad spend, quick commerce\", \"3x to 5x against 1.2x to 2.5x\"], factId: \"f-act-19\" },\n    { cells: [\"SaaS-only median activation rate\", \"30%\"], factId: \"f-act-04\" },\n  ]}\n/>\n\n## What a north star metric has to do\n\nThree tests, and a candidate has to pass all of them.\n\nIt has to move before revenue does, or it cannot steer anything. It has to respond\nto work the team controls, or it is a weather report. And it has to be able to\nfall when the product gets worse, because a metric that only rises is a vanity\nmetric with a plan attached.\n\nCumulative totals fail the third test by construction. Registered users only goes\nup. So does lifetime downloads.\n\n## Why revenue is the wrong choice\n\nRevenue is the outcome. It lags the work by the length of the sales or conversion\ncycle, which makes it useless for steering inside a quarter.\n\nThe better candidate leads it. For most product-led companies that is activation:\nthe SaaS-only median is 30%, two thirds of new users never reach first value, and\ntop-decile products see 21% day-one activation against a 5% median. A metric with\nthat much spread is a metric with room to be moved.\n\n## A reported number that fails all three tests\n\nQuick-commerce platforms report 3x to 5x return on ad spend. True return after\ncommission and cost of goods runs 1.2x to 2.5x.\n\nSteering by the reported figure fails every test. It does not lead anything,\nbecause it is a rearward calculation. It barely responds to the team's work,\nbecause the platform computes it. And it cannot fall far, because the definition\nexcludes the costs that would make it fall. The LTV to CAC bar of 3 to 1 has the\nsame problem when quoted without payback beside it.\n\n## One metric, not eleven\n\nThe failure mode is not choosing badly. It is choosing many.\n\n<FromMyWork exp=\"exp-032\">\nAggregating independently-set team OKRs produced 11 objectives and 34 key results,\nwhich is a project tracker with aspirational language rather than OKRs. Replacing\nit with three annual company objectives and quarterly goals linked to them\nrestored the connection between daily work and direction.\n</FromMyWork>\n\nA single metric only works if the organisation can see it and argue about it.\n\n<FromMyWork exp=\"exp-033\">\nThree artefacts fixed decision coherence: a 3-page quarterly Strategic Brief\nshared with the whole organisation, a 60-minute bi-weekly cross-team roadmap sync\nwith a fixed agenda, and a Decision Log recording what was decided, why, and what\nwas rejected.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0706",
+      "url": "/glossary/aha-moment",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is the Aha Moment? Definition and How to Find It",
+      "meta_description": "The aha moment is when a user first sees the product work. How to locate it in data, the time-to-value benchmarks, and why two-thirds never arrive.",
+      "h1": "What is the aha moment?",
+      "primary_keyword": "what is the aha moment",
+      "secondary_keywords": [
+        "aha moment definition",
+        "time to value benchmark"
+      ],
+      "entity_a": "aha-moment",
+      "facts": [
+        "f-act-05",
+        "f-act-06",
+        "f-act-07",
+        "f-unit-23",
+        "f-unit-22",
+        "f-unit-39"
+      ],
+      "experience": [
+        "exp-046"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/activation-rate",
+          "anchor": "activation rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/north-star-metric",
+          "anchor": "north star metric",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/activation-rate-benchmarker",
+          "anchor": "the activation rate benchmarker",
+          "role": "tool"
+        },
+        {
+          "url": "/benchmarks/retention",
+          "anchor": "retention benchmarks",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#aha-benchmarks",
+          "alt": "Six reference points for the aha moment: the share of users who never reach it, typical time to value by product complexity, activation and time to value by category, the top-decile against median day-one activation gap, the average activation rate and day-one against day-30 retention by platform, each row carrying its source and verification date",
+          "caption": "Aha-moment reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do I find my product's aha moment?",
+          "a": "Compare retained cohorts against churned ones and look for the earliest action that separates them. The aha moment is a hypothesis about that action, and it is testable: move more users through it and retention should rise."
+        },
+        {
+          "q": "How fast should the aha moment arrive?",
+          "a": "Typical time to value averages about 1 day 12 hours, from under 5 minutes for simple tools to two weeks for enterprise platforms. AI and machine-learning products reach it near 17 hours at the median."
+        },
+        {
+          "q": "What is the difference between the aha moment and activation?",
+          "a": "The aha moment is the experience. Activation is the measured event that stands in for it. The first explains why the number moves; the second proves the experience is real and repeatable."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Treats the aha moment as a falsifiable hypothesis with a stated test rather than a workshop exercise, and grounds the timing in published time-to-value medians by category instead of generic advice to shorten onboarding.",
+      "body": "\n<AnswerBox>\nWhat is the aha moment? It is the point where a new user first sees the product\ndo the thing they came for. Two thirds of new SaaS users never reach it. Typical\ntime to value averages about 1 day 12 hours, which is the window the whole of\nonboarding has to work inside.\n</AnswerBox>\n\n<FactTable\n  id=\"aha-benchmarks\"\n  caption=\"Aha-moment reference points, timing and reach\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"New users who never reach the aha moment\", \"two thirds\"], factId: \"f-act-05\" },\n    { cells: [\"Typical time to value\", \"about 1 day 12 hours, under 5 minutes to 2 weeks\"], factId: \"f-act-06\" },\n    { cells: [\"Activation and time to value, AI and ML against CRM\", \"54.8% at about 17 hours, against 42.6%\"], factId: \"f-act-07\" },\n    { cells: [\"Top decile against median day-one activation\", \"21% against 5%\"], factId: \"f-unit-23\" },\n    { cells: [\"Average activation rate across SaaS\", \"36%\"], factId: \"f-unit-22\" },\n    { cells: [\"Day-1 and day-30 retention, iOS against Android\", \"25.65% and 4.13% against 23.01% and 2.59%\"], factId: \"f-unit-39\" },\n  ]}\n/>\n\n## How to find the aha moment\n\nWork backwards from retention. Take a cohort that stayed and a cohort that left,\nthen look for the earliest action that separates them. That action is the\ncandidate.\n\nTreat it as a hypothesis with a test attached. Move more users through the\ncandidate action and retention should rise. If it does not, the action correlated\nwith something else and the hypothesis was wrong. Most teams skip that test and\nadopt the first plausible answer from a workshop.\n\n## How fast it has to arrive\n\nInside the window the user is still paying attention. Typical time to value\naverages about 1 day 12 hours, spanning under 5 minutes for simple tools to two\nweeks for enterprise platforms. AI and machine-learning products reach it near 17\nhours at the median and activate at 54.8%, against 42.6% for CRM and sales tools.\n\nPlatform sets a harder limit than product complexity does. Day-30 retention runs\n4.13% on iOS and 2.59% on Android, so an Android-heavy product has less time to\nprove itself and more of its audience to lose while trying.\n\n## Why two thirds never arrive\n\nBecause onboarding asks for work before it gives anything. The average activation\nrate across SaaS is 36%, and the top decile reaches 21% day-one activation against\na 5% median. That spread is not a copywriting gap. It is a difference in how much\nthe product does before it asks.\n\nThe practical rule: every step before the aha moment needs a reason to exist that\nthe user would accept. Account setup, permissions and profile questions rarely\npass that test.\n\n## What it looks like across a portfolio\n\nThe aha moment is product-specific, and the pattern underneath it often is not.\n\n<FromMyWork exp=\"exp-046\">\nSetting portfolio-level direction on high-intent entry points, trust signals and\nthe core paths through each product lifted activation depth 18-25% across four\nconsumer and B2B platforms. The room to move was in what the four had in common, not in any one\nroadmap.\n</FromMyWork>\n\nFour products, one set of changes. High-intent entry points and trust signals are\nusually where the first moment of value is being blocked.\n"
+    },
+    {
+      "id": "glossary-0707",
+      "url": "/glossary/cohort-analysis",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is Cohort Analysis? Method, Curves and Benchmarks",
+      "meta_description": "Cohort analysis groups users by when they arrived and tracks them separately. The method, what a healthy curve looks like, and what averages hide.",
+      "h1": "What is cohort analysis?",
+      "primary_keyword": "what is cohort analysis",
+      "secondary_keywords": [
+        "cohort analysis method",
+        "retention cohort benchmark"
+      ],
+      "entity_a": "cohort-analysis",
+      "facts": [
+        "f-unit-38",
+        "f-unit-39",
+        "f-unit-11",
+        "f-glossary-0700-02",
+        "f-act-18",
+        "f-act-14"
+      ],
+      "experience": [
+        "exp-020",
+        "exp-009"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/retention-rate",
+          "anchor": "retention rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/churn-rate",
+          "anchor": "churn rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/cohort-revenue-model",
+          "anchor": "the cohort revenue model",
+          "role": "tool"
+        },
+        {
+          "url": "/benchmarks/retention",
+          "anchor": "retention benchmarks",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#cohort-benchmarks",
+          "alt": "Six cohort reference points: median day-1 and day-30 app retention, the iOS and Android split, annual renewal by category, trial conversion by category, the lifespan of a withdrawn Indian membership programme and quick-commerce market share by gross merchandise value, each row carrying its source and verification date",
+          "caption": "Cohort reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What does a healthy cohort curve look like?",
+          "a": "It falls steeply, then flattens. A flattening curve means a durable use case has been found. A curve that keeps sliding has not found one, however strong its first week looks."
+        },
+        {
+          "q": "How large does a cohort need to be?",
+          "a": "Large enough that a week's noise does not move the line. In practice, group by month rather than by week for small products, and keep the cohort closed once it is defined."
+        },
+        {
+          "q": "What does an aggregate retention number hide?",
+          "a": "Direction. A product whose newest cohorts retain worse can show flat aggregate retention for months while the underlying trend worsens, because older and better cohorts are still in the average."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Uses a real withdrawn Indian membership programme and a decomposed growth curve as the worked cases, rather than a generic retention grid, and states the specific way an aggregate number can hold flat while every new cohort worsens.",
+      "body": "\n<AnswerBox>\nWhat is cohort analysis? It groups users by when they arrived and tracks each\ngroup separately, so improvement and decay stay visible. The median app retains\n4% of users at day 30. An aggregate number that size tells you nothing about\ndirection; cohorts do.\n</AnswerBox>\n\n<FactTable\n  id=\"cohort-benchmarks\"\n  caption=\"Cohort reference points, and what each comparison shows\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Median app retention, day 1 and day 30\", \"25.3% and 4%\"], factId: \"f-unit-38\" },\n    { cells: [\"Day-1 and day-30 retention, iOS against Android\", \"25.65% and 4.13% against 23.01% and 2.59%\"], factId: \"f-unit-39\" },\n    { cells: [\"Annual renewal median, strongest against weakest\", \"40% against 23%\"], factId: \"f-unit-11\" },\n    { cells: [\"Trial conversion by category, strongest against weakest\", \"43.5% against 22.2%\"], factId: \"f-glossary-0700-02\" },\n    { cells: [\"Zepto Pass paid membership lifespan\", \"14 months, February 2024 to April 2025\"], factId: \"f-act-18\" },\n    { cells: [\"Indian quick-commerce share by GMV\", \"Blinkit 46%, Instamart 24%, Zepto 22%\"], factId: \"f-act-14\" },\n  ]}\n/>\n\n## How cohort analysis works\n\nFix a start date. Every user who arrived in that period belongs to that cohort\npermanently. Then measure the same thing at the same ages across cohorts: day 7,\nday 30, day 90.\n\nThe cohort has to stay closed. Adding later arrivals to an earlier cohort mixes\nages and flatters every reading, and it is the single commonest error in a\nretention dashboard.\n\n## What a healthy curve looks like\n\nSteep, then flat. A curve that falls hard and then levels has found a group with a\ndurable use case. A curve that keeps sliding has not found one, whatever its first\nweek looked like.\n\nLevel matters less than shape, and the levels themselves are sobering. Median day-1\nreturn is 25.3% and median day-30 retention is 4%. Compared across cohorts, the\nuseful question is whether the newest cohort sits above the one before it at the\nsame age.\n\n## What an aggregate number hides\n\nDirection, and it hides it for months. Older, better cohorts stay in the average\nlong after the product stopped producing cohorts that good.\n\n<Example illustrative>\nSix monthly cohorts retaining 20%, 19%, 18%, 17%, 16% and 15% at day 30 average\n17.5%. The average looks stable across reporting periods. Every new cohort is\nworse than the last.\n</Example>\n\nPlatform splits do the same. iOS retains 4.13% at day 30 against 2.59% on Android,\nso a shifting platform mix moves the blended number without any cohort changing.\n\n## Cohorts decide which bets get withdrawn\n\nCategory level sets expectations before the product does. Annual renewal medians\nrun 40% in the strongest categories against 23% in the weakest, and trial\nconversion spans 43.5% to 22.2%. A programme judged against the wrong category\ngets killed or kept for the wrong reason.\n\nZepto Pass, a paid membership in Indian quick commerce, ran fourteen months from\nFebruary 2024 to April 2025 before being replaced, in a market where Blinkit holds\nabout 46% of gross merchandise value against Instamart at 24% and Zepto at 22%.\nA membership programme in third place is a cohort bet, and the cohorts answer it.\n\n## What cohorts are worth before the work starts\n\nDecomposition, mostly.\n\n<FromMyWork exp=\"exp-020\">\nScaling from 3.8M to 45M+ monthly actives came from three sources in roughly equal\nthirds: organic search, referral and sharing, and paid acquisition buying\nhigher-intent users than before.\n</FromMyWork>\n\n<FromMyWork exp=\"exp-009\">\nTwo weeks went into assembling a clean dataset of roughly 22,000 prior\napplications before proposing anything. The target set afterwards — 70%\ndisbursement against an industry range of 20-35% — was chosen to force a different\noperating model rather than to be achievable.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0708",
+      "url": "/glossary/unit-economics",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What are Unit Economics? Definition, Formula and Margins",
+      "meta_description": "Unit economics is the profit and loss of one customer. The formula, the margin benchmarks, and the platform and payment costs most models leave out.",
+      "h1": "What are unit economics?",
+      "primary_keyword": "what are unit economics",
+      "secondary_keywords": [
+        "unit economics formula",
+        "contribution margin benchmark"
+      ],
+      "entity_a": "unit-economics",
+      "facts": [
+        "f-act-08",
+        "f-act-09",
+        "f-act-10",
+        "f-act-12",
+        "f-unit-31",
+        "f-act-16"
+      ],
+      "experience": [
+        "exp-054",
+        "exp-025"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/cac-payback-period",
+          "anchor": "CAC payback period",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/ltv",
+          "anchor": "LTV",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/app-store-fee-net-revenue-calculator",
+          "anchor": "the app store fee calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/gst-on-digital-subscriptions",
+          "anchor": "GST on digital subscriptions",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#unit-economics-costs",
+          "alt": "Six cost reference points for unit economics: mature contribution margin, median gross margin by revenue band, store commission, Indian domestic and international payment costs, marketplace take rates and the share of revenue Indian quick-commerce platforms consume, each row carrying its source and verification date",
+          "caption": "The costs a unit-economics model has to carry. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is the unit economics formula?",
+          "a": "Revenue per customer minus the variable cost of serving them, compared against what they cost to acquire. The contribution margin is the first half; unit economics works only when it is set against acquisition cost."
+        },
+        {
+          "q": "What is a good contribution margin?",
+          "a": "Mature SaaS runs 70% to 80%, and median gross margin for private companies between $5M and $50M ARR is 71% to 74%. Below 70% the model needs either higher prices or lower serving cost."
+        },
+        {
+          "q": "What do unit economics models usually leave out?",
+          "a": "Store commission, payment processing, tax and refunds. Each is a percentage of revenue rather than a fixed cost, so leaving them out overstates margin by the same proportion at every scale."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Assembles the specific percentage costs an Indian digital business actually pays — store commission, domestic gateway plus GST, international routing spread, platform take — into one model, where the general guides stop at gross margin.",
+      "body": "\n<AnswerBox>\nWhat are unit economics? The profit and loss of a single customer: revenue,\nminus the variable cost of serving them, set against what they cost to acquire.\nMature SaaS contribution margins run 70% to 80%. Most models overstate that,\nbecause they omit costs charged as a share of revenue.\n</AnswerBox>\n\n<FactTable\n  id=\"unit-economics-costs\"\n  caption=\"The costs a unit-economics model has to carry\"\n  columns={[\"Cost\", \"Figure\"]}\n  rows={[\n    { cells: [\"Mature SaaS contribution margin\", \"70% to 80%\"], factId: \"f-act-08\" },\n    { cells: [\"Median gross margin, $5M to $50M ARR\", \"71% to 74%\"], factId: \"f-act-09\" },\n    { cells: [\"Apple and Google commission\", \"15% under $1M a year, 30% above\"], factId: \"f-act-10\" },\n    { cells: [\"India domestic gateway, and international cards\", \"2% plus 18% GST, and 3%\"], factId: \"f-act-12\" },\n    { cells: [\"Marketplace take rates\", \"under 2% to over 70%, most 10% to 20%\"], factId: \"f-unit-31\" },\n    { cells: [\"Revenue Indian quick-commerce platforms consume\", \"30% to 35%\"], factId: \"f-act-16\" },\n  ]}\n/>\n\n## How unit economics is calculated\n\nTake revenue from one customer over their life. Subtract every variable cost of\nserving them. The remainder is contribution margin. Set that against acquisition\ncost, and the model either closes or it does not.\n\n<Example illustrative>\n₹800 of monthly revenue, about $8.34, at 72% contribution margin leaves ₹576,\nabout $6.01. Against ₹4,800 of acquisition cost, roughly $50.06, the customer\nrepays in the ninth month.\n</Example>\n\nContribution margin is the internal number. Gross margin is the reported one.\nMature SaaS runs 70% to 80% contribution. For private companies between $5M and\n$50M ARR, roughly ₹47.95 crore to ₹479.45 crore, median gross margin is 71% to\n74%.\n\n## The costs models leave out\n\nAll of them are percentages of revenue, which is why omitting them overstates\nmargin identically at every scale.\n\nStore commission takes 15% under $1M of annual revenue, about ₹9.59 crore, and 30%\nabove. Indian domestic payments cost 2% plus 18% GST through a gateway, and\ninternational card exports 3%. A marketplace layer adds its own take, usually 10%\nto 20% and occasionally far more.\n\nStack those and a 75% contribution margin becomes something quite different before\na single support ticket enters the model.\n\n## Where the channel decides the business\n\nIndian quick-commerce platforms consume 30% to 35% of revenue across listing fees,\nmandatory ad spend, commission and operations. No pricing change inside the product\nrecovers a third of revenue taken at the channel.\n\nThat makes channel choice a unit-economics decision rather than a distribution one.\nIt needs deciding before the price is set rather than after, because the price has\nto carry the channel cost and the channel cost is not small. A product priced for\ndirect sale and then pushed through a platform taking a third has no margin left\nto defend.\n\n## When the numbers say stop\n\nUnit economics is most useful when it argues against the plan.\n\n<FromMyWork exp=\"exp-054\">\nA hyperlocal D2C food business at 300+ daily tiffins that unit economics told me\nto pivot out of. Customer feedback pointed at fresh grocery retail instead, and the\ndecision was an economics call rather than a demand one.\n</FromMyWork>\n\nIgnoring it costs more than the revenue it chases.\n\n<FromMyWork exp=\"exp-025\">\nLaunching a cheaper line to chase a distributor's forecast damaged the premium\nposition and the forecast never materialised. We sold 23% of the order in twelve\nmonths and discontinued the line within nine.\n</FromMyWork>\n"
+    },
+    {
+      "id": "glossary-0709",
+      "url": "/glossary/take-rate",
+      "archetype": "glossary",
+      "hub": "glossary",
+      "title": "What is Take Rate? Formula, Benchmarks and Pressure",
+      "meta_description": "Take rate is the share of transaction value a platform keeps. The formula, benchmarks from app stores to Indian delivery, and where it is under pressure.",
+      "h1": "What is take rate?",
+      "primary_keyword": "what is take rate",
+      "secondary_keywords": [
+        "take rate formula",
+        "marketplace take rate benchmark"
+      ],
+      "entity_a": "take-rate",
+      "facts": [
+        "f-unit-31",
+        "f-act-20",
+        "f-act-21",
+        "f-act-22",
+        "f-act-15",
+        "f-act-17"
+      ],
+      "experience": [
+        "exp-024",
+        "exp-051"
+      ],
+      "links": [
+        {
+          "url": "/glossary",
+          "anchor": "the glossary",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/unit-economics",
+          "anchor": "unit economics",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/arpu",
+          "anchor": "ARPU",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/app-store-fee-net-revenue-calculator",
+          "anchor": "the app store fee calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/ondc-for-commerce-apps",
+          "anchor": "ONDC for commerce apps",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#take-rate-benchmarks",
+          "alt": "Six take-rate reference points: the overall marketplace spread, Google Play's 2026 rates, eBay and Etsy reported take rates, Indian food-delivery commissions, Indian quick-commerce commissions and the ONDC alternative, each row carrying its source and verification date",
+          "caption": "Take-rate reference points, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good take rate?",
+          "a": "Most established multi-vendor marketplaces sit between 10% and 20%, and the full range runs from under 2% to over 70%. The right level depends on how much of the transaction the platform actually performs."
+        },
+        {
+          "q": "How is take rate calculated?",
+          "a": "Platform revenue divided by gross merchandise value over the same period. Whether to include advertising, listing fees and logistics revenue changes the answer substantially, so state what is inside the numerator."
+        },
+        {
+          "q": "Are take rates rising or falling?",
+          "a": "Both, in different places. Etsy's rose 180 basis points year on year while Google Play's standard rate fell to 10% on the first $1M. Regulatory pressure and competition are pushing digital rates down and marketplace rates up."
+        }
+      ],
+      "schema_types": [
+        "DefinedTerm",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Sets the take rates a business actually faces side by side across app stores, global marketplaces, Indian food delivery and quick commerce, with the ONDC 3% alternative, rather than quoting one sector's range as the benchmark.",
+      "body": "\n<AnswerBox>\nWhat is take rate? It is the share of transaction value a platform keeps. Most\nestablished multi-vendor marketplaces sit between 10% and 20%, with the full range\nrunning from under 2% to over 70%. The level tracks how much of the transaction the\nplatform actually performs.\n</AnswerBox>\n\n<FactTable\n  id=\"take-rate-benchmarks\"\n  caption=\"Take rates a business actually faces, by platform\"\n  columns={[\"Platform\", \"Take rate\"]}\n  rows={[\n    { cells: [\"Marketplaces overall\", \"under 2% to over 70%, most 10% to 20%\"], factId: \"f-unit-31\" },\n    { cells: [\"Google Play, 2026 standard\", \"10% on the first $1M, 20% above\"], factId: \"f-act-20\" },\n    { cells: [\"eBay and Etsy, reported\", \"13.91% and 25.7%\"], factId: \"f-act-21\" },\n    { cells: [\"Zomato and Swiggy, restaurant commission\", \"18% to 25% and 18% to 22%\"], factId: \"f-act-22\" },\n    { cells: [\"Indian quick commerce\", \"Zepto 10% to 18%, Instamart 15% to 25%, Blinkit 22%\"], factId: \"f-act-15\" },\n    { cells: [\"ONDC\", \"near 3%\"], factId: \"f-act-17\" },\n  ]}\n/>\n\n## How is take rate calculated?\n\nDivide platform revenue by gross merchandise value over the same period. The\ndifficulty is the numerator. Advertising revenue, listing fees, payment margin and\nlogistics all sit at the platform's discretion, and including them changes the\nfigure substantially.\n\n<Example illustrative>\n₹1,00,00,000 of monthly gross merchandise value, about $10.43 lakh in dollars at\n₹95.89, against ₹15,00,000 of platform revenue gives a 15% take rate.\n</Example>\n\nState what is inside the numerator beside the number. The same headline rate,\ncounted as commission alone or as everything the platform charges, describes two\nvery different businesses.\n\n## What take rates look like in practice\n\nGoogle Play's 2026 standard rate is 10% on the first $1M of annual revenue, about\n₹9.59 crore, and 20% above. eBay reported 13.91% and Etsy 25.7%. Indian food\ndelivery runs 18% to 25% at Zomato and 18% to 22% at Swiggy. Indian quick commerce\nspans Zepto at 10% to 18%, Instamart at 15% to 25% and Blinkit at about 22%.\n\nThe pattern is not scale. It is how much work the platform does. Etsy carries\ndiscovery for products with no brand of their own and charges accordingly. eBay\ncarries less and charges less.\n\n## Where the rate is under pressure\n\nIn opposite directions at once. Etsy's rate rose 180 basis points year on year\nwhile Google Play's standard fell to 10% on the first million. Regulation and\ncompetition push digital distribution rates down; marketplace rates drift up as\nplatforms add advertising and logistics.\n\nIndia has the sharpest version of that split. ONDC offers a route near 3% against\nthe 15% to 25% incumbents charge. Whether sellers move depends on whether the\nincumbent's discovery is worth the difference, which is an empirical question with\na very large number attached.\n\n## What a high take rate forces on a seller\n\nAssortment discipline, first.\n\n<FromMyWork exp=\"exp-024\">\nCarrying the full catalogue was never viable, so the first real work was choosing\nwhat not to stock. Of roughly 1,200 SKUs we prioritised 85 — under 8% — against\nthe highest-probability commercial opportunities for the market's development\nstage.\n</FromMyWork>\n\nThen a structure that reduces the number of paid hops between product and buyer.\n\n<FromMyWork exp=\"exp-051\">\nA hub-and-spoke launch with three to four anchor distributors per city,\naggregating downstream vendor demand into one consolidation point, was what made\ndirect-to-vendor fulfilment from a single Bangalore warehouse work at all.\n</FromMyWork>\n"
     }
   ]
 }

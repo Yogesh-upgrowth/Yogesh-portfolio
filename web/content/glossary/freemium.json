@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0703",
+  "url": "/glossary/freemium",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is Freemium? Model, Benchmarks and Break-even",
+  "meta_description": "Freemium gives a permanently free tier and sells an upgrade. The conversion benchmarks, the margin the free tier costs, and when the model does not work.",
+  "h1": "What is freemium?",
+  "primary_keyword": "what is freemium",
+  "secondary_keywords": [
+    "freemium conversion rate",
+    "freemium model benchmark"
+  ],
+  "entity_a": "freemium",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-act-01",
+    "f-act-02",
+    "f-act-03",
+    "f-act-08",
+    "f-unit-31",
+    "f-act-16"
+  ],
+  "experience_used": [
+    "exp-053"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/paywall",
+      "anchor": "paywall",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/free-to-paid-conversion",
+      "anchor": "free-to-paid conversion",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/freemium-break-even-calculator",
+      "anchor": "the freemium break-even calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/ads-vs-subscriptions-indian-apps",
+      "anchor": "ads against subscriptions in Indian apps",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#freemium-benchmarks",
+      "alt": "Six freemium reference points: the median free-to-paid rate, the average across 80-plus products with its sector range, the bimodal split in a 200-product survey, mature contribution margin, marketplace take-rate spread and the share of revenue Indian platforms consume, each row carrying its source and verification date",
+      "caption": "Freemium reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What conversion rate does freemium need to work?",
+      "a": "It depends on the cost of a free user. With 70% to 80% contribution margin and near-zero marginal cost, 2% to 5% can work. With real serving cost per free user, the same rate loses money at scale."
+    },
+    {
+      "q": "When does freemium not work?",
+      "a": "When the free tier is expensive to serve, when the product's value needs a sales conversation, or when the free tier is good enough that nobody upgrades. All three show up as a conversion rate stuck below 2.5%."
+    },
+    {
+      "q": "Is freemium better than a free trial?",
+      "a": "Different instruments. Freemium builds a base and converts slowly. A trial forces a decision inside a window. Products with network effects or referral loops favour freemium; products with immediate single-user value favour trials."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Turns freemium from a conversion question into a margin question, pairing the conversion medians with contribution-margin and platform-cost figures so the break-even can actually be computed rather than asserted.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

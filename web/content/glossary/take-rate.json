@@ -1,0 +1,108 @@
+{
+  "id": "glossary-0709",
+  "url": "/glossary/take-rate",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is Take Rate? Formula, Benchmarks and Pressure",
+  "meta_description": "Take rate is the share of transaction value a platform keeps. The formula, benchmarks from app stores to Indian delivery, and where it is under pressure.",
+  "h1": "What is take rate?",
+  "primary_keyword": "what is take rate",
+  "secondary_keywords": [
+    "take rate formula",
+    "marketplace take rate benchmark"
+  ],
+  "entity_a": "take-rate",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-31",
+    "f-act-20",
+    "f-act-21",
+    "f-act-22",
+    "f-act-15",
+    "f-act-17"
+  ],
+  "experience_used": [
+    "exp-024",
+    "exp-051"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/unit-economics",
+      "anchor": "unit economics",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/arpu",
+      "anchor": "ARPU",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/app-store-fee-net-revenue-calculator",
+      "anchor": "the app store fee calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/ondc-for-commerce-apps",
+      "anchor": "ONDC for commerce apps",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#take-rate-benchmarks",
+      "alt": "Six take-rate reference points: the overall marketplace spread, Google Play's 2026 rates, eBay and Etsy reported take rates, Indian food-delivery commissions, Indian quick-commerce commissions and the ONDC alternative, each row carrying its source and verification date",
+      "caption": "Take-rate reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good take rate?",
+      "a": "Most established multi-vendor marketplaces sit between 10% and 20%, and the full range runs from under 2% to over 70%. The right level depends on how much of the transaction the platform actually performs."
+    },
+    {
+      "q": "How is take rate calculated?",
+      "a": "Platform revenue divided by gross merchandise value over the same period. Whether to include advertising, listing fees and logistics revenue changes the answer substantially, so state what is inside the numerator."
+    },
+    {
+      "q": "Are take rates rising or falling?",
+      "a": "Both, in different places. Etsy's rose 180 basis points year on year while Google Play's standard rate fell to 10% on the first $1M. Regulatory pressure and competition are pushing digital rates down and marketplace rates up."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Sets the take rates a business actually faces side by side across app stores, global marketplaces, Indian food delivery and quick commerce, with the ONDC 3% alternative, rather than quoting one sector's range as the benchmark.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

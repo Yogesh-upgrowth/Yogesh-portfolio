@@ -1,0 +1,108 @@
+{
+  "id": "glossary-0707",
+  "url": "/glossary/cohort-analysis",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is Cohort Analysis? Method, Curves and Benchmarks",
+  "meta_description": "Cohort analysis groups users by when they arrived and tracks them separately. The method, what a healthy curve looks like, and what averages hide.",
+  "h1": "What is cohort analysis?",
+  "primary_keyword": "what is cohort analysis",
+  "secondary_keywords": [
+    "cohort analysis method",
+    "retention cohort benchmark"
+  ],
+  "entity_a": "cohort-analysis",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-38",
+    "f-unit-39",
+    "f-unit-11",
+    "f-glossary-0700-02",
+    "f-act-18",
+    "f-act-14"
+  ],
+  "experience_used": [
+    "exp-020",
+    "exp-009"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/retention-rate",
+      "anchor": "retention rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/churn-rate",
+      "anchor": "churn rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/cohort-revenue-model",
+      "anchor": "the cohort revenue model",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "retention benchmarks",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#cohort-benchmarks",
+      "alt": "Six cohort reference points: median day-1 and day-30 app retention, the iOS and Android split, annual renewal by category, trial conversion by category, the lifespan of a withdrawn Indian membership programme and quick-commerce market share by gross merchandise value, each row carrying its source and verification date",
+      "caption": "Cohort reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What does a healthy cohort curve look like?",
+      "a": "It falls steeply, then flattens. A flattening curve means a durable use case has been found. A curve that keeps sliding has not found one, however strong its first week looks."
+    },
+    {
+      "q": "How large does a cohort need to be?",
+      "a": "Large enough that a week's noise does not move the line. In practice, group by month rather than by week for small products, and keep the cohort closed once it is defined."
+    },
+    {
+      "q": "What does an aggregate retention number hide?",
+      "a": "Direction. A product whose newest cohorts retain worse can show flat aggregate retention for months while the underlying trend worsens, because older and better cohorts are still in the average."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Uses a real withdrawn Indian membership programme and a decomposed growth curve as the worked cases, rather than a generic retention grid, and states the specific way an aggregate number can hold flat while every new cohort worsens.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

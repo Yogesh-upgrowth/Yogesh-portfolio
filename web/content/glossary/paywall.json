@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0702",
+  "url": "/glossary/paywall",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is a Paywall? Types, Benchmarks and the Trade-off",
+  "meta_description": "A paywall is the gate between free use and payment. Hard, soft and metered types, the 10.7% against 2.1% conversion gap, and what each type costs you.",
+  "h1": "What is a paywall?",
+  "primary_keyword": "what is a paywall",
+  "secondary_keywords": [
+    "paywall types",
+    "hard paywall conversion benchmark"
+  ],
+  "entity_a": "paywall",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-glossary-0700-04",
+    "f-unit-05",
+    "f-act-03",
+    "f-act-10",
+    "f-unit-02",
+    "f-act-11"
+  ],
+  "experience_used": [
+    "exp-013"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/freemium",
+      "anchor": "freemium",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/free-trial",
+      "anchor": "free trial",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/paywall-uplift-calculator",
+      "anchor": "the paywall uplift calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/inr-price-points-that-convert",
+      "anchor": "INR price points that convert",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#paywall-benchmarks",
+      "alt": "Six paywall reference points: hard paywall against freemium download-to-paid conversion, the highest-lifetime-value paywall configuration, the bimodal freemium conversion split, store commission rates, the iOS to Android revenue gap and Apple's new core technology commission, each row carrying its source and verification date",
+      "caption": "Paywall reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which paywall converts best?",
+      "a": "Hard paywalls reach 10.7% median day-35 download-to-paid against 2.1% for freemium. That is a measured-rate difference and a funnel-size difference at once, so the higher rate does not automatically mean more revenue."
+    },
+    {
+      "q": "What are the main paywall types?",
+      "a": "Hard gates everything behind payment. Soft allows limited use then asks. Metered allows a fixed number of actions. Freemium keeps a permanently free tier. Each trades reach against measured conversion."
+    },
+    {
+      "q": "Where should the paywall sit in onboarding?",
+      "a": "After the first moment of value and before the second. Placed earlier it converts a colder audience; placed later it loses people who were ready. The right position is the step where the user has seen the product work."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Reads the hard-against-freemium conversion gap as a denominator effect rather than a persuasion win, and prices the paywall decision against store commission and platform revenue mix, which the type-comparison pages leave out entirely.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

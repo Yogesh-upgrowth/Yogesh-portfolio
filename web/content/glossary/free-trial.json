@@ -1,0 +1,107 @@
+{
+  "id": "glossary-0704",
+  "url": "/glossary/free-trial",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is a Free Trial? Length, Benchmarks and Trade-offs",
+  "meta_description": "A free trial gives full access for a fixed window. The length data, the conversion medians by category, and why India needs the payment rail decided first.",
+  "h1": "What is a free trial?",
+  "primary_keyword": "what is a free trial",
+  "secondary_keywords": [
+    "free trial length benchmark",
+    "free trial conversion rate"
+  ],
+  "entity_a": "free-trial",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-glossary-0700-01",
+    "f-glossary-0700-02",
+    "f-glossary-0700-05",
+    "f-unit-05",
+    "f-unit-25",
+    "f-act-06"
+  ],
+  "experience_used": [
+    "exp-012"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/trial-to-paid-conversion",
+      "anchor": "trial-to-paid conversion",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/paywall",
+      "anchor": "paywall",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/trial-length-optimizer",
+      "anchor": "the trial length optimizer",
+      "role": "tool"
+    },
+    {
+      "url": "/india/free-trials-in-india",
+      "anchor": "free trials in India",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#trial-benchmarks",
+      "alt": "Six free-trial reference points: median trial-to-paid by trial length, the spread by category, the lifetime-value lift from adding a trial to an annual plan, the highest-lifetime-value configuration, monthly UPI Autopay mandate volume in India and typical time to value, each row carrying its source and verification date",
+      "caption": "Free-trial reference points, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long should a free trial be?",
+      "a": "Longer converts better in the published data: 42.5% median for trials of 17 to 32 days against 25.5% for four days or fewer. The long trial buys enough sessions for the product to prove itself."
+    },
+    {
+      "q": "Should the trial require a card?",
+      "a": "Requiring one raises conversion and shrinks starts. In India the question is sharper, because the card rail itself fails more often than UPI Autopay, which now carries more than 120 million mandates a month."
+    },
+    {
+      "q": "Should a trial sit on the monthly or annual plan?",
+      "a": "Annual, usually. Adding a trial to an annual plan raises one-year lifetime value by 35% against a direct purchase, so the choice is rarely trial against no trial. It is which plan the trial sits on."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Ties trial length to time-to-value rather than treating it as a pricing preference, and makes the payment rail part of the trial design, which matters in India where the card mandate is the failure point rather than the offer.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

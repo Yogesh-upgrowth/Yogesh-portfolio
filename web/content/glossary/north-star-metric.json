@@ -1,0 +1,108 @@
+{
+  "id": "glossary-0705",
+  "url": "/glossary/north-star-metric",
+  "archetype": "glossary",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-glossary-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "What is a North Star Metric? Definition and Selection",
+  "meta_description": "A north star metric is the single number a team steers by. How to pick one, the tests it has to pass, and the reported figures that fail every one of them.",
+  "h1": "What is a north star metric?",
+  "primary_keyword": "what is a north star metric",
+  "secondary_keywords": [
+    "north star metric examples",
+    "how to choose a north star metric"
+  ],
+  "entity_a": "north-star-metric",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-unit-24",
+    "f-act-05",
+    "f-unit-23",
+    "f-unit-08",
+    "f-act-19",
+    "f-act-04"
+  ],
+  "experience_used": [
+    "exp-032",
+    "exp-033"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary",
+      "anchor": "the glossary",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/activation-rate",
+      "anchor": "activation rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/aha-moment",
+      "anchor": "the aha moment",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "retention benchmarks",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#north-star-tests",
+      "alt": "Six reference points for choosing a north star metric: the share of companies that track activation, the share of users who never reach first value, the top-decile against median activation gap, the standing LTV to CAC bar, platform-reported against true return on ad spend, and the SaaS-only activation median, each row carrying its source and verification date",
+      "caption": "What a north star candidate has to survive. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What makes a good north star metric?",
+      "a": "It has to move before revenue does, respond to work the team controls, and break if the product gets worse. A metric that only rises is a vanity metric with a plan attached."
+    },
+    {
+      "q": "Should revenue be the north star metric?",
+      "a": "Rarely. Revenue is the outcome, and it lags too far behind the work to steer by. The better candidate is the leading indicator that predicts it, which for most product-led companies is activation."
+    },
+    {
+      "q": "How many north star metrics should a team have?",
+      "a": "One, with a small set of inputs beneath it. Aggregating independently-set team goals produces a list, and a list is a tracker rather than a direction."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the glossary",
+      "href": "/glossary"
+    }
+  },
+  "schema_types": [
+    "DefinedTerm",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Gives three falsifiable tests a candidate metric has to pass and then applies them to a real reported figure that fails — platform-reported return on ad spend against true return after commission — instead of listing well-known companies' metrics.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

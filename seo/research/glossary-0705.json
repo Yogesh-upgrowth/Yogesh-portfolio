@@ -1,0 +1,113 @@
+{
+  "page_id": "glossary-0705",
+  "url": "/glossary/north-star-metric",
+  "archetype": "glossary",
+  "primary_keyword": "what is a north star metric",
+  "secondary_keywords": [
+    "north star metric examples",
+    "how to choose a north star metric"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-unit-24",
+      "claim": "Only about 34% of product-led companies actively track activation at all",
+      "value": "34",
+      "unit": "%",
+      "source_url": "https://mixpanel.com/blog/product-led-growth/",
+      "source_title": "Product-led growth in 2026",
+      "source_domain": "mixpanel.com",
+      "excerpt": "Only about 34% of PLG companies actively track activation, the single metric that best predicts whether a free user ever becomes a paying one.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-05",
+      "claim": "Two-thirds of new SaaS users never reach the aha moment",
+      "value": "66",
+      "unit": "%",
+      "source_url": "https://www.digitalapplied.com/blog/customer-onboarding-time-to-value-2026-saas-metrics-framework",
+      "source_title": "Time to Value: The 2026 SaaS Onboarding Metrics Framework",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "Two-thirds of new SaaS users never reach the aha moment.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-23",
+      "claim": "The top 10% of products see four times the median day-one activation: 21% against 5%",
+      "value": "21",
+      "unit": "%",
+      "source_url": "https://info.amplitude.com/rs/138-CDN-550/images/the-product-benchmark-report.pdf",
+      "source_title": "Product Benchmark Report",
+      "source_domain": "amplitude.com",
+      "excerpt": "The top 10% of products see 4x higher day-one activation than the median (21% vs. 5%).",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-08",
+      "claim": "3 to 1 remains the standing LTV:CAC bar while investors increasingly expect 4 to 1 or 5 to 1",
+      "value": "3",
+      "unit": "ratio",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions/",
+      "source_title": "State of In-App Subscriptions 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "A ratio of 4:1 to 5:1 is increasingly expected by investors, though 3:1 remains the gold standard for mobile apps.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-19",
+      "claim": "Quick-commerce platforms report 3x to 5x return on ad spend, while true return after commission and cost of goods runs 1.2x to 2.5x",
+      "value": "1.2-2.5",
+      "unit": "x",
+      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "source_title": "Quick Commerce Ad Benchmarks India 2026",
+      "source_domain": "ladya.in",
+      "excerpt": "Platform-reported RoAS ranges from 3x to 5x, but true RoAS after commission and cost of goods is 1.2x to 2.5x depending on the platform.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-04",
+      "claim": "The SaaS-only median activation rate is 30%, against a blended free-to-paid conversion of 8%",
+      "value": "30",
+      "unit": "%",
+      "source_url": "https://www.userflow.com/blog/saas-onboarding-benchmarks-2026",
+      "source_title": "SaaS Onboarding Benchmarks 2026",
+      "source_domain": "userflow.com",
+      "excerpt": "The SaaS-only median activation rate is 30%, and the blended free-to-paid conversion rate is 8%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {}
+}
