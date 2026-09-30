@@ -4,7 +4,7 @@ _Generated from the prerendered HTML. Nav, header and footer are excluded from t
 
 - Pages measured: **126** (functional pages are exempt)
 - Meeting the minimum: **22**
-- Short: **104**, by **43,137** words in total
+- Short: **104**, by **43,118** words in total
 
 A short page is not automatically a problem. Where the first-hand material to
 fill it does not exist yet, the page staying short is the correct outcome —
@@ -21,7 +21,7 @@ scaled-content guidance describes.
 | `/case-studies/machine-learning` | core | 422 | 2000 | 1578 |
 | `/case-studies/growth` | core | 437 | 2000 | 1563 |
 | `/` | core | 440 | 2000 | 1560 |
-| `/about-yogesh-yadav` | core | 618 | 2000 | 1382 |
+| `/about-yogesh-yadav` | core | 637 | 2000 | 1363 |
 | `/consulting/product-monetisation-consultant` | core | 670 | 2000 | 1330 |
 | `/consulting/marketplace-product-consultant` | core | 705 | 2000 | 1295 |
 | `/consulting/consumer-app-growth-consultant` | core | 721 | 2000 | 1279 |
@@ -125,7 +125,7 @@ scaled-content guidance describes.
 | Page | Type | Words | Minimum |
 |---|---|---|---|
 | `/` | core | 440 | 2000 |
-| `/about-yogesh-yadav` | core | 618 | 2000 |
+| `/about-yogesh-yadav` | core | 637 | 2000 |
 | `/benchmarks/app-store-conversion/entertainment` | benchmark | 203 | 500 |
 | `/benchmarks/app-store-conversion/medical` | benchmark | 205 | 500 |
 | `/benchmarks/app-store-conversion/subscription-apps` | benchmark | 342 | 500 |

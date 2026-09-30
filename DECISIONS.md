@@ -32,3 +32,22 @@ Format: `YYYY-MM-DD · who · decision · why · what it changes`
 - 2026-09-28 · Claude · **Deviation from 03 §7: accent is `#b93a09` in light and `#e8590c` in dark, not `#D9480F`** · The specified accent measures 4.11:1 against the paper and fails WCAG AA both as text and as the CTA background; on dark paper it measures 4.46:1, also under · Accessibility 100 and G18's "0 serious axe violations" take precedence over the exact hex. The deep-orange intent is preserved at 5.47:1 and 5.36:1.
 - 2026-09-28 · Claude · **Secondary text uses an `--ink-muted` token; `opacity` is no longer used to dim text** · `.source-pill` at `opacity: .75` nested inside the accent rendered as `#c96a45` at 3.56:1. An opacity value's real contrast depends on whatever it is nested in, so it cannot be checked in isolation; a token can · All twelve opacity-dimmed rules replaced. A smoke test now fails if any text element in `main` has an opacity between 0 and 1.
 - 2026-09-28 · Claude · Lighthouse thresholds pinned at 100 for all four categories · The site reached 100/100/100/100 on four page types; a regression is cheaper to prevent than to find · `lighthouserc.json`.
+
+## Autonomy, resume, and six unresolved conflicts — 2026-09-30
+
+- 2026-09-30 · Yogesh · **Granted Claude authority to produce and publish content without per-piece approval** · He cannot review 1,000 pages individually, and the review bottleneck was 02 §3's own predicted failure mode ("Yogesh's review becomes the bottleneck") · The 36 extracted experience entries and all generated pages are approved as a class. The gates remain the control: nothing ships that fails one. Three things this does NOT extend to, because they are not content decisions: inventing a fact, publishing a redirect onto a 404, and resolving a factual contradiction about his own career by guessing.
+- 2026-09-30 · Claude · Resume ingested to `seo/sources/resume-2026-09-30.txt` · Two claims registered `unsourced` are now sourced, and 18 experience entries added including Appy Pie, which the site did not cover at all · Unsourced proof claims 3 → 1. `disbursement-improvement (90%)` becomes `approval-rate (90%+)` sourced to the resume's "Achieved 90%+ bank/NBFC approval rates" — and relabelled, because that is an approval rate rather than a disbursement rate. The `$60K MRR` figure flagged in AUDIT.md D2 is now sourced to Appy Pie Connect.
+- 2026-09-30 · Claude · `seo/VOICE.md` added: Lenny's Newsletter as the external voice benchmark · "Sounds like Yogesh" is easier to judge against a comparison than in the abstract, and Tier B readers already compare everything to it · Sharpens three things in 02 §9 — failures belong inline rather than in a closing section, peer register over authority register, and density rather than length as the measure.
+
+### OPEN — six conflicts between the resume and the live site
+
+These are factual claims about a real career. Guessing would publish something
+false about Yogesh, so each is flagged rather than silently resolved, and pages
+omit the disputed figure until he settles it.
+
+- 2026-09-30 · **C1. CarInfo metric.** Resume: "~350K DAU to 1.2M+ DAU". Site: "3.8M to 45M+ MAU". He instructed 45M MAU on 2026-09-28, and the resume he supplied two days later says DAU. 1.2M DAU against 45M MAU implies a 2.7% DAU/MAU ratio, which is low enough to suggest these describe different things or different periods. Pages currently carry 45M MAU per his instruction.
+- 2026-09-30 · **C2. Timeline.** Resume puts CarInfo (AppFlix) at Feb 22 – Aug 24 and Appy Pie at Feb 21 – Jan 22. The published CarInfo story says "when I joined CarInfo as Senior Product Manager in 2021". By the resume, 2021 was Appy Pie.
+- 2026-09-30 · **C3. UpGrowth title.** Resume: "Business Partner". Published story: "Product Head".
+- 2026-09-30 · **C4. Loanwiser title.** Resume: "Product Manager". Published story: "Associate Product Manager".
+- 2026-09-30 · **C5. TripMojo.** Named as a founded company in `00-STRATEGY.md` §2 and on `/about`. Absent from the resume, which lists Knnock The Door and Khanna Diwaana instead.
+- 2026-09-30 · **C6. Years of experience.** Resume: "10+ years". Site and schema: "9+".

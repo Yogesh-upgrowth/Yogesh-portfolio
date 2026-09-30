@@ -813,5 +813,384 @@
     "can_name_company": true,
     "timeframe": "2 years",
     "source_session": "extracted-from-published-work-stories-2026-09-30"
+  },
+  {
+    "id": "exp-037",
+    "tags": [
+      "automation",
+      "plg",
+      "pricing"
+    ],
+    "context": "Appy Pie Connect, integrations platform, Noida",
+    "claim": "Pricing an integrations platform on execution volume and connector usage rather than seats took it to roughly $60K MRR. Usage pricing suited it because the value a customer got scaled with runs, not with headcount.",
+    "numbers": [
+      {
+        "metric": "MRR",
+        "value": "~$60K"
+      },
+      {
+        "metric": "third-party apps rationalised",
+        "value": "2,000+"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Feb 2021 - Jan 2022",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-038",
+    "tags": [
+      "automation",
+      "activation"
+    ],
+    "context": "Appy Pie Connect reliability work, 2021",
+    "claim": "Most of the workflow failures were in three places nobody owned: auth handling, webhook retries and dependency validation. Fixing them lifted workflow success 15-20% without touching the product surface.",
+    "numbers": [
+      {
+        "metric": "workflow success rate",
+        "value": "+15-20%"
+      },
+      {
+        "metric": "automation setup time",
+        "value": "-30%"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Feb 2021 - Jan 2022",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-039",
+    "tags": [
+      "automation",
+      "plg"
+    ],
+    "context": "Appy Pie Connect self-serve, 2021",
+    "claim": "Making failures debuggable by the customer cut sales and support effort about 25%. Idempotency, surfaced errors and retry mechanics did more for support load than any documentation would have.",
+    "numbers": [
+      {
+        "metric": "sales and support effort",
+        "value": "-25%"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Feb 2021 - Jan 2022",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-040",
+    "tags": [
+      "fintech",
+      "ml"
+    ],
+    "context": "Loanwiser lead routing, Chennai",
+    "claim": "Routing applicants only to lenders with high disbursement probability got bank and NBFC approval rates past 90%. The model combined CIBIL scores, 6-12 months of bank statement analysis and behavioural signals.",
+    "numbers": [
+      {
+        "metric": "bank and NBFC approval rate",
+        "value": "90%+"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Apr 2019 - Jan 2021",
+    "source_session": "resume-2026-09-30",
+    "quote": "The lender pain point was never lead volume. It was trust in lead quality."
+  },
+  {
+    "id": "exp-041",
+    "tags": [
+      "fintech",
+      "team"
+    ],
+    "context": "Loanwiser lender CRM, 2020",
+    "claim": "A CRM built around document verification rather than pipeline tracking raised successfully processed loan applications 45% inside three months. The bottleneck was verification communication, not lead flow.",
+    "numbers": [
+      {
+        "metric": "successful applications processed",
+        "value": "+45%",
+        "window": "3 months"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Apr 2019 - Jan 2021",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-042",
+    "tags": [
+      "fintech",
+      "india"
+    ],
+    "context": "Loanwiser B2B2C credit platform",
+    "claim": "Offline loan sourcing through 1.5M+ CSC and kiosk shops, backed by Haryana and Karnataka government programmes, reached borrowers no digital funnel was going to find — without loosening lender-grade credit quality.",
+    "numbers": [
+      {
+        "metric": "CSC and kiosk shops integrated",
+        "value": "1.5M+"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Apr 2019 - Jan 2021",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-043",
+    "tags": [
+      "insurance",
+      "india",
+      "activation"
+    ],
+    "context": "CarInfo motor insurance, both vehicle classes",
+    "claim": "Both insurance lines moved by orders of magnitude once the quote-to-redirect-to-purchase drop-offs were diagnosed: bike from about 10 a day to 6,800+, car from about 5 a day to 2,300+. The fix was CTA placement, partner sequencing and context-led nudges rather than more traffic.",
+    "numbers": [
+      {
+        "metric": "bike insurance per day",
+        "from": "~10",
+        "to": "6,800+"
+      },
+      {
+        "metric": "car insurance per day",
+        "from": "~5",
+        "to": "2,300+"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Feb 2022 - Aug 2024",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-044",
+    "tags": [
+      "insurance",
+      "analytics",
+      "india"
+    ],
+    "context": "CarInfo monetisation shift, 2022-24",
+    "claim": "Moving monetisation from paid acquisition into embedded intent-led in-app journeys cut effective CAC 25-30% and raised LTV without hurting engagement. Ten-plus insurance partners had to be sequenced for it to work.",
+    "numbers": [
+      {
+        "metric": "effective CAC",
+        "value": "-25-30%"
+      },
+      {
+        "metric": "insurance partners aligned",
+        "value": "10+"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Feb 2022 - Aug 2024",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-045",
+    "tags": [
+      "lifecycle",
+      "push",
+      "insurance",
+      "india"
+    ],
+    "context": "CarInfo lifecycle triggers, 2022-24",
+    "claim": "Orchestrating triggers around policy expiry, compliance deadlines and observed intent improved monetisation readiness 60-70%, measured as quote and purchase re-entry rather than first-touch conversion.",
+    "numbers": [
+      {
+        "metric": "monetisation readiness",
+        "value": "+60-70%"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Feb 2022 - Aug 2024",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-046",
+    "tags": [
+      "team",
+      "activation"
+    ],
+    "context": "UpGrowth, Business Partner, four platforms",
+    "claim": "Setting portfolio-level direction on high-intent entry points, trust signals and core journeys lifted activation depth 18-25% across four consumer and B2B platforms. The leverage was in what the four had in common, not in any one roadmap.",
+    "numbers": [
+      {
+        "metric": "activation depth",
+        "value": "+18-25%",
+        "window": "across 4 platforms"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Aug 2024 - present",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-047",
+    "tags": [
+      "team",
+      "experimentation"
+    ],
+    "context": "UpGrowth prioritisation shift",
+    "claim": "Moving four pods off feature output and onto outcome-driven planning raised roadmap delivery predictability about 30%. Fifty-plus engineers, designers and PMs, and the change was in what got counted as done.",
+    "numbers": [
+      {
+        "metric": "roadmap delivery predictability",
+        "value": "+30%"
+      },
+      {
+        "metric": "people across the pods",
+        "value": "50+"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Aug 2024 - present",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-048",
+    "tags": [
+      "analytics",
+      "team"
+    ],
+    "context": "UpGrowth portfolio measurement",
+    "claim": "One measurement framework spanning 20+ growth, retention and monetisation metrics made executive decisions roughly twice as fast. Before it, every decision started with an argument about which number was right.",
+    "numbers": [
+      {
+        "metric": "executive decision speed",
+        "value": "~2x faster"
+      },
+      {
+        "metric": "metrics unified",
+        "value": "20+"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Aug 2024 - present",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-049",
+    "tags": [
+      "analytics",
+      "automation"
+    ],
+    "context": "UpGrowth data reliability",
+    "claim": "Real-time data reliability improved about 80%, which is what made accurate pricing, attribution and repeat monetisation possible across three to four revenue surfaces. Unreliable data does not produce cautious pricing; it produces confident wrong pricing.",
+    "numbers": [
+      {
+        "metric": "data reliability",
+        "value": "+80%"
+      },
+      {
+        "metric": "revenue surfaces enabled",
+        "value": "3-4"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Aug 2024 - present",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-050",
+    "tags": [
+      "automation",
+      "analytics"
+    ],
+    "context": "UpGrowth platform scale",
+    "claim": "Platform-level automation carried two to three times the daily transaction volume while improving SLA adherence 25-30%. Operational leverage, not more people.",
+    "numbers": [
+      {
+        "metric": "daily transaction volume",
+        "value": "2-3x"
+      },
+      {
+        "metric": "SLA adherence",
+        "value": "+25-30%"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Aug 2024 - present",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-051",
+    "tags": [
+      "india",
+      "team"
+    ],
+    "context": "KNIPEX India distribution model, Bangalore",
+    "claim": "A hub-and-spoke launch with three to four anchor distributors per city, aggregating downstream vendor demand into one consolidation point, was what made direct-to-vendor fulfilment from a single Bangalore warehouse work at all.",
+    "numbers": [
+      {
+        "metric": "anchor distributors per city",
+        "value": "3-4"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Sep 2017 - Mar 2019",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-052",
+    "tags": [
+      "india",
+      "automation"
+    ],
+    "context": "KNIPEX India order intake",
+    "claim": "Order intake arrived by email, phone and trade expo and was systemised into one processing workflow. Nothing about it was sophisticated; it simply made order visibility and fulfilment predictable for the first time.",
+    "numbers": [],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "Sep 2017 - Mar 2019",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-053",
+    "tags": [
+      "seo",
+      "automation"
+    ],
+    "context": "Knnock The Door, founder",
+    "claim": "Validating demand on Medium before building anything, then scaling a content platform to 10,000+ published blogs. It was also where I learned SEO and content operations by running them rather than reading about them.",
+    "numbers": [
+      {
+        "metric": "blogs published",
+        "value": "10,000+"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "founder",
+    "source_session": "resume-2026-09-30"
+  },
+  {
+    "id": "exp-054",
+    "tags": [
+      "pricing",
+      "india"
+    ],
+    "context": "Khanna Diwaana, founder, Gurgaon",
+    "claim": "A hyperlocal D2C food business at 300+ daily tiffins that unit economics told me to pivot out of. Customer feedback pointed at fresh grocery retail, and the pivot was the right call rather than a retreat.",
+    "numbers": [
+      {
+        "metric": "daily tiffins served",
+        "value": "300+"
+      }
+    ],
+    "permission": "public",
+    "can_name_company": true,
+    "timeframe": "founder",
+    "source_session": "resume-2026-09-30"
   }
 ]

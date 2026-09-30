@@ -60,7 +60,7 @@ const stats = proofStats([
   "years-experience",
   "team-led",
   "insurance-growth",
-  "disbursement-improvement",
+  "approval-rate",
 ]);
 
 const idealFit = [

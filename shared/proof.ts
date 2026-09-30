@@ -40,6 +40,7 @@ export const PROOF: ProofClaim[] = [
     value: "9+",
     label: "Years Experience",
     source: { kind: "biographical" },
+    note: "His resume (2026-09-30) says 10+ years and the site says 9+. Left at 9+ as the conservative figure until he confirms — understating is survivable, overstating is not. Logged as C6 in DECISIONS.md.",
   },
   {
     id: "industries",
@@ -61,14 +62,20 @@ export const PROOF: ProofClaim[] = [
     note: "A single insurance revenue line, not blended revenue — the CarInfo story says so explicitly. Do not relabel this as overall growth.",
   },
   {
-    id: "disbursement-improvement",
-    value: "90%",
-    label: "Better Disbursement",
+    // Was unsourced. Yogesh's resume (seo/sources/resume-2026-09-30.txt,
+    // Loanwiser, Apr 19 - Jan 21) states: "Achieved 90%+ bank/NBFC approval
+    // rates by introducing ML-driven risk-based lead routing". That is the
+    // approval rate, not a disbursement rate, so the label is corrected too.
+    id: "approval-rate",
+    value: "90%+",
+    label: "Bank Approval Rate",
     source: {
-      kind: "unsourced",
-      reason:
-        "Shown on /work as a headline stat. No matching figure in the Loanwiser story or in any case study's metrics.",
+      kind: "work-story",
+      slug: "loanwiser",
+      quote:
+        "Achieved 90%+ bank/NBFC approval rates by introducing ML-driven risk-based lead routing",
     },
+    note: "Lender approval rate on routed applications, not a disbursement rate. Source: resume, Loanwiser 2019-2021.",
   },
   {
     // Was "1.2M+ DAU", registered unsourced because no case study or work story
