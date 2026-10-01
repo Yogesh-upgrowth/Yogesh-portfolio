@@ -1,0 +1,109 @@
+{
+  "id": "benchmark-0463",
+  "url": "/benchmarks/retention/b2b-saas",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-benchmark-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "B2B SaaS App Retention Benchmarks: D1, D7, D30 (2026)",
+  "meta_description": "B2B SaaS and productivity app retention benchmarks, why the app curve and the contract curve disagree, and the store conversion the category leads on.",
+  "h1": "B2B SaaS app retention benchmarks",
+  "primary_keyword": "saas app retention benchmarks",
+  "secondary_keywords": [
+    "b2b saas retention",
+    "productivity app retention"
+  ],
+  "entity_a": "retention",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-07",
+    "f-bm-12",
+    "f-bm-18",
+    "f-bm-02",
+    "f-bm-06",
+    "f-svc-05"
+  ],
+  "experience_used": [
+    "exp-031",
+    "exp-039"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/nrr",
+      "anchor": "net revenue retention",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/churn/b2b-saas",
+      "anchor": "B2B SaaS churn benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/nrr-grr-calculator",
+      "anchor": "the NRR and GRR calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/services/pricing-and-packaging/b2b-saas",
+      "anchor": "B2B SaaS pricing and packaging",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a retention review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#b2b-retention-table",
+      "alt": "B2B SaaS retention at day 30 against the average iOS app, App Store page-view-to-install for business apps, the category's download-to-trial rank, fintech and social medians for comparison, and hybrid pricing adoption, each row carrying its source and verification date",
+      "caption": "B2B SaaS retention benchmarks, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good day 30 retention rate for a B2B SaaS app?",
+      "a": "Productivity and B2B SaaS apps hold 20% to 32% at day 30, against an average iOS app at 5.3%. The category retains far above consumer apps because the product is used at work, on a schedule somebody else sets."
+    },
+    {
+      "q": "Should a B2B product track app retention at all?",
+      "a": "As a leading indicator, not as the outcome. The contract renews on revenue retention, and a seat that stops opening the app is a renewal risk months before it shows up in NRR — which is exactly what makes the app curve useful."
+    },
+    {
+      "q": "Why does the business category convert so well in the app stores?",
+      "a": "Intent. Business apps convert about 66.7% of App Store page views to installs and record the highest download-to-trial rate of any category, because people search for them with a problem already named."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a b2b-saas retention review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Holds the app retention curve and the contract retention curve apart, which every B2B retention page conflates, and shows why the app number is the earlier signal while the revenue number is the outcome.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

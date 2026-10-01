@@ -1,0 +1,126 @@
+<AnswerBox>
+Fintech app retention benchmarks put the median at 7% on day 30, against a
+cross-industry average of 4%. Strong performers reach 10% to 15%. Day 1 sits at 28%
+and day 7 at 12%. The category beats the average because its use case recurs on a
+date the user does not choose.
+</AnswerBox>
+
+<FactTable
+  id="fintech-retention-table"
+  caption="Fintech retention against the cross-industry average"
+  columns={["Measure", "Fintech", "All categories"]}
+  rows={[
+    { cells: ["Day 1 retention, median", "28%", "25%"], factId: "f-bm-02" },
+    { cells: ["Day 7 retention, median", "12%", "8%"], factId: "f-bm-02" },
+    { cells: ["Day 30 retention, median", "7%", "4%"], factId: "f-bm-01" },
+    { cells: ["Day 30, strong performers", "10% to 15%", "no published figure"], factId: "f-bm-02" },
+    { cells: ["Apps retaining anyone at day 30", "no published figure", "5% to 7%"], factId: "f-bm-08" },
+    { cells: ["Day-35 download-to-paid, NA against IN and SEA", "no published figure", "2.6% against 1.4%"], factId: "f-bm-17" },
+  ]}
+/>
+
+## The numbers, and what is missing from them
+
+Fintech retains a median 28% at day 1, 12% at day 7 and 7% at day 30. The
+cross-industry averages for the same points are 25%, 8% and 4%, so the category's
+advantage widens as the window lengthens. That shape matters more than the level:
+a category that holds its lead at day 30 pulls users back out of
+need rather than novelty.
+
+Two cells here carry no number, deliberately. Nobody publishes strong-performer
+bands for the whole app market, and nobody publishes a fintech-specific figure for
+the share of apps retaining anyone at day 30 — the 5% to 7% range covers all
+categories. Filling those cells from an adjacent category would make the table look
+complete and make it wrong.
+
+## Why fintech differs
+
+The return trigger sits outside the product. A statement date, a bill, an EMI, a
+policy expiry or a tax deadline brings a user back without the product earning
+attention that week. Categories without a calendar must manufacture the reason, and
+that costs money.
+
+A fintech user's value also spreads unevenly. Someone routing a salary through the
+app and someone who checked a balance once both count as retained at day 30, and
+their revenue differs by orders of magnitude. A retention curve alone therefore
+carries less signal here than in a subscription product. Read it next to a
+revenue-weighted version.
+
+AI-led fintech features complicate it further. AI apps earn 41% more revenue per
+payer and churn about 30% faster, so bolting an AI feature onto a fintech product
+can lift revenue per user and shorten the tenure that revenue is drawn from.
+
+## The India layer
+
+There is no published India-specific fintech retention table at day 1, 7 and 30.
+Rather than infer one, the useful India figure is the collection layer underneath
+retention. More than 120 million UPI Autopay mandates are created monthly, and a
+fintech product with a recurring charge either sits on that rail or explains why
+not.
+
+That distinction matters because a retained user and a paying user are not the
+same person in this market. Day-35 download-to-paid conversion runs 2.6% in North
+America against 1.4% across India and South-East Asia, so the same retention curve
+produces about half the revenue conversion.
+
+<FromMyWork exp="exp-012">
+Not supporting UPI was the single most expensive omission in the funnel. Card and
+net banking were the only options in a market where the buying demographic pays by
+UPI. Integration took six weeks, and 73% of purchases came through UPI in the
+first month after launch.
+</FromMyWork>
+
+## What good looks like
+
+At day 30, 10% to 15% puts a fintech app in the strong-performer band. Below 7% the
+product trails its own category rather than the market. Between those two the more
+useful question is which cohort holds. If only the salary-routing users stay, a
+segment the product never deliberately built for carries the headline.
+
+Read the curve's shape before its level. A curve that flattens between day 7 and
+day 30 has found a recurring need. One that keeps sliding has a use case that
+happens once, and no amount of lifecycle messaging turns a one-off need into a
+habit.
+
+One more check belongs here. Split the curve by whether the user completed a
+money-moving action in week one. In most fintech products those two cohorts
+diverge so sharply that a blended figure describes neither, and the blended figure
+is what gets compared against tables like this one.
+
+## If you are below the median
+
+Check collection before retention. A failed mandate leaves the cohort exactly as a
+cancellation does, and most dashboards report the two together, so a fintech
+product reads as disliked when it is merely uncollected. That check costs an
+afternoon and reorders the whole plan often enough to be worth doing first.
+
+Then check the trigger. If the product has no external date that brings a user
+back, retention work means finding one — a statement, a reminder, a deadline —
+rather than writing better notifications for a week in which the user had no reason
+to open anything. Products without a natural date usually have to borrow one from
+the user's own calendar, and that is a product decision rather than a lifecycle
+campaign.
+
+<FromMyWork exp="exp-040">
+Routing applicants only to lenders with high disbursement probability got bank and
+NBFC approval rates to 90%+. The gain came from the routing rule rather than the
+model that fed it.
+</FromMyWork>
+
+
+## How these figures were gathered
+
+Each row names its source and the date it was last checked. Figures come from
+published benchmark reports, not from a panel this site runs.
+
+Three rows say "no published figure". That is the point of them. The inventory rule
+for every benchmark page here is at least three sources or an explicit "insufficient
+public data" mark. Fintech is well covered at day 1, 7 and 30 and poorly covered on
+strong-performer spread, so the table shows both states.
+
+Where a figure exists for all categories but not for fintech, the row carries the
+all-category number and labels it. That is a comparison, not a fintech benchmark,
+and the distinction matters when somebody sets a target from it.
+
+Anything older than 90 days goes back for re-verification before publication. Price
+figures run on a tighter 45-day cycle, because they move faster than retention does.

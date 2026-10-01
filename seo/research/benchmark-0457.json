@@ -1,0 +1,132 @@
+{
+  "page_id": "benchmark-0457",
+  "url": "/benchmarks/retention/fintech",
+  "archetype": "benchmark",
+  "primary_keyword": "fintech app retention benchmarks",
+  "secondary_keywords": [
+    "fintech retention",
+    "fintech d30 retention"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-bm-01",
+      "claim": "The cross-industry app retention average is 25% at day 1, 8% at day 7 and 4% at day 30",
+      "value": "4",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-retention-benchmarks/",
+      "source_title": "Mobile App Retention Benchmarks by Industry",
+      "source_domain": "uxcam.com",
+      "excerpt": "The industry average in 2026 is 25% on Day-1, 8% on Day-7, and 4% at Day-30.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-02",
+      "claim": "Fintech apps retain a median 28% at day 1, 12% at day 7 and 7% at day 30, with strong performers at 35-45%, 18-25% and 10-15%",
+      "value": "7",
+      "unit": "%",
+      "source_url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "source_title": "App Retention Benchmarks: How Your App Stacks Up by Industry",
+      "source_domain": "enable3.io",
+      "excerpt": "Fintech apps: strong performers 35-45% Day-1, 18-25% Day-7, 10-15% Day-30; medians 28%, 12% and 7%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-08",
+      "claim": "Only 5% to 7% of apps still retain users at day 30",
+      "value": "5-7",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-retention-rates/",
+      "source_title": "App Retention Rates",
+      "source_domain": "businessofapps.com",
+      "excerpt": "Only 5-7% of apps retain users by day 30, with most apps losing nearly all users within a month.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-17",
+      "claim": "North America leads day-35 download-to-paid conversion at a 2.6% median, nearly twice India and South-East Asia at 1.4%",
+      "value": "2.6",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "North America leads D35 conversion at 2.6% median, nearly 2x IN/SEA's 1.4%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-20",
+      "claim": "AI apps earn 41% more revenue per payer and churn about 30% faster",
+      "value": "41",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "AI-powered apps generate 41% more revenue per payer, but they churn 30% faster.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-25",
+      "claim": "More than 120 million UPI Autopay mandates are created every month in India",
+      "value": "120",
+      "unit": "million",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "Over 120 million UPI Autopay mandates are created every month in India, supporting SIPs, OTT subscriptions and insurance renewals.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-bm-02"
+    ],
+    "the_numbers": [
+      "f-bm-01",
+      "f-bm-02",
+      "f-bm-08"
+    ],
+    "why_this_industry_differs": [
+      "f-bm-20"
+    ],
+    "india_layer": [
+      "f-unit-25",
+      "f-bm-17"
+    ],
+    "what_good_looks_like": [
+      "f-bm-02"
+    ]
+  }
+}

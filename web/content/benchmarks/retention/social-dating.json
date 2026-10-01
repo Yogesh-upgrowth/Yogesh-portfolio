@@ -1,0 +1,109 @@
+{
+  "id": "benchmark-0468",
+  "url": "/benchmarks/retention/social-dating",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-benchmark-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Dating and Social App Retention Benchmarks (2026)",
+  "meta_description": "Social, dating and community app retention benchmarks for day 1, 7 and 30 — the strongest curve of any category, and why dating inverts the incentive.",
+  "h1": "Dating and social app retention benchmarks",
+  "primary_keyword": "dating and social app retention benchmarks",
+  "secondary_keywords": [
+    "social app retention",
+    "dating app d30 retention"
+  ],
+  "entity_a": "retention",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-06",
+    "f-bm-21",
+    "f-bm-11",
+    "f-bm-17",
+    "f-bm-19",
+    "f-act-19"
+  ],
+  "experience_used": [
+    "exp-013",
+    "exp-019"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/retention-rate",
+      "anchor": "retention rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/churn/social-dating",
+      "anchor": "social and dating churn benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/retention-curve-projector",
+      "anchor": "the retention curve projector",
+      "role": "tool"
+    },
+    {
+      "url": "/india/regional-language-monetization",
+      "anchor": "regional language monetisation",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a retention review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#social-retention-table",
+      "alt": "Social and dating retention at day 1, day 7 and day 30 with the strong-performer band against the cross-industry average, the average US App Store conversion rate, the regional download-to-paid gap, trial cancellation by trial length and reported against true return on ad spend, each row carrying its source and verification date",
+      "caption": "Social and dating retention benchmarks, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good day 30 retention rate for a social app?",
+      "a": "The median is 12% at day 30, three times the 4% cross-industry average, with strong performers at 15% to 20%. Social is the strongest retaining category published, because the value is other people rather than features."
+    },
+    {
+      "q": "Why are dating apps different from social apps?",
+      "a": "Because success removes the user. A dating product that works loses its best-served customers, which no other category has to plan for. No published benchmark separates dating from social, so the 12% median flatters dating and understates community products."
+    },
+    {
+      "q": "Does a high retention rate mean a social app is healthy?",
+      "a": "Not on its own. A social product can retain a shrinking group intensely while failing to add anyone, and a cohort table showing high retention with falling new-cohort size is a product in decline with a flattering curve."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a social and dating retention review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Names the incentive inversion in dating that every blended social benchmark hides — a working dating product loses the users it serves best — and shows how a high retention median can describe a shrinking base.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

@@ -1,0 +1,131 @@
+{
+  "page_id": "benchmark-0465",
+  "url": "/benchmarks/retention/gaming",
+  "archetype": "benchmark",
+  "primary_keyword": "gaming app retention benchmarks",
+  "secondary_keywords": [
+    "fantasy sports retention",
+    "gaming d30 retention"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-bm-05",
+      "claim": "Gaming apps retain a median 32% at day 1, 8% at day 7 and 3% at day 30, with strong performers at 40-50%, 12-18% and 5-8%",
+      "value": "3",
+      "unit": "%",
+      "source_url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "source_title": "App Retention Benchmarks: How Your App Stacks Up by Industry",
+      "source_domain": "enable3.io",
+      "excerpt": "Gaming apps: strong performers 40-50% Day-1, 12-18% Day-7, 5-8% Day-30; medians 32%, 8% and 3%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-09",
+      "claim": "US App Store search install medians span 2.6% to 12.4% across top-level categories, against 0.1% to 2.5% from browse",
+      "value": "2.6-12.4",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "In August 2026, U.S. App Store Search medians spanned 2.6% to 12.4% across top-level categories, while Browse produced 0.1% to 2.5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-11",
+      "claim": "The average US App Store conversion rate across categories is 8.56%, with an average install rate of 3.8%",
+      "value": "8.56",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "The average conversion rate across all categories on the US App Store was 8.56%, while the average install rate across all categories was 3.8%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-19",
+      "claim": "A three-day trial averages 26% cancellations against 51% for a thirty-day trial, and 31.1% of thirty-day trials cancel on day zero",
+      "value": "26",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-subscription-trial-benchmarks/",
+      "source_title": "App Subscription Trial Benchmarks",
+      "source_domain": "businessofapps.com",
+      "excerpt": "A three day trial averages 26% cancellations; a 30 day one 51%. For 30-day trials, 31.1% cancel on day 0.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-16",
+      "claim": "Median revenue per install at day 60 is 0.34 dollars across categories, with 0.66 and above indicating strong 60-day monetisation",
+      "value": "0.34",
+      "unit": "USD",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Average revenue per install at Day 60 has a $0.34 median across all categories, with $0.66+ indicating strong 60-day monetization.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-act-14",
+      "claim": "Indian quick commerce splits by GMV into Blinkit near 46%, Swiggy Instamart near 24% and Zepto near 22%",
+      "value": "46",
+      "unit": "%",
+      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "source_title": "Quick Commerce Ad Benchmarks India 2026",
+      "source_domain": "ladya.in",
+      "excerpt": "Blinkit holds about 46% of the market by GMV, Swiggy Instamart around 24%, and Zepto around 22%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-bm-05"
+    ],
+    "the_numbers": [
+      "f-bm-05",
+      "f-bm-16"
+    ],
+    "why_this_industry_differs": [
+      "f-bm-19"
+    ],
+    "india_layer": [
+      "f-act-14"
+    ],
+    "what_good_looks_like": [
+      "f-bm-09",
+      "f-bm-11"
+    ]
+  }
+}

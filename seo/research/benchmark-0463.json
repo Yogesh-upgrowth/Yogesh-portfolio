@@ -1,0 +1,132 @@
+{
+  "page_id": "benchmark-0463",
+  "url": "/benchmarks/retention/b2b-saas",
+  "archetype": "benchmark",
+  "primary_keyword": "saas app retention benchmarks",
+  "secondary_keywords": [
+    "b2b saas retention",
+    "productivity app retention"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-bm-07",
+      "claim": "Productivity and B2B SaaS apps hold 20% to 32% at day 30, against an average iOS app at 5.3%",
+      "value": "20-32",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-retention-rates/",
+      "source_title": "App Retention Rates",
+      "source_domain": "businessofapps.com",
+      "excerpt": "For productivity and B2B SaaS apps, day-30 retention benchmarks are 20-32%. The average iOS app retention rate drops to 5.3% by day 30.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-12",
+      "claim": "Business apps convert about 66.7% of App Store page views to installs",
+      "value": "66.7",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "Business category shows approximately 66.7% page view to install conversion on App Store.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-18",
+      "claim": "The business category records the highest download-to-trial rate of any app category",
+      "value": "1",
+      "unit": "rank",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "The business app category had the highest download to trial rate out of all categories covered in the State of Subscription Apps.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-02",
+      "claim": "Fintech apps retain a median 28% at day 1, 12% at day 7 and 7% at day 30, with strong performers at 35-45%, 18-25% and 10-15%",
+      "value": "7",
+      "unit": "%",
+      "source_url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "source_title": "App Retention Benchmarks: How Your App Stacks Up by Industry",
+      "source_domain": "enable3.io",
+      "excerpt": "Fintech apps: strong performers 35-45% Day-1, 18-25% Day-7, 10-15% Day-30; medians 28%, 12% and 7%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-06",
+      "claim": "Social apps retain a median 40% at day 1, 18% at day 7 and 12% at day 30, with strong performers at 50-60%, 25-30% and 15-20%",
+      "value": "12",
+      "unit": "%",
+      "source_url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "source_title": "App Retention Benchmarks: How Your App Stacks Up by Industry",
+      "source_domain": "enable3.io",
+      "excerpt": "Social apps: strong performers 50-60% Day-1, 25-30% Day-7, 15-20% Day-30; medians 40%, 18% and 12%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-svc-05",
+      "claim": "37% of B2B software companies now run a hybrid pricing model, up from 25% twelve months earlier",
+      "value": "37",
+      "unit": "%",
+      "source_url": "https://www.growthunhinged.com/p/the-state-of-b2b-monetization-in-2026",
+      "source_title": "The 2026 State of B2B SaaS and AI Monetization Report",
+      "source_domain": "growthunhinged.com",
+      "excerpt": "About two-in-five participants (37%) said they have a hybrid pricing model, up from 25% twelve months ago.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-bm-07"
+    ],
+    "the_numbers": [
+      "f-bm-07",
+      "f-bm-02",
+      "f-bm-06"
+    ],
+    "why_this_industry_differs": [
+      "f-bm-12",
+      "f-bm-18"
+    ],
+    "india_layer": [
+      "f-svc-05"
+    ],
+    "what_good_looks_like": [
+      "f-bm-07"
+    ]
+  }
+}

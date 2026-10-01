@@ -1,0 +1,109 @@
+{
+  "id": "benchmark-0460",
+  "url": "/benchmarks/retention/d2c-ecommerce",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-benchmark-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Ecommerce App Retention Benchmarks: D1, D7, D30 (2026)",
+  "meta_description": "Ecommerce and D2C app retention benchmarks for day 1, 7 and 30, with the purchase-conversion figures that matter more than the curve.",
+  "h1": "Ecommerce app retention benchmarks",
+  "primary_keyword": "ecommerce app retention benchmarks",
+  "secondary_keywords": [
+    "d2c app retention",
+    "ecommerce d30 retention"
+  ],
+  "entity_a": "retention",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-01",
+    "f-bm-03",
+    "f-bm-14",
+    "f-bm-15",
+    "f-bm-08",
+    "f-act-16"
+  ],
+  "experience_used": [
+    "exp-024",
+    "exp-052"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/retention-rate",
+      "anchor": "retention rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/churn/d2c-ecommerce",
+      "anchor": "ecommerce churn benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/retention-curve-projector",
+      "anchor": "the retention curve projector",
+      "role": "tool"
+    },
+    {
+      "url": "/india/cod-to-prepaid-conversion-d2c",
+      "anchor": "COD to prepaid conversion",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a retention review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#ecommerce-retention-table",
+      "alt": "Ecommerce retention against the cross-industry average at day 1, day 7 and day 30, with the strong-performer band, install-to-purchase conversion for retail and travel, a good mobile commerce conversion range and the share of revenue Indian quick-commerce platforms consume, each row carrying its source and verification date",
+      "caption": "Ecommerce retention benchmarks, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good day 30 retention rate for an ecommerce app?",
+      "a": "The ecommerce median is 2% at day 30, below the 4% cross-industry average, and strong performers reach 3% to 6%. The category retains poorly by design: buying is episodic rather than habitual."
+    },
+    {
+      "q": "Why is ecommerce app retention so low?",
+      "a": "Because the need is intermittent and the alternative is frictionless. A user who wants nothing this month has no reason to open the app, and the browser is always available. Retention here tracks purchase frequency, not satisfaction."
+    },
+    {
+      "q": "Should an ecommerce app optimise retention or purchase rate?",
+      "a": "Purchase rate first. Install-to-purchase runs 1.38% for retail against 2.41% for travel, and a retained user who never buys costs money to serve. The curve matters once the purchase works."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get an ecommerce retention review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Reads ecommerce retention as a function of purchase frequency rather than satisfaction, pairing the curve with install-to-purchase rates and the Indian platform take that decides whether a retained buyer is profitable at all.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

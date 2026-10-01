@@ -1,0 +1,109 @@
+{
+  "id": "benchmark-0457",
+  "url": "/benchmarks/retention/fintech",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-benchmark-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Fintech App Retention Benchmarks: D1, D7 and D30 (2026)",
+  "meta_description": "Fintech app retention benchmarks for day 1, 7 and 30, with the median and strong-performer bands, and the cells where no public figure exists.",
+  "h1": "Fintech app retention benchmarks",
+  "primary_keyword": "fintech app retention benchmarks",
+  "secondary_keywords": [
+    "fintech retention",
+    "fintech d30 retention"
+  ],
+  "entity_a": "retention",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-01",
+    "f-bm-02",
+    "f-bm-08",
+    "f-bm-17",
+    "f-bm-20",
+    "f-unit-25"
+  ],
+  "experience_used": [
+    "exp-040",
+    "exp-012"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/retention-rate",
+      "anchor": "retention rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/churn/fintech",
+      "anchor": "fintech churn benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/retention-curve-projector",
+      "anchor": "the retention curve projector",
+      "role": "tool"
+    },
+    {
+      "url": "/india/payment-success-rates-india",
+      "anchor": "payment success rates in India",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a retention review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#fintech-retention-table",
+      "alt": "Fintech retention against the cross-industry average at day 1, day 7 and day 30, with the strong-performer band, the share of apps retaining anyone at day 30, the regional download-to-paid gap, the AI churn premium and monthly UPI Autopay mandate volume, each row carrying its source and verification date",
+      "caption": "Fintech retention benchmarks, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good day 30 retention rate for a fintech app?",
+      "a": "The fintech median is 7% at day 30 and strong performers reach 10% to 15%. Against a cross-industry average of 4%, fintech retains better than most categories because the use case recurs on a schedule."
+    },
+    {
+      "q": "Why is fintech retention higher than the app average?",
+      "a": "Because the need repeats without marketing. A bill, a statement, an EMI or a policy renewal brings a user back on a date they did not choose, which is a structural advantage over categories that have to manufacture a reason."
+    },
+    {
+      "q": "Are there India-specific fintech retention figures?",
+      "a": "Not published at this granularity, and this page says so rather than borrowing from a global table. What is published for India is the collection layer: more than 120 million UPI Autopay mandates a month, which decides whether a retained user actually pays."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a fintech retention review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Separates retained from collected, which every other fintech retention page conflates: a fintech user can be fully retained and still leave the revenue line through a failed mandate, so the page carries the India collection figures beside the retention bands.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

@@ -1,0 +1,1120 @@
+{
+  "batch_id": "w1-benchmark-01",
+  "wave": 1,
+  "verified_on": "2026-09-30",
+  "fx_rate": 95.89,
+  "default_cta": {
+    "primary": {
+      "label": "Get a benchmarks review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "facts": {
+    "f-unit-25": {
+      "fact_id": "f-unit-25",
+      "claim": "More than 120 million UPI Autopay mandates are created every month in India",
+      "value": "120",
+      "unit": "million",
+      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
+      "source_domain": "razorpay.com",
+      "excerpt": "Over 120 million UPI Autopay mandates are created every month in India, supporting SIPs, OTT subscriptions and insurance renewals.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-act-07": {
+      "fact_id": "f-act-07",
+      "claim": "AI and ML products show 54.8% benchmark activation with a time-to-value median near 17 hours, against 42.6% for CRM and sales tools",
+      "value": "54.8",
+      "unit": "%",
+      "source_url": "https://www.digitalapplied.com/blog/customer-onboarding-time-to-value-2026-saas-metrics-framework",
+      "source_title": "Time to Value: The 2026 SaaS Onboarding Metrics Framework",
+      "source_domain": "digitalapplied.com",
+      "excerpt": "AI & ML products have benchmark activation of 54.8% with TTV medians of roughly 17 hours. CRM & Sales products show 42.6% benchmark activation.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-14": {
+      "fact_id": "f-act-14",
+      "claim": "Indian quick commerce splits by GMV into Blinkit near 46%, Swiggy Instamart near 24% and Zepto near 22%",
+      "value": "46",
+      "unit": "%",
+      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "source_title": "Quick Commerce Ad Benchmarks India 2026",
+      "source_domain": "ladya.in",
+      "excerpt": "Blinkit holds about 46% of the market by GMV, Swiggy Instamart around 24%, and Zepto around 22%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-16": {
+      "fact_id": "f-act-16",
+      "claim": "Indian D2C brands lose 30% to 35% of revenue to quick-commerce platforms across listing fees, mandatory ad spend, commission and operations",
+      "value": "30-35",
+      "unit": "%",
+      "source_url": "https://base.com/en-IN/blog/quick-commerce-for-d2c-brands-the-complete-guide-2026/",
+      "source_title": "Quick Commerce for D2C Brands",
+      "source_domain": "base.com",
+      "excerpt": "For D2C brands, platforms consume 30% to 35% of revenue between listing fees, mandatory ad spend, commission, and operations.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-19": {
+      "fact_id": "f-act-19",
+      "claim": "Quick-commerce platforms report 3x to 5x return on ad spend, while true return after commission and cost of goods runs 1.2x to 2.5x",
+      "value": "1.2-2.5",
+      "unit": "x",
+      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "source_title": "Quick Commerce Ad Benchmarks India 2026",
+      "source_domain": "ladya.in",
+      "excerpt": "Platform-reported RoAS ranges from 3x to 5x, but true RoAS after commission and cost of goods is 1.2x to 2.5x depending on the platform.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-svc-05": {
+      "fact_id": "f-svc-05",
+      "claim": "37% of B2B software companies now run a hybrid pricing model, up from 25% twelve months earlier",
+      "value": "37",
+      "unit": "%",
+      "source_url": "https://www.growthunhinged.com/p/the-state-of-b2b-monetization-in-2026",
+      "source_title": "The 2026 State of B2B SaaS and AI Monetization Report",
+      "source_domain": "growthunhinged.com",
+      "excerpt": "About two-in-five participants (37%) said they have a hybrid pricing model, up from 25% twelve months ago.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-bm-01": {
+      "fact_id": "f-bm-01",
+      "claim": "The cross-industry app retention average is 25% at day 1, 8% at day 7 and 4% at day 30",
+      "value": "4",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-retention-benchmarks/",
+      "source_title": "Mobile App Retention Benchmarks by Industry",
+      "source_domain": "uxcam.com",
+      "excerpt": "The industry average in 2026 is 25% on Day-1, 8% on Day-7, and 4% at Day-30.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-bm-02": {
+      "fact_id": "f-bm-02",
+      "claim": "Fintech apps retain a median 28% at day 1, 12% at day 7 and 7% at day 30, with strong performers at 35-45%, 18-25% and 10-15%",
+      "value": "7",
+      "unit": "%",
+      "source_url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "source_title": "App Retention Benchmarks: How Your App Stacks Up by Industry",
+      "source_domain": "enable3.io",
+      "excerpt": "Fintech apps: strong performers 35-45% Day-1, 18-25% Day-7, 10-15% Day-30; medians 28%, 12% and 7%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-03": {
+      "fact_id": "f-bm-03",
+      "claim": "E-commerce apps retain a median 18% at day 1, 5% at day 7 and 2% at day 30, with strong performers at 25-30%, 8-12% and 3-6%",
+      "value": "2",
+      "unit": "%",
+      "source_url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "source_title": "App Retention Benchmarks: How Your App Stacks Up by Industry",
+      "source_domain": "enable3.io",
+      "excerpt": "Ecommerce apps: strong performers 25-30% Day-1, 8-12% Day-7, 3-6% Day-30; medians 18%, 5% and 2%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-04": {
+      "fact_id": "f-bm-04",
+      "claim": "Health and fitness apps retain a median 25% at day 1, 10% at day 7 and 5% at day 30, with strong performers at 35-45%, 15-22% and 8-12%",
+      "value": "5",
+      "unit": "%",
+      "source_url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "source_title": "App Retention Benchmarks: How Your App Stacks Up by Industry",
+      "source_domain": "enable3.io",
+      "excerpt": "Health and fitness apps: strong performers 35-45% Day-1, 15-22% Day-7, 8-12% Day-30; medians 25%, 10% and 5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-05": {
+      "fact_id": "f-bm-05",
+      "claim": "Gaming apps retain a median 32% at day 1, 8% at day 7 and 3% at day 30, with strong performers at 40-50%, 12-18% and 5-8%",
+      "value": "3",
+      "unit": "%",
+      "source_url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "source_title": "App Retention Benchmarks: How Your App Stacks Up by Industry",
+      "source_domain": "enable3.io",
+      "excerpt": "Gaming apps: strong performers 40-50% Day-1, 12-18% Day-7, 5-8% Day-30; medians 32%, 8% and 3%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-06": {
+      "fact_id": "f-bm-06",
+      "claim": "Social apps retain a median 40% at day 1, 18% at day 7 and 12% at day 30, with strong performers at 50-60%, 25-30% and 15-20%",
+      "value": "12",
+      "unit": "%",
+      "source_url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "source_title": "App Retention Benchmarks: How Your App Stacks Up by Industry",
+      "source_domain": "enable3.io",
+      "excerpt": "Social apps: strong performers 50-60% Day-1, 25-30% Day-7, 15-20% Day-30; medians 40%, 18% and 12%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-07": {
+      "fact_id": "f-bm-07",
+      "claim": "Productivity and B2B SaaS apps hold 20% to 32% at day 30, against an average iOS app at 5.3%",
+      "value": "20-32",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-retention-rates/",
+      "source_title": "App Retention Rates",
+      "source_domain": "businessofapps.com",
+      "excerpt": "For productivity and B2B SaaS apps, day-30 retention benchmarks are 20-32%. The average iOS app retention rate drops to 5.3% by day 30.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-08": {
+      "fact_id": "f-bm-08",
+      "claim": "Only 5% to 7% of apps still retain users at day 30",
+      "value": "5-7",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-retention-rates/",
+      "source_title": "App Retention Rates",
+      "source_domain": "businessofapps.com",
+      "excerpt": "Only 5-7% of apps retain users by day 30, with most apps losing nearly all users within a month.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-09": {
+      "fact_id": "f-bm-09",
+      "claim": "US App Store search install medians span 2.6% to 12.4% across top-level categories, against 0.1% to 2.5% from browse",
+      "value": "2.6-12.4",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "In August 2026, U.S. App Store Search medians spanned 2.6% to 12.4% across top-level categories, while Browse produced 0.1% to 2.5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-bm-10": {
+      "fact_id": "f-bm-10",
+      "claim": "Medical has the highest iOS install rate by category at 7.8% and entertainment the lowest at 1.1%",
+      "value": "7.8",
+      "unit": "%",
+      "source_url": "https://www.apptweak.com/en/aso-blog/average-app-conversion-rate-per-category",
+      "source_title": "Average App Conversion Rate per Category",
+      "source_domain": "apptweak.com",
+      "excerpt": "Medical had the highest install rate by category on iOS at 7.8%, while entertainment had the lowest at 1.1%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-bm-11": {
+      "fact_id": "f-bm-11",
+      "claim": "The average US App Store conversion rate across categories is 8.56%, with an average install rate of 3.8%",
+      "value": "8.56",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "The average conversion rate across all categories on the US App Store was 8.56%, while the average install rate across all categories was 3.8%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-12": {
+      "fact_id": "f-bm-12",
+      "claim": "Business apps convert about 66.7% of App Store page views to installs",
+      "value": "66.7",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "Business category shows approximately 66.7% page view to install conversion on App Store.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-13": {
+      "fact_id": "f-bm-13",
+      "claim": "Health and fitness apps show a 4% to 8% impression-to-page-view rate and 25% to 40% page-view-to-install",
+      "value": "25-40",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "Health & Fitness typically shows 4-8% IPV rate and 25-40% page view to install rate, with 1-3% impression to install.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-14": {
+      "fact_id": "f-bm-14",
+      "claim": "Most apps convert 1% to 2% of installs into a purchase, with retail at 1.38% and travel at 2.41%",
+      "value": "1.38",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-conversion-rate/",
+      "source_title": "Mobile App Conversion Rate Benchmarks",
+      "source_domain": "uxcam.com",
+      "excerpt": "Most mobile apps see install-to-purchase conversion between 1% and 2%. Retail apps 1.38%; travel apps 2.41%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-bm-15": {
+      "fact_id": "f-bm-15",
+      "claim": "A good conversion rate for an e-commerce mobile app sits around 2% to 6% depending on order value and purchase frequency",
+      "value": "2-6",
+      "unit": "%",
+      "source_url": "https://blendcommerce.com/blogs/shopify/ecommerce-conversion-rate-benchmarks-2026",
+      "source_title": "eCommerce Conversion Rate Benchmarks 2026",
+      "source_domain": "blendcommerce.com",
+      "excerpt": "A good conversion rate for an ecommerce mobile app sits around 2% to 6%, depending on industry, average order value, product type and purchase frequency.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-16": {
+      "fact_id": "f-bm-16",
+      "claim": "Median revenue per install at day 60 is 0.34 dollars across categories, with 0.66 and above indicating strong 60-day monetisation",
+      "value": "0.34",
+      "unit": "USD",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Average revenue per install at Day 60 has a $0.34 median across all categories, with $0.66+ indicating strong 60-day monetization.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-bm-17": {
+      "fact_id": "f-bm-17",
+      "claim": "North America leads day-35 download-to-paid conversion at a 2.6% median, nearly twice India and South-East Asia at 1.4%",
+      "value": "2.6",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "North America leads D35 conversion at 2.6% median, nearly 2x IN/SEA's 1.4%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-bm-18": {
+      "fact_id": "f-bm-18",
+      "claim": "The business category records the highest download-to-trial rate of any app category",
+      "value": "1",
+      "unit": "rank",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "The business app category had the highest download to trial rate out of all categories covered in the State of Subscription Apps.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-19": {
+      "fact_id": "f-bm-19",
+      "claim": "A three-day trial averages 26% cancellations against 51% for a thirty-day trial, and 31.1% of thirty-day trials cancel on day zero",
+      "value": "26",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-subscription-trial-benchmarks/",
+      "source_title": "App Subscription Trial Benchmarks",
+      "source_domain": "businessofapps.com",
+      "excerpt": "A three day trial averages 26% cancellations; a 30 day one 51%. For 30-day trials, 31.1% cancel on day 0.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-21": {
+      "fact_id": "f-bm-21",
+      "claim": "Across 31 app categories worldwide, 25.3% of users return on day 1 and average retention falls to 5.7% by day 30",
+      "value": "5.7",
+      "unit": "%",
+      "source_url": "https://userpilot.com/blog/mobile-app-retention/",
+      "source_title": "Mobile App Retention in 2026",
+      "source_domain": "userpilot.com",
+      "excerpt": "Only 25.3% of mobile app users return on Day 1, with average retention falling to 5.7% by Day 30 across 31 app categories worldwide.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-20": {
+      "fact_id": "f-bm-20",
+      "claim": "AI apps earn 41% more revenue per payer and churn about 30% faster",
+      "value": "41",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "AI-powered apps generate 41% more revenue per payer, but they churn 30% faster.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  },
+  "pages": [
+    {
+      "id": "benchmark-0457",
+      "url": "/benchmarks/retention/fintech",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "Fintech App Retention Benchmarks: D1, D7 and D30 (2026)",
+      "meta_description": "Fintech app retention benchmarks for day 1, 7 and 30, with the median and strong-performer bands, and the cells where no public figure exists.",
+      "h1": "Fintech app retention benchmarks",
+      "primary_keyword": "fintech app retention benchmarks",
+      "secondary_keywords": [
+        "fintech retention",
+        "fintech d30 retention"
+      ],
+      "entity_a": "retention",
+      "entity_b": "fintech",
+      "facts": [
+        "f-bm-01",
+        "f-bm-02",
+        "f-bm-08",
+        "f-bm-17",
+        "f-bm-20",
+        "f-unit-25"
+      ],
+      "experience": [
+        "exp-040",
+        "exp-012"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/retention-rate",
+          "anchor": "retention rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/churn/fintech",
+          "anchor": "fintech churn benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/retention-curve-projector",
+          "anchor": "the retention curve projector",
+          "role": "tool"
+        },
+        {
+          "url": "/india/payment-success-rates-india",
+          "anchor": "payment success rates in India",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a retention review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#fintech-retention-table",
+          "alt": "Fintech retention against the cross-industry average at day 1, day 7 and day 30, with the strong-performer band, the share of apps retaining anyone at day 30, the regional download-to-paid gap, the AI churn premium and monthly UPI Autopay mandate volume, each row carrying its source and verification date",
+          "caption": "Fintech retention benchmarks, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a fintech retention review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good day 30 retention rate for a fintech app?",
+          "a": "The fintech median is 7% at day 30 and strong performers reach 10% to 15%. Against a cross-industry average of 4%, fintech retains better than most categories because the use case recurs on a schedule."
+        },
+        {
+          "q": "Why is fintech retention higher than the app average?",
+          "a": "Because the need repeats without marketing. A bill, a statement, an EMI or a policy renewal brings a user back on a date they did not choose, which is a structural advantage over categories that have to manufacture a reason."
+        },
+        {
+          "q": "Are there India-specific fintech retention figures?",
+          "a": "Not published at this granularity, and this page says so rather than borrowing from a global table. What is published for India is the collection layer: more than 120 million UPI Autopay mandates a month, which decides whether a retained user actually pays."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Separates retained from collected, which every other fintech retention page conflates: a fintech user can be fully retained and still leave the revenue line through a failed mandate, so the page carries the India collection figures beside the retention bands.",
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-02"
+        ],
+        "the_numbers": [
+          "f-bm-01",
+          "f-bm-02",
+          "f-bm-08"
+        ],
+        "why_this_industry_differs": [
+          "f-bm-20"
+        ],
+        "india_layer": [
+          "f-unit-25",
+          "f-bm-17"
+        ],
+        "what_good_looks_like": [
+          "f-bm-02"
+        ]
+      },
+      "body": "\n<AnswerBox>\nFintech app retention benchmarks put the median at 7% on day 30, against a\ncross-industry average of 4%. Strong performers reach 10% to 15%. Day 1 sits at 28%\nand day 7 at 12%. The category beats the average because its use case recurs on a\ndate the user does not choose.\n</AnswerBox>\n\n<FactTable\n  id=\"fintech-retention-table\"\n  caption=\"Fintech retention against the cross-industry average\"\n  columns={[\"Measure\", \"Fintech\", \"All categories\"]}\n  rows={[\n    { cells: [\"Day 1 retention, median\", \"28%\", \"25%\"], factId: \"f-bm-02\" },\n    { cells: [\"Day 7 retention, median\", \"12%\", \"8%\"], factId: \"f-bm-02\" },\n    { cells: [\"Day 30 retention, median\", \"7%\", \"4%\"], factId: \"f-bm-01\" },\n    { cells: [\"Day 30, strong performers\", \"10% to 15%\", \"no published figure\"], factId: \"f-bm-02\" },\n    { cells: [\"Apps retaining anyone at day 30\", \"no published figure\", \"5% to 7%\"], factId: \"f-bm-08\" },\n    { cells: [\"Day-35 download-to-paid, NA against IN and SEA\", \"no published figure\", \"2.6% against 1.4%\"], factId: \"f-bm-17\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nFintech retains a median 28% at day 1, 12% at day 7 and 7% at day 30. The\ncross-industry averages for the same points are 25%, 8% and 4%, so the category's\nadvantage widens as the window lengthens. That shape matters more than the level:\na category that holds its lead at day 30 pulls users back out of\nneed rather than novelty.\n\nTwo cells here carry no number, deliberately. Nobody publishes strong-performer\nbands for the whole app market, and nobody publishes a fintech-specific figure for\nthe share of apps retaining anyone at day 30 — the 5% to 7% range covers all\ncategories. Filling those cells from an adjacent category would make the table look\ncomplete and make it wrong.\n\n## Why fintech differs\n\nThe return trigger sits outside the product. A statement date, a bill, an EMI, a\npolicy expiry or a tax deadline brings a user back without the product earning\nattention that week. Categories without a calendar must manufacture the reason, and\nthat costs money.\n\nA fintech user's value also spreads unevenly. Someone routing a salary through the\napp and someone who checked a balance once both count as retained at day 30, and\ntheir revenue differs by orders of magnitude. A retention curve alone therefore\ncarries less signal here than in a subscription product. Read it next to a\nrevenue-weighted version.\n\nAI-led fintech features complicate it further. AI apps earn 41% more revenue per\npayer and churn about 30% faster, so bolting an AI feature onto a fintech product\ncan lift revenue per user and shorten the tenure that revenue is drawn from.\n\n## The India layer\n\nThere is no published India-specific fintech retention table at day 1, 7 and 30.\nRather than infer one, the useful India figure is the collection layer underneath\nretention. More than 120 million UPI Autopay mandates are created monthly, and a\nfintech product with a recurring charge either sits on that rail or explains why\nnot.\n\nThat distinction matters because a retained user and a paying user are not the\nsame person in this market. Day-35 download-to-paid conversion runs 2.6% in North\nAmerica against 1.4% across India and South-East Asia, so the same retention curve\nproduces about half the revenue conversion.\n\n<FromMyWork exp=\"exp-012\">\nNot supporting UPI was the single most expensive omission in the funnel. Card and\nnet banking were the only options in a market where the buying demographic pays by\nUPI. Integration took six weeks, and 73% of purchases came through UPI in the\nfirst month after launch.\n</FromMyWork>\n\n## What good looks like\n\nAt day 30, 10% to 15% puts a fintech app in the strong-performer band. Below 7% the\nproduct trails its own category rather than the market. Between those two the more\nuseful question is which cohort holds. If only the salary-routing users stay, a\nsegment the product never deliberately built for carries the headline.\n\nRead the curve's shape before its level. A curve that flattens between day 7 and\nday 30 has found a recurring need. One that keeps sliding has a use case that\nhappens once, and no amount of lifecycle messaging turns a one-off need into a\nhabit.\n\nOne more check belongs here. Split the curve by whether the user completed a\nmoney-moving action in week one. In most fintech products those two cohorts\ndiverge so sharply that a blended figure describes neither, and the blended figure\nis what gets compared against tables like this one.\n\n## If you are below the median\n\nCheck collection before retention. A failed mandate leaves the cohort exactly as a\ncancellation does, and most dashboards report the two together, so a fintech\nproduct reads as disliked when it is merely uncollected. That check costs an\nafternoon and reorders the whole plan often enough to be worth doing first.\n\nThen check the trigger. If the product has no external date that brings a user\nback, retention work means finding one — a statement, a reminder, a deadline —\nrather than writing better notifications for a week in which the user had no reason\nto open anything. Products without a natural date usually have to borrow one from\nthe user's own calendar, and that is a product decision rather than a lifecycle\ncampaign.\n\n<FromMyWork exp=\"exp-040\">\nRouting applicants only to lenders with high disbursement probability got bank and\nNBFC approval rates to 90%+. The gain came from the routing rule rather than the\nmodel that fed it.\n</FromMyWork>\n\n\n## How these figures were gathered\n\nEach row names its source and the date it was last checked. Figures come from\npublished benchmark reports, not from a panel this site runs.\n\nThree rows say \"no published figure\". That is the point of them. The inventory rule\nfor every benchmark page here is at least three sources or an explicit \"insufficient\npublic data\" mark. Fintech is well covered at day 1, 7 and 30 and poorly covered on\nstrong-performer spread, so the table shows both states.\n\nWhere a figure exists for all categories but not for fintech, the row carries the\nall-category number and labels it. That is a comparison, not a fintech benchmark,\nand the distinction matters when somebody sets a target from it.\n\nAnything older than 90 days goes back for re-verification before publication. Price\nfigures run on a tighter 45-day cycle, because they move faster than retention does.\n"
+    },
+    {
+      "id": "benchmark-0460",
+      "url": "/benchmarks/retention/d2c-ecommerce",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "Ecommerce App Retention Benchmarks: D1, D7, D30 (2026)",
+      "meta_description": "Ecommerce and D2C app retention benchmarks for day 1, 7 and 30, with the purchase-conversion figures that matter more than the curve.",
+      "h1": "Ecommerce app retention benchmarks",
+      "primary_keyword": "ecommerce app retention benchmarks",
+      "secondary_keywords": [
+        "d2c app retention",
+        "ecommerce d30 retention"
+      ],
+      "entity_a": "retention",
+      "entity_b": "d2c-ecommerce",
+      "facts": [
+        "f-bm-01",
+        "f-bm-03",
+        "f-bm-14",
+        "f-bm-15",
+        "f-bm-08",
+        "f-act-16"
+      ],
+      "experience": [
+        "exp-024",
+        "exp-052"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/retention-rate",
+          "anchor": "retention rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/churn/d2c-ecommerce",
+          "anchor": "ecommerce churn benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/retention-curve-projector",
+          "anchor": "the retention curve projector",
+          "role": "tool"
+        },
+        {
+          "url": "/india/cod-to-prepaid-conversion-d2c",
+          "anchor": "COD to prepaid conversion",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a retention review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#ecommerce-retention-table",
+          "alt": "Ecommerce retention against the cross-industry average at day 1, day 7 and day 30, with the strong-performer band, install-to-purchase conversion for retail and travel, a good mobile commerce conversion range and the share of revenue Indian quick-commerce platforms consume, each row carrying its source and verification date",
+          "caption": "Ecommerce retention benchmarks, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get an ecommerce retention review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good day 30 retention rate for an ecommerce app?",
+          "a": "The ecommerce median is 2% at day 30, below the 4% cross-industry average, and strong performers reach 3% to 6%. The category retains poorly by design: buying is episodic rather than habitual."
+        },
+        {
+          "q": "Why is ecommerce app retention so low?",
+          "a": "Because the need is intermittent and the alternative is frictionless. A user who wants nothing this month has no reason to open the app, and the browser is always available. Retention here tracks purchase frequency, not satisfaction."
+        },
+        {
+          "q": "Should an ecommerce app optimise retention or purchase rate?",
+          "a": "Purchase rate first. Install-to-purchase runs 1.38% for retail against 2.41% for travel, and a retained user who never buys costs money to serve. The curve matters once the purchase works."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Reads ecommerce retention as a function of purchase frequency rather than satisfaction, pairing the curve with install-to-purchase rates and the Indian platform take that decides whether a retained buyer is profitable at all.",
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-03"
+        ],
+        "the_numbers": [
+          "f-bm-01",
+          "f-bm-03",
+          "f-bm-08"
+        ],
+        "why_this_industry_differs": [
+          "f-bm-14"
+        ],
+        "india_layer": [
+          "f-act-16"
+        ],
+        "what_good_looks_like": [
+          "f-bm-15"
+        ]
+      },
+      "body": "\n<AnswerBox>\nEcommerce app retention benchmarks put the median at 2% on day 30, below the 4%\ncross-industry average. Day 1 sits at 18% and day 7 at 5%. Strong performers reach\n3% to 6%. The category retains poorly by construction, because buying is episodic\nand the browser sits one tap away.\n</AnswerBox>\n\n<FactTable\n  id=\"ecommerce-retention-table\"\n  caption=\"Ecommerce retention, and the purchase rates that matter more\"\n  columns={[\"Measure\", \"Ecommerce\", \"Reference\"]}\n  rows={[\n    { cells: [\"Day 1 retention, median\", \"18%\", \"25% all categories\"], factId: \"f-bm-03\" },\n    { cells: [\"Day 7 retention, median\", \"5%\", \"8% all categories\"], factId: \"f-bm-01\" },\n    { cells: [\"Day 30 retention, median\", \"2%\", \"4% all categories\"], factId: \"f-bm-03\" },\n    { cells: [\"Install-to-purchase, retail and travel\", \"1.38% and 2.41%\", \"1% to 2% typical\"], factId: \"f-bm-14\" },\n    { cells: [\"Good mobile commerce conversion\", \"2% to 6%\", \"by order value and frequency\"], factId: \"f-bm-15\" },\n    { cells: [\"Apps retaining anyone at day 30\", \"no published figure\", \"5% to 7%\"], factId: \"f-bm-08\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nEcommerce sits below the cross-industry average at every point on the curve: 18%\nagainst 25% at day 1, 5% against 8% at day 7, and 2% against 4% at day 30. Strong\nperformers reach 3% to 6% at day 30, which still falls short of the all-category\naverage. So a category-leading ecommerce app looks mediocre against a general table,\nand that is a measurement artefact rather than a finding.\n\nNo ecommerce-specific figure exists for the share of apps retaining anyone at day\n30, so that cell carries the cross-industry 5% to 7% and names the population it\ndescribes. An India-specific D2C retention table at day 1, 7 and 30 is also not\npublished, and this page does not manufacture one. Those two gaps matter more here\nthan in most categories, because ecommerce retention varies so widely by order\nfrequency that a borrowed figure would mislead rather than approximate.\n\n## Why ecommerce differs\n\nPurchase frequency sets the ceiling. A category where the average customer buys\nfour times a year cannot retain like one where the user opens the app daily, and\nno amount of engagement design changes how often somebody needs shoes. So a low\ncurve here is a description of the category, not a verdict on the product.\n\nThe second difference is substitution. Every ecommerce app competes with its own\nmobile site, which requires no install and no update. A user who is not retained\nin the app may be perfectly retained as a customer, which makes app retention a\nchannel metric rather than a loyalty metric.\n\nAssortment compounds both. Carrying more does not raise retention if the extra\nrange has no demand behind it.\n\n<FromMyWork exp=\"exp-024\">\nCarrying the full catalogue was never viable, so the first real work was choosing\nwhat not to stock. Of roughly 1,200 SKUs we prioritised 85 — under 8% — against\nthe highest-probability commercial opportunities for the market's development\nstage.\n</FromMyWork>\n\n## The India layer\n\nThe figure that decides Indian D2C economics is not retention. It is what the\nchannel takes. Indian quick-commerce platforms consume 30% to 35% of revenue once\nlisting fees, mandatory ad spend, commission and operations are counted.\n\nThat changes what retention is worth. A retained buyer ordering through a platform\ntaking a third of revenue contributes very differently from one ordering direct, so\na D2C retention programme that shifts orders onto a platform can raise the curve\nand lower the margin in the same quarter.\n\nRead retention by channel, or the number hides which half of the base earns\nanything. No India-specific D2C retention curve is published, so the channel split\nis the India layer that actually exists here — and it is the one that changes\ndecisions.\n\n## What good looks like\n\nAt day 30, 3% to 6% is the strong-performer band, and below 2% the app trails its\nown category. The more useful target, though, is repeat purchase rate rather than\nretention. Install-to-purchase runs 1.38% for retail and 2.41% for travel, and a\ngood mobile commerce conversion rate sits between 2% and 6% depending on order value\nand purchase frequency.\n\nRead cohorts by acquisition channel. In ecommerce more than in most categories the\nchannel decides the curve, so a blended number describes your media mix rather than\nyour product. A discount-led cohort and an organic cohort can differ by a factor of\nthree at day 30 on the same app, which makes the blended figure almost unusable for\na decision.\n\n\nSet the target on purchases per buyer per year, then derive the retention target\nfrom it. Doing it the other way round produces a retention goal the category cannot\nreach.\n## If you are below the median\n\nFix the first purchase before the fifth. A user who has never bought has no habit\nto retain, and the interventions differ: shipping clarity, payment options and a\nvisible returns policy move the first purchase, while none of them move the seventh.\n\nThen segment by frequency rather than recency. A quarterly buyer who bought last\nquarter is a healthy customer and, under a 30-day definition, a churned user. That\nsingle definitional choice reclassifies a large share of a D2C base, and teams\nusually discover it after a quarter of chasing the wrong cohort.\n\n<FromMyWork exp=\"exp-052\">\nOrder intake arrived by email, phone and trade expo and was systemised into one\nprocessing workflow. The systemisation was worth more than any single channel,\nbecause it made the demand legible.\n</FromMyWork>\n\n\n## How these figures were gathered\n\nEvery row carries its source and a verification date. The figures come from\npublished reports rather than from first-party panel data.\n\nTwo rows read \"no published figure\", and that is deliberate. The standard for these\npages is at least three sources or an explicit \"insufficient public data\" mark.\nEcommerce retention is well documented at the three day marks and undocumented on\napp-level survival, so the table reports both honestly.\n\nRows that carry an all-category figure in an ecommerce column say so. Borrowing a\nnumber from a neighbouring category would make this table look complete and make a\ntarget set from it wrong.\n\nFigures go back for re-checking every 90 days. Anything about price or fees runs on\na 45-day cycle instead.\n"
+    },
+    {
+      "id": "benchmark-0459",
+      "url": "/benchmarks/retention/healthtech",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "Health and Wellness App Retention Benchmarks (2026)",
+      "meta_description": "Health and wellness app retention benchmarks for day 1, 7 and 30, the January cohort problem, and the store-conversion figures for the category.",
+      "h1": "Health and wellness app retention benchmarks",
+      "primary_keyword": "health and wellness app retention benchmarks",
+      "secondary_keywords": [
+        "fitness app retention",
+        "healthtech d30 retention"
+      ],
+      "entity_a": "retention",
+      "entity_b": "healthtech",
+      "facts": [
+        "f-bm-01",
+        "f-bm-04",
+        "f-bm-13",
+        "f-bm-10",
+        "f-bm-08",
+        "f-act-07"
+      ],
+      "experience": [
+        "exp-014",
+        "exp-046"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/retention-rate",
+          "anchor": "retention rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/churn/healthtech",
+          "anchor": "healthtech churn benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/retention-curve-projector",
+          "anchor": "the retention curve projector",
+          "role": "tool"
+        },
+        {
+          "url": "/india/monetizing-tier-2-tier-3-users",
+          "anchor": "monetising tier 2 and tier 3 users",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a retention review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#health-retention-table",
+          "alt": "Health and wellness retention against the cross-industry average at day 1, day 7 and day 30, with the strong-performer band, the category's app-store page-view-to-install rate, the highest iOS install rate by category, activation and time to value for comparison, each row carrying its source and verification date",
+          "caption": "Health and wellness retention benchmarks, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a healthtech retention review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good day 30 retention rate for a health app?",
+          "a": "The median is 5% at day 30 with strong performers at 8% to 12%, against a 4% cross-industry average. Day 1 is unusually strong at 25% median, rising to 35% to 45% for strong performers."
+        },
+        {
+          "q": "Why do health apps lose users so fast after a strong start?",
+          "a": "Because intent at install is high and the behaviour it requires is daily and effortful. The gap between a 25% day-1 median and a 5% day-30 median is the distance between deciding to change and doing it repeatedly."
+        },
+        {
+          "q": "Does the January cohort distort health app benchmarks?",
+          "a": "Materially, and no published benchmark separates it. A January cohort installs with higher intent and churns harder, so a year-round median blends two different populations. Read your own cohorts by month before comparing to any table."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Names the seasonal-cohort distortion no published health retention benchmark separates, and pairs the curve with the category's unusually strong store-conversion figures to show that the constraint is behaviour rather than acquisition.",
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-04"
+        ],
+        "the_numbers": [
+          "f-bm-01",
+          "f-bm-04",
+          "f-bm-08"
+        ],
+        "why_this_industry_differs": [
+          "f-act-07"
+        ],
+        "india_layer": [
+          "f-bm-10"
+        ],
+        "what_good_looks_like": [
+          "f-bm-13"
+        ]
+      },
+      "body": "\n<AnswerBox>\nHealth and wellness app retention benchmarks put the median at 5% on day 30 against\na 4% cross-industry average, with strong performers at 8% to 12%. Day 1 runs\nunusually strong at 25%, and strong performers reach 35% to 45%. The category\nacquires willing users, then asks them to do something difficult every day.\n</AnswerBox>\n\n<FactTable\n  id=\"health-retention-table\"\n  caption=\"Health and wellness retention, and the funnel above it\"\n  columns={[\"Measure\", \"Health & wellness\", \"Reference\"]}\n  rows={[\n    { cells: [\"Day 1 retention, median and strong\", \"25%, strong 35% to 45%\", \"25% all categories\"], factId: \"f-bm-04\" },\n    { cells: [\"Day 7 retention, median and strong\", \"10%, strong 15% to 22%\", \"8% all categories\"], factId: \"f-bm-04\" },\n    { cells: [\"Day 30 retention, median\", \"5%\", \"4% all categories\"], factId: \"f-bm-01\" },\n    { cells: [\"App Store page view to install\", \"25% to 40%\", \"no published figure\"], factId: \"f-bm-13\" },\n    { cells: [\"Highest iOS install rate by category\", \"medical, 7.8%\", \"entertainment lowest, 1.1%\"], factId: \"f-bm-10\" },\n    { cells: [\"Apps retaining anyone at day 30\", \"no published figure\", \"5% to 7%\"], factId: \"f-bm-08\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nHealth and wellness beats the cross-industry average at every point: 25% against\n25% at day 1, 10% against 8% at day 7, and 5% against 4% at day 30. The strong\nperformer bands are wide — 35% to 45% at day 1 and 8% to 12% at day 30 — which\nsays the spread inside the category is larger than the gap to other categories.\n\nTwo gaps. No health-specific figure exists for the share of apps retaining anyone\nat day 30, so that cell shows the cross-industry range and says so. And no\npublished benchmark separates seasonal cohorts, which for this category is the\nsingle most distorting omission.\n\n\nTreat the day-1 figure with particular care in this category. A high day 1 here\nreflects intent at install rather than product quality, and intent is the one input\na benchmark cannot tell you whether you share.\n## Why health and wellness differs\n\nThe behaviour is effortful and the payoff is delayed. A user installs with real\nintent, and the product then asks for a daily action whose reward arrives in weeks.\nThat gap, not acquisition quality, is what the curve measures.\n\nCategory comparison makes the point. AI and machine-learning products reach 54.8%\nbenchmark activation with a time to value near 17 hours, because the product does\nthe work. A fitness app cannot do the exercise for the user, so its activation\nceiling is set by something outside the software.\n\nSeasonality then distorts every published figure. A January cohort installs with\nhigher intent and abandons harder, so a year-round median blends two populations\nwith different curves. Any comparison against a table like this one should be run\non your own monthly cohorts first.\n\n## The India layer\n\nNo India-specific health and wellness retention table is published at day 1, 7\nand 30, and this page does not estimate one.\n\nWhat is published and relevant is store discovery. Medical has the highest iOS\ninstall rate of any category at 7.8%, against 1.1% for entertainment, so health\nproducts convert search intent unusually well. In a market where paid acquisition\nis expensive relative to willingness to pay, that organic conversion advantage is\nthe category's most useful asset — and it makes the retention problem, not the\nacquisition problem, the one worth funding.\n\n\nThe practical consequence is that an Indian health product should budget for\nretention work and not for more installs. Discovery is already the cheap part, and\nspending there buys more of the users the curve is losing.\n## What good looks like\n\nAt day 30, 8% to 12% is the strong-performer band and 5% is the median. The figure\nto watch, though, is day 7, where the category's strong band runs 15% to 22%. That\nwindow is where the habit forms or does not, and day 30 mostly reports the\nconsequence.\n\nStore conversion already runs strong at 25% to 40% page view to install, so a health\napp with a retention problem rarely has an acquisition problem. Spending there buys\nmore users to lose. The practical test: if day 7 sits inside the strong band and day\n30 does not, the product has built a habit it cannot sustain, which is a different\nproblem from one it never started.\n\n\nCompare monthly cohorts against each other before comparing any of them against\nthis table. In a seasonal category that internal comparison is the more reliable\nsignal.\n## If you are below the median\n\nShorten the time to first felt benefit. The category's problem is a delayed\npayoff, so anything that produces a visible result in the first session — a\nmeasurement, a plan, a score — moves the curve more than a streak mechanic does.\n\nThen fix the timing of prompts rather than their wording.\n\n<FromMyWork exp=\"exp-014\">\nTiming beat messaging. A user whose insurance expired three days ago converted at\n4.8 times the rate of one with 60 days remaining, on identical copy.\n</FromMyWork>\n\n<FromMyWork exp=\"exp-046\">\nSetting portfolio-level direction on high-intent entry points, trust signals and\nthe core paths through each product lifted activation depth 18-25% across four\nconsumer and B2B platforms.\n</FromMyWork>\n\n\n\nThen check whether the first session produced anything the user could see. A plan,\na score or a single measurement all qualify; a tour of the interface does not.\n## How these figures were gathered\n\nEach row shows its source and when somebody last checked it. The numbers come from\npublished benchmark reports.\n\nThe seasonality caveat above is the most important thing on this page, and no\npublished source handles it. January cohorts behave differently from June cohorts in\nthis category, and every median here blends them. Run your own months before\ncomparing.\n\nTwo rows read \"no published figure\". The rule for these pages is three sources or an\nexplicit \"insufficient public data\" mark, and health retention is well covered at\nday 1, 7 and 30 while app-level survival is not covered for the category at all.\n\nRe-verification runs every 90 days, and every 45 for anything touching price.\n\n\nWhere two published sources disagree, both appear and the page says so rather than\npicking the friendlier one."
+    },
+    {
+      "id": "benchmark-0465",
+      "url": "/benchmarks/retention/gaming",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "Gaming App Retention Benchmarks: D1, D7 and D30 (2026)",
+      "meta_description": "Gaming and fantasy sports app retention benchmarks for day 1, 7 and 30, why the strongest day 1 produces an ordinary day 30, and the store figures.",
+      "h1": "Gaming app retention benchmarks",
+      "primary_keyword": "gaming app retention benchmarks",
+      "secondary_keywords": [
+        "fantasy sports retention",
+        "gaming d30 retention"
+      ],
+      "entity_a": "retention",
+      "entity_b": "gaming",
+      "facts": [
+        "f-bm-05",
+        "f-bm-09",
+        "f-bm-11",
+        "f-bm-19",
+        "f-bm-16",
+        "f-act-14"
+      ],
+      "experience": [
+        "exp-018",
+        "exp-019"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/retention-rate",
+          "anchor": "retention rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/churn/gaming",
+          "anchor": "gaming churn benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/retention-curve-projector",
+          "anchor": "the retention curve projector",
+          "role": "tool"
+        },
+        {
+          "url": "/india/ads-vs-subscriptions-indian-apps",
+          "anchor": "ads against subscriptions",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a retention review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#gaming-retention-table",
+          "alt": "Gaming retention at day 1, day 7 and day 30 with the strong-performer band, the share of apps retaining anyone at day 30, App Store search and browse install ranges, the average US store conversion rate, trial cancellation rates by trial length and Indian quick-commerce share for market-structure comparison, each row carrying its source and verification date",
+          "caption": "Gaming retention benchmarks, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a gaming retention review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good day 30 retention rate for a gaming app?",
+          "a": "The gaming median is 3% at day 30 with strong performers at 5% to 8%. That is below the 4% cross-industry average, despite gaming having the strongest day 1 of any category at a 32% median."
+        },
+        {
+          "q": "Why does gaming have the best day 1 and a weak day 30?",
+          "a": "Because the first session is the product and the tenth is a different one. A game earns the first open on novelty, which is reliable, and the thirtieth on depth, which most titles do not have."
+        },
+        {
+          "q": "Do fantasy sports apps follow the gaming curve?",
+          "a": "No published benchmark separates them, and this page does not estimate one. Their retention is tied to a sporting calendar rather than to session depth, so a general gaming median is the wrong comparison for them."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Explains the category's signature shape — the strongest day 1 of any category producing a below-average day 30 — and refuses to give fantasy sports a borrowed number, since their curve follows a fixture calendar rather than session depth.",
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-05"
+        ],
+        "the_numbers": [
+          "f-bm-05",
+          "f-bm-16"
+        ],
+        "why_this_industry_differs": [
+          "f-bm-19"
+        ],
+        "india_layer": [
+          "f-act-14"
+        ],
+        "what_good_looks_like": [
+          "f-bm-09",
+          "f-bm-11"
+        ]
+      },
+      "body": "\n<AnswerBox>\nGaming app retention benchmarks put the median at 3% on day 30, below the 4%\ncross-industry average, with strong performers at 5% to 8%. Day 1 is the strongest\nof any category at a 32% median. The category wins the first session and loses the\nthirtieth, and that shape is the whole story.\n</AnswerBox>\n\n<FactTable\n  id=\"gaming-retention-table\"\n  caption=\"Gaming retention, and the acquisition funnel above it\"\n  columns={[\"Measure\", \"Gaming\", \"Reference\"]}\n  rows={[\n    { cells: [\"Day 1 retention, median and strong\", \"32%, strong 40% to 50%\", \"25% all categories\"], factId: \"f-bm-05\" },\n    { cells: [\"Day 7 retention, median and strong\", \"8%, strong 12% to 18%\", \"8% all categories\"], factId: \"f-bm-05\" },\n    { cells: [\"Day 30 retention, median and strong\", \"3%, strong 5% to 8%\", \"4% all categories\"], factId: \"f-bm-05\" },\n    { cells: [\"Median revenue per install at day 60\", \"no gaming figure\", \"$0.34, strong $0.66+\"], factId: \"f-bm-16\" },\n    { cells: [\"App Store install rate, search against browse\", \"no published figure\", \"2.6% to 12.4% against 0.1% to 2.5%\"], factId: \"f-bm-09\" },\n    { cells: [\"Average US App Store conversion\", \"no published figure\", \"8.56%, install rate 3.8%\"], factId: \"f-bm-11\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nGaming has the strongest day 1 of any category at a 32% median, with strong\nperformers reaching 40% to 50%. By day 7 it has fallen to the cross-industry\naverage of 8%, and by day 30 it sits below it at 3% against 4%.\n\nThree cells carry no gaming-specific figure. Publishers break store conversion out\nfor medical, entertainment and business but not for gaming at this grain, so those\nrows show the all-category range and label it. Fantasy sports, which the inventory\ngroups with gaming, has no separate retention curve anywhere — and a fixture calendar\ndrives it rather than session depth, so borrowing the gaming median would be worse\nthan leaving it out.\n\n\nThe practical reading: use the day-1 and day-7 bands, and treat day 30 as a check\nrather than a target.\n## Why gaming differs\n\nThe first session and the thirtieth are different products. A game earns the first\nopen on novelty and art, which is reliable and cheap to produce. It earns the\nthirtieth on depth, progression and social ties, which most titles never build. The\nsteep fall between day 1 and day 7 is therefore not a funnel leak. It is the\ncategory sorting curiosity from intent.\n\nTrial structure shows the same pattern in subscription terms. A three-day trial\naverages 26% cancellations against 51% for a thirty-day trial, and 31.1% of\nthirty-day trials cancel on day zero. Longer exposure surfaces more rejection. That\nis information, not failure.\n\n\nLive-service titles break the pattern, and no published benchmark separates them\neither. A game with a content calendar retains on a schedule, the way a media product\ndoes, so the general gaming median makes a poor comparison for it.\n## The India layer\n\nNo India-specific gaming retention table is published at day 1, 7 and 30.\n\nThe structural comparison that does hold is concentration. Indian quick commerce\nsplits by gross merchandise value into Blinkit at about 46%, Instamart at 24% and\nZepto at 22% — a market where the leader takes roughly half. Indian real-money\ngaming and fantasy sports concentrate similarly, and in a concentrated market a\nmid-tier app's retention problem is usually a distribution problem wearing a\nretention label. There is no published figure for that split, so this page states\nthe mechanism and not a number.\n\n\nThe other India-specific factor is device. A large share of the Indian base runs\nmid-range Android hardware, and a title that drops frames on it loses users for a\nreason no retention campaign can reach.\n## What good looks like\n\nAt day 30, 5% to 8% is the strong-performer band and 3% is the median. For gaming,\nthough, the more diagnostic point is day 7: the strong band runs 12% to 18% against\nan 8% median, and that gap is where depth exists or does not.\n\nA day-1 figure above 40% alongside a day-7 figure at the median means the product\nbuys attention it cannot hold. That is an acquisition-efficiency problem wearing a\ngood headline. The cheapest diagnostic is to compare paid and organic cohorts at day\n7: when paid installs fall off a cliff and organic ones do not, the game is fine and\nthe targeting is not.\n\n\nFor a fantasy sports product, measure against your own last season rather than\nagainst this table. The fixture calendar dominates everything else.\n## If you are below the median\n\nLook at session two, not session thirty. A user decides to return in the last\nminute of the first session, and almost every day-30 problem in this category is a\nday-2 problem compounded thirty times over.\n\nThen treat any feature needing accumulated history with suspicion. Those features\ntest well with the team, who already have the history, and fail with new users, who\ndo not. The pattern is consistent enough to be worth a rule.\n\n<FromMyWork exp=\"exp-018\">\nA feature I championed reached 2.8% adoption and was killed. Maintenance logging\nneeded repeated deliberate effort and returned nothing until enough history had\naccumulated, so it never cleared its own activation gate.\n</FromMyWork>\n\n<FromMyWork exp=\"exp-019\">\nLetting users share a vehicle report turned a utility check into an acquisition\nchannel. Shared reports carried 12.3% of new installs within four months.\n</FromMyWork>\n\n\n## How these figures were gathered\n\nEvery row names a source and a date. These figures come from published benchmarks\nrather than from a panel this site runs.\n\nThree rows read \"no published figure\", including both store-conversion rows and the\nfantasy sports split. Publishers break store conversion out for medical,\nentertainment and business, and not for gaming at this grain. Fantasy sports has no separate retention\ncurve published anywhere.\n\nThat second gap is the one worth repeating. Fantasy sports retention tracks a fixture\ncalendar, not session depth, so the gaming median is the wrong comparison and a\nborrowed number would be worse than none.\n\nEverything here goes back for re-checking on a 90-day cycle.\n\n\nPrice figures run on a 45-day cycle, because store pricing and promotions move\nfaster than retention does."
+    },
+    {
+      "id": "benchmark-0468",
+      "url": "/benchmarks/retention/social-dating",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "Dating and Social App Retention Benchmarks (2026)",
+      "meta_description": "Social, dating and community app retention benchmarks for day 1, 7 and 30 — the strongest curve of any category, and why dating inverts the incentive.",
+      "h1": "Dating and social app retention benchmarks",
+      "primary_keyword": "dating and social app retention benchmarks",
+      "secondary_keywords": [
+        "social app retention",
+        "dating app d30 retention"
+      ],
+      "entity_a": "retention",
+      "entity_b": "social-dating",
+      "facts": [
+        "f-bm-06",
+        "f-bm-21",
+        "f-bm-11",
+        "f-bm-17",
+        "f-bm-19",
+        "f-act-19"
+      ],
+      "experience": [
+        "exp-013",
+        "exp-019"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/retention-rate",
+          "anchor": "retention rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/churn/social-dating",
+          "anchor": "social and dating churn benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/retention-curve-projector",
+          "anchor": "the retention curve projector",
+          "role": "tool"
+        },
+        {
+          "url": "/india/regional-language-monetization",
+          "anchor": "regional language monetisation",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a retention review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#social-retention-table",
+          "alt": "Social and dating retention at day 1, day 7 and day 30 with the strong-performer band against the cross-industry average, the average US App Store conversion rate, the regional download-to-paid gap, trial cancellation by trial length and reported against true return on ad spend, each row carrying its source and verification date",
+          "caption": "Social and dating retention benchmarks, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a social and dating retention review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good day 30 retention rate for a social app?",
+          "a": "The median is 12% at day 30, three times the 4% cross-industry average, with strong performers at 15% to 20%. Social is the strongest retaining category published, because the value is other people rather than features."
+        },
+        {
+          "q": "Why are dating apps different from social apps?",
+          "a": "Because success removes the user. A dating product that works loses its best-served customers, which no other category has to plan for. No published benchmark separates dating from social, so the 12% median flatters dating and understates community products."
+        },
+        {
+          "q": "Does a high retention rate mean a social app is healthy?",
+          "a": "Not on its own. A social product can retain a shrinking group intensely while failing to add anyone, and a cohort table showing high retention with falling new-cohort size is a product in decline with a flattering curve."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Names the incentive inversion in dating that every blended social benchmark hides — a working dating product loses the users it serves best — and shows how a high retention median can describe a shrinking base.",
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-06"
+        ],
+        "the_numbers": [
+          "f-bm-06",
+          "f-bm-21"
+        ],
+        "why_this_industry_differs": [
+          "f-bm-19"
+        ],
+        "india_layer": [
+          "f-bm-17"
+        ],
+        "what_good_looks_like": [
+          "f-bm-11",
+          "f-act-19"
+        ]
+      },
+      "body": "\n<AnswerBox>\nDating and social app retention benchmarks put the median at 12% on day 30, roughly\ntwice the 5.7% average across 31 categories, with strong performers at 15% to 20%. Day 1\nruns at 40% and day 7 at 18%. No published category retains better, because other\npeople hold a user where features cannot.\n</AnswerBox>\n\n<FactTable\n  id=\"social-retention-table\"\n  caption=\"Social and dating retention against every other category\"\n  columns={[\"Measure\", \"Social\", \"All categories\"]}\n  rows={[\n    { cells: [\"Day 1 retention, median and strong\", \"40%, strong 50% to 60%\", \"25%\"], factId: \"f-bm-06\" },\n    { cells: [\"Day 7 retention, median and strong\", \"18%, strong 25% to 30%\", \"8%\"], factId: \"f-bm-06\" },\n    { cells: [\"Day 30 retention, median and strong\", \"12%, strong 15% to 20%\", \"5.7% over 31 categories\"], factId: \"f-bm-21\" },\n    { cells: [\"Dating, separated from social\", \"no published figure\", \"not separated in any source\"], factId: \"f-bm-06\" },\n    { cells: [\"Average US App Store conversion\", \"no published figure\", \"8.56%, install rate 3.8%\"], factId: \"f-bm-11\" },\n    { cells: [\"Day-35 download-to-paid, NA against IN and SEA\", \"no published figure\", \"2.6% against 1.4%\"], factId: \"f-bm-17\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nSocial leads every published retention band: 40% at day 1, 18% at day 7 and 12% at\nday 30, against a 5.7% average across 31 categories. The strong-performer range at\nday 30 is 15% to 20%, which is above most categories' day-7 median.\n\nThe important gap is that **dating is not separated from social in any published\nsource**, and the two behave in opposite ways. Grouping them produces a median\nthat flatters dating and understates community products, so the row above says so\nrather than splitting the figure on an assumption.\n\n\nRead the strong-performer band carefully here. At 15% to 20% on day 30 it sits above\nmost categories' day-7 median, which means a social product performing badly by its\nown category's standard still looks excellent in a general table. That is how a\nstruggling social product gets congratulated.\n## Why social and dating differ\n\nSocial retention compounds because the product's value is other users. Each\nretained user makes the product slightly better for everyone else, which is why\nthe category's curve flattens where others keep falling.\n\nDating inverts the incentive. A dating product that works removes the user it\nworked for, and no other category has to plan for success causing churn. That\ntension shapes everything downstream: pricing, notification design, and what the\nproduct is allowed to optimise for. A dating app measured on day-30 retention is\nbeing measured on a metric it should sometimes want to lose.\n\nTrial behaviour differs too. A three-day trial averages 26% cancellations against\n51% for a thirty-day trial, and in a category where value depends on who else is\npresent, a longer trial gives the network more time to prove itself or fail.\n\n## The India layer\n\nNo India-specific social or dating retention table is published at day 1, 7 and\n30, and this page does not estimate one.\n\nWhat is published is the monetisation gap: day-35 download-to-paid runs 2.6% in\nNorth America against 1.4% across India and South-East Asia. For a category whose\nretention is already strong, that gap says the Indian constraint is willingness\nto pay rather than engagement — which points at price and packaging work rather\nthan at retention work.\n\n<FromMyWork exp=\"exp-013\">\nTrust was a conversion lever, not a brand exercise. Showing insurer brand names\nlifted quote acceptance 34%, and surfacing the IRDAI-mandated claim settlement\nratio next to the price broke the market's habit of treating insurance as a pure\nprice comparison.\n</FromMyWork>\n\n\nLanguage cluster is the India-specific variable with no published figure. A product\nthat has reached density in one language and not another has two very different\ncurves inside one number.\n## What good looks like\n\nAt day 30, 15% to 20% is the strong band and 12% is the median. A high number here\nneeds a second reading, though: a social product can retain a shrinking group\nintensely while adding nobody, and the cohort table looks excellent while the\nbusiness shrinks.\n\nRead new-cohort size beside retention. Reported figures mislead here the same way\nquick-commerce platforms report 3x to 5x return on ad spend while true return after\ncommission and cost of goods runs 1.2x to 2.5x. The number is real, and it is not\nthe one that decides anything. For a dating product add a third column: whether the\nuser left because the product worked.\n\n\nFor a dating product, add a reason code to churn. Without it the curve cannot\ndistinguish the two outcomes that matter most.\n## If you are below the median\n\nFind the density problem before the engagement problem. Social products fail by\ngeography, interest or language cluster rather than uniformly, so an aggregate curve\nhides which clusters reached critical mass and which never will.\n\nThen make the product's value visible before the network exists for that user. The\nfirst session of a social product usually has nobody in it, and whatever stands in\nfor other people during that session decides the day-1 number.\n\n<FromMyWork exp=\"exp-019\">\nLetting users share a vehicle report turned a utility check into an acquisition\nchannel. Shared reports carried 12.3% of new installs within four months, and\nthose users arrived with the intent already formed.\n</FromMyWork>\n\n\n\nCheck density per cluster before anything else. A product at critical mass in two\ncities and nowhere else has a distribution problem, not a retention problem.\n## How these figures were gathered\n\nEach row carries a source and a verification date, drawn from published benchmark\nreports.\n\nThe dating row reads \"no published figure\" and will keep reading that way until\nsomebody publishes one. No source separates dating from social, and the two categories\nmove in opposite directions, so a split figure here would be an invention rather than\nan estimate.\n\nThe standard for these pages is three sources or an explicit \"insufficient public\ndata\" mark. Social retention clears that at all three day marks. Dating does not clear\nit at any.\n\nRe-verification runs every 90 days, and faster for anything about price.\n\n\nWhere two sources disagree, both appear with the disagreement stated rather than\nresolved by preference. That happens often in this category, because social and\ndating get grouped differently by different publishers."
+    },
+    {
+      "id": "benchmark-0463",
+      "url": "/benchmarks/retention/b2b-saas",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "B2B SaaS App Retention Benchmarks: D1, D7, D30 (2026)",
+      "meta_description": "B2B SaaS and productivity app retention benchmarks, why the app curve and the contract curve disagree, and the store conversion the category leads on.",
+      "h1": "B2B SaaS app retention benchmarks",
+      "primary_keyword": "saas app retention benchmarks",
+      "secondary_keywords": [
+        "b2b saas retention",
+        "productivity app retention"
+      ],
+      "entity_a": "retention",
+      "entity_b": "b2b-saas",
+      "facts": [
+        "f-bm-07",
+        "f-bm-12",
+        "f-bm-18",
+        "f-bm-02",
+        "f-bm-06",
+        "f-svc-05"
+      ],
+      "experience": [
+        "exp-031",
+        "exp-039"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/nrr",
+          "anchor": "net revenue retention",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/churn/b2b-saas",
+          "anchor": "B2B SaaS churn benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/nrr-grr-calculator",
+          "anchor": "the NRR and GRR calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/services/pricing-and-packaging/b2b-saas",
+          "anchor": "B2B SaaS pricing and packaging",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a retention review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#b2b-retention-table",
+          "alt": "B2B SaaS retention at day 30 against the average iOS app, App Store page-view-to-install for business apps, the category's download-to-trial rank, fintech and social medians for comparison, and hybrid pricing adoption, each row carrying its source and verification date",
+          "caption": "B2B SaaS retention benchmarks, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a b2b-saas retention review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good day 30 retention rate for a B2B SaaS app?",
+          "a": "Productivity and B2B SaaS apps hold 20% to 32% at day 30, against an average iOS app at 5.3%. The category retains far above consumer apps because the product is used at work, on a schedule somebody else sets."
+        },
+        {
+          "q": "Should a B2B product track app retention at all?",
+          "a": "As a leading indicator, not as the outcome. The contract renews on revenue retention, and a seat that stops opening the app is a renewal risk months before it shows up in NRR — which is exactly what makes the app curve useful."
+        },
+        {
+          "q": "Why does the business category convert so well in the app stores?",
+          "a": "Intent. Business apps convert about 66.7% of App Store page views to installs and record the highest download-to-trial rate of any category, because people search for them with a problem already named."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Holds the app retention curve and the contract retention curve apart, which every B2B retention page conflates, and shows why the app number is the earlier signal while the revenue number is the outcome.",
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-07"
+        ],
+        "the_numbers": [
+          "f-bm-07",
+          "f-bm-02",
+          "f-bm-06"
+        ],
+        "why_this_industry_differs": [
+          "f-bm-12",
+          "f-bm-18"
+        ],
+        "india_layer": [
+          "f-svc-05"
+        ],
+        "what_good_looks_like": [
+          "f-bm-07"
+        ]
+      },
+      "body": "\n<AnswerBox>\nSaaS app retention benchmarks put productivity and B2B products at 20% to 32% on\nday 30, against an average iOS app at 5.3%. The category retains far above consumer\napps because people use it at work, on a schedule somebody else sets. The app curve\nand the contract curve measure different things, and both matter.\n</AnswerBox>\n\n<FactTable\n  id=\"b2b-retention-table\"\n  caption=\"B2B SaaS retention, and the funnel that fills it\"\n  columns={[\"Measure\", \"B2B SaaS\", \"Reference\"]}\n  rows={[\n    { cells: [\"Day 30 retention\", \"20% to 32%\", \"average iOS app 5.3%\"], factId: \"f-bm-07\" },\n    { cells: [\"Day 1 and day 7\", \"no published figure\", \"fintech 28% and 12%\"], factId: \"f-bm-02\" },\n    { cells: [\"Strongest consumer comparison\", \"no published figure\", \"social 12% at day 30\"], factId: \"f-bm-06\" },\n    { cells: [\"App Store page view to install, business\", \"about 66.7%\", \"no all-category figure\"], factId: \"f-bm-12\" },\n    { cells: [\"Download-to-trial rate by category\", \"highest of any category\", \"rank, not a rate\"], factId: \"f-bm-18\" },\n    { cells: [\"Companies running hybrid pricing\", \"37%\", \"up from 25% a year earlier\"], factId: \"f-svc-05\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nDay 30 is the only point with a published B2B band: 20% to 32%, against an\naverage iOS app at 5.3%. Day 1 and day 7 are not published for the category, so\nthose rows carry a comparison rather than a fabricated figure — fintech's 28% and\n12% are shown as the nearest published high-retention consumer category, labelled\nas such.\n\nEven the top consumer category does not reach the B2B floor. Social retains a 12%\nmedian at day 30; the weakest end of the B2B band is 20%. That gap is structural\nand it is the most useful single fact on this page.\n\n\nSo the honest summary is that this category has one well-published number and a\ncurve nobody has measured publicly. Plan around the day-30 band and treat the rest\nas your own instrumentation problem.\n## Why B2B SaaS differs\n\nUse is compelled and scheduled. A work tool opens because a task requires it, at a\ncadence somebody else set, which removes the attention problem every consumer app\nspends its budget on.\n\nThe discovery funnel reflects the same intent. Business apps convert about 66.7%\nof App Store page views to installs and record the highest download-to-trial rate\nof any category, because people arrive having already named their problem.\n\nThe complication is that app retention is not the contract. A seat that stops\nopening the app is a renewal risk long before revenue moves, which makes the app\ncurve a leading indicator of something measured elsewhere. Treating it as the\noutcome is the common error; ignoring it wastes the earliest signal available.\n\n## The India layer\n\nNo India-specific B2B SaaS app retention figures are published at day 1, 7 or 30.\n\nWhat applies instead is packaging. 37% of companies now run a hybrid of seats and\nconsumption, up from 25% a year earlier, and for an Indian SaaS company selling\nabroad the meter choice interacts with collection and tax in ways a pure seat\nmodel avoids. Retention work in this category often turns out to be packaging\nwork, because a seat nobody uses churns at renewal regardless of how good the\nproduct is.\n\n<FromMyWork exp=\"exp-031\">\nAbout 40% of engineering time across the organisation was going to client-specific\nrequests that sales had sold as standard. Packaging was the fix, not capacity.\n</FromMyWork>\n\n\nThe collection layer matters here too. An Indian SaaS company billing abroad pays a\ndifferent percentage depending on how the money is routed, and that lands on the\nsame contribution line a renewal protects.\n## What good looks like\n\nAt day 30, above 32% is strong and below 20% puts the product behind its own\ncategory rather than behind the market. Read it per account rather than per user:\none account with ten engaged seats and one with a single engaged seat produce the\nsame blended figure and very different renewals.\n\nThen read it against revenue retention. A rising app curve beside flat net revenue\nretention means usage grows inside accounts that are not expanding, which points at\npackaging rather than at the product. The reverse — flat usage with rising revenue —\nusually means a price rise that the next renewal cycle will test.\n\n\nSet the threshold per account band as well. A product selling to ten-seat teams and\none selling to thousand-seat enterprises should not share a day-30 target, because\nthe second has departments that never open the app and never needed to.\n## If you are below the median\n\nFind the accounts where usage concentrates in one seat. Single-seat dependency\ncauses more B2B retention problems than any other pattern and hides most effectively\nin an aggregate curve, because one heavy user carries the account's numbers until\nthey leave.\n\nThen make failures the customer can see and fix without you. Silent breakage is the\nsecond most common cause, and it produces churn that arrives with no warning in any\nengagement metric.\n\n<FromMyWork exp=\"exp-039\">\nMaking failures debuggable by the customer cut sales and support effort about\n25%. Idempotency, surfaced errors and retry mechanics meant customers resolved\ntheir own breakages instead of churning quietly.\n</FromMyWork>\n\n\n\nBoth checks are instrumentation rather than product work, and both can happen\nbefore anyone writes a roadmap item. Start with the seat concentration report: it\ntakes a day and it usually names the accounts at risk.\n## How these figures were gathered\n\nEvery row shows its source and the date somebody last checked it, from published\nbenchmark reports.\n\nThree rows read \"no published figure\". Day 1 and day 7 are not published for this\ncategory at all, so those rows carry the nearest published high-retention consumer\ncategory and label it as a comparison. A reader setting a day-7 target from a fintech\nnumber would be setting it from the wrong category, which is why the label matters\nmore than the number.\n\nThe rule for these pages is three sources or an explicit \"insufficient public data\"\nmark. Day 30 clears it. The rest of the curve does not.\n\nFigures go back for re-checking every 90 days.\n\n\nEvery figure goes back on a 90-day cycle, and any price figure on a 45-day one."
+    }
+  ]
+}

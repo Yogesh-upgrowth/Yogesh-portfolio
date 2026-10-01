@@ -1,0 +1,128 @@
+<AnswerBox>
+SaaS app retention benchmarks put productivity and B2B products at 20% to 32% on
+day 30, against an average iOS app at 5.3%. The category retains far above consumer
+apps because people use it at work, on a schedule somebody else sets. The app curve
+and the contract curve measure different things, and both matter.
+</AnswerBox>
+
+<FactTable
+  id="b2b-retention-table"
+  caption="B2B SaaS retention, and the funnel that fills it"
+  columns={["Measure", "B2B SaaS", "Reference"]}
+  rows={[
+    { cells: ["Day 30 retention", "20% to 32%", "average iOS app 5.3%"], factId: "f-bm-07" },
+    { cells: ["Day 1 and day 7", "no published figure", "fintech 28% and 12%"], factId: "f-bm-02" },
+    { cells: ["Strongest consumer comparison", "no published figure", "social 12% at day 30"], factId: "f-bm-06" },
+    { cells: ["App Store page view to install, business", "about 66.7%", "no all-category figure"], factId: "f-bm-12" },
+    { cells: ["Download-to-trial rate by category", "highest of any category", "rank, not a rate"], factId: "f-bm-18" },
+    { cells: ["Companies running hybrid pricing", "37%", "up from 25% a year earlier"], factId: "f-svc-05" },
+  ]}
+/>
+
+## The numbers, and what is missing from them
+
+Day 30 is the only point with a published B2B band: 20% to 32%, against an
+average iOS app at 5.3%. Day 1 and day 7 are not published for the category, so
+those rows carry a comparison rather than a fabricated figure — fintech's 28% and
+12% are shown as the nearest published high-retention consumer category, labelled
+as such.
+
+Even the top consumer category does not reach the B2B floor. Social retains a 12%
+median at day 30; the weakest end of the B2B band is 20%. That gap is structural
+and it is the most useful single fact on this page.
+
+
+So the honest summary is that this category has one well-published number and a
+curve nobody has measured publicly. Plan around the day-30 band and treat the rest
+as your own instrumentation problem.
+## Why B2B SaaS differs
+
+Use is compelled and scheduled. A work tool opens because a task requires it, at a
+cadence somebody else set, which removes the attention problem every consumer app
+spends its budget on.
+
+The discovery funnel reflects the same intent. Business apps convert about 66.7%
+of App Store page views to installs and record the highest download-to-trial rate
+of any category, because people arrive having already named their problem.
+
+The complication is that app retention is not the contract. A seat that stops
+opening the app is a renewal risk long before revenue moves, which makes the app
+curve a leading indicator of something measured elsewhere. Treating it as the
+outcome is the common error; ignoring it wastes the earliest signal available.
+
+## The India layer
+
+No India-specific B2B SaaS app retention figures are published at day 1, 7 or 30.
+
+What applies instead is packaging. 37% of companies now run a hybrid of seats and
+consumption, up from 25% a year earlier, and for an Indian SaaS company selling
+abroad the meter choice interacts with collection and tax in ways a pure seat
+model avoids. Retention work in this category often turns out to be packaging
+work, because a seat nobody uses churns at renewal regardless of how good the
+product is.
+
+<FromMyWork exp="exp-031">
+About 40% of engineering time across the organisation was going to client-specific
+requests that sales had sold as standard. Packaging was the fix, not capacity.
+</FromMyWork>
+
+
+The collection layer matters here too. An Indian SaaS company billing abroad pays a
+different percentage depending on how the money is routed, and that lands on the
+same contribution line a renewal protects.
+## What good looks like
+
+At day 30, above 32% is strong and below 20% puts the product behind its own
+category rather than behind the market. Read it per account rather than per user:
+one account with ten engaged seats and one with a single engaged seat produce the
+same blended figure and very different renewals.
+
+Then read it against revenue retention. A rising app curve beside flat net revenue
+retention means usage grows inside accounts that are not expanding, which points at
+packaging rather than at the product. The reverse — flat usage with rising revenue —
+usually means a price rise that the next renewal cycle will test.
+
+
+Set the threshold per account band as well. A product selling to ten-seat teams and
+one selling to thousand-seat enterprises should not share a day-30 target, because
+the second has departments that never open the app and never needed to.
+## If you are below the median
+
+Find the accounts where usage concentrates in one seat. Single-seat dependency
+causes more B2B retention problems than any other pattern and hides most effectively
+in an aggregate curve, because one heavy user carries the account's numbers until
+they leave.
+
+Then make failures the customer can see and fix without you. Silent breakage is the
+second most common cause, and it produces churn that arrives with no warning in any
+engagement metric.
+
+<FromMyWork exp="exp-039">
+Making failures debuggable by the customer cut sales and support effort about
+25%. Idempotency, surfaced errors and retry mechanics meant customers resolved
+their own breakages instead of churning quietly.
+</FromMyWork>
+
+
+
+Both checks are instrumentation rather than product work, and both can happen
+before anyone writes a roadmap item. Start with the seat concentration report: it
+takes a day and it usually names the accounts at risk.
+## How these figures were gathered
+
+Every row shows its source and the date somebody last checked it, from published
+benchmark reports.
+
+Three rows read "no published figure". Day 1 and day 7 are not published for this
+category at all, so those rows carry the nearest published high-retention consumer
+category and label it as a comparison. A reader setting a day-7 target from a fintech
+number would be setting it from the wrong category, which is why the label matters
+more than the number.
+
+The rule for these pages is three sources or an explicit "insufficient public data"
+mark. Day 30 clears it. The rest of the curve does not.
+
+Figures go back for re-checking every 90 days.
+
+
+Every figure goes back on a 90-day cycle, and any price figure on a 45-day one.

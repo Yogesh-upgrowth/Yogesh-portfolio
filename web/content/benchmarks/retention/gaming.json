@@ -1,0 +1,109 @@
+{
+  "id": "benchmark-0465",
+  "url": "/benchmarks/retention/gaming",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-benchmark-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Gaming App Retention Benchmarks: D1, D7 and D30 (2026)",
+  "meta_description": "Gaming and fantasy sports app retention benchmarks for day 1, 7 and 30, why the strongest day 1 produces an ordinary day 30, and the store figures.",
+  "h1": "Gaming app retention benchmarks",
+  "primary_keyword": "gaming app retention benchmarks",
+  "secondary_keywords": [
+    "fantasy sports retention",
+    "gaming d30 retention"
+  ],
+  "entity_a": "retention",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-05",
+    "f-bm-09",
+    "f-bm-11",
+    "f-bm-19",
+    "f-bm-16",
+    "f-act-14"
+  ],
+  "experience_used": [
+    "exp-018",
+    "exp-019"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/retention-rate",
+      "anchor": "retention rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/churn/gaming",
+      "anchor": "gaming churn benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/retention-curve-projector",
+      "anchor": "the retention curve projector",
+      "role": "tool"
+    },
+    {
+      "url": "/india/ads-vs-subscriptions-indian-apps",
+      "anchor": "ads against subscriptions",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a retention review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#gaming-retention-table",
+      "alt": "Gaming retention at day 1, day 7 and day 30 with the strong-performer band, the share of apps retaining anyone at day 30, App Store search and browse install ranges, the average US store conversion rate, trial cancellation rates by trial length and Indian quick-commerce share for market-structure comparison, each row carrying its source and verification date",
+      "caption": "Gaming retention benchmarks, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good day 30 retention rate for a gaming app?",
+      "a": "The gaming median is 3% at day 30 with strong performers at 5% to 8%. That is below the 4% cross-industry average, despite gaming having the strongest day 1 of any category at a 32% median."
+    },
+    {
+      "q": "Why does gaming have the best day 1 and a weak day 30?",
+      "a": "Because the first session is the product and the tenth is a different one. A game earns the first open on novelty, which is reliable, and the thirtieth on depth, which most titles do not have."
+    },
+    {
+      "q": "Do fantasy sports apps follow the gaming curve?",
+      "a": "No published benchmark separates them, and this page does not estimate one. Their retention is tied to a sporting calendar rather than to session depth, so a general gaming median is the wrong comparison for them."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a gaming retention review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Explains the category's signature shape — the strongest day 1 of any category producing a below-average day 30 — and refuses to give fantasy sports a borrowed number, since their curve follows a fixture calendar rather than session depth.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

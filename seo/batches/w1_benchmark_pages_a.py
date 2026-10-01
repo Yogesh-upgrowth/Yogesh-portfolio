@@ -47,10 +47,10 @@ PAGES_A = [
                             ["f-bm-20"], ["f-unit-25", "f-bm-17"], ["f-bm-02"]),
     body="""
 <AnswerBox>
-Fintech app retention runs a median 7% at day 30, against a cross-industry average
-of 4%. Strong performers reach 10% to 15%. Day 1 sits at 28% median and day 7 at
-12%. The category retains above average because its use case recurs on a date the
-user does not choose.
+Fintech app retention benchmarks put the median at 7% on day 30, against a
+cross-industry average of 4%. Strong performers reach 10% to 15%. Day 1 sits at 28%
+and day 7 at 12%. The category beats the average because its use case recurs on a
+date the user does not choose.
 </AnswerBox>
 
 <FactTable
@@ -72,27 +72,27 @@ user does not choose.
 Fintech retains a median 28% at day 1, 12% at day 7 and 7% at day 30. The
 cross-industry averages for the same points are 25%, 8% and 4%, so the category's
 advantage widens as the window lengthens. That shape matters more than the level:
-a category that holds its lead at day 30 is being pulled back by need rather than
-by novelty.
+a category that holds its lead at day 30 pulls users back out of
+need rather than novelty.
 
-Two cells here carry no number, and that is deliberate. Strong-performer bands for
-the whole app market are not published, and nor is a fintech-specific figure for
-the share of apps retaining anyone at day 30 — the 5% to 7% figure is
-cross-industry. Filling those cells from an adjacent category would make the table
-look complete and make it wrong.
+Two cells here carry no number, deliberately. Nobody publishes strong-performer
+bands for the whole app market, and nobody publishes a fintech-specific figure for
+the share of apps retaining anyone at day 30 — the 5% to 7% range covers all
+categories. Filling those cells from an adjacent category would make the table look
+complete and make it wrong.
 
 ## Why fintech differs
 
-The return trigger is external. A statement date, a bill, an EMI, a policy expiry
-or a tax deadline brings a user back without the product having to earn attention
-that week. Categories without a calendar have to manufacture the reason, and that
-is expensive.
+The return trigger sits outside the product. A statement date, a bill, an EMI, a
+policy expiry or a tax deadline brings a user back without the product earning
+attention that week. Categories without a calendar must manufacture the reason, and
+that costs money.
 
-The second difference is that a fintech user's value is not evenly spread. One
-user who routes a salary through the app and one who checked a balance once both
-count as retained at day 30, and their revenue differs by orders of magnitude. So
-a retention curve on its own is a weaker signal here than in a subscription
-product, and it should be read next to a revenue-weighted version.
+A fintech user's value also spreads unevenly. Someone routing a salary through the
+app and someone who checked a balance once both count as retained at day 30, and
+their revenue differs by orders of magnitude. A retention curve alone therefore
+carries less signal here than in a subscription product. Read it next to a
+revenue-weighted version.
 
 AI-led fintech features complicate it further. AI apps earn 41% more revenue per
 payer and churn about 30% faster, so bolting an AI feature onto a fintech product
@@ -120,33 +120,58 @@ first month after launch.
 
 ## What good looks like
 
-At day 30, 10% to 15% puts a fintech app in the strong-performer band. Below 7%
-the product is behind its own category rather than behind the market. Between
-those, the more useful question is which cohort is holding: if only the
-salary-routing users stay, the headline is carried by a segment the product did
-not deliberately build for.
+At day 30, 10% to 15% puts a fintech app in the strong-performer band. Below 7% the
+product trails its own category rather than the market. Between those two the more
+useful question is which cohort holds. If only the salary-routing users stay, a
+segment the product never deliberately built for carries the headline.
 
 Read the curve's shape before its level. A curve that flattens between day 7 and
 day 30 has found a recurring need. One that keeps sliding has a use case that
-happens once, and no amount of lifecycle messaging converts a one-off need into a
+happens once, and no amount of lifecycle messaging turns a one-off need into a
 habit.
+
+One more check belongs here. Split the curve by whether the user completed a
+money-moving action in week one. In most fintech products those two cohorts
+diverge so sharply that a blended figure describes neither, and the blended figure
+is what gets compared against tables like this one.
 
 ## If you are below the median
 
 Check collection before retention. A failed mandate leaves the cohort exactly as a
 cancellation does, and most dashboards report the two together, so a fintech
-product can read as disliked when it is merely uncollected.
+product reads as disliked when it is merely uncollected. That check costs an
+afternoon and reorders the whole plan often enough to be worth doing first.
 
 Then check the trigger. If the product has no external date that brings a user
 back, retention work means finding one — a statement, a reminder, a deadline —
-rather than writing better notifications for a week the user had no reason to open
-anything.
+rather than writing better notifications for a week in which the user had no reason
+to open anything. Products without a natural date usually have to borrow one from
+the user's own calendar, and that is a product decision rather than a lifecycle
+campaign.
 
 <FromMyWork exp="exp-040">
 Routing applicants only to lenders with high disbursement probability got bank and
 NBFC approval rates to 90%+. The gain came from the routing rule rather than the
 model that fed it.
 </FromMyWork>
+
+
+## How these figures were gathered
+
+Each row names its source and the date it was last checked. Figures come from
+published benchmark reports, not from a panel this site runs.
+
+Three rows say "no published figure". That is the point of them. The inventory rule
+for every benchmark page here is at least three sources or an explicit "insufficient
+public data" mark. Fintech is well covered at day 1, 7 and 30 and poorly covered on
+strong-performer spread, so the table shows both states.
+
+Where a figure exists for all categories but not for fintech, the row carries the
+all-category number and labels it. That is a comparison, not a fintech benchmark,
+and the distinction matters when somebody sets a target from it.
+
+Anything older than 90 days goes back for re-verification before publication. Price
+figures run on a tighter 45-day cycle, because they move faster than retention does.
 """,
   ),
 
@@ -185,10 +210,10 @@ model that fed it.
                             ["f-bm-14"], ["f-act-16"], ["f-bm-15"]),
     body="""
 <AnswerBox>
-Ecommerce app retention runs a median 2% at day 30, below the 4% cross-industry
-average. Day 1 sits at 18% and day 7 at 5%. Strong performers reach 3% to 6% at
-day 30. The category retains poorly by construction, because buying is episodic
-and the browser is always one tap away.
+Ecommerce app retention benchmarks put the median at 2% on day 30, below the 4%
+cross-industry average. Day 1 sits at 18% and day 7 at 5%. Strong performers reach
+3% to 6%. The category retains poorly by construction, because buying is episodic
+and the browser sits one tap away.
 </AnswerBox>
 
 <FactTable
@@ -209,13 +234,16 @@ and the browser is always one tap away.
 
 Ecommerce sits below the cross-industry average at every point on the curve: 18%
 against 25% at day 1, 5% against 8% at day 7, and 2% against 4% at day 30. Strong
-performers reach 3% to 6% at day 30, which is still below the all-category
-average.
+performers reach 3% to 6% at day 30, which still falls short of the all-category
+average. So a category-leading ecommerce app looks mediocre against a general table,
+and that is a measurement artefact rather than a finding.
 
-No ecommerce-specific figure is published for the share of apps retaining anyone
-at day 30, so that cell carries the cross-industry 5% to 7% and says which
-population it describes. An India-specific D2C retention table at day 1, 7 and 30
-is also not published, and this page does not manufacture one.
+No ecommerce-specific figure exists for the share of apps retaining anyone at day
+30, so that cell carries the cross-industry 5% to 7% and names the population it
+describes. An India-specific D2C retention table at day 1, 7 and 30 is also not
+published, and this page does not manufacture one. Those two gaps matter more here
+than in most categories, because ecommerce retention varies so widely by order
+frequency that a borrowed figure would mislead rather than approximate.
 
 ## Why ecommerce differs
 
@@ -241,50 +269,79 @@ stage.
 
 ## The India layer
 
-The figure that decides Indian D2C economics is not retention, it is what the
+The figure that decides Indian D2C economics is not retention. It is what the
 channel takes. Indian quick-commerce platforms consume 30% to 35% of revenue once
 listing fees, mandatory ad spend, commission and operations are counted.
 
-That changes what retention is worth. A retained buyer who orders through a
-platform taking a third of revenue contributes very differently from one ordering
-direct, so a D2C retention programme that raises platform orders can raise the
-curve and lower the margin at the same time. Read retention by channel, or the
-number hides which half of the base is profitable.
+That changes what retention is worth. A retained buyer ordering through a platform
+taking a third of revenue contributes very differently from one ordering direct, so
+a D2C retention programme that shifts orders onto a platform can raise the curve
+and lower the margin in the same quarter.
+
+Read retention by channel, or the number hides which half of the base earns
+anything. No India-specific D2C retention curve is published, so the channel split
+is the India layer that actually exists here — and it is the one that changes
+decisions.
 
 ## What good looks like
 
-At day 30, 3% to 6% is the strong-performer band. Below 2% the app is behind its
-own category. But the more useful target is repeat purchase rate rather than
-retention: install-to-purchase runs 1.38% for retail and 2.41% for travel, and a
-good mobile commerce conversion rate sits between 2% and 6% depending on order
-value and purchase frequency.
+At day 30, 3% to 6% is the strong-performer band, and below 2% the app trails its
+own category. The more useful target, though, is repeat purchase rate rather than
+retention. Install-to-purchase runs 1.38% for retail and 2.41% for travel, and a
+good mobile commerce conversion rate sits between 2% and 6% depending on order value
+and purchase frequency.
 
-Read cohorts by acquisition channel. In ecommerce more than in most categories,
-the channel decides the curve, and a blended number tells you about your media mix
-rather than your product.
+Read cohorts by acquisition channel. In ecommerce more than in most categories the
+channel decides the curve, so a blended number describes your media mix rather than
+your product. A discount-led cohort and an organic cohort can differ by a factor of
+three at day 30 on the same app, which makes the blended figure almost unusable for
+a decision.
 
+
+Set the target on purchases per buyer per year, then derive the retention target
+from it. Doing it the other way round produces a retention goal the category cannot
+reach.
 ## If you are below the median
 
-Fix the first purchase before the fifth. A user who has never bought has no
-habit to retain, and the interventions are different: shipping clarity, payment
-options and returns policy move first purchase, while none of them move the
-seventh.
+Fix the first purchase before the fifth. A user who has never bought has no habit
+to retain, and the interventions differ: shipping clarity, payment options and a
+visible returns policy move the first purchase, while none of them move the seventh.
 
 Then segment by frequency rather than recency. A quarterly buyer who bought last
-quarter is a healthy customer and a churned user by a 30-day definition.
+quarter is a healthy customer and, under a 30-day definition, a churned user. That
+single definitional choice reclassifies a large share of a D2C base, and teams
+usually discover it after a quarter of chasing the wrong cohort.
 
 <FromMyWork exp="exp-052">
 Order intake arrived by email, phone and trade expo and was systemised into one
 processing workflow. The systemisation was worth more than any single channel,
 because it made the demand legible.
 </FromMyWork>
+
+
+## How these figures were gathered
+
+Every row carries its source and a verification date. The figures come from
+published reports rather than from first-party panel data.
+
+Two rows read "no published figure", and that is deliberate. The standard for these
+pages is at least three sources or an explicit "insufficient public data" mark.
+Ecommerce retention is well documented at the three day marks and undocumented on
+app-level survival, so the table reports both honestly.
+
+Rows that carry an all-category figure in an ecommerce column say so. Borrowing a
+number from a neighbouring category would make this table look complete and make a
+target set from it wrong.
+
+Figures go back for re-checking every 90 days. Anything about price or fees runs on
+a 45-day cycle instead.
 """,
   ),
 
   dict(
     id="benchmark-0459", url="/benchmarks/retention/healthtech", archetype="benchmark",
     hub="benchmarks", funnel="MOFU",
-    title="Health App Retention Benchmarks: D1, D7 and D30 (2026)",
+    title="Health and Wellness App Retention Benchmarks (2026)",
     meta_description="Health and wellness app retention benchmarks for day 1, 7 and 30, the January cohort problem, and the store-conversion figures for the category.",
     h1="Health and wellness app retention benchmarks",
     primary_keyword="health and wellness app retention benchmarks",
@@ -316,10 +373,10 @@ because it made the demand legible.
                             ["f-act-07"], ["f-bm-10"], ["f-bm-13"]),
     body="""
 <AnswerBox>
-Health and wellness app retention runs a median 5% at day 30 against a 4%
-cross-industry average, with strong performers at 8% to 12%. Day 1 is unusually
-strong at 25%, and strong performers reach 35% to 45%. The category acquires
-willing users and then asks them to do something difficult every day.
+Health and wellness app retention benchmarks put the median at 5% on day 30 against
+a 4% cross-industry average, with strong performers at 8% to 12%. Day 1 runs
+unusually strong at 25%, and strong performers reach 35% to 45%. The category
+acquires willing users, then asks them to do something difficult every day.
 </AnswerBox>
 
 <FactTable
@@ -348,6 +405,10 @@ at day 30, so that cell shows the cross-industry range and says so. And no
 published benchmark separates seasonal cohorts, which for this category is the
 single most distorting omission.
 
+
+Treat the day-1 figure with particular care in this category. A high day 1 here
+reflects intent at install rather than product quality, and intent is the one input
+a benchmark cannot tell you whether you share.
 ## Why health and wellness differs
 
 The behaviour is effortful and the payoff is delayed. A user installs with real
@@ -376,17 +437,27 @@ is expensive relative to willingness to pay, that organic conversion advantage i
 the category's most useful asset — and it makes the retention problem, not the
 acquisition problem, the one worth funding.
 
+
+The practical consequence is that an Indian health product should budget for
+retention work and not for more installs. Discovery is already the cheap part, and
+spending there buys more of the users the curve is losing.
 ## What good looks like
 
-At day 30, 8% to 12% is the strong-performer band and 5% is the median. But the
-figure to watch is day 7, where the category's strong band runs 15% to 22%: that
-window is where the habit either forms or does not, and day 30 is mostly its
+At day 30, 8% to 12% is the strong-performer band and 5% is the median. The figure
+to watch, though, is day 7, where the category's strong band runs 15% to 22%. That
+window is where the habit forms or does not, and day 30 mostly reports the
 consequence.
 
-Store conversion is already strong at 25% to 40% page view to install, so a health
-app with a retention problem rarely has an acquisition problem. Spending there
-buys more users to lose.
+Store conversion already runs strong at 25% to 40% page view to install, so a health
+app with a retention problem rarely has an acquisition problem. Spending there buys
+more users to lose. The practical test: if day 7 sits inside the strong band and day
+30 does not, the product has built a habit it cannot sustain, which is a different
+problem from one it never started.
 
+
+Compare monthly cohorts against each other before comparing any of them against
+this table. In a seasonal category that internal comparison is the more reliable
+signal.
 ## If you are below the median
 
 Shorten the time to first felt benefit. The category's problem is a delayed
@@ -405,6 +476,29 @@ Setting portfolio-level direction on high-intent entry points, trust signals and
 the core paths through each product lifted activation depth 18-25% across four
 consumer and B2B platforms.
 </FromMyWork>
-""",
+
+
+
+Then check whether the first session produced anything the user could see. A plan,
+a score or a single measurement all qualify; a tour of the interface does not.
+## How these figures were gathered
+
+Each row shows its source and when somebody last checked it. The numbers come from
+published benchmark reports.
+
+The seasonality caveat above is the most important thing on this page, and no
+published source handles it. January cohorts behave differently from June cohorts in
+this category, and every median here blends them. Run your own months before
+comparing.
+
+Two rows read "no published figure". The rule for these pages is three sources or an
+explicit "insufficient public data" mark, and health retention is well covered at
+day 1, 7 and 30 while app-level survival is not covered for the category at all.
+
+Re-verification runs every 90 days, and every 45 for anything touching price.
+
+
+Where two published sources disagree, both appear and the page says so rather than
+picking the friendlier one.""",
   ),
 ]

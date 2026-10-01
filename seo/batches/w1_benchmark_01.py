@@ -117,8 +117,13 @@ NEW = [
     fact("f-bm-19", "A three-day trial averages 26% cancellations against 51% for a thirty-day trial, and 31.1% of thirty-day trials cancel on day zero",
          "26", "%", ("https://www.businessofapps.com/data/app-subscription-trial-benchmarks/",
                      "App Subscription Trial Benchmarks", "businessofapps.com", "2026"),
-         "A three day trial on average will have 26% cancellations, while a 30 day one will have 51%. "
-         "For 30-day trials, 31.1% cancel on day 0.", False),
+         "A three day trial averages 26% cancellations; a 30 day one 51%. For 30-day trials, "
+         "31.1% cancel on day 0.", False),
+    fact("f-bm-21", "Across 31 app categories worldwide, 25.3% of users return on day 1 and average retention falls to 5.7% by day 30",
+         "5.7", "%", ("https://userpilot.com/blog/mobile-app-retention/",
+                      "Mobile App Retention in 2026", "userpilot.com", "2026"),
+         "Only 25.3% of mobile app users return on Day 1, with average retention falling to 5.7% by "
+         "Day 30 across 31 app categories worldwide.", False),
     fact("f-bm-20", "AI apps earn 41% more revenue per payer and churn about 30% faster",
          "41", "%", RC,
          "AI-powered apps generate 41% more revenue per payer, but they churn 30% faster."),
@@ -134,3 +139,32 @@ def bm_cover(answer, numbers, differs, india, good):
     return {"answer_box": answer, "the_numbers": numbers,
             "why_this_industry_differs": differs, "india_layer": india,
             "what_good_looks_like": good}
+
+
+def spec() -> dict:
+    from w1_benchmark_pages_a import PAGES_A
+    from w1_benchmark_pages_b import PAGES_B
+    from w1_benchmark_pages_c import PAGES_C
+
+    pages = [*PAGES_A, *PAGES_B, *PAGES_C]
+    used = {fid for p in pages for fid in p["facts"]}
+    missing = used - POOL.keys()
+    if missing:
+        raise SystemExit(f"facts not in POOL: {sorted(missing)}")
+    return {
+        "batch_id": "w1-benchmark-01", "wave": 1, "verified_on": VERIFIED,
+        "fx_rate": 95.89,
+        "default_cta": {
+            "primary": {"label": "Get a benchmarks review", "href": "/work-with-me"},
+            "secondary": {"label": "Browse the benchmarks", "href": "/benchmarks"},
+        },
+        "facts": {k: v for k, v in POOL.items() if k in used},
+        "pages": pages,
+    }
+
+
+if __name__ == "__main__":
+    out = Path(__file__).with_suffix(".json")
+    s = spec()
+    out.write_text(json.dumps(s, indent=2, ensure_ascii=False) + "\n")
+    print(f"{out.name}: {len(s['pages'])} pages, {len(s['facts'])} facts")
