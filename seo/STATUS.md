@@ -216,7 +216,7 @@ and network for `research.ts`). Until then:
 
 ---
 
-## G02 ran for the first time — 41 pages are not publishable
+## G02 ran for the first time — 38 pages are not publishable
 
 Date: 2026-10-01
 
@@ -249,14 +249,20 @@ Gate verdicts with the real log in place:
 
 | | Pages |
 |---|---|
-| Blocked by G02 | **41 of 98** |
-| …for the majority-primary rule alone | 25 |
-| …adding those citing a non-200 source | 16 |
+| G02 passes | 60 of 98 |
+| **Blocked by G02** | **38 of 98** |
+| …of those, failing the majority-primary rule | 25 |
+| …of those, blocked solely for citing a non-200 source | 13 |
 
-An earlier note here said 25 blocked and none for reachability. That came from a
-wiring test that injected 200 for every URL to prove the gate ran at all, and it
-was wrong about reachability — the real run found 11 non-200. 25 is the
-majority-primary count, not the total.
+Counted from the BLOCK rows in `reports/wave-all.md`, which the workflow now
+summarises directly. Two earlier figures in this file were wrong and are
+superseded by that count: 25 came from a wiring test that injected 200 for every
+URL to prove the gate ran at all, so it missed reachability entirely; 41 was a
+hand count of console verdict lines. The 25 figure survives as the
+majority-primary subset, which is what that test did measure correctly.
+
+With the log in place G02 stops skipping: pages now report 3 skipped gates
+(G18, G19, G20) rather than 4.
 
 Four pages cite no primary source at all:
 
@@ -291,5 +297,4 @@ links only, and `pnpm gates` never writes `status` — so a page with a standing
 G02 block could be marked reviewed by hand and flipped to indexable with the
 block intact. It cannot now.
 
-**These 41 pages need work before they are indexed.** The other 57 are
-unaffected.
+**These 38 pages need work before they are indexed.** The other 60 pass G02.
