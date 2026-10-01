@@ -1,0 +1,117 @@
+{
+  "id": "bmhub-0004",
+  "url": "/benchmarks/install-to-purchase",
+  "archetype": "benchmark-hub",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-bmhub-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Install to Purchase Conversion Benchmarks by Category, 2026",
+  "meta_description": "What share of installs become a first purchase, by category, plus how fast first revenue arrives and the measurement window the timing data implies.",
+  "h1": "Install to purchase conversion benchmarks",
+  "primary_keyword": "install to purchase conversion benchmarks",
+  "secondary_keywords": [
+    "install to purchase rate",
+    "first purchase conversion app"
+  ],
+  "entity_a": "install-to-purchase",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-14",
+    "f-bm-15",
+    "f-ih-01",
+    "f-ih-02",
+    "f-bm-20",
+    "f-hub-02"
+  ],
+  "experience_used": [
+    "exp-021"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks/install-to-purchase/d2c-ecommerce",
+      "anchor": "D2C e-commerce install to purchase",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/d2c-ecommerce",
+      "anchor": "D2C e-commerce retention",
+      "role": "reference"
+    },
+    {
+      "url": "/glossary/conversion-rate",
+      "anchor": "the conversion rate definition",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/arpu",
+      "anchor": "the ARPU definition",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#install-to-purchase",
+      "alt": "Install-to-purchase reference points: the typical one to two percent band with retail and travel named, the e-commerce app range by order value, median day-60 revenue per install and the strong threshold, the AI app revenue-per-payer premium against its faster churn, average US store conversion for funnel context, and India app revenue growth, each row carrying its source and verification date",
+      "caption": "Install to first purchase, and what each install is worth. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What counts as the purchase in this metric?",
+      "a": "The first paid transaction, which is not the same as a subscription start or a trial start. A product with trials will show a much lower install-to-purchase rate than install-to-trial, and mixing the two is the most common error in this metric."
+    },
+    {
+      "q": "Is 1% to 2% good?",
+      "a": "It depends entirely on order value, and the rate alone cannot say. Retail converts 1.38% and travel 2.41%, but travel's order value is many times larger, so the two rates describe very different businesses."
+    },
+    {
+      "q": "What window should I measure over?",
+      "a": "Fourteen days captures almost all of it. The median time from install to first revenue is about 48 hours and the 90th percentile sits near 14 days, so a shorter window penalises any product with a consideration cycle and a longer one mostly adds delay."
+    },
+    {
+      "q": "Do AI apps convert differently?",
+      "a": "They monetise differently rather than converting differently: AI apps earn 41% more revenue per payer and churn about 30% faster. A strong first-purchase rate with that churn profile produces a very different lifetime value."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Review your install to purchase funnel",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Pairs the conversion rate with the published timing distribution, so the measurement window follows the evidence rather than convention: half of all payers pay within two days, which makes most reporting windows either too short to be fair or too long to be useful.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

@@ -35,6 +35,18 @@ export interface GateInput {
   facts: Fact[];
   /** fact_id -> number of pages using it, from data/facts/index.json. */
   factUsage: Map<string, number>;
+  /**
+   * Fact ids listed in data/facts/shared.json.
+   *
+   * 02 §2 G01: "Shared facts in data/facts/shared.json don't count" toward the
+   * six page-specific facts, and §C2's reuse cap does not apply to them. The
+   * cap exists to stop a page being assembled from another page's evidence; a
+   * cross-industry baseline that a sub-hub quotes from each of its six children
+   * is the opposite case, and without this exemption the cap pushes a page
+   * toward re-researching one number under six ids — which hides the reuse from
+   * gReuse instead of preventing it.
+   */
+  sharedFacts?: Set<string>;
   experience: Map<string, ExperienceEntry>;
   /** Every other page's meta, for corpus-wide uniqueness (G10). */
   corpus: PageMeta[];
@@ -131,16 +143,15 @@ function daysBetween(a: string, b: string): number {
 // ── G01 Research completeness ────────────────────────────────────────────────
 export function g01(i: GateInput): GateResult {
   const N = "Research completeness";
-  const specific = i.facts.filter((f) => (i.factUsage.get(f.fact_id) ?? 1) <= 3);
-  if (i.facts.length < 6) {
-    return { id: "G01", name: N, status: "blocked",
-      detail: `${i.facts.length} facts; 6 page-specific are required. Never drafted.`,
-      observed: `${i.facts.length}/6` };
-  }
+  const shared = i.sharedFacts ?? new Set<string>();
+  const specific = i.facts.filter(
+    (f) => !shared.has(f.fact_id) && (i.factUsage.get(f.fact_id) ?? 1) <= 3,
+  );
   if (specific.length < 6) {
     return { id: "G01", name: N, status: "blocked",
-      detail: `${specific.length} of ${i.facts.length} facts are page-specific ` +
-        "(used on ≤2 other pages). Shared facts do not count.",
+      detail: `${specific.length} page-specific fact(s) of ${i.facts.length} cited; 6 are ` +
+        `required. ${i.facts.length - specific.length} are shared or over the reuse cap, ` +
+        "and neither counts. Never drafted.",
       observed: `${specific.length}/6` };
   }
   const missing = i.facts.filter((f) => !f.source_url || !f.verified_on || !f.excerpt);
@@ -480,6 +491,11 @@ export function g08(i: GateInput): GateResult {
   // one-way traffic into the hubs.
   const { roles, why } = requiredLinkRoles(i.funnel ?? "MOFU");
   for (const role of roles) {
+    // A tool page satisfies §C4's tool requirement by being one. Demanding it
+    // link out to a different tool makes the rule unsatisfiable while only one
+    // is built, and the only link that satisfies it is the page's own URL —
+    // which this same gate then rejects as a self-link.
+    if (role === "toolOrTemplate" && i.meta.archetype === "tool") continue;
     const has =
       role === "toolOrTemplate"
         ? links.some((l) => l.role === "tool" || /^\/templates\//.test(l.url))
@@ -508,9 +524,14 @@ export function gReuse(i: GateInput): GateResult {
   const N = "Reuse caps";
   const fails: string[] = [];
 
+  const shared = i.sharedFacts ?? new Set<string>();
   for (const id of i.meta.facts_used) {
+    // A shared fact is exempt by design (see GateInput.sharedFacts). The
+    // per-app teardown cap below still applies: four lenses of one app leaning
+    // on the same baseline is the near-duplicate set §C2 exists to prevent,
+    // shared or not.
     const uses = i.factUsage.get(id) ?? 1;
-    if (uses > CROSS.FACT_REUSE_SITEWIDE) {
+    if (!shared.has(id) && uses > CROSS.FACT_REUSE_SITEWIDE) {
       fails.push(`fact ${id} is on ${uses} pages (cap ${CROSS.FACT_REUSE_SITEWIDE})`);
     }
     // Within one app's teardowns the cap is tighter, because four lenses of one

@@ -1,0 +1,162 @@
+<AnswerBox>
+ARPU benchmarks put the 2026 median for B2B SaaS at about $250 a month (roughly
+₹24,000), up from $210 in 2024. That median is less useful than it looks. It falls
+inside the mid-market band and outside the self-serve, SMB and enterprise ones. For
+three of four segments it is not a benchmark at all.
+</AnswerBox>
+
+<FactTable
+  id="arpu-by-segment"
+  caption="ARPU by segment, and the India figures that disagree"
+  columns={["Measure", "Figure"]}
+  rows={[
+    { cells: ["B2B SaaS median monthly ARPU, 2026 against 2024", "about $250 against $210 (about ₹24,000 against ₹20,100)"], factId: "f-bm-29" },
+    { cells: ["Self-serve / SMB / mid-market / enterprise bands", "$20-50 / $50-200 / $200-2,000 / $2,000-10,000"], factId: "f-bm-28" },
+    { cells: ["Median SMB SaaS ARPU", "$55 a month (about ₹5,274)"], factId: "f-bm-30" },
+    { cells: ["CAC by contract value, SMB under $15,000 ACV", "$2,000-8,000 (about ₹1.9-7.7 lakh)"], factId: "f-bm-32" },
+    { cells: ["India OTT ARPU, figure one", "$40.44 a year projected"], factId: "f-bm-22" },
+    { cells: ["India OTT ARPU, figure two", "₹85-95 a month"], factId: "f-bm-23" },
+    { cells: ["India OTT ARPU, figure three", "$9.02 a year projected"], factId: "f-bm-34" },
+  ]}
+/>
+
+## What ARPU measures, and the denominator that decides it
+
+ARPU divides revenue by users. Every argument about ARPU is an argument about
+which users.
+
+The blended version takes all active users, payers and free alike. The paying
+version, properly called ARPPU, takes payers only. In a freemium product
+converting 3%, those two numbers differ by more than thirty times, and both get
+reported as "ARPU" in decks that then get compared.
+
+The second choice is the period. A monthly ARPU and an annual one differ by roughly
+twelve. That sounds too obvious to cause problems, until the India figures below,
+where one source reports annually and another monthly. The two then get quoted side
+by side as though they disagreed about performance.
+
+Write down which users and which period before you compare anything. Most ARPU
+disputes end there.
+
+## Reading the table by segment
+
+The bands matter more than the median. Self-serve products run $20 to $50 a month
+(about ₹1,900 to ₹4,800), SMB $50 to $200 (₹4,800 to ₹19,000), mid-market $200 to
+$2,000 (₹19,000 to ₹1.9 lakh) and enterprise $2,000 to $10,000 (₹1.9 lakh to
+₹9.6 lakh). The 2026 median of about $250 (₹24,000) sits in the third of those.
+
+So a self-serve product comparing itself to $250 (about ₹24,000) is comparing
+itself to a different business model rather than a better-run version of its own.
+The SMB median of $55 a month (about ₹5,300) is the relevant bar in that band, and
+it sits more than four times below the headline.
+
+The acquisition side explains why the bands hold. SMB products under $15,000 of
+annual contract value (about ₹14.4 lakh) carry $2,000 to $8,000 of acquisition cost
+(about ₹1.9 lakh to ₹7.7 lakh). A product trying to charge mid-market prices to an
+SMB buyer pays SMB acquisition costs for mid-market revenue only if the buyer
+agrees, and usually they do not.
+
+## The India layer
+
+India OTT ARPU is published three ways, and they do not reconcile.
+
+One source projects $40.44 for 2026 (about ₹3,878). Another reports ₹85 to ₹95 a
+month, which, multiplying the midpoint by twelve, annualises to a figure near the
+third source's projection of $9.02 (about ₹865) rather than to the first's. The
+outer two differ by more than four times.
+
+This page records the disagreement rather than choosing. The likely cause is the
+denominator — paying subscribers, all registered users, or all viewers including
+ad-supported ones — but no source publishes enough method to confirm it, and
+picking the convenient figure is how an invented benchmark enters circulation.
+
+The practical advice: if you are modelling Indian subscription revenue, do not
+start from a published ARPU at all. Start from your own price points and your own
+paying conversion, and use these figures only as a sanity check on the order of
+magnitude.
+
+## How to measure it without fooling yourself
+
+Report ARPU and ARPPU together, always. One without the other cannot distinguish a
+pricing improvement from a free-user exodus, and those call for opposite
+responses.
+
+Hold the denominator fixed across periods. A definition change mid-year produces a
+step in the chart that looks like performance, and the step survives in the chart
+long after everyone has forgotten the change.
+
+Segment before averaging. A blended ARPU across self-serve and enterprise customers
+describes nobody, and it moves when the mix moves, so it reports sales composition
+as product performance.
+
+<Example illustrative>
+Where one segment is 5% of users and 60% of revenue, the blended ARPU is mostly
+that segment with extra steps. Lose a single enterprise account and the figure
+moves more than a year of self-serve pricing work.
+</Example>
+
+Two further habits help. Exclude trialists from the user count until they pay, or a
+trial push will show up as an ARPU collapse. And decide once whether refunds and
+taxes come out before the division — India's GST on digital subscriptions is large
+enough to move the figure visibly, and a net number compared against a gross
+benchmark reads as underperformance that is not there.
+
+## What actually moves it
+
+Mix, price, and attach rate, in that order of impact and reverse order of
+attention.
+
+Mix moves ARPU most and gets credited least: winning more mid-market accounts
+raises the blended figure without any product or pricing change. Price moves it
+directly, bounded by what the segment tolerates — the bands above are fairly
+stable, and products that try to exit their band usually find out why it exists.
+Attach rate, the share of users on a paid add-on, is the slow compounding one, and
+the only one of the three that raises ARPU without raising the price.
+
+What moves it less than expected: discounting, which raises conversion and lowers
+ARPU by roughly the amount of the discount, and annual-plan pushes, which move
+cash timing more than they move revenue per user.
+
+<FromMyWork exp="exp-036">
+The measurement I most regret not taking rigorously was client perception of
+product coherence. ARPU has the same problem in miniature: the number everyone
+quotes is rarely the number that explains the result.
+</FromMyWork>
+
+## Stage adjustment
+
+Early on, ARPU is close to meaningless. With a few hundred users the figure swings
+on individual accounts, and the useful question is whether anyone pays willingly
+at the price you named.
+
+In the growth stage ARPU becomes a mix diagnostic rather than a performance one.
+Watch it alongside the segment split: a rising blended figure with a falling
+self-serve figure means the business is moving upmarket, which is a strategy
+decision rather than an improvement.
+
+This is also the stage where ARPU and growth pull against each other. Opening a
+cheaper tier lowers ARPU and usually raises total revenue, and a team held to ARPU
+as a target will refuse the trade. Treat it as a diagnostic, never as a goal — of
+all the metrics on this site, ARPU is the one most easily improved by doing
+something harmful.
+
+At scale the bands become the constraint. A product in the $200 to $2,000 band
+(₹19,000 to ₹1.9 lakh) with ambitions above it needs a different buyer, not a
+higher price. The $250 median (about ₹24,000) shows how many stop exactly there.
+
+## Sources and tools
+
+Each figure carries its source and the date it was last checked. The India figures
+above are presented as three competing claims because that is what the published
+record contains, and averaging them would create a number no source supports.
+
+The monetisation health score takes ARPU alongside retention and acquisition cost,
+which is the only combination that distinguishes a healthy ARPU from one propped up
+by churned free users. The acquisition-cost bands above are the reason: ARPU without
+the cost of acquiring it is half a sentence.
+
+The segment page under this hub carries the B2B SaaS detail, including the
+relationship between contract value and churn that makes the bands above behave
+differently at each end. For a consumer product, the revenue-per-install figures
+here are the better starting point, and the glossary entries for ARPU and ARPPU set
+out the two denominators side by side before any benchmark gets applied.

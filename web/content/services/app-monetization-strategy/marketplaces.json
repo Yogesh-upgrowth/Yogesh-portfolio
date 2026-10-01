@@ -36,8 +36,8 @@
       "role": "proof"
     },
     {
-      "url": "/benchmarks/retention/marketplaces",
-      "anchor": "marketplace retention benchmarks",
+      "url": "/benchmarks/retention",
+      "anchor": "the retention benchmarks",
       "role": "reference"
     },
     {
@@ -51,8 +51,8 @@
       "role": "lateral"
     },
     {
-      "url": "/tools/app-store-fee-net-revenue-calculator",
-      "anchor": "the net revenue calculator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
@@ -103,6 +103,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "authored",
   "not_affiliated": true,
   "fx_rate_used": 95.89
 }

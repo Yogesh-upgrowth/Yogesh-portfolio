@@ -1,0 +1,167 @@
+<AnswerBox>
+Trial to paid conversion rate benchmarks rise with trial length. Across 17,000-plus
+apps, trials under four days convert 25.5% and trials of seventeen to thirty-two days
+convert 42.5% — about 70% better. Most advice says shorten the trial, and 46.5% of
+apps now run four days or less. The conversion data points the other way.
+</AnswerBox>
+
+<FactTable
+  id="trial-conversion"
+  caption="Conversion rises with trial length, and cancellations rise too"
+  columns={["Measure", "Figure"]}
+  rows={[
+    { cells: ["Conversion by trial length, 17,000+ apps", "<4 days 25.5%; 5-9 days 37.4%; 10-16 days 35.4%; 17-32 days 42.5%"], factId: "f-th-01" },
+    { cells: ["Long trials against short ones", "17-32 days convert about 70% better"], factId: "f-th-02" },
+    { cells: ["Apps using a trial of four days or shorter", "46.5%, up from 42.1%"], factId: "f-th-03" },
+    { cells: ["Cancellations landing on day 0 to day 1", "84% of 3-day trials, 64% of 7-day"], factId: "f-th-04" },
+    { cells: ["Free-trial products, published distribution", "7% below 2.5%; most common 7.5-10%"], factId: "f-gh-02" },
+    { cells: ["Annual subscribers who cancel and never return", "95%"], factId: "f-th-05" },
+  ]}
+/>
+
+## What trial to paid conversion measures
+
+The share of trial starts that become paying customers. Simple to state, and three
+choices decide the number.
+
+The first is what starts a trial. A trial requiring card details and one that does
+not are different products with the same name, and they convert on different
+distributions. The second is the window: conversion measured at the end of the
+trial and conversion measured thirty days later differ, because some people pay
+late. The third is whether a cancelled-but-not-yet-expired trial counts as lost.
+
+The distribution matters more than any median. Across more than 1,000 products, 7% of
+free-trial products convert below 2.5% and the most common band is 7.5% to 10%.
+Freemium products sit on a different distribution entirely: a fifth below 2.5%, with
+the largest group between 2.5% and 5%.
+
+Those two distributions barely overlap. Note also how far the trial-length figures
+sit above both — a 42.5% conversion on a long trial counts trial starts, while the
+distribution above counts signups. Another denominator, another number.
+
+## Reading the table: two metrics pointing opposite ways
+
+Here is the disagreement most trial advice hides. Longer trials convert better —
+25.5% under four days, rising to 42.5% at seventeen to thirty-two days. Longer trials
+also produce more cancellations, because a user with thirty days has thirty days to
+change their mind.
+
+Both are true, and only one of them is revenue. Cancellation rate counts people
+leaving; conversion rate counts people paying. A trial can raise both at once by
+getting more people to engage at all, and a team optimising for fewer cancellations
+will shorten the trial and lose conversions doing it.
+
+The cancellation timing shows where the real decision sits: 84% of three-day trial
+cancellations happen between day 0 and day 1, against 64% of seven-day cancellations.
+Almost everyone who abandons a short trial does so immediately, which means the short
+trial never got a second session to make its case.
+
+Meanwhile 46.5% of apps now run trials of four days or less, up from 42.1% a year
+earlier. That move is not a conversion decision. Paid acquisition needs a fast
+conversion signal to optimise ad spend, and a short trial returns one within days.
+
+## The India layer
+
+No published source gives an India-specific trial-to-paid rate by category, so this
+page does not state one. Two structural factors do transfer, and both argue against
+copying the industry's drift toward short trials.
+
+The first is that the drift is driven by paid-acquisition attribution, and Indian
+acquisition leans more on organic and referral volume than on paid signal. A team
+that is not optimising ad spend day by day has less reason to pay the conversion
+penalty that a four-day trial carries.
+
+The second is mechanical. Recurring-payment mandates fail more often in India than
+card-on-file charges do in card-led markets, so a trial that converts on paper can
+fail at the first charge. Measure the first successful payment rather than the
+conversion event, or the funnel will report revenue that never arrived. And note what
+the annual data implies about recovery: 95% of annual subscribers who cancel never
+come back, so a failed first charge on an annual plan is usually permanent.
+
+## How to measure it without fooling yourself
+
+Separate trial type before anything else. Blending card-required and
+card-not-required trials produces a number that describes neither, and the gap
+between them is wider than almost any improvement you will ship.
+
+Use a fixed window past the trial end — thirty days is the common convention — and
+apply it consistently. A product reporting conversion at trial end and a competitor
+reporting it thirty days later are not comparable.
+
+Count cancellations separately from non-conversions, and never treat the cancellation
+rate as an inverted conversion rate. A cancellation is an active decision; a
+non-conversion is often inattention. One needs a better product case, the other needs
+a reminder, and the 84%-on-day-one figure says which of the two a short trial is
+mostly producing.
+
+Finally, measure the first successful charge rather than the conversion event, and
+keep involuntary failures in their own bucket. A mandate that fails on the first
+attempt is not a user who declined, and a funnel that files the two together will
+send win-back messaging to people who thought they had already bought.
+
+## What actually moves it
+
+Trial length, trial type, and the first session, in that order.
+
+Length is the largest and the cheapest to change, and the evidence points longer
+rather than shorter: about 70% better conversion at seventeen to thirty-two days than
+under four. Type is larger still but changes what the business is: requiring a card
+raises conversion and cuts trial starts, and whether that trade is worth it depends
+on how much top-of-funnel volume you can afford to lose. The first session decides
+whether the rest of the trial happens at all, which is why 84% of three-day
+cancellations land on day zero or one.
+
+What moves it less than expected: the number of reminder emails past the second,
+feature-gating adjustments inside the trial, and extending a trial for users who never
+engaged during the first one.
+
+<FromMyWork exp="exp-044">
+The pattern I keep seeing is a retention problem diagnosed as an acquisition
+problem. Trials make it worse, because a trial start looks like acquisition and
+behaves like retention.
+</FromMyWork>
+
+## Stage adjustment
+
+Early on, the trial design is the experiment. With low volume the conversion rate
+cannot be read reliably, but the trial type and length can be chosen from published
+evidence rather than guessed, and longer is the better prior unless paid acquisition
+is already the main channel.
+
+In the growth stage the rate becomes readable and the segment split becomes the useful
+view. This is also when the attribution trade becomes real: once paid spend is large
+enough that a slow conversion signal costs money, a shorter trial can be the right
+choice despite converting worse. Make that trade knowingly rather than by copying the
+46.5% of apps that have already made it.
+
+At scale the conversion rate stops being the goal and the revenue behind it takes
+over.
+
+<Example illustrative>
+A product converting 25% on a three-day trial and one converting 42% on a thirty-day
+trial can land on similar annual revenue. The cash arrives weeks earlier in the first
+case, and the second carries twenty-seven extra days of support and infrastructure for
+every trialist who never pays.
+</Example>
+
+Only the full picture distinguishes them, and the conversion rate alone hides it.
+
+## Sources and tools
+
+Each figure carries its source and the date it was last checked. Where a published
+figure gives no trial type or window, this page notes the omission rather than
+filing the number next to ones that have both.
+
+The segment page under this hub carries the B2B SaaS detail. The monetisation health
+score takes trial conversion alongside retention and price, which is what separates
+a conversion rate worth raising from one that is already taking everybody it should.
+
+A note on the distribution figures. They come from a survey of self-reported rates
+across more than 1,000 products, which carries the usual self-reporting bias: teams
+with embarrassing numbers answer less often. Read the bottom of the distribution as a
+floor on how bad it gets rather than as a true tail.
+
+The trial-length figures come from a single platform's aggregate across 17,000-plus
+apps. That is a large sample and a selected one — apps using that platform skew toward
+subscription-first consumer products — so the direction is well evidenced and the exact
+percentages are specific to that population.

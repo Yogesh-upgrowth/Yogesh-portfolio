@@ -84,20 +84,6 @@
       "method": "search_index",
       "primary": true
     },
-    "f-unit-18": {
-      "fact_id": "f-unit-18",
-      "claim": "Gross revenue retention by contract size runs 82% under 25,000 dollars ACV, 88% from 25,000 to 100,000, and 95% above",
-      "value": "95",
-      "unit": "%",
-      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
-      "source_title": "2025 B2B SaaS Retention Benchmarks",
-      "source_domain": "saas-capital.com",
-      "excerpt": "SMB (<$25K ACV): 82% GRR; Mid-Market ($25K-$100K): 88% GRR; Enterprise (>$100K ACV): 95% GRR.",
-      "published_on": "2025",
-      "verified_on": "2026-09-30",
-      "method": "search_index",
-      "primary": true
-    },
     "f-unit-20": {
       "fact_id": "f-unit-20",
       "claim": "Bootstrapped SaaS companies between 3 million and 20 million dollars ARR grow at a 15% median",
@@ -266,20 +252,6 @@
       "method": "search_index",
       "primary": true
     },
-    "f-act-12": {
-      "fact_id": "f-act-12",
-      "claim": "Razorpay charges Indian businesses 2% plus 18% GST on domestic payments and 3% on international card exports",
-      "value": "2",
-      "unit": "%",
-      "source_url": "https://razorpay.com/blog/best-payment-gateway-pricing-saas-india-tco-guide",
-      "source_title": "Payment gateway pricing for SaaS businesses in India",
-      "source_domain": "razorpay.com",
-      "excerpt": "Razorpay charges 2% platform fee plus 18% GST for domestic payments, and 3% for international exports by card.",
-      "published_on": "2026",
-      "verified_on": "2026-09-30",
-      "method": "search_index",
-      "primary": true
-    },
     "f-act-14": {
       "fact_id": "f-act-14",
       "claim": "Indian quick commerce splits by GMV into Blinkit near 46%, Swiggy Instamart near 24% and Zepto near 22%",
@@ -433,6 +405,48 @@
       "verified_on": "2026-09-30",
       "method": "search_index",
       "primary": false
+    },
+    "f-fx-04": {
+      "fact_id": "f-fx-04",
+      "claim": "More than 300 teams run over 10,000 experiments a year across 750 million users in 186 markets, and 42% get rolled back after a guardrail metric flags a regression",
+      "value": "42",
+      "unit": "%",
+      "source_url": "https://confidence.spotify.com/blog/ab-testing-bandwidth",
+      "source_title": "A/B test bandwidth: the currency of innovation",
+      "source_domain": "confidence.spotify.com",
+      "excerpt": "300+ Spotify teams run 10,000+ experiments per year across 750 million users in 186 markets; 42% are rolled back after guardrail metrics flag a regression.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-fx-05": {
+      "fact_id": "f-fx-05",
+      "claim": "At a 5% baseline, detecting a 50% relative lift needs about 1,700 visitors per variant, a 20% lift about 9,000 and a 10% lift about 36,000",
+      "value": "1700",
+      "unit": "visitors",
+      "source_url": "https://leanexperiments.substack.com/p/sample-size-calculation-for-ab-tests",
+      "source_title": "Sample size calculation for A/B tests",
+      "source_domain": "leanexperiments.substack.com",
+      "excerpt": "A 5% baseline requires roughly 1,700 visitors per variant for a 50% relative lift, ~9,000 for 20% and ~36,000 for 10%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-fx-08": {
+      "fact_id": "f-fx-08",
+      "claim": "Among 686 tracked apps, subscriptions are the primary model for 418, or 61%, against advertising for 176, or 26%",
+      "value": "61",
+      "unit": "%",
+      "source_url": "https://www.lazyweb.com/research/how-do-tracked-apps-make-money-subscription-ads-transactions",
+      "source_title": "How do tracked apps actually make money?",
+      "source_domain": "lazyweb.com",
+      "excerpt": "Among tracked apps, subscriptions account for 418 of 686 apps (61%), more than double advertising at 176/686 (26%).",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
     }
   },
   "pages": [
@@ -474,8 +488,8 @@
           "role": "reference"
         },
         {
-          "url": "/teardowns",
-          "anchor": "the teardowns",
+          "url": "/glossary",
+          "anchor": "the glossary",
           "role": "hub"
         },
         {
@@ -572,7 +586,7 @@
         "f-hub-02",
         "f-unit-01",
         "f-unit-03",
-        "f-unit-18",
+        "f-fx-08",
         "f-unit-30",
         "f-unit-37"
       ],
@@ -591,8 +605,8 @@
           "role": "hub"
         },
         {
-          "url": "/india/india-app-economy-statistics",
-          "anchor": "India app economy statistics",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -655,7 +669,7 @@
         ],
         "start_here_cards": [
           "f-unit-01",
-          "f-unit-18"
+          "f-fx-08"
         ],
         "filterable_index": [
           "f-unit-37"
@@ -667,7 +681,7 @@
           "f-unit-30"
         ]
       },
-      "body": "\n<AnswerBox>\nProduct monetization benchmarks by industry, each figure carrying its source and\nthe date it was checked. India sits alongside global rather than under it. Average\nmobile subscription ARPU is $8.41, about ₹806. India's projected streaming ARPU is\n$9.02, about ₹865, and it is published annually rather than monthly.\n</AnswerBox>\n\n<FactTable\n  id=\"benchmark-index\"\n  caption=\"A sample of what this hub indexes, and what each figure measures\"\n  columns={[\"Metric\", \"Figure\"]}\n  rows={[\n    { cells: [\"India app revenue and downloads, Q1 2026\", \"over $300M, up 33%, on 6.2 billion downloads\"], factId: \"f-hub-02\" },\n    { cells: [\"Average mobile subscription ARPU\", \"$8.41 (about ₹806)\"], factId: \"f-unit-01\" },\n    { cells: [\"Median refund rate, IN/SEA against North America\", \"7.7% against 3.4%\"], factId: \"f-unit-03\" },\n    { cells: [\"Gross revenue retention by ACV\", \"82% under $25K, 95% above $100K\"], factId: \"f-unit-18\" },\n    { cells: [\"India streaming ARPU, projected 2026\", \"$9.02 (about ₹865)\"], factId: \"f-unit-30\" },\n    { cells: [\"US cost per install, fintech and utilities\", \"$11.62 and $2.46 on iOS (about ₹1,114 and ₹236)\"], factId: \"f-unit-37\" },\n  ]}\n/>\n\n## What this hub covers\n\nRetention, churn, conversion, ARPU, pricing and acquisition cost, split by\nindustry and by market. Each metric has its own page with the figures, their\nsources and the population each one describes.\n\nThe organising rule is that a benchmark without a denominator is not a\nbenchmark. India's app market recorded 6.2 billion downloads in the first quarter\nof 2026 with non-gaming apps at 72%, and a conversion rate measured against\ndownloads is not comparable to one measured against trials.\n\n## Start here\n\nThree entry points depending on the question. Retention benchmarks if you are\ntrying to work out whether your curve is normal. Churn benchmarks if you are\ntrying to size how much of your loss is recoverable. ARPU and pricing if you are\nsetting a price for a market you have not sold into.\n\nGross revenue retention by contract size is the single most useful table for a\nB2B product: 82% below $25K ACV against 95% above $100K, about ₹23.97 lakh\nagainst ₹95.89 lakh, which is a structural gap rather than an execution one.\n\n## How to read the index\n\nMatch the market before the metric. Cost per install in the United States runs\n$11.62 for fintech on iOS and $2.46 for utilities, roughly ₹1,114 and ₹236.\nNeither figure transfers to India without adjustment, and the adjustment is not a\nsingle multiplier.\n\nFilter to your own category and your own platform split. A blended cross-platform\nfigure hides which half of a base is leaving. Then check the date before the\nnumber, because a stale benchmark and a wrong benchmark do the same damage to a\ntarget.\n\n## What recently verified means\n\nEvery figure carries the date its source last got checked. Anything older than 90\ndays goes back for re-verification before publication, and price figures run on a\n45-day cycle because they move faster. Where two published figures disagree, both\nappear and the page says so.\n\n<FromMyWork exp=\"exp-048\">\nOne measurement framework spanning 20+ growth, retention and monetisation metrics\nmade executive decisions roughly twice as fast. Until then each team reported a\nnumber defined its own way.\n</FromMyWork>\n\n## Where this leads\n\nA benchmark tells you whether you have a problem. It does not tell you which one.\nIf a figure here puts your funnel below its category, the next step is finding the\nstep where the loss happens, and that needs your own cohort data rather than\nanyone's median. The benchmark sets the question. The funnel answers it. Most teams\nskip the first half and start fixing, which is how a pricing problem gets six\nmonths of onboarding work.\n"
+      "body": "\n<AnswerBox>\nProduct monetization benchmarks by industry, each figure carrying its source and\nthe date it was checked. India sits alongside global rather than under it. Average\nmobile subscription ARPU is $8.41, about ₹806. India's projected streaming ARPU is\n$9.02, about ₹865, and it is published annually rather than monthly.\n</AnswerBox>\n\n<FactTable\n  id=\"benchmark-index\"\n  caption=\"A sample of what this hub indexes, and what each figure measures\"\n  columns={[\"Metric\", \"Figure\"]}\n  rows={[\n    { cells: [\"India app revenue and downloads, Q1 2026\", \"over $300M, up 33%, on 6.2 billion downloads\"], factId: \"f-hub-02\" },\n    { cells: [\"Average mobile subscription ARPU\", \"$8.41 (about ₹806)\"], factId: \"f-unit-01\" },\n    { cells: [\"Median refund rate, IN/SEA against North America\", \"7.7% against 3.4%\"], factId: \"f-unit-03\" },\n    { cells: [\"Primary monetisation model, 686 tracked apps\", \"subscriptions 61%, advertising 26%\"], factId: \"f-fx-08\" },\n    { cells: [\"India streaming ARPU, projected 2026\", \"$9.02 (about ₹865)\"], factId: \"f-unit-30\" },\n    { cells: [\"US cost per install, fintech and utilities\", \"$11.62 and $2.46 on iOS (about ₹1,114 and ₹236)\"], factId: \"f-unit-37\" },\n  ]}\n/>\n\n## What this hub covers\n\nRetention, churn, conversion, ARPU, pricing and acquisition cost, split by\nindustry and by market. Each metric has its own page with the figures, their\nsources and the population each one describes.\n\nThe organising rule is that a benchmark without a denominator is not a\nbenchmark. India's app market recorded 6.2 billion downloads in the first quarter\nof 2026 with non-gaming apps at 72%, and a conversion rate measured against\ndownloads is not comparable to one measured against trials.\n\n## Start here\n\nThree entry points depending on the question. Retention benchmarks if you are\ntrying to work out whether your curve is normal. Churn benchmarks if you are\ntrying to size how much of your loss is recoverable. ARPU and pricing if you are\nsetting a price for a market you have not sold into.\n\nThe monetisation model table is the one to read first, because it bounds every\nother number here. Among 686 tracked apps, subscriptions are the primary model for\n61% and advertising for 26%, so most published benchmarks describe subscription\neconomics whether or not they say so.\n\n## How to read the index\n\nMatch the market before the metric. Cost per install in the United States runs\n$11.62 for fintech on iOS and $2.46 for utilities, roughly ₹1,114 and ₹236.\nNeither figure transfers to India without adjustment, and the adjustment is not a\nsingle multiplier.\n\nFilter to your own category and your own platform split. A blended cross-platform\nfigure hides which half of a base is leaving. Then check the date before the\nnumber, because a stale benchmark and a wrong benchmark do the same damage to a\ntarget.\n\n## What recently verified means\n\nEvery figure carries the date its source last got checked. Anything older than 90\ndays goes back for re-verification before publication, and price figures run on a\n45-day cycle because they move faster. Where two published figures disagree, both\nappear and the page says so.\n\n<FromMyWork exp=\"exp-048\">\nOne measurement framework spanning 20+ growth, retention and monetisation metrics\nmade executive decisions roughly twice as fast. Until then each team reported a\nnumber defined its own way.\n</FromMyWork>\n\n## Where this leads\n\nA benchmark tells you whether you have a problem. It does not tell you which one.\nIf a figure here puts your funnel below its category, the next step is finding the\nstep where the loss happens, and that needs your own cohort data rather than\nanyone's median. The benchmark sets the question. The funnel answers it. Most teams\nskip the first half and start fixing, which is how a pricing problem gets six\nmonths of onboarding work.\n"
     },
     {
       "id": "hub-0007",
@@ -689,7 +703,7 @@
         "f-hub-07",
         "f-hub-10",
         "f-unit-08",
-        "f-act-09",
+        "f-fx-04",
         "f-act-06"
       ],
       "experience": [
@@ -712,13 +726,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/ab-test-sample-size-calculator",
-          "anchor": "the sample size calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/inr-price-points-that-convert",
-          "anchor": "INR price points that convert",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -780,10 +794,10 @@
           "f-hub-10"
         ],
         "cta_band": [
-          "f-act-09"
+          "f-fx-04"
         ]
       },
-      "body": "\n<AnswerBox>\nThese are product growth playbooks with a sequence, a decision point at each step\nand a stopping rule. They are written against the real odds: 17.4% of 2,408\naudited A/B tests produced a winner. A playbook that assumes every step lands is\na plan with no failure budget.\n</AnswerBox>\n\n<FactTable\n  id=\"playbook-reality\"\n  caption=\"The odds a playbook is actually working against\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"A/B tests producing a significant winner, 2,408 audited\", \"17.4%\"], factId: \"f-hub-06\" },\n    { cells: [\"Significant wins across 90+ e-commerce brands\", \"36.3%\"], factId: \"f-hub-07\" },\n    { cells: [\"Testing volume, top programmes against median\", \"3 to 5 times more, 6 to 8 winners a quarter\"], factId: \"f-hub-10\" },\n    { cells: [\"Standing LTV to CAC bar\", \"3 to 1, rising to 4 or 5 to 1\"], factId: \"f-unit-08\" },\n    { cells: [\"Median gross margin, $5M to $50M ARR\", \"71% to 74%\"], factId: \"f-act-09\" },\n    { cells: [\"Typical time to value\", \"about 1 day 12 hours, under 5 minutes to 2 weeks\"], factId: \"f-act-06\" },\n  ]}\n/>\n\n## What a playbook here contains\n\nA sequence, the number to read before moving to the next step, and the condition\nthat ends the sequence. Most published playbooks leave the stopping rule out. It is\nthe part that saves a quarter.\n\nEach one names the smallest version that still gives a readable result. Top\nprogrammes run 3 to 5 times more tests than the median, which means most teams\ncannot start where the case studies start.\n\n## Start here\n\nThree, by the problem you have. Retention curve analysis if you do not yet know\nwhether your curve flattens. Subscription pricing strategy if nobody has tested the\nprice. Unit economics if gross margin sits below the 71% to 74% median for the\n$5M to $50M ARR band, roughly ₹47.95 crore to ₹479.45 crore, because no funnel work\nreaches a cost-of-service problem.\n\nStart with the one that unblocks measurement, not the one that sounds most\nambitious. Run a pricing playbook without a working activation number and the\nresult arrives with nothing to attribute it to.\n\n## How to read the index\n\nEvery playbook states its prerequisite. Some need a working cohort report, some a\nlive paywall, some only a spreadsheet. The prerequisite comes first on the page, so\nyou can rule a playbook out in ten seconds rather than three weeks.\n\nTypical time to value averages about 1 day 12 hours and ranges from under five\nminutes to two weeks, so the playbook that fits a simple tool rarely fits an\nenterprise platform. Match on product shape rather than company stage.\n\n## What recently verified means\n\nEach playbook carries the date its figures last got checked. The published win\nrates it budgets against go on the same re-verification schedule as every other\nbenchmark here. Where a step's expected effect moves, the step changes, and the\nchangelog says so.\n\n<FromMyWork exp=\"exp-047\">\nMoving four pods off feature output and onto outcome-driven planning raised\nroadmap delivery predictability. The change was in what each pod was accountable\nfor, not in how much they shipped.\n</FromMyWork>\n\n## Where this leads\n\nA playbook is worth running when the constraint it addresses is the one you\nactually have. If the LTV to CAC ratio already sits past 3 to 1 and payback is\nshort, a pricing playbook is not the bottleneck and running it will produce a small\nwin that costs a quarter. Diagnose first, then pick. The diagnosis usually takes\ndays and the wrong playbook takes months, so the order matters more than the\nchoice.\n"
+      "body": "\n<AnswerBox>\nThese are product growth playbooks with a sequence, a decision point at each step\nand a stopping rule. They are written against the real odds: 17.4% of 2,408\naudited A/B tests produced a winner. A playbook that assumes every step lands is\na plan with no failure budget.\n</AnswerBox>\n\n<FactTable\n  id=\"playbook-reality\"\n  caption=\"The odds a playbook is actually working against\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"A/B tests producing a significant winner, 2,408 audited\", \"17.4%\"], factId: \"f-hub-06\" },\n    { cells: [\"Significant wins across 90+ e-commerce brands\", \"36.3%\"], factId: \"f-hub-07\" },\n    { cells: [\"Testing volume, top programmes against median\", \"3 to 5 times more, 6 to 8 winners a quarter\"], factId: \"f-hub-10\" },\n    { cells: [\"Standing LTV to CAC bar\", \"3 to 1, rising to 4 or 5 to 1\"], factId: \"f-unit-08\" },\n    { cells: [\"Experiments rolled back after a guardrail regression\", \"42% of 10,000+ a year\"], factId: \"f-fx-04\" },\n    { cells: [\"Typical time to value\", \"about 1 day 12 hours, under 5 minutes to 2 weeks\"], factId: \"f-act-06\" },\n  ]}\n/>\n\n## What a playbook here contains\n\nA sequence, the number to read before moving to the next step, and the condition\nthat ends the sequence. Most published playbooks leave the stopping rule out. It is\nthe part that saves a quarter.\n\nEach one names the smallest version that still gives a readable result. Top\nprogrammes run 3 to 5 times more tests than the median, which means most teams\ncannot start where the case studies start.\n\n## Start here\n\nThree, by the problem you have. Retention curve analysis if you do not yet know\nwhether your curve flattens. Subscription pricing strategy if nobody has tested the\nprice. Experimentation if you cannot yet tell a win from noise — at the scale where\n42% of more than 10,000 experiments a year get rolled back after a guardrail metric\nflags a regression, the discipline is catching the losers, not finding the winners.\n\nStart with the one that unblocks measurement, not the one that sounds most\nambitious. Run a pricing playbook without a working activation number and the\nresult arrives with nothing to attribute it to.\n\n## How to read the index\n\nEvery playbook states its prerequisite. Some need a working cohort report, some a\nlive paywall, some only a spreadsheet. The prerequisite comes first on the page, so\nyou can rule a playbook out in ten seconds rather than three weeks.\n\nTypical time to value averages about 1 day 12 hours and ranges from under five\nminutes to two weeks, so the playbook that fits a simple tool rarely fits an\nenterprise platform. Match on product shape rather than company stage.\n\n## What recently verified means\n\nEach playbook carries the date its figures last got checked. The published win\nrates it budgets against go on the same re-verification schedule as every other\nbenchmark here. Where a step's expected effect moves, the step changes, and the\nchangelog says so.\n\n<FromMyWork exp=\"exp-047\">\nMoving four pods off feature output and onto outcome-driven planning raised\nroadmap delivery predictability. The change was in what each pod was accountable\nfor, not in how much they shipped.\n</FromMyWork>\n\n## Where this leads\n\nA playbook is worth running when the constraint it addresses is the one you\nactually have. If the LTV to CAC ratio already sits past 3 to 1 and payback is\nshort, a pricing playbook is not the bottleneck and running it will produce a small\nwin that costs a quarter. Diagnose first, then pick. The diagnosis usually takes\ndays and the wrong playbook takes months, so the order matters more than the\nchoice.\n"
     },
     {
       "id": "hub-0001",
@@ -828,8 +842,8 @@
           "role": "hub"
         },
         {
-          "url": "/hire",
-          "anchor": "hire a consultant",
+          "url": "/work-with-me",
+          "anchor": "work with me",
           "role": "lateral"
         },
         {
@@ -922,7 +936,7 @@
         "f-hub-09",
         "f-unit-26",
         "f-unit-36",
-        "f-act-12",
+        "f-fx-05",
         "f-glossary-0700-09"
       ],
       "experience": [
@@ -940,13 +954,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/ltv-calculator",
-          "anchor": "the LTV calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/payment-success-rates-india",
-          "anchor": "payment success rates in India",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -1004,7 +1018,7 @@
         ],
         "start_here_cards": [
           "f-unit-26",
-          "f-act-12"
+          "f-fx-05"
         ],
         "filterable_index": [
           "f-unit-36"
@@ -1016,7 +1030,7 @@
           "f-glossary-0700-09"
         ]
       },
-      "body": "\n<AnswerBox>\nThese are free product growth and monetization calculators for lifetime value,\nacquisition payback, churn, retention curves, app store fees and rupee pricing.\nEach states its formula and its defaults. Winning A/B tests move a median 6.1%, so\nthe defaults are set to plausible rather than flattering.\n</AnswerBox>\n\n<FactTable\n  id=\"tools-assumptions\"\n  caption=\"The defaults these calculators ship with\"\n  columns={[\"Default\", \"Figure\"]}\n  rows={[\n    { cells: [\"Lift on winning tests\", \"8.4% average, 6.1% median\"], factId: \"f-hub-08\" },\n    { cells: [\"Median uplift on winners, conversion and revenue per visitor\", \"1.88% and 2.77%\"], factId: \"f-hub-09\" },\n    { cells: [\"India recurring debit without extra authentication\", \"up to ₹15,000 (about $156)\"], factId: \"f-unit-26\" },\n    { cells: [\"India median cost per install, June 2026\", \"$0.42 (about ₹40)\"], factId: \"f-unit-36\" },\n    { cells: [\"India payment cost, domestic and international cards\", \"2% plus 18% GST, and 3%\"], factId: \"f-act-12\" },\n    { cells: [\"UPI Autopay mandate success under the threshold\", \"92% or better\"], factId: \"f-glossary-0700-09\" },\n  ]}\n/>\n\n## What these calculators do\n\nThey compute one thing each, state the formula, and show the inputs. No calculator\nhere asks for an email before showing a result, and none of them hides the\narithmetic behind a score.\n\nDefaults come from published benchmarks with sources attached. A winning\nexperiment moves a median 6.1%, and winners deliver a median 1.88% conversion\nuplift, A model whose default improvement is an order of magnitude above that\nis selling optimism rather than estimating.\n\n## Start here\n\nThree by frequency of use. The lifetime value calculator, because almost every\nother number depends on it. The acquisition payback calculator, because payback\ndecides how fast you can reinvest. The app store fee calculator, because\ncommission is the largest cost most models forget.\n\nIf you are pricing for India specifically, the rupee price point picker and the\nsubscription price calculator carry the tax and mandate rules rather than leaving\nthem to you.\n\n## How to read the index\n\nEach tool states its prerequisite inputs and its assumptions. Some need only a\nprice and a churn rate. Others need a cohort table. The list shows which before\nyou open it.\n\nThe Indian defaults matter more than they look. Recurring debits clear without\nextra authentication up to ₹15,000, about $156, and India's median cost per\ninstall is $0.42, roughly ₹40. A generic SaaS calculator with US defaults gets\nboth wrong in the same direction.\n\n## What recently verified means\n\nEvery default carries the date its source was last checked, and the exchange rate\nused for any rupee and dollar pair is recorded in config rather than typed into\nthe page. A build fails if a pair drifts more than 3% from that recorded rate.\n\n<FromMyWork exp=\"exp-049\">\nReal-time data reliability improved about 80%, which is what made accurate\npricing, attribution and monetisation decisions possible at all. Before that, every\nmodel was arguing with its own inputs.\n</FromMyWork>\n\n## Where this leads\n\nA calculator gives you a number. It does not tell you whether the inputs are right,\nand wrong inputs are the usual problem. If the output looks implausible, check the\ninput you were least sure about before you doubt the formula. Churn rate and\nconversion rate are the two that most often turn out to have been measured against\na different denominator than the model assumes.\n"
+      "body": "\n<AnswerBox>\nThese are free product growth and monetization calculators for lifetime value,\nacquisition payback, churn, retention curves, app store fees and rupee pricing.\nEach states its formula and its defaults. Winning A/B tests move a median 6.1%, so\nthe defaults are set to plausible rather than flattering.\n</AnswerBox>\n\n<FactTable\n  id=\"tools-assumptions\"\n  caption=\"The defaults these calculators ship with\"\n  columns={[\"Default\", \"Figure\"]}\n  rows={[\n    { cells: [\"Lift on winning tests\", \"8.4% average, 6.1% median\"], factId: \"f-hub-08\" },\n    { cells: [\"Median uplift on winners, conversion and revenue per visitor\", \"1.88% and 2.77%\"], factId: \"f-hub-09\" },\n    { cells: [\"India recurring debit without extra authentication\", \"up to ₹15,000 (about $156)\"], factId: \"f-unit-26\" },\n    { cells: [\"India median cost per install, June 2026\", \"$0.42 (about ₹40)\"], factId: \"f-unit-36\" },\n    { cells: [\"Visitors per variant at a 5% baseline, 50% / 20% / 10% lift\", \"1,700 / 9,000 / 36,000\"], factId: \"f-fx-05\" },\n    { cells: [\"UPI Autopay mandate success under the threshold\", \"92% or better\"], factId: \"f-glossary-0700-09\" },\n  ]}\n/>\n\n## What these calculators do\n\nThey compute one thing each, state the formula, and show the inputs. No calculator\nhere asks for an email before showing a result, and none of them hides the\narithmetic behind a score.\n\nDefaults come from published benchmarks with sources attached. A winning\nexperiment moves a median 6.1%, and winners deliver a median 1.88% conversion\nuplift, A model whose default improvement is an order of magnitude above that\nis selling optimism rather than estimating.\n\n## Start here\n\nThree by frequency of use. The lifetime value calculator, because almost every\nother number depends on it. The acquisition payback calculator, because payback\ndecides how fast you can reinvest. The app store fee calculator, because\ncommission is the largest cost most models forget.\n\nIf you are pricing for India specifically, the rupee price point picker and the\nsubscription price calculator carry the tax and mandate rules rather than leaving\nthem to you.\n\n## How to read the index\n\nEach tool states its prerequisite inputs and its assumptions. Some need only a\nprice and a churn rate. Others need a cohort table. The list shows which before\nyou open it.\n\nThe Indian defaults matter more than they look. Recurring debits clear without\nextra authentication up to ₹15,000, about $156, and India's median cost per\ninstall is $0.42, roughly ₹40. A generic SaaS calculator with US defaults gets\nboth wrong in the same direction.\n\n## What recently verified means\n\nEvery default carries the date its source was last checked, and the exchange rate\nused for any rupee and dollar pair is recorded in config rather than typed into\nthe page. A build fails if a pair drifts more than 3% from that recorded rate.\n\n<FromMyWork exp=\"exp-049\">\nReal-time data reliability improved about 80%, which is what made accurate\npricing, attribution and monetisation decisions possible at all. Before that, every\nmodel was arguing with its own inputs.\n</FromMyWork>\n\n## Where this leads\n\nA calculator gives you a number. It does not tell you whether the inputs are right,\nand wrong inputs are the usual problem. If the output looks implausible, check the\ninput you were least sure about before you doubt the formula. Churn rate and\nconversion rate are the two that most often turn out to have been measured against\na different denominator than the model assumes.\n"
     },
     {
       "id": "glossary-0712",

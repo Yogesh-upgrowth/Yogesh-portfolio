@@ -45,8 +45,8 @@
       "role": "lateral"
     },
     {
-      "url": "/tools/rule-of-40-calculator",
-      "anchor": "the Rule of 40 calculator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
@@ -102,6 +102,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "authored",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

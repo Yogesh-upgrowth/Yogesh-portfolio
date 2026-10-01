@@ -1,0 +1,160 @@
+{
+  "id": "case-study-0167",
+  "url": "/case-studies/loanwiser-credit-routing",
+  "archetype": "case-study",
+  "hub": "case-studies",
+  "wave": 1,
+  "batch_id": "w1-story-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Fintech Credit Routing Case Study: Loanwiser at 90%+",
+  "meta_description": "A story about India's lending crisis, bad data, and the credit intelligence layer that changed everything. A first-hand account of fintech credit routin.",
+  "h1": "How We Made Banks Stop Drowning in Bad Leads — and Start Making Better Decisions (fintech credit routing case study)",
+  "primary_keyword": "fintech credit routing case study",
+  "secondary_keywords": [],
+  "entity_a": "loanwiser",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-cs-loanwiser-credit-routing-01",
+    "f-cs-loanwiser-credit-routing-02",
+    "f-cs-loanwiser-credit-routing-03",
+    "f-cs-loanwiser-credit-routing-04",
+    "f-cs-loanwiser-credit-routing-05",
+    "f-cs-loanwiser-credit-routing-06",
+    "f-cs-loanwiser-credit-routing-07",
+    "f-cs-loanwiser-credit-routing-08",
+    "f-cs-loanwiser-credit-routing-09",
+    "f-cs-loanwiser-credit-routing-10",
+    "f-cs-loanwiser-credit-routing-11",
+    "f-cs-loanwiser-credit-routing-12",
+    "f-cs-loanwiser-credit-routing-13",
+    "f-cs-loanwiser-credit-routing-14",
+    "f-cs-loanwiser-credit-routing-15",
+    "f-cs-loanwiser-credit-routing-16",
+    "f-cs-loanwiser-credit-routing-17",
+    "f-cs-loanwiser-credit-routing-18",
+    "f-cs-loanwiser-credit-routing-19",
+    "f-cs-loanwiser-credit-routing-20",
+    "f-cs-loanwiser-credit-routing-21",
+    "f-cs-loanwiser-credit-routing-22",
+    "f-cs-loanwiser-credit-routing-23",
+    "f-cs-loanwiser-credit-routing-24",
+    "f-cs-loanwiser-credit-routing-25",
+    "f-cs-loanwiser-credit-routing-26",
+    "f-cs-loanwiser-credit-routing-27",
+    "f-cs-loanwiser-credit-routing-28",
+    "f-cs-loanwiser-credit-routing-29",
+    "f-cs-loanwiser-credit-routing-30",
+    "f-cs-loanwiser-credit-routing-31",
+    "f-cs-loanwiser-credit-routing-32",
+    "f-cs-loanwiser-credit-routing-33",
+    "f-cs-loanwiser-credit-routing-34",
+    "f-cs-loanwiser-credit-routing-35",
+    "f-cs-loanwiser-credit-routing-36",
+    "f-cs-loanwiser-credit-routing-37",
+    "f-cs-loanwiser-credit-routing-38",
+    "f-cs-loanwiser-credit-routing-39",
+    "f-cs-loanwiser-credit-routing-40",
+    "f-cs-loanwiser-credit-routing-41",
+    "f-cs-loanwiser-credit-routing-42",
+    "f-cs-loanwiser-credit-routing-43",
+    "f-cs-loanwiser-credit-routing-44",
+    "f-cs-loanwiser-credit-routing-45",
+    "f-cs-loanwiser-credit-routing-46",
+    "f-cs-loanwiser-credit-routing-47",
+    "f-cs-loanwiser-credit-routing-48",
+    "f-cs-loanwiser-credit-routing-49",
+    "f-cs-loanwiser-credit-routing-50",
+    "f-cs-loanwiser-credit-routing-51",
+    "f-cs-loanwiser-credit-routing-52",
+    "f-cs-loanwiser-credit-routing-53",
+    "f-cs-loanwiser-credit-routing-54",
+    "f-cs-loanwiser-credit-routing-55",
+    "f-cs-loanwiser-credit-routing-56",
+    "f-cs-loanwiser-credit-routing-57",
+    "f-cs-loanwiser-credit-routing-58",
+    "f-cs-loanwiser-credit-routing-59",
+    "f-cs-loanwiser-credit-routing-60",
+    "f-cs-loanwiser-credit-routing-61",
+    "f-cs-loanwiser-credit-routing-62",
+    "f-cs-loanwiser-credit-routing-63",
+    "f-cs-loanwiser-credit-routing-64",
+    "f-cs-loanwiser-credit-routing-65",
+    "f-cs-loanwiser-credit-routing-66",
+    "f-cs-loanwiser-credit-routing-67",
+    "f-cs-loanwiser-credit-routing-68",
+    "f-cs-loanwiser-credit-routing-69",
+    "f-cs-loanwiser-credit-routing-70",
+    "f-cs-loanwiser-credit-routing-71",
+    "f-cs-loanwiser-credit-routing-72",
+    "f-cs-loanwiser-credit-routing-73",
+    "f-cs-loanwiser-credit-routing-74",
+    "f-cs-loanwiser-credit-routing-75"
+  ],
+  "experience_used": [
+    "exp-001",
+    "exp-007"
+  ],
+  "internal_links": [
+    {
+      "url": "/case-studies",
+      "anchor": "the case studies",
+      "role": "hub"
+    },
+    {
+      "url": "/case-studies/comparison-platform-india",
+      "anchor": "another case study",
+      "role": "proof"
+    },
+    {
+      "url": "/benchmarks/retention/fintech",
+      "anchor": "the matching benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/app-monetization-strategy",
+      "anchor": "the monetization engagement",
+      "role": "lateral"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "work with me",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#loanwiser-credit-routing-figures",
+      "alt": "Figures from the LoanWiser credit routing write-up, each row carrying the measure and the result as originally published, with the bank rejection rate, the disbursement rate before and after, the share of rejections carrying a usable reason and the approval-rate gap the behavioural signal opened up",
+      "caption": "Figures as published in the original write-up. Verified 30 September 2026."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a credit routing diagnosis",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "A first-hand account of reattributing an 83% bank rejection rate from an external underwriting constraint to an internal routing failure, with the figures as measured at the time and the partner resistance that took eight months to shift. Migrated from the published write-up rather than rewritten.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "migrated",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

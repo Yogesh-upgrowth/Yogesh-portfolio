@@ -69,6 +69,58 @@ NEW = [
 POOL = {**P1, **P2}
 POOL.update({f["fact_id"]: f for f in NEW})
 
+# ── Cap-relief research ──────────────────────────────────────────────────────
+# Eight facts had reached four and five pages against §C2's cap of three. The
+# breach was invisible because gates.ts read fact usage from
+# seo/data/facts/index.json, a file that was never generated: readJson returned
+# {}, every fact reported one use, and both gates that depend on the count
+# passed everything. gates.ts now derives the count from the corpus.
+#
+# The pool had no headroom left to swap into — of 1,139 researched facts, four
+# were under two uses — so these are new sources rather than reshuffled ones.
+# Each replaces an over-cap fact on the page where that fact was least central.
+ADJ = ("https://ppc.land/adjusts-2026-mobile-app-report-finance-sessions-up-21-gaming-cpi-jumps-30/",
+       "Adjust's 2026 mobile app report: finance sessions up 21%, gaming CPI jumps 30%",
+       "ppc.land", "2026")
+APS = ("https://appstorys.com/blog-Retention-Rates-Mobile-Apps-By-Industry",
+       "Retention rates for mobile apps by industry", "appstorys.com", "2026")
+CFD = ("https://confidence.spotify.com/blog/ab-testing-bandwidth",
+       "A/B test bandwidth: the currency of innovation", "confidence.spotify.com", "2026")
+LEX = ("https://leanexperiments.substack.com/p/sample-size-calculation-for-ab-tests",
+       "Sample size calculation for A/B tests", "leanexperiments.substack.com", "2026")
+UTD = ("https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+       "Onboarding metrics that predict revenue activation", "usetandem.ai", "2026")
+LZW = ("https://www.lazyweb.com/research/how-do-tracked-apps-make-money-subscription-ads-transactions",
+       "How do tracked apps actually make money?", "lazyweb.com", "2026")
+
+FIX = [
+    fact("f-fx-01", "Strategy game sessions average 37.51 minutes and grew 18%, while casual game sessions rose 15% to 25.92 minutes",
+         "37.51", "minutes", ADJ,
+         "Strategy game sessions averaged 37.51 minutes and grew 18%, while casual games rose 15% to 25.92 minutes."),
+    fact("f-fx-02", "Finance app sessions grew 21% in 2026 while gaming cost per install jumped 30%",
+         "21", "%", ADJ,
+         "Adjust's 2026 report: finance sessions up 21%, gaming CPI jumps 30%.", False),
+    fact("f-fx-03", "E-commerce and retail apps retain 3% to 6% by day 30, above the 2% median other sources report for the same category",
+         "3-6", "%", APS,
+         "By Day 30, e-commerce or retail apps retain 3-6%.", False),
+    fact("f-fx-04", "More than 300 teams run over 10,000 experiments a year across 750 million users in 186 markets, and 42% get rolled back after a guardrail metric flags a regression",
+         "42", "%", CFD,
+         "300+ Spotify teams run 10,000+ experiments per year across 750 million users in 186 markets; 42% are rolled back after guardrail metrics flag a regression."),
+    fact("f-fx-05", "At a 5% baseline, detecting a 50% relative lift needs about 1,700 visitors per variant, a 20% lift about 9,000 and a 10% lift about 36,000",
+         "1700", "visitors", LEX,
+         "A 5% baseline requires roughly 1,700 visitors per variant for a 50% relative lift, ~9,000 for 20% and ~36,000 for 10%."),
+    fact("f-fx-06", "Across 464 companies the median onboarding tour completion is 29%, with the middle half between 15% and 55%",
+         "29", "%", UTD,
+         "Data from 464 companies shows median tour completion is 29% per company, with the middle half running 15% to 55%."),
+    fact("f-fx-07", "Onboarding checklists of three to five steps complete at 67%, against 18% for checklists of ten steps or more",
+         "67", "%", UTD,
+         "3-5 step onboarding checklists complete at 67% vs 18% for 10+ step checklists.", False),
+    fact("f-fx-08", "Among 686 tracked apps, subscriptions are the primary model for 418, or 61%, against advertising for 176, or 26%",
+         "61", "%", LZW,
+         "Among tracked apps, subscriptions account for 418 of 686 apps (61%), more than double advertising at 176/686 (26%).", False),
+]
+POOL.update({f["fact_id"]: f for f in FIX})
+
 
 # G09: FAQPage is required whenever a page carries three or more FAQ entries,
 # hub or not, so a hub with an FAQ emits it alongside CollectionPage.
@@ -97,7 +149,7 @@ PAGES = [
     experience=["exp-021"],
     links=L(("/case-studies/carinfo-3-8m-to-45m-mau", "the CarInfo growth case study", "proof"),
             ("/benchmarks/retention", "retention benchmarks", "reference"),
-            ("/teardowns", "the teardowns", "hub"),
+            ("/glossary", "the glossary", "hub"),
             ("/playbooks", "the playbooks", "lateral"),
             ("/tools/monetization-health-score", "the monetisation health score", "tool"),
             ("/work-with-me", "work with me", "bofu")),
@@ -201,11 +253,11 @@ comparable figures follow.
     h1="Product monetization benchmarks", primary_keyword="product monetization benchmarks",
     secondary_keywords=["app benchmarks by industry", "india app benchmarks"],
     entity_a="benchmarks",
-    facts=["f-hub-02", "f-unit-01", "f-unit-03", "f-unit-18", "f-unit-30", "f-unit-37"],
+    facts=["f-hub-02", "f-unit-01", "f-unit-03", "f-fx-08", "f-unit-30", "f-unit-37"],
     experience=["exp-048"],
     links=L(("/benchmarks/retention", "retention benchmarks", "lateral"),
             ("/glossary", "the glossary", "hub"),
-            ("/india/india-app-economy-statistics", "India app economy statistics", "related"),
+            ("/india", "monetising in India", "related"),
             ("/tools/monetization-health-score", "the monetisation health score", "tool"),
             ("/case-studies", "the case studies", "lateral"),
             ("/work-with-me", "a benchmarking review", "bofu")),
@@ -224,7 +276,7 @@ comparable figures follow.
     cta={"primary": {"label": "Get a benchmarks review of your product", "href": "/work-with-me"},
          "secondary": {"label": "Browse the glossary", "href": "/glossary"}},
     unique_value="States the denominator beside every figure and carries India rows where a published India figure exists, rather than presenting one global median per metric as though products in different markets were comparable.",
-    block_coverage=cover(["f-hub-02"], ["f-unit-01", "f-unit-18"], ["f-unit-37"],
+    block_coverage=cover(["f-hub-02"], ["f-unit-01", "f-fx-08"], ["f-unit-37"],
                          ["f-unit-03"], ["f-unit-30"]),
     body="""
 <AnswerBox>
@@ -242,7 +294,7 @@ $9.02, about ₹865, and it is published annually rather than monthly.
     { cells: ["India app revenue and downloads, Q1 2026", "over $300M, up 33%, on 6.2 billion downloads"], factId: "f-hub-02" },
     { cells: ["Average mobile subscription ARPU", "$8.41 (about ₹806)"], factId: "f-unit-01" },
     { cells: ["Median refund rate, IN/SEA against North America", "7.7% against 3.4%"], factId: "f-unit-03" },
-    { cells: ["Gross revenue retention by ACV", "82% under $25K, 95% above $100K"], factId: "f-unit-18" },
+    { cells: ["Primary monetisation model, 686 tracked apps", "subscriptions 61%, advertising 26%"], factId: "f-fx-08" },
     { cells: ["India streaming ARPU, projected 2026", "$9.02 (about ₹865)"], factId: "f-unit-30" },
     { cells: ["US cost per install, fintech and utilities", "$11.62 and $2.46 on iOS (about ₹1,114 and ₹236)"], factId: "f-unit-37" },
   ]}
@@ -266,9 +318,10 @@ trying to work out whether your curve is normal. Churn benchmarks if you are
 trying to size how much of your loss is recoverable. ARPU and pricing if you are
 setting a price for a market you have not sold into.
 
-Gross revenue retention by contract size is the single most useful table for a
-B2B product: 82% below $25K ACV against 95% above $100K, about ₹23.97 lakh
-against ₹95.89 lakh, which is a structural gap rather than an execution one.
+The monetisation model table is the one to read first, because it bounds every
+other number here. Among 686 tracked apps, subscriptions are the primary model for
+61% and advertising for 26%, so most published benchmarks describe subscription
+economics whether or not they say so.
 
 ## How to read the index
 
@@ -312,13 +365,13 @@ months of onboarding work.
     h1="Product growth playbooks", primary_keyword="product growth playbooks",
     secondary_keywords=["growth playbook", "retention playbook"],
     entity_a="playbooks",
-    facts=["f-hub-06", "f-hub-07", "f-hub-10", "f-unit-08", "f-act-09", "f-act-06"],
+    facts=["f-hub-06", "f-hub-07", "f-hub-10", "f-unit-08", "f-fx-04", "f-act-06"],
     experience=["exp-047"],
     links=L(("/glossary", "the glossary", "hub"),
             ("/benchmarks", "the benchmarks", "lateral"),
             ("/case-studies", "the case studies", "lateral"),
-            ("/tools/ab-test-sample-size-calculator", "the sample size calculator", "tool"),
-            ("/india/inr-price-points-that-convert", "INR price points that convert", "related"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
+            ("/india", "monetising in India", "related"),
             ("/work-with-me", "a playbook run with me", "bofu")),
     visuals=V("playbook-reality",
               "Six reference points a playbook has to be written against: the share of A/B tests that produce a winner in two separate audited studies, the testing volume top programmes run, the standing lifetime-value to acquisition-cost bar, the share of companies tracking activation and typical time to value, each row carrying its source and verification date",
@@ -336,7 +389,7 @@ months of onboarding work.
     schema_types=HUB_SCHEMA,
     unique_value="Each playbook carries a failure budget drawn from the published experiment win rates, and a stopping rule, instead of presenting a sequence of steps as though each one lands.",
     block_coverage=cover(["f-hub-06"], ["f-hub-07", "f-unit-08"], ["f-act-06"],
-                         ["f-hub-10"], ["f-act-09"]),
+                         ["f-hub-10"], ["f-fx-04"]),
     body="""
 <AnswerBox>
 These are product growth playbooks with a sequence, a decision point at each step
@@ -354,7 +407,7 @@ a plan with no failure budget.
     { cells: ["Significant wins across 90+ e-commerce brands", "36.3%"], factId: "f-hub-07" },
     { cells: ["Testing volume, top programmes against median", "3 to 5 times more, 6 to 8 winners a quarter"], factId: "f-hub-10" },
     { cells: ["Standing LTV to CAC bar", "3 to 1, rising to 4 or 5 to 1"], factId: "f-unit-08" },
-    { cells: ["Median gross margin, $5M to $50M ARR", "71% to 74%"], factId: "f-act-09" },
+    { cells: ["Experiments rolled back after a guardrail regression", "42% of 10,000+ a year"], factId: "f-fx-04" },
     { cells: ["Typical time to value", "about 1 day 12 hours, under 5 minutes to 2 weeks"], factId: "f-act-06" },
   ]}
 />
@@ -373,9 +426,9 @@ cannot start where the case studies start.
 
 Three, by the problem you have. Retention curve analysis if you do not yet know
 whether your curve flattens. Subscription pricing strategy if nobody has tested the
-price. Unit economics if gross margin sits below the 71% to 74% median for the
-$5M to $50M ARR band, roughly ₹47.95 crore to ₹479.45 crore, because no funnel work
-reaches a cost-of-service problem.
+price. Experimentation if you cannot yet tell a win from noise — at the scale where
+42% of more than 10,000 experiments a year get rolled back after a guardrail metric
+flags a regression, the discipline is catching the losers, not finding the winners.
 
 Start with the one that unblocks measurement, not the one that sounds most
 ambitious. Run a pricing playbook without a working activation number and the
@@ -428,7 +481,7 @@ choice.
     links=L(("/case-studies/carinfo-3-8m-to-45m-mau", "the CarInfo growth case study", "proof"),
             ("/benchmarks/retention", "retention benchmarks", "reference"),
             ("/glossary", "the glossary", "hub"),
-            ("/hire", "hire a consultant", "lateral"),
+            ("/work-with-me", "work with me", "lateral"),
             ("/tools/monetization-health-score", "the monetisation health score", "tool"),
             ("/work-with-me", "start a conversation", "bofu")),
     visuals=V("services-context",
@@ -531,12 +584,12 @@ faster when the doubts arrive with the data.
     primary_keyword="product growth and monetization calculators",
     secondary_keywords=["ltv calculator", "cac payback calculator"],
     entity_a="tools",
-    facts=["f-hub-08", "f-hub-09", "f-unit-26", "f-unit-36", "f-act-12", "f-glossary-0700-09"],
+    facts=["f-hub-08", "f-hub-09", "f-unit-26", "f-unit-36", "f-fx-05", "f-glossary-0700-09"],
     experience=["exp-049"],
     links=L(("/glossary", "the glossary", "hub"),
             ("/benchmarks", "the benchmarks", "lateral"),
-            ("/tools/ltv-calculator", "the LTV calculator", "tool"),
-            ("/india/payment-success-rates-india", "payment success rates in India", "related"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
+            ("/india", "monetising in India", "related"),
             ("/case-studies", "the case studies", "lateral"),
             ("/work-with-me", "a review of your numbers", "bofu")),
     visuals=V("tools-assumptions",
@@ -554,7 +607,7 @@ faster when the doubts arrive with the data.
     ],
     schema_types=HUB_SCHEMA,
     unique_value="Every calculator states its formula and ships Indian payment and pricing defaults — GST, the mandate threshold, UPI success rates — which the generic SaaS calculators omit and which change the answer materially.",
-    block_coverage=cover(["f-hub-08"], ["f-unit-26", "f-act-12"], ["f-unit-36"],
+    block_coverage=cover(["f-hub-08"], ["f-unit-26", "f-fx-05"], ["f-unit-36"],
                          ["f-hub-09"], ["f-glossary-0700-09"]),
     body="""
 <AnswerBox>
@@ -573,7 +626,7 @@ the defaults are set to plausible rather than flattering.
     { cells: ["Median uplift on winners, conversion and revenue per visitor", "1.88% and 2.77%"], factId: "f-hub-09" },
     { cells: ["India recurring debit without extra authentication", "up to ₹15,000 (about $156)"], factId: "f-unit-26" },
     { cells: ["India median cost per install, June 2026", "$0.42 (about ₹40)"], factId: "f-unit-36" },
-    { cells: ["India payment cost, domestic and international cards", "2% plus 18% GST, and 3%"], factId: "f-act-12" },
+    { cells: ["Visitors per variant at a 5% baseline, 50% / 20% / 10% lift", "1,700 / 9,000 / 36,000"], factId: "f-fx-05" },
     { cells: ["UPI Autopay mandate success under the threshold", "92% or better"], factId: "f-glossary-0700-09" },
   ]}
 />

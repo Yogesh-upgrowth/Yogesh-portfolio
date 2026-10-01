@@ -1,0 +1,167 @@
+<AnswerBox>
+App retention rate benchmarks put the mobile day-30 average at 7% to 8%, with
+strong products above 15% and top-quartile consumer apps holding 25% to 40%.
+Treat any of those as a starting point rather than a target. Your category moves
+this number more than anything you ship this quarter, and the shape matters more
+than the level.
+</AnswerBox>
+
+<FactTable
+  id="retention-by-industry"
+  caption="Retention medians by category at three horizons"
+  columns={["Category", "Day 1", "Day 7", "Day 30"]}
+  rows={[
+    { cells: ["Mobile average", "no published figure", "no published figure", "7-8%"], factId: "f-rh-02" },
+    { cells: ["Top-quartile consumer, flattening by day 60-90", "no published figure", "no published figure", "25-40%"], factId: "f-rh-01" },
+    { cells: ["Social", "40%", "18%", "12%"], factId: "f-bm-06" },
+    { cells: ["Gaming", "32%", "8%", "3%"], factId: "f-bm-05" },
+    { cells: ["E-commerce", "18%", "5%", "2%"], factId: "f-bm-03" },
+    { cells: ["SaaS subscription products", "no published figure", "no published figure", "40-50%"], factId: "f-rh-03" },
+  ]}
+/>
+
+## What retention rate measures, and over what
+
+Retention rate is the share of a cohort that comes back in a given window. The
+window and the cohort are both choices, and they decide the number more than the
+product does.
+
+These benchmarks use installs as the denominator. That is the convention in
+published app data, and it is also the harshest version, because it counts
+everybody who downloaded and never got anywhere. Retention measured over
+activated users only runs far higher, since it has already removed the users who
+never reached first value. The two are different measurements, and a team that
+reports one against a benchmark built on the other will conclude it is doing
+well while it is not.
+
+Day 1, day 7 and day 30 are conventions rather than meaningful thresholds. They
+survive because everyone uses them, which makes them comparable.
+
+One figure on this page is not a level at all. Top-quartile consumer apps flatten
+between day 60 and day 90, and that window is the useful target: it says when the
+decline should stop, not how high it should stop.
+
+## Reading the table by industry
+
+Social apps hold 12% at day 30. E-commerce apps hold 2%. That is a six-fold gap,
+and almost none of it is execution quality. It is session frequency: a social app
+has a reason to be opened daily, and a shopping app has a reason every few weeks.
+
+So the 7% to 8% mobile average is the wrong bar for both. It would tell a competent
+e-commerce team they are failing and a mediocre social team they are fine. SaaS
+subscription products sit higher again at 40% to 50% by day 30, because the product
+sits inside someone's working day rather than competing for their evening.
+
+Gaming is the instructive middle case. It starts highest of the three consumer
+categories at 32% on day 1 and ends lowest at 3% by day 30, because a strong first
+session is not the same as a reason to return. A category that wins day 1 and loses
+day 30 has an engagement problem that no amount of onboarding work will reach.
+
+The useful comparison is your own category's median, and then the shape of your own
+curve over time.
+
+## The India layer
+
+There is no published India day-1 to day-30 retention curve by app category. Not
+a restricted one, not a paywalled one — it does not appear in the public sources.
+India's app market is well documented at the revenue level, earning 3.8 billion
+dollars in 2024 and growing 15.1% year on year, but market size says nothing
+about how a cohort behaves.
+
+Rather than infer an India curve from a regional conversion average, this page
+leaves the gap stated. An inferred retention benchmark reaches somebody's board
+deck within a week and carries no evidence at all.
+
+Two things do transfer. Acquisition in India skews harder to Android, and Android
+curves sit below iOS curves in every category that publishes both, so an
+India-heavy cohort will read low against a global median for reasons that have
+nothing to do with the product. And price-sensitivity shows up as churn rather
+than as refusal to install, which pushes the damage to day 7 and day 30 rather
+than day 1.
+
+So compare an Indian cohort to your own earlier Indian cohorts. A global median
+built mostly on iOS users in higher-ARPU markets is not the comparison set.
+
+## How to measure it without fooling yourself
+
+Fix the denominator first and write it down. Then take the curve, not the point.
+The most common error is reading a level as a trend. Day-30 retention of 6%, flat
+across three cohorts, beats 8% falling every month. A dashboard showing one number
+per month hides which of the two you have.
+
+Measure by acquisition cohort, not by calendar month. A paid campaign landing
+mid-month changes a calendar-month number without anything about the product
+changing at all.
+
+Three further rules keep the measurement honest. Split paid from organic, because
+blending them lets a campaign's quality masquerade as product health. Keep the
+cohort window fixed: a day-30 figure that sometimes means days 28 to 32 and
+sometimes means day 30 exactly will drift by more than most real improvements.
+And hold the definition of a return steady — an app open, a session over some
+length, and a meaningful action give three different curves from the same data.
+
+Write the three choices down once and leave them alone. Most retention arguments
+turn out to be arguments about one of them.
+
+## What actually moves it
+
+Three things, in order of size.
+
+Category and acquisition source set the ceiling before the product gets a vote,
+which is why the social-to-e-commerce gap dwarfs most product work. First-session
+experience moves the day-1 number most, because that is the only number a user
+decides in one sitting. And a reason to return on a natural cadence moves day 7
+and day 30, which is why notification work shows up at those horizons and almost
+never at day 1.
+
+Work on the horizon you can actually influence. A team pushing day-30 retention
+with onboarding changes is pulling the wrong lever.
+
+<FromMyWork exp="exp-044">
+The pattern I keep seeing is a retention problem diagnosed as an acquisition
+problem. Cheaper installs make the curve look worse rather than better. The team
+reads that drop as a product regression and starts fixing the wrong thing.
+</FromMyWork>
+
+## Stage adjustment
+
+Early on the question is whether a durable base exists, not whether it is large.
+
+<Example illustrative>
+A pre-launch product with 200 installs and a flat 9% curve has found something.
+The same 9% at a million installs is a business. The curve is identical; only the
+question it answers has changed.
+</Example>
+
+At scale the benchmark to beat is your own previous cohort, because by then the
+category median is a floor you have either cleared or not. SaaS products holding
+40% to 50% at day 30 are not beating the mobile average by trying harder; they
+occupy a different position in the user's day.
+
+In between, the number worth watching is the gap between your best and worst
+acquisition source. Early on that gap is noise. Once volume makes it stable, it
+is the single largest lever available, and usually larger than any onboarding
+change: the same product retains very differently depending on who arrives.
+
+One stage-specific warning. Growing fast drags the blended curve down even when
+every cohort improves, because recent cohorts dominate the mix and recent cohorts
+have had less time. Read cohorts separately before concluding anything about a
+trend.
+
+## Sources and tools
+
+Every figure above carries its source and the date it was last checked. Where two
+sources disagree, the disagreement gets recorded rather than averaged away, because
+sources rarely measure the same population: a "mobile average" and a "top-quartile
+consumer" figure differ by more than performance, they differ by who was counted.
+
+The monetisation health score puts your retention figure next to the other inputs
+that decide whether the curve pays for itself. Retention on its own cannot answer
+that: a 3% day-30 curve on a high-value purchase can fund a business that a 12%
+curve on an ad-supported one cannot.
+
+The industry pages under this hub carry the specifics — the medians, the
+sub-segments and the mechanisms particular to each category. Start with the one
+closest to your session frequency rather than the one closest to your sector. A
+fintech app people open weekly has more in common with a weekly commerce app than
+with a daily payments app, whatever the category label says.

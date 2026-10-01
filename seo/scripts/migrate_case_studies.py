@@ -1003,19 +1003,50 @@ def describe(published: str, row: dict) -> str:
     return (text[:152].rstrip(" ,;–—") + ".") if len(text) > 155 else text + "."
 
 
+def built_pages() -> set[str]:
+    """URLs that currently serve a page, read from content on disk."""
+    out: set[str] = set()
+    for f in (ROOT / "web" / "content").glob("**/*.json"):
+        if f.name == "experience.json" or "hubs" in f.parts:
+            continue
+        try:
+            m = json.loads(f.read_text())
+        except json.JSONDecodeError:
+            continue
+        if isinstance(m, dict) and m.get("url"):
+            out.add(m["url"])
+    return out
+
+
 def benchmark_for(tags: list[str], category: str) -> str:
-    """A benchmark page whose subject matches the case study's own tags."""
+    """A benchmark page whose subject matches the case study's own tags.
+
+    Every candidate has to be a page that exists. Two entries here pointed at
+    /benchmarks/retention/ai-apps and /benchmarks/churn, which are planned for a
+    later wave: five case studies shipped with a role="reference" link to a 404,
+    and nothing caught it because the links were valid inventory rows. The
+    assertion below is the guard — a cue may only name a page that is built.
+    """
+    built = built_pages()
     blob = " ".join(tags + [category]).lower()
-    for cue, target in (
+    cues = (
         ("retention", "/benchmarks/retention"),
-        ("churn", "/benchmarks/churn"),
+        ("churn", "/benchmarks/retention"),
         ("conversion", "/benchmarks/trial-to-paid-conversion"),
         ("cac", "/benchmarks/retention/fintech"),
         ("fintech", "/benchmarks/retention/fintech"),
         ("monetis", "/benchmarks/arpu"),
         ("seo", "/benchmarks/retention"),
-        ("ml", "/benchmarks/retention/ai-apps"),
-    ):
+        ("ml", "/benchmarks/retention"),
+    )
+    unbuilt = sorted({t for _, t in cues if t not in built} - {"/benchmarks/retention"})
+    if unbuilt:
+        raise SystemExit(
+            "migrate: benchmark_for would link to unbuilt page(s): "
+            + ", ".join(unbuilt)
+            + ". Point the cue at a built page or build the target first."
+        )
+    for cue, target in cues:
         if cue in blob:
             return target
     return "/benchmarks/retention"

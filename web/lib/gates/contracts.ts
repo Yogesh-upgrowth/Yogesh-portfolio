@@ -211,7 +211,21 @@ export const CONTRACTS: Record<string, ArchetypeContract> = {
   "benchmark-hub": {
     words: [1200, 1800], section: [120, 400],
     requiredSchema: ["Article", ...PERSON_CRUMB], yearTokenAllowed: true,
+    // Evidence-bearing only, for the reason given on `benchmark` below: asking
+    // G01 for a supporting fact behind `sources`, `faq`, `tool_embed` or
+    // `how_to_measure` invites an invented one. The first three are layout or
+    // reference, and how_to_measure is a procedure — a definition of the
+    // denominator, not a claim about the world. The full list is preserved as
+    // sectionsContract, which is what the page is actually written against.
     requiredBlocks: [
+      "answer_box",
+      "definition",
+      "benchmark_table_by_industry",
+      "india_layer",
+      "what_moves_it",
+      "stage_adjustment",
+    ],
+    sectionsContract: [
       "answer_box",
       "definition",
       "benchmark_table_by_industry",

@@ -1,0 +1,123 @@
+{
+  "id": "bmhub-0001",
+  "url": "/benchmarks/retention",
+  "archetype": "benchmark-hub",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-bmhub-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "App Retention Rate Benchmarks by Industry, 2026",
+  "meta_description": "Day 1, day 7 and day 30 retention medians by industry, with the denominator each figure uses and why a category average misleads a single product.",
+  "h1": "App retention rate benchmarks",
+  "primary_keyword": "app retention rate benchmarks",
+  "secondary_keywords": [
+    "day 30 retention benchmark",
+    "retention rate by industry"
+  ],
+  "entity_a": "retention",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-rh-01",
+    "f-rh-02",
+    "f-rh-03",
+    "f-bm-06",
+    "f-bm-03",
+    "f-bm-05",
+    "f-hub-01"
+  ],
+  "experience_used": [
+    "exp-044"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks/retention/fintech",
+      "anchor": "fintech retention",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/gaming",
+      "anchor": "gaming retention",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/b2b-saas",
+      "anchor": "B2B SaaS retention",
+      "role": "reference"
+    },
+    {
+      "url": "/glossary/retention-rate",
+      "anchor": "the retention rate definition",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/cohort-analysis",
+      "anchor": "cohort analysis",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#retention-by-industry",
+      "alt": "Day 1, day 7 and day 30 retention medians for five app categories against the cross-industry average, showing social apps holding 12% at day 30 against e-commerce at 2%, with the share of apps retaining anyone at day 30 and the productivity band for comparison, each row carrying its source and verification date",
+      "caption": "Retention medians by category at three horizons. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which retention denominator do these benchmarks use?",
+      "a": "Installs, not activated users. That matters more than the figure itself: retention over activated users runs far higher, because it has already excluded everyone who never reached first value. Comparing an activated-user number to an install-based benchmark flatters a product by a wide margin."
+    },
+    {
+      "q": "Is day 30 retention the right horizon to judge?",
+      "a": "Only alongside the shape. Day 30 as a single number cannot tell a curve that has flattened from one still falling. A product at 6% and flat has a durable base; a product at 8% and still dropping does not."
+    },
+    {
+      "q": "Why do social and e-commerce differ so much?",
+      "a": "Natural session frequency. Social apps have a daily reason to open; a shopping app has one every few weeks. The same engineering effort buys a different curve, which is why a cross-industry average is the wrong bar for either."
+    },
+    {
+      "q": "Is there an India-specific retention benchmark?",
+      "a": "Not by category, not published. Regional conversion figures exist and the market size is well documented, but no source gives an India day-1 to day-30 curve by app category. This page says so rather than inferring one."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get your retention curve diagnosed",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "States the denominator before the number and separates the level from the shape, so a reader can tell whether their day-30 figure is a flattening curve or a slower decline — a distinction the category averages everywhere else erase.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

@@ -22,7 +22,7 @@
     "f-hub-07",
     "f-hub-10",
     "f-unit-08",
-    "f-act-09",
+    "f-fx-04",
     "f-act-06"
   ],
   "experience_used": [
@@ -45,13 +45,13 @@
       "role": "lateral"
     },
     {
-      "url": "/tools/ab-test-sample-size-calculator",
-      "anchor": "the sample size calculator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
-      "url": "/india/inr-price-points-that-convert",
-      "anchor": "INR price points that convert",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "related"
     },
     {
@@ -101,6 +101,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "authored",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

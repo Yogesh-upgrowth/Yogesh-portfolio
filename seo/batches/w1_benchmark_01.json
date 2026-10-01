@@ -14,34 +14,6 @@
     }
   },
   "facts": {
-    "f-unit-18": {
-      "fact_id": "f-unit-18",
-      "claim": "Gross revenue retention by contract size runs 82% under 25,000 dollars ACV, 88% from 25,000 to 100,000, and 95% above",
-      "value": "95",
-      "unit": "%",
-      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
-      "source_title": "2025 B2B SaaS Retention Benchmarks",
-      "source_domain": "saas-capital.com",
-      "excerpt": "SMB (<$25K ACV): 82% GRR; Mid-Market ($25K-$100K): 88% GRR; Enterprise (>$100K ACV): 95% GRR.",
-      "published_on": "2025",
-      "verified_on": "2026-09-30",
-      "method": "search_index",
-      "primary": true
-    },
-    "f-unit-25": {
-      "fact_id": "f-unit-25",
-      "claim": "More than 120 million UPI Autopay mandates are created every month in India",
-      "value": "120",
-      "unit": "million",
-      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
-      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
-      "source_domain": "razorpay.com",
-      "excerpt": "Over 120 million UPI Autopay mandates are created every month in India, supporting SIPs, OTT subscriptions and insurance renewals.",
-      "published_on": "2026",
-      "verified_on": "2026-09-30",
-      "method": "search_index",
-      "primary": true
-    },
     "f-act-07": {
       "fact_id": "f-act-07",
       "claim": "AI and ML products show 54.8% benchmark activation with a time-to-value median near 17 hours, against 42.6% for CRM and sales tools",
@@ -70,34 +42,6 @@
       "method": "search_index",
       "primary": true
     },
-    "f-act-14": {
-      "fact_id": "f-act-14",
-      "claim": "Indian quick commerce splits by GMV into Blinkit near 46%, Swiggy Instamart near 24% and Zepto near 22%",
-      "value": "46",
-      "unit": "%",
-      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
-      "source_title": "Quick Commerce Ad Benchmarks India 2026",
-      "source_domain": "ladya.in",
-      "excerpt": "Blinkit holds about 46% of the market by GMV, Swiggy Instamart around 24%, and Zepto around 22%.",
-      "published_on": "2026",
-      "verified_on": "2026-09-30",
-      "method": "search_index",
-      "primary": false
-    },
-    "f-act-16": {
-      "fact_id": "f-act-16",
-      "claim": "Indian D2C brands lose 30% to 35% of revenue to quick-commerce platforms across listing fees, mandatory ad spend, commission and operations",
-      "value": "30-35",
-      "unit": "%",
-      "source_url": "https://base.com/en-IN/blog/quick-commerce-for-d2c-brands-the-complete-guide-2026/",
-      "source_title": "Quick Commerce for D2C Brands",
-      "source_domain": "base.com",
-      "excerpt": "For D2C brands, platforms consume 30% to 35% of revenue between listing fees, mandatory ad spend, commission, and operations.",
-      "published_on": "2026",
-      "verified_on": "2026-09-30",
-      "method": "search_index",
-      "primary": false
-    },
     "f-act-19": {
       "fact_id": "f-act-19",
       "claim": "Quick-commerce platforms report 3x to 5x return on ad spend, while true return after commission and cost of goods runs 1.2x to 2.5x",
@@ -107,6 +51,62 @@
       "source_title": "Quick Commerce Ad Benchmarks India 2026",
       "source_domain": "ladya.in",
       "excerpt": "Platform-reported RoAS ranges from 3x to 5x, but true RoAS after commission and cost of goods is 1.2x to 2.5x depending on the platform.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-fx-01": {
+      "fact_id": "f-fx-01",
+      "claim": "Strategy game sessions average 37.51 minutes and grew 18%, while casual game sessions rose 15% to 25.92 minutes",
+      "value": "37.51",
+      "unit": "minutes",
+      "source_url": "https://ppc.land/adjusts-2026-mobile-app-report-finance-sessions-up-21-gaming-cpi-jumps-30/",
+      "source_title": "Adjust's 2026 mobile app report: finance sessions up 21%, gaming CPI jumps 30%",
+      "source_domain": "ppc.land",
+      "excerpt": "Strategy game sessions averaged 37.51 minutes and grew 18%, while casual games rose 15% to 25.92 minutes.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-fx-02": {
+      "fact_id": "f-fx-02",
+      "claim": "Finance app sessions grew 21% in 2026 while gaming cost per install jumped 30%",
+      "value": "21",
+      "unit": "%",
+      "source_url": "https://ppc.land/adjusts-2026-mobile-app-report-finance-sessions-up-21-gaming-cpi-jumps-30/",
+      "source_title": "Adjust's 2026 mobile app report: finance sessions up 21%, gaming CPI jumps 30%",
+      "source_domain": "ppc.land",
+      "excerpt": "Adjust's 2026 report: finance sessions up 21%, gaming CPI jumps 30%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-fx-03": {
+      "fact_id": "f-fx-03",
+      "claim": "E-commerce and retail apps retain 3% to 6% by day 30, above the 2% median other sources report for the same category",
+      "value": "3-6",
+      "unit": "%",
+      "source_url": "https://appstorys.com/blog-Retention-Rates-Mobile-Apps-By-Industry",
+      "source_title": "Retention rates for mobile apps by industry",
+      "source_domain": "appstorys.com",
+      "excerpt": "By Day 30, e-commerce or retail apps retain 3-6%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-fx-08": {
+      "fact_id": "f-fx-08",
+      "claim": "Among 686 tracked apps, subscriptions are the primary model for 418, or 61%, against advertising for 176, or 26%",
+      "value": "61",
+      "unit": "%",
+      "source_url": "https://www.lazyweb.com/research/how-do-tracked-apps-make-money-subscription-ads-transactions",
+      "source_title": "How do tracked apps actually make money?",
+      "source_domain": "lazyweb.com",
+      "excerpt": "Among tracked apps, subscriptions account for 418 of 686 apps (61%), more than double advertising at 176/686 (26%).",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
@@ -640,7 +640,7 @@
         "f-bm-08",
         "f-bm-17",
         "f-bm-20",
-        "f-unit-25"
+        "f-fx-02"
       ],
       "experience": [
         "exp-040",
@@ -658,18 +658,18 @@
           "role": "lateral"
         },
         {
-          "url": "/benchmarks/churn/fintech",
-          "anchor": "fintech churn benchmarks",
+          "url": "/glossary/churn-rate",
+          "anchor": "the churn rate definition",
           "role": "lateral"
         },
         {
-          "url": "/tools/retention-curve-projector",
-          "anchor": "the retention curve projector",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/payment-success-rates-india",
-          "anchor": "payment success rates in India",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -730,14 +730,14 @@
           "f-bm-20"
         ],
         "india_layer": [
-          "f-unit-25",
+          "f-fx-02",
           "f-bm-17"
         ],
         "what_good_looks_like": [
           "f-bm-02"
         ]
       },
-      "body": "\n<AnswerBox>\nFintech app retention benchmarks put the median at 7% on day 30, against a\ncross-industry average of 4%. Strong performers reach 10% to 15%. Day 1 sits at 28%\nand day 7 at 12%. The category beats the average because its use case recurs on a\ndate the user does not choose.\n</AnswerBox>\n\n<FactTable\n  id=\"fintech-retention-table\"\n  caption=\"Fintech retention against the cross-industry average\"\n  columns={[\"Measure\", \"Fintech\", \"All categories\"]}\n  rows={[\n    { cells: [\"Day 1 retention, median\", \"28%\", \"25%\"], factId: \"f-bm-02\" },\n    { cells: [\"Day 7 retention, median\", \"12%\", \"8%\"], factId: \"f-bm-02\" },\n    { cells: [\"Day 30 retention, median\", \"7%\", \"4%\"], factId: \"f-bm-01\" },\n    { cells: [\"Day 30, strong performers\", \"10% to 15%\", \"no published figure\"], factId: \"f-bm-02\" },\n    { cells: [\"Apps retaining anyone at day 30\", \"no published figure\", \"5% to 7%\"], factId: \"f-bm-08\" },\n    { cells: [\"Day-35 download-to-paid, NA against IN and SEA\", \"no published figure\", \"2.6% against 1.4%\"], factId: \"f-bm-17\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nFintech retains a median 28% at day 1, 12% at day 7 and 7% at day 30. The\ncross-industry averages for the same points are 25%, 8% and 4%, so the category's\nadvantage widens as the window lengthens. That shape matters more than the level:\na category that holds its lead at day 30 pulls users back out of\nneed rather than novelty.\n\nTwo cells here carry no number, deliberately. Nobody publishes strong-performer\nbands for the whole app market, and nobody publishes a fintech-specific figure for\nthe share of apps retaining anyone at day 30 — the 5% to 7% range covers all\ncategories. Filling those cells from an adjacent category would make the table look\ncomplete and make it wrong.\n\n## Why fintech differs\n\nThe return trigger sits outside the product. A statement date, a bill, an EMI, a\npolicy expiry or a tax deadline brings a user back without the product earning\nattention that week. Categories without a calendar must manufacture the reason, and\nthat costs money.\n\nA fintech user's value also spreads unevenly. Someone routing a salary through the\napp and someone who checked a balance once both count as retained at day 30, and\ntheir revenue differs by orders of magnitude. A retention curve alone therefore\ncarries less signal here than in a subscription product. Read it next to a\nrevenue-weighted version.\n\nAI-led fintech features complicate it further. AI apps earn 41% more revenue per\npayer and churn about 30% faster, so bolting an AI feature onto a fintech product\ncan lift revenue per user and shorten the tenure that revenue is drawn from.\n\n## The India layer\n\nThere is no published India-specific fintech retention table at day 1, 7 and 30.\nRather than infer one, the useful India figure is the collection layer underneath\nretention. More than 120 million UPI Autopay mandates are created monthly, and a\nfintech product with a recurring charge either sits on that rail or explains why\nnot.\n\nThat distinction matters because a retained user and a paying user are not the\nsame person in this market. Day-35 download-to-paid conversion runs 2.6% in North\nAmerica against 1.4% across India and South-East Asia, so the same retention curve\nproduces about half the revenue conversion.\n\n<FromMyWork exp=\"exp-012\">\nNot supporting UPI was the single most expensive omission in the funnel. Card and\nnet banking were the only options in a market where the buying demographic pays by\nUPI. Integration took six weeks, and 73% of purchases came through UPI in the\nfirst month after launch.\n</FromMyWork>\n\n## What good looks like\n\nAt day 30, 10% to 15% puts a fintech app in the strong-performer band. Below 7% the\nproduct trails its own category rather than the market. Between those two the more\nuseful question is which cohort holds. If only the salary-routing users stay, a\nsegment the product never deliberately built for carries the headline.\n\nRead the curve's shape before its level. A curve that flattens between day 7 and\nday 30 has found a recurring need. One that keeps sliding has a use case that\nhappens once, and no amount of lifecycle messaging turns a one-off need into a\nhabit.\n\nOne more check belongs here. Split the curve by whether the user completed a\nmoney-moving action in week one. In most fintech products those two cohorts\ndiverge so sharply that a blended figure describes neither, and the blended figure\nis what gets compared against tables like this one.\n\n## If you are below the median\n\nCheck collection before retention. A failed mandate leaves the cohort exactly as a\ncancellation does, and most dashboards report the two together, so a fintech\nproduct reads as disliked when it is merely uncollected. That check costs an\nafternoon and reorders the whole plan often enough to be worth doing first.\n\nThen check the trigger. If the product has no external date that brings a user\nback, retention work means finding one — a statement, a reminder, a deadline —\nrather than writing better notifications for a week in which the user had no reason\nto open anything. Products without a natural date usually have to borrow one from\nthe user's own calendar, and that is a product decision rather than a lifecycle\ncampaign.\n\n<FromMyWork exp=\"exp-040\">\nRouting applicants only to lenders with high disbursement probability got bank and\nNBFC approval rates to 90%+. The gain came from the routing rule rather than the\nmodel that fed it.\n</FromMyWork>\n\n\n## How these figures were gathered\n\nEach row names its source and the date it was last checked. Figures come from\npublished benchmark reports, not from a panel this site runs.\n\nThree rows say \"no published figure\". That is the point of them. The inventory rule\nfor every benchmark page here is at least three sources or an explicit \"insufficient\npublic data\" mark. Fintech is well covered at day 1, 7 and 30 and poorly covered on\nstrong-performer spread, so the table shows both states.\n\nWhere a figure exists for all categories but not for fintech, the row carries the\nall-category number and labels it. That is a comparison, not a fintech benchmark,\nand the distinction matters when somebody sets a target from it.\n\nAnything older than 90 days goes back for re-verification before publication. Price\nfigures run on a tighter 45-day cycle, because they move faster than retention does.\n"
+      "body": "\n<AnswerBox>\nFintech app retention benchmarks put the median at 7% on day 30, against a\ncross-industry average of 4%. Strong performers reach 10% to 15%. Day 1 sits at 28%\nand day 7 at 12%. The category beats the average because its use case recurs on a\ndate the user does not choose.\n</AnswerBox>\n\n<FactTable\n  id=\"fintech-retention-table\"\n  caption=\"Fintech retention against the cross-industry average\"\n  columns={[\"Measure\", \"Fintech\", \"All categories\"]}\n  rows={[\n    { cells: [\"Day 1 retention, median\", \"28%\", \"25%\"], factId: \"f-bm-02\" },\n    { cells: [\"Day 7 retention, median\", \"12%\", \"8%\"], factId: \"f-bm-02\" },\n    { cells: [\"Day 30 retention, median\", \"7%\", \"4%\"], factId: \"f-bm-01\" },\n    { cells: [\"Day 30, strong performers\", \"10% to 15%\", \"no published figure\"], factId: \"f-bm-02\" },\n    { cells: [\"Apps retaining anyone at day 30\", \"no published figure\", \"5% to 7%\"], factId: \"f-bm-08\" },\n    { cells: [\"Day-35 download-to-paid, NA against IN and SEA\", \"no published figure\", \"2.6% against 1.4%\"], factId: \"f-bm-17\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nFintech retains a median 28% at day 1, 12% at day 7 and 7% at day 30. The\ncross-industry averages for the same points are 25%, 8% and 4%, so the category's\nadvantage widens as the window lengthens. That shape matters more than the level:\na category that holds its lead at day 30 pulls users back out of\nneed rather than novelty.\n\nTwo cells here carry no number, deliberately. Nobody publishes strong-performer\nbands for the whole app market, and nobody publishes a fintech-specific figure for\nthe share of apps retaining anyone at day 30 — the 5% to 7% range covers all\ncategories. Filling those cells from an adjacent category would make the table look\ncomplete and make it wrong.\n\n## Why fintech differs\n\nThe return trigger sits outside the product. A statement date, a bill, an EMI, a\npolicy expiry or a tax deadline brings a user back without the product earning\nattention that week. Categories without a calendar must manufacture the reason, and\nthat costs money.\n\nA fintech user's value also spreads unevenly. Someone routing a salary through the\napp and someone who checked a balance once both count as retained at day 30, and\ntheir revenue differs by orders of magnitude. A retention curve alone therefore\ncarries less signal here than in a subscription product. Read it next to a\nrevenue-weighted version.\n\nAI-led fintech features complicate it further. AI apps earn 41% more revenue per\npayer and churn about 30% faster, so bolting an AI feature onto a fintech product\ncan lift revenue per user and shorten the tenure that revenue is drawn from.\n\n## The India layer\n\nThere is no published India-specific fintech retention table at day 1, 7 and 30, and\nthis page does not infer one. What is published, and what travels, is the direction\nof engagement: finance app sessions grew 21% in 2026 while gaming cost per install\njumped 30%. Attention in finance is rising while the cost of buying it elsewhere\nrises faster.\n\nThat distinction matters because a retained user and a paying user are not the\nsame person in this market. Day-35 download-to-paid conversion runs 2.6% in North\nAmerica against 1.4% across India and South-East Asia, so the same retention curve\nproduces about half the revenue conversion.\n\n<FromMyWork exp=\"exp-012\">\nNot supporting UPI was the single most expensive omission in the funnel. Card and\nnet banking were the only options in a market where the buying demographic pays by\nUPI. Integration took six weeks, and 73% of purchases came through UPI in the\nfirst month after launch.\n</FromMyWork>\n\n## What good looks like\n\nAt day 30, 10% to 15% puts a fintech app in the strong-performer band. Below 7% the\nproduct trails its own category rather than the market. Between those two the more\nuseful question is which cohort holds. If only the salary-routing users stay, a\nsegment the product never deliberately built for carries the headline.\n\nRead the curve's shape before its level. A curve that flattens between day 7 and\nday 30 has found a recurring need. One that keeps sliding has a use case that\nhappens once, and no amount of lifecycle messaging turns a one-off need into a\nhabit.\n\nOne more check belongs here. Split the curve by whether the user completed a\nmoney-moving action in week one. In most fintech products those two cohorts\ndiverge so sharply that a blended figure describes neither, and the blended figure\nis what gets compared against tables like this one.\n\n## If you are below the median\n\nCheck collection before retention. A failed mandate leaves the cohort exactly as a\ncancellation does, and most dashboards report the two together, so a fintech\nproduct reads as disliked when it is merely uncollected. That check costs an\nafternoon and reorders the whole plan often enough to be worth doing first.\n\nThen check the trigger. If the product has no external date that brings a user\nback, retention work means finding one — a statement, a reminder, a deadline —\nrather than writing better notifications for a week in which the user had no reason\nto open anything. Products without a natural date usually have to borrow one from\nthe user's own calendar, and that is a product decision rather than a lifecycle\ncampaign.\n\n<FromMyWork exp=\"exp-040\">\nRouting applicants only to lenders with high disbursement probability got bank and\nNBFC approval rates to 90%+. The gain came from the routing rule rather than the\nmodel that fed it.\n</FromMyWork>\n\n\n## How these figures were gathered\n\nEach row names its source and the date it was last checked. Figures come from\npublished benchmark reports, not from a panel this site runs.\n\nThree rows say \"no published figure\". That is the point of them. The inventory rule\nfor every benchmark page here is at least three sources or an explicit \"insufficient\npublic data\" mark. Fintech is well covered at day 1, 7 and 30 and poorly covered on\nstrong-performer spread, so the table shows both states.\n\nWhere a figure exists for all categories but not for fintech, the row carries the\nall-category number and labels it. That is a comparison, not a fintech benchmark,\nand the distinction matters when somebody sets a target from it.\n\nAnything older than 90 days goes back for re-verification before publication. Price\nfigures run on a tighter 45-day cycle, because they move faster than retention does.\n"
     },
     {
       "id": "benchmark-0460",
@@ -761,7 +761,7 @@
         "f-bm-14",
         "f-bm-15",
         "f-bm-08",
-        "f-act-16"
+        "f-fx-03"
       ],
       "experience": [
         "exp-024",
@@ -779,18 +779,18 @@
           "role": "lateral"
         },
         {
-          "url": "/benchmarks/churn/d2c-ecommerce",
-          "anchor": "ecommerce churn benchmarks",
+          "url": "/glossary/churn-rate",
+          "anchor": "the churn rate definition",
           "role": "lateral"
         },
         {
-          "url": "/tools/retention-curve-projector",
-          "anchor": "the retention curve projector",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/cod-to-prepaid-conversion-d2c",
-          "anchor": "COD to prepaid conversion",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -851,13 +851,13 @@
           "f-bm-14"
         ],
         "india_layer": [
-          "f-act-16"
+          "f-fx-03"
         ],
         "what_good_looks_like": [
           "f-bm-15"
         ]
       },
-      "body": "\n<AnswerBox>\nEcommerce app retention benchmarks put the median at 2% on day 30, below the 4%\ncross-industry average. Day 1 sits at 18% and day 7 at 5%. Strong performers reach\n3% to 6%. The category retains poorly by construction, because buying is episodic\nand the browser sits one tap away.\n</AnswerBox>\n\n<FactTable\n  id=\"ecommerce-retention-table\"\n  caption=\"Ecommerce retention, and the purchase rates that matter more\"\n  columns={[\"Measure\", \"Ecommerce\", \"Reference\"]}\n  rows={[\n    { cells: [\"Day 1 retention, median\", \"18%\", \"25% all categories\"], factId: \"f-bm-03\" },\n    { cells: [\"Day 7 retention, median\", \"5%\", \"8% all categories\"], factId: \"f-bm-01\" },\n    { cells: [\"Day 30 retention, median\", \"2%\", \"4% all categories\"], factId: \"f-bm-03\" },\n    { cells: [\"Install-to-purchase, retail and travel\", \"1.38% and 2.41%\", \"1% to 2% typical\"], factId: \"f-bm-14\" },\n    { cells: [\"Good mobile commerce conversion\", \"2% to 6%\", \"by order value and frequency\"], factId: \"f-bm-15\" },\n    { cells: [\"Apps retaining anyone at day 30\", \"no published figure\", \"5% to 7%\"], factId: \"f-bm-08\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nEcommerce sits below the cross-industry average at every point on the curve: 18%\nagainst 25% at day 1, 5% against 8% at day 7, and 2% against 4% at day 30. Strong\nperformers reach 3% to 6% at day 30, which still falls short of the all-category\naverage. So a category-leading ecommerce app looks mediocre against a general table,\nand that is a measurement artefact rather than a finding.\n\nNo ecommerce-specific figure exists for the share of apps retaining anyone at day\n30, so that cell carries the cross-industry 5% to 7% and names the population it\ndescribes. An India-specific D2C retention table at day 1, 7 and 30 is also not\npublished, and this page does not manufacture one. Those two gaps matter more here\nthan in most categories, because ecommerce retention varies so widely by order\nfrequency that a borrowed figure would mislead rather than approximate.\n\n## Why ecommerce differs\n\nPurchase frequency sets the ceiling. A category where the average customer buys\nfour times a year cannot retain like one where the user opens the app daily, and\nno amount of engagement design changes how often somebody needs shoes. So a low\ncurve here is a description of the category, not a verdict on the product.\n\nThe second difference is substitution. Every ecommerce app competes with its own\nmobile site, which requires no install and no update. A user who is not retained\nin the app may be perfectly retained as a customer, which makes app retention a\nchannel metric rather than a loyalty metric.\n\nAssortment compounds both. Carrying more does not raise retention if the extra\nrange has no demand behind it.\n\n<FromMyWork exp=\"exp-024\">\nCarrying the full catalogue was never viable, so the first real work was choosing\nwhat not to stock. Of roughly 1,200 SKUs we prioritised 85 — under 8% — against\nthe highest-probability commercial opportunities for the market's development\nstage.\n</FromMyWork>\n\n## The India layer\n\nThe figure that decides Indian D2C economics is not retention. It is what the\nchannel takes. Indian quick-commerce platforms consume 30% to 35% of revenue once\nlisting fees, mandatory ad spend, commission and operations are counted.\n\nThat changes what retention is worth. A retained buyer ordering through a platform\ntaking a third of revenue contributes very differently from one ordering direct, so\na D2C retention programme that shifts orders onto a platform can raise the curve\nand lower the margin in the same quarter.\n\nRead retention by channel, or the number hides which half of the base earns\nanything. No India-specific D2C retention curve is published, so the channel split\nis the India layer that actually exists here — and it is the one that changes\ndecisions.\n\n## What good looks like\n\nAt day 30, 3% to 6% is the strong-performer band, and below 2% the app trails its\nown category. The more useful target, though, is repeat purchase rate rather than\nretention. Install-to-purchase runs 1.38% for retail and 2.41% for travel, and a\ngood mobile commerce conversion rate sits between 2% and 6% depending on order value\nand purchase frequency.\n\nRead cohorts by acquisition channel. In ecommerce more than in most categories the\nchannel decides the curve, so a blended number describes your media mix rather than\nyour product. A discount-led cohort and an organic cohort can differ by a factor of\nthree at day 30 on the same app, which makes the blended figure almost unusable for\na decision.\n\n\nSet the target on purchases per buyer per year, then derive the retention target\nfrom it. Doing it the other way round produces a retention goal the category cannot\nreach.\n## If you are below the median\n\nFix the first purchase before the fifth. A user who has never bought has no habit\nto retain, and the interventions differ: shipping clarity, payment options and a\nvisible returns policy move the first purchase, while none of them move the seventh.\n\nThen segment by frequency rather than recency. A quarterly buyer who bought last\nquarter is a healthy customer and, under a 30-day definition, a churned user. That\nsingle definitional choice reclassifies a large share of a D2C base, and teams\nusually discover it after a quarter of chasing the wrong cohort.\n\n<FromMyWork exp=\"exp-052\">\nOrder intake arrived by email, phone and trade expo and was systemised into one\nprocessing workflow. The systemisation was worth more than any single channel,\nbecause it made the demand legible.\n</FromMyWork>\n\n\n## How these figures were gathered\n\nEvery row carries its source and a verification date. The figures come from\npublished reports rather than from first-party panel data.\n\nTwo rows read \"no published figure\", and that is deliberate. The standard for these\npages is at least three sources or an explicit \"insufficient public data\" mark.\nEcommerce retention is well documented at the three day marks and undocumented on\napp-level survival, so the table reports both honestly.\n\nRows that carry an all-category figure in an ecommerce column say so. Borrowing a\nnumber from a neighbouring category would make this table look complete and make a\ntarget set from it wrong.\n\nFigures go back for re-checking every 90 days. Anything about price or fees runs on\na 45-day cycle instead.\n"
+      "body": "\n<AnswerBox>\nEcommerce app retention benchmarks put the median at 2% on day 30, below the 4%\ncross-industry average. Day 1 sits at 18% and day 7 at 5%. Strong performers reach\n3% to 6%. The category retains poorly by construction, because buying is episodic\nand the browser sits one tap away.\n</AnswerBox>\n\n<FactTable\n  id=\"ecommerce-retention-table\"\n  caption=\"Ecommerce retention, and the purchase rates that matter more\"\n  columns={[\"Measure\", \"Ecommerce\", \"Reference\"]}\n  rows={[\n    { cells: [\"Day 1 retention, median\", \"18%\", \"25% all categories\"], factId: \"f-bm-03\" },\n    { cells: [\"Day 7 retention, median\", \"5%\", \"8% all categories\"], factId: \"f-bm-01\" },\n    { cells: [\"Day 30 retention, median\", \"2%\", \"4% all categories\"], factId: \"f-bm-03\" },\n    { cells: [\"Install-to-purchase, retail and travel\", \"1.38% and 2.41%\", \"1% to 2% typical\"], factId: \"f-bm-14\" },\n    { cells: [\"Good mobile commerce conversion\", \"2% to 6%\", \"by order value and frequency\"], factId: \"f-bm-15\" },\n    { cells: [\"Apps retaining anyone at day 30\", \"no published figure\", \"5% to 7%\"], factId: \"f-bm-08\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nEcommerce sits below the cross-industry average at every point on the curve: 18%\nagainst 25% at day 1, 5% against 8% at day 7, and 2% against 4% at day 30. Strong\nperformers reach 3% to 6% at day 30, which still falls short of the all-category\naverage. So a category-leading ecommerce app looks mediocre against a general table,\nand that is a measurement artefact rather than a finding.\n\nNo ecommerce-specific figure exists for the share of apps retaining anyone at day\n30, so that cell carries the cross-industry 5% to 7% and names the population it\ndescribes. An India-specific D2C retention table at day 1, 7 and 30 is also not\npublished, and this page does not manufacture one. Those two gaps matter more here\nthan in most categories, because ecommerce retention varies so widely by order\nfrequency that a borrowed figure would mislead rather than approximate.\n\n## Why ecommerce differs\n\nPurchase frequency sets the ceiling. A category where the average customer buys\nfour times a year cannot retain like one where the user opens the app daily, and\nno amount of engagement design changes how often somebody needs shoes. So a low\ncurve here is a description of the category, not a verdict on the product.\n\nThe second difference is substitution. Every ecommerce app competes with its own\nmobile site, which requires no install and no update. A user who is not retained\nin the app may be perfectly retained as a customer, which makes app retention a\nchannel metric rather than a loyalty metric.\n\nAssortment compounds both. Carrying more does not raise retention if the extra\nrange has no demand behind it.\n\n<FromMyWork exp=\"exp-024\">\nCarrying the full catalogue was never viable, so the first real work was choosing\nwhat not to stock. Of roughly 1,200 SKUs we prioritised 85 — under 8% — against\nthe highest-probability commercial opportunities for the market's development\nstage.\n</FromMyWork>\n\n## The India layer\n\nNo India-specific D2C retention table is published at day 1, 7 and 30. What the\npublished record does show is how wide the disagreement runs even globally: one\nsource puts e-commerce and retail day-30 retention at 3% to 6%, against the 2%\nmedian another reports for the same category. Both appear here with their source.\n\nThat changes what retention is worth. A retained buyer ordering through a platform\ntaking a third of revenue contributes very differently from one ordering direct, so\na D2C retention programme that shifts orders onto a platform can raise the curve\nand lower the margin in the same quarter.\n\nRead retention by channel, or the number hides which half of the base earns\nanything. No India-specific D2C retention curve is published, so the channel split\nis the India layer that actually exists here — and it is the one that changes\ndecisions.\n\n## What good looks like\n\nAt day 30, 3% to 6% is the strong-performer band, and below 2% the app trails its\nown category. The more useful target, though, is repeat purchase rate rather than\nretention. Install-to-purchase runs 1.38% for retail and 2.41% for travel, and a\ngood mobile commerce conversion rate sits between 2% and 6% depending on order value\nand purchase frequency.\n\nRead cohorts by acquisition channel. In ecommerce more than in most categories the\nchannel decides the curve, so a blended number describes your media mix rather than\nyour product. A discount-led cohort and an organic cohort can differ by a factor of\nthree at day 30 on the same app, which makes the blended figure almost unusable for\na decision.\n\n\nSet the target on purchases per buyer per year, then derive the retention target\nfrom it. Doing it the other way round produces a retention goal the category cannot\nreach.\n## If you are below the median\n\nFix the first purchase before the fifth. A user who has never bought has no habit\nto retain, and the interventions differ: shipping clarity, payment options and a\nvisible returns policy move the first purchase, while none of them move the seventh.\n\nThen segment by frequency rather than recency. A quarterly buyer who bought last\nquarter is a healthy customer and, under a 30-day definition, a churned user. That\nsingle definitional choice reclassifies a large share of a D2C base, and teams\nusually discover it after a quarter of chasing the wrong cohort.\n\n<FromMyWork exp=\"exp-052\">\nOrder intake arrived by email, phone and trade expo and was systemised into one\nprocessing workflow. The systemisation was worth more than any single channel,\nbecause it made the demand legible.\n</FromMyWork>\n\n\n## How these figures were gathered\n\nEvery row carries its source and a verification date. The figures come from\npublished reports rather than from first-party panel data.\n\nTwo rows read \"no published figure\", and that is deliberate. The standard for these\npages is at least three sources or an explicit \"insufficient public data\" mark.\nEcommerce retention is well documented at the three day marks and undocumented on\napp-level survival, so the table reports both honestly.\n\nRows that carry an all-category figure in an ecommerce column say so. Borrowing a\nnumber from a neighbouring category would make this table look complete and make a\ntarget set from it wrong.\n\nFigures go back for re-checking every 90 days. Anything about price or fees runs on\na 45-day cycle instead.\n"
     },
     {
       "id": "benchmark-0459",
@@ -899,18 +899,18 @@
           "role": "lateral"
         },
         {
-          "url": "/benchmarks/churn/healthtech",
-          "anchor": "healthtech churn benchmarks",
+          "url": "/glossary/churn-rate",
+          "anchor": "the churn rate definition",
           "role": "lateral"
         },
         {
-          "url": "/tools/retention-curve-projector",
-          "anchor": "the retention curve projector",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/monetizing-tier-2-tier-3-users",
-          "anchor": "monetising tier 2 and tier 3 users",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -1001,7 +1001,7 @@
         "f-bm-11",
         "f-bm-19",
         "f-bm-16",
-        "f-act-14"
+        "f-fx-01"
       ],
       "experience": [
         "exp-018",
@@ -1019,18 +1019,18 @@
           "role": "lateral"
         },
         {
-          "url": "/benchmarks/churn/gaming",
-          "anchor": "gaming churn benchmarks",
+          "url": "/glossary/churn-rate",
+          "anchor": "the churn rate definition",
           "role": "lateral"
         },
         {
-          "url": "/tools/retention-curve-projector",
-          "anchor": "the retention curve projector",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/ads-vs-subscriptions-indian-apps",
-          "anchor": "ads against subscriptions",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -1090,14 +1090,14 @@
           "f-bm-19"
         ],
         "india_layer": [
-          "f-act-14"
+          "f-fx-01"
         ],
         "what_good_looks_like": [
           "f-bm-09",
           "f-bm-11"
         ]
       },
-      "body": "\n<AnswerBox>\nGaming app retention benchmarks put the median at 3% on day 30, below the 4%\ncross-industry average, with strong performers at 5% to 8%. Day 1 is the strongest\nof any category at a 32% median. The category wins the first session and loses the\nthirtieth, and that shape is the whole story.\n</AnswerBox>\n\n<FactTable\n  id=\"gaming-retention-table\"\n  caption=\"Gaming retention, and the acquisition funnel above it\"\n  columns={[\"Measure\", \"Gaming\", \"Reference\"]}\n  rows={[\n    { cells: [\"Day 1 retention, median and strong\", \"32%, strong 40% to 50%\", \"25% all categories\"], factId: \"f-bm-05\" },\n    { cells: [\"Day 7 retention, median and strong\", \"8%, strong 12% to 18%\", \"8% all categories\"], factId: \"f-bm-05\" },\n    { cells: [\"Day 30 retention, median and strong\", \"3%, strong 5% to 8%\", \"4% all categories\"], factId: \"f-bm-05\" },\n    { cells: [\"Median revenue per install at day 60\", \"no gaming figure\", \"$0.34, strong $0.66+\"], factId: \"f-bm-16\" },\n    { cells: [\"App Store install rate, search against browse\", \"no published figure\", \"2.6% to 12.4% against 0.1% to 2.5%\"], factId: \"f-bm-09\" },\n    { cells: [\"Average US App Store conversion\", \"no published figure\", \"8.56%, install rate 3.8%\"], factId: \"f-bm-11\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nGaming has the strongest day 1 of any category at a 32% median, with strong\nperformers reaching 40% to 50%. By day 7 it has fallen to the cross-industry\naverage of 8%, and by day 30 it sits below it at 3% against 4%.\n\nThree cells carry no gaming-specific figure. Publishers break store conversion out\nfor medical, entertainment and business but not for gaming at this grain, so those\nrows show the all-category range and label it. Fantasy sports, which the inventory\ngroups with gaming, has no separate retention curve anywhere — and a fixture calendar\ndrives it rather than session depth, so borrowing the gaming median would be worse\nthan leaving it out.\n\n\nThe practical reading: use the day-1 and day-7 bands, and treat day 30 as a check\nrather than a target.\n## Why gaming differs\n\nThe first session and the thirtieth are different products. A game earns the first\nopen on novelty and art, which is reliable and cheap to produce. It earns the\nthirtieth on depth, progression and social ties, which most titles never build. The\nsteep fall between day 1 and day 7 is therefore not a funnel leak. It is the\ncategory sorting curiosity from intent.\n\nTrial structure shows the same pattern in subscription terms. A three-day trial\naverages 26% cancellations against 51% for a thirty-day trial, and 31.1% of\nthirty-day trials cancel on day zero. Longer exposure surfaces more rejection. That\nis information, not failure.\n\n\nLive-service titles break the pattern, and no published benchmark separates them\neither. A game with a content calendar retains on a schedule, the way a media product\ndoes, so the general gaming median makes a poor comparison for it.\n## The India layer\n\nNo India-specific gaming retention table is published at day 1, 7 and 30.\n\nThe structural comparison that does hold is concentration. Indian quick commerce\nsplits by gross merchandise value into Blinkit at about 46%, Instamart at 24% and\nZepto at 22% — a market where the leader takes roughly half. Indian real-money\ngaming and fantasy sports concentrate similarly, and in a concentrated market a\nmid-tier app's retention problem is usually a distribution problem wearing a\nretention label. There is no published figure for that split, so this page states\nthe mechanism and not a number.\n\n\nThe other India-specific factor is device. A large share of the Indian base runs\nmid-range Android hardware, and a title that drops frames on it loses users for a\nreason no retention campaign can reach.\n## What good looks like\n\nAt day 30, 5% to 8% is the strong-performer band and 3% is the median. For gaming,\nthough, the more diagnostic point is day 7: the strong band runs 12% to 18% against\nan 8% median, and that gap is where depth exists or does not.\n\nA day-1 figure above 40% alongside a day-7 figure at the median means the product\nbuys attention it cannot hold. That is an acquisition-efficiency problem wearing a\ngood headline. The cheapest diagnostic is to compare paid and organic cohorts at day\n7: when paid installs fall off a cliff and organic ones do not, the game is fine and\nthe targeting is not.\n\n\nFor a fantasy sports product, measure against your own last season rather than\nagainst this table. The fixture calendar dominates everything else.\n## If you are below the median\n\nLook at session two, not session thirty. A user decides to return in the last\nminute of the first session, and almost every day-30 problem in this category is a\nday-2 problem compounded thirty times over.\n\nThen treat any feature needing accumulated history with suspicion. Those features\ntest well with the team, who already have the history, and fail with new users, who\ndo not. The pattern is consistent enough to be worth a rule.\n\n<FromMyWork exp=\"exp-018\">\nA feature I championed reached 2.8% adoption and was killed. Maintenance logging\nneeded repeated deliberate effort and returned nothing until enough history had\naccumulated, so it never cleared its own activation gate.\n</FromMyWork>\n\n<FromMyWork exp=\"exp-019\">\nLetting users share a vehicle report turned a utility check into an acquisition\nchannel. Shared reports carried 12.3% of new installs within four months.\n</FromMyWork>\n\n\n## How these figures were gathered\n\nEvery row names a source and a date. These figures come from published benchmarks\nrather than from a panel this site runs.\n\nThree rows read \"no published figure\", including both store-conversion rows and the\nfantasy sports split. Publishers break store conversion out for medical,\nentertainment and business, and not for gaming at this grain. Fantasy sports has no separate retention\ncurve published anywhere.\n\nThat second gap is the one worth repeating. Fantasy sports retention tracks a fixture\ncalendar, not session depth, so the gaming median is the wrong comparison and a\nborrowed number would be worse than none.\n\nEverything here goes back for re-checking on a 90-day cycle.\n\n\nPrice figures run on a 45-day cycle, because store pricing and promotions move\nfaster than retention does."
+      "body": "\n<AnswerBox>\nGaming app retention benchmarks put the median at 3% on day 30, below the 4%\ncross-industry average, with strong performers at 5% to 8%. Day 1 is the strongest\nof any category at a 32% median. The category wins the first session and loses the\nthirtieth, and that shape is the whole story.\n</AnswerBox>\n\n<FactTable\n  id=\"gaming-retention-table\"\n  caption=\"Gaming retention, and the acquisition funnel above it\"\n  columns={[\"Measure\", \"Gaming\", \"Reference\"]}\n  rows={[\n    { cells: [\"Day 1 retention, median and strong\", \"32%, strong 40% to 50%\", \"25% all categories\"], factId: \"f-bm-05\" },\n    { cells: [\"Day 7 retention, median and strong\", \"8%, strong 12% to 18%\", \"8% all categories\"], factId: \"f-bm-05\" },\n    { cells: [\"Day 30 retention, median and strong\", \"3%, strong 5% to 8%\", \"4% all categories\"], factId: \"f-bm-05\" },\n    { cells: [\"Median revenue per install at day 60\", \"no gaming figure\", \"$0.34, strong $0.66+\"], factId: \"f-bm-16\" },\n    { cells: [\"App Store install rate, search against browse\", \"no published figure\", \"2.6% to 12.4% against 0.1% to 2.5%\"], factId: \"f-bm-09\" },\n    { cells: [\"Average US App Store conversion\", \"no published figure\", \"8.56%, install rate 3.8%\"], factId: \"f-bm-11\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nGaming has the strongest day 1 of any category at a 32% median, with strong\nperformers reaching 40% to 50%. By day 7 it has fallen to the cross-industry\naverage of 8%, and by day 30 it sits below it at 3% against 4%.\n\nThree cells carry no gaming-specific figure. Publishers break store conversion out\nfor medical, entertainment and business but not for gaming at this grain, so those\nrows show the all-category range and label it. Fantasy sports, which the inventory\ngroups with gaming, has no separate retention curve anywhere — and a fixture calendar\ndrives it rather than session depth, so borrowing the gaming median would be worse\nthan leaving it out.\n\n\nThe practical reading: use the day-1 and day-7 bands, and treat day 30 as a check\nrather than a target.\n## Why gaming differs\n\nThe first session and the thirtieth are different products. A game earns the first\nopen on novelty and art, which is reliable and cheap to produce. It earns the\nthirtieth on depth, progression and social ties, which most titles never build. The\nsteep fall between day 1 and day 7 is therefore not a funnel leak. It is the\ncategory sorting curiosity from intent.\n\nTrial structure shows the same pattern in subscription terms. A three-day trial\naverages 26% cancellations against 51% for a thirty-day trial, and 31.1% of\nthirty-day trials cancel on day zero. Longer exposure surfaces more rejection. That\nis information, not failure.\n\n\nLive-service titles break the pattern, and no published benchmark separates them\neither. A game with a content calendar retains on a schedule, the way a media product\ndoes, so the general gaming median makes a poor comparison for it.\n## The India layer\n\nNo India-specific gaming retention table is published at day 1, 7 and 30.\n\nThe comparison that does hold is session depth, which is published by genre rather\nthan by country. Strategy game sessions average 37.51 minutes and grew 18%, while\ncasual sessions rose 15% to 25.92 minutes. Genre moves time-in-app more than\ngeography does, and a mid-tier app's retention problem is usually a genre-fit problem\nwearing a retention label. A strategy title and a casual title with identical day-7\nnumbers are not comparable products: one has held attention for forty minutes a\nsession and the other for twenty-five. No India split is published, so this page\nstates\nthe mechanism and not a number.\n\n\nThe other India-specific factor is device. A large share of the Indian base runs\nmid-range Android hardware, and a title that drops frames on it loses users for a\nreason no retention campaign can reach.\n## What good looks like\n\nAt day 30, 5% to 8% is the strong-performer band and 3% is the median. For gaming,\nthough, the more diagnostic point is day 7: the strong band runs 12% to 18% against\nan 8% median, and that gap is where depth exists or does not.\n\nA day-1 figure above 40% alongside a day-7 figure at the median means the product\nbuys attention it cannot hold. That is an acquisition-efficiency problem wearing a\ngood headline. The cheapest diagnostic is to compare paid and organic cohorts at day\n7: when paid installs fall off a cliff and organic ones do not, the game is fine and\nthe targeting is not.\n\n\nFor a fantasy sports product, measure against your own last season rather than\nagainst this table. The fixture calendar dominates everything else.\n## If you are below the median\n\nLook at session two, not session thirty. A user decides to return in the last\nminute of the first session, and almost every day-30 problem in this category is a\nday-2 problem compounded thirty times over.\n\nThen treat any feature needing accumulated history with suspicion. Those features\ntest well with the team, who already have the history, and fail with new users, who\ndo not. The pattern is consistent enough to be worth a rule.\n\n<FromMyWork exp=\"exp-018\">\nA feature I championed reached 2.8% adoption and was killed. Maintenance logging\nneeded repeated deliberate effort and returned nothing until enough history had\naccumulated, so it never cleared its own activation gate.\n</FromMyWork>\n\n<FromMyWork exp=\"exp-019\">\nLetting users share a vehicle report turned a utility check into an acquisition\nchannel. Shared reports carried 12.3% of new installs within four months.\n</FromMyWork>\n\n\n## How these figures were gathered\n\nEvery row names a source and a date. These figures come from published benchmarks\nrather than from a panel this site runs.\n\nThree rows read \"no published figure\", including both store-conversion rows and the\nfantasy sports split. Publishers break store conversion out for medical,\nentertainment and business, and not for gaming at this grain. Fantasy sports has no separate retention\ncurve published anywhere.\n\nThat second gap is the one worth repeating. Fantasy sports retention tracks a fixture\ncalendar, not session depth, so the gaming median is the wrong comparison and a\nborrowed number would be worse than none.\n\nEverything here goes back for re-checking on a 90-day cycle.\n\n\nPrice figures run on a 45-day cycle, because store pricing and promotions move\nfaster than retention does."
     },
     {
       "id": "benchmark-0468",
@@ -1139,18 +1139,18 @@
           "role": "lateral"
         },
         {
-          "url": "/benchmarks/churn/social-dating",
-          "anchor": "social and dating churn benchmarks",
+          "url": "/glossary/churn-rate",
+          "anchor": "the churn rate definition",
           "role": "lateral"
         },
         {
-          "url": "/tools/retention-curve-projector",
-          "anchor": "the retention curve projector",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/regional-language-monetization",
-          "anchor": "regional language monetisation",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -1259,13 +1259,13 @@
           "role": "lateral"
         },
         {
-          "url": "/benchmarks/churn/b2b-saas",
-          "anchor": "B2B SaaS churn benchmarks",
+          "url": "/glossary/churn-rate",
+          "anchor": "the churn rate definition",
           "role": "lateral"
         },
         {
-          "url": "/tools/nrr-grr-calculator",
-          "anchor": "the NRR and GRR calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -1506,13 +1506,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/paywall-uplift-calculator",
-          "anchor": "the paywall uplift calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/monetizing-tier-2-tier-3-users",
-          "anchor": "monetising tier 2 and tier 3 users",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -1620,8 +1620,8 @@
           "role": "hub"
         },
         {
-          "url": "/india/ott-pricing-india",
-          "anchor": "OTT pricing in India",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "lateral"
         },
         {
@@ -1630,13 +1630,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/ecpm-ad-revenue-calculator",
-          "anchor": "the ad revenue calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/benchmarks/retention/media-ott",
-          "anchor": "media and OTT retention benchmarks",
+          "url": "/benchmarks/retention",
+          "anchor": "the retention benchmarks",
           "role": "related"
         },
         {
@@ -1735,7 +1735,7 @@
         "f-bm-31",
         "f-bm-32",
         "f-bm-33",
-        "f-unit-18"
+        "f-fx-08"
       ],
       "experience": [
         "exp-037",
@@ -1758,8 +1758,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/arpu-arppu-calculator",
-          "anchor": "the ARPU and ARPPU calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -1832,7 +1832,7 @@
           "f-bm-28"
         ]
       },
-      "body": "\n<AnswerBox>\nSaaS ARPU benchmarks run by segment, not by product. Monthly ARPU sits at $20 to $50\nself-serve, about ₹1,918 to ₹4,795, then $50 to $200 for SMB, $200 to $2,000\nmid-market and $2,000 to $10,000-plus enterprise. The 2026 median is about $250 a\nmonth, roughly ₹23,973, up from $210 in 2024.\n</AnswerBox>\n\n<FactTable\n  id=\"saas-arpu-table\"\n  caption=\"SaaS ARPU, acquisition cost and churn, all by segment\"\n  columns={[\"Segment\", \"Monthly ARPU\", \"What comes with it\"]}\n  rows={[\n    { cells: [\"Self-serve to enterprise\", \"$20-50, $50-200, $200-2,000, $2,000-10,000+\", \"four bands, not a scale\"], factId: \"f-bm-28\" },\n    { cells: [\"Median across B2B SaaS\", \"about $250, up from $210 in 2024\", \"the median describes few companies\"], factId: \"f-bm-29\" },\n    { cells: [\"SMB median\", \"$55\", \"inside the $50-200 band\"], factId: \"f-bm-30\" },\n    { cells: [\"Segment definition by ACV\", \"SMB under $10K, mid-market to $100K, enterprise above\", \"annual, not monthly\"], factId: \"f-bm-31\" },\n    { cells: [\"Acquisition cost by segment\", \"under $15K ACV: $2,000-8,000\", \"$15K-100K ACV: $15,000-40,000\"], factId: \"f-bm-32\" },\n    { cells: [\"Annual account churn by segment\", \"SMB 15%, mid-market 10%, enterprise 5%\", \"median\"], factId: \"f-bm-33\" },\n    { cells: [\"Gross revenue retention by ACV\", \"82% under $25K, 95% above $100K\", \"a different cut-off again\"], factId: \"f-unit-18\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nMonthly ARPU bands run $20 to $50 self-serve, $50 to $200 SMB, $200 to $2,000\nmid-market and $2,000 to $10,000-plus enterprise. The 2026 median across B2B SaaS is about\n$250 a month, roughly ₹23,973, up from $210 in 2024. The SMB median specifically is\n$55, about ₹5,274.\n\nNotice that the overall median of $250 sits inside the mid-market band and outside\nevery other one. A median that describes one of four segments is not a benchmark for\nthe other three, which is the single most common misuse of this figure.\n\nNo India-specific B2B SaaS ARPU band is published, and no figure separates\nusage-priced from seat-priced products. Both gaps matter for reading the bands, and\nthis page states them rather than estimating.\n\n## Why segment decides ARPU\n\nSeat count, procurement and willingness to pay all scale with the buyer. None of the\nthree is a property of the software. Sell the same product to a ten-person team and to\na ten-thousand-person enterprise and the ARPU differs by two orders of magnitude.\n\nChurn moves the same way, in the opposite direction. Annual account churn runs a 15%\nmedian for SMB, 10% for mid-market and 5% for enterprise. So the segment paying five\ntimes more also stays three times longer. Read ARPU without that pairing and upmarket\nmoves look better than they are, while SMB looks worse.\n\nAcquisition cost completes the picture. SMB products under $15,000 ACV, about ₹14.38 lakh,\ncarry $2,000 to $8,000 of CAC, roughly ₹1.92 lakh to ₹7.67 lakh. Mid-market products from $15,000 to\n$100,000 ACV carry $15,000 to $40,000 of CAC, roughly ₹14.38 lakh to ₹38.36 lakh. So the segment with five times the ARPU costs roughly five times as much to\nwin, and the advantage shows up in tenure rather than in the first invoice.\n\n## The India layer\n\nNo published ARPU band exists for Indian B2B SaaS specifically, and the useful\nobservation is structural rather than numerical.\n\nAn Indian SaaS company usually sells into the same ACV bands as everyone else while\ncarrying a lower cost base, which changes what a given ARPU can fund rather than what\nit is. The segment definitions still apply: SMB under $10,000 ACV, about ₹9.59 lakh,\nmid-market to $100,000, enterprise above. A company reading its own ARPU as low\nbecause it sells to Indian SMBs has the band right and the implication wrong.\n\n\nThere is a second India-specific reading. An Indian product selling into the SMB\nband abroad competes with local tools priced for local costs, which compresses the\nachievable ARPU inside the band rather than moving the band.\n## What good looks like\n\nInside your segment's band, and rising for a reason you can name. The $250 median,\nabout ₹23,973, is the wrong target unless you sell mid-market. For an SMB product the $55 median,\nabout ₹5,274, is the comparison. Clearing it by a wide margin usually means the\nproduct moved segment without anyone deciding to.\n\nRead ARPU with churn and CAC on the same page. An ARPU target without a matching\nchurn and acquisition-cost assumption is half a plan, and it is the half that looks\nbest in a board deck.\n\n<FromMyWork exp=\"exp-037\">\nPricing an integrations platform on execution volume and connector usage rather than\nseats took it to roughly $60K MRR, about ₹57.53 lakh. The price then tracked what the\ncustomer consumed instead of how many people logged in.\n</FromMyWork>\n\n## If you are below the median\n\nCheck which band you are actually in before concluding anything. Most products that\nlook below the median are mid-band for their segment and comparing against the wrong\none.\n\nThen change what the price tracks rather than the number on the page. Moving from\nseats to consumption raises ARPU inside the same segment when usage grows, and it\ndoes so without a renegotiation.\n\n<FromMyWork exp=\"exp-048\">\nOne measurement framework spanning 20+ growth, retention and monetisation metrics\nmade executive decisions roughly twice as fast. Until then each team reported a number\ndefined its own way.\n</FromMyWork>\n\n\nThen check whether the low figure is a mix effect. A product with a large self-serve\ntail and a small enterprise head reports an ARPU near the self-serve band while\nearning most of its revenue at the top, and the fix is reporting rather than pricing.\n## How these figures were gathered\n\nEach row names its source and a verification date, from published benchmark reports.\n\nThe segment bands and the churn figures come from different sources with slightly\ndifferent ACV cut-offs. One defines SMB as under $10,000, about ₹9.59 lakh, and\nanother as under $25,000. Both appear with their own definition rather than being forced onto one\nscale, because the cut-off is the part that decides which band a company reads.\n\nNo India-specific band is published, so there is no India row. The standard for these\npages is three sources or an explicit \"insufficient public data\" mark.\n\nFigures go back for re-checking every 90 days, and every 45 for price.\n\n\nRe-verification runs every 90 days. Anything about price runs on a 45-day cycle,\nwhich for this page means most of it."
+      "body": "\n<AnswerBox>\nSaaS ARPU benchmarks run by segment, not by product. Monthly ARPU sits at $20 to $50\nself-serve, about ₹1,918 to ₹4,795, then $50 to $200 for SMB, $200 to $2,000\nmid-market and $2,000 to $10,000-plus enterprise. The 2026 median is about $250 a\nmonth, roughly ₹23,973, up from $210 in 2024.\n</AnswerBox>\n\n<FactTable\n  id=\"saas-arpu-table\"\n  caption=\"SaaS ARPU, acquisition cost and churn, all by segment\"\n  columns={[\"Segment\", \"Monthly ARPU\", \"What comes with it\"]}\n  rows={[\n    { cells: [\"Self-serve to enterprise\", \"$20-50, $50-200, $200-2,000, $2,000-10,000+\", \"four bands, not a scale\"], factId: \"f-bm-28\" },\n    { cells: [\"Median across B2B SaaS\", \"about $250, up from $210 in 2024\", \"the median describes few companies\"], factId: \"f-bm-29\" },\n    { cells: [\"SMB median\", \"$55\", \"inside the $50-200 band\"], factId: \"f-bm-30\" },\n    { cells: [\"Segment definition by ACV\", \"SMB under $10K, mid-market to $100K, enterprise above\", \"annual, not monthly\"], factId: \"f-bm-31\" },\n    { cells: [\"Acquisition cost by segment\", \"under $15K ACV: $2,000-8,000\", \"$15K-100K ACV: $15,000-40,000\"], factId: \"f-bm-32\" },\n    { cells: [\"Annual account churn by segment\", \"SMB 15%, mid-market 10%, enterprise 5%\", \"median\"], factId: \"f-bm-33\" },\n    { cells: [\"Primary monetisation model, 686 tracked apps\", \"subscriptions 61%, advertising 26%\", \"model, not segment\"], factId: \"f-fx-08\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nMonthly ARPU bands run $20 to $50 self-serve, $50 to $200 SMB, $200 to $2,000\nmid-market and $2,000 to $10,000-plus enterprise. The 2026 median across B2B SaaS is about\n$250 a month, roughly ₹23,973, up from $210 in 2024. The SMB median specifically is\n$55, about ₹5,274.\n\nNotice that the overall median of $250 sits inside the mid-market band and outside\nevery other one. A median that describes one of four segments is not a benchmark for\nthe other three, which is the single most common misuse of this figure.\n\nNo India-specific B2B SaaS ARPU band is published, and no figure separates\nusage-priced from seat-priced products. Both gaps matter for reading the bands, and\nthis page states them rather than estimating.\n\n## Why segment decides ARPU\n\nSeat count, procurement and willingness to pay all scale with the buyer. None of the\nthree is a property of the software. Sell the same product to a ten-person team and to\na ten-thousand-person enterprise and the ARPU differs by two orders of magnitude.\n\nChurn moves the same way, in the opposite direction. Annual account churn runs a 15%\nmedian for SMB, 10% for mid-market and 5% for enterprise. So the segment paying five\ntimes more also stays three times longer. Read ARPU without that pairing and upmarket\nmoves look better than they are, while SMB looks worse.\n\nAcquisition cost completes the picture. SMB products under $15,000 ACV, about ₹14.38 lakh,\ncarry $2,000 to $8,000 of CAC, roughly ₹1.92 lakh to ₹7.67 lakh. Mid-market products from $15,000 to\n$100,000 ACV carry $15,000 to $40,000 of CAC, roughly ₹14.38 lakh to ₹38.36 lakh. So the segment with five times the ARPU costs roughly five times as much to\nwin, and the advantage shows up in tenure rather than in the first invoice.\n\n## The India layer\n\nNo published ARPU band exists for Indian B2B SaaS specifically, and the useful\nobservation is structural rather than numerical.\n\nAn Indian SaaS company usually sells into the same ACV bands as everyone else while\ncarrying a lower cost base, which changes what a given ARPU can fund rather than what\nit is. The segment definitions still apply: SMB under $10,000 ACV, about ₹9.59 lakh,\nmid-market to $100,000, enterprise above. A company reading its own ARPU as low\nbecause it sells to Indian SMBs has the band right and the implication wrong.\n\n\nThere is a second India-specific reading. An Indian product selling into the SMB\nband abroad competes with local tools priced for local costs, which compresses the\nachievable ARPU inside the band rather than moving the band.\n## What good looks like\n\nInside your segment's band, and rising for a reason you can name. The $250 median,\nabout ₹23,973, is the wrong target unless you sell mid-market. For an SMB product the $55 median,\nabout ₹5,274, is the comparison. Clearing it by a wide margin usually means the\nproduct moved segment without anyone deciding to.\n\nRead ARPU with churn and CAC on the same page. An ARPU target without a matching\nchurn and acquisition-cost assumption is half a plan, and it is the half that looks\nbest in a board deck.\n\n<FromMyWork exp=\"exp-037\">\nPricing an integrations platform on execution volume and connector usage rather than\nseats took it to roughly $60K MRR, about ₹57.53 lakh. The price then tracked what the\ncustomer consumed instead of how many people logged in.\n</FromMyWork>\n\n## If you are below the median\n\nCheck which band you are actually in before concluding anything. Most products that\nlook below the median are mid-band for their segment and comparing against the wrong\none.\n\nThen change what the price tracks rather than the number on the page. Moving from\nseats to consumption raises ARPU inside the same segment when usage grows, and it\ndoes so without a renegotiation.\n\n<FromMyWork exp=\"exp-048\">\nOne measurement framework spanning 20+ growth, retention and monetisation metrics\nmade executive decisions roughly twice as fast. Until then each team reported a number\ndefined its own way.\n</FromMyWork>\n\n\nThen check whether the low figure is a mix effect. A product with a large self-serve\ntail and a small enterprise head reports an ARPU near the self-serve band while\nearning most of its revenue at the top, and the fix is reporting rather than pricing.\n## How these figures were gathered\n\nEach row names its source and a verification date, from published benchmark reports.\n\nThe segment bands and the churn figures come from different sources with slightly\ndifferent ACV cut-offs. One defines SMB as under $10,000, about ₹9.59 lakh, and others\ndraw the line elsewhere. Each appears with its own definition rather than being forced\nonto one scale, because the cut-off is the part that decides which band a company\nreads itself into.\n\nNo India-specific band is published, so there is no India row. The standard for these\npages is three sources or an explicit \"insufficient public data\" mark.\n\nFigures go back for re-checking every 90 days, and every 45 for price.\n\n\nRe-verification runs every 90 days. Anything about price runs on a 45-day cycle,\nwhich for this page means most of it."
     },
     {
       "id": "benchmark-0577",
@@ -1879,13 +1879,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/paywall-uplift-calculator",
-          "anchor": "the paywall uplift calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/cod-to-prepaid-conversion-d2c",
-          "anchor": "COD to prepaid conversion",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -2000,8 +2000,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/trial-length-optimizer",
-          "anchor": "the trial length optimizer",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {

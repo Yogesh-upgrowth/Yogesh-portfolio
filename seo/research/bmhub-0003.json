@@ -1,0 +1,154 @@
+{
+  "page_id": "bmhub-0003",
+  "url": "/benchmarks/arpu",
+  "archetype": "benchmark-hub",
+  "primary_keyword": "arpu benchmarks",
+  "secondary_keywords": [
+    "average revenue per user benchmark",
+    "b2b saas arpu median"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-bm-29",
+      "claim": "The 2026 median B2B SaaS ARPU is about 250 dollars a month, up from 210 in 2024",
+      "value": "250",
+      "unit": "USD",
+      "source_url": "https://culta.ai/blog/arpu-benchmarks-2026",
+      "source_title": "ARPU Benchmarks 2026: Where Does Your SaaS Rank",
+      "source_domain": "culta.ai",
+      "excerpt": "The 2026 median B2B SaaS ARPU is approximately $250/month, up from $210/month in 2024.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-28",
+      "claim": "B2B SaaS monthly ARPU runs 20 to 50 dollars self-serve, 50 to 200 for SMB, 200 to 2,000 mid-market and 2,000 to 10,000 plus for enterprise",
+      "value": "20-10000",
+      "unit": "USD",
+      "source_url": "https://culta.ai/blog/arpu-benchmarks-2026",
+      "source_title": "ARPU Benchmarks 2026: Where Does Your SaaS Rank",
+      "source_domain": "culta.ai",
+      "excerpt": "Self-serve products land at $20-50/month, SMB at $50-200, mid-market at $200-2,000, and enterprise at $2,000-10,000+/month.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-30",
+      "claim": "Median SMB SaaS ARPU is 55 dollars a month",
+      "value": "55",
+      "unit": "USD",
+      "source_url": "https://culta.ai/blog/arpu-benchmarks-2026",
+      "source_title": "ARPU Benchmarks 2026: Where Does Your SaaS Rank",
+      "source_domain": "culta.ai",
+      "excerpt": "For SMB specifically, the median ARPU is $55.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-32",
+      "claim": "SMB products under 15,000 dollars ACV carry 2,000 to 8,000 dollars of CAC, and mid-market products from 15,000 to 100,000 ACV carry 15,000 to 40,000",
+      "value": "2000-8000",
+      "unit": "USD",
+      "source_url": "https://arjankc.com.np/blog/2026-b2b-saas-cac-benchmark-report/",
+      "source_title": "2026 B2B SaaS CAC Benchmark Report",
+      "source_domain": "arjankc.com.np",
+      "excerpt": "SMB products with ACVs under $15,000 have CAC of $2,000 to $8,000; mid-market targeting $15,000 to $100,000 has median CAC of $15,000 to $40,000.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-22",
+      "claim": "India's OTT ARPU is projected at 40.44 dollars for 2026, with subscription video at 24.58 dollars per user",
+      "value": "40.44",
+      "unit": "USD",
+      "source_url": "https://www.statista.com/outlook/amo/media/tv-video/ott-video/india/",
+      "source_title": "OTT Video outlook, India",
+      "source_domain": "statista.com",
+      "excerpt": "India's OTT ARPU is projected to reach USD 40.44 in 2026, with SVoD generating USD 24.58 per user.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-23",
+      "claim": "India's OTT ARPU is also reported at 85 to 95 rupees a month, among the lowest in the world",
+      "value": "85-95",
+      "unit": "INR",
+      "source_url": "https://raoscaff.com/intel/22-ott-pricing-wars/report.html",
+      "source_title": "OTT Pricing Wars: the Ad-Tier Pivot and the ARPU Math",
+      "source_domain": "raoscaff.com",
+      "excerpt": "India's OTT ARPU of Rs 85-95 per month is among the lowest globally.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-34",
+      "claim": "India's streaming ARPU is also projected at 9.02 dollars for 2026",
+      "value": "9.02",
+      "unit": "USD",
+      "source_url": "https://www.medianews4u.com/indias-ott-market-hits-601-million-users-but-only-119-million-pay-monetisation-gap-widens/",
+      "source_title": "India's OTT Market Hits 601 Million Users, But Only 119 Million Pay",
+      "source_domain": "medianews4u.com",
+      "excerpt": "India's projected ARPU of USD 9.02 in 2026 is the clearest indicator of the market's monetisation ceiling at current pricing.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [
+    "India OTT ARPU is published three incompatible ways: statista.com projects $40.44 for 2026, raoscaff.com reports ₹85-95 per month, and medianews4u.com projects $9.02 for the same year. Annualised, those imply roughly $40, $11 and $9. Without each source's denominator — paying subscribers, all registered users, or all viewers including ad-supported ones — they cannot be reconciled, and none publishes it. All three are shown on the page rather than one being chosen."
+  ],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-bm-29"
+    ],
+    "definition": [
+      "f-bm-28"
+    ],
+    "benchmark_table_by_industry": [
+      "f-bm-28",
+      "f-bm-30",
+      "f-bm-32"
+    ],
+    "india_layer": [
+      "f-bm-22",
+      "f-bm-23",
+      "f-bm-34"
+    ],
+    "what_moves_it": [
+      "f-bm-30",
+      "f-bm-32"
+    ],
+    "stage_adjustment": [
+      "f-bm-28",
+      "f-bm-29"
+    ]
+  }
+}

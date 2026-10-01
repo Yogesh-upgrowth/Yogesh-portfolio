@@ -41,13 +41,13 @@
       "role": "lateral"
     },
     {
-      "url": "/benchmarks/churn/b2b-saas",
-      "anchor": "B2B SaaS churn benchmarks",
+      "url": "/glossary/churn-rate",
+      "anchor": "the churn rate definition",
       "role": "lateral"
     },
     {
-      "url": "/tools/nrr-grr-calculator",
-      "anchor": "the NRR and GRR calculator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {

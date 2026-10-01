@@ -1,0 +1,118 @@
+{
+  "id": "bmhub-0005",
+  "url": "/benchmarks/trial-to-paid-conversion",
+  "archetype": "benchmark-hub",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-bmhub-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Trial to Paid Conversion Rate Benchmarks, 2026",
+  "meta_description": "Trial-to-paid rates by trial length across 17,000 apps, the distribution behind the median, and why cancellation rate and conversion rate disagree.",
+  "h1": "Trial to paid conversion rate benchmarks",
+  "primary_keyword": "trial to paid conversion rate benchmarks",
+  "secondary_keywords": [
+    "trial conversion rate benchmark",
+    "free trial length conversion"
+  ],
+  "entity_a": "trial-to-paid-conversion",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-gh-02",
+    "f-gh-01",
+    "f-th-01",
+    "f-th-02",
+    "f-th-03",
+    "f-th-04",
+    "f-th-05"
+  ],
+  "experience_used": [
+    "exp-044"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks/trial-to-paid-conversion/b2b-saas",
+      "anchor": "B2B SaaS trial conversion",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/trial-to-paid-conversion",
+      "anchor": "the trial-to-paid definition",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/free-trial",
+      "anchor": "the free trial entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/b2b-saas",
+      "anchor": "B2B SaaS retention",
+      "role": "reference"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#trial-conversion",
+      "alt": "Trial-to-paid reference points: conversion by trial length across more than 17,000 apps in four bands, how much better long trials convert than short ones, the share of apps now using trials of four days or less, the share of cancellations landing on the first day for three-day against seven-day trials, the published distribution of free-trial conversion rates, and the share of cancelled annual subscribers who never return, each row carrying its source and verification date",
+      "caption": "Conversion rises with trial length, and cancellations rise too. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good trial-to-paid conversion rate?",
+      "a": "It depends which denominator you are using, and the two in circulation differ by a factor of four. Measured over signups, the most common band is 7.5% to 10%. Measured over trial starts, conversion runs 25.5% to 42.5% depending on trial length."
+    },
+    {
+      "q": "Should the trial be shorter or longer?",
+      "a": "Longer, on the conversion evidence: 42.5% at seventeen to thirty-two days against 25.5% under four days, about 70% better. The case for short trials is about getting a fast conversion signal for ad-spend optimisation, not about converting more people."
+    },
+    {
+      "q": "Why do trial products beat freemium products?",
+      "a": "Because the two distributions barely overlap. A fifth of freemium products convert below 2.5%, against 7% of trial products. The commitment a trial asks for selects for intent before the product gets a chance to perform."
+    },
+    {
+      "q": "Does this transfer to India?",
+      "a": "The direction does; no India-specific rate is published. One factor argues for longer trials in India: the industry's shift to four-day trials is driven by paid-acquisition signal, and Indian funnels lean more on organic volume, so there is less reason to pay the conversion penalty."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get your trial conversion reviewed",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Shows that trial cancellation rate and trial conversion rate point in opposite directions, and that the industry's shift to four-day trials is an ad-attribution decision rather than a conversion one — which no trial benchmark page states.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

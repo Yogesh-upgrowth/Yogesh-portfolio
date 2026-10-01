@@ -591,8 +591,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/activation-rate-benchmarker",
-          "anchor": "the activation rate benchmarker",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -679,13 +679,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/paywall-uplift-calculator",
-          "anchor": "the paywall uplift calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/inr-price-points-that-convert",
-          "anchor": "INR price points that convert",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -767,13 +767,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/freemium-break-even-calculator",
-          "anchor": "the freemium break-even calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/free-trials-in-india",
-          "anchor": "free trials in India",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -855,13 +855,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/paywall-uplift-calculator",
-          "anchor": "the paywall uplift calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/inr-price-points-that-convert",
-          "anchor": "INR price points that convert",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -943,13 +943,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/freemium-break-even-calculator",
-          "anchor": "the freemium break-even calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/ads-vs-subscriptions-indian-apps",
-          "anchor": "ads against subscriptions in Indian apps",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -1031,13 +1031,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/trial-length-optimizer",
-          "anchor": "the trial length optimizer",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/free-trials-in-india",
-          "anchor": "free trials in India",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -1208,8 +1208,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/activation-rate-benchmarker",
-          "anchor": "the activation rate benchmarker",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -1297,8 +1297,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/cohort-revenue-model",
-          "anchor": "the cohort revenue model",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -1386,13 +1386,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/app-store-fee-net-revenue-calculator",
-          "anchor": "the app store fee calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/gst-on-digital-subscriptions",
-          "anchor": "GST on digital subscriptions",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -1475,13 +1475,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/app-store-fee-net-revenue-calculator",
-          "anchor": "the app store fee calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/ondc-for-commerce-apps",
-          "anchor": "ONDC for commerce apps",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {

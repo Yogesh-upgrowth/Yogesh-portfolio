@@ -1,0 +1,163 @@
+<AnswerBox>
+Install to purchase conversion benchmarks sit at 1% to 2% for most apps, with retail
+at 1.38% and travel at 2.41%. The timing matters as much as the rate: across more
+than 145,000 installs the median time to first revenue is about 48 hours, and half
+of everyone who ever pays has paid within two days.
+</AnswerBox>
+
+<FactTable
+  id="install-to-purchase"
+  caption="Install to first purchase, and what each install is worth"
+  columns={["Measure", "Figure"]}
+  rows={[
+    { cells: ["Typical install-to-purchase band", "1-2%; retail 1.38%, travel 2.41%"], factId: "f-bm-14" },
+    { cells: ["Good e-commerce app conversion, by order value", "2-6%"], factId: "f-bm-15" },
+    { cells: ["Median time install to first revenue, 145,000+ installs", "about 48 hours; p90 near 14 days"], factId: "f-ih-01" },
+    { cells: ["Share of all payers who pay within two days", "about half; 90% within two weeks"], factId: "f-ih-02" },
+    { cells: ["AI apps, revenue per payer against churn", "41% more revenue, churn about 30% faster"], factId: "f-bm-20" },
+    { cells: ["India app revenue, Q1 2026", "$300M+ (₹2,900 crore), up 33%, 6.2bn downloads"], factId: "f-hub-02" },
+  ]}
+/>
+
+## What install to purchase measures
+
+The share of installs that produce a first paid transaction. The denominator is
+installs, the numerator is purchases, and both need care.
+
+Installs are the easier half, though store-reported installs and analytics-reported
+installs rarely agree, because the two attribute on different windows. Use one
+source and stay with it.
+
+The numerator causes more trouble. A first purchase is not a trial start and not a
+subscription activation. A product with a free trial will report an
+install-to-trial rate many times higher than its install-to-purchase rate, and a
+deck that moves between the two without saying so will show a funnel that improves
+at every step and a revenue line that does not.
+
+Most apps land at 1% to 2%. Store conversion rates sit far above that, because that
+metric ends at the install rather than at the payment — a difference of denominator
+rather than of quality.
+
+## Reading the table by category
+
+Retail converts 1.38% and travel 2.41%. Almost twice, and it tells you very little
+on its own, because a travel purchase is worth many times a retail one.
+
+E-commerce apps have a wider published band of 2% to 6%, explicitly dependent on
+order value and purchase frequency. That dependency is the point: a high-frequency,
+low-value product and a low-frequency, high-value one can both be healthy at
+opposite ends of this range, and neither should chase the other's rate.
+
+AI apps show the pattern most clearly. They earn 41% more revenue per payer and
+churn about 30% faster, so a strong first-purchase rate buys a shorter relationship.
+The same rate means something different depending on what happens after it.
+
+Which is the general lesson of this table. The rate is a ratio, and a ratio cannot
+tell you the size of what it counts.
+
+<Example illustrative>
+Two products convert an identical 1.5% of installs. One sells a ₹200 add-on, about
+$2.09; the other a ₹20,000 booking, about $209. The funnels look the same on every
+dashboard and the businesses are a hundred times apart.
+</Example>
+
+The category labels above are mostly proxies for order value rather than for funnel
+quality.
+
+## The India layer
+
+India's app revenue passed $300 million (about ₹2,900 crore) in the first quarter
+of 2026, up 33% year on year, on 6.2 billion downloads. Hold those two numbers together: download volume
+is enormous and revenue per download is small.
+
+That is the Indian install-to-purchase picture in one comparison, and no published
+source gives a category-level Indian first-purchase rate. The structural reasons
+are well understood — lower price points, a larger free-to-paid gap, and payment
+friction on recurring mandates — but the rate itself is not published, so this page
+does not state one.
+
+What transfers is the method. In an India-heavy product, measure install-to-purchase
+and revenue per install together from the start. Install volume makes almost any
+conversion rate look like a large absolute number. The revenue per install stays
+low regardless.
+
+## How to measure it without fooling yourself
+
+Pick one install source and one purchase definition, and write both down. Then
+measure by install cohort rather than by calendar period, because a purchase that
+happens in week six belongs to the cohort that installed, not to the week it landed
+in.
+
+Choose a window and keep it, and let the published timing choose it for you. With a
+median of about 48 hours to first revenue and 90% of payers converting inside two
+weeks, a 14-day window captures almost the whole effect. A 7-day window will
+understate a product with any consideration cycle, and a 60-day window mostly adds
+noise and delay.
+
+Always report the rate with the value. A team optimising the rate alone finds the
+lowest-priced entry point and declares victory while the revenue per install falls.
+Every dashboard shows improvement throughout.
+
+## What actually moves it
+
+Price point and first-run experience, roughly equally, and then the match between
+the two.
+
+Lowering the entry price raises the rate almost mechanically. Whether that helps
+depends entirely on the lifetime value behind it. The first session moves it
+next, because a user who has not understood the product will not buy regardless of
+price. The fit between what the install promised and what the purchase asks for matters
+more than either. A listing selling a free tool, with a paywall on first open,
+converts badly at any price.
+
+What moves it less than expected: the number of paywall impressions, which raises
+the rate briefly and costs retention, and discount depth beyond a modest first offer.
+AI apps' 41% revenue-per-payer premium comes from value rather than from paywall
+pressure.
+
+The timing data bounds all of this. Since half of all payers pay within two days, a
+re-engagement campaign aimed at week three is working on the thin tail, and the
+first two sessions carry most of the decision.
+
+<FromMyWork exp="exp-021">
+The headline growth figure needs decomposing to be honest. A rising
+install-to-purchase rate alongside a falling revenue per install is two findings
+wearing one number. Only the pair tells you what happened.
+</FromMyWork>
+
+## Stage adjustment
+
+Early on, the rate is too noisy to steer by and the useful question is whether
+anybody completes a purchase without being asked twice. A handful of unprompted
+purchases says more than a rate computed on 300 installs. The 48-hour median helps
+here too: it means an early read is available within days rather than months.
+
+In the growth stage, the rate and the value need watching together, and this is
+where most products make the trade badly. The 2% to 6% e-commerce band exists
+because order value differs; a product moving from the top of that band to the
+bottom has usually changed its pricing rather than improved its funnel.
+
+At scale the question becomes marginal rather than average. The average rate across
+all installs stops being actionable once channels differ. What matters is the rate
+on the next thousand installs from the channel you are about to buy more of. That
+figure frequently sits well below the blended one.
+
+## Sources and tools
+
+Each figure carries its source and the date it was last checked. Where a source
+publishes a rate without an order value or a window, this page says so, because an
+install-to-purchase rate with neither is not comparable to anything.
+
+The category page under this hub carries the D2C e-commerce detail. The monetisation
+health score takes the rate and the value of each install together, which is the pair
+that decides whether a conversion improvement was worth making.
+
+One caution on comparing across sources. Published install-to-purchase figures vary
+in whether they count returning purchasers, and a figure that includes repeat buyers
+is not a first-purchase rate at all. Where a source leaves this unstated, this hub
+treats the figure as indicative of the band rather than as a point comparison, which
+is why the ranges above are given as ranges.
+
+No source publishes what share of an app's lifetime revenue arrives in the first 24
+hours, which is the figure a paid-acquisition team most wants. The timing
+distribution above is the closest published substitute.

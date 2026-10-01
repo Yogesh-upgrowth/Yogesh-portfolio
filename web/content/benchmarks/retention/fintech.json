@@ -23,7 +23,7 @@
     "f-bm-08",
     "f-bm-17",
     "f-bm-20",
-    "f-unit-25"
+    "f-fx-02"
   ],
   "experience_used": [
     "exp-040",
@@ -41,18 +41,18 @@
       "role": "lateral"
     },
     {
-      "url": "/benchmarks/churn/fintech",
-      "anchor": "fintech churn benchmarks",
+      "url": "/glossary/churn-rate",
+      "anchor": "the churn rate definition",
       "role": "lateral"
     },
     {
-      "url": "/tools/retention-curve-projector",
-      "anchor": "the retention curve projector",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
-      "url": "/india/payment-success-rates-india",
-      "anchor": "payment success rates in India",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "related"
     },
     {

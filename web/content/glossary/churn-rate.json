@@ -46,13 +46,13 @@
       "role": "lateral"
     },
     {
-      "url": "/tools/churn-to-lifetime-calculator",
-      "anchor": "the churn to lifetime calculator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
-      "url": "/india/involuntary-churn-mandate-failures",
-      "anchor": "involuntary churn and mandate failures",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "related"
     },
     {
@@ -103,6 +103,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "authored",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

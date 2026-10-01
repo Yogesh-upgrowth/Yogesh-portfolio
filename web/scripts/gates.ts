@@ -8,7 +8,7 @@
 import { mkdirSync, readFileSync, writeFileSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { Fact, ExperienceEntry, ResearchObject } from "../lib/content/schemas";
-import type { ResearchObject as ResearchObjectType } from "../lib/content/schemas";
+import type { ResearchObject as ResearchObjectType, PageMeta } from "../lib/content/schemas";
 import { loadAllPages, type LoadedPage } from "../lib/content/loader";
 import {
   loadGateConfig, runGates, g01, g02, g03, summarise,
@@ -27,9 +27,38 @@ function readJson<T>(p: string, fallback: T): T {
   return existsSync(p) ? (JSON.parse(readFileSync(p, "utf8")) as T) : fallback;
 }
 
-function loadFactUsage(): Map<string, number> {
-  const idx = readJson<Record<string, string[]>>(join(SEO, "data", "facts", "index.json"), {});
-  return new Map(Object.entries(idx).map(([id, pages]) => [id, pages.length]));
+/**
+ * fact_id -> how many pages cite it, derived from the corpus being gated.
+ *
+ * This used to read seo/data/facts/index.json. That file was never generated, so
+ * readJson returned {} on every run, every fact reported one use, and both
+ * gates that depend on the count — gReuse's §C2 cap and G01's page-specific
+ * filter — passed everything put in front of them. Eight facts had reached four
+ * and five pages against a cap of three while the report said "Reuse caps PASS".
+ *
+ * Deriving it from the pages themselves removes the failure mode rather than
+ * fixing one instance of it: there is no file to regenerate, so the count cannot
+ * be stale, and a gate that depends on corpus-wide state now reads that state
+ * directly. The index file is still written afterwards, as an artefact for the
+ * review UI rather than as the gate's input.
+ */
+function deriveFactUsage(corpus: PageMeta[]): Map<string, number> {
+  const out = new Map<string, number>();
+  for (const meta of corpus) {
+    for (const id of meta.facts_used) out.set(id, (out.get(id) ?? 0) + 1);
+  }
+  return out;
+}
+
+/** Write the usage index for the review UI. Never read back by the gates. */
+function writeFactIndex(corpus: PageMeta[]): void {
+  const idx: Record<string, string[]> = {};
+  for (const meta of corpus) {
+    for (const id of meta.facts_used) (idx[id] ??= []).push(meta.url);
+  }
+  const dir = join(SEO, "data", "facts");
+  mkdirSync(dir, { recursive: true });
+  writeFileSync(join(dir, "index.json"), JSON.stringify(idx, null, 2) + "\n");
 }
 
 function loadExperience(): Map<string, ExperienceEntry> {
@@ -71,6 +100,23 @@ function loadFacts(page: LoadedPage): Fact[] {
   return research.facts.filter((f) => want.has(f.fact_id));
 }
 
+/**
+ * Fact ids 02 §2 G01 exempts from the page-specific count and the §C2 reuse cap.
+ *
+ * Absent or unreadable means an empty set, which is the strict reading: no fact
+ * is exempt. A missing registry must not quietly widen what the gates allow.
+ */
+function loadSharedFacts(): Set<string> {
+  const p = join(process.cwd(), "..", "seo", "data", "facts", "shared.json");
+  if (!existsSync(p)) return new Set();
+  try {
+    const raw = JSON.parse(readFileSync(p, "utf8")) as { shared?: { fact_id?: string }[] };
+    return new Set((raw.shared ?? []).map((e) => e.fact_id).filter((x): x is string => !!x));
+  } catch {
+    return new Set();
+  }
+}
+
 function loadSimilarity(id: string): GateInput["similarity"] {
   const rep = readJson<{ pages?: Record<string, {
     max_sibling: [number, string | null]; max_parent: [number, string | null];
@@ -105,9 +151,13 @@ function main(): number {
   }
 
   const config = loadGateConfig();
-  const factUsage = loadFactUsage();
+  const sharedFacts = loadSharedFacts();
   const experience = loadExperience();
+  // The whole corpus, not the filtered subset: a reuse cap is site-wide, so
+  // `pnpm gates --batch x` has to count uses on pages outside that batch too.
   const corpus = loadAllPages().map((p) => p.meta);
+  const factUsage = deriveFactUsage(corpus);
+  writeFactIndex(corpus);
 
   const lines: string[] = [];
   const id = batch ?? archetype ?? `wave-${wave ?? "all"}`;
@@ -122,7 +172,8 @@ function main(): number {
       funnel: page.row.funnel,
       blockCoverage: loadResearch(page)?.block_coverage,
       fetchLog: loadResearch(page)?.fetch_log,
-      factUsage, experience, corpus, similarity: loadSimilarity(page.meta.id), config,
+      factUsage, sharedFacts, experience, corpus,
+      similarity: loadSimilarity(page.meta.id), config,
     };
     const results = researchOnly ? [g01(input), g02(input), g03(input)] : runGates(input);
     const s = summarise(results);

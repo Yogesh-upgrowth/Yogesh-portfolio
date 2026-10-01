@@ -35,8 +35,8 @@
       "role": "proof"
     },
     {
-      "url": "/benchmarks",
-      "anchor": "the benchmarks",
+      "url": "/benchmarks/retention",
+      "anchor": "retention benchmarks",
       "role": "reference"
     },
     {
@@ -45,8 +45,8 @@
       "role": "hub"
     },
     {
-      "url": "/hire",
-      "anchor": "hire a consultant",
+      "url": "/work-with-me",
+      "anchor": "work with me",
       "role": "lateral"
     },
     {
@@ -101,6 +101,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "authored",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

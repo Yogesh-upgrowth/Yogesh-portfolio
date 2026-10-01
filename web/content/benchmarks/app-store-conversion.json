@@ -1,0 +1,117 @@
+{
+  "id": "bmhub-0002",
+  "url": "/benchmarks/app-store-conversion",
+  "archetype": "benchmark-hub",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-bmhub-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "App Store Conversion Rate Benchmarks by Category, 2026",
+  "meta_description": "Impression, page-view and install conversion medians by app category, and the three different denominators the stores report under one name.",
+  "h1": "App store conversion rate benchmarks",
+  "primary_keyword": "app store conversion rate benchmarks",
+  "secondary_keywords": [
+    "app store conversion rate by category",
+    "page view to install rate"
+  ],
+  "entity_a": "app-store-conversion",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-ah-01",
+    "f-ah-02",
+    "f-ah-03",
+    "f-ah-04",
+    "f-ah-05",
+    "f-bm-13"
+  ],
+  "experience_used": [
+    "exp-021"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks/app-store-conversion/media-ott",
+      "anchor": "media and OTT store conversion",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/app-store-conversion/healthtech",
+      "anchor": "healthtech store conversion",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/b2b-saas",
+      "anchor": "B2B SaaS retention",
+      "role": "reference"
+    },
+    {
+      "url": "/glossary/conversion-rate",
+      "anchor": "the conversion rate definition",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#store-conversion-by-category",
+      "alt": "App store conversion reference points across categories: the average US store conversion rate and install rate, the search against browse install spread, the highest and lowest category install rates, the business category page-view-to-install rate, the health and fitness impression-to-page-view and page-view-to-install bands, and regional day-35 download-to-paid medians, each row carrying its source and verification date",
+      "caption": "Store conversion at each stage of the funnel, by category. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which denominator does app store conversion use?",
+      "a": "Three are in circulation, and they differ by an order of magnitude. Impression-to-page-view counts everyone who saw the listing in a feed. Page-view-to-install counts only people who opened the listing. Store-reported conversion often blends both. A 66.7% figure and a 3.8% figure can describe the same app."
+    },
+    {
+      "q": "Why is search conversion so much higher than browse?",
+      "a": "Intent. Search install medians span 2.6% to 12.4% across categories against 0.1% to 2.5% from browse, because a searcher has already named the thing they want. Optimising a listing for browse traffic and judging it on a blended number will read as failure."
+    },
+    {
+      "q": "Does a higher install rate always help?",
+      "a": "No. Install rate and install quality trade off. A listing that oversells converts more browsers and retains fewer of them, which shows up two weeks later as a worse retention curve and a worse payback period."
+    },
+    {
+      "q": "How much does category explain?",
+      "a": "Most of the spread. Medical leads iOS install rate at 7.8% and entertainment sits lowest at 1.1%, a seven-fold gap that no amount of creative testing closes."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Review your app store conversion funnel",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Separates the three denominators the stores report under one name, so a reader can tell whether their conversion figure is an impression rate, a page-view rate or a blend — the reason most store benchmarks are quoted against the wrong bar.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

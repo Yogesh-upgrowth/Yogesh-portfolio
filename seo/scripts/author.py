@@ -36,6 +36,28 @@ EXPERIENCE_REUSE = 8      # §C3
 MIN_FACTS = 6             # G01: page-specific sourced facts.
 
 
+def shared_facts() -> frozenset[str]:
+    """Fact ids 02 §2 G01 exempts from the page-specific count and the §C2 cap.
+
+    Read from the same registry gates.ts reads, so the pre-flight and the gate
+    cannot disagree about which facts are exempt. A pre-flight that is laxer than
+    the gate wastes a round trip; one that is stricter blocks a valid page.
+    """
+    p = ROOT / "seo" / "data" / "facts" / "shared.json"
+    if not p.exists():
+        return frozenset()
+    try:
+        raw = json.loads(p.read_text())
+    except json.JSONDecodeError:
+        return frozenset()
+    return frozenset(
+        e["fact_id"] for e in raw.get("shared", []) if isinstance(e, dict) and e.get("fact_id")
+    )
+
+
+SHARED = shared_facts()
+
+
 def link_roles() -> frozenset[str]:
     """The role enum PageMeta accepts, read from the schema that enforces it."""
     src = (ROOT / "web" / "lib" / "content" / "schemas.ts").read_text()
@@ -171,10 +193,36 @@ def inventory_urls() -> set[str]:
     return urls
 
 
+def built_urls(spec: dict) -> set[str]:
+    """URLs that will actually serve a page once this batch is written.
+
+    The inventory is the *plan*, so checking links against it only catches
+    invented slugs — it happily passes a link to a page scheduled for wave 3.
+    That is how 46 links to unbuilt tools and /india pages reached the content:
+    every one was a valid inventory row and a guaranteed 404.
+
+    A link may point at a page already on disk, or at one this batch is about to
+    create. Anything else is a link into a hole, whatever the plan says.
+    """
+    urls = {"/", "/about", "/work-with-me", "/notes", "/contact"}
+    for f in CONTENT.glob("**/*.json"):
+        if f.name == "experience.json" or "hubs" in f.parts:
+            continue
+        try:
+            m = json.loads(f.read_text())
+        except json.JSONDecodeError:
+            continue
+        if isinstance(m, dict) and m.get("url"):
+            urls.add(m["url"])
+    urls |= {p["url"] for p in spec["pages"]}
+    return urls
+
+
 def check(spec: dict) -> list[str]:
     """Local cap checks. Cheap here, expensive in the gate runner."""
     errs: list[str] = []
     known = inventory_urls()
+    will_exist = built_urls(spec)
     # Usage already on disk. Without this the cap is enforced per batch, and a
     # fact at 3 uses in batch 01 would silently reach 4 in batch 02 — gReuse
     # would catch it, but only after a full gate run.
@@ -202,8 +250,12 @@ def check(spec: dict) -> list[str]:
         if not page.get("body", "").strip():
             errs.append(f"{page['id']}: empty body")
             continue
-        if len(page["facts"]) < MIN_FACTS:
-            errs.append(f"{page['id']}: {len(page['facts'])} facts (G01 needs {MIN_FACTS})")
+        own = [f for f in page["facts"] if f not in SHARED]
+        if len(own) < MIN_FACTS:
+            errs.append(
+                f"{page['id']}: {len(own)} page-specific fact(s) of {len(page['facts'])} "
+                f"(G01 needs {MIN_FACTS}; shared facts do not count)"
+            )
         if not page.get("visuals"):
             errs.append(f"{page['id']}: no visual (G14, and PageMeta requires one)")
         for v in page.get("visuals", []):
@@ -274,8 +326,14 @@ def check(spec: dict) -> list[str]:
             for l in listed - cited:
                 errs.append(f"{page['id']}: meta lists {l}, body does not cite it")
         for link in page["links"]:
-            if link["url"].split("#")[0] not in known:
+            target = link["url"].split("#")[0]
+            if target not in known:
                 errs.append(f"{page['id']}: link {link['url']} is not a known URL")
+            elif target not in will_exist:
+                errs.append(
+                    f"{page['id']}: link {link['url']} is a planned page that does not "
+                    f"exist yet — it would 301 or render as a 404"
+                )
         for link in page["links"]:
             if link["role"] not in LINK_ROLES:
                 errs.append(f"{page['id']}: link role \"{link['role']}\" is not in the PageMeta enum")
@@ -283,6 +341,11 @@ def check(spec: dict) -> list[str]:
         # G08 wants a link up to a hub on every page, in addition to the C4 roles.
         need = {"proof", "reference"} if page.get("funnel") == "BOFU" else {"bofu", "tool"}
         need |= {"hub"}
+        # Mirror of G08: a tool page satisfies §C4's tool requirement by being
+        # one. The only link that would satisfy it is the page's own URL, which
+        # G08 then rejects as a self-link.
+        if page["archetype"] == "tool":
+            need.discard("tool")
         # G08 does not take the "reference" role at face value: the target has to
         # be a child of /benchmarks or /teardowns, not the hub itself (01 §C4
         # says one benchmark or teardown, and a hub is neither).
@@ -294,8 +357,13 @@ def check(spec: dict) -> list[str]:
         for r in need - roles:
             errs.append(f"{page['id']}: no link with role {r} (C4)")
         for href in re.findall(r"\]\((/[^)\s]+)\)", page.get("body", "")):
-            if href.split("#")[0] not in known:
+            target = href.split("#")[0]
+            if target not in known:
                 errs.append(f"{page['id']}: body links {href}, which is not a known URL")
+            elif target not in will_exist:
+                errs.append(
+                    f"{page['id']}: body links {href}, a planned page that does not exist yet"
+                )
     # Fact shape, because an over-long excerpt fails ResearchObject at load and
     # takes the gate run down before any page is judged.
     for fid, f in pool.items():
@@ -307,6 +375,8 @@ def check(spec: dict) -> list[str]:
         if len(ex.split()) > 25:
             errs.append(f"{fid}: excerpt {len(ex.split())} words (max 25, G02 renders it verbatim)")
     for fid, n in counts.items():
+        if fid in SHARED:
+            continue
         if n > FACT_REUSE_SITEWIDE:
             errs.append(
                 f"fact {fid} would be on {n} pages site-wide, {on_disk[fid]} of them already "
