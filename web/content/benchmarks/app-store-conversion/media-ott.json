@@ -1,0 +1,112 @@
+{
+  "id": "benchmark-0568",
+  "url": "/benchmarks/app-store-conversion/media-ott",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-benchmark-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "OTT and Audio App Store Conversion Rate Benchmarks (2026)",
+  "meta_description": "OTT and audio store conversion: entertainment's lowest-in-class install rate, India's subscription base, and three ARPU figures that disagree.",
+  "h1": "OTT and audio app store conversion rate benchmarks",
+  "primary_keyword": "ott and audio app store conversion rate",
+  "secondary_keywords": [
+    "entertainment app install rate",
+    "streaming app store conversion"
+  ],
+  "entity_a": "app-store-conversion",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-10",
+    "f-bm-16",
+    "f-bm-25",
+    "f-bm-26",
+    "f-bm-27",
+    "f-bm-24",
+    "f-bm-22",
+    "f-bm-23",
+    "f-bm-34"
+  ],
+  "experience_used": [
+    "exp-019",
+    "exp-045"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/india/ott-pricing-india",
+      "anchor": "OTT pricing in India",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/conversion-rate",
+      "anchor": "conversion rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/ecpm-ad-revenue-calculator",
+      "anchor": "the ad revenue calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/benchmarks/retention/media-ott",
+      "anchor": "media and OTT retention benchmarks",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a conversion review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#ott-store-conversion",
+      "alt": "OTT and audio store conversion: entertainment's lowest-in-class iOS install rate against medical's highest, median revenue per install, India's OTT subscriptions, the leading platform's subscriber and active-user counts, streaming advertising revenue and India's projected OTT revenue and user base, each row carrying its source and verification date",
+      "caption": "OTT and audio store conversion benchmarks, each row sourced. Verified 1 October 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good app store conversion rate for a streaming app?",
+      "a": "Entertainment has the lowest iOS install rate of any category at 1.1%, against medical's 7.8%. A streaming listing performing at category level therefore looks terrible against any cross-category average, and that is a measurement artefact."
+    },
+    {
+      "q": "Why does entertainment convert so poorly in the stores?",
+      "a": "Because the decision is about the catalogue rather than the app, and a store listing cannot show a catalogue. People install a streaming app when they want a specific title, which the listing has no way to advertise."
+    },
+    {
+      "q": "What is India's OTT ARPU?",
+      "a": "Three published figures disagree: $40.44 a year, ₹85 to ₹95 a month, and $9.02. They are not reconcilable without knowing each one's denominator, so this page states the disagreement rather than picking one."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a media-ott conversion review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "States that three published India OTT ARPU figures contradict each other and refuses to pick one, and explains why entertainment's lowest-in-class install rate is a property of catalogue-led decisions rather than a listing failure.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

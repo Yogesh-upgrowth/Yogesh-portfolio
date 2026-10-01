@@ -1,0 +1,110 @@
+{
+  "id": "benchmark-0528",
+  "url": "/benchmarks/arpu/b2b-saas",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-benchmark-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "SaaS ARPU Benchmarks by Segment and Contract Value (2026)",
+  "meta_description": "SaaS ARPU benchmarks by segment: self-serve to enterprise monthly bands, the $250 median, and why ARPU and churn move together across contract sizes.",
+  "h1": "SaaS ARPU benchmarks",
+  "primary_keyword": "saas arpu",
+  "secondary_keywords": [
+    "b2b saas arpu benchmark",
+    "arpu by segment"
+  ],
+  "entity_a": "arpu",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-28",
+    "f-bm-29",
+    "f-bm-30",
+    "f-bm-31",
+    "f-bm-32",
+    "f-bm-33",
+    "f-unit-18"
+  ],
+  "experience_used": [
+    "exp-037",
+    "exp-048"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/arpu",
+      "anchor": "ARPU",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/unit-economics",
+      "anchor": "unit economics",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/arpu-arppu-calculator",
+      "anchor": "the ARPU and ARPPU calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/services/pricing-and-packaging/b2b-saas",
+      "anchor": "B2B SaaS pricing and packaging",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "an ARPU review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#saas-arpu-table",
+      "alt": "SaaS ARPU by segment: monthly bands from self-serve to enterprise, the 2026 median and its movement since 2024, median SMB ARPU, the ACV definitions of each segment, acquisition cost by segment and annual account churn by segment, each row carrying its source and verification date",
+      "caption": "SaaS ARPU benchmarks by segment, each row sourced. Verified 1 October 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good ARPU for a B2B SaaS product?",
+      "a": "The 2026 median is about $250 a month, up from $210 in 2024. The band that matters is your segment's: $20 to $50 self-serve, $50 to $200 SMB, $200 to $2,000 mid-market and $2,000 to $10,000-plus enterprise."
+    },
+    {
+      "q": "Why does ARPU rise with segment rather than with product quality?",
+      "a": "Because segment decides seat count, procurement and willingness to pay. The same product sold to a ten-person team and a ten-thousand-person enterprise produces ARPU two orders of magnitude apart, and almost none of that gap is the product."
+    },
+    {
+      "q": "Can ARPU be raised without moving upmarket?",
+      "a": "Yes, by changing what the price tracks. Pricing on consumption rather than seats raises ARPU inside the same segment when usage grows, which is why 37% of companies now run a hybrid model."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a b2b-saas arpu review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Reads ARPU and churn as one decision rather than two metrics: the segment that pays five times more also churns three times less and costs five times more to acquire, so an ARPU target without the matching churn and CAC assumption is half a plan.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

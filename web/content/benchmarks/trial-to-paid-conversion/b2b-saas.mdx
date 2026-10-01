@@ -1,0 +1,121 @@
+<AnswerBox>
+SaaS trial to paid conversion depends on length in a way most advice gets backwards.
+A three-day trial averages 26% cancellations against 51% for a thirty-day trial, and
+31.1% of thirty-day trials cancel on day zero. Length changes when the decision
+happens more than whether it goes your way.
+</AnswerBox>
+
+<FactTable
+  id="saas-trial-table"
+  caption="Trial conversion, and what sits either side of it"
+  columns={["Measure", "Figure", "Note"]}
+  rows={[
+    { cells: ["Cancellation by trial length", "26% at three days, 51% at thirty", "longer surfaces more"], factId: "f-bm-19" },
+    { cells: ["Day-zero cancellation, thirty-day trial", "31.1%", "most of the thirty-day gap"], factId: "f-bm-19" },
+    { cells: ["Download-to-trial rate by category", "business is highest", "a rank, not a rate"], factId: "f-bm-18" },
+    { cells: ["App Store page view to install, business", "about 66.7%", "intent arrives early"], factId: "f-bm-12" },
+    { cells: ["Day 30 retention, B2B and productivity", "20% to 32%", "average iOS app 5.3%"], factId: "f-bm-07" },
+    { cells: ["Annual account churn by segment", "SMB 15%, mid-market 10%, enterprise 5%", "after conversion"], factId: "f-bm-33" },
+  ]}
+/>
+
+## The numbers, and what is missing from them
+
+A three-day trial averages 26% cancellations and a thirty-day trial 51%. The figure
+that matters inside that gap is day zero: 31.1% of thirty-day trials cancel on the
+day they start. So most of the extra cancellation a long trial reports happens before
+the user has used anything.
+
+No published figure gives trial-to-paid conversion for B2B SaaS as a rate. The
+download-to-trial row carries a rank, because a rank is what the source reports, and
+the page says so rather than converting a rank into an implied percentage.
+
+That absence is worth stating plainly: this page has cancellation data, intent data
+and post-conversion churn data, and no clean B2B trial-to-paid rate. The standard for
+these pages is three sources or an explicit mark, and that measure fails it.
+
+## Why B2B SaaS trials differ
+
+Intent arrives before the trial. Business apps convert about 66.7% of App Store page
+views to installs and record the highest download-to-trial rate of any category, so
+the people starting a B2B trial have already named their problem.
+
+That changes what a trial is for. In a consumer product the trial creates desire; in
+B2B it verifies a decision, usually against a checklist somebody else will review.
+The trial either reaches the moment the product proves itself against that checklist
+or it does not, and length only matters insofar as it allows that moment to happen.
+
+Day-zero cancellation fits the same pattern. A user who starts a thirty-day trial and
+cancels immediately has not rejected the product; they have removed the risk of
+forgetting. Reading that as a conversion failure sends teams to fix the wrong thing.
+
+## The India layer
+
+No India-specific B2B trial conversion figure is published.
+
+What applies is the pricing model underneath the trial. Seat-based contracts still
+account for 65% to 75% of software spend against 4% to 6% for consumption, and a trial
+on a seat-based plan asks the buyer to predict headcount, while a trial on a
+consumption plan asks them to predict usage. For an Indian company selling abroad the
+second is usually the easier question and the harder invoice, and the trial's design
+has to pick one.
+
+
+The other India-specific factor is the invoice. A trial converting into a dollar
+invoice from an Indian entity carries a different payment cost and a different tax
+treatment than a rupee one, and the trial's end state has to account for both.
+## What good looks like
+
+Judge a trial by the share that reaches the proving moment, not by the share that
+converts. Those two track each other closely, and only the first is actionable.
+
+Then set the length from time-to-value and nothing else. If the product proves itself
+in a day, a thirty-day trial adds a month of forgetting and a 31.1% day-zero
+cancellation rate for no gain. Day 30 retention of 20% to 32% for B2B products says
+the category holds users once they arrive, so the work sits in the first session.
+
+
+Set the trial's length from the slowest buyer who still matters, not from the
+average. In B2B the evaluation usually involves somebody who was not in the first
+session, and a trial that expires before that person looks at it converts nobody.
+## If you are below the median
+
+Reframe what the trial asks for before you change its length.
+
+<FromMyWork exp="exp-005">
+Asking for a bank statement upfront got 35% compliance. Showing a preliminary
+eligibility range first, then asking for the statement to reveal the exact offer, took
+it to 71% — the same ask, reframed from a compliance step into a reward.
+</FromMyWork>
+
+Then make the trial's failures visible to the user. In B2B the most common silent
+trial killer is something that broke and looked like the product not working.
+
+<FromMyWork exp="exp-039">
+Making failures debuggable by the customer cut sales and support effort about 25%.
+Idempotency, surfaced errors and retry mechanics meant customers resolved their own
+breakages instead of churning quietly.
+</FromMyWork>
+
+Remember what conversion buys. Annual account churn runs 15% for SMB, 10% for
+mid-market and 5% for enterprise, so a conversion target implies a tenure assumption
+whether or not anyone wrote it down.
+
+## How these figures were gathered
+
+Each row names its source, the date somebody last checked it and what the figure
+counts. The third column matters here because "trial conversion" names at least three
+different measures across sources.
+
+One row carries a rank rather than a rate, and the page says so. Converting a rank
+into a number would be inventing precision the source does not have.
+
+No clean B2B trial-to-paid rate is published and no India figure exists, so neither
+appears. Re-verification runs every 90 days, and every 45 for price.
+
+
+Where two sources define a trial differently — opt-in against credit-card-required —
+both appear with the definition stated. That distinction moves conversion more than
+any design choice in the trial itself.
+
+Figures go back for re-checking on the usual 90-day cycle.

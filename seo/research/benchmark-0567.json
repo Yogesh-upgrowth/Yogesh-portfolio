@@ -1,0 +1,132 @@
+{
+  "page_id": "benchmark-0567",
+  "url": "/benchmarks/app-store-conversion/b2b-saas",
+  "archetype": "benchmark",
+  "primary_keyword": "saas app store conversion",
+  "secondary_keywords": [
+    "business app store conversion",
+    "b2b app install rate"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-bm-12",
+      "claim": "Business apps convert about 66.7% of App Store page views to installs",
+      "value": "66.7",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "Business category shows approximately 66.7% page view to install conversion on App Store.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-09",
+      "claim": "US App Store search install medians span 2.6% to 12.4% across top-level categories, against 0.1% to 2.5% from browse",
+      "value": "2.6-12.4",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "In August 2026, U.S. App Store Search medians spanned 2.6% to 12.4% across top-level categories, while Browse produced 0.1% to 2.5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-11",
+      "claim": "The average US App Store conversion rate across categories is 8.56%, with an average install rate of 3.8%",
+      "value": "8.56",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "The average conversion rate across all categories on the US App Store was 8.56%, while the average install rate across all categories was 3.8%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-18",
+      "claim": "The business category records the highest download-to-trial rate of any app category",
+      "value": "1",
+      "unit": "rank",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "The business app category had the highest download to trial rate out of all categories covered in the State of Subscription Apps.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-07",
+      "claim": "Productivity and B2B SaaS apps hold 20% to 32% at day 30, against an average iOS app at 5.3%",
+      "value": "20-32",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-retention-rates/",
+      "source_title": "App Retention Rates",
+      "source_domain": "businessofapps.com",
+      "excerpt": "For productivity and B2B SaaS apps, day-30 retention benchmarks are 20-32%. The average iOS app retention rate drops to 5.3% by day 30.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-31",
+      "claim": "SaaS segments are defined by annual contract value: SMB under 10,000 dollars, mid-market 10,000 to 100,000, enterprise above 100,000",
+      "value": "10000",
+      "unit": "USD",
+      "source_url": "https://optif.ai/learn/questions/b2b-saas-churn-rate-benchmark/",
+      "source_title": "B2B SaaS Churn Rate Benchmarks, 939 Companies by Segment and ACV",
+      "source_domain": "optif.ai",
+      "excerpt": "Segments are defined by ACV: SMB under $10K, Mid-Market $10K-$100K, Enterprise above $100K.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-bm-12"
+    ],
+    "the_numbers": [
+      "f-bm-12",
+      "f-bm-09",
+      "f-bm-11"
+    ],
+    "why_this_industry_differs": [
+      "f-bm-18",
+      "f-bm-07"
+    ],
+    "india_layer": [
+      "f-bm-31"
+    ],
+    "what_good_looks_like": [
+      "f-bm-12"
+    ]
+  }
+}

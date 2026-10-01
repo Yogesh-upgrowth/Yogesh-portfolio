@@ -1,0 +1,146 @@
+{
+  "page_id": "benchmark-0528",
+  "url": "/benchmarks/arpu/b2b-saas",
+  "archetype": "benchmark",
+  "primary_keyword": "saas arpu",
+  "secondary_keywords": [
+    "b2b saas arpu benchmark",
+    "arpu by segment"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-bm-28",
+      "claim": "B2B SaaS monthly ARPU runs 20 to 50 dollars self-serve, 50 to 200 for SMB, 200 to 2,000 mid-market and 2,000 to 10,000 plus for enterprise",
+      "value": "20-10000",
+      "unit": "USD",
+      "source_url": "https://culta.ai/blog/arpu-benchmarks-2026",
+      "source_title": "ARPU Benchmarks 2026: Where Does Your SaaS Rank",
+      "source_domain": "culta.ai",
+      "excerpt": "Self-serve products land at $20-50/month, SMB at $50-200, mid-market at $200-2,000, and enterprise at $2,000-10,000+/month.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-29",
+      "claim": "The 2026 median B2B SaaS ARPU is about 250 dollars a month, up from 210 in 2024",
+      "value": "250",
+      "unit": "USD",
+      "source_url": "https://culta.ai/blog/arpu-benchmarks-2026",
+      "source_title": "ARPU Benchmarks 2026: Where Does Your SaaS Rank",
+      "source_domain": "culta.ai",
+      "excerpt": "The 2026 median B2B SaaS ARPU is approximately $250/month, up from $210/month in 2024.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-30",
+      "claim": "Median SMB SaaS ARPU is 55 dollars a month",
+      "value": "55",
+      "unit": "USD",
+      "source_url": "https://culta.ai/blog/arpu-benchmarks-2026",
+      "source_title": "ARPU Benchmarks 2026: Where Does Your SaaS Rank",
+      "source_domain": "culta.ai",
+      "excerpt": "For SMB specifically, the median ARPU is $55.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-31",
+      "claim": "SaaS segments are defined by annual contract value: SMB under 10,000 dollars, mid-market 10,000 to 100,000, enterprise above 100,000",
+      "value": "10000",
+      "unit": "USD",
+      "source_url": "https://optif.ai/learn/questions/b2b-saas-churn-rate-benchmark/",
+      "source_title": "B2B SaaS Churn Rate Benchmarks, 939 Companies by Segment and ACV",
+      "source_domain": "optif.ai",
+      "excerpt": "Segments are defined by ACV: SMB under $10K, Mid-Market $10K-$100K, Enterprise above $100K.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-32",
+      "claim": "SMB products under 15,000 dollars ACV carry 2,000 to 8,000 dollars of CAC, and mid-market products from 15,000 to 100,000 ACV carry 15,000 to 40,000",
+      "value": "2000-8000",
+      "unit": "USD",
+      "source_url": "https://arjankc.com.np/blog/2026-b2b-saas-cac-benchmark-report/",
+      "source_title": "2026 B2B SaaS CAC Benchmark Report",
+      "source_domain": "arjankc.com.np",
+      "excerpt": "SMB products with ACVs under $15,000 have CAC of $2,000 to $8,000; mid-market targeting $15,000 to $100,000 has median CAC of $15,000 to $40,000.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-33",
+      "claim": "Annual account churn runs a 15% median for SMB, 10% for mid-market and 5% for enterprise",
+      "value": "15",
+      "unit": "%",
+      "source_url": "https://optif.ai/learn/questions/b2b-saas-churn-rate-benchmark/",
+      "source_title": "B2B SaaS Churn Rate Benchmarks, 939 Companies by Segment and ACV",
+      "source_domain": "optif.ai",
+      "excerpt": "Annual account churn rates by segment: SMB median 15 percent, Mid-Market 10 percent, Enterprise 5 percent.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-unit-18",
+      "claim": "Gross revenue retention by contract size runs 82% under 25,000 dollars ACV, 88% from 25,000 to 100,000, and 95% above",
+      "value": "95",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "SMB (<$25K ACV): 82% GRR; Mid-Market ($25K-$100K): 88% GRR; Enterprise (>$100K ACV): 95% GRR.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-bm-29"
+    ],
+    "the_numbers": [
+      "f-bm-28",
+      "f-bm-29",
+      "f-bm-30"
+    ],
+    "why_this_industry_differs": [
+      "f-bm-31",
+      "f-bm-33"
+    ],
+    "india_layer": [
+      "f-bm-32"
+    ],
+    "what_good_looks_like": [
+      "f-bm-28"
+    ]
+  }
+}

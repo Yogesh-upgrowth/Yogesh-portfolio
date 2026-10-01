@@ -1,0 +1,109 @@
+{
+  "id": "benchmark-0489",
+  "url": "/benchmarks/trial-to-paid-conversion/b2b-saas",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-benchmark-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "SaaS Trial to Paid Conversion Benchmarks by Length (2026)",
+  "meta_description": "SaaS trial to paid conversion: cancellation by trial length, the business category's download-to-trial lead, and churn by segment after it converts.",
+  "h1": "SaaS trial to paid conversion benchmarks",
+  "primary_keyword": "saas trial to paid conversion",
+  "secondary_keywords": [
+    "b2b trial conversion benchmark",
+    "saas free trial conversion"
+  ],
+  "entity_a": "trial-to-paid-conversion",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-18",
+    "f-bm-19",
+    "f-bm-12",
+    "f-bm-07",
+    "f-bm-33",
+    "f-svc-07"
+  ],
+  "experience_used": [
+    "exp-005",
+    "exp-039"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/trial-to-paid-conversion",
+      "anchor": "trial-to-paid conversion",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/b2b-saas",
+      "anchor": "B2B SaaS retention benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/trial-length-optimizer",
+      "anchor": "the trial length optimizer",
+      "role": "tool"
+    },
+    {
+      "url": "/services/pricing-and-packaging/b2b-saas",
+      "anchor": "B2B SaaS pricing and packaging",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a trial conversion review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#saas-trial-table",
+      "alt": "SaaS trial conversion benchmarks: the business category's download-to-trial rank, cancellation rates by trial length including day-zero cancellations, the category's page-view-to-install rate, day-30 retention, annual account churn by segment and the share of software spend still on seats, each row carrying its source and verification date",
+      "caption": "SaaS trial conversion benchmarks, each row sourced. Verified 1 October 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long should a B2B SaaS trial be?",
+      "a": "Longer trials surface more rejection: a three-day trial averages 26% cancellations against 51% for a thirty-day trial, and 31.1% of thirty-day trials cancel on day zero. The day-zero figure is the one worth acting on."
+    },
+    {
+      "q": "Why do a third of long trials cancel immediately?",
+      "a": "Because a thirty-day trial invites a user to start it and decide later, and deciding later often means cancelling now to avoid the charge. The length changes the decision's timing rather than its outcome."
+    },
+    {
+      "q": "Does a high trial start rate predict conversion?",
+      "a": "Not reliably. The business category records the highest download-to-trial rate of any category, which says intent is high at the top. Conversion depends on whether the trial reaches the moment the product proves itself."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a b2b-saas trial conversion review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Separates when a trial cancels from whether it converts, using the day-zero cancellation figure that trial-length advice ignores, and carries churn by segment so a conversion target implies a tenure assumption.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

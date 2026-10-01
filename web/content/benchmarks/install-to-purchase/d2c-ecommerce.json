@@ -1,0 +1,109 @@
+{
+  "id": "benchmark-0577",
+  "url": "/benchmarks/install-to-purchase/d2c-ecommerce",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-benchmark-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Ecommerce Install to Purchase Benchmarks and Rates (2026)",
+  "meta_description": "Ecommerce install to purchase benchmarks: the 1% to 2% typical band, retail against travel, and the Indian payment costs that decide whether it pays.",
+  "h1": "Ecommerce install to purchase benchmarks",
+  "primary_keyword": "ecommerce install to purchase",
+  "secondary_keywords": [
+    "install to purchase rate",
+    "d2c app purchase conversion"
+  ],
+  "entity_a": "install-to-purchase",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-14",
+    "f-bm-15",
+    "f-bm-17",
+    "f-bm-03",
+    "f-bm-21",
+    "f-act-12"
+  ],
+  "experience_used": [
+    "exp-010",
+    "exp-043"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/glossary/conversion-rate",
+      "anchor": "conversion rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/d2c-ecommerce",
+      "anchor": "ecommerce retention benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/paywall-uplift-calculator",
+      "anchor": "the paywall uplift calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/cod-to-prepaid-conversion-d2c",
+      "anchor": "COD to prepaid conversion",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a conversion review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#install-to-purchase-table",
+      "alt": "Ecommerce install-to-purchase benchmarks: the typical band with retail and travel figures, a good mobile commerce conversion range, the regional download-to-paid gap, ecommerce retention for context, the cross-category day-1 and day-30 average and Indian payment gateway costs, each row carrying its source and verification date",
+      "caption": "Install-to-purchase benchmarks, each row sourced. Verified 1 October 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good install to purchase rate for an ecommerce app?",
+      "a": "Most apps convert 1% to 2% of installs into a purchase, with retail at 1.38% and travel at 2.41%. For session-level conversion rather than install-level, 2% to 6% is the range depending on order value and purchase frequency."
+    },
+    {
+      "q": "Why is install to purchase so much lower than site conversion?",
+      "a": "Because the denominator includes everyone who installed, including people who never reached a product page. Install-to-purchase folds the whole funnel into one number, which makes it useful for media planning and poor for diagnosis."
+    },
+    {
+      "q": "Does India convert worse on install to purchase?",
+      "a": "No install-to-purchase figure is published for India specifically. What is published is that day-35 download-to-paid runs 2.6% in North America against 1.4% across India and South-East Asia, which is a subscription measure rather than a commerce one."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a d2c-ecommerce purchase conversion review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Treats install-to-purchase as a media-planning number rather than a diagnostic one, and prices the Indian version against gateway cost and tax, which decide whether a converted install is profitable at all.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

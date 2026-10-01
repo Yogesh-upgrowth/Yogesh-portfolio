@@ -14,6 +14,20 @@
     }
   },
   "facts": {
+    "f-unit-18": {
+      "fact_id": "f-unit-18",
+      "claim": "Gross revenue retention by contract size runs 82% under 25,000 dollars ACV, 88% from 25,000 to 100,000, and 95% above",
+      "value": "95",
+      "unit": "%",
+      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
+      "source_title": "2025 B2B SaaS Retention Benchmarks",
+      "source_domain": "saas-capital.com",
+      "excerpt": "SMB (<$25K ACV): 82% GRR; Mid-Market ($25K-$100K): 88% GRR; Enterprise (>$100K ACV): 95% GRR.",
+      "published_on": "2025",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
     "f-unit-25": {
       "fact_id": "f-unit-25",
       "claim": "More than 120 million UPI Autopay mandates are created every month in India",
@@ -41,6 +55,20 @@
       "verified_on": "2026-09-30",
       "method": "search_index",
       "primary": false
+    },
+    "f-act-12": {
+      "fact_id": "f-act-12",
+      "claim": "Razorpay charges Indian businesses 2% plus 18% GST on domestic payments and 3% on international card exports",
+      "value": "2",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/best-payment-gateway-pricing-saas-india-tco-guide",
+      "source_title": "Payment gateway pricing for SaaS businesses in India",
+      "source_domain": "razorpay.com",
+      "excerpt": "Razorpay charges 2% platform fee plus 18% GST for domestic payments, and 3% for international exports by card.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
     },
     "f-act-14": {
       "fact_id": "f-act-14",
@@ -97,6 +125,20 @@
       "verified_on": "2026-09-30",
       "method": "search_index",
       "primary": true
+    },
+    "f-svc-07": {
+      "fact_id": "f-svc-07",
+      "claim": "Seat-based contracts still account for 65% to 75% of software spend while consumption-based pricing sits at 4% to 6%",
+      "value": "65-75",
+      "unit": "%",
+      "source_url": "https://www.flexera.com/blog/saas-management/from-seats-to-consumption-why-saas-pricing-has-entered-its-hybrid-era/",
+      "source_title": "From seats to consumption: why SaaS pricing has entered its hybrid era",
+      "source_domain": "flexera.com",
+      "excerpt": "Seat-based contracts account for 65-75% of spend, and consumption-based pricing is stuck at 4-6%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
     },
     "f-bm-01": {
       "fact_id": "f-bm-01",
@@ -387,6 +429,188 @@
       "source_title": "State of Subscription Apps 2026",
       "source_domain": "revenuecat.com",
       "excerpt": "AI-powered apps generate 41% more revenue per payer, but they churn 30% faster.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-bm-22": {
+      "fact_id": "f-bm-22",
+      "claim": "India's OTT ARPU is projected at 40.44 dollars for 2026, with subscription video at 24.58 dollars per user",
+      "value": "40.44",
+      "unit": "USD",
+      "source_url": "https://www.statista.com/outlook/amo/media/tv-video/ott-video/india/",
+      "source_title": "OTT Video outlook, India",
+      "source_domain": "statista.com",
+      "excerpt": "India's OTT ARPU is projected to reach USD 40.44 in 2026, with SVoD generating USD 24.58 per user.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-23": {
+      "fact_id": "f-bm-23",
+      "claim": "India's OTT ARPU is also reported at 85 to 95 rupees a month, among the lowest in the world",
+      "value": "85-95",
+      "unit": "INR",
+      "source_url": "https://raoscaff.com/intel/22-ott-pricing-wars/report.html",
+      "source_title": "OTT Pricing Wars: the Ad-Tier Pivot and the ARPU Math",
+      "source_domain": "raoscaff.com",
+      "excerpt": "India's OTT ARPU of Rs 85-95 per month is among the lowest globally.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-24": {
+      "fact_id": "f-bm-24",
+      "claim": "India's OTT video revenue is projected at 5.08 billion dollars in 2026, with users rising from 521 million in 2025 to 549 million",
+      "value": "5.08",
+      "unit": "USD billion",
+      "source_url": "https://www.statista.com/outlook/amo/media/tv-video/ott-video/india/",
+      "source_title": "OTT Video outlook, India",
+      "source_domain": "statista.com",
+      "excerpt": "India OTT Video revenue is projected at US$5.08bn in 2026, with users rising from 521 million in 2025 to 549 million.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-25": {
+      "fact_id": "f-bm-25",
+      "claim": "JioHotstar reports 100 million subscribers and 500 million active users, and is forecast at 10,000 to 11,000 crore rupees, about 22% to 25% of India's OTT revenue",
+      "value": "100",
+      "unit": "million",
+      "source_url": "https://www.sci-tech-today.com/stats/top-10-indian-ott-platforms-statistics-updated/",
+      "source_title": "Top 10 Indian OTT Platforms Statistics",
+      "source_domain": "sci-tech-today.com",
+      "excerpt": "JioHotstar leads with 100 million subscribers, 500 million active users and 650 million downloads; forecast Rs 10,000-11,000 crore, 22-25% of India OTT revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-26": {
+      "fact_id": "f-bm-26",
+      "claim": "India has 216.5 million OTT subscriptions",
+      "value": "216.5",
+      "unit": "million",
+      "source_url": "https://bestmediainfo.com/insights/india-has-2165-million-ott-subscriptions-but-platforms-are-still-struggling-to-monetise-them-12457338",
+      "source_title": "India has 216.5 million OTT subscriptions",
+      "source_domain": "bestmediainfo.com",
+      "excerpt": "India has 216.5 million OTT subscriptions, but platforms are still struggling to monetise them.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-27": {
+      "fact_id": "f-bm-27",
+      "claim": "Streaming advertising revenue in India stood at 563.9 million dollars in 2025",
+      "value": "563.9",
+      "unit": "USD million",
+      "source_url": "https://www.statista.com/outlook/amo/media/tv-video/ott-video/india/",
+      "source_title": "OTT Video outlook, India",
+      "source_domain": "statista.com",
+      "excerpt": "Streaming advertising revenue stood at US$563.9 million in 2025, and ad-supported tiers are now widely adopted.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-34": {
+      "fact_id": "f-bm-34",
+      "claim": "India's streaming ARPU is also projected at 9.02 dollars for 2026",
+      "value": "9.02",
+      "unit": "USD",
+      "source_url": "https://www.medianews4u.com/indias-ott-market-hits-601-million-users-but-only-119-million-pay-monetisation-gap-widens/",
+      "source_title": "India's OTT Market Hits 601 Million Users, But Only 119 Million Pay",
+      "source_domain": "medianews4u.com",
+      "excerpt": "India's projected ARPU of USD 9.02 in 2026 is the clearest indicator of the market's monetisation ceiling at current pricing.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-28": {
+      "fact_id": "f-bm-28",
+      "claim": "B2B SaaS monthly ARPU runs 20 to 50 dollars self-serve, 50 to 200 for SMB, 200 to 2,000 mid-market and 2,000 to 10,000 plus for enterprise",
+      "value": "20-10000",
+      "unit": "USD",
+      "source_url": "https://culta.ai/blog/arpu-benchmarks-2026",
+      "source_title": "ARPU Benchmarks 2026: Where Does Your SaaS Rank",
+      "source_domain": "culta.ai",
+      "excerpt": "Self-serve products land at $20-50/month, SMB at $50-200, mid-market at $200-2,000, and enterprise at $2,000-10,000+/month.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-bm-29": {
+      "fact_id": "f-bm-29",
+      "claim": "The 2026 median B2B SaaS ARPU is about 250 dollars a month, up from 210 in 2024",
+      "value": "250",
+      "unit": "USD",
+      "source_url": "https://culta.ai/blog/arpu-benchmarks-2026",
+      "source_title": "ARPU Benchmarks 2026: Where Does Your SaaS Rank",
+      "source_domain": "culta.ai",
+      "excerpt": "The 2026 median B2B SaaS ARPU is approximately $250/month, up from $210/month in 2024.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-bm-30": {
+      "fact_id": "f-bm-30",
+      "claim": "Median SMB SaaS ARPU is 55 dollars a month",
+      "value": "55",
+      "unit": "USD",
+      "source_url": "https://culta.ai/blog/arpu-benchmarks-2026",
+      "source_title": "ARPU Benchmarks 2026: Where Does Your SaaS Rank",
+      "source_domain": "culta.ai",
+      "excerpt": "For SMB specifically, the median ARPU is $55.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-31": {
+      "fact_id": "f-bm-31",
+      "claim": "SaaS segments are defined by annual contract value: SMB under 10,000 dollars, mid-market 10,000 to 100,000, enterprise above 100,000",
+      "value": "10000",
+      "unit": "USD",
+      "source_url": "https://optif.ai/learn/questions/b2b-saas-churn-rate-benchmark/",
+      "source_title": "B2B SaaS Churn Rate Benchmarks, 939 Companies by Segment and ACV",
+      "source_domain": "optif.ai",
+      "excerpt": "Segments are defined by ACV: SMB under $10K, Mid-Market $10K-$100K, Enterprise above $100K.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-32": {
+      "fact_id": "f-bm-32",
+      "claim": "SMB products under 15,000 dollars ACV carry 2,000 to 8,000 dollars of CAC, and mid-market products from 15,000 to 100,000 ACV carry 15,000 to 40,000",
+      "value": "2000-8000",
+      "unit": "USD",
+      "source_url": "https://arjankc.com.np/blog/2026-b2b-saas-cac-benchmark-report/",
+      "source_title": "2026 B2B SaaS CAC Benchmark Report",
+      "source_domain": "arjankc.com.np",
+      "excerpt": "SMB products with ACVs under $15,000 have CAC of $2,000 to $8,000; mid-market targeting $15,000 to $100,000 has median CAC of $15,000 to $40,000.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-33": {
+      "fact_id": "f-bm-33",
+      "claim": "Annual account churn runs a 15% median for SMB, 10% for mid-market and 5% for enterprise",
+      "value": "15",
+      "unit": "%",
+      "source_url": "https://optif.ai/learn/questions/b2b-saas-churn-rate-benchmark/",
+      "source_title": "B2B SaaS Churn Rate Benchmarks, 939 Companies by Segment and ACV",
+      "source_domain": "optif.ai",
+      "excerpt": "Annual account churn rates by segment: SMB median 15 percent, Mid-Market 10 percent, Enterprise 5 percent.",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
@@ -1115,6 +1339,741 @@
         ]
       },
       "body": "\n<AnswerBox>\nSaaS app retention benchmarks put productivity and B2B products at 20% to 32% on\nday 30, against an average iOS app at 5.3%. The category retains far above consumer\napps because people use it at work, on a schedule somebody else sets. The app curve\nand the contract curve measure different things, and both matter.\n</AnswerBox>\n\n<FactTable\n  id=\"b2b-retention-table\"\n  caption=\"B2B SaaS retention, and the funnel that fills it\"\n  columns={[\"Measure\", \"B2B SaaS\", \"Reference\"]}\n  rows={[\n    { cells: [\"Day 30 retention\", \"20% to 32%\", \"average iOS app 5.3%\"], factId: \"f-bm-07\" },\n    { cells: [\"Day 1 and day 7\", \"no published figure\", \"fintech 28% and 12%\"], factId: \"f-bm-02\" },\n    { cells: [\"Strongest consumer comparison\", \"no published figure\", \"social 12% at day 30\"], factId: \"f-bm-06\" },\n    { cells: [\"App Store page view to install, business\", \"about 66.7%\", \"no all-category figure\"], factId: \"f-bm-12\" },\n    { cells: [\"Download-to-trial rate by category\", \"highest of any category\", \"rank, not a rate\"], factId: \"f-bm-18\" },\n    { cells: [\"Companies running hybrid pricing\", \"37%\", \"up from 25% a year earlier\"], factId: \"f-svc-05\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nDay 30 is the only point with a published B2B band: 20% to 32%, against an\naverage iOS app at 5.3%. Day 1 and day 7 are not published for the category, so\nthose rows carry a comparison rather than a fabricated figure — fintech's 28% and\n12% are shown as the nearest published high-retention consumer category, labelled\nas such.\n\nEven the top consumer category does not reach the B2B floor. Social retains a 12%\nmedian at day 30; the weakest end of the B2B band is 20%. That gap is structural\nand it is the most useful single fact on this page.\n\n\nSo the honest summary is that this category has one well-published number and a\ncurve nobody has measured publicly. Plan around the day-30 band and treat the rest\nas your own instrumentation problem.\n## Why B2B SaaS differs\n\nUse is compelled and scheduled. A work tool opens because a task requires it, at a\ncadence somebody else set, which removes the attention problem every consumer app\nspends its budget on.\n\nThe discovery funnel reflects the same intent. Business apps convert about 66.7%\nof App Store page views to installs and record the highest download-to-trial rate\nof any category, because people arrive having already named their problem.\n\nThe complication is that app retention is not the contract. A seat that stops\nopening the app is a renewal risk long before revenue moves, which makes the app\ncurve a leading indicator of something measured elsewhere. Treating it as the\noutcome is the common error; ignoring it wastes the earliest signal available.\n\n## The India layer\n\nNo India-specific B2B SaaS app retention figures are published at day 1, 7 or 30.\n\nWhat applies instead is packaging. 37% of companies now run a hybrid of seats and\nconsumption, up from 25% a year earlier, and for an Indian SaaS company selling\nabroad the meter choice interacts with collection and tax in ways a pure seat\nmodel avoids. Retention work in this category often turns out to be packaging\nwork, because a seat nobody uses churns at renewal regardless of how good the\nproduct is.\n\n<FromMyWork exp=\"exp-031\">\nAbout 40% of engineering time across the organisation was going to client-specific\nrequests that sales had sold as standard. Packaging was the fix, not capacity.\n</FromMyWork>\n\n\nThe collection layer matters here too. An Indian SaaS company billing abroad pays a\ndifferent percentage depending on how the money is routed, and that lands on the\nsame contribution line a renewal protects.\n## What good looks like\n\nAt day 30, above 32% is strong and below 20% puts the product behind its own\ncategory rather than behind the market. Read it per account rather than per user:\none account with ten engaged seats and one with a single engaged seat produce the\nsame blended figure and very different renewals.\n\nThen read it against revenue retention. A rising app curve beside flat net revenue\nretention means usage grows inside accounts that are not expanding, which points at\npackaging rather than at the product. The reverse — flat usage with rising revenue —\nusually means a price rise that the next renewal cycle will test.\n\n\nSet the threshold per account band as well. A product selling to ten-seat teams and\none selling to thousand-seat enterprises should not share a day-30 target, because\nthe second has departments that never open the app and never needed to.\n## If you are below the median\n\nFind the accounts where usage concentrates in one seat. Single-seat dependency\ncauses more B2B retention problems than any other pattern and hides most effectively\nin an aggregate curve, because one heavy user carries the account's numbers until\nthey leave.\n\nThen make failures the customer can see and fix without you. Silent breakage is the\nsecond most common cause, and it produces churn that arrives with no warning in any\nengagement metric.\n\n<FromMyWork exp=\"exp-039\">\nMaking failures debuggable by the customer cut sales and support effort about\n25%. Idempotency, surfaced errors and retry mechanics meant customers resolved\ntheir own breakages instead of churning quietly.\n</FromMyWork>\n\n\n\nBoth checks are instrumentation rather than product work, and both can happen\nbefore anyone writes a roadmap item. Start with the seat concentration report: it\ntakes a day and it usually names the accounts at risk.\n## How these figures were gathered\n\nEvery row shows its source and the date somebody last checked it, from published\nbenchmark reports.\n\nThree rows read \"no published figure\". Day 1 and day 7 are not published for this\ncategory at all, so those rows carry the nearest published high-retention consumer\ncategory and label it as a comparison. A reader setting a day-7 target from a fintech\nnumber would be setting it from the wrong category, which is why the label matters\nmore than the number.\n\nThe rule for these pages is three sources or an explicit \"insufficient public data\"\nmark. Day 30 clears it. The rest of the curve does not.\n\nFigures go back for re-checking every 90 days.\n\n\nEvery figure goes back on a 90-day cycle, and any price figure on a 45-day one."
+    },
+    {
+      "id": "benchmark-0567",
+      "url": "/benchmarks/app-store-conversion/b2b-saas",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "SaaS App Store Conversion Benchmarks by Category (2026)",
+      "meta_description": "SaaS app store conversion benchmarks: the business category's page-view-to-install rate, the search and browse split, and why intent explains the gap.",
+      "h1": "SaaS app store conversion benchmarks",
+      "primary_keyword": "saas app store conversion",
+      "secondary_keywords": [
+        "business app store conversion",
+        "b2b app install rate"
+      ],
+      "entity_a": "app-store-conversion",
+      "entity_b": "b2b-saas",
+      "facts": [
+        "f-bm-12",
+        "f-bm-09",
+        "f-bm-11",
+        "f-bm-18",
+        "f-bm-07",
+        "f-bm-31"
+      ],
+      "experience": [
+        "exp-016",
+        "exp-031"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/benchmarks/retention/b2b-saas",
+          "anchor": "B2B SaaS retention benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/conversion-rate",
+          "anchor": "conversion rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/services/pricing-and-packaging/b2b-saas",
+          "anchor": "B2B SaaS pricing and packaging",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a conversion review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#saas-store-conversion",
+          "alt": "SaaS and business app store conversion: the business category's page-view-to-install rate, App Store search against browse install ranges, the all-category average conversion and install rate, the category's download-to-trial rank, B2B day-30 retention and the ACV bands that define each segment, each row carrying its source and verification date",
+          "caption": "SaaS store conversion benchmarks, each row sourced. Verified 1 October 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a b2b-saas store conversion review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good app store conversion rate for a SaaS app?",
+          "a": "Business apps convert about 66.7% of App Store page views to installs, well above the 8.56% all-category average conversion rate. The gap is intent: people search for a work tool with the problem already named."
+        },
+        {
+          "q": "Why does search convert so much better than browse?",
+          "a": "US App Store search install medians span 2.6% to 12.4% across top-level categories against 0.1% to 2.5% from browse. A searcher has stated a need; a browser has not. Optimising for browse is optimising for the weaker half."
+        },
+        {
+          "q": "Does a high install rate mean the listing is good?",
+          "a": "Not by itself. A narrow, high-intent keyword set produces an excellent rate on small volume, and a listing can raise its rate by ranking for fewer terms. Read rate and install volume together or the metric rewards shrinking."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Separates rate from volume, which every store-conversion benchmark conflates: a listing can improve its conversion rate by ranking for fewer, narrower terms, and the business category's unusually high rate is mostly a statement about who searches.",
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-12"
+        ],
+        "the_numbers": [
+          "f-bm-12",
+          "f-bm-09",
+          "f-bm-11"
+        ],
+        "why_this_industry_differs": [
+          "f-bm-18",
+          "f-bm-07"
+        ],
+        "india_layer": [
+          "f-bm-31"
+        ],
+        "what_good_looks_like": [
+          "f-bm-12"
+        ]
+      },
+      "body": "\n<AnswerBox>\nSaaS app store conversion runs far above average. Business apps convert about\n66.7% of App Store page views to installs, against an 8.56% all-category average\nconversion rate and a 3.8% average install rate. Intent explains almost all of the\ngap, not listing craft.\n</AnswerBox>\n\n<FactTable\n  id=\"saas-store-conversion\"\n  caption=\"SaaS and business store conversion against the all-category figures\"\n  columns={[\"Measure\", \"Business / B2B\", \"All categories\"]}\n  rows={[\n    { cells: [\"App Store page view to install\", \"about 66.7%\", \"no published figure\"], factId: \"f-bm-12\" },\n    { cells: [\"Average store conversion and install rate\", \"no published figure\", \"8.56% and 3.8%\"], factId: \"f-bm-11\" },\n    { cells: [\"Install rate, search against browse\", \"no published figure\", \"2.6% to 12.4% against 0.1% to 2.5%\"], factId: \"f-bm-09\" },\n    { cells: [\"Download-to-trial rate by category\", \"highest of any category\", \"a rank, not a rate\"], factId: \"f-bm-18\" },\n    { cells: [\"Day 30 retention\", \"20% to 32%\", \"average iOS app 5.3%\"], factId: \"f-bm-07\" },\n    { cells: [\"Segment definition by ACV\", \"SMB under $10K, mid-market to $100K\", \"enterprise above $100K\"], factId: \"f-bm-31\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nBusiness apps convert about 66.7% of App Store page views into installs. The\nall-category average conversion rate is 8.56% and the average install rate is\n3.8%. Those are different denominators, which is why the table states both and\nlabels which population each describes.\n\nThree cells read \"no published figure\". Nobody publishes an all-category\npage-view-to-install figure, and nobody breaks the search-versus-browse split or\nthe average install rate out for business apps specifically. The standard for these\npages is three sources or an explicit mark, and store conversion clears it for the\nbusiness category on one measure and no others.\n\nThe download-to-trial row carries a rank rather than a rate, because that is what\nthe source reports. A rank tells you the category leads and not by how much.\n\n## Why B2B SaaS differs\n\nIntent arrives before the listing does. Somebody searching for an invoicing tool\nhas already named the problem, decided to solve it with software, and begun\ncomparing. The listing's job is to confirm a decision rather than create one, and\nconfirmation converts far better than persuasion.\n\nThe same mechanism carries down the funnel. Business apps record the highest\ndownload-to-trial rate of any category, and B2B products hold 20% to 32% at day 30\nagainst an average iOS app at 5.3%. High-intent traffic converts well at every\nstep, which means a B2B store listing is rarely the constraint.\n\nSegment shape matters for reading any of it. SMB sits under $10,000 ACV, about ₹9.59 lakh,\nmid-market from there to $100,000, about ₹95.89 lakh, and enterprise above that, and a self-serve SMB product and\nan enterprise product with a sales team should not share a store-conversion target at\nall.\n\n## The India layer\n\nNo India-specific store conversion figure is published for the business category.\n\nWhat applies instead is that an Indian B2B product usually sells abroad while\nranking at home, so its store metrics and its revenue come from different\npopulations. A listing converting well in India and billing in dollars has a store\nfunnel that tells it almost nothing about revenue, and the two should be read\nseparately rather than blended into one conversion number.\n\nThat split is also why the ACV bands matter here: the same product can sit in the\nSMB band for its Indian customers and the mid-market band abroad, with two different\nexpected conversion shapes.\n\n\nThere is also a practical consequence for measurement. Store analytics report by\nstorefront, and revenue reports by billing entity, so an Indian B2B product has to\njoin two datasets before it can say anything about conversion to revenue at all.\n## What good looks like\n\nAgainst the all-category average install rate of 3.8%, almost any business app looks\nstrong, which makes that comparison useless. Compare against your own search traffic\ninstead: if search install rate sits inside the 2.6% to 12.4% band and browse sits\ninside 0.1% to 2.5%, the listing is behaving normally and the lever is ranking\nrather than creative.\n\nRead rate beside volume, always. A listing can raise its conversion rate by ranking\nfor fewer and narrower terms, and that looks like an improvement while total installs\nfall. The pairing is what makes the metric honest.\n\n<FromMyWork exp=\"exp-016\">\nThe site had 340 indexed pages against a keyword universe of tens of thousands of\nqueries. Building for the long tail rather than the head is what changed the\ndistribution.\n</FromMyWork>\n\n## If you are below the median\n\nCheck which half of your traffic you are measuring. Browse traffic converts an order\nof magnitude lower than search, so a listing with heavy browse exposure reads badly\nthrough no fault of its own.\n\nThen check whether the listing matches the search term rather than the product. A\nB2B listing written for the category and ranked for a feature converts worse than one\nwritten for the feature somebody searched.\n\n<FromMyWork exp=\"exp-031\">\nAbout 40% of engineering time across the organisation was going to client-specific\nrequests that sales had sold as standard. Packaging was the fix, not capacity.\n</FromMyWork>\n\n\nThen check whether the listing is ranking for the category or the feature. B2B buyers\nsearch for the job, and a listing written for the product category converts the people\nwho already knew your name.\n## How these figures were gathered\n\nEach row names its source and the date somebody last checked it. The figures come\nfrom published reports rather than from first-party store data.\n\nThree rows read \"no published figure\", and that is the honest state of the public\ndata for this category. The rule for these pages is at least three sources or an\nexplicit \"insufficient public data\" mark, and store conversion is published by\ncategory unevenly — well for medical, entertainment and business, poorly or not at\nall elsewhere.\n\nWhere a row carries an all-category figure in a category column, the label says so.\nA reader setting a target from an unlabelled comparison would be setting it from the\nwrong population.\n\nRe-verification runs every 90 days, and faster for anything touching price.\n"
+    },
+    {
+      "id": "benchmark-0563",
+      "url": "/benchmarks/app-store-conversion/healthtech",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "Health and Wellness App Store Conversion (2026)",
+      "meta_description": "Health and wellness store conversion: page-view-to-install, the medical category's leading install rate, and why discovery is not the constraint.",
+      "h1": "Health and wellness app store conversion benchmarks",
+      "primary_keyword": "health and wellness app store conversion",
+      "secondary_keywords": [
+        "medical app install rate",
+        "fitness app store conversion"
+      ],
+      "entity_a": "app-store-conversion",
+      "entity_b": "healthtech",
+      "facts": [
+        "f-bm-13",
+        "f-bm-10",
+        "f-bm-09",
+        "f-bm-04",
+        "f-bm-21",
+        "f-bm-16"
+      ],
+      "experience": [
+        "exp-005",
+        "exp-011"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/benchmarks/retention/healthtech",
+          "anchor": "health retention benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/conversion-rate",
+          "anchor": "conversion rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/paywall-uplift-calculator",
+          "anchor": "the paywall uplift calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/monetizing-tier-2-tier-3-users",
+          "anchor": "monetising tier 2 and tier 3 users",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a conversion review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#health-store-conversion",
+          "alt": "Health and wellness store conversion: the category's impression-to-page-view and page-view-to-install rates, the highest and lowest iOS install rates by category, the search against browse split, the all-category averages, health retention for context and median revenue per install, each row carrying its source and verification date",
+          "caption": "Health store conversion benchmarks, each row sourced. Verified 1 October 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a healthtech store conversion review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good app store conversion rate for a health app?",
+          "a": "Health and fitness apps typically show a 4% to 8% impression-to-page-view rate and 25% to 40% page view to install. Medical has the highest iOS install rate of any category at 7.8%, against 1.1% for entertainment."
+        },
+        {
+          "q": "Why do health apps convert so well in the stores?",
+          "a": "Because people search for them with a specific condition or goal named, and a named need converts. The category's problem sits after the install, where a 25% day-1 median falls to 5% by day 30."
+        },
+        {
+          "q": "Should a health app invest in store optimisation?",
+          "a": "Rarely as the first move. With page-view-to-install already at 25% to 40%, more installs mostly means more users to lose. Median revenue per install at day 60 is $0.34, so the install is not where the value is."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Puts the category's strong store conversion next to its weak day-30 retention and median revenue per install, to show that acquisition is already solved and funding it further buys users the product loses.",
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-13"
+        ],
+        "the_numbers": [
+          "f-bm-13",
+          "f-bm-10",
+          "f-bm-09",
+          "f-bm-21"
+        ],
+        "why_this_industry_differs": [
+          "f-bm-04"
+        ],
+        "india_layer": [
+          "f-bm-16"
+        ],
+        "what_good_looks_like": [
+          "f-bm-13"
+        ]
+      },
+      "body": "\n<AnswerBox>\nHealth and wellness app store conversion runs strong: a 4% to 8%\nimpression-to-page-view rate and 25% to 40% page view to install. Medical leads\nevery category on iOS install rate at 7.8%, against 1.1% for entertainment. The\ncategory's problem starts after the install, not before it.\n</AnswerBox>\n\n<FactTable\n  id=\"health-store-conversion\"\n  caption=\"Health store conversion, and what happens after the install\"\n  columns={[\"Measure\", \"Health & wellness\", \"Reference\"]}\n  rows={[\n    { cells: [\"Impression to page view, and page view to install\", \"4% to 8%, and 25% to 40%\", \"no all-category figure\"], factId: \"f-bm-13\" },\n    { cells: [\"Highest and lowest iOS install rate by category\", \"medical 7.8%\", \"entertainment 1.1%\"], factId: \"f-bm-10\" },\n    { cells: [\"Install rate, search against browse\", \"no published figure\", \"2.6% to 12.4% against 0.1% to 2.5%\"], factId: \"f-bm-09\" },\n    { cells: [\"Cross-category day 1 and day 30 retention\", \"no category figure\", \"25.3% and 5.7%\"], factId: \"f-bm-21\" },\n    { cells: [\"Day 1 and day 30 retention, median\", \"25% and 5%\", \"25% and 4% all categories\"], factId: \"f-bm-04\" },\n    { cells: [\"Median revenue per install at day 60\", \"no category figure\", \"$0.34, strong $0.66+\"], factId: \"f-bm-16\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nHealth and fitness apps convert 4% to 8% of impressions into page views and 25% to\n40% of page views into installs. Medical records the highest iOS install rate of any\ncategory at 7.8%; entertainment records the lowest at 1.1%. That spread of roughly\nseven to one across categories is larger than most listings move their own rate in a\nyear.\n\nThree cells read \"no published figure\". Nobody publishes a health-specific\nsearch-versus-browse split, nor a health-specific revenue per install, nor a\ncross-category retention figure broken out for the category. The rows that carry an all-category number say\nso, because a target set from an unlabelled comparison would be set against the\nwrong population.\n\n\nOne more caveat belongs on the table. Medical and health-and-fitness are separate\ncategories in the stores and get reported separately, so a wellness app comparing\nitself to the medical install rate is comparing against a different category.\n## Why health and wellness differs\n\nSearch intent is unusually specific. Somebody types a condition, a goal or a\nmeasurement, and a listing matching that term converts because they named the need\nfirst. Few categories get traffic that well qualified.\n\nAcquisition is therefore the solved part. Day 1 retention sits at a 25% median,\nroughly the all-category figure, and day 30 at 5% against 4%. So a\ncategory that converts the store unusually well keeps users only slightly better\nthan average, and the distance between those two facts is the whole problem.\n\nMedian revenue per install at day 60 is $0.34 across categories, roughly ₹33, with\n$0.66 and above, about ₹63, marking strong monetisation. Against a 25% to 40% install rate, that number\nsays the install is cheap to win and worth little on its own.\n\n## The India layer\n\nNo India-specific health store conversion figure is published.\n\nWhat is specific to India is the gap between willingness to install and willingness\nto pay. A category converting 25% to 40% of page views in a market where\nsubscription prices sit well below US levels produces a lot of installs and little\nrevenue, and the honest consequence is that store optimisation is not where an\nIndian health product should spend.\n\nThe first-session design matters more. In practice the lever is removing work from\nthe opening minutes rather than adding polish to the listing.\n\n<FromMyWork exp=\"exp-011\">\nThe renewal form was 23 fields across 6 steps and took 11 minutes on a mid-range\nAndroid handset, timed. It went to 4 fields and one step for most renewals, using\nregistration data the insurer already held.\n</FromMyWork>\n\n## What good looks like\n\nInside 25% to 40% page view to install, the listing is performing to category. Below\n25% there is a real listing problem; above 40% the listing is probably ranking for\nterms narrower than the product.\n\nThe more useful target is what the install does next. Pair store conversion with day\n7, not day 30: the category's habit forms in the first week, and a listing that\npromises more than the first week delivers produces a good install rate and a bad\ncurve.\n\n\nSet the target from your own search terms rather than from the band. A listing\nranking for condition-specific queries should sit at the top of the 25% to 40% range;\none ranking for generic wellness terms should not, and neither figure is a problem.\n## If you are below the median\n\nCheck the screenshots against the search term rather than against the brand. In this\ncategory the first screenshot usually has to show the measurement or the plan, not\nthe logo.\n\nThen reframe whatever the first session asks for.\n\n<FromMyWork exp=\"exp-005\">\nAsking for a bank statement upfront got 35% compliance. Showing a preliminary\neligibility range first, then asking for the statement to reveal the exact offer,\ntook it to 71% — the same ask, reframed from a compliance step into a reward.\n</FromMyWork>\n\n\nThen check the screenshot order against what the search term promised. In this\ncategory the install decision usually happens on the first screenshot, and a generic\nhero image wastes the one asset that converts.\n\nBoth checks cost an afternoon and neither needs a release.\n## How these figures were gathered\n\nEvery row carries a source and the date somebody last checked it, drawn from\npublished reports rather than first-party store data.\n\nThree rows read \"no published figure\". Store conversion is broken out by category\nunevenly: medical, entertainment and business are covered, and most other categories\nare not. The standard here is three sources or an explicit \"insufficient public data\"\nmark, and this page reports both states on the same table.\n\nFigures go back for re-verification every 90 days, and price figures every 45.\n\n\nWhere a row carries an all-category figure in a category column, the label says so. A\ntarget set from an unlabelled comparison would be set against the wrong population,\nwhich is the specific error this column exists to prevent."
+    },
+    {
+      "id": "benchmark-0568",
+      "url": "/benchmarks/app-store-conversion/media-ott",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "OTT and Audio App Store Conversion Rate Benchmarks (2026)",
+      "meta_description": "OTT and audio store conversion: entertainment's lowest-in-class install rate, India's subscription base, and three ARPU figures that disagree.",
+      "h1": "OTT and audio app store conversion rate benchmarks",
+      "primary_keyword": "ott and audio app store conversion rate",
+      "secondary_keywords": [
+        "entertainment app install rate",
+        "streaming app store conversion"
+      ],
+      "entity_a": "app-store-conversion",
+      "entity_b": "media-ott",
+      "facts": [
+        "f-bm-10",
+        "f-bm-16",
+        "f-bm-25",
+        "f-bm-26",
+        "f-bm-27",
+        "f-bm-24",
+        "f-bm-22",
+        "f-bm-23",
+        "f-bm-34"
+      ],
+      "experience": [
+        "exp-019",
+        "exp-045"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/india/ott-pricing-india",
+          "anchor": "OTT pricing in India",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/conversion-rate",
+          "anchor": "conversion rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/ecpm-ad-revenue-calculator",
+          "anchor": "the ad revenue calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/benchmarks/retention/media-ott",
+          "anchor": "media and OTT retention benchmarks",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a conversion review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#ott-store-conversion",
+          "alt": "OTT and audio store conversion: entertainment's lowest-in-class iOS install rate against medical's highest, median revenue per install, India's OTT subscriptions, the leading platform's subscriber and active-user counts, streaming advertising revenue and India's projected OTT revenue and user base, each row carrying its source and verification date",
+          "caption": "OTT and audio store conversion benchmarks, each row sourced. Verified 1 October 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a media-ott conversion review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good app store conversion rate for a streaming app?",
+          "a": "Entertainment has the lowest iOS install rate of any category at 1.1%, against medical's 7.8%. A streaming listing performing at category level therefore looks terrible against any cross-category average, and that is a measurement artefact."
+        },
+        {
+          "q": "Why does entertainment convert so poorly in the stores?",
+          "a": "Because the decision is about the catalogue rather than the app, and a store listing cannot show a catalogue. People install a streaming app when they want a specific title, which the listing has no way to advertise."
+        },
+        {
+          "q": "What is India's OTT ARPU?",
+          "a": "Three published figures disagree: $40.44 a year, ₹85 to ₹95 a month, and $9.02. They are not reconcilable without knowing each one's denominator, so this page states the disagreement rather than picking one."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "States that three published India OTT ARPU figures contradict each other and refuses to pick one, and explains why entertainment's lowest-in-class install rate is a property of catalogue-led decisions rather than a listing failure.",
+      "contradictions": [
+        "India's OTT ARPU is published as $40.44 a year (Statista outlook), as ₹85-95 a month (roughly $10.6-11.9 a year at 95.89) and as $9.02. The three are not reconcilable without each source's denominator and subscriber definition. Stated as a disagreement on the page rather than resolved by preference."
+      ],
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-10"
+        ],
+        "the_numbers": [
+          "f-bm-10",
+          "f-bm-16",
+          "f-bm-26"
+        ],
+        "why_this_industry_differs": [
+          "f-bm-27"
+        ],
+        "india_layer": [
+          "f-bm-25",
+          "f-bm-24",
+          "f-bm-22",
+          "f-bm-23",
+          "f-bm-34"
+        ],
+        "what_good_looks_like": [
+          "f-bm-10"
+        ]
+      },
+      "body": "\n<AnswerBox>\nOTT and audio app store conversion rate benchmarks start from an uncomfortable\nfact: entertainment has the lowest iOS install rate of any category at 1.1%,\nagainst medical's 7.8%. A streaming listing performing exactly to category looks\nbroken against any cross-category average.\n</AnswerBox>\n\n<FactTable\n  id=\"ott-store-conversion\"\n  caption=\"OTT and audio conversion, and the Indian market around it\"\n  columns={[\"Measure\", \"Figure\", \"Reference\"]}\n  rows={[\n    { cells: [\"Lowest and highest iOS install rate by category\", \"entertainment 1.1%\", \"medical 7.8%\"], factId: \"f-bm-10\" },\n    { cells: [\"Median revenue per install at day 60\", \"no category figure\", \"$0.34, strong $0.66+\"], factId: \"f-bm-16\" },\n    { cells: [\"India OTT subscriptions\", \"216.5 million\", \"no conversion figure published\"], factId: \"f-bm-26\" },\n    { cells: [\"Leading Indian platform\", \"100M subscribers, 500M active users\", \"22% to 25% of OTT revenue\"], factId: \"f-bm-25\" },\n    { cells: [\"India streaming advertising revenue, 2025\", \"$563.9 million\", \"ad tiers now widely adopted\"], factId: \"f-bm-27\" },\n    { cells: [\"India OTT revenue and users, 2026\", \"$5.08 billion, 549 million users\", \"521 million in 2025\"], factId: \"f-bm-24\" },\n    { cells: [\"India OTT ARPU, three published figures\", \"$40.44 a year, ₹85 to ₹95 a month\", \"and $9.02 a year\"], factId: \"f-bm-22\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nEntertainment records a 1.1% iOS install rate, the lowest of any category, against\nmedical's 7.8%. No separate figure exists for audio, which the inventory groups with\nOTT here, and none exists for page-view-to-install in the category.\n\nSo the honest position is that store conversion for this category is published as a\nsingle low number and nothing else. Everything else on this page describes the market\nthe listing sits in, because that is what the public data covers: 216.5 million\nIndian OTT subscriptions, $5.08 billion of projected 2026 revenue, about ₹48,712\ncrore, and a user base moving from 521 million to 549 million.\n\nThree cells carry no category figure and say so. The rule for these pages is three\nsources or an explicit mark.\n\n## Why media and OTT differ\n\nThe decision is about the catalogue, not the app. Somebody installs a streaming app\nbecause they want a particular title, series or match, and a store listing cannot\nshow a catalogue — it can show six screenshots. That mismatch, not listing quality,\nproduces the 1.1%.\n\nIt also means install rate is close to useless as a product signal here. The listing\nconverts the people who already decided, and the deciding happened on a poster, a\nfixture list or a social clip somewhere else entirely.\n\nAudio behaves differently again, and nobody publishes it separately. A music or\npodcast app competes on catalogue too, but its sessions are habitual rather than\nevent-driven, so borrowing the entertainment figure for audio would misdescribe both.\n\n\nLive sport breaks the pattern again. A fixture draws installs on a schedule nobody in\nthe product controls, and the install rate on match day says more about the fixture\nthan about the listing.\n## The India layer\n\nIndia is where this category's economics are decided, and its ARPU is genuinely\ndisputed. One source projects $40.44 for 2026, about ₹3,877, with subscription video at $24.58\nper user, about ₹2,357. Another puts it at ₹85 to ₹95 a month, about $0.89 to $0.99 at the rate on file, which\nannualises far below the first figure. A third gives $9.02, about ₹865.\n\nThose three cannot be reconciled without each source's denominator and subscriber\ndefinition, so this page states the disagreement rather than picking the convenient\nfigure. Anyone modelling an Indian OTT business from a single published ARPU is\nmodelling from one of three incompatible numbers.\n\nThe scale is not in dispute. The leading platform reports 100 million subscribers\nand 500 million active users, and forecasts put it at 22% to 25% of India's OTT\nrevenue. Streaming advertising revenue reached $563.9 million in 2025, about ₹5,403\ncrore.\n\n## What good looks like\n\nAgainst 1.1%, the only useful comparison is your own history and your own traffic\nsource. A rising install rate on flat volume usually means narrower ranking rather\nthan a better listing.\n\nThe figure worth targeting instead is what happens after. Median revenue per install\nat day 60 is $0.34 across categories, about ₹33, with $0.66 and above, roughly ₹63,\nmarking strong monetisation. For a catalogue product the first title somebody watches\nsets that number, not the store page.\n\n\nMeasure the listing against your own catalogue cycle. A streaming app's install rate\nmoves with what released this month, so a month-on-month comparison describes the\nslate rather than the store page.\n\nPair it with the churn that follows a title-driven install: those cohorts leave when\nthe season does.\n## If you are below the median\n\nLead with the catalogue, not the interface. The screenshots that work in this\ncategory show what is available, because that is the actual decision.\n\nThen look at the first session: the title somebody came for has to be reachable\nwithout a search.\n\n<FromMyWork exp=\"exp-019\">\nLetting users share a vehicle report turned a utility check into an acquisition\nchannel. Shared reports carried 12.3% of new installs within four months, and those\nusers arrived with the intent already formed.\n</FromMyWork>\n\n<FromMyWork exp=\"exp-045\">\nOrchestrating triggers around policy expiry, compliance deadlines and observed\nintent improved monetisation per active user. The gain came from the schedule rather\nthan the message.\n</FromMyWork>\n\n\nThen check the first screen after install. In this category the install is cheap and\nthe first title is everything, so a home screen that opens on a carousel rather than on\nthe reason somebody installed loses the session it just bought.\n## How these figures were gathered\n\nEach row names a source and a verification date. The figures are published reports,\nnot first-party store data.\n\nThe ARPU disagreement above is recorded as a contradiction on the research object\nrather than smoothed over. Three sources give three incompatible figures for the same\nmarket, and a page that picked one would be making an editorial choice look like a\nfact.\n\nThree rows read \"no published figure\", including audio as a separate category. The\nstandard is three sources or an explicit \"insufficient public data\" mark, and this\ncategory clears it on market size and fails it on conversion.\n\nRe-verification runs every 90 days, and every 45 for price.\n\n\nWhere a row describes the market rather than the listing, the column header says so.\nThis page carries more market data than conversion data, and that imbalance is the\nhonest state of what gets published for the category."
+    },
+    {
+      "id": "benchmark-0528",
+      "url": "/benchmarks/arpu/b2b-saas",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "SaaS ARPU Benchmarks by Segment and Contract Value (2026)",
+      "meta_description": "SaaS ARPU benchmarks by segment: self-serve to enterprise monthly bands, the $250 median, and why ARPU and churn move together across contract sizes.",
+      "h1": "SaaS ARPU benchmarks",
+      "primary_keyword": "saas arpu",
+      "secondary_keywords": [
+        "b2b saas arpu benchmark",
+        "arpu by segment"
+      ],
+      "entity_a": "arpu",
+      "entity_b": "b2b-saas",
+      "facts": [
+        "f-bm-28",
+        "f-bm-29",
+        "f-bm-30",
+        "f-bm-31",
+        "f-bm-32",
+        "f-bm-33",
+        "f-unit-18"
+      ],
+      "experience": [
+        "exp-037",
+        "exp-048"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/arpu",
+          "anchor": "ARPU",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/unit-economics",
+          "anchor": "unit economics",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/arpu-arppu-calculator",
+          "anchor": "the ARPU and ARPPU calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/services/pricing-and-packaging/b2b-saas",
+          "anchor": "B2B SaaS pricing and packaging",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "an ARPU review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#saas-arpu-table",
+          "alt": "SaaS ARPU by segment: monthly bands from self-serve to enterprise, the 2026 median and its movement since 2024, median SMB ARPU, the ACV definitions of each segment, acquisition cost by segment and annual account churn by segment, each row carrying its source and verification date",
+          "caption": "SaaS ARPU benchmarks by segment, each row sourced. Verified 1 October 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a b2b-saas arpu review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good ARPU for a B2B SaaS product?",
+          "a": "The 2026 median is about $250 a month, up from $210 in 2024. The band that matters is your segment's: $20 to $50 self-serve, $50 to $200 SMB, $200 to $2,000 mid-market and $2,000 to $10,000-plus enterprise."
+        },
+        {
+          "q": "Why does ARPU rise with segment rather than with product quality?",
+          "a": "Because segment decides seat count, procurement and willingness to pay. The same product sold to a ten-person team and a ten-thousand-person enterprise produces ARPU two orders of magnitude apart, and almost none of that gap is the product."
+        },
+        {
+          "q": "Can ARPU be raised without moving upmarket?",
+          "a": "Yes, by changing what the price tracks. Pricing on consumption rather than seats raises ARPU inside the same segment when usage grows, which is why 37% of companies now run a hybrid model."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Reads ARPU and churn as one decision rather than two metrics: the segment that pays five times more also churns three times less and costs five times more to acquire, so an ARPU target without the matching churn and CAC assumption is half a plan.",
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-29"
+        ],
+        "the_numbers": [
+          "f-bm-28",
+          "f-bm-29",
+          "f-bm-30"
+        ],
+        "why_this_industry_differs": [
+          "f-bm-31",
+          "f-bm-33"
+        ],
+        "india_layer": [
+          "f-bm-32"
+        ],
+        "what_good_looks_like": [
+          "f-bm-28"
+        ]
+      },
+      "body": "\n<AnswerBox>\nSaaS ARPU benchmarks run by segment, not by product. Monthly ARPU sits at $20 to $50\nself-serve, about ₹1,918 to ₹4,795, then $50 to $200 for SMB, $200 to $2,000\nmid-market and $2,000 to $10,000-plus enterprise. The 2026 median is about $250 a\nmonth, roughly ₹23,973, up from $210 in 2024.\n</AnswerBox>\n\n<FactTable\n  id=\"saas-arpu-table\"\n  caption=\"SaaS ARPU, acquisition cost and churn, all by segment\"\n  columns={[\"Segment\", \"Monthly ARPU\", \"What comes with it\"]}\n  rows={[\n    { cells: [\"Self-serve to enterprise\", \"$20-50, $50-200, $200-2,000, $2,000-10,000+\", \"four bands, not a scale\"], factId: \"f-bm-28\" },\n    { cells: [\"Median across B2B SaaS\", \"about $250, up from $210 in 2024\", \"the median describes few companies\"], factId: \"f-bm-29\" },\n    { cells: [\"SMB median\", \"$55\", \"inside the $50-200 band\"], factId: \"f-bm-30\" },\n    { cells: [\"Segment definition by ACV\", \"SMB under $10K, mid-market to $100K, enterprise above\", \"annual, not monthly\"], factId: \"f-bm-31\" },\n    { cells: [\"Acquisition cost by segment\", \"under $15K ACV: $2,000-8,000\", \"$15K-100K ACV: $15,000-40,000\"], factId: \"f-bm-32\" },\n    { cells: [\"Annual account churn by segment\", \"SMB 15%, mid-market 10%, enterprise 5%\", \"median\"], factId: \"f-bm-33\" },\n    { cells: [\"Gross revenue retention by ACV\", \"82% under $25K, 95% above $100K\", \"a different cut-off again\"], factId: \"f-unit-18\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nMonthly ARPU bands run $20 to $50 self-serve, $50 to $200 SMB, $200 to $2,000\nmid-market and $2,000 to $10,000-plus enterprise. The 2026 median across B2B SaaS is about\n$250 a month, roughly ₹23,973, up from $210 in 2024. The SMB median specifically is\n$55, about ₹5,274.\n\nNotice that the overall median of $250 sits inside the mid-market band and outside\nevery other one. A median that describes one of four segments is not a benchmark for\nthe other three, which is the single most common misuse of this figure.\n\nNo India-specific B2B SaaS ARPU band is published, and no figure separates\nusage-priced from seat-priced products. Both gaps matter for reading the bands, and\nthis page states them rather than estimating.\n\n## Why segment decides ARPU\n\nSeat count, procurement and willingness to pay all scale with the buyer. None of the\nthree is a property of the software. Sell the same product to a ten-person team and to\na ten-thousand-person enterprise and the ARPU differs by two orders of magnitude.\n\nChurn moves the same way, in the opposite direction. Annual account churn runs a 15%\nmedian for SMB, 10% for mid-market and 5% for enterprise. So the segment paying five\ntimes more also stays three times longer. Read ARPU without that pairing and upmarket\nmoves look better than they are, while SMB looks worse.\n\nAcquisition cost completes the picture. SMB products under $15,000 ACV, about ₹14.38 lakh,\ncarry $2,000 to $8,000 of CAC, roughly ₹1.92 lakh to ₹7.67 lakh. Mid-market products from $15,000 to\n$100,000 ACV carry $15,000 to $40,000 of CAC, roughly ₹14.38 lakh to ₹38.36 lakh. So the segment with five times the ARPU costs roughly five times as much to\nwin, and the advantage shows up in tenure rather than in the first invoice.\n\n## The India layer\n\nNo published ARPU band exists for Indian B2B SaaS specifically, and the useful\nobservation is structural rather than numerical.\n\nAn Indian SaaS company usually sells into the same ACV bands as everyone else while\ncarrying a lower cost base, which changes what a given ARPU can fund rather than what\nit is. The segment definitions still apply: SMB under $10,000 ACV, about ₹9.59 lakh,\nmid-market to $100,000, enterprise above. A company reading its own ARPU as low\nbecause it sells to Indian SMBs has the band right and the implication wrong.\n\n\nThere is a second India-specific reading. An Indian product selling into the SMB\nband abroad competes with local tools priced for local costs, which compresses the\nachievable ARPU inside the band rather than moving the band.\n## What good looks like\n\nInside your segment's band, and rising for a reason you can name. The $250 median,\nabout ₹23,973, is the wrong target unless you sell mid-market. For an SMB product the $55 median,\nabout ₹5,274, is the comparison. Clearing it by a wide margin usually means the\nproduct moved segment without anyone deciding to.\n\nRead ARPU with churn and CAC on the same page. An ARPU target without a matching\nchurn and acquisition-cost assumption is half a plan, and it is the half that looks\nbest in a board deck.\n\n<FromMyWork exp=\"exp-037\">\nPricing an integrations platform on execution volume and connector usage rather than\nseats took it to roughly $60K MRR, about ₹57.53 lakh. The price then tracked what the\ncustomer consumed instead of how many people logged in.\n</FromMyWork>\n\n## If you are below the median\n\nCheck which band you are actually in before concluding anything. Most products that\nlook below the median are mid-band for their segment and comparing against the wrong\none.\n\nThen change what the price tracks rather than the number on the page. Moving from\nseats to consumption raises ARPU inside the same segment when usage grows, and it\ndoes so without a renegotiation.\n\n<FromMyWork exp=\"exp-048\">\nOne measurement framework spanning 20+ growth, retention and monetisation metrics\nmade executive decisions roughly twice as fast. Until then each team reported a number\ndefined its own way.\n</FromMyWork>\n\n\nThen check whether the low figure is a mix effect. A product with a large self-serve\ntail and a small enterprise head reports an ARPU near the self-serve band while\nearning most of its revenue at the top, and the fix is reporting rather than pricing.\n## How these figures were gathered\n\nEach row names its source and a verification date, from published benchmark reports.\n\nThe segment bands and the churn figures come from different sources with slightly\ndifferent ACV cut-offs. One defines SMB as under $10,000, about ₹9.59 lakh, and\nanother as under $25,000. Both appear with their own definition rather than being forced onto one\nscale, because the cut-off is the part that decides which band a company reads.\n\nNo India-specific band is published, so there is no India row. The standard for these\npages is three sources or an explicit \"insufficient public data\" mark.\n\nFigures go back for re-checking every 90 days, and every 45 for price.\n\n\nRe-verification runs every 90 days. Anything about price runs on a 45-day cycle,\nwhich for this page means most of it."
+    },
+    {
+      "id": "benchmark-0577",
+      "url": "/benchmarks/install-to-purchase/d2c-ecommerce",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "Ecommerce Install to Purchase Benchmarks and Rates (2026)",
+      "meta_description": "Ecommerce install to purchase benchmarks: the 1% to 2% typical band, retail against travel, and the Indian payment costs that decide whether it pays.",
+      "h1": "Ecommerce install to purchase benchmarks",
+      "primary_keyword": "ecommerce install to purchase",
+      "secondary_keywords": [
+        "install to purchase rate",
+        "d2c app purchase conversion"
+      ],
+      "entity_a": "install-to-purchase",
+      "entity_b": "d2c-ecommerce",
+      "facts": [
+        "f-bm-14",
+        "f-bm-15",
+        "f-bm-17",
+        "f-bm-03",
+        "f-bm-21",
+        "f-act-12"
+      ],
+      "experience": [
+        "exp-010",
+        "exp-043"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/conversion-rate",
+          "anchor": "conversion rate",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/retention/d2c-ecommerce",
+          "anchor": "ecommerce retention benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/paywall-uplift-calculator",
+          "anchor": "the paywall uplift calculator",
+          "role": "tool"
+        },
+        {
+          "url": "/india/cod-to-prepaid-conversion-d2c",
+          "anchor": "COD to prepaid conversion",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a conversion review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#install-to-purchase-table",
+          "alt": "Ecommerce install-to-purchase benchmarks: the typical band with retail and travel figures, a good mobile commerce conversion range, the regional download-to-paid gap, ecommerce retention for context, the cross-category day-1 and day-30 average and Indian payment gateway costs, each row carrying its source and verification date",
+          "caption": "Install-to-purchase benchmarks, each row sourced. Verified 1 October 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a d2c-ecommerce purchase conversion review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good install to purchase rate for an ecommerce app?",
+          "a": "Most apps convert 1% to 2% of installs into a purchase, with retail at 1.38% and travel at 2.41%. For session-level conversion rather than install-level, 2% to 6% is the range depending on order value and purchase frequency."
+        },
+        {
+          "q": "Why is install to purchase so much lower than site conversion?",
+          "a": "Because the denominator includes everyone who installed, including people who never reached a product page. Install-to-purchase folds the whole funnel into one number, which makes it useful for media planning and poor for diagnosis."
+        },
+        {
+          "q": "Does India convert worse on install to purchase?",
+          "a": "No install-to-purchase figure is published for India specifically. What is published is that day-35 download-to-paid runs 2.6% in North America against 1.4% across India and South-East Asia, which is a subscription measure rather than a commerce one."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Treats install-to-purchase as a media-planning number rather than a diagnostic one, and prices the Indian version against gateway cost and tax, which decide whether a converted install is profitable at all.",
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-14"
+        ],
+        "the_numbers": [
+          "f-bm-14",
+          "f-bm-15",
+          "f-bm-21"
+        ],
+        "why_this_industry_differs": [
+          "f-bm-03"
+        ],
+        "india_layer": [
+          "f-bm-17",
+          "f-act-12"
+        ],
+        "what_good_looks_like": [
+          "f-bm-15"
+        ]
+      },
+      "body": "\n<AnswerBox>\nEcommerce install to purchase runs 1% to 2% for most apps, with retail at 1.38% and\ntravel at 2.41%. Session-level conversion is a different measure and sits at 2% to\n6%. The install-level number folds the entire funnel into one figure, which makes it\ngood for media planning and poor for diagnosis.\n</AnswerBox>\n\n<FactTable\n  id=\"install-to-purchase-table\"\n  caption=\"Install to purchase, and the measures it gets confused with\"\n  columns={[\"Measure\", \"Figure\", \"What it counts\"]}\n  rows={[\n    { cells: [\"Install to purchase, typical\", \"1% to 2%\", \"every install\"], factId: \"f-bm-14\" },\n    { cells: [\"Retail and travel, install to purchase\", \"1.38% and 2.41%\", \"every install\"], factId: \"f-bm-14\" },\n    { cells: [\"Good mobile commerce conversion\", \"2% to 6%\", \"sessions, by order value\"], factId: \"f-bm-15\" },\n    { cells: [\"Ecommerce retention, day 1 and day 30\", \"18% and 2%\", \"a cohort, not a funnel\"], factId: \"f-bm-03\" },\n    { cells: [\"Cross-category day 1 and day 30 average\", \"25.3% and 5.7%\", \"31 categories\"], factId: \"f-bm-21\" },\n    { cells: [\"India gateway cost, domestic and international\", \"2% plus 18% GST, and 3%\", \"on every converted order\"], factId: \"f-act-12\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nMost apps convert 1% to 2% of installs into a purchase. Retail sits at 1.38% and\ntravel at 2.41%. Session-level conversion, which is what most ecommerce teams quote\ninternally, runs 2% to 6% depending on order value, product type and purchase\nfrequency.\n\nThose two do not compare, and teams compare them constantly. One counts every install,\nincluding people who never saw a product page. The other counts sessions by people\nalready browsing. Move between the two without saying so and you can report an\nimprovement that is entirely definitional.\n\nNobody publishes an India-specific install-to-purchase figure. The row mentioning\nIndia carries a gateway cost instead, which does exist publicly, and labels it.\n\n\nA third measure gets mixed in as well: download-to-paid at a fixed window, which\ncounts subscriptions rather than orders. Three metrics, three denominators, one name.\n## Why D2C and ecommerce differ\n\nThe purchase happens episodically and the alternative costs nothing. A user who needs\nnothing this month will not buy however good the app is, and the mobile site sits\nthere without an install. So install-to-purchase measures how well the install timing\nmatched a need, as much as how well the product converts.\n\nRetention compounds that. Ecommerce retains 18% at day 1 and 2% at day 30, against a\ncross-category average of 25.3% and 5.7% over 31 categories. A category losing most\nof its base in a month leaves a narrow window for the first purchase, and\ninstall-to-purchase largely measures that window.\n\n\nPayment method adds a step no other category carries in India. Cash on delivery\nconverts better at checkout and settles worse, so an app optimising install-to-purchase\nwithout tracking prepaid share can raise the metric and lower the cash collected.\n## The India layer\n\nThe Indian version of this question is not conversion, it is what survives\nconversion. Domestic payments cost 2% plus 18% GST through a gateway, and\ninternational card exports 3%, and both land on every order that converts.\n\nAdd the platform layer where it applies and a converted install can be unprofitable\nat a perfectly normal conversion rate. That is why an Indian D2C team should price the\norder before optimising the funnel: a 2% conversion rate on a margin that cannot carry\nthe payment cost is a worse problem than a 1% rate on one that can.\n\nThe closest published figure comes from subscriptions: day-35 download-to-paid runs\n2.6% in North America against 1.4% across India and South-East Asia. That measures\nsomething else, and the table says so.\n\n## What good looks like\n\nInside 1% to 2% at install level, the app is behaving to category, and retail's 1.38%\nis the closer comparison for most D2C products. At session level, 2% to 6% is the\nrange, and where you sit inside it tracks order value more than craft.\n\nState the denominator next to the number every time. The single most useful discipline\nhere is refusing to quote a conversion rate without saying what it divides by.\n\n\nSet the target per acquisition source. A discount-led install and an organic one\nconvert differently enough that a single install-to-purchase target will be wrong for\nboth, and the blended figure moves with media mix rather than with anything the product\nteam changed.\n\nState the source split next to the number, every time.\n## If you are below the median\n\nLook for several leaks rather than one. The instinct is to find the step that loses\nmost users, and in practice the losses compound.\n\n<FromMyWork exp=\"exp-010\">\nThe insurance conversion rate was 0.007% and had seven separate causes, not one. Each\nleak cut conversion by 60-80% on its own; compounded, they produced seven purchases\nper hundred thousand users.\n</FromMyWork>\n\nThen check placement and sequencing before copy.\n\n<FromMyWork exp=\"exp-043\">\nBoth insurance lines moved by orders of magnitude once the\nquote-to-redirect-to-purchase drop-offs were diagnosed: bike from about 10 a day to\n6,800+, car from about 5 a day to 2,300+. The fix was CTA placement, partner\nsequencing and context-led nudges rather than more traffic.\n</FromMyWork>\n\n\nThen check the first-order friction specifically. Shipping cost shown late, a forced\naccount creation and an unclear returns policy each remove a measurable share of first\norders, and none of them affects repeat orders at all.\n## How these figures were gathered\n\nEach row names a source, a verification date and what the figure counts. That third\ncolumn exists because this metric is defined inconsistently across sources, and the\ndefinition moves the number more than performance does.\n\nNobody publishes an India-specific install-to-purchase figure, so the table carries no\nIndia row for it. The standard for these pages is three sources or an explicit \"insufficient\npublic data\" mark, and the India cell fails it.\n\nRe-verification runs every 90 days. Payment-cost figures run on a 45-day cycle,\nbecause gateway pricing and tax treatment move faster than conversion does.\n\n\nWhere two sources define install-to-purchase differently, both appear with their\ndefinition rather than being averaged. Averaging two different denominators produces a\nnumber that describes neither population, which is worse than reporting a range."
+    },
+    {
+      "id": "benchmark-0489",
+      "url": "/benchmarks/trial-to-paid-conversion/b2b-saas",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "SaaS Trial to Paid Conversion Benchmarks by Length (2026)",
+      "meta_description": "SaaS trial to paid conversion: cancellation by trial length, the business category's download-to-trial lead, and churn by segment after it converts.",
+      "h1": "SaaS trial to paid conversion benchmarks",
+      "primary_keyword": "saas trial to paid conversion",
+      "secondary_keywords": [
+        "b2b trial conversion benchmark",
+        "saas free trial conversion"
+      ],
+      "entity_a": "trial-to-paid-conversion",
+      "entity_b": "b2b-saas",
+      "facts": [
+        "f-bm-18",
+        "f-bm-19",
+        "f-bm-12",
+        "f-bm-07",
+        "f-bm-33",
+        "f-svc-07"
+      ],
+      "experience": [
+        "exp-005",
+        "exp-039"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/glossary/trial-to-paid-conversion",
+          "anchor": "trial-to-paid conversion",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/retention/b2b-saas",
+          "anchor": "B2B SaaS retention benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/trial-length-optimizer",
+          "anchor": "the trial length optimizer",
+          "role": "tool"
+        },
+        {
+          "url": "/services/pricing-and-packaging/b2b-saas",
+          "anchor": "B2B SaaS pricing and packaging",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a trial conversion review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#saas-trial-table",
+          "alt": "SaaS trial conversion benchmarks: the business category's download-to-trial rank, cancellation rates by trial length including day-zero cancellations, the category's page-view-to-install rate, day-30 retention, annual account churn by segment and the share of software spend still on seats, each row carrying its source and verification date",
+          "caption": "SaaS trial conversion benchmarks, each row sourced. Verified 1 October 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a b2b-saas trial conversion review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "How long should a B2B SaaS trial be?",
+          "a": "Longer trials surface more rejection: a three-day trial averages 26% cancellations against 51% for a thirty-day trial, and 31.1% of thirty-day trials cancel on day zero. The day-zero figure is the one worth acting on."
+        },
+        {
+          "q": "Why do a third of long trials cancel immediately?",
+          "a": "Because a thirty-day trial invites a user to start it and decide later, and deciding later often means cancelling now to avoid the charge. The length changes the decision's timing rather than its outcome."
+        },
+        {
+          "q": "Does a high trial start rate predict conversion?",
+          "a": "Not reliably. The business category records the highest download-to-trial rate of any category, which says intent is high at the top. Conversion depends on whether the trial reaches the moment the product proves itself."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Separates when a trial cancels from whether it converts, using the day-zero cancellation figure that trial-length advice ignores, and carries churn by segment so a conversion target implies a tenure assumption.",
+      "block_coverage": {
+        "answer_box": [
+          "f-bm-19"
+        ],
+        "the_numbers": [
+          "f-bm-19",
+          "f-bm-18",
+          "f-bm-12"
+        ],
+        "why_this_industry_differs": [
+          "f-bm-07"
+        ],
+        "india_layer": [
+          "f-svc-07"
+        ],
+        "what_good_looks_like": [
+          "f-bm-33"
+        ]
+      },
+      "body": "\n<AnswerBox>\nSaaS trial to paid conversion depends on length in a way most advice gets backwards.\nA three-day trial averages 26% cancellations against 51% for a thirty-day trial, and\n31.1% of thirty-day trials cancel on day zero. Length changes when the decision\nhappens more than whether it goes your way.\n</AnswerBox>\n\n<FactTable\n  id=\"saas-trial-table\"\n  caption=\"Trial conversion, and what sits either side of it\"\n  columns={[\"Measure\", \"Figure\", \"Note\"]}\n  rows={[\n    { cells: [\"Cancellation by trial length\", \"26% at three days, 51% at thirty\", \"longer surfaces more\"], factId: \"f-bm-19\" },\n    { cells: [\"Day-zero cancellation, thirty-day trial\", \"31.1%\", \"most of the thirty-day gap\"], factId: \"f-bm-19\" },\n    { cells: [\"Download-to-trial rate by category\", \"business is highest\", \"a rank, not a rate\"], factId: \"f-bm-18\" },\n    { cells: [\"App Store page view to install, business\", \"about 66.7%\", \"intent arrives early\"], factId: \"f-bm-12\" },\n    { cells: [\"Day 30 retention, B2B and productivity\", \"20% to 32%\", \"average iOS app 5.3%\"], factId: \"f-bm-07\" },\n    { cells: [\"Annual account churn by segment\", \"SMB 15%, mid-market 10%, enterprise 5%\", \"after conversion\"], factId: \"f-bm-33\" },\n  ]}\n/>\n\n## The numbers, and what is missing from them\n\nA three-day trial averages 26% cancellations and a thirty-day trial 51%. The figure\nthat matters inside that gap is day zero: 31.1% of thirty-day trials cancel on the\nday they start. So most of the extra cancellation a long trial reports happens before\nthe user has used anything.\n\nNo published figure gives trial-to-paid conversion for B2B SaaS as a rate. The\ndownload-to-trial row carries a rank, because a rank is what the source reports, and\nthe page says so rather than converting a rank into an implied percentage.\n\nThat absence is worth stating plainly: this page has cancellation data, intent data\nand post-conversion churn data, and no clean B2B trial-to-paid rate. The standard for\nthese pages is three sources or an explicit mark, and that measure fails it.\n\n## Why B2B SaaS trials differ\n\nIntent arrives before the trial. Business apps convert about 66.7% of App Store page\nviews to installs and record the highest download-to-trial rate of any category, so\nthe people starting a B2B trial have already named their problem.\n\nThat changes what a trial is for. In a consumer product the trial creates desire; in\nB2B it verifies a decision, usually against a checklist somebody else will review.\nThe trial either reaches the moment the product proves itself against that checklist\nor it does not, and length only matters insofar as it allows that moment to happen.\n\nDay-zero cancellation fits the same pattern. A user who starts a thirty-day trial and\ncancels immediately has not rejected the product; they have removed the risk of\nforgetting. Reading that as a conversion failure sends teams to fix the wrong thing.\n\n## The India layer\n\nNo India-specific B2B trial conversion figure is published.\n\nWhat applies is the pricing model underneath the trial. Seat-based contracts still\naccount for 65% to 75% of software spend against 4% to 6% for consumption, and a trial\non a seat-based plan asks the buyer to predict headcount, while a trial on a\nconsumption plan asks them to predict usage. For an Indian company selling abroad the\nsecond is usually the easier question and the harder invoice, and the trial's design\nhas to pick one.\n\n\nThe other India-specific factor is the invoice. A trial converting into a dollar\ninvoice from an Indian entity carries a different payment cost and a different tax\ntreatment than a rupee one, and the trial's end state has to account for both.\n## What good looks like\n\nJudge a trial by the share that reaches the proving moment, not by the share that\nconverts. Those two track each other closely, and only the first is actionable.\n\nThen set the length from time-to-value and nothing else. If the product proves itself\nin a day, a thirty-day trial adds a month of forgetting and a 31.1% day-zero\ncancellation rate for no gain. Day 30 retention of 20% to 32% for B2B products says\nthe category holds users once they arrive, so the work sits in the first session.\n\n\nSet the trial's length from the slowest buyer who still matters, not from the\naverage. In B2B the evaluation usually involves somebody who was not in the first\nsession, and a trial that expires before that person looks at it converts nobody.\n## If you are below the median\n\nReframe what the trial asks for before you change its length.\n\n<FromMyWork exp=\"exp-005\">\nAsking for a bank statement upfront got 35% compliance. Showing a preliminary\neligibility range first, then asking for the statement to reveal the exact offer, took\nit to 71% — the same ask, reframed from a compliance step into a reward.\n</FromMyWork>\n\nThen make the trial's failures visible to the user. In B2B the most common silent\ntrial killer is something that broke and looked like the product not working.\n\n<FromMyWork exp=\"exp-039\">\nMaking failures debuggable by the customer cut sales and support effort about 25%.\nIdempotency, surfaced errors and retry mechanics meant customers resolved their own\nbreakages instead of churning quietly.\n</FromMyWork>\n\nRemember what conversion buys. Annual account churn runs 15% for SMB, 10% for\nmid-market and 5% for enterprise, so a conversion target implies a tenure assumption\nwhether or not anyone wrote it down.\n\n## How these figures were gathered\n\nEach row names its source, the date somebody last checked it and what the figure\ncounts. The third column matters here because \"trial conversion\" names at least three\ndifferent measures across sources.\n\nOne row carries a rank rather than a rate, and the page says so. Converting a rank\ninto a number would be inventing precision the source does not have.\n\nNo clean B2B trial-to-paid rate is published and no India figure exists, so neither\nappears. Re-verification runs every 90 days, and every 45 for price.\n\n\nWhere two sources define a trial differently — opt-in against credit-card-required —\nboth appear with the definition stated. That distinction moves conversion more than\nany design choice in the trial itself.\n\nFigures go back for re-checking on the usual 90-day cycle."
     }
   ]
 }

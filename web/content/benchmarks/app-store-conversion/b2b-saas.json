@@ -1,0 +1,109 @@
+{
+  "id": "benchmark-0567",
+  "url": "/benchmarks/app-store-conversion/b2b-saas",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-benchmark-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "SaaS App Store Conversion Benchmarks by Category (2026)",
+  "meta_description": "SaaS app store conversion benchmarks: the business category's page-view-to-install rate, the search and browse split, and why intent explains the gap.",
+  "h1": "SaaS app store conversion benchmarks",
+  "primary_keyword": "saas app store conversion",
+  "secondary_keywords": [
+    "business app store conversion",
+    "b2b app install rate"
+  ],
+  "entity_a": "app-store-conversion",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-12",
+    "f-bm-09",
+    "f-bm-11",
+    "f-bm-18",
+    "f-bm-07",
+    "f-bm-31"
+  ],
+  "experience_used": [
+    "exp-016",
+    "exp-031"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/benchmarks/retention/b2b-saas",
+      "anchor": "B2B SaaS retention benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/conversion-rate",
+      "anchor": "conversion rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/services/pricing-and-packaging/b2b-saas",
+      "anchor": "B2B SaaS pricing and packaging",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a conversion review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#saas-store-conversion",
+      "alt": "SaaS and business app store conversion: the business category's page-view-to-install rate, App Store search against browse install ranges, the all-category average conversion and install rate, the category's download-to-trial rank, B2B day-30 retention and the ACV bands that define each segment, each row carrying its source and verification date",
+      "caption": "SaaS store conversion benchmarks, each row sourced. Verified 1 October 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good app store conversion rate for a SaaS app?",
+      "a": "Business apps convert about 66.7% of App Store page views to installs, well above the 8.56% all-category average conversion rate. The gap is intent: people search for a work tool with the problem already named."
+    },
+    {
+      "q": "Why does search convert so much better than browse?",
+      "a": "US App Store search install medians span 2.6% to 12.4% across top-level categories against 0.1% to 2.5% from browse. A searcher has stated a need; a browser has not. Optimising for browse is optimising for the weaker half."
+    },
+    {
+      "q": "Does a high install rate mean the listing is good?",
+      "a": "Not by itself. A narrow, high-intent keyword set produces an excellent rate on small volume, and a listing can raise its rate by ranking for fewer terms. Read rate and install volume together or the metric rewards shrinking."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a b2b-saas store conversion review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Separates rate from volume, which every store-conversion benchmark conflates: a listing can improve its conversion rate by ranking for fewer, narrower terms, and the business category's unusually high rate is mostly a statement about who searches.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

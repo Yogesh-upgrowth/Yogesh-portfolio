@@ -1,0 +1,109 @@
+{
+  "id": "benchmark-0563",
+  "url": "/benchmarks/app-store-conversion/healthtech",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-benchmark-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Health and Wellness App Store Conversion (2026)",
+  "meta_description": "Health and wellness store conversion: page-view-to-install, the medical category's leading install rate, and why discovery is not the constraint.",
+  "h1": "Health and wellness app store conversion benchmarks",
+  "primary_keyword": "health and wellness app store conversion",
+  "secondary_keywords": [
+    "medical app install rate",
+    "fitness app store conversion"
+  ],
+  "entity_a": "app-store-conversion",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-13",
+    "f-bm-10",
+    "f-bm-09",
+    "f-bm-04",
+    "f-bm-21",
+    "f-bm-16"
+  ],
+  "experience_used": [
+    "exp-005",
+    "exp-011"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/benchmarks/retention/healthtech",
+      "anchor": "health retention benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/conversion-rate",
+      "anchor": "conversion rate",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/paywall-uplift-calculator",
+      "anchor": "the paywall uplift calculator",
+      "role": "tool"
+    },
+    {
+      "url": "/india/monetizing-tier-2-tier-3-users",
+      "anchor": "monetising tier 2 and tier 3 users",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a conversion review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#health-store-conversion",
+      "alt": "Health and wellness store conversion: the category's impression-to-page-view and page-view-to-install rates, the highest and lowest iOS install rates by category, the search against browse split, the all-category averages, health retention for context and median revenue per install, each row carrying its source and verification date",
+      "caption": "Health store conversion benchmarks, each row sourced. Verified 1 October 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good app store conversion rate for a health app?",
+      "a": "Health and fitness apps typically show a 4% to 8% impression-to-page-view rate and 25% to 40% page view to install. Medical has the highest iOS install rate of any category at 7.8%, against 1.1% for entertainment."
+    },
+    {
+      "q": "Why do health apps convert so well in the stores?",
+      "a": "Because people search for them with a specific condition or goal named, and a named need converts. The category's problem sits after the install, where a 25% day-1 median falls to 5% by day 30."
+    },
+    {
+      "q": "Should a health app invest in store optimisation?",
+      "a": "Rarely as the first move. With page-view-to-install already at 25% to 40%, more installs mostly means more users to lose. Median revenue per install at day 60 is $0.34, so the install is not where the value is."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a healthtech store conversion review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Puts the category's strong store conversion next to its weak day-30 retention and median revenue per install, to show that acquisition is already solved and funding it further buys users the product loses.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

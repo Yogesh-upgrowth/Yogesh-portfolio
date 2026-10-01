@@ -1,0 +1,122 @@
+<AnswerBox>
+SaaS ARPU benchmarks run by segment, not by product. Monthly ARPU sits at $20 to $50
+self-serve, about ₹1,918 to ₹4,795, then $50 to $200 for SMB, $200 to $2,000
+mid-market and $2,000 to $10,000-plus enterprise. The 2026 median is about $250 a
+month, roughly ₹23,973, up from $210 in 2024.
+</AnswerBox>
+
+<FactTable
+  id="saas-arpu-table"
+  caption="SaaS ARPU, acquisition cost and churn, all by segment"
+  columns={["Segment", "Monthly ARPU", "What comes with it"]}
+  rows={[
+    { cells: ["Self-serve to enterprise", "$20-50, $50-200, $200-2,000, $2,000-10,000+", "four bands, not a scale"], factId: "f-bm-28" },
+    { cells: ["Median across B2B SaaS", "about $250, up from $210 in 2024", "the median describes few companies"], factId: "f-bm-29" },
+    { cells: ["SMB median", "$55", "inside the $50-200 band"], factId: "f-bm-30" },
+    { cells: ["Segment definition by ACV", "SMB under $10K, mid-market to $100K, enterprise above", "annual, not monthly"], factId: "f-bm-31" },
+    { cells: ["Acquisition cost by segment", "under $15K ACV: $2,000-8,000", "$15K-100K ACV: $15,000-40,000"], factId: "f-bm-32" },
+    { cells: ["Annual account churn by segment", "SMB 15%, mid-market 10%, enterprise 5%", "median"], factId: "f-bm-33" },
+    { cells: ["Gross revenue retention by ACV", "82% under $25K, 95% above $100K", "a different cut-off again"], factId: "f-unit-18" },
+  ]}
+/>
+
+## The numbers, and what is missing from them
+
+Monthly ARPU bands run $20 to $50 self-serve, $50 to $200 SMB, $200 to $2,000
+mid-market and $2,000 to $10,000-plus enterprise. The 2026 median across B2B SaaS is about
+$250 a month, roughly ₹23,973, up from $210 in 2024. The SMB median specifically is
+$55, about ₹5,274.
+
+Notice that the overall median of $250 sits inside the mid-market band and outside
+every other one. A median that describes one of four segments is not a benchmark for
+the other three, which is the single most common misuse of this figure.
+
+No India-specific B2B SaaS ARPU band is published, and no figure separates
+usage-priced from seat-priced products. Both gaps matter for reading the bands, and
+this page states them rather than estimating.
+
+## Why segment decides ARPU
+
+Seat count, procurement and willingness to pay all scale with the buyer. None of the
+three is a property of the software. Sell the same product to a ten-person team and to
+a ten-thousand-person enterprise and the ARPU differs by two orders of magnitude.
+
+Churn moves the same way, in the opposite direction. Annual account churn runs a 15%
+median for SMB, 10% for mid-market and 5% for enterprise. So the segment paying five
+times more also stays three times longer. Read ARPU without that pairing and upmarket
+moves look better than they are, while SMB looks worse.
+
+Acquisition cost completes the picture. SMB products under $15,000 ACV, about ₹14.38 lakh,
+carry $2,000 to $8,000 of CAC, roughly ₹1.92 lakh to ₹7.67 lakh. Mid-market products from $15,000 to
+$100,000 ACV carry $15,000 to $40,000 of CAC, roughly ₹14.38 lakh to ₹38.36 lakh. So the segment with five times the ARPU costs roughly five times as much to
+win, and the advantage shows up in tenure rather than in the first invoice.
+
+## The India layer
+
+No published ARPU band exists for Indian B2B SaaS specifically, and the useful
+observation is structural rather than numerical.
+
+An Indian SaaS company usually sells into the same ACV bands as everyone else while
+carrying a lower cost base, which changes what a given ARPU can fund rather than what
+it is. The segment definitions still apply: SMB under $10,000 ACV, about ₹9.59 lakh,
+mid-market to $100,000, enterprise above. A company reading its own ARPU as low
+because it sells to Indian SMBs has the band right and the implication wrong.
+
+
+There is a second India-specific reading. An Indian product selling into the SMB
+band abroad competes with local tools priced for local costs, which compresses the
+achievable ARPU inside the band rather than moving the band.
+## What good looks like
+
+Inside your segment's band, and rising for a reason you can name. The $250 median,
+about ₹23,973, is the wrong target unless you sell mid-market. For an SMB product the $55 median,
+about ₹5,274, is the comparison. Clearing it by a wide margin usually means the
+product moved segment without anyone deciding to.
+
+Read ARPU with churn and CAC on the same page. An ARPU target without a matching
+churn and acquisition-cost assumption is half a plan, and it is the half that looks
+best in a board deck.
+
+<FromMyWork exp="exp-037">
+Pricing an integrations platform on execution volume and connector usage rather than
+seats took it to roughly $60K MRR, about ₹57.53 lakh. The price then tracked what the
+customer consumed instead of how many people logged in.
+</FromMyWork>
+
+## If you are below the median
+
+Check which band you are actually in before concluding anything. Most products that
+look below the median are mid-band for their segment and comparing against the wrong
+one.
+
+Then change what the price tracks rather than the number on the page. Moving from
+seats to consumption raises ARPU inside the same segment when usage grows, and it
+does so without a renegotiation.
+
+<FromMyWork exp="exp-048">
+One measurement framework spanning 20+ growth, retention and monetisation metrics
+made executive decisions roughly twice as fast. Until then each team reported a number
+defined its own way.
+</FromMyWork>
+
+
+Then check whether the low figure is a mix effect. A product with a large self-serve
+tail and a small enterprise head reports an ARPU near the self-serve band while
+earning most of its revenue at the top, and the fix is reporting rather than pricing.
+## How these figures were gathered
+
+Each row names its source and a verification date, from published benchmark reports.
+
+The segment bands and the churn figures come from different sources with slightly
+different ACV cut-offs. One defines SMB as under $10,000, about ₹9.59 lakh, and
+another as under $25,000. Both appear with their own definition rather than being forced onto one
+scale, because the cut-off is the part that decides which band a company reads.
+
+No India-specific band is published, so there is no India row. The standard for these
+pages is three sources or an explicit "insufficient public data" mark.
+
+Figures go back for re-checking every 90 days, and every 45 for price.
+
+
+Re-verification runs every 90 days. Anything about price runs on a 45-day cycle,
+which for this page means most of it.

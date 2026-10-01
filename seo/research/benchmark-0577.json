@@ -1,0 +1,132 @@
+{
+  "page_id": "benchmark-0577",
+  "url": "/benchmarks/install-to-purchase/d2c-ecommerce",
+  "archetype": "benchmark",
+  "primary_keyword": "ecommerce install to purchase",
+  "secondary_keywords": [
+    "install to purchase rate",
+    "d2c app purchase conversion"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-bm-14",
+      "claim": "Most apps convert 1% to 2% of installs into a purchase, with retail at 1.38% and travel at 2.41%",
+      "value": "1.38",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-conversion-rate/",
+      "source_title": "Mobile App Conversion Rate Benchmarks",
+      "source_domain": "uxcam.com",
+      "excerpt": "Most mobile apps see install-to-purchase conversion between 1% and 2%. Retail apps 1.38%; travel apps 2.41%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-15",
+      "claim": "A good conversion rate for an e-commerce mobile app sits around 2% to 6% depending on order value and purchase frequency",
+      "value": "2-6",
+      "unit": "%",
+      "source_url": "https://blendcommerce.com/blogs/shopify/ecommerce-conversion-rate-benchmarks-2026",
+      "source_title": "eCommerce Conversion Rate Benchmarks 2026",
+      "source_domain": "blendcommerce.com",
+      "excerpt": "A good conversion rate for an ecommerce mobile app sits around 2% to 6%, depending on industry, average order value, product type and purchase frequency.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-17",
+      "claim": "North America leads day-35 download-to-paid conversion at a 2.6% median, nearly twice India and South-East Asia at 1.4%",
+      "value": "2.6",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "North America leads D35 conversion at 2.6% median, nearly 2x IN/SEA's 1.4%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-03",
+      "claim": "E-commerce apps retain a median 18% at day 1, 5% at day 7 and 2% at day 30, with strong performers at 25-30%, 8-12% and 3-6%",
+      "value": "2",
+      "unit": "%",
+      "source_url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "source_title": "App Retention Benchmarks: How Your App Stacks Up by Industry",
+      "source_domain": "enable3.io",
+      "excerpt": "Ecommerce apps: strong performers 25-30% Day-1, 8-12% Day-7, 3-6% Day-30; medians 18%, 5% and 2%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-21",
+      "claim": "Across 31 app categories worldwide, 25.3% of users return on day 1 and average retention falls to 5.7% by day 30",
+      "value": "5.7",
+      "unit": "%",
+      "source_url": "https://userpilot.com/blog/mobile-app-retention/",
+      "source_title": "Mobile App Retention in 2026",
+      "source_domain": "userpilot.com",
+      "excerpt": "Only 25.3% of mobile app users return on Day 1, with average retention falling to 5.7% by Day 30 across 31 app categories worldwide.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-act-12",
+      "claim": "Razorpay charges Indian businesses 2% plus 18% GST on domestic payments and 3% on international card exports",
+      "value": "2",
+      "unit": "%",
+      "source_url": "https://razorpay.com/blog/best-payment-gateway-pricing-saas-india-tco-guide",
+      "source_title": "Payment gateway pricing for SaaS businesses in India",
+      "source_domain": "razorpay.com",
+      "excerpt": "Razorpay charges 2% platform fee plus 18% GST for domestic payments, and 3% for international exports by card.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-bm-14"
+    ],
+    "the_numbers": [
+      "f-bm-14",
+      "f-bm-15",
+      "f-bm-21"
+    ],
+    "why_this_industry_differs": [
+      "f-bm-03"
+    ],
+    "india_layer": [
+      "f-bm-17",
+      "f-act-12"
+    ],
+    "what_good_looks_like": [
+      "f-bm-15"
+    ]
+  }
+}

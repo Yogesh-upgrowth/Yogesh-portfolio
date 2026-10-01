@@ -129,6 +129,73 @@ NEW = [
          "AI-powered apps generate 41% more revenue per payer, but they churn 30% faster."),
 ]
 
+ST = ("https://www.statista.com/outlook/amo/media/tv-video/ott-video/india/",
+      "OTT Video outlook, India", "statista.com", "2026")
+CU = ("https://culta.ai/blog/arpu-benchmarks-2026",
+      "ARPU Benchmarks 2026: Where Does Your SaaS Rank", "culta.ai", "2026")
+OP = ("https://optif.ai/learn/questions/b2b-saas-churn-rate-benchmark/",
+      "B2B SaaS Churn Rate Benchmarks, 939 Companies by Segment and ACV",
+      "optif.ai", "2026")
+
+NEW += [
+    fact("f-bm-22", "India's OTT ARPU is projected at 40.44 dollars for 2026, with subscription video at 24.58 dollars per user",
+         "40.44", "USD", ST,
+         "India's OTT ARPU is projected to reach USD 40.44 in 2026, with SVoD generating USD 24.58 "
+         "per user.", False),
+    fact("f-bm-23", "India's OTT ARPU is also reported at 85 to 95 rupees a month, among the lowest in the world",
+         "85-95", "INR", ("https://raoscaff.com/intel/22-ott-pricing-wars/report.html",
+                          "OTT Pricing Wars: the Ad-Tier Pivot and the ARPU Math",
+                          "raoscaff.com", "2026"),
+         "India's OTT ARPU of Rs 85-95 per month is among the lowest globally.", False),
+    fact("f-bm-24", "India's OTT video revenue is projected at 5.08 billion dollars in 2026, with users rising from 521 million in 2025 to 549 million",
+         "5.08", "USD billion", ST,
+         "India OTT Video revenue is projected at US$5.08bn in 2026, with users rising from 521 "
+         "million in 2025 to 549 million.", False),
+    fact("f-bm-25", "JioHotstar reports 100 million subscribers and 500 million active users, and is forecast at 10,000 to 11,000 crore rupees, about 22% to 25% of India's OTT revenue",
+         "100", "million", ("https://www.sci-tech-today.com/stats/top-10-indian-ott-platforms-statistics-updated/",
+                            "Top 10 Indian OTT Platforms Statistics", "sci-tech-today.com", "2026"),
+         "JioHotstar leads with 100 million subscribers, 500 million active users and 650 million "
+         "downloads; forecast Rs 10,000-11,000 crore, 22-25% of India OTT revenue.", False),
+    fact("f-bm-26", "India has 216.5 million OTT subscriptions", "216.5", "million",
+         ("https://bestmediainfo.com/insights/india-has-2165-million-ott-subscriptions-but-platforms-are-still-struggling-to-monetise-them-12457338",
+          "India has 216.5 million OTT subscriptions", "bestmediainfo.com", "2026"),
+         "India has 216.5 million OTT subscriptions, but platforms are still struggling to monetise "
+         "them.", False),
+    fact("f-bm-27", "Streaming advertising revenue in India stood at 563.9 million dollars in 2025",
+         "563.9", "USD million", ST,
+         "Streaming advertising revenue stood at US$563.9 million in 2025, and ad-supported tiers are "
+         "now widely adopted.", False),
+    fact("f-bm-34", "India's streaming ARPU is also projected at 9.02 dollars for 2026",
+         "9.02", "USD",
+         ("https://www.medianews4u.com/indias-ott-market-hits-601-million-users-but-only-119-million-pay-monetisation-gap-widens/",
+          "India's OTT Market Hits 601 Million Users, But Only 119 Million Pay",
+          "medianews4u.com", "2026"),
+         "India's projected ARPU of USD 9.02 in 2026 is the clearest indicator of the market's "
+         "monetisation ceiling at current pricing.", False),
+    fact("f-bm-28", "B2B SaaS monthly ARPU runs 20 to 50 dollars self-serve, 50 to 200 for SMB, 200 to 2,000 mid-market and 2,000 to 10,000 plus for enterprise",
+         "20-10000", "USD", CU,
+         "Self-serve products land at $20-50/month, SMB at $50-200, mid-market at $200-2,000, and "
+         "enterprise at $2,000-10,000+/month."),
+    fact("f-bm-29", "The 2026 median B2B SaaS ARPU is about 250 dollars a month, up from 210 in 2024",
+         "250", "USD", CU,
+         "The 2026 median B2B SaaS ARPU is approximately $250/month, up from $210/month in 2024."),
+    fact("f-bm-30", "Median SMB SaaS ARPU is 55 dollars a month", "55", "USD", CU,
+         "For SMB specifically, the median ARPU is $55.", False),
+    fact("f-bm-31", "SaaS segments are defined by annual contract value: SMB under 10,000 dollars, mid-market 10,000 to 100,000, enterprise above 100,000",
+         "10000", "USD", OP,
+         "Segments are defined by ACV: SMB under $10K, Mid-Market $10K-$100K, Enterprise above "
+         "$100K.", False),
+    fact("f-bm-32", "SMB products under 15,000 dollars ACV carry 2,000 to 8,000 dollars of CAC, and mid-market products from 15,000 to 100,000 ACV carry 15,000 to 40,000",
+         "2000-8000", "USD", ("https://arjankc.com.np/blog/2026-b2b-saas-cac-benchmark-report/",
+                              "2026 B2B SaaS CAC Benchmark Report", "arjankc.com.np", "2026"),
+         "SMB products with ACVs under $15,000 have CAC of $2,000 to $8,000; mid-market targeting "
+         "$15,000 to $100,000 has median CAC of $15,000 to $40,000.", False),
+    fact("f-bm-33", "Annual account churn runs a 15% median for SMB, 10% for mid-market and 5% for enterprise",
+         "15", "%", OP,
+         "Annual account churn rates by segment: SMB median 15 percent, Mid-Market 10 percent, "
+         "Enterprise 5 percent."),
+]
+
 POOL = {**P1, **P2, **P3, **P4}
 POOL.update({f["fact_id"]: f for f in NEW})
 

@@ -1,0 +1,127 @@
+<AnswerBox>
+Ecommerce install to purchase runs 1% to 2% for most apps, with retail at 1.38% and
+travel at 2.41%. Session-level conversion is a different measure and sits at 2% to
+6%. The install-level number folds the entire funnel into one figure, which makes it
+good for media planning and poor for diagnosis.
+</AnswerBox>
+
+<FactTable
+  id="install-to-purchase-table"
+  caption="Install to purchase, and the measures it gets confused with"
+  columns={["Measure", "Figure", "What it counts"]}
+  rows={[
+    { cells: ["Install to purchase, typical", "1% to 2%", "every install"], factId: "f-bm-14" },
+    { cells: ["Retail and travel, install to purchase", "1.38% and 2.41%", "every install"], factId: "f-bm-14" },
+    { cells: ["Good mobile commerce conversion", "2% to 6%", "sessions, by order value"], factId: "f-bm-15" },
+    { cells: ["Ecommerce retention, day 1 and day 30", "18% and 2%", "a cohort, not a funnel"], factId: "f-bm-03" },
+    { cells: ["Cross-category day 1 and day 30 average", "25.3% and 5.7%", "31 categories"], factId: "f-bm-21" },
+    { cells: ["India gateway cost, domestic and international", "2% plus 18% GST, and 3%", "on every converted order"], factId: "f-act-12" },
+  ]}
+/>
+
+## The numbers, and what is missing from them
+
+Most apps convert 1% to 2% of installs into a purchase. Retail sits at 1.38% and
+travel at 2.41%. Session-level conversion, which is what most ecommerce teams quote
+internally, runs 2% to 6% depending on order value, product type and purchase
+frequency.
+
+Those two do not compare, and teams compare them constantly. One counts every install,
+including people who never saw a product page. The other counts sessions by people
+already browsing. Move between the two without saying so and you can report an
+improvement that is entirely definitional.
+
+Nobody publishes an India-specific install-to-purchase figure. The row mentioning
+India carries a gateway cost instead, which does exist publicly, and labels it.
+
+
+A third measure gets mixed in as well: download-to-paid at a fixed window, which
+counts subscriptions rather than orders. Three metrics, three denominators, one name.
+## Why D2C and ecommerce differ
+
+The purchase happens episodically and the alternative costs nothing. A user who needs
+nothing this month will not buy however good the app is, and the mobile site sits
+there without an install. So install-to-purchase measures how well the install timing
+matched a need, as much as how well the product converts.
+
+Retention compounds that. Ecommerce retains 18% at day 1 and 2% at day 30, against a
+cross-category average of 25.3% and 5.7% over 31 categories. A category losing most
+of its base in a month leaves a narrow window for the first purchase, and
+install-to-purchase largely measures that window.
+
+
+Payment method adds a step no other category carries in India. Cash on delivery
+converts better at checkout and settles worse, so an app optimising install-to-purchase
+without tracking prepaid share can raise the metric and lower the cash collected.
+## The India layer
+
+The Indian version of this question is not conversion, it is what survives
+conversion. Domestic payments cost 2% plus 18% GST through a gateway, and
+international card exports 3%, and both land on every order that converts.
+
+Add the platform layer where it applies and a converted install can be unprofitable
+at a perfectly normal conversion rate. That is why an Indian D2C team should price the
+order before optimising the funnel: a 2% conversion rate on a margin that cannot carry
+the payment cost is a worse problem than a 1% rate on one that can.
+
+The closest published figure comes from subscriptions: day-35 download-to-paid runs
+2.6% in North America against 1.4% across India and South-East Asia. That measures
+something else, and the table says so.
+
+## What good looks like
+
+Inside 1% to 2% at install level, the app is behaving to category, and retail's 1.38%
+is the closer comparison for most D2C products. At session level, 2% to 6% is the
+range, and where you sit inside it tracks order value more than craft.
+
+State the denominator next to the number every time. The single most useful discipline
+here is refusing to quote a conversion rate without saying what it divides by.
+
+
+Set the target per acquisition source. A discount-led install and an organic one
+convert differently enough that a single install-to-purchase target will be wrong for
+both, and the blended figure moves with media mix rather than with anything the product
+team changed.
+
+State the source split next to the number, every time.
+## If you are below the median
+
+Look for several leaks rather than one. The instinct is to find the step that loses
+most users, and in practice the losses compound.
+
+<FromMyWork exp="exp-010">
+The insurance conversion rate was 0.007% and had seven separate causes, not one. Each
+leak cut conversion by 60-80% on its own; compounded, they produced seven purchases
+per hundred thousand users.
+</FromMyWork>
+
+Then check placement and sequencing before copy.
+
+<FromMyWork exp="exp-043">
+Both insurance lines moved by orders of magnitude once the
+quote-to-redirect-to-purchase drop-offs were diagnosed: bike from about 10 a day to
+6,800+, car from about 5 a day to 2,300+. The fix was CTA placement, partner
+sequencing and context-led nudges rather than more traffic.
+</FromMyWork>
+
+
+Then check the first-order friction specifically. Shipping cost shown late, a forced
+account creation and an unclear returns policy each remove a measurable share of first
+orders, and none of them affects repeat orders at all.
+## How these figures were gathered
+
+Each row names a source, a verification date and what the figure counts. That third
+column exists because this metric is defined inconsistently across sources, and the
+definition moves the number more than performance does.
+
+Nobody publishes an India-specific install-to-purchase figure, so the table carries no
+India row for it. The standard for these pages is three sources or an explicit "insufficient
+public data" mark, and the India cell fails it.
+
+Re-verification runs every 90 days. Payment-cost figures run on a 45-day cycle,
+because gateway pricing and tax treatment move faster than conversion does.
+
+
+Where two sources define install-to-purchase differently, both appear with their
+definition rather than being averaged. Averaging two different denominators produces a
+number that describes neither population, which is worse than reporting a range.

@@ -1,0 +1,131 @@
+{
+  "page_id": "benchmark-0489",
+  "url": "/benchmarks/trial-to-paid-conversion/b2b-saas",
+  "archetype": "benchmark",
+  "primary_keyword": "saas trial to paid conversion",
+  "secondary_keywords": [
+    "b2b trial conversion benchmark",
+    "saas free trial conversion"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-bm-18",
+      "claim": "The business category records the highest download-to-trial rate of any app category",
+      "value": "1",
+      "unit": "rank",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "The business app category had the highest download to trial rate out of all categories covered in the State of Subscription Apps.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-19",
+      "claim": "A three-day trial averages 26% cancellations against 51% for a thirty-day trial, and 31.1% of thirty-day trials cancel on day zero",
+      "value": "26",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-subscription-trial-benchmarks/",
+      "source_title": "App Subscription Trial Benchmarks",
+      "source_domain": "businessofapps.com",
+      "excerpt": "A three day trial averages 26% cancellations; a 30 day one 51%. For 30-day trials, 31.1% cancel on day 0.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-12",
+      "claim": "Business apps convert about 66.7% of App Store page views to installs",
+      "value": "66.7",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "Business category shows approximately 66.7% page view to install conversion on App Store.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-07",
+      "claim": "Productivity and B2B SaaS apps hold 20% to 32% at day 30, against an average iOS app at 5.3%",
+      "value": "20-32",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/app-retention-rates/",
+      "source_title": "App Retention Rates",
+      "source_domain": "businessofapps.com",
+      "excerpt": "For productivity and B2B SaaS apps, day-30 retention benchmarks are 20-32%. The average iOS app retention rate drops to 5.3% by day 30.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-33",
+      "claim": "Annual account churn runs a 15% median for SMB, 10% for mid-market and 5% for enterprise",
+      "value": "15",
+      "unit": "%",
+      "source_url": "https://optif.ai/learn/questions/b2b-saas-churn-rate-benchmark/",
+      "source_title": "B2B SaaS Churn Rate Benchmarks, 939 Companies by Segment and ACV",
+      "source_domain": "optif.ai",
+      "excerpt": "Annual account churn rates by segment: SMB median 15 percent, Mid-Market 10 percent, Enterprise 5 percent.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-svc-07",
+      "claim": "Seat-based contracts still account for 65% to 75% of software spend while consumption-based pricing sits at 4% to 6%",
+      "value": "65-75",
+      "unit": "%",
+      "source_url": "https://www.flexera.com/blog/saas-management/from-seats-to-consumption-why-saas-pricing-has-entered-its-hybrid-era/",
+      "source_title": "From seats to consumption: why SaaS pricing has entered its hybrid era",
+      "source_domain": "flexera.com",
+      "excerpt": "Seat-based contracts account for 65-75% of spend, and consumption-based pricing is stuck at 4-6%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-bm-19"
+    ],
+    "the_numbers": [
+      "f-bm-19",
+      "f-bm-18",
+      "f-bm-12"
+    ],
+    "why_this_industry_differs": [
+      "f-bm-07"
+    ],
+    "india_layer": [
+      "f-svc-07"
+    ],
+    "what_good_looks_like": [
+      "f-bm-33"
+    ]
+  }
+}

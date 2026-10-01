@@ -1,0 +1,179 @@
+{
+  "page_id": "benchmark-0568",
+  "url": "/benchmarks/app-store-conversion/media-ott",
+  "archetype": "benchmark",
+  "primary_keyword": "ott and audio app store conversion rate",
+  "secondary_keywords": [
+    "entertainment app install rate",
+    "streaming app store conversion"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-bm-10",
+      "claim": "Medical has the highest iOS install rate by category at 7.8% and entertainment the lowest at 1.1%",
+      "value": "7.8",
+      "unit": "%",
+      "source_url": "https://www.apptweak.com/en/aso-blog/average-app-conversion-rate-per-category",
+      "source_title": "Average App Conversion Rate per Category",
+      "source_domain": "apptweak.com",
+      "excerpt": "Medical had the highest install rate by category on iOS at 7.8%, while entertainment had the lowest at 1.1%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-16",
+      "claim": "Median revenue per install at day 60 is 0.34 dollars across categories, with 0.66 and above indicating strong 60-day monetisation",
+      "value": "0.34",
+      "unit": "USD",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Average revenue per install at Day 60 has a $0.34 median across all categories, with $0.66+ indicating strong 60-day monetization.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-25",
+      "claim": "JioHotstar reports 100 million subscribers and 500 million active users, and is forecast at 10,000 to 11,000 crore rupees, about 22% to 25% of India's OTT revenue",
+      "value": "100",
+      "unit": "million",
+      "source_url": "https://www.sci-tech-today.com/stats/top-10-indian-ott-platforms-statistics-updated/",
+      "source_title": "Top 10 Indian OTT Platforms Statistics",
+      "source_domain": "sci-tech-today.com",
+      "excerpt": "JioHotstar leads with 100 million subscribers, 500 million active users and 650 million downloads; forecast Rs 10,000-11,000 crore, 22-25% of India OTT revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-26",
+      "claim": "India has 216.5 million OTT subscriptions",
+      "value": "216.5",
+      "unit": "million",
+      "source_url": "https://bestmediainfo.com/insights/india-has-2165-million-ott-subscriptions-but-platforms-are-still-struggling-to-monetise-them-12457338",
+      "source_title": "India has 216.5 million OTT subscriptions",
+      "source_domain": "bestmediainfo.com",
+      "excerpt": "India has 216.5 million OTT subscriptions, but platforms are still struggling to monetise them.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-27",
+      "claim": "Streaming advertising revenue in India stood at 563.9 million dollars in 2025",
+      "value": "563.9",
+      "unit": "USD million",
+      "source_url": "https://www.statista.com/outlook/amo/media/tv-video/ott-video/india/",
+      "source_title": "OTT Video outlook, India",
+      "source_domain": "statista.com",
+      "excerpt": "Streaming advertising revenue stood at US$563.9 million in 2025, and ad-supported tiers are now widely adopted.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-24",
+      "claim": "India's OTT video revenue is projected at 5.08 billion dollars in 2026, with users rising from 521 million in 2025 to 549 million",
+      "value": "5.08",
+      "unit": "USD billion",
+      "source_url": "https://www.statista.com/outlook/amo/media/tv-video/ott-video/india/",
+      "source_title": "OTT Video outlook, India",
+      "source_domain": "statista.com",
+      "excerpt": "India OTT Video revenue is projected at US$5.08bn in 2026, with users rising from 521 million in 2025 to 549 million.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-22",
+      "claim": "India's OTT ARPU is projected at 40.44 dollars for 2026, with subscription video at 24.58 dollars per user",
+      "value": "40.44",
+      "unit": "USD",
+      "source_url": "https://www.statista.com/outlook/amo/media/tv-video/ott-video/india/",
+      "source_title": "OTT Video outlook, India",
+      "source_domain": "statista.com",
+      "excerpt": "India's OTT ARPU is projected to reach USD 40.44 in 2026, with SVoD generating USD 24.58 per user.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-23",
+      "claim": "India's OTT ARPU is also reported at 85 to 95 rupees a month, among the lowest in the world",
+      "value": "85-95",
+      "unit": "INR",
+      "source_url": "https://raoscaff.com/intel/22-ott-pricing-wars/report.html",
+      "source_title": "OTT Pricing Wars: the Ad-Tier Pivot and the ARPU Math",
+      "source_domain": "raoscaff.com",
+      "excerpt": "India's OTT ARPU of Rs 85-95 per month is among the lowest globally.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-34",
+      "claim": "India's streaming ARPU is also projected at 9.02 dollars for 2026",
+      "value": "9.02",
+      "unit": "USD",
+      "source_url": "https://www.medianews4u.com/indias-ott-market-hits-601-million-users-but-only-119-million-pay-monetisation-gap-widens/",
+      "source_title": "India's OTT Market Hits 601 Million Users, But Only 119 Million Pay",
+      "source_domain": "medianews4u.com",
+      "excerpt": "India's projected ARPU of USD 9.02 in 2026 is the clearest indicator of the market's monetisation ceiling at current pricing.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [
+    "India's OTT ARPU is published as $40.44 a year (Statista outlook), as ₹85-95 a month (roughly $10.6-11.9 a year at 95.89) and as $9.02. The three are not reconcilable without each source's denominator and subscriber definition. Stated as a disagreement on the page rather than resolved by preference."
+  ],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-bm-10"
+    ],
+    "the_numbers": [
+      "f-bm-10",
+      "f-bm-16",
+      "f-bm-26"
+    ],
+    "why_this_industry_differs": [
+      "f-bm-27"
+    ],
+    "india_layer": [
+      "f-bm-25",
+      "f-bm-24",
+      "f-bm-22",
+      "f-bm-23",
+      "f-bm-34"
+    ],
+    "what_good_looks_like": [
+      "f-bm-10"
+    ]
+  }
+}
