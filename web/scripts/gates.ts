@@ -134,6 +134,68 @@ function icon(s: GateResult["status"]): string {
   return { pass: "PASS", fail: "FAIL", blocked: "BLOCK", skipped: "skip" }[s];
 }
 
+/** What gatePage needs that is the same for every page in a run. */
+export interface GateContext {
+  config: ReturnType<typeof loadGateConfig>;
+  sharedFacts: Set<string>;
+  experience: ReturnType<typeof loadExperience>;
+  corpus: PageMeta[];
+  factUsage: Map<string, number>;
+  researchOnly?: boolean;
+}
+
+export type PageVerdict = "READY" | "INCOMPLETE" | "FAILED" | "BLOCKED";
+
+/**
+ * Run the gates for one page and reduce them to a single verdict.
+ *
+ * Exported because publish.ts needs the same answer this script prints. It used
+ * to have no way to ask: gates.ts never writes meta.status, and publish.ts
+ * checked status and inbound links only, so a page a gate had blocked could
+ * still be flipped to indexable. Both callers now read one implementation.
+ */
+export function gatePage(
+  page: LoadedPage,
+  ctx: GateContext,
+): { results: GateResult[]; worst: PageVerdict } {
+  const input: GateInput = {
+    meta: page.meta, body: page.body, facts: loadFacts(page),
+    // 01 §C4's link rules depend on funnel position, which lives on the
+    // inventory row rather than on the page.
+    funnel: page.row.funnel,
+    blockCoverage: loadResearch(page)?.block_coverage,
+    fetchLog: loadResearch(page)?.fetch_log,
+    factUsage: ctx.factUsage,
+    sharedFacts: ctx.sharedFacts,
+    experience: ctx.experience,
+    corpus: ctx.corpus,
+    similarity: loadSimilarity(page.meta.id),
+    config: ctx.config,
+  };
+  const results = ctx.researchOnly
+    ? [g01(input), g02(input), g03(input)]
+    : runGates(input);
+  const s = summarise(results);
+  const worst: PageVerdict = results.some((r) => r.status === "blocked") ? "BLOCKED"
+    : results.some((r) => r.status === "fail") ? "FAILED"
+    : s.skipped ? "INCOMPLETE" : "READY";
+  return { results, worst };
+}
+
+/** Build the run-wide context once. Exported alongside gatePage. */
+export function gateContext(researchOnly = false): GateContext {
+  // The whole corpus, not a filtered subset: a reuse cap is site-wide.
+  const corpus = loadAllPages().map((p) => p.meta);
+  return {
+    config: loadGateConfig(),
+    sharedFacts: loadSharedFacts(),
+    experience: loadExperience(),
+    corpus,
+    factUsage: deriveFactUsage(corpus),
+    researchOnly,
+  };
+}
+
 function main(): number {
   const batch = arg("batch");
   const archetype = arg("archetype");
@@ -150,13 +212,8 @@ function main(): number {
     return 0;
   }
 
-  const config = loadGateConfig();
-  const sharedFacts = loadSharedFacts();
-  const experience = loadExperience();
-  // The whole corpus, not the filtered subset: a reuse cap is site-wide, so
-  // `pnpm gates --batch x` has to count uses on pages outside that batch too.
-  const corpus = loadAllPages().map((p) => p.meta);
-  const factUsage = deriveFactUsage(corpus);
+  const { config, sharedFacts, experience, corpus, factUsage } =
+    gateContext(researchOnly);
   writeFactIndex(corpus);
 
   const lines: string[] = [];
@@ -165,21 +222,10 @@ function main(): number {
 
   let failed = 0;
   for (const page of pages) {
-    const input: GateInput = {
-      meta: page.meta, body: page.body, facts: loadFacts(page),
-      // 01 §C4's link rules depend on funnel position, which lives on the
-      // inventory row rather than on the page.
-      funnel: page.row.funnel,
-      blockCoverage: loadResearch(page)?.block_coverage,
-      fetchLog: loadResearch(page)?.fetch_log,
-      factUsage, sharedFacts, experience, corpus,
-      similarity: loadSimilarity(page.meta.id), config,
-    };
-    const results = researchOnly ? [g01(input), g02(input), g03(input)] : runGates(input);
+    const { results, worst } = gatePage(page, {
+      config, sharedFacts, experience, corpus, factUsage, researchOnly,
+    });
     const s = summarise(results);
-    const worst = results.some((r) => r.status === "blocked") ? "BLOCKED"
-      : results.some((r) => r.status === "fail") ? "FAILED"
-      : s.skipped ? "INCOMPLETE" : "READY";
     if (worst !== "READY") failed++;
 
     console.log(`${worst.padEnd(11)} ${page.meta.url}  ` +
@@ -201,4 +247,6 @@ function main(): number {
   return failed ? 1 : 0;
 }
 
-process.exit(main());
+// Only when run directly. publish.ts imports gatePage from here, and an
+// import that exits the process would take that caller down with it.
+if (process.argv[1] && /gates\.ts$/.test(process.argv[1])) process.exit(main());

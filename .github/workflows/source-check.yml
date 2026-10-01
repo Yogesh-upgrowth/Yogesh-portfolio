@@ -1,0 +1,83 @@
+# G02 — verify every cited source is still reachable.
+#
+# G02 is one of four gates that have never run for any page. It checks that each
+# fact's source_url was observed returning 200, and it reads that observation
+# from the fetch_log on the research object rather than re-fetching, so the log
+# has to be produced somewhere with open outbound HTTP. The agent container's
+# egress proxy denies arbitrary hosts, so it is produced here: a GitHub runner
+# has open network, and the logs it writes are committed back so that G02 then
+# runs offline for everyone, including on a laptop.
+#
+# Deliberately not on push. Running it on every commit would re-fetch 130
+# publishers for a one-line change, and committing the logs from a push-triggered
+# job would re-trigger the job. Manual dispatch covers the pre-launch check; the
+# weekly run catches link rot after launch, which matters for a site whose whole
+# premise is that every number is sourced.
+name: source check
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Mondays, 06:14 UTC. Off the hour because every other job runs at :00.
+    - cron: "14 6 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pnpm
+        run: npm i -g pnpm@9
+      - name: Install dependencies
+        working-directory: web
+        run: pnpm install --frozen-lockfile
+
+      # Records the real observed status. A non-200 is reported, never papered
+      # over: the fact needs an archive_url or a live replacement, and G02
+      # blocks its page until it has one.
+      - name: Observe every source URL
+        run: python3 seo/scripts/verify_sources.py | tee /tmp/sources.txt
+
+      # With fetch_logs present G02 stops skipping and actually runs. This step
+      # is what proves the logs are usable, not just written.
+      - name: Content gates, with G02 now running
+        working-directory: web
+        run: pnpm gates 2>&1 | tee /tmp/gates.txt || true
+
+      - name: Report G02's verdict
+        run: |
+          echo "### Source check" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          tail -40 /tmp/sources.txt >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          g02=$(grep -c "G02.*blocked" /tmp/gates.txt || true)
+          echo "pages with G02 blocked: $g02" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit the fetch logs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- seo/research; then
+            echo "no change in observed statuses"
+            exit 0
+          fi
+          git add seo/research
+          git commit -m "Record observed source statuses (G02 fetch_log)"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: source-check
+          path: |
+            /tmp/sources.txt
+            /tmp/gates.txt

@@ -97,6 +97,20 @@ function internalLinks(): Map<string, string[]> {
 async function main(): Promise<void> {
   const base = arg("base", "http://127.0.0.1:3320");
   const all = rows();
+
+  // Prove something is listening before probing 191 paths against it. status()
+  // turns a connection error into 0, and 0 is not 200, so a server that never
+  // started makes every redirect and every link target look broken: 127 dead
+  // redirects and 64 dead targets scroll past and the real problem — the wrong
+  // port — is nowhere in the output. Ask once, and say so plainly.
+  const reachable = await status(`${base}/`, true);
+  if (reachable === 0) {
+    console.error(`[launch] nothing answered at ${base}`);
+    console.error("[launch] start the server first (next start), or pass --base <url>.");
+    console.error("[launch] refusing to report 191 false 404s against a port that is down.");
+    process.exit(2);
+  }
+
   console.log(`[launch] checking ${all.length} redirect(s) against ${base}\n`);
 
   const notRedirecting: Row[] = [];

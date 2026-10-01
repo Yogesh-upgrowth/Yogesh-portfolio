@@ -8,6 +8,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from "node:fs";
 import { join } from "node:path";
 import { createInterface } from "node:readline/promises";
 import { loadAllPages } from "../lib/content/loader";
+import { gatePage, gateContext } from "./gates";
 import { ensureKeyFile, submitUrls } from "../lib/indexnow";
 import { entity } from "../lib/schema/entity";
 import { runScript } from "../lib/net";
@@ -69,7 +70,31 @@ async function main(): Promise<void> {
     process.exit(1);
   }
 
-  // 3. Google update rollouts. CLAUDE.md §1.10 forbids publishing inside the
+  // 3. The gates. This is the check that was missing: gates.ts never writes
+  //    meta.status, and the two checks above read status and inbound links, so
+  //    a page a gate had blocked could reach "reviewed" by hand and be flipped
+  //    to indexable with the block still standing. Re-running them here costs a
+  //    few seconds and makes that impossible. A skip is not a block — four
+  //    gates cannot run offline (G02 without a fetch_log, G18, G19, G20) and
+  //    refusing on those would make publishing impossible rather than safe —
+  //    but a fail or a block stops the batch.
+  const ctx = gateContext();
+  const unready = pages
+    .map((page) => ({ page, ...gatePage(page, ctx) }))
+    .filter((r) => r.worst === "FAILED" || r.worst === "BLOCKED");
+  if (unready.length) {
+    console.error(`[publish] ${unready.length} page(s) have a failing or blocked gate:`);
+    for (const r of unready.slice(0, 10)) {
+      const bad = r.results
+        .filter((g) => g.status === "fail" || g.status === "blocked")
+        .map((g) => `${g.id} ${g.status}: ${g.detail}`);
+      console.error(`    ${r.page.meta.url} — ${bad.join(" | ")}`);
+    }
+    console.error("[publish] fix these and re-run. Nothing was published.");
+    process.exit(1);
+  }
+
+  // 4. Google update rollouts. CLAUDE.md §1.10 forbids publishing inside the
   //    first 7 days of a confirmed core or spam rollout. There is no API for
   //    this, so it is a deliberate human confirmation and cannot be flagged
   //    past — a script that could skip it would eventually skip it.
@@ -82,7 +107,7 @@ async function main(): Promise<void> {
     process.exit(0);
   }
 
-  // 4. Flip.
+  // 5. Flip.
   const now = new Date().toISOString().slice(0, 10);
   const urls: string[] = [];
   for (const p of pages) {
@@ -94,7 +119,7 @@ async function main(): Promise<void> {
   }
   console.log(`[publish] flipped ${urls.length} page(s) to indexable.`);
 
-  // 5. IndexNow. A failure here is recorded, not fatal: the pages are live
+  // 6. IndexNow. A failure here is recorded, not fatal: the pages are live
   //    either way and the ping is retryable.
   const host = new URL(entity().site).host;
   const key = ensureKeyFile(process.env.INDEXNOW_KEY);

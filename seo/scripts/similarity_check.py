@@ -129,7 +129,22 @@ def main():
     ap.add_argument("--archetype", default=None)
     args = ap.parse_args()
 
+    # An empty corpus must not read as a pass. --content is relative to the
+    # working directory, so running this from the repo root instead of web/
+    # walks a directory that does not exist, loads nothing, and reports
+    # "0 pages, failures: 0" with exit 0. That is the same silent green as the
+    # fact-usage index that was never generated, and it would hide every
+    # near-duplicate page in the corpus.
+    if not os.path.isdir(args.content):
+        print(f"no such content directory: {args.content!r} "
+              f"(cwd {os.getcwd()}) — run this from web/", file=sys.stderr)
+        sys.exit(2)
+
     corpus = load_pages(args.content)
+    if not corpus:
+        print(f"loaded 0 pages from {args.content!r} — refusing to report a pass",
+              file=sys.stderr)
+        sys.exit(2)
     focus_ids = set(args.ids.split(",")) if args.ids else None
     focus = [p for p in corpus.values() if (not focus_ids or p["id"] in focus_ids) and (not args.archetype or p["archetype"] == args.archetype)]
 
