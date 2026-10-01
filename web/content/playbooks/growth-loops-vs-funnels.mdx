@@ -1,0 +1,220 @@
+<AnswerBox>
+Growth loops vs funnels is not a choice between two strategies. They are two
+descriptions, and measurement decides which one fits. Only about 30% of apps have a
+measurable k-factor at all, and among those the median is 0.45. For most apps, then,
+a loop diagram describes something that is not happening.
+</AnswerBox>
+
+<FactTable
+  id="loop-or-funnel"
+  caption="Whether a loop exists is a measurement question"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Apps with any measurable k-factor, and the median among them", "about 30%; median 0.45"], factId: "f-pb-14" },
+    { cells: ["Share with a k-factor, games against non-games", "22.5% against 33.6%"], factId: "f-pb-15" },
+    { cells: ["Documented peak viral coefficient at Dropbox", "0.7"], factId: "f-pb-16" },
+    { cells: ["Active referrers, and invite-to-registration", "5-15% of active users; 10-25%"], factId: "f-pb-17" },
+    { cells: ["US cost per install, fintech against utilities, iOS and Android", "$11.62 and $3.84 against $2.46 and $0.84"], factId: "f-unit-37" },
+    { cells: ["Testing volume at top programmes against the median", "3 to 5 times more"], factId: "f-hub-10" },
+    { cells: ["Session length by genre, strategy against casual games", "37.51 against 25.92 minutes"], factId: "f-fx-01" },
+  ]}
+/>
+
+## In short
+
+Five points, and the first one ends most arguments.
+
+A loop is a measurement, not a diagram. If you cannot compute a k-factor from your
+own data, you have a funnel. Most apps are in that position.
+
+The realistic range sits well below one. Among apps with a measurable k-factor the
+median is 0.45, and the best-documented peak at a famous referral programme was 0.7.
+
+Games are less likely to have a loop than non-games: 22.5% against 33.6%. The
+intuition that games spread themselves is mostly wrong.
+
+Referral programmes contribute at the margin. Active referrers run 5% to 15% of the
+active base, and 10% to 25% of invites become registrations.
+
+A k-factor under one still pays. It lowers blended acquisition cost, which matters
+most where installs are expensive: $11.62 on iOS for US fintech, about ₹1,114,
+against $0.84 for Android utilities, about ₹81.
+
+## Who this is for, and who it is not
+
+This suits a team that has drawn a loop on a whiteboard and wants to know whether it
+exists. It also suits a team being pushed toward a referral programme and needing to
+size the likely return before building one.
+
+High acquisition cost makes this most valuable, because the same referral rate saves
+more money per referred user.
+
+<Example illustrative>
+A k-factor of 0.3 on a product paying $11.62 per install, about ₹1,114, saves roughly
+fourteen times what the same k-factor saves on a product paying $0.84, about ₹81. The
+loop is identical; only the thing it is worth differs.
+</Example>
+
+Let that arithmetic drive the decision to invest.
+
+It does not suit a product with no retention. A loop multiplies whatever the product
+already does; if users do not come back, the loop multiplies nothing. Fix the curve
+first.
+
+It also does not suit a product whose growth is genuinely sales-led. There the
+question is pipeline, not propagation, and the k-factor is not a useful frame.
+
+## The method, part one: find out what you have
+
+Three steps, all measurement.
+
+### 1. Define the invite event honestly
+
+A share, an invite, a referral link opened. Count only what a user did deliberately.
+A notification the product sent is not an invite. Counting it inflates every number
+downstream.
+
+### 2. Compute the k-factor over a fixed cohort
+
+Take one acquisition cohort. Count invites sent per user, then the share of invites
+that became registered users. Multiply. That is your k-factor for that cohort.
+
+Do it for three cohorts before believing any of them. If the answer is zero or
+unmeasurable, stop here. You have a funnel, and the rest of this playbook turns to
+making that funnel cheaper rather than replacing it.
+
+One warning about the arithmetic. The k-factor describes one cycle, so a cohort still
+mid-cycle reads low. Give each cohort the time your invite-to-registration lag
+actually takes, which for most products runs one to two weeks, and measure the same
+window every time.
+
+### 3. Place the result against the distribution
+
+A measurable k-factor at all puts you in the 30% minority. Above 0.45 puts you above
+the median of that minority. At 0.7 you match the strongest well-documented
+programme. Anything above one means checking the measurement again, because that is
+rare enough to warrant doubt.
+
+Write the number down with its date and its cohort. A k-factor quoted without both is
+the kind of figure that survives three years of strategy decks after the behaviour it
+described has stopped.
+
+## The method, part two: making it pay
+
+Three steps, which apply at any measurable k-factor below one.
+
+### 4. Convert the k-factor into a cost saving, not a growth rate
+
+A k-factor under one does not compound. It reduces the installs you pay for.
+Work out the blended cost per install with and without the referred volume, and judge
+the programme on that gap.
+
+State the saving in currency rather than as a rate.
+
+<Example illustrative>
+A k-factor of 0.25 on a product buying ten thousand installs a month at $11.62, about
+₹1,114, removes roughly two thousand paid installs a month from the bill. That is a
+figure a finance team can check. A growth rate is not.
+</Example>
+
+### 5. Raise participation before raising the reward
+
+Active referrers run 5% to 15% of the active base. Moving the low end of that range
+toward the high end usually beats increasing the incentive. It recruits people who
+were willing and never asked.
+
+Three things raise participation cheaply: putting the ask where people already are,
+making the reward legible in one line, and removing the step where someone has to
+copy a code. A larger reward mostly attracts the people who would have referred
+anyway.
+
+### 6. Place the ask after the value, not before it
+
+Ask before a user has got anything and the invites will not convert. Session length
+proxies for when value lands: strategy game sessions average 37.51 minutes against
+25.92 for casual. So the right moment differs by product more than by design taste.
+
+<FromMyWork exp="exp-007">
+Routing to fewer banks beat routing to many. The industry practice of firing one
+application at eight lenders inflated enquiry counts, which itself flagged the
+borrower as risky.
+</FromMyWork>
+
+## The numbers to expect
+
+Expect the first honest k-factor to be lower than the deck claimed, often zero. That
+is the common case, and naming it early saves a quarter of building.
+
+Expect a good referral programme to look unimpressive as a growth rate and useful as a
+discount. Referred users arrive instead of purchased ones, so the saving shows up in
+the acquisition bill rather than in the growth curve.
+
+Expect participation to be the binding constraint rather than reward size. The 5% to
+15% band is wide, and the gap between its ends is larger than most incentive changes
+produce.
+
+Expect invite quality to fall as volume rises. The 10% to 25% invite-to-registration
+band narrows at the top end of participation. Later referrers know the people they
+invite less well.
+
+<FromMyWork exp="exp-042">
+Offline loan sourcing through more than 1.5 million CSC and kiosk shops reached
+borrowers no digital funnel was going to find, without loosening lender-grade credit
+quality. Distribution is sometimes a place rather than a mechanic.
+</FromMyWork>
+
+## Pitfalls
+
+Five, and the first is the reason most loop strategies fail quietly.
+
+Treating the loop as a plan rather than a measurement. Arrows on a diagram prove
+nothing circulates.
+
+Targeting a k-factor above one. The median among apps that have one is 0.45, and
+chasing self-sustaining virality produces the spammy invite flows that get products
+removed from stores.
+
+Counting product-sent messages as invites. It makes the number look good and the
+revenue unchanged.
+
+Assuming games spread themselves. A k-factor is present for 22.5% of games against
+33.6% of non-games.
+
+Investing in referral where acquisition is already cheap. At $0.84 per install, about
+₹81, a referral programme has almost no cost to save.
+
+And measuring once. A k-factor moves with the acquisition mix, because referred users
+refer at different rates from paid ones. One reading taken during a paid campaign
+will understate the loop, and one taken during an organic spike will overstate it.
+
+## The checklist
+
+Twelve items. Stop after item five if the answer there is no.
+
+1. Invite event defined, with product-sent messages excluded.
+2. One acquisition cohort fixed as the measurement base.
+3. Invites sent per user computed for that cohort.
+4. Invite-to-registration rate computed for that cohort.
+5. K-factor computed, and repeated for three cohorts.
+6. Result placed against the 30% measurable share and the 0.45 median.
+7. Blended cost per install computed with and without referred volume.
+8. Saving stated in currency, not as a growth rate.
+9. Participation rate measured against the 5% to 15% band.
+10. Invite prompt placed after a value moment, with the moment named.
+11. Invite quality tracked as participation rises.
+12. Decision recorded: loop worth investing in, or funnel to make cheaper.
+
+## Sources and related
+
+Each figure carries its source and the date it was last checked. The k-factor
+distribution comes from one analysis of an app sample, and it is the only published
+source found that reports how many apps have a measurable k-factor at all rather than
+what a good one looks like. That makes it the most useful figure here and a single
+source, so it is marked as such.
+
+The referral participation bands come from referral-programme tooling, measuring
+programmes that exist — which excludes the products that tried and stopped.
+
+The CAC glossary entry carries the cost definitions this playbook uses. The
+experimentation playbook is the companion when a referral change needs testing, since
+invite-flow effects are usually small enough to need real statistical power.

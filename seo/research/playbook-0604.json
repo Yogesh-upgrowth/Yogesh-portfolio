@@ -1,0 +1,153 @@
+{
+  "page_id": "playbook-0604",
+  "url": "/playbooks/growth-loops-vs-funnels",
+  "archetype": "playbook",
+  "primary_keyword": "growth loops vs funnels",
+  "secondary_keywords": [
+    "k-factor benchmark",
+    "viral coefficient"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-pb-14",
+      "claim": "Only about 30% of apps have a measurable k-factor at all, and among those the median is 0.45",
+      "value": "0.45",
+      "unit": "k-factor",
+      "source_url": "https://www.saxifrage.xyz/post/k-factor-benchmarks",
+      "source_title": "K-factor benchmarks",
+      "source_domain": "saxifrage.xyz",
+      "excerpt": "30% of their sample had a K-factor, and for this 30% the median K-factor was .45.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-15",
+      "claim": "A k-factor is present for 22.5% of games against 33.6% of non-games",
+      "value": "33.6",
+      "unit": "%",
+      "source_url": "https://www.saxifrage.xyz/post/k-factor-benchmarks",
+      "source_title": "K-factor benchmarks",
+      "source_domain": "saxifrage.xyz",
+      "excerpt": "For games, K-factor affected 22.5% of apps in their sample; for non-games it is 33.6%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-pb-16",
+      "claim": "Dropbox's documented peak viral coefficient was 0.7, below the 1.0 that self-sustaining growth needs",
+      "value": "0.7",
+      "unit": "k-factor",
+      "source_url": "https://www.saxifrage.xyz/post/k-factor-benchmarks",
+      "source_title": "K-factor benchmarks",
+      "source_domain": "saxifrage.xyz",
+      "excerpt": "Dropbox's documented peak coefficient was 0.7.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-pb-17",
+      "claim": "Active referrers are typically 5% to 15% of the active user base, with invite-to-registration at 10% to 25%",
+      "value": "5-15",
+      "unit": "%",
+      "source_url": "https://track360.io/learn/refer-a-friend-program-design/measuring-referral-performance",
+      "source_title": "Measuring referral performance",
+      "source_domain": "track360.io",
+      "excerpt": "Active referrers typically represent 5-15% of the active user base, with invite-to-registration rates of 10-25%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-unit-37",
+      "claim": "United States fintech cost per install is 11.62 dollars on iOS and 3.84 on Android, against 2.46 and 0.84 for utilities",
+      "value": "11.62",
+      "unit": "USD",
+      "source_url": "https://linkrunner.io/tools/cost-per-install-benchmark",
+      "source_title": "Cost per install benchmarks by country, platform and category",
+      "source_domain": "linkrunner.io",
+      "excerpt": "US CPIs by category include Fintech ($11.62 iOS / $3.84 Android) and Utilities ($2.46 / $0.84).",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-hub-10",
+      "claim": "Top-performing programmes run 3 to 5 times more tests than the median, producing 6 to 8 winners a quarter from 36 to 50 tests",
+      "value": "3-5",
+      "unit": "x",
+      "source_url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "source_title": "E-commerce A/B Test Benchmarks 2026",
+      "source_domain": "advertorialwizard.com",
+      "excerpt": "Top-performing brands run 3-5x more tests per year than the median, with 6-8 winning tests per quarter out of 36-50 tests run.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-fx-01",
+      "claim": "Strategy game sessions average 37.51 minutes and grew 18%, while casual game sessions rose 15% to 25.92 minutes",
+      "value": "37.51",
+      "unit": "minutes",
+      "source_url": "https://ppc.land/adjusts-2026-mobile-app-report-finance-sessions-up-21-gaming-cpi-jumps-30/",
+      "source_title": "Adjust's 2026 mobile app report: finance sessions up 21%, gaming CPI jumps 30%",
+      "source_domain": "ppc.land",
+      "excerpt": "Strategy game sessions averaged 37.51 minutes and grew 18%, while casual games rose 15% to 25.92 minutes.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-pb-14"
+    ],
+    "in_short": [
+      "f-pb-15",
+      "f-pb-16"
+    ],
+    "who_this_is_for": [
+      "f-pb-17"
+    ],
+    "method": [
+      "f-pb-14",
+      "f-pb-17"
+    ],
+    "numbers_and_examples": [
+      "f-unit-37",
+      "f-hub-10"
+    ],
+    "pitfalls": [
+      "f-pb-16",
+      "f-pb-14"
+    ],
+    "checklist": [
+      "f-fx-01"
+    ]
+  }
+}
