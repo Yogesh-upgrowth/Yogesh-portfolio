@@ -1,0 +1,147 @@
+{
+  "page_id": "playbook-0609",
+  "url": "/playbooks/north-star-metric",
+  "archetype": "playbook",
+  "primary_keyword": "north star metric",
+  "secondary_keywords": [
+    "north star metric examples",
+    "input metrics"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-pb-29",
+      "claim": "A north star carries three to five input metrics: complementary factors a team can influence directly through the product",
+      "value": "3-5",
+      "unit": "inputs",
+      "source_url": "https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf",
+      "source_title": "The North Star Playbook",
+      "source_domain": "amplitude.com",
+      "excerpt": "Inputs are a set of three to five influential, complementary factors that most directly affect your North Star Metric.",
+      "published_on": "2024",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-30",
+      "claim": "A metric the team can move directly is probably the wrong north star",
+      "source_url": "https://amplitude.com/blog/good-bad-north-star-metric",
+      "source_title": "What makes a good vs bad north star metric",
+      "source_domain": "amplitude.com",
+      "excerpt": "If you can move your North Star directly, it's probably not a good North Star.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-31",
+      "claim": "Annual and monthly recurring revenue, daily active users, downloads, page views and registered users are all named as poor north star choices",
+      "source_url": "https://amplitude.com/blog/good-bad-north-star-metric",
+      "source_title": "What makes a good vs bad north star metric",
+      "source_domain": "amplitude.com",
+      "excerpt": "Bad North Star choices: ARR, MRR, DAU, ad impressions, downloads, page views, registered users, time on page.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-32",
+      "claim": "Published north stars measure delivered value: nights booked at Airbnb, time spent listening at Spotify, rides per week at Uber",
+      "source_url": "https://amplitude.com/blog/good-bad-north-star-metric",
+      "source_title": "What makes a good vs bad north star metric",
+      "source_domain": "amplitude.com",
+      "excerpt": "Airbnb uses nights booked, Spotify tracks time spent listening, Uber uses rides per week, Amazon purchases per month.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-rh-01",
+      "claim": "Top-quartile consumer apps hold 25% to 40% at day 30 and their curves flatten between day 60 and day 90",
+      "value": "25-40",
+      "unit": "%",
+      "source_url": "https://pmtoolkit.ai/learn/growth/retention-analytics-guide",
+      "source_title": "Retention analytics: where users leak",
+      "source_domain": "pmtoolkit.ai",
+      "excerpt": "Top-quartile consumer apps see Day 30 retention of 25 to 40 percent and flatten by Day 60 to 90.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-gh-03",
+      "claim": "Median activation sits at 41.7%, with the top quartile at 71% and the bottom at 19% — a spread wide enough that the median judges almost nobody",
+      "value": "41.7",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "The median activation rate is 41.7%, with top-quartile products at 71% and bottom quartile at 19%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-06",
+      "claim": "Median time to value has compressed from 8.1 days in 2022 to 4.2 days in 2026",
+      "value": "4.2",
+      "unit": "days",
+      "source_url": "https://visionary-marketing.co.uk/blog/customer-onboarding-statistics-2026",
+      "source_title": "SaaS onboarding benchmarks 2026",
+      "source_domain": "visionary-marketing.co.uk",
+      "excerpt": "Median SaaS time-to-value has compressed from 8.1 days in 2022 to 4.2 days in 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-pb-30"
+    ],
+    "in_short": [
+      "f-pb-31",
+      "f-pb-32"
+    ],
+    "who_this_is_for": [
+      "f-pb-29"
+    ],
+    "method": [
+      "f-pb-29",
+      "f-pb-32"
+    ],
+    "numbers_and_examples": [
+      "f-rh-01",
+      "f-gh-03"
+    ],
+    "pitfalls": [
+      "f-pb-31",
+      "f-pb-30"
+    ],
+    "checklist": [
+      "f-pb-06"
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+<AnswerBox>
+A north star metric is the one number a team steers by. The test that eliminates most
+candidates: if you can move it directly, it is the wrong one. It has to measure value
+delivered, lead revenue rather than report it, and break into 3 to 5 inputs that
+different teams can each influence.
+</AnswerBox>
+
+<FactTable
+  id="north-star-tests"
+  caption="The tests a candidate has to survive"
+  columns={["Test or reference point", "What it says"]}
+  rows={[
+    { cells: ["The direct-movability test", "a metric you can move directly is the wrong one"], factId: "f-pb-30" },
+    { cells: ["Commonly named poor choices", "ARR, MRR, DAU, downloads, page views, registered users"], factId: "f-pb-31" },
+    { cells: ["Published examples that measure delivered value", "nights booked, time spent listening, rides per week"], factId: "f-pb-32" },
+    { cells: ["Input metrics a north star carries", "three to five, each team-influenceable"], factId: "f-pb-29" },
+    { cells: ["When a healthy retention curve flattens", "day 60 to 90, top-quartile consumer apps"], factId: "f-rh-01" },
+    { cells: ["Activation rate, median against its quartiles", "41.7%; 71% top, 19% bottom"], factId: "f-gh-03" },
+    { cells: ["Median time to value, 2022 against 2026", "8.1 days against 4.2"], factId: "f-pb-06" },
+  ]}
+/>
+
+## In short
+
+Five tests. A candidate has to pass all of them.
+
+Direct movability disqualifies. If the team can move the number without changing what
+customers do, it is a dial rather than a north star.
+
+It has to measure value received, not people counted. Nights booked, time spent
+listening and rides per week all describe something a customer got. Registered users and
+downloads do not.
+
+It has to lead revenue. Recurring revenue, named repeatedly as a poor choice, reports
+last quarter's product decisions.
+
+It has to decompose into three to five inputs, each owned by a team that can move it.
+
+And it has to be checkable against a published window, so progress is readable inside a
+quarter rather than at the year's end.
+
+## Who this is for, and who it is not
+
+This suits a team with several dashboards and no agreed single number, where every
+function reports progress and the business does not obviously move. The symptom is
+familiar: every team hitting its targets and leadership unable to say whether the
+quarter went well.
+
+It suits teams whose current north star is revenue. That is the most common choice and
+the one that fails the movability and leading-indicator tests at once.
+
+It does not suit a product still looking for anyone who wants it. A north star measures
+how much value a working product delivers. Before that, the question is whether value
+exists at all, and no single metric answers it.
+
+It also does not suit a company with genuinely unrelated product lines. One number
+across two businesses describes neither, and the honest answer is one north star per
+line with a shared financial frame above them.
+
+## The method, part one: find the candidate
+
+Three steps.
+
+### 1. Write down what a customer gets, in their words
+
+Not a feature, and not an event name. A night stayed. An hour of music. A ride taken. If
+the sentence needs product vocabulary to make sense, it is not describing customer value
+yet.
+
+Write three or four of these before picking one. The first is usually the thing the team
+most wants to be true, and the second or third is usually closer to what customers
+actually came for.
+
+### 2. Run every candidate through the movability test
+
+Ask whether the team could move the number next week without changing customer behaviour.
+Anything that passes that test fails as a north star. Revenue, sign-ups and page views all
+fail here, which is why they appear on every list of poor choices.
+
+A discount moves revenue. A paid campaign moves sign-ups. Neither tells you the product
+got better, and a metric that responds to both is reporting the marketing calendar.
+
+### 3. Check that it leads rather than lags
+
+A north star should move before revenue does. Two published windows make this checkable:
+a healthy retention curve flattens between day 60 and day 90, and activation has a
+published spread from 19% at the bottom quartile to 71% at the top. A candidate that
+cannot show movement inside those windows will not steer a quarter.
+
+## The method, part two: build the input tree
+
+Three steps, and this is where most north stars quietly fail.
+
+### 4. Decompose into three to five inputs
+
+Each input should be a factor a team can influence directly through the product, and
+together they should plausibly explain movement in the north star. More than five and
+nobody holds the tree in their head.
+
+### 5. Assign each input to a team that can move it
+
+The test is whether a designer or engineer can draw a line from their work to one input.
+If they cannot, that branch of the tree is decoration, and the team attached to it will go
+back to its own dashboard within a month.
+
+Do this in the room, with the people concerned, rather than on a slide afterwards. An
+input assigned to a team that was not consulted is an input with no owner, whatever the
+diagram says.
+
+### 6. Set a review cadence against the time-to-value trend
+
+Median time to value has halved in four years, from 8.1 days to 4.2. A metric tree built
+on a slower product is already describing a different market, so the tree gets revisited
+annually rather than treated as settled.
+
+<FromMyWork exp="exp-032">
+Aggregating independently-set team OKRs produced eleven objectives and thirty-four key
+results, which is not a strategy. A north star without one owner per input produces the
+same sprawl with better branding.
+</FromMyWork>
+
+## The numbers to expect
+
+Expect the first candidate to fail the movability test. Revenue and active users are the
+usual starting points and both fail it.
+
+Expect the input tree to expose an unowned branch. That is the most useful output of the
+exercise: a factor everyone agrees matters and nobody is accountable for. It is usually
+one of the two or three things most limiting growth, which is why it stayed unowned.
+
+Expect the north star to move slowly and the inputs to move weekly. That is the intended
+shape. A north star that jumps month to month is probably a dial after all.
+
+Expect to resist changing it. The definition change is what destroys comparability, and
+the temptation arrives in the first bad quarter.
+
+Expect the activation range to be the useful comparison for most input metrics. With a
+41.7% median between a 19% bottom quartile and a 71% top one, an input moving from 30% to
+35% is real progress and looks like nothing against a median alone.
+
+<FromMyWork exp="exp-033">
+Three artefacts fixed decision coherence, and the one that did most work was a short
+quarterly brief shared widely. A metric tree does the same job: it makes the reasoning
+visible rather than keeping it in one person's head.
+</FromMyWork>
+
+## Pitfalls
+
+Five, and the first two account for most failed north stars.
+
+Choosing revenue. It fails movability and it lags, which is the pair of faults the test
+exists to catch.
+
+Choosing active users. Downloads, registered users and daily actives are all named as
+poor choices, because they count people rather than value received.
+
+Building a tree with more than five inputs. Beyond that nobody retains it, and the tree
+becomes a document rather than a decision aid.
+
+Leaving an input unowned. The branch stops moving and nobody notices for a quarter.
+
+Changing the definition without a date. Every chart before the change becomes
+incomparable, and the step gets read as performance by everyone who was not in the room.
+
+And choosing a metric the data cannot yet support. A north star that needs instrumentation
+nobody has built is a plan to measure something, not a metric, and the gap usually lasts
+longer than the quarter it was chosen for.
+
+## The checklist
+
+Thirteen items. The first four choose the metric; the rest make it operable.
+
+1. Customer value written in the customer's words, with no product vocabulary.
+2. Candidate list drawn from that sentence, not from the dashboard.
+3. Movability test run on each candidate, and the passers discarded.
+4. Leading-indicator check run against a published window.
+5. Final candidate written down with its exact definition.
+6. Denominator and time window stated alongside it.
+7. Three to five inputs identified.
+8. Each input confirmed as team-influenceable through the product.
+9. One owner named per input.
+10. Line drawn from at least one person's weekly work to each input.
+11. Reporting cadence set: north star monthly, inputs weekly.
+12. Annual review of the tree scheduled against the time-to-value trend.
+13. Any definition change logged with a date and a reason.
+14. Instrumentation confirmed to exist before the metric is announced.
+
+## Sources and related
+
+Each figure carries its source and the date it was last checked. The selection tests and
+the poor-choice list come from one vendor's framework, which is the most widely adopted
+treatment of the subject and still one source, so it is marked as one rather than as a
+consensus.
+
+One gap is worth naming: no survey found reports what share of companies have a defined
+north star, or what share abandon one. Published material on this subject is almost
+entirely prescriptive rather than measured, which is why the tests above are framed as
+tests rather than as benchmarks.
+
+The north star glossary entry carries the definition and the OMTM entry covers the
+single-metric trap. The activation metric playbook is usually where the first input
+comes from.

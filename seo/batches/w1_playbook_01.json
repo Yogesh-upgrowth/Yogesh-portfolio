@@ -294,6 +294,34 @@
       "method": "search_index",
       "primary": false
     },
+    "f-gh-01": {
+      "fact_id": "f-gh-01",
+      "claim": "Across a survey of more than 1,000 products, a fifth of freemium products convert below 2.5% and the largest group, a third, sits between 2.5% and 5%",
+      "value": "2.5-5",
+      "unit": "%",
+      "source_url": "https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion",
+      "source_title": "What is a good free-to-paid conversion rate?",
+      "source_domain": "lennysnewsletter.com",
+      "excerpt": "A fifth (20%) of products see a conversion rate below 2.5%. About a third see between 2.5% and 5% — the biggest bucket.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-gh-02": {
+      "fact_id": "f-gh-02",
+      "claim": "Free-trial products convert on a different distribution entirely: only 7% fall below 2.5%, and the most common band is 7.5% to 10%",
+      "value": "7.5-10",
+      "unit": "%",
+      "source_url": "https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion",
+      "source_title": "What is a good free-to-paid conversion rate?",
+      "source_domain": "lennysnewsletter.com",
+      "excerpt": "Only 7% of free-trial products see conversion below 2.5%; about a quarter see between 7.5% and 10%, the most common bucket.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
     "f-gh-03": {
       "fact_id": "f-gh-03",
       "claim": "Median activation sits at 41.7%, with the top quartile at 71% and the bottom at 19% — a spread wide enough that the median judges almost nobody",
@@ -793,6 +821,56 @@
       "source_title": "The complete guide to increasing free trial conversion",
       "source_domain": "amplitude.com",
       "excerpt": "Industry benchmarks: freemium under 10%, opt-in free trials up to 25%, opt-out free trials up to 50%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-29": {
+      "fact_id": "f-pb-29",
+      "claim": "A north star carries three to five input metrics: complementary factors a team can influence directly through the product",
+      "value": "3-5",
+      "unit": "inputs",
+      "source_url": "https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf",
+      "source_title": "The North Star Playbook",
+      "source_domain": "amplitude.com",
+      "excerpt": "Inputs are a set of three to five influential, complementary factors that most directly affect your North Star Metric.",
+      "published_on": "2024",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-30": {
+      "fact_id": "f-pb-30",
+      "claim": "A metric the team can move directly is probably the wrong north star",
+      "source_url": "https://amplitude.com/blog/good-bad-north-star-metric",
+      "source_title": "What makes a good vs bad north star metric",
+      "source_domain": "amplitude.com",
+      "excerpt": "If you can move your North Star directly, it's probably not a good North Star.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-31": {
+      "fact_id": "f-pb-31",
+      "claim": "Annual and monthly recurring revenue, daily active users, downloads, page views and registered users are all named as poor north star choices",
+      "source_url": "https://amplitude.com/blog/good-bad-north-star-metric",
+      "source_title": "What makes a good vs bad north star metric",
+      "source_domain": "amplitude.com",
+      "excerpt": "Bad North Star choices: ARR, MRR, DAU, ad impressions, downloads, page views, registered users, time on page.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-32": {
+      "fact_id": "f-pb-32",
+      "claim": "Published north stars measure delivered value: nights booked at Airbnb, time spent listening at Spotify, rides per week at Uber",
+      "source_url": "https://amplitude.com/blog/good-bad-north-star-metric",
+      "source_title": "What makes a good vs bad north star metric",
+      "source_domain": "amplitude.com",
+      "excerpt": "Airbnb uses nights booked, Spotify tracks time spent listening, Uber uses rides per week, Amazon purchases per month.",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
@@ -1911,6 +1989,284 @@
         ]
       },
       "body": "\n<AnswerBox>\nApp monetization models divide into subscription, one-off purchase, advertising and\ntransaction fees. Subscriptions take 82% of non-gaming store revenue and grew 105% year\non year, against 29% for in-app purchases and 14% for ads. Pick on how often people use\nthe product, then check what the store takes.\n</AnswerBox>\n\n<FactTable\n  id=\"model-evidence\"\n  caption=\"What each model actually returns, and what the store takes\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Year-on-year revenue growth: subscriptions / IAP / ads\", \"105% / 29% / 14%\"], factId: \"f-pb-26\" },\n    { cells: [\"Subscription share of non-gaming app store revenue\", \"82%\"], factId: \"f-pb-27\" },\n    { cells: [\"Primary model across 686 tracked apps\", \"subscriptions 61%, advertising 26%\"], factId: \"f-fx-08\" },\n    { cells: [\"Google Play standard rate, first $1M (₹9.59 crore) and above\", \"10% then 20%\"], factId: \"f-act-20\" },\n    { cells: [\"eBay reported take rate on gross merchandise volume\", \"13.91%\"], factId: \"f-act-21\" },\n    { cells: [\"OTT subscriptions in India\", \"216.5 million\"], factId: \"f-bm-26\" },\n    { cells: [\"Conversion: freemium / opt-in trial / opt-out trial\", \"under 10% / up to 25% / up to 50%\"], factId: \"f-pb-28\" },\n  ]}\n/>\n\n## In short\n\nFive points, and the first is about frequency rather than revenue.\n\nUsage frequency picks the model. Repeated use justifies repeated billing. A product\nsomeone opens twice has nothing to renew, whatever the revenue charts say.\n\nSubscriptions dominate and are growing fastest: 82% of non-gaming store revenue, the\nprimary model for 61% of tracked apps, and 105% year-on-year growth against 14% for ads.\n\nThe model sets the conversion range before execution does. Freemium sits under 10%,\nopt-in trials reach 25% and opt-out trials 50%.\n\nStore economics are better than marketplace economics. Google Play takes 10% on the\nfirst $1 million, about ₹9.59 crore, and 20% above, against eBay's reported 13.91% of\ngross merchandise volume.\n\nAnd scale exists outside the Western subscription market. India has 216.5 million OTT\nsubscriptions, which is a subscription market at a different price level.\n\n## Who this is for, and who it is not\n\nThis suits a team choosing a model for a new product, or reconsidering one that is not\nproducing. The decision is cheap now and expensive later, because a model change\nreshapes the product rather than the pricing page.\n\nIt suits anyone whose instinct is subscription because subscription is winning. The\ngrowth figures support that instinct and the frequency test may not.\n\nIt does not suit a product already monetising well. Changing a working model to chase a\ncategory average usually costs more than it returns.\n\nIt also does not suit a marketplace, where the question is take rate rather than model.\nThe glossary entry on take rate covers that directly.\n\nOne case deserves its own note: a product with two distinct user groups, one frequent and\none occasional. That shape often wants two models rather than one, and the hybrid\nplaybook covers it. Choosing a single model for both groups usually underserves the\nlarger one.\n\n## The method, part one: narrow the field\n\nThree steps.\n\n### 1. Measure how often people come back\n\nWeekly or more often supports a subscription. Monthly or less points to a one-off\npurchase, transaction fees or advertising. That one measurement rules out at least two\nmodels for most products.\n\nMeasure it on real cohorts rather than on intent. What people say about how often they\nwould use a product has almost no relationship to how often they do.\n\n### 2. Count the non-paying population you would keep\n\nAdvertising and hybrid both need volume. If most users leave in week one, advertising has\nno inventory worth selling, and the choice narrows to charging the few who stay.\n\nCount returning users rather than installs. An install that never comes back produces one\nimpression, which prices at close to nothing, and install counts flatter every ad model\non paper.\n\n### 3. Check what the platform takes from each option\n\nGoogle Play takes 10% on the first $1 million of annual revenue, about ₹9.59 crore, and\n20% above it. Transaction and marketplace models carry their own rates, with eBay\nreporting 13.91% of gross merchandise volume. Run each candidate model net of its own\ntake, because the gross comparison is misleading.\n\n## The method, part two: commit and set the bar\n\nThree steps.\n\n### 4. Set the conversion expectation from the model, not from ambition\n\nFreemium under 10%, opt-in trials up to 25%, opt-out up to 50%. Write down which range\napplies before launch, so the first month's number has something to be judged against.\n\nThe gap between those ranges is mostly commitment, not quality. An opt-out trial asks for\ncard details and converts best because it has already filtered for intent. It also cuts the\nnumber of people who start, so the higher rate applies to a smaller group. Model both\neffects, or the model choice will look better on paper than in revenue.\n\n### 5. Price the model at the local level where you sell\n\nIndia's 216.5 million OTT subscriptions are a reminder that a subscription market can be\nvery large and priced far below Western equivalents. Build the ladder from a local price\nrather than converting a Western one. The conversion rate and the price level move\nindependently, and a model that works at one price level can fail at another with the same\nfunnel.\n\n### 6. Decide what would make you change model, in advance\n\nName the figure. A subscription with renewal rates below your payback requirement is a\nmodel problem rather than a pricing problem, and the threshold is easier to agree before\nanyone is defending a decision.\n\nTwo thresholds are usually enough: a renewal rate below which the subscription is not\nviable, and a conversion rate below which freemium is not. Both get written down once and\nchecked quarterly, which keeps the model decision reviewable instead of permanent.\n\n<FromMyWork exp=\"exp-030\">\nSixty days went into understanding the organisation before changing anything.\nMisdiagnosing the problem is more expensive than moving slowly, and a monetisation model\nis the most expensive thing to misdiagnose.\n</FromMyWork>\n\n## The numbers to expect\n\nExpect subscription to look best on every published chart and still fail the frequency\ntest for some products. An 82% revenue share describes the market, not your product.\n\nExpect the net comparison to change the ranking. Gross revenue favours whatever model\ncharges most. Net of a 10% to 20% platform rate, or a 13.91% marketplace take, the order\ncan reverse.\n\nExpect the conversion range to hold. Freemium under 10% is persistent across many\nproducts, and a plan assuming 20% from a freemium model is planning on an outlier.\n\nExpect advertising to grow slowest. At 14% year on year against 105% for subscriptions, an\nad-first model places the business in the slower-growing part of the market. That is\nsometimes the right call, and it should be a deliberate one rather than a default.\n\n<FromMyWork exp=\"exp-029\">\nThree teams shipped in the same week without knowing it, and the collision was\norganisational rather than technical. Monetisation models fail the same way, when pricing,\nproduct and growth each assume a different model.\n</FromMyWork>\n\n## Pitfalls\n\nFive, and the first is the most common.\n\nChoosing subscription because subscription is winning. The 105% growth figure is a market\nfact, and the frequency test is a product fact.\n\nComparing models gross. Platform and marketplace rates differ enough to change which\nmodel nets more.\n\nPlanning freemium conversion above its range. Under 10% is the published benchmark, and\nmost plans assume better.\n\nAssuming a Western price. India's 216.5 million OTT subscriptions exist at a very\ndifferent level, and a converted price misses both markets.\n\nTreating the model as a pricing page decision. It shapes the product, the funnel and the\nteam. Changing it later means rebuilding all three.\n\nAnd leaving the decision unowned. Pricing, product and growth each make assumptions about\nthe model, and when nobody owns it those assumptions diverge quietly until a launch\nexposes them.\n\n## The checklist\n\nTwelve items. The first three narrow the field; the rest commit to one.\n\n1. Return frequency measured, weekly or less often.\n2. Non-paying population that survives week one counted.\n3. Models eliminated by the frequency test, in writing.\n4. Platform or marketplace rate applied to each remaining candidate.\n5. Net revenue per user compared across candidates, not gross.\n6. Conversion range chosen from the model, with the figure recorded.\n7. Local price level researched for each market you sell into.\n8. Ladder built upward from the local price, not converted down.\n9. Renewal or repeat-purchase requirement stated for the chosen model.\n10. Change-of-model threshold agreed before launch.\n11. One owner named for the model decision across pricing, product and growth.\n12. Review booked at ninety days against the conversion range, not the revenue total.\n13. Renewal and conversion thresholds written down, with a quarterly check scheduled.\n\n## Sources and related\n\nEach figure carries its source and the date it was last checked. The growth rates and\nrevenue shares come from app store and platform reporting, which covers apps distributed\nthrough the stores and therefore excludes web-billed products — an increasingly large\nexception worth remembering when the store take is the deciding factor.\n\nThe hybrid monetization playbook covers running two of these models at once, which is\nwhere most products end up at scale. The take rate and paywall glossary entries carry the\ndefinitions, including what belongs inside a take rate.\n\nOne gap worth stating: no source gives revenue growth by model for India specifically.\nThe subscription base is documented and the growth split is not, so the growth figures\nabove describe the global store market and the Indian price level has to come from\nelsewhere.\n"
+    },
+    {
+      "id": "playbook-0609",
+      "url": "/playbooks/north-star-metric",
+      "archetype": "playbook",
+      "hub": "playbooks",
+      "funnel": "MOFU",
+      "title": "North Star Metric: Choosing One Teams Can Actually Move",
+      "meta_description": "Choosing a north star metric: the test is whether you can move it directly, because a metric you can move directly is the wrong one.",
+      "h1": "Choosing a north star metric teams can move",
+      "primary_keyword": "north star metric",
+      "secondary_keywords": [
+        "north star metric examples",
+        "input metrics"
+      ],
+      "entity_a": "north-star-metric",
+      "facts": [
+        "f-pb-29",
+        "f-pb-30",
+        "f-pb-31",
+        "f-pb-32",
+        "f-rh-01",
+        "f-gh-03",
+        "f-pb-06"
+      ],
+      "experience": [
+        "exp-032",
+        "exp-033"
+      ],
+      "links": [
+        {
+          "url": "/glossary/north-star-metric",
+          "anchor": "the north star metric entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/omtm",
+          "anchor": "the OMTM entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/retention/healthtech",
+          "anchor": "healthtech retention benchmarks",
+          "role": "reference"
+        },
+        {
+          "url": "/playbooks/activation-metric",
+          "anchor": "the activation metric playbook",
+          "role": "lateral"
+        },
+        {
+          "url": "/playbooks",
+          "anchor": "the playbooks",
+          "role": "hub"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a growth and monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#north-star-tests",
+          "alt": "Seven reference points for choosing a north star metric: the number of input metrics a north star carries, the test that a directly movable metric is the wrong one, the list of commonly named poor choices, published examples that measure delivered value, the day-60-to-90 window in which a healthy retention curve flattens, the share of paying users who pay within two days, and how far median time to value has compressed, each row carrying its source and verification date",
+          "caption": "The tests a candidate has to survive. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How do I know a north star candidate is wrong?",
+          "a": "If the team can move it directly, it is the wrong one. A metric you can push without changing customer behaviour is a dial, not a north star, and revenue metrics fail this test most often."
+        },
+        {
+          "q": "Which metrics are usually poor choices?",
+          "a": "Recurring revenue, daily active users, downloads, page views and registered users are all named as poor north stars. They either lag the behaviour you want or count people rather than value delivered."
+        },
+        {
+          "q": "How many input metrics should there be?",
+          "a": "Three to five. Each should be something a team can influence directly through the product, and together they should plausibly explain movement in the north star."
+        },
+        {
+          "q": "How often should the north star change?",
+          "a": "Rarely, and never quietly. A changed definition makes every prior chart incomparable, so the change needs a date and a stated reason that survives being read a year later."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "Person",
+        "BreadcrumbList"
+      ],
+      "cta": {
+        "primary": {
+          "label": "Choose a north star metric with me",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "See the case studies",
+          "href": "/case-studies"
+        }
+      },
+      "unique_value": "Uses the direct-movability test as the primary filter rather than a list of good examples, and pairs each candidate with a published leading-indicator window so the choice can be checked against evidence instead of taste.",
+      "block_coverage": {
+        "answer_box": [
+          "f-pb-30"
+        ],
+        "in_short": [
+          "f-pb-31",
+          "f-pb-32"
+        ],
+        "who_this_is_for": [
+          "f-pb-29"
+        ],
+        "method": [
+          "f-pb-29",
+          "f-pb-32"
+        ],
+        "numbers_and_examples": [
+          "f-rh-01",
+          "f-gh-03"
+        ],
+        "pitfalls": [
+          "f-pb-31",
+          "f-pb-30"
+        ],
+        "checklist": [
+          "f-pb-06"
+        ]
+      },
+      "body": "\n<AnswerBox>\nA north star metric is the one number a team steers by. The test that eliminates most\ncandidates: if you can move it directly, it is the wrong one. It has to measure value\ndelivered, lead revenue rather than report it, and break into 3 to 5 inputs that\ndifferent teams can each influence.\n</AnswerBox>\n\n<FactTable\n  id=\"north-star-tests\"\n  caption=\"The tests a candidate has to survive\"\n  columns={[\"Test or reference point\", \"What it says\"]}\n  rows={[\n    { cells: [\"The direct-movability test\", \"a metric you can move directly is the wrong one\"], factId: \"f-pb-30\" },\n    { cells: [\"Commonly named poor choices\", \"ARR, MRR, DAU, downloads, page views, registered users\"], factId: \"f-pb-31\" },\n    { cells: [\"Published examples that measure delivered value\", \"nights booked, time spent listening, rides per week\"], factId: \"f-pb-32\" },\n    { cells: [\"Input metrics a north star carries\", \"three to five, each team-influenceable\"], factId: \"f-pb-29\" },\n    { cells: [\"When a healthy retention curve flattens\", \"day 60 to 90, top-quartile consumer apps\"], factId: \"f-rh-01\" },\n    { cells: [\"Activation rate, median against its quartiles\", \"41.7%; 71% top, 19% bottom\"], factId: \"f-gh-03\" },\n    { cells: [\"Median time to value, 2022 against 2026\", \"8.1 days against 4.2\"], factId: \"f-pb-06\" },\n  ]}\n/>\n\n## In short\n\nFive tests. A candidate has to pass all of them.\n\nDirect movability disqualifies. If the team can move the number without changing what\ncustomers do, it is a dial rather than a north star.\n\nIt has to measure value received, not people counted. Nights booked, time spent\nlistening and rides per week all describe something a customer got. Registered users and\ndownloads do not.\n\nIt has to lead revenue. Recurring revenue, named repeatedly as a poor choice, reports\nlast quarter's product decisions.\n\nIt has to decompose into three to five inputs, each owned by a team that can move it.\n\nAnd it has to be checkable against a published window, so progress is readable inside a\nquarter rather than at the year's end.\n\n## Who this is for, and who it is not\n\nThis suits a team with several dashboards and no agreed single number, where every\nfunction reports progress and the business does not obviously move. The symptom is\nfamiliar: every team hitting its targets and leadership unable to say whether the\nquarter went well.\n\nIt suits teams whose current north star is revenue. That is the most common choice and\nthe one that fails the movability and leading-indicator tests at once.\n\nIt does not suit a product still looking for anyone who wants it. A north star measures\nhow much value a working product delivers. Before that, the question is whether value\nexists at all, and no single metric answers it.\n\nIt also does not suit a company with genuinely unrelated product lines. One number\nacross two businesses describes neither, and the honest answer is one north star per\nline with a shared financial frame above them.\n\n## The method, part one: find the candidate\n\nThree steps.\n\n### 1. Write down what a customer gets, in their words\n\nNot a feature, and not an event name. A night stayed. An hour of music. A ride taken. If\nthe sentence needs product vocabulary to make sense, it is not describing customer value\nyet.\n\nWrite three or four of these before picking one. The first is usually the thing the team\nmost wants to be true, and the second or third is usually closer to what customers\nactually came for.\n\n### 2. Run every candidate through the movability test\n\nAsk whether the team could move the number next week without changing customer behaviour.\nAnything that passes that test fails as a north star. Revenue, sign-ups and page views all\nfail here, which is why they appear on every list of poor choices.\n\nA discount moves revenue. A paid campaign moves sign-ups. Neither tells you the product\ngot better, and a metric that responds to both is reporting the marketing calendar.\n\n### 3. Check that it leads rather than lags\n\nA north star should move before revenue does. Two published windows make this checkable:\na healthy retention curve flattens between day 60 and day 90, and activation has a\npublished spread from 19% at the bottom quartile to 71% at the top. A candidate that\ncannot show movement inside those windows will not steer a quarter.\n\n## The method, part two: build the input tree\n\nThree steps, and this is where most north stars quietly fail.\n\n### 4. Decompose into three to five inputs\n\nEach input should be a factor a team can influence directly through the product, and\ntogether they should plausibly explain movement in the north star. More than five and\nnobody holds the tree in their head.\n\n### 5. Assign each input to a team that can move it\n\nThe test is whether a designer or engineer can draw a line from their work to one input.\nIf they cannot, that branch of the tree is decoration, and the team attached to it will go\nback to its own dashboard within a month.\n\nDo this in the room, with the people concerned, rather than on a slide afterwards. An\ninput assigned to a team that was not consulted is an input with no owner, whatever the\ndiagram says.\n\n### 6. Set a review cadence against the time-to-value trend\n\nMedian time to value has halved in four years, from 8.1 days to 4.2. A metric tree built\non a slower product is already describing a different market, so the tree gets revisited\nannually rather than treated as settled.\n\n<FromMyWork exp=\"exp-032\">\nAggregating independently-set team OKRs produced eleven objectives and thirty-four key\nresults, which is not a strategy. A north star without one owner per input produces the\nsame sprawl with better branding.\n</FromMyWork>\n\n## The numbers to expect\n\nExpect the first candidate to fail the movability test. Revenue and active users are the\nusual starting points and both fail it.\n\nExpect the input tree to expose an unowned branch. That is the most useful output of the\nexercise: a factor everyone agrees matters and nobody is accountable for. It is usually\none of the two or three things most limiting growth, which is why it stayed unowned.\n\nExpect the north star to move slowly and the inputs to move weekly. That is the intended\nshape. A north star that jumps month to month is probably a dial after all.\n\nExpect to resist changing it. The definition change is what destroys comparability, and\nthe temptation arrives in the first bad quarter.\n\nExpect the activation range to be the useful comparison for most input metrics. With a\n41.7% median between a 19% bottom quartile and a 71% top one, an input moving from 30% to\n35% is real progress and looks like nothing against a median alone.\n\n<FromMyWork exp=\"exp-033\">\nThree artefacts fixed decision coherence, and the one that did most work was a short\nquarterly brief shared widely. A metric tree does the same job: it makes the reasoning\nvisible rather than keeping it in one person's head.\n</FromMyWork>\n\n## Pitfalls\n\nFive, and the first two account for most failed north stars.\n\nChoosing revenue. It fails movability and it lags, which is the pair of faults the test\nexists to catch.\n\nChoosing active users. Downloads, registered users and daily actives are all named as\npoor choices, because they count people rather than value received.\n\nBuilding a tree with more than five inputs. Beyond that nobody retains it, and the tree\nbecomes a document rather than a decision aid.\n\nLeaving an input unowned. The branch stops moving and nobody notices for a quarter.\n\nChanging the definition without a date. Every chart before the change becomes\nincomparable, and the step gets read as performance by everyone who was not in the room.\n\nAnd choosing a metric the data cannot yet support. A north star that needs instrumentation\nnobody has built is a plan to measure something, not a metric, and the gap usually lasts\nlonger than the quarter it was chosen for.\n\n## The checklist\n\nThirteen items. The first four choose the metric; the rest make it operable.\n\n1. Customer value written in the customer's words, with no product vocabulary.\n2. Candidate list drawn from that sentence, not from the dashboard.\n3. Movability test run on each candidate, and the passers discarded.\n4. Leading-indicator check run against a published window.\n5. Final candidate written down with its exact definition.\n6. Denominator and time window stated alongside it.\n7. Three to five inputs identified.\n8. Each input confirmed as team-influenceable through the product.\n9. One owner named per input.\n10. Line drawn from at least one person's weekly work to each input.\n11. Reporting cadence set: north star monthly, inputs weekly.\n12. Annual review of the tree scheduled against the time-to-value trend.\n13. Any definition change logged with a date and a reason.\n14. Instrumentation confirmed to exist before the metric is announced.\n\n## Sources and related\n\nEach figure carries its source and the date it was last checked. The selection tests and\nthe poor-choice list come from one vendor's framework, which is the most widely adopted\ntreatment of the subject and still one source, so it is marked as one rather than as a\nconsensus.\n\nOne gap is worth naming: no survey found reports what share of companies have a defined\nnorth star, or what share abandon one. Published material on this subject is almost\nentirely prescriptive rather than measured, which is why the tests above are framed as\ntests rather than as benchmarks.\n\nThe north star glossary entry carries the definition and the OMTM entry covers the\nsingle-metric trap. The activation metric playbook is usually where the first input\ncomes from.\n"
+    },
+    {
+      "id": "playbook-0610",
+      "url": "/playbooks/plg-for-consumer-apps",
+      "archetype": "playbook",
+      "hub": "playbooks",
+      "funnel": "MOFU",
+      "title": "PLG for Consumer Apps: What Transfers and What Does Not",
+      "meta_description": "Product-led growth for consumer apps: the model sets the conversion ceiling before execution does, from freemium under 10% to opt-out trials up to 50%.",
+      "h1": "PLG for consumer apps: what transfers and what does not",
+      "primary_keyword": "plg for consumer apps",
+      "secondary_keywords": [
+        "product led growth consumer",
+        "freemium vs trial conversion"
+      ],
+      "entity_a": "plg-for-consumer-apps",
+      "facts": [
+        "f-gh-01",
+        "f-gh-02",
+        "f-pb-21",
+        "f-fx-06",
+        "f-fx-07",
+        "f-pb-07",
+        "f-pb-24"
+      ],
+      "experience": [
+        "exp-026",
+        "exp-005"
+      ],
+      "links": [
+        {
+          "url": "/glossary/freemium",
+          "anchor": "the freemium entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/free-to-paid-conversion",
+          "anchor": "the free-to-paid entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/trial-to-paid-conversion/b2b-saas",
+          "anchor": "trial conversion benchmarks",
+          "role": "reference"
+        },
+        {
+          "url": "/playbooks/activation-metric",
+          "anchor": "the activation metric playbook",
+          "role": "lateral"
+        },
+        {
+          "url": "/playbooks",
+          "anchor": "the playbooks",
+          "role": "hub"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a growth and monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#plg-ceilings",
+          "alt": "Seven reference points for product-led growth in consumer apps: the published distribution of freemium conversion rates against the free-trial distribution, free-to-paid conversion for AI apps against mature subscription apps, median onboarding tour completion with its interquartile range, checklist completion at three-to-five steps against ten or more, the median time to value across 547 companies, and the share of all subscription revenue the top decile of apps captures, each row carrying its source and verification date",
+          "caption": "The model sets the ceiling before execution does. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Does product-led growth work for consumer apps?",
+          "a": "It is the default there, and the question is which variant. Freemium and free trial sit on different distributions: a fifth of freemium products convert below 2.5%, against 7% of trial products, and the most common trial band is 7.5% to 10%."
+        },
+        {
+          "q": "Freemium or free trial?",
+          "a": "Trial, unless the product needs a permanent free tier to work. The two distributions barely overlap, so the model choice moves the outcome more than execution usually does."
+        },
+        {
+          "q": "Why is my AI app converting so badly?",
+          "a": "It may not be. AI apps convert free to paid at 1% to 3%, against 5% to 8% for mature subscription apps. If you are inside that band the funnel is normal, and the revenue problem is a population problem."
+        },
+        {
+          "q": "What should we fix first?",
+          "a": "The path length. Checklists of three to five steps complete at 67% against 18% for ten or more, and median tour completion is 29%. Most self-serve products lose more users to step count than to pricing."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "Person",
+        "BreadcrumbList"
+      ],
+      "cta": {
+        "primary": {
+          "label": "Build a product-led growth motion with me",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "See the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "unique_value": "Treats the freemium-or-trial decision as the thing that sets the conversion ceiling, using two published distributions that barely overlap — so a team can tell whether its rate is an execution problem or a model problem before spending a quarter on the wrong one.",
+      "contradictions": [
+        "Freemium conversion benchmarks are quoted both as a distribution and as a single ceiling: lennysnewsletter.com reports a fifth of products below 2.5% with the largest group between 2.5% and 5%, while amplitude.com states a benchmark of under 10%. The first describes where products sit and the second where the ceiling is, so they are answers to different questions. Both appear on this page."
+      ],
+      "block_coverage": {
+        "answer_box": [
+          "f-gh-01",
+          "f-gh-02"
+        ],
+        "in_short": [
+          "f-pb-21",
+          "f-gh-02"
+        ],
+        "who_this_is_for": [
+          "f-pb-24"
+        ],
+        "method": [
+          "f-fx-07",
+          "f-pb-07"
+        ],
+        "numbers_and_examples": [
+          "f-fx-06",
+          "f-pb-07"
+        ],
+        "pitfalls": [
+          "f-gh-01",
+          "f-pb-21"
+        ],
+        "checklist": [
+          "f-fx-07"
+        ]
+      },
+      "body": "\n<AnswerBox>\nPLG for consumer apps means the product does the selling, so the model choice sets the\nceiling before execution does. Freemium and free trial sit on distributions\nthat barely overlap: a fifth of freemium products convert below 2.5%, against 7% of trial\nproducts, whose most common band is 7.5% to 10%.\n</AnswerBox>\n\n<FactTable\n  id=\"plg-ceilings\"\n  caption=\"The model sets the ceiling before execution does\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Freemium conversion distribution, 1,000+ products\", \"20% below 2.5%; largest group 2.5-5%\"], factId: \"f-gh-01\" },\n    { cells: [\"Free-trial conversion distribution, same survey\", \"7% below 2.5%; most common 7.5-10%\"], factId: \"f-gh-02\" },\n    { cells: [\"Free-to-paid, AI apps against mature subscription apps\", \"1-3% against 5-8%\"], factId: \"f-pb-21\" },\n    { cells: [\"Onboarding tour completion, 464 companies\", \"29% median; middle half 15-55%\"], factId: \"f-fx-06\" },\n    { cells: [\"Checklist completion, 3-5 steps against 10+\", \"67% against 18%\"], factId: \"f-fx-07\" },\n    { cells: [\"Median time to value across 547 companies\", \"1 day 12 hours 23 minutes\"], factId: \"f-pb-07\" },\n    { cells: [\"Share of all subscription revenue taken by the top 10% of apps\", \"95%\"], factId: \"f-pb-24\" },\n  ]}\n/>\n\n## In short\n\nFive points, and the first decides most of the outcome.\n\nThe model choice sets the ceiling. Freemium and trial distributions barely overlap, so the\nsame rate can be good news or bad depending on which model produced it.\n\n<Example illustrative>\nA freemium product converting at 4% sits above the largest group in its distribution. A\ntrial product at 4% sits near the bottom of its own. Same number, opposite verdict.\n</Example>\n\nYour category may already explain the number. AI apps convert at 1% to 3% against 5% to 8%\nfor mature subscription apps.\n\nStep count beats persuasion. Three-to-five-step checklists complete at 67%; ten or more\ncomplete at 18%.\n\nSpeed is the constraint, not polish. The median time to value is about a day and a half,\nand most consumer patience is shorter than that.\n\nAnd the market rewards very few products: the top decile of apps takes 95% of all\nsubscription revenue, so a product-led motion has to work properly rather than adequately.\n\n## Who this is for, and who it is not\n\nThis suits a consumer app with self-serve sign-up and no sales conversation, which is\nalmost all of them. The decisions it supports are which free model to run and what to fix\nwhen conversion disappoints.\n\nIt suits teams whose conversion rate has been called bad without a comparison. Half the\ntime the number is ordinary for the model, and the right response is to change the model\nrather than the funnel.\n\nIt does not suit a product that needs a human to onboard each customer. There the free model\nis a lead-generation question rather than a conversion one, and the benchmarks on this page\nwill flatter it.\n\nIt also does not suit a product with no retention. Product-led growth multiplies a working\nproduct. If users do not come back, the free tier produces cost and the trial produces\nnothing.\n\n## The method, part one: choose the free model\n\nThree steps.\n\n### 1. Decide whether the free tier has a job beyond conversion\n\nA permanent free tier earns its cost when free users create value for paying ones, or supply\nad inventory, or seed a network. Without one of those jobs, a trial does the same work for\nless.\n\nWrite the job down in a sentence. If the sentence is \"it gets people in the door\", that is a\ntrial's job, and a trial does it with a deadline attached.\n\n### 2. Place your current rate on the right distribution\n\nA fifth of freemium products convert below 2.5%; only 7% of trial products do. Find which\ndistribution applies, then where you sit on it. That single comparison settles whether you\nhave an execution problem or a model problem.\n\nRecord the denominator with the rate. Conversion over sign-ups, over activated users and\nover trial starts give three different numbers from one funnel, and a benchmark built on one\nof them says nothing about the other two.\n\n### 3. Check your category before concluding anything\n\nAI apps convert at 1% to 3% against 5% to 8% for mature subscription apps. A product\ninside its category band has a normal funnel, and chasing the cross-category number will\nwaste a quarter.\n\n## The method, part two: fix the path\n\nThree steps, in order of return.\n\n### 4. Cut the steps to first value\n\nCount them, then remove some. Completion runs 67% at three to five steps and 18% at ten or\nmore, which is a larger gap than any copy change produces.\n\nCount the real path, not the designed one. Account creation, permission prompts, email\nverification and a plan choice are all steps, and they are usually the ones left out of the\nonboarding diagram.\n\n### 5. Set a time-to-value target under a day\n\nThe median across 547 companies is about a day and a half, and consumer patience runs shorter\nthan business patience. Treat anything over a day as the thing to fix.\n\nMeasure it from first open, not from account creation. The gap between those two is where\nmost of the delay hides, and the user experiences the whole of it.\n\n### 6. Measure the tour before redesigning it\n\nMedian tour completion is 29%, with the middle half between 15% and 55%. A tour most users\nabandon is a cost rather than an asset, and shortening it beats improving it.\n\nThe honest test is whether completers convert better than skippers. If they do not, the tour\nis selecting for patient users rather than creating value, and deleting it costs nothing.\n\n<FromMyWork exp=\"exp-026\">\nProfessionals bought after using the tool, not after hearing about it. Hands-on\ndemonstration beat description, which is the whole argument for letting a product sell\nitself.\n</FromMyWork>\n\n## The numbers to expect\n\nExpect the model comparison to reframe the conversation. A rate that looked poor against\none distribution often looks ordinary against the right one.\n\nExpect the step-count work to produce the largest single improvement, and to feel too simple\nto be the answer. It usually arrives as deletions rather than as new screens, which is why\nit rarely gets proposed.\n\nExpect conversion to stay low in absolute terms. Freemium under 10% is the published ceiling,\nso a product-led motion is a volume business. The arithmetic only works with enough people\narriving at the top of it, which makes distribution the constraint rather than the funnel.\n\nExpect the market to be unforgiving. With the top decile of apps taking 95% of\nsubscription revenue, an adequate product-led motion is not a position that pays.\n\n<FromMyWork exp=\"exp-005\">\nAsking for a bank statement upfront got 35% compliance. Showing a preliminary eligibility\nrange first, then asking for the statement to reveal the exact offer, took it to 71%. The\nsame ask, reframed from a requirement into a reward.\n</FromMyWork>\n\n## Pitfalls\n\nFive, and the first is the most common misdiagnosis.\n\nComparing a freemium rate to a trial benchmark. The two distributions barely overlap, and\nthe comparison condemns a product that is performing normally.\n\nIgnoring the category band. An AI app inside the published 1% to 3% range is not failing.\n\nRunning a free tier with no job. If free users create nothing for paying ones, the tier is\na cost centre with a growth story attached.\n\nAdding onboarding instead of removing steps. Every step costs completion, and the published\ngap is wide.\n\nTreating a 29% tour completion as a design problem. It is usually a length problem, and\nthe cheapest fix is deletion.\n\nAnd copying a business-software motion wholesale. Consumer patience is shorter, the price\npoint is lower, and the median time to value of about a day and a half already describes a\nslower audience than most consumer apps face.\n\n## The checklist\n\nThirteen items. The first five are diagnosis; the rest are the work.\n\n1. Free model identified: permanent free tier, opt-in trial or opt-out trial.\n2. Job of the free tier stated, beyond conversion, or the tier reconsidered.\n3. Current conversion rate computed on a stated denominator.\n4. Rate placed on the matching published distribution, not the other one.\n5. Category band checked before any conclusion about performance.\n6. Steps between arrival and first value counted.\n7. Path reduced toward five steps or fewer.\n8. Time to value measured and targeted under a day.\n9. Tour completion measured against the 29% median before redesign.\n10. Checklist length checked against the three-to-five finding.\n11. Paid and organic cohorts reported separately.\n12. Denominator and model recorded together, so later comparisons stay valid.\n13. Review booked at ninety days against the matching distribution, not a single median.\n14. Tour completers compared against skippers, to test whether the tour earns its place.\n\n## Sources and related\n\nEach figure carries its source and the date it was last checked. One disagreement is\nrecorded rather than resolved: freemium conversion appears both as a distribution, with a\nfifth of products below 2.5%, and as a single under-10% ceiling. Those answer different\nquestions, and both are on this page.\n\nThe conversion figures come from self-reported survey data and onboarding tooling, so they\ncarry a reporting bias toward teams already measuring this work. Read the bottom of each\ndistribution as a floor among those teams rather than the floor.\n\nThe freemium and free-to-paid glossary entries carry the definitions. The activation metric\nplaybook is the companion for the path work, since first value is the step every figure here\ndepends on.\n\nOne gap worth stating: no source separates consumer from business products in the\nconversion distributions above. The survey covers both, so the bands are the best available\ncomparison and not a consumer-only one. Where a category figure exists, such as the AI band,\nit is the better comparison.\n"
     }
   ]
 }
