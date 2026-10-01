@@ -101,3 +101,36 @@ jobs:
           name: gate-report
           path: reports/
           if-no-files-found: ignore
+
+  # Guards what is actually in production right now. Until the Vercel project's
+  # Root Directory moves to web/, vercel.json builds `npm run build:static` from
+  # the repo root and serves dist/public — the legacy Vite site. A push to main
+  # deploys that to production, so a break in it takes the live site down while
+  # every check above stays green, because none of them touch it.
+  #
+  # Delete this job once the cutover is done and the legacy build is retired.
+  legacy-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - name: Legacy static build (what production serves today)
+        run: npm run build:static
+
+      - name: Assert the legacy build produced pages
+        run: |
+          count=$(find dist/public -name index.html | wc -l)
+          echo "prerendered routes: $count"
+          # The legacy site has 132 routes. A build that silently produces a
+          # handful of them is a broken build that still exits 0.
+          if [ "$count" -lt 100 ]; then
+            echo "::error::legacy build produced only $count routes — expected ~132"
+            exit 1
+          fi
