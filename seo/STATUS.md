@@ -298,3 +298,29 @@ G02 block could be marked reviewed by hand and flipped to indexable with the
 block intact. It cannot now.
 
 **These 38 pages need work before they are indexed.** The other 60 pass G02.
+
+### The gates themselves are sound — the holes were all in the plumbing
+
+Four checks in this project have now been caught reporting success while
+checking nothing: `gates.ts` reading a fact-usage index nothing generated,
+`publish.ts` never consulting gate results, `similarity_check.py` walking a
+directory that did not exist, `check-launch.ts` probing a port that was down.
+That is a pattern rather than four coincidences, so the 21 gates were audited
+for the same fault by running the suite against a page stripped of facts, prose,
+links, visuals, schema and CTA.
+
+They hold. Eight gates refuse such a page — G01, G06, G07, G08, G09, G10, G14,
+G16 — and the seven that pass are vacuous by design: no numbers means nothing
+unsourced, no money means no missing conversion. `web/tests/fail-closed.test.ts`
+pins both halves, so a gate that quietly stops checking will fail a test rather
+than ship.
+
+Worth stating plainly because it redirects the search: every hole found so far
+was an **absent input read as "nothing to check"**, not a gate with weak logic.
+A missing file, an ungenerated index, a dead port. That is where to look next,
+not at the rules.
+
+(An earlier pass of this audit appeared to find three more holes — G09, G14 and
+G16 passing an empty page. That was a bad test: it emptied three fields and
+inherited the rest from a real page, so those gates were reading another page's
+visuals, CTA and schema. With a genuinely empty page all three fail correctly.)
