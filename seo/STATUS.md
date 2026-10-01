@@ -216,7 +216,7 @@ and network for `research.ts`). Until then:
 
 ---
 
-## G02 ran for the first time — 25 pages are not publishable
+## G02 ran for the first time — 41 pages are not publishable
 
 Date: 2026-10-01
 
@@ -231,16 +231,34 @@ package registry.
 the log on a GitHub runner, which does have open network, and commit it back so
 G02 then runs offline everywhere.
 
-Running the gate with the log wired in gives:
+It ran for real on 2026-10-01. **119 of the 130 cited sources returned 200.**
+The 11 that did not fall into two groups that need opposite actions:
+
+| | Count | Sources |
+|---|---|---|
+| **Gone** | 2 | `culta.ai/blog/arpu-benchmarks-2026` (404), `firstpagesage.com/reports/freemium-conversion-rate-benchmarks/` (404) |
+| **Refused an automated client** | 9 | 6× `businessofapps.com` (405), `npci.org.in` (403), `bestmediainfo.com` (403), `leanexperiments.substack.com` (403) |
+
+The nine are bot defences, not dead links — NPCI is India's payments regulator
+and the pages serve fine in a browser. Only the two 404s need a replacement
+source. `verify_sources.py` reports the two groups separately for that reason;
+G02 itself does not distinguish them, so both block their pages until the facts
+citing them carry an `archive_url`.
+
+Gate verdicts with the real log in place:
 
 | | Pages |
 |---|---|
-| Blocked by G02 | **25 of 98** |
-| …for an unreachable source | 0 |
-| …for the majority-primary rule | 25 |
+| Blocked by G02 | **41 of 98** |
+| …for the majority-primary rule alone | 25 |
+| …adding those citing a non-200 source | 16 |
 
-**None of the 25 fail on reachability.** They fail because fewer than half their
-facts come from a primary source. Four cite none at all:
+An earlier note here said 25 blocked and none for reachability. That came from a
+wiring test that injected 200 for every URL to prove the gate ran at all, and it
+was wrong about reachability — the real run found 11 non-200. 25 is the
+majority-primary count, not the total.
+
+Four pages cite no primary source at all:
 
 | Page | Primary |
 |---|---|
@@ -248,8 +266,6 @@ facts come from a primary source. Four cite none at all:
 | `/india` | 0/6 |
 | `/services/app-monetization-strategy` | 0/6 |
 | `/services/app-monetization-strategy/marketplaces` | 0/6 |
-
-By section: benchmarks 12, glossary 5, playbooks 5, services 2, `/india` 1.
 
 ### Why this is a content problem, not a gate technicality
 
@@ -275,5 +291,5 @@ links only, and `pnpm gates` never writes `status` — so a page with a standing
 G02 block could be marked reviewed by hand and flipped to indexable with the
 block intact. It cannot now.
 
-**These 25 pages need re-research before they are indexed.** The other 73 are
+**These 41 pages need work before they are indexed.** The other 57 are
 unaffected.

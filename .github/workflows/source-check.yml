@@ -57,20 +57,41 @@ jobs:
       - name: Observe every source URL
         run: python3 seo/scripts/verify_sources.py | tee /tmp/sources.txt
 
+      # The similarity gate reads a report this job would otherwise never
+      # generate, so without this it skips here while passing in the checks job
+      # — two jobs disagreeing about the same corpus for no real reason.
+      - name: Similarity corpus check
+        working-directory: web
+        run: pnpm similarity
+
       # With fetch_logs present G02 stops skipping and actually runs. This step
       # is what proves the logs are usable, not just written.
       - name: Content gates, with G02 now running
         working-directory: web
         run: pnpm gates 2>&1 | tee /tmp/gates.txt || true
 
+      # Counted from the gate report, not the console output. The console prints
+      # one verdict line per page and never names a gate, so grepping it for
+      # "G02" reported 0 blocked pages while 41 were blocked.
       - name: Report G02's verdict
         run: |
           echo "### Source check" >> "$GITHUB_STEP_SUMMARY"
           echo '```' >> "$GITHUB_STEP_SUMMARY"
-          tail -40 /tmp/sources.txt >> "$GITHUB_STEP_SUMMARY"
+          cat /tmp/sources.txt >> "$GITHUB_STEP_SUMMARY"
           echo '```' >> "$GITHUB_STEP_SUMMARY"
-          g02=$(grep -c "G02.*blocked" /tmp/gates.txt || true)
-          echo "pages with G02 blocked: $g02" | tee -a "$GITHUB_STEP_SUMMARY"
+          report=reports/wave-all.md
+          g02=$(grep -c '^| G02 .*| BLOCK |' "$report" || true)
+          pages=$(grep -c '^## ' "$report" || true)
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "**G02 blocked $g02 of $pages pages.**" | tee -a "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "Reasons, by count:" >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          grep '^| G02 .*| BLOCK |' "$report" \
+            | sed 's/.*| BLOCK |[^|]*| //; s/ |$//' \
+            | sed 's/[0-9]\+/N/g' | sort | uniq -c | sort -rn \
+            >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
 
       # Not on a pull request: a commit to seo/research would match this
       # workflow's own path filter and trigger it again.
@@ -94,3 +115,4 @@ jobs:
           path: |
             /tmp/sources.txt
             /tmp/gates.txt
+            reports/wave-all.md

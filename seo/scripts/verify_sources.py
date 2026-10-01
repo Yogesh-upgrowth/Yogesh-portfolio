@@ -34,16 +34,33 @@ UA = (
 )
 
 
+# A server that refuses an automated client is not a dead source. The first run
+# of this script returned 405 for six businessofapps.com URLs and 403 for NPCI,
+# bestmediainfo and a Substack post — all of which serve the page to a browser.
+# Reporting those as failures alongside a real 404 would bury the two links that
+# are actually gone, and "re-source NPCI" is the wrong instruction to give.
+REFUSED = {401, 403, 405, 406, 418, 429}
+
+
 def observe(url: str) -> tuple[int, str]:
     """Return (status, why). Status 0 means the request never got a response."""
-    req = urllib.request.Request(url, headers={"User-Agent": UA}, method="GET")
-    try:
-        with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
-            return resp.status, f"GET returned {resp.status}"
-    except urllib.error.HTTPError as exc:
-        return exc.code, f"GET returned {exc.code}"
-    except Exception as exc:  # DNS, TLS, reset, timeout
-        return 0, f"no response: {type(exc).__name__}"
+    attempts: list[str] = []
+    for method in ("GET", "HEAD"):
+        req = urllib.request.Request(url, headers={"User-Agent": UA}, method=method)
+        try:
+            with urllib.request.urlopen(req, timeout=TIMEOUT) as resp:
+                return resp.status, f"{method} returned {resp.status}"
+        except urllib.error.HTTPError as exc:
+            attempts.append(f"{method} {exc.code}")
+            if exc.code not in REFUSED:
+                # A real status from the origin. Trying another verb will not
+                # change a 404 into a 200.
+                return exc.code, f"{method} returned {exc.code}"
+        except Exception as exc:  # DNS, TLS, reset, timeout
+            attempts.append(f"{method} {type(exc).__name__}")
+    last = attempts[-1] if attempts else "no attempt"
+    code = int(last.split()[1]) if last.split()[-1].isdigit() else 0
+    return code, f"refused automated access ({'; '.join(attempts)})"
 
 
 def main() -> int:
@@ -77,15 +94,32 @@ def main() -> int:
         ]
         path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
 
-    bad = {u: r for u, r in results.items() if r[0] != 200}
-    print(f"\n{len(urls) - len(bad)}/{len(urls)} returned 200")
-    for u, (status, why) in sorted(bad.items()):
-        print(f"  {status or 'ERR':>3}  {u}  ({why})")
-    if bad:
-        print(
-            "\nEach of these needs an archive_url on the facts citing it, or a "
-            "live replacement source. G02 blocks the page until then."
-        )
+    ok = {u for u, r in results.items() if r[0] == 200}
+    refused = {u: r for u, r in results.items() if r[0] in REFUSED}
+    dead = {u: r for u, r in results.items() if u not in ok and u not in refused}
+
+    print(f"\n{len(ok)}/{len(urls)} returned 200")
+
+    if dead:
+        print(f"\nGONE — {len(dead)} source(s) no longer resolve. Each needs a "
+              f"replacement source or an archive_url on the facts citing it:")
+        for u, (status, why) in sorted(dead.items()):
+            print(f"  {status or 'ERR':>3}  {u}  ({why})")
+
+    if refused:
+        print(f"\nREFUSED — {len(refused)} source(s) answered but blocked an "
+              f"automated client. This is a bot defence, not a dead link: the "
+              f"page is there in a browser. Check one by hand before "
+              f"re-sourcing anything, and add an archive_url so G02 stops "
+              f"blocking on it:")
+        for u, (status, why) in sorted(refused.items()):
+            print(f"  {status:>3}  {u}  ({why})")
+
+    # G02 does not make this distinction — it blocks on any non-200 without an
+    # archive_url — so both buckets block their pages. The split is for whoever
+    # has to act on it, because the actions are different.
+    print(f"\nG02 will block pages citing any of the {len(dead) + len(refused)} "
+          f"non-200 source(s) that lack an archive_url.")
     return 0
 
 
