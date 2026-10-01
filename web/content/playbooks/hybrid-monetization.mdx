@@ -1,0 +1,201 @@
+<AnswerBox>
+Hybrid monetization means running two revenue models at once, usually subscriptions
+plus advertising. Only 10% of apps do it. More than 60% of top-grossing apps run two
+or more. Treat it as something products grow into, once the non-paying population is
+large enough to be worth serving.
+</AnswerBox>
+
+<FactTable
+  id="hybrid-reality"
+  caption="Few apps run hybrid; most of the biggest ones do"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Apps on a true hybrid model, against top-grossing apps on two or more", "10% against more than 60%"], factId: "f-pb-18" },
+    { cells: ["Blended annual revenue per user: hybrid / ad-only / subscription-led", "$3-15 / $0.40-2 / $30+ (₹288-1,438 / ₹38-192 / ₹2,877+)"], factId: "f-pb-19" },
+    { cells: ["Subscription against ad-only revenue per user", "4.6 times"], factId: "f-pb-20" },
+    { cells: ["Free-to-paid conversion, AI apps against mature subscription apps", "1-3% against 5-8%"], factId: "f-pb-21" },
+    { cells: ["Companies on hybrid pricing now and projected", "43%, rising to 61%"], factId: "f-svc-06" },
+    { cells: ["Pricing model investors name as preferred", "hybrid 35%, outcome-based 26%"], factId: "f-svc-08" },
+    { cells: ["Indian streaming advertising revenue, 2025", "$563.9 million (about ₹5,400 crore)"], factId: "f-bm-27" },
+  ]}
+/>
+
+## In short
+
+Five points, and the first two frame the decision.
+
+Hybrid is rare and concentrated. Only 10% of apps run a true hybrid model. More than
+60% of top-grossing apps run two or more. So hybrid follows scale rather than causing
+it.
+
+The revenue per user lands between the two models, not above both. Hybrid freemium
+blends to $3 to $15 a year, about ₹288 to ₹1,438, against $0.40 to $2 for ad-only and
+$30 or more for subscription-led.
+
+Subscription remains the stronger model per user, at 4.6 times ad-only revenue. So the
+subscription path is the thing to protect.
+
+Low conversion is the signal to go hybrid. AI apps convert at 1% to 3% against 5% to
+8% for mature subscription apps, which leaves far more non-payers to serve.
+
+And the direction of travel is clear: 43% of companies already use hybrid pricing,
+projected to reach 61%, and investors name hybrid their preferred model at 35%.
+
+## Who this is for, and who it is not
+
+This suits a product with a large, engaged, non-paying population, and a subscription
+that converts a small share of it. In that shape, ads add revenue without taking it
+from somewhere else.
+
+It suits teams under pressure to raise revenue per user without raising price. Hybrid
+does that by widening who pays at all, rather than charging payers more.
+
+It does not suit a product whose free tier is small or lightly used. Ads on thin
+traffic earn very little and cost goodwill at the worst moment.
+
+It also does not suit a product whose subscription converts well. Take the top of the
+published range, 8% on an engaged base. Ad revenue from the rest rarely covers the
+damage to the funnel.
+
+One more case where it fits: a product with strong seasonal or regional traffic that
+will never pay. Indian streaming advertising reached $563.9 million in 2025, about
+₹5,400 crore, which is a real market built on exactly that population.
+
+## The method, part one: size the opportunity
+
+Three steps, all arithmetic before any build.
+
+### 1. Count the non-paying population and its engagement
+
+Count how many free users return weekly, not how many exist. Ad revenue tracks
+sessions, so a large dormant base produces almost nothing.
+
+Write the weekly figure down. It sets the ceiling on everything below.
+
+### 2. Model ad revenue at the published blend, not at a vendor estimate
+
+Hybrid freemium blends to $3 to $15 per user per year, about ₹288 to ₹1,438. Use the low
+end for the first model. If the low end does not change the business, the work is not
+worth doing yet.
+
+The low end is the honest default for a reason. Published blends come from products that
+already run ads competently, with fill rates and placements tuned over years. A first
+implementation lands below that, and planning from the top of the range turns a
+reasonable project into a missed forecast.
+
+### 3. Price the risk to subscription revenue explicitly
+
+Subscription apps earn 4.6 times the revenue per user of ad-only ones. Work out how
+many subscribers you could lose before the ad revenue stops being a gain. Then check
+whether that number is small enough to worry about. It usually is.
+
+## The method, part two: build it without damaging the funnel
+
+Three steps, in this order.
+
+### 4. Exclude the likely subscribers from ad exposure
+
+Everyone who has started a trial, opened a paywall more than once, or crossed your
+activation threshold goes on an exclusion list. The remaining audience is where ads
+belong.
+
+Keep the list dynamic. A user who crosses the activation threshold next week should
+leave the ad audience next week, not at the next quarterly review. A static list decays
+into exactly the problem it was built to prevent, and the decay is invisible because
+both revenue lines keep reporting normally.
+
+### 5. Put ads where value has already landed, never before it
+
+Ads before a user has got anything suppress both models at once. Place them after a
+completed action, which costs least.
+
+### 6. Report one blended revenue-per-user figure, plus both components
+
+Measurement is the usual reason hybrid underperforms. Teams judge ads and subscriptions
+in separate dashboards and never see the trade. One blended figure, with both parts
+visible, is the minimum.
+
+<FromMyWork exp="exp-018">
+Two revenue lines in one product create a governance problem before they create a
+revenue problem. Somebody has to own the trade between them, and if nobody does, each
+team optimises its own line and the blended number drifts.
+</FromMyWork>
+
+## The numbers to expect
+
+Expect ad revenue per user to look small and the total to matter anyway. The gap
+between $0.40 and $15 a year, about ₹38 and ₹1,438, is the difference between
+monetising a free base badly and well, and both look unimpressive per user.
+
+Expect subscription revenue to stay the larger line. At 4.6 times ad-only revenue per
+user, a hybrid product usually earns most of its money from a minority of users.
+
+Expect measurement to be harder than the build. Two models in one funnel means every
+change moves both numbers. Attributing the effect needs a blended metric agreed in
+advance.
+
+Expect the market to move toward you. Hybrid pricing is at 43% of companies and
+projected to reach 61%, and investors already name it their preferred model at 35%. That
+matters for a fundraise as much as for revenue: a model investors recognise needs less
+explaining than one they have to be talked into.
+
+<FromMyWork exp="exp-026">
+Professionals bought after using the tool, not after hearing about it. Hands-on
+demonstration beat description, which is the same reason an ad shown before first value
+costs more than it earns.
+</FromMyWork>
+
+## Pitfalls
+
+Five, and the first is the one that kills hybrid attempts.
+
+Showing ads to likely subscribers. It trades a high-value conversion for a low-value
+impression, and the arithmetic is 4.6 to one against you.
+
+Judging the two models separately. Without a blended figure, each team reports a win
+while the total stays flat.
+
+Modelling ad revenue from a vendor's best case. The published blend is $3 to $15 per
+user per year, about ₹288 to ₹1,438, and the low end is the honest planning number.
+
+Adding ads to a thin free tier. Low session volume produces revenue too small to measure
+and churn large enough to notice. The order matters: grow the free base first, then
+monetise it.
+
+Going hybrid to avoid a pricing decision. A product converting at 8% has a price problem
+it can solve. One converting at 1% to 3% has a population problem, which hybrid
+genuinely addresses. Diagnose which you have before building either.
+
+## The checklist
+
+Twelve items. The first four decide whether to proceed at all.
+
+1. Non-paying population counted, with weekly returning users separated out.
+2. Free-to-paid conversion rate measured against the 1% to 8% published span.
+3. Ad revenue modelled at the low end of the published blended range.
+4. Decision recorded: proceed only if the low-end model changes the business.
+5. Exclusion list defined for trialists, repeat paywall viewers and activated users.
+6. Ad placements mapped to moments after a completed action.
+7. Blended revenue-per-user metric defined and agreed before launch.
+8. Both component figures visible alongside the blend.
+9. Owner named for the trade between the two revenue lines.
+10. Subscription conversion monitored as a guardrail, with a rollback threshold.
+11. Session volume per placement tracked, since ad revenue follows sessions.
+12. Review booked at ninety days against the blended figure, not either component.
+13. Exclusion list set to refresh continuously, not at the quarterly review.
+
+## Sources and related
+
+Each figure carries its source and the date it was last checked. The hybrid adoption
+and revenue-per-user figures come from subscription platform and analyst reporting on
+app portfolios, and the ARPU bands in particular come from a single source, so they are
+marked as one rather than presented as a consensus.
+
+The monetisation models playbook covers the choice between models. This one covers
+running two at once. The ARPU and freemium glossary entries carry the definitions,
+including which denominator each blended figure uses.
+
+Two gaps are worth naming. No source publishes how hybrid adoption splits by category,
+so the decision above rests on your own conversion rate rather than on a peer group.
+And no source gives the subscription loss attributable to ad exposure, which is the one
+figure that would settle the exclusion-list question. Both stay stated as gaps.

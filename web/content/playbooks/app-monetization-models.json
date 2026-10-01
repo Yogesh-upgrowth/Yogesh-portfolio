@@ -1,0 +1,119 @@
+{
+  "id": "playbook-0608",
+  "url": "/playbooks/app-monetization-models",
+  "archetype": "playbook",
+  "hub": "playbooks",
+  "wave": 1,
+  "batch_id": "w1-playbook-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "App Monetization Models: Choosing Between Them",
+  "meta_description": "App monetization models compared on published evidence: subscriptions take 82% of non-gaming store revenue and grew 105% year on year against 14% for ads.",
+  "h1": "App monetization models: choosing between them",
+  "primary_keyword": "app monetization models",
+  "secondary_keywords": [
+    "app revenue models compared",
+    "subscription vs ads vs iap"
+  ],
+  "entity_a": "app-monetization-models",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-pb-26",
+    "f-pb-27",
+    "f-fx-08",
+    "f-act-20",
+    "f-act-21",
+    "f-bm-26",
+    "f-pb-28"
+  ],
+  "experience_used": [
+    "exp-029",
+    "exp-030"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary/take-rate",
+      "anchor": "the take rate entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/paywall",
+      "anchor": "the paywall entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/app-store-conversion/media-ott",
+      "anchor": "store conversion benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/playbooks/hybrid-monetization",
+      "anchor": "the hybrid monetization playbook",
+      "role": "lateral"
+    },
+    {
+      "url": "/playbooks",
+      "anchor": "the playbooks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#model-evidence",
+      "alt": "Seven reference points for choosing between app monetization models: year-on-year revenue growth for subscriptions against in-app purchases and advertising, the subscription share of non-gaming app store revenue, the primary model across 686 tracked apps, the standard Google Play revenue share at two tiers, a reported marketplace take rate on gross merchandise volume, the Indian OTT subscription base, and conversion benchmarks for freemium against opt-in and opt-out trials, each row carrying its source and verification date",
+      "caption": "What each model actually returns, and what the store takes. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Which model is growing fastest?",
+      "a": "Subscriptions, by a wide margin. Subscription revenue grew 105% year on year in the first quarter of 2026, against 29% for in-app purchases and 14% for advertising."
+    },
+    {
+      "q": "Is subscription always the right choice?",
+      "a": "No. It takes 82% of non-gaming store revenue and is the primary model for 61% of tracked apps, but it needs repeated value to justify repeated billing. A product used once or twice has nothing to renew."
+    },
+    {
+      "q": "What does the store take?",
+      "a": "Google Play's standard rate is 10% on the first $1 million of annual revenue and 20% above it. That sits well below marketplace take rates: eBay reported 13.91% on its gross merchandise volume."
+    },
+    {
+      "q": "Does the model change the conversion rate I should expect?",
+      "a": "Substantially. Freemium benchmarks sit under 10%, opt-in trials reach up to 25% and opt-out trials up to 50%. Choosing the model sets the range before any execution."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Choose your app monetization model with me",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Chooses between models on usage frequency and store take rather than on revenue share alone, and shows that the model choice sets the conversion range before execution does — freemium under 10% against up to 50% for opt-out trials.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

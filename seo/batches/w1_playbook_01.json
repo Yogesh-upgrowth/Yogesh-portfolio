@@ -42,6 +42,34 @@
       "method": "search_index",
       "primary": true
     },
+    "f-act-20": {
+      "fact_id": "f-act-20",
+      "claim": "Google Play's 2026 standard rate is 10% on the first 1 million dollars of annual revenue and 20% above it",
+      "value": "10",
+      "unit": "%",
+      "source_url": "https://www.strataigize.com/insights/google-play-external-payments-fee-changes-2026/",
+      "source_title": "Google Play External Payments and Fee Changes",
+      "source_domain": "strataigize.com",
+      "excerpt": "Google lowered its baseline: the standard rate is now 10% on the first $1 million and 20% above it, plus a billing fee charged separately.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-act-21": {
+      "fact_id": "f-act-21",
+      "claim": "eBay reported a 13.91% take rate on 22.2 billion dollars of gross merchandise volume in the first quarter of 2026, against Etsy at 25.7%, up 180 basis points",
+      "value": "13.91",
+      "unit": "%",
+      "source_url": "https://www.feinternational.com/blog/marketplace-app-valuation",
+      "source_title": "Marketplace App Valuation 2026",
+      "source_domain": "feinternational.com",
+      "excerpt": "eBay reported a 13.91% take rate on $22.2 billion of GMV in Q1 2026; Etsy reported 25.7%, up 180 basis points.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
     "f-hub-06": {
       "fact_id": "f-hub-06",
       "claim": "Across 2,408 audited tests, 17.4% of A/B tests reached statistical significance with a winning variant",
@@ -168,6 +196,48 @@
       "method": "search_index",
       "primary": false
     },
+    "f-fx-08": {
+      "fact_id": "f-fx-08",
+      "claim": "Among 686 tracked apps, subscriptions are the primary model for 418, or 61%, against advertising for 176, or 26%",
+      "value": "61",
+      "unit": "%",
+      "source_url": "https://www.lazyweb.com/research/how-do-tracked-apps-make-money-subscription-ads-transactions",
+      "source_title": "How do tracked apps actually make money?",
+      "source_domain": "lazyweb.com",
+      "excerpt": "Among tracked apps, subscriptions account for 418 of 686 apps (61%), more than double advertising at 176/686 (26%).",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-svc-06": {
+      "fact_id": "f-svc-06",
+      "claim": "Chargebee reports 43% of companies using hybrid pricing models, projected to reach 61% by the end of 2026",
+      "value": "43",
+      "unit": "%",
+      "source_url": "https://www.getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models",
+      "source_title": "The 2026 Guide to SaaS, AI and Agentic Pricing Models",
+      "source_domain": "getmonetizely.com",
+      "excerpt": "Chargebee's State of Subscriptions Report: 43% of companies now use hybrid models, with adoption projected to reach 61% by end of 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-svc-08": {
+      "fact_id": "f-svc-08",
+      "claim": "Asked which pricing model investors prefer, 35% named hybrid, 26% outcome-based and 24% usage-based, against 10% flat-fee and 5% seat-based",
+      "value": "35",
+      "unit": "%",
+      "source_url": "https://www.growthunhinged.com/p/the-state-of-b2b-monetization-in-2026",
+      "source_title": "The 2026 State of B2B SaaS and AI Monetization Report",
+      "source_domain": "growthunhinged.com",
+      "excerpt": "Asked which pricing model investors prefer: usage-based 24%, outcome-based 26%, hybrid 35%, flat-fee 10%, seat-based 5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
     "f-bm-02": {
       "fact_id": "f-bm-02",
       "claim": "Fintech apps retain a median 28% at day 1, 12% at day 7 and 7% at day 30, with strong performers at 35-45%, 18-25% and 10-15%",
@@ -196,6 +266,34 @@
       "method": "search_index",
       "primary": false
     },
+    "f-bm-26": {
+      "fact_id": "f-bm-26",
+      "claim": "India has 216.5 million OTT subscriptions",
+      "value": "216.5",
+      "unit": "million",
+      "source_url": "https://bestmediainfo.com/insights/india-has-2165-million-ott-subscriptions-but-platforms-are-still-struggling-to-monetise-them-12457338",
+      "source_title": "India has 216.5 million OTT subscriptions",
+      "source_domain": "bestmediainfo.com",
+      "excerpt": "India has 216.5 million OTT subscriptions, but platforms are still struggling to monetise them.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-27": {
+      "fact_id": "f-bm-27",
+      "claim": "Streaming advertising revenue in India stood at 563.9 million dollars in 2025",
+      "value": "563.9",
+      "unit": "USD million",
+      "source_url": "https://www.statista.com/outlook/amo/media/tv-video/ott-video/india/",
+      "source_title": "OTT Video outlook, India",
+      "source_domain": "statista.com",
+      "excerpt": "Streaming advertising revenue stood at US$563.9 million in 2025, and ad-supported tiers are now widely adopted.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
     "f-gh-03": {
       "fact_id": "f-gh-03",
       "claim": "Median activation sits at 41.7%, with the top quartile at 71% and the bottom at 19% — a spread wide enough that the median judges almost nobody",
@@ -205,6 +303,20 @@
       "source_title": "Onboarding metrics that predict revenue activation",
       "source_domain": "usetandem.ai",
       "excerpt": "The median activation rate is 41.7%, with top-quartile products at 71% and bottom quartile at 19%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-gh-04": {
+      "fact_id": "f-gh-04",
+      "claim": "Mobile apps typically run a lifetime-value to acquisition-cost ratio of 1.5 to 2.5 to 1, below the 3 to 1 bar imported from software-as-a-service",
+      "value": "1.5-2.5",
+      "unit": "ratio",
+      "source_url": "https://admiral.media/cac-payback-period-mobile-apps/",
+      "source_title": "CAC payback period for mobile apps",
+      "source_domain": "admiral.media",
+      "excerpt": "Mobile apps typically show LTV:CAC ratios of 1.5-2.5:1 due to low ARPU and high CAC.",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
@@ -531,6 +643,160 @@
       "verified_on": "2026-09-30",
       "method": "search_index",
       "primary": false
+    },
+    "f-pb-18": {
+      "fact_id": "f-pb-18",
+      "claim": "Only 10% of apps run a true hybrid model, while more than 60% of top-grossing apps run two or more revenue models at once",
+      "value": "10",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/growth/measure-hybrid-monetization",
+      "source_title": "How to measure hybrid monetization",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Only 10% of apps run true hybrid models; over 60% of 2026 top-grossing apps run two or more revenue models simultaneously.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-19": {
+      "fact_id": "f-pb-19",
+      "claim": "Blended annual ARPU runs 3 to 15 dollars for hybrid freemium, 0.40 to 2 dollars for ad-only free tiers and 30 to 100 dollars or more for subscription-led products",
+      "value": "3-15",
+      "unit": "USD",
+      "source_url": "https://www.thrad.ai/content/subscription-vs-ads-for-ai-apps",
+      "source_title": "Subscription vs ads for AI apps: which model wins in 2026",
+      "source_domain": "thrad.ai",
+      "excerpt": "Hybrid freemium blended annual ARPU lands in the $3-$15 range, against $0.40-$2 for ad-only free tiers and $30-$100+ for subscription-led.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-20": {
+      "fact_id": "f-pb-20",
+      "claim": "Subscription apps earn 4.6 times the average revenue per user of ad-only apps",
+      "value": "4.6",
+      "unit": "x",
+      "source_url": "https://www.thrad.ai/content/subscription-vs-ads-for-ai-apps",
+      "source_title": "Subscription vs ads for AI apps: which model wins in 2026",
+      "source_domain": "thrad.ai",
+      "excerpt": "Subscription-based apps pull in 4.6x higher ARPU compared to ad-only apps.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-pb-21": {
+      "fact_id": "f-pb-21",
+      "claim": "AI apps convert free to paid at 1% to 3%, against 5% to 8% for mature subscription mobile apps",
+      "value": "1-3",
+      "unit": "%",
+      "source_url": "https://www.thrad.ai/content/subscription-vs-ads-for-ai-apps",
+      "source_title": "Subscription vs ads for AI apps: which model wins in 2026",
+      "source_domain": "thrad.ai",
+      "excerpt": "For AI apps, free-to-paid conversion tends toward 1-3% rather than the 5-8% seen in mature subscription mobile apps.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-pb-22": {
+      "fact_id": "f-pb-22",
+      "claim": "58% of new subscription apps earn under 1,000 dollars in their first year",
+      "value": "58",
+      "unit": "%",
+      "source_url": "https://ppc.land/the-app-middle-class-is-dying-and-revenuecats-data-shows-exactly-how-fast/",
+      "source_title": "The app middle class is dying, and RevenueCat's data shows how fast",
+      "source_domain": "ppc.land",
+      "excerpt": "58% of new subscription apps earn under $1,000 in their first year.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-23": {
+      "fact_id": "f-pb-23",
+      "claim": "Only 4.6% of newly launched apps reach 10,000 dollars in monthly revenue within two years",
+      "value": "4.6",
+      "unit": "%",
+      "source_url": "https://ppc.land/the-app-middle-class-is-dying-and-revenuecats-data-shows-exactly-how-fast/",
+      "source_title": "The app middle class is dying, and RevenueCat's data shows how fast",
+      "source_domain": "ppc.land",
+      "excerpt": "Only 4.6% of newly launched apps reach $10,000 in monthly revenue within two years.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-pb-24": {
+      "fact_id": "f-pb-24",
+      "claim": "The top 10% of apps capture 95% of all subscription revenue",
+      "value": "95",
+      "unit": "%",
+      "source_url": "https://ppc.land/the-app-middle-class-is-dying-and-revenuecats-data-shows-exactly-how-fast/",
+      "source_title": "The app middle class is dying, and RevenueCat's data shows how fast",
+      "source_domain": "ppc.land",
+      "excerpt": "The top 10% of apps capture 95% of all subscription revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-pb-25": {
+      "fact_id": "f-pb-25",
+      "claim": "Consumer subscription brands typically recover acquisition cost in three to nine months, with under six considered the target",
+      "value": "3-9",
+      "unit": "months",
+      "source_url": "https://www.darkroomagency.com/observatory/cac-payback-period",
+      "source_title": "CAC payback period",
+      "source_domain": "darkroomagency.com",
+      "excerpt": "Subscription consumer brands typically recover acquisition costs in 3-9 months, with under 6 months considered ideal.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-26": {
+      "fact_id": "f-pb-26",
+      "claim": "Subscription revenue grew 105% year on year in the first quarter of 2026, against 29% for in-app purchases and 14% for advertising",
+      "value": "105",
+      "unit": "%",
+      "source_url": "https://adapty.io/blog/mobile-app-monetization-strategies/",
+      "source_title": "Top 12 ways to monetize your app in 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "Subscription revenue grew 105% year over year in Q1 2026, against 29% for in-app purchases and 14% for ad revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-27": {
+      "fact_id": "f-pb-27",
+      "claim": "Subscriptions account for 82% of the revenue non-gaming apps earn on the app stores",
+      "value": "82",
+      "unit": "%",
+      "source_url": "https://adapty.io/blog/mobile-app-monetization-strategies/",
+      "source_title": "Top 12 ways to monetize your app in 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "82% of the revenue non-gaming apps make on the app stores comes from subscriptions.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-pb-28": {
+      "fact_id": "f-pb-28",
+      "claim": "Freemium conversion benchmarks sit under 10%, against up to 25% for opt-in free trials and up to 50% for opt-out trials",
+      "value": "10",
+      "unit": "%",
+      "source_url": "https://amplitude.com/blog/increasing-free-trial-conversion",
+      "source_title": "The complete guide to increasing free trial conversion",
+      "source_domain": "amplitude.com",
+      "excerpt": "Industry benchmarks: freemium under 10%, opt-in free trials up to 25%, opt-out free trials up to 50%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
     }
   },
   "pages": [
@@ -844,7 +1110,7 @@
         "f-glossary-0700-06"
       ],
       "experience": [
-        "exp-021"
+        "exp-025"
       ],
       "links": [
         {
@@ -953,7 +1219,7 @@
           "f-glossary-0700-06"
         ]
       },
-      "body": "\n<AnswerBox>\nA subscription pricing strategy starts with plan length, not price point. Weekly\nplans went from 43.3% of app subscription revenue in 2023 to 55.5% in 2025 while\nmonthly halved to 11.7%. Before copying that, check your category: health and\nfitness takes 60.6% of revenue from annual plans and productivity takes 90.7% from\nmonthly.\n</AnswerBox>\n\n<FactTable\n  id=\"plan-length-economics\"\n  caption=\"What plan length does to revenue, and where it reverses\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Share of app subscription revenue, 2023 to 2025\", \"weekly 43.3% to 55.5%; monthly 21.1% to 11.7%; annual 29.2% to 22.5%\"], factId: \"f-pb-10\" },\n    { cells: [\"Productivity: monthly share of subscriptions and of revenue\", \"76.7% and 90.7%\"], factId: \"f-pb-11\" },\n    { cells: [\"The annual-dominant and weekly-dominant categories\", \"health and fitness 60.6%; utilities 73.6%\"], factId: \"f-pb-12\" },\n    { cells: [\"First-year retention on annual plans, year on year\", \"31% to 28%\"], factId: \"f-pb-13\" },\n    { cells: [\"Cancelled annual subscribers who never return\", \"95%\"], factId: \"f-th-05\" },\n    { cells: [\"Trial conversion by length, under 4 days against 17-32\", \"25.5% against 42.5%\"], factId: \"f-th-01\" },\n    { cells: [\"Indian subscription prices against the US baseline\", \"0.6x\"], factId: \"f-glossary-0700-06\" },\n  ]}\n/>\n\n## In short\n\nFive findings, and the first one surprises most teams.\n\nPlan length moves revenue more than price point. The weekly share of app\nsubscription revenue rose from 43.3% to 55.5% in two years while monthly fell from\n21.1% to 11.7%. Nobody achieved that by changing a number on a page.\n\nCategory overrides the trend. Health and fitness is the only category where annual\nplans dominate revenue, at 60.6%. Utilities take 73.6% from weekly. Averaging those\ntwo together describes neither.\n\nAnnual plans have got weaker, not stronger. First-year retention on them fell from\n31% to 28% in a year.\n\nAnnual cancellation is close to final: 95% of annual subscribers who cancel never\ncome back.\n\nAnd trial length interacts with plan length. Conversion runs 25.5% under four days\nagainst 42.5% at seventeen to thirty-two, so a short trial on an annual plan asks\nfor the largest commitment with the least evidence.\n\n## Who this is for, and who it is not\n\nThis suits a product already charging a subscription, with enough volume to see\nplan-mix effects inside a quarter. It also suits a team about to launch paid tiers\nand choosing the ladder for the first time, where the plan-length decision is\ncheaper to get right than to change later.\n\nIt suits anyone whose annual plan is doing worse than its reputation. The common case\nis an annual discount set years ago, on the belief that annual plans hold users well.\nThe evidence now puts first-year retention at 28%.\n\nIt does not suit a product whose problem is that nobody converts at any price. That\nis an activation or value problem, and a pricing ladder cannot fix it.\n\nIt also does not suit usage-based or seat-based business software. There the billing\nperiod matters less than the unit being counted. The findings here come from consumer\napp subscription data.\n\n## The method, part one: reading your own mix\n\nThree steps before any price changes.\n\n### 1. Split subscriptions and revenue by plan length\n\nTwo tables, not one. Count the share of subscribers on each plan length. Then the\nshare of revenue each produces. The gap between the tables is the finding.\nProductivity shows it plainly: 76.7% of subscriptions are monthly and 90.7% of\nrevenue is. So monthly subscribers are worth more each, not just more numerous.\n\nRun both tables on a fixed month, and again a quarter later. Plan mix drifts on its\nown as older cohorts churn, and a one-off reading will credit that drift to whatever\nyou shipped.\n\n### 2. Compare your mix to your category, not the market\n\nThe market figure is 55.5% weekly. Your category may be the opposite. If you are in\nhealth and fitness, the annual-dominant 60.6% pattern is the relevant comparison,\nand matching the market would mean moving away from what works in your category.\n\n### 3. Measure annual retention yourself\n\nDo not inherit the assumption. Compute first-year annual retention from your own\ncohorts and set it against the published 28%. Then measure how many cancelled annual\nsubscribers ever come back, against the 95% who never do.\n\nBoth numbers are cheap to get and they settle the argument.\n\n<Example illustrative>\nAn annual plan retaining 40% of subscribers through year one is an asset. The same\nplan at 20% is a way of collecting one year of revenue from people who then leave —\na real strategy, and a different one from the retention story usually told about it.\n</Example>\n\n## The method, part two: changing the ladder\n\nThree steps, in the order that limits damage.\n\n### 4. Add a shorter plan before discounting a longer one\n\nAdding weekly or monthly next to annual tests demand for a shorter commitment. It\ndoes not cut the price of the longer one. Discounting annual first gives away margin\non subscribers who would have paid in full.\n\n### 5. Match trial length to plan length\n\nA long commitment needs more evidence, and the trial data supports giving it:\nconversion runs 42.5% at seventeen to thirty-two days against 25.5% under four. Pair\nthe shortest trials with the shortest plans.\n\n### 6. Price the India ladder from local levels\n\nIndian subscription prices sit at about 0.6 times the US baseline. Build the ladder\nupward from a price you can defend locally. Do not discount the US one downward. The\ntwo methods land in different places, and only one survives a rival who charges\nnothing.\n\n<FromMyWork exp=\"exp-021\">\nThe headline growth figure needs decomposing to be honest. A revenue rise after a\npricing change is usually part mix and part price, and crediting the price change\nwith all of it hides which half repeats.\n</FromMyWork>\n\n## The numbers to expect\n\nExpect the mix to move faster than the prices. Adding a shorter plan reallocates\nsubscribers within weeks, and the revenue-per-subscriber figure falls while total\nrevenue rises. Both numbers are correct and only one is usually quoted.\n\nExpect annual to look worse than its reputation once measured. A 28% first-year\nretention figure means most annual subscribers do not reach a second year, and the\n95% never-return figure means the loss is permanent.\n\nExpect weekly plans to raise support load and refund rates alongside revenue. The\nrevenue share moved to 55.5% because weekly converts better, not because it is\ncheaper to run. Budget for the extra billing events: a weekly subscriber generates\nfifty-two charges a year against one, and each is a chance for a payment to fail.\n\nExpect the category pattern to hold against your instinct. Utilities at 73.6% weekly\nand health and fitness at 60.6% annual are stable positions, not fashions.\n\nExpect one more thing: the plan ladder will shape who signs up, not just what they\npay. A weekly-first ladder attracts people solving a problem this week. An\nannual-first ladder attracts people who have already decided. Those two groups\nbehave differently for the rest of their lives as customers, and the difference shows\nup in retention long before it shows up in revenue.\n\n## Pitfalls\n\nFive, and the first is the most expensive.\n\nCopying the market mix without checking the category. The 55.5% weekly figure is an\naverage across categories that behave in opposite directions.\n\nTreating an annual plan as a retention tool. It defers the churn decision rather\nthan removing it, and makes the eventual decision final for 95% of those who take\nit.\n\nDiscounting annual to defend the mix. That lowers revenue from the subscribers\nalready most committed.\n\nPairing a three-day trial with an annual plan. Conversion at that trial length runs\n25.5%, and it is the largest ask with the least evidence behind it.\n\nReading a falling revenue-per-subscriber as a pricing failure when a shorter plan\nwas just introduced. That is mix, and it is usually the intended effect.\n\nAnd setting the ladder once. The weekly share moved twelve points in two years, so a\nladder chosen three years ago was built for a market that no longer exists. Revisit\nit annually against your own category's pattern rather than the cross-category\naverage.\n\n## The checklist\n\nThirteen items. Items one to five are measurement; nothing below them is safe\nwithout them.\n\n1. Share of subscribers on each plan length recorded.\n2. Share of revenue from each plan length recorded separately.\n3. Gap between the two tables noted and explained.\n4. Category comparison chosen, not the cross-category average.\n5. Own first-year annual retention computed against the 28% figure.\n6. Return rate of cancelled annual subscribers measured against the 95% figure.\n7. Trial length recorded per plan length.\n8. Shortest trial paired with the shortest plan, not the longest.\n9. Shorter plan added before any longer plan is discounted.\n10. Refund and support load tracked per plan length.\n11. Revenue per subscriber reported alongside total revenue, never alone.\n12. India ladder built upward from a local price, not discounted from the US one.\n13. Plan and price changes dated in the changelog, so a step in the chart has a cause.\n\n## Sources and related\n\nEach figure carries its source and the date it was last checked. The plan-mix and\nretention figures come from subscription infrastructure vendors reporting across\ntheir customer base, which is the largest sample available for app subscriptions and\na selected one: apps that use subscription tooling skew subscription-first.\n\nThe free trial and paywall glossary entries carry the definitions this playbook\nassumes. The activation metric playbook comes first in practice, because a pricing\nladder built on a broken activation number optimises the wrong step.\n\nTwo gaps in the published record are worth naming. No source gives a plan-mix split\nfor India by category, so the ladder advice above rests on the price level alone.\nAnd no source separates refund rates by plan length, which is the figure that would\nsettle whether weekly billing costs more to run than it earns. Both are stated here\nas gaps rather than filled with an estimate.\n"
+      "body": "\n<AnswerBox>\nA subscription pricing strategy starts with plan length, not price point. Weekly\nplans went from 43.3% of app subscription revenue in 2023 to 55.5% in 2025 while\nmonthly halved to 11.7%. Before copying that, check your category: health and\nfitness takes 60.6% of revenue from annual plans and productivity takes 90.7% from\nmonthly.\n</AnswerBox>\n\n<FactTable\n  id=\"plan-length-economics\"\n  caption=\"What plan length does to revenue, and where it reverses\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Share of app subscription revenue, 2023 to 2025\", \"weekly 43.3% to 55.5%; monthly 21.1% to 11.7%; annual 29.2% to 22.5%\"], factId: \"f-pb-10\" },\n    { cells: [\"Productivity: monthly share of subscriptions and of revenue\", \"76.7% and 90.7%\"], factId: \"f-pb-11\" },\n    { cells: [\"The annual-dominant and weekly-dominant categories\", \"health and fitness 60.6%; utilities 73.6%\"], factId: \"f-pb-12\" },\n    { cells: [\"First-year retention on annual plans, year on year\", \"31% to 28%\"], factId: \"f-pb-13\" },\n    { cells: [\"Cancelled annual subscribers who never return\", \"95%\"], factId: \"f-th-05\" },\n    { cells: [\"Trial conversion by length, under 4 days against 17-32\", \"25.5% against 42.5%\"], factId: \"f-th-01\" },\n    { cells: [\"Indian subscription prices against the US baseline\", \"0.6x\"], factId: \"f-glossary-0700-06\" },\n  ]}\n/>\n\n## In short\n\nFive findings, and the first one surprises most teams.\n\nPlan length moves revenue more than price point. The weekly share of app\nsubscription revenue rose from 43.3% to 55.5% in two years while monthly fell from\n21.1% to 11.7%. Nobody achieved that by changing a number on a page.\n\nCategory overrides the trend. Health and fitness is the only category where annual\nplans dominate revenue, at 60.6%. Utilities take 73.6% from weekly. Averaging those\ntwo together describes neither.\n\nAnnual plans have got weaker, not stronger. First-year retention on them fell from\n31% to 28% in a year.\n\nAnnual cancellation is close to final: 95% of annual subscribers who cancel never\ncome back.\n\nAnd trial length interacts with plan length. Conversion runs 25.5% under four days\nagainst 42.5% at seventeen to thirty-two, so a short trial on an annual plan asks\nfor the largest commitment with the least evidence.\n\n## Who this is for, and who it is not\n\nThis suits a product already charging a subscription, with enough volume to see\nplan-mix effects inside a quarter. It also suits a team about to launch paid tiers\nand choosing the ladder for the first time, where the plan-length decision is\ncheaper to get right than to change later.\n\nIt suits anyone whose annual plan is doing worse than its reputation. The common case\nis an annual discount set years ago, on the belief that annual plans hold users well.\nThe evidence now puts first-year retention at 28%.\n\nIt does not suit a product whose problem is that nobody converts at any price. That\nis an activation or value problem, and a pricing ladder cannot fix it.\n\nIt also does not suit usage-based or seat-based business software. There the billing\nperiod matters less than the unit being counted. The findings here come from consumer\napp subscription data.\n\n## The method, part one: reading your own mix\n\nThree steps before any price changes.\n\n### 1. Split subscriptions and revenue by plan length\n\nTwo tables, not one. Count the share of subscribers on each plan length. Then the\nshare of revenue each produces. The gap between the tables is the finding.\nProductivity shows it plainly: 76.7% of subscriptions are monthly and 90.7% of\nrevenue is. So monthly subscribers are worth more each, not just more numerous.\n\nRun both tables on a fixed month, and again a quarter later. Plan mix drifts on its\nown as older cohorts churn, and a one-off reading will credit that drift to whatever\nyou shipped.\n\n### 2. Compare your mix to your category, not the market\n\nThe market figure is 55.5% weekly. Your category may be the opposite. If you are in\nhealth and fitness, the annual-dominant 60.6% pattern is the relevant comparison,\nand matching the market would mean moving away from what works in your category.\n\n### 3. Measure annual retention yourself\n\nDo not inherit the assumption. Compute first-year annual retention from your own\ncohorts and set it against the published 28%. Then measure how many cancelled annual\nsubscribers ever come back, against the 95% who never do.\n\nBoth numbers are cheap to get and they settle the argument.\n\n<Example illustrative>\nAn annual plan retaining 40% of subscribers through year one is an asset. The same\nplan at 20% is a way of collecting one year of revenue from people who then leave —\na real strategy, and a different one from the retention story usually told about it.\n</Example>\n\n## The method, part two: changing the ladder\n\nThree steps, in the order that limits damage.\n\n### 4. Add a shorter plan before discounting a longer one\n\nAdding weekly or monthly next to annual tests demand for a shorter commitment. It\ndoes not cut the price of the longer one. Discounting annual first gives away margin\non subscribers who would have paid in full.\n\n### 5. Match trial length to plan length\n\nA long commitment needs more evidence, and the trial data supports giving it:\nconversion runs 42.5% at seventeen to thirty-two days against 25.5% under four. Pair\nthe shortest trials with the shortest plans.\n\n### 6. Price the India ladder from local levels\n\nIndian subscription prices sit at about 0.6 times the US baseline. Build the ladder\nupward from a price you can defend locally. Do not discount the US one downward. The\ntwo methods land in different places, and only one survives a rival who charges\nnothing.\n\n<FromMyWork exp=\"exp-025\">\nLaunching a cheaper line to chase a distributor's forecast damaged the premium position\nand the volume never arrived. A plan ladder works the same way: a cheaper tier moves mix\nbefore it moves demand, and the mix shift is permanent.\n</FromMyWork>\n\n## The numbers to expect\n\nExpect the mix to move faster than the prices. Adding a shorter plan reallocates\nsubscribers within weeks, and the revenue-per-subscriber figure falls while total\nrevenue rises. Both numbers are correct and only one is usually quoted.\n\nExpect annual to look worse than its reputation once measured. A 28% first-year\nretention figure means most annual subscribers do not reach a second year, and the\n95% never-return figure means the loss is permanent.\n\nExpect weekly plans to raise support load and refund rates alongside revenue. The\nrevenue share moved to 55.5% because weekly converts better, not because it is\ncheaper to run. Budget for the extra billing events: a weekly subscriber generates\nfifty-two charges a year against one, and each is a chance for a payment to fail.\n\nExpect the category pattern to hold against your instinct. Utilities at 73.6% weekly\nand health and fitness at 60.6% annual are stable positions, not fashions.\n\nExpect one more thing: the plan ladder will shape who signs up, not just what they\npay. A weekly-first ladder attracts people solving a problem this week. An\nannual-first ladder attracts people who have already decided. Those two groups\nbehave differently for the rest of their lives as customers, and the difference shows\nup in retention long before it shows up in revenue.\n\n## Pitfalls\n\nFive, and the first is the most expensive.\n\nCopying the market mix without checking the category. The 55.5% weekly figure is an\naverage across categories that behave in opposite directions.\n\nTreating an annual plan as a retention tool. It defers the churn decision rather\nthan removing it, and makes the eventual decision final for 95% of those who take\nit.\n\nDiscounting annual to defend the mix. That lowers revenue from the subscribers\nalready most committed.\n\nPairing a three-day trial with an annual plan. Conversion at that trial length runs\n25.5%, and it is the largest ask with the least evidence behind it.\n\nReading a falling revenue-per-subscriber as a pricing failure when a shorter plan\nwas just introduced. That is mix, and it is usually the intended effect.\n\nAnd setting the ladder once. The weekly share moved twelve points in two years, so a\nladder chosen three years ago was built for a market that no longer exists. Revisit\nit annually against your own category's pattern rather than the cross-category\naverage.\n\n## The checklist\n\nThirteen items. Items one to five are measurement; nothing below them is safe\nwithout them.\n\n1. Share of subscribers on each plan length recorded.\n2. Share of revenue from each plan length recorded separately.\n3. Gap between the two tables noted and explained.\n4. Category comparison chosen, not the cross-category average.\n5. Own first-year annual retention computed against the 28% figure.\n6. Return rate of cancelled annual subscribers measured against the 95% figure.\n7. Trial length recorded per plan length.\n8. Shortest trial paired with the shortest plan, not the longest.\n9. Shorter plan added before any longer plan is discounted.\n10. Refund and support load tracked per plan length.\n11. Revenue per subscriber reported alongside total revenue, never alone.\n12. India ladder built upward from a local price, not discounted from the US one.\n13. Plan and price changes dated in the changelog, so a step in the chart has a cause.\n\n## Sources and related\n\nEach figure carries its source and the date it was last checked. The plan-mix and\nretention figures come from subscription infrastructure vendors reporting across\ntheir customer base, which is the largest sample available for app subscriptions and\na selected one: apps that use subscription tooling skew subscription-first.\n\nThe free trial and paywall glossary entries carry the definitions this playbook\nassumes. The activation metric playbook comes first in practice, because a pricing\nladder built on a broken activation number optimises the wrong step.\n\nTwo gaps in the published record are worth naming. No source gives a plan-mix split\nfor India by category, so the ladder advice above rests on the price level alone.\nAnd no source separates refund rates by plan length, which is the figure that would\nsettle whether weekly billing costs more to run than it earns. Both are stated here\nas gaps rather than filled with an estimate.\n"
     },
     {
       "id": "playbook-0604",
@@ -1232,6 +1498,419 @@
         ]
       },
       "body": "\n<AnswerBox>\nRetention curve analysis asks one question first: does the curve flatten. Top-quartile\nconsumer apps hold 25% to 40% at day 30 and flatten between day 60 and day 90. The\nmobile average is 7% to 8%. A flat 6% beats a falling 8%, because the flat one has\nfound a population the product keeps.\n</AnswerBox>\n\n<FactTable\n  id=\"curve-shape\"\n  caption=\"The shape tells you more than the level\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Top-quartile consumer apps, day 30 and flattening window\", \"25-40%; flattens day 60-90\"], factId: \"f-rh-01\" },\n    { cells: [\"Mobile day-30 average, and the strong threshold\", \"7-8%; above 15%\"], factId: \"f-rh-02\" },\n    { cells: [\"SaaS subscription products at day 30\", \"40-50%\"], factId: \"f-rh-03\" },\n    { cells: [\"Fintech, day 1 / 7 / 30 medians\", \"28% / 12% / 7%\"], factId: \"f-bm-02\" },\n    { cells: [\"Gaming, day 1 / 7 / 30 medians\", \"32% / 8% / 3%\"], factId: \"f-bm-05\" },\n    { cells: [\"E-commerce day 30, two published figures\", \"3-6% against a 2% median\"], factId: \"f-fx-03\" },\n    { cells: [\"Paying users who convert within two days\", \"about half\"], factId: \"f-ih-02\" },\n  ]}\n/>\n\n## In short\n\nFive points. The first one reframes the whole exercise.\n\nThe shape carries the information, not the level. A curve that flattens has found a\npopulation the product holds. One still falling at day 90 has not, however high it\nstarted.\n\nThere is a published window for flattening: day 60 to 90 for top-quartile consumer\napps. That gives the analysis a deadline rather than only a target.\n\nCategory sets the level before the product gets a vote. Gaming runs 32% at day 1 and\n3% by day 30. Fintech runs 28% and 7%. SaaS subscription products reach 40% to 50%.\n\nDay 1 and day 30 answer different questions. Gaming wins day 1 and loses day 30,\nwhich is a reason-to-return problem rather than a first-session one.\n\nAnd growth distorts the blend. Fast growth drags a blended curve down even when every\ncohort improves.\n\n## Who this is for, and who it is not\n\nThis suits any product with repeat usage and at least a few hundred new users a\nmonth. It needs only an install or signup date and a usage event, which is the\nsmallest analytics setup that supports any decision at all.\n\nIt suits teams whose retention number has been flat for months and who cannot tell\nwhether that is good. Flat is usually the answer they were hoping for, and the\nanalysis here says so explicitly.\n\nIt does not suit a single-purchase product where nobody is expected to return. A\ncurve that decays to zero is correct behaviour for a product someone uses once, and\nmeasuring it as retention produces alarm about nothing.\n\nIt also does not suit a product in its first weeks, where cohorts are too small to\nread. The direction is visible; the number is noise.\n\n## The method, part one: build a curve you can trust\n\nThree steps, and skipping the first makes the rest unreadable.\n\n### 1. Fix the three definitions before plotting anything\n\nA denominator, a window, and a return. Installs or activated users. Day 30 exactly or\ndays 28 to 32. An app open, a session over some length, or a meaningful action. Three\nchoices, eight combinations, eight different curves from one dataset.\n\nWrite them down with the date. Most retention arguments turn out to be arguments about\none of these three, and an hour spent here saves a quarter of disagreement later.\n\nThe denominator choice is the one that moves the number most. Retention over activated\nusers runs far above retention over installs, because it has already removed everyone\nwho never reached first value. Neither is wrong. Comparing one against a benchmark\nbuilt on the other is.\n\n### 2. Plot by acquisition cohort, never by calendar month\n\nA calendar-month figure moves when a campaign lands mid-month, with nothing about the\nproduct changing. Cohort by install week is the smallest unit that behaves.\n\n### 3. Split paid from organic before reading anything\n\nBlending them lets a campaign's quality masquerade as product health. Cheaper installs\nmake the curve look worse, which teams routinely read as a regression.\n\nSplit the two largest paid sources out as well, once volume allows. The gap between the\nbest and worst source is often the largest lever available, and larger than most\nonboarding changes — the same product retains very differently depending on who\narrives.\n\n## The method, part two: read the shape\n\nThree steps, in this order.\n\n### 4. Find the flattening point, or establish there is none\n\nCompare each cohort's day-to-day decline rate rather than its level. The curve has\nflattened when the decline between consecutive periods stops shrinking. For\ntop-quartile consumer apps that happens between day 60 and day 90, so a curve still\nsteepening at day 90 has a structural problem.\n\n### 5. Compare to your category, then to your own last cohort\n\nThe mobile average of 7% to 8% is the wrong bar for gaming at 3% and for SaaS at 40%\nto 50%. Once you have the category median, the more useful comparison is your own\nprevious cohort, because that controls for everything the category cannot.\n\n### 6. Separate the day-1 problem from the day-30 problem\n\nA low day 1 is a first-session problem. A fine day 1 with a collapsing day 30 is a\nreason-to-return problem. Gaming shows the second shape clearly at 32% and 3%, and\nonboarding work will not touch it.\n\nName which one you have before choosing any fix. Onboarding changes move day 1.\nNotifications, content freshness and habit mechanics move day 7 and day 30. A team\npushing day-30 retention with onboarding work is pulling a lever connected to a\ndifferent number.\n\n<FromMyWork exp=\"exp-044\">\nThe pattern I keep seeing is a retention problem diagnosed as an acquisition problem.\nCheaper installs make the curve look worse rather than better. The team reads that\ndrop as a product regression and starts fixing the wrong thing.\n</FromMyWork>\n\n## The numbers to expect\n\nExpect your honest curve to sit below the number currently being reported, because\nmost reported figures use the kindest available denominator.\n\nExpect the flattening question to change the conversation more than the level does. A\nflat curve has a business to grow, and a falling one has a leak to find.\n\n<Example illustrative>\nA product at 5% day-30 retention, flat for three cohorts, is healthier than one at 9%\nthat drops a point each month. The second looks better on a dashboard and is on its\nway to zero.\n</Example>\n\nExpect the first two days to carry most of the monetisation signal as well. About half\nof all paying users pay within two days of arriving, so a curve that collapses before\nday 2 is also a revenue problem.\n\nExpect three cohorts before any conclusion. One cohort is an anecdote with a chart\nattached.\n\nExpect the analysis to take an afternoon and the definitions to take longer. The\nplotting is straightforward once the three choices are fixed. Teams that skip the\ndefinitions spend weeks arguing about charts that measure different things.\n\n<FromMyWork exp=\"exp-036\">\nThe measurement I most regret not taking rigorously was client perception of product\ncoherence. It was the thing the whole strategy depended on, and it was the one number\nnobody owned.\n</FromMyWork>\n\n## Pitfalls\n\nFive, and the first two produce most false conclusions.\n\nReading a level as a trend. Day-30 retention of 6%, flat across three cohorts, beats\n8% falling every month, and a single monthly number hides which you have.\n\nComparing to a cross-category average. The gap between gaming at 3% and SaaS at 40%\nto 50% is larger than anything a product team changes.\n\nBlending paid and organic. It converts acquisition decisions into apparent product\nregressions.\n\nChanging a definition mid-year. The step in the chart will be read as performance by\neveryone who was not in the room.\n\nTreating a published figure as settled when sources disagree. Two give e-commerce day\n30 as 3% to 6% and as a 2% median, and neither publishes its sample.\n\n## The checklist\n\nFourteen items. Items one to six must hold before any number is quoted outside the\nteam.\n\n1. Denominator chosen and written down, installs or activated users.\n2. Window fixed, with exact days stated.\n3. Definition of a return fixed, with the event named.\n4. All three definitions dated.\n5. Cohorts built by acquisition week, not calendar month.\n6. Paid and organic split into separate curves.\n7. At least three cohorts plotted before any conclusion.\n8. Decline rate between consecutive periods computed, not just the level.\n9. Flattening point identified, or its absence stated.\n10. Flattening point compared against the day-60-to-90 window.\n11. Category median chosen as the comparison, not the cross-category average.\n12. Current cohort compared against the previous one.\n13. Day-1 and day-30 problems named separately.\n14. Definition changes logged, so every step in the chart has a cause.\n\n## Sources and related\n\nEach figure carries its source and the date it was last checked. One disagreement is\nrecorded rather than resolved: e-commerce day-30 retention appears as 3% to 6% in one\nsource and as a 2% median in another, and neither states its sample or whether the\nfigure is a mean or a median.\n\nA gap worth naming: no source publishes what share of apps never flatten at all,\nwhich is the figure that would turn the flattening test into a benchmark. The day-60\nto day-90 window is the closest published substitute, and it describes top-quartile\napps rather than the median.\n\nThe cohort analysis and retention rate glossary entries carry the definitions this\nplaybook assumes. The activation metric playbook is usually the next step, because a\ncurve that collapses before day 2 is an activation problem wearing a retention label.\n"
+    },
+    {
+      "id": "playbook-0606",
+      "url": "/playbooks/unit-economics-for-consumer-apps",
+      "archetype": "playbook",
+      "hub": "playbooks",
+      "funnel": "MOFU",
+      "title": "Unit Economics for Consumer Apps: The Honest Version",
+      "meta_description": "Unit economics for consumer apps against the real distribution: 58% of new subscription apps earn under $1,000 in year one and the top 10% take 95%.",
+      "h1": "Unit economics for consumer apps",
+      "primary_keyword": "unit economics for consumer apps",
+      "secondary_keywords": [
+        "consumer app cac payback",
+        "app ltv cac ratio"
+      ],
+      "entity_a": "unit-economics-for-consumer-apps",
+      "facts": [
+        "f-pb-22",
+        "f-pb-23",
+        "f-pb-24",
+        "f-pb-25",
+        "f-gh-04",
+        "f-pb-19",
+        "f-ih-02"
+      ],
+      "experience": [
+        "exp-025",
+        "exp-021"
+      ],
+      "links": [
+        {
+          "url": "/glossary/unit-economics",
+          "anchor": "the unit economics entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/cac-payback-period",
+          "anchor": "the CAC payback entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/install-to-purchase/d2c-ecommerce",
+          "anchor": "install to purchase benchmarks",
+          "role": "reference"
+        },
+        {
+          "url": "/playbooks/subscription-pricing-strategy",
+          "anchor": "the pricing playbook",
+          "role": "lateral"
+        },
+        {
+          "url": "/playbooks",
+          "anchor": "the playbooks",
+          "role": "hub"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a growth and monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#consumer-unit-economics",
+          "alt": "Seven reference points for consumer app unit economics: the share of new subscription apps earning under a thousand dollars in year one, the share reaching ten thousand dollars monthly within two years, the share of all subscription revenue the top decile captures, the typical consumer payback window and its target, the mobile lifetime-value to acquisition-cost band against the software bar, blended annual revenue per user across three monetisation shapes, and the share of payers who pay within two days, each row carrying its source and verification date",
+          "caption": "The distribution most unit-economics models ignore. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is a 3 to 1 LTV to CAC ratio the right target?",
+          "a": "Not for a consumer app. That bar came from software-as-a-service. Mobile apps typically run 1.5 to 2.5 to 1, because revenue per user is lower and installs cost more. A consumer app at 2 to 1 fails no universal test."
+        },
+        {
+          "q": "How fast should acquisition cost come back?",
+          "a": "Three to nine months for consumer subscription, with under six the target. That beats the twelve-month software convention, because consumer churn leaves less time to recover."
+        },
+        {
+          "q": "Why do my projections look nothing like published outcomes?",
+          "a": "The published distribution skews hard. 58% of new subscription apps earn under $1,000 in their first year, only 4.6% reach $10,000 a month within two years, and the top 10% of apps take 95% of all subscription revenue."
+        },
+        {
+          "q": "Where does the model break first?",
+          "a": "Usually in the revenue window rather than the cost. About half of all users who ever pay do so within two days of arriving, so a model spreading revenue evenly across month one goes wrong in week one."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "Person",
+        "BreadcrumbList"
+      ],
+      "cta": {
+        "primary": {
+          "label": "Pressure-test your app unit economics",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "See the case studies",
+          "href": "/case-studies"
+        }
+      },
+      "unique_value": "Builds the model against the published outcome distribution rather than a median, so a forecast has to survive the fact that 58% of new subscription apps earn under $1,000 in year one and the top decile takes 95% of revenue.",
+      "block_coverage": {
+        "answer_box": [
+          "f-pb-22",
+          "f-pb-24"
+        ],
+        "in_short": [
+          "f-gh-04",
+          "f-pb-25"
+        ],
+        "who_this_is_for": [
+          "f-pb-23"
+        ],
+        "method": [
+          "f-unit-37",
+          "f-pb-25"
+        ],
+        "numbers_and_examples": [
+          "f-ih-02",
+          "f-pb-24"
+        ],
+        "pitfalls": [
+          "f-gh-04",
+          "f-pb-23"
+        ],
+        "checklist": [
+          "f-pb-25"
+        ]
+      },
+      "body": "\n<AnswerBox>\nUnit economics for consumer apps answer one question: does a user return more than\nthey cost, fast enough. Aim to recover acquisition cost inside six months. Expect a\nlifetime-value to acquisition-cost ratio of 1.5 to 2.5 to one rather than the software\nbar of three. And build against the real distribution: 58% of new subscription apps\nearn under $1,000, about ₹95,900, in their first year.\n</AnswerBox>\n\n<FactTable\n  id=\"consumer-unit-economics\"\n  caption=\"The distribution most unit-economics models ignore\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"New subscription apps earning under $1,000 (₹95,900) in year one\", \"58%\"], factId: \"f-pb-22\" },\n    { cells: [\"Newly launched apps reaching $10,000/month (₹9.59 lakh) within two years\", \"4.6%\"], factId: \"f-pb-23\" },\n    { cells: [\"Share of all subscription revenue taken by the top 10% of apps\", \"95%\"], factId: \"f-pb-24\" },\n    { cells: [\"Consumer subscription payback window, and the target\", \"3-9 months; under 6\"], factId: \"f-pb-25\" },\n    { cells: [\"Mobile LTV to CAC, against the software bar\", \"1.5-2.5 to 1, against 3 to 1\"], factId: \"f-gh-04\" },\n    { cells: [\"Blended annual revenue per user: hybrid / ad-only / subscription-led\", \"$3-15 / $0.40-2 / $30+ (₹288-1,438 / ₹38-192 / ₹2,877+)\"], factId: \"f-pb-19\" },\n    { cells: [\"Users who ever pay, paying within two days\", \"about half\"], factId: \"f-ih-02\" },\n  ]}\n/>\n\n## In short\n\nFive things, and the first invalidates most spreadsheets.\n\nThe outcome distribution is not normal. 58% of new subscription apps earn under\n$1,000, about ₹95,900, in year one. Only 4.6% reach $10,000 a month, about ₹9.59 lakh,\nwithin two years. The top decile takes 95% of subscription revenue. A model built on a\nmedian outcome is modelling a position almost nobody occupies.\n\nThe three-to-one ratio is borrowed. Mobile apps run 1.5 to 2.5 to one: lower revenue\nper user, costlier installs.\n\nThe payback window is tighter than software's. Three to nine months, with under six\nthe target, against the twelve-month convention.\n\nRevenue per user varies as widely as cost does. Blended annual revenue per user runs $3\nto $15 for hybrid freemium, about ₹288 to ₹1,438, against $30 or more for\nsubscription-led products, about ₹2,877.\n\nPut those five together and the model gets simpler. Judge a channel on payback, judge\nthe product on realised value, and treat any forecast above the published outcomes as a\nclaim that needs its own argument.\n\nAnd the revenue arrives early or not at all. About half of everyone who ever pays\npays within two days.\n\n## Who this is for, and who it is not\n\nThis suits a consumer app with paid acquisition, or about to start it. The decision it\nsupports is how much to spend per install and how long to wait before judging.\n\nIt suits founders whom someone is holding to a three-to-one ratio learned from\nsoftware. The counter-argument here is arithmetic, not opinion.\n\nIt does not suit an enterprise or seat-based product. Ratios and payback windows differ\nthere, and the software conventions hold.\n\nIt also does not suit a product with no paid acquisition and no plan for any. Organic\nunit economics are simpler. There the binding question is retention, not payback.\n\nOne more case it suits: a team about to raise spend on a channel that already works.\nThat is the moment a blended payback figure does the most damage, because the channel\nbeing scaled is rarely the one the blend describes.\n\n## The method, part one: build the model honestly\n\nThree steps.\n\n### 1. Measure revenue in the window it actually arrives\n\nAbout half of all payers pay within two days. Model day-zero-to-two revenue separately\nfrom everything after. The two behave differently, and only the first follows from a\ncohort's first session.\n\n### 2. Use a realised lifetime value, never a projected one\n\nTake a cohort as old as your payback target. Total what it actually paid. A projected\nlifetime value multiplies an early number by an assumed lifetime, and that assumption\ncarries the whole result.\n\n### 3. Compute payback per channel, not blended\n\nAcquisition cost varies by more than tenfold across categories and platforms, and\ninside one product it varies as widely across channels. A blended payback figure hides\nthe channel that will never pay back.\n\nRank the channels by payback and read the list rather than the average. The worst\nchannel usually funds nothing and consumes a third of the budget.\n\n## The method, part two: judge it against the distribution\n\nThree steps that most models skip, and the ones that turn a spreadsheet into a\ndecision. Each produces something a sceptical reader can check, instead of a number resting on\nan assumption nobody wrote down.\n\n### 4. Set the ratio target from the category, not the convention\n\nFor a consumer app, 1.5 to 2.5 to one is the published band. Pick a target inside it\nand write down the reason. Do not inherit three to one from a different business\nshape.\n\n### 5. Test the forecast against the outcome distribution\n\nPut the forecast next to the published outcomes. 58% of new subscription apps stay\nunder $1,000 in year one, about ₹95,900. Only 4.6% pass $10,000 a month inside two\nyears, about ₹9.59 lakh. A forecast clearing the second threshold forecasts an\noutcome that only 4.6% of apps reach. That is allowed. Say so out loud.\n\n### 6. Decide the kill rule before spending\n\nName the payback figure at which you stop a channel. Six months is the published\ntarget. Writing it down first makes it a decision rather than an argument later.\n\nSet a second rule for scaling up, not only for stopping. A channel that pays back in\nthree months earns more budget; one at eight months holds steady; one past nine stops.\nThree rules, decided once, remove most of the monthly debate about where spend goes.\n\n<FromMyWork exp=\"exp-025\">\nLaunching a cheaper line to chase a distributor's forecast damaged the premium position\nand the volume never arrived. Unit economics fail the same way: the cheaper acquisition\nlooks like progress and costs more than it brings.\n</FromMyWork>\n\n## The numbers to expect\n\nExpect realised lifetime value to come in below the projection, usually by a wide\nmargin. Projections assume a lifetime; realised numbers measure one. The gap is widest\nin the first six months, when the assumed tail has not had a chance to disprove itself.\n\nExpect one or two channels to carry the whole result. Acquisition cost spans more than\na tenfold range, so a blended figure averages things that need judging separately.\n\nExpect the payback target to bind harder than the ratio. A product can hit two to one\non lifetime value and still fail, if that lifetime runs three years and the cash is\nneeded this quarter.\n\nExpect the model to need rebuilding once a year. Install costs move, store fees change,\nand a payback figure from eighteen months ago describes a market that has shifted under\nit.\n\nExpect the distribution to be the most useful thing on this page. 58% earn under\n$1,000, about ₹95,900, while the top decile takes 95% of revenue. Consumer app\neconomics get won or lost at the extremes.\n\n<FromMyWork exp=\"exp-021\">\nThe headline growth figure needs decomposing to be honest. A single multiple credits\nthe last change with all of the growth, and in unit economics that usually hides a\nmix shift between channels.\n</FromMyWork>\n\n## Pitfalls\n\nFive, and the first two are nearly universal.\n\nImporting the three-to-one ratio. It fits a different revenue shape. Mobile apps run\n1.5 to 2.5 to one.\n\nProjecting lifetime value instead of realising it. The assumed lifetime does the work, and nobody\naudits it.\n\nBlending channels. A tenfold spread in install cost means the blend describes no\nchannel you actually buy.\n\nModelling revenue as a monthly average. Half of all payers pay within two days, so\nmonth one is front-loaded and months two onward are thinner than a straight line\nsuggests.\n\nForecasting a median outcome. Almost nobody sits at the median: 58% stay below $1,000\nin year one, about ₹95,900, and 4.6% pass $10,000 a month, about ₹9.59 lakh, within two\nyears.\n\n## The checklist\n\nThirteen items. Items one to four are the model; the rest are the judgement.\n\n1. Day-zero-to-two revenue split from later revenue.\n2. Cohort age matches the payback target.\n3. Realised lifetime value totalled for that cohort; nothing projected.\n4. Cost per install computed per channel, never blended.\n5. Payback period computed per channel.\n6. Ratio target inside the 1.5 to 2.5 band, with the reason noted.\n7. Payback target chosen against the three-to-nine-month window.\n8. Kill rule agreed in writing before any spend increase.\n9. Forecast placed against the outcome figures for year one and month twenty-four.\n10. Any assumption of a top-decile outcome flagged explicitly as one.\n11. Retention curve read before any acquisition increase.\n12. Refunds and store fees deducted before lifetime value is computed.\n13. Currency pairing and fx date noted for every figure in the model.\n14. Model dated, and the next rebuild booked within twelve months.\n15. Scaling rule sits beside the kill rule, so good channels grow deliberately.\n\n## Sources and related\n\nEach figure carries its source and the date it was last checked. The outcome\ndistribution comes from one subscription platform's data across its customer base,\nreported secondhand, and it is the only published source found that gives the shape of\napp outcomes rather than a central tendency. That makes it the most useful figure here\nand a single source, so it is marked as one.\n\nThe install-to-purchase benchmarks carry the conversion side of this model. The pricing\nplaybook sets the revenue side. The unit economics and CAC payback glossary entries\ncarry the definitions, including which costs belong above the line.\n\nOne gap worth naming: no source publishes what share of consumer apps ever recover\nacquisition cost at all. The payback window above describes the apps that do. Treat it\nas the target among products already working, not as a probability of reaching it.\n"
+    },
+    {
+      "id": "playbook-0607",
+      "url": "/playbooks/hybrid-monetization",
+      "archetype": "playbook",
+      "hub": "playbooks",
+      "funnel": "MOFU",
+      "title": "Hybrid Monetization: Running Ads and Subscriptions Together",
+      "meta_description": "Hybrid monetization in practice: only 10% of apps run a true hybrid model while more than 60% of top-grossing apps run two or more revenue models.",
+      "h1": "Hybrid monetization: ads and subscriptions together",
+      "primary_keyword": "hybrid monetization",
+      "secondary_keywords": [
+        "ads and subscription together",
+        "hybrid app revenue model"
+      ],
+      "entity_a": "hybrid-monetization",
+      "facts": [
+        "f-pb-18",
+        "f-pb-19",
+        "f-pb-20",
+        "f-pb-21",
+        "f-svc-06",
+        "f-svc-08",
+        "f-bm-27"
+      ],
+      "experience": [
+        "exp-018",
+        "exp-026"
+      ],
+      "links": [
+        {
+          "url": "/glossary/arpu",
+          "anchor": "the ARPU entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/freemium",
+          "anchor": "the freemium entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/arpu/b2b-saas",
+          "anchor": "ARPU benchmarks",
+          "role": "reference"
+        },
+        {
+          "url": "/playbooks/app-monetization-models",
+          "anchor": "the monetisation models playbook",
+          "role": "lateral"
+        },
+        {
+          "url": "/playbooks",
+          "anchor": "the playbooks",
+          "role": "hub"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a growth and monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#hybrid-reality",
+          "alt": "Seven reference points for hybrid monetization: the share of apps running a true hybrid model against the share of top-grossing apps running two or more revenue models, blended annual revenue per user for hybrid freemium against ad-only and subscription-led products, how much more subscription apps earn per user than ad-only ones, free-to-paid conversion for AI apps against mature subscription apps, the share of companies on hybrid pricing now and projected, what pricing model investors prefer, and Indian streaming advertising revenue, each row carrying its source and verification date",
+          "caption": "Few apps run hybrid; most of the biggest ones do. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Is hybrid monetization common?",
+          "a": "No, and that is the interesting part. Only 10% of apps run a true hybrid model, while more than 60% of top-grossing apps run two or more revenue models at once. Hybrid is rare overall and normal at the top."
+        },
+        {
+          "q": "What revenue per user should hybrid produce?",
+          "a": "Between the two models it combines. Blended annual revenue per user runs $3 to $15 for hybrid freemium, against $0.40 to $2 for ad-only free tiers and $30 or more for subscription-led products."
+        },
+        {
+          "q": "Does adding ads damage subscription revenue?",
+          "a": "Only if the ads reach the people most likely to subscribe. Subscription apps earn 4.6 times the revenue per user of ad-only ones, so the arithmetic favours protecting the subscription path and monetising everyone else."
+        },
+        {
+          "q": "Which products need hybrid most?",
+          "a": "Those with very low free-to-paid conversion. AI apps convert at 1% to 3% against 5% to 8% for mature subscription apps, which leaves a much larger non-paying population to monetise some other way."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "Person",
+        "BreadcrumbList"
+      ],
+      "cta": {
+        "primary": {
+          "label": "Design a hybrid monetization model with me",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "See the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "unique_value": "Sets the 10% of apps running true hybrid against the 60%-plus of top-grossing apps that do, so the decision is framed as a scale question rather than a philosophy — and sizes the non-paying population with conversion figures rather than assuming it.",
+      "block_coverage": {
+        "answer_box": [
+          "f-pb-18"
+        ],
+        "in_short": [
+          "f-pb-19",
+          "f-pb-20"
+        ],
+        "who_this_is_for": [
+          "f-pb-21"
+        ],
+        "method": [
+          "f-pb-19",
+          "f-pb-20"
+        ],
+        "numbers_and_examples": [
+          "f-svc-06",
+          "f-bm-27"
+        ],
+        "pitfalls": [
+          "f-pb-20",
+          "f-pb-21"
+        ],
+        "checklist": [
+          "f-svc-08"
+        ]
+      },
+      "body": "\n<AnswerBox>\nHybrid monetization means running two revenue models at once, usually subscriptions\nplus advertising. Only 10% of apps do it. More than 60% of top-grossing apps run two\nor more. Treat it as something products grow into, once the non-paying population is\nlarge enough to be worth serving.\n</AnswerBox>\n\n<FactTable\n  id=\"hybrid-reality\"\n  caption=\"Few apps run hybrid; most of the biggest ones do\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Apps on a true hybrid model, against top-grossing apps on two or more\", \"10% against more than 60%\"], factId: \"f-pb-18\" },\n    { cells: [\"Blended annual revenue per user: hybrid / ad-only / subscription-led\", \"$3-15 / $0.40-2 / $30+ (₹288-1,438 / ₹38-192 / ₹2,877+)\"], factId: \"f-pb-19\" },\n    { cells: [\"Subscription against ad-only revenue per user\", \"4.6 times\"], factId: \"f-pb-20\" },\n    { cells: [\"Free-to-paid conversion, AI apps against mature subscription apps\", \"1-3% against 5-8%\"], factId: \"f-pb-21\" },\n    { cells: [\"Companies on hybrid pricing now and projected\", \"43%, rising to 61%\"], factId: \"f-svc-06\" },\n    { cells: [\"Pricing model investors name as preferred\", \"hybrid 35%, outcome-based 26%\"], factId: \"f-svc-08\" },\n    { cells: [\"Indian streaming advertising revenue, 2025\", \"$563.9 million (about ₹5,400 crore)\"], factId: \"f-bm-27\" },\n  ]}\n/>\n\n## In short\n\nFive points, and the first two frame the decision.\n\nHybrid is rare and concentrated. Only 10% of apps run a true hybrid model. More than\n60% of top-grossing apps run two or more. So hybrid follows scale rather than causing\nit.\n\nThe revenue per user lands between the two models, not above both. Hybrid freemium\nblends to $3 to $15 a year, about ₹288 to ₹1,438, against $0.40 to $2 for ad-only and\n$30 or more for subscription-led.\n\nSubscription remains the stronger model per user, at 4.6 times ad-only revenue. So the\nsubscription path is the thing to protect.\n\nLow conversion is the signal to go hybrid. AI apps convert at 1% to 3% against 5% to\n8% for mature subscription apps, which leaves far more non-payers to serve.\n\nAnd the direction of travel is clear: 43% of companies already use hybrid pricing,\nprojected to reach 61%, and investors name hybrid their preferred model at 35%.\n\n## Who this is for, and who it is not\n\nThis suits a product with a large, engaged, non-paying population, and a subscription\nthat converts a small share of it. In that shape, ads add revenue without taking it\nfrom somewhere else.\n\nIt suits teams under pressure to raise revenue per user without raising price. Hybrid\ndoes that by widening who pays at all, rather than charging payers more.\n\nIt does not suit a product whose free tier is small or lightly used. Ads on thin\ntraffic earn very little and cost goodwill at the worst moment.\n\nIt also does not suit a product whose subscription converts well. Take the top of the\npublished range, 8% on an engaged base. Ad revenue from the rest rarely covers the\ndamage to the funnel.\n\nOne more case where it fits: a product with strong seasonal or regional traffic that\nwill never pay. Indian streaming advertising reached $563.9 million in 2025, about\n₹5,400 crore, which is a real market built on exactly that population.\n\n## The method, part one: size the opportunity\n\nThree steps, all arithmetic before any build.\n\n### 1. Count the non-paying population and its engagement\n\nCount how many free users return weekly, not how many exist. Ad revenue tracks\nsessions, so a large dormant base produces almost nothing.\n\nWrite the weekly figure down. It sets the ceiling on everything below.\n\n### 2. Model ad revenue at the published blend, not at a vendor estimate\n\nHybrid freemium blends to $3 to $15 per user per year, about ₹288 to ₹1,438. Use the low\nend for the first model. If the low end does not change the business, the work is not\nworth doing yet.\n\nThe low end is the honest default for a reason. Published blends come from products that\nalready run ads competently, with fill rates and placements tuned over years. A first\nimplementation lands below that, and planning from the top of the range turns a\nreasonable project into a missed forecast.\n\n### 3. Price the risk to subscription revenue explicitly\n\nSubscription apps earn 4.6 times the revenue per user of ad-only ones. Work out how\nmany subscribers you could lose before the ad revenue stops being a gain. Then check\nwhether that number is small enough to worry about. It usually is.\n\n## The method, part two: build it without damaging the funnel\n\nThree steps, in this order.\n\n### 4. Exclude the likely subscribers from ad exposure\n\nEveryone who has started a trial, opened a paywall more than once, or crossed your\nactivation threshold goes on an exclusion list. The remaining audience is where ads\nbelong.\n\nKeep the list dynamic. A user who crosses the activation threshold next week should\nleave the ad audience next week, not at the next quarterly review. A static list decays\ninto exactly the problem it was built to prevent, and the decay is invisible because\nboth revenue lines keep reporting normally.\n\n### 5. Put ads where value has already landed, never before it\n\nAds before a user has got anything suppress both models at once. Place them after a\ncompleted action, which costs least.\n\n### 6. Report one blended revenue-per-user figure, plus both components\n\nMeasurement is the usual reason hybrid underperforms. Teams judge ads and subscriptions\nin separate dashboards and never see the trade. One blended figure, with both parts\nvisible, is the minimum.\n\n<FromMyWork exp=\"exp-018\">\nTwo revenue lines in one product create a governance problem before they create a\nrevenue problem. Somebody has to own the trade between them, and if nobody does, each\nteam optimises its own line and the blended number drifts.\n</FromMyWork>\n\n## The numbers to expect\n\nExpect ad revenue per user to look small and the total to matter anyway. The gap\nbetween $0.40 and $15 a year, about ₹38 and ₹1,438, is the difference between\nmonetising a free base badly and well, and both look unimpressive per user.\n\nExpect subscription revenue to stay the larger line. At 4.6 times ad-only revenue per\nuser, a hybrid product usually earns most of its money from a minority of users.\n\nExpect measurement to be harder than the build. Two models in one funnel means every\nchange moves both numbers. Attributing the effect needs a blended metric agreed in\nadvance.\n\nExpect the market to move toward you. Hybrid pricing is at 43% of companies and\nprojected to reach 61%, and investors already name it their preferred model at 35%. That\nmatters for a fundraise as much as for revenue: a model investors recognise needs less\nexplaining than one they have to be talked into.\n\n<FromMyWork exp=\"exp-026\">\nProfessionals bought after using the tool, not after hearing about it. Hands-on\ndemonstration beat description, which is the same reason an ad shown before first value\ncosts more than it earns.\n</FromMyWork>\n\n## Pitfalls\n\nFive, and the first is the one that kills hybrid attempts.\n\nShowing ads to likely subscribers. It trades a high-value conversion for a low-value\nimpression, and the arithmetic is 4.6 to one against you.\n\nJudging the two models separately. Without a blended figure, each team reports a win\nwhile the total stays flat.\n\nModelling ad revenue from a vendor's best case. The published blend is $3 to $15 per\nuser per year, about ₹288 to ₹1,438, and the low end is the honest planning number.\n\nAdding ads to a thin free tier. Low session volume produces revenue too small to measure\nand churn large enough to notice. The order matters: grow the free base first, then\nmonetise it.\n\nGoing hybrid to avoid a pricing decision. A product converting at 8% has a price problem\nit can solve. One converting at 1% to 3% has a population problem, which hybrid\ngenuinely addresses. Diagnose which you have before building either.\n\n## The checklist\n\nTwelve items. The first four decide whether to proceed at all.\n\n1. Non-paying population counted, with weekly returning users separated out.\n2. Free-to-paid conversion rate measured against the 1% to 8% published span.\n3. Ad revenue modelled at the low end of the published blended range.\n4. Decision recorded: proceed only if the low-end model changes the business.\n5. Exclusion list defined for trialists, repeat paywall viewers and activated users.\n6. Ad placements mapped to moments after a completed action.\n7. Blended revenue-per-user metric defined and agreed before launch.\n8. Both component figures visible alongside the blend.\n9. Owner named for the trade between the two revenue lines.\n10. Subscription conversion monitored as a guardrail, with a rollback threshold.\n11. Session volume per placement tracked, since ad revenue follows sessions.\n12. Review booked at ninety days against the blended figure, not either component.\n13. Exclusion list set to refresh continuously, not at the quarterly review.\n\n## Sources and related\n\nEach figure carries its source and the date it was last checked. The hybrid adoption\nand revenue-per-user figures come from subscription platform and analyst reporting on\napp portfolios, and the ARPU bands in particular come from a single source, so they are\nmarked as one rather than presented as a consensus.\n\nThe monetisation models playbook covers the choice between models. This one covers\nrunning two at once. The ARPU and freemium glossary entries carry the definitions,\nincluding which denominator each blended figure uses.\n\nTwo gaps are worth naming. No source publishes how hybrid adoption splits by category,\nso the decision above rests on your own conversion rate rather than on a peer group.\nAnd no source gives the subscription loss attributable to ad exposure, which is the one\nfigure that would settle the exclusion-list question. Both stay stated as gaps.\n"
+    },
+    {
+      "id": "playbook-0608",
+      "url": "/playbooks/app-monetization-models",
+      "archetype": "playbook",
+      "hub": "playbooks",
+      "funnel": "MOFU",
+      "title": "App Monetization Models: Choosing Between Them",
+      "meta_description": "App monetization models compared on published evidence: subscriptions take 82% of non-gaming store revenue and grew 105% year on year against 14% for ads.",
+      "h1": "App monetization models: choosing between them",
+      "primary_keyword": "app monetization models",
+      "secondary_keywords": [
+        "app revenue models compared",
+        "subscription vs ads vs iap"
+      ],
+      "entity_a": "app-monetization-models",
+      "facts": [
+        "f-pb-26",
+        "f-pb-27",
+        "f-fx-08",
+        "f-act-20",
+        "f-act-21",
+        "f-bm-26",
+        "f-pb-28"
+      ],
+      "experience": [
+        "exp-029",
+        "exp-030"
+      ],
+      "links": [
+        {
+          "url": "/glossary/take-rate",
+          "anchor": "the take rate entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/paywall",
+          "anchor": "the paywall entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/app-store-conversion/media-ott",
+          "anchor": "store conversion benchmarks",
+          "role": "reference"
+        },
+        {
+          "url": "/playbooks/hybrid-monetization",
+          "anchor": "the hybrid monetization playbook",
+          "role": "lateral"
+        },
+        {
+          "url": "/playbooks",
+          "anchor": "the playbooks",
+          "role": "hub"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a growth and monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#model-evidence",
+          "alt": "Seven reference points for choosing between app monetization models: year-on-year revenue growth for subscriptions against in-app purchases and advertising, the subscription share of non-gaming app store revenue, the primary model across 686 tracked apps, the standard Google Play revenue share at two tiers, a reported marketplace take rate on gross merchandise volume, the Indian OTT subscription base, and conversion benchmarks for freemium against opt-in and opt-out trials, each row carrying its source and verification date",
+          "caption": "What each model actually returns, and what the store takes. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Which model is growing fastest?",
+          "a": "Subscriptions, by a wide margin. Subscription revenue grew 105% year on year in the first quarter of 2026, against 29% for in-app purchases and 14% for advertising."
+        },
+        {
+          "q": "Is subscription always the right choice?",
+          "a": "No. It takes 82% of non-gaming store revenue and is the primary model for 61% of tracked apps, but it needs repeated value to justify repeated billing. A product used once or twice has nothing to renew."
+        },
+        {
+          "q": "What does the store take?",
+          "a": "Google Play's standard rate is 10% on the first $1 million of annual revenue and 20% above it. That sits well below marketplace take rates: eBay reported 13.91% on its gross merchandise volume."
+        },
+        {
+          "q": "Does the model change the conversion rate I should expect?",
+          "a": "Substantially. Freemium benchmarks sit under 10%, opt-in trials reach up to 25% and opt-out trials up to 50%. Choosing the model sets the range before any execution."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "Person",
+        "BreadcrumbList"
+      ],
+      "cta": {
+        "primary": {
+          "label": "Choose your app monetization model with me",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "See the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "unique_value": "Chooses between models on usage frequency and store take rather than on revenue share alone, and shows that the model choice sets the conversion range before execution does — freemium under 10% against up to 50% for opt-out trials.",
+      "block_coverage": {
+        "answer_box": [
+          "f-pb-26",
+          "f-pb-27"
+        ],
+        "in_short": [
+          "f-fx-08",
+          "f-pb-28"
+        ],
+        "who_this_is_for": [
+          "f-bm-26"
+        ],
+        "method": [
+          "f-act-20",
+          "f-act-21"
+        ],
+        "numbers_and_examples": [
+          "f-pb-27",
+          "f-fx-08"
+        ],
+        "pitfalls": [
+          "f-pb-28",
+          "f-act-20"
+        ],
+        "checklist": [
+          "f-pb-26"
+        ]
+      },
+      "body": "\n<AnswerBox>\nApp monetization models divide into subscription, one-off purchase, advertising and\ntransaction fees. Subscriptions take 82% of non-gaming store revenue and grew 105% year\non year, against 29% for in-app purchases and 14% for ads. Pick on how often people use\nthe product, then check what the store takes.\n</AnswerBox>\n\n<FactTable\n  id=\"model-evidence\"\n  caption=\"What each model actually returns, and what the store takes\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Year-on-year revenue growth: subscriptions / IAP / ads\", \"105% / 29% / 14%\"], factId: \"f-pb-26\" },\n    { cells: [\"Subscription share of non-gaming app store revenue\", \"82%\"], factId: \"f-pb-27\" },\n    { cells: [\"Primary model across 686 tracked apps\", \"subscriptions 61%, advertising 26%\"], factId: \"f-fx-08\" },\n    { cells: [\"Google Play standard rate, first $1M (₹9.59 crore) and above\", \"10% then 20%\"], factId: \"f-act-20\" },\n    { cells: [\"eBay reported take rate on gross merchandise volume\", \"13.91%\"], factId: \"f-act-21\" },\n    { cells: [\"OTT subscriptions in India\", \"216.5 million\"], factId: \"f-bm-26\" },\n    { cells: [\"Conversion: freemium / opt-in trial / opt-out trial\", \"under 10% / up to 25% / up to 50%\"], factId: \"f-pb-28\" },\n  ]}\n/>\n\n## In short\n\nFive points, and the first is about frequency rather than revenue.\n\nUsage frequency picks the model. Repeated use justifies repeated billing. A product\nsomeone opens twice has nothing to renew, whatever the revenue charts say.\n\nSubscriptions dominate and are growing fastest: 82% of non-gaming store revenue, the\nprimary model for 61% of tracked apps, and 105% year-on-year growth against 14% for ads.\n\nThe model sets the conversion range before execution does. Freemium sits under 10%,\nopt-in trials reach 25% and opt-out trials 50%.\n\nStore economics are better than marketplace economics. Google Play takes 10% on the\nfirst $1 million, about ₹9.59 crore, and 20% above, against eBay's reported 13.91% of\ngross merchandise volume.\n\nAnd scale exists outside the Western subscription market. India has 216.5 million OTT\nsubscriptions, which is a subscription market at a different price level.\n\n## Who this is for, and who it is not\n\nThis suits a team choosing a model for a new product, or reconsidering one that is not\nproducing. The decision is cheap now and expensive later, because a model change\nreshapes the product rather than the pricing page.\n\nIt suits anyone whose instinct is subscription because subscription is winning. The\ngrowth figures support that instinct and the frequency test may not.\n\nIt does not suit a product already monetising well. Changing a working model to chase a\ncategory average usually costs more than it returns.\n\nIt also does not suit a marketplace, where the question is take rate rather than model.\nThe glossary entry on take rate covers that directly.\n\nOne case deserves its own note: a product with two distinct user groups, one frequent and\none occasional. That shape often wants two models rather than one, and the hybrid\nplaybook covers it. Choosing a single model for both groups usually underserves the\nlarger one.\n\n## The method, part one: narrow the field\n\nThree steps.\n\n### 1. Measure how often people come back\n\nWeekly or more often supports a subscription. Monthly or less points to a one-off\npurchase, transaction fees or advertising. That one measurement rules out at least two\nmodels for most products.\n\nMeasure it on real cohorts rather than on intent. What people say about how often they\nwould use a product has almost no relationship to how often they do.\n\n### 2. Count the non-paying population you would keep\n\nAdvertising and hybrid both need volume. If most users leave in week one, advertising has\nno inventory worth selling, and the choice narrows to charging the few who stay.\n\nCount returning users rather than installs. An install that never comes back produces one\nimpression, which prices at close to nothing, and install counts flatter every ad model\non paper.\n\n### 3. Check what the platform takes from each option\n\nGoogle Play takes 10% on the first $1 million of annual revenue, about ₹9.59 crore, and\n20% above it. Transaction and marketplace models carry their own rates, with eBay\nreporting 13.91% of gross merchandise volume. Run each candidate model net of its own\ntake, because the gross comparison is misleading.\n\n## The method, part two: commit and set the bar\n\nThree steps.\n\n### 4. Set the conversion expectation from the model, not from ambition\n\nFreemium under 10%, opt-in trials up to 25%, opt-out up to 50%. Write down which range\napplies before launch, so the first month's number has something to be judged against.\n\nThe gap between those ranges is mostly commitment, not quality. An opt-out trial asks for\ncard details and converts best because it has already filtered for intent. It also cuts the\nnumber of people who start, so the higher rate applies to a smaller group. Model both\neffects, or the model choice will look better on paper than in revenue.\n\n### 5. Price the model at the local level where you sell\n\nIndia's 216.5 million OTT subscriptions are a reminder that a subscription market can be\nvery large and priced far below Western equivalents. Build the ladder from a local price\nrather than converting a Western one. The conversion rate and the price level move\nindependently, and a model that works at one price level can fail at another with the same\nfunnel.\n\n### 6. Decide what would make you change model, in advance\n\nName the figure. A subscription with renewal rates below your payback requirement is a\nmodel problem rather than a pricing problem, and the threshold is easier to agree before\nanyone is defending a decision.\n\nTwo thresholds are usually enough: a renewal rate below which the subscription is not\nviable, and a conversion rate below which freemium is not. Both get written down once and\nchecked quarterly, which keeps the model decision reviewable instead of permanent.\n\n<FromMyWork exp=\"exp-030\">\nSixty days went into understanding the organisation before changing anything.\nMisdiagnosing the problem is more expensive than moving slowly, and a monetisation model\nis the most expensive thing to misdiagnose.\n</FromMyWork>\n\n## The numbers to expect\n\nExpect subscription to look best on every published chart and still fail the frequency\ntest for some products. An 82% revenue share describes the market, not your product.\n\nExpect the net comparison to change the ranking. Gross revenue favours whatever model\ncharges most. Net of a 10% to 20% platform rate, or a 13.91% marketplace take, the order\ncan reverse.\n\nExpect the conversion range to hold. Freemium under 10% is persistent across many\nproducts, and a plan assuming 20% from a freemium model is planning on an outlier.\n\nExpect advertising to grow slowest. At 14% year on year against 105% for subscriptions, an\nad-first model places the business in the slower-growing part of the market. That is\nsometimes the right call, and it should be a deliberate one rather than a default.\n\n<FromMyWork exp=\"exp-029\">\nThree teams shipped in the same week without knowing it, and the collision was\norganisational rather than technical. Monetisation models fail the same way, when pricing,\nproduct and growth each assume a different model.\n</FromMyWork>\n\n## Pitfalls\n\nFive, and the first is the most common.\n\nChoosing subscription because subscription is winning. The 105% growth figure is a market\nfact, and the frequency test is a product fact.\n\nComparing models gross. Platform and marketplace rates differ enough to change which\nmodel nets more.\n\nPlanning freemium conversion above its range. Under 10% is the published benchmark, and\nmost plans assume better.\n\nAssuming a Western price. India's 216.5 million OTT subscriptions exist at a very\ndifferent level, and a converted price misses both markets.\n\nTreating the model as a pricing page decision. It shapes the product, the funnel and the\nteam. Changing it later means rebuilding all three.\n\nAnd leaving the decision unowned. Pricing, product and growth each make assumptions about\nthe model, and when nobody owns it those assumptions diverge quietly until a launch\nexposes them.\n\n## The checklist\n\nTwelve items. The first three narrow the field; the rest commit to one.\n\n1. Return frequency measured, weekly or less often.\n2. Non-paying population that survives week one counted.\n3. Models eliminated by the frequency test, in writing.\n4. Platform or marketplace rate applied to each remaining candidate.\n5. Net revenue per user compared across candidates, not gross.\n6. Conversion range chosen from the model, with the figure recorded.\n7. Local price level researched for each market you sell into.\n8. Ladder built upward from the local price, not converted down.\n9. Renewal or repeat-purchase requirement stated for the chosen model.\n10. Change-of-model threshold agreed before launch.\n11. One owner named for the model decision across pricing, product and growth.\n12. Review booked at ninety days against the conversion range, not the revenue total.\n13. Renewal and conversion thresholds written down, with a quarterly check scheduled.\n\n## Sources and related\n\nEach figure carries its source and the date it was last checked. The growth rates and\nrevenue shares come from app store and platform reporting, which covers apps distributed\nthrough the stores and therefore excludes web-billed products — an increasingly large\nexception worth remembering when the store take is the deciding factor.\n\nThe hybrid monetization playbook covers running two of these models at once, which is\nwhere most products end up at scale. The take rate and paywall glossary entries carry the\ndefinitions, including what belongs inside a take rate.\n\nOne gap worth stating: no source gives revenue growth by model for India specifically.\nThe subscription base is documented and the growth split is not, so the growth figures\nabove describe the global store market and the Indian price level has to come from\nelsewhere.\n"
     }
   ]
 }
