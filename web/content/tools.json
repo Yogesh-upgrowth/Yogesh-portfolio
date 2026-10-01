@@ -22,7 +22,7 @@
     "f-hub-09",
     "f-unit-26",
     "f-unit-36",
-    "f-act-12",
+    "f-fx-05",
     "f-glossary-0700-09"
   ],
   "experience_used": [
@@ -40,13 +40,13 @@
       "role": "lateral"
     },
     {
-      "url": "/tools/ltv-calculator",
-      "anchor": "the LTV calculator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
-      "url": "/india/payment-success-rates-india",
-      "anchor": "payment success rates in India",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "related"
     },
     {
@@ -101,6 +101,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "authored",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

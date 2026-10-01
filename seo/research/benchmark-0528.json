@@ -100,18 +100,18 @@
       "primary": true
     },
     {
-      "fact_id": "f-unit-18",
-      "claim": "Gross revenue retention by contract size runs 82% under 25,000 dollars ACV, 88% from 25,000 to 100,000, and 95% above",
-      "value": "95",
+      "fact_id": "f-fx-08",
+      "claim": "Among 686 tracked apps, subscriptions are the primary model for 418, or 61%, against advertising for 176, or 26%",
+      "value": "61",
       "unit": "%",
-      "source_url": "https://www.saas-capital.com/wp-content/uploads/2025/09/RB32WS1-2025-B2B-SaaS-Retention-Benchmarks.pdf",
-      "source_title": "2025 B2B SaaS Retention Benchmarks",
-      "source_domain": "saas-capital.com",
-      "excerpt": "SMB (<$25K ACV): 82% GRR; Mid-Market ($25K-$100K): 88% GRR; Enterprise (>$100K ACV): 95% GRR.",
-      "published_on": "2025",
+      "source_url": "https://www.lazyweb.com/research/how-do-tracked-apps-make-money-subscription-ads-transactions",
+      "source_title": "How do tracked apps actually make money?",
+      "source_domain": "lazyweb.com",
+      "excerpt": "Among tracked apps, subscriptions account for 418 of 686 apps (61%), more than double advertising at 176/686 (26%).",
+      "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
-      "primary": true
+      "primary": false
     }
   ],
   "entities": {},

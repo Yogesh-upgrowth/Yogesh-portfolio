@@ -1,0 +1,121 @@
+{
+  "id": "playbook-0601",
+  "url": "/playbooks/experimentation-program",
+  "archetype": "playbook",
+  "hub": "playbooks",
+  "wave": 1,
+  "batch_id": "w1-playbook-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Experimentation Program: Build One That Earns Its Cost",
+  "meta_description": "How to build an experimentation program: the velocity to aim for, the win rate to expect, and why more tests per engineer makes each one worth less.",
+  "h1": "How to build an experimentation program",
+  "primary_keyword": "experimentation program",
+  "secondary_keywords": [
+    "ab testing program",
+    "experimentation velocity benchmark"
+  ],
+  "entity_a": "experimentation-program",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-pb-01",
+    "f-pb-02",
+    "f-pb-03",
+    "f-pb-04",
+    "f-pb-05",
+    "f-fx-04",
+    "f-fx-05",
+    "f-hub-06",
+    "f-hub-07"
+  ],
+  "experience_used": [
+    "exp-009",
+    "exp-047"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary/omtm",
+      "anchor": "the OMTM entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention",
+      "anchor": "the retention benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/playbooks/activation-metric",
+      "anchor": "the activation metric playbook",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/conversion-rate",
+      "anchor": "the conversion rate entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/playbooks",
+      "anchor": "the playbooks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#experimentation-reality",
+      "alt": "Eight reference points for sizing an experimentation program: the median and top-performer annual test counts, the median monthly test rate, the commonly cited win rate with its healthy band and conclusive rate, the point at which impact per test peaks against the 87% drop past thirty tests per engineer, the share of experiments rolled back on a guardrail regression at one large platform, the visitors per variant needed at a 5% baseline for three effect sizes, and an audited significance rate, each row carrying its source and verification date",
+      "caption": "What a working programme actually produces. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How many experiments should we be running?",
+      "a": "Fewer than the ambitious answer. The median company runs 34 a year, about two to three a month, and top performers exceed 200. But impact per test peaks between one and ten tests a year per engineer and falls 87% past thirty, so the target is tests per engineer, not tests per quarter."
+    },
+    {
+      "q": "What win rate should we expect?",
+      "a": "Between 10% and 30%, with 12% the figure most often cited from large-scale analysis. The more useful number is the conclusive rate — wins and losses combined — which should sit at 35% to 40%. A programme with a high win rate and a low conclusive rate is testing only safe changes."
+    },
+    {
+      "q": "Is a losing test a failed test?",
+      "a": "No, and a programme that treats it that way will stop shipping anything interesting. At one platform running more than 10,000 experiments a year, 42% get rolled back after a guardrail metric flags a regression. Those are the tests doing the most work."
+    },
+    {
+      "q": "When is our traffic too low to test?",
+      "a": "When the sample size the effect requires exceeds what you can gather in a month. At a 5% baseline, a 50% relative lift needs about 1,700 visitors per variant, a 20% lift about 9,000, and a 10% lift about 36,000. Small products can only detect large effects."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Set up an experimentation program with me",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Sizes the programme by tests per engineer rather than tests per quarter, using the published finding that impact per test falls 87% past thirty a year — the opposite of the velocity advice every other guide gives.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

@@ -21,7 +21,7 @@
     "f-hub-02",
     "f-unit-01",
     "f-unit-03",
-    "f-unit-18",
+    "f-fx-08",
     "f-unit-30",
     "f-unit-37"
   ],
@@ -40,8 +40,8 @@
       "role": "hub"
     },
     {
-      "url": "/india/india-app-economy-statistics",
-      "anchor": "India app economy statistics",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "related"
     },
     {
@@ -101,6 +101,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "authored",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

@@ -1,0 +1,211 @@
+<AnswerBox>
+Retention curve analysis asks one question first: does the curve flatten. Top-quartile
+consumer apps hold 25% to 40% at day 30 and flatten between day 60 and day 90. The
+mobile average is 7% to 8%. A flat 6% beats a falling 8%, because the flat one has
+found a population the product keeps.
+</AnswerBox>
+
+<FactTable
+  id="curve-shape"
+  caption="The shape tells you more than the level"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Top-quartile consumer apps, day 30 and flattening window", "25-40%; flattens day 60-90"], factId: "f-rh-01" },
+    { cells: ["Mobile day-30 average, and the strong threshold", "7-8%; above 15%"], factId: "f-rh-02" },
+    { cells: ["SaaS subscription products at day 30", "40-50%"], factId: "f-rh-03" },
+    { cells: ["Fintech, day 1 / 7 / 30 medians", "28% / 12% / 7%"], factId: "f-bm-02" },
+    { cells: ["Gaming, day 1 / 7 / 30 medians", "32% / 8% / 3%"], factId: "f-bm-05" },
+    { cells: ["E-commerce day 30, two published figures", "3-6% against a 2% median"], factId: "f-fx-03" },
+    { cells: ["Paying users who convert within two days", "about half"], factId: "f-ih-02" },
+  ]}
+/>
+
+## In short
+
+Five points. The first one reframes the whole exercise.
+
+The shape carries the information, not the level. A curve that flattens has found a
+population the product holds. One still falling at day 90 has not, however high it
+started.
+
+There is a published window for flattening: day 60 to 90 for top-quartile consumer
+apps. That gives the analysis a deadline rather than only a target.
+
+Category sets the level before the product gets a vote. Gaming runs 32% at day 1 and
+3% by day 30. Fintech runs 28% and 7%. SaaS subscription products reach 40% to 50%.
+
+Day 1 and day 30 answer different questions. Gaming wins day 1 and loses day 30,
+which is a reason-to-return problem rather than a first-session one.
+
+And growth distorts the blend. Fast growth drags a blended curve down even when every
+cohort improves.
+
+## Who this is for, and who it is not
+
+This suits any product with repeat usage and at least a few hundred new users a
+month. It needs only an install or signup date and a usage event, which is the
+smallest analytics setup that supports any decision at all.
+
+It suits teams whose retention number has been flat for months and who cannot tell
+whether that is good. Flat is usually the answer they were hoping for, and the
+analysis here says so explicitly.
+
+It does not suit a single-purchase product where nobody is expected to return. A
+curve that decays to zero is correct behaviour for a product someone uses once, and
+measuring it as retention produces alarm about nothing.
+
+It also does not suit a product in its first weeks, where cohorts are too small to
+read. The direction is visible; the number is noise.
+
+## The method, part one: build a curve you can trust
+
+Three steps, and skipping the first makes the rest unreadable.
+
+### 1. Fix the three definitions before plotting anything
+
+A denominator, a window, and a return. Installs or activated users. Day 30 exactly or
+days 28 to 32. An app open, a session over some length, or a meaningful action. Three
+choices, eight combinations, eight different curves from one dataset.
+
+Write them down with the date. Most retention arguments turn out to be arguments about
+one of these three, and an hour spent here saves a quarter of disagreement later.
+
+The denominator choice is the one that moves the number most. Retention over activated
+users runs far above retention over installs, because it has already removed everyone
+who never reached first value. Neither is wrong. Comparing one against a benchmark
+built on the other is.
+
+### 2. Plot by acquisition cohort, never by calendar month
+
+A calendar-month figure moves when a campaign lands mid-month, with nothing about the
+product changing. Cohort by install week is the smallest unit that behaves.
+
+### 3. Split paid from organic before reading anything
+
+Blending them lets a campaign's quality masquerade as product health. Cheaper installs
+make the curve look worse, which teams routinely read as a regression.
+
+Split the two largest paid sources out as well, once volume allows. The gap between the
+best and worst source is often the largest lever available, and larger than most
+onboarding changes — the same product retains very differently depending on who
+arrives.
+
+## The method, part two: read the shape
+
+Three steps, in this order.
+
+### 4. Find the flattening point, or establish there is none
+
+Compare each cohort's day-to-day decline rate rather than its level. The curve has
+flattened when the decline between consecutive periods stops shrinking. For
+top-quartile consumer apps that happens between day 60 and day 90, so a curve still
+steepening at day 90 has a structural problem.
+
+### 5. Compare to your category, then to your own last cohort
+
+The mobile average of 7% to 8% is the wrong bar for gaming at 3% and for SaaS at 40%
+to 50%. Once you have the category median, the more useful comparison is your own
+previous cohort, because that controls for everything the category cannot.
+
+### 6. Separate the day-1 problem from the day-30 problem
+
+A low day 1 is a first-session problem. A fine day 1 with a collapsing day 30 is a
+reason-to-return problem. Gaming shows the second shape clearly at 32% and 3%, and
+onboarding work will not touch it.
+
+Name which one you have before choosing any fix. Onboarding changes move day 1.
+Notifications, content freshness and habit mechanics move day 7 and day 30. A team
+pushing day-30 retention with onboarding work is pulling a lever connected to a
+different number.
+
+<FromMyWork exp="exp-044">
+The pattern I keep seeing is a retention problem diagnosed as an acquisition problem.
+Cheaper installs make the curve look worse rather than better. The team reads that
+drop as a product regression and starts fixing the wrong thing.
+</FromMyWork>
+
+## The numbers to expect
+
+Expect your honest curve to sit below the number currently being reported, because
+most reported figures use the kindest available denominator.
+
+Expect the flattening question to change the conversation more than the level does. A
+flat curve has a business to grow, and a falling one has a leak to find.
+
+<Example illustrative>
+A product at 5% day-30 retention, flat for three cohorts, is healthier than one at 9%
+that drops a point each month. The second looks better on a dashboard and is on its
+way to zero.
+</Example>
+
+Expect the first two days to carry most of the monetisation signal as well. About half
+of all paying users pay within two days of arriving, so a curve that collapses before
+day 2 is also a revenue problem.
+
+Expect three cohorts before any conclusion. One cohort is an anecdote with a chart
+attached.
+
+Expect the analysis to take an afternoon and the definitions to take longer. The
+plotting is straightforward once the three choices are fixed. Teams that skip the
+definitions spend weeks arguing about charts that measure different things.
+
+<FromMyWork exp="exp-036">
+The measurement I most regret not taking rigorously was client perception of product
+coherence. It was the thing the whole strategy depended on, and it was the one number
+nobody owned.
+</FromMyWork>
+
+## Pitfalls
+
+Five, and the first two produce most false conclusions.
+
+Reading a level as a trend. Day-30 retention of 6%, flat across three cohorts, beats
+8% falling every month, and a single monthly number hides which you have.
+
+Comparing to a cross-category average. The gap between gaming at 3% and SaaS at 40%
+to 50% is larger than anything a product team changes.
+
+Blending paid and organic. It converts acquisition decisions into apparent product
+regressions.
+
+Changing a definition mid-year. The step in the chart will be read as performance by
+everyone who was not in the room.
+
+Treating a published figure as settled when sources disagree. Two give e-commerce day
+30 as 3% to 6% and as a 2% median, and neither publishes its sample.
+
+## The checklist
+
+Fourteen items. Items one to six must hold before any number is quoted outside the
+team.
+
+1. Denominator chosen and written down, installs or activated users.
+2. Window fixed, with exact days stated.
+3. Definition of a return fixed, with the event named.
+4. All three definitions dated.
+5. Cohorts built by acquisition week, not calendar month.
+6. Paid and organic split into separate curves.
+7. At least three cohorts plotted before any conclusion.
+8. Decline rate between consecutive periods computed, not just the level.
+9. Flattening point identified, or its absence stated.
+10. Flattening point compared against the day-60-to-90 window.
+11. Category median chosen as the comparison, not the cross-category average.
+12. Current cohort compared against the previous one.
+13. Day-1 and day-30 problems named separately.
+14. Definition changes logged, so every step in the chart has a cause.
+
+## Sources and related
+
+Each figure carries its source and the date it was last checked. One disagreement is
+recorded rather than resolved: e-commerce day-30 retention appears as 3% to 6% in one
+source and as a 2% median in another, and neither states its sample or whether the
+figure is a mean or a median.
+
+A gap worth naming: no source publishes what share of apps never flatten at all,
+which is the figure that would turn the flattening test into a benchmark. The day-60
+to day-90 window is the closest published substitute, and it describes top-quartile
+apps rather than the median.
+
+The cohort analysis and retention rate glossary entries carry the definitions this
+playbook assumes. The activation metric playbook is usually the next step, because a
+curve that collapses before day 2 is an activation problem wearing a retention label.

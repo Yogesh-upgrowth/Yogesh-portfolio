@@ -1,0 +1,119 @@
+{
+  "id": "playbook-0610",
+  "url": "/playbooks/plg-for-consumer-apps",
+  "archetype": "playbook",
+  "hub": "playbooks",
+  "wave": 1,
+  "batch_id": "w1-playbook-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "PLG for Consumer Apps: What Transfers and What Does Not",
+  "meta_description": "Product-led growth for consumer apps: the model sets the conversion ceiling before execution does, from freemium under 10% to opt-out trials up to 50%.",
+  "h1": "PLG for consumer apps: what transfers and what does not",
+  "primary_keyword": "plg for consumer apps",
+  "secondary_keywords": [
+    "product led growth consumer",
+    "freemium vs trial conversion"
+  ],
+  "entity_a": "plg-for-consumer-apps",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-gh-01",
+    "f-gh-02",
+    "f-pb-21",
+    "f-fx-06",
+    "f-fx-07",
+    "f-pb-07",
+    "f-pb-24"
+  ],
+  "experience_used": [
+    "exp-026",
+    "exp-005"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary/freemium",
+      "anchor": "the freemium entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/free-to-paid-conversion",
+      "anchor": "the free-to-paid entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/trial-to-paid-conversion/b2b-saas",
+      "anchor": "trial conversion benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/playbooks/activation-metric",
+      "anchor": "the activation metric playbook",
+      "role": "lateral"
+    },
+    {
+      "url": "/playbooks",
+      "anchor": "the playbooks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#plg-ceilings",
+      "alt": "Seven reference points for product-led growth in consumer apps: the published distribution of freemium conversion rates against the free-trial distribution, free-to-paid conversion for AI apps against mature subscription apps, median onboarding tour completion with its interquartile range, checklist completion at three-to-five steps against ten or more, the median time to value across 547 companies, and the share of all subscription revenue the top decile of apps captures, each row carrying its source and verification date",
+      "caption": "The model sets the ceiling before execution does. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Does product-led growth work for consumer apps?",
+      "a": "It is the default there, and the question is which variant. Freemium and free trial sit on different distributions: a fifth of freemium products convert below 2.5%, against 7% of trial products, and the most common trial band is 7.5% to 10%."
+    },
+    {
+      "q": "Freemium or free trial?",
+      "a": "Trial, unless the product needs a permanent free tier to work. The two distributions barely overlap, so the model choice moves the outcome more than execution usually does."
+    },
+    {
+      "q": "Why is my AI app converting so badly?",
+      "a": "It may not be. AI apps convert free to paid at 1% to 3%, against 5% to 8% for mature subscription apps. If you are inside that band the funnel is normal, and the revenue problem is a population problem."
+    },
+    {
+      "q": "What should we fix first?",
+      "a": "The path length. Checklists of three to five steps complete at 67% against 18% for ten or more, and median tour completion is 29%. Most self-serve products lose more users to step count than to pricing."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Build a product-led growth motion with me",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Treats the freemium-or-trial decision as the thing that sets the conversion ceiling, using two published distributions that barely overlap — so a team can tell whether its rate is an execution problem or a model problem before spending a quarter on the wrong one.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

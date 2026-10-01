@@ -1,0 +1,118 @@
+{
+  "id": "playbook-0603",
+  "url": "/playbooks/subscription-pricing-strategy",
+  "archetype": "playbook",
+  "hub": "playbooks",
+  "wave": 1,
+  "batch_id": "w1-playbook-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Subscription Pricing Strategy: Choosing Plan Lengths",
+  "meta_description": "A subscription pricing strategy built on plan length: what the shift to weekly billing did to revenue mix, and which categories it does not apply to.",
+  "h1": "Subscription pricing strategy: choosing plan lengths",
+  "primary_keyword": "subscription pricing strategy",
+  "secondary_keywords": [
+    "weekly vs annual subscription",
+    "subscription plan mix"
+  ],
+  "entity_a": "subscription-pricing-strategy",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-pb-10",
+    "f-pb-11",
+    "f-pb-12",
+    "f-pb-13",
+    "f-th-05",
+    "f-th-01",
+    "f-glossary-0700-06"
+  ],
+  "experience_used": [
+    "exp-025"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary/paywall",
+      "anchor": "the paywall entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/free-trial",
+      "anchor": "the free trial entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/trial-to-paid-conversion/b2b-saas",
+      "anchor": "B2B SaaS trial conversion",
+      "role": "reference"
+    },
+    {
+      "url": "/playbooks/activation-metric",
+      "anchor": "the activation metric playbook",
+      "role": "lateral"
+    },
+    {
+      "url": "/playbooks",
+      "anchor": "the playbooks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#plan-length-economics",
+      "alt": "Seven reference points for choosing subscription plan lengths: how the weekly, monthly and annual shares of app subscription revenue moved between 2023 and 2025, the productivity category's monthly subscription and revenue shares, the one category where annual revenue dominates against the one where weekly does, the fall in first-year annual retention, the share of cancelled annual subscribers who never return, trial conversion by trial length, and Indian subscription price levels against the US baseline, each row carrying its source and verification date",
+      "caption": "What plan length does to revenue, and where it reverses. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Should the default plan be weekly, monthly or annual?",
+      "a": "The market has moved to weekly: it went from 43.3% of app subscription revenue in 2023 to 55.5% in 2025, while monthly halved to 11.7%. But two categories reverse it — health and fitness takes 60.6% of revenue from annual plans, and productivity takes 90.7% from monthly."
+    },
+    {
+      "q": "Does an annual plan improve retention?",
+      "a": "Less than it used to, and the downside is sharper. First-year retention on annual plans fell from 31% to 28% year on year, and 95% of annual subscribers who cancel never come back. An annual plan converts a monthly churn decision into one irreversible one."
+    },
+    {
+      "q": "Why does productivity behave differently?",
+      "a": "Because the spend is a work expense with a renewal conversation attached, not a personal one. Productivity takes 76.7% of its subscriptions monthly and 90.7% of its revenue from them, so the monthly plan is the business rather than the entry point."
+    },
+    {
+      "q": "How should Indian pricing differ?",
+      "a": "By level, not by structure. Indian subscription prices sit at about 0.6 times the US baseline, so the same plan ladder produces materially less revenue per subscriber and the cost of a long free period is harder to recover."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Set your subscription pricing with me",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Treats plan length as the primary pricing decision rather than price point, and names the two categories where the industry-wide shift to weekly billing reverses — which a general pricing guide averages away.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

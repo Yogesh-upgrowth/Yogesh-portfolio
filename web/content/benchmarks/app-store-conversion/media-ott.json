@@ -39,8 +39,8 @@
       "role": "hub"
     },
     {
-      "url": "/india/ott-pricing-india",
-      "anchor": "OTT pricing in India",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "lateral"
     },
     {
@@ -49,13 +49,13 @@
       "role": "lateral"
     },
     {
-      "url": "/tools/ecpm-ad-revenue-calculator",
-      "anchor": "the ad revenue calculator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
-      "url": "/benchmarks/retention/media-ott",
-      "anchor": "media and OTT retention benchmarks",
+      "url": "/benchmarks/retention",
+      "anchor": "the retention benchmarks",
       "role": "related"
     },
     {

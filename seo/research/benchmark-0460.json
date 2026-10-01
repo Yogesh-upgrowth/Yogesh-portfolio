@@ -44,14 +44,14 @@
       "primary": false
     },
     {
-      "fact_id": "f-bm-14",
-      "claim": "Most apps convert 1% to 2% of installs into a purchase, with retail at 1.38% and travel at 2.41%",
-      "value": "1.38",
-      "unit": "%",
-      "source_url": "https://uxcam.com/blog/mobile-app-conversion-rate/",
-      "source_title": "Mobile App Conversion Rate Benchmarks",
-      "source_domain": "uxcam.com",
-      "excerpt": "Most mobile apps see install-to-purchase conversion between 1% and 2%. Retail apps 1.38%; travel apps 2.41%.",
+      "fact_id": "f-ih-01",
+      "claim": "Across more than 145,000 installs the median time from install to first revenue is about 48 hours, with the 90th percentile near 14 days",
+      "value": "48",
+      "unit": "hours",
+      "source_url": "https://linkrunner.io/blog/install-to-first-revenue-payback-windows-2026",
+      "source_title": "Install-to-first-revenue timing: mobile app payback windows in 2026",
+      "source_domain": "linkrunner.io",
+      "excerpt": "Median time from install to first revenue is approximately 48 hours across over 145,000 installs; the 90th percentile stretched to roughly 14 days.",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
@@ -86,14 +86,14 @@
       "primary": false
     },
     {
-      "fact_id": "f-act-16",
-      "claim": "Indian D2C brands lose 30% to 35% of revenue to quick-commerce platforms across listing fees, mandatory ad spend, commission and operations",
-      "value": "30-35",
+      "fact_id": "f-fx-03",
+      "claim": "E-commerce and retail apps retain 3% to 6% by day 30, above the 2% median other sources report for the same category",
+      "value": "3-6",
       "unit": "%",
-      "source_url": "https://base.com/en-IN/blog/quick-commerce-for-d2c-brands-the-complete-guide-2026/",
-      "source_title": "Quick Commerce for D2C Brands",
-      "source_domain": "base.com",
-      "excerpt": "For D2C brands, platforms consume 30% to 35% of revenue between listing fees, mandatory ad spend, commission, and operations.",
+      "source_url": "https://appstorys.com/blog-Retention-Rates-Mobile-Apps-By-Industry",
+      "source_title": "Retention rates for mobile apps by industry",
+      "source_domain": "appstorys.com",
+      "excerpt": "By Day 30, e-commerce or retail apps retain 3-6%.",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
@@ -119,10 +119,10 @@
       "f-bm-08"
     ],
     "why_this_industry_differs": [
-      "f-bm-14"
+      "f-ih-01"
     ],
     "india_layer": [
-      "f-act-16"
+      "f-fx-03"
     ],
     "what_good_looks_like": [
       "f-bm-15"

@@ -1,0 +1,211 @@
+<AnswerBox>
+A subscription pricing strategy starts with plan length, not price point. Weekly
+plans went from 43.3% of app subscription revenue in 2023 to 55.5% in 2025 while
+monthly halved to 11.7%. Before copying that, check your category: health and
+fitness takes 60.6% of revenue from annual plans and productivity takes 90.7% from
+monthly.
+</AnswerBox>
+
+<FactTable
+  id="plan-length-economics"
+  caption="What plan length does to revenue, and where it reverses"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Share of app subscription revenue, 2023 to 2025", "weekly 43.3% to 55.5%; monthly 21.1% to 11.7%; annual 29.2% to 22.5%"], factId: "f-pb-10" },
+    { cells: ["Productivity: monthly share of subscriptions and of revenue", "76.7% and 90.7%"], factId: "f-pb-11" },
+    { cells: ["The annual-dominant and weekly-dominant categories", "health and fitness 60.6%; utilities 73.6%"], factId: "f-pb-12" },
+    { cells: ["First-year retention on annual plans, year on year", "31% to 28%"], factId: "f-pb-13" },
+    { cells: ["Cancelled annual subscribers who never return", "95%"], factId: "f-th-05" },
+    { cells: ["Trial conversion by length, under 4 days against 17-32", "25.5% against 42.5%"], factId: "f-th-01" },
+    { cells: ["Indian subscription prices against the US baseline", "0.6x"], factId: "f-glossary-0700-06" },
+  ]}
+/>
+
+## In short
+
+Five findings, and the first one surprises most teams.
+
+Plan length moves revenue more than price point. The weekly share of app
+subscription revenue rose from 43.3% to 55.5% in two years while monthly fell from
+21.1% to 11.7%. Nobody achieved that by changing a number on a page.
+
+Category overrides the trend. Health and fitness is the only category where annual
+plans dominate revenue, at 60.6%. Utilities take 73.6% from weekly. Averaging those
+two together describes neither.
+
+Annual plans have got weaker, not stronger. First-year retention on them fell from
+31% to 28% in a year.
+
+Annual cancellation is close to final: 95% of annual subscribers who cancel never
+come back.
+
+And trial length interacts with plan length. Conversion runs 25.5% under four days
+against 42.5% at seventeen to thirty-two, so a short trial on an annual plan asks
+for the largest commitment with the least evidence.
+
+## Who this is for, and who it is not
+
+This suits a product already charging a subscription, with enough volume to see
+plan-mix effects inside a quarter. It also suits a team about to launch paid tiers
+and choosing the ladder for the first time, where the plan-length decision is
+cheaper to get right than to change later.
+
+It suits anyone whose annual plan is doing worse than its reputation. The common case
+is an annual discount set years ago, on the belief that annual plans hold users well.
+The evidence now puts first-year retention at 28%.
+
+It does not suit a product whose problem is that nobody converts at any price. That
+is an activation or value problem, and a pricing ladder cannot fix it.
+
+It also does not suit usage-based or seat-based business software. There the billing
+period matters less than the unit being counted. The findings here come from consumer
+app subscription data.
+
+## The method, part one: reading your own mix
+
+Three steps before any price changes.
+
+### 1. Split subscriptions and revenue by plan length
+
+Two tables, not one. Count the share of subscribers on each plan length. Then the
+share of revenue each produces. The gap between the tables is the finding.
+Productivity shows it plainly: 76.7% of subscriptions are monthly and 90.7% of
+revenue is. So monthly subscribers are worth more each, not just more numerous.
+
+Run both tables on a fixed month, and again a quarter later. Plan mix drifts on its
+own as older cohorts churn, and a one-off reading will credit that drift to whatever
+you shipped.
+
+### 2. Compare your mix to your category, not the market
+
+The market figure is 55.5% weekly. Your category may be the opposite. If you are in
+health and fitness, the annual-dominant 60.6% pattern is the relevant comparison,
+and matching the market would mean moving away from what works in your category.
+
+### 3. Measure annual retention yourself
+
+Do not inherit the assumption. Compute first-year annual retention from your own
+cohorts and set it against the published 28%. Then measure how many cancelled annual
+subscribers ever come back, against the 95% who never do.
+
+Both numbers are cheap to get and they settle the argument.
+
+<Example illustrative>
+An annual plan retaining 40% of subscribers through year one is an asset. The same
+plan at 20% is a way of collecting one year of revenue from people who then leave —
+a real strategy, and a different one from the retention story usually told about it.
+</Example>
+
+## The method, part two: changing the ladder
+
+Three steps, in the order that limits damage.
+
+### 4. Add a shorter plan before discounting a longer one
+
+Adding weekly or monthly next to annual tests demand for a shorter commitment. It
+does not cut the price of the longer one. Discounting annual first gives away margin
+on subscribers who would have paid in full.
+
+### 5. Match trial length to plan length
+
+A long commitment needs more evidence, and the trial data supports giving it:
+conversion runs 42.5% at seventeen to thirty-two days against 25.5% under four. Pair
+the shortest trials with the shortest plans.
+
+### 6. Price the India ladder from local levels
+
+Indian subscription prices sit at about 0.6 times the US baseline. Build the ladder
+upward from a price you can defend locally. Do not discount the US one downward. The
+two methods land in different places, and only one survives a rival who charges
+nothing.
+
+<FromMyWork exp="exp-025">
+Launching a cheaper line to chase a distributor's forecast damaged the premium position
+and the volume never arrived. A plan ladder works the same way: a cheaper tier moves mix
+before it moves demand, and the mix shift is permanent.
+</FromMyWork>
+
+## The numbers to expect
+
+Expect the mix to move faster than the prices. Adding a shorter plan reallocates
+subscribers within weeks, and the revenue-per-subscriber figure falls while total
+revenue rises. Both numbers are correct and only one is usually quoted.
+
+Expect annual to look worse than its reputation once measured. A 28% first-year
+retention figure means most annual subscribers do not reach a second year, and the
+95% never-return figure means the loss is permanent.
+
+Expect weekly plans to raise support load and refund rates alongside revenue. The
+revenue share moved to 55.5% because weekly converts better, not because it is
+cheaper to run. Budget for the extra billing events: a weekly subscriber generates
+fifty-two charges a year against one, and each is a chance for a payment to fail.
+
+Expect the category pattern to hold against your instinct. Utilities at 73.6% weekly
+and health and fitness at 60.6% annual are stable positions, not fashions.
+
+Expect one more thing: the plan ladder will shape who signs up, not just what they
+pay. A weekly-first ladder attracts people solving a problem this week. An
+annual-first ladder attracts people who have already decided. Those two groups
+behave differently for the rest of their lives as customers, and the difference shows
+up in retention long before it shows up in revenue.
+
+## Pitfalls
+
+Five, and the first is the most expensive.
+
+Copying the market mix without checking the category. The 55.5% weekly figure is an
+average across categories that behave in opposite directions.
+
+Treating an annual plan as a retention tool. It defers the churn decision rather
+than removing it, and makes the eventual decision final for 95% of those who take
+it.
+
+Discounting annual to defend the mix. That lowers revenue from the subscribers
+already most committed.
+
+Pairing a three-day trial with an annual plan. Conversion at that trial length runs
+25.5%, and it is the largest ask with the least evidence behind it.
+
+Reading a falling revenue-per-subscriber as a pricing failure when a shorter plan
+was just introduced. That is mix, and it is usually the intended effect.
+
+And setting the ladder once. The weekly share moved twelve points in two years, so a
+ladder chosen three years ago was built for a market that no longer exists. Revisit
+it annually against your own category's pattern rather than the cross-category
+average.
+
+## The checklist
+
+Thirteen items. Items one to five are measurement; nothing below them is safe
+without them.
+
+1. Share of subscribers on each plan length recorded.
+2. Share of revenue from each plan length recorded separately.
+3. Gap between the two tables noted and explained.
+4. Category comparison chosen, not the cross-category average.
+5. Own first-year annual retention computed against the 28% figure.
+6. Return rate of cancelled annual subscribers measured against the 95% figure.
+7. Trial length recorded per plan length.
+8. Shortest trial paired with the shortest plan, not the longest.
+9. Shorter plan added before any longer plan is discounted.
+10. Refund and support load tracked per plan length.
+11. Revenue per subscriber reported alongside total revenue, never alone.
+12. India ladder built upward from a local price, not discounted from the US one.
+13. Plan and price changes dated in the changelog, so a step in the chart has a cause.
+
+## Sources and related
+
+Each figure carries its source and the date it was last checked. The plan-mix and
+retention figures come from subscription infrastructure vendors reporting across
+their customer base, which is the largest sample available for app subscriptions and
+a selected one: apps that use subscription tooling skew subscription-first.
+
+The free trial and paywall glossary entries carry the definitions this playbook
+assumes. The activation metric playbook comes first in practice, because a pricing
+ladder built on a broken activation number optimises the wrong step.
+
+Two gaps in the published record are worth naming. No source gives a plan-mix split
+for India by category, so the ladder advice above rests on the price level alone.
+And no source separates refund rates by plan length, which is the figure that would
+settle whether weekly billing costs more to run than it earns. Both are stated here
+as gaps rather than filled with an estimate.

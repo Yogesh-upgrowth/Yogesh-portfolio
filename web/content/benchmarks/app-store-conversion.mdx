@@ -1,0 +1,164 @@
+<AnswerBox>
+App store conversion rate benchmarks average 30.3% on iOS and 33% on Google Play.
+If your number is nearer 4%, nothing is broken — those two figures count different
+things. Before comparing your rate to any benchmark, establish whether it counts
+impressions, page views, or a blend of both.
+</AnswerBox>
+
+<FactTable
+  id="store-conversion-by-category"
+  caption="Store conversion at each stage of the funnel, by category"
+  columns={["Measure", "Figure"]}
+  rows={[
+    { cells: ["Average store page conversion, iOS and Google Play", "30.3% and 33%"], factId: "f-ah-01" },
+    { cells: ["By category on iOS, social networking to utilities", "10-20% up to 30-40%"], factId: "f-ah-02" },
+    { cells: ["Health and fitness, impression to page view / page view to install", "4-8% / 25-40%"], factId: "f-bm-13" },
+    { cells: ["Preview video lift across 500+ A/B tests", "20-35%; games above 40%"], factId: "f-ah-03" },
+    { cells: ["Preview video against static screenshots", "won 78% of tests, median lift 22%"], factId: "f-ah-04" },
+    { cells: ["Screenshots as the deciding element, and captions", "up to 45% of users; captions +25%"], factId: "f-ah-05" },
+  ]}
+/>
+
+## What app store conversion measures
+
+Three distinct measurements share the name, and the confusion between them causes
+more bad decisions than any single figure.
+
+Impression-to-page-view is the share of people who saw your listing somewhere in
+the store and tapped through. Health and fitness apps run 4% to 8% here.
+Page-view-to-install is the share who then installed, and the same category runs
+25% to 40%. Store dashboards frequently report a third thing: a blended rate over
+impressions, which lands in the low single digits.
+
+The headline averages of 30.3% on iOS and 33% on Google Play are page-view figures.
+Read one as a store-wide rate and you would conclude that a third of everyone who
+sees your listing installs, which no app achieves. The people reaching that page
+have already decided something.
+
+So the first question about any store conversion number is not whether it is good.
+It is what sits in the denominator.
+
+## Reading the table by category
+
+Utilities convert 30% to 40% on iOS. Social networking converts 10% to 20%. Two to
+three times, and creative quality explains very little of it.
+
+Two mechanisms drive the spread. The first is how specific the need is: somebody
+looking for a file converter knows what they want, while somebody browsing social
+apps is sampling. The second is competitive density — social listings sit beside
+hundreds of close substitutes, and a narrow utility rarely does.
+
+Both are properties of the category, not of the listing. A team benchmarking a
+social app against the 30.3% iOS average has set a target the category does not
+support.
+
+There is a third, quieter mechanism: what the install commits you to. A utility
+install carries an implicit promise of a single answer, and two screenshots can
+make that promise credibly. A social install asks for an ongoing share of
+someone's evenings, which no screenshot establishes. The same listing craft buys a
+different result because the ask differs.
+
+## The India layer
+
+No source publishes an India-specific store conversion rate by category. What is
+published, and what matters more here, is the platform split: Google Play averages
+33% against iOS at 30.3%, and India's install base is overwhelmingly Android.
+
+So the Play figure is the relevant benchmark for an India-heavy app, not the iOS
+one or a blend of the two. The two stores also surface different signals — Play
+weights ratings volume and install count more heavily — so a listing that performs
+on iOS frequently underperforms on Play for reasons of store mechanics rather than
+creative. Measure them separately.
+
+The deeper India point is that store conversion is rarely where an Indian funnel
+leaks. The install decision costs nothing and discovery skews to search, so install
+rates are often healthy while revenue per install stays low. A team watching store
+conversion alone will see nothing wrong, because the leak sits downstream of every
+metric on this page. The category bands above, from 10% for social up to 40% for
+utilities, apply to the install decision only.
+
+## How to measure it without fooling yourself
+
+Pull the funnel apart into its three stages and keep them apart. Impressions,
+page views, installs. A blended figure moves when traffic mix moves, which means
+it reports your marketing channel changes as product changes.
+
+Then split search from browse, because the two behave differently enough that a
+blend is uninterpretable. Search traffic arrives with intent and browse traffic
+does not; they are two populations, not two ends of a range. A listing optimised
+for search keywords and judged on browse traffic will look like a failure.
+
+Finally, pair every conversion figure with a downstream quality figure from the
+same cohort. Install rate alone cannot distinguish a better listing from a more
+misleading one, and those have opposite consequences.
+
+Two practical cautions. Store dashboards attribute on their own windows, which
+rarely match your analytics windows, so the same week produces two different
+conversion rates and neither is wrong. And seasonal category swings are large
+enough to swamp a listing test, which makes a holdout more reliable than a
+before-and-after comparison.
+
+## What actually moves it
+
+Traffic source first, by a wide margin. Moving volume from browse to search does
+more than any screenshot test, because intent arrives with the user.
+
+Within a source, the creative carries the rest, and here the published evidence is
+unusually specific. Screenshots decide the install for up to 45% of users, and
+adding captions to them lifted conversion 25% on average. A preview video lifted
+conversion 20% to 35% across more than 500 A/B tests, above 40% for games and about
+20% for productivity, and beat static screenshots in 78% of tests with a median
+lift of 22%.
+
+Read those together and the order of work is clear: captions on the first two
+screenshots, then a video, then everything else. Category still sets the ceiling, as
+the social-to-utilities gap shows.
+
+What moves it less than people expect: ratings above roughly four stars, icon
+iterations after the first competent one, and localisation of body copy where the
+screenshots stay in English.
+
+<FromMyWork exp="exp-021">
+The headline growth figure needs decomposing to be honest. A store conversion win
+and a traffic mix shift look identical in a blended number, and only one of them is
+something the team did.
+</FromMyWork>
+
+## Stage adjustment
+
+Early on, store conversion is the wrong thing to optimise. With low impression
+volume the figure swings on noise, and the binding constraint is whether anyone
+sees the listing at all. Fix discovery first.
+
+At moderate volume the search-versus-browse split becomes readable, and that is the
+point at which listing work starts to pay. This is also when a video earns its cost:
+a 22% median lift is worth producing for once the traffic exists to see it.
+
+At scale the measurement inverts: install rate stops being the goal and becomes a
+constraint, because a listing tuned past a certain point buys installs that do not
+retain. Utilities' 30% to 40% is a healthy band partly because the intent behind it
+is real.
+
+The stage question to ask, then, is which constraint binds. Below roughly ten
+thousand monthly impressions, discovery binds. Above that, and before paid
+acquisition dominates the mix, the listing binds. Once paid dominates, the
+creative in the ad binds, and the store listing mostly has to avoid losing people
+who have already been persuaded elsewhere.
+
+## Sources and tools
+
+Each figure carries its source and the date it was last checked. The category
+pages under this hub give the sub-segment detail, including the stage-by-stage
+breakdown where a source publishes one.
+
+The monetisation health score puts store conversion next to revenue per install
+and the retention curve, which is the only combination that says whether a higher
+install rate is worth having.
+
+Where a source publishes a figure for one platform only, this hub says which one
+rather than presenting it as cross-platform. That matters more here than on most
+benchmark pages: iOS and Play report different stages of the same funnel under
+similar names, and several widely-quoted store conversion averages are iOS-only
+figures that have lost their label somewhere in the retelling. The creative-lift
+figures above come from A/B testing vendors measuring their own customers' tests,
+which is the best evidence available and still a selected sample.

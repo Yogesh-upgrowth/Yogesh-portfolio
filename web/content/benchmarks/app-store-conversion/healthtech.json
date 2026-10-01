@@ -46,13 +46,13 @@
       "role": "lateral"
     },
     {
-      "url": "/tools/paywall-uplift-calculator",
-      "anchor": "the paywall uplift calculator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
-      "url": "/india/monetizing-tier-2-tier-3-users",
-      "anchor": "monetising tier 2 and tier 3 users",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "related"
     },
     {

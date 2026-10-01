@@ -1,0 +1,443 @@
+{
+  "batch_id": "w1-hub-02",
+  "wave": 1,
+  "verified_on": "2026-09-30",
+  "fx_rate": 95.89,
+  "default_cta": {
+    "primary": {
+      "label": "Get a growth and monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "facts": {
+    "f-act-17": {
+      "fact_id": "f-act-17",
+      "claim": "ONDC offers a commission route near 3%, against the 15% to 25% incumbent Indian marketplaces charge",
+      "value": "3",
+      "unit": "%",
+      "source_url": "https://ecorpit.com/retail-digital-transformation-d2c-quick-commerce-india-2026/",
+      "source_title": "2026 India retail: quick commerce, ONDC and D2C",
+      "source_domain": "ecorpit.com",
+      "excerpt": "ONDC offers a lower-commission route near 3%, against the 15% to 25% that incumbent marketplaces charge.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-hub-03": {
+      "fact_id": "f-hub-03",
+      "claim": "Indian in-app purchase spending passed 1 billion dollars in 2025 and is expected to reach 1.25 billion by the end of 2026",
+      "value": "1",
+      "unit": "USD billion",
+      "source_url": "https://www.businessofapps.com/data/india-app-market/",
+      "source_title": "India App Market Statistics",
+      "source_domain": "businessofapps.com",
+      "excerpt": "In-app purchase spending by Indians passed one billion dollars in 2025, expected to rise to $1.25 billion by the end of 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-hub-04": {
+      "fact_id": "f-hub-04",
+      "claim": "India has 783 million smartphone users, the second largest base in the world",
+      "value": "783",
+      "unit": "million",
+      "source_url": "https://www.businessofapps.com/data/india-app-market/",
+      "source_title": "India App Market Statistics",
+      "source_domain": "businessofapps.com",
+      "excerpt": "There were 783 million smartphone users in India, making it the second largest country for usage.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-hub-05": {
+      "fact_id": "f-hub-05",
+      "claim": "The Broadband India Forum projects the app economy at around 12% of India's GDP by 2030",
+      "value": "12",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/india-app-market/",
+      "source_title": "India App Market Statistics",
+      "source_domain": "businessofapps.com",
+      "excerpt": "The Broadband India Forum has predicted the app economy could be worth around 12 percent of India's GDP by 2030.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-fx-06": {
+      "fact_id": "f-fx-06",
+      "claim": "Across 464 companies the median onboarding tour completion is 29%, with the middle half between 15% and 55%",
+      "value": "29",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "Data from 464 companies shows median tour completion is 29% per company, with the middle half running 15% to 55%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-fx-07": {
+      "fact_id": "f-fx-07",
+      "claim": "Onboarding checklists of three to five steps complete at 67%, against 18% for checklists of ten steps or more",
+      "value": "67",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "3-5 step onboarding checklists complete at 67% vs 18% for 10+ step checklists.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-svc-03": {
+      "fact_id": "f-svc-03",
+      "claim": "India's leading UPI app earns roughly 112 rupees of gross revenue per registered user per year",
+      "value": "112",
+      "unit": "INR",
+      "source_url": "https://tfnmarkets.com/insights/phonepe-ipo-india-2026",
+      "source_title": "PhonePe IPO India 2026: Valuation, OFS Structure, NPCI Cap Risk",
+      "source_domain": "tfnmarkets.com",
+      "excerpt": "The category leader generates approximately Rs 112 of gross revenue per registered user per year.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-bm-26": {
+      "fact_id": "f-bm-26",
+      "claim": "India has 216.5 million OTT subscriptions",
+      "value": "216.5",
+      "unit": "million",
+      "source_url": "https://bestmediainfo.com/insights/india-has-2165-million-ott-subscriptions-but-platforms-are-still-struggling-to-monetise-them-12457338",
+      "source_title": "India has 216.5 million OTT subscriptions",
+      "source_domain": "bestmediainfo.com",
+      "excerpt": "India has 216.5 million OTT subscriptions, but platforms are still struggling to monetise them.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-gh-01": {
+      "fact_id": "f-gh-01",
+      "claim": "Across a survey of more than 1,000 products, a fifth of freemium products convert below 2.5% and the largest group, a third, sits between 2.5% and 5%",
+      "value": "2.5-5",
+      "unit": "%",
+      "source_url": "https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion",
+      "source_title": "What is a good free-to-paid conversion rate?",
+      "source_domain": "lennysnewsletter.com",
+      "excerpt": "A fifth (20%) of products see a conversion rate below 2.5%. About a third see between 2.5% and 5% — the biggest bucket.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-gh-02": {
+      "fact_id": "f-gh-02",
+      "claim": "Free-trial products convert on a different distribution entirely: only 7% fall below 2.5%, and the most common band is 7.5% to 10%",
+      "value": "7.5-10",
+      "unit": "%",
+      "source_url": "https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion",
+      "source_title": "What is a good free-to-paid conversion rate?",
+      "source_domain": "lennysnewsletter.com",
+      "excerpt": "Only 7% of free-trial products see conversion below 2.5%; about a quarter see between 7.5% and 10%, the most common bucket.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-gh-03": {
+      "fact_id": "f-gh-03",
+      "claim": "Median activation sits at 41.7%, with the top quartile at 71% and the bottom at 19% — a spread wide enough that the median judges almost nobody",
+      "value": "41.7",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "The median activation rate is 41.7%, with top-quartile products at 71% and bottom quartile at 19%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-gh-04": {
+      "fact_id": "f-gh-04",
+      "claim": "Mobile apps typically run a lifetime-value to acquisition-cost ratio of 1.5 to 2.5 to 1, below the 3 to 1 bar imported from software-as-a-service",
+      "value": "1.5-2.5",
+      "unit": "ratio",
+      "source_url": "https://admiral.media/cac-payback-period-mobile-apps/",
+      "source_title": "CAC payback period for mobile apps",
+      "source_domain": "admiral.media",
+      "excerpt": "Mobile apps typically show LTV:CAC ratios of 1.5-2.5:1 due to low ARPU and high CAC.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  },
+  "pages": [
+    {
+      "id": "hub-0008",
+      "url": "/glossary",
+      "archetype": "hub",
+      "hub": "glossary",
+      "funnel": "MOFU",
+      "title": "Product Growth Glossary: Metrics Defined and Benchmarked",
+      "meta_description": "Twenty-five growth and monetisation metrics, each with its formula, its denominator and the published range, so you know which definition you are reading.",
+      "h1": "Product growth glossary",
+      "primary_keyword": "product growth glossary",
+      "secondary_keywords": [
+        "growth metrics glossary",
+        "saas metrics definitions"
+      ],
+      "entity_a": "glossary",
+      "facts": [
+        "f-gh-01",
+        "f-gh-02",
+        "f-gh-03",
+        "f-gh-04",
+        "f-fx-06",
+        "f-fx-07"
+      ],
+      "experience": [
+        "exp-021"
+      ],
+      "links": [
+        {
+          "url": "/glossary/ltv-to-cac-ratio",
+          "anchor": "the LTV:CAC entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/activation-rate",
+          "anchor": "the activation rate entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/retention/b2b-saas",
+          "anchor": "B2B SaaS retention benchmarks",
+          "role": "reference"
+        },
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/playbooks",
+          "anchor": "the playbooks",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a metrics review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#definition-spread",
+          "alt": "Six reference points showing how wide the published spread is on metrics people quote as single numbers: the freemium conversion distribution, the free-trial conversion distribution, the activation median against its top and bottom quartiles, the mobile lifetime-value to acquisition-cost band, onboarding tour completion across 464 companies with its interquartile range, and checklist completion at two different lengths, each row carrying its source and verification date",
+          "caption": "Why a single benchmark number rarely settles anything. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why does every entry give a range rather than one number?",
+          "a": "Because the published spreads are wide enough that a single figure misleads. Activation has a median of 41.7%, a top quartile of 71% and a bottom quartile of 19%. A product at 30% is below median and above the bottom quartile, and only the range tells you that."
+        },
+        {
+          "q": "How do I know which definition of a metric I am reading?",
+          "a": "Check the denominator. Most disagreements about a metric are disagreements about what goes underneath the line: ARPU over all users or over payers, retention over installs or over activated users, churn over accounts or over revenue. Each entry here names its denominator first."
+        },
+        {
+          "q": "Are these definitions the same as my analytics tool's?",
+          "a": "Often not, and that is the point of reading the formula rather than the name. A tool reports what it can compute from the events it receives, which is not always the definition the benchmark was built on."
+        },
+        {
+          "q": "Why do step counts change a completion rate so much?",
+          "a": "Because each step is a chance to leave. Checklists of three to five steps complete at 67%, against 18% for ten steps or more. The content did not get worse; there was simply more of it to abandon."
+        }
+      ],
+      "schema_types": [
+        "CollectionPage",
+        "ItemList",
+        "FAQPage"
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get your growth metrics reviewed",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "unique_value": "Each entry leads with the denominator rather than the name, and gives the published distribution rather than a median, because the common failure is two teams comparing numbers that were never the same measurement.",
+      "block_coverage": {
+        "editorial_intro": [
+          "f-gh-01",
+          "f-gh-02"
+        ],
+        "start_here_cards": [
+          "f-gh-03",
+          "f-gh-04"
+        ],
+        "filterable_index": [
+          "f-fx-07"
+        ],
+        "recently_verified": [
+          "f-fx-06"
+        ],
+        "cta_band": [
+          "f-gh-03"
+        ]
+      },
+      "body": "\n<AnswerBox>\nThis product growth glossary defines twenty-five metrics by their denominator\nrather than their name, because that is where teams disagree. Each entry gives\nthe formula, the published range and the trap. Take freemium conversion. A fifth\nof products convert below 2.5%. The largest group lands between 2.5% and 5%. One\nbenchmark number settles very little.\n</AnswerBox>\n\n<FactTable\n  id=\"definition-spread\"\n  caption=\"Why a single benchmark number rarely settles anything\"\n  columns={[\"Reference point\", \"Published spread\"]}\n  rows={[\n    { cells: [\"Freemium free-to-paid, 1,000+ products\", \"20% below 2.5%; largest group 2.5-5%\"], factId: \"f-gh-01\" },\n    { cells: [\"Free-trial free-to-paid, same survey\", \"only 7% below 2.5%; most common 7.5-10%\"], factId: \"f-gh-02\" },\n    { cells: [\"Activation rate\", \"41.7% median, 71% top quartile, 19% bottom\"], factId: \"f-gh-03\" },\n    { cells: [\"Mobile app LTV to CAC\", \"1.5 to 2.5 to 1\"], factId: \"f-gh-04\" },\n    { cells: [\"Onboarding tour completion, 464 companies\", \"29% median; middle half 15-55%\"], factId: \"f-fx-06\" },\n    { cells: [\"Checklist completion, 3-5 steps against 10+\", \"67% against 18%\"], factId: \"f-fx-07\" },\n  ]}\n/>\n\n## What this glossary is for\n\nTwo people can report the same metric, disagree by a factor of three, and both be\nright. The name is shared and the denominator is not. ARPU over every active user\nand ARPU over paying users are different numbers wearing one label, and a\nquarterly review that mixes them produces a decision nobody can trace.\n\nSo each entry starts with what sits underneath the line, then the formula, then\nthe published range, then the specific way the metric lies. The definition comes\nfirst for a reason. A benchmark built on a different denominator misleads you\nmore than no benchmark at all.\n\n## Start here\n\nThree entries carry most of the weight. LTV:CAC gets quoted against a bar it was\nnever built for. The 3 to 1 rule came from software-as-a-service, and mobile apps\ntypically run 1.5 to 2.5 to 1. A consumer app at 2 to 1 is not failing a universal\ntest. It is meeting somebody else's.\n\nActivation rate is the one with the widest honest spread, from 19% at the bottom\nquartile to 71% at the top. Free-to-paid conversion is the one where the model\noutweighs the execution. The trial and freemium distributions barely overlap.\n\n## How to read an entry\n\nEvery entry answers four questions in the same order: what goes in the\ndenominator, what the formula is, what the published range is, and when the\nnumber misleads. The last one is the part most glossaries leave out, and it is\nusually the reason you looked the metric up.\n\nA figure drawn from first-hand client work carries that label and stays fixed to\nthe period it describes. A figure from a published source carries its source and\nits last verification date.\n\n## What recently verified means\n\nPublished benchmarks move, so each figure carries its last check date and goes back\non a re-verification schedule. Figures tied to product conventions move fastest.\nOnboarding tour completion has a 29% median across 464 companies, and the middle\nhalf runs anywhere from 15% to 55% — a spread wide enough that the median alone\nwould mislead most readers of it.\n\n<FromMyWork exp=\"exp-021\">\nThe headline growth figure needs decomposing to be honest. A single multiple\ncredits the last change with all of the growth. Comparing one metric across two\ndefinitions makes the same mistake, and calls the gap performance.\n</FromMyWork>\n\n## Where this leads\n\nIf you came here to settle an argument about a number, the entry will tell you\nwhether the argument is about the measurement or the performance. Those need\ndifferent fixes. Measurement disagreements end with an agreed denominator, and\nusually take an afternoon. Performance gaps end with a diagnosis, which is where\nthe playbooks and the benchmarks pick up. Start with the entry for the metric in\ndispute, agree the denominator first, and only then go looking for the range it\nbelongs in.\n"
+    },
+    {
+      "id": "hub-0011",
+      "url": "/india",
+      "archetype": "hub",
+      "hub": "india",
+      "funnel": "MOFU",
+      "title": "Monetising Apps in India: Prices, Rails and Benchmarks",
+      "meta_description": "What differs when you monetise in India: price levels, payment rails, platform take and the figures published about each, with the gaps named.",
+      "h1": "Monetising apps in India",
+      "primary_keyword": "monetising apps in india",
+      "secondary_keywords": [
+        "india app monetization",
+        "india subscription pricing"
+      ],
+      "entity_a": "india",
+      "facts": [
+        "f-hub-04",
+        "f-hub-05",
+        "f-hub-03",
+        "f-svc-03",
+        "f-act-17",
+        "f-bm-26"
+      ],
+      "experience": [
+        "exp-021"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks/arpu",
+          "anchor": "the ARPU benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/trial-to-paid-conversion/b2b-saas",
+          "anchor": "B2B SaaS trial conversion",
+          "role": "reference"
+        },
+        {
+          "url": "/glossary/take-rate",
+          "anchor": "the take rate entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/arpu",
+          "anchor": "the ARPU entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "an India monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#india-monetisation",
+          "alt": "Six reference points for monetising in India: the smartphone user base, the projected share of GDP from the app economy by 2030, in-app purchase spending in 2025 and its 2026 projection, annual gross revenue per registered user for the leading UPI app, the ONDC commission route against incumbent marketplace rates, and the national OTT subscription count, each row carrying its source and verification date",
+          "caption": "What the published record actually says about India. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "Why can't I use global benchmarks for India?",
+          "a": "Because the price level differs more than the behaviour does. Indian subscription prices sit well below the US baseline, so the same conversion rate produces materially less revenue, and a global ARPU benchmark will read as underperformance when the funnel is working normally."
+        },
+        {
+          "q": "Is the Indian market large or small?",
+          "a": "Both, depending on the denominator. India has 783 million smartphone users and the second largest base in the world, and in-app purchase spending passed one billion dollars in 2025. Enormous reach, modest spend per head."
+        },
+        {
+          "q": "What breaks most often in Indian monetisation?",
+          "a": "The recurring charge rather than the sale. Mandate-based recurring payments fail more often than card-on-file charges do in card-led markets, so a funnel that converts on paper loses revenue at the first renewal."
+        },
+        {
+          "q": "Where are the published figures missing?",
+          "a": "Retention curves by app category, and trial-to-paid rates by category. Market size and revenue are well documented; cohort behaviour is not. The pages here say so rather than inferring a number."
+        }
+      ],
+      "schema_types": [
+        "CollectionPage",
+        "ItemList",
+        "FAQPage"
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get your India monetisation reviewed",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "unique_value": "Names which India figures are actually published and which are not, instead of filling the gaps with inferences from regional averages — the retention and trial-conversion curves most India monetisation advice quietly invents.",
+      "gaps": [
+        "No published India retention curve by app category, and no India trial-to-paid rate by category. Market size, revenue and platform economics are well documented."
+      ],
+      "block_coverage": {
+        "editorial_intro": [
+          "f-hub-04",
+          "f-hub-03"
+        ],
+        "start_here_cards": [
+          "f-svc-03",
+          "f-act-17"
+        ],
+        "filterable_index": [
+          "f-bm-26"
+        ],
+        "recently_verified": [
+          "f-hub-05"
+        ],
+        "cta_band": [
+          "f-hub-03"
+        ]
+      },
+      "body": "\n<AnswerBox>\nMonetising apps in India means the same product mechanics at a different price\nlevel. The reach is enormous: 783 million smartphone users, the second largest base\nin the world. In-app purchase spending passed only one billion dollars in 2025.\nVolume is abundant. Revenue per head is not.\n</AnswerBox>\n\n<FactTable\n  id=\"india-monetisation\"\n  caption=\"What the published record actually says about India\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Smartphone users\", \"783 million, second largest base\"], factId: \"f-hub-04\" },\n    { cells: [\"App economy as a share of GDP by 2030, projected\", \"about 12%\"], factId: \"f-hub-05\" },\n    { cells: [\"In-app purchase spending, 2025 and 2026 projection\", \"$1bn, rising to $1.25bn (about ₹9,600 crore to ₹12,000 crore)\"], factId: \"f-hub-03\" },\n    { cells: [\"Leading UPI app, annual gross revenue per registered user\", \"about ₹112 (about $1.17)\"], factId: \"f-svc-03\" },\n    { cells: [\"ONDC commission route against incumbent marketplaces\", \"about 3% against 15-25%\"], factId: \"f-act-17\" },\n    { cells: [\"OTT subscriptions in India\", \"216.5 million\"], factId: \"f-bm-26\" },\n  ]}\n/>\n\n## What actually differs\n\nThree things, and only one of them is about the user.\n\nPrice level differs most. The same product sells for a fraction of its Western\nprice. That changes every ratio built on revenue. Acquisition cost has less room\nand payback stretches. A lifetime-value-to-acquisition-cost bar imported from a\nhigher-ARPU market becomes unreachable by arithmetic, not by poor execution.\n\nPayment rails differ next. Recurring mandates behave differently from card-on-file\ncharges, and the failure lands on renewal rather than on sale. The leading UPI app\nearns roughly ₹112 of gross revenue per registered user per year, about $1.17. No\nfigure states more plainly how thin per-user monetisation runs at national scale.\n\nPlatform economics differ third. ONDC offers a commission route near 3%, against the\n15% to 25% incumbent marketplaces charge. Distribution cost is genuinely in play\nhere rather than fixed.\n\n## Start here\n\nFor pricing, begin with the ARPU benchmarks and read the India layer there. It\nrecords three incompatible published figures for Indian OTT ARPU rather than\nchoosing one. For funnel modelling, begin with the take rate entry. Platform and\npayment costs take a larger share of a smaller ticket.\n\nFor a market-entry decision, the 216.5 million OTT subscriptions are the useful\nanchor. A very large paying population exists. It pays small amounts reliably rather\nthan large amounts occasionally.\n\n## What the published record does not contain\n\nNo India retention curve by app category. No India trial-to-paid rate by category.\nMarket size, revenue and platform fees are documented well; cohort behaviour is\nnot.\n\nThat absence matters. It is where most India monetisation advice quietly invents a\nfigure, usually by scaling a global curve down by whatever factor somebody chose.\nThe pages here state the gap instead. Where an inference genuinely helps, it carries\na label and its reasoning, so a reader can argue with the reasoning rather than\ninherit a number.\n\n## What recently verified means\n\nEvery figure carries its last check date, and the Indian figures move faster than\nmost. Forecasters put the app economy near 12% of India's GDP by 2030. That is a\nprojection, not a measurement, and projections get revised more often than they get\nmet.\n\n<FromMyWork exp=\"exp-021\">\nThe headline growth figure needs decomposing to be honest. That applies doubly in\nIndia, where a large user number and a small revenue number describe the same\nbusiness and only one of them usually reaches the slide.\n</FromMyWork>\n\n## Where this leads\n\nOn an India strategy, the question is rarely whether the market is big enough.\nIt is whether your unit economics survive a price level that competitors often set\nat zero. Your own numbers answer that, measured against the benchmarks here rather\nthan against the market size. Start with the price you can defend. Work back to the\nacquisition cost it supports. Then check whether the payment rail you depend on\nactually renews.\n"
+    }
+  ]
+}

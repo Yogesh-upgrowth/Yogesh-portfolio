@@ -21,12 +21,12 @@ PAGES_A = [
     primary_keyword="fintech app retention benchmarks",
     secondary_keywords=["fintech retention", "fintech d30 retention"],
     entity_a="retention", entity_b="fintech",
-    facts=["f-bm-01", "f-bm-02", "f-bm-08", "f-bm-17", "f-bm-20", "f-unit-25"],
+    facts=["f-bm-01", "f-bm-02", "f-bm-08", "f-bm-17", "f-bm-20", "f-fx-02"],
     experience=["exp-040", "exp-012"],
     links=L(HUB, ("/glossary/retention-rate", "retention rate", "lateral"),
-            ("/benchmarks/churn/fintech", "fintech churn benchmarks", "lateral"),
-            ("/tools/retention-curve-projector", "the retention curve projector", "tool"),
-            ("/india/payment-success-rates-india", "payment success rates in India", "related"),
+            ("/glossary/churn-rate", "the churn rate definition", "lateral"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
+            ("/india", "monetising in India", "related"),
             BOFU),
     visuals=V("fintech-retention-table",
               "Fintech retention against the cross-industry average at day 1, day 7 and day 30, with the strong-performer band, the share of apps retaining anyone at day 30, the regional download-to-paid gap, the AI churn premium and monthly UPI Autopay mandate volume, each row carrying its source and verification date",
@@ -44,7 +44,7 @@ PAGES_A = [
     schema_types=BM_SCHEMA,
     unique_value="Separates retained from collected, which every other fintech retention page conflates: a fintech user can be fully retained and still leave the revenue line through a failed mandate, so the page carries the India collection figures beside the retention bands.",
     block_coverage=bm_cover(["f-bm-02"], ["f-bm-01", "f-bm-02", "f-bm-08"],
-                            ["f-bm-20"], ["f-unit-25", "f-bm-17"], ["f-bm-02"]),
+                            ["f-bm-20"], ["f-fx-02", "f-bm-17"], ["f-bm-02"]),
     body="""
 <AnswerBox>
 Fintech app retention benchmarks put the median at 7% on day 30, against a
@@ -100,11 +100,11 @@ can lift revenue per user and shorten the tenure that revenue is drawn from.
 
 ## The India layer
 
-There is no published India-specific fintech retention table at day 1, 7 and 30.
-Rather than infer one, the useful India figure is the collection layer underneath
-retention. More than 120 million UPI Autopay mandates are created monthly, and a
-fintech product with a recurring charge either sits on that rail or explains why
-not.
+There is no published India-specific fintech retention table at day 1, 7 and 30, and
+this page does not infer one. What is published, and what travels, is the direction
+of engagement: finance app sessions grew 21% in 2026 while gaming cost per install
+jumped 30%. Attention in finance is rising while the cost of buying it elsewhere
+rises faster.
 
 That distinction matters because a retained user and a paying user are not the
 same person in this market. Day-35 download-to-paid conversion runs 2.6% in North
@@ -184,12 +184,12 @@ figures run on a tighter 45-day cycle, because they move faster than retention d
     primary_keyword="ecommerce app retention benchmarks",
     secondary_keywords=["d2c app retention", "ecommerce d30 retention"],
     entity_a="retention", entity_b="d2c-ecommerce",
-    facts=["f-bm-01", "f-bm-03", "f-bm-14", "f-bm-15", "f-bm-08", "f-act-16"],
+    facts=["f-bm-01", "f-bm-03", "f-ih-01", "f-bm-15", "f-bm-08", "f-fx-03"],
     experience=["exp-024", "exp-052"],
     links=L(HUB, ("/glossary/retention-rate", "retention rate", "lateral"),
-            ("/benchmarks/churn/d2c-ecommerce", "ecommerce churn benchmarks", "lateral"),
-            ("/tools/retention-curve-projector", "the retention curve projector", "tool"),
-            ("/india/cod-to-prepaid-conversion-d2c", "COD to prepaid conversion", "related"),
+            ("/glossary/churn-rate", "the churn rate definition", "lateral"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
+            ("/india", "monetising in India", "related"),
             BOFU),
     visuals=V("ecommerce-retention-table",
               "Ecommerce retention against the cross-industry average at day 1, day 7 and day 30, with the strong-performer band, install-to-purchase conversion for retail and travel, a good mobile commerce conversion range and the share of revenue Indian quick-commerce platforms consume, each row carrying its source and verification date",
@@ -207,7 +207,7 @@ figures run on a tighter 45-day cycle, because they move faster than retention d
     schema_types=BM_SCHEMA,
     unique_value="Reads ecommerce retention as a function of purchase frequency rather than satisfaction, pairing the curve with install-to-purchase rates and the Indian platform take that decides whether a retained buyer is profitable at all.",
     block_coverage=bm_cover(["f-bm-03"], ["f-bm-01", "f-bm-03", "f-bm-08"],
-                            ["f-bm-14"], ["f-act-16"], ["f-bm-15"]),
+                            ["f-ih-01"], ["f-fx-03"], ["f-bm-15"]),
     body="""
 <AnswerBox>
 Ecommerce app retention benchmarks put the median at 2% on day 30, below the 4%
@@ -224,7 +224,7 @@ and the browser sits one tap away.
     { cells: ["Day 1 retention, median", "18%", "25% all categories"], factId: "f-bm-03" },
     { cells: ["Day 7 retention, median", "5%", "8% all categories"], factId: "f-bm-01" },
     { cells: ["Day 30 retention, median", "2%", "4% all categories"], factId: "f-bm-03" },
-    { cells: ["Install-to-purchase, retail and travel", "1.38% and 2.41%", "1% to 2% typical"], factId: "f-bm-14" },
+    { cells: ["Median time from install to first revenue", "about 48 hours", "p90 near 14 days"], factId: "f-ih-01" },
     { cells: ["Good mobile commerce conversion", "2% to 6%", "by order value and frequency"], factId: "f-bm-15" },
     { cells: ["Apps retaining anyone at day 30", "no published figure", "5% to 7%"], factId: "f-bm-08" },
   ]}
@@ -269,9 +269,10 @@ stage.
 
 ## The India layer
 
-The figure that decides Indian D2C economics is not retention. It is what the
-channel takes. Indian quick-commerce platforms consume 30% to 35% of revenue once
-listing fees, mandatory ad spend, commission and operations are counted.
+No India-specific D2C retention table is published at day 1, 7 and 30. What the
+published record does show is how wide the disagreement runs even globally: one
+source puts e-commerce and retail day-30 retention at 3% to 6%, against the 2%
+median another reports for the same category. Both appear here with their source.
 
 That changes what retention is worth. A retained buyer ordering through a platform
 taking a third of revenue contributes very differently from one ordering direct, so
@@ -287,7 +288,8 @@ decisions.
 
 At day 30, 3% to 6% is the strong-performer band, and below 2% the app trails its
 own category. The more useful target, though, is repeat purchase rate rather than
-retention. Install-to-purchase runs 1.38% for retail and 2.41% for travel, and a
+retention. First revenue arrives fast when it arrives at all — a median of about 48
+hours across more than 145,000 installs, with the 90th percentile near 14 days — and a
 good mobile commerce conversion rate sits between 2% and 6% depending on order value
 and purchase frequency.
 
@@ -350,9 +352,9 @@ a 45-day cycle instead.
     facts=["f-bm-01", "f-bm-04", "f-bm-13", "f-bm-10", "f-bm-08", "f-act-07"],
     experience=["exp-014", "exp-046"],
     links=L(HUB, ("/glossary/retention-rate", "retention rate", "lateral"),
-            ("/benchmarks/churn/healthtech", "healthtech churn benchmarks", "lateral"),
-            ("/tools/retention-curve-projector", "the retention curve projector", "tool"),
-            ("/india/monetizing-tier-2-tier-3-users", "monetising tier 2 and tier 3 users", "related"),
+            ("/glossary/churn-rate", "the churn rate definition", "lateral"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
+            ("/india", "monetising in India", "related"),
             BOFU),
     visuals=V("health-retention-table",
               "Health and wellness retention against the cross-industry average at day 1, day 7 and day 30, with the strong-performer band, the category's app-store page-view-to-install rate, the highest iOS install rate by category, activation and time to value for comparison, each row carrying its source and verification date",

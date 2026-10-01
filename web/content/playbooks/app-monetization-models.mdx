@@ -1,0 +1,207 @@
+<AnswerBox>
+App monetization models divide into subscription, one-off purchase, advertising and
+transaction fees. Subscriptions take 82% of non-gaming store revenue and grew 105% year
+on year, against 29% for in-app purchases and 14% for ads. Pick on how often people use
+the product, then check what the store takes.
+</AnswerBox>
+
+<FactTable
+  id="model-evidence"
+  caption="What each model actually returns, and what the store takes"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Year-on-year revenue growth: subscriptions / IAP / ads", "105% / 29% / 14%"], factId: "f-pb-26" },
+    { cells: ["Subscription share of non-gaming app store revenue", "82%"], factId: "f-pb-27" },
+    { cells: ["Primary model across 686 tracked apps", "subscriptions 61%, advertising 26%"], factId: "f-fx-08" },
+    { cells: ["Google Play standard rate, first $1M (₹9.59 crore) and above", "10% then 20%"], factId: "f-act-20" },
+    { cells: ["eBay reported take rate on gross merchandise volume", "13.91%"], factId: "f-act-21" },
+    { cells: ["OTT subscriptions in India", "216.5 million"], factId: "f-bm-26" },
+    { cells: ["Conversion: freemium / opt-in trial / opt-out trial", "under 10% / up to 25% / up to 50%"], factId: "f-pb-28" },
+  ]}
+/>
+
+## In short
+
+Five points, and the first is about frequency rather than revenue.
+
+Usage frequency picks the model. Repeated use justifies repeated billing. A product
+someone opens twice has nothing to renew, whatever the revenue charts say.
+
+Subscriptions dominate and are growing fastest: 82% of non-gaming store revenue, the
+primary model for 61% of tracked apps, and 105% year-on-year growth against 14% for ads.
+
+The model sets the conversion range before execution does. Freemium sits under 10%,
+opt-in trials reach 25% and opt-out trials 50%.
+
+Store economics are better than marketplace economics. Google Play takes 10% on the
+first $1 million, about ₹9.59 crore, and 20% above, against eBay's reported 13.91% of
+gross merchandise volume.
+
+And scale exists outside the Western subscription market. India has 216.5 million OTT
+subscriptions, which is a subscription market at a different price level.
+
+## Who this is for, and who it is not
+
+This suits a team choosing a model for a new product, or reconsidering one that is not
+producing. The decision is cheap now and expensive later, because a model change
+reshapes the product rather than the pricing page.
+
+It suits anyone whose instinct is subscription because subscription is winning. The
+growth figures support that instinct and the frequency test may not.
+
+It does not suit a product already monetising well. Changing a working model to chase a
+category average usually costs more than it returns.
+
+It also does not suit a marketplace, where the question is take rate rather than model.
+The glossary entry on take rate covers that directly.
+
+One case deserves its own note: a product with two distinct user groups, one frequent and
+one occasional. That shape often wants two models rather than one, and the hybrid
+playbook covers it. Choosing a single model for both groups usually underserves the
+larger one.
+
+## The method, part one: narrow the field
+
+Three steps.
+
+### 1. Measure how often people come back
+
+Weekly or more often supports a subscription. Monthly or less points to a one-off
+purchase, transaction fees or advertising. That one measurement rules out at least two
+models for most products.
+
+Measure it on real cohorts rather than on intent. What people say about how often they
+would use a product has almost no relationship to how often they do.
+
+### 2. Count the non-paying population you would keep
+
+Advertising and hybrid both need volume. If most users leave in week one, advertising has
+no inventory worth selling, and the choice narrows to charging the few who stay.
+
+Count returning users rather than installs. An install that never comes back produces one
+impression, which prices at close to nothing, and install counts flatter every ad model
+on paper.
+
+### 3. Check what the platform takes from each option
+
+Google Play takes 10% on the first $1 million of annual revenue, about ₹9.59 crore, and
+20% above it. Transaction and marketplace models carry their own rates, with eBay
+reporting 13.91% of gross merchandise volume. Run each candidate model net of its own
+take, because the gross comparison is misleading.
+
+## The method, part two: commit and set the bar
+
+Three steps.
+
+### 4. Set the conversion expectation from the model, not from ambition
+
+Freemium under 10%, opt-in trials up to 25%, opt-out up to 50%. Write down which range
+applies before launch, so the first month's number has something to be judged against.
+
+The gap between those ranges is mostly commitment, not quality. An opt-out trial asks for
+card details and converts best because it has already filtered for intent. It also cuts the
+number of people who start, so the higher rate applies to a smaller group. Model both
+effects, or the model choice will look better on paper than in revenue.
+
+### 5. Price the model at the local level where you sell
+
+India's 216.5 million OTT subscriptions are a reminder that a subscription market can be
+very large and priced far below Western equivalents. Build the ladder from a local price
+rather than converting a Western one. The conversion rate and the price level move
+independently, and a model that works at one price level can fail at another with the same
+funnel.
+
+### 6. Decide what would make you change model, in advance
+
+Name the figure. A subscription with renewal rates below your payback requirement is a
+model problem rather than a pricing problem, and the threshold is easier to agree before
+anyone is defending a decision.
+
+Two thresholds are usually enough: a renewal rate below which the subscription is not
+viable, and a conversion rate below which freemium is not. Both get written down once and
+checked quarterly, which keeps the model decision reviewable instead of permanent.
+
+<FromMyWork exp="exp-030">
+Sixty days went into understanding the organisation before changing anything.
+Misdiagnosing the problem is more expensive than moving slowly, and a monetisation model
+is the most expensive thing to misdiagnose.
+</FromMyWork>
+
+## The numbers to expect
+
+Expect subscription to look best on every published chart and still fail the frequency
+test for some products. An 82% revenue share describes the market, not your product.
+
+Expect the net comparison to change the ranking. Gross revenue favours whatever model
+charges most. Net of a 10% to 20% platform rate, or a 13.91% marketplace take, the order
+can reverse.
+
+Expect the conversion range to hold. Freemium under 10% is persistent across many
+products, and a plan assuming 20% from a freemium model is planning on an outlier.
+
+Expect advertising to grow slowest. At 14% year on year against 105% for subscriptions, an
+ad-first model places the business in the slower-growing part of the market. That is
+sometimes the right call, and it should be a deliberate one rather than a default.
+
+<FromMyWork exp="exp-029">
+Three teams shipped in the same week without knowing it, and the collision was
+organisational rather than technical. Monetisation models fail the same way, when pricing,
+product and growth each assume a different model.
+</FromMyWork>
+
+## Pitfalls
+
+Five, and the first is the most common.
+
+Choosing subscription because subscription is winning. The 105% growth figure is a market
+fact, and the frequency test is a product fact.
+
+Comparing models gross. Platform and marketplace rates differ enough to change which
+model nets more.
+
+Planning freemium conversion above its range. Under 10% is the published benchmark, and
+most plans assume better.
+
+Assuming a Western price. India's 216.5 million OTT subscriptions exist at a very
+different level, and a converted price misses both markets.
+
+Treating the model as a pricing page decision. It shapes the product, the funnel and the
+team. Changing it later means rebuilding all three.
+
+And leaving the decision unowned. Pricing, product and growth each make assumptions about
+the model, and when nobody owns it those assumptions diverge quietly until a launch
+exposes them.
+
+## The checklist
+
+Twelve items. The first three narrow the field; the rest commit to one.
+
+1. Return frequency measured, weekly or less often.
+2. Non-paying population that survives week one counted.
+3. Models eliminated by the frequency test, in writing.
+4. Platform or marketplace rate applied to each remaining candidate.
+5. Net revenue per user compared across candidates, not gross.
+6. Conversion range chosen from the model, with the figure recorded.
+7. Local price level researched for each market you sell into.
+8. Ladder built upward from the local price, not converted down.
+9. Renewal or repeat-purchase requirement stated for the chosen model.
+10. Change-of-model threshold agreed before launch.
+11. One owner named for the model decision across pricing, product and growth.
+12. Review booked at ninety days against the conversion range, not the revenue total.
+13. Renewal and conversion thresholds written down, with a quarterly check scheduled.
+
+## Sources and related
+
+Each figure carries its source and the date it was last checked. The growth rates and
+revenue shares come from app store and platform reporting, which covers apps distributed
+through the stores and therefore excludes web-billed products — an increasingly large
+exception worth remembering when the store take is the deciding factor.
+
+The hybrid monetization playbook covers running two of these models at once, which is
+where most products end up at scale. The take rate and paywall glossary entries carry the
+definitions, including what belongs inside a take rate.
+
+One gap worth stating: no source gives revenue growth by model for India specifically.
+The subscription base is documented and the growth split is not, so the growth figures
+above describe the global store market and the Indian price level has to come from
+elsewhere.

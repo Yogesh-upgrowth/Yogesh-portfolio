@@ -45,13 +45,13 @@
       "role": "lateral"
     },
     {
-      "url": "/tools/freemium-break-even-calculator",
-      "anchor": "the freemium break-even calculator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
-      "url": "/india/ads-vs-subscriptions-indian-apps",
-      "anchor": "ads against subscriptions in Indian apps",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "related"
     },
     {
@@ -102,6 +102,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "authored",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

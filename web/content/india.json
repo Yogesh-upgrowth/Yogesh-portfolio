@@ -1,0 +1,116 @@
+{
+  "id": "hub-0011",
+  "url": "/india",
+  "archetype": "hub",
+  "hub": "india",
+  "wave": 1,
+  "batch_id": "w1-hub-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Monetising Apps in India: Prices, Rails and Benchmarks",
+  "meta_description": "What differs when you monetise in India: price levels, payment rails, platform take and the figures published about each, with the gaps named.",
+  "h1": "Monetising apps in India",
+  "primary_keyword": "monetising apps in india",
+  "secondary_keywords": [
+    "india app monetization",
+    "india subscription pricing"
+  ],
+  "entity_a": "india",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-hub-04",
+    "f-hub-05",
+    "f-hub-03",
+    "f-svc-03",
+    "f-act-17",
+    "f-bm-26"
+  ],
+  "experience_used": [
+    "exp-021"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks/arpu",
+      "anchor": "the ARPU benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/trial-to-paid-conversion/b2b-saas",
+      "anchor": "B2B SaaS trial conversion",
+      "role": "reference"
+    },
+    {
+      "url": "/glossary/take-rate",
+      "anchor": "the take rate entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/arpu",
+      "anchor": "the ARPU entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "an India monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#india-monetisation",
+      "alt": "Six reference points for monetising in India: the smartphone user base, the projected share of GDP from the app economy by 2030, in-app purchase spending in 2025 and its 2026 projection, annual gross revenue per registered user for the leading UPI app, the ONDC commission route against incumbent marketplace rates, and the national OTT subscription count, each row carrying its source and verification date",
+      "caption": "What the published record actually says about India. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why can't I use global benchmarks for India?",
+      "a": "Because the price level differs more than the behaviour does. Indian subscription prices sit well below the US baseline, so the same conversion rate produces materially less revenue, and a global ARPU benchmark will read as underperformance when the funnel is working normally."
+    },
+    {
+      "q": "Is the Indian market large or small?",
+      "a": "Both, depending on the denominator. India has 783 million smartphone users and the second largest base in the world, and in-app purchase spending passed one billion dollars in 2025. Enormous reach, modest spend per head."
+    },
+    {
+      "q": "What breaks most often in Indian monetisation?",
+      "a": "The recurring charge rather than the sale. Mandate-based recurring payments fail more often than card-on-file charges do in card-led markets, so a funnel that converts on paper loses revenue at the first renewal."
+    },
+    {
+      "q": "Where are the published figures missing?",
+      "a": "Retention curves by app category, and trial-to-paid rates by category. Market size and revenue are well documented; cohort behaviour is not. The pages here say so rather than inferring a number."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get your India monetisation reviewed",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "CollectionPage",
+    "ItemList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Names which India figures are actually published and which are not, instead of filling the gaps with inferences from regional averages — the retention and trial-conversion curves most India monetisation advice quietly invents.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

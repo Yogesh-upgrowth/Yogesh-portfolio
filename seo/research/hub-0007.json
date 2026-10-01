@@ -72,14 +72,14 @@
       "primary": true
     },
     {
-      "fact_id": "f-act-09",
-      "claim": "Median gross margin for private SaaS between 5 million and 50 million dollars ARR is 71% to 74%",
-      "value": "71-74",
+      "fact_id": "f-fx-04",
+      "claim": "More than 300 teams run over 10,000 experiments a year across 750 million users in 186 markets, and 42% get rolled back after a guardrail metric flags a regression",
+      "value": "42",
       "unit": "%",
-      "source_url": "https://www.cloudzero.com/blog/saas-gross-margin-benchmarks/",
-      "source_title": "SaaS Gross Margin Benchmarks",
-      "source_domain": "cloudzero.com",
-      "excerpt": "The median gross margin for private SaaS companies with $5M-$50M ARR is 71-74% in 2026.",
+      "source_url": "https://confidence.spotify.com/blog/ab-testing-bandwidth",
+      "source_title": "A/B test bandwidth: the currency of innovation",
+      "source_domain": "confidence.spotify.com",
+      "excerpt": "300+ Spotify teams run 10,000+ experiments per year across 750 million users in 186 markets; 42% are rolled back after guardrail metrics flag a regression.",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
@@ -124,7 +124,7 @@
       "f-hub-10"
     ],
     "cta_band": [
-      "f-act-09"
+      "f-fx-04"
     ]
   }
 }

@@ -1,0 +1,119 @@
+{
+  "id": "playbook-0607",
+  "url": "/playbooks/hybrid-monetization",
+  "archetype": "playbook",
+  "hub": "playbooks",
+  "wave": 1,
+  "batch_id": "w1-playbook-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Hybrid Monetization: Running Ads and Subscriptions Together",
+  "meta_description": "Hybrid monetization in practice: only 10% of apps run a true hybrid model while more than 60% of top-grossing apps run two or more revenue models.",
+  "h1": "Hybrid monetization: ads and subscriptions together",
+  "primary_keyword": "hybrid monetization",
+  "secondary_keywords": [
+    "ads and subscription together",
+    "hybrid app revenue model"
+  ],
+  "entity_a": "hybrid-monetization",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-pb-18",
+    "f-pb-19",
+    "f-pb-20",
+    "f-pb-21",
+    "f-svc-06",
+    "f-svc-08",
+    "f-bm-27"
+  ],
+  "experience_used": [
+    "exp-018",
+    "exp-026"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary/arpu",
+      "anchor": "the ARPU entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/freemium",
+      "anchor": "the freemium entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/arpu/b2b-saas",
+      "anchor": "ARPU benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/playbooks/app-monetization-models",
+      "anchor": "the monetisation models playbook",
+      "role": "lateral"
+    },
+    {
+      "url": "/playbooks",
+      "anchor": "the playbooks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#hybrid-reality",
+      "alt": "Seven reference points for hybrid monetization: the share of apps running a true hybrid model against the share of top-grossing apps running two or more revenue models, blended annual revenue per user for hybrid freemium against ad-only and subscription-led products, how much more subscription apps earn per user than ad-only ones, free-to-paid conversion for AI apps against mature subscription apps, the share of companies on hybrid pricing now and projected, what pricing model investors prefer, and Indian streaming advertising revenue, each row carrying its source and verification date",
+      "caption": "Few apps run hybrid; most of the biggest ones do. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is hybrid monetization common?",
+      "a": "No, and that is the interesting part. Only 10% of apps run a true hybrid model, while more than 60% of top-grossing apps run two or more revenue models at once. Hybrid is rare overall and normal at the top."
+    },
+    {
+      "q": "What revenue per user should hybrid produce?",
+      "a": "Between the two models it combines. Blended annual revenue per user runs $3 to $15 for hybrid freemium, against $0.40 to $2 for ad-only free tiers and $30 or more for subscription-led products."
+    },
+    {
+      "q": "Does adding ads damage subscription revenue?",
+      "a": "Only if the ads reach the people most likely to subscribe. Subscription apps earn 4.6 times the revenue per user of ad-only ones, so the arithmetic favours protecting the subscription path and monetising everyone else."
+    },
+    {
+      "q": "Which products need hybrid most?",
+      "a": "Those with very low free-to-paid conversion. AI apps convert at 1% to 3% against 5% to 8% for mature subscription apps, which leaves a much larger non-paying population to monetise some other way."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Design a hybrid monetization model with me",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Sets the 10% of apps running true hybrid against the 60%-plus of top-grossing apps that do, so the decision is framed as a scale question rather than a philosophy — and sizes the non-paying population with conversion figures rather than assuming it.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

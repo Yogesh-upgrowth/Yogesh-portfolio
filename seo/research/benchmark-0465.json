@@ -86,18 +86,18 @@
       "primary": true
     },
     {
-      "fact_id": "f-act-14",
-      "claim": "Indian quick commerce splits by GMV into Blinkit near 46%, Swiggy Instamart near 24% and Zepto near 22%",
-      "value": "46",
-      "unit": "%",
-      "source_url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
-      "source_title": "Quick Commerce Ad Benchmarks India 2026",
-      "source_domain": "ladya.in",
-      "excerpt": "Blinkit holds about 46% of the market by GMV, Swiggy Instamart around 24%, and Zepto around 22%.",
+      "fact_id": "f-fx-01",
+      "claim": "Strategy game sessions average 37.51 minutes and grew 18%, while casual game sessions rose 15% to 25.92 minutes",
+      "value": "37.51",
+      "unit": "minutes",
+      "source_url": "https://ppc.land/adjusts-2026-mobile-app-report-finance-sessions-up-21-gaming-cpi-jumps-30/",
+      "source_title": "Adjust's 2026 mobile app report: finance sessions up 21%, gaming CPI jumps 30%",
+      "source_domain": "ppc.land",
+      "excerpt": "Strategy game sessions averaged 37.51 minutes and grew 18%, while casual games rose 15% to 25.92 minutes.",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
-      "primary": false
+      "primary": true
     }
   ],
   "entities": {},
@@ -121,7 +121,7 @@
       "f-bm-19"
     ],
     "india_layer": [
-      "f-act-14"
+      "f-fx-01"
     ],
     "what_good_looks_like": [
       "f-bm-09",

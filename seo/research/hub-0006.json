@@ -72,14 +72,14 @@
       "primary": true
     },
     {
-      "fact_id": "f-act-12",
-      "claim": "Razorpay charges Indian businesses 2% plus 18% GST on domestic payments and 3% on international card exports",
-      "value": "2",
-      "unit": "%",
-      "source_url": "https://razorpay.com/blog/best-payment-gateway-pricing-saas-india-tco-guide",
-      "source_title": "Payment gateway pricing for SaaS businesses in India",
-      "source_domain": "razorpay.com",
-      "excerpt": "Razorpay charges 2% platform fee plus 18% GST for domestic payments, and 3% for international exports by card.",
+      "fact_id": "f-fx-05",
+      "claim": "At a 5% baseline, detecting a 50% relative lift needs about 1,700 visitors per variant, a 20% lift about 9,000 and a 10% lift about 36,000",
+      "value": "1700",
+      "unit": "visitors",
+      "source_url": "https://leanexperiments.substack.com/p/sample-size-calculation-for-ab-tests",
+      "source_title": "Sample size calculation for A/B tests",
+      "source_domain": "leanexperiments.substack.com",
+      "excerpt": "A 5% baseline requires roughly 1,700 visitors per variant for a 50% relative lift, ~9,000 for 20% and ~36,000 for 10%.",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
@@ -115,7 +115,7 @@
     ],
     "start_here_cards": [
       "f-unit-26",
-      "f-act-12"
+      "f-fx-05"
     ],
     "filterable_index": [
       "f-unit-36"

@@ -1,0 +1,119 @@
+{
+  "id": "playbook-0609",
+  "url": "/playbooks/north-star-metric",
+  "archetype": "playbook",
+  "hub": "playbooks",
+  "wave": 1,
+  "batch_id": "w1-playbook-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "North Star Metric: Choosing One Teams Can Actually Move",
+  "meta_description": "Choosing a north star metric: the test is whether you can move it directly, because a metric you can move directly is the wrong one.",
+  "h1": "Choosing a north star metric teams can move",
+  "primary_keyword": "north star metric",
+  "secondary_keywords": [
+    "north star metric examples",
+    "input metrics"
+  ],
+  "entity_a": "north-star-metric",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-pb-29",
+    "f-pb-30",
+    "f-pb-31",
+    "f-pb-32",
+    "f-rh-01",
+    "f-gh-03",
+    "f-pb-06"
+  ],
+  "experience_used": [
+    "exp-032",
+    "exp-033"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary/north-star-metric",
+      "anchor": "the north star metric entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/omtm",
+      "anchor": "the OMTM entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/healthtech",
+      "anchor": "healthtech retention benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/playbooks/activation-metric",
+      "anchor": "the activation metric playbook",
+      "role": "lateral"
+    },
+    {
+      "url": "/playbooks",
+      "anchor": "the playbooks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#north-star-tests",
+      "alt": "Seven reference points for choosing a north star metric: the number of input metrics a north star carries, the test that a directly movable metric is the wrong one, the list of commonly named poor choices, published examples that measure delivered value, the day-60-to-90 window in which a healthy retention curve flattens, the share of paying users who pay within two days, and how far median time to value has compressed, each row carrying its source and verification date",
+      "caption": "The tests a candidate has to survive. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How do I know a north star candidate is wrong?",
+      "a": "If the team can move it directly, it is the wrong one. A metric you can push without changing customer behaviour is a dial, not a north star, and revenue metrics fail this test most often."
+    },
+    {
+      "q": "Which metrics are usually poor choices?",
+      "a": "Recurring revenue, daily active users, downloads, page views and registered users are all named as poor north stars. They either lag the behaviour you want or count people rather than value delivered."
+    },
+    {
+      "q": "How many input metrics should there be?",
+      "a": "Three to five. Each should be something a team can influence directly through the product, and together they should plausibly explain movement in the north star."
+    },
+    {
+      "q": "How often should the north star change?",
+      "a": "Rarely, and never quietly. A changed definition makes every prior chart incomparable, so the change needs a date and a stated reason that survives being read a year later."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Choose a north star metric with me",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Uses the direct-movability test as the primary filter rather than a list of good examples, and pairs each candidate with a published leading-indicator window so the choice can be checked against evidence instead of taste.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

@@ -1,0 +1,156 @@
+{
+  "page_id": "playbook-0602",
+  "url": "/playbooks/activation-metric",
+  "archetype": "playbook",
+  "primary_keyword": "activation metric",
+  "secondary_keywords": [
+    "activation rate benchmark",
+    "time to value"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-pb-06",
+      "claim": "Median time to value has compressed from 8.1 days in 2022 to 4.2 days in 2026",
+      "value": "4.2",
+      "unit": "days",
+      "source_url": "https://visionary-marketing.co.uk/blog/customer-onboarding-statistics-2026",
+      "source_title": "SaaS onboarding benchmarks 2026",
+      "source_domain": "visionary-marketing.co.uk",
+      "excerpt": "Median SaaS time-to-value has compressed from 8.1 days in 2022 to 4.2 days in 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-07",
+      "claim": "Across 547 companies the median time to value is one day, twelve hours and twenty-three minutes",
+      "value": "1.5",
+      "unit": "days",
+      "source_url": "https://userpilot.com/blog/minimum-viable-onboarding/",
+      "source_title": "Minimum viable onboarding",
+      "source_domain": "userpilot.com",
+      "excerpt": "Userpilot's benchmark across 547 SaaS companies places the median time to value at 1 day, 12 hours and 23 minutes.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-pb-08",
+      "claim": "Time to value ranges from 11 minutes for the smallest accounts to 23 days for accounts above 100,000 dollars",
+      "value": "11",
+      "unit": "minutes",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "Time-to-value medians range from 11 minutes for sub-$5K ARR accounts to 23 days for $100K+ accounts.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-pb-09",
+      "claim": "Average activation is 37.5%, meaning roughly two thirds of new users never reach the product's core value",
+      "value": "37.5",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "The average SaaS activation rate is 37.5%, meaning roughly two-thirds of new users never experience the core value proposition.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-gh-03",
+      "claim": "Median activation sits at 41.7%, with the top quartile at 71% and the bottom at 19% — a spread wide enough that the median judges almost nobody",
+      "value": "41.7",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "The median activation rate is 41.7%, with top-quartile products at 71% and bottom quartile at 19%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-fx-06",
+      "claim": "Across 464 companies the median onboarding tour completion is 29%, with the middle half between 15% and 55%",
+      "value": "29",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "Data from 464 companies shows median tour completion is 29% per company, with the middle half running 15% to 55%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-fx-07",
+      "claim": "Onboarding checklists of three to five steps complete at 67%, against 18% for checklists of ten steps or more",
+      "value": "67",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "3-5 step onboarding checklists complete at 67% vs 18% for 10+ step checklists.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [
+    "Published activation rates disagree on the central figure: usetandem.ai gives a 41.7% median with quartiles at 71% and 19%, and also reports a 37.5% average. A median and an average of a skewed distribution are not the same statistic, and neither source states which products entered the sample. Both appear on this page rather than one being chosen."
+  ],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-gh-03",
+      "f-pb-09"
+    ],
+    "in_short": [
+      "f-pb-06",
+      "f-fx-07"
+    ],
+    "who_this_is_for": [
+      "f-pb-08"
+    ],
+    "method": [
+      "f-pb-07",
+      "f-fx-06"
+    ],
+    "numbers_and_examples": [
+      "f-pb-07",
+      "f-pb-08"
+    ],
+    "pitfalls": [
+      "f-fx-07",
+      "f-fx-06"
+    ],
+    "checklist": [
+      "f-gh-03"
+    ]
+  }
+}

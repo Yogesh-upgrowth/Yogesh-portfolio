@@ -1,0 +1,151 @@
+{
+  "page_id": "bmhub-0005",
+  "url": "/benchmarks/trial-to-paid-conversion",
+  "archetype": "benchmark-hub",
+  "primary_keyword": "trial to paid conversion rate benchmarks",
+  "secondary_keywords": [
+    "trial conversion rate benchmark",
+    "free trial length conversion"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-gh-02",
+      "claim": "Free-trial products convert on a different distribution entirely: only 7% fall below 2.5%, and the most common band is 7.5% to 10%",
+      "value": "7.5-10",
+      "unit": "%",
+      "source_url": "https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion",
+      "source_title": "What is a good free-to-paid conversion rate?",
+      "source_domain": "lennysnewsletter.com",
+      "excerpt": "Only 7% of free-trial products see conversion below 2.5%; about a quarter see between 7.5% and 10%, the most common bucket.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-gh-01",
+      "claim": "Across a survey of more than 1,000 products, a fifth of freemium products convert below 2.5% and the largest group, a third, sits between 2.5% and 5%",
+      "value": "2.5-5",
+      "unit": "%",
+      "source_url": "https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion",
+      "source_title": "What is a good free-to-paid conversion rate?",
+      "source_domain": "lennysnewsletter.com",
+      "excerpt": "A fifth (20%) of products see a conversion rate below 2.5%. About a third see between 2.5% and 5% — the biggest bucket.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-th-01",
+      "claim": "Across more than 17,000 apps, trial conversion rises with length: 25.5% under four days, 37.4% at five to nine days, 35.4% at ten to sixteen and 42.5% at seventeen to thirty-two",
+      "value": "42.5",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/growth/free-trial-length",
+      "source_title": "How long should your free trial be? Data from 17,000+ apps",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Under 4 days: 25.5%; 5 to 9 days: 37.4%; 10 to 16 days: 35.4%; 17 to 32 days: 42.5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-th-02",
+      "claim": "Trials of seventeen to thirty-two days convert about 70% better than trials under four days",
+      "value": "70",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/growth/free-trial-length",
+      "source_title": "How long should your free trial be? Data from 17,000+ apps",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Trials in the 17-to-32-day range convert about 70% better than trials under 4 days.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-th-03",
+      "claim": "46.5% of apps now use a trial of four days or shorter, up from 42.1% a year earlier, because paid acquisition needs a fast conversion signal",
+      "value": "46.5",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/growth/free-trial-length",
+      "source_title": "How long should your free trial be? Data from 17,000+ apps",
+      "source_domain": "revenuecat.com",
+      "excerpt": "46.5% of apps now use trials of 4 days or shorter, up from 42.1% a year earlier; paid acquisition needs a fast conversion signal.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-th-04",
+      "claim": "84% of three-day trial cancellations happen between day 0 and day 1, against 64% of seven-day trial cancellations",
+      "value": "84",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/growth/free-trial-length",
+      "source_title": "How long should your free trial be? Data from 17,000+ apps",
+      "source_domain": "revenuecat.com",
+      "excerpt": "84% of 3-day trial cancellations occur between day 0 and day 1, while 64% of 7-day trial cancellations happen in that period.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-th-05",
+      "claim": "95% of annual app subscribers who cancel never come back",
+      "value": "95",
+      "unit": "%",
+      "source_url": "https://ppc.land/95-of-annual-app-subscribers-who-cancel-never-return-revenuecat-finds/",
+      "source_title": "95% of annual app subscribers who cancel never return, RevenueCat finds",
+      "source_domain": "ppc.land",
+      "excerpt": "95% of annual app subscribers who cancel never return, RevenueCat finds.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-gh-02"
+    ],
+    "definition": [
+      "f-gh-02",
+      "f-gh-01"
+    ],
+    "benchmark_table_by_industry": [
+      "f-th-01",
+      "f-th-02",
+      "f-gh-01"
+    ],
+    "india_layer": [
+      "f-th-03"
+    ],
+    "what_moves_it": [
+      "f-th-01",
+      "f-th-04"
+    ],
+    "stage_adjustment": [
+      "f-th-02",
+      "f-th-05"
+    ]
+  }
+}

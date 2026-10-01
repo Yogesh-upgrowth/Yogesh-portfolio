@@ -45,13 +45,13 @@
       "role": "lateral"
     },
     {
-      "url": "/tools/nrr-grr-calculator",
-      "anchor": "the NRR and GRR calculator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
-      "url": "/india/rbi-e-mandate-rules-recurring-payments",
-      "anchor": "RBI e-mandate rules",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "related"
     },
     {
@@ -102,6 +102,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "authored",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

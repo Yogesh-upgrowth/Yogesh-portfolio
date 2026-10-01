@@ -1,0 +1,131 @@
+{
+  "page_id": "hub-0008",
+  "url": "/glossary",
+  "archetype": "hub",
+  "primary_keyword": "product growth glossary",
+  "secondary_keywords": [
+    "growth metrics glossary",
+    "saas metrics definitions"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-gh-01",
+      "claim": "Across a survey of more than 1,000 products, a fifth of freemium products convert below 2.5% and the largest group, a third, sits between 2.5% and 5%",
+      "value": "2.5-5",
+      "unit": "%",
+      "source_url": "https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion",
+      "source_title": "What is a good free-to-paid conversion rate?",
+      "source_domain": "lennysnewsletter.com",
+      "excerpt": "A fifth (20%) of products see a conversion rate below 2.5%. About a third see between 2.5% and 5% — the biggest bucket.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-gh-02",
+      "claim": "Free-trial products convert on a different distribution entirely: only 7% fall below 2.5%, and the most common band is 7.5% to 10%",
+      "value": "7.5-10",
+      "unit": "%",
+      "source_url": "https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion",
+      "source_title": "What is a good free-to-paid conversion rate?",
+      "source_domain": "lennysnewsletter.com",
+      "excerpt": "Only 7% of free-trial products see conversion below 2.5%; about a quarter see between 7.5% and 10%, the most common bucket.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-gh-03",
+      "claim": "Median activation sits at 41.7%, with the top quartile at 71% and the bottom at 19% — a spread wide enough that the median judges almost nobody",
+      "value": "41.7",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "The median activation rate is 41.7%, with top-quartile products at 71% and bottom quartile at 19%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-gh-04",
+      "claim": "Mobile apps typically run a lifetime-value to acquisition-cost ratio of 1.5 to 2.5 to 1, below the 3 to 1 bar imported from software-as-a-service",
+      "value": "1.5-2.5",
+      "unit": "ratio",
+      "source_url": "https://admiral.media/cac-payback-period-mobile-apps/",
+      "source_title": "CAC payback period for mobile apps",
+      "source_domain": "admiral.media",
+      "excerpt": "Mobile apps typically show LTV:CAC ratios of 1.5-2.5:1 due to low ARPU and high CAC.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-fx-06",
+      "claim": "Across 464 companies the median onboarding tour completion is 29%, with the middle half between 15% and 55%",
+      "value": "29",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "Data from 464 companies shows median tour completion is 29% per company, with the middle half running 15% to 55%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-fx-07",
+      "claim": "Onboarding checklists of three to five steps complete at 67%, against 18% for checklists of ten steps or more",
+      "value": "67",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "3-5 step onboarding checklists complete at 67% vs 18% for 10+ step checklists.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "editorial_intro": [
+      "f-gh-01",
+      "f-gh-02"
+    ],
+    "start_here_cards": [
+      "f-gh-03",
+      "f-gh-04"
+    ],
+    "filterable_index": [
+      "f-fx-07"
+    ],
+    "recently_verified": [
+      "f-fx-06"
+    ],
+    "cta_band": [
+      "f-gh-03"
+    ]
+  }
+}

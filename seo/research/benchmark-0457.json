@@ -86,18 +86,18 @@
       "primary": true
     },
     {
-      "fact_id": "f-unit-25",
-      "claim": "More than 120 million UPI Autopay mandates are created every month in India",
-      "value": "120",
-      "unit": "million",
-      "source_url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
-      "source_title": "UPI Autopay vs Card e-Mandates: 2026 Decision Guide",
-      "source_domain": "razorpay.com",
-      "excerpt": "Over 120 million UPI Autopay mandates are created every month in India, supporting SIPs, OTT subscriptions and insurance renewals.",
+      "fact_id": "f-fx-02",
+      "claim": "Finance app sessions grew 21% in 2026 while gaming cost per install jumped 30%",
+      "value": "21",
+      "unit": "%",
+      "source_url": "https://ppc.land/adjusts-2026-mobile-app-report-finance-sessions-up-21-gaming-cpi-jumps-30/",
+      "source_title": "Adjust's 2026 mobile app report: finance sessions up 21%, gaming CPI jumps 30%",
+      "source_domain": "ppc.land",
+      "excerpt": "Adjust's 2026 report: finance sessions up 21%, gaming CPI jumps 30%.",
       "published_on": "2026",
       "verified_on": "2026-09-30",
       "method": "search_index",
-      "primary": true
+      "primary": false
     }
   ],
   "entities": {},
@@ -122,7 +122,7 @@
       "f-bm-20"
     ],
     "india_layer": [
-      "f-unit-25",
+      "f-fx-02",
       "f-bm-17"
     ],
     "what_good_looks_like": [

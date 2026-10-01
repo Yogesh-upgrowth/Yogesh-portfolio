@@ -606,8 +606,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/retention-curve-projector",
-          "anchor": "the retention curve projector",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -630,8 +630,8 @@
           "href": "/work-with-me"
         },
         "secondary": {
-          "label": "Project your retention curve",
-          "href": "/tools/retention-curve-projector"
+          "label": "See the retention benchmarks",
+          "href": "/benchmarks/retention"
         }
       },
       "faq": [
@@ -858,8 +858,8 @@
           "role": "proof"
         },
         {
-          "url": "/benchmarks/retention/marketplaces",
-          "anchor": "marketplace retention benchmarks",
+          "url": "/benchmarks/retention",
+          "anchor": "the retention benchmarks",
           "role": "reference"
         },
         {
@@ -873,8 +873,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/app-store-fee-net-revenue-calculator",
-          "anchor": "the net revenue calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -1003,8 +1003,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/pricing-tier-designer",
-          "anchor": "the pricing tier designer",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -1124,9 +1124,9 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/app-store-fee-net-revenue-calculator",
-          "anchor": "the app store fee calculator",
-          "role": "tool"
+          "url": "/glossary/ltv-to-cac-ratio",
+          "anchor": "the LTV:CAC entry",
+          "role": "lateral"
         },
         {
           "url": "/benchmarks",

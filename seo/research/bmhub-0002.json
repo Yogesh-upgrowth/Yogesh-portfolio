@@ -1,0 +1,138 @@
+{
+  "page_id": "bmhub-0002",
+  "url": "/benchmarks/app-store-conversion",
+  "archetype": "benchmark-hub",
+  "primary_keyword": "app store conversion rate benchmarks",
+  "secondary_keywords": [
+    "app store conversion rate by category",
+    "page view to install rate"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-ah-01",
+      "claim": "Average app store page conversion is 30.3% on iOS and 33% on Google Play, an order of magnitude above impression-based rates",
+      "value": "30.3",
+      "unit": "%",
+      "source_url": "https://trysonar.app/blog/app-store-conversion-rate",
+      "source_title": "App store conversion rate: how to improve it, with benchmarks",
+      "source_domain": "trysonar.app",
+      "excerpt": "The benchmark for app store conversion rates is, on average, 30.3% on iOS and 33% on Google Play.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-ah-02",
+      "claim": "Store conversion by category spans social networking at 10% to 20% on iOS up to utilities at 30% to 40%",
+      "value": "10-40",
+      "unit": "%",
+      "source_url": "https://trysonar.app/blog/app-store-conversion-rate",
+      "source_title": "App store conversion rate: how to improve it, with benchmarks",
+      "source_domain": "trysonar.app",
+      "excerpt": "Games 25-35% iOS, Utilities 30-40% iOS, Social Networking 10-20% iOS, Finance 15-25% iOS.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-ah-03",
+      "claim": "Across more than 500 A/B tests, a preview video lifted conversion 20% to 35% on average, above 40% for games and about 20% for productivity",
+      "value": "20-35",
+      "unit": "%",
+      "source_url": "https://trysonar.app/blog/app-store-conversion-rate",
+      "source_title": "App store conversion rate: how to improve it, with benchmarks",
+      "source_domain": "trysonar.app",
+      "excerpt": "StoreMaven across 500+ A/B tests found a preview video lifts conversion 20-35% on average; games 35%, productivity 20%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-ah-04",
+      "claim": "Preview videos beat static screenshots in 78% of tests, with a median conversion lift of 22%",
+      "value": "78",
+      "unit": "%",
+      "source_url": "https://trysonar.app/blog/app-store-conversion-rate",
+      "source_title": "App store conversion rate: how to improve it, with benchmarks",
+      "source_domain": "trysonar.app",
+      "excerpt": "SplitMetrics found preview videos outperformed static screenshots in 78% of cases, median conversion lift 22%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-ah-05",
+      "claim": "Screenshots drive the install decision for up to 45% of users, and adding captions lifted conversion 25% on average",
+      "value": "45",
+      "unit": "%",
+      "source_url": "https://www.adaction.com/blog/improve-app-store-conversion-rates",
+      "source_title": "10 ways to improve app store conversion rates",
+      "source_domain": "adaction.com",
+      "excerpt": "Screenshots influence conversion more than any other element, deciding up to 45% of users; captions increased conversion 25% on average.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-13",
+      "claim": "Health and fitness apps show a 4% to 8% impression-to-page-view rate and 25% to 40% page-view-to-install",
+      "value": "25-40",
+      "unit": "%",
+      "source_url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "source_title": "ASO Conversion Rate Benchmarks by App Category",
+      "source_domain": "semnexus.com",
+      "excerpt": "Health & Fitness typically shows 4-8% IPV rate and 25-40% page view to install rate, with 1-3% impression to install.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-ah-01"
+    ],
+    "definition": [
+      "f-ah-01",
+      "f-bm-13"
+    ],
+    "benchmark_table_by_industry": [
+      "f-ah-02",
+      "f-ah-01",
+      "f-bm-13"
+    ],
+    "india_layer": [
+      "f-ah-02"
+    ],
+    "what_moves_it": [
+      "f-ah-03",
+      "f-ah-04",
+      "f-ah-05"
+    ],
+    "stage_adjustment": [
+      "f-ah-05",
+      "f-ah-03"
+    ]
+  }
+}

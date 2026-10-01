@@ -40,8 +40,8 @@
       "role": "reference"
     },
     {
-      "url": "/teardowns",
-      "anchor": "the teardowns",
+      "url": "/glossary",
+      "anchor": "the glossary",
       "role": "hub"
     },
     {
@@ -101,6 +101,7 @@
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],
+  "provenance": "authored",
   "not_affiliated": false,
   "fx_rate_used": 95.89
 }

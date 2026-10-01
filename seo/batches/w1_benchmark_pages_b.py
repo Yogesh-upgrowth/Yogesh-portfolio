@@ -20,12 +20,12 @@ PAGES_B = [
     primary_keyword="gaming app retention benchmarks",
     secondary_keywords=["fantasy sports retention", "gaming d30 retention"],
     entity_a="retention", entity_b="gaming",
-    facts=["f-bm-05", "f-bm-09", "f-bm-11", "f-bm-19", "f-bm-16", "f-act-14"],
+    facts=["f-bm-05", "f-bm-09", "f-bm-11", "f-bm-19", "f-bm-16", "f-fx-01"],
     experience=["exp-018", "exp-019"],
     links=L(HUB, ("/glossary/retention-rate", "retention rate", "lateral"),
-            ("/benchmarks/churn/gaming", "gaming churn benchmarks", "lateral"),
-            ("/tools/retention-curve-projector", "the retention curve projector", "tool"),
-            ("/india/ads-vs-subscriptions-indian-apps", "ads against subscriptions", "related"),
+            ("/glossary/churn-rate", "the churn rate definition", "lateral"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
+            ("/india", "monetising in India", "related"),
             ("/work-with-me", "a retention review", "bofu")),
     visuals=V("gaming-retention-table",
               "Gaming retention at day 1, day 7 and day 30 with the strong-performer band, the share of apps retaining anyone at day 30, App Store search and browse install ranges, the average US store conversion rate, trial cancellation rates by trial length and Indian quick-commerce share for market-structure comparison, each row carrying its source and verification date",
@@ -43,7 +43,7 @@ PAGES_B = [
     schema_types=BM_SCHEMA,
     unique_value="Explains the category's signature shape — the strongest day 1 of any category producing a below-average day 30 — and refuses to give fantasy sports a borrowed number, since their curve follows a fixture calendar rather than session depth.",
     block_coverage=bm_cover(["f-bm-05"], ["f-bm-05", "f-bm-16"], ["f-bm-19"],
-                            ["f-act-14"], ["f-bm-09", "f-bm-11"]),
+                            ["f-fx-01"], ["f-bm-09", "f-bm-11"]),
     body="""
 <AnswerBox>
 Gaming app retention benchmarks put the median at 3% on day 30, below the 4%
@@ -103,12 +103,14 @@ does, so the general gaming median makes a poor comparison for it.
 
 No India-specific gaming retention table is published at day 1, 7 and 30.
 
-The structural comparison that does hold is concentration. Indian quick commerce
-splits by gross merchandise value into Blinkit at about 46%, Instamart at 24% and
-Zepto at 22% — a market where the leader takes roughly half. Indian real-money
-gaming and fantasy sports concentrate similarly, and in a concentrated market a
-mid-tier app's retention problem is usually a distribution problem wearing a
-retention label. There is no published figure for that split, so this page states
+The comparison that does hold is session depth, which is published by genre rather
+than by country. Strategy game sessions average 37.51 minutes and grew 18%, while
+casual sessions rose 15% to 25.92 minutes. Genre moves time-in-app more than
+geography does, and a mid-tier app's retention problem is usually a genre-fit problem
+wearing a retention label. A strategy title and a casual title with identical day-7
+numbers are not comparable products: one has held attention for forty minutes a
+session and the other for twenty-five. No India split is published, so this page
+states
 the mechanism and not a number.
 
 
@@ -185,9 +187,9 @@ faster than retention does.""",
     facts=["f-bm-06", "f-bm-21", "f-bm-11", "f-bm-17", "f-bm-19", "f-act-19"],
     experience=["exp-013", "exp-019"],
     links=L(HUB, ("/glossary/retention-rate", "retention rate", "lateral"),
-            ("/benchmarks/churn/social-dating", "social and dating churn benchmarks", "lateral"),
-            ("/tools/retention-curve-projector", "the retention curve projector", "tool"),
-            ("/india/regional-language-monetization", "regional language monetisation", "related"),
+            ("/glossary/churn-rate", "the churn rate definition", "lateral"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
+            ("/india", "monetising in India", "related"),
             ("/work-with-me", "a retention review", "bofu")),
     visuals=V("social-retention-table",
               "Social and dating retention at day 1, day 7 and day 30 with the strong-performer band against the cross-industry average, the average US App Store conversion rate, the regional download-to-paid gap, trial cancellation by trial length and reported against true return on ad spend, each row carrying its source and verification date",
@@ -352,8 +354,8 @@ dating get grouped differently by different publishers.""",
     facts=["f-bm-07", "f-bm-12", "f-bm-18", "f-bm-02", "f-bm-06", "f-svc-05"],
     experience=["exp-031", "exp-039"],
     links=L(HUB, ("/glossary/nrr", "net revenue retention", "lateral"),
-            ("/benchmarks/churn/b2b-saas", "B2B SaaS churn benchmarks", "lateral"),
-            ("/tools/nrr-grr-calculator", "the NRR and GRR calculator", "tool"),
+            ("/glossary/churn-rate", "the churn rate definition", "lateral"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
             ("/services/pricing-and-packaging/b2b-saas", "B2B SaaS pricing and packaging", "related"),
             ("/work-with-me", "a retention review", "bofu")),
     visuals=V("b2b-retention-table",

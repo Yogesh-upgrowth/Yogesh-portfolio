@@ -49,18 +49,18 @@
       "role": "lateral"
     },
     {
-      "url": "/glossary/hard-paywall",
-      "anchor": "hard paywall",
+      "url": "/glossary/paywall",
+      "anchor": "the paywall entry",
       "role": "lateral"
     },
     {
-      "url": "/tools/trial-conversion-simulator",
-      "anchor": "the trial conversion simulator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
-      "url": "/india/upi-autopay-for-subscriptions",
-      "anchor": "UPI Autopay for subscriptions",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "related"
     },
     {
@@ -107,7 +107,7 @@
     "BreadcrumbList",
     "FAQPage"
   ],
-  "unique_value_statement": "Carries the IN/SEA regional median of 15.2% alongside the 0.6x India price index and UPI Autopay mandate success, which the ranking pages omit entirely \u2014 they quote the global median and stop.",
+  "unique_value_statement": "Carries the IN/SEA regional median of 15.2% alongside the 0.6x India price index and UPI Autopay mandate success, which the ranking pages omit entirely — they quote the global median and stop.",
   "verified_on": "2026-09-30",
   "refreshed_on": "2026-09-30",
   "changelog": [],

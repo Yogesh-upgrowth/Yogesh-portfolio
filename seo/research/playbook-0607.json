@@ -1,0 +1,153 @@
+{
+  "page_id": "playbook-0607",
+  "url": "/playbooks/hybrid-monetization",
+  "archetype": "playbook",
+  "primary_keyword": "hybrid monetization",
+  "secondary_keywords": [
+    "ads and subscription together",
+    "hybrid app revenue model"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-pb-18",
+      "claim": "Only 10% of apps run a true hybrid model, while more than 60% of top-grossing apps run two or more revenue models at once",
+      "value": "10",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/growth/measure-hybrid-monetization",
+      "source_title": "How to measure hybrid monetization",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Only 10% of apps run true hybrid models; over 60% of 2026 top-grossing apps run two or more revenue models simultaneously.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-19",
+      "claim": "Blended annual ARPU runs 3 to 15 dollars for hybrid freemium, 0.40 to 2 dollars for ad-only free tiers and 30 to 100 dollars or more for subscription-led products",
+      "value": "3-15",
+      "unit": "USD",
+      "source_url": "https://www.thrad.ai/content/subscription-vs-ads-for-ai-apps",
+      "source_title": "Subscription vs ads for AI apps: which model wins in 2026",
+      "source_domain": "thrad.ai",
+      "excerpt": "Hybrid freemium blended annual ARPU lands in the $3-$15 range, against $0.40-$2 for ad-only free tiers and $30-$100+ for subscription-led.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-20",
+      "claim": "Subscription apps earn 4.6 times the average revenue per user of ad-only apps",
+      "value": "4.6",
+      "unit": "x",
+      "source_url": "https://www.thrad.ai/content/subscription-vs-ads-for-ai-apps",
+      "source_title": "Subscription vs ads for AI apps: which model wins in 2026",
+      "source_domain": "thrad.ai",
+      "excerpt": "Subscription-based apps pull in 4.6x higher ARPU compared to ad-only apps.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-pb-21",
+      "claim": "AI apps convert free to paid at 1% to 3%, against 5% to 8% for mature subscription mobile apps",
+      "value": "1-3",
+      "unit": "%",
+      "source_url": "https://www.thrad.ai/content/subscription-vs-ads-for-ai-apps",
+      "source_title": "Subscription vs ads for AI apps: which model wins in 2026",
+      "source_domain": "thrad.ai",
+      "excerpt": "For AI apps, free-to-paid conversion tends toward 1-3% rather than the 5-8% seen in mature subscription mobile apps.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-svc-06",
+      "claim": "Chargebee reports 43% of companies using hybrid pricing models, projected to reach 61% by the end of 2026",
+      "value": "43",
+      "unit": "%",
+      "source_url": "https://www.getmonetizely.com/blogs/the-2026-guide-to-saas-ai-and-agentic-pricing-models",
+      "source_title": "The 2026 Guide to SaaS, AI and Agentic Pricing Models",
+      "source_domain": "getmonetizely.com",
+      "excerpt": "Chargebee's State of Subscriptions Report: 43% of companies now use hybrid models, with adoption projected to reach 61% by end of 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-svc-08",
+      "claim": "Asked which pricing model investors prefer, 35% named hybrid, 26% outcome-based and 24% usage-based, against 10% flat-fee and 5% seat-based",
+      "value": "35",
+      "unit": "%",
+      "source_url": "https://www.growthunhinged.com/p/the-state-of-b2b-monetization-in-2026",
+      "source_title": "The 2026 State of B2B SaaS and AI Monetization Report",
+      "source_domain": "growthunhinged.com",
+      "excerpt": "Asked which pricing model investors prefer: usage-based 24%, outcome-based 26%, hybrid 35%, flat-fee 10%, seat-based 5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-27",
+      "claim": "Streaming advertising revenue in India stood at 563.9 million dollars in 2025",
+      "value": "563.9",
+      "unit": "USD million",
+      "source_url": "https://www.statista.com/outlook/amo/media/tv-video/ott-video/india/",
+      "source_title": "OTT Video outlook, India",
+      "source_domain": "statista.com",
+      "excerpt": "Streaming advertising revenue stood at US$563.9 million in 2025, and ad-supported tiers are now widely adopted.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-pb-18"
+    ],
+    "in_short": [
+      "f-pb-19",
+      "f-pb-20"
+    ],
+    "who_this_is_for": [
+      "f-pb-21"
+    ],
+    "method": [
+      "f-pb-19",
+      "f-pb-20"
+    ],
+    "numbers_and_examples": [
+      "f-svc-06",
+      "f-bm-27"
+    ],
+    "pitfalls": [
+      "f-pb-20",
+      "f-pb-21"
+    ],
+    "checklist": [
+      "f-svc-08"
+    ]
+  }
+}

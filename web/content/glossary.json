@@ -1,0 +1,116 @@
+{
+  "id": "hub-0008",
+  "url": "/glossary",
+  "archetype": "hub",
+  "hub": "glossary",
+  "wave": 1,
+  "batch_id": "w1-hub-02",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Product Growth Glossary: Metrics Defined and Benchmarked",
+  "meta_description": "Twenty-five growth and monetisation metrics, each with its formula, its denominator and the published range, so you know which definition you are reading.",
+  "h1": "Product growth glossary",
+  "primary_keyword": "product growth glossary",
+  "secondary_keywords": [
+    "growth metrics glossary",
+    "saas metrics definitions"
+  ],
+  "entity_a": "glossary",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-gh-01",
+    "f-gh-02",
+    "f-gh-03",
+    "f-gh-04",
+    "f-fx-06",
+    "f-fx-07"
+  ],
+  "experience_used": [
+    "exp-021"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary/ltv-to-cac-ratio",
+      "anchor": "the LTV:CAC entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/activation-rate",
+      "anchor": "the activation rate entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/b2b-saas",
+      "anchor": "B2B SaaS retention benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/playbooks",
+      "anchor": "the playbooks",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a metrics review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#definition-spread",
+      "alt": "Six reference points showing how wide the published spread is on metrics people quote as single numbers: the freemium conversion distribution, the free-trial conversion distribution, the activation median against its top and bottom quartiles, the mobile lifetime-value to acquisition-cost band, onboarding tour completion across 464 companies with its interquartile range, and checklist completion at two different lengths, each row carrying its source and verification date",
+      "caption": "Why a single benchmark number rarely settles anything. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Why does every entry give a range rather than one number?",
+      "a": "Because the published spreads are wide enough that a single figure misleads. Activation has a median of 41.7%, a top quartile of 71% and a bottom quartile of 19%. A product at 30% is below median and above the bottom quartile, and only the range tells you that."
+    },
+    {
+      "q": "How do I know which definition of a metric I am reading?",
+      "a": "Check the denominator. Most disagreements about a metric are disagreements about what goes underneath the line: ARPU over all users or over payers, retention over installs or over activated users, churn over accounts or over revenue. Each entry here names its denominator first."
+    },
+    {
+      "q": "Are these definitions the same as my analytics tool's?",
+      "a": "Often not, and that is the point of reading the formula rather than the name. A tool reports what it can compute from the events it receives, which is not always the definition the benchmark was built on."
+    },
+    {
+      "q": "Why do step counts change a completion rate so much?",
+      "a": "Because each step is a chance to leave. Checklists of three to five steps complete at 67%, against 18% for ten steps or more. The content did not get worse; there was simply more of it to abandon."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get your growth metrics reviewed",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "CollectionPage",
+    "ItemList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Each entry leads with the denominator rather than the name, and gives the published distribution rather than a median, because the common failure is two teams comparing numbers that were never the same measurement.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

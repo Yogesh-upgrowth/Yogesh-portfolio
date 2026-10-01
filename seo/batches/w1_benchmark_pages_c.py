@@ -190,8 +190,8 @@ Re-verification runs every 90 days, and faster for anything touching price.
     experience=["exp-005", "exp-011"],
     links=L(HUB, ("/benchmarks/retention/healthtech", "health retention benchmarks", "lateral"),
             ("/glossary/conversion-rate", "conversion rate", "lateral"),
-            ("/tools/paywall-uplift-calculator", "the paywall uplift calculator", "tool"),
-            ("/india/monetizing-tier-2-tier-3-users", "monetising tier 2 and tier 3 users", "related"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
+            ("/india", "monetising in India", "related"),
             ("/work-with-me", "a conversion review", "bofu")),
     visuals=V("health-store-conversion",
               "Health and wellness store conversion: the category's impression-to-page-view and page-view-to-install rates, the highest and lowest iOS install rates by category, the search against browse split, the all-category averages, health retention for context and median revenue per install, each row carrying its source and verification date",
@@ -349,10 +349,10 @@ which is the specific error this column exists to prevent.""",
     facts=["f-bm-10", "f-bm-16", "f-bm-25", "f-bm-26", "f-bm-27", "f-bm-24",
            "f-bm-22", "f-bm-23", "f-bm-34"],
     experience=["exp-019", "exp-045"],
-    links=L(HUB, ("/india/ott-pricing-india", "OTT pricing in India", "lateral"),
+    links=L(HUB, ("/india", "monetising in India", "lateral"),
             ("/glossary/conversion-rate", "conversion rate", "lateral"),
-            ("/tools/ecpm-ad-revenue-calculator", "the ad revenue calculator", "tool"),
-            ("/benchmarks/retention/media-ott", "media and OTT retention benchmarks", "related"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
+            ("/benchmarks/retention", "the retention benchmarks", "related"),
             ("/work-with-me", "a conversion review", "bofu")),
     visuals=V("ott-store-conversion",
               "OTT and audio store conversion: entertainment's lowest-in-class iOS install rate against medical's highest, median revenue per install, India's OTT subscriptions, the leading platform's subscriber and active-user counts, streaming advertising revenue and India's projected OTT revenue and user base, each row carrying its source and verification date",
@@ -519,11 +519,11 @@ honest state of what gets published for the category.""",
     h1="SaaS ARPU benchmarks", primary_keyword="saas arpu",
     secondary_keywords=["b2b saas arpu benchmark", "arpu by segment"],
     entity_a="arpu", entity_b="b2b-saas",
-    facts=["f-bm-28", "f-bm-29", "f-bm-30", "f-bm-31", "f-bm-32", "f-bm-33", "f-unit-18"],
+    facts=["f-bm-28", "f-bm-29", "f-bm-30", "f-bm-31", "f-bm-32", "f-bm-33", "f-fx-08"],
     experience=["exp-037", "exp-048"],
     links=L(HUB, ("/glossary/arpu", "ARPU", "lateral"),
             ("/glossary/unit-economics", "unit economics", "lateral"),
-            ("/tools/arpu-arppu-calculator", "the ARPU and ARPPU calculator", "tool"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
             ("/services/pricing-and-packaging/b2b-saas", "B2B SaaS pricing and packaging", "related"),
             ("/work-with-me", "an ARPU review", "bofu")),
     visuals=V("saas-arpu-table",
@@ -562,7 +562,7 @@ month, roughly ₹23,973, up from $210 in 2024.
     { cells: ["Segment definition by ACV", "SMB under $10K, mid-market to $100K, enterprise above", "annual, not monthly"], factId: "f-bm-31" },
     { cells: ["Acquisition cost by segment", "under $15K ACV: $2,000-8,000", "$15K-100K ACV: $15,000-40,000"], factId: "f-bm-32" },
     { cells: ["Annual account churn by segment", "SMB 15%, mid-market 10%, enterprise 5%", "median"], factId: "f-bm-33" },
-    { cells: ["Gross revenue retention by ACV", "82% under $25K, 95% above $100K", "a different cut-off again"], factId: "f-unit-18" },
+    { cells: ["Primary monetisation model, 686 tracked apps", "subscriptions 61%, advertising 26%", "model, not segment"], factId: "f-fx-08" },
   ]}
 />
 
@@ -654,9 +654,10 @@ earning most of its revenue at the top, and the fix is reporting rather than pri
 Each row names its source and a verification date, from published benchmark reports.
 
 The segment bands and the churn figures come from different sources with slightly
-different ACV cut-offs. One defines SMB as under $10,000, about ₹9.59 lakh, and
-another as under $25,000. Both appear with their own definition rather than being forced onto one
-scale, because the cut-off is the part that decides which band a company reads.
+different ACV cut-offs. One defines SMB as under $10,000, about ₹9.59 lakh, and others
+draw the line elsewhere. Each appears with its own definition rather than being forced
+onto one scale, because the cut-off is the part that decides which band a company
+reads itself into.
 
 No India-specific band is published, so there is no India row. The standard for these
 pages is three sources or an explicit "insufficient public data" mark.
@@ -681,8 +682,8 @@ which for this page means most of it.""",
     experience=["exp-010", "exp-043"],
     links=L(HUB, ("/glossary/conversion-rate", "conversion rate", "lateral"),
             ("/benchmarks/retention/d2c-ecommerce", "ecommerce retention benchmarks", "lateral"),
-            ("/tools/paywall-uplift-calculator", "the paywall uplift calculator", "tool"),
-            ("/india/cod-to-prepaid-conversion-d2c", "COD to prepaid conversion", "related"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
+            ("/india", "monetising in India", "related"),
             ("/work-with-me", "a conversion review", "bofu")),
     visuals=V("install-to-purchase-table",
               "Ecommerce install-to-purchase benchmarks: the typical band with retail and travel figures, a good mobile commerce conversion range, the regional download-to-paid gap, ecommerce retention for context, the cross-category day-1 and day-30 average and Indian payment gateway costs, each row carrying its source and verification date",
@@ -844,7 +845,7 @@ number that describes neither population, which is worse than reporting a range.
     experience=["exp-005", "exp-039"],
     links=L(HUB, ("/glossary/trial-to-paid-conversion", "trial-to-paid conversion", "lateral"),
             ("/benchmarks/retention/b2b-saas", "B2B SaaS retention benchmarks", "lateral"),
-            ("/tools/trial-length-optimizer", "the trial length optimizer", "tool"),
+            ("/tools/monetization-health-score", "the monetisation health score", "tool"),
             ("/services/pricing-and-packaging/b2b-saas", "B2B SaaS pricing and packaging", "related"),
             ("/work-with-me", "a trial conversion review", "bofu")),
     visuals=V("saas-trial-table",

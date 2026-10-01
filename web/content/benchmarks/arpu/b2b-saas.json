@@ -24,7 +24,7 @@
     "f-bm-31",
     "f-bm-32",
     "f-bm-33",
-    "f-unit-18"
+    "f-fx-08"
   ],
   "experience_used": [
     "exp-037",
@@ -47,8 +47,8 @@
       "role": "lateral"
     },
     {
-      "url": "/tools/arpu-arppu-calculator",
-      "anchor": "the ARPU and ARPPU calculator",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {

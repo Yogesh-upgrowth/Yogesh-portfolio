@@ -1,0 +1,117 @@
+{
+  "id": "benchmark-0578",
+  "url": "/benchmarks/install-to-purchase/travel",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-bm-wave2-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Travel Install to Purchase Rate Benchmark (2026)",
+  "meta_description": "Travel install to purchase rate benchmarks, with the stage-by-stage funnel targets and why the first month captures less than half of first bookings.",
+  "h1": "Travel install to purchase rate benchmark",
+  "primary_keyword": "travel install to purchase rate",
+  "secondary_keywords": [
+    "travel app booking conversion",
+    "travel app funnel benchmark"
+  ],
+  "entity_a": "install-to-purchase",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-t-01",
+    "f-t-02",
+    "f-t-03",
+    "f-t-04",
+    "f-t-05",
+    "f-bm-14"
+  ],
+  "experience_used": [
+    "exp-028"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/benchmarks/install-to-purchase",
+      "anchor": "install to purchase benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/conversion-rate",
+      "anchor": "the conversion rate definition",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/arpu",
+      "anchor": "the ARPU definition",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/india",
+      "anchor": "monetising in India",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#travel-funnel-table",
+      "alt": "Travel install-to-purchase reference points: the share of installs ending in a completed booking, stage targets for install-to-search, search-to-booking and booking-to-confirmation, the share of users transacting in their first month, in-app against mobile web conversion for travel advertisers, the share of trips booked within fourteen days of departure, and the cross-category install-to-purchase band with travel named, each row carrying its source and verification date",
+      "caption": "Travel booking conversion, stage by stage. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good install to purchase rate for a travel app?",
+      "a": "Around 2.8% of installs end in a completed booking, and travel sits at 2.41% in the cross-category data — above the 1% to 2% most apps manage. Travel converts better than average because the intent that drove the install is usually a trip already being planned."
+    },
+    {
+      "q": "Where does the travel funnel actually leak?",
+      "a": "Between search and booking. The stage targets are 40% to 60% install-to-search, 2% to 5% search-to-booking and 85% to 95% booking-to-confirmation, so the middle stage loses the most and the final stage loses least."
+    },
+    {
+      "q": "How long should I wait before judging a cohort?",
+      "a": "Longer than a month. Only 42% of travel app users transact in their first month, so a 30-day window misses most of the first bookings and will condemn a cohort that is performing normally."
+    },
+    {
+      "q": "Is the app worth the cost against mobile web?",
+      "a": "On conversion, substantially. For travel advertisers in-app conversion reaches 20% against 6% on mobile web, which is the clearest argument for the app existing at all."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a travel funnel review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Breaks the install-to-purchase rate into the three published stage targets and shows the measurement window matters as much as the rate, because fewer than half of travel users transact in their first month.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

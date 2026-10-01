@@ -1,0 +1,118 @@
+{
+  "id": "benchmark-0530",
+  "url": "/benchmarks/arpu/gaming",
+  "archetype": "benchmark",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-bm-wave2-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Gaming App ARPU Benchmark by Genre (2026)",
+  "meta_description": "Gaming app ARPU benchmarks by genre, with the paying-user share that sets the ceiling and the India figure that sits two orders of magnitude below global.",
+  "h1": "Gaming app ARPU benchmark",
+  "primary_keyword": "gaming app arpu benchmark",
+  "secondary_keywords": [
+    "gaming arpu",
+    "mobile game arppu"
+  ],
+  "entity_a": "arpu",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-g-01",
+    "f-g-02",
+    "f-g-03",
+    "f-g-04",
+    "f-g-05",
+    "f-g-06",
+    "f-g-07"
+  ],
+  "experience_used": [
+    "exp-034"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/benchmarks/arpu",
+      "anchor": "the ARPU benchmarks",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/arpu",
+      "anchor": "the ARPU definition",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/arppu",
+      "anchor": "ARPPU, the paying-user version",
+      "role": "lateral"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/india",
+      "anchor": "monetising in India",
+      "role": "related"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#gaming-arpu-table",
+      "alt": "Gaming ARPU reference points: day-90 in-app purchase ARPU for casino, midcore and casual genres globally and the North America and Europe ordering, the share of mobile gamers who ever purchase, average in-app purchase per paying user globally against the United States, India's gaming ARPU and its 2030 forecast, the in-app purchase share of game revenue, and India's fastest-growing genres, each row carrying its source and verification date",
+      "caption": "Gaming ARPU by genre, each row sourced. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good ARPU for a mobile game?",
+      "a": "Genre decides it before anything else. Day-90 in-app purchase ARPU runs $2.43 for casino, $2.13 for midcore and $1.34 for casual, about ₹233, ₹204 and ₹129. A casual game matching a casino figure would be extraordinary rather than well run."
+    },
+    {
+      "q": "Why is ARPU so much lower than ARPPU?",
+      "a": "Because only about 4.2% of mobile gamers ever purchase. Average spend per paying user was $16.87 globally in the first quarter of 2026, about ₹1,618, so dividing by all players rather than payers moves the number by more than twenty times."
+    },
+    {
+      "q": "What should an Indian game expect?",
+      "a": "Far less per user and a different growth mix. India's gaming ARPU was $2.04 in 2025, about ₹196, forecast to reach $2.52 by 2030. The growth is mid-core led, with strategy revenue up 77% year on year."
+    },
+    {
+      "q": "Does advertising revenue belong in this number?",
+      "a": "Not in these figures. In-app purchases account for 64% of mobile game revenue, so an ARPU built only from purchases omits roughly a third of what the category earns."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get a gaming monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "Person",
+    "BreadcrumbList",
+    "FAQPage"
+  ],
+  "unique_value_statement": "Separates ARPU from ARPPU with the paying-user share that connects them, so a reader can see that a 4.2% purchase rate — not pricing — sets the ceiling on every genre figure here.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

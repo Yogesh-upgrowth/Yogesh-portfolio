@@ -23,7 +23,7 @@
     "f-bm-11",
     "f-bm-19",
     "f-bm-16",
-    "f-act-14"
+    "f-fx-01"
   ],
   "experience_used": [
     "exp-018",
@@ -41,18 +41,18 @@
       "role": "lateral"
     },
     {
-      "url": "/benchmarks/churn/gaming",
-      "anchor": "gaming churn benchmarks",
+      "url": "/glossary/churn-rate",
+      "anchor": "the churn rate definition",
       "role": "lateral"
     },
     {
-      "url": "/tools/retention-curve-projector",
-      "anchor": "the retention curve projector",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
-      "url": "/india/ads-vs-subscriptions-indian-apps",
-      "anchor": "ads against subscriptions",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "related"
     },
     {

@@ -1,0 +1,119 @@
+{
+  "id": "playbook-0604",
+  "url": "/playbooks/growth-loops-vs-funnels",
+  "archetype": "playbook",
+  "hub": "playbooks",
+  "wave": 1,
+  "batch_id": "w1-playbook-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Growth Loops vs Funnels: Which One You Actually Have",
+  "meta_description": "Growth loops vs funnels, decided by measurement: only about 30% of apps have a measurable k-factor at all, and the median among those is 0.45.",
+  "h1": "Growth loops vs funnels: which one you actually have",
+  "primary_keyword": "growth loops vs funnels",
+  "secondary_keywords": [
+    "k-factor benchmark",
+    "viral coefficient"
+  ],
+  "entity_a": "growth-loops-vs-funnels",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-pb-14",
+    "f-pb-15",
+    "f-pb-16",
+    "f-pb-17",
+    "f-unit-37",
+    "f-hub-10",
+    "f-fx-01"
+  ],
+  "experience_used": [
+    "exp-007",
+    "exp-042"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary/cac",
+      "anchor": "the CAC entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/cohort-analysis",
+      "anchor": "the cohort analysis entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/social-dating",
+      "anchor": "social and dating retention benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/playbooks/experimentation-program",
+      "anchor": "the experimentation playbook",
+      "role": "lateral"
+    },
+    {
+      "url": "/playbooks",
+      "anchor": "the playbooks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#loop-or-funnel",
+      "alt": "Seven reference points for telling a growth loop from a funnel: the share of apps with any measurable k-factor and the median among them, how that share differs between games and non-games, the documented peak viral coefficient at one well-known referral programme, the typical share of active users who refer and the invite-to-registration rate, cost per install by platform and category in the United States, the testing volume top programmes run, and session length by game genre, each row carrying its source and verification date",
+      "caption": "Whether a loop exists is a measurement question. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How do I know whether I have a loop or a funnel?",
+      "a": "Measure the k-factor and see whether it exists. Only about 30% of apps have a measurable one at all, and among those the median is 0.45. A k-factor you cannot measure is a funnel, whatever the strategy deck says."
+    },
+    {
+      "q": "Is a k-factor above 1 a realistic target?",
+      "a": "Rarely. The median among apps that have any measurable k-factor is 0.45, and Dropbox's documented peak was 0.7. Above one means every user brings more than one more, which is a property of messaging and collaboration products rather than a goal to set."
+    },
+    {
+      "q": "Do games spread better than other apps?",
+      "a": "Less often than expected. A k-factor is present for 22.5% of games against 33.6% of non-games, so games are the category less likely to have a measurable loop at all."
+    },
+    {
+      "q": "What should a referral programme deliver?",
+      "a": "A contribution, not a growth engine. Active referrers are typically 5% to 15% of the active base, with 10% to 25% of invites turning into registrations. That is a useful discount on acquisition cost, not a replacement for it."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Diagnose your growth loops with me",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Settles the loop-or-funnel question by measurement rather than by strategy preference, using the finding that about 70% of apps have no measurable k-factor at all — which makes most loop diagrams a description of something that is not happening.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

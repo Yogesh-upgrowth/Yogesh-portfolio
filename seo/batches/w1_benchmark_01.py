@@ -199,6 +199,7 @@ NEW += [
 POOL = {**P1, **P2, **P3, **P4}
 POOL.update({f["fact_id"]: f for f in NEW})
 
+
 BM_SCHEMA = ["Article", "Person", "BreadcrumbList", "FAQPage"]
 
 

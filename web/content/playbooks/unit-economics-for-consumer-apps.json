@@ -1,0 +1,119 @@
+{
+  "id": "playbook-0606",
+  "url": "/playbooks/unit-economics-for-consumer-apps",
+  "archetype": "playbook",
+  "hub": "playbooks",
+  "wave": 1,
+  "batch_id": "w1-playbook-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Unit Economics for Consumer Apps: The Honest Version",
+  "meta_description": "Unit economics for consumer apps against the real distribution: 58% of new subscription apps earn under $1,000 in year one and the top 10% take 95%.",
+  "h1": "Unit economics for consumer apps",
+  "primary_keyword": "unit economics for consumer apps",
+  "secondary_keywords": [
+    "consumer app cac payback",
+    "app ltv cac ratio"
+  ],
+  "entity_a": "unit-economics-for-consumer-apps",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-pb-22",
+    "f-pb-23",
+    "f-pb-24",
+    "f-pb-25",
+    "f-gh-04",
+    "f-pb-19",
+    "f-ih-02"
+  ],
+  "experience_used": [
+    "exp-025",
+    "exp-021"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary/unit-economics",
+      "anchor": "the unit economics entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/cac-payback-period",
+      "anchor": "the CAC payback entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/install-to-purchase/d2c-ecommerce",
+      "anchor": "install to purchase benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/playbooks/subscription-pricing-strategy",
+      "anchor": "the pricing playbook",
+      "role": "lateral"
+    },
+    {
+      "url": "/playbooks",
+      "anchor": "the playbooks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#consumer-unit-economics",
+      "alt": "Seven reference points for consumer app unit economics: the share of new subscription apps earning under a thousand dollars in year one, the share reaching ten thousand dollars monthly within two years, the share of all subscription revenue the top decile captures, the typical consumer payback window and its target, the mobile lifetime-value to acquisition-cost band against the software bar, blended annual revenue per user across three monetisation shapes, and the share of payers who pay within two days, each row carrying its source and verification date",
+      "caption": "The distribution most unit-economics models ignore. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is a 3 to 1 LTV to CAC ratio the right target?",
+      "a": "Not for a consumer app. That bar came from software-as-a-service. Mobile apps typically run 1.5 to 2.5 to 1, because revenue per user is lower and installs cost more. A consumer app at 2 to 1 fails no universal test."
+    },
+    {
+      "q": "How fast should acquisition cost come back?",
+      "a": "Three to nine months for consumer subscription, with under six the target. That beats the twelve-month software convention, because consumer churn leaves less time to recover."
+    },
+    {
+      "q": "Why do my projections look nothing like published outcomes?",
+      "a": "The published distribution skews hard. 58% of new subscription apps earn under $1,000 in their first year, only 4.6% reach $10,000 a month within two years, and the top 10% of apps take 95% of all subscription revenue."
+    },
+    {
+      "q": "Where does the model break first?",
+      "a": "Usually in the revenue window rather than the cost. About half of all users who ever pay do so within two days of arriving, so a model spreading revenue evenly across month one goes wrong in week one."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Pressure-test your app unit economics",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Builds the model against the published outcome distribution rather than a median, so a forecast has to survive the fact that 58% of new subscription apps earn under $1,000 in year one and the top decile takes 95% of revenue.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

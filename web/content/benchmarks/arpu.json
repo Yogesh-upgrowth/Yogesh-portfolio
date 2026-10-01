@@ -1,0 +1,118 @@
+{
+  "id": "bmhub-0003",
+  "url": "/benchmarks/arpu",
+  "archetype": "benchmark-hub",
+  "hub": "benchmarks",
+  "wave": 1,
+  "batch_id": "w1-bmhub-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "ARPU Benchmarks by Segment and Industry, 2026",
+  "meta_description": "ARPU medians by SaaS segment and app category, the blended-versus-paying denominator problem, and the three incompatible India figures nobody reconciles.",
+  "h1": "ARPU benchmarks",
+  "primary_keyword": "arpu benchmarks",
+  "secondary_keywords": [
+    "average revenue per user benchmark",
+    "b2b saas arpu median"
+  ],
+  "entity_a": "arpu",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-bm-29",
+    "f-bm-28",
+    "f-bm-30",
+    "f-bm-32",
+    "f-bm-22",
+    "f-bm-23",
+    "f-bm-34"
+  ],
+  "experience_used": [
+    "exp-036"
+  ],
+  "internal_links": [
+    {
+      "url": "/benchmarks/arpu/b2b-saas",
+      "anchor": "B2B SaaS ARPU",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/arpu",
+      "anchor": "the ARPU definition",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/arppu",
+      "anchor": "ARPPU, the paying-user version",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/b2b-saas",
+      "anchor": "B2B SaaS retention",
+      "role": "reference"
+    },
+    {
+      "url": "/benchmarks",
+      "anchor": "the benchmarks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#arpu-by-segment",
+      "alt": "ARPU reference points by segment: the 2026 median B2B SaaS monthly figure against 2024, the four self-serve to enterprise bands, the SMB median, median day-60 revenue per install across app categories, and three mutually incompatible published figures for India OTT ARPU, each row carrying its source and verification date",
+      "caption": "ARPU by segment, and the India figures that disagree. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Is ARPU calculated over all users or paying users?",
+      "a": "Both, under the same name, which is why the figure is so often useless in a comparison. ARPU divides revenue by every active user. ARPPU divides it by payers only. In a freemium product with 3% conversion the two differ by more than thirty times."
+    },
+    {
+      "q": "Why is the B2B SaaS median unhelpful on its own?",
+      "a": "Because it sits inside one segment's band and outside every other. The 2026 median of about $250 a month falls in the mid-market range of $200 to $2,000, so it is not a benchmark for self-serve products at $20 to $50 or enterprise ones above $2,000."
+    },
+    {
+      "q": "Which India ARPU figure should I use?",
+      "a": "None of them without checking the denominator. Three published figures for India OTT ARPU are in circulation and they are not reconcilable: $40.44 a year, ₹85 to ₹95 a month, and $9.02 a year. The gap is roughly four-fold between the outer two."
+    },
+    {
+      "q": "Does rising ARPU always mean the business improved?",
+      "a": "No. ARPU rises when free users churn out, because the denominator shrinks. A product losing its free base and holding its payers will show improving ARPU and a shrinking business."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Get your ARPU and pricing reviewed",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the case studies",
+      "href": "/case-studies"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Records the three incompatible published figures for India OTT ARPU side by side instead of picking one, and shows that the widely-quoted B2B SaaS median sits inside a single segment band — so the number is not a benchmark for three of four segments.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

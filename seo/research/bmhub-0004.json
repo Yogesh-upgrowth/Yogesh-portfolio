@@ -1,0 +1,137 @@
+{
+  "page_id": "bmhub-0004",
+  "url": "/benchmarks/install-to-purchase",
+  "archetype": "benchmark-hub",
+  "primary_keyword": "install to purchase conversion benchmarks",
+  "secondary_keywords": [
+    "install to purchase rate",
+    "first purchase conversion app"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-bm-14",
+      "claim": "Most apps convert 1% to 2% of installs into a purchase, with retail at 1.38% and travel at 2.41%",
+      "value": "1.38",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-conversion-rate/",
+      "source_title": "Mobile App Conversion Rate Benchmarks",
+      "source_domain": "uxcam.com",
+      "excerpt": "Most mobile apps see install-to-purchase conversion between 1% and 2%. Retail apps 1.38%; travel apps 2.41%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-bm-15",
+      "claim": "A good conversion rate for an e-commerce mobile app sits around 2% to 6% depending on order value and purchase frequency",
+      "value": "2-6",
+      "unit": "%",
+      "source_url": "https://blendcommerce.com/blogs/shopify/ecommerce-conversion-rate-benchmarks-2026",
+      "source_title": "eCommerce Conversion Rate Benchmarks 2026",
+      "source_domain": "blendcommerce.com",
+      "excerpt": "A good conversion rate for an ecommerce mobile app sits around 2% to 6%, depending on industry, average order value, product type and purchase frequency.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-ih-01",
+      "claim": "Across more than 145,000 installs the median time from install to first revenue is about 48 hours, with the 90th percentile near 14 days",
+      "value": "48",
+      "unit": "hours",
+      "source_url": "https://linkrunner.io/blog/install-to-first-revenue-payback-windows-2026",
+      "source_title": "Install-to-first-revenue timing: mobile app payback windows in 2026",
+      "source_domain": "linkrunner.io",
+      "excerpt": "Median time from install to first revenue is approximately 48 hours across over 145,000 installs; the 90th percentile stretched to roughly 14 days.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-ih-02",
+      "claim": "About half of users who ever pay do so within two days of installing, and 90% within two weeks",
+      "value": "50",
+      "unit": "%",
+      "source_url": "https://linkrunner.io/blog/install-to-first-revenue-payback-windows-2026",
+      "source_title": "Install-to-first-revenue timing: mobile app payback windows in 2026",
+      "source_domain": "linkrunner.io",
+      "excerpt": "Roughly half of revenue-converting users do so within two days of install, and 90% convert within two weeks.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-20",
+      "claim": "AI apps earn 41% more revenue per payer and churn about 30% faster",
+      "value": "41",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "source_title": "State of Subscription Apps 2026",
+      "source_domain": "revenuecat.com",
+      "excerpt": "AI-powered apps generate 41% more revenue per payer, but they churn 30% faster.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-hub-02",
+      "claim": "India's app revenue passed 300 million dollars in the first quarter of 2026, up 33%, on 6.2 billion downloads with non-gaming apps at 72%",
+      "value": "300",
+      "unit": "USD million",
+      "source_url": "https://sensortower.com/blog/india-mobile-market-q1-2026",
+      "source_title": "India Mobile App Market Q1 2026",
+      "source_domain": "sensortower.com",
+      "excerpt": "In Q1 2026 India's mobile app market revenue surpassed $300M, up 33% year-over-year, on 6.2 billion downloads, non-gaming apps at 72%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-bm-14"
+    ],
+    "definition": [
+      "f-bm-14",
+      "f-ih-01"
+    ],
+    "benchmark_table_by_industry": [
+      "f-bm-14",
+      "f-bm-15",
+      "f-ih-01"
+    ],
+    "india_layer": [
+      "f-hub-02"
+    ],
+    "what_moves_it": [
+      "f-ih-02",
+      "f-bm-20"
+    ],
+    "stage_adjustment": [
+      "f-bm-15",
+      "f-ih-02"
+    ]
+  }
+}

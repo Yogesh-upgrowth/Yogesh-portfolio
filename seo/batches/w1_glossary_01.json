@@ -562,13 +562,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/arpu-arppu-calculator",
-          "anchor": "the ARPU and ARPPU calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/ott-pricing-india",
-          "anchor": "OTT pricing in India",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -653,13 +653,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/arpu-arppu-calculator",
-          "anchor": "the ARPU and ARPPU calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/inr-price-points-that-convert",
-          "anchor": "INR price points that convert",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -741,8 +741,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/ltv-calculator",
-          "anchor": "the LTV calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -830,13 +830,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/cac-payback-calculator",
-          "anchor": "the CAC payback calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/monetizing-tier-2-tier-3-users",
-          "anchor": "monetising tier 2 and tier 3 users",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -918,13 +918,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/ltv-calculator",
-          "anchor": "the LTV calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/benchmarks/churn",
-          "anchor": "churn benchmarks",
+          "url": "/benchmarks/retention",
+          "anchor": "the retention benchmarks",
           "role": "related"
         },
         {
@@ -1006,13 +1006,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/cac-payback-calculator",
-          "anchor": "the CAC payback calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/upi-autopay-for-subscriptions",
-          "anchor": "UPI Autopay for subscriptions",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -1095,13 +1095,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/churn-to-lifetime-calculator",
-          "anchor": "the churn to lifetime calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/involuntary-churn-mandate-failures",
-          "anchor": "involuntary churn and mandate failures",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -1184,8 +1184,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/retention-curve-projector",
-          "anchor": "the retention curve projector",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -1272,13 +1272,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/subscription-mrr-calculator",
-          "anchor": "the MRR calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/payment-success-rates-india",
-          "anchor": "payment success rates in India",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {
@@ -1360,8 +1360,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/rule-of-40-calculator",
-          "anchor": "the Rule of 40 calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -1448,8 +1448,8 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/nrr-grr-calculator",
-          "anchor": "the NRR and GRR calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
@@ -1536,13 +1536,13 @@
           "role": "lateral"
         },
         {
-          "url": "/tools/nrr-grr-calculator",
-          "anchor": "the NRR and GRR calculator",
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
           "role": "tool"
         },
         {
-          "url": "/india/rbi-e-mandate-rules-recurring-payments",
-          "anchor": "RBI e-mandate rules",
+          "url": "/india",
+          "anchor": "monetising in India",
           "role": "related"
         },
         {

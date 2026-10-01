@@ -20,10 +20,10 @@
   "facts_used": [
     "f-bm-01",
     "f-bm-03",
-    "f-bm-14",
+    "f-ih-01",
     "f-bm-15",
     "f-bm-08",
-    "f-act-16"
+    "f-fx-03"
   ],
   "experience_used": [
     "exp-024",
@@ -41,18 +41,18 @@
       "role": "lateral"
     },
     {
-      "url": "/benchmarks/churn/d2c-ecommerce",
-      "anchor": "ecommerce churn benchmarks",
+      "url": "/glossary/churn-rate",
+      "anchor": "the churn rate definition",
       "role": "lateral"
     },
     {
-      "url": "/tools/retention-curve-projector",
-      "anchor": "the retention curve projector",
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
       "role": "tool"
     },
     {
-      "url": "/india/cod-to-prepaid-conversion-d2c",
-      "anchor": "COD to prepaid conversion",
+      "url": "/india",
+      "anchor": "monetising in India",
       "role": "related"
     },
     {

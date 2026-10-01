@@ -1,0 +1,153 @@
+{
+  "page_id": "playbook-0603",
+  "url": "/playbooks/subscription-pricing-strategy",
+  "archetype": "playbook",
+  "primary_keyword": "subscription pricing strategy",
+  "secondary_keywords": [
+    "weekly vs annual subscription",
+    "subscription plan mix"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-pb-10",
+      "claim": "Weekly plans grew from 43.3% of app subscription revenue in 2023 to 55.5% in 2025, while monthly fell from 21.1% to 11.7% and annual from 29.2% to 22.5%",
+      "value": "55.5",
+      "unit": "%",
+      "source_url": "https://adapty.io/blog/weekly-monthly-annual-subscription-plan/",
+      "source_title": "Weekly vs monthly vs annual: which plan type should you offer?",
+      "source_domain": "adapty.io",
+      "excerpt": "Weekly plans generated 43.3% of app subscription revenue in 2023, rising to 55.5% by 2025; monthly dropped 21.1% to 11.7%, annual 29.2% to 22.5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-11",
+      "claim": "Productivity apps take 76.7% of their subscriptions on monthly plans and 90.7% of their revenue from them",
+      "value": "90.7",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/growth/monthly-subscriptions-when-to-offer",
+      "source_title": "Monthly subscriptions: when to offer them",
+      "source_domain": "revenuecat.com",
+      "excerpt": "In productivity, 76.7% of subscriptions are monthly but 90.7% of revenue comes from monthly plans.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-12",
+      "claim": "Health and fitness is the only category where annual plans dominate revenue, at 60.6%, while utilities take 73.6% of revenue from weekly plans",
+      "value": "60.6",
+      "unit": "%",
+      "source_url": "https://adapty.io/blog/weekly-monthly-annual-subscription-plan/",
+      "source_title": "Weekly vs monthly vs annual: which plan type should you offer?",
+      "source_domain": "adapty.io",
+      "excerpt": "Health & Fitness is the only category where annual plans dominate at 60.6% of revenue; utilities generate 73.6% of revenue from weekly plans.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-13",
+      "claim": "First-year retention on annual plans fell from 31% to 28% year on year",
+      "value": "28",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/growth/monthly-subscriptions-when-to-offer",
+      "source_title": "Monthly subscriptions: when to offer them",
+      "source_domain": "revenuecat.com",
+      "excerpt": "First-year annual retention fell from 31% to 28% year over year.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-th-05",
+      "claim": "95% of annual app subscribers who cancel never come back",
+      "value": "95",
+      "unit": "%",
+      "source_url": "https://ppc.land/95-of-annual-app-subscribers-who-cancel-never-return-revenuecat-finds/",
+      "source_title": "95% of annual app subscribers who cancel never return, RevenueCat finds",
+      "source_domain": "ppc.land",
+      "excerpt": "95% of annual app subscribers who cancel never return, RevenueCat finds.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-th-01",
+      "claim": "Across more than 17,000 apps, trial conversion rises with length: 25.5% under four days, 37.4% at five to nine days, 35.4% at ten to sixteen and 42.5% at seventeen to thirty-two",
+      "value": "42.5",
+      "unit": "%",
+      "source_url": "https://www.revenuecat.com/blog/growth/free-trial-length",
+      "source_title": "How long should your free trial be? Data from 17,000+ apps",
+      "source_domain": "revenuecat.com",
+      "excerpt": "Under 4 days: 25.5%; 5 to 9 days: 37.4%; 10 to 16 days: 35.4%; 17 to 32 days: 42.5%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-glossary-0700-06",
+      "claim": "Indian subscription prices sit at 0.6 times the US baseline, against 1.2 times in Europe",
+      "value": "0.6",
+      "unit": "x US baseline",
+      "source_url": "https://adapty.io/state-of-in-app-subscriptions-report/",
+      "source_title": "In-App Subscription Benchmarks 2026",
+      "source_domain": "adapty.io",
+      "excerpt": "Europe prices at 1.2x the US baseline and India at 0.6x in Adapty's pricing index",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-pb-10"
+    ],
+    "in_short": [
+      "f-pb-12",
+      "f-th-05"
+    ],
+    "who_this_is_for": [
+      "f-pb-11"
+    ],
+    "method": [
+      "f-pb-10",
+      "f-pb-13"
+    ],
+    "numbers_and_examples": [
+      "f-pb-11",
+      "f-pb-12"
+    ],
+    "pitfalls": [
+      "f-th-05",
+      "f-pb-13"
+    ],
+    "checklist": [
+      "f-glossary-0700-06"
+    ]
+  }
+}
