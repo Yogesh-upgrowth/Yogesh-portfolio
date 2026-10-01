@@ -20,6 +20,16 @@ on:
   schedule:
     # Mondays, 06:14 UTC. Off the hour because every other job runs at :00.
     - cron: "14 6 * * 1"
+  # Also on a pull request, but only one that touches the sources themselves or
+  # the verifier. workflow_dispatch does not exist until the workflow reaches the
+  # default branch, so without this the first real G02 run would have to wait for
+  # a merge. The commit step is skipped on a pull request, so this cannot
+  # re-trigger itself.
+  pull_request:
+    paths:
+      - "seo/research/**"
+      - "seo/scripts/verify_sources.py"
+      - ".github/workflows/source-check.yml"
 
 permissions:
   contents: write
@@ -62,7 +72,10 @@ jobs:
           g02=$(grep -c "G02.*blocked" /tmp/gates.txt || true)
           echo "pages with G02 blocked: $g02" | tee -a "$GITHUB_STEP_SUMMARY"
 
+      # Not on a pull request: a commit to seo/research would match this
+      # workflow's own path filter and trigger it again.
       - name: Commit the fetch logs
+        if: github.event_name != 'pull_request'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
