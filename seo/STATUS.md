@@ -324,3 +324,39 @@ not at the rules.
 G16 passing an empty page. That was a bad test: it emptied three fields and
 inherited the rest from a real page, so those gates were reading another page's
 visuals, CTA and schema. With a genuinely empty page all three fail correctly.)
+
+### The four facts that need re-sourcing first
+
+Of the 17 facts resting on a non-200 source, only four cite a source that is
+actually gone. None carries an `archive_url`, so each is currently a number with
+no verifiable origin — which the brief forbids outright, and which the gates
+already refuse to publish. The claims are written out here so that whoever has
+network can resolve them without re-deriving the analysis:
+
+| Fact | Claim as written | Dead source |
+|---|---|---|
+| `f-act-02` | Across 80+ SaaS products, freemium-to-paid averaged 3.7%, from 2.6% in ed-tech to 5.8% in reg-tech | `firstpagesage.com/reports/freemium-conversion-rate-benchmarks/` |
+| `f-bm-28` | B2B SaaS monthly ARPU: $20–50 self-serve, $50–200 SMB, $200–2,000 mid-market, $2,000–10,000+ enterprise | `culta.ai/blog/arpu-benchmarks-2026` |
+| `f-bm-29` | 2026 median B2B SaaS ARPU about $250/month, up from $210 in 2024 | `culta.ai/blog/arpu-benchmarks-2026` |
+| `f-bm-30` | Median SMB SaaS ARPU $55/month | `culta.ai/blog/arpu-benchmarks-2026` |
+
+Pages affected: `/benchmarks/arpu` and `/benchmarks/arpu/b2b-saas` (three facts
+each), `/glossary/conversion-rate`, `/glossary/free-to-paid-conversion`,
+`/glossary/freemium` (one each).
+
+Both dead sources were aggregators to begin with, so re-sourcing is the right
+move rather than hunting for an archived copy: ARPU bands and medians of this
+kind are published first-party by ChartMogul, Paddle, Maxio and SaaS Capital,
+and SaaS Capital is already cited elsewhere in this corpus as primary. An
+`archive_url` would satisfy G02 while leaving the number resting on a content
+farm, which is the weaker outcome.
+
+The other 13 facts cite the nine sources that refused an automated client. Those
+pages are not fixed by restoring reachability alone: six of the nine are
+`businessofapps.com`, an aggregator, so those pages still fail the
+majority-primary rule. Re-source rather than archive there too.
+
+**A decision for Yogesh, not one to make by changing the gate:** G02 blocks on
+any non-200 without an `archive_url`, which puts a WAF refusing curl in the same
+bucket as a deleted page. Accepting a 403/405 as "reachable" would unblock pages
+without improving a single citation, so it was left alone.
