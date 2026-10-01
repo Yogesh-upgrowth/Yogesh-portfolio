@@ -1,0 +1,204 @@
+<AnswerBox>
+An experimentation program earns its cost once you can reach a sample size that
+settles a question. Aim for the median of about 34 tests a year before aiming
+higher. Expect a win rate between 10% and 30%. Judge the programme on its
+conclusive rate, not its wins. Most teams chase volume and skip the maths.
+</AnswerBox>
+
+<FactTable
+  id="experimentation-reality"
+  caption="What a working programme actually produces"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Annual tests, median against top performers", "34 against 200+"], factId: "f-pb-01" },
+    { cells: ["Monthly tests, median company", "2 to 3"], factId: "f-pb-02" },
+    { cells: ["Win rate, commonly cited / healthy band / conclusive rate", "12% / 10-30% / 35-40%"], factId: "f-pb-03" },
+    { cells: ["Impact per test, peak and the drop past 30 per engineer", "peaks at 1-10 a year; falls 87%"], factId: "f-pb-04" },
+    { cells: ["Experiments rolled back on a guardrail regression", "42% of 10,000+ a year"], factId: "f-fx-04" },
+    { cells: ["Visitors per variant at a 5% baseline, 50% / 20% / 10% lift", "1,700 / 9,000 / 36,000"], factId: "f-fx-05" },
+    { cells: ["Tests reaching significance with a winner, 2,408 audited", "17.4%"], factId: "f-hub-06" },
+    { cells: ["Tests producing a significant win, 90+ e-commerce brands", "36.3%"], factId: "f-hub-07" },
+    { cells: ["Organisations at foundational or emerging maturity", "most of 206 surveyed"], factId: "f-pb-05" },
+  ]}
+/>
+
+## In short
+
+Five things decide whether a programme pays for itself.
+
+Sample size comes first. At a 5% baseline, a 50% relative lift needs about 1,700
+visitors per variant. A 20% lift needs about 9,000. A 10% lift needs about 36,000.
+Without the third, small effects are not a question you can answer. Running the test
+anyway just makes noise look like evidence.
+
+Velocity has a ceiling per person, not per team. Impact per test peaks between one
+and ten tests a year per engineer. Past thirty it drops 87%.
+
+The conclusive rate beats the win rate. Wins and losses together should reach 35%
+to 40%. Below that, most tests cannot move anything either way.
+
+Rollbacks are output, not failure. And maturity binds hardest: of 206 companies
+surveyed, most sit at the foundational or emerging stage.
+
+## Who this is for, and who it is not
+
+This suits a team with enough traffic to settle a question inside a month, on a
+surface where one change can be isolated. A busiest page seeing a few hundred visitors a
+week puts this out of reach for now. Qualitative research and judgement are the
+honest alternatives.
+
+It also suits teams already running tests who cannot tell whether it is working.
+The symptom is familiar: a dashboard full of wins, a revenue line that has not
+moved. That is what a high win rate on a low conclusive rate looks like.
+
+It does not suit teams whose real problem is that nobody knows what to build. A
+programme settles disagreements about size. It does not supply a hypothesis. Most
+organisations sit at foundational or emerging maturity, and at that stage the fix
+is a working metrics pipeline, not more tests.
+
+## The method
+
+Six steps, each with a number that tells you whether to continue.
+
+### 1. Compute your detectable effect before designing anything
+
+Start with two numbers: baseline conversion, and weekly traffic on the surface you
+want to test. Then work out the smallest relative lift four weeks could detect. At
+a 5% baseline, four weeks at 2,000 weekly visitors per variant reaches about the
+9,000 needed for a 20% lift. It does not come close to the 36,000 a 10% lift needs.
+
+Say the answer is "only effects above 30%". That is the programme's resolution.
+Design tests that could plausibly move things that far. Stop proposing copy tweaks.
+
+Write the number on the wall. Every test proposal gets checked against it first,
+and about half will fail that check. That is the arithmetic doing its job.
+
+### 2. Set the cadence from headcount, not ambition
+
+Start at the median of two to three tests a month. Hold there until the pipeline
+runs reliably. The temptation is the 200-a-year figure top performers reach. But
+impact per test peaks between one and ten a year per engineer, so a small team at
+200 is running 200 weak tests.
+
+Divide instead. Count engineers who can ship a test, multiply by ten, and treat
+that as the annual ceiling. Four engineers means forty tests a year, which is just
+above the median and well inside the range where each one still matters.
+
+### 3. Instrument guardrails before the first test
+
+Decide what must not get worse. Wire it before you need it. At the scale where 42%
+of experiments get rolled back on a guardrail regression, guardrails do more work
+than the primary metrics.
+
+Three are usually enough: a revenue-adjacent metric, a retention-adjacent one, and
+one load or error measure. More than five and nobody reads them.
+
+## The method, part two: running and reading
+
+Three more steps. This is where most programmes lose their results rather than their
+velocity: the pipeline works, tests ship, and the readings cannot be trusted.
+
+### 4. Run to the pre-computed sample size
+
+Not to significance. Stopping the moment a test turns green is the most common way
+to manufacture a false win. It is also why audited win rates come in low: across
+2,408 tests, 17.4% reached significance with a winner.
+
+### 5. Report the conclusive rate every month
+
+Wins, losses and inconclusive, as three numbers. Target 35% to 40% conclusive. A
+month of nothing but inconclusive results means underpowered tests or changes too
+small to matter. Both are fixable, and neither is bad luck.
+
+### 6. Review the programme quarterly against tests per engineer
+
+Not against tests shipped. Past thirty a year per engineer, the programme is adding
+tests and losing impact. Cut the count and raise the ambition of each one.
+
+## The numbers to expect
+
+Expect to lose most tests. A 12% win rate is the figure most often cited. A healthy
+band runs 10% to 30%, and the audited 17.4% significance rate sits inside it. Budget
+for a 50% win rate and the programme gets cancelled in its second quarter.
+
+Expect the first three months to produce process, not results. At two to three tests
+a month, a quarter is six to nine tests. One or two will be conclusive wins.
+
+Expect the sample size arithmetic to kill about half the proposed tests before they
+run. That is the arithmetic working, not an obstacle to route around.
+
+Expect the biggest single gain to come from fixing measurement rather than from any
+test. Most teams at foundational maturity find that their baseline numbers disagree
+between two tools, and no experiment result is readable until that is settled.
+
+<FromMyWork exp="exp-009">
+Two weeks went into assembling a clean dataset of roughly 22,000 prior applications
+before proposing anything. The target set afterwards, 70% disbursement against an
+industry range of 20 to 35%, was chosen to force a different operating model rather
+than to be achievable.
+</FromMyWork>
+
+<FromMyWork exp="exp-047">
+The habit that compounds is writing the expected result down before the test runs.
+It converts an argument about whether a number is good into a check against
+something already agreed, and it takes about a minute.
+</FromMyWork>
+
+## Pitfalls
+
+Six, and the first two account for most wasted programmes.
+
+Testing effects smaller than your traffic can detect. If 36,000 visitors per
+variant is out of reach, a 10% lift is not a question you can answer, and running
+the test anyway produces a number that feels like evidence.
+
+Stopping early. A test watched daily and stopped on the first green day has no
+error rate you can quote.
+
+Optimising the win rate. It is the easiest metric to game — test only safe changes
+and it rises while the conclusive rate falls.
+
+Chasing top-performer volume. Past thirty tests a year per engineer, expected
+impact falls 87%, so the volume arrives and the results do not.
+
+Treating rollbacks as failures. At 42% rollback on guardrail regressions, a
+programme with no rollbacks is not catching regressions.
+
+Running without guardrails, which turns every rollback into an argument about
+whether the regression was real.
+
+## The checklist
+
+Twelve items, in the order they have to happen. Copy it and work down. Anything
+unticked above item six means the programme is not ready to run a test yet, however
+many ideas are queued.
+
+1. Baseline conversion recorded for the surface under test.
+2. Weekly traffic per variant recorded.
+3. Minimum detectable effect computed for a four-week run.
+4. Test ideas filtered to effects above that threshold.
+5. Guardrail metrics named and instrumented.
+6. Sample size per variant fixed in writing before launch.
+7. Stopping rule written down, with no daily peeking.
+8. Assignment checked for leakage across variants.
+9. Results classified as win, loss or inconclusive.
+10. Conclusive rate reported monthly against the 35% to 40% band.
+11. Tests per engineer per year tracked against the one-to-ten peak.
+12. Rollback count reported as a positive signal, not a defect count.
+
+## Sources and related
+
+Every figure carries its source and the date it was last checked. Where published
+win rates disagree — 12%, 17.4% and 36.3% across three studies — the disagreement
+is a definition gap rather than a performance gap, and all three appear above with
+what each one counts as a win.
+
+The activation metric playbook is the usual next step. Activation is the metric most
+programmes should test against first, because it moves earlier than revenue and
+responds to work a product team controls.
+
+One note on the sources. The velocity and win-rate figures come from
+experimentation vendors reporting on their own platforms, which is the best evidence
+available and still a selected sample: teams that buy an experimentation tool are
+not a random sample of teams. The direction of the findings is well supported. Treat
+the exact percentages as the centre of a range rather than as a target.

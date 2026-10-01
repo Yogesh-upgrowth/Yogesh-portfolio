@@ -1,0 +1,119 @@
+{
+  "id": "playbook-0602",
+  "url": "/playbooks/activation-metric",
+  "archetype": "playbook",
+  "hub": "playbooks",
+  "wave": 1,
+  "batch_id": "w1-playbook-01",
+  "status": "drafted",
+  "indexable": false,
+  "title": "Activation Metric: How to Choose and Move It",
+  "meta_description": "Choosing an activation metric: where to put the threshold, what time to value to expect by account size, and why step count beats copy.",
+  "h1": "How to choose and move an activation metric",
+  "primary_keyword": "activation metric",
+  "secondary_keywords": [
+    "activation rate benchmark",
+    "time to value"
+  ],
+  "entity_a": "activation-metric",
+  "geo": "IN+US",
+  "facts_used": [
+    "f-pb-06",
+    "f-pb-07",
+    "f-pb-08",
+    "f-pb-09",
+    "f-gh-03",
+    "f-fx-06",
+    "f-fx-07"
+  ],
+  "experience_used": [
+    "exp-005",
+    "exp-003"
+  ],
+  "internal_links": [
+    {
+      "url": "/glossary/activation-rate",
+      "anchor": "the activation rate entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/glossary/aha-moment",
+      "anchor": "the aha moment entry",
+      "role": "lateral"
+    },
+    {
+      "url": "/benchmarks/retention/b2b-saas",
+      "anchor": "B2B SaaS retention benchmarks",
+      "role": "reference"
+    },
+    {
+      "url": "/playbooks/experimentation-program",
+      "anchor": "the experimentation playbook",
+      "role": "lateral"
+    },
+    {
+      "url": "/playbooks",
+      "anchor": "the playbooks",
+      "role": "hub"
+    },
+    {
+      "url": "/tools/monetization-health-score",
+      "anchor": "the monetisation health score",
+      "role": "tool"
+    },
+    {
+      "url": "/work-with-me",
+      "anchor": "a growth and monetisation review",
+      "role": "bofu"
+    }
+  ],
+  "visuals": [
+    {
+      "type": "table",
+      "src": "#activation-reality",
+      "alt": "Seven reference points for setting an activation metric: the median activation rate with its top and bottom quartiles, the average rate and the share of users who never reach core value, how median time to value has compressed across four years, the median time to value across 547 companies, the spread in time to value from the smallest accounts to the largest, median onboarding tour completion with its interquartile range, and checklist completion at three-to-five steps against ten or more, each row carrying its source and verification date",
+      "caption": "What activation looks like when it is measured honestly. Verified 30 September 2026."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is a good activation rate?",
+      "a": "The spread matters more than the middle. The median is 41.7%, the top quartile 71% and the bottom quartile 19%, while another source puts the average at 37.5%. A product at 30% sits below median and above the bottom quartile, and only the range tells you that."
+    },
+    {
+      "q": "Where should the activation threshold go?",
+      "a": "At the first action that predicts a second session, not at the first action you can measure. Signup completion is easy to instrument and predicts almost nothing. The test is whether users who cross your threshold return at a materially higher rate than those who do not."
+    },
+    {
+      "q": "How fast should time to value be?",
+      "a": "Faster than you think, and it depends on deal size. The median across 547 companies is about a day and a half, and the four-year trend has compressed from 8.1 days to 4.2. Smaller accounts expect minutes; the largest expect weeks."
+    },
+    {
+      "q": "Why does my onboarding checklist get abandoned?",
+      "a": "Usually because it has too many steps. Checklists of three to five steps complete at 67%, against 18% for ten or more. Median tour completion is 29%, so most of what gets built is not finished by most users."
+    }
+  ],
+  "cta": {
+    "primary": {
+      "label": "Fix your activation metric with me",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "See the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "schema_types": [
+    "Article",
+    "FAQPage",
+    "Person",
+    "BreadcrumbList"
+  ],
+  "unique_value_statement": "Sets the activation threshold by whether it predicts a second session rather than by what is easy to instrument, and prices the choice against time-to-value figures that differ by three orders of magnitude between small and large accounts.",
+  "verified_on": "2026-09-30",
+  "refreshed_on": "2026-09-30",
+  "changelog": [],
+  "provenance": "authored",
+  "not_affiliated": false,
+  "fx_rate_used": 95.89
+}

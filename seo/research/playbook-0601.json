@@ -1,0 +1,185 @@
+{
+  "page_id": "playbook-0601",
+  "url": "/playbooks/experimentation-program",
+  "archetype": "playbook",
+  "primary_keyword": "experimentation program",
+  "secondary_keywords": [
+    "ab testing program",
+    "experimentation velocity benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-pb-01",
+      "claim": "The median company runs 34 experiments a year while top performers run more than 200",
+      "value": "34",
+      "unit": "experiments",
+      "source_url": "https://www.optimizely.com/field-notes/articles/get-more-wins-experimentation-metrics-for-program-success",
+      "source_title": "Get more wins: experimentation metrics for program success",
+      "source_domain": "optimizely.com",
+      "excerpt": "The median company runs 34 experiments a year, while top performers run 200+.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-02",
+      "claim": "The median company runs two to three A/B tests a month",
+      "value": "2-3",
+      "unit": "tests",
+      "source_url": "https://www.optimizely.com/field-notes/articles/get-more-wins-experimentation-metrics-for-program-success",
+      "source_title": "Get more wins: experimentation metrics for program success",
+      "source_domain": "optimizely.com",
+      "excerpt": "The median company runs 2 to 3 A/B tests per month.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-pb-03",
+      "claim": "A 12% win rate is the figure most often cited from large-scale analysis; a healthy band is 10% to 30%, on a conclusive rate of 35% to 40%",
+      "value": "12",
+      "unit": "%",
+      "source_url": "https://www.optimizely.com/field-notes/guides/127000-experiments/",
+      "source_title": "Lessons learned from 127,000 experiments",
+      "source_domain": "optimizely.com",
+      "excerpt": "The most commonly cited win rate is 12%. A healthy win rate is 10 to 30%, with a healthy conclusive rate of 35 to 40%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-04",
+      "claim": "Impact per test peaks between one and ten tests a year per engineer, and past thirty the expected impact falls by 87%",
+      "value": "87",
+      "unit": "%",
+      "source_url": "https://www.optimizely.com/field-notes/guides/127000-experiments/",
+      "source_title": "Lessons learned from 127,000 experiments",
+      "source_domain": "optimizely.com",
+      "excerpt": "Impact per test peaks at 1-10 annual tests per engineer. Beyond 30 annual tests per engineer, expected impact drops by 87%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-pb-05",
+      "claim": "A survey of 206 companies places most organisations at the foundational or emerging stage of experimentation maturity",
+      "value": "206",
+      "unit": "companies",
+      "source_url": "https://vwo.com/experimentation-program-maturity-report/",
+      "source_title": "Experimentation Program Maturity Report 2024",
+      "source_domain": "vwo.com",
+      "excerpt": "The VWO Experimentation Program Maturity Report, surveying 206 companies, finds the majority at foundational or emerging levels.",
+      "published_on": "2024",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-fx-04",
+      "claim": "More than 300 teams run over 10,000 experiments a year across 750 million users in 186 markets, and 42% get rolled back after a guardrail metric flags a regression",
+      "value": "42",
+      "unit": "%",
+      "source_url": "https://confidence.spotify.com/blog/ab-testing-bandwidth",
+      "source_title": "A/B test bandwidth: the currency of innovation",
+      "source_domain": "confidence.spotify.com",
+      "excerpt": "300+ Spotify teams run 10,000+ experiments per year across 750 million users in 186 markets; 42% are rolled back after guardrail metrics flag a regression.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-fx-05",
+      "claim": "At a 5% baseline, detecting a 50% relative lift needs about 1,700 visitors per variant, a 20% lift about 9,000 and a 10% lift about 36,000",
+      "value": "1700",
+      "unit": "visitors",
+      "source_url": "https://leanexperiments.substack.com/p/sample-size-calculation-for-ab-tests",
+      "source_title": "Sample size calculation for A/B tests",
+      "source_domain": "leanexperiments.substack.com",
+      "excerpt": "A 5% baseline requires roughly 1,700 visitors per variant for a 50% relative lift, ~9,000 for 20% and ~36,000 for 10%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-hub-06",
+      "claim": "Across 2,408 audited tests, 17.4% of A/B tests reached statistical significance with a winning variant",
+      "value": "17.4",
+      "unit": "%",
+      "source_url": "https://www.conversionteam.com/ab-test-win-rate/",
+      "source_title": "A/B Test Win Rate: Benchmarks From 2,288 Audited Tests",
+      "source_domain": "conversionteam.com",
+      "excerpt": "17.4% of A/B tests reached statistical significance with a winning variant across 2,408 tests.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-hub-07",
+      "claim": "Across 90-plus European e-commerce brands, 36.3% of tests produced a statistically significant win",
+      "value": "36.3",
+      "unit": "%",
+      "source_url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "source_title": "E-commerce A/B Test Benchmarks 2026",
+      "source_domain": "advertorialwizard.com",
+      "excerpt": "36.3% produced a statistically significant win across thousands of A/B tests on 90+ European e-commerce brands.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [
+    "Published A/B test win rates do not agree, and the gap is a definition gap rather than a performance one: optimizely.com cites 12% as the most common figure, conversionteam.com reports 17.4% reaching significance with a winning variant across 2,408 audited tests, and advertorialwizard.com reports 36.3% across 90-plus European e-commerce brands. The three differ on whether a win means statistical significance, a positive point estimate, or a shipped change. All three appear on this page with their definitions."
+  ],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-pb-01",
+      "f-pb-03"
+    ],
+    "in_short": [
+      "f-pb-02",
+      "f-pb-04"
+    ],
+    "who_this_is_for": [
+      "f-pb-05"
+    ],
+    "method": [
+      "f-fx-05",
+      "f-pb-02"
+    ],
+    "numbers_and_examples": [
+      "f-pb-03",
+      "f-hub-06",
+      "f-hub-07"
+    ],
+    "pitfalls": [
+      "f-pb-04",
+      "f-fx-04"
+    ],
+    "checklist": [
+      "f-fx-05"
+    ]
+  }
+}

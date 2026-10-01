@@ -1,0 +1,216 @@
+<AnswerBox>
+An activation metric marks the first moment a user gets the thing they came for.
+Put the threshold at the action that predicts a second session. The median
+activation rate is 41.7%, the top quartile 71% and the bottom 19%, and on average
+37.5% of new users activate — so roughly two thirds never reach core value at all.
+</AnswerBox>
+
+<FactTable
+  id="activation-reality"
+  caption="What activation looks like when it is measured honestly"
+  columns={["Reference point", "Figure"]}
+  rows={[
+    { cells: ["Activation rate, median / top quartile / bottom quartile", "41.7% / 71% / 19%"], factId: "f-gh-03" },
+    { cells: ["Average activation, and users never reaching core value", "37.5%; about two thirds"], factId: "f-pb-09" },
+    { cells: ["Median time to value, 2022 against 2026", "8.1 days against 4.2"], factId: "f-pb-06" },
+    { cells: ["Median time to value across 547 companies", "1 day 12 hours 23 minutes"], factId: "f-pb-07" },
+    { cells: ["Time to value, smallest accounts against largest", "11 minutes against 23 days"], factId: "f-pb-08" },
+    { cells: ["Onboarding tour completion, 464 companies", "29% median; middle half 15-55%"], factId: "f-fx-06" },
+    { cells: ["Checklist completion, 3-5 steps against 10+", "67% against 18%"], factId: "f-fx-07" },
+  ]}
+/>
+
+## In short
+
+Five rules, and the first one is the whole job.
+
+Pick the threshold by prediction, not convenience. The right activation event is the
+one after which users come back. Signup completion is trivial to instrument and
+predicts nothing.
+
+Expect the spread to be enormous. A 41.7% median sits between a 19% bottom quartile
+and a 71% top one. Your number means little until you know which part of that range
+your product type lives in.
+
+Time to value has a deadline that shrinks every year. The median has gone from 8.1
+days in 2022 to 4.2 in 2026.
+
+Account size changes the deadline completely, from 11 minutes for the smallest
+accounts to 23 days for the largest.
+
+And shorten the path before improving it. Three-to-five-step checklists complete at
+67%; ten or more complete at 18%.
+
+## Who this is for, and who it is not
+
+This suits a product where new users arrive continuously and some fraction never
+come back. That covers most self-serve software and most consumer apps. It needs
+event tracking good enough to tell a returning user from a new one, which is a lower
+bar than most analytics work.
+
+It suits teams who have an activation number and distrust it. The common case is a
+threshold set at whatever was easy to log, producing a figure that moves without
+anything improving.
+
+It does not suit a product with a long, sales-assisted onboarding where value
+arrives after a managed implementation. At 23 days to value for the largest
+accounts, activation stops being a product metric and becomes a delivery one. Use a
+milestone plan instead.
+
+It also does not suit a product that has not yet found anyone who wants it.
+Activation measures how reliably you deliver a known value, not whether the value
+exists.
+
+## The method, part one: choosing the metric
+
+Three steps, and the first two are analysis rather than product work.
+
+### 1. List candidate events from the first week
+
+Pull every meaningful action a new user can take in week one. Keep anything a user
+chooses to do. Discard anything the product does to them, and discard signup steps.
+A list of eight to fifteen candidates is normal.
+
+### 2. Rank candidates by second-session lift
+
+For each candidate, compare the return rate of users who did it against users who
+did not. The candidate with the widest gap is your activation event. This is the
+whole selection method, and it takes an afternoon on existing data.
+
+Be suspicious of anything that only correlates because keen users do everything. If
+two candidates have similar lift, prefer the earlier one.
+
+### 3. Set the threshold where the lift appears
+
+Many events have a count that matters: three searches, two uploads, one completed
+profile. Find the count at which the return-rate gap opens, and set the threshold
+there rather than at one.
+
+Two cautions on the count. Set it too high and activation becomes a measure of your
+best users, which is flattering and useless for finding leaks. Set it at one and you
+capture people who tried the feature once and left. The count where the gap opens is
+usually two or three, and it is worth checking each quarter, because it moves when
+the product changes.
+
+### 4. Check the metric survives a cohort split
+
+Before publishing the definition, recompute it for paid and organic users
+separately, and for your two largest acquisition sources. A threshold that predicts
+return for organic users and not for paid ones is measuring intent rather than
+product value, and it will mislead the moment the acquisition mix shifts.
+
+## The method, part two: moving the number
+
+Three more steps, in order of how much they usually return.
+
+### 5. Shorten the path before polishing it
+
+Count the steps between arrival and the activation event. Then remove some. The
+completion evidence is blunt: three to five steps complete at 67% and ten or more at
+18%, so a path cut from eleven steps to five does more than any copy rewrite.
+
+### 6. Set a time-to-value target from your account size
+
+The median is about a day and a half. Smaller accounts expect minutes. If your
+product serves the small end and takes a day, the gap is the problem, and almost
+every fix is removal rather than addition.
+
+### 7. Measure the tour, then consider deleting it
+
+Median tour completion is 29%, with the middle half between 15% and 55%. A tour
+nobody finishes is a cost. Either shorten it until it completes, or replace it with
+a product that needs less explaining.
+
+<FromMyWork exp="exp-005">
+Asking for a bank statement upfront got 35% compliance. Showing a preliminary
+eligibility range first, then asking for the statement to reveal the exact offer,
+took it to 71%. Same ask, reframed from a compliance step into a reward.
+</FromMyWork>
+
+## The numbers to expect
+
+Expect your first honest activation figure to be lower than the one you have been
+reporting. Moving the threshold from signup to a predictive event usually halves it.
+That is a measurement change, not a regression, and saying so once in writing
+prevents a quarter of confusion.
+
+Expect the path-shortening work to produce the largest single jump. The gap between
+67% and 18% completion is a step-count gap, not a persuasion gap.
+
+Expect diminishing returns after that. Once the path is short and the threshold is
+honest, activation moves in single percentage points. The top quartile at 71% is a
+product-fit position rather than an onboarding achievement, and no amount of
+onboarding craft gets a product there if the value takes a week to appear.
+
+Expect time to value to keep tightening. It has halved in four years, from 8.1 days
+to 4.2, which means a target set two years ago is now behind the market. Re-set it
+annually rather than treating it as fixed.
+
+Expect the cohort split to change your conclusions at least once. Paid and organic
+users activate at different rates in almost every product, and a blended figure
+moves when the spend mix moves — which reads as a product change and is not one.
+
+<FromMyWork exp="exp-003">
+Income stability predicted approval far better than declared income. A score built
+from six months of credit consistency separated the top and bottom bands by more
+than 66 percentage points — and it was absent from the routing logic entirely.
+</FromMyWork>
+
+## Pitfalls
+
+Five, and the first is nearly universal.
+
+Setting the threshold at signup. It is easy to log, it rises when marketing spends
+more, and it predicts nothing about whether anyone comes back.
+
+Comparing your figure to a single benchmark. With a 19% bottom quartile and a 71%
+top one, one number cannot tell you where you stand.
+
+Adding onboarding instead of removing steps. Every added step costs completion, and
+the published gap between short and long checklists is wide.
+
+Treating one time-to-value target as universal. Eleven minutes and 23 days are both
+correct, for different account sizes.
+
+Changing the definition quietly. An activation rate that jumps between quarters
+because the threshold moved will be read as performance by everyone who was not in
+the room.
+
+## The checklist
+
+Thirteen items. The first five are analysis; nothing after them is worth doing until
+they are done.
+
+1. Candidate events from week one listed, product-initiated events excluded.
+2. Return rate computed for users who did each candidate and users who did not.
+3. Candidate with the widest second-session lift chosen.
+4. Threshold count set where the return-rate gap opens.
+5. Definition written down, with the date it took effect.
+6. Current activation rate recomputed on the new definition.
+7. Figure placed against the 19% to 71% quartile range, not the median alone.
+8. Steps between arrival and activation counted.
+9. Path reduced toward five steps or fewer.
+10. Time-to-value target set from account size, not from the global median.
+11. Tour completion measured against the 29% median before any redesign.
+12. Paid and organic cohorts reported separately.
+13. Definition changes logged in the changelog, so a step in the chart has a cause.
+
+## Sources and related
+
+Each figure carries its source and the date it was last checked. Two of them
+disagree: a 41.7% median and a 37.5% average come from the same source and are
+different statistics on a skewed distribution, so both appear rather than one being
+presented as the activation rate.
+
+The experimentation playbook is the natural companion, because activation is usually
+the first metric worth testing against. It also moves earlier than revenue, which is
+what makes it readable inside a quarter.
+
+A note on what these figures cover. The activation and time-to-value numbers come
+from onboarding-tool vendors measuring their own customers, so the sample is products
+that already invest in onboarding. That biases the middle of the distribution upward:
+a product with no onboarding work at all is unlikely to appear in the sample at all.
+Read the bottom quartile as a floor among teams already trying, not as the floor.
+
+The glossary entries for activation rate and the aha moment carry the definitions
+this playbook assumes, including which denominator each figure uses.

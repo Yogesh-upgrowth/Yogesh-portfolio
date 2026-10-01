@@ -282,6 +282,36 @@ export const CONTRACTS: Record<string, ArchetypeContract> = {
     words: [1800, 3000], section: [120, 400],
     requiredSchema: ["Article", ...PERSON_CRUMB],
     sibling: 0.4,
+    // Evidence-bearing only, as elsewhere. `who_this_is_for` is an audience
+    // judgement, `checklist` restates the method, and the rest are layout — a
+    // required fact behind any of them invites an invented one. The playbook had
+    // no requiredBlocks at all, which meant G01 checked nothing on the archetype
+    // the whole site's authority rests on.
+    requiredBlocks: [
+      "answer_box",
+      "in_short",
+      "method",
+      "numbers_and_examples",
+      "pitfalls",
+    ],
+    sectionsContract: [
+      "answer_box",
+      "in_short",
+      "who_this_is_for",
+      "method",
+      "numbers_and_examples",
+      "template_or_tool",
+      "from_my_work",
+      "pitfalls",
+      "checklist",
+      "faq",
+      "sources",
+    ],
+    mustNot: [
+      "opening with history or definitions",
+      "exceeding 3,000 words",
+      "overlapping more than 40% with any other playbook",
+    ],
     uniquenessNotes: "<=0.40 vs any other playbook; <=0.45 vs the related growth or decision page (01 §B10).",
   },
   glossary: {

@@ -1,0 +1,529 @@
+{
+  "batch_id": "w1-playbook-01",
+  "wave": 1,
+  "verified_on": "2026-09-30",
+  "fx_rate": 95.89,
+  "default_cta": {
+    "primary": {
+      "label": "Run a growth playbook with me",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "facts": {
+    "f-hub-06": {
+      "fact_id": "f-hub-06",
+      "claim": "Across 2,408 audited tests, 17.4% of A/B tests reached statistical significance with a winning variant",
+      "value": "17.4",
+      "unit": "%",
+      "source_url": "https://www.conversionteam.com/ab-test-win-rate/",
+      "source_title": "A/B Test Win Rate: Benchmarks From 2,288 Audited Tests",
+      "source_domain": "conversionteam.com",
+      "excerpt": "17.4% of A/B tests reached statistical significance with a winning variant across 2,408 tests.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-hub-07": {
+      "fact_id": "f-hub-07",
+      "claim": "Across 90-plus European e-commerce brands, 36.3% of tests produced a statistically significant win",
+      "value": "36.3",
+      "unit": "%",
+      "source_url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "source_title": "E-commerce A/B Test Benchmarks 2026",
+      "source_domain": "advertorialwizard.com",
+      "excerpt": "36.3% produced a statistically significant win across thousands of A/B tests on 90+ European e-commerce brands.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-fx-04": {
+      "fact_id": "f-fx-04",
+      "claim": "More than 300 teams run over 10,000 experiments a year across 750 million users in 186 markets, and 42% get rolled back after a guardrail metric flags a regression",
+      "value": "42",
+      "unit": "%",
+      "source_url": "https://confidence.spotify.com/blog/ab-testing-bandwidth",
+      "source_title": "A/B test bandwidth: the currency of innovation",
+      "source_domain": "confidence.spotify.com",
+      "excerpt": "300+ Spotify teams run 10,000+ experiments per year across 750 million users in 186 markets; 42% are rolled back after guardrail metrics flag a regression.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-fx-05": {
+      "fact_id": "f-fx-05",
+      "claim": "At a 5% baseline, detecting a 50% relative lift needs about 1,700 visitors per variant, a 20% lift about 9,000 and a 10% lift about 36,000",
+      "value": "1700",
+      "unit": "visitors",
+      "source_url": "https://leanexperiments.substack.com/p/sample-size-calculation-for-ab-tests",
+      "source_title": "Sample size calculation for A/B tests",
+      "source_domain": "leanexperiments.substack.com",
+      "excerpt": "A 5% baseline requires roughly 1,700 visitors per variant for a 50% relative lift, ~9,000 for 20% and ~36,000 for 10%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-fx-06": {
+      "fact_id": "f-fx-06",
+      "claim": "Across 464 companies the median onboarding tour completion is 29%, with the middle half between 15% and 55%",
+      "value": "29",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "Data from 464 companies shows median tour completion is 29% per company, with the middle half running 15% to 55%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-fx-07": {
+      "fact_id": "f-fx-07",
+      "claim": "Onboarding checklists of three to five steps complete at 67%, against 18% for checklists of ten steps or more",
+      "value": "67",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "3-5 step onboarding checklists complete at 67% vs 18% for 10+ step checklists.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-gh-03": {
+      "fact_id": "f-gh-03",
+      "claim": "Median activation sits at 41.7%, with the top quartile at 71% and the bottom at 19% — a spread wide enough that the median judges almost nobody",
+      "value": "41.7",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "The median activation rate is 41.7%, with top-quartile products at 71% and bottom quartile at 19%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-01": {
+      "fact_id": "f-pb-01",
+      "claim": "The median company runs 34 experiments a year while top performers run more than 200",
+      "value": "34",
+      "unit": "experiments",
+      "source_url": "https://www.optimizely.com/field-notes/articles/get-more-wins-experimentation-metrics-for-program-success",
+      "source_title": "Get more wins: experimentation metrics for program success",
+      "source_domain": "optimizely.com",
+      "excerpt": "The median company runs 34 experiments a year, while top performers run 200+.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-02": {
+      "fact_id": "f-pb-02",
+      "claim": "The median company runs two to three A/B tests a month",
+      "value": "2-3",
+      "unit": "tests",
+      "source_url": "https://www.optimizely.com/field-notes/articles/get-more-wins-experimentation-metrics-for-program-success",
+      "source_title": "Get more wins: experimentation metrics for program success",
+      "source_domain": "optimizely.com",
+      "excerpt": "The median company runs 2 to 3 A/B tests per month.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-pb-03": {
+      "fact_id": "f-pb-03",
+      "claim": "A 12% win rate is the figure most often cited from large-scale analysis; a healthy band is 10% to 30%, on a conclusive rate of 35% to 40%",
+      "value": "12",
+      "unit": "%",
+      "source_url": "https://www.optimizely.com/field-notes/guides/127000-experiments/",
+      "source_title": "Lessons learned from 127,000 experiments",
+      "source_domain": "optimizely.com",
+      "excerpt": "The most commonly cited win rate is 12%. A healthy win rate is 10 to 30%, with a healthy conclusive rate of 35 to 40%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-04": {
+      "fact_id": "f-pb-04",
+      "claim": "Impact per test peaks between one and ten tests a year per engineer, and past thirty the expected impact falls by 87%",
+      "value": "87",
+      "unit": "%",
+      "source_url": "https://www.optimizely.com/field-notes/guides/127000-experiments/",
+      "source_title": "Lessons learned from 127,000 experiments",
+      "source_domain": "optimizely.com",
+      "excerpt": "Impact per test peaks at 1-10 annual tests per engineer. Beyond 30 annual tests per engineer, expected impact drops by 87%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-05": {
+      "fact_id": "f-pb-05",
+      "claim": "A survey of 206 companies places most organisations at the foundational or emerging stage of experimentation maturity",
+      "value": "206",
+      "unit": "companies",
+      "source_url": "https://vwo.com/experimentation-program-maturity-report/",
+      "source_title": "Experimentation Program Maturity Report 2024",
+      "source_domain": "vwo.com",
+      "excerpt": "The VWO Experimentation Program Maturity Report, surveying 206 companies, finds the majority at foundational or emerging levels.",
+      "published_on": "2024",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-pb-06": {
+      "fact_id": "f-pb-06",
+      "claim": "Median time to value has compressed from 8.1 days in 2022 to 4.2 days in 2026",
+      "value": "4.2",
+      "unit": "days",
+      "source_url": "https://visionary-marketing.co.uk/blog/customer-onboarding-statistics-2026",
+      "source_title": "SaaS onboarding benchmarks 2026",
+      "source_domain": "visionary-marketing.co.uk",
+      "excerpt": "Median SaaS time-to-value has compressed from 8.1 days in 2022 to 4.2 days in 2026.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-pb-07": {
+      "fact_id": "f-pb-07",
+      "claim": "Across 547 companies the median time to value is one day, twelve hours and twenty-three minutes",
+      "value": "1.5",
+      "unit": "days",
+      "source_url": "https://userpilot.com/blog/minimum-viable-onboarding/",
+      "source_title": "Minimum viable onboarding",
+      "source_domain": "userpilot.com",
+      "excerpt": "Userpilot's benchmark across 547 SaaS companies places the median time to value at 1 day, 12 hours and 23 minutes.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-pb-08": {
+      "fact_id": "f-pb-08",
+      "claim": "Time to value ranges from 11 minutes for the smallest accounts to 23 days for accounts above 100,000 dollars",
+      "value": "11",
+      "unit": "minutes",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "Time-to-value medians range from 11 minutes for sub-$5K ARR accounts to 23 days for $100K+ accounts.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-pb-09": {
+      "fact_id": "f-pb-09",
+      "claim": "Average activation is 37.5%, meaning roughly two thirds of new users never reach the product's core value",
+      "value": "37.5",
+      "unit": "%",
+      "source_url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "source_title": "Onboarding metrics that predict revenue activation",
+      "source_domain": "usetandem.ai",
+      "excerpt": "The average SaaS activation rate is 37.5%, meaning roughly two-thirds of new users never experience the core value proposition.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  },
+  "pages": [
+    {
+      "id": "playbook-0601",
+      "url": "/playbooks/experimentation-program",
+      "archetype": "playbook",
+      "hub": "playbooks",
+      "funnel": "MOFU",
+      "title": "Experimentation Program: Build One That Earns Its Cost",
+      "meta_description": "How to build an experimentation program: the velocity to aim for, the win rate to expect, and why more tests per engineer makes each one worth less.",
+      "h1": "How to build an experimentation program",
+      "primary_keyword": "experimentation program",
+      "secondary_keywords": [
+        "ab testing program",
+        "experimentation velocity benchmark"
+      ],
+      "entity_a": "experimentation-program",
+      "facts": [
+        "f-pb-01",
+        "f-pb-02",
+        "f-pb-03",
+        "f-pb-04",
+        "f-pb-05",
+        "f-fx-04",
+        "f-fx-05",
+        "f-hub-06",
+        "f-hub-07"
+      ],
+      "experience": [
+        "exp-009",
+        "exp-047"
+      ],
+      "links": [
+        {
+          "url": "/glossary/omtm",
+          "anchor": "the OMTM entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/retention",
+          "anchor": "the retention benchmarks",
+          "role": "reference"
+        },
+        {
+          "url": "/playbooks/activation-metric",
+          "anchor": "the activation metric playbook",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/conversion-rate",
+          "anchor": "the conversion rate entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/playbooks",
+          "anchor": "the playbooks",
+          "role": "hub"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a growth and monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#experimentation-reality",
+          "alt": "Eight reference points for sizing an experimentation program: the median and top-performer annual test counts, the median monthly test rate, the commonly cited win rate with its healthy band and conclusive rate, the point at which impact per test peaks against the 87% drop past thirty tests per engineer, the share of experiments rolled back on a guardrail regression at one large platform, the visitors per variant needed at a 5% baseline for three effect sizes, and an audited significance rate, each row carrying its source and verification date",
+          "caption": "What a working programme actually produces. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "How many experiments should we be running?",
+          "a": "Fewer than the ambitious answer. The median company runs 34 a year, about two to three a month, and top performers exceed 200. But impact per test peaks between one and ten tests a year per engineer and falls 87% past thirty, so the target is tests per engineer, not tests per quarter."
+        },
+        {
+          "q": "What win rate should we expect?",
+          "a": "Between 10% and 30%, with 12% the figure most often cited from large-scale analysis. The more useful number is the conclusive rate — wins and losses combined — which should sit at 35% to 40%. A programme with a high win rate and a low conclusive rate is testing only safe changes."
+        },
+        {
+          "q": "Is a losing test a failed test?",
+          "a": "No, and a programme that treats it that way will stop shipping anything interesting. At one platform running more than 10,000 experiments a year, 42% get rolled back after a guardrail metric flags a regression. Those are the tests doing the most work."
+        },
+        {
+          "q": "When is our traffic too low to test?",
+          "a": "When the sample size the effect requires exceeds what you can gather in a month. At a 5% baseline, a 50% relative lift needs about 1,700 visitors per variant, a 20% lift about 9,000, and a 10% lift about 36,000. Small products can only detect large effects."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "Person",
+        "BreadcrumbList"
+      ],
+      "cta": {
+        "primary": {
+          "label": "Set up an experimentation program with me",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "See the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "unique_value": "Sizes the programme by tests per engineer rather than tests per quarter, using the published finding that impact per test falls 87% past thirty a year — the opposite of the velocity advice every other guide gives.",
+      "contradictions": [
+        "Published A/B test win rates do not agree, and the gap is a definition gap rather than a performance one: optimizely.com cites 12% as the most common figure, conversionteam.com reports 17.4% reaching significance with a winning variant across 2,408 audited tests, and advertorialwizard.com reports 36.3% across 90-plus European e-commerce brands. The three differ on whether a win means statistical significance, a positive point estimate, or a shipped change. All three appear on this page with their definitions."
+      ],
+      "block_coverage": {
+        "answer_box": [
+          "f-pb-01",
+          "f-pb-03"
+        ],
+        "in_short": [
+          "f-pb-02",
+          "f-pb-04"
+        ],
+        "who_this_is_for": [
+          "f-pb-05"
+        ],
+        "method": [
+          "f-fx-05",
+          "f-pb-02"
+        ],
+        "numbers_and_examples": [
+          "f-pb-03",
+          "f-hub-06",
+          "f-hub-07"
+        ],
+        "pitfalls": [
+          "f-pb-04",
+          "f-fx-04"
+        ],
+        "checklist": [
+          "f-fx-05"
+        ]
+      },
+      "body": "\n<AnswerBox>\nAn experimentation program earns its cost once you can reach a sample size that\nsettles a question. Aim for the median of about 34 tests a year before aiming\nhigher. Expect a win rate between 10% and 30%. Judge the programme on its\nconclusive rate, not its wins. Most teams chase volume and skip the maths.\n</AnswerBox>\n\n<FactTable\n  id=\"experimentation-reality\"\n  caption=\"What a working programme actually produces\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Annual tests, median against top performers\", \"34 against 200+\"], factId: \"f-pb-01\" },\n    { cells: [\"Monthly tests, median company\", \"2 to 3\"], factId: \"f-pb-02\" },\n    { cells: [\"Win rate, commonly cited / healthy band / conclusive rate\", \"12% / 10-30% / 35-40%\"], factId: \"f-pb-03\" },\n    { cells: [\"Impact per test, peak and the drop past 30 per engineer\", \"peaks at 1-10 a year; falls 87%\"], factId: \"f-pb-04\" },\n    { cells: [\"Experiments rolled back on a guardrail regression\", \"42% of 10,000+ a year\"], factId: \"f-fx-04\" },\n    { cells: [\"Visitors per variant at a 5% baseline, 50% / 20% / 10% lift\", \"1,700 / 9,000 / 36,000\"], factId: \"f-fx-05\" },\n    { cells: [\"Tests reaching significance with a winner, 2,408 audited\", \"17.4%\"], factId: \"f-hub-06\" },\n    { cells: [\"Tests producing a significant win, 90+ e-commerce brands\", \"36.3%\"], factId: \"f-hub-07\" },\n    { cells: [\"Organisations at foundational or emerging maturity\", \"most of 206 surveyed\"], factId: \"f-pb-05\" },\n  ]}\n/>\n\n## In short\n\nFive things decide whether a programme pays for itself.\n\nSample size comes first. At a 5% baseline, a 50% relative lift needs about 1,700\nvisitors per variant. A 20% lift needs about 9,000. A 10% lift needs about 36,000.\nWithout the third, small effects are not a question you can answer. Running the test\nanyway just makes noise look like evidence.\n\nVelocity has a ceiling per person, not per team. Impact per test peaks between one\nand ten tests a year per engineer. Past thirty it drops 87%.\n\nThe conclusive rate beats the win rate. Wins and losses together should reach 35%\nto 40%. Below that, most tests cannot move anything either way.\n\nRollbacks are output, not failure. And maturity binds hardest: of 206 companies\nsurveyed, most sit at the foundational or emerging stage.\n\n## Who this is for, and who it is not\n\nThis suits a team with enough traffic to settle a question inside a month, on a\nsurface where one change can be isolated. A busiest page seeing a few hundred visitors a\nweek puts this out of reach for now. Qualitative research and judgement are the\nhonest alternatives.\n\nIt also suits teams already running tests who cannot tell whether it is working.\nThe symptom is familiar: a dashboard full of wins, a revenue line that has not\nmoved. That is what a high win rate on a low conclusive rate looks like.\n\nIt does not suit teams whose real problem is that nobody knows what to build. A\nprogramme settles disagreements about size. It does not supply a hypothesis. Most\norganisations sit at foundational or emerging maturity, and at that stage the fix\nis a working metrics pipeline, not more tests.\n\n## The method\n\nSix steps, each with a number that tells you whether to continue.\n\n### 1. Compute your detectable effect before designing anything\n\nStart with two numbers: baseline conversion, and weekly traffic on the surface you\nwant to test. Then work out the smallest relative lift four weeks could detect. At\na 5% baseline, four weeks at 2,000 weekly visitors per variant reaches about the\n9,000 needed for a 20% lift. It does not come close to the 36,000 a 10% lift needs.\n\nSay the answer is \"only effects above 30%\". That is the programme's resolution.\nDesign tests that could plausibly move things that far. Stop proposing copy tweaks.\n\nWrite the number on the wall. Every test proposal gets checked against it first,\nand about half will fail that check. That is the arithmetic doing its job.\n\n### 2. Set the cadence from headcount, not ambition\n\nStart at the median of two to three tests a month. Hold there until the pipeline\nruns reliably. The temptation is the 200-a-year figure top performers reach. But\nimpact per test peaks between one and ten a year per engineer, so a small team at\n200 is running 200 weak tests.\n\nDivide instead. Count engineers who can ship a test, multiply by ten, and treat\nthat as the annual ceiling. Four engineers means forty tests a year, which is just\nabove the median and well inside the range where each one still matters.\n\n### 3. Instrument guardrails before the first test\n\nDecide what must not get worse. Wire it before you need it. At the scale where 42%\nof experiments get rolled back on a guardrail regression, guardrails do more work\nthan the primary metrics.\n\nThree are usually enough: a revenue-adjacent metric, a retention-adjacent one, and\none load or error measure. More than five and nobody reads them.\n\n## The method, part two: running and reading\n\nThree more steps. This is where most programmes lose their results rather than their\nvelocity: the pipeline works, tests ship, and the readings cannot be trusted.\n\n### 4. Run to the pre-computed sample size\n\nNot to significance. Stopping the moment a test turns green is the most common way\nto manufacture a false win. It is also why audited win rates come in low: across\n2,408 tests, 17.4% reached significance with a winner.\n\n### 5. Report the conclusive rate every month\n\nWins, losses and inconclusive, as three numbers. Target 35% to 40% conclusive. A\nmonth of nothing but inconclusive results means underpowered tests or changes too\nsmall to matter. Both are fixable, and neither is bad luck.\n\n### 6. Review the programme quarterly against tests per engineer\n\nNot against tests shipped. Past thirty a year per engineer, the programme is adding\ntests and losing impact. Cut the count and raise the ambition of each one.\n\n## The numbers to expect\n\nExpect to lose most tests. A 12% win rate is the figure most often cited. A healthy\nband runs 10% to 30%, and the audited 17.4% significance rate sits inside it. Budget\nfor a 50% win rate and the programme gets cancelled in its second quarter.\n\nExpect the first three months to produce process, not results. At two to three tests\na month, a quarter is six to nine tests. One or two will be conclusive wins.\n\nExpect the sample size arithmetic to kill about half the proposed tests before they\nrun. That is the arithmetic working, not an obstacle to route around.\n\nExpect the biggest single gain to come from fixing measurement rather than from any\ntest. Most teams at foundational maturity find that their baseline numbers disagree\nbetween two tools, and no experiment result is readable until that is settled.\n\n<FromMyWork exp=\"exp-009\">\nTwo weeks went into assembling a clean dataset of roughly 22,000 prior applications\nbefore proposing anything. The target set afterwards, 70% disbursement against an\nindustry range of 20 to 35%, was chosen to force a different operating model rather\nthan to be achievable.\n</FromMyWork>\n\n<FromMyWork exp=\"exp-047\">\nThe habit that compounds is writing the expected result down before the test runs.\nIt converts an argument about whether a number is good into a check against\nsomething already agreed, and it takes about a minute.\n</FromMyWork>\n\n## Pitfalls\n\nSix, and the first two account for most wasted programmes.\n\nTesting effects smaller than your traffic can detect. If 36,000 visitors per\nvariant is out of reach, a 10% lift is not a question you can answer, and running\nthe test anyway produces a number that feels like evidence.\n\nStopping early. A test watched daily and stopped on the first green day has no\nerror rate you can quote.\n\nOptimising the win rate. It is the easiest metric to game — test only safe changes\nand it rises while the conclusive rate falls.\n\nChasing top-performer volume. Past thirty tests a year per engineer, expected\nimpact falls 87%, so the volume arrives and the results do not.\n\nTreating rollbacks as failures. At 42% rollback on guardrail regressions, a\nprogramme with no rollbacks is not catching regressions.\n\nRunning without guardrails, which turns every rollback into an argument about\nwhether the regression was real.\n\n## The checklist\n\nTwelve items, in the order they have to happen. Copy it and work down. Anything\nunticked above item six means the programme is not ready to run a test yet, however\nmany ideas are queued.\n\n1. Baseline conversion recorded for the surface under test.\n2. Weekly traffic per variant recorded.\n3. Minimum detectable effect computed for a four-week run.\n4. Test ideas filtered to effects above that threshold.\n5. Guardrail metrics named and instrumented.\n6. Sample size per variant fixed in writing before launch.\n7. Stopping rule written down, with no daily peeking.\n8. Assignment checked for leakage across variants.\n9. Results classified as win, loss or inconclusive.\n10. Conclusive rate reported monthly against the 35% to 40% band.\n11. Tests per engineer per year tracked against the one-to-ten peak.\n12. Rollback count reported as a positive signal, not a defect count.\n\n## Sources and related\n\nEvery figure carries its source and the date it was last checked. Where published\nwin rates disagree — 12%, 17.4% and 36.3% across three studies — the disagreement\nis a definition gap rather than a performance gap, and all three appear above with\nwhat each one counts as a win.\n\nThe activation metric playbook is the usual next step. Activation is the metric most\nprogrammes should test against first, because it moves earlier than revenue and\nresponds to work a product team controls.\n\nOne note on the sources. The velocity and win-rate figures come from\nexperimentation vendors reporting on their own platforms, which is the best evidence\navailable and still a selected sample: teams that buy an experimentation tool are\nnot a random sample of teams. The direction of the findings is well supported. Treat\nthe exact percentages as the centre of a range rather than as a target.\n"
+    },
+    {
+      "id": "playbook-0602",
+      "url": "/playbooks/activation-metric",
+      "archetype": "playbook",
+      "hub": "playbooks",
+      "funnel": "MOFU",
+      "title": "Activation Metric: How to Choose and Move It",
+      "meta_description": "Choosing an activation metric: where to put the threshold, what time to value to expect by account size, and why step count beats copy.",
+      "h1": "How to choose and move an activation metric",
+      "primary_keyword": "activation metric",
+      "secondary_keywords": [
+        "activation rate benchmark",
+        "time to value"
+      ],
+      "entity_a": "activation-metric",
+      "facts": [
+        "f-pb-06",
+        "f-pb-07",
+        "f-pb-08",
+        "f-pb-09",
+        "f-gh-03",
+        "f-fx-06",
+        "f-fx-07"
+      ],
+      "experience": [
+        "exp-005",
+        "exp-003"
+      ],
+      "links": [
+        {
+          "url": "/glossary/activation-rate",
+          "anchor": "the activation rate entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/aha-moment",
+          "anchor": "the aha moment entry",
+          "role": "lateral"
+        },
+        {
+          "url": "/benchmarks/retention/b2b-saas",
+          "anchor": "B2B SaaS retention benchmarks",
+          "role": "reference"
+        },
+        {
+          "url": "/playbooks/experimentation-program",
+          "anchor": "the experimentation playbook",
+          "role": "lateral"
+        },
+        {
+          "url": "/playbooks",
+          "anchor": "the playbooks",
+          "role": "hub"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a growth and monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#activation-reality",
+          "alt": "Seven reference points for setting an activation metric: the median activation rate with its top and bottom quartiles, the average rate and the share of users who never reach core value, how median time to value has compressed across four years, the median time to value across 547 companies, the spread in time to value from the smallest accounts to the largest, median onboarding tour completion with its interquartile range, and checklist completion at three-to-five steps against ten or more, each row carrying its source and verification date",
+          "caption": "What activation looks like when it is measured honestly. Verified 30 September 2026."
+        }
+      ],
+      "faq": [
+        {
+          "q": "What is a good activation rate?",
+          "a": "The spread matters more than the middle. The median is 41.7%, the top quartile 71% and the bottom quartile 19%, while another source puts the average at 37.5%. A product at 30% sits below median and above the bottom quartile, and only the range tells you that."
+        },
+        {
+          "q": "Where should the activation threshold go?",
+          "a": "At the first action that predicts a second session, not at the first action you can measure. Signup completion is easy to instrument and predicts almost nothing. The test is whether users who cross your threshold return at a materially higher rate than those who do not."
+        },
+        {
+          "q": "How fast should time to value be?",
+          "a": "Faster than you think, and it depends on deal size. The median across 547 companies is about a day and a half, and the four-year trend has compressed from 8.1 days to 4.2. Smaller accounts expect minutes; the largest expect weeks."
+        },
+        {
+          "q": "Why does my onboarding checklist get abandoned?",
+          "a": "Usually because it has too many steps. Checklists of three to five steps complete at 67%, against 18% for ten or more. Median tour completion is 29%, so most of what gets built is not finished by most users."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "FAQPage",
+        "Person",
+        "BreadcrumbList"
+      ],
+      "cta": {
+        "primary": {
+          "label": "Fix your activation metric with me",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "See the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "unique_value": "Sets the activation threshold by whether it predicts a second session rather than by what is easy to instrument, and prices the choice against time-to-value figures that differ by three orders of magnitude between small and large accounts.",
+      "contradictions": [
+        "Published activation rates disagree on the central figure: usetandem.ai gives a 41.7% median with quartiles at 71% and 19%, and also reports a 37.5% average. A median and an average of a skewed distribution are not the same statistic, and neither source states which products entered the sample. Both appear on this page rather than one being chosen."
+      ],
+      "block_coverage": {
+        "answer_box": [
+          "f-gh-03",
+          "f-pb-09"
+        ],
+        "in_short": [
+          "f-pb-06",
+          "f-fx-07"
+        ],
+        "who_this_is_for": [
+          "f-pb-08"
+        ],
+        "method": [
+          "f-pb-07",
+          "f-fx-06"
+        ],
+        "numbers_and_examples": [
+          "f-pb-07",
+          "f-pb-08"
+        ],
+        "pitfalls": [
+          "f-fx-07",
+          "f-fx-06"
+        ],
+        "checklist": [
+          "f-gh-03"
+        ]
+      },
+      "body": "\n<AnswerBox>\nAn activation metric marks the first moment a user gets the thing they came for.\nPut the threshold at the action that predicts a second session. The median\nactivation rate is 41.7%, the top quartile 71% and the bottom 19%, and on average\n37.5% of new users activate — so roughly two thirds never reach core value at all.\n</AnswerBox>\n\n<FactTable\n  id=\"activation-reality\"\n  caption=\"What activation looks like when it is measured honestly\"\n  columns={[\"Reference point\", \"Figure\"]}\n  rows={[\n    { cells: [\"Activation rate, median / top quartile / bottom quartile\", \"41.7% / 71% / 19%\"], factId: \"f-gh-03\" },\n    { cells: [\"Average activation, and users never reaching core value\", \"37.5%; about two thirds\"], factId: \"f-pb-09\" },\n    { cells: [\"Median time to value, 2022 against 2026\", \"8.1 days against 4.2\"], factId: \"f-pb-06\" },\n    { cells: [\"Median time to value across 547 companies\", \"1 day 12 hours 23 minutes\"], factId: \"f-pb-07\" },\n    { cells: [\"Time to value, smallest accounts against largest\", \"11 minutes against 23 days\"], factId: \"f-pb-08\" },\n    { cells: [\"Onboarding tour completion, 464 companies\", \"29% median; middle half 15-55%\"], factId: \"f-fx-06\" },\n    { cells: [\"Checklist completion, 3-5 steps against 10+\", \"67% against 18%\"], factId: \"f-fx-07\" },\n  ]}\n/>\n\n## In short\n\nFive rules, and the first one is the whole job.\n\nPick the threshold by prediction, not convenience. The right activation event is the\none after which users come back. Signup completion is trivial to instrument and\npredicts nothing.\n\nExpect the spread to be enormous. A 41.7% median sits between a 19% bottom quartile\nand a 71% top one. Your number means little until you know which part of that range\nyour product type lives in.\n\nTime to value has a deadline that shrinks every year. The median has gone from 8.1\ndays in 2022 to 4.2 in 2026.\n\nAccount size changes the deadline completely, from 11 minutes for the smallest\naccounts to 23 days for the largest.\n\nAnd shorten the path before improving it. Three-to-five-step checklists complete at\n67%; ten or more complete at 18%.\n\n## Who this is for, and who it is not\n\nThis suits a product where new users arrive continuously and some fraction never\ncome back. That covers most self-serve software and most consumer apps. It needs\nevent tracking good enough to tell a returning user from a new one, which is a lower\nbar than most analytics work.\n\nIt suits teams who have an activation number and distrust it. The common case is a\nthreshold set at whatever was easy to log, producing a figure that moves without\nanything improving.\n\nIt does not suit a product with a long, sales-assisted onboarding where value\narrives after a managed implementation. At 23 days to value for the largest\naccounts, activation stops being a product metric and becomes a delivery one. Use a\nmilestone plan instead.\n\nIt also does not suit a product that has not yet found anyone who wants it.\nActivation measures how reliably you deliver a known value, not whether the value\nexists.\n\n## The method, part one: choosing the metric\n\nThree steps, and the first two are analysis rather than product work.\n\n### 1. List candidate events from the first week\n\nPull every meaningful action a new user can take in week one. Keep anything a user\nchooses to do. Discard anything the product does to them, and discard signup steps.\nA list of eight to fifteen candidates is normal.\n\n### 2. Rank candidates by second-session lift\n\nFor each candidate, compare the return rate of users who did it against users who\ndid not. The candidate with the widest gap is your activation event. This is the\nwhole selection method, and it takes an afternoon on existing data.\n\nBe suspicious of anything that only correlates because keen users do everything. If\ntwo candidates have similar lift, prefer the earlier one.\n\n### 3. Set the threshold where the lift appears\n\nMany events have a count that matters: three searches, two uploads, one completed\nprofile. Find the count at which the return-rate gap opens, and set the threshold\nthere rather than at one.\n\nTwo cautions on the count. Set it too high and activation becomes a measure of your\nbest users, which is flattering and useless for finding leaks. Set it at one and you\ncapture people who tried the feature once and left. The count where the gap opens is\nusually two or three, and it is worth checking each quarter, because it moves when\nthe product changes.\n\n### 4. Check the metric survives a cohort split\n\nBefore publishing the definition, recompute it for paid and organic users\nseparately, and for your two largest acquisition sources. A threshold that predicts\nreturn for organic users and not for paid ones is measuring intent rather than\nproduct value, and it will mislead the moment the acquisition mix shifts.\n\n## The method, part two: moving the number\n\nThree more steps, in order of how much they usually return.\n\n### 5. Shorten the path before polishing it\n\nCount the steps between arrival and the activation event. Then remove some. The\ncompletion evidence is blunt: three to five steps complete at 67% and ten or more at\n18%, so a path cut from eleven steps to five does more than any copy rewrite.\n\n### 6. Set a time-to-value target from your account size\n\nThe median is about a day and a half. Smaller accounts expect minutes. If your\nproduct serves the small end and takes a day, the gap is the problem, and almost\nevery fix is removal rather than addition.\n\n### 7. Measure the tour, then consider deleting it\n\nMedian tour completion is 29%, with the middle half between 15% and 55%. A tour\nnobody finishes is a cost. Either shorten it until it completes, or replace it with\na product that needs less explaining.\n\n<FromMyWork exp=\"exp-005\">\nAsking for a bank statement upfront got 35% compliance. Showing a preliminary\neligibility range first, then asking for the statement to reveal the exact offer,\ntook it to 71%. Same ask, reframed from a compliance step into a reward.\n</FromMyWork>\n\n## The numbers to expect\n\nExpect your first honest activation figure to be lower than the one you have been\nreporting. Moving the threshold from signup to a predictive event usually halves it.\nThat is a measurement change, not a regression, and saying so once in writing\nprevents a quarter of confusion.\n\nExpect the path-shortening work to produce the largest single jump. The gap between\n67% and 18% completion is a step-count gap, not a persuasion gap.\n\nExpect diminishing returns after that. Once the path is short and the threshold is\nhonest, activation moves in single percentage points. The top quartile at 71% is a\nproduct-fit position rather than an onboarding achievement, and no amount of\nonboarding craft gets a product there if the value takes a week to appear.\n\nExpect time to value to keep tightening. It has halved in four years, from 8.1 days\nto 4.2, which means a target set two years ago is now behind the market. Re-set it\nannually rather than treating it as fixed.\n\nExpect the cohort split to change your conclusions at least once. Paid and organic\nusers activate at different rates in almost every product, and a blended figure\nmoves when the spend mix moves — which reads as a product change and is not one.\n\n<FromMyWork exp=\"exp-003\">\nIncome stability predicted approval far better than declared income. A score built\nfrom six months of credit consistency separated the top and bottom bands by more\nthan 66 percentage points — and it was absent from the routing logic entirely.\n</FromMyWork>\n\n## Pitfalls\n\nFive, and the first is nearly universal.\n\nSetting the threshold at signup. It is easy to log, it rises when marketing spends\nmore, and it predicts nothing about whether anyone comes back.\n\nComparing your figure to a single benchmark. With a 19% bottom quartile and a 71%\ntop one, one number cannot tell you where you stand.\n\nAdding onboarding instead of removing steps. Every added step costs completion, and\nthe published gap between short and long checklists is wide.\n\nTreating one time-to-value target as universal. Eleven minutes and 23 days are both\ncorrect, for different account sizes.\n\nChanging the definition quietly. An activation rate that jumps between quarters\nbecause the threshold moved will be read as performance by everyone who was not in\nthe room.\n\n## The checklist\n\nThirteen items. The first five are analysis; nothing after them is worth doing until\nthey are done.\n\n1. Candidate events from week one listed, product-initiated events excluded.\n2. Return rate computed for users who did each candidate and users who did not.\n3. Candidate with the widest second-session lift chosen.\n4. Threshold count set where the return-rate gap opens.\n5. Definition written down, with the date it took effect.\n6. Current activation rate recomputed on the new definition.\n7. Figure placed against the 19% to 71% quartile range, not the median alone.\n8. Steps between arrival and activation counted.\n9. Path reduced toward five steps or fewer.\n10. Time-to-value target set from account size, not from the global median.\n11. Tour completion measured against the 29% median before any redesign.\n12. Paid and organic cohorts reported separately.\n13. Definition changes logged in the changelog, so a step in the chart has a cause.\n\n## Sources and related\n\nEach figure carries its source and the date it was last checked. Two of them\ndisagree: a 41.7% median and a 37.5% average come from the same source and are\ndifferent statistics on a skewed distribution, so both appear rather than one being\npresented as the activation rate.\n\nThe experimentation playbook is the natural companion, because activation is usually\nthe first metric worth testing against. It also moves earlier than revenue, which is\nwhat makes it readable inside a quarter.\n\nA note on what these figures cover. The activation and time-to-value numbers come\nfrom onboarding-tool vendors measuring their own customers, so the sample is products\nthat already invest in onboarding. That biases the middle of the distribution upward:\na product with no onboarding work at all is unlikely to appear in the sample at all.\nRead the bottom quartile as a floor among teams already trying, not as the floor.\n\nThe glossary entries for activation rate and the aha moment carry the definitions\nthis playbook assumes, including which denominator each figure uses.\n"
+    }
+  ]
+}
