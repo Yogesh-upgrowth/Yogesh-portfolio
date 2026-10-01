@@ -90,6 +90,9 @@ LEX = ("https://leanexperiments.substack.com/p/sample-size-calculation-for-ab-te
        "Sample size calculation for A/B tests", "leanexperiments.substack.com", "2026")
 UTD = ("https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
        "Onboarding metrics that predict revenue activation", "usetandem.ai", "2026")
+LRT = ("https://linkrunner.io/blog/install-to-first-revenue-payback-windows-2026",
+       "Install-to-first-revenue timing: mobile app payback windows in 2026",
+       "linkrunner.io", "2026")
 LZW = ("https://www.lazyweb.com/research/how-do-tracked-apps-make-money-subscription-ads-transactions",
        "How do tracked apps actually make money?", "lazyweb.com", "2026")
 
@@ -118,6 +121,14 @@ FIX = [
     fact("f-fx-08", "Among 686 tracked apps, subscriptions are the primary model for 418, or 61%, against advertising for 176, or 26%",
          "61", "%", LZW,
          "Among tracked apps, subscriptions account for 418 of 686 apps (61%), more than double advertising at 176/686 (26%).", False),
+]
+FIX += [
+    fact("f-ih-01", "Across more than 145,000 installs the median time from install to first revenue is about 48 hours, with the 90th percentile near 14 days",
+         "48", "hours", LRT,
+         "Median time from install to first revenue is approximately 48 hours across over 145,000 installs; the 90th percentile stretched to roughly 14 days."),
+    fact("f-ih-02", "About half of users who ever pay do so within two days of installing, and 90% within two weeks",
+         "50", "%", LRT,
+         "Roughly half of revenue-converting users do so within two days of install, and 90% convert within two weeks.", False),
 ]
 POOL.update({f["fact_id"]: f for f in FIX})
 

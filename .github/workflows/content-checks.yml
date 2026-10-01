@@ -1,0 +1,103 @@
+# Content and gate checks for the Next.js app in web/.
+#
+# This exists because of what a green pull request used to mean here: nothing.
+# The only check on PR #2 was a Vercel preview build, so the 20 content gates,
+# the 169 unit tests, the similarity corpus check and the redirect/link audit all
+# ran on one laptop and nowhere else. Two of those gates had been passing
+# everything for the life of the project — gates.ts read fact-usage counts from a
+# file that was never generated, so the §C2 reuse cap and G01's page-specific
+# filter both read every fact as used once. Nothing outside a manual run would
+# ever have caught it.
+#
+# Every step below fails the build on a real problem. `pnpm gates` exits non-zero
+# while any page is short of "ready", which includes the four gates that cannot
+# run in CI (G02 needs outbound HTTP to re-check every source, G18 needs
+# Lighthouse against a built page, G19 and G20 need an LLM judge and SERP data).
+# So the gate step asserts the thing CI can actually assert: zero FAIL and zero
+# BLOCK rows in the report. A skip is not a pass, and this step does not pretend
+# otherwise — it checks that nothing failed, and the report it uploads says what
+# was skipped.
+name: content checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pnpm
+        run: npm install -g pnpm@9
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm check
+
+      - name: Unit tests
+        run: pnpm test
+
+      # Writes seo/data/similarity/report.json, which G04 and G05 read. Without
+      # it those two gates skip, so it has to run before the gates.
+      - name: Similarity corpus check
+        run: pnpm similarity
+
+      - name: Content gates
+        run: |
+          set -o pipefail
+          # pnpm gates exits non-zero while any page is not "ready", and no page
+          # can be ready in CI (see the header). Capture the status, then judge
+          # the report rather than the exit code.
+          pnpm gates || true
+          report=../reports/wave-all.md
+          if [ ! -f "$report" ]; then
+            echo "::error::gates produced no report — it crashed before writing one"
+            exit 1
+          fi
+          fails=$(grep -cE '\| (FAIL|BLOCK) \|' "$report" || true)
+          echo "gate rows failing or blocked: ${fails:-0}"
+          if [ "${fails:-0}" -ne 0 ]; then
+            echo "::error::${fails} gate row(s) failed or blocked"
+            grep -E '\| (FAIL|BLOCK) \|' "$report" | head -40
+            exit 1
+          fi
+
+      - name: Build
+        run: pnpm build
+
+      # The redirect and internal-link audit needs the built app serving, because
+      # it asks the running server what each URL returns rather than trusting the
+      # content tree. This is the check that catches a 301 onto a 404, and a link
+      # or CTA pointing at a page that does not exist.
+      - name: Redirect and link audit
+        run: |
+          pnpm start -p 3320 &
+          for i in $(seq 1 40); do
+            curl -sf -o /dev/null http://127.0.0.1:3320/ && break
+            sleep 1
+          done
+          pnpm launch:check --base http://127.0.0.1:3320
+
+      - name: Upload gate report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: gate-report
+          path: reports/
+          if-no-files-found: ignore

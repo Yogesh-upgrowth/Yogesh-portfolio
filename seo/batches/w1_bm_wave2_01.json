@@ -1,0 +1,469 @@
+{
+  "batch_id": "w1-bm-wave2-01",
+  "wave": 1,
+  "verified_on": "2026-09-30",
+  "fx_rate": 95.89,
+  "default_cta": {
+    "primary": {
+      "label": "Get a monetisation review",
+      "href": "/work-with-me"
+    },
+    "secondary": {
+      "label": "Browse the benchmarks",
+      "href": "/benchmarks"
+    }
+  },
+  "facts": {
+    "f-bm-14": {
+      "fact_id": "f-bm-14",
+      "claim": "Most apps convert 1% to 2% of installs into a purchase, with retail at 1.38% and travel at 2.41%",
+      "value": "1.38",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-conversion-rate/",
+      "source_title": "Mobile App Conversion Rate Benchmarks",
+      "source_domain": "uxcam.com",
+      "excerpt": "Most mobile apps see install-to-purchase conversion between 1% and 2%. Retail apps 1.38%; travel apps 2.41%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-g-01": {
+      "fact_id": "f-g-01",
+      "claim": "Day-90 in-app purchase ARPU by genre runs 2.43 dollars for casino, 2.13 for midcore and 1.34 for casual",
+      "value": "2.43",
+      "unit": "USD",
+      "source_url": "https://blog.playio.co/arpdau-benchmarks-mobile-games",
+      "source_title": "ARPDAU benchmarks for mobile games",
+      "source_domain": "playio.co",
+      "excerpt": "Casino games have the highest D90 IAP ARPU globally at $2.43, midcore at $2.13, casual at $1.34.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-g-02": {
+      "fact_id": "f-g-02",
+      "claim": "In North America and Europe midcore leads day-90 in-app purchase ARPU at 2.66 dollars, ahead of casino at 2.55",
+      "value": "2.66",
+      "unit": "USD",
+      "source_url": "https://blog.playio.co/arpdau-benchmarks-mobile-games",
+      "source_title": "ARPDAU benchmarks for mobile games",
+      "source_domain": "playio.co",
+      "excerpt": "In North America and Europe, midcore games lead with D90 IAP ARPU of $2.66, compared to $2.55 for casino games.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-g-03": {
+      "fact_id": "f-g-03",
+      "claim": "About 4.2% of mobile gamers make an in-app purchase, up from 3.9% a year earlier",
+      "value": "4.2",
+      "unit": "%",
+      "source_url": "https://segwise.ai/blog/mobile-gaming-statistics",
+      "source_title": "Mobile gaming statistics 2026",
+      "source_domain": "segwise.ai",
+      "excerpt": "Approximately 4.2% of mobile gamers make IAPs, up from 3.9% in 2025.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-g-04": {
+      "fact_id": "f-g-04",
+      "claim": "Average in-app purchase per paying user was 16.87 dollars globally in the first quarter of 2026, against 48.21 in the United States",
+      "value": "16.87",
+      "unit": "USD",
+      "source_url": "https://www.cubix.co/blog/mobile-game-revenue-statistics-complete-guide/",
+      "source_title": "Mobile game revenue statistics 2026",
+      "source_domain": "cubix.co",
+      "excerpt": "The average in-app purchase per paying user globally was $16.87 in Q1 2026; in the U.S. ARPPU is $48.21.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-g-05": {
+      "fact_id": "f-g-05",
+      "claim": "India's mobile gaming ARPU was 2.04 dollars in 2025 and is forecast to reach 2.52 by 2030",
+      "value": "2.04",
+      "unit": "USD",
+      "source_url": "https://www.pocketgamer.biz/indias-mobile-games-market-set-to-reach-24bn-by-2029/",
+      "source_title": "India's mobile games market set to reach $24bn by 2029",
+      "source_domain": "pocketgamer.biz",
+      "excerpt": "In India, ARPU was just $2.04 in 2025 and is forecast to reach $2.52 by 2030.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-g-06": {
+      "fact_id": "f-g-06",
+      "claim": "In-app purchases account for 64% of mobile game revenue",
+      "value": "64",
+      "unit": "%",
+      "source_url": "https://segwise.ai/blog/mobile-gaming-statistics",
+      "source_title": "Mobile gaming statistics 2026",
+      "source_domain": "segwise.ai",
+      "excerpt": "In-app purchases account for 64% of mobile game revenue.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-g-07": {
+      "fact_id": "f-g-07",
+      "claim": "India's gaming growth is led by mid-core: strategy revenue grew 77% year on year and card battlers more than 90%",
+      "value": "77",
+      "unit": "%",
+      "source_url": "https://www.pocketgamer.biz/indias-mobile-games-market-set-to-reach-24bn-by-2029/",
+      "source_title": "India's mobile games market set to reach $24bn by 2029",
+      "source_domain": "pocketgamer.biz",
+      "excerpt": "Strategy-genre revenue grew 77% year over year, MOBA titles more than tripled, and card battlers grew over 90%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    "f-t-01": {
+      "fact_id": "f-t-01",
+      "claim": "Only 2.8% of travel app installs end in a completed booking",
+      "value": "2.8",
+      "unit": "%",
+      "source_url": "https://linkrunner.io/blog/metrics-that-matter-travel-hospitality-edition",
+      "source_title": "Metrics that matter: travel and hospitality edition",
+      "source_domain": "linkrunner.io",
+      "excerpt": "Only 2.8% of installs result in completed bookings.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-t-02": {
+      "fact_id": "f-t-02",
+      "claim": "Travel funnel targets run 40% to 60% install-to-search, 2% to 5% search-to-booking and 85% to 95% booking-to-confirmation",
+      "value": "2-5",
+      "unit": "%",
+      "source_url": "https://linkrunner.io/blog/metrics-that-matter-travel-hospitality-edition",
+      "source_title": "Metrics that matter: travel and hospitality edition",
+      "source_domain": "linkrunner.io",
+      "excerpt": "Targets: install-to-search 40-60%, search-to-booking 2-5%, booking-to-confirmation 85-95%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-t-03": {
+      "fact_id": "f-t-03",
+      "claim": "Only 42% of travel app users transact in their first month, although most sign up within seconds",
+      "value": "42",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/travel-app-market/",
+      "source_title": "Travel app benchmarks",
+      "source_domain": "businessofapps.com",
+      "excerpt": "Only 42% of travel app users make transactions in the first month, despite 80% signing up within seconds.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-t-04": {
+      "fact_id": "f-t-04",
+      "claim": "For travel advertisers in-app conversion reaches 20% against 6% on mobile web",
+      "value": "20",
+      "unit": "%",
+      "source_url": "https://www.criteo.com/blog/retail-travel-apps-higher-conversions-mobile/",
+      "source_title": "Retail and travel apps see 4x more conversions than mobile web",
+      "source_domain": "criteo.com",
+      "excerpt": "For travel advertisers, mobile web conversion rates were 6% while in-app conversion rates are as high as 20%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    "f-t-05": {
+      "fact_id": "f-t-05",
+      "claim": "Nearly 40% of trips are booked within fourteen days of departure",
+      "value": "40",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/travel-app-market/",
+      "source_title": "Travel app benchmarks",
+      "source_domain": "businessofapps.com",
+      "excerpt": "Nearly 40% of trips are now booked within 14 days of departure.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    }
+  },
+  "pages": [
+    {
+      "id": "benchmark-0530",
+      "url": "/benchmarks/arpu/gaming",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "Gaming App ARPU Benchmark by Genre (2026)",
+      "meta_description": "Gaming app ARPU benchmarks by genre, with the paying-user share that sets the ceiling and the India figure that sits two orders of magnitude below global.",
+      "h1": "Gaming app ARPU benchmark",
+      "primary_keyword": "gaming app arpu benchmark",
+      "secondary_keywords": [
+        "gaming arpu",
+        "mobile game arppu"
+      ],
+      "entity_a": "arpu",
+      "entity_b": "gaming",
+      "facts": [
+        "f-g-01",
+        "f-g-02",
+        "f-g-03",
+        "f-g-04",
+        "f-g-05",
+        "f-g-06",
+        "f-g-07"
+      ],
+      "experience": [
+        "exp-034"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/benchmarks/arpu",
+          "anchor": "the ARPU benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/arpu",
+          "anchor": "the ARPU definition",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/arppu",
+          "anchor": "ARPPU, the paying-user version",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/india",
+          "anchor": "monetising in India",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#gaming-arpu-table",
+          "alt": "Gaming ARPU reference points: day-90 in-app purchase ARPU for casino, midcore and casual genres globally and the North America and Europe ordering, the share of mobile gamers who ever purchase, average in-app purchase per paying user globally against the United States, India's gaming ARPU and its 2030 forecast, the in-app purchase share of game revenue, and India's fastest-growing genres, each row carrying its source and verification date",
+          "caption": "Gaming ARPU by genre, each row sourced. Verified 30 September 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a gaming monetisation review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good ARPU for a mobile game?",
+          "a": "Genre decides it before anything else. Day-90 in-app purchase ARPU runs $2.43 for casino, $2.13 for midcore and $1.34 for casual, about ₹233, ₹204 and ₹129. A casual game matching a casino figure would be extraordinary rather than well run."
+        },
+        {
+          "q": "Why is ARPU so much lower than ARPPU?",
+          "a": "Because only about 4.2% of mobile gamers ever purchase. Average spend per paying user was $16.87 globally in the first quarter of 2026, about ₹1,618, so dividing by all players rather than payers moves the number by more than twenty times."
+        },
+        {
+          "q": "What should an Indian game expect?",
+          "a": "Far less per user and a different growth mix. India's gaming ARPU was $2.04 in 2025, about ₹196, forecast to reach $2.52 by 2030. The growth is mid-core led, with strategy revenue up 77% year on year."
+        },
+        {
+          "q": "Does advertising revenue belong in this number?",
+          "a": "Not in these figures. In-app purchases account for 64% of mobile game revenue, so an ARPU built only from purchases omits roughly a third of what the category earns."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Separates ARPU from ARPPU with the paying-user share that connects them, so a reader can see that a 4.2% purchase rate — not pricing — sets the ceiling on every genre figure here.",
+      "contradictions": [
+        "Gaming ARPU figures in circulation differ by two orders of magnitude and are not comparable: playio.co reports day-90 in-app purchase ARPU per genre at $1.34 to $2.43, pocketgamer.biz gives India's ARPU as $2.04 for a year, and cubix.co reports a global figure near $94.53. The first is a 90-day per-install measure, the second an annual per-user one, and the third does not state its denominator. Only the first two appear on this page, each labelled with its window."
+      ],
+      "block_coverage": {
+        "answer_box": [
+          "f-g-01",
+          "f-g-03"
+        ],
+        "the_numbers": [
+          "f-g-01",
+          "f-g-02",
+          "f-g-04"
+        ],
+        "why_this_industry_differs": [
+          "f-g-06",
+          "f-g-03"
+        ],
+        "india_layer": [
+          "f-g-05",
+          "f-g-07"
+        ],
+        "what_good_looks_like": [
+          "f-g-02",
+          "f-g-04"
+        ]
+      },
+      "body": "\n<AnswerBox>\nGaming app ARPU benchmarks are set by genre and by how few players ever pay. Day-90\nin-app purchase ARPU runs $1.34 for casual, $2.13 for midcore and $2.43 for casino,\nabout ₹129, ₹204 and ₹233. Only about 4.2% of mobile gamers purchase at all, which is\nwhat holds every one of those figures down.\n</AnswerBox>\n\n<FactTable\n  id=\"gaming-arpu-table\"\n  caption=\"Gaming ARPU by genre, each row sourced\"\n  columns={[\"Measure\", \"Figure\"]}\n  rows={[\n    { cells: [\"Day-90 IAP ARPU: casino / midcore / casual\", \"$2.43 / $2.13 / $1.34 (₹233 / ₹204 / ₹129)\"], factId: \"f-g-01\" },\n    { cells: [\"Day-90 IAP ARPU in NA and Europe, midcore against casino\", \"$2.66 against $2.55 (₹255 against ₹245)\"], factId: \"f-g-02\" },\n    { cells: [\"Mobile gamers who make any in-app purchase\", \"about 4.2%, up from 3.9%\"], factId: \"f-g-03\" },\n    { cells: [\"Average IAP per paying user, global against US\", \"$16.87 against $48.21 (₹1,618 against ₹4,624)\"], factId: \"f-g-04\" },\n    { cells: [\"India gaming ARPU, 2025 and 2030 forecast\", \"$2.04 and $2.52 (₹196 and ₹242)\"], factId: \"f-g-05\" },\n    { cells: [\"In-app purchase share of mobile game revenue\", \"64%\"], factId: \"f-g-06\" },\n    { cells: [\"India's fastest-growing genre revenue\", \"strategy +77%; card battlers +90%\"], factId: \"f-g-07\" },\n  ]}\n/>\n\n## The numbers\n\nRead the genre row first and the paying-user row second, because the second explains\nthe first.\n\nDay-90 in-app purchase ARPU separates casino at $2.43, about ₹233, from casual at\n$1.34, about ₹129 — a gap of roughly 80%. In North America and Europe the order\nchanges: midcore leads at $2.66, about ₹255, ahead of casino at $2.55, about ₹245.\nGenre and region interact, so a single global genre figure is already an average of\ntwo different markets.\n\nAverage in-app purchase per paying user tells a different story. It was $16.87 globally\nin the first quarter of 2026, about ₹1,618, and $48.21 in the United States, about\n₹4,624. Those are per payer. The genre figures above are per install. The two differ by\nmore than ten times for the same players.\n\n## Why gaming differs from other categories\n\nTwo structural features, and neither is about pricing.\n\nThe paying share is tiny. About 4.2% of mobile gamers ever make a purchase, up from\n3.9% a year earlier. So almost every gaming ARPU figure is a few large payers divided across a very large\nfree population. The average moves when whale behaviour moves, not when the shop\nchanges.\n\nAnd a third of the revenue is missing from these figures. In-app purchases account for\n64% of mobile game revenue, so purchase-only ARPU omits advertising and every other\nline. A game comparing its blended revenue per user to a purchase-only benchmark will\nlook better than it is.\n\nThat matters most for casual games, which lean hardest on advertising. Casual sits\nlowest on purchase ARPU at $1.34, about ₹129, and the gap to midcore closes once ad\nrevenue enters the comparison. The published purchase-only figures cannot show that,\nso a casual title should build its own blended number before concluding it\nunderperforms.\n\n## The India layer\n\nIndia's gaming ARPU was $2.04 in 2025, about ₹196, and is forecast to reach $2.52 by\n2030, about ₹242. Against a United States ARPPU of $48.21, about ₹4,624, the gap is\nnot a performance gap — it is a price level and a payment-rail difference.\n\nThe growth mix matters more than the level. India's gains are mid-core led: strategy\nrevenue grew 77% year on year and card battlers more than 90%. A casual title planning\naround Indian growth figures is planning around somebody else's genre.\n\nNo source publishes an India ARPU split by genre, so this page does not state one. The\nhonest read is that the global genre ordering probably holds and the levels do not.\n\nOne more India factor sits outside ARPU entirely. Real-money gaming and fantasy sports\noperate under a separate regulatory and tax regime from in-app purchase games, so their\nrevenue per user is not comparable to the genre figures here at all. Treat them as a\ndifferent business that happens to share a store category.\n\n## What good looks like\n\nAt the early stage, the number to watch is the paying share rather than ARPU. Against\na 4.2% baseline, a game converting 2% has a conversion problem no price change fixes.\n\nIn the growth stage, compare to your genre and region together. Midcore in North\nAmerica at $2.66, about ₹255, and casino globally at $2.43, about ₹233, are close\nenough that mixing them hides real differences.\n\nAt scale the purchase-only figure stops being sufficient. With in-app purchases at 64%\nof category revenue, a mature game needs a blended figure that includes advertising,\nand the benchmark to beat becomes its own previous cohort.\n\n<FromMyWork exp=\"exp-034\">\nTwo small teams solved problems no product-line team would own. Monetisation sits in\nthe same place: the paying-share problem belongs to nobody by default, and it is\nusually the number with the most room in it.\n</FromMyWork>\n\n## If you are below median\n\nCheck the denominator before changing the product. An ARPU computed over installs,\nover active users and over payers gives three numbers from one game, and most\npublished comparisons do not say which they used.\n\nThen check the paying share against 4.2%. If the share is at or above baseline and ARPU\nis low, the problem is price or offer depth. If the share sits below, the problem is the\nfirst purchase, and no pricing work reaches it.\n\nThose two paths need different teams. Offer depth is an economy and content question.\nFirst purchase is an onboarding and trust question. Diagnosing which one applies takes\nan afternoon with the paying-share number and saves a quarter of work on the wrong\none.\n\n## Sources\n\nEvery row carries its source and the date it was last checked.\n\nOne disagreement is recorded rather than averaged. Published gaming ARPU figures span\nroughly $1.34, about ₹129, up to near $94.53, about ₹9,063, because they measure\ndifferent windows and different denominators. A day-90 per-install figure, an annual\nper-user figure and an unlabelled global figure are three different measurements\nwearing one name. Only the figures whose window a source states appear above.\n\nThe genre figures come from attribution and analytics vendors measuring their own\ncustomer bases, which skews toward games that already instrument monetisation carefully.\nRead the genre ordering as well evidenced and the exact levels as specific to that\npopulation.\n\nThe India figures come from market forecasts rather than measured platform data, so they\ncarry forecast risk on top of that. The 2030 projection in particular is a projection,\nand projections in this category have been revised more often than they have been met.\n"
+    },
+    {
+      "id": "benchmark-0578",
+      "url": "/benchmarks/install-to-purchase/travel",
+      "archetype": "benchmark",
+      "hub": "benchmarks",
+      "funnel": "MOFU",
+      "title": "Travel Install to Purchase Rate Benchmark (2026)",
+      "meta_description": "Travel install to purchase rate benchmarks, with the stage-by-stage funnel targets and why the first month captures less than half of first bookings.",
+      "h1": "Travel install to purchase rate benchmark",
+      "primary_keyword": "travel install to purchase rate",
+      "secondary_keywords": [
+        "travel app booking conversion",
+        "travel app funnel benchmark"
+      ],
+      "entity_a": "install-to-purchase",
+      "entity_b": "travel",
+      "facts": [
+        "f-t-01",
+        "f-t-02",
+        "f-t-03",
+        "f-t-04",
+        "f-t-05",
+        "f-bm-14"
+      ],
+      "experience": [
+        "exp-028"
+      ],
+      "links": [
+        {
+          "url": "/benchmarks",
+          "anchor": "the benchmarks",
+          "role": "hub"
+        },
+        {
+          "url": "/benchmarks/install-to-purchase",
+          "anchor": "install to purchase benchmarks",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/conversion-rate",
+          "anchor": "the conversion rate definition",
+          "role": "lateral"
+        },
+        {
+          "url": "/glossary/arpu",
+          "anchor": "the ARPU definition",
+          "role": "lateral"
+        },
+        {
+          "url": "/tools/monetization-health-score",
+          "anchor": "the monetisation health score",
+          "role": "tool"
+        },
+        {
+          "url": "/india",
+          "anchor": "monetising in India",
+          "role": "related"
+        },
+        {
+          "url": "/work-with-me",
+          "anchor": "a monetisation review",
+          "role": "bofu"
+        }
+      ],
+      "visuals": [
+        {
+          "type": "table",
+          "src": "#travel-funnel-table",
+          "alt": "Travel install-to-purchase reference points: the share of installs ending in a completed booking, stage targets for install-to-search, search-to-booking and booking-to-confirmation, the share of users transacting in their first month, in-app against mobile web conversion for travel advertisers, the share of trips booked within fourteen days of departure, and the cross-category install-to-purchase band with travel named, each row carrying its source and verification date",
+          "caption": "Travel booking conversion, stage by stage. Verified 30 September 2026."
+        }
+      ],
+      "cta": {
+        "primary": {
+          "label": "Get a travel funnel review",
+          "href": "/work-with-me"
+        },
+        "secondary": {
+          "label": "Browse the benchmarks",
+          "href": "/benchmarks"
+        }
+      },
+      "faq": [
+        {
+          "q": "What is a good install to purchase rate for a travel app?",
+          "a": "Around 2.8% of installs end in a completed booking, and travel sits at 2.41% in the cross-category data — above the 1% to 2% most apps manage. Travel converts better than average because the intent that drove the install is usually a trip already being planned."
+        },
+        {
+          "q": "Where does the travel funnel actually leak?",
+          "a": "Between search and booking. The stage targets are 40% to 60% install-to-search, 2% to 5% search-to-booking and 85% to 95% booking-to-confirmation, so the middle stage loses the most and the final stage loses least."
+        },
+        {
+          "q": "How long should I wait before judging a cohort?",
+          "a": "Longer than a month. Only 42% of travel app users transact in their first month, so a 30-day window misses most of the first bookings and will condemn a cohort that is performing normally."
+        },
+        {
+          "q": "Is the app worth the cost against mobile web?",
+          "a": "On conversion, substantially. For travel advertisers in-app conversion reaches 20% against 6% on mobile web, which is the clearest argument for the app existing at all."
+        }
+      ],
+      "schema_types": [
+        "Article",
+        "Person",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "unique_value": "Breaks the install-to-purchase rate into the three published stage targets and shows the measurement window matters as much as the rate, because fewer than half of travel users transact in their first month.",
+      "block_coverage": {
+        "answer_box": [
+          "f-t-01",
+          "f-bm-14"
+        ],
+        "the_numbers": [
+          "f-t-01",
+          "f-t-02",
+          "f-bm-14"
+        ],
+        "why_this_industry_differs": [
+          "f-t-04",
+          "f-t-05"
+        ],
+        "india_layer": [
+          "f-t-03"
+        ],
+        "what_good_looks_like": [
+          "f-t-02",
+          "f-t-04"
+        ]
+      },
+      "body": "\n<AnswerBox>\nTravel install to purchase rate benchmarks put completed bookings at about 2.8% of\ninstalls, with travel at 2.41% in cross-category data against 1% to 2% for most apps.\nThe window matters as much as the rate: only 42% of travel app users transact in their\nfirst month, so a 30-day read understates almost every cohort.\n</AnswerBox>\n\n<FactTable\n  id=\"travel-funnel-table\"\n  caption=\"Travel booking conversion, stage by stage\"\n  columns={[\"Measure\", \"Figure\"]}\n  rows={[\n    { cells: [\"Installs ending in a completed booking\", \"about 2.8%\"], factId: \"f-t-01\" },\n    { cells: [\"Stage targets: install-to-search / search-to-booking / booking-to-confirmation\", \"40-60% / 2-5% / 85-95%\"], factId: \"f-t-02\" },\n    { cells: [\"Travel users transacting in their first month\", \"42%\"], factId: \"f-t-03\" },\n    { cells: [\"Travel conversion, in-app against mobile web\", \"up to 20% against 6%\"], factId: \"f-t-04\" },\n    { cells: [\"Trips booked within fourteen days of departure\", \"nearly 40%\"], factId: \"f-t-05\" },\n    { cells: [\"Cross-category install-to-purchase, with travel named\", \"1-2% typical; travel 2.41%\"], factId: \"f-bm-14\" },\n  ]}\n/>\n\n## The numbers\n\nTravel converts above the app average and the reason is intent rather than craft.\n\nAbout 2.8% of installs end in a completed booking, and the cross-category data puts\ntravel at 2.41% against 1% to 2% for most apps. Somebody installing a travel app\nusually has a trip in mind, which no onboarding sequence can manufacture.\n\nThe stage targets show where the loss happens. Install-to-search runs 40% to 60%, so\nroughly half of installs never search. Search-to-booking runs 2% to 5%, the narrowest\nstage by far. Booking-to-confirmation runs 85% to 95%: once a booking starts, it\nusually finishes.\n\nRead the three together and the middle stage is the whole problem. A travel app that\ndoubled install-to-search would still hit a search-to-booking stage losing 95% or\nmore.\n\n## Why travel differs from other categories\n\nThree mechanisms, and the first is the one most funnels mismeasure.\n\nTrips have dates, and purchases follow them. Travellers book nearly 40% of trips within\nfourteen days of departure, so the trip sets the timing rather than the app. A user who installs\nin March for a June trip is not a lost user in April.\n\nOrder value is high and frequency is low. Travel sustains a 2.41% rate on baskets worth\nmany times a typical retail order, so the same percentage carries very different revenue\nbehind it.\n\nAnd the app genuinely outperforms the web here: in-app conversion reaches 20% against\n6% on mobile web for travel advertisers. That gap is larger than in most categories and\nis the strongest argument for the install in the first place.\n\n## The India layer\n\nNo source publishes an India-specific travel install-to-purchase rate, and this page does\nnot infer one. The measurement warning does transfer, and it bites harder in India.\n\nOnly 42% of travel app users transact in their first month globally. Indian travel\ndemand concentrates around festival and holiday windows, so a cohort acquired outside\nthose windows will convert later still. A 30-day attribution window judged against a\nglobal rate misleads in both directions: it understates the cohort and flatters whichever\nchannel happened to land in season.\n\nMeasure travel cohorts on a 90-day window at minimum, and report the season you acquired\nthe cohort in alongside the rate.\n\nTwo Indian specifics compound this. Domestic travel concentrates into a handful of\nholiday periods, so a quarter can contain one real booking window rather than three.\nAnd price sensitivity pushes more of the decision onto comparison, which lengthens the\ngap between install and booking. Both stretch the window further, and neither appears\nin any published rate.\n\n## What good looks like\n\nEarly on, watch install-to-search rather than install-to-purchase. Against a 40% to 60%\ntarget, a product below that band has a discovery or first-session problem, and the\nbooking stage cannot be read yet.\n\nIn the growth stage, the search-to-booking stage is the lever. It is the narrowest\npublished band at 2% to 5%, which makes it both the largest loss and the place where a\npoint of improvement is worth most.\n\nAt scale, compare your own cohorts season by season. The published rates blend high and\nlow season, and your mix will not match theirs.\n\n<FromMyWork exp=\"exp-028\">\nTracking infrastructure project announcements rather than waiting for sales data\nsurfaced demand earlier than the pipeline did. Travel funnels reward the same habit:\nthe leading signal sits upstream of the booking, in search behaviour.\n</FromMyWork>\n\n## If you are below median\n\nSeparate the three stages before changing anything. A blended rate cannot tell an app\nnobody searches in from one where search works and booking does not. Those two need\nopposite fixes.\n\nThen widen the window. With 42% transacting in month one, a 30-day measurement reads\nfewer than half the conversions. The apparent shortfall may be entirely an artefact of\nwhen you looked.\n\nOnly after both of those is a product change worth considering. The most common real fix\nat the search-to-booking stage is cutting the number of decisions between a result and a\nconfirmed price, because that is where a dated purchase stalls.\n\nOne caution on channel. In-app conversion reaching 20% against 6% on mobile web makes\nthe app look like the answer to a weak funnel, but that gap measures users who already\nchose to install. Pushing web users into an install adds a step before the booking and\nusually costs more conversions than it gains.\n\n## Sources\n\nEvery row carries its source and the date it was last checked.\n\nThe stage targets deserve a caveat. They come from attribution tooling and describe\ntargets rather than measured medians, which is a weaker claim than a distribution. This\npage labels them as targets for that reason: a product inside them meets a vendor's\nrecommendation rather than beating a peer group.\n\nNo source gives the stage breakdown for India, and none separates business travel from\nleisure, which almost certainly differ on every stage. This page states both gaps rather than\nfilling them with an estimate.\n\nThe booking-window figure carries the same caveat. It covers trips in general rather\nthan app bookings specifically, so read it as directional evidence that travel\npurchases follow dates, not as a measurement of this funnel.\n"
+    }
+  ]
+}

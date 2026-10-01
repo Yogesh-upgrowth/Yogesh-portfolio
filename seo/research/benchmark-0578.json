@@ -1,0 +1,134 @@
+{
+  "page_id": "benchmark-0578",
+  "url": "/benchmarks/install-to-purchase/travel",
+  "archetype": "benchmark",
+  "primary_keyword": "travel install to purchase rate",
+  "secondary_keywords": [
+    "travel app booking conversion",
+    "travel app funnel benchmark"
+  ],
+  "serp": {
+    "in": [],
+    "us": [],
+    "ai_overview_present": false,
+    "ai_overview_domains": []
+  },
+  "paa": [],
+  "facts": [
+    {
+      "fact_id": "f-t-01",
+      "claim": "Only 2.8% of travel app installs end in a completed booking",
+      "value": "2.8",
+      "unit": "%",
+      "source_url": "https://linkrunner.io/blog/metrics-that-matter-travel-hospitality-edition",
+      "source_title": "Metrics that matter: travel and hospitality edition",
+      "source_domain": "linkrunner.io",
+      "excerpt": "Only 2.8% of installs result in completed bookings.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-t-02",
+      "claim": "Travel funnel targets run 40% to 60% install-to-search, 2% to 5% search-to-booking and 85% to 95% booking-to-confirmation",
+      "value": "2-5",
+      "unit": "%",
+      "source_url": "https://linkrunner.io/blog/metrics-that-matter-travel-hospitality-edition",
+      "source_title": "Metrics that matter: travel and hospitality edition",
+      "source_domain": "linkrunner.io",
+      "excerpt": "Targets: install-to-search 40-60%, search-to-booking 2-5%, booking-to-confirmation 85-95%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-t-03",
+      "claim": "Only 42% of travel app users transact in their first month, although most sign up within seconds",
+      "value": "42",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/travel-app-market/",
+      "source_title": "Travel app benchmarks",
+      "source_domain": "businessofapps.com",
+      "excerpt": "Only 42% of travel app users make transactions in the first month, despite 80% signing up within seconds.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-t-04",
+      "claim": "For travel advertisers in-app conversion reaches 20% against 6% on mobile web",
+      "value": "20",
+      "unit": "%",
+      "source_url": "https://www.criteo.com/blog/retail-travel-apps-higher-conversions-mobile/",
+      "source_title": "Retail and travel apps see 4x more conversions than mobile web",
+      "source_domain": "criteo.com",
+      "excerpt": "For travel advertisers, mobile web conversion rates were 6% while in-app conversion rates are as high as 20%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    },
+    {
+      "fact_id": "f-t-05",
+      "claim": "Nearly 40% of trips are booked within fourteen days of departure",
+      "value": "40",
+      "unit": "%",
+      "source_url": "https://www.businessofapps.com/data/travel-app-market/",
+      "source_title": "Travel app benchmarks",
+      "source_domain": "businessofapps.com",
+      "excerpt": "Nearly 40% of trips are now booked within 14 days of departure.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": false
+    },
+    {
+      "fact_id": "f-bm-14",
+      "claim": "Most apps convert 1% to 2% of installs into a purchase, with retail at 1.38% and travel at 2.41%",
+      "value": "1.38",
+      "unit": "%",
+      "source_url": "https://uxcam.com/blog/mobile-app-conversion-rate/",
+      "source_title": "Mobile App Conversion Rate Benchmarks",
+      "source_domain": "uxcam.com",
+      "excerpt": "Most mobile apps see install-to-purchase conversion between 1% and 2%. Retail apps 1.38%; travel apps 2.41%.",
+      "published_on": "2026",
+      "verified_on": "2026-09-30",
+      "method": "search_index",
+      "primary": true
+    }
+  ],
+  "entities": {},
+  "gaps": [],
+  "status": "complete",
+  "incomplete_reasons": [],
+  "researched_on": "2026-09-30",
+  "serp_leader_summaries": [],
+  "shared_candidates": [],
+  "contradictions": [],
+  "fetch_log": [],
+  "block_coverage": {
+    "answer_box": [
+      "f-t-01",
+      "f-bm-14"
+    ],
+    "the_numbers": [
+      "f-t-01",
+      "f-t-02",
+      "f-bm-14"
+    ],
+    "why_this_industry_differs": [
+      "f-t-04",
+      "f-t-05"
+    ],
+    "india_layer": [
+      "f-t-03"
+    ],
+    "what_good_looks_like": [
+      "f-t-02",
+      "f-t-04"
+    ]
+  }
+}

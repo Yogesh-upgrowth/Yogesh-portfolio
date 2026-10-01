@@ -184,7 +184,7 @@ figures run on a tighter 45-day cycle, because they move faster than retention d
     primary_keyword="ecommerce app retention benchmarks",
     secondary_keywords=["d2c app retention", "ecommerce d30 retention"],
     entity_a="retention", entity_b="d2c-ecommerce",
-    facts=["f-bm-01", "f-bm-03", "f-bm-14", "f-bm-15", "f-bm-08", "f-fx-03"],
+    facts=["f-bm-01", "f-bm-03", "f-ih-01", "f-bm-15", "f-bm-08", "f-fx-03"],
     experience=["exp-024", "exp-052"],
     links=L(HUB, ("/glossary/retention-rate", "retention rate", "lateral"),
             ("/glossary/churn-rate", "the churn rate definition", "lateral"),
@@ -207,7 +207,7 @@ figures run on a tighter 45-day cycle, because they move faster than retention d
     schema_types=BM_SCHEMA,
     unique_value="Reads ecommerce retention as a function of purchase frequency rather than satisfaction, pairing the curve with install-to-purchase rates and the Indian platform take that decides whether a retained buyer is profitable at all.",
     block_coverage=bm_cover(["f-bm-03"], ["f-bm-01", "f-bm-03", "f-bm-08"],
-                            ["f-bm-14"], ["f-fx-03"], ["f-bm-15"]),
+                            ["f-ih-01"], ["f-fx-03"], ["f-bm-15"]),
     body="""
 <AnswerBox>
 Ecommerce app retention benchmarks put the median at 2% on day 30, below the 4%
@@ -224,7 +224,7 @@ and the browser sits one tap away.
     { cells: ["Day 1 retention, median", "18%", "25% all categories"], factId: "f-bm-03" },
     { cells: ["Day 7 retention, median", "5%", "8% all categories"], factId: "f-bm-01" },
     { cells: ["Day 30 retention, median", "2%", "4% all categories"], factId: "f-bm-03" },
-    { cells: ["Install-to-purchase, retail and travel", "1.38% and 2.41%", "1% to 2% typical"], factId: "f-bm-14" },
+    { cells: ["Median time from install to first revenue", "about 48 hours", "p90 near 14 days"], factId: "f-ih-01" },
     { cells: ["Good mobile commerce conversion", "2% to 6%", "by order value and frequency"], factId: "f-bm-15" },
     { cells: ["Apps retaining anyone at day 30", "no published figure", "5% to 7%"], factId: "f-bm-08" },
   ]}
@@ -288,7 +288,8 @@ decisions.
 
 At day 30, 3% to 6% is the strong-performer band, and below 2% the app trails its
 own category. The more useful target, though, is repeat purchase rate rather than
-retention. Install-to-purchase runs 1.38% for retail and 2.41% for travel, and a
+retention. First revenue arrives fast when it arrives at all — a median of about 48
+hours across more than 145,000 installs, with the 90th percentile near 14 days — and a
 good mobile commerce conversion rate sits between 2% and 6% depending on order value
 and purchase frequency.
 
