@@ -213,3 +213,67 @@ and network for `research.ts`). Until then:
   it, and its own build is green.
 - **The Next build is safe to preview**, not to promote.
 - Cut over only when `pnpm launch:check` passes.
+
+---
+
+## G02 ran for the first time — 25 pages are not publishable
+
+Date: 2026-10-01
+
+G02 (source quality) had skipped on all 98 pages for the life of the project. It
+checks that every `source_url` was observed returning 200, and it reads that
+observation from a `fetch_log` on the research object rather than re-fetching —
+so the log has to be produced somewhere with outbound HTTP. The agent container
+has none: the egress proxy answers 403 to CONNECT for every host that is not a
+package registry.
+
+`seo/scripts/verify_sources.py` plus `.github/workflows/source-check.yml` produce
+the log on a GitHub runner, which does have open network, and commit it back so
+G02 then runs offline everywhere.
+
+Running the gate with the log wired in gives:
+
+| | Pages |
+|---|---|
+| Blocked by G02 | **25 of 98** |
+| …for an unreachable source | 0 |
+| …for the majority-primary rule | 25 |
+
+**None of the 25 fail on reachability.** They fail because fewer than half their
+facts come from a primary source. Four cite none at all:
+
+| Page | Primary |
+|---|---|
+| `/glossary/take-rate` | 0/6 |
+| `/india` | 0/6 |
+| `/services/app-monetization-strategy` | 0/6 |
+| `/services/app-monetization-strategy/marketplaces` | 0/6 |
+
+By section: benchmarks 12, glossary 5, playbooks 5, services 2, `/india` 1.
+
+### Why this is a content problem, not a gate technicality
+
+The domains these pages lean on are SEO content farms rather than data
+publishers — `tfnmarkets.com`, `ecorpit.com`, `ladya.in`, `strataigize.com`,
+`funnelfox.com`, `origami-marketplace.com`, `bestmediainfo.com`. A page about
+India's app market citing `businessofapps` and `ecorpit` is the thin,
+weakly-sourced content the brief exists to prevent. The fix is new research
+against primary sources — RBI, TRAI, IAMAI, Redseer for `/india`; first-party
+platform reports for the benchmark pages — not a reclassification of the facts
+already there.
+
+The existing classification is already principled and should not be loosened:
+RevenueCat's own report data is flagged primary (54 facts) while figures it
+quotes from elsewhere are not (7), and every aggregator is secondary. Flipping
+flags to clear the gate would make the gate meaningless.
+
+### What stops these shipping
+
+`pnpm publish` now re-runs the gates and refuses any batch containing a page
+with a failing or blocked gate. Before this it checked `status` and inbound
+links only, and `pnpm gates` never writes `status` — so a page with a standing
+G02 block could be marked reviewed by hand and flipped to indexable with the
+block intact. It cannot now.
+
+**These 25 pages need re-research before they are indexed.** The other 73 are
+unaffected.
