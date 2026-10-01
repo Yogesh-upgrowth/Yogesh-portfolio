@@ -360,3 +360,26 @@ majority-primary rule. Re-source rather than archive there too.
 any non-200 without an `archive_url`, which puts a WAF refusing curl in the same
 bucket as a deleted page. Accepting a 403/405 as "reachable" would unblock pages
 without improving a single citation, so it was left alone.
+
+### The cutover order is the real hazard, and it was not written down
+
+Two steps have been described throughout as "1. set the Vercel Root Directory,
+2. flip the pages to indexable". **That numbering is backwards and would have
+cost the rankings.**
+
+Every page ships `noindex,follow` until `pnpm publish` flips it, and the Next
+build already serves 127 redirects. Switch the Root Directory first and a ranking
+URL stops serving, 301s to its new home, and Google finds `noindex` there — so it
+drops the destination while the old URL is already gone. Measured:
+**79 redirects pointing at 61 noindex pages.** Not recoverable by flipping back,
+because the old URLs are served by a different build.
+
+`pnpm cutover:check` now answers this in one command and refuses to say "safe"
+until no redirect lands on a noindex page. `seo/CUTOVER.md` has the ordered
+procedure; `web/tests/cutover.test.ts` keeps the check honest. It is deliberately
+not a CI gate — it exits non-zero today, correctly, and a permanently red check
+is one people learn to ignore.
+
+Vercel access was retried from the session: the API lists the project but returns
+403 on it (*"must re-authenticate to this scope `yogesh4`"*), so the irreversible
+step sits with Yogesh either way. That is the safer arrangement.
