@@ -108,7 +108,44 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://uxcam.com/blog/mobile-app-retention-benchmarks/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.apptweak.com/en/aso-blog/average-app-conversion-rate-per-category",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.businessofapps.com/data/app-retention-rates/",
+      "status": 403,
+      "used": true,
+      "why": "refused automated access (GET 403; HEAD 403)"
+    },
+    {
+      "url": "https://www.digitalapplied.com/blog/customer-onboarding-time-to-value-2026-saas-metrics-framework",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-bm-04"

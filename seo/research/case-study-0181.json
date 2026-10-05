@@ -497,7 +497,14 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://pmyogesh.com/case-study/insurance-cta-2x-growth",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "problem_with_baseline": [
       "f-cs-insurance-cta-2x-growth-01",

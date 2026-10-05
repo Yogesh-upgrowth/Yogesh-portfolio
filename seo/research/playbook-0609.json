@@ -116,7 +116,38 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://amplitude.com/blog/good-bad-north-star-metric",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://info.amplitude.com/rs/138-CDN-550/images/Amplitude-The-North-Star-Playbook.pdf",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://pmtoolkit.ai/learn/growth/retention-analytics-guide",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://visionary-marketing.co.uk/blog/customer-onboarding-statistics-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-pb-30"

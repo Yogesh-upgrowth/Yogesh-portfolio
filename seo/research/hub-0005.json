@@ -108,7 +108,38 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://linkrunner.io/tools/cost-per-install-benchmark",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://sensortower.com/blog/india-mobile-market-q1-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.lazyweb.com/research/how-do-tracked-apps-make-money-subscription-ads-transactions",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.statista.com/outlook/emo/online-food-delivery/india/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "editorial_intro": [
       "f-hub-02"

@@ -108,6 +108,43 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://adapty.io/state-of-in-app-subscriptions/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://info.amplitude.com/rs/138-CDN-550/images/the-product-benchmark-report.pdf",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://mixpanel.com/blog/product-led-growth/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.digitalapplied.com/blog/customer-onboarding-time-to-value-2026-saas-metrics-framework",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.userflow.com/blog/saas-onboarding-benchmarks-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {}
 }

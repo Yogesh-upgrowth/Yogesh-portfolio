@@ -108,7 +108,32 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://linkrunner.io/blog/metrics-that-matter-travel-hospitality-edition",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://uxcam.com/blog/mobile-app-conversion-rate/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.businessofapps.com/data/travel-app-market/",
+      "status": 403,
+      "used": true,
+      "why": "refused automated access (GET 403; HEAD 403)"
+    },
+    {
+      "url": "https://www.criteo.com/blog/retail-travel-apps-higher-conversions-mobile/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-t-01",

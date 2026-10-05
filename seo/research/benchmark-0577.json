@@ -108,7 +108,44 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://blendcommerce.com/blogs/shopify/ecommerce-conversion-rate-benchmarks-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://razorpay.com/blog/best-payment-gateway-pricing-saas-india-tco-guide",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://userpilot.com/blog/mobile-app-retention/",
+      "status": 200,
+      "used": true,
+      "why": "HEAD returned 200"
+    },
+    {
+      "url": "https://uxcam.com/blog/mobile-app-conversion-rate/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-bm-14"

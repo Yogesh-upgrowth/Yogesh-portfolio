@@ -124,7 +124,26 @@
   "contradictions": [
     "Published activation rates disagree on the central figure: usetandem.ai gives a 41.7% median with quartiles at 71% and 19%, and also reports a 37.5% average. A median and an average of a skewed distribution are not the same statistic, and neither source states which products entered the sample. Both appear on this page rather than one being chosen."
   ],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://userpilot.com/blog/minimum-viable-onboarding/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://visionary-marketing.co.uk/blog/customer-onboarding-statistics-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-gh-03",

@@ -177,6 +177,31 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://adapty.io/state-of-in-app-subscriptions-report/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.npci.org.in/product/upi/product-statistics",
+      "status": 403,
+      "used": true,
+      "why": "refused automated access (GET 403; HEAD 403)"
+    },
+    {
+      "url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {}
 }

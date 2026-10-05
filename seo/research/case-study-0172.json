@@ -413,7 +413,14 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://pmyogesh.com/case-study/crm-180k-transactions",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "problem_with_baseline": [
       "f-cs-crm-180k-transactions-01",

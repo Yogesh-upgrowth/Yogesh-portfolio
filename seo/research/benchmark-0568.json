@@ -152,7 +152,50 @@
   "contradictions": [
     "India's OTT ARPU is published as $40.44 a year (Statista outlook), as ₹85-95 a month (roughly $10.6-11.9 a year at 95.89) and as $9.02. The three are not reconcilable without each source's denominator and subscriber definition. Stated as a disagreement on the page rather than resolved by preference."
   ],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://bestmediainfo.com/insights/india-has-2165-million-ott-subscriptions-but-platforms-are-still-struggling-to-monetise-them-12457338",
+      "status": 403,
+      "used": true,
+      "why": "refused automated access (GET 403; HEAD 403)"
+    },
+    {
+      "url": "https://raoscaff.com/intel/22-ott-pricing-wars/report.html",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.apptweak.com/en/aso-blog/average-app-conversion-rate-per-category",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.medianews4u.com/indias-ott-market-hits-601-million-users-but-only-119-million-pay-monetisation-gap-widens/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.sci-tech-today.com/stats/top-10-indian-ott-platforms-statistics-updated/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.statista.com/outlook/amo/media/tv-video/ott-video/india/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-bm-10"

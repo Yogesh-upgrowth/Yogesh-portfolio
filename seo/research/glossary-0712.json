@@ -108,6 +108,31 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://mixpanel.com/blog/product-led-growth/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.npci.org.in/product/upi/product-statistics",
+      "status": 403,
+      "used": true,
+      "why": "refused automated access (GET 403; HEAD 403)"
+    }
+  ],
   "block_coverage": {}
 }

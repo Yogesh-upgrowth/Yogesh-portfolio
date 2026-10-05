@@ -108,7 +108,44 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://semnexus.com/aso-conversion-rate-benchmarks-by-category-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://userpilot.com/blog/mobile-app-retention/",
+      "status": 200,
+      "used": true,
+      "why": "HEAD returned 200"
+    },
+    {
+      "url": "https://www.businessofapps.com/data/app-subscription-trial-benchmarks/",
+      "status": 403,
+      "used": true,
+      "why": "refused automated access (GET 403; HEAD 403)"
+    },
+    {
+      "url": "https://www.revenuecat.com/state-of-subscription-apps",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-bm-06"

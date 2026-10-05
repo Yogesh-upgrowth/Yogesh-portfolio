@@ -108,6 +108,37 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://base.com/en-IN/blog/quick-commerce-for-d2c-brands-the-complete-guide-2026/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://chartmogul.com/reports/saas-conversion-report/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://firstpagesage.com/reports/freemium-conversion-rate-benchmarks/",
+      "status": 404,
+      "used": true,
+      "why": "GET returned 404"
+    },
+    {
+      "url": "https://origami-marketplace.com/en-gb/marketplace-take-rate-a-guide-for-marketplace-operators/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.cloudzero.com/blog/saas-gross-margin-benchmarks/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {}
 }

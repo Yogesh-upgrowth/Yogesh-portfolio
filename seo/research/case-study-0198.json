@@ -301,7 +301,14 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://pmyogesh.com/case-study/ai-recommendation-engine",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "what_didnt_work": [
       "f-cs-ai-recommendation-engine-01",

@@ -108,7 +108,44 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://razorpay.com/blog/upi-autopay-vs-card-e-mandates/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.conversionteam.com/ab-test-win-rate/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.cxodigitalpulse.com/phonepes-upi-scale-trails-paytms-monetisation-in-fy26-results/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.digitalapplied.com/blog/failed-payment-recovery-dunning-playbook-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.markhub24.com/post/zepto-pass-a-membership-strategy-for-customer-retention-in-indian-quick-commerce",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-hub-08"

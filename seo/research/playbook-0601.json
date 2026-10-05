@@ -152,7 +152,50 @@
   "contradictions": [
     "Published A/B test win rates do not agree, and the gap is a definition gap rather than a performance one: optimizely.com cites 12% as the most common figure, conversionteam.com reports 17.4% reaching significance with a winning variant across 2,408 audited tests, and advertorialwizard.com reports 36.3% across 90-plus European e-commerce brands. The three differ on whether a win means statistical significance, a positive point estimate, or a shipped change. All three appear on this page with their definitions."
   ],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://advertorialwizard.com/blog/ecommerce-ab-test-benchmarks-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://confidence.spotify.com/blog/ab-testing-bandwidth",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://leanexperiments.substack.com/p/sample-size-calculation-for-ab-tests",
+      "status": 403,
+      "used": true,
+      "why": "refused automated access (GET 403; HEAD 403)"
+    },
+    {
+      "url": "https://vwo.com/experimentation-program-maturity-report/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.conversionteam.com/ab-test-win-rate/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.optimizely.com/field-notes/articles/get-more-wins-experimentation-metrics-for-program-success",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.optimizely.com/field-notes/guides/127000-experiments/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-pb-01",

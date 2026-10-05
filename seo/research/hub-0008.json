@@ -108,7 +108,26 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://admiral.media/cac-payback-period-mobile-apps/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://usetandem.ai/blog/onboarding-metrics-that-predict-revenue-activation",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.lennysnewsletter.com/p/what-is-a-good-free-to-paid-conversion",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "editorial_intro": [
       "f-gh-01",

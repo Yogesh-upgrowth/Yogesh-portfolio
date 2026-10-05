@@ -108,7 +108,38 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://base.com/en-IN/blog/quick-commerce-for-d2c-brands-the-complete-guide-2026/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://ecorpit.com/retail-digital-transformation-d2c-quick-commerce-india-2026/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://ladya.in/insights/quick-commerce-ad-benchmarks-india-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.businessofapps.com/data/food-delivery-app-market/",
+      "status": 403,
+      "used": true,
+      "why": "refused automated access (GET 403; HEAD 403)"
+    },
+    {
+      "url": "https://www.feinternational.com/blog/marketplace-app-valuation",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-act-16"

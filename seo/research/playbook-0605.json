@@ -124,7 +124,38 @@
   "contradictions": [
     "Published day-30 retention for e-commerce does not agree: appstorys.com gives 3% to 6% while enable3.io reports a 2% median for the same category. Neither states which apps entered the sample or whether the figure is a mean or a median. Both appear on this page."
   ],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://appstorys.com/blog-Retention-Rates-Mobile-Apps-By-Industry",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://countly.com/blog/the-complete-guide-to-measuring-user-retention-cohorts-curves-benchmarks",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://enable3.io/blog/app-retention-benchmarks-2025",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://linkrunner.io/blog/install-to-first-revenue-payback-windows-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://pmtoolkit.ai/learn/growth/retention-analytics-guide",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-rh-01",

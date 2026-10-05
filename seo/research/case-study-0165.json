@@ -889,7 +889,14 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://pmyogesh.com/case-study/insurance-funnel-1200-growth",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "context": [
       "f-cs-carinfo-motor-insurance-monetization-01",

@@ -110,7 +110,32 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://bestmediainfo.com/insights/india-has-2165-million-ott-subscriptions-but-platforms-are-still-struggling-to-monetise-them-12457338",
+      "status": 403,
+      "used": true,
+      "why": "refused automated access (GET 403; HEAD 403)"
+    },
+    {
+      "url": "https://ecorpit.com/retail-digital-transformation-d2c-quick-commerce-india-2026/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://tfnmarkets.com/insights/phonepe-ipo-india-2026",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.businessofapps.com/data/india-app-market/",
+      "status": 403,
+      "used": true,
+      "why": "refused automated access (GET 403; HEAD 403)"
+    }
+  ],
   "block_coverage": {
     "editorial_intro": [
       "f-hub-04",

@@ -122,7 +122,44 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://adapty.io/blog/mobile-app-monetization-strategies/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://amplitude.com/blog/increasing-free-trial-conversion",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://bestmediainfo.com/insights/india-has-2165-million-ott-subscriptions-but-platforms-are-still-struggling-to-monetise-them-12457338",
+      "status": 403,
+      "used": true,
+      "why": "refused automated access (GET 403; HEAD 403)"
+    },
+    {
+      "url": "https://www.feinternational.com/blog/marketplace-app-valuation",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.lazyweb.com/research/how-do-tracked-apps-make-money-subscription-ads-transactions",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.strataigize.com/insights/google-play-external-payments-fee-changes-2026/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-pb-26",

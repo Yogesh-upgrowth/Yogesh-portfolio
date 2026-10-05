@@ -122,7 +122,32 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://arjankc.com.np/blog/2026-b2b-saas-cac-benchmark-report/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://culta.ai/blog/arpu-benchmarks-2026",
+      "status": 404,
+      "used": true,
+      "why": "GET returned 404"
+    },
+    {
+      "url": "https://optif.ai/learn/questions/b2b-saas-churn-rate-benchmark/",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    },
+    {
+      "url": "https://www.lazyweb.com/research/how-do-tracked-apps-make-money-subscription-ads-transactions",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "answer_box": [
       "f-bm-29"

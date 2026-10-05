@@ -1505,7 +1505,14 @@
   "serp_leader_summaries": [],
   "shared_candidates": [],
   "contradictions": [],
-  "fetch_log": [],
+  "fetch_log": [
+    {
+      "url": "https://pmyogesh.com/case-study/user-acquisition-cac-30",
+      "status": 200,
+      "used": true,
+      "why": "GET returned 200"
+    }
+  ],
   "block_coverage": {
     "context": [
       "f-cs-user-acquisition-cac-30-01",
