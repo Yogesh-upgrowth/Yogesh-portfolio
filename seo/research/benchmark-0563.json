@@ -125,7 +125,7 @@
       "url": "https://userpilot.com/blog/mobile-app-retention/",
       "status": 200,
       "used": true,
-      "why": "HEAD returned 200"
+      "why": "GET returned 200"
     },
     {
       "url": "https://www.apptweak.com/en/aso-blog/average-app-conversion-rate-per-category",

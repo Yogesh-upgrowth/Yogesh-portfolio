@@ -129,7 +129,7 @@
       "url": "https://blog.playio.co/arpdau-benchmarks-mobile-games",
       "status": 200,
       "used": true,
-      "why": "HEAD returned 200"
+      "why": "GET returned 200"
     },
     {
       "url": "https://segwise.ai/blog/mobile-gaming-statistics",
