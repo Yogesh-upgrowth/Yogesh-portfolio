@@ -141,7 +141,7 @@
       "url": "https://visionary-marketing.co.uk/blog/customer-onboarding-statistics-2026",
       "status": 200,
       "used": true,
-      "why": "HEAD returned 200"
+      "why": "GET returned 200"
     }
   ],
   "block_coverage": {
