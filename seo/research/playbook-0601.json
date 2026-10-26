@@ -173,9 +173,9 @@
     },
     {
       "url": "https://vwo.com/experimentation-program-maturity-report/",
-      "status": 200,
+      "status": 404,
       "used": true,
-      "why": "GET returned 200"
+      "why": "GET returned 404"
     },
     {
       "url": "https://www.conversionteam.com/ab-test-win-rate/",
